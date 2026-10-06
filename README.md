@@ -4,9 +4,9 @@ A standardized, high-rigor repository of **200 full-length mock test papers** (1
 
 ---
 
-## 📚 Subject Coverage (8 Subjects, 25 Papers Each)
+## 📚 Subject Coverage (11 Subjects, 25 Papers Each)
 
-The repository contains 25 full-length mock tests for each of the following 8 subjects:
+The repository contains 25 full-length mock tests for each of the following 11 subjects:
 
 | Subject | Code | Papers | Total Questions | Master Index |
 | :--- | :---: | :---: | :---: | :---: |
@@ -16,10 +16,13 @@ The repository contains 25 full-length mock tests for each of the following 8 su
 | **Economics** | 309 | 25 | 1,250 | [`CUET/Economics/series_index.json`](CUET/Economics/series_index.json) |
 | **English** | 101 | 25 | 1,250 | [`CUET/English/series_index.json`](CUET/English/series_index.json) |
 | **General Test** | 501 | 25 | 1,250 | [`CUET/General Test/series_index.json`](CUET/General%20Test/series_index.json) |
+| **Geography / Geology** | 313 | 25 | 1,250 | [`CUET/Geography/series_index.json`](CUET/Geography/series_index.json) |
+| **History** | 314 | 25 | 1,250 | [`CUET/History/series_index.json`](CUET/History/series_index.json) |
 | **Mathematics** | 319 | 25 | 1,250 | [`CUET/Mathematics/series_index.json`](CUET/Mathematics/series_index.json) |
 | **Physics** | 322 | 25 | 1,250 | [`CUET/Physics/series_index.json`](CUET/Physics/series_index.json) |
+| **Political Science** | 323 | 25 | 1,250 | [`CUET/Political Science/series_index.json`](CUET/Political%20Science/series_index.json) |
 
-**Total:** 200 Papers | 10,000 Verified Questions
+**Total:** 275 Papers | 13,750 Verified Questions
 
 ---
 
@@ -61,7 +64,7 @@ python3 validate_papers.py CUET --subject "Economics"
 # Validate all subjects
 python3 -c "
 import subprocess
-for s in ['Accountancy', 'Biological Science', 'Computer Science', 'Economics', 'English', 'General Test', 'Mathematics', 'Physics']:
+for s in ['Accountancy', 'Biological Science', 'Computer Science', 'Economics', 'English', 'General Test', 'Geography', 'History', 'Mathematics', 'Physics', 'Political Science']:
     subprocess.run(['python3', 'validate_papers.py', 'CUET', '--subject', s], check=True)
 "
 ```
