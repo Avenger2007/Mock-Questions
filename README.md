@@ -1,12 +1,12 @@
 # CUET UG Mock Test Papers Repository (2026 Series)
 
-A standardized, high-rigor repository of **200 full-length mock test papers** (10,000 total questions) for the **Common University Entrance Test (CUET UG)**, authored in strict accordance with the official National Testing Agency (NTA) syllabi, NCERT curriculum, and previous years' exam patterns.
+A standardized, high-rigor repository of **300 full-length mock test papers** (15,000 total questions) for the **Common University Entrance Test (CUET UG)**, authored in strict accordance with the official National Testing Agency (NTA) syllabi, NCERT curriculum, and previous years' exam patterns.
 
 ---
 
-## 📚 Subject Coverage (11 Subjects, 25 Papers Each)
+## 📚 Subject Coverage (12 Subjects, 25 Papers Each)
 
-The repository contains 25 full-length mock tests for each of the following 11 subjects:
+The repository contains 25 full-length mock tests for each of the following 12 subjects:
 
 | Subject | Code | Papers | Total Questions | Master Index |
 | :--- | :---: | :---: | :---: | :---: |
@@ -18,11 +18,12 @@ The repository contains 25 full-length mock tests for each of the following 11 s
 | **General Test** | 501 | 25 | 1,250 | [`CUET/General Test/series_index.json`](CUET/General%20Test/series_index.json) |
 | **Geography / Geology** | 313 | 25 | 1,250 | [`CUET/Geography/series_index.json`](CUET/Geography/series_index.json) |
 | **History** | 314 | 25 | 1,250 | [`CUET/History/series_index.json`](CUET/History/series_index.json) |
+| **Mass Media** | 318 | 25 | 1,250 | [`CUET/Mass Media/series_index.json`](CUET/Mass%20Media/series_index.json) |
 | **Mathematics** | 319 | 25 | 1,250 | [`CUET/Mathematics/series_index.json`](CUET/Mathematics/series_index.json) |
 | **Physics** | 322 | 25 | 1,250 | [`CUET/Physics/series_index.json`](CUET/Physics/series_index.json) |
 | **Political Science** | 323 | 25 | 1,250 | [`CUET/Political Science/series_index.json`](CUET/Political%20Science/series_index.json) |
 
-**Total:** 275 Papers | 13,750 Verified Questions
+**Total:** 300 Papers | 15,000 Verified Questions
 
 ---
 
@@ -58,13 +59,13 @@ Each subject features a structured 25-paper difficulty progression:
 To run full validation across all papers and subjects:
 
 ```bash
-# Validate a specific subject (e.g. Economics)
-python3 validate_papers.py CUET --subject "Economics"
+# Validate a specific subject (e.g. Mass Media)
+python3 validate_papers.py CUET --subject "Mass Media"
 
 # Validate all subjects
 python3 -c "
 import subprocess
-for s in ['Accountancy', 'Biological Science', 'Computer Science', 'Economics', 'English', 'General Test', 'Geography', 'History', 'Mathematics', 'Physics', 'Political Science']:
+for s in ['Accountancy', 'Biological Science', 'Computer Science', 'Economics', 'English', 'General Test', 'Geography', 'History', 'Mass Media', 'Mathematics', 'Physics', 'Political Science']:
     subprocess.run(['python3', 'validate_papers.py', 'CUET', '--subject', s], check=True)
 "
 ```
