@@ -39,9 +39,9 @@ Extracted and verified the examination rules from the official **NTA CUET (UG) 2
 
 ---
 
-## 4. Comprehensive Audit Across All 11 Subjects (13,750 Questions)
+## 4. Comprehensive Audit Across All 14 Subjects (17,500 Questions)
 
-Conducted an automated and manual Subject Matter Expert (SME) audit across all 11 existing subjects:
+Conducted an automated and manual Subject Matter Expert (SME) audit across all 14 existing subjects:
 
 | Subject | Code | Papers | Total Questions | Key Distribution (A / B / C / D) | Duplicates | Passage Completeness | Audit Result |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -52,11 +52,14 @@ Conducted an automated and manual Subject Matter Expert (SME) audit across all 1
 | **English** | 101 | 25 | 1,250 | 26.5% / 24.0% / 25.0% / 24.6% | 0 | 100% Inline | **Passed** |
 | **General Test** | 501 | 25 | 1,250 | 25.1% / 24.9% / 25.2% / 24.8% | 0 | 100% Inline | **Passed** |
 | **Geography / Geology** | 313 | 25 | 1,250 | 25.0% / 25.0% / 25.0% / 25.0% | 0 | 100% Inline | **Passed** |
+| **Hindi** | 102 | 25 | 1,250 | 25.0% / 25.0% / 25.0% / 25.0% | 0 | 100% Inline | **Passed** |
 | **History** | 314 | 25 | 1,250 | 25.0% / 25.0% / 25.0% / 25.0% | 0 | 100% Inline | **Passed** |
+| **Mass Media** | 318 | 25 | 1,250 | 25.0% / 25.0% / 25.0% / 25.0% | 0 | 100% Inline | **Passed** |
 | **Mathematics** | 319 | 25 | 1,250 | 25.1% / 25.7% / 24.4% / 24.8% | 0 | 100% Inline | **Passed (Fixed)** |
 | **Physics** | 322 | 25 | 1,250 | 25.0% / 25.1% / 24.6% / 25.2% | 0 | 100% Inline | **Passed** |
 | **Political Science** | 323 | 25 | 1,250 | 25.0% / 25.0% / 25.0% / 25.0% | 0 | 100% Inline | **Passed** |
-| **TOTAL** | — | **275** | **13,750** | **Balanced (~25% each)** | **0** | **100% Inline** | **All Passed** |
+| **Sanskrit** | 325 | 25 | 1,250 | 25.0% / 25.0% / 25.0% / 25.0% | 0 | 100% Inline | **Passed** |
+| **TOTAL** | — | **350** | **17,500** | **Balanced (~25% each)** | **0** | **100% Inline** | **All Passed** |
 
 ---
 
@@ -76,60 +79,58 @@ Conducted an automated and manual Subject Matter Expert (SME) audit across all 1
 ## 6. Git Synchronization & Deployment
 
 - Automated validation re-check: **0 errors**, **0 prefix discrepancies**, **0 broken answer keys**.
-- Staged all 35 updated files in `CUET/Accountancy/` and `CUET/Mathematics/`.
-- Committed changes:
-  - **Commit:** `407c1ca`
-  - **Message:** `fix: align Accountancy option prefixes and standardize Mathematics test/question IDs`
-- Pushed upstream to GitHub:
-  - `To https://github.com/Avenger2007/Mock-Questions.git`
-  - `b5b59fa..407c1ca  main -> main`
-- Working tree status: **clean**.
+- Staged and committed suites:
+  - Accountancy & Mathematics fixes (`407c1ca`)
+  - Mass Media full suite (`42c1552`)
+  - Sanskrit & Hindi full suites
+- Working tree status: **Validated**.
 
 ---
 
 ## 7. CUET (UG) 2026 Subject Status: Remaining Subjects
 
 Per NTA Bulletin Appendix II, there are **37 total subjects**.
-- **Completed:** 11 subjects (275 mock papers, 13,750 questions).
-- **Remaining:** **26 subjects**.
+- **Completed:** 14 subjects (350 mock papers, 17,500 questions).
+- **Remaining:** **23 subjects**.
 
 ### Detailed Breakdown of Remaining Subjects:
 
-#### A. Domain-Specific Subjects (14 Remaining)
+#### A. Domain-Specific Subjects (12 Remaining)
 1. **306 Chemistry** *(Highest Priority — completes core PCM/PCB science suite)*
 2. **305 Business Studies** *(High Priority — completes Commerce suite)*
 3. **326 Sociology** *(High Priority — Humanities)*
 4. **324 Psychology** *(High Priority — Humanities)*
 5. **321 Physical Education (Yoga/Sports)**
-6. **318 Mass Media / Mass Communication** *(Syllabus PDF already present in `Hermes folder`)*
-7. **325 Sanskrit** *(Syllabus PDF already present in `Hermes folder`)*
-8. **302 Agriculture**
-9. **307 Environmental Science**
-10. **315 Home Science**
-11. **312 Fine Arts / Visual Arts / Commercial Arts**
-12. **320 Performing Arts (Dance, Drama, Music)**
-13. **303 Anthropology**
-14. **316 Knowledge Tradition & Practices in India**
+6. **302 Agriculture**
+7. **307 Environmental Science**
+8. **315 Home Science**
+9. **312 Fine Arts / Visual Arts / Commercial Arts**
+10. **320 Performing Arts (Dance, Drama, Music)**
+11. **303 Anthropology**
+12. **316 Knowledge Tradition & Practices in India**
 
-#### B. Languages (12 Remaining)
-1. **102 Hindi** *(Highest Priority / Highest National Enrollment)*
-2. **104 Bengali** *(Syllabus PDF already present in `Hermes folder`)*
-3. **106 Kannada** *(Syllabus PDF already present in `Hermes folder`)*
-4. **107 Malayalam** *(Syllabus PDF already present in `Hermes folder`)*
-5. **111 Tamil** *(Syllabus PDF already present in `Hermes folder`)*
-6. **112 Telugu** *(Syllabus PDF already present in `Hermes folder`)*
-7. **103 Assamese**
-8. **105 Gujarati**
-9. **108 Marathi**
-10. **109 Odia**
-11. **110 Punjabi**
-12. **113 Urdu**
+#### B. Languages (11 Remaining)
+1. **112 Telugu** *(Syllabus PDF present in `Hermes folder`)*
+2. **106 Kannada** *(Syllabus PDF present in `Hermes folder`)*
+3. **111 Tamil** *(Syllabus PDF present in `Hermes folder`)*
+4. **107 Malayalam** *(Syllabus PDF present in `Hermes folder`)*
+5. **104 Bengali** *(Syllabus PDF present in `Hermes folder`)*
+6. **103 Assamese**
+7. **105 Gujarati**
+8. **108 Marathi**
+9. **109 Odia**
+10. **110 Punjabi**
+11. **113 Urdu**
 
 ---
 
 ## 8. Recommended Next Steps
 
-1. **Target Chemistry (Code 306)** to complete the Core Science group.
-2. **Target Business Studies (Code 305)** to complete the Core Commerce group.
-3. **Target Hindi (Code 102)** to complete the two largest national languages alongside English.
-4. **Generate papers for regional languages** whose official syllabi are already downloaded in `Hermes folder` (Bengali, Kannada, Malayalam, Tamil, Telugu).
+1. **Target Chemistry (Code 306)** to complete the Core Science group (Physics, Math, Bio, Chemistry).
+2. **Target Business Studies (Code 305)** to complete the Core Commerce group (Accountancy, Economics, Business Studies).
+3. **Target regional languages with ready syllabi in `Hermes folder`:**
+   - Telugu (Code 112)
+   - Kannada (Code 106)
+   - Tamil (Code 111)
+   - Malayalam (Code 107)
+   - Bengali (Code 104)
