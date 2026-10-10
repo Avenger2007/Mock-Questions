@@ -39,14 +39,15 @@ Extracted and verified the examination rules from the official **NTA CUET (UG) 2
 
 ---
 
-## 4. Comprehensive Audit Across All 14 Subjects (17,500 Questions)
+## 4. Comprehensive Audit Across All 15 Subjects (18,750 Questions)
 
-Conducted an automated and manual Subject Matter Expert (SME) audit across all 14 existing subjects:
+Conducted an automated and manual Subject Matter Expert (SME) audit across all 15 existing subjects:
 
 | Subject | Code | Papers | Total Questions | Key Distribution (A / B / C / D) | Duplicates | Passage Completeness | Audit Result |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Accountancy** | 301 | 25 | 1,250 | 24.7% / 25.0% / 25.0% / 25.3% | 0 | 100% Inline | **Passed (Fixed)** |
 | **Biological Science** | 304 | 25 | 1,250 | 25.0% / 25.0% / 25.0% / 25.0% | 0 | 100% Inline | **Passed** |
+| **Chemistry** | 306 | 25 | 1,250 | 25.0% / 25.0% / 25.0% / 25.0% | 0 | 100% Inline | **Passed** |
 | **Computer Science** | 308 | 25 | 1,250 | 25.0% / 25.0% / 25.0% / 25.0% | 0 | 100% Inline | **Passed** |
 | **Economics** | 309 | 25 | 1,250 | 25.0% / 25.0% / 25.0% / 25.0% | 0 | 100% Inline | **Passed** |
 | **English** | 101 | 25 | 1,250 | 26.5% / 24.0% / 25.0% / 24.6% | 0 | 100% Inline | **Passed** |
@@ -59,7 +60,7 @@ Conducted an automated and manual Subject Matter Expert (SME) audit across all 1
 | **Physics** | 322 | 25 | 1,250 | 25.0% / 25.1% / 24.6% / 25.2% | 0 | 100% Inline | **Passed** |
 | **Political Science** | 323 | 25 | 1,250 | 25.0% / 25.0% / 25.0% / 25.0% | 0 | 100% Inline | **Passed** |
 | **Sanskrit** | 325 | 25 | 1,250 | 25.0% / 25.0% / 25.0% / 25.0% | 0 | 100% Inline | **Passed** |
-| **TOTAL** | — | **350** | **17,500** | **Balanced (~25% each)** | **0** | **100% Inline** | **All Passed** |
+| **TOTAL** | — | **375** | **18,750** | **Balanced (~25% each)** | **0** | **100% Inline** | **All Passed** |
 
 ---
 
@@ -72,17 +73,31 @@ Conducted an automated and manual Subject Matter Expert (SME) audit across all 1
 
 ### Issue 2: Mathematics ID Non-Standardization
 - **Finding:** Mathematics papers used raw integer IDs (`1..50`) instead of the alphanumeric schema used across the rest of the repository, and stored a static `test_id` (`"CUET_MATH_2026"`) across all 25 files.
-- **Resolution:** Re-indexed all 1,250 Mathematics questions to `CUET_MATH_2026_P{paper}_L{level}_Q{index:02d}` and standardized each paper's `test_id` to `CUET_MATH_2026_P{paper}_L{level}`.
+### Issue 3: Chemistry Authoring & Complete Suite Generation (Subject Code: 306)
+- **Scope:** Authored the complete 25-paper mock test suite (1,250 MCQs) for CUET Chemistry based on the official NCERT Class 12 rationalized syllabus (10 core units): Solutions, Electrochemistry, Chemical Kinetics, d and f Block Elements, Coordination Compounds, Haloalkanes and Haloarenes, Alcohols, Phenols and Ethers, Aldehydes, Ketones and Carboxylic Acids, Amines, and Biomolecules.
+- **Blueprint & Structure:**
+  - Part A: Papers 1–10 (Levels 1–10) featuring progressive difficulty escalation.
+  - Part B: Papers 11–20 (Levels 1B–10B) providing independent variant banks.
+  - Part C: Papers 21–25 (Levels 2C, 4C, 6C, 8C, 10C) university entrance mastery series.
+  - Unit uniformity: Exactly 5 questions per unit per paper (50 questions total per paper).
+- **Quality Assurance & Standards:**
+  - Balanced key distribution across 1,250 questions: A=313 (25.0%), B=313 (25.0%), C=312 (25.0%), D=312 (25.0%).
+  - Maximum answer key streak $\le 3$.
+  - 0 within-paper duplicate stems; 0 cross-paper duplicate stems.
+  - 0 self-referential or misplaced options.
+  - KaTeX mathematical and chemical equation formatting with proper `\( \ce{...} \)` and backslash escaping.
+  - Master index generated: [`CUET/Chemistry/series_index.json`](CUET/Chemistry/series_index.json).
 
 ---
 
 ## 6. Git Synchronization & Deployment
 
-- Automated validation re-check: **0 errors**, **0 prefix discrepancies**, **0 broken answer keys**.
+- Automated validation re-check: **0 errors**, **0 prefix discrepancies**, **0 broken answer keys** across all 15 subjects (375 papers, 18,750 questions).
 - Staged and committed suites:
   - Accountancy & Mathematics fixes (`407c1ca`)
   - Mass Media full suite (`42c1552`)
   - Sanskrit & Hindi full suites
+  - Chemistry full 25-paper suite (Code 306, 1,250 questions)
 - Working tree status: **Validated**.
 
 ---
@@ -90,24 +105,23 @@ Conducted an automated and manual Subject Matter Expert (SME) audit across all 1
 ## 7. CUET (UG) 2026 Subject Status: Remaining Subjects
 
 Per NTA Bulletin Appendix II, there are **37 total subjects**.
-- **Completed:** 14 subjects (350 mock papers, 17,500 questions).
-- **Remaining:** **23 subjects**.
+- **Completed:** 15 subjects (375 mock papers, 18,750 questions).
+- **Remaining:** **22 subjects**.
 
 ### Detailed Breakdown of Remaining Subjects:
 
-#### A. Domain-Specific Subjects (12 Remaining)
-1. **306 Chemistry** *(Highest Priority — completes core PCM/PCB science suite)*
-2. **305 Business Studies** *(High Priority — completes Commerce suite)*
-3. **326 Sociology** *(High Priority — Humanities)*
-4. **324 Psychology** *(High Priority — Humanities)*
-5. **321 Physical Education (Yoga/Sports)**
-6. **302 Agriculture**
-7. **307 Environmental Science**
-8. **315 Home Science**
-9. **312 Fine Arts / Visual Arts / Commercial Arts**
-10. **320 Performing Arts (Dance, Drama, Music)**
-11. **303 Anthropology**
-12. **316 Knowledge Tradition & Practices in India**
+#### A. Domain-Specific Subjects (11 Remaining)
+1. **305 Business Studies** *(Highest Priority — completes Commerce suite: Accountancy, Economics, Business Studies)*
+2. **326 Sociology** *(High Priority — Humanities)*
+3. **324 Psychology** *(High Priority — Humanities)*
+4. **321 Physical Education (Yoga/Sports)**
+5. **302 Agriculture**
+6. **307 Environmental Science**
+7. **315 Home Science**
+8. **312 Fine Arts / Visual Arts / Commercial Arts**
+9. **320 Performing Arts (Dance, Drama, Music)**
+10. **303 Anthropology**
+11. **316 Knowledge Tradition & Practices in India**
 
 #### B. Languages (11 Remaining)
 1. **112 Telugu** *(Syllabus PDF present in `Hermes folder`)*
@@ -126,11 +140,11 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 
 ## 8. Recommended Next Steps
 
-1. **Target Chemistry (Code 306)** to complete the Core Science group (Physics, Math, Bio, Chemistry).
-2. **Target Business Studies (Code 305)** to complete the Core Commerce group (Accountancy, Economics, Business Studies).
-3. **Target regional languages with ready syllabi in `Hermes folder`:**
+1. **Target Business Studies (Code 305)** to complete the Core Commerce group (Accountancy, Economics, Business Studies).
+2. **Target regional languages with ready syllabi in `Hermes folder`:**
    - Telugu (Code 112)
    - Kannada (Code 106)
    - Tamil (Code 111)
    - Malayalam (Code 107)
    - Bengali (Code 104)
+3. **Target Sociology (Code 326) and Psychology (Code 324)** for Humanities.

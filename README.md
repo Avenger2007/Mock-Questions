@@ -1,17 +1,18 @@
 # CUET UG Mock Test Papers Repository (2026 Series)
 
-A standardized, high-rigor repository of **350 full-length mock test papers** (17,500 total questions) for the **Common University Entrance Test (CUET UG)**, authored in strict accordance with the official National Testing Agency (NTA) syllabi, NCERT curriculum, and previous years' exam patterns.
+A standardized, high-rigor repository of **375 full-length mock test papers** (18,750 total questions) for the **Common University Entrance Test (CUET UG)**, authored in strict accordance with the official National Testing Agency (NTA) syllabi, NCERT curriculum, and previous years' exam patterns.
 
 ---
 
-## 📚 Subject Coverage (14 Subjects, 25 Papers Each)
+## 📚 Subject Coverage (15 Subjects, 25 Papers Each)
 
-The repository contains 25 full-length mock tests for each of the following 14 subjects:
+The repository contains 25 full-length mock tests for each of the following 15 subjects:
 
 | Subject | Code | Papers | Total Questions | Master Index |
 | :--- | :---: | :---: | :---: | :---: |
 | **Accountancy** | 301 | 25 | 1,250 | [`CUET/Accountancy/series_index.json`](CUET/Accountancy/series_index.json) |
 | **Biological Science** | 304 | 25 | 1,250 | [`CUET/Biological Science/series_index.json`](CUET/Biological%20Science/series_index.json) |
+| **Chemistry** | 306 | 25 | 1,250 | [`CUET/Chemistry/series_index.json`](CUET/Chemistry/series_index.json) |
 | **Computer Science** | 308 | 25 | 1,250 | [`CUET/Computer Science/series_index.json`](CUET/Computer%20Science/series_index.json) |
 | **Economics** | 309 | 25 | 1,250 | [`CUET/Economics/series_index.json`](CUET/Economics/series_index.json) |
 | **English** | 101 | 25 | 1,250 | [`CUET/English/series_index.json`](CUET/English/series_index.json) |
@@ -25,7 +26,7 @@ The repository contains 25 full-length mock tests for each of the following 14 s
 | **Political Science** | 323 | 25 | 1,250 | [`CUET/Political Science/series_index.json`](CUET/Political%20Science/series_index.json) |
 | **Sanskrit** | 325 | 25 | 1,250 | [`CUET/Sanskrit/series_index.json`](CUET/Sanskrit/series_index.json) |
 
-**Total:** 350 Papers | 17,500 Verified Questions
+**Total:** 375 Papers | 18,750 Verified Questions
 
 ---
 
@@ -67,7 +68,7 @@ python3 validate_papers.py CUET --subject "Sanskrit"
 # Validate all subjects
 python3 -c "
 import subprocess
-for s in ['Accountancy', 'Biological Science', 'Computer Science', 'Economics', 'English', 'General Test', 'Geography', 'Hindi', 'History', 'Mass Media', 'Mathematics', 'Physics', 'Political Science', 'Sanskrit']:
+for s in ['Accountancy', 'Biological Science', 'Chemistry', 'Computer Science', 'Economics', 'English', 'General Test', 'Geography', 'Hindi', 'History', 'Mass Media', 'Mathematics', 'Physics', 'Political Science', 'Sanskrit']:
     subprocess.run(['python3', 'validate_papers.py', 'CUET', '--subject', s], check=True)
 "
 ```
