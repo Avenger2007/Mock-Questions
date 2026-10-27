@@ -1,6 +1,19 @@
-# OurMocks — CUET UG Mock Test Papers Repository (2026 Series)
+# OurMocks — CUET UG 2027 Mock Test Repository
 
-A standardized, high-rigor repository of **375 full-length mock test papers** (18,750 total questions) for the **Common University Entrance Test (CUET UG)**, authored in strict accordance with the official National Testing Agency (NTA) syllabi, NCERT curriculum, and previous years' exam patterns.
+Mock tests for **CUET (UG) 2027**, built from the latest NTA syllabus PDFs in [`CUET SYLLABUS/`](CUET%20SYLLABUS/) (currently "for the year 2026"). The repository holds 375 test files (25 per subject) for the **Common University Entrance Test (CUET UG)**, authored in strict accordance with the official National Testing Agency (NTA) syllabi, NCERT curriculum, and previous years' exam patterns.
+
+## 🚧 Revision status (CUET 2027 standard)
+
+Subjects are revised one at a time in alphabetical order against [`docs/audit/CUET-audit-report.md`](docs/audit/CUET-audit-report.md). Each file's `status` field reads `revised` or `pending_revision`.
+
+| Subject | Revised tests | Blueprint | Review PDFs |
+|---|---|---|---|
+| Accountancy | Test 1 (pilot) | [`docs/blueprints/accountancy.md`](docs/blueprints/accountancy.md) | [`review/Accountancy/`](review/Accountancy/) |
+| All other subjects | — | — | — |
+
+**File naming:** `CUET/<Subject>/CUET <SUBJECT> TEST <N>.json` (N = 1–25).
+**Accountancy structure:** 60 questions, attempt 50 — Section A (Units I–IV, 40) plus EITHER B1 (Analysis of Financial Statements, 10) OR B2 (Computerised Accounting System, 10), following NTA's Unit V choice.
+**Mass Media:** no syllabus PDF in `CUET SYLLABUS/` yet, so it will not be revised until one is added.
 
 ---
 

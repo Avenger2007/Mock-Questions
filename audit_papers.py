@@ -74,7 +74,8 @@ def explanation_checks(q, r):
 
 
 def audit_subject(sub_dir):
-    files = sorted(glob.glob(os.path.join(sub_dir, "CUET_*Paper*.json")))
+    files = sorted(f for f in glob.glob(os.path.join(sub_dir, "*.json"))
+                   if re.search(r"Paper\d|TEST \d", os.path.basename(f)))
     r = {"papers": len(files), "questions": 0, "difficulty": Counter(),
          "formats": Counter(), "topics": Counter(), "papers_off_target": 0,
          "rewrites_needed": 0, "empty_sub_topic": 0, "short_stem": 0,

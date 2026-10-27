@@ -56,6 +56,7 @@ def validate_subject(cuet_dir, subject_name):
     expl_mismatches = []
     self_ref_issues = []
     missing_rc_passages = []
+    key_streaks = []
 
     for p in papers:
         p_name = os.path.basename(p)
@@ -74,14 +75,24 @@ def validate_subject(cuet_dir, subject_name):
         q_count = len(questions)
         total_questions += q_count
 
-        if q_count != 50:
+        expected_q = data.get("total_questions", 50)
+        if q_count != expected_q:
             q_count_errors.append((p_name, q_count))
 
         # Difficulty check
         lvl_str = str(data.get("difficulty_level", ""))
         base_lvl = re.sub(r"[ABC]", "", lvl_str)
         paper_diffs = Counter(q.get("difficulty", "").lower() for q in questions)
-        if base_lvl in LEVEL_TARGETS:
+        if data.get("sections"):
+            # Choice papers (e.g. Accountancy Unit V): check every path a candidate can attempt
+            common = [q for q in questions if q.get("section") in data.get("common_sections", [])]
+            for opt in data.get("optional_sections", []):
+                path = common + [q for q in questions if q.get("section") == opt]
+                d = Counter(q.get("difficulty", "").lower() for q in path)
+                exp_e, exp_m, exp_h = LEVEL_TARGETS["1"]
+                if len(path) != 50 or abs(d["easy"] - exp_e) > DIFF_TOLERANCE or abs(d["hard"] - exp_h) > DIFF_TOLERANCE:
+                    diff_mismatches.append((p_name, f"Path {opt}: {len(path)} Qs, target ({exp_e}E/{exp_m}M/{exp_h}H) vs actual ({d['easy']}E/{d['medium']}M/{d['hard']}H)"))
+        elif base_lvl in LEVEL_TARGETS:
             exp_e, exp_m, exp_h = LEVEL_TARGETS[base_lvl]
             act_e = paper_diffs.get("easy", 0)
             act_m = paper_diffs.get("medium", 0)
@@ -91,6 +102,10 @@ def validate_subject(cuet_dir, subject_name):
 
         p_stems = set()
         p_keys = Counter()
+        keys = "".join(q.get("correct_option", "?") for q in questions)
+        longest = max((len(m.group(0)) for m in re.finditer(r"(.)\1*", keys)), default=0)
+        if longest > 3:
+            key_streaks.append((p_name, longest))
 
         for idx, q in enumerate(questions):
             q_id = str(q.get("id", f"idx_{idx+1}"))
@@ -124,7 +139,9 @@ def validate_subject(cuet_dir, subject_name):
             # Explanation mismatch check
             expl = q.get("explanation", "")
             # Look for explicit conclusion in explanation
-            m = re.findall(r"(?:option|answer is|correct option is|correct answer is)\s+([A-D])\b", expl, re.IGNORECASE)
+            # Structured explanations state the key on an "Answer:" line; trust that line when present
+            m = re.findall(r"^Answer:[^\n]*?\(([A-D])\)", expl, re.MULTILINE) or \
+                re.findall(r"(?:option|answer is|correct option is|correct answer is)\s+([A-D])\b", expl, re.IGNORECASE)
             if m:
                 last_m = m[-1].upper()
                 if corr and last_m != corr:
@@ -166,6 +183,9 @@ def validate_subject(cuet_dir, subject_name):
         print(f"   [!] {err[0]} Q {err[1]}: value='{err[2]}'")
     print(f"Total Key Distribution: A={total_key_dist['A']} ({total_key_dist['A']/max(1, total_questions)*100:.1f}%), B={total_key_dist['B']} ({total_key_dist['B']/max(1, total_questions)*100:.1f}%), C={total_key_dist['C']} ({total_key_dist['C']/max(1, total_questions)*100:.1f}%), D={total_key_dist['D']} ({total_key_dist['D']/max(1, total_questions)*100:.1f}%)")
     print(f"Explanation vs correct_option Mismatches: {len(expl_mismatches)}")
+    print(f"Answer-key runs longer than 3: {len(key_streaks)}")
+    for s in key_streaks:
+        print(f"   [!] {s[0]}: {s[1]} identical answers in a row")
     for err in expl_mismatches[:15]:
         print(f"   [!] {err[0]} Q {err[1]}: {err[2]}")
     if len(expl_mismatches) > 15:
