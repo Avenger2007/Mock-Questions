@@ -1,6 +1,6 @@
-# Standard question JSON — version 1.0
+# OurMocks standard question JSON — version 1.0
 
-This is the agreed starting specification for future admin import, not an importer already available in the application. Use [question-bank.schema.json](question-bank.schema.json) as the machine-readable contract and [example-question-bank.json](example-question-bank.json) as a complete template.
+This is the agreed starting specification for future admin import, not an importer already available in the OurMocks application. Use [question-bank.schema.json](question-bank.schema.json) as the machine-readable contract and [example-question-bank.json](example-question-bank.json) as a complete template.
 
 ## What to generate
 

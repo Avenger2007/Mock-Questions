@@ -1,4 +1,4 @@
-# CUET UG Mock Test Papers Repository (2026 Series)
+# OurMocks — CUET UG Mock Test Papers Repository (2026 Series)
 
 A standardized, high-rigor repository of **375 full-length mock test papers** (18,750 total questions) for the **Common University Entrance Test (CUET UG)**, authored in strict accordance with the official National Testing Agency (NTA) syllabi, NCERT curriculum, and previous years' exam patterns.
 

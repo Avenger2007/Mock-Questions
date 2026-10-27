@@ -17,7 +17,7 @@ The goal was to review, audit, ground, standardize, and verify the full mock tes
 ## 2. Initial Discovery & Repository Acquisition
 
 1. **Local Filespace Analysis**:
-   - Initial review of the root `MOCKS` directory identified `question-bank.schema.json` (MockStride Block AST schema v1.0), `example-question-bank.json`, and generation instructions.
+   - Initial review of the root `MOCKS` directory identified `question-bank.schema.json` (OurMocks Block AST schema v1.0, formerly MockStride), `example-question-bank.json`, and generation instructions.
    - Identified the architectural difference between the rich block AST format (`question-bank.schema.json`) and the operational flat JSON format used for test papers.
 2. **Git Repository Acquisition**:
    - Authenticated with GitHub via Personal Access Token and cloned `https://github.com/Avenger2007/Mock-Questions` into `Mock-Questions`.
