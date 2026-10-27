@@ -1,8 +1,10 @@
-# Hermes Agent — copy of docs/instructions/CUET_Instructions.md (keep in sync)
+# OurMocks — CUET (UG) Test Generation Instructions (v3)
 
-> **Scope:** this file covers **CUET (UG) only**. Every exam has its own instructions file in `docs/instructions/` — IISER (IAT), NISER (NEST) and COMEDK will each get their own file when work on that exam begins.
+> **Scope:** this file covers **CUET (UG) only**. Every exam has its own instructions file in `docs/instructions/` — IISER (IAT), NISER (NEST) and COMEDK have their own files: `IAT_Instructions.md`, `NISER_Instructions.md` and `COMEDK_Instructions.md`.
 >
 > **Target:** tests are for **CUET (UG) 2027**, built from the latest NTA syllabus PDFs (currently "for the year 2026").
+>
+> **v3.1 (27 Oct 2026):** 15 tests per subject; syllabus read from Markdown; plan-first coverage map; image list file.
 >
 > **v3 (Oct 2026):** v3 adds the approved CUET 2027 standard: a uniform 8/32/10 difficulty mix, random exam order, NTA choice sections, structured explanations, a subject-by-subject audit-based workflow and the new file naming. The model for every subject is **Accountancy Test 1** (approved on 27 Oct 2026).
 
@@ -12,7 +14,7 @@ The aim is tests that genuinely help aspirants prepare — every question should
 
 ## Role
 
-You are a test-content author for **OurMocks**, a CUET (UG) exam-prep platform. For each subject you write **25 full-length mock tests** strictly from the official NTA syllabus PDF for that subject and the NTA Information Bulletin, at real CUET difficulty, in the formats NTA actually uses.
+You are a test-content author for **OurMocks**, a CUET (UG) exam-prep platform. For each subject you write **15 full-length mock tests** strictly from the official NTA syllabus PDF for that subject and the NTA Information Bulletin, at real CUET difficulty, in the formats NTA actually uses.
 
 ---
 
@@ -79,7 +81,7 @@ This was a second, more dangerous failure that happened while trying to fix the 
 
 ## Reference Materials You Must Use
 
-- [ ] **Subject syllabus PDF** in `CUET SYLLABUS/<Subject> - <code>.pdf` (latest NTA year). **If a subject has no syllabus PDF there, no tests are created for it.**
+- [ ] **Subject syllabus** in `CUET SYLLABUS/<Subject> - <code>.pdf` (latest NTA year). **Read the Markdown copy in `CUET SYLLABUS/md/<Subject> - <code>.md`** (same content, far fewer tokens); open the PDF only to check a garbled line. **If a subject has no syllabus PDF, no tests are created for it.**
 - [ ] **NTA Information Bulletin** (`Hermes folder/Information Bulletin.pdf`) for the exam pattern, duration and marking scheme.
 - [ ] **Previous years' CUET papers (PYQs)**: **analyse, do not collect.** Read them at the source (NTA first, then established coaching sites) to benchmark formats, difficulty and topic weight. Record the findings (not the papers) in the subject's blueprint. Never copy or reword a PYQ.
 - [ ] **Official sources for answers and solutions**: NCERT Class 11–12 textbooks and the relevant Acts, standards and official documents (for example the Indian Partnership Act 1932, the Companies Act 2013 with Schedule III, ICAI Accounting Standards, the Constitution of India, NCERT data). Every explanation must agree with these. Where NCERT and another source differ, follow NCERT.
@@ -133,15 +135,16 @@ Generated papers must be at **actual CUET UG examination difficulty**, not simpl
 - **Image Prompts:** Since text-based AIs cannot directly output image files into the JSON, you must provide a detailed prompt for the image generator in the `image_prompt` field.
 - **Naming Convention:** Images should be referenced as `CUET_{Subject}_{QuestionID}.png`.
 - Do not use images unnecessarily if a clear text or KaTeX description suffices.
+- Record every image in `CUET/<Subject>/CUET_<Subject>_images.md` (test number, question number, file name, purpose, aspect ratio and size, style, exact labels and values, what must not be shown, alt text), in the same format as `IAT_Instructions.md` → Images.
 
 ---
 
-## Test Series Structure — 25 Tests per Subject (CUET 2027 standard)
+## Test Series Structure — 15 Tests per Subject (CUET 2027 standard)
 
-1. **25 tests per subject**, files `CUET/<Subject>/CUET <SUBJECT> TEST <N>.json` (N = 1–25). There are **no levels** in names or metadata.
+1. **15 tests per subject**, files `CUET/<Subject>/CUET <SUBJECT> TEST <N>.json` (N = 1–15). There are **no levels** in names or metadata. (Exception: Accountancy keeps 16 tests, because Test 16 was finished before the change. Other exams — IAT, NEST, COMEDK — use 25 tests.)
 2. **Every test is a full NTA paper:** the question count, duration, marking scheme and sections are exactly as in the notification. Where NTA offers a choice inside a paper (for example Accountancy Unit V versus Computerised Accounting), the file contains all alternatives as separate sections, and `common_sections` / `optional_sections` describe what a candidate attempts.
 3. **Difficulty mix is the same in every test:** **15% easy, 65% medium, 20% hard** = **8 / 32 / 10** for a 50-question attempt. This applies to every attempt path of a choice paper.
-4. **Progression comes from depth, not the mix.** Test 1 is the most accessible and Test 25 the most demanding. Later tests use more steps and adjustments, denser cases and closer distractors inside each tier.
+4. **Progression comes from depth, not the mix.** Test 1 is the most accessible and Test 15 the most demanding (Tests 1–5 accessible, 6–10 deeper, 11–15 hardest within each tier). Later tests use more steps and adjustments, denser cases and closer distractors inside each tier.
 5. **Question formats follow NTA (about 30% or more non-direct per test).** Use case/passage sets (one passage, 4–5 linked questions), Match List-I/List-II, "choose the correct statements (A)–(D)", sequence/order, assertion–reason, numericals and direct concept questions. The subject blueprint fixes the per-test counts.
 6. **Unit weight** follows the syllabus and the PYQ analysis, and is fixed per test in the blueprint. Every test covers the whole syllabus.
 7. **Random exam order:** the real paper mixes units, so questions are **never arranged unit-wise**. After authoring, run `shuffle_test.py`. It mixes each section, keeps case sets together at the end of their section, keeps choice sections separate, and ensures no answer letter repeats more than 3 times in a row.
@@ -163,9 +166,9 @@ Generated papers must be at **actual CUET UG examination difficulty**, not simpl
 ## Test Generation Workflow (per subject, alphabetical order)
 
 1. **Check that the syllabus PDF exists** in `CUET SYLLABUS/`. No PDF → no tests.
-2. **Read the syllabus in full** and list every unit and sub-topic. Read the subject's audit row.
+2. **Read the syllabus Markdown (`CUET SYLLABUS/md/`) in full** and list every unit and sub-topic. Read the subject's audit row.
 3. **Analyse PYQs** (NTA first) for formats, difficulty and unit weight, and write or update `docs/blueprints/<subject>.md`: sections and choices, unit weight per test, per-section difficulty, format counts, key balance and explanation format.
-4. **Plan coverage across all 25 tests**, so that each sub-topic is tested from different angles in different tests, with no repeats.
+4. **Plan coverage across all 15 tests before writing any of them**: a coverage map listing, for every test, each question's sub-topic, angle, format and difficulty. Check the map for repeats (same concept from the same angle, or the same numbers) **before** writing explanations — fixing repeats after writing is the most expensive step.
 5. **Author each test by hand** (genuine authorship). For every question:
    - verify the topic against the syllabus PDF;
    - work out the answer from official sources first;

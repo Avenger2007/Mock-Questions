@@ -4,11 +4,13 @@ Each exam has its own authoring rules, because the patterns, syllabi and marking
 
 | Exam | File | Status |
 |---|---|---|
-| CUET (UG) | [CUET_Instructions.md](CUET_Instructions.md) | Active (v3, CUET 2027 standard) |
-| IISER Aptitude Test (IAT) | `IISER_Instructions.md` | To be written when IISER work starts (syllabus in `IISER/`) |
-| NISER — NEST | `NEST_Instructions.md` | To be written when NEST work starts |
-| COMEDK UGET | `COMEDK_Instructions.md` | To be written when COMEDK work starts |
+| CUET (UG) | [CUET_Instructions.md](CUET_Instructions.md) | Active (v3.1, CUET 2027 standard, 15 tests per subject) |
+| IISER Aptitude Test (IAT) | [IAT_Instructions.md](IAT_Instructions.md) | v1 ready — 25 tests; waiting for PYQs (pattern to re-confirm on iiseradmission.in) |
+| NISER — NEST | [NISER_Instructions.md](NISER_Instructions.md) | v1 ready — 25 tests; waiting for PYQs (pattern verified from the official 2026 brochure) |
+| COMEDK UGET | [COMEDK_Instructions.md](COMEDK_Instructions.md) | v1 ready — 25 tests; waiting for PYQs and official syllabus PDFs |
 
 A new exam's file should copy the CUET file's structure: Aim, Strict Command, Genuine Authorship, Answer-Key Integrity, Reference Materials, Difficulty Standard, Series Structure, Workflow, Quality Checklist and Output Format. Then replace the exam-specific parts (pattern, marking, sections, syllabus source) with that exam's official documents.
 
 `Hermes folder/Hermes cuet instructions.md` is a copy of the CUET file for the Hermes agent, so keep the two in sync.
+
+Image prompts for each exam go in that exam's folder: `IISER/IAT_images.md`, `NISER/NEST_images.md`, `COMEDK/COMEDK_images.md` (and `CUET/<Subject>/CUET_<Subject>_images.md` for CUET).

@@ -148,3 +148,39 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
    - Malayalam (Code 107)
    - Bengali (Code 104)
 3. **Target Sociology (Code 326) and Psychology (Code 324)** for Humanities.
+
+---
+
+## Accountancy (301) — revised to the CUET 2027 standard (completed 27 Oct 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `4e0c506` … `0cb2a50` on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | 25 old papers (levelled names, mostly direct recall) | **16 rewritten tests** (`CUET ACCOUNTANCY TEST 1–16.json`); old Tests 17–25 removed |
+| Paper structure | 50 compulsory questions | NTA Unit V choice: 60 questions per file, attempt 50 = Section A (40) + B1 Analysis of Financial Statements (10) **or** B2 Computerised Accounting System (10) |
+| Difficulty | mostly easy | **8 easy / 32 medium / 10 hard on both attempt paths** in every test |
+| Formats | almost all direct | per test: one 5-question case set, 2 match-list, 4 statements, 2 assertion–reason, 1 sequence (most tests), numericals and concept questions; B1/B2 each with a match and a statements question |
+| Explanations | 2–3 lines | structured: `Answer:` line, then Given / Step / Common mistake (numericals, every distractor explained) or Why / Why not the others / Key point |
+| Order | unit-wise | random exam order (`shuffle_test.py`); case sets kept together |
+| Answer keys | unbalanced, long runs | balanced A/B/C/D per path; no letter more than 3 times in a row |
+| Syllabus | included out-of-syllabus items (e.g. insolvency of a partner) | every question mapped to the 2026 NTA syllabus; removed content replaced |
+
+**Case-set themes (one per test):** 1 interest and appropriation; 2 admission; 3 retirement; 4 debentures; 5 dissolution; 6 P&L appropriation; 7 share issue; 8 death of a partner; 9 change in profit-sharing ratio; 10 admission with hidden goodwill and capital adjustment; 11 debentures for non-cash consideration and as collateral; 12 past adjustments; 13 retirement with loan in instalments; 14 dissolution with a partner's loan and an unrecorded asset; 15 under-subscription, calls in advance and arrears; 16 admission with premium in kind and proportionate capital.
+
+**Verification:** `validate_papers.py` — 0 parse errors, 0 key/explanation mismatches, 0 runs > 3, 0 within- or cross-paper duplicate stems. Extra duplicate checks (stem similarity, number fingerprints, sub-topic overlap) found about 26 reworded or number-swapped repeats across Tests 11–16 and Test 11; all were replaced.
+
+**Known limits:** some concepts naturally recur across 16 tests with different numbers and set-ups; the guarantee case, forfeiture with premium unpaid and company balance-sheet notes have questions but no dedicated case set.
+
+### Tools added
+- `audit_papers.py` (formats, explanation depth, templating, option give-aways); `shuffle_test.py` (exam order); `validate_papers.py` updated for choice papers, 8/32/10 per path and answer runs.
+
+---
+
+## Repository changes (27 Oct 2026)
+
+- **Series size:** CUET UG now has **15 tests per subject** (Accountancy keeps 16). Tests 16–25 of the other 14 subjects and Tests 17–25 of Accountancy were deleted (149 files); every `series_index.json` was rebuilt. Other exams (IAT, NEST, COMEDK) keep **25 tests**.
+- **Syllabus Markdown:** all 23 CUET syllabus PDFs converted to `CUET SYLLABUS/md/*.md` (text extraction, cleaned). Also `IISER/IISER_Aptitude_Test_Syllabus_2026.md` and `NISER/NEST_2026_Syllabus.md` (from the official NEST 2026 brochure).
+- **New instructions:** `docs/instructions/IAT_Instructions.md`, `NISER_Instructions.md` (NEST), `COMEDK_Instructions.md` — official pattern and marking, PYQ-analysis protocol (PYQs supplied by the user before work starts), 15/65/20 difficulty split per section, image-prompt files (`IISER/IAT_images.md`, `NISER/NEST_images.md`, `COMEDK/COMEDK_images.md`), workflow, pre-start / per-test / pre-release checklists, and JSON format.
+- **CUET instructions v3.1:** 15 tests, read syllabus Markdown, plan-first coverage map, per-subject image list. Hermes copy synced.
