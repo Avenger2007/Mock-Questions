@@ -39,6 +39,7 @@ The repository contains 25 full-length mock tests for each of the following 15 s
   - Incorrect Answer: `-1` mark
   - Unattempted: `0` marks
 - **Duration:** 60 minutes per mock test
+- **Difficulty Mix (every paper, every level):** 15% easy / 65% medium / 20% hard = 8 / 32 / 10 questions. *Target set Oct 2026; existing papers still use the old per-level ramp and are being rewritten — see `docs/reports/`.*
 - **Answer Key Balance:** Balanced distribution (~25% each of A, B, C, D across the entire series)
 - **Quality Assurance:** 0 self-referential / combo options (`Both A and B`, `All of the above`), 0 duplicate question stems across the entire 1,250-question pool per subject.
 
@@ -46,7 +47,7 @@ The repository contains 25 full-length mock tests for each of the following 15 s
 
 ## 🗂️ Series Progression
 
-Each subject features a structured 25-paper difficulty progression:
+Each subject features a structured 25-paper progression. All papers share the same easy/medium/hard mix; higher levels get harder through deeper questions inside each tier (more steps, case/assertion-reason formats, closer distractors):
 
 1. **Original Series (Papers 1 – 10):**
    - Levels 1 to 10 covering core NCERT fundamentals progressing to advanced conceptual applications.

@@ -15,18 +15,8 @@ from collections import Counter, defaultdict
 
 # Difficulty targets from Questionsgenerationinstructions.md
 # Format: (easy, medium, hard) for a 50-question paper
-LEVEL_TARGETS = {
-    '1': (35, 12, 3),   # 70% / 25% / 5%
-    '2': (30, 15, 5),   # 60% / 30% / 10%
-    '3': (25, 17, 8),   # 50% / 35% / 15%
-    '4': (20, 20, 10),  # 40% / 40% / 20%
-    '5': (15, 23, 12),  # 30% / 45% / 25%
-    '6': (12, 23, 15),  # 25% / 45% / 30%
-    '7': (10, 23, 17),  # 20% / 45% / 35%
-    '8': (8, 22, 20),   # 15% / 45% / 40%
-    '9': (5, 20, 25),   # 10% / 40% / 50%
-    '10': (3, 15, 32),  # 5% / 30% / 65%
-}
+LEVEL_TARGETS = {str(lvl): (8, 32, 10) for lvl in range(1, 11)}  # 15% / 65% / 20% at every level
+DIFF_TOLERANCE = 1  # allows 7 easy (15% of 50 = 7.5)
 
 def validate_subject(cuet_dir, subject_name):
     # Resolve directory
@@ -96,7 +86,7 @@ def validate_subject(cuet_dir, subject_name):
             act_e = paper_diffs.get("easy", 0)
             act_m = paper_diffs.get("medium", 0)
             act_h = paper_diffs.get("hard", 0)
-            if abs(act_e - exp_e) > 5 or abs(act_h - exp_h) > 5:
+            if abs(act_e - exp_e) > DIFF_TOLERANCE or abs(act_h - exp_h) > DIFF_TOLERANCE:
                 diff_mismatches.append((p_name, f"Target ({exp_e}E/{exp_m}M/{exp_h}H) vs Actual ({act_e}E/{act_m}M/{act_h}H)"))
 
         p_stems = set()
@@ -204,7 +194,7 @@ def validate_subject(cuet_dir, subject_name):
         print(f"   ... and {len(missing_rc_passages) - 10} more")
 
     print("\n--- 6. DIFFICULTY DISTRIBUTION ---")
-    print(f"Difficulty Deviation (>5 Qs from target): {len(diff_mismatches)}")
+    print(f"Difficulty Deviation (>{DIFF_TOLERANCE} Q from target): {len(diff_mismatches)}")
     for err in diff_mismatches:
         print(f"   [!] {err[0]}: {err[1]}")
 
