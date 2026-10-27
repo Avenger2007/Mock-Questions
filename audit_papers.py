@@ -45,6 +45,34 @@ def skeleton(text):
     return re.sub(r"\s+", " ", s).strip().lower()[-120:]  # tail = the actual ask, not a shared passage
 
 
+def explanation_checks(q, r):
+    """Explanation depth/structure and option giveaways."""
+    e = q.get("explanation", "").strip()
+    ex = r.setdefault("explanation", Counter())
+    ex["lengths"] = ex.get("lengths", 0) + len(e)
+    if len(e) < 150:
+        ex["under_150_chars"] += 1
+    if "\n" in e:
+        ex["structured_multiline"] += 1
+    if re.search(r"(?i)\boption\b|incorrect|wrong|whereas|distractor|other choices", e):
+        ex["addresses_wrong_options"] += 1
+    if re.search(r"(?i)step\s*\d|\n\s*\d[.)]", e):
+        ex["numbered_steps"] += 1
+    if question_format(q["question"]) == "numerical":
+        ex["numerical_questions"] += 1
+        if len(e) < 150:
+            ex["numerical_under_150_chars"] += 1
+    lens = [len(o) for o in q["options"]]
+    i = "ABCD".index(q["correct_option"])
+    if lens[i] == max(lens) and lens.count(max(lens)) == 1 and max(lens) > 1.3 * sorted(lens)[-2]:
+        r["correct_is_clearly_longest"] = r.get("correct_is_clearly_longest", 0) + 1
+    body = [re.sub(r"^[A-D]\)\s*", "", o).strip().lower() for o in q["options"]]
+    if len(set(body)) < 4:
+        r["duplicate_options"] = r.get("duplicate_options", 0) + 1
+    if any(re.search(r"all of the above|none of the above|both (a|\(a\)) and", o) for o in body):
+        r["combo_options"] = r.get("combo_options", 0) + 1
+
+
 def audit_subject(sub_dir):
     files = sorted(glob.glob(os.path.join(sub_dir, "CUET_*Paper*.json")))
     r = {"papers": len(files), "questions": 0, "difficulty": Counter(),
@@ -72,7 +100,11 @@ def audit_subject(sub_dir):
             if len(q.get("explanation", "").strip()) < 40:
                 r["short_explanation"] += 1
             skel[skeleton(q["question"])].append(q["id"])
+            explanation_checks(q, r)
         r["difficulty"].update(diff)
+        keys = "".join(q["correct_option"] for q in data["questions"])
+        r["max_key_streak"] = max(r.get("max_key_streak", 0),
+                                  max(len(m.group(0)) for m in re.finditer(r"(.)\1*", keys)))
         if any(abs(diff[k] - v) > 1 for k, v in TARGET.items()):
             r["papers_off_target"] += 1
         r["rewrites_needed"] += sum(max(0, diff[k] - v) for k, v in TARGET.items())
@@ -80,6 +112,9 @@ def audit_subject(sub_dir):
     r["templated_groups"] = len(groups)
     r["templated_questions"] = sum(len(g) for g in groups)
     r["format_by_difficulty"] = {k: dict(v) for k, v in r["format_by_difficulty"].items()}
+    ex = r.get("explanation", Counter())
+    ex["avg_chars"] = round(ex.pop("lengths", 0) / max(1, r["questions"]))
+    r["explanation"] = dict(ex)
     for k in ("difficulty", "formats", "topics", "provenance"):
         r[k] = dict(r[k])
     return r

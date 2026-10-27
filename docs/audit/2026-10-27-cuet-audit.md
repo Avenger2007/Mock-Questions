@@ -1,5 +1,7 @@
 # OurMocks — CUET UG audit against syllabus, pattern and difficulty (27 Oct 2026)
 
+> **Superseded by [CUET-audit-report.md](CUET-audit-report.md)** (master report with explanation, option and syllabus checks).
+
 **Scope:** all 15 subjects, 375 papers, 18,750 questions.
 **Method:**
 1. `audit_papers.py` takes mechanical measurements of every question (raw numbers in `metrics.json`).
