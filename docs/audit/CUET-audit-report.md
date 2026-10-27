@@ -7,7 +7,7 @@
 - 2026 NTA syllabus PDFs in `Hermes folder/`
 - the NTA Information Bulletin
 - NTA's official 2024 and 2025 Accountancy papers, analysed for pattern
-- the rulebook (`docs/Questionsgenerationinstructions.md`)
+- the rulebook (`docs/instructions/CUET_Instructions.md`)
 - `validate_papers.py`, `audit_papers.py`
 - a hand (SME) check of 66 randomly sampled questions across all 15 subjects
 

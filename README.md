@@ -1,88 +1,82 @@
-# OurMocks — CUET UG 2027 Mock Test Repository
+# OurMocks — CUET (UG) 2027 Mock Test Repository
 
-Mock tests for **CUET (UG) 2027**, built from the latest NTA syllabus PDFs in [`CUET SYLLABUS/`](CUET%20SYLLABUS/) (currently "for the year 2026"). The repository holds 375 test files (25 per subject) for the **Common University Entrance Test (CUET UG)**, authored in strict accordance with the official National Testing Agency (NTA) syllabi, NCERT curriculum, and previous years' exam patterns.
+Full-length mock tests for **CUET (UG) 2027**, written for the **OurMocks** platform. The admin panel imports these JSON files and shows each question in a human-readable form.
+The aim is tests that **genuinely help aspirants prepare**: real NTA pattern and difficulty, strictly within the official syllabus, and structured explanations that teach the concept.
+
+---
+
+## 🧭 How this repository works
+
+| Item | Where |
+|---|---|
+| Test files | `CUET/<Subject>/CUET <SUBJECT> TEST <N>.json` (N = 1–25) |
+| Official syllabi (source of truth) | [`CUET SYLLABUS/`](CUET%20SYLLABUS/) — `<Subject> - <code>.pdf`, NTA "for the year 2026" (latest published) |
+| NTA Information Bulletin | [`Hermes folder/Information Bulletin.pdf`](Hermes%20folder/) |
+| Authoring rules (CUET) | [`docs/instructions/CUET_Instructions.md`](docs/instructions/CUET_Instructions.md) (one instructions file per exam — see [`docs/instructions/`](docs/instructions/)) |
+| Subject blueprints | [`docs/blueprints/`](docs/blueprints/) |
+| Audit report (what each subject must fix) | [`docs/audit/CUET-audit-report.md`](docs/audit/CUET-audit-report.md) |
+| History of changes | [`Worklog.md`](Worklog.md) |
+
+**Rules in brief:**
+- No syllabus PDF → no tests for that subject.
+- Subjects are revised in **alphabetical order**.
+- Every test: **8 easy / 32 medium / 10 hard**, about 30% or more NTA-style formats, **random exam order**, no duplicates across a subject's 25 tests, nothing out of syllabus, and structured explanations (step-by-step for numericals).
+
+---
 
 ## 🚧 Revision status (CUET 2027 standard)
 
-Subjects are revised one at a time in alphabetical order against [`docs/audit/CUET-audit-report.md`](docs/audit/CUET-audit-report.md). Each file's `status` field reads `revised` or `pending_revision`.
+Each file's `status` field reads `revised` (meets the standard) or `pending_revision` (older content, still being rewritten).
 
-| Subject | Revised tests | Blueprint | Review PDFs |
-|---|---|---|---|
-| Accountancy | Test 1 (pilot) | [`docs/blueprints/accountancy.md`](docs/blueprints/accountancy.md) | [`review/Accountancy/`](review/Accountancy/) |
-| All other subjects | — | — | — |
+| # | Subject | Code | Syllabus PDF | Revised tests | Blueprint |
+|---|---|---|---|---|---|
+| 1 | Accountancy | 301 | ✅ | in progress | [accountancy.md](docs/blueprints/accountancy.md) |
+| 2 | Biological Science | 304 | ✅ | — | — |
+| 3 | Chemistry | 306 | ✅ | — | — |
+| 4 | Computer Science | 308 | ✅ | — | — |
+| 5 | Economics | 309 | ✅ | — | — |
+| 6 | English | 101 | ✅ | — | — |
+| 7 | General Test | 501 | ✅ | — | — |
+| 8 | Geography | 313 | ✅ | — | — |
+| 9 | Hindi | 102 | ✅ | — | — |
+| 10 | History | 314 | ✅ | — | — |
+| 11 | Mass Media | 318 | ✅ | — | — |
+| 12 | Mathematics | 319 | ✅ | — | — |
+| 13 | Physics | 322 | ✅ | — | — |
+| 14 | Political Science | 323 | ✅ | — | — |
+| 15 | Sanskrit | 325 | ✅ | — | — |
 
-**File naming:** `CUET/<Subject>/CUET <SUBJECT> TEST <N>.json` (N = 1–25).
-**Accountancy structure:** 60 questions, attempt 50 — Section A (Units I–IV, 40) plus EITHER B1 (Analysis of Financial Statements, 10) OR B2 (Computerised Accounting System, 10), following NTA's Unit V choice.
-**Mass Media:** no syllabus PDF in `CUET SYLLABUS/` yet, so it will not be revised until one is added.
-
----
-
-## 📚 Subject Coverage (15 Subjects, 25 Papers Each)
-
-The repository contains 25 full-length mock tests for each of the following 15 subjects:
-
-| Subject | Code | Papers | Total Questions | Master Index |
-| :--- | :---: | :---: | :---: | :---: |
-| **Accountancy** | 301 | 25 | 1,250 | [`CUET/Accountancy/series_index.json`](CUET/Accountancy/series_index.json) |
-| **Biological Science** | 304 | 25 | 1,250 | [`CUET/Biological Science/series_index.json`](CUET/Biological%20Science/series_index.json) |
-| **Chemistry** | 306 | 25 | 1,250 | [`CUET/Chemistry/series_index.json`](CUET/Chemistry/series_index.json) |
-| **Computer Science** | 308 | 25 | 1,250 | [`CUET/Computer Science/series_index.json`](CUET/Computer%20Science/series_index.json) |
-| **Economics** | 309 | 25 | 1,250 | [`CUET/Economics/series_index.json`](CUET/Economics/series_index.json) |
-| **English** | 101 | 25 | 1,250 | [`CUET/English/series_index.json`](CUET/English/series_index.json) |
-| **General Test** | 501 | 25 | 1,250 | [`CUET/General Test/series_index.json`](CUET/General%20Test/series_index.json) |
-| **Geography / Geology** | 313 | 25 | 1,250 | [`CUET/Geography/series_index.json`](CUET/Geography/series_index.json) |
-| **Hindi** | 102 | 25 | 1,250 | [`CUET/Hindi/series_index.json`](CUET/Hindi/series_index.json) |
-| **History** | 314 | 25 | 1,250 | [`CUET/History/series_index.json`](CUET/History/series_index.json) |
-| **Mass Media** | 318 | 25 | 1,250 | [`CUET/Mass Media/series_index.json`](CUET/Mass%20Media/series_index.json) |
-| **Mathematics** | 319 | 25 | 1,250 | [`CUET/Mathematics/series_index.json`](CUET/Mathematics/series_index.json) |
-| **Physics** | 322 | 25 | 1,250 | [`CUET/Physics/series_index.json`](CUET/Physics/series_index.json) |
-| **Political Science** | 323 | 25 | 1,250 | [`CUET/Political Science/series_index.json`](CUET/Political%20Science/series_index.json) |
-| **Sanskrit** | 325 | 25 | 1,250 | [`CUET/Sanskrit/series_index.json`](CUET/Sanskrit/series_index.json) |
-
-**Total:** 375 Papers | 18,750 Verified Questions
+Syllabi are also available for Agriculture, Anthropology, Business Studies, Environmental Science, Home Science, Performing Arts, Psychology and Sociology. These subjects have no tests yet.
 
 ---
 
-## 🎯 Examination Scheme & Blueprint
+## 🎯 Exam scheme
 
-- **Questions per Paper:** Exactly 50 multiple-choice questions (MCQs)
-- **Options per Question:** Exactly 4 options (`A`, `B`, `C`, `D`)
-- **Marking Scheme:**
-  - Correct Answer: `+5` marks
-  - Incorrect Answer: `-1` mark
-  - Unattempted: `0` marks
-- **Duration:** 60 minutes per mock test
-- **Difficulty Mix (every paper, every level):** 15% easy / 65% medium / 20% hard = 8 / 32 / 10 questions. *Target set Oct 2026; existing papers still use the old per-level ramp and are being rewritten — see `docs/reports/`.*
-- **Answer Key Balance:** Balanced distribution (~25% each of A, B, C, D across the entire series)
-- **Quality Assurance:** 0 self-referential / combo options (`Both A and B`, `All of the above`), 0 duplicate question stems across the entire 1,250-question pool per subject.
+- **Pattern (NTA):** computer-based test, 60 minutes, 50 compulsory questions, **+5 / −1 / 0**, 4 options per question.
+- **Accountancy follows NTA's Unit V choice:** each file has 60 questions, and the candidate attempts 50. That is Section A (Units I–IV, 40 questions) plus EITHER B1 (Analysis of Financial Statements, 10) OR B2 (Computerised Accounting System, 10). The fields `sections`, `common_sections` and `optional_sections` describe this, and every question has a `section` field.
+- **Difficulty:** every test is 8 easy / 32 medium / 10 hard, on every attempt path. Tests get harder from 1 to 25 through question depth, not the mix.
+- **Question order** is random across units, as in the real exam. Case sets stay together.
 
----
+## 🧾 JSON format (per question)
 
-## 🗂️ Series Progression
+`id`, `section`, `case_id` (for case/passage sets), `topic` (syllabus unit), `sub_topic`, `difficulty`, `format` (direct, numerical, statements, match-list, sequence, assertion-reason, case-based, passage), `question` (uses `\n` line breaks), `options` (`A) …` to `D) …`), `correct_option`, and `explanation`.
 
-Each subject features a structured 25-paper progression. All papers share the same easy/medium/hard mix; higher levels get harder through deeper questions inside each tier (more steps, case/assertion-reason formats, closer distractors):
+Explanations start with `Answer: (X)`, then:
+- **concept questions:** Why / Why not the others / Key point;
+- **numericals:** Given / Formula / Step 1…n / Common mistake.
 
-1. **Original Series (Papers 1 – 10):**
-   - Levels 1 to 10 covering core NCERT fundamentals progressing to advanced conceptual applications.
-2. **Variant Series "B" (Papers 11 – 20):**
-   - Levels 1B to 10B providing independent question banks with real-world case applications and numerical problem-solving.
-3. **Mastery Series "C" (Papers 21 – 25):**
-   - Curated high-yield challenge tests spanning Levels 2C through 10C for university entrance mastery.
+The full schema is in the instructions file.
+
+**For the app:** keep line breaks (`white-space: pre-line`), render KaTeX + mhchem, and don't add extra A–D letters (the options already carry them).
 
 ---
 
-## 🔍 Validation Suite
-
-To run full validation across all papers and subjects:
+## 🔍 Tools
 
 ```bash
-# Validate a specific subject (e.g. Sanskrit)
-python3 validate_papers.py CUET --subject "Sanskrit"
-
-# Validate all subjects
-python3 -c "
-import subprocess
-for s in ['Accountancy', 'Biological Science', 'Chemistry', 'Computer Science', 'Economics', 'English', 'General Test', 'Geography', 'Hindi', 'History', 'Mass Media', 'Mathematics', 'Physics', 'Political Science', 'Sanskrit']:
-    subprocess.run(['python3', 'validate_papers.py', 'CUET', '--subject', s], check=True)
-"
+python3 validate_papers.py CUET --subject "Accountancy"   # structure, counts, key runs, duplicates, 8/32/10 per path
+python3 audit_papers.py CUET                              # formats, explanation depth, templating, give-aways
+python3 shuffle_test.py "CUET/Accountancy/CUET ACCOUNTANCY TEST 2.json"   # put a test in exam order
 ```
+
+Other exams (IISER IAT, NISER NEST, COMEDK) will be added later with their own instructions files. The IISER syllabus is in [`IISER/`](IISER/).

@@ -45,6 +45,10 @@ The tier mix is the same in all 25 tests. Later tests get harder through the que
 | Numerical (1–3 steps, more in later tests) | about 14 | about 5 | 2–3 |
 | Direct concept | remainder | remainder | remainder |
 
+## Question order
+
+Questions are authored by unit, then put into **random exam order** with `shuffle_test.py`: Units I–IV are mixed in Section A, the case set sits at the end of Section A, and B1/B2 are each shuffled internally.
+
 ## Answer key
 
 The key is balanced across A, B, C and D on each path (12–13 each), with **no more than 3 identical answers in a row** (`validate_papers.py` checks this).

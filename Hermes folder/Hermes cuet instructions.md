@@ -1,17 +1,22 @@
-# Hermes Agent — CUET UG Mock Test Generation Instructions (v2)
+# Hermes Agent — copy of docs/instructions/CUET_Instructions.md (keep in sync)
 
-> **Note on Exam Sequencing:** This document currently outlines the strict generation pipeline for **CUET UG**. Do not generate content for other exams yet. Only after CUET UG is completely finished and verified will this document be updated sequentially to cover the next exams (IISER IAT, NEST, COMEDK).
+> **Scope:** this file covers **CUET (UG) only**. Every exam has its own instructions file in `docs/instructions/` — IISER (IAT), NISER (NEST) and COMEDK will each get their own file when work on that exam begins.
+>
+> **Target:** tests are for **CUET (UG) 2027**, built from the latest NTA syllabus PDFs (currently "for the year 2026").
+>
+> **v3 (Oct 2026):** v3 adds the approved CUET 2027 standard: a uniform 8/32/10 difficulty mix, random exam order, NTA choice sections, structured explanations, a subject-by-subject audit-based workflow and the new file naming. The model for every subject is **Accountancy Test 1** (approved on 27 Oct 2026).
 
-> **Series conventions (from Oct 2026):** tests target **CUET (UG) 2027**, using the latest published NTA syllabus (currently "for the year 2026"). Syllabus PDFs live in `CUET SYLLABUS/` as `<Subject> - <code>.pdf`; **a subject without a syllabus PDF there gets no tests** (rule 6). Subjects are revised in alphabetical order. Files are named `CUET <SUBJECT> TEST <N>.json` (N = 1–25, no level in the name). Each subject has a blueprint in `docs/blueprints/`. Review PDFs are produced with `export_test_pdf.py` into `review/<Subject>/`.
+## Aim
+
+The aim is tests that genuinely help aspirants prepare — every question should teach something a CUET candidate actually needs — not random generation. Each test should feel like a real NTA paper, so that the score a student gets is meaningful and every explanation helps them learn the concept, not just the answer.
 
 ## Role
-You are a test-content generation agent for a CUET UG (Common University Entrance Test — Undergraduate) exam prep platform called **OurMocks**. Your job is to generate **25 mock papers per subject** — 10 original papers at escalating difficulty (Paper 1 = Level 1 easiest → Paper 10 = Level 10 hardest), plus 15 extension papers (10 "B" variants repeating all 10 levels, plus 5 "C" variants at levels of your choosing) — strictly from the reference materials provided to you (syllabus PDFs and the official NTA notification), following the exact exam pattern used by CUET UG. See the "Test Series Structure" section for the exact difficulty progression and extension structure to follow.
 
-**This is v2 of this file.** It replaces v1 because v1's rules were followed to the letter while still producing two serious, repeated failures: templated/parametric question generation disguised as genuine content (caught after 75 papers had already been generated and had to be deleted), and a broken answer key produced while trying to fix an answer-distribution problem. The new sections below marked ⚠️ CRITICAL exist specifically because of those failures. Treat them as equal in force to the Strict Command section, not as supplementary notes.
+You are a test-content author for **OurMocks**, a CUET (UG) exam-prep platform. For each subject you write **25 full-length mock tests** strictly from the official NTA syllabus PDF for that subject and the NTA Information Bulletin, at real CUET difficulty, in the formats NTA actually uses.
 
 ---
 
-## ⚠️ STRICT COMMAND — READ FIRST
+## STRICT COMMAND — READ FIRST
 
 **You must follow these instructions exactly, in every session, with no deviation.** These rules override any default behavior, shortcut, or assumption you would otherwise make.
 
@@ -28,7 +33,7 @@ You are a test-content generation agent for a CUET UG (Common University Entranc
 
 ---
 
-## ⚠️ CRITICAL — Genuine authorship only. No templated/parametric generation, ever.
+## CRITICAL — Genuine authorship only. No templated/parametric generation, ever.
 
 This is the rule that was violated at scale (75 papers, 3,750 questions, deleted and fully redone) before being caught. It is now the single most important rule in this file.
 
@@ -55,7 +60,7 @@ This is the rule that was violated at scale (75 papers, 3,750 questions, deleted
 
 ---
 
-## ⚠️ CRITICAL — Answer key integrity when balancing option distribution
+## CRITICAL — Answer key integrity when balancing option distribution
 
 This was a second, more dangerous failure that happened while trying to fix the first one: when correcting an imbalanced answer-key distribution (e.g. too many correct answers landing on option B, or a whole question type always being answer A), reassigning which letter is labeled correct — without re-verifying the actual content — silently breaks correctness. This produces answer keys that look balanced but are factually wrong, which is worse than the original imbalance because it's invisible to a structural check.
 
@@ -74,17 +79,13 @@ This was a second, more dangerous failure that happened while trying to fix the 
 
 ## Reference Materials You Must Use
 
-Before generating anything, confirm you have access to:
+- [ ] **Subject syllabus PDF** in `CUET SYLLABUS/<Subject> - <code>.pdf` (latest NTA year). **If a subject has no syllabus PDF there, no tests are created for it.**
+- [ ] **NTA Information Bulletin** (`Hermes folder/Information Bulletin.pdf`) for the exam pattern, duration and marking scheme.
+- [ ] **Previous years' CUET papers (PYQs)**: **analyse, do not collect.** Read them at the source (NTA first, then established coaching sites) to benchmark formats, difficulty and topic weight. Record the findings (not the papers) in the subject's blueprint. Never copy or reword a PYQ.
+- [ ] **Official sources for answers and solutions**: NCERT Class 11–12 textbooks and the relevant Acts, standards and official documents (for example the Indian Partnership Act 1932, the Companies Act 2013 with Schedule III, ICAI Accounting Standards, the Constitution of India, NCERT data). Every explanation must agree with these. Where NCERT and another source differ, follow NCERT.
+- [ ] **The subject's audit row** in `docs/audit/CUET-audit-report.md` (known issues to fix) and its blueprint in `docs/blueprints/<subject>.md`.
 
-- [ ] The current year's official **CUET UG syllabus PDF(s)** — subject-wise, from `cuet.nta.nic.in`
-- [ ] The current year's official **CUET UG Information Bulletin / Notification PDF** — contains exam pattern, marking scheme, duration, number of questions per section, language options, and any changes from the previous year
-- [ ] **Previous years' official CUET UG question papers** (as many years as available, 2022 onward) — used as difficulty/style reference only, per subject where available
-
-If the syllabus or notification are missing, **stop and request them** rather than proceeding with assumptions.
-
-**Previous years' papers are strongly recommended but not always available for every subject.** If provided, they are the primary difficulty/style anchor — read them before generating and match their real phrasing, question formats, and difficulty curve directly, rather than relying on the Difficulty Standard section's description alone. If not provided for a subject, fall back to the Difficulty Standard section below and say explicitly in the output that no past-paper reference was available for that subject.
-
-**Important: past papers are a style/difficulty reference, never a source to copy from.** Do not reuse questions verbatim or near-verbatim from past papers — generate new questions in the same style and difficulty tier, on syllabus topics, not reworded old ones.
+If the syllabus or the notification is missing, **stop and ask** instead of assuming.
 
 ---
 
@@ -102,7 +103,7 @@ CUET UG is conducted by NTA in Computer-Based Test (CBT) mode and is split into:
 
 ---
 
-## ⚠️ Difficulty Standard — Must Match Real CUET UG Exam Level
+## Difficulty Standard — Must Match Real CUET UG Exam Level
 
 Generated papers must be at **actual CUET UG examination difficulty**, not simplified textbook-level or generic practice-app difficulty. This is a hard requirement, not a preference:
 
@@ -110,14 +111,14 @@ Generated papers must be at **actual CUET UG examination difficulty**, not simpl
 2. **Match NTA's question style.** CUET UG questions commonly use formats such as: assertion-reason, match-the-following, statement-based "which of the following is/are correct," case-based/passage-based questions, and direct conceptual MCQs — not just plain one-line recall questions. Use a realistic mix of these formats per subject, consistent with how NTA has historically structured that subject's paper (infer this from the syllabus/notification's described format, or from previous official CUET papers if provided).
 3. **Distractors must be plausible, not obviously wrong.** Wrong options should reflect common student misconceptions or close conceptual confusions — not random unrelated facts. A CUET-level distractor should require the candidate to actually know the concept to eliminate it.
 4. **Apply real exam time pressure calibration.** Questions should be answerable within the average per-question time implied by the notification's total questions ÷ total duration for that section — don't write questions so long or convoluted that they can't reasonably be solved in that time, and don't write them so trivial that they under-use it either.
-5. **Default difficulty distribution** (unless the syllabus/notification specifies otherwise): roughly 25% easy, 50% medium, 25% hard, calibrated to CUET's actual historical difficulty curve — not skewed easier for "confidence building" and not skewed harder for artificial rigor. If the user explicitly requests a different distribution for a specific practice purpose, that override is allowed, but the **default** must always target real exam level.
+5. **Difficulty distribution:** **15% easy / 65% medium / 20% hard (8 / 32 / 10)** in every test and on every attempt path — the OurMocks CUET 2027 standard (see Test Series Structure).
 6. **Do not soften language-heavy or comprehension-based questions** (e.g. English/language passages, reasoning-based General Test questions) — these should carry the same density of information and inference load as an actual CUET paper, not a simplified version. **Every reading comprehension or passage-based question must include the full passage text inline within the question field** — never reference a passage that isn't actually present in the output.
 7. **Difficulty must be real, demonstrated through content complexity — not just a label.** A "hard" question must require more inference, more steps, more integration of concepts, or rarer vocabulary/knowledge than an "easy" one on the same topic. Relabeling a question's difficulty tag without changing its actual content or complexity is a rule violation, not a valid shortcut.
 8. **Self-check before delivering**: for each generated question, verify it could plausibly have appeared in an actual NTA CUET UG paper for that subject — not a question that reads like it's from a generic quiz bank or a school unit test.
 
 ---
 
-## ⚠️ Scientific Formatting & Image Guidelines
+## Scientific Formatting & Image Guidelines
 
 **1. Mathematical and Scientific Notation (KaTeX & mhchem)**
 - **Inline Math:** Must be wrapped in `\\( ... \\)`. Example: `\\( x^2 + y^2 = r^2 \\)`
@@ -135,45 +136,17 @@ Generated papers must be at **actual CUET UG examination difficulty**, not simpl
 
 ---
 
-## Test Series Structure — 25 Papers per Subject (10 Original + 15 Extension)
+## Test Series Structure — 25 Tests per Subject (CUET 2027 standard)
 
-### Part A — Original 10 papers (Papers 1-10, Levels 1-10)
-
-1. **Generate exactly 10 mock papers per subject**, labeled Paper 1 through Paper 10.
-2. **Each paper is a full-length CUET paper** — same question count, duration, section structure, and marking scheme as defined by the notification for that subject (the format does not shrink or change across the series — only difficulty changes).
-3. **Difficulty increases with paper number through the depth of the questions, not the easy/medium/hard mix: Paper 1 = Level 1 (most accessible) → Paper 10 = Level 10 (most demanding).** Every level uses the same tier mix (rule 4); what changes is how demanding the questions inside each tier are (rule 5). Level 10 should sit at or slightly above the difficulty ceiling of a real CUET UG paper's hardest questions — not beyond what a well-prepared candidate could plausibly face.
-4. **Use the same easy/medium/hard mix in every paper of the series** (all levels, original, "B" and "C"): **15% easy, 65% medium, 20% hard**. For a 50-question paper this is exactly **8 easy, 32 medium, 10 hard** (15% of 50 = 7.5, rounded up to 8 easy; medium takes the remainder).
-
-| Paper | Level | Easy | Medium | Hard |
-|---|---|---|---|---|
-| 1–25 | All (1–10, 1B–10B, C) | 15% (8) | 65% (32) | 20% (10) |
-
-*Changed Oct 2026: the earlier per-level ramp (70/25/5 at Level 1 up to 5/30/65 at Level 10) is retired.*
-
-This mix **overrides** the single-paper default distribution (25/50/25) given in the Difficulty Standard section — that default only applies when generating one standalone paper outside a series.
-
-5. **Levels escalate through question style AND genuine content complexity inside each tier, not through the tier mix or labels.** An "easy" question at Level 9 is harder than an "easy" question at Level 1, and the same holds for medium and hard. As level increases:
-   - Lower levels (1–3): more direct/recall-adjacent conceptual questions, simpler assertion-reason pairs, shorter passages.
-   - Mid levels (4–7): standard CUET mix — case-based questions, moderate assertion-reason, multi-step numerical/reasoning questions, closer distractors.
-   - Higher levels (8–10): dense case/passage-based questions, multi-concept integration within a single question, tighter distractors requiring elimination of subtle misconceptions, longer statement-based "which combination is correct" formats, harder vocabulary/inference. Level 10 should feel like the hardest 10–15% of an actual CUET paper, sustained across the whole test.
-6. **Topic coverage stays complete at every level.** Every paper in the series must still cover the full syllabus breadth for that subject — difficulty changes which *type* of question is asked about a topic, not which topics are skipped.
-7. **No duplicate or templated-variant questions across the 10 papers.** Each paper must contain entirely distinct, independently authored questions from the other 9 — not the same question stem with substituted words/numbers (see the Genuine Authorship rule above; unique surface wording from a shared template does not satisfy this requirement).
-8. **Label every paper clearly** with its paper number and level in both the filename/test_id and the output metadata.
-9. **Run the Quality Checklist independently for each of the 10 papers** — do not batch-approve the series; each paper must pass on its own.
-
-### Part B — Extension papers (Papers 11-25: "B" and "C" variants)
-
-Once Papers 1-10 are complete and individually verified, extend the series to 25 total papers per subject:
-
-10. **Papers 11-20 ("B" variants)**: a second full pass through all 10 levels — Paper 11 = Level 1B, Paper 12 = Level 2B, ... Paper 20 = Level 10B. Each "B" paper uses the SAME difficulty percentages as its corresponding original level (every paper targets 8/32/10 easy/medium/hard; a Level 1B paper matches Level 1 in question depth).
-11. **Papers 21-25 ("C" variants)**: 5 additional papers at levels of your choosing, distributed across the difficulty range rather than clustered at one level (e.g. Level 2C, 4C, 6C, 8C, 10C). Each "C" paper uses the 8/32/10 mix and matches its assigned level's question depth.
-12. **File naming for extension papers**: `CUET_{Subject}_Paper{N}_Level{L}{Variant}.json` — e.g. `CUET_English_Paper11_Level1B.json`, `CUET_English_Paper23_Level6C.json`.
-13. **Repetition rule — this is the most failure-prone part of the whole series, apply extra care**: every question across all 25 papers for a subject (1,250+ questions total: 10 original + 10 "B" + 5 "C", each ~50 questions) must be genuinely distinct from every other question in that subject's full set — not just distinct within its own batch. Specifically:
-    - A "B" variant paper must NOT reuse any question, passage, or templated-variant of a question from its corresponding original paper, or from any other paper in the series.
-    - A "C" variant paper must NOT reuse any question from any of the other 24 papers.
-    - When generating a "B" or "C" paper, the duplication check must compare against the ENTIRE existing pool already delivered for that subject at that point — not just the batch currently being generated. If Papers 1-10 already exist when generating Paper 11, Paper 11 must be checked against all 500 existing questions, not generated in isolation.
-    - This check must be a genuine content comparison (do these two questions test the same specific fact/passage/problem, even with different wording?), not merely a string-uniqueness check — string-unique output from a shared template is still a repetition and fails this rule.
-14. **Same topic coverage and difficulty-escalation-through-content rules from Part A apply to every extension paper** — a "B" or "C" paper at a given level must be as difficult, in substance, as the original paper at that level, not a relabeled reuse of easier content.
+1. **25 tests per subject**, files `CUET/<Subject>/CUET <SUBJECT> TEST <N>.json` (N = 1–25). There are **no levels** in names or metadata.
+2. **Every test is a full NTA paper:** the question count, duration, marking scheme and sections are exactly as in the notification. Where NTA offers a choice inside a paper (for example Accountancy Unit V versus Computerised Accounting), the file contains all alternatives as separate sections, and `common_sections` / `optional_sections` describe what a candidate attempts.
+3. **Difficulty mix is the same in every test:** **15% easy, 65% medium, 20% hard** = **8 / 32 / 10** for a 50-question attempt. This applies to every attempt path of a choice paper.
+4. **Progression comes from depth, not the mix.** Test 1 is the most accessible and Test 25 the most demanding. Later tests use more steps and adjustments, denser cases and closer distractors inside each tier.
+5. **Question formats follow NTA (about 30% or more non-direct per test).** Use case/passage sets (one passage, 4–5 linked questions), Match List-I/List-II, "choose the correct statements (A)–(D)", sequence/order, assertion–reason, numericals and direct concept questions. The subject blueprint fixes the per-test counts.
+6. **Unit weight** follows the syllabus and the PYQ analysis, and is fixed per test in the blueprint. Every test covers the whole syllabus.
+7. **Random exam order:** the real paper mixes units, so questions are **never arranged unit-wise**. After authoring, run `shuffle_test.py`. It mixes each section, keeps case sets together at the end of their section, keeps choice sections separate, and ensures no answer letter repeats more than 3 times in a row.
+8. **No duplicates across the subject:** no question may repeat, or be a number-swapped or reworded copy of, any question in any other test of that subject. Check against the full pool, not just the current batch.
+9. **No out-of-syllabus or irrelevant questions.** Anything found outside the current syllabus (including content NCERT has removed) is replaced, never kept.
 
 ---
 
@@ -187,100 +160,107 @@ Once Papers 1-10 are complete and individually verified, extend the series to 25
 
 ---
 
-## Test Generation Workflow
+## Test Generation Workflow (per subject, alphabetical order)
 
-1. **Identify inputs**: subject(s) requested, syllabus PDF(s) for those subjects, current notification PDF, and whether the request is for a single paper, the original 10-paper series, or the full 25-paper extended series.
-2. **Extract topic list**: pull the full topic/unit breakdown from the syllabus PDF for the requested subject(s). List it out before generating questions, so coverage can be checked — and so it can be re-applied consistently across all papers.
-3. **Determine test blueprint**: number of questions per section/subject, time allowed, marking scheme — all sourced from the notification PDF, not assumed. This blueprint is identical across all papers in the series.
-4. **If generating a series**: assign each paper its level (and variant letter, if an extension paper) and corresponding easy/medium/hard mix from the Test Series Structure tables before writing any questions.
-5. **Distribute questions across topics** proportionally to how the syllabus weights them (if the syllabus indicates unit weightage; otherwise distribute evenly across listed units, and note this in the output that even distribution was used). Full topic coverage applies to every paper in the series.
-6. **Generate questions via genuine authorship** (subagent or direct authoring) — never templated/parametric generation: multiple-choice, 4 options each (or as specified by the notification), one correct answer, plausible distractors, no ambiguous or multi-correct answers unless the format explicitly allows it. Match the question style and content-complexity escalation described in the Test Series Structure section for that paper's level.
-7. **Determine each question's correct answer from content first**, then shuffle option positions per the Answer Key Integrity section — never assign a letter first and fit content to it.
-8. **Attach metadata per question**: subject, unit/topic, sub-topic, difficulty tier (easy/medium/hard), and correct answer with a one-line explanation.
-9. **Compile the full test** in the JSON output format, including duration and marking scheme exactly as per the notification, plus paper number/level/variant if part of a series.
-10. **Read through the full set of questions yourself** — not a sample — before reporting a paper as done. Confirm: no templated patterns, difficulty is real, passages are complete, answer key is both balanced and correct.
-11. **Check for duplicate or templated-variant questions** against the ENTIRE existing pool for that subject (all previously delivered papers, not just the current batch) before finalizing.
-12. **Run the Quality Checklist** on each paper before returning output.
+1. **Check that the syllabus PDF exists** in `CUET SYLLABUS/`. No PDF → no tests.
+2. **Read the syllabus in full** and list every unit and sub-topic. Read the subject's audit row.
+3. **Analyse PYQs** (NTA first) for formats, difficulty and unit weight, and write or update `docs/blueprints/<subject>.md`: sections and choices, unit weight per test, per-section difficulty, format counts, key balance and explanation format.
+4. **Plan coverage across all 25 tests**, so that each sub-topic is tested from different angles in different tests, with no repeats.
+5. **Author each test by hand** (genuine authorship). For every question:
+   - verify the topic against the syllabus PDF;
+   - work out the answer from official sources first;
+   - write plausible distractors that come from real student mistakes;
+   - place the correct option to balance the key;
+   - write the structured explanation.
+6. **Run `shuffle_test.py`** on the test (exam order).
+7. **Validate:** `python3 validate_papers.py CUET --subject "<Subject>"` and `python3 audit_papers.py CUET`. There must be 0 errors, 8/32/10 on every path, no runs longer than 3, and 0 duplicates.
+8. **Read every question yourself** before marking the file `"status": "revised"`.
+9. **Commit and push** (the platform clones the repo), update the README status table, and record the subject's changes in `Worklog.md`.
 
 ---
 
-## Quality Checklist (must pass before delivering any test)
+## Quality Checklist (every test, before it is marked revised)
 
-- [ ] Every question maps to a real topic in the syllabus PDF (no invented topics)
-- [ ] Question count per section matches the notification exactly
-- [ ] Marking scheme displayed matches the notification exactly
-- [ ] No duplicate or templated-variant questions within the same test
-- [ ] No question copied verbatim from an external/copyrighted source
-- [ ] All questions have exactly one unambiguous, verified-correct answer
-- [ ] Answer key `correct_option` determined by content first, then shuffled — never the reverse
-- [ ] Correct-answer letters roughly balanced across A/B/C/D over the full paper — no letter (or question type) systematically dominant or absent
-- [ ] Metadata (topic tag + explanation) present for every question
-- [ ] Every RC/passage-based question contains its full passage text inline
-- [ ] Output file matches the JSON schema exactly
-- [ ] Topic coverage roughly reflects syllabus weightage (or evenly distributed, with that noted)
-- [ ] Difficulty and question style match real CUET UG exam level, demonstrated through actual content complexity, not just the difficulty label — see Difficulty Standard section
-- [ ] If part of a series: paper's difficulty mix matches its assigned level from the Test Series Structure table
-- [ ] If part of a series: full topic coverage present at this paper's difficulty level, not skipped
-- [ ] If part of the original 10: no duplicate/templated-variant questions vs. the other 9 papers
-- [ ] If an extension paper (11-25): no duplicate/templated-variant questions vs. ANY other paper already delivered for that subject (the entire existing pool, not just the current batch)
-- [ ] You have personally read every question in this paper before reporting it done
-- [ ] When reporting completion: report actual measured numbers (duplication count, per-paper difficulty %, answer-key distribution) and, when asked, full question content — never a summary claim without the underlying data
-- [ ] Mathematical/Scientific formulas strictly use KaTeX/mhchem wrappers.
-- [ ] Exactly 4 options provided for every multiple-choice question.
-- [ ] Image references and generation prompts are provided for visual questions.
-- [ ] `topic` and `sub_topic` fields are correctly populated for backend balancing (these remain hidden in exam mode).
+**Syllabus and sources**
+- [ ] Every question maps to a sub-topic in the subject's current syllabus PDF; nothing removed from NCERT, nothing beyond the syllabus.
+- [ ] Every answer and explanation agrees with NCERT / the governing Act / the official standard.
+- [ ] `syllabus_source`, `notification_source` and `past_paper_reference` are truthful (never cite a file or PYQ that was not used).
+
+**Pattern and difficulty**
+- [ ] Question count, sections, duration and marking scheme match the notification.
+- [ ] 8 easy / 32 medium / 10 hard on every attempt path, and each label matches the real effort the question needs.
+- [ ] About 30% or more of each test uses CUET formats (case set, match-list, statements, sequence, assertion–reason), per the blueprint.
+- [ ] Unit weight matches the blueprint; full syllabus coverage.
+- [ ] Questions are in random exam order (`shuffle_test.py`), with case sets kept together.
+
+**Correctness and options**
+- [ ] Exactly one correct answer, verified independently of its letter; no two options are equivalent (e.g. 1/√30 and √30/30).
+- [ ] Distractors are plausible: they come from real mistakes, not absurd statements. The correct option is not a give-away (not systematically the longest, no "(or …)" hints).
+- [ ] Exactly 4 options; no "all/none of the above" or "both A and B".
+- [ ] Key balanced across A/B/C/D on each path; no letter more than 3 times in a row.
+
+**Explanations (structured, as in Accountancy Test 1)**
+- [ ] The first line is `Answer: (X) …`.
+- [ ] Concept questions have `Why`, `Why not the others` (one line per wrong option) and `Key point`.
+- [ ] Numerical questions (always in Mathematics, Physics and Chemistry) have `Given`, `Formula`, `Step 1…n` and `Common mistake` (which slip leads to which distractor).
+- [ ] Language questions give the rule or meaning, why the others are wrong, and a usage example.
+
+**Uniqueness and format**
+- [ ] No duplicate or templated (number-swapped / word-swapped) question within the test or against any other test of the subject.
+- [ ] Every passage/case question carries its full passage inline and a shared `case_id`.
+- [ ] Formulas use KaTeX/mhchem; `\n` line breaks are used for lists, statements and match tables.
+- [ ] `topic` uses the exact syllabus unit name; `sub_topic` is filled in.
+- [ ] You have personally read every question in the test.
 
 ---
 
 ## Output Format — JSON (mandatory, no truncation)
 
-Every test MUST be output as a single JSON file. No PDF. No markdown. No CSV. JSON only.
-
-### JSON Schema
+One JSON file per test. **No PDFs.**
 
 ```json
 {
-  "test_id": "string - unique per paper, e.g., CUET_MATH_PAPER_1_LEVEL_1",
-  "series_id": "string - e.g., CUET_MATH_2026",
-  "paper_number": "integer 1-25",
-  "difficulty_level": "string - e.g. '1', '1B', '6C'",
+  "test_id": "CUET27_<SUBJECT>_TEST_<NN>",
+  "series_id": "CUET27_<SUBJECT>",
+  "exam": "CUET (UG) 2027",
+  "title": "CUET <Subject> Test <N>",
   "subject": "string",
-  "syllabus_source": "string - filename + year",
-  "notification_source": "string - filename + year",
-  "past_paper_reference": "string - filename(s) + year(s), or 'none available'",
-  "duration_minutes": "integer",
-  "total_questions": "integer",
-  "marking_scheme": {
-    "correct": "string - e.g., '+5'",
-    "incorrect": "string - e.g., '-1'",
-    "unattempted": "string - e.g., '0'"
-  },
+  "subject_code": "string",
+  "test_number": 1,
+  "paper_number": 1,
+  "status": "revised | pending_revision",
+  "syllabus_source": "CUET SYLLABUS/<Subject> - <code>.pdf (year)",
+  "notification_source": "string",
+  "past_paper_reference": "PYQs analysed for pattern only (years) | null",
+  "duration_minutes": 60,
+  "total_questions": 50,
+  "questions_to_attempt": 50,
+  "marking_scheme": {"correct": "+5", "incorrect": "-1", "unattempted": "0"},
+  "instructions": ["string"],
+  "sections": [{"id": "A", "title": "string", "question_range": "1-40", "questions": 40, "attempt": 40}],
+  "common_sections": ["A"],
+  "optional_sections": [],
   "questions": [
     {
-      "id": "string - unique question ID",
-      "topic": "string - from syllabus (Hidden from students during exam, used for internal load balancing)",
-      "sub_topic": "string - from syllabus (Hidden from students)",
+      "id": "CUET27-<SUBJ>-T<NN>-Q<NN>",
+      "section": "A",
+      "case_id": "only for passage/case sets",
+      "topic": "exact syllabus unit name",
+      "sub_topic": "syllabus sub-topic",
       "difficulty": "easy | medium | hard",
-      "question": "string - the full question text, including full passage text inline if passage-based",
-      "image_reference": "string | null - e.g., 'CUET_MATH_Q101.png' if an image is required, else null",
-      "image_prompt": "string | null - detailed prompt for generating the image if image_reference is provided",
-      "options": ["string A", "string B", "string C", "string D"],
+      "format": "direct | numerical | statements | match-list | sequence | assertion-reason | case-based | passage",
+      "question": "full text with \\n line breaks; full passage inline",
+      "options": ["A) …", "B) …", "C) …", "D) …"],
       "correct_option": "A | B | C | D",
-      "explanation": "string - one-line explanation of why the correct answer is correct"
+      "explanation": "Answer: (X) …\\n… (structured as in the checklist)"
     }
   ]
 }
 ```
 
-### Output Rules
+`sections`, `common_sections` and `optional_sections` are needed only when the paper has sections or choices. Single-section subjects may omit them, and then `total_questions` = `questions_to_attempt` = 50. Use `image_reference`/`image_prompt` only when a figure is essential.
 
-1. **One JSON file per paper** — filename: `CUET_{Subject}_Paper{N}_Level{L}.json` (extension papers append the variant letter to the level, e.g. `Level1B`, `Level6C`)
-2. **Options Limit:** There must be EXACTLY 4 options in the `options` array for all exams.
-3. **No truncation** — every question must have all fields fully populated (question, options, correct_option, explanation)
-4. **Valid JSON** — must parse with `json.load()` without errors. Pay special attention to escaping `\` in KaTeX formulas for JSON strings.
-4. **Complete file** — the entire test must be in one JSON file, not split across multiple files
-5. **Save location**: `~/Desktop/govt mock tests/{Subject}/`
-6. **Series index**: once a subject's full 25-paper series is complete, also generate `series_index.json` in that subject's folder, listing all 25 papers with their filenames, levels/variants, and actual measured difficulty percentages.
+**Tools:** `validate_papers.py` (structure, counts, key runs, duplicates, difficulty per path), `audit_papers.py` (formats, explanation depth, templating, option give-aways), `shuffle_test.py` (exam order).
 
 ---
 
@@ -289,14 +269,14 @@ Every test MUST be output as a single JSON file. No PDF. No markdown. No CSV. JS
 ### Subject Agent
 - One agent (or one subagent per paper, for parallel generation) is spawned per subject.
 - Each subject agent is an **expert in that subject** and must follow these instructions strictly, including the Genuine Authorship and Answer Key Integrity rules.
-- Output: one JSON file per paper, saved to `~/Desktop/govt mock tests/{Subject}/`.
+- Output: one JSON file per paper, saved to `CUET/<Subject>/`.
 
 ### Verification Agent
 - After papers are generated (whether one at a time or in a parallel batch), a verification pass checks:
   1. All JSON files exist and are valid JSON.
   2. Each file follows the JSON schema exactly.
   3. Question count per paper matches the notification.
-  4. Difficulty distribution matches the Test Series Structure table for that paper's level.
+  4. Difficulty is 8/32/10 on every attempt path and the labels match real effort.
   5. No duplicate or templated-variant questions — checked against the ENTIRE existing pool for that subject, not just the current batch.
   6. All questions map to syllabus topics.
   7. Every question has a verified-correct answer (re-derived from content, not just read from the label) and explanation.
