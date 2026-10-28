@@ -32,12 +32,12 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | # | Angle | Used in |
 |---|---|---|
 | 1 | Wall layers of microsporangium and their roles (tapetum) | T2, T9 |
-| 2 | Microsporogenesis sequence: PMC → tetrad → pollen; ploidy | T2 |
+| 2 | Microsporogenesis sequence: PMC → tetrad → pollen; ploidy | T2, T10 |
 | 3 | Pollen grain: exine (sporopollenin), germ pore, vegetative and generative cells, 2- vs 3-celled | T3, T9 |
 | 4 | Pollen viability and storage; pollen allergy (Parthenium) | T4, T9 |
 | 5 | Megasporangium parts; monosporic development; 7-celled 8-nucleate embryo sac | T3, T7 |
 | 6 | Embryo sac cell positions and ploidy (synergids, filiform apparatus, antipodals, polar nuclei) | T1, T4, T7 |
-| 7 | Pollination types: autogamy, geitonogamy, xenogamy; cleistogamy/chasmogamy | T2 |
+| 7 | Pollination types: autogamy, geitonogamy, xenogamy; cleistogamy/chasmogamy | T2, T10 |
 | 8 | Agents: wind, water (Vallisneria, Zostera), insects; floral adaptations | T4, T9 |
 | 9 | Outbreeding devices: dichogamy, self-incompatibility, unisexuality, monoecy/dioecy | T1, T8 |
 | 10 | Pollen–pistil interaction; emasculation and bagging in artificial hybridisation | T3, T8 |
@@ -47,11 +47,11 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 14 | Fruit: true/false fruits, parthenocarpy | T3, T8 |
 | 15 | Apomixis and polyembryony; significance for hybrid seed | T1, T8 |
 | 16 | Anther structure: bilobed, dithecous, four microsporangia | T5 |
-| 17 | Ovule parts: funicle, hilum, integuments, micropyle, chalaza, nucellus | T5 |
+| 17 | Ovule parts: funicle, hilum, integuments, micropyle, chalaza, nucellus | T5, T10 |
 | 18 | Pollen as food supplements and pollen banks (−196 °C) | T6 |
 | 19 | Dicot embryo: radicle, plumule, hypocotyl, epicotyl, cotyledons | T5 |
 | 20 | Monocot embryo: scutellum, coleoptile, coleorhiza | T6 |
-| 21 | Seed viability and dormancy (lupine, date palm) | T5 |
+| 21 | Seed viability and dormancy (lupine, date palm) | T5, T10 |
 | 22 | Number of ovules and seeds (orchids, Ficus; wheat, rice, mango) | T6 |
 
 ### VI-2 Human reproduction (4)
@@ -63,7 +63,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 4 | Ovary microanatomy: follicle stages, Graafian follicle | T1, T4 |
 | 5 | Spermatogenesis stages and ploidy; spermiogenesis, spermiation | T2, T6 |
 | 6 | Oogenesis: arrest stages, polar bodies, timing | T1, T5 |
-| 7 | Hormonal control of gametogenesis (GnRH, LH, FSH, androgens) | T4 |
+| 7 | Hormonal control of gametogenesis (GnRH, LH, FSH, androgens) | T4, T10 |
 | 8 | Menstrual cycle phases, hormones, ovulation, corpus luteum | T1, T7 |
 | 9 | Sperm structure; semen; acrosome | T3, T8 |
 | 10 | Fertilisation site and events; zona pellucida block | T4, T9 |
@@ -72,11 +72,11 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 13 | Germ layers and timeline of foetal development | T3, T8 |
 | 14 | Parturition: foetal ejection reflex, oxytocin; lactation, colostrum | T3, T8 |
 | 15 | Scrotum and testis temperature | T6 |
-| 16 | Mammary glands: alveoli, lactiferous duct, ampulla | T5 |
-| 17 | Menarche and menopause | T5 |
+| 16 | Mammary glands: alveoli, lactiferous duct, ampulla | T5, T10 |
+| 17 | Menarche and menopause | T5, T10 |
 | 18 | Spermiogenesis versus spermiation | T6 |
 | 19 | Accessory gland secretions and seminal plasma | T7 |
-| 20 | Inner cell mass and trophoblast | T5 |
+| 20 | Inner cell mass and trophoblast | T5, T10 |
 | 21 | Umbilical cord and chorionic villi | T6 |
 
 ### VI-3 Reproductive health (3)
@@ -94,10 +94,10 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 10 | RCH programmes and sex education goals | T6, T9 |
 | 11 | Saheli — once-a-week non-steroidal pill (CDRI) | T6, T9 |
 | 12 | Barrier methods: diaphragms, cervical caps, vaults, spermicides | T5, T8 |
-| 13 | Injectables and implants | T6 |
-| 14 | Emergency contraception within 72 hours | T5 |
+| 13 | Injectables and implants | T6, T10 |
+| 14 | Emergency contraception within 72 hours | T5, T10 |
 | 15 | Infertility causes; adoption as an option | T6, T8 |
-| 16 | STI complications: PID, abortions, still births, ectopic pregnancy | T7 |
+| 16 | STI complications: PID, abortions, still births, ectopic pregnancy | T7, T10 |
 
 ### VII-1 Principles of inheritance and variation (5)
 | # | Angle | Used in |
@@ -108,7 +108,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 4 | Multiple alleles: ABO genotypes, possible children's blood groups | T1, T4, T9 |
 | 5 | Dihybrid cross: 9:3:3:1, test cross 1:1:1:1, independent assortment | T1, T4 |
 | 6 | Chromosomal theory (Sutton, Boveri); Morgan's Drosophila | T3, T9 |
-| 7 | Linkage and recombination frequency; map distance | T2 |
+| 7 | Linkage and recombination frequency; map distance | T2, T10 |
 | 8 | Polygenic inheritance (skin colour); pleiotropy (PKU) | T2, T8 |
 | 9 | Sex determination: XX–XY, ZZ–ZW, haplodiploidy in honey bee | T1, T7 |
 | 10 | Mutations: point, frameshift, chromosomal aberrations | T3, T7 |
@@ -118,12 +118,12 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 14 | Down's, Turner's, Klinefelter's: karyotypes and features | T1, T2, T4 |
 | 15 | Aneuploidy vs polyploidy; non-disjunction | T3, T9 |
 | 16 | Why Mendel chose garden pea; seven characters | T6, T9 |
-| 17 | Back cross | T6 |
+| 17 | Back cross | T6, T10 |
 | 18 | Phenotypic versus genotypic ratios | T5, T9 |
-| 19 | Morgan's crosses with white-eyed and yellow-bodied flies | T6 |
+| 19 | Morgan's crosses with white-eyed and yellow-bodied flies | T6, T10 |
 | 20 | Criss-cross inheritance of X-linked genes | T7 |
-| 21 | Equal chance of a boy or a girl (50 : 50) | T6 |
-| 22 | Down's syndrome features | T7 |
+| 21 | Equal chance of a boy or a girl (50 : 50) | T6, T10 |
+| 22 | Down's syndrome features | T7, T10 |
 | 23 | Turner's syndrome features | T7 |
 | 24 | Mutagens and their effects | T6 |
 
@@ -145,20 +145,20 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 13 | Lac operon components and regulation | T2, T9 |
 | 14 | Human Genome Project: goals, salient features, methods (ESTs, sequence annotation) | T3, T8 |
 | 15 | DNA fingerprinting: VNTR, satellite DNA, polymorphism, applications | T4, T9 |
-| 16 | Central dogma and reverse transcription | T6 |
-| 17 | Nucleotide structure: N-glycosidic and phosphodiester bonds | T5 |
+| 16 | Central dogma and reverse transcription | T6, T10 |
+| 17 | Nucleotide structure: N-glycosidic and phosphodiester bonds | T5, T10 |
 | 18 | Watson, Crick, Wilkins and Franklin | T6 |
 | 19 | Monocistronic and polycistronic units | T5 |
 | 20 | Split genes: exons and introns | T5, T9 |
 | 21 | Prokaryotic transcription: sigma and rho factors | T5, T9 |
 | 22 | Deciphering the code: Gamow, Khorana, Nirenberg, Ochoa | T6, T9 |
-| 23 | Point mutation: sickle-cell GAG → GUG | T5 |
+| 23 | Point mutation: sickle-cell GAG → GUG | T5, T10 |
 | 24 | Levels of regulation in eukaryotes | T6 |
-| 25 | HGP methods: BAC, YAC vectors, sequence annotation | T5 |
-| 26 | Steps of DNA fingerprinting (Southern blotting) | T6 |
+| 25 | HGP methods: BAC, YAC vectors, sequence annotation | T5, T10 |
+| 26 | Steps of DNA fingerprinting (Southern blotting) | T6, T10 |
 | 27 | Bioinformatics and applications of HGP | T7 |
 | 28 | Ribozymes and the RNA world | T6, T9 |
-| 29 | DNA in prokaryotes (nucleoid) | T7 |
+| 29 | DNA in prokaryotes (nucleoid) | T7, T10 |
 | 30 | Speed and accuracy of DNA replication | T7 |
 
 ### VII-3 Evolution (3)
@@ -171,12 +171,12 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 5 | Adaptive radiation: Darwin's finches, Australian marsupials | T3, T9 |
 | 6 | Hardy–Weinberg calculation and the five disturbing factors | T2, T8 |
 | 7 | Types of natural selection: stabilising, directional, disruptive | T3, T8 |
-| 8 | Geological time: evolution of plants and vertebrates | T4 |
+| 8 | Geological time: evolution of plants and vertebrates | T4, T10 |
 | 9 | Human evolution: Dryopithecus to Homo sapiens; brain capacity | T2, T9 |
 | 10 | Founder effect, genetic drift, saltation (de Vries) | T3, T8 |
 | 11 | Spontaneous generation and panspermia | T6 |
-| 12 | Fossils and dating rocks | T5 |
-| 13 | Lamarck's use and disuse | T7 |
+| 12 | Fossils and dating rocks | T5, T10 |
+| 13 | Lamarck's use and disuse | T7, T10 |
 | 14 | Mutation theory (de Vries, Oenothera) | T5 |
 | 15 | Fitness = reproductive fitness | T6 |
 | 16 | Homo sapiens: Neanderthal, ice age, agriculture ~10,000 years ago | T5 |
@@ -199,19 +199,19 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 11 | Cancer: benign/malignant, carcinogens, detection, treatment | T2, T4 |
 | 12 | Drugs: opioids, cannabinoids, coca alkaloids — sources and effects | T1, T3 |
 | 13 | Adolescence, addiction, prevention and control | T3, T8 |
-| 14 | Health and the factors that affect it | T8 |
+| 14 | Health and the factors that affect it | T8, T10 |
 | 15 | Interferons | T8 |
-| 16 | Booster doses and immunisation | T6 |
+| 16 | Booster doses and immunisation | T6, T10 |
 | 17 | Autoimmunity example: rheumatoid arthritis | T5, T9 |
-| 18 | Antibody types IgA, IgM, IgE, IgG | T5 |
+| 18 | Antibody types IgA, IgM, IgE, IgG | T5, T10 |
 | 19 | MALT — mucosa-associated lymphoid tissue | T7 |
 | 20 | HIV as a retrovirus | T7 |
 | 21 | NACO and AIDS awareness | T9 |
-| 22 | Cancer treatments: surgery, radiation, chemotherapy, immunotherapy | T5 |
+| 22 | Cancer treatments: surgery, radiation, chemotherapy, immunotherapy | T5, T10 |
 | 23 | Cancer detection: biopsy, CT, MRI | T7 |
 | 24 | Effects of alcohol and drugs on the body | T7 |
 | 25 | Tobacco: nicotine, adrenaline, oral and lung cancer | T5, T9 |
-| 26 | Dengue and chikungunya — Aedes control | T5 |
+| 26 | Dengue and chikungunya — Aedes control | T5, T10 |
 | 27 | Public health measures and hygiene | T7 |
 
 ### VIII-2 Microbes in human welfare (3)
@@ -226,14 +226,14 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 7 | Biofertilisers: Rhizobium, Azotobacter, mycorrhiza, cyanobacteria | T2, T4 |
 | 8 | Idli and dosa dough (fermented by bacteria) | T5 |
 | 9 | Wine and beer without distillation; whisky and rum with distillation | T5 |
-| 10 | People behind penicillin (Fleming, Chain, Florey) | T6 |
+| 10 | People behind penicillin (Fleming, Chain, Florey) | T6, T10 |
 | 11 | Streptokinase as a clot buster | T7 |
 | 12 | Cyclosporin A use | T8 |
 | 13 | Statins mechanism | T8 |
 | 14 | Flocs: bacteria and fungal filaments | T8 |
-| 15 | Primary versus activated sludge | T7 |
+| 15 | Primary versus activated sludge | T7, T10 |
 | 16 | Ganga and Yamuna Action Plans | T5 |
-| 17 | Integrated pest management (IPM) | T6 |
+| 17 | Integrated pest management (IPM) | T6, T10 |
 | 18 | Trichoderma as a biocontrol agent | T7 |
 | 19 | Gobar gas plant structure and uses | T6 |
 
@@ -247,17 +247,17 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 5 | Insertional inactivation; blue–white selection | T1, T4 |
 | 6 | Vectors for plants and animals: Ti plasmid, retroviruses | T3, T7 |
 | 7 | Competent host: CaCl2, heat shock, microinjection, biolistics | T1, T4 |
-| 8 | Isolating DNA: lysozyme, cellulase, chitinase, RNase, protease | T2 |
-| 9 | PCR: steps, Taq polymerase, amplification number | T1, T3 |
+| 8 | Isolating DNA: lysozyme, cellulase, chitinase, RNase, protease | T2, T10 |
+| 9 | PCR: steps, Taq polymerase, amplification number | T1, T3, T10 |
 | 10 | Bioreactors (stirred-tank) and downstream processing | T2, T7 |
 | 11 | DNA ligase | T5, T8 |
 | 12 | Exonucleases versus endonucleases | T6, T9 |
 | 13 | Fragment size and migration in gels | T5, T9 |
-| 14 | Chilled ethanol precipitation of DNA | T6 |
+| 14 | Chilled ethanol precipitation of DNA | T6, T10 |
 | 15 | Microinjection and biolistics (gene gun) | T5, T8 |
 | 16 | Antibiotic resistance markers | T6, T9 |
 | 17 | Stirred-tank versus sparged bioreactors | T5, T8 |
-| 18 | Why host competence matters | T6 |
+| 18 | Why host competence matters | T6, T10 |
 
 ### IX-2 Biotechnology applications (4)
 | # | Angle | Used in |
@@ -271,12 +271,12 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 7 | Transgenic animals: uses; Rosie the cow | T2, T4, T7 |
 | 8 | Ethical issues: GEAC, biopiracy, patents (basmati, turmeric, neem) | T1, T3, T9 |
 | 9 | Tissue culture and micropropagation, somaclones, meristem culture | T2, T4, T8 |
-| 10 | Golden rice and biofortified foods | T5 |
+| 10 | Golden rice and biofortified foods | T5, T10 |
 | 11 | Specificity of Bt toxin | T6, T8, T9 |
-| 12 | Steps of making recombinant insulin | T6 |
-| 13 | Ideal gene therapy: early embryonic stage | T5 |
+| 12 | Steps of making recombinant insulin | T6, T10 |
+| 13 | Ideal gene therapy: early embryonic stage | T5, T10 |
 | 14 | Autoradiography of mutated genes | T5, T8 |
-| 15 | Transgenic animals and normal physiology (insulin-like growth factor) | T6 |
+| 15 | Transgenic animals and normal physiology (insulin-like growth factor) | T6, T10 |
 | 16 | Patents on turmeric and neem | T5, T8 |
 
 ### X-1 Organisms and populations (3)
@@ -284,7 +284,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 |---|---|---|
 | 1 | Population attributes: birth rate, death rate, sex ratio, density (with numbers) | T2, T8 |
 | 2 | Age pyramids: expanding, stable, declining | T1, T8 |
-| 3 | Growth: Nt = N0 + (B + I) − (D + E) | T3 |
+| 3 | Growth: Nt = N0 + (B + I) − (D + E) | T3, T10 |
 | 4 | Exponential vs logistic growth; r, K, equations and curves | T1, T3 |
 | 5 | Life history variation; r- and K-selected | T4, T9 |
 | 6 | Interactions table (+/−, 0) | T1, T4 |
@@ -296,7 +296,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 12 | Natality and mortality definitions | T6 |
 | 13 | Intrinsic rate r values | T6 |
 | 14 | When exponential growth applies | T7 |
-| 15 | Co-evolution: fig and wasp; Ophrys and bee (sexual deceit) | T5 |
+| 15 | Co-evolution: fig and wasp; Ophrys and bee (sexual deceit) | T5, T10 |
 | 16 | Keystone predator (Pisaster) | T6 |
 | 17 | Competition examples: Abingdon tortoise and goats; Balanus and Chthamalus | T5 |
 
@@ -304,11 +304,11 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | # | Angle | Used in |
 |---|---|---|
 | 1 | Structure: stratification; components | T2, T8 |
-| 2 | Productivity: GPP, NPP, secondary productivity (numbers) | T2, T8 |
+| 2 | Productivity: GPP, NPP, secondary productivity (numbers) | T2, T8, T10 |
 | 3 | Decomposition steps and factors | T1, T3, T4 |
-| 4 | Energy flow: 10% law, PAR, food chains (grazing vs detritus) | T1, T4 |
-| 5 | Food web, trophic levels, standing crop | T2, T4 |
-| 6 | Ecological pyramids: number, biomass, energy; inverted pyramids | T1, T3 |
+| 4 | Energy flow: 10% law, PAR, food chains (grazing vs detritus) | T1, T4, T10 |
+| 5 | Food web, trophic levels, standing crop | T2, T4, T10 |
+| 6 | Ecological pyramids: number, biomass, energy; inverted pyramids | T1, T3, T10 |
 | 7 | Annual NPP of the biosphere; oceans' share | T5 |
 | 8 | Detritivores versus decomposers | T5, T8 |
 | 9 | Position of omnivores in food webs | T6 |
@@ -317,7 +317,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 12 | Properties of humus | T7 |
 | 13 | Factors that affect primary productivity | T7, T9 |
 | 14 | Unidirectional flow of energy | T6, T9 |
-| 15 | Why food chains are short | T7 |
+| 15 | Why food chains are short | T7, T10 |
 
 ### X-3 Biodiversity and conservation (3)
 | # | Angle | Used in |
@@ -330,10 +330,10 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 6 | Ex situ: zoos, botanical gardens, cryopreservation, seed banks | T2, T4 |
 | 7 | Endemism and recent extinctions (dodo, quagga, Steller's sea cow) | T2, T7 |
 | 8 | Number of species: IUCN 1.5 million; Robert May ~7 million | T5, T8 |
-| 9 | Share of insects among animal species | T6 |
+| 9 | Share of insects among animal species | T6, T10 |
 | 10 | Numbers of biosphere reserves, national parks and sanctuaries in India | T7 |
 | 11 | Earth Summit 1992 and World Summit 2002 | T5, T9 |
 | 12 | Locations of sacred groves | T6 |
 | 13 | Alien species examples (Nile perch, Parthenium, Lantana, Eichhornia, Clarias) | T5, T9 |
 | 14 | Co-extinction examples | T6, T9 |
-| 15 | Over-exploitation examples | T7 |
+| 15 | Over-exploitation examples | T7, T10 |
