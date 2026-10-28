@@ -31,7 +31,7 @@ Each file's `status` field reads `revised` (meets the standard) or `pending_revi
 | # | Subject | Code | Syllabus PDF | Revised tests | Blueprint |
 |---|---|---|---|---|---|
 | 1 | Accountancy | 301 | ✅ | **16 / 16** ✅ | [accountancy.md](docs/blueprints/accountancy.md) |
-| 2 | Biological Science | 304 | ✅ | 1 / 15 (pilot) | [biological_science.md](docs/blueprints/biological_science.md) |
+| 2 | Biological Science | 304 | ✅ | 15 / 15 | [biological_science.md](docs/blueprints/biological_science.md) |
 | 3 | Chemistry | 306 | ✅ | — | — |
 | 4 | Computer Science | 308 | ✅ | — | — |
 | 5 | Economics | 309 | ✅ | — | — |

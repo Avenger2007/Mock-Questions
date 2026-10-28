@@ -184,3 +184,32 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 - **Syllabus Markdown:** all 23 CUET syllabus PDFs converted to `CUET SYLLABUS/md/*.md` (text extraction, cleaned). Also `IISER/IISER_Aptitude_Test_Syllabus_2026.md` and `NISER/NEST_2026_Syllabus.md` (from the official NEST 2026 brochure).
 - **New instructions:** `docs/instructions/IAT_Instructions.md`, `NISER_Instructions.md` (NEST), `COMEDK_Instructions.md` — official pattern and marking, PYQ-analysis protocol (PYQs supplied by the user before work starts), 15/65/20 difficulty split per section, image-prompt files (`IISER/IAT_images.md`, `NISER/NEST_images.md`, `COMEDK/COMEDK_images.md`), workflow, pre-start / per-test / pre-release checklists, and JSON format.
 - **CUET instructions v3.1:** 15 tests, read syllabus Markdown, plan-first coverage map, per-subject image list. Hermes copy synced.
+
+---
+
+## Biological Science (304) — revised to the CUET 2027 standard (completed 28 Oct 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `5353859` (blueprint, coverage map, pilot Test 1) … `72ba80c` (Test 15) on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | 15 old papers (mostly direct recall) | **15 rewritten tests** (`CUET BIOLOGICAL SCIENCE TEST 1–15.json`), planned first in a coverage map |
+| Paper structure | 50 questions | 50 compulsory questions, 60 min, +5 / −1 (NTA pattern) |
+| Unit weights | uneven | every test: VI 11 (4/4/3), VII 14 (5/6/3), VIII 8 (5/3), IX 8 (4/4), X 9 (3/3/3) |
+| Difficulty | mostly easy | **8 easy / 32 medium / 10 hard** in every test |
+| Formats | almost all direct | per test: one 5-question case set, 5 match-list, 5 statements, 3 assertion–reason, 2 sequence, 2 data-based, plus direct and numerical |
+| Explanations | short | `Answer:` line, then Given / Step / Common mistake (numericals and data) or Why / Why not the others / Key point; all facts from NCERT Class 12 (rationalised) |
+| Order and keys | unit-wise, unbalanced | random exam order; key 12–13 per letter; no letter more than 3 times in a row; correct option never clearly the longest |
+| Syllabus | included deleted topics | checked against `CUET SYLLABUS/md/Biological Science - 304.md`; no deleted chapters (Reproduction in Organisms, Strategies for Enhancement in Food Production, Environmental Issues), no nutrient cycling or succession |
+
+**Case-set themes:** 1 menstrual cycle; 2 lac operon; 3 population growth; 4 cloning into pBR322; 5 pedigree analysis; 6 immune response and vaccination; 7 embryo sac and double fertilisation; 8 Hardy–Weinberg; 9 Bt cotton and RNAi; 10 energy flow; 11 infertile couple and ART; 12 sewage treatment and biogas; 13 DNA fingerprinting (forensic); 14 biodiversity (species–area, hotspots, loss); 15 sickle-cell disease (inheritance, diagnosis, gene therapy).
+
+**Verification:** `validate_papers.py` — 0 parse errors, 0 key/explanation mismatches, 0 runs > 3, 0 within- or cross-paper duplicate stems, 0 difficulty deviations; key across the series A 25.7%, B 24.3%, C 24.9%, D 25.1%. Before each build, a similarity check against all earlier tests replaced near-repeats (about 30 questions across Tests 12–15).
+
+**Fixes to earlier tests found in the final sweep:** "standing state" (part of Nutrient Cycling, not in the CUET syllabus) was removed — Test 6 Q27 rewritten as a standing-crop/biomass statements question, Test 9 Q04 replaced with a productivity-units question, and a wording fix in the Test 2 Q19 explanation.
+
+**Known limits:** NCERT Class 12 Biology is finite, so over 15 tests some facts recur in different formats (e.g. as a distractor in one test and a stem in another); the coverage map caps each angle at three uses. Low-capacity banks (IX-2, VI-3, X-3) were extended with new NCERT angles during Tests 13–15.
+
+### Tools added
+- `docs/blueprints/biological_science.md` (pattern, PYQ analysis, weights) and `docs/blueprints/biological_science_coverage.md` (case themes and angle banks with "Used in" columns).
