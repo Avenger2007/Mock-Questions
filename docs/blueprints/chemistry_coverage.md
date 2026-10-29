@@ -30,10 +30,10 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 ### I Solutions (5 per test)
 | # | Angle | Used in |
 |---|---|---|
-| 1 | Concentration terms: mass %, ppm, mole fraction, molarity, molality — temperature dependence | T1, T7 |
+| 1 | Concentration terms: mass %, ppm, mole fraction, molarity, molality — temperature dependence | T1, T7, T9 |
 | 2 | Molarity calculation (mass of solute, volume of solution) | T2, T8 |
 | 3 | Molality calculation (mass of solute, mass of solvent) | T1, T4 |
-| 4 | Mole fraction calculation | T3 |
+| 4 | Mole fraction calculation | T3, T9 |
 | 5 | ppm calculation (trace solutes, e.g. dissolved O₂, F⁻) | T5 |
 | 6 | Solubility of solids: temperature, Le Chatelier, nature of solute/solvent | T5, T8 |
 | 7 | Henry's law: statement, KH meaning, calculation | T2, T6 |
@@ -45,14 +45,14 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 13 | Negative deviation (phenol + aniline, chloroform + acetone) | T1, T7 |
 | 14 | Azeotropes: minimum and maximum boiling, examples (ethanol 95%, HNO₃ 68%) | T1, T6 |
 | 15 | Relative lowering of vapour pressure calculation | T2, T8 |
-| 16 | Elevation of boiling point: Kb, calculation | T3 |
+| 16 | Elevation of boiling point: Kb, calculation | T3, T9 |
 | 17 | Depression of freezing point: Kf, calculation, antifreeze | T4 |
 | 18 | Osmotic pressure: π = CRT calculation, why preferred for macromolecules | T4, T6 |
 | 19 | Isotonic, hypertonic, hypotonic solutions; 0.9% saline, cells in salt solution | T2 |
-| 20 | Reverse osmosis and desalination; cellulose acetate membrane | T3 |
+| 20 | Reverse osmosis and desalination; cellulose acetate membrane | T3, T9 |
 | 21 | van't Hoff factor: association (ethanoic acid in benzene) and dissociation | T2, T8 |
 | 22 | Abnormal molar mass calculation with i | T4, T8 |
-| 23 | Comparing colligative properties of equimolal solutions (NaCl, glucose, K₂SO₄) | T1 |
+| 23 | Comparing colligative properties of equimolal solutions (NaCl, glucose, K₂SO₄) | T1, T9 |
 | 24 | Molar mass from a colligative property | T4, T7 |
 | 25 | Types of solutions (gas in liquid, solid in solid — amalgam, alloys) | T3, T7 |
 | 26 | Kb and Kf units and meaning (molal constants) | T5 |
@@ -70,20 +70,20 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 8 | Equilibrium constant from E°cell | T3, T8 |
 | 9 | ΔG° = −nFE°cell calculation | T1, T5 |
 | 10 | Conductance, conductivity, cell constant; units | T4, T7 |
-| 11 | Molar conductivity: Λm = κ × 1000 / C calculation | T2 |
+| 11 | Molar conductivity: Λm = κ × 1000 / C calculation | T2, T9 |
 | 12 | Variation of κ and Λm with dilution (strong vs weak electrolytes) | T4, T8 |
 | 13 | Kohlrausch law: Λ°m of a weak electrolyte from strong ones | T1, T6 |
-| 14 | Degree of dissociation α = Λm/Λ°m and Ka | T4 |
+| 14 | Degree of dissociation α = Λm/Λ°m and Ka | T4, T9 |
 | 15 | Faraday's first law: mass deposited calculation | |
 | 16 | Faraday's second law; charge of n moles of electrons | |
 | 17 | Products of electrolysis: aqueous NaCl, molten NaCl, H₂SO₄, CuSO₄ with Cu vs Pt electrodes | T1 |
 | 18 | Primary batteries: dry (Leclanché) cell, mercury cell | T2, T6 |
 | 19 | Lead storage battery: reactions on discharge and charging | T1, T8 |
-| 20 | Nickel–cadmium cell | |
+| 20 | Nickel–cadmium cell | T9 |
 | 21 | Fuel cells: H₂–O₂ cell, Apollo, efficiency | T1, T5 |
 | 22 | Corrosion: rusting as an electrochemical process, prevention | T2, T6 |
-| 23 | Metallic vs electrolytic conductance; factors affecting electrolytic conductivity | T5 |
-| 24 | Measurement of conductivity: Wheatstone bridge, AC source, conductivity cell | T5 |
+| 23 | Metallic vs electrolytic conductance; factors affecting electrolytic conductivity | T5, T9 |
+| 24 | Measurement of conductivity: Wheatstone bridge, AC source, conductivity cell | T5, T9 |
 | 25 | Which metal displaces which / will a container store a solution (E° reasoning) | T4, T8 |
 
 ### III Chemical Kinetics (5)
@@ -92,7 +92,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 1 | Average and instantaneous rate; rate in terms of each species (stoichiometry) | T1, T4 |
 | 2 | Units of rate and rate constant for zero, first, second order | T2, T7 |
 | 3 | Rate law from experimental data (initial-rate method) | T2, T7 |
-| 4 | Order vs molecularity: differences, fractional order, complex reactions | T2 |
+| 4 | Order vs molecularity: differences, fractional order, complex reactions | T2, T9 |
 | 5 | Rate-determining step and mechanism | T4, T8 |
 | 6 | Zero-order reaction: integrated law, t₁/₂, examples (NH₃ on Pt, HI on gold) | T3, T7 |
 | 7 | First-order integrated law: k from concentrations | T1, T6 |
@@ -100,8 +100,8 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 9 | Time for 90% / 99% / 99.9% completion | T3, T8 |
 | 10 | Graphs: [R] vs t, ln[R] vs t, t₁/₂ vs [R]₀ for zero and first order | T3, T8 |
 | 11 | Pseudo-first-order reactions: hydrolysis of ethyl acetate, inversion of cane sugar | T2, T6 |
-| 12 | Radioactive decay and first-order kinetics (C-14 type) | T5 |
-| 13 | Effect of temperature: rate roughly doubles per 10 °C | T3, T8 |
+| 12 | Radioactive decay and first-order kinetics (C-14 type) | T5, T9 |
+| 13 | Effect of temperature: rate roughly doubles per 10 °C | T3, T8, T9 |
 | 14 | Arrhenius equation; meaning of A and Ea; ln k vs 1/T slope | |
 | 15 | Ea from k at two temperatures | |
 | 16 | Catalyst: lowers Ea, does not change ΔG or K | T3, T7 |
@@ -109,9 +109,9 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 18 | Limitations of collision theory | T5 |
 | 19 | Factors affecting rate (concentration, temperature, catalyst, nature, surface) | T5 |
 | 20 | Change in rate when concentration is changed (order given) | T2, T6 |
-| 21 | Gas-phase first-order decomposition with pressure data | T5 |
+| 21 | Gas-phase first-order decomposition with pressure data | T5, T9 |
 | 22 | Elementary vs complex reactions; molecularity cannot be zero or fractional | T4, T6 |
-| 23 | Activated complex and energy profile; threshold energy | T6 |
+| 23 | Activated complex and energy profile; threshold energy | T6, T9 |
 | 24 | Fraction of molecules with energy ≥ Ea; e^(−Ea/RT) | T5 |
 | 25 | Integrated zero-order calculation | T4, T8 |
 
@@ -119,18 +119,18 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | # | Angle | Used in |
 |---|---|---|
 | 1 | Position and electronic configuration of 3d series; exceptions Cr, Cu | T1 |
-| 2 | Why Zn, Cd, Hg are not regarded as transition metals | T2 |
+| 2 | Why Zn, Cd, Hg are not regarded as transition metals | T2, T9 |
 | 3 | Atomic and ionic radii trend; 4d ≈ 5d sizes | T5, T8 |
 | 4 | Lanthanoid contraction: cause and consequences (Zr/Hf) | T1, T5 |
-| 5 | Ionisation enthalpy trends; irregularities (Cr, Cu, Zn) | T4 |
+| 5 | Ionisation enthalpy trends; irregularities (Cr, Cu, Zn) | T4, T9 |
 | 6 | Oxidation states: maximum at Mn (+7); stability across the series | T2, T6 |
 | 7 | E°(M²⁺/M) trend; Cu positive; Mn, Ni, Zn anomalies | T3, T8 |
-| 8 | E°(M³⁺/M²⁺): Mn³⁺, Co³⁺ oxidising; Cr²⁺ reducing; Fe³⁺/Fe²⁺ | T4 |
+| 8 | E°(M³⁺/M²⁺): Mn³⁺, Co³⁺ oxidising; Cr²⁺ reducing; Fe³⁺/Fe²⁺ | T4, T9 |
 | 9 | Stability of higher oxidation states with F and O (MnO₄⁻, CrO₄²⁻, VF₅, CrF₆) | T4, T8 |
 | 10 | Magnetic moment μ = √(n(n+2)) BM; unpaired electron count | T1, T5 |
 | 11 | Colour of transition metal ions: d–d transition; colourless Sc³⁺, Ti⁴⁺, Zn²⁺, Cu⁺ | T1, T6 |
 | 12 | Complex formation; catalytic properties (V₂O₅, Fe, Ni, Fe³⁺ in I⁻/S₂O₈²⁻) | T3, T6 |
-| 13 | Interstitial compounds and alloys (brass, bronze) | T3 |
+| 13 | Interstitial compounds and alloys (brass, bronze) | T3, T9 |
 | 14 | Melting points and enthalpy of atomisation; metallic bonding | T3, T8 |
 | 15 | Nature of oxides: basic → amphoteric → acidic with oxidation state (MnO → Mn₂O₇) | T2, T6 |
 | 16 | K₂Cr₂O₇: preparation from chromite; chromate–dichromate equilibrium with pH | T7 |
@@ -139,7 +139,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 19 | KMnO₄ in acidic, neutral/faintly alkaline medium; products | T1, T7 |
 | 20 | Structures of CrO₄²⁻, Cr₂O₇²⁻, MnO₄²⁻, MnO₄⁻ | T7 |
 | 21 | Lanthanoids: configuration, +3 state, Ce⁴⁺, Eu²⁺, Yb²⁺, Tb⁴⁺ | T2, T5 |
-| 22 | Lanthanoid chemistry: reactions with water, acids, colour, magnetism | T5 |
+| 22 | Lanthanoid chemistry: reactions with water, acids, colour, magnetism | T5, T9 |
 | 23 | Actinoids: configuration, wider range of oxidation states, radioactivity | T4, T8 |
 | 24 | Comparison of lanthanoids and actinoids; actinoid contraction greater | T3, T6 |
 | 25 | Applications: misch metal, catalysts, steel, photography (AgBr) | T5 |
@@ -148,17 +148,17 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 ### V Coordination Compounds (6)
 | # | Angle | Used in |
 |---|---|---|
-| 1 | Werner's theory: primary and secondary valency; CoCl₃ ammines | T2, T7 |
+| 1 | Werner's theory: primary and secondary valency; CoCl₃ ammines | T2, T7, T9 |
 | 2 | Double salts vs complexes (Mohr's salt, potash alum vs K₄[Fe(CN)₆]) | T3, T8 |
 | 3 | Definitions: coordination entity, central atom, coordination sphere, polyhedron | T4, T7 |
 | 4 | Ligands: denticity; ambidentate (NO₂⁻/ONO⁻, SCN⁻/NCS⁻); chelate; EDTA | T1, T5 |
 | 5 | Coordination number and oxidation number of the central atom | T1, T5 |
 | 6 | Homoleptic and heteroleptic complexes | T4 |
-| 7 | IUPAC name from formula | T1, T2 |
+| 7 | IUPAC name from formula | T1, T2, T9 |
 | 8 | Formula from IUPAC name | T2, T6 |
 | 9 | Geometrical isomerism: square planar [MA₂B₂], octahedral [MA₄B₂], fac/mer | T1, T7 |
 | 10 | Optical isomerism: [Co(en)₃]³⁺, cis-[PtCl₂(en)₂]²⁺ | T3, T6 |
-| 11 | Linkage, coordination, ionisation, solvate (hydrate) isomerism | T2, T4 |
+| 11 | Linkage, coordination, ionisation, solvate (hydrate) isomerism | T2, T4, T9 |
 | 12 | Number of isomers of a given complex | T4, T7 |
 | 13 | VBT: hybridisation (sp³, dsp², d²sp³, sp³d²), inner/outer orbital | T2, T6 |
 | 14 | VBT magnetic behaviour: [NiCl₄]²⁻ vs [Ni(CN)₄]²⁻; [CoF₆]³⁻ vs [Co(NH₃)₆]³⁺ | T2, T6 |
@@ -167,14 +167,14 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 17 | Spectrochemical series; strong vs weak field ligands | T1, T8 |
 | 18 | High-spin vs low-spin d⁴–d⁷; pairing energy vs Δo; electron configuration t₂g/eg | |
 | 19 | Colour: complementary colour, [Ti(H₂O)₆]³⁺, anhydrous CuSO₄, Ni²⁺ with ligands | T3, T8 |
-| 20 | Limitations of CFT | T5 |
+| 20 | Limitations of CFT | T5, T9 |
 | 21 | Metal carbonyls: synergic bonding; Ni(CO)₄, Fe(CO)₅, Cr(CO)₆ shapes | |
 | 22 | Applications: hardness of water (EDTA), cisplatin, Mond process, Wilkinson catalyst, haemoglobin, chlorophyll, B₁₂ | T1, T4, T5 |
-| 23 | Conductivity / AgNO₃ test to identify ionisable groups | T2, T6 |
+| 23 | Conductivity / AgNO₃ test to identify ionisable groups | T2, T6, T9 |
 | 24 | Magnetic moment of a complex from its spin state | |
 | 25 | Stability of complexes; chelate effect | T3, T8 |
-| 26 | Effective atomic number-free counting: total ions in solution, moles of precipitate | T2, T6 |
-| 27 | Square planar vs tetrahedral for d⁸ Ni(II)/Pt(II) | T5 |
+| 26 | Effective atomic number-free counting: total ions in solution, moles of precipitate | T2, T6, T9 |
+| 27 | Square planar vs tetrahedral for d⁸ Ni(II)/Pt(II) | T5, T9 |
 | 28 | Analytical uses: dimethylglyoxime test for Ni²⁺, Cu²⁺ in qualitative analysis | T7, T8 |
 | 29 | Order of naming: ligands alphabetical, prefixes bis/tris, anionic complexes -ate (ferrate, cuprate) | T3, T6 |
 | 30 | Oxidation state and d-electron count of central metal | T4, T7 |
@@ -182,15 +182,15 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 ### VI Haloalkanes and Haloarenes (5)
 | # | Angle | Used in |
 |---|---|---|
-| 1 | Classification: 1°, 2°, 3°, allylic, benzylic, vinylic, aryl halides | T2 |
+| 1 | Classification: 1°, 2°, 3°, allylic, benzylic, vinylic, aryl halides | T2, T9 |
 | 2 | IUPAC nomenclature of haloalkanes and haloarenes | T3, T8 |
 | 3 | Nature of C–X bond; bond length and enthalpy trends | T4, T5 |
 | 4 | Preparation from alcohols: HX/ZnCl₂, PCl₃, PCl₅, SOCl₂ (why SOCl₂ preferred) | T1, T6 |
 | 5 | Preparation from hydrocarbons: free-radical halogenation, Markovnikov addition, peroxide effect | T2, T6 |
 | 6 | Finkelstein and Swarts reactions | T1, T7 |
-| 7 | Preparation of haloarenes: electrophilic substitution, Sandmeyer | T4 |
+| 7 | Preparation of haloarenes: electrophilic substitution, Sandmeyer | T4, T9 |
 | 8 | Physical properties: boiling point trends (size of halogen, branching) | T3, T6 |
-| 9 | Density and solubility | T4 |
+| 9 | Density and solubility | T4, T9 |
 | 10 | SN2: mechanism, inversion, reactivity order (1° > 2° > 3°) | T1, T5 |
 | 11 | SN1: carbocation, racemisation, reactivity order (3° > 2° > 1°; benzylic, allylic) | T2, T5 |
 | 12 | Chirality, enantiomers, racemic mixture, retention vs inversion | T5, T8 |
@@ -199,9 +199,9 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 15 | Reaction with metals: Grignard reagent; Wurtz reaction | T3, T7 |
 | 16 | Reaction with KCN vs AgCN; KNO₂ vs AgNO₂ (ambident nucleophiles) | T1, T6 |
 | 17 | Haloarenes: low reactivity to nucleophilic substitution (resonance, sp² C) | T1, T8 |
-| 18 | Activation by –NO₂ at ortho/para (Dow process conditions; 2,4-dinitro) | T3 |
+| 18 | Activation by –NO₂ at ortho/para (Dow process conditions; 2,4-dinitro) | T3, T9 |
 | 19 | Electrophilic substitution in haloarenes: o/p directing, deactivating | T4, T8 |
-| 20 | Wurtz–Fittig and Fittig reactions | T3 |
+| 20 | Wurtz–Fittig and Fittig reactions | T3, T9 |
 | 21 | Polyhalogen compounds: CH₂Cl₂, CHCl₃ (phosgene, storage), CHI₃ (antiseptic) | T2, T6 |
 | 22 | CCl₄ and freons: uses and ozone depletion | T3, T7 |
 | 23 | DDT: preparation idea, use, environmental persistence | T4 |
@@ -218,7 +218,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 5 | Alcohols from carbonyl compounds: reduction (NaBH₄, LiAlH₄); from acids/esters | T3, T6 |
 | 6 | Alcohols from Grignard reagents with HCHO, other aldehydes, ketones | T2, T5 |
 | 7 | Phenol preparation: haloarenes (Dow), benzenesulphonic acid, diazonium salts, cumene | |
-| 8 | Boiling points: hydrogen bonding; comparison with hydrocarbons and ethers | T2, T6 |
+| 8 | Boiling points: hydrogen bonding; comparison with hydrocarbons and ethers | T2, T6, T9 |
 | 9 | Solubility in water vs carbon chain length | T3, T8 |
 | 10 | Acidity of alcohols: 1° > 2° > 3°; reaction with Na | T4, T8 |
 | 11 | Acidity of phenols vs alcohols; effect of –NO₂ and –CH₃ substituents; pKa order | T1, T8 |
@@ -232,20 +232,22 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 19 | Phenol with Zn dust; oxidation to benzoquinone | T8 |
 | 20 | Ether preparation: dehydration of alcohols (413 K); Williamson synthesis (choice of halide) | T1, T6 |
 | 21 | Cleavage of ethers by HI: which products for methyl alkyl and alkyl aryl ethers | T2, T5 |
-| 22 | Electrophilic substitution in anisole: halogenation, Friedel–Crafts, nitration | T4, T7 |
-| 23 | Methanol (wood spirit, CO + 2H₂, toxicity) and ethanol (fermentation, denaturation) | T1, T4 |
+| 22 | Electrophilic substitution in anisole: halogenation, Friedel–Crafts, nitration | T4, T7, T9 |
+| 23 | Methanol (wood spirit, CO + 2H₂, toxicity) and ethanol (fermentation, denaturation) | T1, T4, T9 |
 | 24 | Distinguishing tests: FeCl₃ (phenol), Lucas, iodoform for ethanol/2° CH₃CH(OH)– | T3, T8 |
 | 25 | Picric acid preparation and acidity | T5, T8 |
+| 26 | Which bond breaks: O–H (alcohol as nucleophile) vs C–O (as electrophile) | T9 |
+| 27 | Ether formation by dehydration — only for primary alcohols | T9 |
 
 ### VIII Aldehydes, Ketones and Carboxylic Acids (6)
 | # | Angle | Used in |
 |---|---|---|
 | 1 | Nomenclature (common and IUPAC) of aldehydes, ketones, acids | T2, T5 |
 | 2 | Structure and polarity of the carbonyl group | T3, T8 |
-| 3 | Preparation: oxidation/dehydrogenation of alcohols; ozonolysis; hydration of alkynes | T3, T6 |
+| 3 | Preparation: oxidation/dehydrogenation of alcohols; ozonolysis; hydration of alkynes | T3, T6, T9 |
 | 4 | Rosenmund reduction; Stephen reaction; DIBAL-H on nitriles/esters | T1, T7 |
-| 5 | Etard reaction; side-chain chlorination; Gatterman–Koch | T1, T6 |
-| 6 | Ketones from acyl chlorides (dialkylcadmium), nitriles + Grignard, Friedel–Crafts acylation | T3, T6 |
+| 5 | Etard reaction; side-chain chlorination; Gatterman–Koch | T1, T6, T9 |
+| 6 | Ketones from acyl chlorides (dialkylcadmium), nitriles + Grignard, Friedel–Crafts acylation | T3, T6, T9 |
 | 7 | Physical properties: boiling points vs alcohols and ethers; solubility | T4, T7 |
 | 8 | Nucleophilic addition: reactivity of HCHO > aldehydes > ketones (steric + electronic) | T1, T3 |
 | 9 | Addition of HCN, NaHSO₃, Grignard, alcohols (hemiacetal, acetal, ketal) | T5, T7 |
@@ -255,20 +257,20 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 13 | Iodoform (haloform) reaction: which compounds give it | T1, T8 |
 | 14 | Aldol condensation (α-H needed), cross aldol | T1, T2, T6 |
 | 15 | Cannizzaro reaction (no α-H) | T1, T7 |
-| 16 | Electrophilic substitution in benzaldehyde (meta) | T4 |
-| 17 | Uses: formalin, acetone solvent, benzaldehyde flavour | T4 |
+| 16 | Electrophilic substitution in benzaldehyde (meta) | T4, T9 |
+| 17 | Uses: formalin, acetone solvent, benzaldehyde flavour | T4, T9 |
 | 18 | Carboxylic acid preparation: oxidation, nitriles, Grignard + CO₂, from amides/acyl halides/anhydrides/esters | T2, T5 |
 | 19 | Boiling points (dimers) and solubility of acids | T2, T6 |
 | 20 | Acidity: carboxylic acid vs phenol vs alcohol; resonance in carboxylate | T3, T7 |
 | 21 | Effect of substituents on acidity: EWG/EDG; chloroacetic acids; benzoic acids | T1, T4, T6 |
-| 22 | Reactions with metals, NaHCO₃ (test for –COOH) | T5 |
+| 22 | Reactions with metals, NaHCO₃ (test for –COOH) | T5, T9 |
 | 23 | Formation of anhydride, ester, acid chloride (PCl₃, PCl₅, SOCl₂), amide | T3, T7 |
 | 24 | Reduction with LiAlH₄; decarboxylation (soda lime, Kolbe electrolysis) | T4, T7 |
 | 25 | HVZ reaction | |
-| 26 | Ring substitution in benzoic acid (meta); no Friedel–Crafts | T5 |
+| 26 | Ring substitution in benzoic acid (meta); no Friedel–Crafts | T5, T9 |
 | 27 | Uses of carboxylic acids (methanoic, ethanoic, benzoic, esters) | T4, T7 |
 | 28 | Distinguishing pairs: propanal/propanone, acetophenone/benzophenone, benzoic acid/phenol | T8 |
-| 29 | Hydration and stability; acetal formation as protection | T4 |
+| 29 | Hydration and stability; acetal formation as protection | T4, T9 |
 | 30 | Reaction sequence (A → B → C) identification | T5, T7 |
 
 ### IX Amines (4)
@@ -291,11 +293,11 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 15 | Nitration of aniline: meta product due to anilinium ion; protection | T4, T8 |
 | 16 | Sulphonation: sulphanilic acid, zwitterion | T5, T8 |
 | 17 | Aniline does not undergo Friedel–Crafts | T4, T8 |
-| 18 | Diazonium salts: preparation (273–278 K), stability of arenediazonium | T8 |
-| 19 | Sandmeyer and Gatterman reactions | T2 |
-| 20 | Replacement by I⁻, F⁻ (Balz–Schiemann), H (H₃PO₂), OH, NO₂ | |
-| 21 | Coupling reactions: p-hydroxyazobenzene (orange), p-aminoazobenzene (yellow) | T1 |
-| 22 | Importance of diazonium salts in synthesis (e.g. 1,3,5-tribromobenzene, fluorobenzene) | |
+| 18 | Diazonium salts: preparation (273–278 K), stability of arenediazonium | T8, T9 |
+| 19 | Sandmeyer and Gatterman reactions | T2, T9 |
+| 20 | Replacement by I⁻, F⁻ (Balz–Schiemann), H (H₃PO₂), OH, NO₂ | T9 |
+| 21 | Coupling reactions: p-hydroxyazobenzene (orange), p-aminoazobenzene (yellow) | T1, T9 |
+| 22 | Importance of diazonium salts in synthesis (e.g. 1,3,5-tribromobenzene, fluorobenzene) | T9 |
 
 ### X Biomolecules (4)
 | # | Angle | Used in |
@@ -309,18 +311,18 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 7 | Fructose: ketohexose, furanose, laevorotatory | T5 |
 | 8 | Sucrose: α-glucose + β-fructose, C1–C2 linkage, non-reducing, invert sugar | T1, T7 |
 | 9 | Maltose and lactose: linkages, reducing | T2, T8 |
-| 10 | Starch (amylose 15–20%, amylopectin), cellulose (β-glucose), glycogen | T3 |
+| 10 | Starch (amylose 15–20%, amylopectin), cellulose (β-glucose), glycogen | T3, T9 |
 | 11 | Importance of carbohydrates | T5 |
 | 12 | Amino acids: essential vs non-essential; acidic, basic, neutral | T2, T7 |
 | 13 | Zwitterion; isoelectric idea; amphoteric behaviour | T3 |
-| 14 | Peptide bond; dipeptide; fibrous vs globular proteins (keratin, insulin, albumin) | T4 |
+| 14 | Peptide bond; dipeptide; fibrous vs globular proteins (keratin, insulin, albumin) | T4, T9 |
 | 15 | Structure of proteins: primary, secondary (α-helix, β-pleated), tertiary, quaternary | T2, T8 |
 | 16 | Denaturation: boiling egg, curdling of milk; primary structure intact | T4 |
 | 17 | Enzymes: specificity, mechanism (elementary), lowering activation energy | T4 |
-| 18 | Vitamins: fat-soluble vs water-soluble; storage; B₁₂ exception | T3 |
+| 18 | Vitamins: fat-soluble vs water-soluble; storage; B₁₂ exception | T3, T9 |
 | 19 | Vitamin deficiency diseases (A night blindness, B₁ beriberi, C scurvy, D rickets, E, K) | T1, T7 |
-| 20 | Nucleic acids: nucleoside vs nucleotide; sugars and bases in DNA and RNA | T1, T7 |
-| 21 | DNA double helix: base pairing, phosphodiester links; RNA types; biological functions | T4 |
+| 20 | Nucleic acids: nucleoside vs nucleotide; sugars and bases in DNA and RNA | T1, T7, T9 |
+| 21 | DNA double helix: base pairing, phosphodiester links; RNA types; biological functions | T4, T9 |
 | 22 | Hormones: classification (steroids, polypeptides, amino-acid derivatives) | T5 |
 | 23 | Hormones: functions and deficiency (insulin, thyroxine, estrogen, adrenaline, glucocorticoids) | T2, T8 |
 | 24 | Glycosidic linkage; reducing sugars and Tollens/Fehling | T4 |
