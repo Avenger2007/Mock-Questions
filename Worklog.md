@@ -213,3 +213,31 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 
 ### Tools added
 - `docs/blueprints/biological_science.md` (pattern, PYQ analysis, weights) and `docs/blueprints/biological_science_coverage.md` (case themes and angle banks with "Used in" columns).
+
+---
+
+## Chemistry (306) — revised to the CUET 2027 standard (completed 29 Oct 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `0cf3166` (blueprint, coverage map, pilot Test 1) … Test 15 on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | 15 old papers (5 questions per unit, mostly direct recall) | **15 rewritten tests** (`CUET CHEMISTRY TEST 1–15.json`), planned first in a coverage map |
+| Paper structure | 50 questions | 50 compulsory questions, 60 min, +5 / −1 (NTA pattern) |
+| Unit weights | 5 per unit | every test: physical 15 (I 5, II 5, III 5), inorganic 11 (IV 5, V 6), organic 24 (VI 5, VII 5, VIII 6, IX 4, X 4) — organic-heavy, as in the 2025 shifts; the passage set counts inside its unit |
+| Difficulty | mostly easy | **8 easy / 32 medium / 10 hard** in every test |
+| Formats | almost all direct | per test: one 5-question passage set, 5 match-list, 5 statements, 3 assertion–reason, 3 order/sequence, 2 data or table, at least 6 numericals, the rest direct |
+| Numbers | — | all numericals solvable without a calculator; constants and logs given in the question |
+| Explanations | 1–2 lines | `Answer:` line, then Given / Step / Common mistake (numericals, data) or Why / Why not the others / Key point; all from NCERT Class 12 Chemistry |
+| Order and keys | unit-wise | random exam order; key 12–13 per letter in every test; no letter more than 3 times in a row; correct option never clearly the longest; statement-question answer patterns varied |
+| Syllabus | — | checked against `CUET SYLLABUS/md/Chemistry - 306.md`; no solid state, surface chemistry, p-block, metallurgy, polymers chapter or Class 11 physical chemistry |
+
+**Passage-set themes:** 1 first-order N₂O₅ decomposition; 2 Werner's cobalt ammines; 3 Daniell cell and Nernst equation; 4 antifreeze and osmotic pressure of a protein; 5 SN1 vs SN2 (2-bromobutane, tert-butyl bromide); 6 glucose structure; 7 KMnO₄ and K₂Cr₂O₇; 8 identifying unknown carbonyl compounds; 9 diazonium salts; 10 electrolysis and Faraday's laws; 11 phenol (cumene, Kolbe, Reimer–Tiemann); 12 Arrhenius equation; 13 crystal field theory and magnetism; 14 E° trends of the 3d series; 15 ethanoic acid → HVZ → amide → amine.
+
+**Verification:** `validate_papers.py` — 0 parse errors, 0 key/explanation mismatches, 0 runs > 3, 0 within- or cross-paper duplicate stems, 0 difficulty deviations; series key A 25.6%, B 24.3%, C 24.7%, D 25.5%. Before each build, a similarity check against all earlier tests led to rewriting or replacing near-repeats (about 25 questions across Tests 2–15). A final sweep found no out-of-syllabus topics.
+
+**Known limits:** some calculation types (Kohlrausch's law, Nernst equation, Faraday's laws, colligative-property arithmetic) recur across tests with different substances and numbers, and some short stems share templates (e.g. "The IUPAC name of … is"). Syllabus items dropped from the rationalised NCERT (metal carbonyls, hormones, corrosion, preparation of glucose) are tested from the earlier NCERT text, as the CUET syllabus still lists them. The coverage map was extended during the series as topic banks ran low.
+
+### Tools added
+- `docs/blueprints/chemistry.md` (pattern, 2025 PYQ analysis, weights, formats, out-of-syllabus list) and `docs/blueprints/chemistry_coverage.md` (passage themes and angle banks with "Used in" columns).
