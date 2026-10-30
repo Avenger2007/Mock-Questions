@@ -33,7 +33,7 @@ Each file's `status` field reads `revised` (meets the standard) or `pending_revi
 | 1 | Accountancy | 301 | ✅ | **16 / 16** ✅ | [accountancy.md](docs/blueprints/accountancy.md) |
 | 2 | Biological Science | 304 | ✅ | 15 / 15 | [biological_science.md](docs/blueprints/biological_science.md) |
 | 3 | Chemistry | 306 | ✅ | 15 / 15 | [chemistry.md](docs/blueprints/chemistry.md) |
-| 4 | Computer Science | 308 | ✅ | 1 / 15 (pilot) | [computer_science.md](docs/blueprints/computer_science.md) |
+| 4 | Computer Science | 308 | ✅ | 15 / 15 | [computer_science.md](docs/blueprints/computer_science.md) |
 | 5 | Economics | 309 | ✅ | — | — |
 | 6 | English | 101 | ✅ | — | — |
 | 7 | General Test | 501 | ✅ | — | — |

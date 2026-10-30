@@ -291,3 +291,29 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 - Added a 1,500-slot register for 25 papers, with fixed IDs, chapter/subtopic focus, reasoning seeds, style and 9/42/9 tier reservations. Tests 2 and 3 have 120 individually specified angle briefs. Every retained syllabus family appears; chapter frequency is PYQ-informed rather than mechanically equal.
 - Preserved Test 1's authored slots and verified 375 slots per subject, 15 per subject per test, broad Class 11/12 coverage and no exact duplicate chapter/angle seeds among un-authored reservations. Distinct seed labels are not a semantic originality guarantee; each future question needs independent authorship and review.
 - This commit contains planning material only; it does not claim Tests 2 or 3 are authored or approved.
+
+## Computer Science / Informatics Practices (308) — revised to the CUET 2027 standard (completed 30 Oct 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `8607e9b` (blueprint, coverage map, pilot Test 1) … `69b81f8` (Test 15) on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | 15 old papers of 50 questions, all compulsory | **15 rewritten tests** (`CUET COMPUTER SCIENCE TEST 1–15.json`), planned first in a coverage map |
+| Paper structure | single 50-question list | **85 questions per file**: Section A (15, common: database concepts, SQL, networks) + Section B1 Computer Science (35) + Section B2 Informatics Practices (35); a candidate attempts A plus one of B1/B2 = 50; 60 min, +5 / −1. Stored with `sections`, `common_sections` and `optional_sections`, as for Accountancy |
+| Unit weights | — | A: DB 4, SQL I 4, SQL II 4, networks 3. B1: exceptions/files 5, stack 4, queue 3, searching 4, sorting 3, data 3, DB/SQL 6, networks 4, security 3. B2: SQL 5, Pandas I 8, Pandas II 6, Matplotlib 6, web 4, societal impacts 5, project-based learning 1. Each B section's 5-question case set counts inside its unit |
+| Difficulty | mostly easy | **8 easy / 32 medium / 10 hard on both attempt paths** (A + B1 and A + B2) |
+| Formats | almost all direct | per path: one case set, 5 match-list, 5 statements, 3 assertion–reason, 3 order/sequence, many output/dry-run questions (SQL results, Python and Pandas output, postfix values, search and sort passes), the rest direct |
+| Code and outputs | — | every Python, Pandas and file-handling output was run before release (Pandas 2.3.3); SQL results worked out with MySQL rules and cross-checked in SQLite where possible; weekday names checked with Python |
+| Explanations | 1–2 lines | `Answer:` line, then Given / Step / Common mistake (outputs) or Why / Why not the others / Key point; all from NCERT CS and IP Classes 11–12 |
+| Order and keys | unit-wise | random order within each section; key about 4/4/4/3 in A and 9/9/9/8 in B1/B2; no letter more than 3 times in a row; correct option never clearly the longest; statement and assertion–reason answers varied |
+| Syllabus | — | checked against `CUET SYLLABUS/md/Computer Science - 308.md`; no OOP, sub-queries, views, OSI layers, subnetting or collision-resolution methods |
+
+**Case-set themes (B1 / B2):** 1 postfix evaluation / Series from a dictionary; 2 reading a text file / DataFrame loc–iloc; 3 try–except–else–finally trace / line-plot code; 4 ticket-counter queue / GROUP BY–HAVING sales; 5 binary search dry run / DataFrame statistics; 6 bubble sort passes / missing values; 7 pickle records / histogram and bar chart; 8 hashing and collisions / merge–concat; 9 infix-to-postfix conversion / SQL date functions; 10 class marks statistics / CSV import–export; 11 selection vs insertion sort / e-waste and health; 12 school campus network / website hosting and browsers; 13 security incident / cybercrime and the IT Act; 14 library database SQL / groupby, sorting and pivot; 15 data communication / SQL text functions.
+
+**Verification:** `validate_papers.py` — 0 parse errors, 0 key/explanation mismatches, 0 runs > 3, 0 self-referential options, 0 within- or cross-paper duplicate stems, 0 difficulty deviations; series key A 25.8%, B 25.3%, C 25.4%, D 23.5%. Before each build, a similarity check against all earlier tests led to renaming or rewording near-repeats.
+
+**Known limits:** output-type questions (ROUND/MID/INSTR results, postfix values, bubble and selection passes, groupby sums) recur across tests with new data, as the coverage map allows; some stems share templates such as "What is the output of the following MySQL query?". MySQL rounding of exact halves (e.g. ROUND(10.5) = 11) follows MySQL's rule for exact values. The coverage map was extended twice (before Tests 5 and 10) as topic banks ran low.
+
+### Tools added
+- `docs/blueprints/computer_science.md` (pattern, 2025 PYQ analysis, weights, formats, out-of-syllabus list) and `docs/blueprints/computer_science_coverage.md` (case themes and angle banks with "Used in" columns).
