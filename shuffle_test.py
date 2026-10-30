@@ -13,8 +13,10 @@ The NTA paper mixes units at random. This tool:
 
 The seed is the test number, so re-running gives the same order.
 Usage: python3 shuffle_test.py "CUET/Accountancy/CUET ACCOUNTANCY TEST 2.json" [...]
+IAT, NEST and COMEDK are deliberately rejected: their authored order and diagram IDs are fixed.
 """
 import json, random, re, sys
+from pathlib import Path
 
 
 def max_run(keys):
@@ -34,6 +36,14 @@ def arrange(questions, rng):
 
 def shuffle_file(path):
     data = json.load(open(path, encoding="utf-8"))
+    # These series are authored in final order; IDs also identify diagram assets.
+    series = str(data.get("series_id", "")).upper()
+    exam = str(data.get("exam", "")).upper()
+    folders = {part.upper() for part in Path(path).parts}
+    if (series.startswith(("IAT", "NEST", "COMEDK"))
+            or folders.intersection({"IISER", "NISER", "COMEDK"})
+            or re.search(r"\b(?:IISER|IAT|NISER|NEST|COMEDK)\b", exam)):
+        sys.exit(f"{path}: shuffling is disabled for IAT, NEST and COMEDK; preserve final order and diagram references")
     qs = data["questions"]
     order = []
     for q in qs:

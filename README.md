@@ -81,10 +81,16 @@ python3 shuffle_test.py "CUET/Accountancy/CUET ACCOUNTANCY TEST 2.json"   # put 
 
 ## Other exams
 
-Each exam has its own instructions file and 25 tests per series. Work on each starts only after the user supplies its PYQs.
+Each exam has its own instructions file and 25 planned tests per series. Mock authorship starts after PYQ acquisition, analysis and a coverage blueprint. IAT acquisition was authorised on 28 Oct 2026; on 29 Oct the user explicitly authorised analysis and the Test 1 review pilot in the same session.
 
 | Exam | Instructions | Folder | Syllabus | Status |
 |---|---|---|---|---|
-| IISER Aptitude Test (IAT) | [IAT_Instructions.md](docs/instructions/IAT_Instructions.md) | [`IISER/`](IISER/) | `IISER_Aptitude_Test_Syllabus_2026.md` | Instructions ready; waiting for PYQs |
+| IISER Aptitude Test (IAT) | [IAT_Instructions.md](docs/instructions/IAT_Instructions.md) | [`IISER/`](IISER/) | `IISER_Aptitude_Test_Syllabus_2026.md` | [539-question analysis](docs/blueprints/iat_pyq_analysis.md), [25-test coverage blueprint](docs/blueprints/iat.md), [Test 1 review PDF](IISER/review/IAT_TEST_1.pdf); pilot pending human approval |
 | NISER / NEST | [NISER_Instructions.md](docs/instructions/NISER_Instructions.md) | [`NISER/`](NISER/) | `NEST_2026_Syllabus.md` | Instructions ready; waiting for PYQs |
 | COMEDK UGET | [COMEDK_Instructions.md](docs/instructions/COMEDK_Instructions.md) | [`COMEDK/`](COMEDK/) | to be added (official PDFs) | Instructions ready; waiting for PYQs and syllabus PDFs |
+
+**Order policy (28 Oct 2026):** IAT, NEST and COMEDK are authored in final order. Do not shuffle questions or options or renumber IDs after authoring; preserve all diagram references. CUET retains its separate ordering workflow.
+
+**IAT pilot (29 Oct 2026):** 60 original questions, 15 per subject, six exact diagrams, 180 minutes, +4/-1/0, and worked solutions. Uses the verified 2026 pattern; no 2027 brochure is claimed. Status remains `pending_revision` for manual academic review. See [review files and reproduction commands](IISER/review/README.md). Run `python validate_iat.py`; the CUET validator does not validate this schema.
+
+**Analysis and audit PDFs:** [14-page student PYQ guide](output/pdf/IAT_PYQ_Analysis_Student_Guide.pdf) and [19-page Test 1 audit](output/pdf/IAT_Test_1_Full_Audit.pdf). The audit recommends content/style/difficulty revisions before final release; it leaves the test unchanged. [Evidence and reproduction notes](output/iat_reports/README.md).

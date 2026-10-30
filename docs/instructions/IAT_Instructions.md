@@ -1,4 +1,4 @@
-# OurMocks — IISER Aptitude Test (IAT) Test Generation Instructions (v1)
+# OurMocks — IISER Aptitude Test (IAT) Test Generation Instructions (v2)
 
 > **Scope:** IISER Aptitude Test (IAT) only, for admission to the BS-MS / BS programmes of the IISERs (and the institutes that also accept IAT scores). Other exams have their own files in `docs/instructions/`.
 >
@@ -6,7 +6,7 @@
 >
 > **Series size:** **25 tests** (`IISER/IAT TEST 1.json … IAT TEST 25.json`).
 >
-> **Status of the exam pattern below:** taken from IAT 2026 reporting (Careers360, citing iiseradmission.in). The official site could not be opened automatically (certificate error), so **the pattern must be re-confirmed against the official IAT 2027 brochure at iiseradmission.in before Test 1 is written** (Pre-start checklist, item 2).
+> **Status, 29 Oct 2026:** the pattern below was checked against indexed official IAT 2026 pages and brochure. No 2027 brochure has been verified. The user's explicit instruction to analyse PYQs and proceed with Test 1 authorises a **provisional 2026-pattern manual-review pilot** now. Verify the target-year notification before student publication; do not claim verified 2027 compliance.
 
 ---
 
@@ -22,8 +22,8 @@ You are a science test author for **OurMocks**. You write 25 full-length IAT moc
 
 ## STRICT COMMAND — READ FIRST
 
-1. **Never start IAT work without the user's PYQs.** At the start of IAT work, ask the user for the IAT previous-year papers (with answer keys if available) and wait. Do not search for, download or store PYQs yourself unless the user asks.
-2. **Never guess the pattern.** Use only the official brochure/notification for counts, duration and marking. If something is missing or has changed, stop and ask.
+1. **Never author IAT tests before acquiring the authorised PYQ references.** On 28 Oct 2026 the user supplied the official archive URL and explicitly authorised downloading and storing all available years, converting them to Markdown and describing figures. Use `PYQ/IAT/README.md`, `SOURCES.md` and `manifest.json` for actual acquisition and review status; do not ask for papers already acquired. Do not treat a source link or provisional key as an approved blueprint or final answer key.
+2. **Never guess the pattern.** Use the official brochure/notification for counts, duration and marking. For the explicitly authorised pilot, use verified 2026 conditions and label the year limitation; a missing 2027 notification does not block this review draft. Resolve material changes before publication.
 3. **Syllabus = `IISER/IISER_Aptitude_Test_Syllabus_2026.md`** (or the newer year when published). Read the Markdown, not the PDF, to save tokens; open the PDF only to check a garbled line. A topic not in the syllabus is never tested.
 4. **Do not change the marking scheme** to adjust difficulty. Difficulty comes from question content only.
 5. **Never copy or lightly reword a PYQ.** PYQs set the standard; every question is newly written.
@@ -38,8 +38,16 @@ You are a science test author for **OurMocks**. You write 25 full-length IAT moc
 - Banned: one question skeleton with values or words swapped; number-swapped copies of an earlier question; fact banks cycled to fill a count; the same stem relabelled at another difficulty.
 - The test: if the method can be described as "a pattern plus values to substitute", it is banned.
 - Every question tests different substance from every other question in the series.
-- Scripts may only count, validate, shuffle, check keys, check duplicates and rename. They must never write question text, options, numbers or answers.
+- Scripts may only count, validate, check keys, check duplicates and organise files without changing final IDs. They must never write question text, options, numbers or answers.
 - If generation fails, retry the same honest method; after 2–3 failures, stop and tell the user. Never switch silently to a scripted approach.
+
+## Fixed order and diagram integrity (user decision, 28 Oct 2026)
+
+- Plan a varied exam-like topic order before authorship, then write directly into that final order.
+- Do not shuffle questions or options, or renumber question IDs, after authoring.
+- Assign diagram filenames and image-register entries to the final question IDs; keep every link stable.
+- Balance the answer letters during authorship and solve correctness-first. If a correction is necessary, edit the specific question and its linked records explicitly, then re-validate.
+- Random sampling for quality review is still allowed; it does not change paper order.
 
 ## Answer-Key Integrity
 
@@ -64,10 +72,10 @@ You are a science test author for **OurMocks**. You write 25 full-length IAT moc
 | Total marks | **240** (60 per subject) |
 | Syllabus basis | NCERT Class 11 and 12 (per the official IAT syllabus) |
 
-Sources: [Careers360 — IAT 2026 pattern, marking scheme](https://news.careers360.com/iiser-iat-2026-registration-closes-on-april-13-at-iiseradmission-in-exam-date-june-7-iits-iacs-iisc-iiest-shibpur-pattern/amp); official site iiseradmission.in (brochure to be confirmed).
+Sources: [official IAT examination page](https://www.iiseradmission.in/pages/admission/iat.html) and [official 2026 Information Brochure](https://app.iiseradmission.in/assets/pdfs/IB_IAT_2026_ENG.pdf), checked 29 Oct 2026. No best-three-subject scoring rule. All 60 questions are available; unanswered questions score zero.
 
 **What the pattern implies for authoring**
-- 3 minutes per question allows genuinely multi-step problems, but each must be solvable by hand in that time with no calculator (assume none unless the brochure says otherwise).
+- Three minutes per question is the overall average; easier items leave time for harder ones. The 2026 brochure permits an **on-screen non-programmable scientific calculator**; personal calculators are not allowed. Prefer tractable arithmetic without making calculator absence a false exam condition.
 - Negative marking means distractors must be truly tempting: each should be the answer a student gets from a specific, common error.
 - All four subjects carry equal weight; no subject may be treated as "filler".
 
@@ -87,27 +95,28 @@ When the user supplies the PYQs:
    - the difficulty spread actually seen;
    - any out-of-NCERT ideas that appeared, and whether the current syllabus still covers them.
 3. Write `docs/blueprints/iat.md`: chapter weights per test, per-subject difficulty counts, style mix, diagram policy and the coverage plan for all 25 tests.
-4. **Show the analysis summary to the user and get approval** before writing Test 1.
+4. Show the analysis summary with Test 1 for review. The user's 29 Oct 2026 instruction explicitly authorises completing analysis and the pilot in one session, superseding the earlier separate approval pause.
 5. Write Test 1 as the pilot; the user approves its standard before Tests 2–25.
 
-Do not store the PYQ files in the repository unless the user asks (the repo is public). Record findings, not papers.
+The user explicitly requested storing the IAT source PDFs and Markdown copies on 28 Oct 2026. Keep them in `PYQ/IAT/`, with exact acquisition URLs, checksums, year/language checks and provisional/final status. Preserve originals and describe figures without inventing unreadable details. Mirror-hosted copies must be labelled as mirrors; do not claim an official-server download when it failed.
 
 ---
 
-## Difficulty Standard (OurMocks standard: 15% / 65% / 20%)
+## Difficulty Standard (user decision: 15% / 70% / 15%)
 
 | Level | Whole paper (60) | Per subject (15) |
 |---|---|---|
 | Easy | **9** | 2 or 3 |
-| Medium | **39** | 9 or 10 |
-| Hard | **12** | 3 |
+| Medium | **42** | 10 or 11 |
+| Hard | **9** | 2 or 3 |
 
-- Per subject: one subject gets 3 easy / 9 medium / 3 hard and the other three get 2 / 10 / 3. Rotate which subject gets the extra easy question from test to test, so the paper total is always 9 / 39 / 12.
+- Whole paper: exactly 9 easy / 42 medium / 9 hard. Test 1: Biology 3/10/2, Chemistry 2/10/3, Mathematics 2/11/2, Physics 2/11/2 (easy/medium/hard).
+- Across subsequent tests, rotate the extra easy B, C, M, P and the extra hard C, M, P, B. In zero-based B/C/M/P indices, extra easy is `(test_number-1)%4`, extra hard is `test_number%4`; the medium count is the remainder of 15. This is an editorial balance policy, not an official subject quota.
 - **Easy:** one concept, one or two steps, but still at IAT level (no bare definition lookups unless the syllabus topic is definitional).
 - **Medium:** two or three linked ideas or steps; the core of the paper.
 - **Hard:** integrates concepts across chapters, needs careful reasoning or longer working, or uses an unfamiliar context built on syllabus ideas — always solvable in about 4–5 minutes.
 - **Progression across the series comes from depth, not the mix:** Tests 1–8 most accessible, 9–17 deeper, 18–25 closest to the hardest PYQs.
-- A difficulty label must match the real effort. Relabelling without changing content is forbidden.
+- A difficulty label must match the real effort. Do not inflate labels to meet a quota. When an audit identifies an incorrect label, correct it with a written rationale; otherwise strengthen or replace an item to meet the intended demand. No empirical difficulty is claimed without student-response data.
 
 ---
 
@@ -160,28 +169,40 @@ When a question genuinely needs a figure (circuit, ray diagram, graph, apparatus
 
 1. 25 tests, `IISER/IAT TEST <N>.json`, N = 1–25.
 2. Each test is a full IAT paper: 60 questions, 15 per subject, 180 minutes, +4 / −1 / 0.
-3. Sections B (Biology), C (Chemistry), M (Mathematics), P (Physics) in the order the real paper uses (confirm from PYQs). Questions are randomised **within** each section; sections are not mixed with each other.
+3. Sections B (Biology), C (Chemistry), M (Mathematics), P (Physics) in the order the real paper uses (confirm from PYQs). Author questions in their final order within each section; sections are not mixed with each other. **Do not shuffle or renumber after authoring.**
 4. No question repeats, or is a reworded or number-swapped copy of, any other question in the series.
-5. Every test covers the whole syllabus in proportion to the PYQ weights.
+5. Every test samples broadly from the syllabus; all retained topic families are covered across the series. A 15-question subject section cannot exhaust every chapter or sub-topic. Use PYQ weights as descriptive guidance, not official quotas or guaranteed predictions.
 
 ---
 
 ## Workflow
 
 **Pre-start checklist (once, before Test 1)**
-1. [ ] The user has provided the IAT PYQs (ask if not).
+1. [ ] The authorised IAT PYQs have been acquired and their actual years/languages verified (see `PYQ/IAT/manifest.json`).
 2. [ ] The pattern table above matches the current official brochure (count, duration, marking, sections). Update this file if anything changed.
 3. [ ] The syllabus Markdown is current (re-extract it if a new syllabus PDF is published).
-4. [ ] `docs/blueprints/iat_pyq_analysis.md` and `docs/blueprints/iat.md` are written and approved by the user.
-5. [ ] A coverage map for all 25 tests is written first (which sub-topic is tested from which angle in which test), so repeats are avoided before writing rather than fixed afterwards.
-6. [ ] Validation tooling supports this exam (adapt `validate_papers.py` for 60 questions, 4 sections and the per-section difficulty counts).
+4. [ ] `docs/blueprints/iat_pyq_analysis.md` and `docs/blueprints/iat.md` are written; the user authorised their use for the review pilot on 29 Oct 2026. Human approval of the pilot standard remains pending.
+5. [ ] A chapter-level coverage reservation for 25 tests and exact 60-slot pilot angles are written first. Expand exact angles for subsequent batches before authoring them; the chapter reservation is not a completed 1,500-angle plan.
+6. [ ] Run the IAT-specific `validate_iat.py` for 60 questions, 4 sections, per-section tiers, image links and key checks. The CUET validator alone does not support this schema.
+
+### Lessons from the Test 1 audit (30 Oct 2026)
+
+- Use PYQ chapter and task categories consistently for both reference papers and mocks. Count primary topics once; list secondary connections separately. Explain omitted high-priority families and reserve their next appearance. Test 1 replaces its second integration slot with coordinate geometry.
+- Balance Chemistry across calculation, structure, reaction inference, trends and experimental evidence. Do not turn a chemical inference into arithmetic by supplying the reaction rule and all product amounts in the stem.
+- Biology evidence questions should require combining observations or controls. Do not explicitly name the defect that the correct answer merely repeats. Use a bypass/control when the syllabus supports it, without requiring knowledge of an unlisted signalling pathway.
+- Every visual must have a stated purpose: essential data/representation, useful setup, or unnecessary decoration. No image-count quota; omit decorative figures. Check coordinates, connections, signs, units, scale, reaction connectivity and consistency with the full solution. A file-existence check is insufficient.
+- Tables must be legible in the PDF and complete in the JSON question text, so importers do not lose essential data. Explicit units, headers, row labels and controls are required. Structured fields may supplement this text but cannot replace it without importer support.
+- Write plausible distractors from identifiable mistakes. Check option-length cues, absolute wording and implausible alternatives; use comparable option grammar and detail rather than forcing equal length.
+- State model assumptions that change the answer: initial hydrostatic pressures in osmosis; bar orientation and field direction in motional emf; gamete ploidy and chromosome-count convention in genetics; complete digestion and assay recovery in DNA problems.
+- Re-solve changed items, retire obsolete arithmetic probes, and bind validation/render records to the final source hash. A probe must check the revised premise and selected answer, not just an unrelated constant that happens to pass.
+- Preserve the pre-revision JSON/PDF. Label the old audit with its source hash and link a revision-response record; do not present it as an audit of the new paper. Mechanical completion does not imply academic release approval.
 
 **Per test**
 1. Plan the 60 questions against the blueprint (subject, chapter, difficulty, style, key letter).
 2. Author each question: check its topic in the syllabus, solve it first, then write distractors and the explanation.
 3. Add any image entries to `IISER/IAT_images.md`.
-4. Shuffle within sections; run validation and duplicate checks against the whole series.
-5. Read every question yourself; mark the file `revised`; commit and push.
+4. Preserve the authored question and option order, IDs and image references; run validation and duplicate checks against the whole series. Do not run `shuffle_test.py`.
+5. Read every question and inspect the rendered PDF. Keep the pilot `pending_revision` until human academic review; do not mark it revised simply because mechanical checks pass. Commit/push only the reviewed, authorised scope.
 
 **After the series:** full cross-check, series index, README status table, `Worklog.md` entry, summary to the user.
 
@@ -196,8 +217,9 @@ When a question genuinely needs a figure (circuit, ray diagram, graph, apparatus
 
 **Pattern and difficulty**
 - [ ] 60 questions; 15 per subject; 180 minutes; +4 / −1 / 0.
-- [ ] 9 / 39 / 12 for the paper and the per-subject split shown above; labels match real effort.
-- [ ] Every question is solvable by hand within the time budget, without a calculator.
+- [ ] 9 / 42 / 9 for the paper and the per-subject split shown above; labels match real effort.
+- [ ] Topic/task comparison against the PYQ analysis, distractor review and purpose/accuracy review for every figure are recorded.
+- [ ] Arithmetic is tractable within the time budget; instructions truthfully reflect the on-screen scientific calculator allowed by the 2026 brochure.
 
 **Correctness and options**
 - [ ] Exactly one correct answer, re-derived independently of the stored letter.

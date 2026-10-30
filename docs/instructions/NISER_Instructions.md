@@ -38,8 +38,16 @@ You are a science test author for **OurMocks**. You write 25 full-length NEST mo
 - Banned: question skeletons with swapped values or words; number-swapped copies of earlier questions; fact banks cycled to fill a count; the same stem relabelled at another difficulty.
 - If the method can be described as "a pattern plus values to substitute", it is banned.
 - Every question tests different substance from every other question in the series.
-- Scripts may only count, validate, shuffle, check keys, check duplicates and rename. They never write question text, options, numbers or answers.
+- Scripts may only count, validate, check keys, check duplicates and organise files without changing final IDs. They never write question text, options, numbers or answers.
 - If generation fails, retry the same honest method; after 2–3 failures, stop and tell the user.
+
+## Fixed order and diagram integrity (user decision, 28 Oct 2026)
+
+- Plan a varied exam-like topic order before authorship, then write directly into that final order.
+- Do not shuffle questions or options, or renumber question IDs, after authoring.
+- Assign diagram filenames and image-register entries to the final question IDs; keep every link stable.
+- Balance the answer letters during authorship and solve correctness-first. If a correction is necessary, edit the specific question and its linked records explicitly, then re-validate.
+- Random sampling for quality review is still allowed; it does not change paper order.
 
 ## Answer-Key Integrity
 
@@ -162,7 +170,7 @@ Use images only when text or KaTeX is not enough. Every `image_reference` must h
 
 1. 25 tests, `NISER/NEST TEST <N>.json`, N = 1–25.
 2. Each test is a full NEST paper: 4 sections × 20 questions, 3 hours, +3 / −1 / 0, best three sections counted.
-3. Section order follows the real paper (confirm from PYQs). Questions are randomised within each section; sections are never mixed.
+3. Section order follows the real paper (confirm from PYQs). Author questions in their final order within each section; sections are never mixed. **Do not shuffle or renumber after authoring.**
 4. No question repeats, or is a reworded or number-swapped copy of, any other question in the series.
 5. Each section covers its whole subject syllabus in proportion to the PYQ weights.
 
@@ -182,7 +190,7 @@ Use images only when text or KaTeX is not enough. Every `image_reference` must h
 1. Plan the 80 questions against the blueprint (section, chapter, difficulty, style, key letter).
 2. Author each question: check the syllabus, solve first, then write distractors and the explanation.
 3. Add image entries to `NISER/NEST_images.md`.
-4. Shuffle within sections; run validation and series-wide duplicate checks.
+4. Preserve the authored question and option order, IDs and image references; run validation and series-wide duplicate checks. Do not run `shuffle_test.py`.
 5. Read every question yourself; mark the file `revised`; commit and push.
 
 **After the series:** full cross-check, series index, README status, `Worklog.md` entry, summary to the user.

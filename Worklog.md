@@ -241,3 +241,46 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 
 ### Tools added
 - `docs/blueprints/chemistry.md` (pattern, 2025 PYQ analysis, weights, formats, out-of-syllabus list) and `docs/blueprints/chemistry_coverage.md` (passage themes and angle banks with "Used in" columns).
+
+---
+
+## IAT reference collection and fixed order (28 Oct 2026)
+
+- The user supplied the official IAT previous-paper archive URL and explicitly requested downloading/storing the PDFs, Markdown conversion and image descriptions.
+- The official server returned connection failures/503 in this environment. Recovered mirror-hosted papers are transparently labelled in `PYQ/IAT/SOURCES.md` and `manifest.json`; no official-host byte-equivalence claim is made.
+- Stored 17 PDFs: English for 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025 and 2026; Hindi for the same years except 2018. The 2026 documents are provisional answer-key papers, not verified final keys. A 2020 file was not recovered; no inference is made about whether the exam occurred.
+- Corrected a mirror-label error: the SciAstra links labelled 2021 contain the 2022 paper. The actual 2021 files were separately obtained from public PYQP Google Drive links. Preserved the erroneous source label and correction in provenance metadata.
+- Created 17 page-indexed Markdown copies, 659 original page images and 131 English page-specific figure/table descriptions. Hindi copies include their own page images/OCR, the English visual guide and matching embedded-image cross-references. OCR completed for 336 pages without process failures, but the text is a searchable draft, not a fully proofread mathematical/Hindi transcription; source PDFs/images remain authoritative.
+- The 2025 English source has 59 question-labelled entries and ends at Physics Q14. Preserved the source numbering/content without inventing a missing question. The 2026 cover explicitly says the first option is correct throughout; this is answer-key ordering, not the live examination's option order.
+- User decision: **no shuffling for IAT, NEST or COMEDK**. Updated their instructions, the instruction index and README. Their final question/option order, IDs and diagram references must stay fixed. `shuffle_test.py` now rejects these series before changing the target file; CUET retains its existing workflow.
+- No mock questions were generated. PYQ analysis/blueprint/coverage approval, an IAT-specific validator and pilot approval remain separate next steps. The official 2027 pattern is not yet verified.
+
+---
+
+## IAT PYQ analysis and Test 1 review pilot (29 Oct 2026)
+
+- The user explicitly authorised completing PYQ analysis and proceeding directly to Test 1 JSON plus a PDF with images and solutions for manual review. This supersedes the earlier separate pre-pilot approval pause; approval of the pilot standard before Tests 2–25 remains pending.
+- Manually tagged 539 acquired English questions across nine papers (2017–2019, 2021–2026); the incomplete 2025 copy contributes 59. Created a source-page ledger, editable tag list, taxonomy, reproducible descriptive metrics and full chapter-count appendix. Flagged 22 historical/ambiguous-scope items. No student-performance data or calibrated predictive probabilities are claimed.
+- Wrote `docs/blueprints/iat_pyq_analysis.md`, a 25-test chapter-level reservation in `iat.md`, and the detailed 60-slot Test 1 plan. Later tests still need exact angle plans and pilot feedback before authorship.
+- Checked official indexed 2026 examination and brochure references for the 60-question, 180-minute, +4/-1/0 scheme and the permitted on-screen non-programmable scientific calculator. Corrected the old no-calculator assumption. No 2027 brochure has been verified; the pilot is explicitly provisional for 2027 preparation.
+- Authored `IISER/IAT TEST 1.json` directly: 60 original questions, 15 each in B/C/M/P order; nine easy, 39 medium and 12 hard; 15 answers at each letter. No legacy content generator or shuffling script was used. Fixed question/option order, stable IDs and image links are preserved.
+- Added six exact scientific PNG figures, their accessibility text and image-register entries. Improved circuit-label spacing during PDF review. Strengthened Chemistry Q24 to integrate selective reduction/acylation, formula tracking and stereoisomer counting; the stored correct letter remained C.
+- Added `validate_iat.py`, deterministic diagram rendering, transcribed-input arithmetic probes and a KaTeX/mhchem review exporter. Generated the 49-page PDF, self-contained HTML, byte-identical delivery JSON and checksum manifest. All 328 delimited math expressions parse, 60 question/solution blocks render, all six images load, and 45 arithmetic/enumeration probes pass. These are supporting checks; they do not replace human academic and timed review.
+- Updated README and IAT series index. The pilot remains `pending_revision`, with zero approved papers. No remote push or student publication was performed.
+
+### Visual PYQ guide and full pilot audit (29 Oct 2026)
+
+- Created the requested 14-page student-facing PYQ analysis PDF with ten data charts, including every retained chapter family, a four-year recurrence heatmap, styles, editorial difficulty, approximate Class 11/12 balance and practical study priorities. The text distinguishes the 539-item archive, 239 recent items and 231 recent current-scope items, without treating frequencies as predictions.
+- Created a separate 19-page audit PDF: official structure, syllabus/chapter balance, consistent task recoding, difficulty, distractors, reading/option-length cues, key checks, model assumptions, all six image purposes and all 60 item findings. Rechecked official 2026 scheme/calculator sources; no verified 2027 rules are claimed.
+- Audit verdict: useful structural pilot, revise before release. Main gaps: zero primary coordinate-geometry slot, Chemistry's numerical emphasis, several weak/supplied-answer distractors and debatable tiers. Proposed tiers are 18 easy / 32 medium / 10 hard, explicitly editorial; these were not written back into the test. No definite wrong key was identified under the stated assumptions, but independent academic and timed-student validation remain outstanding.
+- All six figures are relevant and consistent with the intended models: Q11/Q46/Q53/Q54 carry representation-reading tasks; Q9/Q57 are useful setup sketches rather than equally demanding visual problems. The report reproduces and checks every figure instead of treating a file-existence check as scientific validation.
+- Preserved the canonical JSON, six PNGs and original 49-page test PDF unchanged, verified by hashes. All 33 new report pages were rendered and inspected, with adjustments to chart-label size, table headings and diagram display size. Page counts, text margins, count reconciliations and character extraction pass. New files are under `output/pdf/`; source, assets and supporting verification are in `output/iat_reports/` and `tools/iat/build_analysis_reports.py`.
+
+
+## IAT audit response and restoration (30 Oct 2026)
+
+- Integrated the newer remote CUET Biology, Chemistry and Computer Science commits without overwriting them; preserved both branches of the Worklog merge.
+- The available workspace contained the old draft; the previously described revised downloads/local commit were unavailable. Restored an audit-corrected revision from the baseline; no byte-identity claim to missing artifacts.
+- Updated 21 item records, retaining IDs, section positions and answer letters. Difficulty policy: 9 easy / 42 medium / 9 hard. Added coordinate geometry, kidney/signalling/diffusion data, a cumulative nitrogen graph and alkene connectivity; strengthened mixture inference, SHM and beats; clarified osmosis and rail orientation.
+- Preserved baseline JSON/PDF/plan and labelled the original audit as historical. Updated instructions v2, validator, blueprint, slot plan and series index. Six original images unchanged; two new exact figures. Four tables stay readable in JSON and PDF.
+- Current checks: 68 supporting calculation/enumeration probes; 346 parsed math expressions; 60 questions/solutions; eight loaded images; no detected horizontal overflow or oversized blocks. All 55 pages rendered and inspected through contact sheets; new figures and dense conic working additionally inspected at larger scale. Independent academic/timed review and 2027 rule verification remain pending.

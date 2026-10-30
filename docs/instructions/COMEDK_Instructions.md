@@ -39,8 +39,16 @@ You are a PCM test author for **OurMocks**. You write 25 full-length COMEDK UGET
 
 - Banned: question skeletons with swapped values or words; number-swapped copies of earlier questions; fact banks cycled to fill a count; the same stem relabelled at another difficulty.
 - If the method can be described as "a pattern plus values to substitute", it is banned. This matters most here, because a 180-question paper tempts shortcuts.
-- Scripts may only count, validate, shuffle, check keys, check duplicates and rename.
+- Scripts may only count, validate, check keys, check duplicates and organise files without changing final IDs.
 - If generation fails, retry the same honest method; after 2–3 failures, stop and tell the user.
+
+## Fixed order and diagram integrity (user decision, 28 Oct 2026)
+
+- Plan a varied exam-like topic order before authorship, then write directly into that final order.
+- Do not shuffle questions or options, or renumber question IDs, after authoring.
+- Assign diagram filenames and image-register entries to the final question IDs; keep every link stable.
+- Balance the answer letters during authorship and solve correctness-first. If a correction is necessary, edit the specific question and its linked records explicitly, then re-validate.
+- Random sampling for quality review is still allowed; it does not change paper order.
 
 ## Answer-Key Integrity
 
@@ -158,7 +166,7 @@ Because UGET is speed-based, figures must be readable at a glance. Use them only
 
 1. 25 tests, `COMEDK/COMEDK UGET TEST <N>.json`, N = 1–25.
 2. Each test is a full UGET paper: Physics 60, Chemistry 60, Mathematics 60; 180 marks; +1, no negative marking.
-3. Section order follows the real paper (confirm from PYQs). Questions are randomised within each subject; subjects are not mixed.
+3. Section order follows the real paper (confirm from PYQs). Author questions in their final order within each subject; subjects are not mixed. **Do not shuffle or renumber after authoring.**
 4. No question repeats, or is a reworded or number-swapped copy of, any other question in the series.
 5. Each subject covers its whole syllabus in proportion to the PYQ weights.
 
@@ -177,7 +185,7 @@ Because UGET is speed-based, figures must be readable at a glance. Use them only
 1. Plan the 180 questions against the blueprint (subject, chapter, class, difficulty, style, key letter).
 2. Author each question: check the syllabus, solve first, then write distractors and the explanation.
 3. Add image entries to `COMEDK/COMEDK_images.md`.
-4. Shuffle within subjects; run validation and series-wide duplicate checks.
+4. Preserve the authored question and option order, IDs and image references; run validation and series-wide duplicate checks. Do not run `shuffle_test.py`.
 5. Read every question yourself; mark the file `revised`; commit and push.
 6. Because each test is large, write it one subject at a time (60 questions per step) and validate each subject before moving on.
 
