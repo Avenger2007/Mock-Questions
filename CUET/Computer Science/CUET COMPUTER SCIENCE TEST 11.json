@@ -3,770 +3,1512 @@
   "series_id": "CUET27_COMPUTER_SCIENCE",
   "exam": "CUET (UG) 2027",
   "title": "CUET Computer Science Test 11",
-  "subject": "Computer Science (Code: 308)",
+  "subject": "Computer Science / Informatics Practices",
+  "subject_code": "308",
   "test_number": 11,
   "paper_number": 11,
-  "status": "pending_revision",
-  "syllabus_source": "cuet computer science syllabus.pdf",
-  "notification_source": "Information Bulletin.pdf",
-  "past_paper_reference": "None",
+  "status": "revised",
+  "syllabus_source": "CUET SYLLABUS/Computer Science - 308.pdf (NTA syllabus for CUET (UG) 2026, latest published)",
+  "notification_source": "Hermes folder/Information Bulletin.pdf (NTA CUET (UG) 2026)",
+  "past_paper_reference": "Pattern benchmark only: CUET (UG) 2025 308 paper structure and formats (no questions copied)",
   "duration_minutes": 60,
-  "total_questions": 50,
+  "total_questions": 85,
+  "questions_to_attempt": 50,
   "marking_scheme": {
-    "correct": 5,
-    "incorrect": -1,
-    "unattempted": 0
+    "correct": "+5",
+    "incorrect": "-1",
+    "unattempted": "0"
   },
+  "instructions": [
+    "Attempt all 15 questions of Section A.",
+    "Then attempt all 35 questions of EITHER Section B1 (Computer Science) OR Section B2 (Informatics Practices) — 50 questions in total.",
+    "Each correct answer earns 5 marks; each incorrect answer deducts 1 mark; unattempted questions earn 0."
+  ],
+  "sections": [
+    {
+      "id": "A",
+      "title": "Section A — Database Concepts, SQL and Computer Networks (compulsory)",
+      "question_range": "1-15",
+      "questions": 15,
+      "attempt": 15
+    },
+    {
+      "id": "B1",
+      "title": "Section B1 — Computer Science",
+      "question_range": "16-50",
+      "questions": 35,
+      "attempt": "35 if chosen"
+    },
+    {
+      "id": "B2",
+      "title": "Section B2 — Informatics Practices",
+      "question_range": "51-85",
+      "questions": 35,
+      "attempt": "35 if chosen"
+    }
+  ],
+  "common_sections": [
+    "A"
+  ],
+  "optional_sections": [
+    "B1",
+    "B2"
+  ],
   "questions": [
     {
-      "id": "CUET_CS_2026_P11_L1B_Q01",
-      "topic": "Database & SQL",
-      "sub_topic": "SQL Queries",
-      "difficulty": "easy",
-      "question": "Which SQL statement modifies existing data in a table?",
-      "options": [
-        "A) CREATE",
-        "B) DROP",
-        "C) UPDATE",
-        "D) INSERT"
-      ],
-      "correct_option": "C",
-      "explanation": "UPDATE modifies existing rows."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q02",
-      "topic": "Database & SQL",
-      "sub_topic": "Aggregate Functions",
-      "difficulty": "easy",
-      "question": "What does the ALTER TABLE command do?",
-      "options": [
-        "A) Adds rows to a table",
-        "B) Creates a backup",
-        "C) Modifies the structure of a table",
-        "D) Deletes a table"
-      ],
-      "correct_option": "C",
-      "explanation": "ALTER TABLE changes table structure."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q03",
-      "topic": "Database & SQL",
-      "sub_topic": "JOINs & Operations",
-      "difficulty": "easy",
-      "question": "Which clause groups rows with the same values in specified columns?",
-      "options": [
-        "A) WHERE",
-        "B) ORDER BY",
-        "C) HAVING",
-        "D) GROUP BY"
-      ],
-      "correct_option": "D",
-      "explanation": "GROUP BY groups rows with identical values."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q04",
-      "topic": "Database & SQL",
-      "sub_topic": "Constraints & DDL",
-      "difficulty": "easy",
-      "question": "What is the result of SELECT 5 + 3 in SQL?",
-      "options": [
-        "A) NULL",
-        "B) 53",
-        "C) 8",
-        "D) Error"
-      ],
-      "correct_option": "C",
-      "explanation": "SELECT 5 + 3 = 8."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q05",
-      "topic": "Database & SQL",
-      "sub_topic": "Relational Model & Keys",
-      "difficulty": "easy",
-      "question": "Which key establishes a relationship between two tables?",
-      "options": [
-        "A) Unique Key",
-        "B) Primary Key",
-        "C) Candidate Key",
-        "D) Foreign Key"
-      ],
-      "correct_option": "D",
-      "explanation": "Foreign Key references another table's Primary Key."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q06",
-      "topic": "Database & SQL",
-      "sub_topic": "SQL Queries",
-      "difficulty": "easy",
-      "question": "Which SQL function returns the largest value in a column?",
-      "options": [
-        "A) MAX()",
-        "B) HIGH()",
-        "C) TOP()",
-        "D) PEAK()"
-      ],
-      "correct_option": "A",
-      "explanation": "MAX() returns the maximum value."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q07",
-      "topic": "Database & SQL",
-      "sub_topic": "Aggregate Functions",
-      "difficulty": "easy",
-      "question": "Which operator is used for pattern matching in SQL?",
-      "options": [
-        "A) SIMILAR",
-        "B) LIKE",
-        "C) MATCH",
-        "D) FIND"
-      ],
-      "correct_option": "B",
-      "explanation": "LIKE uses wildcards for pattern matching."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q08",
-      "topic": "Database & SQL",
-      "sub_topic": "JOINs & Operations",
-      "difficulty": "medium",
-      "question": "What does a NATURAL JOIN do?",
-      "options": [
-        "A) Joins on all columns with same name",
-        "B) Returns non-matching rows",
-        "C) Joins on primary key only",
-        "D) Returns Cartesian product"
-      ],
-      "correct_option": "A",
-      "explanation": "NATURAL JOIN matches all columns with identical names."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q09",
-      "topic": "Database & SQL",
-      "sub_topic": "Constraints & DDL",
-      "difficulty": "medium",
-      "question": "Which constraint prevents NULL values in a column?",
-      "options": [
-        "A) NOT NULL",
-        "B) CHECK",
-        "C) PRIMARY",
-        "D) DEFAULT"
-      ],
-      "correct_option": "A",
-      "explanation": "NOT NULL prevents NULL values."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q10",
-      "topic": "Database & SQL",
-      "sub_topic": "Relational Model & Keys",
+      "id": "CUET27-CS-T11-Q01",
+      "section": "A",
+      "topic": "Section A: Database Concepts",
+      "sub_topic": "Foreign keys and NULL",
       "difficulty": "hard",
-      "question": "Which ACID property ensures all-or-nothing execution?",
+      "format": "statements",
+      "question": "Consider the following statements:\n(A) A foreign key can contain NULL values.\n(B) A foreign key can contain duplicate values.\n(C) Every non-NULL foreign key value must match a primary key value in the referenced table.\n(D) A table can have only one foreign key.\nChoose the correct answer from the options given below:",
       "options": [
-        "A) Isolation",
-        "B) Atomicity",
-        "C) Consistency",
-        "D) Durability"
+        "A) (A), (B), (C) and (D)",
+        "B) (A), (B) and (C) only",
+        "C) (C) and (D) only",
+        "D) (A) and (D) only"
       ],
       "correct_option": "B",
-      "explanation": "Atomicity = all-or-nothing."
+      "explanation": "Answer: (B) (A), (B) and (C) only\nWhy: A foreign key may be NULL (A) and may repeat (B), but any value it holds must exist in the parent's primary key (C).\nWhy not the others: Statement (D) is false — a table can have several foreign keys referring to different tables. Options (A), (C) and (D) include it.\nKey point: Foreign keys maintain referential integrity."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q11",
-      "topic": "Computer Networks",
-      "sub_topic": "Topologies",
-      "difficulty": "easy",
-      "question": "Which device regenerates and retransmits received signals?",
+      "id": "CUET27-CS-T11-Q02",
+      "section": "A",
+      "topic": "Section A: SQL I",
+      "sub_topic": "UPDATE without WHERE",
+      "difficulty": "medium",
+      "format": "assertion-reason",
+      "question": "Assertion (A): UPDATE STUDENT SET Fee = 5000; changes the fee of every student in the table.\nReason (R): The WHERE clause is what restricts an UPDATE to selected rows.\nChoose the correct answer from the options given below:",
       "options": [
-        "A) Repeater",
-        "B) Bridge",
-        "C) Router",
-        "D) Switch"
+        "A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion",
+        "B) Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion",
+        "C) Assertion is true, but Reason is false",
+        "D) Assertion is false, but Reason is true"
       ],
       "correct_option": "A",
-      "explanation": "Repeaters amplify/regenerate signals."
+      "explanation": "Answer: (A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion\nWhy: Without a WHERE clause, nothing limits the UPDATE, so it applies to all rows. The Reason explains the Assertion.\nWhy not the others: (B) The Reason explains the Assertion. (C) and (D) Both are true.\nKey point: Always check the WHERE clause before running UPDATE or DELETE."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q12",
-      "topic": "Computer Networks",
-      "sub_topic": "Protocols",
-      "difficulty": "easy",
-      "question": "What is the loopback IP address?",
+      "id": "CUET27-CS-T11-Q03",
+      "section": "A",
+      "topic": "Section A: SQL I",
+      "sub_topic": "LCASE() of LEFT()",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "What is the output of SELECT LCASE(LEFT('MySQL', 2)); ?",
       "options": [
-        "A) 192.168.0.1",
-        "B) 127.0.0.1",
-        "C) 255.255.255.255",
-        "D) 10.0.0.1"
+        "A) MY",
+        "B) sql",
+        "C) My",
+        "D) my"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) my\nGiven: LEFT('MySQL', 2) = 'My'.\nStep 1: LCASE('My') = 'my'\nCommon mistake: (A) uses UCASE. (B) takes the wrong part. (C) skips LCASE.\nKey point: LCASE() is the same as LOWER()."
+    },
+    {
+      "id": "CUET27-CS-T11-Q04",
+      "section": "A",
+      "topic": "Section A: SQL II",
+      "sub_topic": "Writing a grouped query in order",
+      "difficulty": "medium",
+      "format": "sequence",
+      "question": "Arrange the parts to write a query that lists departments having more than two employees:\n(A) FROM EMP\n(B) GROUP BY Dept\n(C) SELECT Dept, COUNT(*)\n(D) HAVING COUNT(*) > 2\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A), (C), (B), (D)",
+        "B) (C), (B), (A), (D)",
+        "C) (C), (A), (B), (D)",
+        "D) (C), (A), (D), (B)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) (C), (A), (B), (D)\nWhy: The required order is SELECT … FROM … GROUP BY … HAVING ….\nWhy not the others: (A) starts with FROM. (B) puts GROUP BY before FROM. (D) puts HAVING before GROUP BY.\nKey point: ORDER BY, if used, would come last."
+    },
+    {
+      "id": "CUET27-CS-T11-Q05",
+      "section": "A",
+      "topic": "Section A: Database Concepts",
+      "sub_topic": "Cartesian product size",
+      "difficulty": "easy",
+      "format": "output",
+      "question": "Relation P has 3 attributes and 5 tuples; relation Q has 3 attributes and 4 tuples. What are the degree and cardinality of P × Q?",
+      "options": [
+        "A) Degree 3, cardinality 9",
+        "B) Degree 9, cardinality 20",
+        "C) Degree 6, cardinality 9",
+        "D) Degree 6, cardinality 20"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) Degree 6, cardinality 20\nGiven: Degrees add; cardinalities multiply.\nStep 1: Degree = 3 + 3 = 6\nStep 2: Cardinality = 5 × 4 = 20\nCommon mistake: (A) and (C) add the cardinalities. (B) multiplies the degrees.\nKey point: × does not need union-compatible relations."
+    },
+    {
+      "id": "CUET27-CS-T11-Q06",
+      "section": "A",
+      "topic": "Section A: Computer Networks",
+      "sub_topic": "Floors as stars on a backbone",
+      "difficulty": "medium",
+      "format": "direct",
+      "question": "A school connects the switches of each floor (each floor wired as a star) to one main backbone cable. This layout is a:",
+      "options": [
+        "A) Ring topology",
+        "B) Tree topology",
+        "C) Mesh topology",
+        "D) Single star topology"
       ],
       "correct_option": "B",
-      "explanation": "127.0.0.1 is the loopback address."
+      "explanation": "Answer: (B) Tree topology\nWhy: A tree topology joins several star networks to a common backbone, forming a hierarchy.\nWhy not the others: (A) forms a loop. (C) links every device to every other. (D) would have one central device only.\nKey point: New branches are easy to add in a tree topology."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q13",
-      "topic": "Computer Networks",
-      "sub_topic": "IP/MAC & DNS",
-      "difficulty": "easy",
-      "question": "Which protocol is used for sending emails?",
-      "options": [
-        "A) IMAP",
-        "B) FTP",
-        "C) POP3",
-        "D) SMTP"
-      ],
-      "correct_option": "D",
-      "explanation": "SMTP sends emails."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q14",
-      "topic": "Computer Networks",
-      "sub_topic": "Data Communication",
-      "difficulty": "easy",
-      "question": "Which network covers a university campus?",
-      "options": [
-        "A) LAN",
-        "B) PAN",
-        "C) MAN",
-        "D) WAN"
-      ],
-      "correct_option": "C",
-      "explanation": "MAN covers a city/campus-sized area."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q15",
-      "topic": "Computer Networks",
-      "sub_topic": "Network Types & Devices",
-      "difficulty": "easy",
-      "question": "How many layers are in the OSI model?",
-      "options": [
-        "A) 5",
-        "B) 8",
-        "C) 6",
-        "D) 7"
-      ],
-      "correct_option": "D",
-      "explanation": "OSI has 7 layers."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q16",
-      "topic": "Computer Networks",
-      "sub_topic": "Topologies",
-      "difficulty": "easy",
-      "question": "In which topology does failure of one node affect the entire network?",
-      "options": [
-        "A) Bus",
-        "B) Mesh",
-        "C) Ring",
-        "D) Star"
-      ],
-      "correct_option": "C",
-      "explanation": "Ring: one node failure breaks the loop."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q17",
-      "topic": "Computer Networks",
-      "sub_topic": "Protocols",
-      "difficulty": "easy",
-      "question": "Which protocol breaks data into packets and reassembles them at the destination?",
-      "options": [
-        "A) FTP",
-        "B) UDP",
-        "C) HTTP",
-        "D) TCP"
-      ],
-      "correct_option": "D",
-      "explanation": "TCP ensures reliable packet delivery and reassembly."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q18",
-      "topic": "Computer Networks",
-      "sub_topic": "IP/MAC & DNS",
+      "id": "CUET27-CS-T11-Q07",
+      "section": "A",
+      "topic": "Section A: SQL I",
+      "sub_topic": "ROUND() of an exact half",
       "difficulty": "medium",
-      "question": "How many subnets by borrowing 3 bits from a Class C network?",
+      "format": "output",
+      "question": "What is the output of SELECT ROUND(459.5); ?",
       "options": [
-        "A) 4",
-        "B) 8",
+        "A) 460",
+        "B) 459",
+        "C) 459.5",
+        "D) 450"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) 460\nGiven: With no second argument, ROUND() rounds to a whole number; for exact values, .5 is rounded away from zero.\nStep 1: 459.5 → 460\nCommon mistake: (B) truncates. (C) skips rounding. (D) rounds to tens.\nKey point: ROUND(459.5, -1) would give 460 as well."
+    },
+    {
+      "id": "CUET27-CS-T11-Q08",
+      "section": "A",
+      "topic": "Section A: SQL II",
+      "sub_topic": "Joins and products",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "Match List-I with List-II:\n\nList-I\n(A) Cartesian product\n(B) Equi-join\n(C) Natural join\n(D) Union\n\nList-II\n(I) Rows of two compatible queries combined, without duplicates\n(II) Join on the common column, which appears only once\n(III) Rows paired where the join columns are equal\n(IV) Every row of one table paired with every row of the other\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+        "B) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+        "C) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)",
+        "D) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)\nWhy: A Cartesian product pairs all rows (IV); an equi-join keeps pairs with equal values (III); a natural join does so and shows the common column once (II); UNION combines rows (I).\nWhy not the others: (A) swaps product and equi-join; (B) swaps equi-join and natural join; (C) swaps natural join and union.\nKey point: A join is a Cartesian product followed by a selection."
+    },
+    {
+      "id": "CUET27-CS-T11-Q09",
+      "section": "A",
+      "topic": "Section A: Computer Networks",
+      "sub_topic": "Beginning of the Internet",
+      "difficulty": "easy",
+      "format": "direct",
+      "question": "Which network, started in 1969 by the US Department of Defense, is considered the beginning of the Internet?",
+      "options": [
+        "A) NSFNET",
+        "B) WWW",
+        "C) ARPANET",
+        "D) Ethernet"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) ARPANET\nWhy: NCERT traces the Internet's evolution from ARPANET (Advanced Research Projects Agency Network), which linked universities and research centres.\nWhy not the others: (A) came later (1986). (B) was invented in 1990. (D) is a LAN technology.\nKey point: TCP/IP was adopted on ARPANET in the early 1980s."
+    },
+    {
+      "id": "CUET27-CS-T11-Q10",
+      "section": "A",
+      "topic": "Section A: SQL II",
+      "sub_topic": "Groups formed by GROUP BY",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "Table SALE has a column Region with the values N, S, N, E, W, S, N. How many rows are returned by SELECT Region, SUM(Amt) FROM SALE GROUP BY Region; ?",
+      "options": [
+        "A) 7",
+        "B) 4",
         "C) 3",
+        "D) 1"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) 4\nGiven: One row per distinct region.\nStep 1: Distinct regions: N, S, E, W → 4\nCommon mistake: (A) counts all rows. (C) misses one region. (D) ignores GROUP BY.\nKey point: The number of groups equals the number of distinct values."
+    },
+    {
+      "id": "CUET27-CS-T11-Q11",
+      "section": "A",
+      "topic": "Section A: Computer Networks",
+      "sub_topic": "Path of data between networks",
+      "difficulty": "medium",
+      "format": "direct",
+      "question": "A file is sent from a computer in one LAN to a computer in another city. Which device forwards the data from the first LAN towards the other network?",
+      "options": [
+        "A) Router",
+        "B) Repeater",
+        "C) Hub",
+        "D) Network interface card"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) Router\nWhy: A router connects different networks and forwards packets towards their destination network using IP addresses.\nWhy not the others: (B) regenerates signals. (C) broadcasts inside one LAN. (D) only connects the computer to its LAN.\nKey point: Inside a LAN, a switch forwards data using MAC addresses."
+    },
+    {
+      "id": "CUET27-CS-T11-Q12",
+      "section": "A",
+      "topic": "Section A: SQL II",
+      "sub_topic": "COUNT(*) and COUNT(column) with a condition",
+      "difficulty": "hard",
+      "format": "output",
+      "question": "Table EMP has these (Dept, Phone) rows: (IT, 98), (HR, NULL), (IT, NULL), (IT, 97), (HR, 95). What is the output of SELECT COUNT(*), COUNT(Phone) FROM EMP WHERE Dept = 'IT'; ?",
+      "options": [
+        "A) 5, 3",
+        "B) 3, 3",
+        "C) 3, 2",
+        "D) 2, 2"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) 3, 2\nGiven: WHERE keeps only IT rows; COUNT(Phone) skips NULLs.\nStep 1: IT rows: (98), (NULL), (97) → COUNT(*) = 3\nStep 2: Non-NULL phones → 2\nCommon mistake: (A) ignores WHERE. (B) counts the NULL. (D) drops the NULL row from COUNT(*).\nKey point: COUNT(*) counts rows; COUNT(col) counts values."
+    },
+    {
+      "id": "CUET27-CS-T11-Q13",
+      "section": "A",
+      "topic": "Section A: SQL I",
+      "sub_topic": "LIKE with a suffix pattern",
+      "difficulty": "hard",
+      "format": "output",
+      "question": "Table T has a column City with the values Agra, Patna, Delhi, Goa, Puri and Shimla. How many rows are returned by SELECT City FROM T WHERE City LIKE '%a'; ?",
+      "options": [
+        "A) 3",
+        "B) 4",
+        "C) 5",
+        "D) 2"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) 4\nGiven: '%a' matches values that END with a.\nStep 1: Agra, Patna, Goa and Shimla end with 'a'\nStep 2: Delhi and Puri do not → 4 rows\nCommon mistake: (A) misses one city. (C) includes Delhi. (D) uses 'a%' (starts with a).\nKey point: '%a%' would match a anywhere."
+    },
+    {
+      "id": "CUET27-CS-T11-Q14",
+      "section": "A",
+      "topic": "Section A: Database Concepts",
+      "sub_topic": "Set difference on names",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "Relation CLUB_A has the names {Asha, Ben, Cyra, Dev} and CLUB_B has {Ben, Dev, Esha}. What is CLUB_B − CLUB_A?",
+      "options": [
+        "A) {Asha, Cyra}",
+        "B) {Ben, Dev}",
+        "C) {Esha}",
+        "D) {Asha, Cyra, Esha}"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) {Esha}\nGiven: CLUB_B − CLUB_A keeps names of CLUB_B that are not in CLUB_A.\nStep 1: Ben and Dev are in both → removed\nStep 2: Result = {Esha}\nCommon mistake: (A) is CLUB_A − CLUB_B. (B) is the intersection. (D) combines both differences.\nKey point: The order of the relations matters in set difference."
+    },
+    {
+      "id": "CUET27-CS-T11-Q15",
+      "section": "A",
+      "topic": "Section A: Database Concepts",
+      "sub_topic": "Data in the relational model",
+      "difficulty": "medium",
+      "format": "direct",
+      "question": "In the relational data model, data is organised as:",
+      "options": [
+        "A) Relations (tables) made of tuples and attributes",
+        "B) A single long text file kept for each user",
+        "C) Folders of pictures arranged by date",
+        "D) A tree of programs linked to each other"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) Relations (tables) made of tuples and attributes\nWhy: NCERT explains that the relational model, proposed by E. F. Codd, stores data in relations (tables); each row is a tuple and each column an attribute.\nWhy not the others: (B), (C) and (D) do not describe the relational model.\nKey point: Relations are linked through keys."
+    },
+    {
+      "id": "CUET27-CS-T11-Q16",
+      "section": "B1",
+      "topic": "B1: Stack",
+      "sub_topic": "Overflow and Python lists",
+      "difficulty": "medium",
+      "format": "assertion-reason",
+      "question": "Assertion (A): A stack of fixed size overflows when a PUSH is attempted while it is full.\nReason (R): A Python list used as a stack must be given a fixed size when it is created.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion",
+        "B) Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion",
+        "C) Assertion is true, but Reason is false",
+        "D) Assertion is false, but Reason is true"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) Assertion is true, but Reason is false\nWhy: The Assertion is true — overflow is pushing onto a full fixed-size stack. The Reason is false — Python lists grow dynamically and are not declared with a fixed size.\nWhy not the others: (A) and (B) need a true Reason. (D) The Assertion is true.\nKey point: Underflow is popping from an empty stack."
+    },
+    {
+      "id": "CUET27-CS-T11-Q17",
+      "section": "B1",
+      "topic": "B1: Searching",
+      "sub_topic": "Binary search on words",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "Binary search (mid = (low + high) // 2) looks for 'bee' in ['ant', 'bee', 'cat', 'dog', 'eel', 'fox', 'gnu']. Which words are compared with the key?",
+      "options": [
+        "A) dog, bee",
+        "B) cat, bee",
+        "C) ant, bee",
+        "D) dog, cat, bee"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) dog, bee\nGiven: low = 0, high = 6.\nStep 1: mid = 3 → 'dog' > 'bee' → high = 2\nStep 2: mid = 1 → 'bee' → found\nCommon mistake: (B) uses the wrong first mid. (C) starts from the first word, as linear search does. (D) adds an extra comparison.\nKey point: Words are compared alphabetically."
+    },
+    {
+      "id": "CUET27-CS-T11-Q18",
+      "section": "B1",
+      "topic": "B1: Security Aspects",
+      "sub_topic": "Malware and their effects",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "Match List-I with List-II:\n\nList-I\n(A) Trojan horse\n(B) Spyware\n(C) Adware\n(D) Ransomware\n\nList-II\n(I) Locks the user's files until money is paid\n(II) Fills the screen with unwanted advertisements\n(III) Secretly sends the user's activity to someone else\n(IV) Looks like useful software but opens a backdoor\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+        "B) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+        "C) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)",
+        "D) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)\nWhy: A Trojan disguises itself (IV); spyware spies (III); adware shows ads (II); ransomware holds files hostage (I).\nWhy not the others: (A) swaps Trojan and spyware; (B) swaps spyware and adware; (C) swaps adware and ransomware.\nKey point: Updated antivirus software protects against most malware."
+    },
+    {
+      "id": "CUET27-CS-T11-Q19",
+      "section": "B1",
+      "topic": "B1: Exception and File Handling in Python",
+      "sub_topic": "Handler chosen for an IndexError",
+      "difficulty": "easy",
+      "format": "output",
+      "question": "What is printed by the following code?\n\ntry:\n    L = [1, 2]\n    print(L[3])\nexcept IndexError:\n    print('I')\nexcept:\n    print('O')\nelse:\n    print('E')",
+      "options": [
+        "A) O",
+        "B) E",
+        "C) I and E",
+        "D) I"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) I\nGiven: L[3] is out of range → IndexError.\nStep 1: The first matching handler, IndexError, prints I\nStep 2: else runs only if there is no exception, so it is skipped\nCommon mistake: (A) uses the generic handler. (B) assumes no exception. (C) runs else as well.\nKey point: Only one except block runs."
+    },
+    {
+      "id": "CUET27-CS-T11-Q20",
+      "section": "B1",
+      "topic": "B1: Computer Networks and Data Communication",
+      "sub_topic": "Kbps to Mbps",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "How many Mbps is 512 Kbps, taking 1 Mbps = 1024 Kbps?",
+      "options": [
+        "A) 512 Mbps",
+        "B) 5.12 Mbps",
+        "C) 2 Mbps",
+        "D) 0.5 Mbps"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) 0.5 Mbps\nGiven: Divide by 1024 to convert Kbps to Mbps.\nStep 1: 512 ÷ 1024 = 0.5 Mbps\nCommon mistake: (A) ignores the conversion. (B) divides by 100. (C) inverts the ratio.\nKey point: Moving to a larger unit divides the number."
+    },
+    {
+      "id": "CUET27-CS-T11-Q21",
+      "section": "B1",
+      "topic": "B1: Security Aspects",
+      "sub_topic": "Choosing a strong password",
+      "difficulty": "easy",
+      "format": "direct",
+      "question": "Which of the following is the strongest password?",
+      "options": [
+        "A) 123456",
+        "B) password",
+        "C) Tq#7vR!m2Lp",
+        "D) asha2008"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) Tq#7vR!m2Lp\nWhy: A strong password is long and mixes upper-case and lower-case letters, digits and symbols, with no personal information.\nWhy not the others: (A) and (B) are among the most common passwords. (D) uses a name and a year that are easy to guess.\nKey point: Use a different password for each account."
+    },
+    {
+      "id": "CUET27-CS-T11-Q22",
+      "section": "B1",
+      "topic": "B1: Structured Query Language",
+      "sub_topic": "BETWEEN with text values",
+      "difficulty": "hard",
+      "format": "output",
+      "question": "Table T has a column Name with the values Arun, Bharat, Chitra, Dinesh, Esha and C. How many rows are returned by SELECT Name FROM T WHERE Name BETWEEN 'B' AND 'C'; ?",
+      "options": [
+        "A) 3",
+        "B) 2",
+        "C) 4",
+        "D) 1"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) 2\nGiven: Text BETWEEN uses dictionary order and includes both ends.\nStep 1: 'Bharat' lies between 'B' and 'C'; 'C' equals the upper end → included\nStep 2: 'Chitra' is greater than 'C' (longer string starting with C) → excluded\nStep 3: Rows = 2 (Bharat, C)\nCommon mistake: (A) includes Chitra. (C) also includes another name. (D) leaves out 'C'.\nKey point: Use Name >= 'B' AND Name < 'D' to include all names starting with B or C."
+    },
+    {
+      "id": "CUET27-CS-T11-Q23",
+      "section": "B1",
+      "topic": "B1: Understanding Data",
+      "sub_topic": "Data and information",
+      "difficulty": "medium",
+      "format": "statements",
+      "question": "Consider the following statements:\n(A) Data consists of raw facts and figures.\n(B) Information is data that has been processed to be meaningful.\n(C) Data must always be numeric.\n(D) Processing data includes sorting, summarising and calculating.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A), (B), (C) and (D)",
+        "B) (C) and (D) only",
+        "C) (A) and (C) only",
+        "D) (A), (B) and (D) only"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) (A), (B) and (D) only\nWhy: NCERT describes data as raw facts (A) that are processed (D) into information (B).\nWhy not the others: Statement (C) is false — data can be text, images, audio and video too. Options (A), (B) and (C) include it.\nKey point: For example, marks are data; the class average is information."
+    },
+    {
+      "id": "CUET27-CS-T11-Q24",
+      "section": "B1",
+      "topic": "B1: Exception and File Handling in Python",
+      "sub_topic": "Combined file modes",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "Match each mode (List-I) with its behaviour (List-II):\n\nList-I\n(A) 'r+'\n(B) 'w+'\n(C) 'a+'\n(D) 'wb'\n\nList-II\n(I) Write a binary file, erasing any old content\n(II) Read and append; file created if missing; old content kept\n(III) Write and read; old content erased; file created if missing\n(IV) Read and write; error if the file does not exist\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+        "B) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+        "C) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+        "D) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)\nWhy: 'r+' needs an existing file (IV); 'w+' truncates or creates (III); 'a+' appends and reads (II); 'wb' writes binary, truncating (I).\nWhy not the others: (B) swaps 'r+' and 'w+'; (C) swaps 'w+' and 'a+'; (D) swaps 'a+' and 'wb'.\nKey point: The '+' adds the other of reading/writing."
+    },
+    {
+      "id": "CUET27-CS-T11-Q25",
+      "section": "B1",
+      "topic": "B1: Understanding Data",
+      "sub_topic": "Reading a frequency table",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "Marks of a class:\n\nMarks | Students\n0–20 | 3\n20–40 | 7\n40–60 | 12\n60–80 | 6\n80–100 | 2\n\nHow many students scored at least 40 marks?",
+      "options": [
+        "A) 12",
+        "B) 20",
+        "C) 22",
+        "D) 30"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) 20\nGiven: 'At least 40' covers 40–60, 60–80 and 80–100.\nStep 1: 12 + 6 + 2 = 20\nCommon mistake: (A) counts only 40–60. (C) has no basis. (D) is the total.\nKey point: Frequency tables summarise large data sets."
+    },
+    {
+      "id": "CUET27-CS-T11-Q26",
+      "section": "B1",
+      "topic": "B1: Understanding Data",
+      "sub_topic": "Combined mean of two classes",
+      "difficulty": "hard",
+      "format": "output",
+      "question": "Class A has 30 students with mean marks 60; class B has 20 students with mean marks 70. What is the mean of all 50 students?",
+      "options": [
+        "A) 65",
+        "B) 66",
+        "C) 64",
+        "D) 62"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) 64\nGiven: Combined mean = total marks ÷ total students.\nStep 1: Totals: 30 × 60 = 1800; 20 × 70 = 1400\nStep 2: (1800 + 1400) ÷ 50 = 64\nCommon mistake: (A) averages the two means without weights. (B) and (D) miscalculate.\nKey point: The larger group pulls the combined mean towards its own mean."
+    },
+    {
+      "id": "CUET27-CS-T11-Q27",
+      "section": "B1",
+      "topic": "B1: Queue",
+      "sub_topic": "List methods for queue operations",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "Match each list method (List-I) with the queue or deque operation it performs (List-II), with the front at index 0:\n\nList-I\n(A) q.append(x)\n(B) q.pop(0)\n(C) q.insert(0, x)\n(D) q.pop()\n\nList-II\n(I) deletionRear\n(II) insertFront\n(III) dequeue\n(IV) enqueue\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+        "B) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+        "C) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+        "D) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)\nWhy: append adds at the rear (IV); pop(0) removes from the front (III); insert(0, x) adds at the front (II); pop() removes from the rear (I).\nWhy not the others: (B) swaps append and pop(0); (C) swaps pop(0) and insert; (D) swaps insert and pop().\nKey point: A queue uses only enqueue and dequeue."
+    },
+    {
+      "id": "CUET27-CS-T11-Q28",
+      "section": "B1",
+      "topic": "B1: Exception and File Handling in Python",
+      "sub_topic": "Second call to readline()",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "t.txt contains three lines: alpha, beta and gamma. What is printed?\n\nf = open('t.txt')\nf.readline()\nprint(repr(f.readline()))\nf.close()",
+      "options": [
+        "A) 'alpha\\n'",
+        "B) 'beta'",
+        "C) 'beta\\n'",
+        "D) ['beta\\n']"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) 'beta\\n'\nGiven: Each readline() returns the next line, including its newline.\nStep 1: The first call reads 'alpha\\n'\nStep 2: The second returns 'beta\\n'; repr() shows the \\n\nCommon mistake: (A) is the first line. (B) drops the newline. (D) is a list, as readlines() would return.\nKey point: repr() makes hidden characters visible."
+    },
+    {
+      "id": "CUET27-CS-T11-Q29",
+      "section": "B1",
+      "topic": "B1: Stack",
+      "sub_topic": "Choosing the data structure for a task",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "Match each task (List-I) with the most suitable structure (List-II):\n\nList-I\n(A) Evaluating a postfix expression\n(B) Holding print jobs in order of arrival\n(C) Checking a palindrome from both ends\n(D) Reversing a word\n\nList-II\n(I) Stack\n(II) Queue\n(III) Deque\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(II), (B)-(I), (C)-(III), (D)-(I)",
+        "B) (A)-(I), (B)-(II), (C)-(III), (D)-(I)",
+        "C) (A)-(I), (B)-(II), (C)-(I), (D)-(III)",
+        "D) (A)-(I), (B)-(III), (C)-(II), (D)-(I)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) (A)-(I), (B)-(II), (C)-(III), (D)-(I)\nWhy: Postfix evaluation and reversal need LIFO — a stack (I); print jobs are FIFO — a queue (II); a palindrome check uses both ends — a deque (III).\nWhy not the others: (A) swaps the first two. (C) swaps the last two. (D) swaps queue and deque.\nKey point: Think about which end items are added to and removed from."
+    },
+    {
+      "id": "CUET27-CS-T11-Q30",
+      "section": "B1",
+      "topic": "B1: Searching",
+      "sub_topic": "Choosing the hash table size",
+      "difficulty": "easy",
+      "format": "direct",
+      "question": "Keys are stored with h(k) = k % 10. Which statement about the table size is correct?",
+      "options": [
+        "A) The table needs only 9 slots, numbered 1 to 9",
+        "B) The table needs 10 slots, numbered 0 to 9",
+        "C) The table needs 100 slots",
+        "D) The table size does not matter"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) The table needs 10 slots, numbered 0 to 9\nWhy: k % 10 always gives a remainder from 0 to 9, so 10 slots (indices 0–9) are needed.\nWhy not the others: (A) misses slot 0. (C) wastes space. (D) A smaller table would cause index errors.\nKey point: For h(k) = k % n, the table has n slots."
+    },
+    {
+      "id": "CUET27-CS-T11-Q31",
+      "section": "B1",
+      "topic": "B1: Exception and File Handling in Python",
+      "sub_topic": "Spotting an error with pickle",
+      "difficulty": "medium",
+      "format": "direct",
+      "question": "What is wrong with this code?\n\nimport pickle\nf = open('data.dat', 'w')\npickle.dump([1, 2, 3], f)\nf.close()",
+      "options": [
+        "A) pickle cannot be used to store Python lists",
+        "B) pickle.dump() needs a binary-mode file such as 'wb'",
+        "C) close() must be called before dump() is called",
+        "D) The data file's name must end with .txt"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) pickle.dump() needs a binary-mode file such as 'wb'\nWhy: pickle writes bytes, so the file must be opened in a binary mode such as 'wb'; in text mode 'w', dump() raises a TypeError.\nWhy not the others: (A) Lists can be pickled. (C) The file must be open while writing. (D) Any name can be used.\nKey point: Use 'rb' with pickle.load()."
+    },
+    {
+      "id": "CUET27-CS-T11-Q32",
+      "section": "B1",
+      "topic": "B1: Structured Query Language",
+      "sub_topic": "Fiction books per genre after 2020",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "Table LIB has these (Genre, Year) rows: (Fiction, 2019), (Science, 2021), (Fiction, 2022), (Science, 2018), (Fiction, 2023), (History, 2020). What does SELECT Genre, COUNT(*) FROM LIB WHERE Year >= 2020 GROUP BY Genre; show for Fiction?",
+      "options": [
+        "A) 3",
+        "B) 1",
+        "C) 2",
         "D) 6"
       ],
-      "correct_option": "B",
-      "explanation": "2^3 = 8 subnets."
+      "correct_option": "C",
+      "explanation": "Answer: (C) 2\nGiven: WHERE keeps books from 2020 onwards.\nStep 1: Fiction rows: 2019 (dropped), 2022, 2023 → 2\nCommon mistake: (A) ignores WHERE. (B) misses one. (D) counts all rows.\nKey point: WHERE runs before GROUP BY."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q19",
-      "topic": "Computer Networks",
-      "sub_topic": "Data Communication",
+      "id": "CUET27-CS-T11-Q33",
+      "section": "B1",
+      "topic": "B1: Structured Query Language",
+      "sub_topic": "Column alias",
       "difficulty": "medium",
-      "question": "Which protocol provides reliable connection-oriented communication?",
+      "format": "direct",
+      "question": "In SELECT Name, Marks * 100 / 500 AS Percent FROM RESULT;, what does AS Percent do?",
       "options": [
-        "A) TCP",
-        "B) UDP",
-        "C) ARP",
-        "D) IP"
+        "A) It sorts the output rows by Percent",
+        "B) It adds a new column called Percent to the table",
+        "C) It renames the RESULT table to Percent",
+        "D) It names the computed column Percent in the output"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) It names the computed column Percent in the output\nWhy: A column alias gives a temporary name to a column or expression in the result; the table itself is not changed.\nWhy not the others: (A) Sorting needs ORDER BY. (B) needs ALTER TABLE. (C) Table aliases follow the table name in FROM.\nKey point: Aliases make output headings readable."
+    },
+    {
+      "id": "CUET27-CS-T11-Q34",
+      "section": "B1",
+      "topic": "B1: Computer Networks and Data Communication",
+      "sub_topic": "Resolving a domain name",
+      "difficulty": "medium",
+      "format": "sequence",
+      "question": "Arrange the steps of resolving the name www.ncert.nic.in when it is not already stored (cached) anywhere:\n(A) The local DNS server receives the query from the computer\n(B) A TLD server for .in points to the server for nic.in\n(C) A root server points to the servers for the .in domain\n(D) The authoritative server returns the IP address of www.ncert.nic.in\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A), (B), (C), (D)",
+        "B) (C), (A), (B), (D)",
+        "C) (A), (C), (B), (D)",
+        "D) (A), (C), (D), (B)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) (A), (C), (B), (D)\nWhy: The query reaches the local DNS server (A), which asks a root server (C), then the .in TLD server (B), and finally the authoritative server, which gives the IP address (D).\nWhy not the others: (A) asks the TLD before the root. (B) starts at the root before the query is sent. (D) returns the address before the TLD step.\nKey point: DNS is a hierarchy from the root downwards."
+    },
+    {
+      "id": "CUET27-CS-T11-Q35",
+      "section": "B1",
+      "topic": "B1: Queue",
+      "sub_topic": "Full and empty queues",
+      "difficulty": "medium",
+      "format": "statements",
+      "question": "Consider the following statements:\n(A) In a Python list queue, enqueue on a 'full' queue raises an overflow error.\n(B) Dequeue on an empty queue causes underflow.\n(C) The size of a Python list queue must be declared in advance.\n(D) An isFull() check is needed only for a fixed-size queue.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A), (B), (C) and (D)",
+        "B) (A) and (C) only",
+        "C) (B) and (D) only",
+        "D) (A), (B) and (C) only"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) (B) and (D) only\nWhy: Removing from an empty queue is underflow (B), and only a fixed-size queue can be full (D).\nWhy not the others: Statements (A) and (C) are false — a Python list grows as needed, has no declared size, and so does not become 'full'. Options (A), (B) and (D) include one or both.\nKey point: Always guard dequeue with isEmpty()."
+    },
+    {
+      "id": "CUET27-CS-T11-Q36",
+      "section": "B1",
+      "topic": "B1: Structured Query Language",
+      "sub_topic": "DELETE, DROP and UPDATE",
+      "difficulty": "medium",
+      "format": "statements",
+      "question": "Consider the following statements:\n(A) DELETE FROM T; removes all rows of T.\n(B) DROP TABLE T; removes T's structure and data.\n(C) One UPDATE statement can change several columns.\n(D) DELETE removes a column from a table.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A), (B) and (C) only",
+        "B) (A), (B), (C) and (D)",
+        "C) (C) and (D) only",
+        "D) (A) and (D) only"
       ],
       "correct_option": "A",
-      "explanation": "TCP is connection-oriented with acknowledgments."
+      "explanation": "Answer: (A) (A), (B) and (C) only\nWhy: DELETE without WHERE empties the table (A); DROP removes the table (B); UPDATE … SET a = …, b = … changes several columns (C).\nWhy not the others: Statement (D) is false — columns are removed with ALTER TABLE … DROP. Options (B), (C) and (D) include it.\nKey point: DELETE and UPDATE are DML; DROP and ALTER are DDL."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q20",
-      "topic": "Computer Networks",
-      "sub_topic": "Network Types & Devices",
+      "id": "CUET27-CS-T11-Q37",
+      "section": "B1",
+      "topic": "B1: Security Aspects",
+      "sub_topic": "Hackers and crackers",
+      "difficulty": "medium",
+      "format": "statements",
+      "question": "Consider the following statements:\n(A) Ethical hackers test systems with the owner's permission.\n(B) Crackers break into systems illegally to cause harm or steal data.\n(C) Organisations hire ethical hackers to find weaknesses before criminals do.\n(D) Ethical hackers report the weaknesses they find so that they can be fixed.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A), (B), (C) and (D)",
+        "B) (A) and (B) only",
+        "C) (C) and (D) only",
+        "D) (A), (B) and (C) only"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) (A), (B), (C) and (D)\nWhy: All four statements are true. NCERT contrasts ethical (white-hat) hackers, who work with permission and report flaws, with crackers (black-hat hackers), who act illegally.\nWhy not the others: (B), (C) and (D) each leave out true statements.\nKey point: Permission and intent make the difference."
+    },
+    {
+      "id": "CUET27-CS-T11-Q38",
+      "section": "B1",
+      "topic": "B1: Searching",
+      "sub_topic": "Linear search for a missing key",
+      "difficulty": "easy",
+      "format": "output",
+      "question": "Linear search looks for 99 in a list of 15 numbers that does not contain 99. How many comparisons are made?",
+      "options": [
+        "A) 1",
+        "B) 8",
+        "C) 4",
+        "D) 15"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) 15\nGiven: Every element must be checked before deciding that the key is absent.\nStep 1: 15 comparisons\nCommon mistake: (A) is the best case. (B) stops halfway. (C) uses binary search's count.\nKey point: Unsuccessful linear search is always the worst case."
+    },
+    {
+      "id": "CUET27-CS-T11-Q39",
+      "section": "B1",
+      "topic": "B1: Searching",
+      "sub_topic": "Why binary search is faster",
+      "difficulty": "medium",
+      "format": "assertion-reason",
+      "question": "Assertion (A): For a large sorted list, binary search needs far fewer comparisons than linear search.\nReason (R): Binary search halves the remaining search area after each comparison.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion",
+        "B) Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion",
+        "C) Assertion is true, but Reason is false",
+        "D) Assertion is false, but Reason is true"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion\nWhy: Because the search area halves each time, binary search needs about log₂ n comparisons instead of up to n. The Reason explains the Assertion.\nWhy not the others: (B) The Reason explains the Assertion. (C) and (D) Both are true.\nKey point: For 1000 elements, about 10 comparisons are enough."
+    },
+    {
+      "id": "CUET27-CS-T11-Q40",
+      "section": "B1",
+      "topic": "B1: Computer Networks and Data Communication",
+      "sub_topic": "Medium for each situation",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "Match each situation (List-I) with the most suitable medium (List-II):\n\nList-I\n(A) Connecting two buildings 2 km apart at very high speed\n(B) Connecting a laptop and a printer in one room without cables\n(C) Live TV coverage from a remote mountain area\n(D) A cheap wired LAN inside a small office\n\nList-II\n(I) Twisted pair cable\n(II) Satellite link\n(III) Wi-Fi\n(IV) Optical fibre\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+        "B) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+        "C) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+        "D) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)\nWhy: Optical fibre suits long, fast links (IV); Wi-Fi suits short wireless links (III); satellites reach remote areas (II); twisted pair is cheap for small LANs (I).\nWhy not the others: (A) swaps fibre and Wi-Fi; (C) swaps Wi-Fi and satellite; (D) swaps satellite and twisted pair.\nKey point: Distance, speed and cost decide the medium."
+    },
+    {
+      "id": "CUET27-CS-T11-Q41",
+      "section": "B1",
+      "topic": "B1: Exception and File Handling in Python",
+      "sub_topic": "Writing and reading back a text file",
+      "difficulty": "medium",
+      "format": "sequence",
+      "question": "Arrange the statements to write a line to a file without using with, and then read it back:\n(A) f = open('log.txt', 'r'); print(f.read())\n(B) f = open('log.txt', 'w')\n(C) f.close()\n(D) f.write('Started\\n')\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (B), (C), (D), (A)",
+        "B) (B), (D), (C), (A)",
+        "C) (D), (B), (C), (A)",
+        "D) (B), (D), (A), (C)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) (B), (D), (C), (A)\nWhy: Open for writing (B), write (D), close so that the data is saved (C), then open for reading and print (A).\nWhy not the others: (A) closes before writing. (C) writes before opening. (D) reads before closing the write.\nKey point: Closing flushes the data to the disk."
+    },
+    {
+      "id": "CUET27-CS-T11-Q42",
+      "section": "B1",
+      "topic": "B1: Stack",
+      "sub_topic": "Stack trace with a computed push",
+      "difficulty": "easy",
+      "format": "output",
+      "question": "What is printed by the following code?\n\ns = []\ns.append(4)\ns.append(6)\nx = s.pop()\ns.append(x * 2)\ns.append(3)\nprint(s)",
+      "options": [
+        "A) [4, 12, 3]",
+        "B) [4, 6, 12, 3]",
+        "C) [12, 4, 3]",
+        "D) [8, 3]"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) [4, 12, 3]\nGiven: pop() removes 6, and 6 × 2 = 12 is pushed.\nStep 1: [4, 6] → pop → [4]\nStep 2: push 12 → [4, 12]; push 3 → [4, 12, 3]\nCommon mistake: (B) ignores the pop. (C) pushes at the bottom. (D) doubles 4.\nKey point: pop() returns the removed top element."
+    },
+    {
+      "id": "CUET27-CS-T11-Q43",
+      "section": "B1",
+      "topic": "B1: Queue",
+      "sub_topic": "Simulating arrivals and service",
       "difficulty": "hard",
-      "question": "Maximum data rate for 4 kHz bandwidth and SNR of 30 dB per Shannon's theorem?",
+      "format": "output",
+      "question": "Customers 1 to 6 arrive one per minute and join a queue q. Whenever an even-numbered customer has just joined, the front customer is served. What are q and the list of served customers after customer 6 joins (and the service at that minute)?\n\nq, served = [], []\nfor t in range(1, 7):\n    q.append(t)\n    if t % 2 == 0:\n        served.append(q.pop(0))",
       "options": [
-        "A) 60 kbps",
-        "B) 40 kbps",
-        "C) 120 kbps",
-        "D) 20 kbps"
-      ],
-      "correct_option": "B",
-      "explanation": "C = B*log2(1+SNR). SNR=30dB->1000. log2(1001)~10. C=40kbps."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q21",
-      "topic": "Python/Data Structures",
-      "sub_topic": "Exception Handling",
-      "difficulty": "easy",
-      "question": "Which exception is raised when dividing by zero?",
-      "options": [
-        "A) ArithmeticError",
-        "B) ZeroDivisionError",
-        "C) ValueError",
-        "D) TypeError"
-      ],
-      "correct_option": "B",
-      "explanation": "ZeroDivisionError for division by zero."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q22",
-      "topic": "Python/Data Structures",
-      "sub_topic": "Exception Handling",
-      "difficulty": "easy",
-      "question": "Which block always executes regardless of exception occurrence?",
-      "options": [
-        "A) finally",
-        "B) try",
-        "C) else",
-        "D) except"
-      ],
-      "correct_option": "A",
-      "explanation": "finally always executes."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q23",
-      "topic": "Python/Data Structures",
-      "sub_topic": "File Handling",
-      "difficulty": "easy",
-      "question": "Which method writes a string to a file?",
-      "options": [
-        "A) f.put()",
-        "B) f.append()",
-        "C) f.write()",
-        "D) f.save()"
-      ],
-      "correct_option": "C",
-      "explanation": "f.write() writes a string to a file."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q24",
-      "topic": "Python/Data Structures",
-      "sub_topic": "File Handling",
-      "difficulty": "easy",
-      "question": "What mode opens a file for writing (creates new or truncates)?",
-      "options": [
-        "A) a",
-        "B) w",
-        "C) x",
-        "D) r"
-      ],
-      "correct_option": "B",
-      "explanation": "w mode opens for writing (truncates)."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q25",
-      "topic": "Python/Data Structures",
-      "sub_topic": "Data Structures",
-      "difficulty": "easy",
-      "question": "What is the time complexity of accessing an element by index in a Python list?",
-      "options": [
-        "A) O(n log n)",
-        "B) O(log n)",
-        "C) O(n)",
-        "D) O(1)"
+        "A) q = [2, 4, 6], served = [1, 3, 5]",
+        "B) q = [1, 2, 3], served = [4, 5, 6]",
+        "C) q = [5, 6], served = [1, 2, 3, 4]",
+        "D) q = [4, 5, 6], served = [1, 2, 3]"
       ],
       "correct_option": "D",
-      "explanation": "List index access is O(1)."
+      "explanation": "Answer: (D) q = [4, 5, 6], served = [1, 2, 3]\nGiven: Service happens at t = 2, 4 and 6.\nStep 1: t = 2: q = [1, 2] → serve 1 → [2]\nStep 2: t = 4: q = [2, 3, 4] → serve 2 → [3, 4]\nStep 3: t = 6: q = [3, 4, 5, 6] → serve 3 → [4, 5, 6]\nCommon mistake: (A) serves the odd numbers. (B) serves from the rear. (C) serves one extra.\nKey point: The front is always the earliest waiting customer."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q26",
-      "topic": "Python/Data Structures",
-      "sub_topic": "Data Structures",
-      "difficulty": "easy",
-      "question": "What is the time complexity of inserting an element at the end of a Python list with append()?",
-      "options": [
-        "A) O(log n)",
-        "B) O(n)",
-        "C) O(1)",
-        "D) O(n log n)"
-      ],
-      "correct_option": "C",
-      "explanation": "append() adds an element to the end of the list in O(1) amortized time."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q27",
-      "topic": "Python/Data Structures",
-      "sub_topic": "Data Structures",
-      "difficulty": "easy",
-      "question": "Which Python built-in function converts a binary string '1010' to its integer equivalent?",
-      "options": [
-        "A) int('1010', 10)",
-        "B) int('1010', 2)",
-        "C) convert('1010')",
-        "D) bin('1010')"
-      ],
-      "correct_option": "B",
-      "explanation": "int('1010', 2) converts a binary string to its decimal equivalent (10)."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q28",
-      "topic": "Python/Data Structures",
-      "sub_topic": "Exception Handling",
-      "difficulty": "medium",
-      "question": "What is output of: print('Hello' + 3)?",
-      "options": [
-        "A) Hello3",
-        "B) SyntaxError",
-        "C) Hello",
-        "D) TypeError"
-      ],
-      "correct_option": "D",
-      "explanation": "Cannot concatenate str and int -> TypeError."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q29",
-      "topic": "Python/Data Structures",
-      "sub_topic": "File Handling",
-      "difficulty": "medium",
-      "question": "What does f.readline() return when EOF is reached?",
-      "options": [
-        "A) None",
-        "B) '\\n'",
-        "C) EOFError",
-        "D) '' (empty string)"
-      ],
-      "correct_option": "D",
-      "explanation": "f.readline() returns empty string at EOF."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q30",
-      "topic": "Python/Data Structures",
-      "sub_topic": "Data Structures",
+      "id": "CUET27-CS-T11-Q44",
+      "section": "B1",
+      "topic": "B1: Computer Networks and Data Communication",
+      "sub_topic": "Time to upload a video",
       "difficulty": "hard",
-      "question": "What is the amortized time complexity of append() in Python list?",
+      "format": "output",
+      "question": "A 300 MB video is uploaded over a 40 Mbps connection. Ignoring delays and taking 1 byte = 8 bits, about how long does it take?",
       "options": [
-        "A) O(1)",
-        "B) O(n)",
-        "C) O(log n)",
-        "D) O(n^2)"
+        "A) 60 seconds",
+        "B) 7.5 seconds",
+        "C) 12 seconds",
+        "D) 2400 seconds"
       ],
       "correct_option": "A",
-      "explanation": "Dynamic array amortized O(1) for append."
+      "explanation": "Answer: (A) 60 seconds\nGiven: 300 MB = 300 × 8 = 2400 Mb.\nStep 1: Time = 2400 ÷ 40 = 60 seconds\nCommon mistake: (B) forgets the bit conversion. (C) has no basis. (D) does not divide by the rate.\nKey point: Always match units before dividing."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q31",
-      "topic": "Searching/Sorting",
-      "sub_topic": "Sorting Algorithms",
-      "difficulty": "easy",
-      "question": "Which sorting has best-case O(n) when array is already sorted?",
+      "id": "CUET27-CS-T11-Q45",
+      "section": "B1",
+      "topic": "B1: Stack",
+      "sub_topic": "Postfix with subtraction and addition",
+      "difficulty": "hard",
+      "format": "output",
+      "question": "What is the value of the postfix expression 6 3 − 4 2 + * ?",
       "options": [
-        "A) Quick Sort",
-        "B) Bubble Sort",
-        "C) Heap Sort",
-        "D) Selection Sort"
-      ],
-      "correct_option": "B",
-      "explanation": "Optimized Bubble Sort: O(n) best case."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q32",
-      "topic": "Searching/Sorting",
-      "sub_topic": "Searching Algorithms",
-      "difficulty": "easy",
-      "question": "What is the time complexity of binary search?",
-      "options": [
-        "A) O(n^2)",
-        "B) O(n log n)",
-        "C) O(log n)",
-        "D) O(n)"
+        "A) 9",
+        "B) 30",
+        "C) 18",
+        "D) 54"
       ],
       "correct_option": "C",
-      "explanation": "Binary search: O(log n)."
+      "explanation": "Answer: (C) 18\nGiven: Evaluate left to right with a stack.\nStep 1: 6 3 − → 3\nStep 2: 4 2 + → 6\nStep 3: 3 6 * → 18\nCommon mistake: (A) adds 3 and 6. (B) has no basis. (D) multiplies 6 by 9.\nKey point: The infix form is (6 − 3) * (4 + 2)."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q33",
-      "topic": "Searching/Sorting",
-      "sub_topic": "Sorting Algorithms",
+      "id": "CUET27-CS-T11-Q46",
+      "section": "B1",
+      "case_id": "CUET27-CS-T11-B1-CASE1",
+      "topic": "B1: Sorting",
+      "sub_topic": "Selection sort after pass 1",
       "difficulty": "easy",
-      "question": "Which sorting repeatedly finds minimum and places it at beginning?",
+      "format": "case-based",
+      "question": "Read the following passage and answer the question that follows.\n\nTwo students sort the same list in ascending order:\n\nL = [38, 12, 45, 7, 26]\n\nStudent P uses selection sort: in each pass, the smallest element of the unsorted part is swapped with the first element of that part (no swap if it is already there).\nStudent Q uses insertion sort: each element from index 1 onwards is inserted into the sorted part on its left by shifting larger elements one place to the right.\n\nQuestion: What is the list after pass 1 of Student P's selection sort?",
       "options": [
-        "A) Merge Sort",
-        "B) Insertion Sort",
-        "C) Selection Sort",
-        "D) Bubble Sort"
+        "A) [12, 38, 45, 7, 26]",
+        "B) [7, 12, 26, 38, 45]",
+        "C) [38, 12, 45, 7, 26]",
+        "D) [7, 12, 45, 38, 26]"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) [7, 12, 45, 38, 26]\nGiven: The smallest element, 7, is swapped with the first element, 38.\nStep 1: [38, 12, 45, 7, 26] → [7, 12, 45, 38, 26]\nCommon mistake: (A) is insertion sort's first pass. (B) is fully sorted. (C) is unchanged.\nKey point: One swap per pass in selection sort."
+    },
+    {
+      "id": "CUET27-CS-T11-Q47",
+      "section": "B1",
+      "case_id": "CUET27-CS-T11-B1-CASE1",
+      "topic": "B1: Sorting",
+      "sub_topic": "Selection sort after pass 2",
+      "difficulty": "medium",
+      "format": "case-based",
+      "question": "Read the following passage and answer the question that follows.\n\nTwo students sort the same list in ascending order:\n\nL = [38, 12, 45, 7, 26]\n\nStudent P uses selection sort: in each pass, the smallest element of the unsorted part is swapped with the first element of that part (no swap if it is already there).\nStudent Q uses insertion sort: each element from index 1 onwards is inserted into the sorted part on its left by shifting larger elements one place to the right.\n\nQuestion: What is the list after pass 2 of selection sort?",
+      "options": [
+        "A) [7, 12, 45, 38, 26]",
+        "B) [7, 12, 26, 38, 45]",
+        "C) [7, 26, 45, 38, 12]",
+        "D) [7, 12, 38, 45, 26]"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) [7, 12, 45, 38, 26]\nGiven: After pass 1: [7, 12, 45, 38, 26].\nStep 1: Smallest of [12, 45, 38, 26] is 12, already at index 1 → no swap\nStep 2: List unchanged: [7, 12, 45, 38, 26]\nCommon mistake: (B) is after pass 3 onwards. (C) swaps 12 needlessly. (D) shifts elements.\nKey point: Selection sort still compares even when no swap is needed."
+    },
+    {
+      "id": "CUET27-CS-T11-Q48",
+      "section": "B1",
+      "case_id": "CUET27-CS-T11-B1-CASE1",
+      "topic": "B1: Sorting",
+      "sub_topic": "Insertion sort after two insertions",
+      "difficulty": "medium",
+      "format": "case-based",
+      "question": "Read the following passage and answer the question that follows.\n\nTwo students sort the same list in ascending order:\n\nL = [38, 12, 45, 7, 26]\n\nStudent P uses selection sort: in each pass, the smallest element of the unsorted part is swapped with the first element of that part (no swap if it is already there).\nStudent Q uses insertion sort: each element from index 1 onwards is inserted into the sorted part on its left by shifting larger elements one place to the right.\n\nQuestion: What is the list after Student Q has inserted the elements at indices 1 and 2?",
+      "options": [
+        "A) [7, 12, 38, 45, 26]",
+        "B) [12, 38, 7, 45, 26]",
+        "C) [12, 38, 45, 7, 26]",
+        "D) [12, 45, 38, 7, 26]"
       ],
       "correct_option": "C",
-      "explanation": "Selection Sort finds minimum each pass."
+      "explanation": "Answer: (C) [12, 38, 45, 7, 26]\nGiven: Insert 12, then 45.\nStep 1: 12 < 38 → shift 38 → [12, 38, 45, 7, 26]\nStep 2: 45 > 38 → stays → [12, 38, 45, 7, 26]\nCommon mistake: (A) also inserts 7. (B) moves 7 early. (D) misplaces 45.\nKey point: Insertion sort keeps the left part sorted."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q34",
-      "topic": "Searching/Sorting",
-      "sub_topic": "Searching Algorithms",
-      "difficulty": "easy",
-      "question": "Binary search requires data to be:",
+      "id": "CUET27-CS-T11-Q49",
+      "section": "B1",
+      "case_id": "CUET27-CS-T11-B1-CASE1",
+      "topic": "B1: Sorting",
+      "sub_topic": "Shifts made by insertion sort",
+      "difficulty": "hard",
+      "format": "case-based",
+      "question": "Read the following passage and answer the question that follows.\n\nTwo students sort the same list in ascending order:\n\nL = [38, 12, 45, 7, 26]\n\nStudent P uses selection sort: in each pass, the smallest element of the unsorted part is swapped with the first element of that part (no swap if it is already there).\nStudent Q uses insertion sort: each element from index 1 onwards is inserted into the sorted part on its left by shifting larger elements one place to the right.\n\nQuestion: How many times does Student Q shift an element one place to the right while sorting the whole list?",
       "options": [
-        "A) Circular",
-        "B) Sorted",
-        "C) In linked list",
-        "D) Unsorted"
+        "A) 4",
+        "B) 6",
+        "C) 10",
+        "D) 8"
       ],
       "correct_option": "B",
-      "explanation": "Binary search requires sorted data."
+      "explanation": "Answer: (B) 6\nGiven: Count the shifts for each inserted element.\nStep 1: Insert 12: shift 38 → 1; insert 45: 0\nStep 2: Insert 7: shift 45, 38, 12 → 3\nStep 3: Insert 26: shift 45, 38 → 2; total = 1 + 0 + 3 + 2 = 6\nCommon mistake: (A) misses some shifts. (C) is selection sort's comparisons. (D) is insertion sort's comparisons.\nKey point: Shifts equal the number of out-of-order pairs."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q35",
-      "topic": "Searching/Sorting",
-      "sub_topic": "Sorting Algorithms",
-      "difficulty": "easy",
-      "question": "Worst-case time complexity of Quick Sort is:",
+      "id": "CUET27-CS-T11-Q50",
+      "section": "B1",
+      "case_id": "CUET27-CS-T11-B1-CASE1",
+      "topic": "B1: Sorting",
+      "sub_topic": "Comparing the two sorts on this list",
+      "difficulty": "hard",
+      "format": "case-based",
+      "question": "Read the following passage and answer the question that follows.\n\nTwo students sort the same list in ascending order:\n\nL = [38, 12, 45, 7, 26]\n\nStudent P uses selection sort: in each pass, the smallest element of the unsorted part is swapped with the first element of that part (no swap if it is already there).\nStudent Q uses insertion sort: each element from index 1 onwards is inserted into the sorted part on its left by shifting larger elements one place to the right.\n\nQuestion: For this list, how many comparisons does selection sort make, and how many swaps does it make in total?",
       "options": [
-        "A) O(n^2)",
-        "B) O(n log n)",
-        "C) O(log n)",
-        "D) O(n)"
-      ],
-      "correct_option": "A",
-      "explanation": "Quick Sort worst case: O(n^2)."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q36",
-      "topic": "Searching/Sorting",
-      "sub_topic": "Sorting Algorithms",
-      "difficulty": "easy",
-      "question": "Which sorting uses divide-and-conquer?",
-      "options": [
-        "A) Insertion Sort",
-        "B) Bubble Sort",
-        "C) Selection Sort",
-        "D) Merge Sort"
+        "A) 8 comparisons, 4 swaps",
+        "B) 10 comparisons, 4 swaps",
+        "C) 8 comparisons, 2 swaps",
+        "D) 10 comparisons, 2 swaps"
       ],
       "correct_option": "D",
-      "explanation": "Merge Sort uses divide-and-conquer."
+      "explanation": "Answer: (D) 10 comparisons, 2 swaps\nGiven: Selection sort always makes n(n − 1)/2 comparisons.\nStep 1: n = 5 → 5 × 4 ÷ 2 = 10\nStep 2: Swaps: pass 1 (7 ↔ 38), pass 3 (26 ↔ 45); passes 2 and 4 need none → 2\nCommon mistake: (A) and (C) use insertion sort's 8 comparisons. (B) counts a swap in every pass.\nKey point: Selection sort makes few swaps but many comparisons; insertion sort adapts to the data."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q37",
-      "topic": "Searching/Sorting",
-      "sub_topic": "Searching Algorithms",
-      "difficulty": "easy",
-      "question": "Linear search is also called:",
+      "id": "CUET27-CS-T11-Q51",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – II",
+      "sub_topic": "Filling missing marks and saving",
+      "difficulty": "medium",
+      "format": "sequence",
+      "question": "Arrange the steps to replace missing marks with the column mean and save the result:\n(A) df = pd.read_csv('marks.csv')\n(B) avg = df['Marks'].mean()\n(C) df['Marks'] = df['Marks'].fillna(avg)\n(D) df.to_csv('marks_clean.csv', index=False)\nChoose the correct answer from the options given below:",
       "options": [
-        "A) Hash search",
-        "B) Binary search",
-        "C) Tree search",
-        "D) Sequential search"
+        "A) (B), (A), (C), (D)",
+        "B) (A), (B), (C), (D)",
+        "C) (A), (C), (B), (D)",
+        "D) (A), (B), (D), (C)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) (A), (B), (C), (D)\nWhy: Read the data (A), compute the mean (B), fill the gaps (C), and save (D).\nWhy not the others: (A) computes a mean before reading. (C) fills before the mean exists. (D) saves before filling.\nKey point: Assigning the result back keeps the change."
+    },
+    {
+      "id": "CUET27-CS-T11-Q52",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – II",
+      "sub_topic": "Sum per group",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "For g = pd.DataFrame({'T': ['X', 'Y', 'X', 'Y'], 'V': [5, 7, 9, 1]}), what is g.groupby('T')['V'].sum().tolist()?",
+      "options": [
+        "A) [22]",
+        "B) [14, 8]",
+        "C) [8, 14]",
+        "D) [5, 7]"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) [14, 8]\nGiven: Groups are sorted by key: X, then Y.\nStep 1: X: 5 + 9 = 14; Y: 7 + 1 = 8\nCommon mistake: (A) adds all values. (C) reverses the groups. (D) takes the first values.\nKey point: groupby() splits the data into groups before applying sum()."
+    },
+    {
+      "id": "CUET27-CS-T11-Q53",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – II",
+      "sub_topic": "fillna() with the mean",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "What is pd.Series([10, np.nan, 30]).fillna(pd.Series([10, np.nan, 30]).mean()).tolist()?",
+      "options": [
+        "A) [10.0, 0.0, 30.0]",
+        "B) [10.0, 13.33, 30.0]",
+        "C) [10.0, nan, 30.0]",
+        "D) [10.0, 20.0, 30.0]"
       ],
       "correct_option": "D",
-      "explanation": "Linear = sequential search."
+      "explanation": "Answer: (D) [10.0, 20.0, 30.0]\nGiven: mean() skips NaN.\nStep 1: Mean = (10 + 30) ÷ 2 = 20.0\nStep 2: The NaN is replaced by 20.0\nCommon mistake: (A) fills with 0. (B) divides by 3. (C) leaves the NaN.\nKey point: Filling with the mean keeps the column's average unchanged."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q38",
-      "topic": "Searching/Sorting",
-      "sub_topic": "Sorting Algorithms",
+      "id": "CUET27-CS-T11-Q54",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – I",
+      "sub_topic": "Transposing a DataFrame",
       "difficulty": "medium",
-      "question": "Average time complexity of Merge Sort is:",
+      "format": "output",
+      "question": "For d = pd.DataFrame({'A': [1, 2], 'B': [3, 4], 'C': [5, 6]}), what are d.T.shape and d.T.loc['B'].tolist()?",
       "options": [
-        "A) O(n)",
-        "B) O(log n)",
-        "C) O(n^2)",
-        "D) O(n log n)"
+        "A) (2, 3) and [3, 4]",
+        "B) (3, 2) and [2, 4]",
+        "C) (2, 3) and [1, 2]",
+        "D) (3, 2) and [3, 4]"
       ],
       "correct_option": "D",
-      "explanation": "Merge Sort: O(n log n) average."
+      "explanation": "Answer: (D) (3, 2) and [3, 4]\nGiven: T swaps rows and columns.\nStep 1: d has shape (2, 3), so d.T has shape (3, 2)\nStep 2: Column B becomes row B → [3, 4]\nCommon mistake: (A) and (C) keep the original shape. (B) reads a column of d.T.\nKey point: The column labels become the row index."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q39",
-      "topic": "Searching/Sorting",
-      "sub_topic": "Searching Algorithms",
+      "id": "CUET27-CS-T11-Q55",
+      "section": "B2",
+      "topic": "B2: Project Based Learning",
+      "sub_topic": "Teamwork in projects",
       "difficulty": "medium",
-      "question": "In binary search, if middle element is smaller than target, search continues in:",
+      "format": "direct",
+      "question": "Which of the following is a component of teamwork listed in NCERT for project-based learning?",
       "options": [
-        "A) Right half",
-        "B) Left half",
-        "C) Random half",
-        "D) Entire array"
+        "A) Working alone without sharing anything",
+        "B) Listening to and respecting others' ideas",
+        "C) Keeping your own findings secret",
+        "D) Avoiding questions during team meetings"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) Listening to and respecting others' ideas\nWhy: NCERT lists communication, listening, questioning, persuading, respecting, helping, sharing and participating as components of teamwork.\nWhy not the others: (A), (C) and (D) go against teamwork.\nKey point: Every member should participate."
+    },
+    {
+      "id": "CUET27-CS-T11-Q56",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – II",
+      "sub_topic": "Why pivot_table() handles duplicates",
+      "difficulty": "medium",
+      "format": "direct",
+      "question": "A sales table has repeated (Region, Month) pairs. Why should pivot_table() be used instead of pivot() to reshape it with Region as rows and Month as columns?",
+      "options": [
+        "A) pivot_table() aggregates repeated pairs; pivot() raises an error",
+        "B) pivot() works only on a Series, not on a DataFrame",
+        "C) pivot_table() silently deletes all repeated rows",
+        "D) pivot() cannot use a text column as the new index"
       ],
       "correct_option": "A",
-      "explanation": "If middle < target, search right half."
+      "explanation": "Answer: (A) pivot_table() aggregates repeated pairs; pivot() raises an error\nWhy: pivot() needs each index–column pair to be unique; pivot_table() combines duplicates using aggfunc (mean by default).\nWhy not the others: (B) pivot() works on DataFrames. (C) pivot_table() aggregates rather than silently deleting. (D) Text columns can be used.\nKey point: aggfunc='sum' gives totals."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q40",
-      "topic": "Searching/Sorting",
-      "sub_topic": "Sorting Algorithms",
+      "id": "CUET27-CS-T11-Q57",
+      "section": "B2",
+      "topic": "B2: Database Query using SQL",
+      "sub_topic": "Counting by month name",
       "difficulty": "medium",
-      "question": "Which sorting is stable?",
+      "format": "output",
+      "question": "Table STU has a column DOB with the values '2008-05-14', '2007-11-02', '2008-05-30', '2009-01-20' and '2008-06-01'. What is the output of SELECT COUNT(*) FROM STU WHERE MONTHNAME(DOB) = 'May'; ?",
       "options": [
-        "A) Merge Sort",
-        "B) Quick Sort",
-        "C) Heap Sort",
-        "D) Selection Sort"
+        "A) 2",
+        "B) 3",
+        "C) 1",
+        "D) 5"
       ],
       "correct_option": "A",
-      "explanation": "Merge Sort is stable."
+      "explanation": "Answer: (A) 2\nGiven: MONTHNAME() returns the month's name.\nStep 1: May dates: 2008-05-14 and 2008-05-30 → 2\nCommon mistake: (B) includes June. (C) misses one. (D) ignores WHERE.\nKey point: MONTH(DOB) = 5 would give the same result."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q41",
-      "topic": "Security/Pandas",
-      "sub_topic": "Cyber Security",
+      "id": "CUET27-CS-T11-Q58",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – II",
+      "sub_topic": "Summary values of a Series",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "For z = pd.Series([4, 10, 6, 8]), match each expression (List-I) with its value (List-II):\n\nList-I\n(A) z.sum()\n(B) z.mean()\n(C) z.max()\n(D) z.count()\n\nList-II\n(I) 4\n(II) 10\n(III) 7.0\n(IV) 28\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+        "B) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+        "C) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)",
+        "D) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)\nWhy: sum = 28 (IV); mean = 28 ÷ 4 = 7.0 (III); max = 10 (II); count = 4 values (I).\nWhy not the others: (A) swaps sum and mean; (B) swaps mean and max; (C) swaps max and count.\nKey point: count() would be smaller if there were NaN values."
+    },
+    {
+      "id": "CUET27-CS-T11-Q59",
+      "section": "B2",
+      "topic": "B2: Plotting Data using Matplotlib",
+      "sub_topic": "Different colours for bars",
+      "difficulty": "medium",
+      "format": "direct",
+      "question": "What does plt.bar(['A', 'B', 'C'], [5, 7, 3], color=['red', 'green', 'blue']) draw?",
+      "options": [
+        "A) A single red bar for all three values",
+        "B) Three bars coloured red, green and blue in order",
+        "C) Three bars, all of them coloured blue",
+        "D) A line plot drawn in red, green and blue"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) Three bars coloured red, green and blue in order\nWhy: When color is given a list, each bar takes the colour at the same position.\nWhy not the others: (A) and (C) ignore the list. (D) bar() draws bars, not lines.\nKey point: A single colour name colours every bar the same."
+    },
+    {
+      "id": "CUET27-CS-T11-Q60",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – I",
+      "sub_topic": "DataFrame from Series with different indexes",
+      "difficulty": "hard",
+      "format": "output",
+      "question": "What are the shape and the number of NaN values of dd?\n\nimport pandas as pd\ndd = pd.DataFrame({'a': pd.Series([1, 2, 3], index=[0, 1, 2]),\n                   'b': pd.Series([4, 5], index=[1, 3])})",
+      "options": [
+        "A) (3, 2) and 1",
+        "B) (4, 2) and 3",
+        "C) (3, 2) and 0",
+        "D) (4, 2) and 2"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) (4, 2) and 3\nGiven: The row index is the union of the Series indexes: 0, 1, 2, 3.\nStep 1: Shape = (4, 2)\nStep 2: a is missing at 3 → 1 NaN; b is missing at 0 and 2 → 2 NaN; total 3\nCommon mistake: (A) and (C) use only a's index. (D) misses one NaN.\nKey point: Data is aligned by index labels."
+    },
+    {
+      "id": "CUET27-CS-T11-Q61",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – I",
+      "sub_topic": "Labels created by default",
+      "difficulty": "medium",
+      "format": "assertion-reason",
+      "question": "Assertion (A): pd.Series([10, 20, 30]) has the index 0, 1, 2.\nReason (R): When no index is given, Pandas creates a default integer index starting from 0.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion",
+        "B) Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion",
+        "C) Assertion is true, but Reason is false",
+        "D) Assertion is false, but Reason is true"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion\nWhy: Because no labels are supplied, the default RangeIndex 0, 1, 2 is used. The Reason explains the Assertion.\nWhy not the others: (B) The Reason explains the Assertion. (C) and (D) Both are true.\nKey point: A custom index can be given with index=[…]."
+    },
+    {
+      "id": "CUET27-CS-T11-Q62",
+      "section": "B2",
+      "topic": "B2: Plotting Data using Matplotlib",
+      "sub_topic": "Default kind of Pandas plot",
+      "difficulty": "medium",
+      "format": "assertion-reason",
+      "question": "Assertion (A): df.plot() without a kind argument draws a line plot.\nReason (R): The default value of kind in Pandas plot() is 'line'.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion",
+        "B) Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion",
+        "C) Assertion is true, but Reason is false",
+        "D) Assertion is false, but Reason is true"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion\nWhy: Since kind defaults to 'line', calling plot() with no kind gives a line plot of the numeric columns. The Reason explains the Assertion.\nWhy not the others: (B) The Reason explains the Assertion. (C) and (D) Both are true.\nKey point: kind='bar', 'hist', 'box', 'pie', 'scatter' and 'area' give other charts."
+    },
+    {
+      "id": "CUET27-CS-T11-Q63",
+      "section": "B2",
+      "topic": "B2: Introduction to Computer Networks",
+      "sub_topic": "Cache and history",
+      "difficulty": "hard",
+      "format": "statements",
+      "question": "Consider the following statements about a web browser:\n(A) The cache stores copies of web pages and images so that they load faster next time.\n(B) Clearing the cache frees storage space on the device.\n(C) The history is a list of websites visited earlier.\n(D) Clearing the history deletes those websites from the Internet.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A), (B), (C) and (D)",
+        "B) (A), (B) and (C) only",
+        "C) (C) and (D) only",
+        "D) (A) and (D) only"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) (A), (B) and (C) only\nWhy: The cache keeps local copies (A) and clearing it frees space (B); the history records visited pages (C).\nWhy not the others: Statement (D) is false — clearing history only removes the record on the device; the websites are unaffected. Options (A), (C) and (D) include it.\nKey point: Private browsing does not store history or cache after closing."
+    },
+    {
+      "id": "CUET27-CS-T11-Q64",
+      "section": "B2",
+      "topic": "B2: Introduction to Computer Networks",
+      "sub_topic": "Purpose of a domain name",
       "difficulty": "easy",
-      "question": "What does VPN stand for?",
+      "format": "direct",
+      "question": "Why do websites use domain names such as www.ncert.nic.in instead of only IP addresses?",
       "options": [
-        "A) Virtual Public Network",
-        "B) Visual Personal Network",
-        "C) Virtual Private Network",
-        "D) Verified Private Node"
+        "A) Domain names make websites load faster than IP addresses",
+        "B) IP addresses cannot be used on the Internet",
+        "C) Domain names are easier for people to remember",
+        "D) Domain names hide the website from search engines"
       ],
       "correct_option": "C",
-      "explanation": "VPN = Virtual Private Network."
+      "explanation": "Answer: (C) Domain names are easier for people to remember\nWhy: Domain names are human-friendly labels; DNS converts them into the numeric IP addresses that computers use.\nWhy not the others: (A) Speed does not depend on the name. (B) IP addresses are what computers actually use. (D) is false.\nKey point: A domain name must be registered before use."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q42",
-      "topic": "Security/Pandas",
-      "sub_topic": "Pandas Basics",
-      "difficulty": "easy",
-      "question": "Which function displays last n rows of DataFrame?",
-      "options": [
-        "A) df.end()",
-        "B) df.last()",
-        "C) df.head()",
-        "D) df.tail()"
-      ],
-      "correct_option": "D",
-      "explanation": "df.tail() returns last n rows."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q43",
-      "topic": "Security/Pandas",
-      "sub_topic": "Pandas Basics",
-      "difficulty": "easy",
-      "question": "What library is used for data manipulation and analysis?",
-      "options": [
-        "A) Scikit-learn",
-        "B) NumPy",
-        "C) Matplotlib",
-        "D) Pandas"
-      ],
-      "correct_option": "D",
-      "explanation": "Pandas for data manipulation."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q44",
-      "topic": "Security/Pandas",
-      "sub_topic": "Cyber Security",
-      "difficulty": "easy",
-      "question": "What is malware?",
-      "options": [
-        "A) Network protocol",
-        "B) Malicious software",
-        "C) Database system",
-        "D) Hardware component"
-      ],
-      "correct_option": "B",
-      "explanation": "Malware = malicious software."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q45",
-      "topic": "Security/Pandas",
-      "sub_topic": "Cyber Security",
-      "difficulty": "easy",
-      "question": "What does HTTPS stand for?",
-      "options": [
-        "A) HyperText Transfer Private System",
-        "B) HyperText Transfer Protocol Secure",
-        "C) HyperText Transmission Protocol Standard",
-        "D) High Transfer Text Protocol Secure"
-      ],
-      "correct_option": "B",
-      "explanation": "HTTPS = HyperText Transfer Protocol Secure."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q46",
-      "topic": "Security/Pandas",
-      "sub_topic": "Pandas Basics",
-      "difficulty": "easy",
-      "question": "Which Pandas structure is 2-dimensional?",
-      "options": [
-        "A) DataFrame",
-        "B) Array",
-        "C) Panel",
-        "D) Series"
-      ],
-      "correct_option": "A",
-      "explanation": "DataFrame is 2-dimensional."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q47",
-      "topic": "Security/Pandas",
-      "sub_topic": "Cyber Security",
-      "difficulty": "easy",
-      "question": "What is a computer worm?",
-      "options": [
-        "A) Malware that replicates independently",
-        "B) Network cable",
-        "C) Database table",
-        "D) Hardware device"
-      ],
-      "correct_option": "A",
-      "explanation": "Worm replicates without attaching to files."
-    },
-    {
-      "id": "CUET_CS_2026_P11_L1B_Q48",
-      "topic": "Security/Pandas",
-      "sub_topic": "Pandas Basics",
+      "id": "CUET27-CS-T11-Q65",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – I",
+      "sub_topic": "at for a single value",
       "difficulty": "medium",
-      "question": "In Pandas, which function provides summary statistics (count, mean, std, min, max) for numeric columns?",
+      "format": "output",
+      "question": "For y = pd.DataFrame({'P': [7, 8], 'Q': [9, 10]}, index=['r', 's']), what is y.at['s', 'P'] + y.iat[0, 1]?",
       "options": [
-        "A) df.info()",
-        "B) df.stats()",
-        "C) df.describe()",
-        "D) df.summarize()"
+        "A) 15",
+        "B) 16",
+        "C) 17",
+        "D) 19"
       ],
       "correct_option": "C",
-      "explanation": "df.describe() generates descriptive statistics."
+      "explanation": "Answer: (C) 17\nGiven: at uses labels; iat uses positions.\nStep 1: y.at['s', 'P'] = 8\nStep 2: y.iat[0, 1] = row 0, column 1 = 9\nStep 3: 8 + 9 = 17\nCommon mistake: (A) uses 7 + 8. (B) uses 7 + 9. (D) uses 9 + 10.\nKey point: at and iat return a single value."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q49",
-      "topic": "Security/Pandas",
-      "sub_topic": "Cyber Security",
-      "difficulty": "medium",
-      "question": "What type of cyber attack uses fake emails to trick users into revealing passwords?",
+      "id": "CUET27-CS-T11-Q66",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – I",
+      "sub_topic": "head() of a Series",
+      "difficulty": "easy",
+      "format": "output",
+      "question": "What is pd.Series([12, 5, 8], index=['x', 'y', 'z']).head(2).tolist()?",
       "options": [
-        "A) DDoS",
-        "B) SQL Injection",
-        "C) Phishing",
-        "D) Spoofing"
+        "A) [12, 5]",
+        "B) [5, 8]",
+        "C) ['x', 'y']",
+        "D) [12]"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) [12, 5]\nGiven: head(2) returns the first two elements.\nStep 1: Values 12 and 5\nCommon mistake: (B) is tail(2). (C) gives labels. (D) is head(1).\nKey point: head() defaults to 5 elements."
+    },
+    {
+      "id": "CUET27-CS-T11-Q67",
+      "section": "B2",
+      "topic": "B2: Plotting Data using Matplotlib",
+      "sub_topic": "Histograms and bar charts",
+      "difficulty": "hard",
+      "format": "statements",
+      "question": "Consider the following statements:\n(A) A histogram is used for continuous numerical data.\n(B) A bar chart usually has gaps between its bars.\n(C) The bars of a histogram stand for separate categories such as product names.\n(D) The bins parameter decides the intervals of a histogram.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A), (B), (C) and (D)",
+        "B) (C) and (D) only",
+        "C) (A), (B) and (D) only",
+        "D) (A) and (C) only"
       ],
       "correct_option": "C",
-      "explanation": "Phishing uses fake emails to trick users."
+      "explanation": "Answer: (C) (A), (B) and (D) only\nWhy: Histograms show distributions of numeric data (A) in bins (D); bar charts compare categories with gaps between bars (B).\nWhy not the others: Statement (C) is false — that describes a bar chart; histogram bars stand for numeric intervals. Options (A), (C) and (D) include it.\nKey point: Choose the chart that matches the type of data."
     },
     {
-      "id": "CUET_CS_2026_P11_L1B_Q50",
-      "topic": "Security/Pandas",
-      "sub_topic": "Pandas Basics",
+      "id": "CUET27-CS-T11-Q68",
+      "section": "B2",
+      "topic": "B2: Plotting Data using Matplotlib",
+      "sub_topic": "pyplot functions for charts",
       "difficulty": "medium",
-      "question": "Which Pandas method removes rows containing NaN or missing values?",
+      "format": "match-list",
+      "question": "Match each function (List-I) with the chart it draws (List-II):\n\nList-I\n(A) plt.bar()\n(B) plt.barh()\n(C) plt.hist()\n(D) plt.boxplot()\n\nList-II\n(I) Box-and-whisker plot\n(II) Histogram\n(III) Horizontal bar chart\n(IV) Vertical bar chart\nChoose the correct answer from the options given below:",
       "options": [
-        "A) df.clean()",
-        "B) df.dropna()",
-        "C) df.remove()",
-        "D) df.fillna()"
+        "A) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+        "B) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+        "C) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+        "D) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)\nWhy: bar() draws vertical bars (IV); barh() horizontal bars (III); hist() histograms (II); boxplot() box plots (I).\nWhy not the others: (B) swaps bar and barh; (C) swaps barh and hist; (D) swaps hist and boxplot.\nKey point: scatter() and pie() draw other charts."
+    },
+    {
+      "id": "CUET27-CS-T11-Q69",
+      "section": "B2",
+      "topic": "B2: Database Query using SQL",
+      "sub_topic": "POWER() of a rounded value",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "What is the output of SELECT POWER(ROUND(2.6), 2); ?",
+      "options": [
+        "A) 6.76",
+        "B) 4",
+        "C) 9",
+        "D) 5.2"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) 9\nGiven: ROUND(2.6) = 3.\nStep 1: POWER(3, 2) = 9\nCommon mistake: (A) squares 2.6 without rounding. (B) rounds down. (D) doubles 2.6.\nKey point: ROUND() with no second argument gives the nearest integer."
+    },
+    {
+      "id": "CUET27-CS-T11-Q70",
+      "section": "B2",
+      "topic": "B2: Introduction to Computer Networks",
+      "sub_topic": "Network across a country",
+      "difficulty": "easy",
+      "format": "direct",
+      "question": "The network connecting all branches of a bank across India is an example of a:",
+      "options": [
+        "A) WAN",
+        "B) LAN",
+        "C) PAN",
+        "D) MAN"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) WAN\nWhy: A WAN spans large geographical areas such as countries.\nWhy not the others: (B) covers a building. (C) covers a few metres. (D) covers a city.\nKey point: The Internet is the largest WAN."
+    },
+    {
+      "id": "CUET27-CS-T11-Q71",
+      "section": "B2",
+      "topic": "B2: Plotting Data using Matplotlib",
+      "sub_topic": "Reading a line chart",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "A line chart shows a shop's monthly profit (in ₹ thousand): Jan 20, Feb 35, Mar 30, Apr 45, May 40. In which month(s) did the profit FALL compared with the previous month?",
+      "options": [
+        "A) March",
+        "B) February",
+        "C) April",
+        "D) Both March and May fell by the same amount"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) Both March and May fell by the same amount\nGiven: Compare each month with the previous one.\nStep 1: Feb +15; Mar −5; Apr +15; May −5\nStep 2: Profit fell in March and in May, each by 5\nCommon mistake: (A) misses May. (B) and (C) are rises.\nKey point: A downward slope on a line chart shows a fall."
+    },
+    {
+      "id": "CUET27-CS-T11-Q72",
+      "section": "B2",
+      "topic": "B2: Database Query using SQL",
+      "sub_topic": "Text functions on one word",
+      "difficulty": "hard",
+      "format": "statements",
+      "question": "Consider the following statements:\n(A) MID('NCERT', 2, 3) returns 'CER'.\n(B) LENGTH('NCERT') returns 5.\n(C) INSTR('NCERT', 'E') returns 3.\n(D) LEFT('NCERT', 0) returns 'N'.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A), (B) and (C) only",
+        "B) (A), (B), (C) and (D)",
+        "C) (C) and (D) only",
+        "D) (A) and (D) only"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) (A), (B) and (C) only\nWhy: Positions: N1 C2 E3 R4 T5. MID from 2 for 3 → 'CER' (A); length 5 (B); 'E' is at 3 (C).\nWhy not the others: Statement (D) is false — LEFT(…, 0) returns an empty string. Options (B), (C) and (D) include it.\nKey point: Positions in MySQL strings start at 1."
+    },
+    {
+      "id": "CUET27-CS-T11-Q73",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – I",
+      "sub_topic": "Adding a Boolean column",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "What is printed by the following code?\n\nimport pandas as pd\nr = pd.DataFrame({'M': [45, 80, 62]})\nr['Pass'] = r['M'] >= 50\nprint(r['Pass'].sum())",
+      "options": [
+        "A) 2",
+        "B) 3",
+        "C) 187",
+        "D) 1"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) 2\nGiven: The comparison gives True/False for each row; sum() counts True as 1.\nStep 1: 45 → False; 80 → True; 62 → True\nStep 2: Sum = 2\nCommon mistake: (B) counts all rows. (C) sums the marks. (D) counts the fails.\nKey point: A new column can be created from a condition."
+    },
+    {
+      "id": "CUET27-CS-T11-Q74",
+      "section": "B2",
+      "topic": "B2: Database Query using SQL",
+      "sub_topic": "UPPER() of RIGHT()",
+      "difficulty": "medium",
+      "format": "output",
+      "question": "What is the output of SELECT UPPER(RIGHT('flower', 4)); ?",
+      "options": [
+        "A) FLOW",
+        "B) OWER",
+        "C) ower",
+        "D) FLOWER"
       ],
       "correct_option": "B",
-      "explanation": "df.dropna() removes rows with missing values."
+      "explanation": "Answer: (B) OWER\nGiven: RIGHT('flower', 4) = 'ower'.\nStep 1: UPPER('ower') = 'OWER'\nCommon mistake: (A) uses LEFT(). (C) skips UPPER(). (D) skips RIGHT().\nKey point: The inner function runs first."
+    },
+    {
+      "id": "CUET27-CS-T11-Q75",
+      "section": "B2",
+      "topic": "B2: Plotting Data using Matplotlib",
+      "sub_topic": "Displaying a figure",
+      "difficulty": "easy",
+      "format": "direct",
+      "question": "Which statement displays the figure that has been drawn?",
+      "options": [
+        "A) plt.plot()",
+        "B) plt.savefig()",
+        "C) plt.show()",
+        "D) plt.figure()"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) plt.show()\nWhy: show() opens the window (or output) that displays the current figure.\nWhy not the others: (A) draws a line. (B) saves to a file. (D) creates a new empty figure.\nKey point: Call savefig() before show()."
+    },
+    {
+      "id": "CUET27-CS-T11-Q76",
+      "section": "B2",
+      "topic": "B2: Introduction to Computer Networks",
+      "sub_topic": "Static and dynamic web content",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "Match List-I with List-II:\n\nList-I\n(A) Static web page\n(B) Dynamic web page\n(C) HTML\n(D) PHP\n\nList-II\n(I) A server-side language used to generate pages\n(II) Markup language that describes a page's structure\n(III) Content can change for each user or request\n(IV) Shows the same content to every visitor\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+        "B) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+        "C) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)",
+        "D) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)\nWhy: Static pages are fixed (IV); dynamic pages change (III); HTML describes structure (II); PHP generates pages on the server (I).\nWhy not the others: (A) swaps static and dynamic; (B) swaps dynamic and HTML; (C) swaps HTML and PHP.\nKey point: JSP and ASP are other server-side technologies."
+    },
+    {
+      "id": "CUET27-CS-T11-Q77",
+      "section": "B2",
+      "topic": "B2: Database Query using SQL",
+      "sub_topic": "Logical order of processing a grouped query",
+      "difficulty": "medium",
+      "format": "sequence",
+      "question": "For the query SELECT Dept, AVG(Sal) FROM EMP WHERE Sal > 10000 GROUP BY Dept HAVING AVG(Sal) > 30000 ORDER BY Dept;, arrange these steps in the order in which their effect is applied:\n(A) HAVING keeps groups with an average above 30000\n(B) WHERE removes rows with Sal not greater than 10000\n(C) ORDER BY sorts the final rows by Dept\n(D) GROUP BY forms one group per department\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (D), (B), (A), (C)",
+        "B) (B), (A), (D), (C)",
+        "C) (B), (D), (C), (A)",
+        "D) (B), (D), (A), (C)"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) (B), (D), (A), (C)\nWhy: Rows are filtered first (B), then grouped (D), then groups are filtered (A), and finally the result is sorted (C).\nWhy not the others: (A) groups before removing rows. (B) applies HAVING before groups exist. (C) sorts before HAVING.\nKey point: This is why aggregates cannot appear in WHERE."
+    },
+    {
+      "id": "CUET27-CS-T11-Q78",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – II",
+      "sub_topic": "Sorting on three columns",
+      "difficulty": "hard",
+      "format": "output",
+      "question": "What is printed by the following code?\n\nimport pandas as pd\nk = pd.DataFrame({'N': ['p', 'q', 'r', 's'], 'C': ['B', 'A', 'B', 'A'], 'M': [60, 75, 90, 75]})\nprint(k.sort_values(['C', 'M', 'N'], ascending=[True, False, True])['N'].tolist())",
+      "options": [
+        "A) ['s', 'q', 'r', 'p']",
+        "B) ['q', 's', 'p', 'r']",
+        "C) ['q', 's', 'r', 'p']",
+        "D) ['r', 'p', 'q', 's']"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) ['q', 's', 'r', 'p']\nGiven: Sort by C ascending, then M descending, then N ascending to break remaining ties.\nStep 1: C = 'A': q (75), s (75) → tie on M → N ascending → q, s\nStep 2: C = 'B': r (90), p (60) → r, p\nCommon mistake: (A) sorts N descending in the tie. (B) sorts M ascending for C = 'B'. (D) sorts C descending.\nKey point: Each extra column only breaks ties left by the earlier ones."
+    },
+    {
+      "id": "CUET27-CS-T11-Q79",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – I",
+      "sub_topic": "Series and DataFrame facts",
+      "difficulty": "hard",
+      "format": "statements",
+      "question": "Consider the following statements:\n(A) Every column of a DataFrame is a Series.\n(B) A DataFrame can hold columns of different data types.\n(C) A Series can hold values of only one row and one column.\n(D) Both Series and DataFrames have an index.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A), (B), (C) and (D)",
+        "B) (C) and (D) only",
+        "C) (A) and (C) only",
+        "D) (A), (B) and (D) only"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) (A), (B) and (D) only\nWhy: Each column is a Series (A); columns can have different types, e.g. text and numbers (B); both have row labels (D).\nWhy not the others: Statement (C) is false — a Series is a one-dimensional sequence of many values. Options (A), (B) and (C) include it.\nKey point: A DataFrame is like a table; a Series is like one column."
+    },
+    {
+      "id": "CUET27-CS-T11-Q80",
+      "section": "B2",
+      "topic": "B2: Data Handling using Pandas – I",
+      "sub_topic": "Index produced by different ways of creating a Series",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "Match each statement (List-I) with the index of the Series it creates (List-II):\n\nList-I\n(A) pd.Series([1, 2])\n(B) pd.Series({'a': 1, 'b': 2})\n(C) pd.Series(5, index=['x', 'y'])\n(D) pd.Series([1, 2], index=[10, 20])\n\nList-II\n(I) 10, 20\n(II) 'x', 'y'\n(III) 'a', 'b'\n(IV) 0, 1\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+        "B) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+        "C) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+        "D) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)\nWhy: A list gets the default 0, 1 (IV); a dictionary uses its keys (III); a scalar uses the given index (II); an explicit index is used as given (I).\nWhy not the others: (A) swaps list and dictionary; (B) swaps dictionary and scalar; (D) swaps the last two.\nKey point: The index can be numbers or strings."
+    },
+    {
+      "id": "CUET27-CS-T11-Q81",
+      "section": "B2",
+      "case_id": "CUET27-CS-T11-B2-CASE1",
+      "topic": "B2: Societal Impacts",
+      "sub_topic": "Toxic substance in old monitors",
+      "difficulty": "medium",
+      "format": "case-based",
+      "question": "Read the following passage and answer the question that follows.\n\nGreen School ran an 'E-waste and Health Week'. Students collected 120 kg of discarded items: old CRT monitors, mobile phones, laptop batteries, chargers and printers. The school handed the items to an authorised recycler registered under India's E-Waste (Management) Rules, which make producers responsible for collecting and recycling their products (Extended Producer Responsibility).\nA survey of 200 students during the week found that 80 often had tired or dry eyes after long screen use, 50 had neck or back pain, and 30 said they found it hard to stay away from their phones.\n\nQuestion: Old CRT monitors are among the items collected. Which hazardous substance do they mainly contain?",
+      "options": [
+        "A) Sugar",
+        "B) Lead",
+        "C) Oxygen",
+        "D) Cotton"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) Lead\nWhy: NCERT notes that e-waste contains toxic metals such as lead (found in CRT glass), mercury and cadmium, which harm the nervous system, kidneys and environment.\nWhy not the others: (A), (C) and (D) are not hazardous components of monitors.\nKey point: Batteries can contain cadmium and other toxic metals."
+    },
+    {
+      "id": "CUET27-CS-T11-Q82",
+      "section": "B2",
+      "case_id": "CUET27-CS-T11-B2-CASE1",
+      "topic": "B2: Societal Impacts",
+      "sub_topic": "Right way to dispose of the collection",
+      "difficulty": "easy",
+      "format": "case-based",
+      "question": "Read the following passage and answer the question that follows.\n\nGreen School ran an 'E-waste and Health Week'. Students collected 120 kg of discarded items: old CRT monitors, mobile phones, laptop batteries, chargers and printers. The school handed the items to an authorised recycler registered under India's E-Waste (Management) Rules, which make producers responsible for collecting and recycling their products (Extended Producer Responsibility).\nA survey of 200 students during the week found that 80 often had tired or dry eyes after long screen use, 50 had neck or back pain, and 30 said they found it hard to stay away from their phones.\n\nQuestion: Why was handing the items to an authorised recycler the right choice?",
+      "options": [
+        "A) It is the cheapest way to dump the waste in a river",
+        "B) Authorised recyclers burn the waste in the open air",
+        "C) The items can then be sold again as brand-new",
+        "D) They recover materials and handle toxic parts safely"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) They recover materials and handle toxic parts safely\nWhy: Authorised recyclers follow rules to dismantle e-waste, recover valuable metals and dispose of toxic parts without harming people or the environment.\nWhy not the others: (A) and (B) pollute. (C) Recycled parts are not sold as new devices.\nKey point: Never throw e-waste into ordinary garbage."
+    },
+    {
+      "id": "CUET27-CS-T11-Q83",
+      "section": "B2",
+      "case_id": "CUET27-CS-T11-B2-CASE1",
+      "topic": "B2: Societal Impacts",
+      "sub_topic": "Reducing eye strain",
+      "difficulty": "easy",
+      "format": "case-based",
+      "question": "Read the following passage and answer the question that follows.\n\nGreen School ran an 'E-waste and Health Week'. Students collected 120 kg of discarded items: old CRT monitors, mobile phones, laptop batteries, chargers and printers. The school handed the items to an authorised recycler registered under India's E-Waste (Management) Rules, which make producers responsible for collecting and recycling their products (Extended Producer Responsibility).\nA survey of 200 students during the week found that 80 often had tired or dry eyes after long screen use, 50 had neck or back pain, and 30 said they found it hard to stay away from their phones.\n\nQuestion: Which advice should be given to the 80 students with tired or dry eyes?",
+      "options": [
+        "A) Hold the phone very close to the eyes while reading",
+        "B) Raise the screen brightness to maximum in a dark room",
+        "C) Take regular breaks, blink often, keep a comfortable distance",
+        "D) Use screens continuously for hours without any breaks"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) Take regular breaks, blink often, keep a comfortable distance\nWhy: NCERT suggests regular breaks, proper lighting, a comfortable distance and blinking to reduce eye strain.\nWhy not the others: (A), (B) and (D) make eye strain worse.\nKey point: Looking at distant objects relaxes the eye muscles."
+    },
+    {
+      "id": "CUET27-CS-T11-Q84",
+      "section": "B2",
+      "case_id": "CUET27-CS-T11-B2-CASE1",
+      "topic": "B2: Societal Impacts",
+      "sub_topic": "Extended Producer Responsibility",
+      "difficulty": "medium",
+      "format": "case-based",
+      "question": "Read the following passage and answer the question that follows.\n\nGreen School ran an 'E-waste and Health Week'. Students collected 120 kg of discarded items: old CRT monitors, mobile phones, laptop batteries, chargers and printers. The school handed the items to an authorised recycler registered under India's E-Waste (Management) Rules, which make producers responsible for collecting and recycling their products (Extended Producer Responsibility).\nA survey of 200 students during the week found that 80 often had tired or dry eyes after long screen use, 50 had neck or back pain, and 30 said they found it hard to stay away from their phones.\n\nQuestion: Under Extended Producer Responsibility (EPR), mentioned in the passage, who is responsible for collecting and recycling discarded electronic products?",
+      "options": [
+        "A) Only the users who bought the products",
+        "B) Only the school that collected the items",
+        "C) The producers (manufacturers) of the items",
+        "D) Nobody, as e-waste needs no management"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) The producers (manufacturers) of the items\nWhy: EPR makes producers responsible for the end-of-life management of their products — setting up collection and recycling through authorised channels.\nWhy not the others: (A) and (B) Users and institutions must hand e-waste over, but EPR places responsibility on producers. (D) is false.\nKey point: EPR encourages producers to design products that are easier to recycle."
+    },
+    {
+      "id": "CUET27-CS-T11-Q85",
+      "section": "B2",
+      "case_id": "CUET27-CS-T11-B2-CASE1",
+      "topic": "B2: Societal Impacts",
+      "sub_topic": "Advice on health and technology",
+      "difficulty": "hard",
+      "format": "case-based",
+      "question": "Read the following passage and answer the question that follows.\n\nGreen School ran an 'E-waste and Health Week'. Students collected 120 kg of discarded items: old CRT monitors, mobile phones, laptop batteries, chargers and printers. The school handed the items to an authorised recycler registered under India's E-Waste (Management) Rules, which make producers responsible for collecting and recycling their products (Extended Producer Responsibility).\nA survey of 200 students during the week found that 80 often had tired or dry eyes after long screen use, 50 had neck or back pain, and 30 said they found it hard to stay away from their phones.\n\nQuestion: Which piece of advice for the surveyed students is NOT appropriate?",
+      "options": [
+        "A) Sit upright with the back supported and the screen at eye level to reduce neck pain",
+        "B) Use the phone in bed late at night, because it helps sleep",
+        "C) Set screen-time limits and plan offline activities to reduce dependence on phones",
+        "D) Take short breaks to stretch during long periods of computer use"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) Use the phone in bed late at night, because it helps sleep\nWhy: NCERT links excessive screen use, especially late at night, to poor sleep and Internet addiction. Advice (B) is therefore wrong.\nWhy not the others: (A) addresses posture (ergonomics). (C) addresses addiction. (D) prevents muscle strain.\nKey point: Healthy use of technology balances screen time with other activities."
     }
   ]
 }
