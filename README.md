@@ -85,7 +85,7 @@ Each exam has its own instructions file and 25 planned tests per series. Mock au
 
 | Exam | Instructions | Folder | Syllabus | Status |
 |---|---|---|---|---|
-| IISER Aptitude Test (IAT) | [IAT_Instructions.md](docs/instructions/IAT_Instructions.md) | [`IISER/`](IISER/) | `IISER_Aptitude_Test_Syllabus_2026.md` | [539-question analysis](docs/blueprints/iat_pyq_analysis.md), [25-test coverage blueprint](docs/blueprints/iat.md), [Test 1 review PDF](IISER/review/IAT_TEST_1.pdf); pilot pending human approval |
+| IISER Aptitude Test (IAT) | [IAT_Instructions.md](docs/instructions/IAT_Instructions.md) | [`IISER/`](IISER/) | `IISER_Aptitude_Test_Syllabus_2026.md` | [539-question analysis](docs/blueprints/iat_pyq_analysis.md), [25-test coverage blueprint](docs/blueprints/iat.md), [full slot/angle plan](docs/blueprints/iat_25_test_plan.md), [Test 1 review PDF](IISER/review/IAT_TEST_1.pdf); pilot pending human approval |
 | NISER / NEST | [NISER_Instructions.md](docs/instructions/NISER_Instructions.md) | [`NISER/`](NISER/) | `NEST_2026_Syllabus.md` | Instructions ready; waiting for PYQs |
 | COMEDK UGET | [COMEDK_Instructions.md](docs/instructions/COMEDK_Instructions.md) | [`COMEDK/`](COMEDK/) | to be added (official PDFs) | Instructions ready; waiting for PYQs and syllabus PDFs |
 

@@ -23,9 +23,11 @@ The [60-slot plan](iat_test_01_plan.tsv) records every question's chapter, disti
 
 Eight relevant figures (not all essential): Q9 thylakoid gradient, Q11 restriction gel, Q21 cumulative gas graph, Q25 alkene connectivity, Q46 velocity graph, Q53 electric-field graph, Q54 resistor bridge, Q57 layered refraction. Each has exact labels, alt text and a matching [image register](../../IISER/IAT_images.md). Chemical formulae use mhchem rather than decorative raster images. Diagrams are drawn deterministically; no AI-generated image is used for exact scientific information.
 
+The expanded [25-test slot plan](iat_25_test_plan.md) and [1,500-slot register](iat_25_test_slots.tsv) now specify subject, chapter, subtopic focus, reasoning seed, style and editorial tier for every test. Tests 2 and 3 have individually written 120 angle briefs; the later seeds are reservations that must be sharpened into specific original tasks during authorship. The chapter profiles below remain the coverage backbone.
+
 ## Coverage profiles for the remaining series
 
-Codes are defined in [taxonomy](iat_taxonomy.json). Each profile below contains exactly 15 question slots. A repeated code reserves distinct subtopics/angles, never a repeated or number-swapped question. These are chapter-level reservations, **not 1,500 completed question-angle plans**. Test 1 is fully specified. Before each subsequent batch, expand its profiles into exact angle reservations and check against already authored items. Obtain pilot-standard feedback before authoring Tests 2–25.
+Codes are defined in [taxonomy](iat_taxonomy.json). Each profile below contains exactly 15 question slots. A repeated code reserves distinct subtopics/angles, never a repeated or number-swapped question. These are chapter-level reservations, **not 1,500 authored questions**. Test 1 is fully authored; Tests 2 and 3 have specific angle briefs. Before each later batch, make each remaining seed concrete and check against already authored items. Obtain pilot-standard feedback before authoring Tests 2–25.
 
 ### Biology
 

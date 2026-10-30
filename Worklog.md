@@ -284,3 +284,10 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 - Updated 21 item records, retaining IDs, section positions and answer letters. Difficulty policy: 9 easy / 42 medium / 9 hard. Added coordinate geometry, kidney/signalling/diffusion data, a cumulative nitrogen graph and alkene connectivity; strengthened mixture inference, SHM and beats; clarified osmosis and rail orientation.
 - Preserved baseline JSON/PDF/plan and labelled the original audit as historical. Updated instructions v2, validator, blueprint, slot plan and series index. Six original images unchanged; two new exact figures. Four tables stay readable in JSON and PDF.
 - Current checks: 68 supporting calculation/enumeration probes; 346 parsed math expressions; 60 questions/solutions; eight loaded images; no detected horizontal overflow or oversized blocks. All 55 pages rendered and inspected through contact sheets; new figures and dense conic working additionally inspected at larger scale. Independent academic/timed review and 2027 rule verification remain pending.
+
+
+## IAT 25-test series planning (30 Oct 2026)
+
+- Added a 1,500-slot register for 25 papers, with fixed IDs, chapter/subtopic focus, reasoning seeds, style and 9/42/9 tier reservations. Tests 2 and 3 have 120 individually specified angle briefs. Every retained syllabus family appears; chapter frequency is PYQ-informed rather than mechanically equal.
+- Preserved Test 1's authored slots and verified 375 slots per subject, 15 per subject per test, broad Class 11/12 coverage and no exact duplicate chapter/angle seeds among un-authored reservations. Distinct seed labels are not a semantic originality guarantee; each future question needs independent authorship and review.
+- This commit contains planning material only; it does not claim Tests 2 or 3 are authored or approved.
