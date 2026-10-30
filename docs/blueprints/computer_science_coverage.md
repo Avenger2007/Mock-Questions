@@ -37,23 +37,23 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 5 | Foreign key and referential integrity | T1, T4 |
 | 6 | NULL in keys; uniqueness of tuples | T3, T6 |
 | 7 | Selection (σ) | T2, T7 |
-| 8 | Projection (π) | T4 |
+| 8 | Projection (π) | T4, T10 |
 | 9 | Union — union-compatibility | T2, T4, T8 |
 | 10 | Set difference | T6 |
 | 11 | Cartesian product — degree and cardinality of result [O] | T1, T7 |
 | 12 | Intersection; join as product + selection | T3, T8 |
 | 13 | Database schema, instance, metadata, data dictionary | T1, T6 |
-| 14 | DBMS examples and uses | T3 |
+| 14 | DBMS examples and uses | T3, T10 |
 | 15 | Constraints: NOT NULL, UNIQUE, DEFAULT, PRIMARY KEY, FOREIGN KEY | T1, T9 |
 | 16 | Composite primary key | T2, T7, T9 |
 | 17 | Relational algebra result of combined operations [O] | T3, T9 |
 | 18 | Database users and DBA | T2, T9 |
 | 19 | Properties of relations (no duplicate tuples, atomic values, order irrelevant) | T2, T8 |
 | 20 | Keys from a scenario (which column can be PK) | T3, T7 |
-| 21 | Advantages of DBMS: sharing, security, integrity | T5 |
+| 21 | Advantages of DBMS: sharing, security, integrity | T5, T10 |
 | 22 | Domain of an attribute — identify from values | T5 |
-| 23 | Which operations need union-compatibility | T5 |
-| 24 | Degree and cardinality after σ and π [O] | T5 |
+| 23 | Which operations need union-compatibility | T5, T10 |
+| 24 | Degree and cardinality after σ and π [O] | T5, T10 |
 | 25 | Data inconsistency — scenario | T6 |
 | 26 | NULL allowed in a foreign key | T5 |
 | 27 | Relational model vs file — data stored as relations | T6 |
@@ -72,63 +72,63 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 8 | Data types: CHAR vs VARCHAR, INT, FLOAT, DATE | T1, T2, T8, T9 |
 | 9 | SELECT with WHERE, BETWEEN, IN, LIKE (% and _) [O] | T1, T2, T4, T6, T8 |
 | 10 | DISTINCT [O] | T3, T7, T9 |
-| 11 | NULL handling: IS NULL / IS NOT NULL [O] | T3, T6, T8 |
+| 11 | NULL handling: IS NULL / IS NOT NULL [O] | T3, T6, T8, T10 |
 | 12 | POWER() [O] | T2, T5, T6, T7 |
-| 13 | ROUND() with positive, zero and negative places [O] | T1, T4, T6, T7, T8 |
-| 14 | MOD() [O] | T2, T3, T5, T6, T7 |
-| 15 | UPPER/LOWER/UCASE/LCASE [O] | T3, T7 |
+| 13 | ROUND() with positive, zero and negative places [O] | T1, T4, T6, T7, T8, T10 |
+| 14 | MOD() [O] | T2, T3, T5, T6, T7, T10 |
+| 15 | UPPER/LOWER/UCASE/LCASE [O] | T3, T7, T10 |
 | 16 | MID/SUBSTRING/SUBSTR [O] | T1, T3, T5, T6, T9 |
-| 17 | LENGTH, LEFT, RIGHT [O] | T3, T5, T6, T7 |
-| 18 | INSTR [O] | T1, T4, T5, T6, T7 |
+| 17 | LENGTH, LEFT, RIGHT [O] | T3, T5, T6, T7, T10 |
+| 18 | INSTR [O] | T1, T4, T5, T6, T7, T10 |
 | 19 | LTRIM, RTRIM, TRIM [O] | T1, T4, T8 |
 | 20 | Nested text functions [O] | T3, T5 |
 | 21 | Aliases (AS) and arithmetic in SELECT [O] | T3, T7 |
 | 22 | Creating/using a database: CREATE DATABASE, USE, SHOW TABLES, DESCRIBE | T2, T4, T7, T9 |
-| 23 | INSERT with NULL / partial column list | T5 |
+| 23 | INSERT with NULL / partial column list | T5, T10 |
 | 24 | UPDATE several columns at once | T5 |
 | 25 | Arithmetic with NULL gives NULL [O] | T5 |
 | 26 | AND / OR / NOT in WHERE [O] | T5, T9 |
 | 27 | DATE literal format and comparison [O] | T6 |
 | 28 | Error spotting in DDL/DML syntax | T5, T8 |
-| 29 | Text functions combined with numbers (e.g. LENGTH of a value) [O] | T5 |
-| 30 | Comparison with BETWEEN on dates/text [O] | T6 |
+| 29 | Text functions combined with numbers (e.g. LENGTH of a value) [O] | T5, T10 |
+| 30 | Comparison with BETWEEN on dates/text [O] | T6, T10 |
 
 ### A-SQL2 SQL II — date, aggregates, grouping, set operations, joins (A 4; B1/B2 also use)
 | # | Angle | Used in |
 |---|---|---|
-| 1 | NOW() and DATE() — format | T2 |
-| 2 | MONTH/MONTHNAME/YEAR/DAY/DAYNAME [O] | T1, T2, T3, T5, T6, T7, T8, T9 |
+| 1 | NOW() and DATE() — format | T2, T10 |
+| 2 | MONTH/MONTHNAME/YEAR/DAY/DAYNAME [O] | T1, T2, T3, T5, T6, T7, T8, T9, T10 |
 | 3 | COUNT(*) vs COUNT(column) with NULLs [O] | T1, T7 |
 | 4 | SUM/AVG ignoring NULLs [O] | T2, T4, T7, T8 |
-| 5 | MAX/MIN on numbers, text and dates [O] | T1, T3, T4, T7, T8, T9 |
-| 6 | COUNT(DISTINCT col) [O] | T2, T8 |
+| 5 | MAX/MIN on numbers, text and dates [O] | T1, T3, T4, T7, T8, T9, T10 |
+| 6 | COUNT(DISTINCT col) [O] | T2, T8, T10 |
 | 7 | GROUP BY result rows [O] | T3, T4, T7 |
 | 8 | HAVING vs WHERE | T1, T4, T7, T8 |
-| 9 | ORDER BY ASC/DESC, multiple columns [O] | T2, T3, T4, T6, T9 |
+| 9 | ORDER BY ASC/DESC, multiple columns [O] | T2, T3, T4, T6, T9, T10 |
 | 10 | Order of clauses in SELECT | T1, T8 |
 | 11 | UNION / UNION ALL — duplicates [O] | T2, T8 |
 | 12 | INTERSECT and MINUS (EXCEPT) [O] | T3, T6, T9 |
 | 13 | Cartesian product in SQL (FROM A, B) — row count [O] | T1, T7 |
 | 14 | Equi-join with WHERE / JOIN … ON [O] | T1, T4, T7, T9 |
 | 15 | NATURAL JOIN — common column appears once | T2, T8 |
-| 16 | Aggregate functions are multi-row; single-row functions | T1, T2, T3, T8 |
-| 17 | Aggregates with WHERE + GROUP BY + HAVING + ORDER BY [O] | T1, T3, T4, T6, T8 |
+| 16 | Aggregate functions are multi-row; single-row functions | T1, T2, T3, T8, T10 |
+| 17 | Aggregates with WHERE + GROUP BY + HAVING + ORDER BY [O] | T1, T3, T4, T6, T8, T10 |
 | 18 | Table aliases in joins | T3 |
 | 19 | COUNT(*) with WHERE and GROUP BY [O] | T5, T9 |
-| 20 | Non-aggregated column without GROUP BY — error/logic | T6 |
+| 20 | Non-aggregated column without GROUP BY — error/logic | T6, T10 |
 | 21 | Aggregate on no matching rows (NULL / 0) [O] | T5, T9 |
 | 22 | Date functions in WHERE (e.g. YEAR(DOB)) [O] | T5, T9 |
 | 23 | ORDER BY on an expression or alias [O] | T5 |
 | 24 | Set operations need the same number of columns | T5, T8 |
-| 25 | Equi-join with an extra condition [O] | T5 |
-| 26 | GROUP BY on two columns [O] | T6 |
+| 25 | Equi-join with an extra condition [O] | T5, T10 |
+| 26 | GROUP BY on two columns [O] | T6, T10 |
 
 ### A-NET Computer networks (Section A 3; B1/B2 also use)
 | # | Angle | Used in |
 |---|---|---|
 | 1 | Evolution: ARPANET, NSFNET, Internet | T3 |
 | 2 | PAN, LAN, MAN, WAN — range and examples | T3, T4 |
-| 3 | Modem — modulation/demodulation | T3 |
+| 3 | Modem — modulation/demodulation | T3, T10 |
 | 4 | Ethernet card (NIC), MAC address | T7 |
 | 5 | Repeater — regenerates signal | T5 |
 | 6 | Hub vs switch | T1, T9 |
@@ -141,10 +141,10 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 13 | MAC address: 48-bit, OUI, NIC-specific | T2, T8 |
 | 14 | IP address: IPv4 32-bit, IPv6 128-bit; valid/invalid [O] | T1, T9 |
 | 15 | Internet vs WWW | T4 |
-| 16 | DNS — domain names to IP | T6 |
+| 16 | DNS — domain names to IP | T6, T10 |
 | 17 | Choosing a device/topology for a scenario | T3, T8 |
 | 18 | Switch vs router | T6 |
-| 19 | Wireless NIC / Wi-Fi card | |
+| 19 | Wireless NIC / Wi-Fi card | T10 |
 | 20 | Advantages and limits of each topology | T7 |
 | 21 | IP address vs MAC address | T5 |
 | 22 | Path of data through network devices | |
@@ -153,7 +153,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 ### B1-EXF Exception and file handling (5)
 | # | Angle | Used in |
 |---|---|---|
-| 1 | Syntax errors vs exceptions | T1 |
+| 1 | Syntax errors vs exceptions | T1, T10 |
 | 2 | Built-in exceptions: ZeroDivisionError, ValueError, TypeError, NameError, IndexError, KeyError, IOError/FileNotFoundError, ImportError, EOFError, OverflowError, IndentationError | T1, T2, T3, T9 |
 | 3 | raise statement; raising with message | T3, T9 |
 | 4 | assert statement | T4 |
@@ -161,17 +161,17 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 6 | try–except–else [O] | T1, T3, T8 |
 | 7 | finally always runs [O] | T1, T3 |
 | 8 | User-defined exceptions (class derived from Exception) | |
-| 9 | Exception handling process: throwing, catching, call stack | T3, T8 |
+| 9 | Exception handling process: throwing, catching, call stack | T3, T8, T10 |
 | 10 | Text vs binary file | T4, T9 |
 | 11 | open() modes r, w, a, r+, w+, a+, rb, wb, ab [O] | T1, T6, T7 |
-| 12 | with statement — automatic close | T5 |
+| 12 | with statement — automatic close | T5, T10 |
 | 13 | read(), read(n), readline(), readlines() [O] | T2, T8 |
 | 14 | write() vs writelines(); return value of write | T4 |
 | 15 | tell() and seek(offset, whence) [O] | T2, T9 |
 | 16 | pickle.dump / pickle.load; serialisation (pickling) | T1, T4, T7 |
 | 17 | EOFError when reading pickle in a loop | T4, T7 |
-| 18 | File object attributes; absolute vs relative path | |
-| 19 | Counting lines/words/characters with code [O] | T9 |
+| 18 | File object attributes; absolute vs relative path | T10 |
+| 19 | Counting lines/words/characters with code [O] | T9, T10 |
 | 20 | File-handling code — find the error or missing line | T6 |
 | 21 | Generic except (catch-all) [O] | T5 |
 | 22 | One except clause for several exceptions (tuple) | T5 |
@@ -189,7 +189,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 2 | PUSH/POP with list append/pop [O] | T2, T8 |
 | 3 | Overflow/underflow; isEmpty, top/peek | T2, T8 |
 | 4 | Stack contents after a sequence of operations [O] | T1, T2, T4, T8 |
-| 5 | Infix, prefix, postfix — definitions | T1 |
+| 5 | Infix, prefix, postfix — definitions | T1, T10 |
 | 6 | Evaluate postfix [O] | T1, T4, T6 |
 | 7 | Convert infix to postfix [O] | T1, T2, T4, T8, T9 |
 | 8 | Operator precedence and associativity in conversion | T4, T7, T9 |
@@ -198,10 +198,10 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 11 | Stack implementation code — identify error/missing line | T3, T7 |
 | 12 | Balanced parentheses check with stack [O] | T3, T7 |
 | 13 | Python list methods for a stack | T5 |
-| 14 | Postfix with division and order of operands [O] | T5 |
+| 14 | Postfix with division and order of operands [O] | T5, T10 |
 | 15 | Infix to postfix with brackets [O] | T5, T9 |
-| 16 | Prefix to infix | T6 |
-| 17 | Stack size after pushes and pops [O] | T6 |
+| 16 | Prefix to infix | T6, T10 |
+| 17 | Stack size after pushes and pops [O] | T6, T10 |
 | 18 | Reversing a string with a stack [O] | T5 |
 
 ### B1-QUE Queue and deque (3)
@@ -213,7 +213,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 4 | Underflow on dequeue from empty queue | T3, T4, T9 |
 | 5 | Deque — insertion/deletion at both ends | T1 |
 | 6 | Deque as stack or queue | T2, T8 |
-| 7 | Deque operations insertFront/insertRear/deletionFront/deletionRear [O] | T2, T4, T7 |
+| 7 | Deque operations insertFront/insertRear/deletionFront/deletionRear [O] | T2, T4, T7, T10 |
 | 8 | Applications: printer queue, CPU scheduling, palindrome with deque | T2, T7 |
 | 9 | Stack vs queue comparison | T3, T6 |
 | 10 | Python list methods for a queue | T5 |
@@ -221,6 +221,11 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 12 | Palindrome check with a deque — trace [O] | T5, T7 |
 | 13 | Queue vs deque differences | T5 |
 | 14 | size() / isEmpty() functions | T6, T9 |
+| 15 | Peek at the front element (q[0]) | T10 |
+| 16 | Error spotting in deque code | |
+| 17 | Fixed-size queue full condition | |
+| 18 | Queue length after n operations [O] | T10 |
+| 19 | Simulating arrivals and service [O] | |
 
 ### B1-SRCH Searching and hashing (4)
 | # | Angle | Used in |
@@ -242,6 +247,11 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 15 | Hash table after inserting keys [O] | T7, T8 |
 | 16 | Linear search early stop on a sorted list | T6, T9 |
 | 17 | Comparisons for an absent key (linear) [O] | T6 |
+| 18 | Sequence of mid indices in binary search [O] | T10 |
+| 19 | Linear search: key at the last position [O] | T10 |
+| 20 | Fill in the blank in binary search code | T10 |
+| 21 | Choosing the hash table size | |
+| 22 | Searching records (tuples) by a field [O] | T10 |
 
 ### B1-SORT Sorting (3)
 | # | Angle | Used in |
@@ -261,17 +271,20 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 13 | Selection sort on strings [O] | T7 |
 | 14 | Number of passes needed | T5 |
 | 15 | Which sort makes fewest swaps | T7 |
+| 16 | Fill in the blank in sorting code (swap) | T10 |
+| 17 | Insertion sort in descending order [O] | T10 |
+| 18 | Total comparisons of bubble sort without a flag [O] | T10 |
 
 ### B1-DATA Understanding data (3)
 | # | Angle | Used in |
 |---|---|---|
 | 1 | Data and its purpose; structured/unstructured | T1, T6 |
 | 2 | Data collection, storage, processing | T3 |
-| 3 | Mean [O] | T2, T3 |
-| 4 | Median [O] | T1, T9 |
-| 5 | Mode [O] | T2, T4, T8 |
-| 6 | Range [O] | T2, T8 |
-| 7 | Variance and standard deviation [O] | T1, T4, T6 |
+| 3 | Mean [O] | T2, T3, T10 |
+| 4 | Median [O] | T1, T9, T10 |
+| 5 | Mode [O] | T2, T4, T8, T10 |
+| 6 | Range [O] | T2, T8, T10 |
+| 7 | Variance and standard deviation [O] | T1, T4, T6, T10 |
 | 8 | Choosing mean vs median (outliers) | T2 |
 | 9 | Measures of central tendency vs variability | T3, T9 |
 | 10 | Data interpretation from a table [O] | T4, T7 |
@@ -280,20 +293,24 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 13 | Primary and secondary data sources | T5, T9 |
 | 14 | Comparing spread of two data sets [O] | T6 |
 | 15 | Purpose of visualising data | T7 |
+| 16 | Combined mean of two groups [O] | |
+| 17 | Effect of adding a constant on mean and spread | T10 |
+| 18 | Reading a frequency table [O] | |
+| 19 | From raw data to information — example | |
 
 ### B1-NET Networks, DNS and data communication (4)
 | # | Angle | Used in |
 |---|---|---|
-| 1 | Components of data communication: sender, receiver, message, medium, protocol | T3 |
+| 1 | Components of data communication: sender, receiver, message, medium, protocol | T3, T10 |
 | 2 | Simplex, half-duplex, full-duplex | T2, T7 |
 | 3 | Circuit vs packet switching | T1, T4 |
 | 4 | Twisted pair, coaxial, optical fibre — features | T1, T8, T9 |
-| 5 | Ethernet cable | T4 |
+| 5 | Ethernet cable | T4, T10 |
 | 6 | Wireless: radio, microwave, infrared | T3, T8 |
 | 7 | Bluetooth, WLAN (Wi-Fi) | T4, T7 |
 | 8 | Mobile generations 1G–5G | T2, T8 |
 | 9 | Protocols: HTTP, FTP, IP, PPP, SMTP/POP3 | T1, T2, T5, T6 |
-| 10 | Bandwidth units Hz/kHz/MHz | T3, T9 |
+| 10 | Bandwidth units Hz/kHz/MHz | T3, T9, T10 |
 | 11 | Data transfer rate units bps–Tbps [O] | T1, T7, T8 |
 | 12 | Channel and capacity | T4 |
 | 13 | DNS hierarchy and resolution | T2, T4 |
@@ -303,7 +320,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 17 | Radio waves — features | T5, T9 |
 | 18 | Time to send a file at a data rate [O] | T5, T6 |
 | 19 | TCP/IP | T6 |
-| 20 | Bandwidth vs data transfer rate | T5 |
+| 20 | Bandwidth vs data transfer rate | T5, T10 |
 
 ### B1-SEC Security aspects (3)
 | # | Angle | Used in |
@@ -318,13 +335,13 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 8 | HTTP vs HTTPS | T1 |
 | 9 | Hackers vs crackers (ethical hacking) | T3 |
 | 10 | Antivirus — signature/heuristic working | T3, T6 |
-| 11 | Denial of Service / DDoS | T2, T7 |
-| 12 | Intrusion problems | T7 |
+| 11 | Denial of Service / DDoS | T2, T7, T10 |
+| 12 | Intrusion problems | T7, T10 |
 | 13 | Snooping and eavesdropping | T3, T9 |
 | 14 | Prevention measures | T3, T4, T8 |
 | 15 | How malware spreads | T5 |
 | 16 | Heuristic (behaviour-based) detection | T6, T9 |
-| 17 | HTTPS certificates and the padlock | T7 |
+| 17 | HTTPS certificates and the padlock | T7, T10 |
 | 18 | Strong password rules | T5 |
 | 19 | Botnets and zombie computers | T5 |
 | 20 | Phishing (CS view) | T6 |
@@ -344,7 +361,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 8 | Series attributes: index, values, size, dtype, empty, name | T2, T4, T6, T8 |
 | 9 | DataFrame from dictionary of Series/lists [O] | T4, T7 |
 | 10 | DataFrame from list of dictionaries — NaN for missing keys [O] | T1, T7 |
-| 11 | read_csv / to_csv (sep, header, index) | T1, T3, T6 |
+| 11 | read_csv / to_csv (sep, header, index) | T1, T3, T6, T10 |
 | 12 | Add/delete/rename columns and rows (drop axis, rename) [O] | T3, T4, T7 |
 | 13 | loc vs iloc [O] | T2, T4, T6, T7 |
 | 14 | Boolean indexing [O] | T1, T2, T7 |
@@ -353,7 +370,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 17 | concat, merge, join [O] | T3, T4, T8 |
 | 18 | Styling/formatting (display) | |
 | 19 | Series vs DataFrame; mutability of size/values | T3, T9 |
-| 20 | Selecting a column returns a Series | T3, T6 |
+| 20 | Selecting a column returns a Series | T3, T6, T10 |
 | 21 | Series from a NumPy array [O] | T5 |
 | 22 | Series arithmetic with a scalar [O] | T5, T9 |
 | 23 | Deleting a column (del, pop, drop) | T5, T8 |
@@ -364,17 +381,21 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 28 | name attribute of a Series | T6 |
 | 29 | at / iat accessors [O] | T5 |
 | 30 | read_csv with index_col | T5, T9 |
+| 31 | head/tail of a column [O] | |
+| 32 | Selecting several columns df[[...]] [O] | T10 |
+| 33 | Values after transpose [O] | |
+| 34 | loc slices on rows and columns [O] | T10 |
 
 ### B2-PD2 Pandas II (6)
 | # | Angle | Used in |
 |---|---|---|
 | 1 | describe() | T2, T7 |
 | 2 | max/min/count/sum/mean [O] | T3, T4, T5 |
-| 3 | median/mode [O] | T3, T5, T8 |
+| 3 | median/mode [O] | T3, T5, T8, T10 |
 | 4 | quantile/quartiles [O] | T1, T3, T5 |
 | 5 | std/var | T2, T8 |
 | 6 | axis=0 vs axis=1 in aggregation [O] | T1, T4, T8, T9 |
-| 7 | groupby and aggregation [O] | T2, T4, T7, T9 |
+| 7 | groupby and aggregation [O] | T2, T4, T7, T9, T10 |
 | 8 | sort_values / sort_index [O] | T2, T4, T9 |
 | 9 | Deleting and renaming index (reset_index, set_index) | T2, T8 |
 | 10 | pivot and pivot_table | T1, T3, T9 |
@@ -389,6 +410,10 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 19 | pivot vs pivot_table | T7 |
 | 20 | dropna(how=all) / thresh [O] | T6, T8 |
 | 21 | Statistics skip non-numeric columns | |
+| 22 | mode() of a DataFrame column | T10 |
+| 23 | Range per column via max − min [O] | T10 |
+| 24 | groupby with count [O] | T10 |
+| 25 | Interpreting describe() output [O] | T10 |
 
 ### B2-PLT Matplotlib (6)
 | # | Angle | Used in |
@@ -402,7 +427,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 7 | boxplot() — quartiles, outliers | T2, T9 |
 | 8 | scatter() — correlation | T1, T6 |
 | 9 | Customising: color, linestyle (dashed, dotted), linewidth, marker | T1, T2, T3 |
-| 10 | legend() | T2, T3 |
+| 10 | legend() | T2, T3, T10 |
 | 11 | savefig() | T1, T8 |
 | 12 | show() | T4, T8 |
 | 13 | Pandas plot(kind=...) | T1, T8, T9 |
@@ -413,8 +438,12 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 18 | Pandas plot kind=box | T5 |
 | 19 | Two bar series side by side (width offset) | T5 |
 | 20 | Marker types | T5, T9 |
-| 21 | kind=area | T5 |
+| 21 | kind=area | T5, T10 |
 | 22 | Reading information from a chart [O] | T6, T7 |
+| 23 | Font size and label arguments | T10 |
+| 24 | Plotting a column read from CSV | T10 |
+| 25 | Several lines with a legend [O] | T10 |
+| 26 | Bar width and colour arguments | T10 |
 
 ### B2-WEB Networks and the web (4)
 | # | Angle | Used in |
@@ -434,6 +463,10 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 13 | IP address and DNS (IP view) | T6, T8 |
 | 14 | Hyperlinks | T5, T9 |
 | 15 | Home network devices: modem/router | T5, T8 |
+| 16 | Uses of cookies | T10 |
+| 17 | Browser history and cache | T10 |
+| 18 | Web page, website and web server — distinguish | T10 |
+| 19 | Spotting a safe website (https, padlock) | T10 |
 
 ### B2-SOC Societal impacts (5)
 | # | Angle | Used in |
@@ -459,11 +492,17 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 19 | Proprietary software vs FOSS | T5, T9 |
 | 20 | Cyber safety measures | T5, T8, T9 |
 | 21 | Effects of e-waste on the environment | T5 |
+| 22 | Managing your digital footprint | T10 |
+| 23 | Avoiding plagiarism by citing sources | T10 |
+| 24 | Privacy settings online | |
+| 25 | E-waste rules in India | T10 |
+| 26 | Copyright infringement example | T10 |
+| 27 | Ethical vs unethical hacking (IP view) | T10 |
 
 ### B2-PBL Project-based learning (1)
 | # | Angle | Used in |
 |---|---|---|
-| 1 | Approaches for solving projects | |
+| 1 | Approaches for solving projects | T10 |
 | 2 | Steps in project-based learning | T2, T3, T9 |
 | 3 | Teamwork and its components | T1 |
 | 4 | Roles in a team; communication | T4, T8 |
