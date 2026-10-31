@@ -317,3 +317,10 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 
 ### Tools added
 - `docs/blueprints/computer_science.md` (pattern, 2025 PYQ analysis, weights, formats, out-of-syllabus list) and `docs/blueprints/computer_science_coverage.md` (case themes and angle banks with "Used in" columns).
+
+## IAT New Tests 2 and 3 — fresh review drafts (31 Oct 2026)
+
+- Recreated both papers from the 25-test slot plan under distinct `IAT NEW TEST` names after the previous uncommitted drafts were unavailable. Each has 60 questions (15 per subject), editorial tiers 9/42/9, balanced A–D keys and detailed worked explanations including why the alternatives fail.
+- Added six exact, question-bearing figures per paper: two each for Biology, Chemistry and Physics. Updated the image register, figure generator, instructions and authored slot records. Replaced two semantic repeats found against Test 1.
+- Exported answer-and-explanation review PDFs (46 and 45 pages). The validator and render checks confirm the JSON/PDF hashes, 60 questions and solutions, loaded images, and no detected layout overflow. The item-level mathematics calibration and remaining review requirements are recorded in `IISER/review/IAT_NEW_TESTS_2_3_REVIEW_NOTES.md`.
+- These are authoring drafts awaiting independent subject-expert and timed-student review, and 2027 brochure verification. The session workflow now requires a verified commit and remote push before treating a paper as safely stored.
