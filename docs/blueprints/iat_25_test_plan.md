@@ -1,6 +1,6 @@
 # IAT: 25-test slot and angle plan
 
-30 October 2026. This is an **editorial reservation for 1,500 original questions**. The [slot register](iat_25_test_slots.tsv) lists each fixed ID, subject, syllabus chapter, class, subtopic focus, angle seed, dominant task target, difficulty target and authoring state. Test 1's 60 rows point to its already authored paper. Tests 2 and 3 have 120 separately specified angle briefs. Tests 4–25 reserve 1,320 distinct combinations of subtopic focus and reasoning demand; the eventual question author must turn each seed into a specific, independently solved task and reject semantic repeats before publication. A unique phrase in a spreadsheet is not proof of a genuinely different question.
+Updated 31 October 2026. This is an **editorial reservation for 1,500 original questions**. The [slot register](iat_25_test_slots.tsv) lists each fixed ID, subject, syllabus chapter, class, subtopic focus, angle seed, dominant task target, difficulty target and authoring state. Tests 1–5 have authored review drafts (300 questions); Tests 4 and 5 were drafted from their 120 reserved slots and their exact authored tasks are in the JSON and review notes. Tests 6–25 reserve 1,200 combinations of subtopic focus and reasoning demand; the eventual question author must turn each seed into a specific, independently solved task and reject semantic repeats before publication. A unique phrase in a spreadsheet is not proof of a genuinely different question.
 
 ## What “equal coverage” means here
 

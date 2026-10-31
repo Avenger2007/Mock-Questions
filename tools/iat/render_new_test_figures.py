@@ -94,6 +94,68 @@ def t03():
     ax.annotate('',xy=(3,-.68),xytext=(0,-.68),arrowprops=dict(arrowstyle='<->',lw=2));ax.text(1.23,-1.05,'3a',fontsize=25)
     finish(fig,'IAT_T03_Q53.png')
 
+def t04():
+    fig, ax = axis(); ax.axis('off')
+    ax.add_patch(plt.Rectangle((.32,.14),.36,.22,transform=ax.transAxes,fill=False,lw=4))
+    ax.plot([.5,.5],[.14,.36],transform=ax.transAxes,lw=3,color=INK)
+    ax.text(.5,.24,'two locules',ha='center',fontsize=22,transform=ax.transAxes)
+    for x,label in [(.2,'Sepal'),(.38,'Petal'),(.62,'Stamen'),(.8,'Sepal')]:
+        ax.annotate(label,xy=(x,.38),xytext=(x,.73),xycoords='axes fraction',textcoords='axes fraction',ha='center',fontsize=23,arrowprops=dict(arrowstyle='-',lw=3))
+    ax.plot([.18,.82],[.38,.38],transform=ax.transAxes,lw=3,color=INK)
+    ax.text(.5,.06,'Ovary below whorl attachment',ha='center',fontsize=23,transform=ax.transAxes)
+    finish(fig,'IAT_T04_Q02.png')
+
+    fig, ax = axis();ax.axis('off')
+    pts=[(.17,.72,'P\nMosquito salivary\ngland'),(.78,.72,'Q\nHuman liver'),(.78,.25,'R\nHuman red cells'),(.17,.25,'S\nHuman blood\ngametocytes')]
+    for x,y,label in pts:ax.text(x,y,label,ha='center',va='center',fontsize=22,transform=ax.transAxes,bbox=dict(boxstyle='round,pad=.6',fc='#edf5f4',ec=INK))
+    for a,b in [((.35,.72),(.58,.72)),((.78,.60),(.78,.39)),((.60,.25),(.37,.25)),((.17,.37),(.17,.58))]:ax.annotate('',xy=b,xytext=a,xycoords='axes fraction',textcoords='axes fraction',arrowprops=dict(arrowstyle='->',lw=3,color=INK))
+    finish(fig,'IAT_T04_Q08.png')
+
+    fig, ax = axis();ax.axis('off');ax.text(.5,.55,'H₂C = CH — C ≡ N',fontsize=48,ha='center',transform=ax.transAxes,color=INK)
+    finish(fig,'IAT_T04_Q16.png')
+
+    fig, ax = axis();u=np.linspace(.001,.004,100);ax.plot(u,7-4000*u,lw=4,label='X: slope −4000 K');ax.plot(u,14-8000*u,lw=4,label='Y: slope −8000 K');ax.set_xlabel('1/T (K⁻¹)',fontsize=25);ax.set_ylabel('ln k',fontsize=25);ax.legend(fontsize=23);finish(fig,'IAT_T04_Q24.png')
+
+    fig, ax = axis();ax.axis('off');ax.add_patch(Circle((.3,.51),.13,transform=ax.transAxes,fill=False,lw=4));ax.add_patch(Circle((.72,.51),.13,transform=ax.transAxes,fill=False,lw=4));ax.text(.3,.72,'Plate hole: α',ha='center',fontsize=25,transform=ax.transAxes);ax.text(.72,.72,'Sphere: 2α',ha='center',fontsize=25,transform=ax.transAxes)
+    for x in (.3,.72):ax.annotate('',xy=(x+.13,.51),xytext=(x-.13,.51),xycoords='axes fraction',textcoords='axes fraction',arrowprops=dict(arrowstyle='<->',lw=2));ax.text(x,.38,'initial d',ha='center',fontsize=23,transform=ax.transAxes)
+    ax.text(.5,.17,'Both heated by the same ΔT',ha='center',fontsize=26,transform=ax.transAxes);finish(fig,'IAT_T04_Q49.png')
+
+    fig, ax = axis();u=np.linspace(.5,1.5,300);ax.plot(u,1/np.sqrt(1+((u-1)/.055)**2),lw=4,label='P');ax.plot(u,.55/np.sqrt(1+((u-1)/.16)**2),lw=4,label='Q');ax.set_xlabel('Driving frequency / resonance frequency',fontsize=22);ax.set_ylabel('Current amplitude (relative)',fontsize=23);ax.legend(fontsize=24);finish(fig,'IAT_T04_Q56.png')
+
+def t05():
+    fig,ax=axis();x=np.linspace(0,100,300);f=lambda c: 100/(1+np.exp(-(x-c)/12))
+    ax.plot(x,f(35),lw=4,label='A',color='#367468');ax.plot(x,f(50),lw=4,label='B',color='#b75d4c');ax.axvline(45,ls='--',color=INK);ax.text(46,20,'tissue pO₂',fontsize=22)
+    ax.set_ylim(0,105);ax.set_xlabel('Oxygen partial pressure pO₂',fontsize=24);ax.set_ylabel('Haemoglobin saturation (%)',fontsize=24);ax.legend(fontsize=26);finish(fig,'IAT_T05_Q05.png')
+
+    fig,ax=axis();ax.axis('off')
+    for y,labels in [(.7,('A','B')),(.32,('a','b'))]:
+        ax.plot([.2,.8],[y,y],transform=ax.transAxes,lw=6,color=INK)
+        for x,label in zip((.37,.63),labels):ax.text(x,y+.06,label,fontsize=36,ha='center',transform=ax.transAxes)
+    ax.text(.37,.83,'locus 1',fontsize=23,ha='center',transform=ax.transAxes);ax.text(.63,.83,'locus 2',fontsize=23,ha='center',transform=ax.transAxes)
+    ax.text(.5,.12,'Homologous chromosomes before crossing over',fontsize=22,ha='center',transform=ax.transAxes);finish(fig,'IAT_T05_Q07.png')
+
+    fig,ax=axis();u=np.linspace(0,20,300);control=10*(1-np.exp(-u/2));compet=10*(1-np.exp(-u/4));noncomp=6*(1-np.exp(-u/2))
+    for v,label in [(control,'Control'),(compet,'I'),(noncomp,'II')]:ax.plot(u,v,lw=4,label=label)
+    ax.set_xlim(0,20);ax.set_ylim(0,11);ax.set_xlabel('Substrate concentration',fontsize=24);ax.set_ylabel('Initial rate',fontsize=24);ax.legend(fontsize=24);finish(fig,'IAT_T05_Q14.png')
+
+    fig,ax=axis();z=np.arange(57,72);r=np.linspace(1.16,.98,len(z));ax.plot(z,r,'o-',lw=4,ms=9,color='#357970');ax.set_xticks([57,60,63,66,69,71]);ax.set_ylim(.94,1.22);ax.set_xlabel('Atomic number, trivalent lanthanoid',fontsize=22);ax.set_ylabel('Relative ionic radius',fontsize=23);finish(fig,'IAT_T05_Q18.png')
+
+    fig,axs=plt.subplots(1,2,figsize=(12,9));fig.suptitle('Aqueous CuSO₄ + NaCl · inert electrodes',fontsize=26)
+    for ax,title,labels,values in [(axs[0],'Cathode (−) reduction',['Cu²⁺','Na⁺'],[8,2]),(axs[1],'Anode (+) oxidation',['Cl⁻','H₂O'],[7,3])]:
+        ax.bar(labels,values,color=['#417d79','#bb8472']);ax.set_ylim(0,10);ax.set_yticks([0,2,4,6,8,10]);ax.set_title(title,fontsize=22);ax.tick_params(labelsize=22);ax.set_ylabel('Relative discharge preference',fontsize=19)
+    finish(fig,'IAT_T05_Q28.png')
+
+    fig,ax=axis();ax.plot([0,5,5,15],[5,0,0,0],lw=5,color=INK);ax.axvspan(5,15,color='#f0e7dc',alpha=.7)
+    ax.text(2.5,3.5,'smooth',fontsize=25);ax.text(7,.9,'μₖ=0.20',fontsize=24);ax.annotate('',xy=(-.5,5),xytext=(-.5,0),arrowprops=dict(arrowstyle='<->',lw=2));ax.text(.1,2.5,'5 m height',fontsize=22)
+    ax.annotate('',xy=(15,-.5),xytext=(5,-.5),arrowprops=dict(arrowstyle='<->',lw=2));ax.text(8,-.9,'10 m',fontsize=24);ax.set_ylim(-1.2,5.6);ax.axis('off');finish(fig,'IAT_T05_Q48.png')
+
+    fig,ax=axis();ax.axis('off');ax.annotate('',xy=(.85,.4),xytext=(.12,.4),xycoords='axes fraction',textcoords='axes fraction',arrowprops=dict(arrowstyle='->',lw=4));ax.text(.87,.38,'B →',fontsize=26,transform=ax.transAxes)
+    ax.annotate('',xy=(.49,.746),xytext=(.34,.4),xycoords='axes fraction',textcoords='axes fraction',arrowprops=dict(arrowstyle='->',lw=4,color='#a35445'));ax.text(.34,.3,'p at 0°',fontsize=25,transform=ax.transAxes);ax.text(.50,.78,'p at 60°',fontsize=25,transform=ax.transAxes);ax.text(.51,.46,'60°',fontsize=25,transform=ax.transAxes);finish(fig,'IAT_T05_Q55.png')
+
+    fig,ax=axis();u=np.linspace(0,3*np.pi,500);v=5+4*np.cos(2*u);ax.plot(u,v,lw=4,color='#39796f');ax.set_ylim(0,10);ax.set_yticks([1,5,9],['1','5','9']);ax.set_xlabel('Screen position',fontsize=24);ax.set_ylabel('Intensity (units)',fontsize=25);finish(fig,'IAT_T05_Q58.png')
+
 if __name__ == '__main__':
     t02()
     t03()
+    t04()
+    t05()
