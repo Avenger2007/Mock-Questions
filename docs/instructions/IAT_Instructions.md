@@ -203,7 +203,7 @@ When a question genuinely needs a figure (circuit, ray diagram, graph, apparatus
 1. Plan the 60 questions against the blueprint (subject, chapter, difficulty, style, key letter), including two purposeful image-based slots in each of Biology, Chemistry and Physics.
 2. Author each question: check its topic in the syllabus, solve it first, then write distractors and the explanation.
 3. Add any image entries to `IISER/IAT_images.md`.
-4. Preserve the authored question and option order, IDs and image references; run validation and duplicate checks against the whole series. Do not run `shuffle_test.py`.
+4. Preserve the authored question and option order, IDs and image references; run validation and `python tools/iat/check_series_overlap.py` against the whole authored series, then review reasoning angles manually. Follow the [restart and continuity guide](../blueprints/iat_series_continuity.md). Do not run `shuffle_test.py`.
 5. Read every question and inspect the rendered PDF. Keep the pilot `pending_revision` until human academic review; do not mark it revised simply because mechanical checks pass.
 6. At the end of each authoring session, commit and push the completed review-draft files and their instructions/plan updates to a named remote branch. The user authorised this on 31 Oct 2026 after transient uncommitted Tests 2 and 3 were lost. Verify the remote commit exists before ending the session. A committed review draft is not academic approval for student publication.
 
