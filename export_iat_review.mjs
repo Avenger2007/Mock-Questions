@@ -27,7 +27,7 @@ const input = path.resolve(root, process.argv[2] || 'IISER/IAT TEST 1.json');
 const data = JSON.parse(fs.readFileSync(input,'utf8'));
 const out = path.join(root,'IISER/review');
 fs.mkdirSync(out,{recursive:true});
-const stem = `IAT_TEST_${data.test_number}`;
+const stem = `IAT_${data.title.startsWith('IAT New') ? 'NEW_' : ''}TEST_${data.test_number}`;
 const htmlPath = path.join(out, stem+'.html');
 const pdfPath = path.join(out, stem+'.pdf');
 let mathCount = 0;
@@ -71,7 +71,7 @@ function solution(q,n) {
     return `<p>${colon>=0&&colon<22?'<strong>'+esc(line.slice(0,colon+1))+'</strong>'+rich(line.slice(colon+1)):rich(line)}</p>`;
   }).join('')}</div></article>`;
 }
-let html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><title>OurMocks | IAT Test ${data.test_number} | Review</title><style>${katexCSS}</style><style>
+let html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><title>OurMocks | ${esc(data.title)} | Review</title><style>${katexCSS}</style><style>
 @page {size:A4; margin:18mm 17mm 18mm;}
 *{box-sizing:border-box} body{font-family:Arial,'DejaVu Sans',sans-serif;font-size:10.5pt;line-height:1.48;color:#172d3b;margin:0}
 h1,h2,h3,p{margin-top:0} h1{font-size:40pt;line-height:1.06;margin-bottom:15px} h2{font-size:23pt;margin-bottom:8px} h3{font-size:12pt;margin-bottom:5px}
@@ -84,7 +84,7 @@ li{margin-bottom:6px}.small{font-size:9pt;color:#526a78}.section{break-before:pa
 .options{margin-top:9px;padding-left:12px}.options>div{margin:5px 0}figure{margin:8px auto 9px;text-align:center}figure img{width:130mm;height:97.5mm;object-fit:contain}figcaption{font-size:8pt;color:#526a78}
 .katex{font-size:1.03em}.katex-display{margin:.5em 0}.key{break-before:page}.keygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.keygrid table{font-size:10pt}.keygrid td{padding:5px}.solution{break-inside:avoid;margin:0 0 20px;padding-bottom:13px;border-bottom:1px solid #dbe3e5}.solution h3 span{font-size:9pt;font-weight:normal;color:#526a78;float:right}.topic{font-size:8.5pt;color:#526a78;margin-bottom:9px}.explanation p{margin:0 0 5px}.explanation strong{color:#164f55}.review-note{margin-top:24px;border:1px solid #cad8dc;padding:12px}.review-note p{margin:0 0 10px}
 </style></head><body>
-<section class="cover"><div class="eyebrow">OURMOCKS / SCIENCE PREPARATION</div><h1>IAT Test ${data.test_number}</h1><div class="subtitle">Question paper, answer key<br>and worked solutions</div><div class="badge"><strong>MANUAL REVIEW DRAFT</strong><br>2027 preparation using the verified 2026 pattern and stored 2026 syllabus.<br>The 2027 brochure has not been verified. Not approved for student publication.</div><div class="metrics"><div><b>60</b><span>single-correct questions</span></div><div><b>180</b><span>minutes</span></div><div><b>240</b><span>maximum marks</span></div></div><table><tr><th>Subject</th><th>Question numbers</th><th>Marks</th></tr>${data.sections.map(s=>`<tr><td>${s.title}</td><td>${s.question_range}</td><td>60</td></tr>`).join('')}</table><h3>Instructions</h3><ol>${data.instructions.slice(1).map(i=>`<li>${rich(i)}</li>`).join('')}</ol><p class="small">Fixed authored order. Figures and IDs must remain linked during review.<br>Revised 30 October 2026 · ${esc(data.test_id)} · Original AI-assisted content.</p></section>`;
+<section class="cover"><div class="eyebrow">OURMOCKS / SCIENCE PREPARATION</div><h1>${esc(data.title)}</h1><div class="subtitle">Question paper, answer key<br>and worked solutions</div><div class="badge"><strong>MANUAL REVIEW DRAFT</strong><br>2027 preparation using the verified 2026 pattern and stored 2026 syllabus.<br>The 2027 brochure has not been verified. Not approved for student publication.</div><div class="metrics"><div><b>60</b><span>single-correct questions</span></div><div><b>180</b><span>minutes</span></div><div><b>240</b><span>maximum marks</span></div></div><table><tr><th>Subject</th><th>Question numbers</th><th>Marks</th></tr>${data.sections.map(s=>`<tr><td>${s.title}</td><td>${s.question_range}</td><td>60</td></tr>`).join('')}</table><h3>Instructions</h3><ol>${data.instructions.slice(1).map(i=>`<li>${rich(i)}</li>`).join('')}</ol><p class="small">Fixed authored order. Figures and IDs must remain linked during review.<br>Revised ${esc(data.revision_date)} · ${esc(data.test_id)} · Original AI-assisted content.</p></section>`;
 for (const section of data.sections) {
   const qs=data.questions.filter(q=>q.section===section.id);
   html+=`<section class="section"><div class="section-heading"><div class="eyebrow" style="margin-bottom:7px">QUESTION PAPER / ${section.id}</div><h2>${section.title}</h2><p>Questions ${section.question_range} · 15 questions · 60 marks</p></div>${qs.map(q=>question(q,data.questions.indexOf(q)+1)).join('')}</section>`;
@@ -115,7 +115,7 @@ try {
   }
   await page.pdf({path:pdfPath,format:'A4',printBackground:true,preferCSSPageSize:true,
     displayHeaderFooter:true,headerTemplate:'<div></div>',
-    footerTemplate:'<div style="font-family:Arial;font-size:8px;width:100%;padding:0 64px;color:#526a78;display:flex;justify-content:space-between"><span>OURMOCKS · IAT TEST 1 · MANUAL REVIEW DRAFT</span><span><span class="pageNumber"></span> / <span class="totalPages"></span></span></div>'});
+    footerTemplate:`<div style="font-family:Arial;font-size:8px;width:100%;padding:0 64px;color:#526a78;display:flex;justify-content:space-between"><span>OURMOCKS · ${esc(data.title.toUpperCase())} · MANUAL REVIEW DRAFT</span><span><span class="pageNumber"></span> / <span class="totalPages"></span></span></div>`});
   const sha = file => createHash('sha256').update(fs.readFileSync(file)).digest('hex');
   const deliveryJSON=path.join(out,stem+'.json');
   fs.copyFileSync(input,deliveryJSON);

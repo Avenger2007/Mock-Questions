@@ -58,8 +58,11 @@ def validate(path):
         check(q.get('difficulty') in {'easy', 'medium', 'hard'}, f'{label}: invalid tier')
         check(q.get('format') in {'conceptual', 'numerical', 'diagram', 'graph', 'data', 'experiment'}, f'{label}: invalid format')
         if q.get('format') == 'numerical':
-            for part in ['Given:', 'Formula/Principle:', 'Step 1:', 'Common mistake:']:
+            for part in ['Given:', 'Formula/Principle:', 'Step 1:']:
                 check(part in q.get('explanation',''), f'{label}: missing solution component {part}')
+        if 'NEW TEST' in path.name:
+            for part in ['Why:', 'Why not the others:', 'Key point:']:
+                check(part in q.get('explanation',''), f'{label}: missing revised explanation component {part}')
         stem = re.sub(r'\W+', '', q.get('question', '')).casefold()
         check(stem not in seen_stems, f'{label}: duplicate question stem')
         seen_stems.add(stem)
@@ -84,6 +87,10 @@ def validate(path):
     letters = ''.join(q['correct_option'] if isinstance(q.get('correct_option'), str) else '?' for q in qs)
     check(not re.search(r'(.)\1{3}', letters), 'four identical answers in a row')
     check(len(images) == len(set(images)), 'duplicate image reference')
+    if 'NEW TEST' in path.name:
+        for sec in 'BCP':
+            check(sum('image_reference' in q for q in qs if q.get('section') == sec) >= 2,
+                  f'{sec}: fewer than two image-based questions')
     report = {'file': str(path.relative_to(ROOT)), 'questions': len(qs), 'tiers':dict(tiers),
               'answer_counts':dict(keys), 'images':len(images), 'errors':errors,
               'scope':'Mechanical schema/design validation only; academic review remains required.'}

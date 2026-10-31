@@ -26,7 +26,7 @@ The [auditable PYQ analysis](iat_pyq_analysis.md) covers 539 English entries acr
 | Figure/structure | 4 | 4 | 0 | 5 |
 | Graph/table/experiment | 3 | 1 | 0 | 1 |
 
-The task mix is an editorial approximation of the recent PYQ tags: Biology included mechanisms, diagrams, tables and experiments; Chemistry often used structural representations; Mathematics was mostly numerical and conceptual; Physics mixed numerical and visual modelling. A chemical structure can use mhchem text. A diagram target calls for a purposeful representation, never an arbitrary decorative file. The register's task targets may be changed when a specific question needs a better form; record the reason rather than forcing a bad diagram to meet a quota.
+The task mix is an editorial approximation of the recent PYQ tags: Biology included mechanisms, diagrams, tables and experiments; Chemistry often used structural representations; Mathematics was mostly numerical and conceptual; Physics mixed numerical and visual modelling. The user's revised minimum is **two genuine image-based questions in each of Biology, Chemistry and Physics per paper**. A chemical structure can use mhchem text in other questions, but each counted image must contribute to the solution. Mathematics follows its mostly numerical/conceptual PYQ mix and receives item-level calibration. Record any replaced slot angle rather than forcing a decorative figure.
 
 ## Difficulty and progression
 

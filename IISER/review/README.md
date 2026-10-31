@@ -1,5 +1,9 @@
 # IAT Test 1 manual-review package
 
+## Fresh authored papers
+
+`IISER/IAT NEW TEST 2.json` and `IISER/IAT NEW TEST 3.json` distinguish newly authored replacements from the uncommitted drafts lost during a workspace reset. Their generated review files use `IAT_NEW_TEST_2` and `IAT_NEW_TEST_3` stems. Each remains `pending_revision` for independent academic and timed review. The new standard requires two purpose-built figures each in Biology, Chemistry and Physics and full explanations of all alternatives. Commits preserve drafts between sessions; a commit is not approval for student publication.
+
 Revised 30 October 2026. Status: `pending_revision`. This is an original 2027-preparation pilot using the verified 2026 pattern and stored syllabus; it is not an official paper or a claim of verified 2027 compliance.
 
 The historical 19-page audit applies to `baseline/IAT_TEST_1_before_revision.json`, not this revision. See `IAT_TEST_1_Revision_Notes.md` for all 21 changed records, figure checks and remaining review requirements.

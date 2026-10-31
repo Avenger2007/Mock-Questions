@@ -1,4 +1,4 @@
-# OurMocks — IISER Aptitude Test (IAT) Test Generation Instructions (v2)
+# OurMocks — IISER Aptitude Test (IAT) Test Generation Instructions (v3)
 
 > **Scope:** IISER Aptitude Test (IAT) only, for admission to the BS-MS / BS programmes of the IISERs (and the institutes that also accept IAT scores). Other exams have their own files in `docs/instructions/`.
 >
@@ -126,7 +126,7 @@ The user explicitly requested storing the IAT source PDFs and Markdown copies on
 - Mix within each subject, guided by the PYQ analysis: conceptual, numerical, graph/data interpretation, experiment-based reasoning and diagram-based questions.
 - Biology: mechanisms, experiments and data interpretation, not only names and facts.
 - Chemistry: physical (numerical), organic (mechanism, reactivity, structure) and inorganic (trends, reasons) in the proportions the PYQs show.
-- Mathematics: multi-concept problems; no answer should be obtainable by plugging options in faster than solving, unless that is a legitimate skill being tested.
+- Mathematics: benchmark all 15 items against the recent acquired PYQs. Medium questions require a real method choice or linked deductions; hard questions need several connected deductions or careful case handling. Reject bare definitions, routine one-line substitutions, and number-swapped copies as filler. Check domains, branches, strict endpoints, extraneous roots and equivalent options. Record each item's PYQ task type and independently solve it before release.
 - Physics: conceptual and numerical, including limiting cases, graphs and dimensional reasoning.
 
 ---
@@ -134,6 +134,8 @@ The user explicitly requested storing the IAT source PDFs and Markdown copies on
 ## Images — `IISER/IAT_images.md`
 
 When a question genuinely needs a figure (circuit, ray diagram, graph, apparatus, structure, cell or tissue diagram, data plot), do not describe it vaguely in the text.
+
+**Per-paper minimum (user decision, 30 Oct 2026): at least two genuinely image-based question IDs in each of Biology, Chemistry and Physics, six in total.** Each image must carry a relationship, structure, scale, control or geometry used in solving; a decorative picture or a textual table does not count. Keep accessible alt text and sufficient context, while avoiding answer leakage. Mathematics images remain optional under its PYQ style mix. Inspect each final image in the rendered PDF.
 
 1. In the question JSON add `"image_reference": "IAT_T<NN>_Q<NN>.png"`, and keep the question text understandable alongside the figure.
 2. Add an entry to `IISER/IAT_images.md` in this exact format:
@@ -151,7 +153,7 @@ When a question genuinely needs a figure (circuit, ray diagram, graph, apparatus
 - **Alt text:** one sentence describing the figure for accessibility
 ```
 
-3. Use images only when a clear text or KaTeX description would not do.
+3. Use accurate textbook diagrams, plots, structures and schematics that support a reasoning step. Check biological orientation, chemical connectivity/charges, physics directions/signs/units and graph scales; an existing file is not proof of correctness.
 4. Every `image_reference` in a test must have a matching entry, and every entry must point to a real question (Quality Checklist).
 
 ---
@@ -159,8 +161,8 @@ When a question genuinely needs a figure (circuit, ray diagram, graph, apparatus
 ## Explanations (structured)
 
 - First line: `Answer: (X) …`.
-- **Numerical (Physics, Chemistry, Mathematics):** `Given` → `Formula/Principle` → `Step 1 … Step n` (every step shown, with units) → `Common mistake` (which slip gives which wrong option).
-- **Conceptual (all subjects):** `Why` → `Why not the others` (one line per wrong option) → `Key point`.
+- **Numerical (Physics, Chemistry, Mathematics):** `Given` → `Formula/Principle` → `Step 1 … Step n` (every substantive step, assumptions and units) → `Why` (why that model applies) → `Why not the others` (specific error behind each of the three wrong answers) → `Key point`. A `Common mistake` may be added but cannot replace distractor analysis.
+- **Conceptual (all subjects):** `Why` traces the evidence or mechanism in several connected sentences, including the relevant image features when present. `Why not the others` explains the specific failure of each wrong option. Finish with a transferable `Key point`. A one-sentence answer restatement is insufficient.
 - Use KaTeX (`\\( … \\)`) for all maths and mhchem (`\\( \\ce{…} \\)`) for chemistry, escaped correctly for JSON.
 
 ---
@@ -190,7 +192,7 @@ When a question genuinely needs a figure (circuit, ray diagram, graph, apparatus
 - Use PYQ chapter and task categories consistently for both reference papers and mocks. Count primary topics once; list secondary connections separately. Explain omitted high-priority families and reserve their next appearance. Test 1 replaces its second integration slot with coordinate geometry.
 - Balance Chemistry across calculation, structure, reaction inference, trends and experimental evidence. Do not turn a chemical inference into arithmetic by supplying the reaction rule and all product amounts in the stem.
 - Biology evidence questions should require combining observations or controls. Do not explicitly name the defect that the correct answer merely repeats. Use a bypass/control when the syllabus supports it, without requiring knowledge of an unlisted signalling pathway.
-- Every visual must have a stated purpose: essential data/representation, useful setup, or unnecessary decoration. No image-count quota; omit decorative figures. Check coordinates, connections, signs, units, scale, reaction connectivity and consistency with the full solution. A file-existence check is insufficient.
+- Every visual must have a stated purpose and contribute to reasoning. The later user minimum is two image-based items in Biology, Chemistry and Physics per paper; omit decorative figures. Check coordinates, connections, signs, units, scale, reaction connectivity and consistency with the full solution.
 - Tables must be legible in the PDF and complete in the JSON question text, so importers do not lose essential data. Explicit units, headers, row labels and controls are required. Structured fields may supplement this text but cannot replace it without importer support.
 - Write plausible distractors from identifiable mistakes. Check option-length cues, absolute wording and implausible alternatives; use comparable option grammar and detail rather than forcing equal length.
 - State model assumptions that change the answer: initial hydrostatic pressures in osmosis; bar orientation and field direction in motional emf; gamete ploidy and chromosome-count convention in genetics; complete digestion and assay recovery in DNA problems.
@@ -198,11 +200,12 @@ When a question genuinely needs a figure (circuit, ray diagram, graph, apparatus
 - Preserve the pre-revision JSON/PDF. Label the old audit with its source hash and link a revision-response record; do not present it as an audit of the new paper. Mechanical completion does not imply academic release approval.
 
 **Per test**
-1. Plan the 60 questions against the blueprint (subject, chapter, difficulty, style, key letter).
+1. Plan the 60 questions against the blueprint (subject, chapter, difficulty, style, key letter), including two purposeful image-based slots in each of Biology, Chemistry and Physics.
 2. Author each question: check its topic in the syllabus, solve it first, then write distractors and the explanation.
 3. Add any image entries to `IISER/IAT_images.md`.
 4. Preserve the authored question and option order, IDs and image references; run validation and duplicate checks against the whole series. Do not run `shuffle_test.py`.
-5. Read every question and inspect the rendered PDF. Keep the pilot `pending_revision` until human academic review; do not mark it revised simply because mechanical checks pass. Commit/push only the reviewed, authorised scope.
+5. Read every question and inspect the rendered PDF. Keep the pilot `pending_revision` until human academic review; do not mark it revised simply because mechanical checks pass.
+6. At the end of each authoring session, commit and push the completed review-draft files and their instructions/plan updates to a named remote branch. The user authorised this on 31 Oct 2026 after transient uncommitted Tests 2 and 3 were lost. Verify the remote commit exists before ending the session. A committed review draft is not academic approval for student publication.
 
 **After the series:** full cross-check, series index, README status table, `Worklog.md` entry, summary to the user.
 
@@ -219,6 +222,7 @@ When a question genuinely needs a figure (circuit, ray diagram, graph, apparatus
 - [ ] 60 questions; 15 per subject; 180 minutes; +4 / −1 / 0.
 - [ ] 9 / 42 / 9 for the paper and the per-subject split shown above; labels match real effort.
 - [ ] Topic/task comparison against the PYQ analysis, distractor review and purpose/accuracy review for every figure are recorded.
+- [ ] All 15 Mathematics items have an item-level recent-PYQ comparison and an independent solution; weak one-step items were replaced, not relabelled.
 - [ ] Arithmetic is tractable within the time budget; instructions truthfully reflect the on-screen scientific calculator allowed by the 2026 brochure.
 
 **Correctness and options**
@@ -227,9 +231,10 @@ When a question genuinely needs a figure (circuit, ray diagram, graph, apparatus
 - [ ] Key balanced across A/B/C/D in each subject; no letter more than 3 times in a row.
 
 **Explanations and format**
-- [ ] Structured explanation as specified; every numerical step shown with units.
+- [ ] Structured explanation as specified; the detailed `Why` explains the model/evidence, and each wrong option has a specific reason; every numerical step has units where applicable.
 - [ ] KaTeX/mhchem correct and JSON-escaped.
 - [ ] Every `image_reference` has a complete entry in `IAT_images.md`, and vice versa.
+- [ ] At least two meaningful image-based question IDs each in Biology, Chemistry and Physics, with each raster inspected in the PDF.
 - [ ] No duplicate, reworded or number-swapped question within the test or the series.
 - [ ] You have personally read every question.
 
