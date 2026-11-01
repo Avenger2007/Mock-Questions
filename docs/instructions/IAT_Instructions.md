@@ -165,6 +165,17 @@ When a question genuinely needs a figure (circuit, ray diagram, graph, apparatus
 - **Conceptual (all subjects):** `Why` traces the evidence or mechanism in several connected sentences, including the relevant image features when present. `Why not the others` explains the specific failure of each wrong option. Finish with a transferable `Key point`. A one-sentence answer restatement is insufficient.
 - Use KaTeX (`\\( … \\)`) for all maths and mhchem (`\\( \\ce{…} \\)`) for chemistry, escaped correctly for JSON.
 
+### Mandatory explanation-quality gate (1 November 2026)
+
+- **Solve before explaining.** Re-derive the correct result from the stem and figure independently, verify units and limiting cases, then make the written derivation reproduce that result. An answer letter or a memorised formula is not a solution.
+- **Mathematics and numerical Physics/Chemistry/Biology:** write the given values and assumptions, the governing relation, substitution, algebra or case split, evaluation, units where applicable, and a final check. Give each logically distinct operation its own `Step n` or displayed equation. A hard item must show all intermediate deductions, not merely two compressed lines. The `Why` must explain *why this model and its conditions apply*, not paraphrase the arithmetic. Numerical tasks remain numerical even if their `format` is `graph`, `diagram`, `data` or `experiment`.
+- **Typesetting:** use valid KaTeX delimiters `\\(…\\)` for inline variables and `\\[…\\]` for a multi-line/display derivation. Do not leave calculations as unformatted prose or Unicode-only pseudo-equations. Render checks must report nonzero mathematics on every paper, and reviewers must inspect actual PDF equations for missing glyphs and line breaks. Use `\\ce{…}` inside KaTeX for chemical equations.
+- **Conceptual and image-based:** explain the observed evidence or figure features, the relevant mechanism, its consequence, and any constraint or exception in connected sentences. A one-sentence `Why` or an answer restatement fails, even when the key is correct.
+- **Distractors:** address all three incorrect options individually and name the specific faulty assumption, sign, interval, unit, mechanism or missing step. A generic phrase such as “incorrect calculation” or one pooled dismissal fails.
+- **No word-count shortcut:** length is a diagnostic, not a substitute for teaching. A concise easy item may need less working than a hard one, but no item passes merely because it contains the required headings or a prescribed number of words.
+- **Review gate:** inspect every explanation in JSON and in the rendered PDF. Log items re-solved independently and any unresolved ambiguity. Keep `pending_revision` until a subject expert and timed student have reviewed the paper; a schema pass, PDF export, commit or push is not academic approval.
+- **Authoring gate for every later test:** the validator requires a `Worked derivation:` with displayed KaTeX in every Mathematics and Physics solution. Treat that as a floor, not a substitute for checking the equation against the stem. Before committing, record the count of solutions, rendered expressions, empty pages, broken images and overflow for each PDF; fail the session on any missing or broken result.
+
 ---
 
 ## Test Series Structure
@@ -233,6 +244,11 @@ When a question genuinely needs a figure (circuit, ray diagram, graph, apparatus
 **Explanations and format**
 - [ ] Structured explanation as specified; the detailed `Why` explains the model/evidence, and each wrong option has a specific reason; every numerical step has units where applicable.
 - [ ] KaTeX/mhchem correct and JSON-escaped.
+- [ ] For every numerical task, including a graph/diagram/data item with a numeric result, a student can reproduce the answer from explicit governing equations, substitution, intermediate calculations and units without guessing a skipped step.
+- [ ] Every substantive equation is typeset and legible in the PDF; the render check reports nonzero math expressions for each paper. Scan for plain-text formula blocks, malformed delimiters and cut-off equations.
+- [ ] Every conceptual `Why` connects evidence to mechanism to conclusion; each of the other three options receives an individual causal or computational rebuttal. Review hard items for complete branches and boundary cases.
+- [ ] A second reviewer attempts the item with the answer hidden, then compares the solution line by line and records any assumption or sign convention that was previously implicit.
+- [ ] Run `validate_iat.py` on every changed paper and regenerate its PDF after the last JSON edit. Confirm 60 solutions, at least 30 typeset Mathematics/Physics derivations, all required images, and zero render overflow; sample the rendered equations visually. Record the output and keep unresolved content checks open.
 - [ ] Every `image_reference` has a complete entry in `IAT_images.md`, and vice versa.
 - [ ] At least two meaningful image-based question IDs each in Biology, Chemistry and Physics, with each raster inspected in the PDF.
 - [ ] No duplicate, reworded or number-swapped question within the test or the series.

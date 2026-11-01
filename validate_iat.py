@@ -63,6 +63,14 @@ def validate(path):
         if 'NEW TEST' in path.name:
             for part in ['Why:', 'Why not the others:', 'Key point:']:
                 check(part in q.get('explanation',''), f'{label}: missing revised explanation component {part}')
+            # This mechanical gate catches missing worked mathematics, but cannot
+            # judge whether a derivation or conceptual argument is sound.
+            if sec in 'MP':
+                explanation = q.get('explanation', '')
+                check('Worked derivation:' in explanation,
+                      f'{label}: missing explicit worked derivation')
+                check('\\[' in explanation and '\\]' in explanation,
+                      f'{label}: missing typeset display derivation')
         stem = re.sub(r'\W+', '', q.get('question', '')).casefold()
         check(stem not in seen_stems, f'{label}: duplicate question stem')
         seen_stems.add(stem)

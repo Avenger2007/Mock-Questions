@@ -331,3 +331,9 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 - Authored 120 further questions from the reserved slots, each paper with 15 questions per subject, editorial tiers 9/42/9 and 15 keys per letter. Explanations include a worked WHY and alternatives; both papers remain pending independent academic and timed-student review.
 - Generated six purpose-built figures in Test 4 and eight in Test 5. Review PDFs contain 60 questions and 60 solutions each, with loaded images and no detected overflow. Replaced three Test 5 Mathematics items after a cross-paper similarity screen identified close earlier stems; a looser pass led to three additional method/data revisions. The default screen now reports zero candidates across Tests 1–5. See `IISER/review/IAT_NEW_TESTS_4_5_REVIEW_NOTES.md` for the 30-item mathematics task review.
 - Updated the 25-test register: 300 authored draft slots across Tests 1–5, with 1,200 reserved for Tests 6–25. Remote push verification remains required before calling this session durable.
+
+## IAT New Tests 2–5 — explanation revision (1 Nov 2026)
+
+- Audited all 240 explanations and revised each for explanatory depth. All 120 Mathematics/Physics items now include a displayed worked derivation; Biology/Chemistry `Why` sections were expanded with evidence, mechanism and constraints. See `IISER/review/IAT_NEW_TESTS_2_5_EXPLANATION_REVISION.md` for the measured results and review limits.
+- Added strict explanation rules and a release checklist to the IAT instructions, plus a mechanical validator gate for the Mathematics/Physics derivation in every new paper. Regenerated four delivery bundles after the last source edit; each PDF contains 60 solutions, figures and parsed mathematics with no reported overflow.
+- The papers remain `pending_revision` for independent hidden-key subject review and timed attempt; a committed review PDF is not academic approval.
