@@ -1,0 +1,121 @@
+31	numerical	Let A be invertible 3×3 with det(A)=3. Form B by adding twice row 1 to row 2, then multiplying row 3 by −2. What is det(adj B)?	−36	−6	36	6	C	"Answer: (C) 36.
+Given: A is 3×3, det A=3.
+Formula/Principle: det B=−2 det A; det(adj B)=(det B)^(3−1).
+Step 1: det B=−6.
+Worked derivation: \[\det(\operatorname{adj}B)=(\det B)^2=(-2\cdot3)^2=36.\]
+Why: The row addition preserves determinant and the scaling makes det B=−6. For any invertible 3×3 matrix, det(adj B)=(det B)², giving 36; the sign disappears only at the second operation.
+Why not the others: (A) retains the determinant sign after squaring; (B) stops at det B; (D) takes the magnitude of det B but omits the adjugate identity.
+Key point: Track row effects, then apply the dimension-dependent adjugate identity."
+32	numerical	On a square grid, how many right/up paths go from (0,0) to (3,3) without passing through (1,1)?	12	10	6	8	D	"Answer: (D) 8.
+Given: Three R and three U steps; forbidden point (1,1).
+Formula/Principle: Nallowed=C(6,3)−C(2,1)C(4,2).
+Step 1: 20−2·6=8.
+Worked derivation: \[N=\binom63-\binom21\binom42=20-12=8.\]
+Why: There are 6 choose 3 =20 paths overall. A path through (1,1) has 2 choose 1 ways to reach it and 4 choose 2 ways afterward, 12 forbidden paths. Subtract to get 8; giving the selected 8 valid paths.
+Why not the others: (A) counts forbidden paths; (B) miscounts the complement; (C) understates valid paths.
+Key point: Use product counting through the forbidden point."
+33	conceptual	For real x, which inputs make ln(x²−2) defined if this expression is obtained by f(g(x)), with f(t)=ln(t−1) and g(x)=x²−1?	(−∞,−√2)∪(√2,∞)	[−√2,√2]	All nonzero x	(−∞,−1)∪(1,∞)	A	"Answer: (A) (−∞,−√2)∪(√2,∞).
+Given: f(g(x))=ln(x²−2).
+Formula/Principle: Logarithm argument x²−2>0.
+Step 1: x<−√2 or x>√2.
+Worked derivation: \[x^2-2>0\iff x\in(-\infty,-\sqrt2)\cup(\sqrt2,\infty).\]
+Why: Composition gives ln(x²−2), whose argument must be strictly positive. Solving x²>2 gives two open rays; equality is excluded because ln 0 is undefined.
+Why not the others: (B) reverses the inequality and includes endpoints; (C) permits arguments below zero; (D) uses the domain of g rather than the composed logarithm.
+Key point: Apply the outer logarithm restriction after composition."
+34	numerical	In the Argand plane, what locus satisfies |z−(1+i)|=|z−(3−i)|?	x+y=2	x−y=2	x+y=1	x−y=1	B	"Answer: (B) x−y=2.
+Given: Points (1,1) and (3,−1).
+Formula/Principle: (x−1)²+(y−1)²=(x−3)²+(y+1)².
+Step 1: 4x−4y−8=0.
+Worked derivation: \[(x-1)^2+(y-1)^2=(x-3)^2+(y+1)^2\iff x-y=2.\]
+Why: For z=x+iy, equate squared distances to (1,1) and (3,−1). Simplification gives −4x+4y+8=0, hence x−y=2. The locus is the perpendicular bisector of the two points.
+Why not the others: (A) has wrong orientation; (C) changes the constant; (D) is a shifted parallel line.
+Key point: Equidistance becomes a linear equation after squares cancel."
+35	numerical	Evaluate ∫₀^π x sin x dx.	π/2	2π	π	0	C	"Answer: (C) π.
+Given: Integral from 0 to π.
+Formula/Principle: ∫x sin x dx=−x cos x+sin x.
+Step 1: Upper endpoint π; lower endpoint 0.
+Worked derivation: \[\int_0^\pi x\sin x\,dx=[-x\cos x+\sin x]_0^\pi=\pi.\]
+Why: Integration by parts with u=x and dv=sin x dx gives −x cos x+sin x. At π this is π, at zero it is zero.
+Why not the others: (A) halves the boundary term; (B) doubles it; (D) overlooks the nonzero endpoint contribution.
+Key point: Keep the boundary term in integration by parts."
+36	numerical	Project the point P=(1,2) orthogonally onto the oblique line 3x+4y−10=0 in the plane. Which ordered pair is obtained?	(4/5,9/5)	(0,5/2)	(1,7/4)	(22/25,46/25)	D	"Answer: (D) (22/25,46/25).
+Given: P=(1,2), normal=(3,4), signed offset=1.
+Formula/Principle: H=P−[(3·1+4·2−10)/25](3,4).
+Step 1: H=(22/25,46/25).
+Worked derivation: \[H=(1,2)-\frac1{25}(3,4)=\left(\frac{22}{25},\frac{46}{25}\right).\]
+Why: The signed line expression at P is 3+8−10=1. Subtract 1/(3²+4²) times the normal vector (3,4), yielding (22/25,46/25), the selected foot.
+Why not the others: (A) is off the projection; (B) lies elsewhere on the line; (C) is not a normal displacement.
+Key point: Project along the oblique line normal."
+37	numerical	For f(x)=ax+b if x<1, and x² if x≥1, which (a,b) make f differentiable at x=1?	(2,−1)	(1,0)	(2,1)	(−2,3)	A	"Answer: (A) (2,−1).
+Given: Piecewise join at x=1.
+Formula/Principle: Continuity a+b=1; derivative match a=2.
+Step 1: b=−1.
+Worked derivation: \[a+b=1,\quad a=2\quad\Longrightarrow\quad(a,b)=(2,-1).\]
+Why: Continuity first requires a+b=1. Equality of one-sided derivatives requires a=2, so b=−1. Both conditions are necessary; matching only value is insufficient.
+Why not the others: (B) is continuous but slopes differ; (C) has matching derivative but a+b≠1; (D) is continuous but left slope −2.
+Key point: Check value and slope at the joining point."
+38	numerical	Two groups each have 10 values with means 2 and 4 and population variances 1 and 1. What is the variance of all 20 values?	1	2	3	4	B	"Answer: (B) 2.
+Given: Equal group sizes, means 2 and 4, variances 1 each.
+Formula/Principle: V=average[Vgroup+(μgroup−μ)²].
+Step 1: μ=3; V=(1+1+1+1)/2=2.
+Worked derivation: \[\mu=3,\qquad V=\tfrac12[1+(2-3)^2+1+(4-3)^2]=2.\]
+Why: The combined mean is 3. Within-group variance contributes 1; the two group means differ from 3 by ±1, adding between-group variance 1. Total population variance is 2.
+Why not the others: (A) ignores between-group spread; (C) adds a mean gap without squaring/weighting correctly; (D) treats the full mean gap as a deviation.
+Key point: Combine within and between variance."
+39	numerical	Find a such that lim(x→0) (sin(ax)−2x)/x³ exists as a finite real number.	0	1	2	3	C	"Answer: (C) 2.
+Given: Limit of [sin(ax)−2x]/x³.
+Formula/Principle: sin(ax)=ax−a³x³/6+O(x⁵).
+Step 1: Finite iff a−2=0.
+Worked derivation: \[\frac{\sin(ax)-2x}{x^3}=\frac{a-2}{x^2}-\frac{a^3}{6}+O(x^2);\quad a=2.\]
+Why: Expand sin(ax)=ax−a³x³/6+higher terms. The coefficient of x must vanish for the quotient to avoid x⁻² divergence, so a=2. The resulting finite limit is −8/6.
+Why not the others: (A), (B) and (D) leave a nonzero (a−2)x term, producing divergence upon division by x³.
+Key point: Cancel lower-order terms before taking a higher-order limit."
+40	numerical	Urn U₁ is chosen with probability 1/3 and has 2 red, 1 blue; U₂ with probability 2/3 has 1 red, 3 blue. After observing red, what is P(U₁|red)?	1/3	2/3	1/2	4/7	D	"Answer: (D) 4/7.
+Given: P(U₁)=1/3, P(R|U₁)=2/3; P(U₂)=2/3, P(R|U₂)=1/4.
+Formula/Principle: Bayes P(U₁|R)=P(U₁)P(R|U₁)/P(R).
+Step 1: P(R)=2/9+1/6=7/18.
+Worked derivation: \[P(U_1\mid R)=\frac{(1/3)(2/3)}{(1/3)(2/3)+(2/3)(1/4)}=\frac47.\]
+Why: The red joint probabilities are (1/3)(2/3)=2/9 and (2/3)(1/4)=1/6. Their sum is 7/18, so posterior U₁ is (2/9)/(7/18)=4/7. The observation favours U₁ despite its smaller prior because red is substantially more likely there.
+Why not the others: (A) repeats the prior; (B) uses U₁ likelihood alone; (C) ignores unequal priors and urn compositions.
+Key point: Normalise joint probabilities after the observation."
+41	numerical	If tan θ=1/2 with θ acute, find tan(2θ).	4/3	3/4	1	2	A	"Answer: (A) 4/3.
+Given: tan θ=1/2.
+Formula/Principle: tan 2θ=2tanθ/(1−tan²θ).
+Step 1: 1/(1−1/4)=4/3.
+Worked derivation: \[\tan2\theta=\frac{2(1/2)}{1-(1/2)^2}=\frac43.\]
+Why: Apply tan 2θ=2t/(1−t²) with t=1/2: numerator 1, denominator 3/4, so 4/3. The acute condition fixes a consistent quadrant but the algebra already determines the value.
+Why not the others: (B) inverts the result; (C) ignores the denominator; (D) doubles t incorrectly.
+Key point: Use the full double-angle denominator."
+42	numerical	For x>0 and y>0, solve dy/dx=(x²+y²)/(xy) with y(1)=1. What is y(e)?	e√2	e√3	2e	3e	B	"Answer: (B) e√3.
+Given: For x,y>0, y′=x/y+y/x.
+Formula/Principle: Set y=xv; then v+xv′=1/v+v.
+Step 1: v dv=dx/x, so v²=2ln x+C; v(1)=1 fixes C=1.
+Worked derivation: \[y=x\sqrt{1+2\ln x},\qquad y(e)=e\sqrt3.\]
+Why: This homogeneous differential equation becomes separable after putting y=xv. The initial point selects the positive square-root branch, which matters when evaluating y at e.
+Why not the others: (A) omits the initial-value contribution; (C) uses an incorrect constant; (D) squares the required root.
+Key point: Substitute y=xv, integrate, then apply the positive branch."
+43	numerical	For which real k are both roots of x²−2kx+(k+3)=0 real and in the open interval (0,3)?	k≥(1+√13)/2	(1+√13)/2<k≤12/5	(1+√13)/2≤k<12/5	k>12/5	C	"Answer: (C) (1+√13)/2≤k<12/5.
+Given: Polynomial has sum 2k, product k+3, vertex x=k.
+Formula/Principle: Δ=4(k²−k−3)≥0; positive branch k≥(1+√13)/2.
+Step 1: At x=3, p(3)=12−5k>0 and k<3.
+Step 2: Hence lower endpoint included, upper excluded.
+Worked derivation: \[k\in\left[\frac{1+\sqrt{13}}2,\frac{12}{5}\right).\]
+Why: Discriminant nonnegative and positive roots force k≥(1+√13)/2. To keep both roots below 3, the vertex k must lie below 3 and the polynomial at x=3 must be positive: 12−5k>0, so k<12/5. At the lower end the repeated root lies inside (0,3), while the upper end places a root at excluded x=3.
+Why not the others: (A) includes arbitrarily large k; (B) wrongly excludes the valid repeated root and includes the endpoint 3; (D) makes the polynomial at 3 negative.
+Key point: Combine discriminant, vertex position, endpoint signs and strict boundaries."
+44	conceptual	Every line in the family (1+t)x+(2−t)y=3+t passes through which point?	(1,1)	(0,3/2)	(2,0)	(5/3,2/3)	D	"Answer: (D) (5/3,2/3).
+Given: Line family holds for every t.
+Formula/Principle: x+2y−3=0 and x−y−1=0.
+Step 1: Solve simultaneous equations.
+Worked derivation: \[x=y+1,\quad y+1+2y=3\implies (x,y)=(5/3,2/3).\]
+Why: Collect constant and t terms: x+2y−3+t(x−y−1)=0. A common point satisfies both x+2y=3 and x−y=1; solving gives x=5/3,y=2/3, the common point in option D.
+Why not the others: (A) fails the t coefficient; (B) fails the second constraint; (C) fails the constant constraint.
+Key point: Set both polynomial coefficients in t to zero."
+45	numerical	For which k are (1,2), (3,6), and (k,10) collinear?	4	5	6	7	B	"Answer: (B) 5.
+Given: First two points define y=2x.
+Formula/Principle: For y=10, x=10/2.
+Step 1: k=5.
+Worked derivation: \[\frac{6-2}{3-1}=2,\quad y-2=2(x-1)\implies 10=2k\implies k=5.\]
+Why: The first two points have slope (6−2)/(3−1)=2. The line through (1,2) is y=2x; setting y=10 gives x=5. This is option B.
+Why not the others: (A), (C) and (D) do not satisfy the line equation y=2x at y=10.
+Key point: Use one line equation and substitute the third point."

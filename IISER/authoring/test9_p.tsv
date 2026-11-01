@@ -1,0 +1,120 @@
+46	graph	The figure gives the static-friction threshold for a block on a horizontal floor. While the block remains at rest under a horizontal 4 N applied force, what is its friction?	4 N opposite the applied force	6 N opposite the force	2 N opposite the force	Zero until sliding	A	"Answer: (A) 4 N opposite the applied force.
+Given: Applied 4 N < limiting 6 N.
+Formula/Principle: Horizontal equilibrium: fₛ=Fapplied while at rest.
+Step 1: fₛ=4 N, opposite the force.
+Worked derivation: \[\sum F_x=0\implies f_s=F=4\,\mathrm N<6\,\mathrm N.\]
+Why: For a stationary block static friction adjusts to match the applied horizontal force up to its limiting value. At 4 N, below the measured 6 N limit, force balance requires 4 N opposite the applied force.
+Why not the others: (B) confuses the maximum with actual friction; (C) leaves unbalanced force; (D) would let the block accelerate before the observed threshold.
+Key point: Static friction is self-adjusting below its limit."
+47	numerical	A one-dimensional conservative force is F(x)=x²−4x newtons, with x measured in metres. What is its signed work as a particle moves from x=0 to x=4 m?	+32/3 J	−32/3 J	0	−16 J	B	"Answer: (B) −32/3 J.
+Given: F=x²−4x, 0≤x≤4.
+Formula/Principle: W=∫₀⁴F(x) dx.
+Step 1: W=[x³/3−2x²]₀⁴=−32/3 J.
+Worked derivation: \[W=\int_0^4(x^2-4x)\,dx=\left[\frac{x^3}{3}-2x^2\right]_0^4=-\frac{32}{3}\,\mathrm J.\]
+Why: The force is negative throughout the open interval 0<x<4, so work must be negative. Integrating gives [x³/3−2x²]₀⁴=64/3−32=−32/3 J. The zeros of force at the endpoints do not cancel the negative area accumulated between them.
+Why not the others: (A) uses magnitude but loses sign; (C) assumes endpoint zeros imply zero area; (D) replaces the curved force profile by an incorrect constant.
+Key point: The signed area under F(x) determines work."
+48	numerical	At a planet surface r=R, escape speed is v. What minimum launch speed reaches r=4R with zero speed there, ignoring atmosphere and rotation?	v/2	v/4	√3v/2	3v/4	C	"Answer: (C) √3v/2.
+Given: v²=2GM/R; target radius 4R.
+Formula/Principle: ½mu²=GMm(1/R−1/4R).
+Step 1: u²=(3/4)v².
+Worked derivation: \[u=\sqrt{\frac{2GM}{R}\left(1-\frac14\right)}=\frac{\sqrt3}{2}v.\]
+Why: Energy conservation requires initial kinetic energy equal to the increase in gravitational potential from −GMm/R to −GMm/(4R). That difference is 3GMm/(4R). As v²=2GM/R, the required speed is √3v/2, below escape speed because the target is finite.
+Why not the others: (A) is local escape speed at 4R, a different quantity; (B) assumes inverse distance scaling of launch speed; (D) omits the square root.
+Key point: Separate local escape speed from finite-height launch energy."
+49	numerical	A stretched rod has longitudinal strain +0.002 and Poisson ratio 0.30. What is the transverse strain?	+0.006	−0.006	+0.0006	−0.0006	D	"Answer: (D) −0.0006.
+Given: ν=0.30, longitudinal strain +0.002.
+Formula/Principle: εtrans=−ν εlong.
+Step 1: −0.30×0.002=−0.0006.
+Worked derivation: \[\varepsilon_{\perp}=-\nu\varepsilon_{\parallel}=-(0.30)(0.002)=-6\times10^{-4}.\]
+Why: Poisson ratio ν=−εtrans/εlong. Substituting 0.30 and +0.002 gives εtrans=−0.0006: a tensile rod narrows sideways. Both strains are dimensionless; the negative transverse sign records contraction rather than an additional force.
+Why not the others: (A) and (B) multiply by ten; (C) misses the opposite sign.
+Key point: Poisson ratio contains a minus sign."
+50	numerical	Two identical hot bodies at 80°C and 60°C cool in air at 20°C under the same Newton cooling constant. What is the ratio of their initial cooling-rate magnitudes, hotter to cooler?	3:2	2:1	4:3	1:1	A	"Answer: (A) 3:2.
+Given: Ambient 20°C, bodies 80°C and 60°C.
+Formula/Principle: |dT/dt|=k(T−Ta).
+Step 1: 60/40=3/2.
+Worked derivation: \[\frac{|\dot T_1|}{|\dot T_2|}=\frac{80-20}{60-20}=\frac32.\]
+Why: Newton cooling at the initial moment is proportional to the temperature excess over ambient: 80−20=60 K and 60−20=40 K. The rate ratio is 60:40=3:2.
+Why not the others: (B) uses absolute temperatures incorrectly; (C) ratios the two object temperatures; (D) ignores different excesses.
+Key point: Use temperature excess above the common ambient."
+51	diagram	The kinetic-theory sketch shows N molecules of mass m in a cube of side L, each with mean-square x-velocity component ⟨cₓ²⟩. What pressure acts on the wall normal to x?	Nm⟨cₓ²⟩/L²	Nm⟨cₓ²⟩/L³	Nm⟨cₓ²⟩/(3L³)	Nm⟨cₓ²⟩/(6L³)	B	"Answer: (B) Nm⟨cₓ²⟩/L³.
+Given: N molecules in cube volume L³.
+Formula/Principle: P=Nm⟨cₓ²⟩/V.
+Step 1: V=L³.
+Worked derivation: \[P=\frac{N(mc_x^2/L)}{L^2}=\frac{Nm\langle c_x^2\rangle}{L^3}.\]
+Why: One molecule transfers momentum 2mcₓ at each collision, with collisions separated by 2L/|cₓ|, giving mean force mcₓ²/L. Sum N and divide by wall area L² to obtain Nm⟨cₓ²⟩/L³. A factor 1/3 is needed only when replacing component mean square by total speed mean square.
+Why not the others: (A) misses a length; (C) double-counts the isotropy factor for a component already specified; (D) adds another unwarranted factor.
+Key point: Derive pressure from momentum flux normal to the wall."
+52	numerical	For SHM with total mechanical energy E and amplitude A, what is kinetic energy at displacement x=A/2?	E/4	E/2	3E/4	E	C	"Answer: (C) 3E/4.
+Given: E=½kA² and x=A/2.
+Formula/Principle: U/E=x²/A², K=E−U.
+Step 1: U=E/4, K=3E/4.
+Worked derivation: \[K=\frac12k(A^2-x^2)=E\left(1-\frac{x^2}{A^2}\right)=\frac34E.\]
+Why: The spring potential at displacement x is E(x²/A²). At A/2 it equals E/4; conservation leaves kinetic energy 3E/4. The speed is still nonzero away from the turning points, where kinetic energy would vanish entirely.
+Why not the others: (A) gives potential energy; (B) assumes a linear energy split; (D) is kinetic energy only at equilibrium.
+Key point: Energy varies as displacement squared."
+53	diagram	The before/after diagram shows a charged capacitor isolated from the battery and then filled with the indicated dielectric. What are its new voltage and energy relative to V₀,U₀?	3V₀,3U₀	V₀,U₀	V₀/3,3U₀	V₀/3,U₀/3	D	"Answer: (D) V₀/3,U₀/3.
+Given: Q fixed; Cnew=3C₀.
+Formula/Principle: V=Q/C, U=Q²/(2C).
+Step 1: Vnew=V₀/3; Unew=U₀/3.
+Worked derivation: \[\frac{V_{\rm new}}{V_0}=\frac{C_0}{3C_0}=\frac13,\qquad \frac{U_{\rm new}}{U_0}=\frac{C_0}{3C_0}=\frac13.\]
+Why: Disconnection fixes free charge Q. Insertion raises capacitance threefold, so V=Q/C falls to one third and U=Q²/(2C) also falls to one third. The force drawing dielectric inward supplies the energy difference.
+Why not the others: (A) reverses both changes; (B) incorrectly keeps voltage fixed after disconnection; (C) gives the battery-connected energy trend with inconsistent voltage.
+Key point: Identify the fixed quantity before choosing energy formula."
+54	numerical	A positive charge moves with velocity v x̂ through B(ŷ+ẑ). Which uniform electric field makes its total Lorentz force zero?	vB(ŷ−ẑ)	vB(ẑ−ŷ)	vB(ŷ+ẑ)	Zero	A	"Answer: (A) vB(ŷ−ẑ).
+Given: v=v x̂; B=B(ŷ+ẑ); q>0.
+Formula/Principle: F=q(E+v×B)=0.
+Step 1: v×B=vB(ẑ−ŷ).
+Worked derivation: \[\mathbf E=-\mathbf v\times\mathbf B=vB(\hat{\mathbf y}-\hat{\mathbf z}).\]
+Why: The magnetic part per unit charge is v×B=vB(ẑ−ŷ). Electric and magnetic forces must cancel, so E=−v×B=vB(ŷ−ẑ). This is a force-balance condition, not a magnetic-force-only direction question.
+Why not the others: (B) adds to the magnetic force; (C) points partly parallel to B instead of cancelling v×B; (D) leaves magnetic deflection.
+Key point: Set E+v×B=0 and resolve both components."
+55	numerical	A closed surface encloses charges +2q, −q and +3q. A fourth charge −5q is outside. What is its net electric flux?	0	4q/ε₀	−q/ε₀	−5q/ε₀	B	"Answer: (B) 4q/ε₀.
+Given: Enclosed +2q, −q, +3q; outside −5q.
+Formula/Principle: Φ=Qenclosed/ε₀.
+Step 1: Qenclosed=4q.
+Worked derivation: \[\Phi_E=\frac{2q-q+3q}{\varepsilon_0}=\frac{4q}{\varepsilon_0}.\]
+Why: Gauss’s law uses only enclosed net charge: 2q−q+3q=4q. The external charge can alter local field distribution on the surface but its total net flux contribution is zero.
+Why not the others: (A) misadds charges; (C) includes outside charge in net; (D) reports only the external source.
+Key point: Flux through a closed surface depends on enclosed charge."
+56	numerical	A resistor network has two identical 6 Ω resistors in parallel between A and B, then a 2 Ω resistor in series from B to C. What is equivalent resistance between A and C?	3 Ω	4 Ω	5 Ω	8 Ω	C	"Answer: (C) 5 Ω.
+Given: Two 6 Ω branches A–B; 2 Ω B–C.
+Formula/Principle: RAB=(1/6+1/6)⁻¹; RAC=RAB+2.
+Step 1: 3+2=5 Ω.
+Worked derivation: \[R_{AB}=\left(\frac16+\frac16\right)^{-1}=3\,\Omega,\quad R_{AC}=3+2=5\,\Omega.\]
+Why: The equal parallel pair combines as (6×6)/(6+6)=3 Ω. Current then passes through the 2 Ω series resistor, giving 5 Ω overall. The common A–B endpoints establish parallel connection; the single B–C arm carries their combined current.
+Why not the others: (A) omits series arm; (B) treats parallel pair as 2 Ω; (D) adds only one 6 Ω branch to 2 Ω.
+Key point: Reduce nodes and series/parallel stages."
+57	numerical	An object 30 cm left of a converging lens (f=10 cm) first forms an image; a plane mirror 20 cm right of the lens reflects those rays back through the lens. Where is the final image after the second lens passage?	5 cm left of lens	10 cm left of lens	15 cm left of lens	50/3 cm left of lens	D	"Answer: (D) 50/3 cm left of lens.
+Given: First lens object distance 30 cm, f=10 cm; mirror x=20 cm.
+Formula/Principle: First image x=15; mirror image x=25; second pass lens object distance 25.
+Step 1: Second pass 1/v=1/10−1/25=3/50.
+Worked derivation: \[v_1=15\,\mathrm{cm},\quad x_{\rm mirror\ image}=25\,\mathrm{cm},\quad v_2=\left(\frac1{10}-\frac1{25}\right)^{-1}=\frac{50}{3}\,\mathrm{cm}\text{ left}.\]
+Why: On the first pass the lens makes an image 15 cm to its right. The mirror lies 5 cm beyond it and forms a virtual image at x=25 cm behind the mirror. Returning rays approach the lens as if from an object 25 cm to its right; the lens then makes a real image 50/3 cm to its left.
+Why not the others: (A) is mirror image distance from mirror, not final location; (B) is focal length; (C) stops at the first lens image.
+Key point: Track the intermediate image through both optical elements and the return pass."
+58	conceptual	At fixed frequency above threshold, light intensity incident on a photocathode doubles while collector voltage is high enough to saturate. What happens to saturation photocurrent and stopping potential?	Current doubles; stopping potential unchanged	Both double	Current unchanged; potential doubles	Both unchanged	A	"Answer: (A) Current doubles; stopping potential unchanged.
+Given: Frequency fixed, intensity doubled.
+Formula/Principle: Isat∝photon flux; eVstop=hf−φ.
+Step 1: Isat doubles, Vstop unchanged.
+Worked derivation: \[I_{\rm new}=2I_{\rm sat},\qquad eV_{\rm new}=hf-\phi=eV_{\rm stop}.\]
+Why: Twice the photon flux ejects approximately twice as many photoelectrons per time, raising saturated current. Maximum electron kinetic energy depends on photon frequency, unchanged here, so stopping potential stays fixed.
+Why not the others: (B) and (C) incorrectly tie stopping potential to intensity; (D) overlooks the larger electron count.
+Key point: Intensity controls count; frequency controls maximum energy."
+59	diagram	The hydrogen-level figure marks n=4,3,2,1. Which downward transition has the longest emitted wavelength among 4→3, 4→2, 3→2, 2→1?	4→2	3→2	4→3	2→1	C	"Answer: (C) 4→3.
+Given: Eₙ=−13.6/n² eV.
+Formula/Principle: ΔE=13.6(1/nlow²−1/nhigh²), λ=hc/ΔE.
+Step 1: 4→3 has smallest ΔE.
+Worked derivation: \[\Delta E_{4\to3}=13.6\left(\frac19-\frac1{16}\right)<\Delta E_{3\to2},\Delta E_{4\to2},\Delta E_{2\to1}.\]
+Why: Longest wavelength means smallest emitted energy. Hydrogen gaps shrink among high neighbouring levels: 4→3 has 13.6(1/9−1/16) eV, less than the other displayed drops.
+Why not the others: (A) spans two levels and is larger; (B) has a larger adjacent gap lower in the ladder; (D) has the largest of these gaps.
+Key point: Compare energy gaps, then invert for wavelength."
+60	conceptual	Two nearby coils have corresponding dotted ends. The left coil current toward its marked dot decreases. What is the initial induced current direction at the marked dot of the right coil?	Out of the right dot	Zero because coils do not touch	Alternates randomly	Into the right dot	D	"Answer: (D) Into the right dot.
+Given: Same dot orientation; left-dot entering current decreases.
+Formula/Principle: Lenz law: induced right current restores declining linked flux.
+Step 1: It enters the right dot.
+Worked derivation: \[\mathcal E_2=-M\frac{dI_1}{dt}>0\quad\text{in the chosen dot-entering reference direction.}\]
+Why: By the dot convention, currents entering corresponding dotted ends produce fluxes of the same reference sign. A decreasing left-dot entering current reduces positive flux in the right coil, and Lenz’s law drives a current entering its dotted end to oppose that reduction.
+Why not the others: (A) would reinforce the flux decrease; (B) neglects magnetic coupling; (C) ignores the specified monotonic change.
+Key point: Choose a reference winding direction and oppose flux change."

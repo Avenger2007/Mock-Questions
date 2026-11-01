@@ -344,3 +344,10 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 - Drew and registered six question-bearing figures for each paper: two Biology, two Chemistry and two Physics. Generated delivery JSON, HTML and 51-page PDF for each. Source/delivery/PDF checksums, parsed mathematics, all loaded images and zero detected overflow are recorded in the render checks.
 - Replaced five weak hard-labelled Mathematics tasks with multi-stage problems and replaced one integral too close in method to Test 1. The default cross-paper text similarity screen reports zero candidates among Tests 1–7. Updated the 25-test slot register to 420 authored draft slots and 1,080 reservations.
 - See `IISER/review/IAT_NEW_TESTS_6_7_REVIEW_NOTES.md` for the item-level review and limits. Both papers remain pending independent hidden-key academic review and timed-student calibration.
+
+## IAT New Tests 8 and 9 — authored review drafts (1 Nov 2026)
+
+- Authored 120 new questions from the 25-test reservations. Each test has 15 questions per subject, 9/42/9 editorial difficulty tiers, balanced keys and detailed explanations; all Mathematics and Physics questions have displayed derivations.
+- Drew and registered six figures for Test 8 and eight for Test 9, including at least two per Biology, Chemistry and Physics. Generated canonical JSON and delivery JSON/HTML/PDF with strict math parsing and no detected overflow; pages and item-level mathematics audit are in `IISER/review/IAT_NEW_TESTS_8_9_REVIEW_NOTES.md`.
+- Reworked same-method candidate tasks and upgraded hard Mathematics slots. One text-overlap candidate remains after semantic review: Test 4's coordinate-plane projection and Test 9's oblique-line projection use distinct calculations. Updated the 25-test register to 540 authored draft slots, 960 reserved.
+- Independent hidden-key academic and timed-student review remains pending. Verify the remote branch HEAD before treating the session as durable.

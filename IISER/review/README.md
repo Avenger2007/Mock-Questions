@@ -4,7 +4,7 @@
 
 `IISER/IAT NEW TEST 2.json` through `IISER/IAT NEW TEST 5.json` distinguish freshly authored papers from the uncommitted earlier drafts lost during a workspace reset. Their generated review files use `IAT_NEW_TEST_<N>` stems. Each remains `pending_revision` for independent academic and timed review. The new standard requires two purpose-built figures each in Biology, Chemistry and Physics and full explanations of all alternatives. Commits preserve drafts between sessions; a commit is not approval for student publication. See `IAT_NEW_TESTS_4_5_REVIEW_NOTES.md` for the item-level mathematics comparison and figure inventory, and `IAT_NEW_TESTS_2_5_EXPLANATION_REVISION.md` for the later detailed-solution revision and verification limits.
 
-New Tests 6 and 7 are complete authored review drafts under the same provisional 2026 pattern. Their canonical source JSON, six figures each, delivery HTML/JSON/PDF and render checks are versioned together. See `IAT_NEW_TESTS_6_7_REVIEW_NOTES.md` for item-level mathematics calibration, figure purpose, checks and remaining independent review.
+New Tests 6 through 9 are complete authored review drafts under the same provisional 2026 pattern. Their canonical source JSON, linked figures, delivery HTML/JSON/PDF and render checks are versioned together. See `IAT_NEW_TESTS_6_7_REVIEW_NOTES.md` and `IAT_NEW_TESTS_8_9_REVIEW_NOTES.md` for mathematics calibration, figure purpose, checks and remaining independent review.
 
 Revised 30 October 2026. Status: `pending_revision`. This is an original 2027-preparation pilot using the verified 2026 pattern and stored syllabus; it is not an official paper or a claim of verified 2027 compliance.
 
