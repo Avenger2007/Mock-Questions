@@ -337,3 +337,10 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 - Audited all 240 explanations and revised each for explanatory depth. All 120 Mathematics/Physics items now include a displayed worked derivation; Biology/Chemistry `Why` sections were expanded with evidence, mechanism and constraints. See `IISER/review/IAT_NEW_TESTS_2_5_EXPLANATION_REVISION.md` for the measured results and review limits.
 - Added strict explanation rules and a release checklist to the IAT instructions, plus a mechanical validator gate for the Mathematics/Physics derivation in every new paper. Regenerated four delivery bundles after the last source edit; each PDF contains 60 solutions, figures and parsed mathematics with no reported overflow.
 - The papers remain `pending_revision` for independent hidden-key subject review and timed attempt; a committed review PDF is not academic approval.
+
+## IAT New Tests 6 and 7 — authored review drafts (1 Nov 2026)
+
+- Completed 120 individually authored questions from the reserved slots, with 15 per subject and 9/42/9 editorial tiers per paper. Final keys are 15 per letter. Each of the 60 Mathematics/Physics items has a displayed worked derivation and every distractor has an individually labelled explanation.
+- Drew and registered six question-bearing figures for each paper: two Biology, two Chemistry and two Physics. Generated delivery JSON, HTML and 51-page PDF for each. Source/delivery/PDF checksums, parsed mathematics, all loaded images and zero detected overflow are recorded in the render checks.
+- Replaced five weak hard-labelled Mathematics tasks with multi-stage problems and replaced one integral too close in method to Test 1. The default cross-paper text similarity screen reports zero candidates among Tests 1–7. Updated the 25-test slot register to 420 authored draft slots and 1,080 reservations.
+- See `IISER/review/IAT_NEW_TESTS_6_7_REVIEW_NOTES.md` for the item-level review and limits. Both papers remain pending independent hidden-key academic review and timed-student calibration.
