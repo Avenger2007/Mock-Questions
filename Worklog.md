@@ -351,3 +351,10 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 - Drew and registered six figures for Test 8 and eight for Test 9, including at least two per Biology, Chemistry and Physics. Generated canonical JSON and delivery JSON/HTML/PDF with strict math parsing and no detected overflow; pages and item-level mathematics audit are in `IISER/review/IAT_NEW_TESTS_8_9_REVIEW_NOTES.md`.
 - Reworked same-method candidate tasks and upgraded hard Mathematics slots. One text-overlap candidate remains after semantic review: Test 4's coordinate-plane projection and Test 9's oblique-line projection use distinct calculations. Updated the 25-test register to 540 authored draft slots, 960 reserved.
 - Independent hidden-key academic and timed-student review remains pending. Verify the remote branch HEAD before treating the session as durable.
+
+## IAT New Tests 10 and 11 — authored review drafts (3 Nov 2026)
+
+- Authored 120 new items against fixed syllabus slots. Each paper has 15 questions per subject, editorial tiers 9/42/9, balanced A–D keys and detailed `Why` plus distractor analyses; all Mathematics and Physics items have displayed derivations.
+- Drew and registered eight figure-linked questions in Test 10 and twelve in Test 11. Rendered 31- and 33-page review PDFs using the versioned XeLaTeX exporter, with 60 question/solution pairs each, source/delivery/PDF/image checksums, no empty pages, no overfull lines and no missing glyphs.
+- Replaced repeated reasoning tasks found against earlier papers, including cardiac output, capacitor charge, fixed telescoping sum and simple two-factor integral, then replaced further Hardy–Weinberg, rms-speed and hydrogen-transition ratio repeats in a manual scan. The series-wide default similarity screen now reports zero candidates. The 25-test slot register has 660 authored review-draft slots and 840 reservations.
+- See `IISER/review/IAT_NEW_TESTS_10_11_REVIEW_NOTES.md` for item-level Mathematics review and remaining independent academic and timed-student checks.

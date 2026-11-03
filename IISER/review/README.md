@@ -43,3 +43,5 @@ Export does not author or shuffle questions. It parses every delimited expressio
 ## Manual review
 
 Review all 60 keys and explanations, single-answer uniqueness, syllabus scope, distractor plausibility, diagram fidelity and a timed attempt. Difficulty labels and slot-time estimates have not been empirically calibrated after revision. Record corrections by stable question ID. Approve the pilot standard before authoring Tests 2–25. The blueprint reserves chapter slots for 25 tests; it does not claim that 1,500 exact question angles have already been planned.
+
+New Tests 10 and 11 are authored review drafts. Their canonical JSON, figure sources and linked PNGs, delivery JSON/PDF and render checks are versioned together. The PDF review copies use `tools/iat/export_iat_review_tex.py` (XeLaTeX) because the earlier browser-render dependencies were not present in this restored workspace; see `IAT_NEW_TESTS_10_11_REVIEW_NOTES.md` for quality checks and remaining academic review.
