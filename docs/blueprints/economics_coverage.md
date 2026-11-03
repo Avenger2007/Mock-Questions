@@ -54,11 +54,11 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 22 | Total expenditure method — elastic, unitary, inelastic [O] | T3, T10 |
 | 23 | Factors determining price elasticity of demand | T5, T9 |
 | 24 | Perfectly elastic and perfectly inelastic demand; rectangular hyperbola | T4, T9 |
-| 25 | Budget line from given intercepts [O] | T6 |
-| 26 | Rise in income and demand for an inferior good | T6 |
-| 27 | PPF: shift of the curve vs movement along it | T6 |
-| 28 | Total utility is maximum where MU is zero | T6 |
-| 29 | Market demand schedule reading [O] | T6 |
+| 25 | Budget line from given intercepts [O] | T6, T11 |
+| 26 | Rise in income and demand for an inferior good | T6, T11 |
+| 27 | PPF: shift of the curve vs movement along it | T6, T11 |
+| 28 | Total utility is maximum where MU is zero | T6, T11 |
+| 29 | Market demand schedule reading [O] | T6, T11 |
 | 30 | Ranking goods by elasticity [O] | T6 |
 
 ### M2 Production and costs (4 per test)
@@ -80,10 +80,12 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 14 | Producer's equilibrium: MR = MC and MC rising [O] | T2, T9 |
 | 15 | Relationship between AR and MR | T8, T10 |
 | 16 | Negative marginal product stage | T7 |
-| 17 | AP and MP from a schedule — relationship [O] | T6 |
-| 18 | TC from AFC and AVC data [O] | T6 |
+| 17 | AP and MP from a schedule — relationship [O] | T6, T11 |
+| 18 | TC from AFC and AVC data [O] | T6, T11 |
 | 19 | Completing a cost table [O] | T6 |
 | 20 | Short-run vs long-run costs | T7 |
+| 21 | Total product from marginal product data [O] | T11 |
+| 22 | AVC from TVC data [O] | |
 
 ### M3 Perfect competition and supply (4 per test)
 | # | Angle | Used in |
@@ -106,22 +108,27 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 16 | Supply schedule reading [O] | T6, T10 |
 | 17 | Profit or loss from TR and TC [O] | T6, T10 |
 | 18 | Price-taking behaviour and MR | T6 |
+| 19 | Shut-down point vs break-even point | T11 |
+| 20 | Firm supply curve from an MC schedule [O] | |
+| 21 | Effect of a rise in input prices on a firm's supply | |
+| 22 | Zero and infinite elasticity of supply | T11 |
+| 23 | TR line of a price-taking firm | T11 |
 
 ### M4 Market equilibrium and applications (2 per test)
 | # | Angle | Used in |
 |---|---|---|
 | 1 | Equilibrium from demand and supply equations [O] | T1, T5, T8 |
-| 2 | Excess demand and excess supply | T3, T10 |
+| 2 | Excess demand and excess supply | T3, T10, T11 |
 | 3 | Effects of shifts in demand (supply fixed) | T2, T10 |
 | 4 | Effects of shifts in supply (demand fixed) | T4 |
 | 5 | Simultaneous shifts in demand and supply | T4 |
-| 6 | Price ceiling: purpose, shortage, rationing, black market | T1 |
-| 7 | Price floor: minimum support price, surplus, buffer stocks | T3, T9 |
+| 6 | Price ceiling: purpose, shortage, rationing, black market | T1, T11 |
+| 7 | Price floor: minimum support price, surplus, buffer stocks | T3, T9, T11 |
 | 8 | Market equilibrium with free entry and exit | T2, T5, T8 |
 | 9 | Equilibrium with a fixed number of firms | T9 |
 | 10 | Labour market equilibrium (as in NCERT) | T7 |
-| 11 | Excess supply at a given price [O] | T6 |
-| 12 | Rationing and black markets | T6 |
+| 11 | Excess supply at a given price [O] | T6, T11 |
+| 12 | Rationing and black markets | T6, T11 |
 | 13 | Price ceiling vs price floor | T7 |
 
 ### C1 Introduction and national income accounting (5 per test)
@@ -148,6 +155,13 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 19 | Gross vs net investment [O] | T7 |
 | 20 | Mixed income of the self-employed | T6, T10 |
 | 21 | Meaning and examples of NFIA | T7, T10 |
+| 22 | Real GDP from nominal GDP and the deflator [O] | T11 |
+| 23 | Intermediate consumption examples | T11 |
+| 24 | Factor income vs transfer income | T11 |
+| 25 | Depreciation (consumption of fixed capital) | T11 |
+| 26 | Externalities and GDP — examples | |
+| 27 | Value of output vs value added [O] | |
+| 28 | Operating surplus [O] | T11 |
 
 ### C2 Money and banking (4 per test)
 | # | Angle | Used in |
@@ -160,23 +174,23 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 6 | Money creation by commercial banks [O] | T1, T2, T3, T5 |
 | 7 | Money multiplier = 1/CRR (or LRR) [O] | T2, T3, T8 |
 | 8 | Reserve Bank of India: bank of issue, government's bank, bankers' bank, lender of last resort | T1, T8 |
-| 9 | Controller of credit: quantitative instruments | T4 |
+| 9 | Controller of credit: quantitative instruments | T4, T11 |
 | 10 | Repo rate and reverse repo rate | T1, T5, T6 |
 | 11 | Bank rate, CRR, SLR | T3, T7 |
 | 12 | Open market operations | T2, T9 |
 | 13 | Effect of policy tools on money supply (expansion/contraction) | T3, T7, T10 |
 | 14 | High-powered money (reserve money) | T5, T10 |
 | 15 | Commercial banks' functions: deposits and loans | T5, T9 |
-| 16 | Legal tender vs non-legal tender (cheques) | T6 |
+| 16 | Legal tender vs non-legal tender (cheques) | T6, T11 |
 | 17 | Limits to credit creation | T6, T10 |
-| 18 | Money supply components [O] | T7 |
-| 19 | RBI as banker to the government | T6 |
+| 18 | Money supply components [O] | T7, T11 |
+| 19 | RBI as banker to the government | T6, T11 |
 | 20 | Currency deposit ratio and reserve deposit ratio (as in NCERT) | T9 |
 
 ### C3 Determination of income and employment (4 per test)
 | # | Angle | Used in |
 |---|---|---|
-| 1 | Aggregate demand and its components (C + I in two sectors) | T3 |
+| 1 | Aggregate demand and its components (C + I in two sectors) | T3, T11 |
 | 2 | Consumption function C = c̄ + cY; autonomous consumption | T2, T8 |
 | 3 | APC and MPC; APS and MPS; MPC + MPS = 1 [O] | T1, T4, T5 |
 | 4 | Saving function; break-even point of income [O] | T2, T5, T8 |
@@ -192,10 +206,12 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 14 | Paradox of thrift (as in NCERT) | T3, T10 |
 | 15 | Multiplier mechanism — round-by-round increase | T1, T9 |
 | 16 | APS from saving data [O] | T7, T10 |
-| 17 | Autonomous investment | T7 |
+| 17 | Autonomous investment | T7, T11 |
 | 18 | AD = output equilibrium reasoning | T7, T10 |
 | 19 | Multiplier from MPS [O] | T7, T9 |
 | 20 | Saving = investment approach [O] | T6, T10 |
+| 21 | MPC from consumption data [O] | T11 |
+| 22 | Measures to correct deficient demand | T11 |
 
 ### C4 Government budget and the economy (3 per test)
 | # | Angle | Used in |
@@ -203,9 +219,9 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 1 | Meaning and objectives of the government budget | T2, T10 |
 | 2 | Components: revenue budget and capital budget | T3, T10 |
 | 3 | Revenue receipts: tax and non-tax | T3, T8 |
-| 4 | Direct and indirect taxes; progressive taxation | T1, T5 |
+| 4 | Direct and indirect taxes; progressive taxation | T1, T5, T11 |
 | 5 | Capital receipts: borrowings, recovery of loans, disinvestment | T1, T10 |
-| 6 | Revenue vs capital expenditure | T4 |
+| 6 | Revenue vs capital expenditure | T4, T11 |
 | 7 | Balanced, surplus and deficit budgets | T2, T5 |
 | 8 | Revenue deficit [O] | T2, T5, T8, T9 |
 | 9 | Fiscal deficit [O] | T3, T7, T9 |
@@ -215,7 +231,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 13 | Classifying capital receipts [O] | T6 |
 | 14 | Financing a fiscal deficit | T6, T9 |
 | 15 | Examples of revenue expenditure | T6 |
-| 16 | Public goods and the budget | T7 |
+| 16 | Public goods and the budget | T7, T11 |
 
 ### C5 Open economy macroeconomics (3 per test)
 | # | Angle | Used in |
@@ -225,15 +241,15 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 3 | Capital account items: FDI, FPI, borrowings | T4, T10 |
 | 4 | Balance of trade vs current account balance [O] | T1, T5, T7 |
 | 5 | BoP surplus and deficit; autonomous vs accommodating transactions | T3, T10 |
-| 6 | Change in foreign exchange reserves (as in NCERT) | T5 |
+| 6 | Change in foreign exchange reserves (as in NCERT) | T5, T11 |
 | 7 | Foreign exchange rate: meaning; demand and supply of foreign exchange | T2, T10 |
 | 8 | Flexible exchange rate determination | T3, T8 |
 | 9 | Fixed exchange rate; devaluation vs depreciation | T2, T7 |
 | 10 | Appreciation and depreciation — effect on exports and imports | T1, T8 |
-| 11 | Managed floating | T1 |
+| 11 | Managed floating | T1, T11 |
 | 12 | Merits and demerits of fixed and flexible regimes | T4, T9 |
 | 13 | Effect of rise in foreign income / domestic inflation on the exchange rate | T4, T9 |
-| 14 | Invisibles: examples | T6 |
+| 14 | Invisibles: examples | T6, T11 |
 | 15 | Effect of exports and imports on BoP | T7 |
 | 16 | Speculation and the exchange rate | T6 |
 | 17 | Shifts in demand and supply of foreign exchange | T6 |
@@ -263,6 +279,13 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 20 | Industry and the public sector 1950–90 | T6 |
 | 21 | Composition of foreign trade after independence | T6, T10 |
 | 22 | Infrastructure on the eve of independence | T6 |
+| 23 | Railways under British rule | T11 |
+| 24 | Zamindari system and its effects | T11 |
+| 25 | Conflicts between goals of planning | |
+| 26 | Mahalanobis and the Second Five Year Plan | T11 |
+| 27 | Land reforms in Kerala and West Bengal | |
+| 28 | Small-scale industry: definition by investment | T11 |
+| 29 | Problems of industrial licensing | T11 |
 
 ### D2 Economic reforms since 1991 (3 per test)
 | # | Angle | Used in |
@@ -279,9 +302,9 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 10 | WTO: role and India's membership | T2, T7 |
 | 11 | Appraisal: growth of GDP, services; agriculture and industry concerns | T3, T10 |
 | 12 | Criticisms of reforms: neglect of agriculture, jobless growth | T4, T9 |
-| 13 | Fiscal reforms after 1991 | T6 |
-| 14 | Outsourcing and IT-enabled services | T7 |
-| 15 | Navratnas and Maharatnas | T6 |
+| 13 | Fiscal reforms after 1991 | T6, T11 |
+| 14 | Outsourcing and IT-enabled services | T7, T11 |
+| 15 | Navratnas and Maharatnas | T6, T11 |
 | 16 | Effect of globalisation on small industries | T6 |
 
 ### D3 Current challenges (5 per test)
@@ -301,15 +324,15 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 12 | Self-employed, regular salaried and casual workers | T1, T7 |
 | 13 | Formal and informal sector | T1, T5, T8 |
 | 14 | Jobless growth; casualisation; informalisation | T3, T9 |
-| 15 | Employment generation policies (as in NCERT) | T4 |
+| 15 | Employment generation policies (as in NCERT) | T4, T11 |
 | 16 | Environment: functions; carrying capacity and absorptive capacity | T2, T5 |
-| 17 | State of India's environment: land degradation, pollution | T4 |
+| 17 | State of India's environment: land degradation, pollution | T4, T11 |
 | 18 | Global warming and ozone depletion | T3, T10 |
-| 19 | Sustainable development: definition (Brundtland) and strategies | T1 |
+| 19 | Sustainable development: definition (Brundtland) and strategies | T1, T11 |
 | 20 | Strategies: CNG, non-conventional energy, biocomposting, biopest control, traditional knowledge | T3, T10 |
-| 21 | Health as human capital | T6 |
+| 21 | Health as human capital | T6, T11 |
 | 22 | Migration and on-the-job training | T6 |
-| 23 | Problems of rural credit | T6 |
+| 23 | Problems of rural credit | T6, T11 |
 | 24 | Animal husbandry and fisheries | T6 |
 | 25 | Rural and urban employment patterns | T10 |
 | 26 | Ozone depletion and CFCs | T9 |
@@ -323,10 +346,10 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | 3 | Pakistan: mixed economy, Green Revolution, remittances | T3, T8 |
 | 4 | Demographic indicators: population growth, sex ratio, urbanisation (from NCERT table) [O] | T5, T10 |
 | 5 | GDP growth and sectoral contribution (from NCERT table) [O] | T3, T10 |
-| 6 | Human development indicators: life expectancy, literacy, poverty (from NCERT table) [O] | T4 |
+| 6 | Human development indicators: life expectancy, literacy, poverty (from NCERT table) [O] | T4, T11 |
 | 7 | One-child policy in China and its effects | T2, T9 |
 | 8 | Strategies: comparison and appraisal | T1, T9 |
 | 9 | Sectoral share of workforce — comparison | |
 | 10 | Commune system in China | T6 |
-| 11 | Pakistan: nationalisation and industrial policy | T6 |
+| 11 | Pakistan: nationalisation and industrial policy | T6, T11 |
 | 12 | Poverty — comparison | T7 |
