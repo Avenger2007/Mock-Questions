@@ -317,3 +317,29 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 
 ### Tools added
 - `docs/blueprints/computer_science.md` (pattern, 2025 PYQ analysis, weights, formats, out-of-syllabus list) and `docs/blueprints/computer_science_coverage.md` (case themes and angle banks with "Used in" columns).
+
+## Economics (309) — revised to the CUET 2027 standard (completed 3 Nov 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `6216323` (blueprint, coverage map, pilot Test 1) … `020da25` (Test 15) on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | 15 old papers of 50 questions, mostly easy (about 35 / 12 / 3), status `pending_revision` | **15 rewritten tests** (`CUET ECONOMICS TEST 1–15.json`), planned first in a coverage map; status `revised` |
+| Paper structure | 50 compulsory | unchanged: 50 compulsory questions, 60 min, +5 / −1 (NTA pattern) |
+| Unit weights | — | Micro 16 (M1 6, M2 4, M3 4, M4 2); Macro 19 (C1 5, C2 4, C3 4, C4 3, C5 3); IED 15 (D1 5, D2 3, D3 5, D4 2). The 5-question case set counts inside its unit; where that unit's quota is below 5, the extra questions come from another unit of the same course |
+| Difficulty | mostly easy | **8 easy / 32 medium / 10 hard in every test** |
+| Formats | almost all direct | per test: one case set (5), 5 match-list, 5 statements, 3 assertion–reason, 3 sequence, 2 data-table, at least 6 numericals, the rest direct |
+| Numericals | few | calculator-free numbers, every answer worked out step by step (national income, elasticity, costs, multiplier, deficits, money multiplier, BoP) |
+| Explanations | 1–2 lines | `Answer:` line, then Given / Step / Common mistake (numericals, data, case sets) or Why / Why not the others / Key point; all from NCERT Classes 11–12 Economics |
+| Order and keys | unit-wise | random order; key about 13 / 12 / 13 / 12 per test; no letter more than 3 times in a row; correct option never clearly the longest; statement and assertion–reason answers varied |
+| Syllabus | — | checked against `CUET SYLLABUS/md/Economics - 309.md`; no Statistics for Economics, monopoly or oligopoly theory, IS–LM, or the poverty and infrastructure chapters |
+
+**Case-set themes:** 1 national income from a data table; 2 consumer equilibrium and budget line; 3 money creation by banks; 4 land reforms and the Green Revolution; 5 production and cost schedule; 6 two-sector income determination; 7 human capital and employment (district workforce data); 8 firm under perfect competition (cost table, profit, shut-down); 9 state government budget (revenue, fiscal and primary deficits); 10 reforms since 1991 and GST (incl. a disinvestment calculation); 11 price ceiling and price floor (grain market schedule); 12 balance of payments table; 13 India–China–Pakistan indicators; 14 price elasticity by the percentage, expenditure and geometric methods; 15 environment and sustainable development (district report).
+
+**Verification:** `validate_papers.py CUET --subject "Economics"` — 0 parse errors, 0 wrong counts, 0 key/explanation mismatches, 0 runs > 3, 0 self-referential options, 0 within- or cross-paper duplicate stems, 0 difficulty deviations; series key A 25.3%, B 24.9%, C 25.6%, D 24.1%. Before each build, a check against all earlier revised tests (sub-topic and stem similarity) led to renaming or rewording near-repeats; a scan for out-of-syllabus terms found only harmless uses (e.g. "Britain kept a monopoly over India's trade").
+
+**Known limits:** numerical and data angles marked [O] (national income, multiplier, deficits, money creation, BoP balances, elasticity) recur across tests with new numbers, as the coverage map allows; one non-numerical angle (M1 17, substitutes and complements) was used 4 times, once more than the cap, each time in a different format. The Test 13 indicator table uses approximate figures that follow the pattern of NCERT's comparison, so questions ask about comparisons rather than exact values. The coverage map was extended twice (before Tests 6 and 11) as angle banks ran low.
+
+### Tools added
+- `docs/blueprints/economics.md` (pattern, 2025 PYQ analysis, weights, difficulty, formats, out-of-syllabus list) and `docs/blueprints/economics_coverage.md` (15 case themes and 275 angles with "Used in" columns).
