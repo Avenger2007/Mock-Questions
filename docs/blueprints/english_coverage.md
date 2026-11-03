@@ -58,6 +58,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T11 | biography, monologue, anthology, manuscript, austere, docile, haughty, impetuous, guarantee, ingenious, tedious, enormous, profound, epitome, diminish, mild, vanish, brave, foe, permit, fleet, alleviate, mitigate |
 | T12 | cartographer, botanist, sculptor, archaeologist, committee, ostentatious, dwindling, commence, ferocious, innocuous, absurd, brief, maximum, arrival, hide, superior, volunteer, hermit, recluse |
 | T13 | autocracy, theocracy, bureaucracy, plutocracy, receive, devastating, precarious, immense, perilous, tremble, sturdy, arrive, reside, attract, compassionate, taciturn, immigrant, mediator, arbitrator |
+| T14 | verbatim, unanimous, simultaneous, spontaneous, brisk, frail, sombre, shrewd, beginning, tranquil, irritable, vigorous, serene, exacerbate, relaxed, ancestors, presence, external, weary, praise, pessimist, pacify, soothe |
 
 ### C2 Idioms
 
@@ -76,6 +77,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T11 | kill two birds with one stone, back to square one, cry over spilt milk, in the long run |
 | T12 | on thin ice, read between the lines, the ball is in your court, sit on the fence |
 | T13 | a fish out of water, keep one's chin up, let off steam, in black and white |
+| T14 | go the extra mile, break the bank, in two minds, get the hang of |
 
 ### C3 Phrasal verbs and collocations
 
@@ -94,6 +96,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T11 | pull through, pull off, pull out, pull up, look up to, take part |
 | T12 | hold on, hold up, hold back, hold out, do without, take turns |
 | T13 | cut down on, cut off, cut in, cut out for, meet a deadline, run a business, break a record, make an appointment, carry on, take advantage |
+| T14 | pick up, pick out, pick on, pick at, calm down, take a break |
 
 ### C4 Confusables, word forms, prepositions and linkers
 
@@ -112,3 +115,4 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T11 | its/it's, fewer/less, imply/infer, satisfactory, pronunciation, prevent from, aim at, hence, while |
 | T12 | addicted to, boast of, persist in, acquainted with, cereal/serial, moral/morale, lie/lay, humorous, obedience, translated into, full of, as soon as, instead of |
 | T13 | brake/break, later/latter, dual/duel, independence, reliable, in charge of, grateful to, so that (result), not only but also |
+| T14 | hear/here, raise/rise, disinterested/uninterested, anxiety, comfortably, worried about, result in, even if, once |
