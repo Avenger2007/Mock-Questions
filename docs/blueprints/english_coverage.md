@@ -54,6 +54,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T7 | hypocrite, cosmopolitan, connoisseur, fugitive, conscience, drowsy, vigilant, intrepid, astonished, trivial, dismal, fertile, accept, ally, rapid, lend, mortuary, loquacious, voluble |
 | T8 | altruist, sceptic, glutton, nomad, mischievous, resilient, ravenous, adversity, apprehended, pernicious, lenient, spacious, modest, exterior, hinder, major, amphibian, fragile, brittle |
 | T9 | arsonist, egotist, centenarian, eavesdropper, meek, morose, lavish, nimble, separate, scorching, exorbitant, sincere, acumen, assemble, rare, remote, mend, bizarre, deficient, exhausted, hydrophobia, filthy, squalid |
+| T10 | illegible, invincible, inaudible, inaccessible, definitely, lethal, prolific, rectify, desolate, obsequious, virtue, punctual, ancient, sorrow, shallow, dawn, agenda, vivacious, sprightly |
 
 ### C2 Idioms
 
@@ -68,6 +69,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T7 | a bolt from the blue, pull someone's leg, over the moon, at sixes and sevens |
 | T8 | a dark horse, a white elephant, a red-letter day, add fuel to the fire |
 | T9 | a wet blanket, face the music, through thick and thin, a hot potato |
+| T10 | a needle in a haystack, jump the gun, by the skin of one's teeth, the tip of the iceberg, in the nick of time, a feather in one's cap, at the drop of a hat, on the house |
 
 ### C3 Phrasal verbs and collocations
 
@@ -82,6 +84,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T7 | break into, break out, break off, break through, take off, do a favour |
 | T8 | fall out, fall through, fall back on, fall behind, lodge a complaint, strike a balance, bear fruit, raise a question, get over, make an effort |
 | T9 | keep up with, keep off, keep on, keep out, put out, catch a cold |
+| T10 | make up, make out, make up for, make off with, hand in, pay tribute |
 
 ### C4 Confusables, word forms, prepositions and linkers
 
@@ -96,3 +99,4 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T7 | averse to, devoid of, indulge in, consist of, advice/advise, beside/besides, emigrate/immigrate, strengthen, permission, proficient in, angry with, since, until |
 | T8 | breath/breathe, eligible/illegible, precede/proceed, variety, dangerous, rely on, familiar with, provided that, otherwise |
 | T9 | sale/sail, altar/alter, born/borne, hesitation, successful, abide by, jealous of, as if, either or |
+| T10 | peace/piece, formerly/formally, ensure/insure, maintenance, argument, responsible for, opposed to, by the time, nevertheless |
