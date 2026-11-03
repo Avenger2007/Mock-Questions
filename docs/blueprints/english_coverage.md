@@ -47,6 +47,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 |---|---|
 | T1 | insomnia, omnipotent, pedestrian, anonymous, candid, frugal, lethargic, meticulous, accommodation, credible, incessant, benevolent, arduous, ephemeral, scarce, ambiguous, timid, lucid, prudent, hostile, novice, illiterate, unlettered |
 | T2 | autobiography, epidemic, carnivore, philanthropist, embarrassed, lucrative, nostalgic, eloquent, dilapidated, audacious, obsolete, reluctant, verbose, humble, vacant, artificial, bibliophile, extempore, impromptu |
+| T3 | ambidextrous, posthumous, panacea, herbivore, affluent, pragmatic, zealous, gullible, necessary, inevitable, ominous, amiable, impartial, renowned, rigid, vital, feeble, temporary, monotonous, garrulous, atheist, annual, yearly |
 
 ### C2 Idioms
 
@@ -54,6 +55,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 |---|---|
 | T1 | break the ice, a blessing in disguise, cut corners, hit the nail on the head, burn the midnight oil |
 | T2 | spill the beans, once in a blue moon, a piece of cake, bite the bullet |
+| T3 | under the weather, cost an arm and a leg, beat around the bush, in hot water |
 
 ### C3 Phrasal verbs and collocations
 
@@ -61,6 +63,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 |---|---|
 | T1 | put off, put up with, put across, put down, take after, take precautions |
 | T2 | look after, look into, look down on, look forward to, call off, make progress |
+| T3 | give up, give in, give away, give off, carry out, break down |
 
 ### C4 Confusables, word forms, prepositions and linkers
 
@@ -68,3 +71,4 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 |---|---|
 | T1 | affect/effect, except/accept, stationery/stationary, attention, consistent, good at, accused of, although, unless |
 | T2 | aware of, comply with, superior to, abstain from, principal/principle, complement/compliment, loose/lose, decision, tirelessly, interested in, prefer to, so that, despite |
+| T3 | desert/dessert, council/counsel, adapt/adopt, economical, responsibility, depend on, different from, no sooner than, whereas |
