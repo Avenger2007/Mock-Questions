@@ -56,6 +56,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T9 | arsonist, egotist, centenarian, eavesdropper, meek, morose, lavish, nimble, separate, scorching, exorbitant, sincere, acumen, assemble, rare, remote, mend, bizarre, deficient, exhausted, hydrophobia, filthy, squalid |
 | T10 | illegible, invincible, inaudible, inaccessible, definitely, lethal, prolific, rectify, desolate, obsequious, virtue, punctual, ancient, sorrow, shallow, dawn, agenda, vivacious, sprightly |
 | T11 | biography, monologue, anthology, manuscript, austere, docile, haughty, impetuous, guarantee, ingenious, tedious, enormous, profound, epitome, diminish, mild, vanish, brave, foe, permit, fleet, alleviate, mitigate |
+| T12 | cartographer, botanist, sculptor, archaeologist, committee, ostentatious, dwindling, commence, ferocious, innocuous, absurd, brief, maximum, arrival, hide, superior, volunteer, hermit, recluse |
 
 ### C2 Idioms
 
@@ -72,6 +73,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T9 | a wet blanket, face the music, through thick and thin, a hot potato |
 | T10 | a needle in a haystack, jump the gun, by the skin of one's teeth, the tip of the iceberg, in the nick of time, a feather in one's cap, at the drop of a hat, on the house |
 | T11 | kill two birds with one stone, back to square one, cry over spilt milk, in the long run |
+| T12 | on thin ice, read between the lines, the ball is in your court, sit on the fence |
 
 ### C3 Phrasal verbs and collocations
 
@@ -88,6 +90,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T9 | keep up with, keep off, keep on, keep out, put out, catch a cold |
 | T10 | make up, make out, make up for, make off with, hand in, pay tribute |
 | T11 | pull through, pull off, pull out, pull up, look up to, take part |
+| T12 | hold on, hold up, hold back, hold out, do without, take turns |
 
 ### C4 Confusables, word forms, prepositions and linkers
 
@@ -104,3 +107,4 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T9 | sale/sail, altar/alter, born/borne, hesitation, successful, abide by, jealous of, as if, either or |
 | T10 | peace/piece, formerly/formally, ensure/insure, maintenance, argument, responsible for, opposed to, by the time, nevertheless |
 | T11 | its/it's, fewer/less, imply/infer, satisfactory, pronunciation, prevent from, aim at, hence, while |
+| T12 | addicted to, boast of, persist in, acquainted with, cereal/serial, moral/morale, lie/lay, humorous, obedience, translated into, full of, as soon as, instead of |
