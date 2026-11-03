@@ -1,5 +1,7 @@
 # IAT Test 1 manual-review package
 
+**Milestone audit, 3 November 2026: HOLD FOR REVISION.** The Tests 1–15 audit at `../audit/milestone_15/AUDIT_REPORT.md` records 15 repeated-task clusters, scientific/model and syllabus issues, and difficulty/explanation gaps despite all papers passing structural checks. Consult that report and its evidence before further authoring or student release. No test content was changed by the audit.
+
 ## Fresh authored papers
 
 `IISER/IAT NEW TEST 2.json` through `IISER/IAT NEW TEST 5.json` distinguish freshly authored papers from the uncommitted earlier drafts lost during a workspace reset. Their generated review files use `IAT_NEW_TEST_<N>` stems. Each remains `pending_revision` for independent academic and timed review. The new standard requires two purpose-built figures each in Biology, Chemistry and Physics and full explanations of all alternatives. Commits preserve drafts between sessions; a commit is not approval for student publication. See `IAT_NEW_TESTS_4_5_REVIEW_NOTES.md` for the item-level mathematics comparison and figure inventory, and `IAT_NEW_TESTS_2_5_EXPLANATION_REVISION.md` for the later detailed-solution revision and verification limits.
