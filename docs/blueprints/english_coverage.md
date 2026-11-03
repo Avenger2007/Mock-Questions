@@ -53,6 +53,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T6 | philatelist, incorrigible, infallible, veteran, benign, cynical, tenacious, voracious, privilege, dormant, ardent, valiant, elated, abhor, diffident, concise, expand, guilty, famous, sharp, oligarchy, antiquated, archaic |
 | T7 | hypocrite, cosmopolitan, connoisseur, fugitive, conscience, drowsy, vigilant, intrepid, astonished, trivial, dismal, fertile, accept, ally, rapid, lend, mortuary, loquacious, voluble |
 | T8 | altruist, sceptic, glutton, nomad, mischievous, resilient, ravenous, adversity, apprehended, pernicious, lenient, spacious, modest, exterior, hinder, major, amphibian, fragile, brittle |
+| T9 | arsonist, egotist, centenarian, eavesdropper, meek, morose, lavish, nimble, separate, scorching, exorbitant, sincere, acumen, assemble, rare, remote, mend, bizarre, deficient, exhausted, hydrophobia, filthy, squalid |
 
 ### C2 Idioms
 
@@ -66,6 +67,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T6 | call it a day, a far cry from, keep one's fingers crossed, steal the show |
 | T7 | a bolt from the blue, pull someone's leg, over the moon, at sixes and sevens |
 | T8 | a dark horse, a white elephant, a red-letter day, add fuel to the fire |
+| T9 | a wet blanket, face the music, through thick and thin, a hot potato |
 
 ### C3 Phrasal verbs and collocations
 
@@ -79,6 +81,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T6 | go through, go off, go over, go on, look up, heavy traffic |
 | T7 | break into, break out, break off, break through, take off, do a favour |
 | T8 | fall out, fall through, fall back on, fall behind, lodge a complaint, strike a balance, bear fruit, raise a question, get over, make an effort |
+| T9 | keep up with, keep off, keep on, keep out, put out, catch a cold |
 
 ### C4 Confusables, word forms, prepositions and linkers
 
@@ -92,3 +95,4 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T6 | quiet/quite, access/excess, allusion/illusion, admission, simplify, accustomed to, capable of, in case, yet |
 | T7 | averse to, devoid of, indulge in, consist of, advice/advise, beside/besides, emigrate/immigrate, strengthen, permission, proficient in, angry with, since, until |
 | T8 | breath/breathe, eligible/illegible, precede/proceed, variety, dangerous, rely on, familiar with, provided that, otherwise |
+| T9 | sale/sail, altar/alter, born/borne, hesitation, successful, abide by, jealous of, as if, either or |
