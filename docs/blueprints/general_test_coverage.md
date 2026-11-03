@@ -1,0 +1,58 @@
+# Coverage map — CUET General Test, Tests 1–15
+
+Written **before** any test, so that repeats are prevented rather than fixed. Rules:
+- Every data-interpretation theme is used **once** in the series (§A).
+- The quant and reasoning slots rotate as in §B, so that every syllabus topic appears several times with new numbers and set-ups.
+- Every **fact** asked as an answer (GK, science, environment, current affairs) is tested **once** in the series. Before a test is shipped, its facts are checked against the ledgers in §C and then added to them (`mark_gt.py`). Distractors may repeat.
+
+## A. Data-interpretation themes (one per test)
+
+| Test | Table | Test | Table |
+|---|---|---|---|
+| 1 | Students enrolled in five streams of a college over two years | 9 | A family's monthly budget (percentage shares) |
+| 2 | Monthly rainfall in four cities | 10 | Train tickets sold by class over a week |
+| 3 | Sales of four products by a shop over four quarters | 11 | Books issued by a library by subject |
+| 4 | Population and literacy of five villages | 12 | Output of a factory by shift |
+| 5 | Marks of six students in four subjects | 13 | Tourist arrivals in five states |
+| 6 | Electricity use of a housing society by month | 14 | Patients at a district hospital by department |
+| 7 | Production of four crops in a district | 15 | Mobile data used by a family by month |
+| 8 | Runs scored by five batters in a series | | |
+
+## B. Slot rotation
+
+**Quant (Q, 10 per test).** Fixed slots: number system, profit–loss–discount, interest, time and work, speed–distance–time, averages/ages/mixtures, algebra, mensuration. Alternating slots:
+
+| Slot | Odd tests | Even tests |
+|---|---|---|
+| Q-ratio | percentage | ratio, proportion or partnership |
+| Q-geom | geometry or coordinate geometry | heights and distances, or probability |
+
+Mensuration rotates through 2-D areas, cylinders/cones/spheres, cuboids and surface area. Interest alternates simple and compound. Speed alternates trains, boats and streams, and plain journeys.
+
+**Mental ability (M, 7 per test).** Series, coding, blood relations, direction, ranking, analogy or classification (alternate), calendar (odd tests) or clock (even tests).
+
+**Logical reasoning (L, 6 per test).** Syllogism, a seating or scheduling puzzle, Venn/sets, statement–conclusion or assumption (alternate), inequality or mathematical operations (alternate), assertion–reason.
+
+**General knowledge (G, 8), science and environment (S, 9) and current affairs (C, 5)** follow the slots in the blueprint (§3); the facts are recorded in §C.
+
+## C. Ledgers (filled as tests are shipped)
+
+Facts only: the answer to a GK, science, environment or current-affairs item, and each correct pair of a match item, written as a short key (for example `article 21`, `tropic of cancer states`, `champions trophy 2025`).
+
+### F1 Static GK
+
+| Test | Facts |
+|---|---|
+| T1 | chauri chaura 1922, tropic of cancer states, pacific largest ocean, article 14, article 21, article 32, article 51a, rajya sabha permanent house, repo rate, gitanjali tagore |
+
+### F2 Science and environment
+
+| Test | Facts |
+|---|---|
+| T1 | newton si unit force, floatation archimedes ship, baking soda nahco3, lemon juice acidic, cerebellum balance, scurvy vitamin c, rickets vitamin d, goitre iodine, night blindness vitamin a, grassland food chain, ozone layer stratosphere, project tiger 1973 |
+
+### F3 Current affairs
+
+| Test | Facts |
+|---|---|
+| T1 | gst two slabs september 2025, cop30 belem, champions trophy 2025, axiom-4 shubhanshu shukla, nobel peace 2025 machado, nobel literature 2025 krasznahorkai, nobel chemistry 2025 mofs, nobel physics 2025 clarke |
