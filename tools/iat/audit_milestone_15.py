@@ -43,7 +43,7 @@ for t in range(1,16):
     else:render.append(dict(test=t,record_exists=False))
 
 with (OUT/'question_diagnostics.csv').open('w',newline='') as f:
-    w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+    w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
 summaries=[]
 for t in range(1,16):
     rr=[r for r in rows if r['test']==t]
