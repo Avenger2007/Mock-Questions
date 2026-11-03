@@ -384,3 +384,10 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 
 ### Tools added
 - `docs/blueprints/economics.md` (pattern, 2025 PYQ analysis, weights, difficulty, formats, out-of-syllabus list) and `docs/blueprints/economics_coverage.md` (15 case themes and 275 angles with "Used in" columns).
+
+## IAT New Tests 12 and 13 — authored review drafts (3 Nov 2026)
+
+- Authored 120 questions from reserved syllabus slots. Each paper has 15 questions per subject, editorial tiers 9/42/9, balanced 15-per-letter keys, detailed WHY and distractor analyses, and displayed derivations for all Mathematics/Physics items.
+- Drew and registered 11 question-bearing figures in Test 12 and 10 in Test 13. The 31- and 30-page review PDFs contain 60 questions and 60 solutions each, with source/delivery/PDF/image hashes, no empty pages, no overfull text and no missing glyphs. Expanded all one-sentence `Why` sections and replaced pooled distractor rationales with individual errors.
+- Replaced text-similar combustion, divisibility, monotonicity, trigonometry and lattice-path tasks; documented residual method-distinct overlap-screen candidates. Updated the 25-test register to 780 authored review-draft slots and 720 reservations, and merged independent `main` Economics/Computer Science changes into this IAT branch without changing `main`.
+- See `IISER/review/IAT_NEW_TESTS_12_13_REVIEW_NOTES.md` for 30 Mathematics task checks and remaining independent academic, timed-student and 2027-notification review gates.

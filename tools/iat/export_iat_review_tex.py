@@ -27,6 +27,7 @@ preamble=r'''\documentclass[10pt,a4paper]{article}
 \setsansfont{DejaVu Sans}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{4pt}
+\emergencystretch=2em
 \linespread{1.10}
 \definecolor{brand}{HTML}{276F72}
 \pagestyle{fancy}\fancyhf{}\fancyhead[L]{\textcolor{brand}{OURMOCKS / IAT PREPARATION}}
