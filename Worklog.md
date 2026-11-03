@@ -343,3 +343,30 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 
 ### Tools added
 - `docs/blueprints/economics.md` (pattern, 2025 PYQ analysis, weights, difficulty, formats, out-of-syllabus list) and `docs/blueprints/economics_coverage.md` (15 case themes and 275 angles with "Used in" columns).
+
+## English (101) — revised to the CUET 2027 standard (completed 4 Nov 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `b780495` (blueprint, coverage map, pilot Test 1) … `bdcb6ca` (Test 15) on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | 15 old papers of 50 questions, mostly easy (about 35 / 12 / 3), status `pending_revision` | **15 rewritten tests** (`CUET ENGLISH TEST 1–15.json`), planned first in a coverage map; status `revised` |
+| Paper structure | 50 compulsory | unchanged: 50 compulsory questions, 60 min, +5 / −1 (NTA pattern) |
+| Area weights | — | Reading Comprehension 15 (factual, narrative and literary passages, 5 questions each); Verbal Ability 35 (rearranging 5, match 5, correct word 14, synonyms/antonyms 6, one-word substitution 2, voice/narration/correct sentence 3) |
+| Passages | — | 45 original passages (≤ 300 words; verse in alternate tests), one theme each, never reused; factual passages checked against standard sources |
+| Difficulty | mostly easy | **8 easy / 32 medium / 10 hard in every test** |
+| Formats | almost all direct | per test: 15 passage, 5 sequence, 5 match-list, 3 statements / multi-select, 22 direct; no assertion–reason (NTA does not set it in English) |
+| Explanations | 1–2 lines | `Answer:` line, then Why / Why not the others / Key point; passage answers quote the deciding line; rearrangements name the links that fix the order |
+| Order and keys | section-wise | random order with each passage set kept together; key 13 / 12 / 13 / 12 (or 12 / 13 / 12 / 13) per test; no letter more than 3 times in a row; correct option never clearly the longest |
+| Syllabus | — | checked against `CUET SYLLABUS/md/English - 101.md`; no textbook literature, grammar terminology for its own sake or American spelling |
+
+**Coverage ledgers:** 631 targets, none tested twice — 313 words (synonyms, antonyms, vocabulary, spelling, one-word substitutes), 69 idioms, 102 phrasal verbs and collocations, 147 confusables, word forms, prepositions and linkers (`docs/blueprints/english_coverage.md` §C). Figures of speech recur with new examples, as the blueprint allows.
+
+**Verification:** `validate_papers.py CUET --subject "English"` — 0 parse errors, 0 wrong counts, 0 key/explanation mismatches, 0 runs > 3, 0 self-referential options, 0 within- or cross-paper duplicate stems, 0 RC questions missing their passage, 0 difficulty deviations; series key A 25.5%, B 24.5%, C 25.9%, D 24.1%. `eng_check.py` was run on every draft (counts, key, passage length, longest-option, ledger repeats, overlap with earlier tests).
+
+**Known limits:** the instruction stems of the verbal-ability formats ("Choose the word most similar in meaning to …") repeat by design, so the overlap check flags them; the targets differ in every case. In rearrangement items, adverbial phrases can often move, so distractor orders were checked by hand for a second readable order; one such distractor in Test 4 (`14cf7ef`) and four more in Tests 2–4 (`cba8ede`) were replaced after shipping. In a few easy rearrangements, the only wrong orders are ones that start with a lower-case part.
+
+### Tools added
+- `docs/blueprints/english.md` (pattern, 2026 PYQ analysis, weights, difficulty, formats, passage rules, out-of-scope list) and `docs/blueprints/english_coverage.md` (passage themes, slot plan, target ledgers).
+- `tools/cuet_english/` — compact draft format and converter, builder, checker, ledger marker, ship script, item patcher (`patch_item.py`) and series re-indexer (`reindex_series.py`); drafts of all 15 tests in `drafts/`. The `.py` files are now tracked (`.gitignore` exception, as for `tools/iat`).
