@@ -46,21 +46,25 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | Test | Targets |
 |---|---|
 | T1 | insomnia, omnipotent, pedestrian, anonymous, candid, frugal, lethargic, meticulous, accommodation, credible, incessant, benevolent, arduous, ephemeral, scarce, ambiguous, timid, lucid, prudent, hostile, novice, illiterate, unlettered |
+| T2 | autobiography, epidemic, carnivore, philanthropist, embarrassed, lucrative, nostalgic, eloquent, dilapidated, audacious, obsolete, reluctant, verbose, humble, vacant, artificial, bibliophile, extempore, impromptu |
 
 ### C2 Idioms
 
 | Test | Targets |
 |---|---|
 | T1 | break the ice, a blessing in disguise, cut corners, hit the nail on the head, burn the midnight oil |
+| T2 | spill the beans, once in a blue moon, a piece of cake, bite the bullet |
 
 ### C3 Phrasal verbs and collocations
 
 | Test | Targets |
 |---|---|
 | T1 | put off, put up with, put across, put down, take after, take precautions |
+| T2 | look after, look into, look down on, look forward to, call off, make progress |
 
 ### C4 Confusables, word forms, prepositions and linkers
 
 | Test | Targets |
 |---|---|
 | T1 | affect/effect, except/accept, stationery/stationary, attention, consistent, good at, accused of, although, unless |
+| T2 | aware of, comply with, superior to, abstain from, principal/principle, complement/compliment, loose/lose, decision, tirelessly, interested in, prefer to, so that, despite |
