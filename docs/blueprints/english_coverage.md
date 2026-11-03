@@ -49,6 +49,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T2 | autobiography, epidemic, carnivore, philanthropist, embarrassed, lucrative, nostalgic, eloquent, dilapidated, audacious, obsolete, reluctant, verbose, humble, vacant, artificial, bibliophile, extempore, impromptu |
 | T3 | ambidextrous, posthumous, panacea, herbivore, affluent, pragmatic, zealous, gullible, necessary, inevitable, ominous, amiable, impartial, renowned, rigid, vital, feeble, temporary, monotonous, garrulous, atheist, annual, yearly |
 | T4 | amateur, octogenarian, polyglot, plagiarism, rhythm, frivolous, meagre, diligent, hospitable, sagacious, opaque, flimsy, optimist, abundant, victory, ascend, somnambulist, insolvent, bankrupt |
+| T5 | misanthrope, omniscient, contemporary, epitaph, occurrence, pristine, jubilant, abandon, vague, authentic, obstinate, prosper, conceal, compulsory, generosity, ubiquitous, apiary, eternal, everlasting |
 
 ### C2 Idioms
 
@@ -58,6 +59,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T2 | spill the beans, once in a blue moon, a piece of cake, bite the bullet |
 | T3 | under the weather, cost an arm and a leg, beat around the bush, in hot water |
 | T4 | a storm in a teacup, see eye to eye, at the eleventh hour, the apple of one's eye |
+| T5 | turn a blind eye, a drop in the ocean, the last straw, get cold feet, throw in the towel, on cloud nine, in the same boat, a wild goose chase |
 
 ### C3 Phrasal verbs and collocations
 
@@ -67,6 +69,7 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T2 | look after, look into, look down on, look forward to, call off, make progress |
 | T3 | give up, give in, give away, give off, carry out, break down |
 | T4 | bring up, bring about, bring out, bring down, commit a crime, deliver a speech, pay a visit, keep a promise, run out of, come across |
+| T5 | turn down, turn up, turn out, turn in, set up, draw a conclusion |
 
 ### C4 Confusables, word forms, prepositions and linkers
 
@@ -76,3 +79,4 @@ Targets only: the answer word of a synonym, antonym, one-word or vocabulary item
 | T2 | aware of, comply with, superior to, abstain from, principal/principle, complement/compliment, loose/lose, decision, tirelessly, interested in, prefer to, so that, despite |
 | T3 | desert/dessert, council/counsel, adapt/adopt, economical, responsibility, depend on, different from, no sooner than, whereas |
 | T4 | weather/whether, personal/personnel, lightning/lightening, patience, applicable, congratulate on, fond of, lest, as long as |
+| T5 | elicit/illicit, eminent/imminent, cite/site, beneficial, efficiency, insist on, suffering from, neither nor, therefore |
