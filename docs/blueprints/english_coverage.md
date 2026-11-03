@@ -1,0 +1,66 @@
+# Coverage map — CUET English, Tests 1–15
+
+Written **before** any test, so that repeats are prevented rather than fixed. Rules:
+- Every passage theme is used **once** in the series (§A).
+- Every **target** word, idiom, phrasal verb and one-word substitute is tested **once** in the series. Before a test is shipped, its targets are checked against the ledgers in §C and then added to them (`mark_eng.py`). Distractors may repeat.
+- Figures of speech (a closed set) may recur, always with new examples.
+- Each test follows the area weights and V3/V4 mixes of the blueprint (§3).
+
+## A. Passage themes per test (all original, ≤ 300 words)
+
+| Test | R1 Factual | R2 Narrative | R3 Literary |
+|---|---|---|---|
+| 1 | How the Indian monsoon forms and why it matters | A girl's first week running a village library | Dawn at a riverside ghat (descriptive prose) |
+| 2 | The mangroves of the Sundarbans | An old cobbler and a schoolboy | Rain on a tin roof (verse) |
+| 3 | How vaccines train the immune system | A train journey and a lost ticket | A banyan tree through the seasons (prose) |
+| 4 | The stepwells of Gujarat and Rajasthan | A grandmother teaching a family recipe | Night sky over the desert (verse) |
+| 5 | Microplastics in the oceans | The scholarship letter that arrived late | Autumn in a Himalayan orchard (prose) |
+| 6 | How UPI changed payments in India | A cricket final in a small town | The sea at a fishing village (verse) |
+| 7 | Sleep and memory | The lost dog that came home | A market at dusk (prose) |
+| 8 | Millets and nutrition | An apprentice potter's first pot | A letter home from the hills (verse) |
+| 9 | Solar energy in rural India | The boy who wanted to fly kites | An old house before demolition (prose) |
+| 10 | Coral reefs and bleaching | A nurse's night shift in a district hospital | In praise of an old bicycle (verse) |
+| 11 | The printing press and early newspapers in India | A young chess player's first defeat | First rain on parched earth (prose) |
+| 12 | Honeybees and pollination | A migrant worker's journey home | The lighthouse keeper (verse) |
+| 13 | Earthquakes and safe buildings | A teacher in a hill school | A museum at night (prose) |
+| 14 | Stress and the body's response | A family's first smartphone | A spring festival of colours (verse) |
+| 15 | India's Moon missions | A shy student at a debate | A river in flood (prose) |
+
+## B. Verbal-ability slots per test
+
+| Section | Qs | Slot plan |
+|---|---|---|
+| V1 Rearranging the parts | 5 | 3 "form a meaningful sentence", 1 "complete the given opening", 1 four-sentence paragraph order |
+| V2 Match the following | 5 | 1 idioms ↔ meanings; 1 phrasal verbs ↔ meanings; 1 figures of speech ↔ examples; 1 one-word substitutes ↔ definitions; 1 rotating (idioms in sentences, words ↔ meanings, collocations, prepositions in sentences) |
+| V3 Choosing the correct word | 14 | confusables 3, word forms 2, prepositions 2, conjunctions/linkers 2, phrasal verbs/collocations 2, spelling 1, context vocabulary 2 |
+| V4 Synonyms and antonyms | 6 | 3 synonyms (1 in a sentence), 3 antonyms (1 in a sentence); one of the six is a "select the correct pairs" multi-select |
+| V5 One-word substitution | 2 | 1 single answer, 1 multi-select |
+| V6 Transformation and correctness | 3 | 1 voice, 1 narration, 1 choose the correct sentence |
+
+## C. Ledgers (filled as tests are shipped)
+
+Targets only: the answer word of a synonym, antonym, one-word or vocabulary item; the idioms and phrasal verbs in List-I of a match; the phrasal verb or collocation that fills a blank; the confusable pair tested.
+
+### C1 Words (synonyms, antonyms, vocabulary, spelling, one-word substitutes)
+
+| Test | Targets |
+|---|---|
+| T1 | insomnia, omnipotent, pedestrian, anonymous, candid, frugal, lethargic, meticulous, accommodation, credible, incessant, benevolent, arduous, ephemeral, scarce, ambiguous, timid, lucid, prudent, hostile, novice, illiterate, unlettered |
+
+### C2 Idioms
+
+| Test | Targets |
+|---|---|
+| T1 | break the ice, a blessing in disguise, cut corners, hit the nail on the head, burn the midnight oil |
+
+### C3 Phrasal verbs and collocations
+
+| Test | Targets |
+|---|---|
+| T1 | put off, put up with, put across, put down, take after, take precautions |
+
+### C4 Confusables, word forms, prepositions and linkers
+
+| Test | Targets |
+|---|---|
+| T1 | affect/effect, except/accept, stationery/stationary, attention, consistent, good at, accused of, although, unless |
