@@ -370,3 +370,30 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 ### Tools added
 - `docs/blueprints/english.md` (pattern, 2026 PYQ analysis, weights, difficulty, formats, passage rules, out-of-scope list) and `docs/blueprints/english_coverage.md` (passage themes, slot plan, target ledgers).
 - `tools/cuet_english/` — compact draft format and converter, builder, checker, ledger marker, ship script, item patcher (`patch_item.py`) and series re-indexer (`reindex_series.py`); drafts of all 15 tests in `drafts/`. The `.py` files are now tracked (`.gitignore` exception, as for `tools/iat`).
+
+## General Test (501) — revised to the CUET 2027 standard (completed 4 Nov 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `045851f` (blueprint, coverage map, pilot Test 1) … `bbb3580` (Test 15) on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | 15 old papers of 50 questions, status `pending_revision` | **15 rewritten tests** (`CUET GENERAL TEST TEST 1–15.json`), planned first in a coverage map; status `revised` |
+| Paper structure | 50 compulsory | unchanged: 50 compulsory questions, 60 min, +5 / −1 (NTA pattern) |
+| Section weights | — | quantitative aptitude 10, data interpretation set 5, mental ability 7, logical reasoning 6, static GK 8, general science and environment 9, current affairs 5 |
+| Data sets | — | 15 original tables, one theme each (enrolment, rainfall, shop sales, marks, village literacy, family budget, electricity, crops, cricket runs, train tickets, library books, factory shifts, tourist arrivals, hospital patients, mobile data) |
+| Difficulty | uneven | **8 easy / 32 medium / 10 hard in every test** |
+| Formats | almost all direct | per test: 5 data-set, 3 match-list, 3 statements, 2 assertion–reason, 2 sequence, the rest direct or numerical |
+| Explanations | 1–2 lines | quantitative: Given / Step / Common mistake; reasoning: Answer steps / Why not the others / Key point; GK, science and current affairs: Why / Why not the others / Key point |
+| Order and keys | section-wise | random order with the data set kept together; key 13 / 12 / 13 / 12 per test; no letter more than 3 times in a row; correct option never the longest |
+| Current affairs | dated | 75 items from Jan 2025 to Oct 2026, each checked online before writing, with its date in the explanation; political and sensitive topics left out |
+
+**Coverage ledgers:** each test marks 31 targets (14 static GK, 12 science and environment, 5 current affairs) in `docs/blueprints/general_test_coverage.md`; `gt_check.py` flags any target used before (`REPEAT-TARGET`), and every flag was replaced before shipping. Quantitative and reasoning sub-topics were rotated so that no question type repeats across the series.
+
+**Verification:** `validate_papers.py CUET --subject "General Test"` — 0 parse errors, 0 wrong counts, 0 key/explanation mismatches, 0 runs > 3, 0 self-referential options, 0 within- or cross-paper duplicate stems, 0 difficulty deviations; series key A 26.0%, B 24.0%, C 26.0%, D 24.0%. `gt_check.py` was run on every draft (difficulty, key, formats, longest-option, ledger repeats, overlap with earlier tests).
+
+**Known limits:** a few current-affairs facts rest on news reports rather than an official release (for example medal tables of the 2026 Asian and Commonwealth Games); items avoid figures where sources disagreed. Reasoning instruction stems (syllogism and assumption options) repeat by design.
+
+### Tools added
+- `docs/blueprints/general_test.md` (pattern, weights, difficulty, formats, out-of-scope list) and `docs/blueprints/general_test_coverage.md` (data-set themes, slot rotation, target ledgers).
+- `tools/cuet_gt/` — compact draft format and converter, checker, builder, ledger marker, ship script, item patcher and series re-indexer; drafts of all 15 tests in `drafts/`.
