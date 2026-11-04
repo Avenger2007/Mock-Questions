@@ -55,6 +55,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T10 | chandragupta maurya, harihara bukka vijayanagara, babur mughal, aibak slave dynasty, asiatic society brahmo samaj ramakrishna mission muslim league order, indira point southernmost, fundamental duties statements, garba, lavani, ghoomar, bhangra, one rupee note finance secretary, aravalli oldest, champaran 1917 |
 | T11 | pingali venkayya flag, ganga gangotri, godavari trimbakeshwar, narmada amarkantak, kaveri talakaveri, wellesley dalhousie curzon mountbatten order, lok sabha statements, annual financial statement, greenland largest island, khajuraho, hampi, rani ki vav, mahabodhi, bardoli sardar patel |
 | T12 | jallianwala bagh amritsar, kuchipudi, odissi, manipuri, mohiniyattam, narmada tapi krishna kaveri north south, attorney general statements, income tax direct, kosi sorrow of bihar, ain-i-akbari, baburnama, harshacharita, rajatarangini, president minimum age 35 |
+| T13 | jaipur pink city, forward bloc, ghadar party, home rule league, hsra, k2 kangchenjunga nanda devi anamudi height order, monsoon statements, undp hdr, wef gender gap, imf weo, ti cpi, ganges river dolphin aquatic, president oath cji, akbar jizya |
 
 ### F2 Science and environment
 
@@ -72,6 +73,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T10 | hypermetropia convex lens, neon signs, photosynthesis oxygen from water, conductors feel colder, scurvy, rickets, night blindness, beriberi, silent valley kerala, em spectrum wavelength order, biodiversity hotspots india, mitochondria powerhouse |
 | T11 | rectifier ac dc, vinegar acetic acid, bile liver, malaria protozoan, tb bacterium, ringworm fungus, measles virus, pressure area knife, dachigam hangul, greenhouse effect statements, blood circulation path order, mars red planet |
 | T12 | sodium na, kidneys urea, elastic potential energy, slaked lime, bleaching powder, washing soda, baking soda uses, sound speed solids, keibul lamjao manipur, magnet statements, butterfly life cycle order, chlorophyll magnesium |
+| T13 | diamond hardest, clinical thermometer, concave mirror dentist, heart, lungs, kidneys, brain systems, evaporation wind, wild ass gujarat, plant respiration statements, planets distance order, carbonate acid co2 |
 
 ### F3 Current affairs
 
@@ -89,3 +91,4 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T10 | ai impact summit 2026, hockey asia cup 2025 rajgir, z-morh tunnel sonamarg, iyq 2025 quantum, cji surya kant |
 | T11 | maha kumbh 2025 prayagraj, madhav tiger reserve, fide world cup 2025 sindarov, abel prize 2025 kashiwara, t20 world cup 2026 |
 | T12 | navi mumbai airport 2025, asian games 2026 japan, vice president radhakrishnan, intl year woman farmer 2026, lvm3 bluebird block 2 |
+| T13 | womens t20 wc 2026 australia, nobel literature 2026 carson, nobel physics 2026 halzen icecube, cop31 turkiye antalya, cwg 2026 glasgow |
