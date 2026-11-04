@@ -4,6 +4,8 @@ Updated 3 November 2026. This is an **editorial reservation for 1,500 original q
 
 ## What “equal coverage” means here
 
+The 3 November milestone correction checkpoint updates 80 authored focus records, restores T14 Q37 to a genuine matrix task, and removes T14 Q41's unlisted general-series convergence requirement. Its actual-versus-reserved chapter comparison is in `IISER/review/milestone15_fixes/chapter_coverage.json`. Broad family totals are preserved; this does not establish that every subtopic is equally practised or independently approved. Read the canonical tasks and their syllabus anchors before assigning the remaining 600 slots. The original plan generator now refuses to overwrite these edited slot records.
+
 Each test has **15 Biology, 15 Chemistry, 15 Mathematics and 15 Physics** questions, with no best-three scoring. Across 25 tests, every retained syllabus family is represented. We do not force each chapter to appear the same number of times: genetics is much broader and more frequent in the acquired PYQs than a narrow chapter such as electromagnetic waves. The minimum frequency for a retained family in the reservation is 5 slots; no current family is dropped simply because it was rare in the recent papers. A chapter's slot count is a preparation choice, not an official paper quota.
 
 | Subject | Total | Main repeated families | Smallest retained family allocation | Class 11 / 12 (coarse chapter tags) |

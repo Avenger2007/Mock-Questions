@@ -2,6 +2,11 @@
 import csv,json,re
 from pathlib import Path
 root=Path(__file__).resolve().parents[2]
+# Historical TSV snapshots must never overwrite a reviewed canonical revision.
+for existing in (root / 'IISER').glob('IAT*TEST*.json'):
+    if json.loads(existing.read_text()).get('content_revision') == 'milestone15_fix_v1':
+        raise SystemExit('Historical assembly disabled: edit the corrected canonical JSON; see IISER/revisions/README.md.')
+
 base=json.loads((root/'IISER/IAT NEW TEST 11.json').read_text())
 plan={(int(r['test']),int(r['question'])):r for r in csv.DictReader((root/'docs/blueprints/iat_25_test_slots.tsv').open(),delimiter='\t')}
 images={12:{1:'Taxonomic ranks relating species to genus and family',2:'Upper palisade and lower spongy mesophyll under incident light',4:'Thylakoid proton gradient and ATP synthase orientation',9:'Two resistance markers and the plasmid insertion site',16:'Nitrile carbon bonds and geometry',17:'Adjacent and opposite ligand arrangements on a square plane',21:'Carbonyl structures of ethanal and propanone',28:'Ideal mixture pure-component vapour pressures and composition',46:'Signed piecewise acceleration against time',53:'Piecewise electric field versus position',58:'Prism ray and surface normal angles'},13:{1:'Chloroplast pigments and starch storage evidence',2:'Superior ovary and whorl attachment points',9:'Inward-facing DNA primers on antiparallel strands',15:'900-bp and 600/300-bp restriction-fragment lanes',16:'Nitrogen lone-pair and bond-pair geometries',30:'Reaction quotient pressure values for the two gases',53:'Closed surface and inside/outside charge positions',54:'Resistor network and labelled nodes',55:'Increasing inward flux through the loop',60:'Forward and reverse diode current-voltage plot'}}

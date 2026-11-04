@@ -1,6 +1,6 @@
 # IAT series: restart and repetition checks
 
-The Git repository is the durable source of truth. Continue from the latest remote IAT branch, rather than a prior session's scratch path or download link. Tests 1–15 are authored review drafts on the IAT branches; fetch the latest remote Test 14–15 branch before drafting Test 16, and integrate it with any newer work on `main` without overwriting unrelated changes. Named test branches preserve earlier commits unless explicitly deleted or force-pushed; new work belongs on a new branch.
+The Git repository is the durable source of truth. Continue from the latest remote IAT branch, rather than a prior session's scratch path or download link. Tests 1–15 are authored review drafts. The correction checkpoint is on `fix-iat-milestone-15`, which includes Test 14–15 and the milestone audit; fetch that branch before continuing. Read `IISER/review/milestone15_fixes/CORRECTION_REPORT.md` and resolve remaining academic/timed review before starting Test 16–17. Integrate any newer work on `main` without overwriting unrelated changes. Named test branches preserve earlier commits unless explicitly deleted or force-pushed; new work belongs on a new branch.
 
 | Material | Versioned location | Use |
 |---|---|---|

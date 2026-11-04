@@ -2,6 +2,11 @@
 import csv,json,re
 from pathlib import Path
 root=Path(__file__).resolve().parents[2]
+# Historical TSV snapshots must never overwrite a reviewed canonical revision.
+for existing in (root / 'IISER').glob('IAT*TEST*.json'):
+    if json.loads(existing.read_text()).get('content_revision') == 'milestone15_fix_v1':
+        raise SystemExit('Historical assembly disabled: edit the corrected canonical JSON; see IISER/revisions/README.md.')
+
 base=json.loads((root/'IISER/IAT NEW TEST 9.json').read_text())
 plan={(int(r['test']),int(r['question'])):r for r in csv.DictReader((root/'docs/blueprints/iat_25_test_slots.tsv').open(),delimiter='\t')}
 images={10:{2:'Frog heart chambers and labelled return vessels',3:'G1 and replicated chromosome DNA patterns',9:'Induced target-protein band and controls',18:'Water and metal calorimeter observations',23:'Two reaction-energy profiles with common endpoints',52:'Two circular orbit radii about a planet',53:'Opposite charges and marked x positions',58:'Concave mirror and object inside focal point'},11:{1:'Fruit wall enclosing seed and embryo',2:'Root radial vascular arrangement',8:'Microbial fermentation products',9:'Complementary vector and insert overhangs',17:'Ionisation isomers and sulfate wet-test observations',22:'Carbonyl addition arrow and cyanide pair',28:'Freezing point difference and solvent constant',49:'Elastic and plastic stress-strain slopes',52:'Pendulum length and lift acceleration',57:'Three layers and incident ray',58:'Photoelectric stopping-voltage plot',59:'Hydrogen energy levels and two transitions'}}

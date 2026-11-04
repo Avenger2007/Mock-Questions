@@ -5,6 +5,11 @@ import re
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[2]
+# Historical TSV snapshots must never overwrite a reviewed canonical revision.
+for existing in (root / 'IISER').glob('IAT*TEST*.json'):
+    if json.loads(existing.read_text()).get('content_revision') == 'milestone15_fix_v1':
+        raise SystemExit('Historical assembly disabled: edit the corrected canonical JSON; see IISER/revisions/README.md.')
+
 base = json.loads((root / 'IISER/IAT NEW TEST 13.json').read_text())
 plan = {(int(r['test']), int(r['question'])): r for r in csv.DictReader((root / 'docs/blueprints/iat_25_test_slots.tsv').open(), delimiter='\t')}
 images = {

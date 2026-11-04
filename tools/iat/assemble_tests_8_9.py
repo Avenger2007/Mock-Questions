@@ -2,6 +2,11 @@
 import csv,json,re
 from pathlib import Path
 root=Path(__file__).resolve().parents[2]
+# Historical TSV snapshots must never overwrite a reviewed canonical revision.
+for existing in (root / 'IISER').glob('IAT*TEST*.json'):
+    if json.loads(existing.read_text()).get('content_revision') == 'milestone15_fix_v1':
+        raise SystemExit('Historical assembly disabled: edit the corrected canonical JSON; see IISER/revisions/README.md.')
+
 base=json.loads((root/'IISER/IAT NEW TEST 7.json').read_text())
 plan={(int(r['test']),int(r['question'])):r for r in csv.DictReader((root/'docs/blueprints/iat_25_test_slots.tsv').open(),delimiter='\t')}
 images={8:{2:'Read ovary-whorl attachment',15:'Compare restriction band fragments',17:'Read octahedral splitting and occupancy',28:'Read observed and pure vapour pressures',53:'Read signed electric-field intervals',58:'Read resistor and reactive voltage phasors'},9:{3:'Read Km and Vmax from two rate curves',4:'Identify bundle sheath and mesophyll organisation',17:'Count donor positions and coordination charge',27:'Read pure and observed vapour pressures',46:'Read applied force below static threshold',51:'Read molecule-wall momentum transfer',53:'Read disconnected dielectric insertion',59:'Read hydrogen transition gaps'}}

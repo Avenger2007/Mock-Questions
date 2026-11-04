@@ -95,6 +95,18 @@ for (const s of data.sections) {
 }
 html+='</body></html>';
 fs.writeFileSync(htmlPath,html);
+// Rebuild the offline review HTML even where no compatible browser is installed.
+// This mode performs strict KaTeX parsing but makes no browser-layout claim.
+if (process.env.IAT_HTML_ONLY === '1') {
+  const sha = file => createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+  fs.writeFileSync(path.join(out,stem+'_html_check.json'),JSON.stringify({
+    source_json:path.relative(root,input),source_json_sha256:sha(input),
+    html_sha256:sha(htmlPath),math_expressions:mathCount,
+    strict_math_parse:true,browser_layout_checked:false
+  },null,2)+'\n');
+  console.log(JSON.stringify({html:htmlPath,math_expressions:mathCount,strict_math_parse:true}));
+  process.exit(0);
+}
 const browser=await chromium.launch({executablePath:process.env.IAT_BROWSER,headless:true,
   args:['--no-sandbox','--disable-gpu','--disable-dev-shm-usage']});
 try {

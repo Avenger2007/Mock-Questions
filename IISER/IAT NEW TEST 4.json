@@ -5,7 +5,7 @@
   "title": "IAT New Test 4",
   "test_number": 4,
   "status": "pending_revision",
-  "review_status": "fresh AI-assisted authoring; independent academic review pending",
+  "review_status": "milestone corrections applied; independent academic and timed review pending",
   "schema_version": "ourmocks-iat-flat-1.1",
   "syllabus_source": "IISER/IISER_Aptitude_Test_Syllabus_2026.md; exact listed topic/sub-topic checked",
   "notification_source": "Official IAT 2026 examination page and 2026 Information Brochure, sections 19 and 23; a 2027 brochure has not been verified",
@@ -60,7 +60,7 @@
       "attempt": 15
     }
   ],
-  "revision_date": "2026-10-31",
+  "revision_date": "2026-11-03",
   "difficulty_policy": {
     "easy": 9,
     "medium": 42,
@@ -286,19 +286,20 @@
       "section": "B",
       "subject": "Biology",
       "topic": "Genetics And Evolution",
-      "sub_topic": "Autosomal recessive pedigree conditional risk",
+      "sub_topic": "Latent carrier risk updated by an unaffected first child",
       "class_level": "12",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "Two unaffected parents have an affected child with a fully penetrant autosomal recessive condition. Their next child is unaffected. What is the probability that this unaffected child is a carrier?",
+      "question": "Two unrelated unaffected people each have an affected sibling with the same fully penetrant autosomal-recessive disorder. Each person's parents are known Aa × Aa. The couple's first child is unaffected. With independent family origins and no new mutation, what is the probability their second child is affected?",
       "options": [
-        "A) 2/3",
-        "B) 1/2",
-        "C) 1/4",
-        "D) 3/4"
+        "A) 3/32",
+        "B) 1/9",
+        "C) 1/16",
+        "D) 1/4"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) 2/3.\nGiven: Both unaffected parents must be Aa because they produced aa. The child's genotype probabilities are AA=1/4, Aa=1/2, aa=1/4.\nFormula/Principle: Conditional probability divides carrier probability by probability of being unaffected.\nStep 1: P(unaffected)=3/4.\nStep 2: P(Aa | unaffected)=(1/2)/(3/4)=2/3.\nWhy: The known unaffected status excludes aa before normalising. The affected sibling establishes parental genotypes Aa×Aa, but the observed child is already known not to be aa. Conditional probability renormalises AA and the two Aa outcomes to a three-part unaffected sample space.\nWhy not the others: (B) is unconditional carrier probability; (C) is homozygote probability; (D) is probability of being unaffected.\nKey point: Update the denominator when a phenotype is observed."
+      "explanation": "Answer: (A) 3/32.\nGiven: Each unaffected parent has carrier probability \\(2/3\\); segregation in different pregnancies is independent once parental genotypes are fixed.\nFormula/Principle: Update the probability that both parents are carriers using the unaffected first child.\nStep 1: \\[P(\\text{both carriers})=(2/3)^2=4/9.\\]\nStep 2: \\[P(\\text{first unaffected})=1-\\frac49\\frac14=\\frac89.\\]\nStep 3: \\[P(\\text{both carriers}\\mid\\text{first unaffected})=\\frac{(4/9)(3/4)}{8/9}=\\frac38.\\]\nStep 4: \\[P(\\text{second affected}\\mid\\text{first unaffected})=\\frac38\\frac14=\\frac3{32}.\\]\nWhy: The first child's phenotype provides evidence about the parents' unknown genotypes, even though individual meioses are independent conditional on those genotypes. An unaffected child therefore reduces, but does not eliminate, the chance that both parents carry the recessive allele.\nWhy not the others: (B) ignores the first child's information; (C) incorrectly assigns carrier probability one half to each parent after conditioning; (D) assumes both parental genotypes are already known to be Aa.\nKey point: Separate shared uncertainty about parental genotype from independent segregation.",
+      "syllabus_anchor": "Genetics: inheritance of one gene and genetic disorders"
     },
     {
       "id": "IAT27-T04-Q13",
@@ -395,7 +396,7 @@
         "D) +3, 4"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) +3, 6.\nGiven: Four neutral ammonia and two −1 chloride ligands give net charge +1.\nFormula/Principle: Oxidation state plus ligand charges equals complex charge; coordination number counts donor atoms.\nStep 1: x−2=+1, hence x=+3.\nStep 2: Six monodentate ligands supply six donor atoms.\nWhy: Formal charge and donor count answer different parts of the question. The charge equation is \\(x+4(0)+2(-1)=+1\\), giving \\(x=+3\\). Coordination number counts bound donor atoms, so two chloride donors must be included alongside four ammonia donors.\nWhy not the others: (A) ignores chloride charge; (C) and (D) count only ammonia donors.\nKey point: Count all ligands but include charge only for charged ones."
+      "explanation": "Answer: (B) +3, 6.\nGiven: Four neutral ammonia and two −1 chloride ligands give net charge +1.\nFormula/Principle: Oxidation state plus ligand charges equals complex charge; coordination number counts donor atoms.\nStep 1: x−2=+1, hence x=+3.\nStep 2: Six monodentate ligands supply six donor atoms.\nWorked derivation: \\[x+4(0)+2(-1)=+1\\Rightarrow x=+3,\\qquad\\mathrm{CN}=4+2=6.\\]\nWhy: Formal charge and donor count answer different parts of the question. The charge equation is \\(x+4(0)+2(-1)=+1\\), giving \\(x=+3\\). Coordination number counts bound donor atoms, so two chloride donors must be included alongside four ammonia donors.\nWhy not the others: (A) ignores chloride charge; (C) and (D) count only ammonia donors.\nKey point: Count all ligands but include charge only for charged ones."
     },
     {
       "id": "IAT27-T04-Q18",
@@ -433,7 +434,7 @@
         "D) 5→2→1"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) 4→2→1.\nGiven: Photon wavenumber for nᵢ→n𝒇 is R(1/n𝒇²−1/nᵢ²).\nFormula/Principle: Emission lowers the principal quantum number; the photon energy equals the difference of inverse squares.\nStep 1: R(1/4−1/16) corresponds to 4→2.\nStep 2: R(1−1/4) corresponds to 2→1, consistent with the intermediate state.\nWhy: A proposed sequence must match both energies and the shared intermediate level. Each emitted photon corresponds to an allowed downward energy difference, and the second transition must begin where the first ends. Matching only one line could leave a physically disconnected pair of transitions.\nWhy not the others: (B) gives 1/4−1/9 first; (C) ends its first transition at 3; (D) gives 1/4−1/25 first.\nKey point: Use both spectral lines as a linked path."
+      "explanation": "Answer: (A) 4→2→1.\nGiven: For emission from initial level \\(n_i\\) to final level \\(n_f\\), the photon wavenumber is \\(\\widetilde\\nu=R(n_f^{-2}-n_i^{-2})\\).\nFormula/Principle: Emission lowers the principal quantum number; the photon energy equals the difference of inverse squares.\nStep 1: R(1/4−1/16) corresponds to 4→2.\nStep 2: R(1−1/4) corresponds to 2→1, consistent with the intermediate state.\nWorked derivation: \\[\\widetilde\\nu_1=R(1/2^2-1/4^2)\\Rightarrow4\\to2,\\quad\\widetilde\\nu_2=R(1/1^2-1/2^2)\\Rightarrow2\\to1.\\]\nWhy: A proposed sequence must match both energies and the shared intermediate level. Each emitted photon corresponds to an allowed downward energy difference, and the second transition must begin where the first ends. Matching only one line could leave a physically disconnected pair of transitions.\nWhy not the others: (B) gives 1/4−1/9 first; (C) ends its first transition at 3; (D) gives 1/4−1/25 first.\nKey point: Use both spectral lines as a linked path."
     },
     {
       "id": "IAT27-T04-Q20",
@@ -537,19 +538,20 @@
       "section": "C",
       "subject": "Chemistry",
       "topic": "Equilibrium",
-      "sub_topic": "Common-ion solubility approximation",
+      "sub_topic": "Precipitation threshold after dilution by mixing",
       "class_level": "11",
       "difficulty": "medium",
       "format": "numerical",
-      "question": "For AgCl, Ksp=10⁻¹⁰. What is its approximate molar solubility in 0.010 M NaCl, assuming the added chloride dominates dissolved AgCl?",
+      "question": "Equal volumes of \\(1.0\\times10^{-4}\\) M AgNO₃ and \\(1.0\\times10^{-6}\\) M NaCl are mixed. For AgCl, \\(K_{sp}=1.0\\times10^{-10}\\). Neglect other reactions and activity effects. Which conclusion follows immediately after mixing, before any precipitation?",
       "options": [
-        "A) 10⁻⁵ M",
-        "B) 10⁻⁶ M",
-        "C) 10⁻⁸ M",
-        "D) 10⁻¹² M"
+        "A) Precipitation, because \\(Q=10^{-10}\\)",
+        "B) Precipitation, because \\(Q=10^{-8}\\)",
+        "C) No precipitation, because \\(Q=2.5\\times10^{-11}\\)",
+        "D) No precipitation, because \\(Q=2.5\\times10^{-9}\\)"
       ],
       "correct_option": "C",
-      "explanation": "Answer: (C) 10⁻⁸ M.\nGiven: Ksp=[Ag⁺][Cl⁻]=10⁻¹⁰ and [Cl⁻]≈10⁻² M.\nFormula/Principle: AgCl solubility s equals [Ag⁺] at equilibrium.\nStep 1: s×10⁻²≈10⁻¹⁰.\nStep 2: s≈10⁻⁸ M, far below 0.010 M, confirming the approximation.\nWhy: Added common ion suppresses dissolution. The added chloride fixes \\([\\mathrm{Cl^-}]\\) close to \\(10^{-2}\\,\\mathrm M\\), while dissolved AgCl contributes only \\(s\\). The estimate \\(s=10^{-8}\\,\\mathrm M\\) is negligible beside the common-ion concentration, validating the approximation.\nWhy not the others: (A) and (B) understate chloride suppression; (D) divides by chloride twice.\nKey point: Check the approximation after solving."
+      "explanation": "Answer: (C) No precipitation; \\(Q=2.5\\times10^{-11}<K_{sp}\\).\nGiven: Combining equal volumes doubles the volume available to each initial solute.\nFormula/Principle: Compare the post-mixing ionic product \\(Q=[\\ce{Ag+}][\\ce{Cl-}]\\) with \\(K_{sp}\\).\nStep 1: \\[[\\ce{Ag+}]_0=5.0\\times10^{-5}\\ \\mathrm M,\\quad[\\ce{Cl-}]_0=5.0\\times10^{-7}\\ \\mathrm M.\\]\nStep 2: \\[Q=(5.0\\times10^{-5})(5.0\\times10^{-7})=2.5\\times10^{-11}.\\]\nStep 3: Since \\(Q<K_{sp}\\), the solution is unsaturated and no AgCl precipitates in this model.\nWhy: The ion concentrations must be evaluated after dilution by mixing, not taken directly from separate stock bottles. A solubility product is an equilibrium threshold; a smaller ionic product does not drive precipitation.\nWhy not the others: (A) uses undiluted concentrations and mistakes equality for supersaturation; (B) also miscalculates the powers of ten; (D) quotes a product above the threshold but draws the opposite conclusion.\nKey point: Account for mixing volumes before testing precipitation.",
+      "syllabus_anchor": "Equilibrium: solubility equilibria"
     },
     {
       "id": "IAT27-T04-Q26",
@@ -587,7 +589,7 @@
         "D) 50 °C"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) 50 °C.\nGiven: Both samples have equal mass and specific heat.\nFormula/Principle: Heat lost by hot sample equals heat gained by cold sample.\nStep 1: mc(80−T)=mc(T−20).\nStep 2: 80−T=T−20, giving T=50 °C.\nWhy: Equal thermal capacities make the arithmetic midpoint the energy-balance result. The hot portion loses (mc(80-T)) while the cold gains (mc(T-20)). Because masses and specific heats match, equal heat exchange reduces to equal temperature gaps around the midpoint.\nWhy not the others: (A) or (B) would require zero change in one sample; (C) gives unequal heat magnitudes.\nKey point: The midpoint works only when the heat capacities match."
+      "explanation": "Answer: (D) 50 °C.\nGiven: Both samples have equal mass and specific heat.\nFormula/Principle: Heat lost by hot sample equals heat gained by cold sample.\nStep 1: mc(80−T)=mc(T−20).\nStep 2: 80−T=T−20, giving T=50 °C.\nWorked derivation: \\[mc(80-T)=mc(T-20)\\Rightarrow2T=100\\Rightarrow T=50^\\circ\\mathrm C.\\]\nWhy: Equal thermal capacities make the arithmetic midpoint the energy-balance result. The hot portion loses (mc(80-T)) while the cold gains (mc(T-20)). Because masses and specific heats match, equal heat exchange reduces to equal temperature gaps around the midpoint.\nWhy not the others: (A) or (B) would require zero change in one sample; (C) gives unequal heat magnitudes.\nKey point: The midpoint works only when the heat capacities match."
     },
     {
       "id": "IAT27-T04-Q28",
@@ -606,7 +608,7 @@
         "D) 2/5"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) 2/5.\nGiven: xA=.25 and xB=.75.\nFormula/Principle: Raoult's law gives pᵢ=xᵢpᵢ°.\nStep 1: pA=.25×80=20 kPa; pB=.75×40=30 kPa.\nStep 2: Fraction pA/(pA+pB)=20/50=2/5.\nWhy: Vapour composition differs from liquid composition because pure-component pressures differ. Raoult's law weights each pure vapour pressure by its liquid mole fraction. A is only one quarter of liquid molecules but has twice B's pure pressure, so its vapour share is not one quarter.\nWhy not the others: (A) assumes equal partial pressures; (B) and (C) use an incorrect total or exchange the two vapour shares.\nKey point: Calculate both partial pressures before taking a share."
+      "explanation": "Answer: (D) 2/5.\nGiven: xA=.25 and xB=.75.\nFormula/Principle: Raoult's law gives pᵢ=xᵢpᵢ°.\nStep 1: pA=.25×80=20 kPa; pB=.75×40=30 kPa.\nStep 2: Fraction pA/(pA+pB)=20/50=2/5.\nWorked derivation: \\[\\begin{aligned}p_A&=0.25(80)=20\\ \\mathrm{kPa},\\\\p_B&=0.75(40)=30\\ \\mathrm{kPa},\\\\y_A&=p_A/(p_A+p_B)=20/50=2/5.\\end{aligned}\\]\nWhy: Vapour composition differs from liquid composition because pure-component pressures differ. Raoult's law weights each pure vapour pressure by its liquid mole fraction. A is only one quarter of liquid molecules but has twice B's pure pressure, so its vapour share is not one quarter.\nWhy not the others: (A) assumes equal partial pressures; (B) and (C) use an incorrect total or exchange the two vapour shares.\nKey point: Calculate both partial pressures before taking a share."
     },
     {
       "id": "IAT27-T04-Q29",
@@ -784,19 +786,20 @@
       "section": "M",
       "subject": "Mathematics",
       "topic": "Probability",
-      "sub_topic": "Conditional binomial event",
+      "sub_topic": "Conditional coin-run counting",
       "class_level": "12",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "A fair coin is tossed four times. Given that at least one head occurs, what is the probability of exactly two heads?",
+      "question": "A fair coin is tossed six times. Given that exactly three heads occurred, what is the probability that there is exactly one adjacent HH pair? Overlapping pairs count separately, so HHH contains two HH pairs.",
       "options": [
-        "A) 3/8",
-        "B) 2/5",
-        "C) 1/2",
-        "D) 6/16"
+        "A) 1/5",
+        "B) 3/5",
+        "C) 2/5",
+        "D) 4/5"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) 2/5.\nGiven: 16 equally likely sequences; one has no heads.\nFormula/Principle: P(exactly two | at least one)=P(exactly two)/P(at least one).\nStep 1: Six sequences have two heads, while 15 satisfy the condition.\nStep 2: Required probability=6/15=2/5.\nWorked derivation: \\[P(2H\\mid\\ge1H)=\\frac{\\binom42/2^4}{1-1/2^4}=\\frac6{15}=\\frac25.\\]\nWhy: The conditioning event changes the denominator, not the six favourable sequences. The at-least-one-head condition removes only the all-tails sequence from the equally likely sample space; it does not alter the six two-head sequences.\nWhy not the others: (A) and (D) retain 16 as denominator; (C) counts an incorrect number of favourable cases.\nKey point: Restrict the sample space before forming a ratio."
+      "explanation": "Answer: (B) 3/5.\nGiven: Conditional outcomes are the \\(\\binom63=20\\) equally likely placements of three heads.\nFormula/Principle: Exactly one HH pair means one head-run of length two and one head-run of length one.\nStep 1: Place the three tails first. They create four gaps: before, between and after the tails.\nStep 2: Choose two distinct gaps for the head-runs and choose which gets HH: \\[N=\\binom42\\,2=12.\\]\nStep 3: \\[P=\\frac{12}{20}=\\frac35.\\]\nWorked derivation: \\[P(\\text{one HH pair}\\mid\\text{three heads})=\\frac{2\\binom42}{\\binom63}=\\frac35.\\]\nWhy: Putting the runs in different tail-separated gaps prevents a second HH pair. Conditioning on three heads changes the denominator from all 64 toss sequences to the 20 allowed sequences.\nWhy not the others: (A) undercounts run placements; (C) counts the complement, containing zero or two HH pairs; (D) includes outcomes with additional head adjacency.\nKey point: Translate adjacency into runs before counting conditional outcomes.",
+      "syllabus_anchor": "Probability: conditional probability; permutations and combinations"
     },
     {
       "id": "IAT27-T04-Q39",
@@ -1109,19 +1112,20 @@
       "section": "P",
       "subject": "Physics",
       "topic": "Electromagnetic Induction",
-      "sub_topic": "Inductor energy and current scaling",
+      "sub_topic": "Energy exchange between a capacitor and inductor",
       "class_level": "12",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "An ideal inductor stores energy U at current I. Its current is first doubled, then the inductance is halved while current remains doubled. What is the final energy in units of U?",
+      "question": "An ideal 2.0 H inductor and 50 μF capacitor form a closed lossless circuit. Initially the capacitor is at 100 V and current is zero. At a later instant the current magnitude is 0.40 A. What is the capacitor voltage magnitude then?",
       "options": [
-        "A) U/2",
-        "B) U",
-        "C) 2U",
-        "D) 4U"
+        "A) 40 V",
+        "B) 80 V",
+        "C) 60 V",
+        "D) 100 V"
       ],
       "correct_option": "C",
-      "explanation": "Answer: (C) 2U.\nGiven: Final L′=L/2 and I′=2I.\nFormula/Principle: Magnetic energy U=(1/2)LI².\nStep 1: Doubling I alone multiplies energy by four.\nStep 2: Halving L at that current halves 4U to 2U.\nWorked derivation: \\[\\frac{U_f}{U_i}=\\frac{\\tfrac12(L/2)(2I)^2}{\\tfrac12LI^2}=\\frac{(L/2)4I^2}{LI^2}=2.\\]\nWhy: Energy depends quadratically on current but linearly on inductance; compare the final state with the initial one. The square on current makes its doubling stronger than the linear halving of inductance. Energy can change as the circuit and magnetic system exchange work.\nWhy not the others: (A) changes only L; (B) treats effects as cancelling linearly; (D) ignores the L change.\nKey point: Apply both changes to the same energy expression."
+      "explanation": "Answer: (C) 60 V.\nGiven: There is no resistor, external supply or mechanical parameter change, so total stored electric-plus-magnetic energy is conserved.\nFormula/Principle: \\[U_C=\\tfrac12CV^2,\\quad U_L=\\tfrac12LI^2,\\quad U_C+U_L=U_0.\\]\nStep 1: \\[U_0=\\tfrac12(50\\times10^{-6})(100)^2=0.250\\ \\mathrm J.\\]\nStep 2: \\[U_L=\\tfrac12(2.0)(0.40)^2=0.160\\ \\mathrm J.\\]\nStep 3: Remaining capacitor energy is \\(U_C=0.250-0.160=0.090\\) J.\nStep 4: \\[|V|=\\sqrt{\\frac{2U_C}{C}}=\\sqrt{\\frac{0.180}{50\\times10^{-6}}}=\\sqrt{3600}=60\\ \\mathrm V.\\]\nWorked derivation: \\[\\tfrac12C(100)^2=\\tfrac12C|V|^2+\\tfrac12L(0.40)^2\\Rightarrow|V|=60\\ \\mathrm V.\\]\nWhy: Energy can move between the electric and magnetic stores while their sum stays fixed in the stated ideal circuit. The energy equation fixes voltage magnitude but not its sign at an unspecified instant, which is why the question asks for a magnitude.\nWhy not the others: (A) subtracts amplitudes instead of energies; (B) uses an incorrect energy fraction; (D) leaves capacitor energy unchanged despite nonzero inductor energy.\nKey point: Balance both field-energy stores before solving for an instantaneous amplitude.",
+      "syllabus_anchor": "Electromagnetic induction: self-inductance; capacitance: stored energy"
     },
     {
       "id": "IAT27-T04-Q56",
@@ -1220,5 +1224,6 @@
       "correct_option": "C",
       "explanation": "Answer: (C) V₀²/(4R).\nGiven: Power=v²/R for half a cycle and zero for half a cycle.\nFormula/Principle: Average sin² over a positive half-cycle is 1/2.\nStep 1: Mean over that active half-cycle is V₀²/(2R).\nStep 2: Only half the full period is active, yielding V₀²/(4R).\nWorked derivation: \\[\\bar P=\\frac{1}{2\\pi}\\int_0^\\pi\\frac{V_0^2\\sin^2\\theta}{R}\\,d\\theta=\\frac{V_0^2}{2\\pi R}\\cdot\\frac\\pi2=\\frac{V_0^2}{4R}.\\]\nWhy: Mean power uses squared voltage, not the square of average voltage. The average is taken over the full period, including the blocked half-cycle. Squaring the average rectified voltage would be a different quantity.\nWhy not the others: (A) uses peak power; (B) averages only the conducting half; (D) introduces an extra factor two.\nKey point: Average over the full period."
     }
-  ]
+  ],
+  "content_revision": "milestone15_fix_v1"
 }

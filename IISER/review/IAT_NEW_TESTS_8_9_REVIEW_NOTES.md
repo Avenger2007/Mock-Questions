@@ -1,3 +1,5 @@
+> **Historical snapshot — milestone corrections, 4 November 2026:** Later canonical changes supersede affected content, answer descriptions, page counts and validation claims below. Read [the correction report](milestone15_fixes/CORRECTION_REPORT.md) and its final source-bound evidence for the current Tests 1–15 checkpoint.
+
 # IAT New Tests 8 and 9 — authoring and review notes
 
 1 November 2026. Both are `pending_revision` preparation drafts using the verified 2026 IAT pattern as a provisional model. The archived PYQs inform reasoning style and syllabus coverage; no PYQ stem was copied. A 2027 brochure has not been verified. The slot register now has 540 authored questions and 960 future reservations.

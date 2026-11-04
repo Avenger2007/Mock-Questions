@@ -1,3 +1,5 @@
+> **Historical snapshot — milestone corrections, 4 November 2026:** Later canonical changes supersede affected content, answer descriptions, page counts and validation claims below. Read [the correction report](milestone15_fixes/CORRECTION_REPORT.md) and its final source-bound evidence for the current Tests 1–15 checkpoint.
+
 # IAT New Tests 14 and 15 — authoring review
 
 3 November 2026. Both are `pending_revision` papers for 2027 preparation under the verified IAT 2026 pattern. No 2027 brochure is verified. The source syllabus is the stored official 2026 syllabus; this authoring and structural review is not independent academic approval.

@@ -5,7 +5,7 @@
   "title": "IAT New Test 14",
   "test_number": 14,
   "status": "pending_revision",
-  "review_status": "fresh AI-assisted authoring; independent academic review pending",
+  "review_status": "milestone corrections applied; independent academic and timed review pending",
   "schema_version": "ourmocks-iat-flat-1.1",
   "syllabus_source": "IISER/IISER_Aptitude_Test_Syllabus_2026.md; exact listed topic/sub-topic checked",
   "notification_source": "Official IAT 2026 examination page and 2026 Information Brochure, sections 19 and 23; a 2027 brochure has not been verified",
@@ -96,7 +96,7 @@
       "class_level": "11",
       "difficulty": "medium",
       "format": "diagram",
-      "question": "A floral diagram has five united sepals, five free petals, five stamens and a superior ovary of two fused carpels. Which formula best matches it? Here brackets denote fusion.",
+      "question": "The diagram shows five united sepals, five free petals, five stamens and two fused carpels. Use the longitudinal section to infer ovary position. Which floral formula matches both views? Here brackets denote fusion.",
       "options": [
         "A) K5 C(5) A5 G(2) inferior",
         "B) K(5) C5 A5 G(2) superior",
@@ -106,7 +106,7 @@
       "correct_option": "B",
       "explanation": "Answer: (B) K(5) C5 A5 G(2), superior.\nWhy: The calyx is fused, petals and stamens are free, and the bicarpellary gynoecium is syncarpous. The diagram places other whorls below the ovary, supporting the superior assignment; no fusion of stamens is indicated.\nWhy not the others: (A) swaps sepal/petal fusion and ovary position; (C) invents stamen fusion and free carpels; (D) loses both fusions and reverses ovary position.\nKey point: Translate each depicted whorl independently.",
       "image_reference": "IAT_T14_Q02.png",
-      "image_alt": "Five-part flower with united sepals, free petals and stamens, and superior fused ovary"
+      "image_alt": "Floral whorls and a section showing the ovary above the insertion of other whorls."
     },
     {
       "id": "IAT27-T14-Q03",
@@ -246,21 +246,22 @@
       "section": "B",
       "subject": "Biology",
       "topic": "Ecology",
-      "sub_topic": "food-web energy accounting",
+      "sub_topic": "Multi-compartment trophic energy accounting",
       "class_level": "12",
       "difficulty": "hard",
       "format": "diagram",
-      "question": "In the pictured food web, plants supply 1000 kJ to herbivore A and 600 kJ to herbivore B; a predator assimilates 100 kJ from A and 90 kJ from B. What fraction of the herbivores' combined incoming energy reaches that predator by those routes?",
+      "question": "Plants have gross production 10000 kJ and respiration 4000 kJ over the measured interval. Herbivores A and B assimilate 2000 and 1000 kJ and respire 1400 and 700 kJ respectively. A predator consumes one half of A's new production and two thirds of B's, assimilates 80% of that food energy and respires 250 kJ. The diagram shows these routes. What fraction of plant net primary production becomes new predator biomass?",
       "options": [
-        "A) 19/100",
-        "B) 19/160",
-        "C) 1/10",
-        "D) 3/20"
+        "A) 1/15",
+        "B) 1/40",
+        "C) 1/12",
+        "D) 1/10"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) 19/160.\nGiven: Predator receives 190 kJ; the two herbivore inputs sum to 1600 kJ.\nFormula/Principle: Fraction is assimilated output divided by combined incoming energy.\nStep 1: 190/1600=19/160.\nWhy: Both prey pathways contribute to the predator, so the numerator must include their separate transfers; the denominator is the sum of plant-to-herbivore supplies specified in the diagram. This fraction is not a universal trophic-transfer efficiency because unshown losses and other pathways are outside the stated budget.\nWhy not the others: (A) uses 1000 alone; (C) imposes a generic 10% rule; (D) omits one route.\nKey point: Add route-specific flows before forming a ratio.",
+      "explanation": "Answer: (B) 1/40.\nGiven: Each stated respiration loss belongs to its own trophic compartment; unconsumed production remains outside the predator's budget.\nFormula/Principle: Net production equals assimilated energy minus respiration at each compartment.\nStep 1: \\[\\mathrm{NPP}=10000-4000=6000\\ \\mathrm{kJ}.\\]\nStep 2: \\[P_A=2000-1400=600,\\quad P_B=1000-700=300\\ \\mathrm{kJ}.\\]\nStep 3: Predator food energy is \\[(1/2)(600)+(2/3)(300)=500\\ \\mathrm{kJ}.\\]\nStep 4: Predator new biomass energy is \\[P_P=0.80(500)-250=150\\ \\mathrm{kJ}.\\]\nStep 5: \\[P_P/\\mathrm{NPP}=150/6000=1/40.\\]\nWhy: Consumption, assimilation and net production are different stages of the transfer budget. Subtracting respiration at the right stage prevents plant gross production or undigested food from being counted as predator growth.\nWhy not the others: (A) uses predator assimilation before its respiration; (C) uses consumed food before assimilation and respiration; (D) imports a generic ten-percent rule instead of the supplied measurements.\nKey point: Follow each trophic compartment's mass-energy budget before forming an efficiency ratio.",
       "image_reference": "IAT_T14_Q10.png",
-      "image_alt": "Plants feed herbivores A and B with 1000 and 600 kJ; predator receives 100 and 90 kJ"
+      "image_alt": "A trophic budget links two herbivores to a predator with measured transfer fractions.",
+      "syllabus_anchor": "Ecology: ecosystem energy flow and productivity"
     },
     {
       "id": "IAT27-T14-Q11",
@@ -343,19 +344,20 @@
       "section": "B",
       "subject": "Biology",
       "topic": "Ecology",
-      "sub_topic": "species-area relationship",
+      "sub_topic": "Species-area exponent and changed habitat coefficient",
       "class_level": "12",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "In two habitat surveys the same sampling method finds 10 species in area A and 40 species in area 16A. If species number follows S=cA^z over this scale, what is z?",
+      "question": "Comparable surveys find 40 species in area A and 80 in area 16A, fitting \\(S=cA^z\\). A restored region has area 4A, but its fitted habitat coefficient is only \\(0.75c\\). Using this stated model, what is its species richness divided by the original richness in area A?",
       "options": [
-        "A) 1/4",
-        "B) 1/2",
-        "C) 1",
+        "A) 3/4",
+        "B) \\(3\\sqrt2/4\\)",
+        "C) 3/2",
         "D) 2"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) z=1/2.\nGiven: S₂/S₁=4 and A₂/A₁=16.\nFormula/Principle: 4=16^z; take logarithms or compare powers.\nStep 1: 16^(1/2)=4, giving z=1/2.\nWhy: The multiplicative constant c cancels between the two comparable surveys, allowing the exponent to be inferred without measuring absolute area or c. The fitted exponent describes only the stated scale and cannot by itself prove a mechanism of biodiversity gain.\nWhy not the others: (A) predicts ratio 2; (C) predicts 16; (D) predicts 256.\nKey point: Form a ratio before taking logarithms."
+      "explanation": "Answer: (B) \\(3\\sqrt2/4\\).\nGiven: The initial two surveys share c; the restored region has a separately stipulated coefficient \\(c'=0.75c\\).\nFormula/Principle: Infer z from the comparable surveys before combining area and coefficient changes.\nStep 1: \\[\\frac{80}{40}=16^z\\Rightarrow2=16^z\\Rightarrow z=\\frac14.\\]\nStep 2: \\[\\frac{S_{\\mathrm{restored}}}{S_A}=\\frac{0.75c(4A)^{1/4}}{cA^{1/4}}=0.75\\,4^{1/4}.\\]\nStep 3: \\[S_{\\mathrm{restored}}/S_A=\\frac34\\sqrt2=\\frac{3\\sqrt2}{4}.\\]\nWhy: The original paired surveys allow c to cancel only when estimating the exponent. In the restoration comparison the habitat coefficient changes, so cancelling it as if it were unchanged would overestimate richness.\nWhy not the others: (A) includes coefficient loss but ignores added area; (C) uses an area exponent one half; (D) ignores the coefficient change and uses the wrong area scaling.\nKey point: Infer an exponent using comparable habitats, then retain any specified coefficient change.",
+      "syllabus_anchor": "Ecology: biodiversity species-area relationship"
     },
     {
       "id": "IAT27-T14-Q16",
@@ -376,26 +378,27 @@
       "correct_option": "A",
       "explanation": "Answer: (A) CO₂ only.\nWhy: Its equal bond-dipole vectors oppose along one line and cancel; the bent water vectors have a nonzero resultant toward oxygen. Polar bonds therefore do not guarantee a polar molecule unless their vector arrangement is considered.\nWhy not the others: (B) reverses the geometries; (C) ignores cancellation in linear CO₂; (D) ignores water's bend.\nKey point: Sum bond dipoles as vectors.",
       "image_reference": "IAT_T14_Q16.png",
-      "image_alt": "Linear CO2 bond dipoles and bent water bond dipoles"
+      "image_alt": "Bond dipoles oppose in linear carbon dioxide and form an angle in water."
     },
     {
       "id": "IAT27-T14-Q17",
       "section": "C",
       "subject": "Chemistry",
       "topic": "Coordination compounds",
-      "sub_topic": "coordination number and charge",
+      "sub_topic": "Werner formula inference and low-spin electron filling",
       "class_level": "12",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "A complex [M(NH₃)₄Cl₂]Cl contains a mononuclear metal M; all ligands inside brackets are monodentate and NH₃ neutral. What are the coordination number and oxidation state of M?",
+      "question": "A cobalt compound has empirical composition CoCl₃·4NH₃. Each mole gives one mole of immediate AgCl when treated with excess AgNO₃, and the dissolved complex gives two ions per formula unit. Assume coordinated chloride is not immediately displaced and the octahedral cobalt ion is low spin. Which formula, coordination number and unpaired-electron count fit?",
       "options": [
-        "A) 6 and +3",
-        "B) 4 and +2",
-        "C) 6 and +2",
-        "D) 7 and +3"
+        "A) \\([\\ce{Co(NH3)4Cl2}]\\ce{Cl};\\ 6;\\ 0\\)",
+        "B) \\([\\ce{Co(NH3)4Cl}]\\ce{Cl2};\\ 5;\\ 0\\)",
+        "C) \\([\\ce{Co(NH3)4}]\\ce{Cl3};\\ 4;\\ 4\\)",
+        "D) \\([\\ce{Co(NH3)4Cl2}]\\ce{Cl};\\ 6;\\ 4\\)"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) Six and +3.\nGiven: One external chloride makes the bracketed ion +1.\nFormula/Principle: Four NH₃ plus two bound Cl give six donors; x−2=+1.\nStep 1: x=+3, coordination number=6.\nWhy: The external counterion contributes to charge balance but is not coordinated, while both bracketed chlorides occupy donor positions. Confusing oxidation state with coordination number would misread two independent properties of the formula.\nWhy not the others: (B) omits bound chlorides; (C) misses counterion charge; (D) counts external chloride as ligand.\nKey point: Count donors inside brackets and charges across brackets separately."
+      "explanation": "Answer: (A) \\([\\ce{Co(NH3)4Cl2}]\\ce{Cl}\\), coordination number six, zero unpaired electrons.\nGiven: Exactly one chloride is a free counterion; four ammonia molecules are neutral donors.\nFormula/Principle: Combine free-ion evidence, coordination count, oxidation state and low-spin d-electron filling.\nStep 1: One free chloride leaves two chloride ligands inside the sphere, giving \\([\\ce{Co(NH3)4Cl2}]^+\\) and one \\(\\ce{Cl-}\\).\nStep 2: Four N donors plus two Cl donors give coordination number six. Cobalt satisfies \\(x-2=+1\\), so \\(x=+3\\).\nStep 3: Co(III) is d⁶; low-spin octahedral filling is \\(t_{2g}^6e_g^0\\), with no unpaired electrons.\nWorked derivation: \\[N_{\\mathrm{free\\,Cl}}=1,\\quad x-2=+1\\Rightarrow x=+3,\\quad\\mathrm{CN}=4+2=6,\\quad d^6_{\\mathrm{low\\,spin}}:t_{2g}^6e_g^0.\\]\nWhy: Precipitation and ion count identify the sphere boundary before the electronic argument begins. The low-spin assumption is explicitly supplied; it must not be inferred merely from the number of ligands.\nWhy not the others: (B) predicts two free chlorides and three ions; (C) predicts three free chlorides and four ions; (D) uses high-spin d⁶ filling despite the stated low-spin condition.\nKey point: Establish the coordination formula experimentally before assigning electron filling.",
+      "syllabus_anchor": "Coordination compounds: Werner theory and bonding"
     },
     {
       "id": "IAT27-T14-Q18",
@@ -454,7 +457,7 @@
       "correct_option": "D",
       "explanation": "Answer: (D) Q rises and E falls.\nWhy: Zinc oxidation produces Zn²⁺ while copper reduction consumes Cu²⁺; lowering the copper reactant concentration raises the quotient. By the Nernst form E=E°−(RT/2F)lnQ, the increased Q lowers the potential at fixed temperature.\nWhy not the others: (A) reverses quotient; (B) reverses Nernst sign; (C) reverses both.\nKey point: Write Q from the balanced cell reaction.",
       "image_reference": "IAT_T14_Q20.png",
-      "image_alt": "Daniell cell with zinc and copper electrodes and labelled solution concentrations"
+      "image_alt": "A Daniell cell before copper-ion dilution has labelled electrodes, ions and salt bridge."
     },
     {
       "id": "IAT27-T14-Q21",
@@ -511,7 +514,7 @@
         "D) 18.3"
       ],
       "correct_option": "C",
-      "explanation": "Answer: (C) About 1.83.\nGiven: ln(k₂/k₁)=Ea/R(1/T₁−1/T₂).\nFormula/Principle: 50000/8.3 ×30/(300×330).\nStep 1: 6024×0.000303≈1.83.\nWhy: Increasing temperature makes 1/T fall, so the reciprocal difference is positive and rate constant increases. The logarithm compares rates through activation energy; it is not directly the fractional temperature increase.\nWhy not the others: (A) reverses temperatures; (B) misses a factor ten; (D) adds one.\nKey point: Keep Ea and R in matching joule units."
+      "explanation": "Answer: (C) About 1.83.\nGiven: ln(k₂/k₁)=Ea/R(1/T₁−1/T₂).\nFormula/Principle: 50000/8.3 ×30/(300×330).\nStep 1: 6024×0.000303≈1.83.\nWorked derivation: \\[\\ln(k_2/k_1)=\\frac{50000}{8.3}\\left(\\frac1{300}-\\frac1{330}\\right)\\approx1.83.\\]\nWhy: Increasing temperature makes 1/T fall, so the reciprocal difference is positive and rate constant increases. The logarithm compares rates through activation energy; it is not directly the fractional temperature increase.\nWhy not the others: (A) reverses temperatures; (B) misses a factor ten; (D) adds one.\nKey point: Keep Ea and R in matching joule units."
     },
     {
       "id": "IAT27-T14-Q24",
@@ -556,40 +559,42 @@
       "section": "C",
       "subject": "Chemistry",
       "topic": "Solutions",
-      "sub_topic": "colligative-property comparison",
+      "sub_topic": "Dimer association inferred from apparent molar mass",
       "class_level": "12",
       "difficulty": "medium",
       "format": "numerical",
-      "question": "At the same molality, ideal dilute aqueous glucose and ideal fully dissociated NaCl solutions are compared. What is the ratio of the magnitude of NaCl freezing-point depression to glucose depression?",
+      "question": "A solute forms only dimers in a dilute ideal solution. Its apparent molar mass inferred from a colligative measurement is 1.50 times its true monomer molar mass. What fraction of the original monomer units is associated into dimers?",
       "options": [
-        "A) 1",
-        "B) 2",
-        "C) 3",
-        "D) 1/2"
+        "A) 1/3",
+        "B) 2/3",
+        "C) 1",
+        "D) 4/3"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) Two.\nGiven: Same Kf and molality; glucose i=1, NaCl i=2.\nFormula/Principle: ΔTf=iKfm.\nStep 1: Ratio=2/1=2.\nWhy: Freezing-point depression depends on the number of dissolved solute particles in the idealised comparison. The full-dissociation premise makes each NaCl formula unit contribute two ions, while glucose remains molecular.\nWhy not the others: (A) ignores dissociation; (C) counts three ions; (D) inverts ratio.\nKey point: State the particle-count assumption."
+      "explanation": "Answer: (B) 2/3.\nGiven: Let alpha be the fraction of original monomer units that associate; two such units make one dimer.\nFormula/Principle: Particle factor \\(i=(1-\\alpha)+\\alpha/2=1-\\alpha/2\\), while \\(M_{\\mathrm{apparent}}=M/i\\).\nStep 1: \\[i=\\frac{M}{1.50M}=\\frac23.\\]\nStep 2: \\[1-\\frac\\alpha2=\\frac23\\Rightarrow \\alpha=\\frac23.\\]\nStep 3: This lies between zero and one, as required for an associated fraction.\nWhy: Association reduces the number of independently moving solute particles, causing a colligative method to overestimate molar mass. Counting dimers as if each contained one original unit would violate the monomer-unit balance.\nWhy not the others: (A) reports \\(1-i\\) without the dimer factor; (C) would give a twofold apparent molar mass; (D) exceeds the physically allowed fraction.\nKey point: Relate apparent molar mass to particle count before calculating association.",
+      "syllabus_anchor": "Solutions: abnormal molar masses and association"
     },
     {
       "id": "IAT27-T14-Q27",
       "section": "C",
       "subject": "Chemistry",
       "topic": "Some Basic Concepts of Chemistry",
-      "sub_topic": "limiting reagent in stages",
+      "sub_topic": "Oxygen allocation across two sulfur-oxidation stages",
       "class_level": "11",
       "difficulty": "medium",
       "format": "diagram",
-      "question": "A two-step preparation is drawn: A+2B→C, then C+B→D. Initially there are 3 mol A and 8 mol B, and the two steps can be allocated optimally. What is the maximum D produced?",
+      "question": "A diagram represents 3 mol sulfur atoms and 4 mol O₂ molecules. Sulfur is converted through \\(\\ce{S + O2 -> SO2}\\) and \\(\\ce{2SO2 + O2 -> 2SO3}\\). The two stages may be allocated to maximise SO₃ with no other reactions. What is the greatest possible SO₃ amount?",
       "options": [
         "A) 3 mol",
         "B) 2 mol",
         "C) 8/3 mol",
-        "D) 8 mol"
+        "D) 4 mol"
       ],
       "correct_option": "C",
-      "explanation": "Answer: (C) 8/3 mol.\nGiven: Each D requires one A and three B across both steps.\nFormula/Principle: Dmax=min(nA,nB/3).\nStep 1: min(3,8/3)=8/3 mol; 16/3 mol B forms 8/3 mol C, leaving 8/3 mol B for the second step.\nWhy: The total net reaction A+3B→D makes B limiting at 8/3 mol, and the explicit allocation confirms this bound can be attained. Taking all three moles of A through step one would waste B needed for the second step.\nWhy not the others: (A) ignores B deficiency; (B) rounds down unnecessarily; (D) treats all B as product.\nKey point: Sum stages and check an achievable allocation.",
+      "explanation": "Answer: (C) \\(8/3\\) mol.\nGiven: Initial sulfur is 3 mol and oxygen is 4 mol; the diagram distinguishes atomic sulfur from diatomic oxygen.\nFormula/Principle: Adding the stages gives \\[\\ce{2S + 3O2 -> 2SO3}.\\]\nStep 1: Each mole of SO₃ requires one mole S and \\(3/2\\) mol O₂.\nStep 2: \\[n_{\\ce{SO3}}\\le\\min\\left(3,\\frac4{3/2}\\right)=\\frac83\\ \\mathrm{mol}.\\]\nStep 3: This bound is attainable: \\(8/3\\) mol O₂ makes \\(8/3\\) mol SO₂, and the remaining \\(4/3\\) mol O₂ oxidises it to SO₃.\nWhy: Oxygen is shared between the two stages, so using it entirely in the first stage need not maximise the final product. The achievable allocation confirms that the overall-reaction upper bound is not merely formal.\nWhy not the others: (A) ignores the oxygen shortage for complete final oxidation; (B) imposes an unnecessary integer-mole rounding; (D) treats each oxygen molecule as one product molecule without conserving sulfur.\nKey point: Combine staged stoichiometry and verify an attainable reagent allocation.",
       "image_reference": "IAT_T14_Q27.png",
-      "image_alt": "Two-stage reaction pathway from A and B through C to D"
+      "image_alt": "Initial sulfur and oxygen particle counts precede two structurally drawn sulfur oxide stages.",
+      "syllabus_anchor": "Some basic concepts: stoichiometry and limiting reagent"
     },
     {
       "id": "IAT27-T14-Q28",
@@ -646,7 +651,7 @@
         "D) 1:1"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) 1:1.\nGiven: OH⁻ consumes HA, producing A⁻.\nFormula/Principle: nHA=0.20−0.05=0.15; nA⁻=0.10+0.05=0.15.\nStep 1: Ratio 0.15:0.15=1:1.\nWhy: Neutralisation occurs before buffer equilibrium is recalculated, and both members change in opposite directions by the same stoichiometric amount. Using the original ratio would ignore the chemical reaction with added base.\nWhy not the others: (A) reverses addition; (B) keeps original ratio; (C) changes only the numerator incorrectly.\nKey point: Update mole counts before Henderson–Hasselbalch."
+      "explanation": "Answer: (D) 1:1.\nGiven: OH⁻ consumes HA, producing A⁻.\nFormula/Principle: nHA=0.20−0.05=0.15; nA⁻=0.10+0.05=0.15.\nStep 1: Ratio 0.15:0.15=1:1.\nWorked derivation: \\[n_{\\mathrm{HA}}=0.20-0.05=0.15,\\quad n_{\\ce{A-}}=0.10+0.05=0.15,\\quad n_{\\mathrm{HA}}:n_{\\ce{A-}}=1:1.\\]\nWhy: Neutralisation occurs before buffer equilibrium is recalculated, and both members change in opposite directions by the same stoichiometric amount. Using the original ratio would ignore the chemical reaction with added base.\nWhy not the others: (A) reverses addition; (B) keeps original ratio; (C) changes only the numerator incorrectly.\nKey point: Update mole counts before Henderson–Hasselbalch."
     },
     {
       "id": "IAT27-T14-Q31",
@@ -722,26 +727,27 @@
         "D) 1/2"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) 1/2−ln(4/3).\nGiven: The denominator has a repeated linear factor, so include both first and second powers of x+1.\nFormula/Principle: 1/[(x+1)²(x+2)]=−1/(x+1)+1/(x+1)²+1/(x+2).\nStep 1: Integrate to [−ln(x+1)−1/(x+1)+ln(x+2)]₀¹ and subtract endpoints.\nWorked derivation: \\[I=\\left[\\ln\\frac{x+2}{x+1}-\\frac1{x+1}\\right]_0^1=\\left(\\ln\\frac32-\\frac12\\right)-(\\ln2-1)=\\frac12-\\ln\\frac43.\\]\nWhy: A repeated pole requires a separate 1/(x+1)² term, whose integral is rational rather than logarithmic. Dropping that term gives the earlier simpler integral and the wrong value.\nWhy not the others: (A) omits the repeated-pole contribution; (C) reverses the endpoint subtraction; (D) cancels the logarithms incorrectly.\nKey point: Include every power of a repeated linear factor."
+      "explanation": "Answer: (B) \\(1/2-\\ln(4/3)\\).\nGiven: The repeated factor \\((x+1)^2\\) requires both first- and second-power partial fractions.\nFormula/Principle: \\[\\frac1{(x+1)^2(x+2)}=-\\frac1{x+1}+\\frac1{(x+1)^2}+\\frac1{x+2}.\\]\nStep 1: Integrate each term:\\[F(x)=-\\ln(x+1)-\\frac1{x+1}+\\ln(x+2).\\]\nStep 2: \\[F(1)=\\ln(3/2)-1/2,\\qquad F(0)=\\ln2-1.\\]\nStep 3: \\[I=F(1)-F(0)=\\frac12+\\ln(3/4)=\\frac12-\\ln(4/3).\\]\nWorked derivation: \\[I=\\frac12-\\ln\\frac43>0.\\]\nWhy: A repeated pole contributes a rational primitive as well as logarithms. Subtracting both lower-limit contributions is essential, and the positive final value is consistent with the positive integrand on the interval.\nWhy not the others: (A) omits the repeated-pole contribution; (C) reverses the logarithmic endpoint subtraction; (D) cancels logarithms that have different arguments.\nKey point: Include every repeated-factor power and evaluate both endpoints."
     },
     {
       "id": "IAT27-T14-Q35",
       "section": "M",
       "subject": "Mathematics",
       "topic": "Relations & functions",
-      "sub_topic": "inverse restriction",
+      "sub_topic": "Inverse domain and branch of a logarithmic composition",
       "class_level": "11",
       "difficulty": "medium",
-      "format": "conceptual",
-      "question": "For f(x)=x² on x≥0, which inverse is valid as a function with codomain [0,∞)?",
+      "format": "numerical",
+      "question": "Let \\(f(x)=\\ln(x^2-1)\\) for \\(x>1\\), and let g be its inverse. Which pair gives \\(g(\\ln3)\\) and the domain of g?",
       "options": [
-        "A) −√x",
-        "B) ±√x",
-        "C) √x",
-        "D) 1/x²"
+        "A) \\(-2;\\ \\mathbb R\\)",
+        "B) \\(2;\\ (0,\\infty)\\)",
+        "C) \\(2;\\ \\mathbb R\\)",
+        "D) \\(\\sqrt2;\\ \\mathbb R\\)"
       ],
       "correct_option": "C",
-      "explanation": "Answer: (C) √x.\nWorked derivation: \\[y=x^2,\\ x\\ge0\\Rightarrow x=\\sqrt y,\\quad f^{-1}(y)=\\sqrt y.\\]\nWhy: Restricting the original domain to nonnegative x makes squaring one-to-one and onto the specified nonnegative codomain. The inverse must return a single allowed nonnegative input for every output.\nWhy not the others: (A) returns excluded negative x; (B) is multivalued; (D) does not undo squaring.\nKey point: Inverses depend on domain restriction."
+      "explanation": "Answer: (C) \\(2;\\ \\mathbb R\\).\nGiven: For \\(x>1\\), \\(x^2-1\\) takes every positive value, so its logarithm takes every real value.\nFormula/Principle: Solve \\(y=\\ln(x^2-1)\\), retaining the positive original branch; the inverse domain is the original range.\nStep 1: \\[e^y=x^2-1\\Rightarrow x^2=e^y+1.\\]\nStep 2: Since \\(x>1\\), \\[g(y)=\\sqrt{e^y+1},\\quad y\\in\\mathbb R.\\]\nStep 3: \\[g(\\ln3)=\\sqrt{3+1}=2.\\]\nWorked derivation: \\[g(y)=\\sqrt{e^y+1}>1\\text{ for every real }y,\\qquad g(\\ln3)=2.\\]\nWhy: Exponentiation undoes the logarithm but leaves two algebraic square-root branches; the original domain selects only the positive one. The full real inverse domain is valid because the exponential is positive for every real y, making the reconstructed input strictly greater than one.\nWhy not the others: (A) returns an excluded negative input; (B) incorrectly transfers positivity of the logarithm's argument to its output; (D) omits the added one after exponentiation.\nKey point: Undo a composition in reverse order while preserving its branch and range.",
+      "syllabus_anchor": "Relations and functions: inverse functions; logarithmic functions"
     },
     {
       "id": "IAT27-T14-Q36",
@@ -760,26 +766,27 @@
         "D) (2,−2,−2), into the screen"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) (2,−2,−2), into the screen.\nGiven: Positive z points toward the observer; the ordered product is a×b.\nFormula/Principle: Use the determinant of the basis-vector array, retaining the negative sign on the j component.\nStep 1: The three components are 1(2)−0(−1)=2, 0(1)−1(2)=−2 and 1(−1)−1(1)=−2.\nWorked derivation: \\[\\mathbf a\\times\\mathbf b=\\begin{vmatrix}\\mathbf i&\\mathbf j&\\mathbf k\\\\1&1&0\\\\1&-1&2\\end{vmatrix}=2\\mathbf i-2\\mathbf j-2\\mathbf k,\\quad (\\mathbf a\\times\\mathbf b)_z=-2<0.\\]\nWhy: The negative z-component points away from an observer on the positive z-axis, so the perpendicular vector goes into the screen. Computing both in-plane components is necessary because the requested answer includes the complete cross product as well as the viewing orientation.\nWhy not the others: (A) reverses the ordered cross product; (B) loses the negative z sign; (C) discards the nonzero z component.\nKey point: Keep determinant signs and viewing direction separate."
+      "explanation": "Answer: (D) \\((2,-2,-2)\\), with its z-component into the screen.\nGiven: \\(\\mathbf a=(1,1,0),\\ \\mathbf b=(1,-1,2)\\); the observer is on the positive z-axis looking toward the origin.\nFormula/Principle: Use the ordered cross product; positive z points toward that observer.\nStep 1: \\[c_x=a_yb_z-a_zb_y=1(2)-0(-1)=2.\\]\nStep 2: \\[c_y=a_zb_x-a_xb_z=0(1)-1(2)=-2,\\quad c_z=a_xb_y-a_yb_x=1(-1)-1(1)=-2.\\]\nStep 3: The negative z-component points away from the observer and therefore into the screen.\nStep 4: Verify perpendicularity: \\[\\mathbf a\\cdot\\mathbf c=2-2=0,\\qquad\\mathbf b\\cdot\\mathbf c=2+2-4=0.\\]\nWorked derivation: \\[\\mathbf a\\times\\mathbf b=2\\mathbf i-2\\mathbf j-2\\mathbf k.\\]\nWhy: The vector must be perpendicular to both inputs, while its sign is fixed by their order. The viewing convention is a separate geometric check on the z-component, not a replacement for calculating all three components.\nWhy not the others: (A) reverses the cross-product order; (B) changes the z sign; (C) incorrectly drops the nonzero z-component.\nKey point: Verify components, orthogonality and viewing orientation separately."
     },
     {
       "id": "IAT27-T14-Q37",
       "section": "M",
       "subject": "Mathematics",
       "topic": "Matrices & determinants",
-      "sub_topic": "inverse existence",
+      "sub_topic": "Matrix inverse with a trace constraint",
       "class_level": "12",
       "difficulty": "medium",
-      "format": "conceptual",
-      "question": "Let f:ℝ→ℝ be f(x)=x³+x. Which property guarantees it has an inverse defined on all ℝ?",
+      "format": "numerical",
+      "question": "Let \\(A=\\begin{pmatrix}t&1\\\\1&t\\end{pmatrix}\\), with real t. For which t does A have an inverse whose trace (sum of diagonal entries) is 1?",
       "options": [
-        "A) It is continuous, strictly increasing and unbounded in both directions",
-        "B) It is even",
-        "C) It has derivative zero everywhere",
-        "D) It is periodic"
+        "A) \\(1\\pm\\sqrt2\\)",
+        "B) \\(t=1\\)",
+        "C) \\(t=\\pm1\\)",
+        "D) \\(t=-1\\)"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) Bijective onto ℝ.\nWorked derivation: \\[f'(x)=3x^2+1>0,\\quad \\lim_{x\\to\\pm\\infty}f(x)=\\pm\\infty.\\]\nWhy: Positive derivative gives injectivity, while continuity and opposite infinite limits give every real output by the intermediate value property. Both properties are necessary to define a unique inverse on the entire stated codomain.\nWhy not the others: (B) would collide x and −x; (C) is false; (D) would repeat outputs.\nKey point: Check one-to-one and onto separately."
+      "explanation": "Answer: (A) \\(1\\pm\\sqrt2\\).\nGiven: \\(\\det A=t^2-1\\), so \\(t\\ne\\pm1\\) is necessary.\nFormula/Principle: Use the explicit inverse before imposing the trace condition.\nStep 1: \\[A^{-1}=\\frac1{t^2-1}\\begin{pmatrix}t&-1\\\\-1&t\\end{pmatrix}.\\]\nStep 2: \\[\\operatorname{tr}(A^{-1})=\\frac{2t}{t^2-1}=1\\Rightarrow t^2-2t-1=0.\\]\nStep 3: \\[t=1\\pm\\sqrt2.\\] Neither value is 1 or −1, so both give valid inverses.\nWorked derivation: \\[(t-1)^2=2\\Rightarrow t=1\\pm\\sqrt2,\\qquad t^2-1=2t\\ne0.\\]\nWhy: A trace condition on an inverse can be used only after invertibility is checked. The quadratic produces two valid branches, and both must survive the determinant restriction.\nWhy not the others: (B) and (D) each make the determinant zero; (C) consists entirely of singular cases.\nKey point: Keep the nonzero-determinant condition while solving an inverse constraint.",
+      "syllabus_anchor": "Matrices and determinants: inverse and determinant"
     },
     {
       "id": "IAT27-T14-Q38",
@@ -843,19 +850,20 @@
       "section": "M",
       "subject": "Mathematics",
       "topic": "Sequences & series",
-      "sub_topic": "series convergence under stated condition",
+      "sub_topic": "Positive GP terms from sum and product",
       "class_level": "11",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "For which real x does the infinite series ∑ₙ₌₁∞ (x−2)ⁿ/n converge?",
+      "question": "Three positive, strictly increasing numbers a, b and c form a geometric progression. Their sum is 13 and their product is 27. What is the sum of the first five terms of that progression beginning with a?",
       "options": [
-        "A) [1,3)",
-        "B) (1,3)",
-        "C) [1,3]",
-        "D) (−1,1)"
+        "A) 121",
+        "B) 40",
+        "C) 120",
+        "D) 243"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) [1,3).\nGiven: Write r=x−2 and distinguish |r|<1 from the two endpoints.\nFormula/Principle: The series ∑rⁿ/n converges absolutely for |r|<1; at r=−1 it is alternating harmonic, while at r=1 it is harmonic.\nStep 1: 1<x<3 converges absolutely; x=1 converges conditionally; x=3 diverges.\nWorked derivation: \\[|x-2|<1\\Rightarrow1<x<3;\\qquad x=1:\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n}\\text{ converges};\\quad x=3:\\sum_{n=1}^{\\infty}\\frac1n\\text{ diverges}.\\]\nWhy: A radius test determines only the open interval and leaves both boundary points undecided. The alternating test admits the left boundary but the harmonic comparison excludes the right boundary.\nWhy not the others: (B) discards a conditionally convergent endpoint; (C) admits a divergent harmonic endpoint; (D) confuses x with the shifted base r.\nKey point: Check each endpoint separately."
+      "explanation": "Answer: (A) 121.\nGiven: \\(b^2=ac,\\ a+b+c=13,\\ abc=27\\).\nFormula/Principle: The middle term of three consecutive positive GP terms is their geometric mean.\nStep 1: \\[abc=b^3=27\\Rightarrow b=3.\\]\nStep 2: \\[a+c=10,\\quad ac=9\\Rightarrow (a,c)=(1,9)\\] because the terms increase.\nStep 3: The common ratio is \\(r=b/a=3\\).\nStep 4: \\[S_5=a\\frac{r^5-1}{r-1}=\\frac{243-1}{2}=121.\\]\nWorked derivation: \\[1+3+9+27+81=121.\\]\nWhy: Positivity makes the cube-root choice unique, and strict increase determines which outer root is the first term. This is a finite geometric-sum problem and needs no test for convergence of a general infinite series.\nWhy not the others: (B) sums only four terms; (C) drops the initial one; (D) reports the next power rather than the sum.\nKey point: Use the product to fix the middle GP term, then recover order and ratio.",
+      "syllabus_anchor": "Sequences and series: geometric progression and finite sum"
     },
     {
       "id": "IAT27-T14-Q42",
@@ -988,9 +996,9 @@
         "D) 2√3 m s⁻¹"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) 2√3 m s⁻¹.\nGiven: Initial kinetic energy is ½(2)(2²)=4 J; the two graph areas are 4 J each.\nFormula/Principle: Work–energy theorem Kf=Ki+∫F dx.\nStep 1: Total work 8 J gives Kf=12 J and ½(2)v²=12.\nWorked derivation: \\[W=\\int_0^2 2x\\,dx+\\int_2^3 4\\,dx=8\\ {\\rm J},\\quad v=\\sqrt{\\frac{2(4+8)}{2}}=2\\sqrt3\\ {\\rm m\\,s^{-1}}.\\]\nWhy: The rising and constant segments contribute distinct areas that must be added before applying the work–energy theorem. The initial kinetic energy remains part of the final balance; setting final energy equal to work alone loses the starting speed.\nWhy not the others: (A) ignores work; (B) equates final kinetic energy to work alone; (C) treats energy increase as an increase in speed.\nKey point: Integrate force, then add initial energy.",
+      "explanation": "Answer: (D) \\(2\\sqrt3\\ \\mathrm{m\\,s^{-1}}\\).\nGiven: \\(m=2\\) kg, \\(v_0=2\\ \\mathrm{m\\,s^{-1}}\\); the graph rises as \\(F=2x\\) to 2 m and stays at 4 N to 3 m.\nFormula/Principle: \\[K_f-K_i=W=\\int F\\,dx.\\]\nStep 1: \\[K_i=\\tfrac12(2)(2)^2=4\\ \\mathrm J.\\]\nStep 2: The two work contributions are \\[W_1=\\int_0^2 2x\\,dx=4\\ \\mathrm J,\\quad W_2=\\int_2^3 4\\,dx=4\\ \\mathrm J.\\]\nStep 3: \\[K_f=4+4+4=12\\ \\mathrm J.\\]\nStep 4: \\[\\tfrac12(2)v_f^2=12\\Rightarrow v_f=\\sqrt{12}=2\\sqrt3\\ \\mathrm{m\\,s^{-1}}.\\]\nWorked derivation: \\[v_f=\\sqrt{v_0^2+2(W_1+W_2)/m}=2\\sqrt3\\ \\mathrm{m\\,s^{-1}}.\\]\nWhy: The graph encodes force over position, so its signed area is work rather than momentum change. Initial kinetic energy must be included before converting final energy back to speed.\nWhy not the others: (A) ignores work; (B) treats work alone as final kinetic energy; (C) incorrectly adds an energy increment directly to speed.\nKey point: Integrate force, add initial energy, then take the physical speed root.",
       "image_reference": "IAT_T14_Q48.png",
-      "image_alt": "Force versus position rising to 4 N at 2 m and remaining 4 N until 3 m"
+      "image_alt": "A force-position curve rises linearly then has a constant second segment."
     },
     {
       "id": "IAT27-T14-Q49",
@@ -1049,7 +1057,7 @@
       "correct_option": "C",
       "explanation": "Answer: (C) 0.6.\nGiven: Weight=ρblock gV; buoyancy=ρwater gVsub.\nFormula/Principle: Floating balance gives Vsub/V=ρblock/ρwater.\nStep 1: 600/1000=0.6; uniform cross section gives same height fraction.\nWorked derivation: \\[h_{\\rm sub}/h=V_{\\rm sub}/V=600/1000=0.6.\\]\nWhy: The fluid displaces only the submerged volume, not the whole block. The density ratio determines immersion for a freely floating object before any external force is added.\nWhy not the others: (A) gives emergent fraction; (B) assumes half; (D) implies neutral or denser block.\nKey point: Balance displaced-water weight with block weight.",
       "image_reference": "IAT_T14_Q51.png",
-      "image_alt": "Upright floating block with upper and submerged height"
+      "image_alt": "A partly immersed uniform block has its density and the water density labelled."
     },
     {
       "id": "IAT27-T14-Q52",
@@ -1089,7 +1097,7 @@
       "correct_option": "A",
       "explanation": "Answer: (A) Midpoint.\nWorked derivation: \\[E_{-a}(0)=\\frac{kq}{a^2}\\hat x,\\quad E_{+a}(0)=-\\frac{kq}{a^2}\\hat x\\Rightarrow E_{\\rm net}(0)=0.\\]\nWhy: Between like charges the fields point oppositely and equal magnitudes require equal distances, hence the midpoint. Outside the two charges both fields point the same way and cannot cancel.\nWhy not the others: (B) and (C) lie outside with co-directed fields; (D) overlooks symmetry.\nKey point: Check direction before equating magnitudes.",
       "image_reference": "IAT_T14_Q53.png",
-      "image_alt": "Two equal positive charges at x=-a and x=+a"
+      "image_alt": "Equal positive charges lie symmetrically on the x-axis."
     },
     {
       "id": "IAT27-T14-Q54",
@@ -1167,7 +1175,7 @@
       "correct_option": "A",
       "explanation": "Answer: (A) Virtual upright at 10 cm left.\nGiven: f=+10 cm, u=−5 cm.\nFormula/Principle: 1/f=1/v−1/u.\nStep 1: 1/v=1/10−1/5=−1/10, so v=−10 cm; magnification v/u=+2.\nWorked derivation: \\[v=-10\\ {\\rm cm},\\quad m=v/u=(-10)/(-5)=+2.\\]\nWhy: An object inside the focal length produces outgoing diverging rays whose backward extensions meet on the object side. A negative image distance and positive magnification together identify virtual upright imaging.\nWhy not the others: (B) reverses distance sign; (C) mismatches sign and orientation; (D) calls a negative-v image real.\nKey point: Interpret both v sign and magnification.",
       "image_reference": "IAT_T14_Q57.png",
-      "image_alt": "Converging lens with object 5 cm to its left and focal points 10 cm away"
+      "image_alt": "A converging lens has an object inside its left focal distance."
     },
     {
       "id": "IAT27-T14-Q58",
@@ -1212,19 +1220,21 @@
       "section": "P",
       "subject": "Physics",
       "topic": "Nuclei",
-      "sub_topic": "radioactivity count rate",
+      "sub_topic": "Infer half-life then apply source-only attenuation and background",
       "class_level": "12",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "A detector counts 800 events per minute from a radioactive source plus constant 100-per-minute background. Two half-lives later, what total count rate should it read, assuming detector efficiency unchanged?",
+      "question": "A detector reads 900 counts min⁻¹ at t=0 and 500 counts min⁻¹ at t=4 h from one radioactive source plus a constant electronic background of 100 counts min⁻¹. Immediately before the reading at t=12 h, a screen is inserted that halves detected source events but does not change the electronic background. What total rate is then expected?",
       "options": [
-        "A) 175",
-        "B) 200",
-        "C) 300",
-        "D) 275"
+        "A) 100 counts min⁻¹",
+        "B) 200 counts min⁻¹",
+        "C) 250 counts min⁻¹",
+        "D) 150 counts min⁻¹"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) 275 per minute.\nGiven: Source-only initial rate=800−100=700.\nFormula/Principle: Two half-lives reduce source rate to 700/4=175; background remains 100.\nStep 1: Total=175+100=275 min⁻¹.\nWorked derivation: \\[R(t)=100+(800-100)2^{-2}=100+175=275\\ {\\rm min^{-1}}.\\]\nWhy: Background counts do not decay with the source in the stipulated measurement, so applying the factor one quarter to the observed total would underpredict the final reading. Subtract and restore the constant background around the decay operation.\nWhy not the others: (A) omits background; (B) quarters total; (C) adds the initial background twice.\nKey point: Separate source signal from baseline count."
+      "explanation": "Answer: (D) 150 counts min⁻¹.\nGiven: The two initial observations use the same source detection efficiency; only the final screen changes detected source events.\nFormula/Principle: Subtract a constant background before applying exponential decay, then apply any source-only attenuation before restoring the background.\nStep 1: Source rates are \\(900-100=800\\) initially and \\(500-100=400\\) after 4 h, establishing a half-life of 4 h.\nStep 2: At 12 h, three half-lives have elapsed:\\[R_s=800(1/2)^3=100\\ \\mathrm{min^{-1}}.\\]\nStep 3: The screen reduces that source contribution to \\(100/2=50\\ \\mathrm{min^{-1}}\\).\nStep 4: \\[R_{\\mathrm{total}}=50+100=150\\ \\mathrm{min^{-1}}.\\]\nWorked derivation: \\[R_{\\mathrm{total}}(12)=100+\\tfrac12(900-100)2^{-12/4}=150\\ \\mathrm{min^{-1}}.\\]\nWhy: The independent electronic baseline neither decays with the source nor passes through the source-attenuating screen. Separating those contributions is necessary both when inferring the half-life and when predicting the final detector reading.\nWhy not the others: (A) loses the surviving source term; (B) ignores the screen; (C) miscalculates the number of elapsed half-lives or restores background more than once.\nKey point: Infer decay from background-corrected data before changing the detection model.",
+      "syllabus_anchor": "Nuclei: radioactive decay"
     }
-  ]
+  ],
+  "content_revision": "milestone15_fix_v1"
 }

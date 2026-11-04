@@ -5,7 +5,7 @@
   "title": "IAT New Test 8",
   "test_number": 8,
   "status": "pending_revision",
-  "review_status": "fresh AI-assisted authoring; independent academic review pending",
+  "review_status": "milestone corrections applied; independent academic and timed review pending",
   "schema_version": "ourmocks-iat-flat-1.1",
   "syllabus_source": "IISER/IISER_Aptitude_Test_Syllabus_2026.md; exact listed topic/sub-topic checked",
   "notification_source": "Official IAT 2026 examination page and 2026 Information Brochure, sections 19 and 23; a 2027 brochure has not been verified",
@@ -60,7 +60,7 @@
       "attempt": 15
     }
   ],
-  "revision_date": "2026-11-01",
+  "revision_date": "2026-11-03",
   "difficulty_policy": {
     "easy": 9,
     "medium": 42,
@@ -381,21 +381,22 @@
       "section": "C",
       "subject": "Chemistry",
       "topic": "Coordination compounds",
-      "sub_topic": "ligand-field high-low spin",
+      "sub_topic": "Geometrical and optical multiplicity of a chelated octahedron",
       "class_level": "12",
       "difficulty": "hard",
       "format": "diagram",
-      "question": "The figure compares octahedral splitting in complexes X and Y of the same d⁶ metal: X has Δ smaller than pairing energy P, Y has Δ larger than P. Which pair of unpaired-electron counts is expected, X then Y?",
+      "question": "The diagrams show the two geometrical arrangements of octahedral \\([\\ce{Co(en)2Cl2}]^+\\), with each en joining two adjacent donor sites. Counting mirror-image forms separately but ignoring conformers, how many configurational stereoisomers exist in total, and how many of them are optically active?",
       "options": [
-        "A) 4 and 0",
-        "B) 0 and 4",
-        "C) 2 and 2",
-        "D) 4 and 2"
+        "A) 3 total; 2 optically active",
+        "B) 2 total; 0 optically active",
+        "C) 4 total; 4 optically active",
+        "D) 3 total; 3 optically active"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) Four and zero.\nWhy: With small splitting in X, electrons occupy eg orbitals before pairing extensively, yielding high-spin t₂g⁴eg² with four unpaired. With large splitting in Y, pairing in lower t₂g levels is favoured, giving low-spin t₂g⁶ with none. The same d count isolates ligand-field strength.\nWhy not the others: (B) reverses pairing condition; (C) ignores different Δ/P regimes; (D) leaves Y partly unpaired despite complete t₂g pairing.\nKey point: Compare Δ with pairing energy before filling d orbitals.",
+      "explanation": "Answer: (A) Three total, of which two are optically active.\nGiven: The two chloride sites can be adjacent or opposite; en is bidentate and its donor pairs remain connected as shown.\nFormula/Principle: Count geometrical arrangements first, then distinguish non-superposable mirror partners within each.\nStep 1: Adjacent chlorides define the cis arrangement; opposite chlorides define trans.\nStep 2: The cis arrangement has two non-superposable mirror forms because of the connected chelate rings.\nStep 3: The trans arrangement has a symmetry plane and contributes one achiral form.\nStep 4: Total \\(=2+1=3\\); optically active forms \\(=2\\).\nWhy: A ligand count or high/low-spin comparison cannot decide this stereochemical count. The chelate connections in the diagram must be preserved when testing whether a mirror image can be rotated onto the original.\nWhy not the others: (B) counts geometries but merges the cis mirror pair; (C) incorrectly splits trans into an optical pair; (D) treats the trans form as chiral.\nKey point: Count geometry and optical multiplicity in separate stages.",
       "image_reference": "IAT_T08_Q17.png",
-      "image_alt": "Read octahedral splitting and occupancy"
+      "image_alt": "Adjacent versus opposite chloride sites with connected pairs of nitrogen donors.",
+      "syllabus_anchor": "Coordination compounds: isomerism"
     },
     {
       "id": "IAT27-T08-Q18",
@@ -414,7 +415,7 @@
         "D) +2"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) +1.\nGiven: Nitrogen has five valence electrons, four shared bond pairs and no lone pair in this contributor.\nFormula/Principle: Formal charge = valence − nonbonding − half bonding electrons.\nStep 1: Four bond pairs place eight bonding electrons around N.\nStep 2: FC(N)=5−0−8/2=+1.\nWhy: The two singly bonded oxygens each carry −1, giving net −1 for nitrate when nitrogen is +1. Formal charge is bookkeeping within a contributor, not a statement that nitrogen is a free N⁺ ion.\nWhy not the others: (A) omits the charge needed for net −1; (C) reverses sign; (D) overcounts the bond electron assignment.\nKey point: Check atom charges against the whole ion's charge."
+      "explanation": "Answer: (B) +1.\nGiven: Nitrogen has five valence electrons, four shared bond pairs and no lone pair in this contributor.\nFormula/Principle: Formal charge = valence − nonbonding − half bonding electrons.\nStep 1: Four bond pairs place eight bonding electrons around N.\nStep 2: FC(N)=5−0−8/2=+1.\nWorked derivation: \\[\\mathrm{FC}(\\mathrm N)=5-N_{\\mathrm{nonbonding}}-\\tfrac12N_{\\mathrm{bonding}}=5-0-\\tfrac82=+1.\\]\nWhy: The two singly bonded oxygens each carry −1, giving net −1 for nitrate when nitrogen is +1. Formal charge is bookkeeping within a contributor, not a statement that nitrogen is a free N⁺ ion.\nWhy not the others: (A) omits the charge needed for net −1; (C) reverses sign; (D) overcounts the bond electron assignment.\nKey point: Check atom charges against the whole ion's charge."
     },
     {
       "id": "IAT27-T08-Q19",
@@ -528,26 +529,27 @@
         "D) First"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) First order.\nGiven: Half-life independent of doubled initial concentration.\nFormula/Principle: For first order \\(t_{1/2}=\\ln2/k\\); for zero and second order it depends on initial concentration.\nStep 1: The measured two half-lives are equal.\nStep 2: This matches concentration-independent first-order half-life.\nWhy: The comparison changes only starting concentration, so it diagnoses the functional dependence of half-life rather than the rate's numerical value. Two measurements support the first-order model but do not establish an exact mechanism.\nWhy not the others: (A) predicts half-life doubles with concentration; (B) predicts it halves; (C) has another concentration dependence.\nKey point: Use controlled concentration change to test kinetic order."
+      "explanation": "Answer: (D) First order.\nGiven: Half-life independent of doubled initial concentration.\nFormula/Principle: For first order \\(t_{1/2}=\\ln2/k\\); for zero and second order it depends on initial concentration.\nStep 1: The measured two half-lives are equal.\nStep 2: This matches concentration-independent first-order half-life.\nWorked derivation: \\[t_{1/2}=\\ln2/k\\quad\\text{for first order};\\qquad\\frac{t_{1/2}(0.20\\ \\mathrm M)}{t_{1/2}(0.10\\ \\mathrm M)}=\\frac{20}{20}=1.\\]\nWhy: The comparison changes only starting concentration, so it diagnoses the functional dependence of half-life rather than the rate's numerical value. Two measurements support the first-order model but do not establish an exact mechanism.\nWhy not the others: (A) predicts half-life doubles with concentration; (B) predicts it halves; (C) has another concentration dependence.\nKey point: Use controlled concentration change to test kinetic order."
     },
     {
       "id": "IAT27-T08-Q25",
       "section": "C",
       "subject": "Chemistry",
       "topic": "Equilibrium",
-      "sub_topic": "common-ion solubility",
+      "sub_topic": "Dissolution coupled to supplied complex-formation equilibrium",
       "class_level": "11",
       "difficulty": "medium",
       "format": "numerical",
-      "question": "AgCl has Ksp=10⁻¹⁰. In 0.010 M NaCl, assuming [Cl⁻]≈0.010 M, what is its molar solubility and ratio to solubility in pure water?",
+      "question": "A saturated AgCl solution is in contact with solid AgCl and a reservoir that holds free NH₃ at 1.0 M. Use \\(K_{sp}=10^{-10}\\) and \\([\\ce{Ag(NH3)2+}]/([\\ce{Ag+}][\\ce{NH3}]^2)=10^8\\). No chloride is initially added, and free Ag⁺ is negligible compared with its complex. What is the approximate total dissolved silver concentration?",
       "options": [
-        "A) 10⁻⁸ M and 10⁻³",
-        "B) 10⁻⁵ M and 1",
-        "C) 10⁻⁶ M and 10⁻¹",
-        "D) 10⁻⁸ M and 10³"
+        "A) 0.10 M",
+        "B) \\(10^{-5}\\) M",
+        "C) \\(10^{-10}\\) M",
+        "D) 1.0 M"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) 10⁻⁸ M, one-thousandth of pure-water solubility.\nGiven: Ksp=s[Cl⁻] and pure-water solubility √Ksp=10⁻⁵ M.\nFormula/Principle: Common-ion approximation [Cl⁻]≈10⁻² M.\nStep 1: s=10⁻¹⁰/10⁻²=10⁻⁸ M.\nStep 2: s/s₀=10⁻⁸/10⁻⁵=10⁻³.\nWhy: Added chloride shifts dissolution toward solid; its 0.010 M concentration dwarfs the extra 10⁻⁸ M chloride supplied by AgCl, validating the approximation. Pure-water and common-ion cases require different chloride balances.\nWhy not the others: (B) ignores added chloride; (C) uses wrong exponent; (D) reverses suppression ratio.\nKey point: Check common-ion dominance after solving."
+      "explanation": "Answer: (A) Approximately 0.10 M.\nGiven: Each dissolved AgCl supplies one chloride; the ammonia reservoir fixes its free concentration despite complex formation.\nFormula/Principle: Combine dissolution and complex formation, retaining free-ion concentrations in \\(K_{sp}\\).\nStep 1: Let total dissolved silver be s. Then \\([\\ce{Cl-}]=s\\) and \\([\\ce{Ag(NH3)2+}]\\simeq s\\).\nStep 2: The formation relation gives \\([\\ce{Ag+}]\\simeq s/10^8\\).\nStep 3: \\[K_{sp}\\simeq\\frac{s}{10^8}s=10^{-10}\\Rightarrow s^2=10^{-2}\\Rightarrow s=0.10\\ \\mathrm M.\\]\nStep 4: Free silver is about \\(10^{-9}\\) M, confirming that it is negligible relative to 0.10 M complex.\nWhy: Complex formation removes free silver ions without removing total dissolved silver, so more solid can dissolve while the free-ion product remains fixed. The reservoir assumption is essential; the free ammonia concentration could not otherwise be treated as unchanged at this solubility.\nWhy not the others: (B) gives pure-water solubility with no complexing ligand; (C) treats the solubility product as a concentration; (D) omits the square root in the combined equilibrium.\nKey point: Distinguish free-ion concentration from total analytical solubility.",
+      "syllabus_anchor": "Equilibrium: equilibrium constant and solubility; coordination compounds"
     },
     {
       "id": "IAT27-T08-Q26",
@@ -585,7 +587,7 @@
         "D) At no T"
       ],
       "correct_option": "C",
-      "explanation": "Answer: (C) T<400 K.\nGiven: Convert entropy to −0.100 kJ mol⁻¹ K⁻¹.\nFormula/Principle: ΔG=ΔH−TΔS=−40+0.100T kJ mol⁻¹.\nStep 1: Set ΔG<0.\nStep 2: 0.100T<40, so T<400 K; at 400 K equilibrium boundary.\nWhy: Negative enthalpy favours the reaction, but negative entropy penalises it increasingly at high temperature. Unit conversion is essential before equating the two terms. The boundary is not included in a strictly spontaneous range.\nWhy not the others: (A) reverses the temperature effect; (B) ignores the high-temperature entropy penalty; (D) ignores low-temperature favourability.\nKey point: Convert units and solve strict ΔG inequality."
+      "explanation": "Answer: (C) T<400 K.\nGiven: Convert entropy to −0.100 kJ mol⁻¹ K⁻¹.\nFormula/Principle: ΔG=ΔH−TΔS=−40+0.100T kJ mol⁻¹.\nStep 1: Set ΔG<0.\nStep 2: 0.100T<40, so T<400 K; at 400 K equilibrium boundary.\nWorked derivation: \\[\\Delta G=-40-T(-0.100)=-40+0.100T<0\\Rightarrow0<T<400\\ \\mathrm K.\\]\nWhy: Negative enthalpy favours the reaction, but negative entropy penalises it increasingly at high temperature. Unit conversion is essential before equating the two terms. The boundary is not included in a strictly spontaneous range.\nWhy not the others: (A) reverses the temperature effect; (B) ignores the high-temperature entropy penalty; (D) ignores low-temperature favourability.\nKey point: Convert units and solve strict ΔG inequality."
     },
     {
       "id": "IAT27-T08-Q28",
@@ -604,7 +606,7 @@
         "D) Positive deviation, weaker A–B attraction"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) Positive deviation, weaker unlike-molecule attraction.\nGiven: xB=0.75; ideal total 0.25(100)+0.75(60)=70 mmHg.\nFormula/Principle: Compare observed 80 with ideal 70.\nStep 1: Observed exceeds ideal by 10 mmHg.\nStep 2: Positive deviation is consistent with unlike A–B interactions weaker than like interactions.\nWhy: Weaker unlike attraction allows molecules to escape more readily, elevating vapour pressure. A single composition establishes deviation at that composition, not the shape of the entire phase diagram. The liquid fractions still sum to one.\nWhy not the others: (A) predicts pressure below 70; (B) contradicts the measured 80; (C) ignores that xB=1−xA=0.75.\nKey point: Compute ideal pressure first, then infer sign of deviation.",
+      "explanation": "Answer: (D) Positive deviation, weaker unlike-molecule attraction.\nGiven: xB=0.75; ideal total 0.25(100)+0.75(60)=70 mmHg.\nFormula/Principle: Compare observed 80 with ideal 70.\nStep 1: Observed exceeds ideal by 10 mmHg.\nStep 2: Positive deviation is consistent with unlike A–B interactions weaker than like interactions.\nWorked derivation: \\[p_{\\mathrm{ideal}}=0.25(100)+0.75(60)=70\\ \\mathrm{mmHg},\\quad p_{\\mathrm{observed}}-p_{\\mathrm{ideal}}=80-70=+10\\ \\mathrm{mmHg}.\\]\nWhy: Weaker unlike attraction allows molecules to escape more readily, elevating vapour pressure. A single composition establishes deviation at that composition, not the shape of the entire phase diagram. The liquid fractions still sum to one.\nWhy not the others: (A) predicts pressure below 70; (B) contradicts the measured 80; (C) ignores that xB=1−xA=0.75.\nKey point: Compute ideal pressure first, then infer sign of deviation.",
       "image_reference": "IAT_T08_Q28.png",
       "image_alt": "Read observed and pure vapour pressures"
     },
@@ -708,19 +710,20 @@
       "section": "M",
       "subject": "Mathematics",
       "topic": "Relations & functions",
-      "sub_topic": "equivalence relation test",
+      "sub_topic": "Minimum equivalence completion with a class-count constraint",
       "class_level": "11",
       "difficulty": "hard",
-      "format": "conceptual",
-      "question": "On S={1,2,3,4}, relation R contains all diagonal pairs and also (1,2),(2,1),(2,3),(3,2). What minimum number of ordered pairs must be added to make R an equivalence relation?",
+      "format": "numerical",
+      "question": "On S={1,2,3,4,5,6}, R contains all diagonal pairs and exactly the additional pairs (1,2),(2,1),(2,3),(3,2),(4,5),(5,4). What is the minimum number of ordered pairs that must be added to make R an equivalence relation with exactly two equivalence classes?",
       "options": [
-        "A) 1",
-        "B) 2",
-        "C) 3",
-        "D) 4"
+        "A) 2",
+        "B) 6",
+        "C) 8",
+        "D) 14"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) Two pairs.\nWorked derivation: \\[1R2,\\ 2R3\\Rightarrow 1R3;\\qquad 3R2,\\ 2R1\\Rightarrow3R1.\\]\nWhy: Reflexivity is already supplied and the given off-diagonal pairs occur symmetrically. Transitivity connects 1 to 3 in both directions, requiring (1,3) and (3,1); after adding them, {1,2,3} is one complete class and {4} remains a singleton. This proves sufficiency as well as necessity.\nWhy not the others: (A) leaves one direction missing; (C) adds an unnecessary pair; (D) overcounts beyond the complete class.\nKey point: Complete each connected symmetric component into an equivalence class."
+      "explanation": "Answer: (B) Six ordered pairs.\nGiven: R is already reflexive and symmetric; the chains force 1,2,3 into one class and 4,5 into another.\nFormula/Principle: An equivalence class of size s contains all \\(s^2\\) ordered pairs; merging classes of sizes a,b adds \\(2ab\\) cross-pairs.\nStep 1: Complete transitivity in \\(\\{1,2,3\\}\\) by adding (1,3) and (3,1). The minimal closure then has classes of sizes 3,2,1.\nStep 2: Exactly two classes requires merging at least two of these components; splitting a forced component is impossible.\nStep 3: The possible additional merge costs are \\(2(3)(2)=12\\), \\(2(3)(1)=6\\) and \\(2(2)(1)=4\\).\nStep 4: Merge \\(\\{4,5\\}\\) with \\(\\{6\\}\\), giving total additions \\(2+4=6\\).\nWorked derivation: \\[N_{\\min}=2+\\min\\{12,6,4\\}=6.\\]\nWhy: Completing transitivity alone leaves three classes and therefore does not satisfy the extra class-count condition. Comparing merge costs proves that the chosen six additions are sufficient and minimal, not just one possible completion.\nWhy not the others: (A) stops at the three-class closure; (C) merges the size-three and size-one components; (D) merges the two largest components.\nKey point: Establish forced classes, then optimise the permitted mergers.",
+      "syllabus_anchor": "Relations and functions: equivalence relations; counting"
     },
     {
       "id": "IAT27-T08-Q35",
@@ -1220,5 +1223,6 @@
       "correct_option": "D",
       "explanation": "Answer: (D) 100 nm.\nGiven: Air-to-film reflection gains π phase; film-to-lower-index glass reflection gains none.\nFormula/Principle: With one phase reversal, constructive reflection requires \\(2nt=(m+1/2)\\lambda\\).\nStep 1: For least positive t use m=0.\nStep 2: \\(t=\\lambda/(4n)=600/(4·1.5)=100\\) nm.\nWorked derivation: \\[2nt=\\tfrac12\\lambda\\Rightarrow t_{min}=\\frac{600\\,\\mathrm{nm}}{4(1.5)}=100\\,\\mathrm{nm}.\\]\nWhy: The two reflected rays differ by one interface phase reversal; the optical round trip must add another π to align them. If the substrate index exceeded the film index, both reflections would reverse and the thickness rule would change.\nWhy not the others: (A) halves the optical path twice; (B) uses the two-reversal condition; (C) miscounts n.\nKey point: Count reflection phase reversals before path difference."
     }
-  ]
+  ],
+  "content_revision": "milestone15_fix_v1"
 }

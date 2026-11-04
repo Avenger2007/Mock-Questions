@@ -1,3 +1,5 @@
+> **Historical snapshot — milestone corrections, 4 November 2026:** Later canonical changes supersede affected content, answer descriptions, page counts and validation claims below. Read [the correction report](milestone15_fixes/CORRECTION_REPORT.md) and its final source-bound evidence for the current Tests 1–15 checkpoint.
+
 # Explanation revision: IAT New Tests 2–5 (1 November 2026)
 
 Status: `pending_revision`. These four authored papers remain drafts for independent subject and timed-student review.

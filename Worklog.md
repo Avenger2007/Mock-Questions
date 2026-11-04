@@ -391,3 +391,8 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 - Drew and registered 11 question-bearing figures in Test 12 and 10 in Test 13. The 31- and 30-page review PDFs contain 60 questions and 60 solutions each, with source/delivery/PDF/image hashes, no empty pages, no overfull text and no missing glyphs. Expanded all one-sentence `Why` sections and replaced pooled distractor rationales with individual errors.
 - Replaced text-similar combustion, divisibility, monotonicity, trigonometry and lattice-path tasks; documented residual method-distinct overlap-screen candidates. Updated the 25-test register to 780 authored review-draft slots and 720 reservations, and merged independent `main` Economics/Computer Science changes into this IAT branch without changing `main`.
 - See `IISER/review/IAT_NEW_TESTS_12_13_REVIEW_NOTES.md` for 30 Mathematics task checks and remaining independent academic, timed-student and 2027-notification review gates.
+
+
+## IAT milestone corrections — 3 November 2026
+
+Branch `fix-iat-milestone-15` applies the documented Tests 1–15 audit repairs to canonical JSON at fixed IDs: scientific assumptions, listed-syllabus replacements, repeated task angles, demand, detailed explanations and figures. The correction report, item change ledger, source-bound checks and rebuilt review PDFs/HTML are in `IISER/review/milestone15_fixes/`. Strict validation covers all 900 items; arithmetic probes are targeted author-side checks, not an independent 900-answer certificate. The bank remains pending hidden-key academic and timed review. `main` and earlier test branches are preserved.

@@ -5,7 +5,7 @@
   "title": "IAT New Test 12",
   "test_number": 12,
   "status": "pending_revision",
-  "review_status": "fresh AI-assisted authoring; independent academic review pending",
+  "review_status": "milestone corrections applied; independent academic and timed review pending",
   "schema_version": "ourmocks-iat-flat-1.1",
   "syllabus_source": "IISER/IISER_Aptitude_Test_Syllabus_2026.md; exact listed topic/sub-topic checked",
   "notification_source": "Official IAT 2026 examination page and 2026 Information Brochure, sections 19 and 23; a 2027 brochure has not been verified",
@@ -271,19 +271,20 @@
       "section": "B",
       "subject": "Biology",
       "topic": "Genetics And Evolution",
-      "sub_topic": "linkage test-cross interpretation",
+      "sub_topic": "Linked test-cross gametes used in an intercross",
       "class_level": "12",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "A heterozygote in coupling phase AB/ab is test-crossed. Among 1000 progeny, AB and ab each occur 390 times, while Ab and aB each occur 110 times. What is the map distance between the loci?",
+      "question": "A coupling-phase heterozygote AB/ab is test-crossed, giving 390 AB, 390 ab, 110 Ab and 110 aB progeny. Assume these are exact gamete probabilities, the same in both sexes, with no viability differences. Two such heterozygotes are then crossed. What is the probability of an offspring with genotype aa and dominant B phenotype?",
       "options": [
-        "A) 11 cM",
-        "B) 22 cM",
-        "C) 39 cM",
-        "D) 78 cM"
+        "A) 121/10000",
+        "B) 979/10000",
+        "C) 1521/10000",
+        "D) 2500/10000"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) 22 cM.\nGiven: Test-cross progeny reveal heterozygote gametes; recombinants are Ab and aB.\nFormula/Principle: Recombination fraction = recombinant total / total.\nStep 1: (110+110)/1000=0.22, corresponding to 22 cM.\nWhy: Coupling phase makes AB and ab parental even though each is not half the sample; the smaller two classes identify recombination. This distance is an approximation from the observed two-locus fraction.\nWhy not the others: (A) counts one recombinant class; (C) counts one parental class; (D) sums the parentals.\nKey point: Identify parental phase before summing recombinants."
+      "explanation": "Answer: (B) 979/10000.\nGiven: Gamete probabilities are \\(P(AB)=P(ab)=0.39\\) and \\(P(Ab)=P(aB)=0.11\\).\nFormula/Principle: The desired event is aa excluding aabb; parental gametes combine independently under the stated model.\nStep 1: Each parent supplies allele a with probability \\(0.39+0.11=0.50\\), so \\[P(aa)=0.50^2=0.25.\\]\nStep 2: Both parents must supply ab to produce aabb:\\[P(aabb)=0.39^2=0.1521.\\]\nStep 3: \\[P(aaB\\_)=P(aa)-P(aabb)=0.25-0.1521=0.0979.\\]\nWhy: Linkage changes the joint gamete probabilities even though each single locus still segregates one half. Using the measured ab frequency preserves that dependence; multiplying independent-locus phenotype ratios would not.\nWhy not the others: (A) squares a recombinant gamete only; (C) reports aabb, the excluded class; (D) includes all aa offspring, including bb.\nKey point: Infer gametes from the test cross before calculating a different cross.",
+      "syllabus_anchor": "Genetics: inheritance of two genes and linkage"
     },
     {
       "id": "IAT27-T12-Q12",
@@ -387,40 +388,42 @@
       "section": "C",
       "subject": "Chemistry",
       "topic": "Coordination compounds",
-      "sub_topic": "geometrical isomer count",
+      "sub_topic": "Square-planar trans-partner pairing with four distinct ligands",
       "class_level": "12",
       "difficulty": "medium",
       "format": "diagram",
-      "question": "The square-planar complex [Pt(NH₃)₂Cl₂] is shown with adjacent ligands on one sketch and opposite ligands on another. How many distinct geometrical arrangements exist, ignoring optical isomerism?",
+      "question": "Four different monodentate ligands A, B, C and D occupy the four sites of a square-planar complex, as represented in the diagram. How many geometrical isomers are possible, counting arrangements related by rigid rotation as the same?",
       "options": [
-        "A) Three",
-        "B) Four",
-        "C) One",
-        "D) Two"
+        "A) 2",
+        "B) 4",
+        "C) 6",
+        "D) 3"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) Two.\nWhy: The identical chlorides can be adjacent (cis) or opposite (trans) on a square plane. Rotating the square maps other drawings onto one of these two; swapping the ammine labels does not create another arrangement.\nWhy not the others: (A) counts one rotated cis/trans drawing as a third form; (B) counts both rotations as new forms; (C) fails to distinguish adjacent from opposite chloride placement.\nKey point: Identify configurations modulo rotation.",
+      "explanation": "Answer: (D) Three geometrical isomers.\nGiven: Every ligand is different and all four sites lie in one square plane.\nFormula/Principle: Fix A at one site by rotation and distinguish which ligand lies opposite it.\nStep 1: The trans partner of A can be B, C or D.\nStep 2: For each chosen trans partner, the remaining two ligands fill the other opposite pair; exchanging them does not create a new geometrical isomer after a rigid rotation in three-dimensional space.\nStep 3: There are therefore three distinct trans-pairing patterns.\nWhy: A square-planar complex with four different ligands requires tracking pairings, not merely the two adjacent/opposite cases of MA₂B₂. The plane of the molecule also prevents counting an extra optical pair for each drawing.\nWhy not the others: (A) reuses the MA₂B₂ count; (B) counts a rotational duplicate; (C) counts the two orders of each remaining ligand pair separately.\nKey point: Count independent opposite-partner pairings after removing rotational duplicates.",
       "image_reference": "IAT_T12_Q17.png",
-      "image_alt": "Adjacent and opposite ligand arrangements on a square plane"
+      "image_alt": "Four different ligands occupy sites of a square-planar coordination complex.",
+      "syllabus_anchor": "Coordination compounds: geometrical isomerism"
     },
     {
       "id": "IAT27-T12-Q18",
       "section": "C",
       "subject": "Chemistry",
       "topic": "Chemical Bonding and Molecular Structure",
-      "sub_topic": "formal-charge minimisation",
+      "sub_topic": "Nitrate resonance formal charge and bond-order bookkeeping",
       "class_level": "11",
       "difficulty": "hard",
       "format": "conceptual",
-      "question": "For the nitrate ion NO₃⁻, compare Lewis structures with one N=O and two N–O bonds to a hypothetical three N=O structure. Why is the latter inadmissible for second-period nitrogen?",
+      "question": "For nitrate, consider the octet-respecting Lewis contributors with one N=O and two N–O bonds. Which triple gives their number, the formal charge on nitrogen in each, and the mean N–O bond order in the resonance description?",
       "options": [
-        "A) Its oxygen atoms lack electrons",
-        "B) It assigns nitrogen more than an octet of electrons",
-        "C) It gives every oxygen a negative formal charge",
-        "D) It violates conservation of oxygen atoms"
+        "A) 3; −1; 4/3",
+        "B) 3; +1; 4/3",
+        "C) 1; +1; 2",
+        "D) 3; 0; 5/3"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) Nitrogen cannot exceed an octet here.\nWhy: Three N=O double bonds put 12 bonding electrons around central nitrogen, beyond the second-row octet. The valid resonance contributors have one double and two single bonds, with formal charges distributed over oxygen through resonance. Formal-charge minimisation cannot override the octet restriction.\nWhy not the others: (A) electron supply is not the limiting rule; (C) misstates charges; (D) keeps three oxygens.\nKey point: Apply valence-shell restrictions before formal-charge ranking."
+      "explanation": "Answer: (B) Three contributors; nitrogen +1; mean bond order 4/3.\nFormula/Principle: Formal charge equals valence electrons minus nonbonding electrons minus half the bonding electrons.\nStep 1: The double bond can be placed on any of three oxygens, giving three equivalent contributors.\nStep 2: Nitrogen has four bonding pairs and no lone pair, so its formal charge is \\(5-0-4=+1\\). Two singly bound oxygens each carry −1, giving total −1.\nStep 3: Each contributor has total bond order \\(2+1+1=4\\) over three N–O bonds, giving mean \\(4/3\\).\nWorked derivation: \\[N_{\\mathrm{contributors}}=3,\\quad\\mathrm{FC}(\\mathrm N)=5-0-8/2=+1,\\quad\\overline{\\mathrm{BO}}=(2+1+1)/3=4/3.\\]\nWhy: Resonance distributes the double-bond character over equivalent bonds without giving nitrogen an expanded octet. Counting contributors, assigning formal charge and averaging bond order are separate operations and must all agree with the ion's total charge.\nWhy not the others: (A) assigns the ion's overall charge to nitrogen; (C) treats one contributor as the whole description; (D) miscounts both nitrogen's shared electrons and total bond order.\nKey point: Check octet, total charge and resonance equivalence together.",
+      "syllabus_anchor": "Chemical bonding: Lewis approach and resonance"
     },
     {
       "id": "IAT27-T12-Q19",
@@ -543,19 +546,20 @@
       "section": "C",
       "subject": "Chemistry",
       "topic": "Equilibrium",
-      "sub_topic": "common-ion solubility",
+      "sub_topic": "Conjugate-acid hydrolysis of an ammonium salt",
       "class_level": "11",
       "difficulty": "easy",
       "format": "numerical",
-      "question": "For AgCl(s) ⇌ Ag⁺+Cl⁻, Ksp=10⁻¹⁰. In a solution already containing 0.01 M Cl⁻, and neglecting activity changes, what is the approximate molar solubility of AgCl?",
+      "question": "At 25°C, a 0.10 M NH₄Cl solution is prepared. Take \\(K_b(\\ce{NH3})=10^{-5}\\) and \\(K_w=10^{-14}\\); neglect activity effects and use the small-hydrolysis approximation. What is its approximate pH?",
       "options": [
-        "A) 10⁻⁴ M",
-        "B) 10⁻⁶ M",
-        "C) 10⁻¹⁰ M",
-        "D) 10⁻⁸ M"
+        "A) 3",
+        "B) 7",
+        "C) 9",
+        "D) 5"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) 10⁻⁸ M.\nGiven: Background chloride 10⁻² M is much greater than anticipated dissolved AgCl.\nFormula/Principle: Ksp=[Ag⁺][Cl⁻]≈s(10⁻²).\nStep 1: s=10⁻¹⁰/10⁻²=10⁻⁸ M; added chloride from dissolution is negligible.\nWhy: The common ion fixes the chloride concentration approximately while each dissolved formula unit gives one Ag⁺. The Ag⁺ produced at this small solubility changes the 0.01 M background chloride by only about one part in a million, so the approximation is self-consistent.\nWhy not the others: (A) is pure-water solubility; (B) misplaces two powers; (C) treats Ksp as concentration.\nKey point: Check the common-ion approximation afterward."
+      "explanation": "Answer: (D) Approximately 5.\nGiven: Chloride is a spectator, while ammonium is the conjugate acid of ammonia.\nFormula/Principle: \\[K_a(\\ce{NH4+})=K_w/K_b(\\ce{NH3}),\\qquad[\\ce{H+}]\\simeq\\sqrt{K_aC}.\\]\nStep 1: \\[K_a=10^{-14}/10^{-5}=10^{-9}.\\]\nStep 2: \\[[\\ce{H+}]\\simeq\\sqrt{10^{-9}(0.10)}=10^{-5}\\ \\mathrm M,\\quad pH=5.\\]\nStep 3: The hydrolysed fraction is \\(10^{-5}/0.10=10^{-4}\\), supporting the small-hydrolysis approximation.\nWhy: A salt of a weak base and strong acid can be acidic because its cation donates a proton to water. The base's \\(K_b\\) cannot be used directly as the ammonium acid constant.\nWhy not the others: (A) uses the wrong acid constant; (B) assumes every salt is neutral; (C) treats ammonium as a base rather than its conjugate acid.\nKey point: Identify the hydrolysing ion and its conjugate equilibrium.",
+      "syllabus_anchor": "Equilibrium: ionisation of acids and bases and salts"
     },
     {
       "id": "IAT27-T12-Q26",
@@ -612,7 +616,7 @@
         "D) 65 kPa"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) 35 kPa.\nGiven: xB=0.75 and the mixture follows Raoult's law.\nFormula/Principle: p_total=xA p*A+xB p*B.\nStep 1: 0.25×80+0.75×20=20+15=35 kPa.\nWhy: The total pressure sums component partial pressures, with liquid-phase mole fractions weighting the pure-component values. At xA=0.25, A contributes 20 kPa and B contributes 15 kPa, so neither pure-component pressure alone represents the mixture.\nWhy not the others: (A) uses B alone; (C) takes a simple average; (D) reverses the fractions.\nKey point: Distinguish liquid composition from vapour pressure contribution.",
+      "explanation": "Answer: (B) 35 kPa.\nGiven: xB=0.75 and the mixture follows Raoult's law.\nFormula/Principle: p_total=xA p*A+xB p*B.\nStep 1: 0.25×80+0.75×20=20+15=35 kPa.\nWorked derivation: \\[p_{\\mathrm{total}}=x_Ap_A^\\circ+(1-x_A)p_B^\\circ=0.25(80)+0.75(20)=35\\ \\mathrm{kPa}.\\]\nWhy: The total pressure sums component partial pressures, with liquid-phase mole fractions weighting the pure-component values. At xA=0.25, A contributes 20 kPa and B contributes 15 kPa, so neither pure-component pressure alone represents the mixture.\nWhy not the others: (A) uses B alone; (C) takes a simple average; (D) reverses the fractions.\nKey point: Distinguish liquid composition from vapour pressure contribution.",
       "image_reference": "IAT_T12_Q28.png",
       "image_alt": "Ideal mixture pure-component vapour pressures and composition"
     },
@@ -633,26 +637,27 @@
         "D) 0.8"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) 0.4 ethane mole fraction.\nGiven: Methane contributes one CO₂ per molecule and ethane two.\nFormula/Principle: Let ethane fraction be x; carbon balance gives (1−x)+2x=1.4.\nStep 1: 1+x=1.4, hence x=0.4. Cross-check the product is between 1 and 2 mol.\nWhy: The extra 0.4 mol carbon dioxide over pure methane arises from the second carbon in each ethane molecule. Oxygen supplied in combustion does not change the carbon balance.\nWhy not the others: (B) would yield 1.2 mol CO₂; (C) yields 1.6; (D) yields 1.8.\nKey point: Use product carbon balance to infer a mixture fraction."
+      "explanation": "Answer: (A) 0.4 ethane mole fraction.\nGiven: Methane contributes one CO₂ per molecule and ethane two.\nFormula/Principle: Let ethane fraction be x; carbon balance gives (1−x)+2x=1.4.\nStep 1: 1+x=1.4, hence x=0.4. Cross-check the product is between 1 and 2 mol.\nWorked derivation: \\[\\begin{aligned}n_{\\ce{CH4}}&=1-x,\\quad n_{\\ce{C2H6}}=x,\\\\n_{\\ce{CO2}}&=(1-x)+2x=1.4,\\\\x&=0.40.\\end{aligned}\\]\nWhy: The extra 0.4 mol carbon dioxide over pure methane arises from the second carbon in each ethane molecule. Oxygen supplied in combustion does not change the carbon balance.\nWhy not the others: (B) would yield 1.2 mol CO₂; (C) yields 1.6; (D) yields 1.8.\nKey point: Use product carbon balance to infer a mixture fraction."
     },
     {
       "id": "IAT27-T12-Q30",
       "section": "C",
       "subject": "Chemistry",
       "topic": "Haloalkanes and haloarenes",
-      "sub_topic": "stereochemical substitution",
+      "sub_topic": "Two stereospecific substitutions and nitrile carbon accounting",
       "class_level": "12",
       "difficulty": "hard",
       "format": "conceptual",
-      "question": "An optically pure (R)-2-bromobutane reacts with a strong nucleophile in a polar aprotic medium under conditions favouring a single backside SN2 displacement and no rearrangement. What is expected for substitution at the stereogenic carbon?",
+      "question": "An optically pure 2-bromobutane undergoes clean SN2 replacement by iodide, then clean SN2 replacement by cyanide supplied as KCN. Assume carbon-bonded cyanide product, no elimination, no rearrangement and no other reaction. What are the final product's carbon count and net local geometry at the original stereogenic carbon relative to the starting material?",
       "options": [
-        "A) Retention only",
-        "B) Racemisation only",
-        "C) Inversion of local geometry",
-        "D) No stereochemical consequence"
+        "A) 4 carbons; retained",
+        "B) 5 carbons; inverted",
+        "C) 5 carbons; retained",
+        "D) 4 carbons; racemised"
       ],
       "correct_option": "C",
-      "explanation": "Answer: (C) Inversion at the reacting centre.\nWhy: SN2 bond formation and leaving-group departure occur concertedly from opposite sides. The tetrahedral arrangement inverts, though the product's R/S descriptor depends on substituent priorities after substitution; the prompt asks local geometry rather than guaranteeing an S label.\nWhy not the others: (A) is incompatible with backside attack; (B) describes a planar intermediate route; (D) ignores the stereogenic centre.\nKey point: Geometric inversion is more robust than a bare R-to-S claim."
+      "explanation": "Answer: (C) Five carbons; net retention of local geometry.\nStep 1: The first backside substitution replaces Br by I with inversion at the stereogenic carbon.\nStep 2: The second backside substitution replaces I by carbon-bonded CN with another inversion. Two inversions restore the original local arrangement of the three unchanged groups relative to the entering group.\nStep 3: Cyanide contributes one carbon to the original four-carbon skeleton, giving five carbons in the nitrile.\nWhy: Each clean SN2 step has its own stereochemical consequence, so the overall result cannot be inferred from one step alone. Net local retention is a geometric statement; an R/S label should still be assigned from the final substituent priorities rather than assumed from the word retention.\nWhy not the others: (A) omits the cyanide carbon; (B) counts only one inversion; (D) both omits the added carbon and invokes an SN1-style loss of stereospecificity absent from the premises.\nKey point: Track bond formation and stereochemistry across every substitution.",
+      "syllabus_anchor": "Haloalkanes: nucleophilic substitution; organic nitrogen: cyanides"
     },
     {
       "id": "IAT27-T12-Q31",
@@ -690,7 +695,7 @@
         "D) 24"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) 28.\nGiven: Pairwise intersection counts are floor(120/6)=20, floor(120/10)=12, floor(120/15)=8; triple intersection floor(120/30)=4.\nFormula/Principle: Pairwise sum counts each exactly-two member once but each triple member three times, so subtract 3 times the triple count.\nStep 1: 20+12+8−3×4=28.\nWorked derivation: \\[N_2=\\left\\lfloor\\frac{120}{6}\\right\\rfloor+\\left\\lfloor\\frac{120}{10}\\right\\rfloor+\\left\\lfloor\\frac{120}{15}\\right\\rfloor-3\\left\\lfloor\\frac{120}{30}\\right\\rfloor=28.\\]\nWhy: The phrase exactly two excludes every multiple of 30, which is present in all three pairwise sets. Subtracting the triple intersection only once would still count those integers twice, so the exclusion coefficient is three here.\nWhy not the others: (B) includes triples three times; (C) subtracts them once; (D) subtracts them four times.\nKey point: Correct the multiplicity of the triple intersection."
+      "explanation": "Answer: (A) 28 integers.\nGiven: The requested integers are divisible by exactly two of 2, 3 and 5 within 1 through 120.\nFormula/Principle: Count pairwise intersections, then remove all appearances of the triple intersection.\nStep 1: Pairwise counts are \\[\\lfloor120/6\\rfloor=20,\\quad\\lfloor120/10\\rfloor=12,\\quad\\lfloor120/15\\rfloor=8.\\]\nStep 2: Triple divisibility means divisibility by 30, giving \\(\\lfloor120/30\\rfloor=4\\).\nStep 3: Each exactly-two integer appears once in the pairwise sum, but each triple-divisible integer appears three times and must disappear entirely.\nStep 4: \\[N=20+12+8-3(4)=28.\\]\nWorked derivation: \\[N_2=\\sum_{\\text{three pairs}}N_{\\text{pair}}-3N_{\\text{triple}}=28.\\]\nWhy: This is not a count of the union of the divisibility sets. The phrase exactly two requires removing every copy of the four triple-divisible integers rather than leaving one copy as in an at-least-two count.\nWhy not the others: (B) leaves triples counted three times; (C) removes each only once; (D) subtracts each four times.\nKey point: Determine multiplicities for the specific event being counted."
     },
     {
       "id": "IAT27-T12-Q33",
@@ -785,7 +790,7 @@
         "D) No real a"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) a=1.\nGiven: f′_a(x)=3(x²−a); positivity for x>1 requires a≤1.\nFormula/Principle: For a≤1 the minimum is at x=1, with f_a(1)=1−3a.\nStep 1: Demand 1−3a≤−2, giving a≥1; intersect with a≤1.\nWorked derivation: \\[a\\le1,\\qquad 1-3a\\le-2\\iff a\\ge1\\quad\\Rightarrow\\quad a=1.\\]\nWhy: At a=1 the derivative vanishes only at the left endpoint and is positive for all x>1, so the function remains strictly increasing on [1,∞). The equality case a=1 is allowed because the derivative is zero only at the endpoint and stays positive at every later x.\nWhy not the others: (A) loses monotonicity near 1; (C) includes values with minimum greater than −2; (D) misses equality.\nKey point: Intersect a global derivative condition with a value bound."
+      "explanation": "Answer: (B) \\(a=1\\).\nGiven: \\(f_a(x)=x^3-3ax\\) on \\(x\\ge1\\), with strict increase and minimum at most −2 required simultaneously.\nFormula/Principle: Analyse the derivative on the full domain before imposing the minimum-value bound.\nStep 1: \\[f_a'(x)=3(x^2-a).\\] If \\(a>1\\), this derivative is negative just to the right of one, so global increase fails. If \\(a\\le1\\), it is positive for every \\(x>1\\), giving strict increase.\nStep 2: Under that condition the minimum is attained at the left endpoint:\\[\\min f_a=f_a(1)=1-3a.\\]\nStep 3: \\[1-3a\\le-2\\Rightarrow a\\ge1.\\]\nStep 4: Intersecting \\(a\\le1\\) and \\(a\\ge1\\) leaves only one; at \\(a=1\\) the endpoint derivative is zero but every later derivative is positive.\nWorked derivation: \\[a\\le1,\\quad a\\ge1\\Rightarrow a=1.\\]\nWhy: A zero derivative at a single endpoint does not prevent strict increase on the whole half-line. The minimum bound must be evaluated only after monotonicity has established where the minimum occurs.\nWhy not the others: (A) violates local monotonicity near one; (C) includes minima above −2; (D) rejects a valid equality case.\nKey point: Intersect global behaviour with the value condition, retaining valid endpoints."
     },
     {
       "id": "IAT27-T12-Q38",
@@ -887,19 +892,20 @@
       "section": "M",
       "subject": "Mathematics",
       "topic": "Quadratic Equations",
-      "sub_topic": "sign of roots",
+      "sub_topic": "Root-square constraint and real positive roots",
       "class_level": "11",
       "difficulty": "medium",
       "format": "numerical",
-      "question": "For x²−kx+9=0 to have two distinct positive real roots, which condition on real k is necessary and sufficient?",
+      "question": "For which real k does \\(x^2-2x+k=0\\) have real positive roots \\(\\alpha,\\beta\\), not necessarily distinct, satisfying \\(\\alpha^2+\\beta^2\\le3\\)?",
       "options": [
-        "A) k>0",
-        "B) k≥6",
-        "C) k<−6",
-        "D) k>6"
+        "A) \\(0<k<1\\)",
+        "B) \\(k\\ge1/2\\)",
+        "C) \\(1/2\\le k<1\\)",
+        "D) \\(1/2\\le k\\le1\\)"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) k>6.\nGiven: Root product=9>0 and sum=k.\nFormula/Principle: Distinct real roots require k²−36>0; positivity requires sum k>0.\nStep 1: Intersect k>0 with k>6 or k<−6 to obtain k>6.\nWorked derivation: \\[k^2-36>0,\\ k>0\\iff k>6.\\]\nWhy: Positive product alone could mean two negative roots; the positive sum excludes that possibility, and strict discriminant excludes a repeated root. The two inequalities have different jobs: the discriminant creates distinct real roots and the positive sum chooses the positive pair rather than two negatives.\nWhy not the others: (A) permits complex roots; (B) includes a double root; (C) gives negative roots.\nKey point: Combine discriminant, sum and product."
+      "explanation": "Answer: (D) \\([1/2,1]\\).\nGiven: \\(\\alpha+\\beta=2,\\ \\alpha\\beta=k\\).\nFormula/Principle: Combine reality, positivity and the sum-of-squares constraint.\nStep 1: Reality requires \\(4-4k\\ge0\\), hence \\(k\\le1\\).\nStep 2: \\[\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta=4-2k\\le3\\Rightarrow k\\ge\\frac12.\\]\nStep 3: On this interval product k is positive and sum is positive, so both real roots are positive. At \\(k=1\\) both equal one, which is allowed.\nWorked derivation: \\[\\{k:k\\le1\\}\\cap\\{k:k\\ge1/2\\}=[1/2,1].\\]\nWhy: No single condition guarantees all three requirements; their intersection is essential. The endpoint at one must remain because the question explicitly permits equal roots.\nWhy not the others: (A) includes roots whose squared sum is too large; (B) includes nonreal roots for \\(k>1\\); (C) discards the valid repeated-root endpoint.\nKey point: Translate each root condition separately before intersecting parameter ranges.",
+      "syllabus_anchor": "Quadratic equations: roots and coefficient relations"
     },
     {
       "id": "IAT27-T12-Q44",
@@ -1003,19 +1009,20 @@
       "section": "P",
       "subject": "Physics",
       "topic": "Mechanical Properties of Fluids",
-      "sub_topic": "viscosity terminal speed",
+      "sub_topic": "Buoyancy-dependent Stokes speed and dissipated power",
       "class_level": "11",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "Two small spheres of equal density fall through the same viscous liquid at low Reynolds number. Sphere B has twice the radius of A. Neglect boundary effects. What is their terminal-speed ratio vB/vA?",
+      "question": "Small spheres A and B fall at terminal speed in the same viscous fluid of density ρ. A has radius r and density 3ρ; B has radius 2r and density 2ρ. Assume Stokes drag, low Reynolds number and no boundary effects. What are ratios \\(v_B/v_A\\) and \\(P_B/P_A\\), where P is the power dissipated by viscous drag?",
       "options": [
-        "A) 1/4",
-        "B) 1/2",
-        "C) 2",
-        "D) 4"
+        "A) 4 and 32",
+        "B) 2 and 4",
+        "C) 4 and 8",
+        "D) 2 and 8"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) 4.\nGiven: Driving net weight ∝r³; Stokes drag at terminal speed ∝rv.\nFormula/Principle: 6πηrv=(4π/3)r³(ρs−ρl)g.\nStep 1: v∝r² under unchanged viscosity and density contrast.\nWorked derivation: \\[v_t=\\frac{2(\\rho_s-\\rho_l)gr^2}{9\\eta},\\quad \\frac{v_B}{v_A}=\\left(\\frac{2r_A}{r_A}\\right)^2=4.\\]\nWhy: Larger spheres have more excess weight per unit linear drag; this scaling applies only in the assumed Stokes regime. If the radius change made the Reynolds number large, Stokes drag would fail; the problem explicitly restricts the regime to preserve the quadratic scaling.\nWhy not the others: (A) reverses and squares; (B) reverses; (C) uses a linear radius law.\nKey point: Derive terminal speed from force balance."
+      "explanation": "Answer: (D) Speed ratio 2; dissipated-power ratio 8.\nGiven: The density differences from the fluid are \\(2\\rho\\) for A and \\(\\rho\\) for B.\nFormula/Principle: Balance effective weight with Stokes drag: \\[6\\pi\\eta rv=\\frac43\\pi r^3(\\rho_s-\\rho)g.\\]\nStep 1: Thus \\(v\\propto r^2(\\rho_s-\\rho)\\), giving \\[v_B/v_A=2^2(1/2)=2.\\]\nStep 2: At terminal speed drag equals effective weight, so \\[F_B/F_A=2^3(1/2)=4.\\]\nStep 3: \\[P_B/P_A=\\frac{F_Bv_B}{F_Av_A}=4(2)=8.\\]\nWorked derivation: \\[v_B/v_A=2,\\qquad P_B/P_A=8.\\]\nWhy: Buoyancy must be subtracted before comparing the driving weights; the spheres do not have equal density contrasts. Power depends on both drag force and speed, so its ratio differs from either one separately.\nWhy not the others: (A) ignores the contrast change in both balances; (B) reports the force ratio as the power ratio; (C) combines an incorrect speed ratio with the power result.\nKey point: Include buoyancy in terminal motion, then calculate force times speed.",
+      "syllabus_anchor": "Fluids: viscosity; work energy and power"
     },
     {
       "id": "IAT27-T12-Q50",
@@ -1100,19 +1107,20 @@
       "section": "P",
       "subject": "Physics",
       "topic": "Electrostatic Potential and Capacitance",
-      "sub_topic": "plate-separation change",
+      "sub_topic": "Mechanical and battery work during capacitor separation",
       "class_level": "12",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "A parallel-plate capacitor remains connected to an ideal constant-voltage battery. Its plate gap is doubled without changing area or dielectric. What is the ratio of final to initial stored energy?",
+      "question": "A parallel-plate capacitor stays connected to an ideal battery of fixed voltage V while its gap is slowly doubled, with area unchanged. Let its initial field energy be U. Neglect heating and fringing. What are the work done by the external agent moving the plates and the work done by the battery, respectively?",
       "options": [
-        "A) 2",
-        "B) 4",
-        "C) 1/4",
-        "D) 1/2"
+        "A) \\(-U/2;\\ +U\\)",
+        "B) \\(+U;\\ -U/2\\)",
+        "C) \\(0;\\ -U/2\\)",
+        "D) \\(+U/2;\\ -U\\)"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) 1/2.\nGiven: Battery fixes V, and C=εA/d.\nFormula/Principle: U=½CV²; doubling d halves C.\nStep 1: Uf/Ui=Cf/Ci=1/2.\nWorked derivation: \\[C_f=\\frac{\\epsilon A}{2d}=\\frac{C_i}{2},\\quad \\frac{U_f}{U_i}=\\frac{C_fV^2/2}{C_iV^2/2}=\\frac12.\\]\nWhy: Charge flows back into the battery as capacitance falls; using fixed charge would answer a different boundary condition. Because voltage stays fixed during the mechanical change, the energy ratio follows capacitance linearly; an isolated capacitor would obey a different law.\nWhy not the others: (A) assumes fixed charge; (B) squares distance; (C) squares capacitance.\nKey point: Identify which electrical quantity the battery holds fixed."
+      "explanation": "Answer: (D) External work \\(+U/2\\); battery work \\(-U\\).\nGiven: \\(U=CV^2/2\\); doubling the gap changes capacitance to \\(C/2\\).\nFormula/Principle: Battery work is \\(V\\Delta Q\\); energy balance is \\(\\Delta U=W_{\\mathrm{external}}+W_{\\mathrm{battery}}\\).\nStep 1: \\[U_f=\\frac12(C/2)V^2=U/2,\\quad \\Delta U=-U/2.\\]\nStep 2: \\[\\Delta Q=(C/2)V-CV=-CV/2,\\quad W_{\\mathrm{battery}}=-CV^2/2=-U.\\]\nStep 3: \\[W_{\\mathrm{external}}=\\Delta U-W_{\\mathrm{battery}}=-U/2+U=+U/2.\\]\nWorked derivation: \\[-U/2=(+U/2)+(-U).\\]\nWhy: The battery absorbs returning charge as capacitance falls, so its work on the electrical system is negative. Separating the plates against attraction requires positive external work even though the field's stored energy decreases.\nWhy not the others: (A) reverses both work signs; (B) interchanges energy magnitudes; (C) ignores the mechanical work needed against attraction.\nKey point: Distinguish field-energy change from battery and mechanical work.",
+      "syllabus_anchor": "Capacitance: energy stored and dielectrics; work-energy balance"
     },
     {
       "id": "IAT27-T12-Q55",
@@ -1230,5 +1238,6 @@
       "correct_option": "D",
       "explanation": "Answer: (D) 3/8.\nGiven: A retains 1/4 activity and B retains 1/2 after two hours.\nFormula/Principle: Activities add; initial A₀=B₀.\nStep 1: Final=(A₀/4+A₀/2)=3A₀/4; initial=2A₀.\nWorked derivation: \\[\\frac{A(2)+B(2)}{A(0)+B(0)}=\\frac{A_0(1/4+1/2)}{2A_0}=\\frac38.\\]\nWhy: Equal initial activities, not equal nuclei counts, set the weighting. Different half-lives make their remaining fractions unequal.\nWhy not the others: (A) uses A only; (B) uses B only; (C) sums fractions without correct initial normalization.\nKey point: Weight decay fractions by initial activities."
     }
-  ]
+  ],
+  "content_revision": "milestone15_fix_v1"
 }

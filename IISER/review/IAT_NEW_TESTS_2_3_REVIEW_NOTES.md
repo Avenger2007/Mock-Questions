@@ -1,3 +1,5 @@
+> **Historical snapshot — milestone corrections, 4 November 2026:** Later canonical changes supersede affected content, answer descriptions, page counts and validation claims below. Read [the correction report](milestone15_fixes/CORRECTION_REPORT.md) and its final source-bound evidence for the current Tests 1–15 checkpoint.
+
 # IAT New Tests 2 and 3 — authoring review (31 October 2026)
 
 Both are original AI-assisted **manual-review drafts**, using the stored 2026 IAT pattern provisionally for 2027 preparation. They are not official papers, and neither has had an independent subject-expert or timed student review.

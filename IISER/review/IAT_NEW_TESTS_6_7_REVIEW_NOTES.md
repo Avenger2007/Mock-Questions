@@ -1,3 +1,5 @@
+> **Historical snapshot — milestone corrections, 4 November 2026:** Later canonical changes supersede affected content, answer descriptions, page counts and validation claims below. Read [the correction report](milestone15_fixes/CORRECTION_REPORT.md) and its final source-bound evidence for the current Tests 1–15 checkpoint.
+
 # IAT New Tests 6 and 7 — authoring and review notes
 
 1 November 2026. Both are `pending_revision` preparation drafts under the verified IAT 2026 scheme. No 2027 brochure has been verified. The stored PYQ ledger and syllabus guided topic and reasoning style; no PYQ text was copied. The 25-test slot register now records the 120 authored tasks, leaving 1,080 reservations for Tests 8–25.

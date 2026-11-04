@@ -5,7 +5,7 @@
   "title": "IAT New Test 15",
   "test_number": 15,
   "status": "pending_revision",
-  "review_status": "fresh AI-assisted authoring; independent academic review pending",
+  "review_status": "milestone corrections applied; independent academic and timed review pending",
   "schema_version": "ourmocks-iat-flat-1.1",
   "syllabus_source": "IISER/IISER_Aptitude_Test_Syllabus_2026.md; exact listed topic/sub-topic checked",
   "notification_source": "Official IAT 2026 examination page and 2026 Information Brochure, sections 19 and 23; a 2027 brochure has not been verified",
@@ -106,7 +106,7 @@
       "correct_option": "C",
       "explanation": "Answer: (C) Left atrium.\nWhy: Pulmonary venous return enters the frog's left atrium, whereas the right side receives systemic venous return through the sinus venosus. The single ventricle receives blood from both atria after their inflow; it is not the first chamber for pulmonary return.\nWhy not the others: (A) receives systemic blood; (B) is downstream; (D) channels systemic return.\nKey point: Follow the labelled inflow before ventricular mixing.",
       "image_reference": "IAT_T15_Q02.png",
-      "image_alt": "Frog heart with two atria, one ventricle, and pulmonary return to left atrium"
+      "image_alt": "Frog-heart chambers have labelled pulmonary and systemic return pathways."
     },
     {
       "id": "IAT27-T15-Q03",
@@ -146,7 +146,7 @@
       "correct_option": "A",
       "explanation": "Answer: (A) Kranz anatomy with spatially separated fixation.\nWhy: The concentric, chloroplast-bearing bundle sheath is characteristic of C4 Kranz anatomy and spatial separation of initial mesophyll fixation from the Calvin cycle. This raises local CO₂ around RuBisCO but does not logically make photorespiration impossible in every condition.\nWhy not the others: (B) overstates suppression; (C) ignores leaf features; (D) ignores the distinctive bundle sheath.\nKey point: Link anatomy to spatial separation of fixation.",
       "image_reference": "IAT_T15_Q04.png",
-      "image_alt": "Leaf cross-section with chloroplast-rich bundle sheath and surrounding mesophyll"
+      "image_alt": "A leaf vascular bundle is surrounded by bundle sheath and mesophyll."
     },
     {
       "id": "IAT27-T15-Q05",
@@ -191,19 +191,20 @@
       "section": "B",
       "subject": "Biology",
       "topic": "Genetics And Evolution",
-      "sub_topic": "Mendelian two-locus segregation",
+      "sub_topic": "Conditioned two-locus phenotype classes",
       "class_level": "12",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "Two unlinked loci A/a and B/b segregate independently in an AaBb × AaBb cross. Given that a child has the dominant A phenotype, what is the probability it is bb?",
+      "question": "Two unlinked loci segregate independently in an AaBb × AaBb cross, with complete dominance at each locus. Given that an offspring shows a dominant phenotype at at least one locus, what is the probability it is homozygous recessive at exactly one locus?",
       "options": [
-        "A) 1/4",
-        "B) 1/16",
-        "C) 3/16",
-        "D) 1/3"
+        "A) 2/5",
+        "B) 3/8",
+        "C) 1/4",
+        "D) 1/2"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) 1/4.\nGiven: Independence makes B-genotype independent of A phenotype.\nFormula/Principle: P(bb and A_)/P(A_)=P(bb)P(A_)/P(A_).\nStep 1: (1/4)(3/4)/(3/4)=1/4.\nWhy: Conditioning on A_ changes the possible A genotypes but gives no information about the unlinked B locus. The numerator counts the joint phenotype, while the denominator correctly restricts to observed dominant-A offspring.\nWhy not the others: (B) counts aabb; (C) is joint A_bb before conditioning; (D) misuses 3/4.\nKey point: Independence can simplify a conditional event."
+      "explanation": "Answer: (A) 2/5.\nGiven: Each locus gives dominant phenotype with probability \\(3/4\\) and recessive phenotype with probability \\(1/4\\).\nFormula/Principle: Count the two mutually exclusive exactly-one-recessive classes, then condition on not being recessive at both loci.\nStep 1: \\[P(aaB\\_)=P(A\\_bb)=\\frac14\\frac34=\\frac3{16}.\\]\nStep 2: \\[P(\\text{exactly one recessive locus})=\\frac6{16}.\\]\nStep 3: \\[P(\\text{at least one dominant locus})=1-P(aabb)=1-\\frac1{16}=\\frac{15}{16}.\\]\nStep 4: \\[P=\\frac{6/16}{15/16}=\\frac25.\\]\nWhy: Independent segregation applies before conditioning; the observed phenotype restricts the joint sample space. Both one-recessive classes satisfy that condition, whereas aabb does not.\nWhy not the others: (B) is the unconditioned \\(6/16\\); (C) uses a single-locus recessive probability; (D) treats the permitted joint phenotypes as equally likely.\nKey point: Distinguish exactly one, at least one and both when combining loci.",
+      "syllabus_anchor": "Genetics: inheritance of two genes and Mendelian segregation"
     },
     {
       "id": "IAT27-T15-Q08",
@@ -381,21 +382,22 @@
       "section": "C",
       "subject": "Chemistry",
       "topic": "Coordination compounds",
-      "sub_topic": "chelate stability comparison",
+      "sub_topic": "Ambidentate donor connectivity and linkage isomerism",
       "class_level": "12",
       "difficulty": "medium",
       "format": "diagram",
-      "question": "Two octahedral complexes of the same metal and charge are compared: one has six separate monodentate donor molecules, the other has three bidentate ethylenediamine ligands. Which is favoured by the chelate effect under comparable conditions?",
+      "question": "The two structures have identical composition \\([\\ce{Co(NH3)5(NO2)}]\\ce{Cl2}\\). In X the metal is bonded to nitrogen of the NO₂ ligand; in Y it is bonded to oxygen of that ligand. What kind of isomerism distinguishes them, and what is the coordination number in each?",
       "options": [
-        "A) Monodentate, because it uses more ligand molecules",
-        "B) They must have identical stability",
-        "C) Bidentate, because ring formation can make ligand substitution entropically favourable",
-        "D) Neither can have coordination number six"
+        "A) Geometrical; five in each",
+        "B) Ionisation; six in X and five in Y",
+        "C) Linkage; six in each",
+        "D) Optical; seven in each"
       ],
       "correct_option": "C",
-      "explanation": "Answer: (C) Bidentate chelate.\nWhy: Each ethylenediamine binds through two donor atoms and forms a ring, while three molecules fill six sites. Relative complex stability often increases through the chelate effect, especially the entropy advantage of replacing more free monodentate molecules with fewer chelates under suitable exchange.\nWhy not the others: (A) molecule count alone is no advantage; (B) ignores binding mode; (D) confuses ligand number with donor count.\nKey point: Count donor sites and ligand particles separately.",
+      "explanation": "Answer: (C) Linkage isomerism; coordination number six in each.\nWhy: Nitrite is an ambidentate ligand: it can donate through N or through O while retaining the same chemical composition. Switching the donor atom changes linkage, not the number of occupied sites; five ammonia donors and one nitrite donor still give six. Both chloride counterions remain outside the same coordination sphere.\nStep 1: Read the metal–N versus metal–O connectivity in the diagram.\nStep 2: Count \\(5+1=6\\) donors in each structure.\nWhy not the others: (A) changes relative ligand positions rather than donor identity; (B) would exchange a ligand with a counterion, which has not happened; (D) mistakes donor choice for mirror chirality and counts a nonbonded atom as a donor.\nKey point: Compare donor atom, sphere boundary and spatial arrangement separately.",
       "image_reference": "IAT_T15_Q17.png",
-      "image_alt": "Six monodentate donors and three bidentate donors filling six sites"
+      "image_alt": "Two complexes differ in the nitrite donor atom attached to cobalt.",
+      "syllabus_anchor": "Coordination compounds: isomerism"
     },
     {
       "id": "IAT27-T15-Q18",
@@ -414,7 +416,7 @@
         "D) 5R/36"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) 5R/36.\nGiven: 1/λ=R(1/nlow²−1/nhigh²).\nFormula/Principle: Use 1/2²−1/3²=1/4−1/9.\nStep 1: Difference 5/36.\nWhy: The lower final energy level has the larger inverse-square factor, making the emitted photon energy positive. Interchanging the level indices would give a negative inverse wavelength.\nWhy not the others: (A) subtracts denominators; (B) uses high state only; (C) uses low state only.\nKey point: Subtract reciprocal squares in final-first order."
+      "explanation": "Answer: (D) 5R/36.\nGiven: 1/λ=R(1/nlow²−1/nhigh²).\nFormula/Principle: Use 1/2²−1/3²=1/4−1/9.\nStep 1: Difference 5/36.\nWorked derivation: \\[1/\\lambda=R(1/2^2-1/3^2)=R(1/4-1/9)=5R/36.\\]\nWhy: The lower final energy level has the larger inverse-square factor, making the emitted photon energy positive. Interchanging the level indices would give a negative inverse wavelength.\nWhy not the others: (A) subtracts denominators; (B) uses high state only; (C) uses low state only.\nKey point: Subtract reciprocal squares in final-first order."
     },
     {
       "id": "IAT27-T15-Q19",
@@ -516,21 +518,22 @@
       "section": "C",
       "subject": "Chemistry",
       "topic": "Organic compounds containing nitrogen",
-      "sub_topic": "aniline substitution control",
+      "sub_topic": "Aniline protection and controlled ring substitution",
       "class_level": "12",
       "difficulty": "hard",
       "format": "diagram",
-      "question": "Aniline is brominated with bromine water and yields a 2,4,6-tribromo product. To obtain predominantly para monobromination, its –NH₂ group is first acetylated, then brominated and hydrolysed. What is the purpose of acetylation?",
+      "question": "The structural sequence shows aniline converted to acetanilide, then predominantly para-bromoacetanilide under controlled bromination, then para-bromoaniline by hydrolysis. Why is acetylation used before bromination?",
       "options": [
-        "A) Destroy aromaticity",
-        "B) Reduce ring activation and control substitution before regenerating –NH₂",
-        "C) Replace Br with Cl",
-        "D) Create a meta-directing nitro group"
+        "A) To change the amino substituent into a meta director permanently",
+        "B) To reduce excessive ring activation while retaining ortho/para direction, then restore NH₂",
+        "C) To increase nitrogen donation enough to make tribromination selective for para",
+        "D) To replace the amino nitrogen by oxygen before aromatic substitution"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) Moderate activation temporarily.\nWhy: Acetylation ties up the nitrogen lone pair partly in an amide, reducing the excessive activation that causes multiple bromination while retaining ortho/para directing influence. Hydrolysis restores free aniline after the controlled substitution.\nWhy not the others: (A) ring persists; (C) no chloride reagent; (D) no nitro group forms.\nKey point: Temporary protection can change reactivity without changing target group permanently.",
+      "explanation": "Answer: (B) Temporarily moderate activation while preserving ortho/para direction.\nStep 1: Acetylation changes \\(\\ce{-NH2}\\) into \\(\\ce{-NHCOCH3}\\); the nitrogen lone pair is shared partly with the carbonyl.\nStep 2: Reduced donation into the ring moderates the multiple substitution characteristic of unprotected aniline, while the substituent remains ortho/para directing. The controlled conditions and steric preference favour the para product.\nStep 3: Hydrolysis removes the acetyl group and regenerates NH₂ without relocating the ring bromine.\nWhy: Protection changes the reactivity during the substitution step and is then deliberately reversed. It does not permanently convert the substituent into a meta director or replace nitrogen with a new atom.\nWhy not the others: (A) confuses reduced activation with a change to meta direction; (C) reverses the effect of amide delocalisation; (D) contradicts the nitrogen atom retained throughout the displayed structures.\nKey point: Follow both electronic effect and atom connectivity through protection and deprotection.",
       "image_reference": "IAT_T15_Q24.png",
-      "image_alt": "Aniline to acetanilide to para-bromoacetanilide to para-bromoaniline"
+      "image_alt": "Structural drawings track aniline acetylation, para bromination and hydrolysis.",
+      "syllabus_anchor": "Organic nitrogen: chemical reactions of amines"
     },
     {
       "id": "IAT27-T15-Q25",
@@ -549,7 +552,7 @@
         "D) 3"
       ],
       "correct_option": "C",
-      "explanation": "Answer: (C) 2.\nGiven: ΔTf=0.28 K, Kfm=0.14 K.\nFormula/Principle: i=ΔTf/(Kfm).\nStep 1: 0.28/0.14=2.\nWhy: The measured colligative effect is twice the molecular no-dissociation reference at equal molality. This effective particle factor does not by itself identify the salt formula or prove ideal complete dissociation.\nWhy not the others: (A) ignores enhancement; (B) underestimates; (D) overestimates.\nKey point: Infer effective particle count from measured-to-ideal ratio."
+      "explanation": "Answer: (C) 2.\nGiven: ΔTf=0.28 K, Kfm=0.14 K.\nFormula/Principle: i=ΔTf/(Kfm).\nStep 1: 0.28/0.14=2.\nWorked derivation: \\[i=\\frac{\\Delta T_f}{K_fm}=\\frac{0.28}{1.40(0.10)}=2.\\]\nWhy: The measured colligative effect is twice the molecular no-dissociation reference at equal molality. This effective particle factor does not by itself identify the salt formula or prove ideal complete dissociation.\nWhy not the others: (A) ignores enhancement; (B) underestimates; (D) overestimates.\nKey point: Infer effective particle count from measured-to-ideal ratio."
     },
     {
       "id": "IAT27-T15-Q26",
@@ -587,28 +590,29 @@
         "D) Cannot infer from slopes"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) X twice Y.\nGiven: slope=−Ea/R.\nFormula/Principle: Ratio EaX/EaY=6000/3000.\nStep 1: Ratio 2.\nWhy: The plot's horizontal variable is reciprocal temperature, so a more negative slope has greater magnitude and larger activation barrier. Equal intercepts fix pre-exponential factors but are unnecessary to infer the energy ratio.\nWhy not the others: (B) reverses slopes; (C) ignores magnitude; (D) overlooks Arrhenius form.\nKey point: Use absolute slope for barrier.",
+      "explanation": "Answer: (A) X twice Y.\nGiven: slope=−Ea/R.\nFormula/Principle: Ratio EaX/EaY=6000/3000.\nStep 1: Ratio 2.\nWorked derivation: \\[\\text{slope}=-E_a/R,\\quad \\frac{E_{a,X}}{E_{a,Y}}=\\frac{6000}{3000}=2.\\]\nWhy: The plot's horizontal variable is reciprocal temperature, so a more negative slope has greater magnitude and larger activation barrier. Equal intercepts fix pre-exponential factors but are unnecessary to infer the energy ratio.\nWhy not the others: (B) reverses slopes; (C) ignores magnitude; (D) overlooks Arrhenius form.\nKey point: Use absolute slope for barrier.",
       "image_reference": "IAT_T15_Q27.png",
-      "image_alt": "Arrhenius lines with slopes -6000 K and -3000 K"
+      "image_alt": "Two Arrhenius lines have a common intercept and different negative slopes."
     },
     {
       "id": "IAT27-T15-Q28",
       "section": "C",
       "subject": "Chemistry",
       "topic": "Thermodynamics",
-      "sub_topic": "calorimetric heat balance",
+      "sub_topic": "Bomb-calorimeter calibration and internal-energy-to-enthalpy conversion",
       "class_level": "11",
       "difficulty": "medium",
       "format": "numerical",
-      "question": "A 100 g metal at 80°C is placed in 200 g water at 20°C in an insulated vessel. Final temperature is 25°C; water c=4.2 J g⁻¹ K⁻¹. Neglect vessel heat. What is metal specific heat?",
+      "question": "A rigid bomb calorimeter is calibrated by supplying 1000 J electrically; its temperature rises by 2.00 K. Combustion of 0.0100 mol of a fuel then raises its temperature by 3.00 K. For the stated combustion reaction, gas mole change is \\(\\Delta n_g=-1\\) per mole fuel. At 300 K, with \\(R=8.30\\ \\mathrm{J\\,mol^{-1}K^{-1}}\\), estimate the reaction's molar enthalpy change.",
       "options": [
-        "A) 0.38",
-        "B) 0.76",
-        "C) 1.53",
-        "D) 3.05"
+        "A) −150.0 kJ mol⁻¹",
+        "B) −152.5 kJ mol⁻¹",
+        "C) +150.0 kJ mol⁻¹",
+        "D) −147.5 kJ mol⁻¹"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) About 0.76 J g⁻¹ K⁻¹.\nGiven: Water gains 200×4.2×5=4200 J; metal cools 55 K.\nFormula/Principle: Heat lost metal=heat gained water.\nStep 1: c=4200/(100×55)=0.7636.\nWhy: Insulation makes the heat exchange internal to the two bodies under the neglected-vessel premise. The metal's temperature drop is 80−25 rather than 80−20 because both finish at equilibrium.\nWhy not the others: (A) doubles mass; (C) halves temperature drop; (D) misuses water c.\nKey point: Use each object's own temperature change."
+      "explanation": "Answer: (B) Approximately \\(-152.5\\ \\mathrm{kJ\\,mol^{-1}}\\).\nGiven: The same calibrated calorimeter receives the combustion heat at fixed volume; gases are treated ideally for the enthalpy conversion.\nFormula/Principle: \\[q_{\\mathrm{cal}}=C_{\\mathrm{cal}}\\Delta T,\\quad \\Delta U_m=-q_{\\mathrm{cal}}/n,\\quad\\Delta H_m=\\Delta U_m+\\Delta n_gRT.\\]\nStep 1: \\[C_{\\mathrm{cal}}=1000/2.00=500\\ \\mathrm{J\\,K^{-1}}.\\]\nStep 2: \\[q_{\\mathrm{cal}}=500(3.00)=1500\\ \\mathrm J,\\quad \\Delta U_m=-1500/0.0100=-150000\\ \\mathrm{J\\,mol^{-1}}.\\]\nStep 3: \\[\\Delta H_m=-150000-1(8.30)(300)=-152490\\ \\mathrm{J\\,mol^{-1}}\\approx-152.5\\ \\mathrm{kJ\\,mol^{-1}}.\\]\nWhy: A rigid calorimeter measures the reaction's constant-volume heat and therefore its internal-energy change. The gas mole change must be included when converting that quantity to enthalpy; heat gained by the calorimeter has the opposite sign to reaction heat.\nWhy not the others: (A) stops at internal energy; (C) reverses the reaction-heat sign; (D) uses the opposite sign for the gas correction.\nKey point: Calibrate first, determine constant-volume heat, then convert internal energy to enthalpy.",
+      "syllabus_anchor": "Thermodynamics: calorimetry and measurement of delta U and delta H"
     },
     {
       "id": "IAT27-T15-Q29",
@@ -627,7 +631,7 @@
         "D) 10⁻⁴"
       ],
       "correct_option": "C",
-      "explanation": "Answer: (C) 10⁻².\nGiven: Ka≈Cα² for α≪1.\nFormula/Principle: α≈√(Ka/C).\nStep 1: √(10⁻⁵/10⁻¹)=√10⁻⁴=10⁻².\nWhy: One dissociation produces one H⁺ and one A⁻, giving a squared ionisation fraction in the mass-action expression. The resulting 1% ionisation is small enough to support the approximation.\nWhy not the others: (A) takes square root wrongly; (B) overestimates; (D) uses Ka/C without root.\nKey point: Check the approximation after solving."
+      "explanation": "Answer: (C) 10⁻².\nGiven: Ka≈Cα² for α≪1.\nFormula/Principle: α≈√(Ka/C).\nStep 1: √(10⁻⁵/10⁻¹)=√10⁻⁴=10⁻².\nWorked derivation: \\[\\alpha\\simeq\\sqrt{K_a/C}=\\sqrt{10^{-5}/10^{-1}}=10^{-2},\\quad \\alpha=0.01\\ll1.\\]\nWhy: One dissociation produces one H⁺ and one A⁻, giving a squared ionisation fraction in the mass-action expression. The resulting 1% ionisation is small enough to support the approximation.\nWhy not the others: (A) takes square root wrongly; (B) overestimates; (D) uses Ka/C without root.\nKey point: Check the approximation after solving."
     },
     {
       "id": "IAT27-T15-Q30",
@@ -653,19 +657,20 @@
       "section": "M",
       "subject": "Mathematics",
       "topic": "Coordinate geometry",
-      "sub_topic": "chord distance",
+      "sub_topic": "Chord endpoints determine two tangents and their intersection",
       "class_level": "11",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "A circle centred on the x-axis passes through (0,0) and (6,0). What is the length of its chord cut by the line x=1?",
+      "question": "A circle centred on the x-axis passes through (0,0) and (6,0). The line x=1 cuts it at P and Q. Tangents at P and Q meet at T. What is the distance OT from the origin?",
       "options": [
-        "A) 4√2",
-        "B) 4",
-        "C) 2√2",
-        "D) 2√5"
+        "A) 9/2",
+        "B) 3",
+        "C) 6",
+        "D) 3/2"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) 2√5.\nGiven: Centre is midpoint (3,0) and radius 3.\nFormula/Principle: Half-chord length √(r²−d²), with distance d=2 from centre to x=1.\nStep 1: length 2√(9−4)=2√5.\nWorked derivation: \\[L=2\\sqrt{3^2-(3-1)^2}=2\\sqrt5.\\]\nWhy: The perpendicular from centre bisects the chord, so its distance and half-chord make a right triangle. The full chord is twice the square-root length, not the radius alone.\nWhy not the others: (A) uses an incorrect squared length; (B) assumes a different distance; (C) loses a geometric factor.\nKey point: Solve centre and distance before chord length."
+      "explanation": "Answer: (D) 3/2.\nGiven: The circle has centre \\(C=(3,0)\\) and radius 3.\nFormula/Principle: Find the two contact points, then use the radius direction as the normal to each tangent.\nStep 1: \\[(1-3)^2+y^2=9\\Rightarrow P=(1,\\sqrt5),\\quad Q=(1,-\\sqrt5).\\]\nStep 2: The tangent at P is \\[(-2)(x-1)+\\sqrt5(y-\\sqrt5)=0\\Rightarrow-2x+\\sqrt5y=3.\\]\nStep 3: At Q the tangent is \\(-2x-\\sqrt5y=3\\). Solving the pair gives \\(y_T=0,\\ x_T=-3/2\\).\nStep 4: \\[OT=\\sqrt{(-3/2)^2}=3/2.\\]\nWorked derivation: \\[T=(-3/2,0),\\qquad OT=3/2.\\]\nWhy: The chord endpoints are needed as contact points, but the requested length is not the chord length. Symmetry places the tangent intersection on the x-axis, while the tangent equations determine which side of the origin it occupies.\nWhy not the others: (A) gives distance CT; (B) gives the radius; (C) gives the diameter.\nKey point: Distinguish centre distances, chord lengths and tangent-intersection coordinates.",
+      "syllabus_anchor": "Coordinate geometry: circle and tangent"
     },
     {
       "id": "IAT27-T15-Q32",
@@ -824,19 +829,20 @@
       "section": "M",
       "subject": "Mathematics",
       "topic": "Three-dimensional geometry",
-      "sub_topic": "line-plane angle",
+      "sub_topic": "Parallel-line condition and distance from a plane",
       "class_level": "12",
       "difficulty": "medium",
       "format": "numerical",
-      "question": "The line through origin has direction d=(1,2,2). What acute angle θ does it make with plane z=0, through sin θ?",
+      "question": "A line through (1,0,0) has direction vector (1,k,1) and is parallel to the plane \\(2x-y+z=5\\). What are k and the perpendicular distance between the line and the plane?",
       "options": [
-        "A) 2/3",
-        "B) 1/3",
-        "C) √5/3",
-        "D) 2/√5"
+        "A) \\(3;\\ \\sqrt6/2\\)",
+        "B) \\(3;\\ 3\\)",
+        "C) \\(-3;\\ \\sqrt6/2\\)",
+        "D) \\(1;\\ \\sqrt6\\)"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) 2/3.\nGiven: Plane normal n=(0,0,1); norm d=3.\nFormula/Principle: Sine of line-plane angle=|d·n|/(norm d norm n).\nStep 1: |2|/3=2/3.\nWorked derivation: \\[\\sin\\theta=\\frac{|(1,2,2)\\cdot(0,0,1)|}{\\sqrt{1+4+4}}=\\frac23.\\]\nWhy: The dot product first gives cosine of angle to the normal, which equals sine of the complementary angle to the plane. Using horizontal component instead would compute a different ratio.\nWhy not the others: (B) uses x component; (C) uses horizontal norm; (D) renormalises horizontal only.\nKey point: Distinguish normal angle from plane angle."
+      "explanation": "Answer: (A) \\(3;\\ \\sqrt6/2\\).\nGiven: The plane normal is \\(\\mathbf n=(2,-1,1)\\), with magnitude \\(\\sqrt6\\).\nFormula/Principle: A parallel line has direction perpendicular to the plane normal; all its points then have the same plane distance.\nStep 1: \\[(1,k,1)\\cdot(2,-1,1)=3-k=0\\Rightarrow k=3.\\]\nStep 2: Use the given point on the line:\\[d=\\frac{|2(1)-0+0-5|}{\\sqrt{2^2+(-1)^2+1^2}}=\\frac3{\\sqrt6}=\\frac{\\sqrt6}{2}.\\]\nStep 3: The point is not in the plane, so the parallel line is distinct from the plane and the distance is positive.\nWorked derivation: \\[k=3,\\qquad d=\\frac{\\sqrt6}{2}.\\]\nWhy: Parallelism fixes the direction but does not by itself imply that the line lies in the plane. The separate point-to-plane calculation supplies that missing positional information.\nWhy not the others: (B) omits normalisation by the normal length; (C) loses the sign in the dot product; (D) fails the parallelism condition.\nKey point: Check direction and position as separate line-plane conditions.",
+      "syllabus_anchor": "Three-dimensional geometry: line and plane"
     },
     {
       "id": "IAT27-T15-Q41",
@@ -862,38 +868,40 @@
       "section": "M",
       "subject": "Mathematics",
       "topic": "Complex Numbers",
-      "sub_topic": "modulus locus",
+      "sub_topic": "Unequal complex-distance ratio and a circle",
       "class_level": "11",
       "difficulty": "medium",
-      "format": "conceptual",
-      "question": "For complex z=x+iy, what is the geometric locus |z−1|=|z+1|?",
+      "format": "numerical",
+      "question": "For \\(z=x+iy\\), the locus \\(\\lvert z-1\\rvert=2\\lvert z+1\\rvert\\) is a circle. What are its centre and radius?",
       "options": [
-        "A) Unit circle",
-        "B) Real axis y=0",
-        "C) Imaginary axis x=0",
-        "D) Vertical line x=1"
+        "A) \\((5/3,0);\\ 4/3\\)",
+        "B) \\((-5/3,0);\\ 2/3\\)",
+        "C) \\((-5/3,0);\\ 4/3\\)",
+        "D) \\((0,0);\\ 1\\)"
       ],
       "correct_option": "C",
-      "explanation": "Answer: (C) x=0.\nWorked derivation: \\[(x-1)^2+y^2=(x+1)^2+y^2\\Rightarrow -2x=2x\\Rightarrow x=0.\\]\nWhy: Points equidistant from +1 and −1 lie on the perpendicular bisector of their segment, the imaginary axis. Squaring both nonnegative distances preserves equality and removes radicals cleanly.\nWhy not the others: (A) fixes radius not equal distance; (B) contains points closer to either endpoint; (D) passes one focus.\nKey point: Equal distances define a perpendicular bisector."
+      "explanation": "Answer: (C) Centre \\((-5/3,0)\\), radius \\(4/3\\).\nGiven: Both distances are nonnegative, so squaring their equality is reversible.\nFormula/Principle: Expand the squared distance equation and complete the square.\nStep 1: \\[(x-1)^2+y^2=4[(x+1)^2+y^2].\\]\nStep 2: \\[3x^2+10x+3y^2+3=0.\\]\nStep 3: \\[\\left(x+\\frac53\\right)^2+y^2=\\frac{16}{9}.\\]\nWorked derivation: \\[\\text{centre}=(-5/3,0),\\qquad r=\\sqrt{16/9}=4/3.\\]\nWhy: A distance ratio different from one produces a circle rather than the perpendicular bisector associated with equal distances. Reading the centre requires the opposite sign of the completed-square shift.\nWhy not the others: (A) reverses the centre sign; (B) takes the wrong square root; (D) ignores the unequal distance ratio.\nKey point: Preserve the squared distance ratio before completing the square.",
+      "syllabus_anchor": "Complex numbers: geometric representation; coordinate geometry: circle"
     },
     {
       "id": "IAT27-T15-Q43",
       "section": "M",
       "subject": "Mathematics",
       "topic": "Quadratic Equations",
-      "sub_topic": "strict interval root test",
+      "sub_topic": "Two roots in distinct strict intervals",
       "class_level": "11",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "A quadratic f(x)=x²−2kx+3 has one root strictly between 0 and 1 and the other strictly greater than 1. Which interval of k satisfies this arrangement?",
+      "question": "For which real k does \\(f(x)=x^2-2kx+2\\) have one root strictly in (0,1) and the other strictly in (2,3)?",
       "options": [
-        "A) k<2",
-        "B) k>3",
-        "C) k=2",
-        "D) k>2"
+        "A) \\([3/2,11/6]\\)",
+        "B) \\((3/2,\\infty)\\)",
+        "C) \\((-\\infty,11/6)\\)",
+        "D) \\((3/2,11/6)\\)"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) k>2.\nGiven: f(0)=3>0; f(1)=4−2k.\nFormula/Principle: One root in (0,1) and one above 1 requires f(1)<0, hence k>2.\nStep 1: Upward quadratic with f(0)>0 and f(1)<0 crosses (0,1), then returns positive at infinity after a second crossing >1.\nWorked derivation: \\[4-2k<0\\iff k>2.\\]\nWhy: Strict negativity at x=1 excludes a root at the boundary, and positivity at zero excludes crossing before zero for the first root. The parabola's upward shape supplies a second crossing after one.\nWhy not the others: (A) fails the sign test; (B) wrongly excludes the valid range 2<k≤3; (C) gives a root at the forbidden boundary.\nKey point: Use endpoint signs and upward leading coefficient."
+      "explanation": "Answer: (D) \\(3/2<k<11/6\\).\nGiven: The quadratic is continuous and opens upward; the requested two intervals do not overlap.\nFormula/Principle: A sign change in each interval guarantees a root there; a quadratic can have only two roots in total.\nStep 1: \\[f(0)=2>0,\\quad f(1)=3-2k<0\\Rightarrow k>3/2.\\]\nStep 2: \\[f(2)=6-4k<0\\Rightarrow k>3/2,\\quad f(3)=11-6k>0\\Rightarrow k<11/6.\\]\nStep 3: Combining the strict inequalities gives \\((3/2,11/6)\\), which supplies one sign-changing root in each required interval.\nStep 4: Conversely, the specified root placement puts 1 and 2 between the roots and 0 and 3 outside them, requiring exactly these signs. The boundary values are excluded because a root reaches an interval endpoint.\nWorked derivation: \\[f(1)<0,\\ f(2)<0,\\ f(3)>0\\iff 3/2<k<11/6.\\]\nWhy: Reality alone would not locate the roots in the two separate open intervals. Checking both interval boundaries supplies a necessary and sufficient condition and excludes endpoint roots without relying on a picture.\nWhy not the others: (A) permits boundary roots; (B) omits the upper interval bound; (C) omits the lower interval bound.\nKey point: Use endpoint signs to enforce two disjoint strict root intervals.",
+      "syllabus_anchor": "Quadratic equations: location of roots"
     },
     {
       "id": "IAT27-T15-Q44",
@@ -919,19 +927,20 @@
       "section": "M",
       "subject": "Mathematics",
       "topic": "Sequences & series",
-      "sub_topic": "partial-sum inversion",
+      "sub_topic": "Inserting arithmetic means",
       "class_level": "11",
       "difficulty": "easy",
       "format": "numerical",
-      "question": "An arithmetic progression has partial sum Sₙ=3n²−n. What is its fifth term?",
+      "question": "Three arithmetic means are inserted between 4 and 16 to form a five-term arithmetic progression. What is the sum of the three inserted means?",
       "options": [
         "A) 20",
-        "B) 26",
-        "C) 30",
-        "D) 24"
+        "B) 30",
+        "C) 40",
+        "D) 60"
       ],
       "correct_option": "B",
-      "explanation": "Answer: (B) 26.\nGiven: aₙ=Sₙ−Sₙ₋₁.\nFormula/Principle: a₅=S₅−S₄.\nStep 1: S₅=75−5=70; S₄=48−4=44; difference 26.\nWorked derivation: \\[a_5=(3\\cdot25-5)-(3\\cdot16-4)=70-44=26.\\]\nWhy: A partial sum accumulates all earlier terms; subtracting consecutive sums isolates exactly one term. Plugging n=5 into S directly would return 70 rather than the fifth increment.\nWhy not the others: (A) miscomputes difference; (C) uses 6n; (D) uses wrong index.\nKey point: Recover term from adjacent sums."
+      "explanation": "Answer: (B) 30.\nGiven: The progression has first term 4 and fifth term 16.\nFormula/Principle: Four equal differences span the endpoints.\nStep 1: \\[d=\\frac{16-4}{4}=3.\\]\nStep 2: The inserted terms are \\(7,10,13\\), so their sum is \\(30\\).\nWorked derivation: \\[7+10+13=30=3\\left(\\frac{4+16}{2}\\right).\\]\nWhy: Inserting three means creates four gaps, not three. The symmetry about the middle value ten also checks the sum independently.\nWhy not the others: (A) adds only the endpoints; (C) uses the wrong number of gaps; (D) includes an extra copy of the full progression's sum.\nKey point: Count gaps when inserting arithmetic means.",
+      "syllabus_anchor": "Sequences and series: arithmetic progression"
     },
     {
       "id": "IAT27-T15-Q46",
@@ -976,21 +985,22 @@
       "section": "P",
       "subject": "Physics",
       "topic": "Mechanical Properties of Fluids",
-      "sub_topic": "pressure in accelerating vessel",
+      "sub_topic": "Free-surface slope from effective gravity",
       "class_level": "11",
       "difficulty": "medium",
       "format": "diagram",
-      "question": "An open tank of water accelerates horizontally to the right at acceleration a. In the tank frame, which direction does its equilibrium free surface rise?",
+      "question": "An open tank of water accelerates horizontally to the right with acceleration a. The diagram specifies the tank axes and acceleration but not the final water surface. In the tank frame, which side is higher at equilibrium, and what is the tangent of the surface's angle to the horizontal?",
       "options": [
-        "A) Toward the left side, opposite acceleration",
-        "B) Toward the right side",
-        "C) It remains horizontal for any a",
-        "D) It becomes vertical everywhere"
+        "A) Left; a/g",
+        "B) Right; a/g",
+        "C) Left; g/a",
+        "D) Right; g/a"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) Left side higher.\nWorked derivation: \\[\\vec g_{\\rm eff}=(-a,-g),\\qquad \\frac{dh}{dx}=-\\frac ag<0\\quad(x\\text{ rightward}).\\]\nWhy: In the accelerating frame effective gravity tilts down and left; an equilibrium free surface is perpendicular to that vector. Thus height decreases as x increases, making the left edge higher.\nWhy not the others: (B) reverses effective inertial force; (C) ignores acceleration; (D) overstates the tilt.\nKey point: Use effective gravity to infer surface slope.",
+      "explanation": "Answer: (A) Left side higher; angle tangent \\(a/g\\).\nGiven: Choose x rightward and z upward; in the tank frame the effective acceleration is \\((-a,-g)\\).\nFormula/Principle: Hydrostatic pressure satisfies \\(dp=-\\rho a\\,dx-\\rho g\\,dz\\); pressure is constant along the free surface.\nStep 1: Set \\(dp=0\\) on that surface:\\[a\\,dx+g\\,dz=0.\\]\nStep 2: \\[\\frac{dz}{dx}=-\\frac ag<0.\\] Height therefore falls toward the right.\nStep 3: The positive inclination magnitude satisfies \\(\\tan\\theta=|dz/dx|=a/g\\).\nWorked derivation: \\[z(x)=z(0)-\\frac agx,\\qquad \\tan\\theta=\\frac ag.\\]\nWhy: The noninertial-frame acceleration has a horizontal component opposite the tank's acceleration. A constant-pressure surface must be perpendicular to effective gravity, so the surface is not horizontal in that frame.\nWhy not the others: (B) reverses the height gradient; (C) inverts the slope ratio; (D) makes both errors.\nKey point: Use effective gravity and constant pressure rather than guessing a sloshing direction.",
       "image_reference": "IAT_T15_Q48.png",
-      "image_alt": "Open water tank accelerating right with a left-high inclined free surface"
+      "image_alt": "An accelerating open tank specifies axes and acceleration without providing the final surface slope.",
+      "syllabus_anchor": "Fluids: pressure; laws of motion: accelerated frame"
     },
     {
       "id": "IAT27-T15-Q49",
@@ -1016,19 +1026,20 @@
       "section": "P",
       "subject": "Physics",
       "topic": "Thermodynamics",
-      "sub_topic": "engine-cycle energy bookkeeping",
+      "sub_topic": "Cascaded cyclic heat-engine balances with an external load",
       "class_level": "11",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "A heat engine absorbs 500 J per cycle from a hot reservoir and releases 300 J to a cold reservoir. It also performs 20 J of external stirring work on the hot reservoir using part of its shaft output. What is net useful shaft work available outside the engine-and-stirrer assembly?",
+      "question": "A cyclic heat engine absorbs 800 J per cycle and converts 40% of it to shaft work. All its rejected heat feeds a second cyclic engine of efficiency 1/3. A parasitic external load consumes 40 J from the combined shaft output per cycle, without returning heat to either engine. What are the useful efficiency relative to the original 800 J input and the heat rejected by the second engine?",
       "options": [
-        "A) 200 J",
-        "B) 220 J",
-        "C) 180 J",
-        "D) 100 J"
+        "A) 60%; 320 J",
+        "B) 55%; 480 J",
+        "C) 55%; 320 J",
+        "D) 40%; 480 J"
       ],
       "correct_option": "C",
-      "explanation": "Answer: (C) 180 J.\nGiven: Engine cycle work=Qhot−Qcold=200 J.\nFormula/Principle: Useful external work subtracts 20 J diverted to stirring.\nStep 1: 200−20=180 J.\nWorked derivation: \\[W_{\\rm engine}=500-300=200\\ {\\rm J},\\quad W_{\\rm useful}=200-20=180\\ {\\rm J}.\\]\nWhy: Engine cyclic internal energy change is zero, so heat difference equals gross shaft work. The added stirrer is an external load consuming part of that work rather than another heat loss from the engine control volume.\nWhy not the others: (A) reports gross work; (B) adds stirrer; (D) halves work.\nKey point: Define the control volume and useful output."
+      "explanation": "Answer: (C) Useful efficiency 55%; final rejected heat 320 J.\nGiven: Each engine is cyclic, and the entire first rejection becomes the second heat input.\nFormula/Principle: For each engine \\(W=\\eta Q_{\\mathrm{in}}\\) and \\(Q_{\\mathrm{out}}=Q_{\\mathrm{in}}-W\\).\nStep 1: \\[W_1=0.40(800)=320,\\quad Q_{12}=800-320=480\\ \\mathrm J.\\]\nStep 2: \\[W_2=(1/3)(480)=160,\\quad Q_{\\mathrm{out},2}=480-160=320\\ \\mathrm J.\\]\nStep 3: \\[W_{\\mathrm{useful}}=320+160-40=440\\ \\mathrm J.\\]\nStep 4: \\[\\eta_{\\mathrm{useful}}=440/800=0.55=55\\%.\\]\nWorked derivation: \\[800=440+40+320\\ \\mathrm J.\\]\nWhy: The second efficiency acts on the first engine's rejected heat, not on the original 800 J again. The parasitic load reduces useful work but, by stipulation, does not change either engine's own heat balance.\nWhy not the others: (A) reports gross rather than useful efficiency; (B) reports the inter-engine heat transfer as final rejection; (D) ignores both the second engine's contribution and the external loss accounting.\nKey point: Draw separate cyclic energy balances before combining a cascade's useful output.",
+      "syllabus_anchor": "Thermodynamics: first law and heat engine"
     },
     {
       "id": "IAT27-T15-Q51",
@@ -1111,19 +1122,20 @@
       "section": "P",
       "subject": "Physics",
       "topic": "Nuclei",
-      "sub_topic": "multi-stage decay bookkeeping",
+      "sub_topic": "Equal activities and separate parent decay populations",
       "class_level": "12",
       "difficulty": "hard",
       "format": "numerical",
-      "question": "A radioactive parent P has half-life 2 h and decays to a stable daughter D. Starting with 800 P atoms and no D, how many D atoms exist after 6 h, assuming a closed sample?",
+      "question": "A closed sample initially contains 900 radioactive parent atoms of types P and Q in total, with equal initial activities. Their half-lives are 2 h and 4 h. Each parent produces one stable daughter, initially absent. What is the expected total number of daughter atoms after 4 h?",
       "options": [
-        "A) 100",
-        "B) 200",
+        "A) 375",
+        "B) 450",
         "C) 600",
-        "D) 700"
+        "D) 525"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) 700 daughter atoms.\nGiven: Three half-lives leave P=800/8=100.\nFormula/Principle: Atom conservation P+D=800.\nStep 1: D=800−100=700.\nWorked derivation: \\[N_P=800(1/2)^3=100,\\quad N_D=800-100=700.\\]\nWhy: Every decayed parent produces one stable daughter under the stated chain, so daughter count is cumulative loss of parents, not the remaining parent count. Closed-sample conservation makes the subtraction exact in this idealised model.\nWhy not the others: (A) is remaining parent; (B) uses two half-lives incorrectly; (C) loses 100 daughters.\nKey point: Convert survivors to accumulated products."
+      "explanation": "Answer: (D) 525 daughter atoms.\nGiven: \\(\\lambda_P=2\\lambda_Q\\) and \\(N_{P0}+N_{Q0}=900\\).\nFormula/Principle: Equal activity means \\(\\lambda_PN_{P0}=\\lambda_QN_{Q0}\\), not equal initial populations.\nStep 1: \\[N_{Q0}=2N_{P0}\\Rightarrow N_{P0}=300,\\quad N_{Q0}=600.\\]\nStep 2: After 4 h, \\[N_P=300(1/2)^2=75,\\qquad N_Q=600(1/2)=300.\\]\nStep 3: \\[N_D=900-(75+300)=525.\\]\nWorked derivation: \\[N_D=300(1-1/4)+600(1-1/2)=225+300=525.\\]\nWhy: The shorter-lived parent needs fewer atoms to have the same initial decay activity. Stable daughters accumulate from both independent parent populations, so atom conservation can be applied after calculating each surviving population separately.\nWhy not the others: (A) reports surviving parents; (B) assumes an unsupported one-half decay of the whole mixture; (C) ignores the actual two-component survival calculation.\nKey point: Translate equal activity into a population ratio before applying separate half-lives.",
+      "syllabus_anchor": "Nuclei: radioactive decay"
     },
     {
       "id": "IAT27-T15-Q56",
@@ -1163,7 +1175,7 @@
       "correct_option": "A",
       "explanation": "Answer: (A) Total internal reflection.\nWorked derivation: \\[\\theta_c=\\sin^{-1}(1/1.5)\\approx41.8^\\circ,\\quad 50^\\circ>\\theta_c.\\]\nWhy: Incidence from higher to lower index above the critical angle cannot satisfy a real transmitted Snell angle. Reflection remains in glass, though a near-interface evanescent field can exist without an ordinary transmitted ray.\nWhy not the others: (B),(C) require a real refracted ray; (D) is not implied.\nKey point: Compare incidence with critical angle.",
       "image_reference": "IAT_T15_Q57.png",
-      "image_alt": "Glass to air interface, incidence 50 degrees and refractive indices 1.5 and 1.0"
+      "image_alt": "A ray reaches a glass-to-air boundary at a labelled incidence angle."
     },
     {
       "id": "IAT27-T15-Q58",
@@ -1208,21 +1220,23 @@
       "section": "P",
       "subject": "Physics",
       "topic": "Wave Optics",
-      "sub_topic": "slit separation and fringe shift",
+      "sub_topic": "Fringe spacing and tracked phase-sheet displacement",
       "class_level": "12",
       "difficulty": "hard",
       "format": "diagram",
-      "question": "Young's two-slit setup has slit separation d and screen distance D. The separation is doubled and a thin sheet shifts one fringe by one original fringe width without changing wavelength. What is the new fringe width relative to the original?",
+      "question": "In a Young setup the original fringe width is \\(\\beta=\\lambda D/d\\). The slit separation is changed to 2d, and a thin sheet of refractive index 1.50 is placed at one slit. The tracked bright fringe with zero total optical path difference shifts by \\(3\\beta/4\\) from the geometric axis. In the paraxial approximation, what are the new fringe width and sheet thickness?",
       "options": [
-        "A) 2β",
-        "B) β",
-        "C) β/4",
-        "D) β/2"
+        "A) \\(2\\beta;\\ 3\\lambda\\)",
+        "B) \\(\\beta/2;\\ 3\\lambda/2\\)",
+        "C) \\(\\beta/2;\\ 6\\lambda\\)",
+        "D) \\(\\beta/2;\\ 3\\lambda\\)"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) β/2.\nGiven: Fringe width β=λD/d.\nFormula/Principle: Width depends on d, while a uniform sheet produces pattern translation.\nStep 1: d→2d gives βnew=β/2; shift does not restore width.\nWorked derivation: \\[\\beta'=\\frac{\\lambda D}{2d}=\\frac\\beta2.\\]\nWhy: The phase sheet changes the central fringe position but not the difference in geometric path phase between adjacent fringes. Only the doubled slit spacing controls the new width under fixed D and λ.\nWhy not the others: (A) inverses scaling; (B) ignores d; (C) squares change.\nKey point: Distinguish pattern shift from fringe spacing.",
+      "explanation": "Answer: (D) New width \\(\\beta/2\\); thickness \\(3\\lambda\\).\nGiven: D and wavelength in air are unchanged; the specified tracked fringe is the zero-total-path-difference fringe, not just the nearest bright fringe to the axis.\nFormula/Principle: A uniform sheet adds path difference \\(\\Delta=(n-1)t\\); central-fringe displacement magnitude is \\(y_0=\\Delta D/d_{\\mathrm{new}}\\).\nStep 1: \\[\\beta_{\\mathrm{new}}=\\frac{\\lambda D}{2d}=\\frac\\beta2.\\]\nStep 2: \\[\\frac{y_0}{\\beta}=\\frac{\\Delta D/(2d)}{\\lambda D/d}=\\frac{\\Delta}{2\\lambda}=\\frac34.\\]\nStep 3: \\[\\Delta=\\frac32\\lambda,\\quad t=\\frac{\\Delta}{1.50-1}=\\frac{(3/2)\\lambda}{1/2}=3\\lambda.\\]\nWorked derivation: \\[\\beta_{\\mathrm{new}}=\\beta/2,\\qquad t=3\\lambda.\\]\nWhy: The sheet translates the pattern but does not alter its spacing; the changed slit separation affects both width and the conversion from path difference to displacement. Tracking the specified zero-path fringe avoids an ambiguity by whole fringe orders when interpreting the shift.\nWhy not the others: (A) reverses the separation scaling; (B) reports the added path as thickness; (C) inserts an extra factor of two in the sheet correction.\nKey point: Recompute geometric spacing before converting a measured phase shift to thickness.",
       "image_reference": "IAT_T15_Q60.png",
-      "image_alt": "Two slits, thin phase sheet at one slit, and screen with distance D"
+      "image_alt": "A two-slit apparatus has a thin sheet at one slit and a screen at distance D.",
+      "syllabus_anchor": "Wave optics: Young interference"
     }
-  ]
+  ],
+  "content_revision": "milestone15_fix_v1"
 }
