@@ -49,6 +49,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T4 | mughal emperors order, arya samaj dayananda, peninsular rivers, equator equal day night, vice president rajya sabha chairman, 73rd amendment panchayati raj, 61st amendment voting age, 86th amendment rte, 101st amendment gst, nso gdp estimates, sebi securities regulator, nabard rural credit, rbi issues currency, discovery of india nehru |
 | T5 | lothal dockyard, dandi march 1930, kangchenjunga sikkim, 38th parallel korea, durand line, mcmahon line, radcliffe line, lok sabha minimum age 25, seventh schedule lists, eighth schedule languages, tenth schedule anti-defection, first schedule states, fiscal deficit meaning, indian nobel laureates order |
 | T6 | arthashastra kautilya, rajagopalachari governor-general, chilika odisha, loktak manipur, wular jk, sambhar rajasthan, yangtze longest asia, governor appointment, article 72 pardon, taka bangladesh, rand south africa, ringgit malaysia, real brazil, monuments chronology qutub-victoria |
+| T7 | south indian dynasties order, do or die gandhi, swaraj birthright tilak, give me blood bose, inquilab zindabad hasrat mohani, gujarat longest coastline, vatican smallest country, supreme court statements, dpsp ireland, cpi retail prices, wpi wholesale prices, iip industrial output, sensex bse, bihu assam |
 
 ### F2 Science and environment
 
@@ -60,6 +61,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T4 | red longest wavelength, fuse heating effect, graphite conducts, stomach hcl, arteries away from heart, fleming penicillin, hooke cell, jenner smallpox vaccine, mendel inheritance, paris agreement, primary succession order, ex situ conservation |
 | T5 | barometer pressure, joule energy, watt power, pascal pressure, ohm resistance, lpg butane, ice floats less dense, xylem water transport, digestion statements, methane paddy cattle, water cycle order, gir asiatic lion |
 | T6 | speed of light 3e8, lightning before thunder, zinc acid hydrogen, acids bases indicators, polio virus, frog amphibian, bat mammal, penguin bird, shark fish, world environment day 5 june, environment agreements chronology, chipko trees |
+| T7 | moon gravity one sixth, household electricity statements, helium balloons, aluminium oxide layer, iris controls pupil, skin largest organ, liver largest gland, stapes smallest bone, femur longest bone, coal non-renewable, air composition order, iucn red list |
 
 ### F3 Current affairs
 
@@ -71,3 +73,4 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T4 | chenab bridge, brics 2025 rio india chair 2026, wtc final 2025, sunita williams return 2025, jnanpith 59th vinod kumar shukla |
 | T5 | pamban bridge 2025, timor-leste asean 2025, neeraj chopra 90 m doha, isro 100th launch nvs-02, magsaysay 2025 educate girls |
 | T6 | maratha military landscapes unesco, g20 johannesburg 2025, kho kho world cup 2025, cms-03 lvm3, nobel medicine 2025 immune tolerance |
+| T7 | deepavali unesco 2025, who pandemic agreement 2025, cwg 2030 ahmedabad, genome-edited rice 2025, nobel economics 2025 |
