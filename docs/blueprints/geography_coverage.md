@@ -53,6 +53,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | ratzel definition, semple definition, blache definition, cultural environment elements |
 | T13 | approaches chronology, fields and sub-fields |
 | T14 | naturalisation of humans, nature-human terms match |
+| T15 | griffith taylor, neo-determinism stop and go, welfare school humanistic, radical school marxian, behavioural school |
 
 ### A2 The world population
 
@@ -72,6 +73,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | immigrants emigrants, components of population change, density definition, heavy rainfall sparse population |
 | T13 | push and pull factors international, population control measures, natural growth rate percent, dt stages order |
 | T14 | industrialisation kobe osaka, climate extremes, net migration calculation |
+| T15 | 90 percent on 10 percent land, ten countries sixty percent six in asia, five to six billion in 12 years, relief and population, growth rate percent from table, development growth negative correlation |
 
 ### A3 Human development
 
@@ -91,6 +93,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | hdi education indicator, amartya sen freedom, gnh bhutan, equity pillar example |
 | T13 | basic needs six, life expectancy hdi, hdi scores statements |
 | T14 | mahbub-ul-haq concept, productivity pillar, high hdi features |
+| T15 | small countries better hdi, hdi not income alone, three aspects of hd, hdi gap calculation |
 
 ### A4 Primary activities
 
@@ -110,6 +113,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | dairy farming capital intensive, nomadism regions, gathering products, transhumance groups india |
 | T13 | ranching regions, mining factors, nomadic animals by region, slash and burn |
 | T14 | gathering features, gathering regions, mixed farming, european powers plantations |
+| T15 | wet paddy subsistence, ranching scientific basis, mining dev vs developing, mediterranean viticulture, tulips netherlands, commercial grain wheat, dairy regions |
 
 ### A5 Secondary activities
 
@@ -129,6 +133,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | agglomeration economies, government policy location, size classification of industry, manufacturing evolution order |
 | T13 | footloose industries, manufacture latin origin, modern manufacturing features |
 | T14 | market location factor, energy location factor, perishable raw materials, labour location factor, weight-losing raw materials |
+| T15 | basic industries, consumer goods industries, joint sector, agro-processing, non-metallic minerals cement pottery, cottage industry |
 
 ### A6 Tertiary and quaternary activities
 
@@ -148,6 +153,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | nodes and links, distance measures, outsourcing reasons |
 | T13 | quaternary outsourcing not tied, non-store retail, transport definition |
 | T14 | retail types match, tertiary activities features, service levels |
+| T15 | rural marketing centres, urban marketing centres, wholesale trading, quinary definition, tourist attractions, kpo statements |
 
 ### A7 Transport and communication (world)
 
@@ -167,6 +173,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | big trunk route, cyberspace e-services, cape of good hope route, orient express |
 | T13 | volga waterway, danube waterway, satellite cost invariant, suez canal sea level |
 | T14 | big inch, alaskan highway, trans-canadian highway, cape of good hope route, trans-siberian terminals, inland waterway factors |
+| T15 | australian trans-continental, panama canal statements, great lakes order |
 
 ### A8 International trade (world)
 
@@ -186,6 +193,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | trade blocs headquarters, port types by function |
 | T13 | bases of international trade, wto criticism |
 | T14 | dumping, trade types match |
+| T15 | gatt 1948, unfavourable bot |
 
 ### B1 Population of India
 
@@ -205,6 +213,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | marginal worker 183 days, four worker categories, combined density calculation, india share world population |
 | T13 | language families share order, wpr calculation, kirata sino-tibetan |
 | T14 | india population 2011, india share world population, most populous up, lowest density arunachal, sikkim least populous, hindus distribution |
+| T15 | physiological density calculation, religious groups share order, language families examples |
 
 ### B2 Human settlements
 
@@ -224,6 +233,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | industrial towns, religious towns, town size classes |
 | T13 | rural settlement sites, settlement factors statements |
 | T14 | administrative towns, educational towns |
+| T15 | urban size hierarchy, census town criteria |
 
 ### B3 Land resources and agriculture
 
@@ -243,6 +253,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | rice staple second after china, land use change, tea regions, narma cotton |
 | T13 | oilseeds match, pulses nitrogen, south india three seasons crops |
 | T14 | jute west bengal, sugarcane brazil up, problems of indian agriculture, culturable waste land |
+| T15 | forest policy 33 percent, monsoon dependence, rice irrigated punjab haryana |
 
 ### B4 Water resources
 
@@ -262,6 +273,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | watershed management definition, haryali, neeru meeru arvary, rooftop rwh case calculation, watershed people participation |
 | T13 | water laws chronology, irrigation need, water borne diseases |
 | T14 | haryali, neeru meeru arvary, namami gange, india water share world, water resource figures |
+| T15 | tamil nadu rwh compulsory, groundwater use high nw, water cyclic resource |
 
 ### B5 Mineral and energy resources
 
@@ -281,6 +293,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | minerals in peninsular rocks, damodar coalfields, kerala monazite thorium |
 | T13 | haematite magnetite, bio-energy benefits, mica properties |
 | T14 | neyveli lignite, jaduguda uranium, mumbai high 1973, copper deposits, iron ore mines, mineral characteristics, natural gas sources, oilfields locations |
+| T15 | north-eastern plateau belt, south-western belt no coal, north-western belt copper zinc, damodar coalfields, refinery types match |
 
 ### B6 Planning and sustainable development
 
@@ -300,6 +313,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | three aspects sustainable development, ignp cropping change |
 | T13 | bharmaur gaddi, tribal sub plan fifth plan, itdp priorities, bharmaur female literacy calculation, bharmaur transhumance decline |
 | T14 | hadp fifteen districts, dpap fourth plan, tribal sub plan fifth plan, sfda mfda, ignp chronology |
+| T15 | warabandi, harike barrage origin |
 
 ### B7 Transport and communication (India)
 
@@ -319,6 +333,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | transport bodies chronology, insat 1983, waterways 1 percent |
 | T13 | personal vs mass communication, postal network largest, bro 1960 |
 | T14 | nw-2 brahmaputra, nw-3 kerala, konkan railway, radio 1923 |
+| T15 | salaya jalandhar pipeline, national highways share, transport chronology |
 
 ### B8 International trade (India)
 
@@ -338,6 +353,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | mumbai natural harbour, sea trade 95 percent |
 | T13 | foodgrain imports declined, major minor port control |
 | T14 | kochi vembanad, tuticorin, paradip deep harbour, pearls precious stones import |
+| T15 | hinterland, haldia subsidiary, visakhapatnam landlocked, chennai artificial oldest, ennore, jnpt satellite |
 
 ### B9 Selected issues and problems
 
@@ -357,3 +373,4 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T12 | noise location specific, slums location |
 | T13 | solid waste items, natural water pollution sources |
 | T14 | uncollected waste calculation, ganga yamuna polluted |
+| T15 | chambal ravines, man-made land degradation, urban smog, dharavi, pollution types statements |
