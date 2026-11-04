@@ -50,6 +50,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T5 | lothal dockyard, dandi march 1930, kangchenjunga sikkim, 38th parallel korea, durand line, mcmahon line, radcliffe line, lok sabha minimum age 25, seventh schedule lists, eighth schedule languages, tenth schedule anti-defection, first schedule states, fiscal deficit meaning, indian nobel laureates order |
 | T6 | arthashastra kautilya, rajagopalachari governor-general, chilika odisha, loktak manipur, wular jk, sambhar rajasthan, yangtze longest asia, governor appointment, article 72 pardon, taka bangladesh, rand south africa, ringgit malaysia, real brazil, monuments chronology qutub-victoria |
 | T7 | south indian dynasties order, do or die gandhi, swaraj birthright tilak, give me blood bose, inquilab zindabad hasrat mohani, gujarat longest coastline, vatican smallest country, supreme court statements, dpsp ireland, cpi retail prices, wpi wholesale prices, iip industrial output, sensex bse, bihu assam |
+| T8 | samudragupta napoleon, revolt of 1857, patna ganga, jabalpur narmada, hyderabad musi, surat tapi, panama canal, article 352 emergency, article 356 president rule, article 360 financial emergency, article 368 amendment, constitution milestones order, rbi bankers bank, hornbill festival nagaland |
 
 ### F2 Science and environment
 
@@ -62,6 +63,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T5 | barometer pressure, joule energy, watt power, pascal pressure, ohm resistance, lpg butane, ice floats less dense, xylem water transport, digestion statements, methane paddy cattle, water cycle order, gir asiatic lion |
 | T6 | speed of light 3e8, lightning before thunder, zinc acid hydrogen, acids bases indicators, polio virus, frog amphibian, bat mammal, penguin bird, shark fish, world environment day 5 june, environment agreements chronology, chipko trees |
 | T7 | moon gravity one sixth, household electricity statements, helium balloons, aluminium oxide layer, iris controls pupil, skin largest organ, liver largest gland, stapes smallest bone, femur longest bone, coal non-renewable, air composition order, iucn red list |
+| T8 | myopia concave lens, planet sizes order, water hardness statements, hydrogen sulphide smell, etiolation chlorophyll light, hepatitis liver, pneumonia lungs, cataract eye, arthritis joints, biodegradable waste, ozone hole antarctica, jim corbett first national park |
 
 ### F3 Current affairs
 
@@ -74,3 +76,4 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T5 | pamban bridge 2025, timor-leste asean 2025, neeraj chopra 90 m doha, isro 100th launch nvs-02, magsaysay 2025 educate girls |
 | T6 | maratha military landscapes unesco, g20 johannesburg 2025, kho kho world cup 2025, cms-03 lvm3, nobel medicine 2025 immune tolerance |
 | T7 | deepavali unesco 2025, who pandemic agreement 2025, cwg 2030 ahmedabad, genome-edited rice 2025, nobel economics 2025 |
+| T8 | gita natyashastra memory of world, sanae takaichi japan pm, shubman gill test captain, 3i/atlas interstellar, booker 2025 flesh szalay |
