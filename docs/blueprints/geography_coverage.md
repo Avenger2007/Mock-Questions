@@ -43,6 +43,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | possibilism, approaches chronology |
 | T3 | environmental determinism, branches and sister disciplines |
 | T4 | semple definition, schools of human geography |
+| T5 | cultural environment elements, blache definition |
 
 ### A2 The world population
 
@@ -52,6 +53,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | year of highest natural growth from table, demographic transition stage 1, demographic transition stage 2, growth rate percent from table, demographic transition stage 3 |
 | T3 | ten countries sixty percent six in asia, malthus theory, push and pull factors international, five to six billion in 12 years |
 | T4 | components of population change, crude death rate calculation, pleasant climate mediterranean, emigration negative growth |
+| T5 | immigrants emigrants, actual growth calculation, world population growth history, heavy rainfall sparse population |
 
 ### A3 Human development
 
@@ -61,6 +63,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | hdi access to resources, human poverty index, gnh bhutan |
 | T3 | hdi categories, reasons for low hdi, amartya sen freedom |
 | T4 | basic needs six, equity pillar example, growth versus development |
+| T5 | four pillars of human development, life expectancy hdi, undp hdr 1990 |
 
 ### A4 Primary activities
 
@@ -70,6 +73,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | nomadic animals by region, ranching regions, truck farming, kolkhoz |
 | T3 | primary activity types match, wet paddy subsistence, mining factors, cooperative farming denmark |
 | T4 | slash and burn, dutch sugarcane indonesia, plantation features, jhum cycle shortening, european powers plantations |
+| T5 | nomadism regions, shaft mining risks, tulips netherlands, shifting cultivation steps |
 
 ### A5 Secondary activities
 
@@ -79,6 +83,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | size classification of industry, technopolis silicon valley, basic industries |
 | T3 | modern manufacturing features, weight-losing raw materials, joint sector |
 | T4 | agro-processing, market location factor, raw material class match |
+| T5 | high-tech features, small scale employment, consumer goods industries |
 
 ### A6 Tertiary and quaternary activities
 
@@ -88,6 +93,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | tourism largest tertiary, medical tourism |
 | T3 | nodes and links, quaternary outsourcing not tied, rural marketing centres |
 | T4 | tertiary activities features, plumber service tertiary |
+| T5 | services types match, digital divide, tourist attractions |
 
 ### A7 Transport and communication (world)
 
@@ -97,6 +103,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | big trunk route, trans-canadian highway, satellite cost invariant, cyberspace e-services |
 | T3 | volga waterway, alaskan highway, great lakes order |
 | T4 | europe rail density, pipelines uses, water transport advantages |
+| T5 | ocean routes match, danube waterway, suez canal sea level |
 
 ### A8 International trade (world)
 
@@ -106,6 +113,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | port types by function, dumping |
 | T3 | trade blocs headquarters, trade history chronology |
 | T4 | bases of international trade, free trade liberalisation |
+| T5 | port types statements, comprehensive ports |
 
 ### B1 Population of India
 
@@ -115,6 +123,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | highest density bihar, density calculation, buddhists distribution, four worker categories |
 | T3 | highest density district from table, decadal growth rate calculation, equal growth rates from table, combined density calculation, population projection |
 | T4 | india distribution statements, religion distribution match, urban share calculation, most populous states order |
+| T5 | language families share order, occupation by states, growth phases, scheduled languages |
 
 ### B2 Human settlements
 
@@ -124,6 +133,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | dispersed settlements, town evolution |
 | T3 | semi-clustered settlements, urban agglomeration |
 | T4 | tourist towns, town size classes |
+| T5 | industrial towns, urban size hierarchy |
 
 ### B3 Land resources and agriculture
 
@@ -133,6 +143,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | crops leading states, green revolution irrigated areas, problems of indian agriculture, net sown area percent |
 | T3 | rabi crops, common property resources, fallow land share calculation |
 | T4 | land use change, jowar maharashtra, rice staple second after china, fallow duration order |
+| T5 | farming types irrigated rainfed, gram tur pulses, iadp iaap |
 
 ### B4 Water resources
 
@@ -142,6 +153,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | water laws, reuse of waste water, agriculture largest water user, arsenic west bengal bihar |
 | T3 | irrigation need, namami gange, rainwater harvesting volume calculation |
 | T4 | groundwater low use states, tamil nadu rwh compulsory, surface water sources, nw groundwater irrigation |
+| T5 | water conservation measures, irrigation volume calculation, fluoride rajasthan maharashtra |
 
 ### B5 Mineral and energy resources
 
@@ -151,6 +163,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | oilfields locations, mica jharkhand, jharia largest coalfield, minerals in peninsular rocks |
 | T3 | mineral locations match, nuclear power stations, gail 1984, mineral conservation |
 | T4 | tertiary coal northeast, refinery types match, haematite magnetite, non-conventional geothermal |
+| T5 | north-eastern plateau belt, south-western belt no coal, north-western belt copper zinc, rajasthan building stones, kerala monazite thorium |
 
 ### B6 Planning and sustainable development
 
@@ -160,6 +173,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | dpap fourth plan, hadp fifteen districts |
 | T3 | sustainable development chronology, sfda mfda |
 | T4 | sectoral regional planning, brundtland definition |
+| T5 | cadp target area, backward hill area criteria |
 
 ### B7 Transport and communication (India)
 
@@ -169,6 +183,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | railway gauges, pawan hans, insat irs |
 | T3 | road and pipeline history match, state highways, district roads |
 | T4 | hbj pipeline, unigauge, radio mass communication |
+| T5 | national highways share, first railway 1853, iwai 1986 |
 
 ### B8 International trade (India)
 
@@ -178,6 +193,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | east coast ports order, visakhapatnam landlocked |
 | T3 | changing export composition, new mangalore iron ore |
 | T4 | ports sites match, airports authority |
+| T5 | ports features match, hinterland |
 
 ### B9 Selected issues and problems
 
@@ -187,3 +203,4 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T2 | slums location, noise decibel |
 | T3 | ganga yamuna polluted, urban waste as resource |
 | T4 | urban smog, dharavi |
+| T5 | noise location specific, air pollution sources |
