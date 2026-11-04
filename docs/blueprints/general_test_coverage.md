@@ -46,6 +46,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T1 | chauri chaura 1922, tropic of cancer states, pacific largest ocean, article 14, article 21, article 32, article 51a, rajya sabha permanent house, repo rate, gitanjali tagore |
 | T2 | buddha first sermon sarnath, freedom struggle chronology 1905-1942, bhakra sutlej, hirakud mahanadi, sardar sarovar narmada, tehri bhagirathi, palk strait, strait of gibraltar, bering strait, strait of malacca, president election impeachment, article 17, niti aayog planning commission, kathakali kerala |
 | T3 | battles chronology panipat-buxar, inc 1885 bombay, shipki la himachal, nathu la sikkim, zoji la ladakh, bomdi la arunachal, sahara largest hot desert, article 324, article 280, article 148, article 315, preamble 42nd amendment, inflation target 4 percent, konark odisha |
+| T4 | mughal emperors order, arya samaj dayananda, peninsular rivers, equator equal day night, vice president rajya sabha chairman, 73rd amendment panchayati raj, 61st amendment voting age, 86th amendment rte, 101st amendment gst, nso gdp estimates, sebi securities regulator, nabard rural credit, rbi issues currency, discovery of india nehru |
 
 ### F2 Science and environment
 
@@ -54,6 +55,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T1 | newton si unit force, floatation archimedes ship, baking soda nahco3, lemon juice acidic, cerebellum balance, scurvy vitamin c, rickets vitamin d, goitre iodine, night blindness vitamin a, grassland food chain, ozone layer stratosphere, project tiger 1973 |
 | T2 | convex mirror rear view, sound needs medium, rusting oxygen water, laughing gas n2o, o universal donor, insulin pancreas, thyroxine thyroid, adrenaline adrenal, growth hormone pituitary, western ghats hotspot, atmosphere layers order, kaziranga rhino assam |
 | T3 | refraction bent straw, boiling point altitude, mercury liquid metal, common salt nacl, quicklime cao, bleaching powder caocl2, plaster of paris, chloroplast photosynthesis, blood components, eutrophication, ecological levels order, ramsar wetlands |
+| T4 | red longest wavelength, fuse heating effect, graphite conducts, stomach hcl, arteries away from heart, fleming penicillin, hooke cell, jenner smallpox vaccine, mendel inheritance, paris agreement, primary succession order, ex situ conservation |
 
 ### F3 Current affairs
 
@@ -62,3 +64,4 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T1 | gst two slabs september 2025, cop30 belem, champions trophy 2025, axiom-4 shubhanshu shukla, nobel peace 2025 machado, nobel literature 2025 krasznahorkai, nobel chemistry 2025 mofs, nobel physics 2025 clarke |
 | T2 | census 2027 digital caste, pope leo xiv, womens world cup 2025, nisar launch, international booker 2025 heart lamp |
 | T3 | income-tax act 2025, india uk ceta, divya deshmukh womens world cup, spadex docking, phalke award mohanlal |
+| T4 | chenab bridge, brics 2025 rio india chair 2026, wtc final 2025, sunita williams return 2025, jnanpith 59th vinod kumar shukla |
