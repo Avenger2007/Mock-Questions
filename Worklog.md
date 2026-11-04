@@ -397,3 +397,29 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 ### Tools added
 - `docs/blueprints/general_test.md` (pattern, weights, difficulty, formats, out-of-scope list) and `docs/blueprints/general_test_coverage.md` (data-set themes, slot rotation, target ledgers).
 - `tools/cuet_gt/` — compact draft format and converter, checker, builder, ledger marker, ship script, item patcher and series re-indexer; drafts of all 15 tests in `drafts/`.
+
+## Geography (313) — revised to the CUET 2027 standard (completed 5 Nov 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `9575066` (blueprint, coverage map and tools), `b75b5a4` (pilot Test 1) … `02b718f` (Test 15) on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | 15 old papers of 50 questions, status `pending_revision` | **15 rewritten tests** (`CUET GEOGRAPHY TEST 1–15.json`), planned first in a coverage map; status `revised` |
+| Paper structure | 50 compulsory | unchanged: 50 compulsory questions, 60 min, +5 / −1 (NTA pattern) |
+| Syllabus | mixed, with dropped topics | only the rationalised NCERT Class XII books: *Fundamentals of Human Geography* (24 questions per test) and *India: People and Economy* (26 per test), with fixed unit quotas |
+| Case sets | — | 15 original passages or tables, one per test (Indira Gandhi Canal command area, land use, human development, waterways and highway corridors, exports and imports, slums and urban waste, watershed management, Bharmaur tribal region, location of manufacturing, seaports and hinterlands, among others) |
+| Difficulty | uneven | **8 easy / 32 medium / 10 hard in every test** |
+| Formats | almost all direct | per test: 5 case-set, 5 match-list, 5 statements, 3 assertion–reason, 3 sequence, 2 numerical, 27 direct |
+| Explanations | 1–2 lines | concept items: Why / Why not the others / Key point; numericals: Given / Step / Common mistake; statement items name the false statement |
+| Order and keys | section-wise | random order with the case set kept together; key 13 / 12 / 13 / 12 per test; no letter more than 3 times in a row; correct option never clearly the longest |
+
+**Coverage ledger:** every answer fact is a key in `docs/blueprints/geography_coverage.md` §C, used at most twice in the series, in different tests and different formats; `geo_check.py` flags any key already used twice (`REPEAT-TARGET`), duplicate keys within a test, and sub-topic or stem overlap with earlier tests. Every flag was cleared before shipping.
+
+**Verification:** `validate_papers.py CUET --subject "Geography"` — 0 parse errors, 0 wrong counts, 0 key/explanation mismatches, 0 runs > 3, 0 self-referential options, 0 within- or cross-paper duplicate stems, 0 passage gaps, 0 difficulty deviations; series key A 25.1%, B 24.9%, C 25.1%, D 24.9%.
+
+**Known limits:** a few location-order items (Damodar coalfields, iron-ore mines, Konkan Railway and Australian Trans-Continental stations) rely on map positions rather than NCERT text. Late tests reuse single-use facts in a new format because fresh NCERT facts were running out.
+
+### Tools added
+- `docs/blueprints/geography.md` (pattern, PYQ analysis, unit quotas, difficulty, formats, out-of-scope list) and `docs/blueprints/geography_coverage.md` (case-set plan, unit rotation, fact ledger).
+- `tools/cuet_geo/` — compact draft format and converter, checker, builder, ledger marker, ship script, item patcher and series re-indexer; drafts of all 15 tests in `drafts/`.
