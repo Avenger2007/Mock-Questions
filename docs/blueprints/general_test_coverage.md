@@ -48,6 +48,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T3 | battles chronology panipat-buxar, inc 1885 bombay, shipki la himachal, nathu la sikkim, zoji la ladakh, bomdi la arunachal, sahara largest hot desert, article 324, article 280, article 148, article 315, preamble 42nd amendment, inflation target 4 percent, konark odisha |
 | T4 | mughal emperors order, arya samaj dayananda, peninsular rivers, equator equal day night, vice president rajya sabha chairman, 73rd amendment panchayati raj, 61st amendment voting age, 86th amendment rte, 101st amendment gst, nso gdp estimates, sebi securities regulator, nabard rural credit, rbi issues currency, discovery of india nehru |
 | T5 | lothal dockyard, dandi march 1930, kangchenjunga sikkim, 38th parallel korea, durand line, mcmahon line, radcliffe line, lok sabha minimum age 25, seventh schedule lists, eighth schedule languages, tenth schedule anti-defection, first schedule states, fiscal deficit meaning, indian nobel laureates order |
+| T6 | arthashastra kautilya, rajagopalachari governor-general, chilika odisha, loktak manipur, wular jk, sambhar rajasthan, yangtze longest asia, governor appointment, article 72 pardon, taka bangladesh, rand south africa, ringgit malaysia, real brazil, monuments chronology qutub-victoria |
 
 ### F2 Science and environment
 
@@ -58,6 +59,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T3 | refraction bent straw, boiling point altitude, mercury liquid metal, common salt nacl, quicklime cao, bleaching powder caocl2, plaster of paris, chloroplast photosynthesis, blood components, eutrophication, ecological levels order, ramsar wetlands |
 | T4 | red longest wavelength, fuse heating effect, graphite conducts, stomach hcl, arteries away from heart, fleming penicillin, hooke cell, jenner smallpox vaccine, mendel inheritance, paris agreement, primary succession order, ex situ conservation |
 | T5 | barometer pressure, joule energy, watt power, pascal pressure, ohm resistance, lpg butane, ice floats less dense, xylem water transport, digestion statements, methane paddy cattle, water cycle order, gir asiatic lion |
+| T6 | speed of light 3e8, lightning before thunder, zinc acid hydrogen, acids bases indicators, polio virus, frog amphibian, bat mammal, penguin bird, shark fish, world environment day 5 june, environment agreements chronology, chipko trees |
 
 ### F3 Current affairs
 
@@ -68,3 +70,4 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T3 | income-tax act 2025, india uk ceta, divya deshmukh womens world cup, spadex docking, phalke award mohanlal |
 | T4 | chenab bridge, brics 2025 rio india chair 2026, wtc final 2025, sunita williams return 2025, jnanpith 59th vinod kumar shukla |
 | T5 | pamban bridge 2025, timor-leste asean 2025, neeraj chopra 90 m doha, isro 100th launch nvs-02, magsaysay 2025 educate girls |
+| T6 | maratha military landscapes unesco, g20 johannesburg 2025, kho kho world cup 2025, cms-03 lvm3, nobel medicine 2025 immune tolerance |
