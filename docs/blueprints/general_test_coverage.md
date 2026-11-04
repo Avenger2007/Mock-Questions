@@ -52,6 +52,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T7 | south indian dynasties order, do or die gandhi, swaraj birthright tilak, give me blood bose, inquilab zindabad hasrat mohani, gujarat longest coastline, vatican smallest country, supreme court statements, dpsp ireland, cpi retail prices, wpi wholesale prices, iip industrial output, sensex bse, bihu assam |
 | T8 | samudragupta napoleon, revolt of 1857, patna ganga, jabalpur narmada, hyderabad musi, surat tapi, panama canal, article 352 emergency, article 356 president rule, article 360 financial emergency, article 368 amendment, constitution milestones order, rbi bankers bank, hornbill festival nagaland |
 | T9 | sangam tamil, lucknow poona cripps cabinet order, rajasthan largest state, continents statements, cec appointment president, habeas corpus, mandamus, quo warranto, certiorari, services largest sector, ajanta maharashtra |
+| T10 | chandragupta maurya, harihara bukka vijayanagara, babur mughal, aibak slave dynasty, asiatic society brahmo samaj ramakrishna mission muslim league order, indira point southernmost, fundamental duties statements, garba, lavani, ghoomar, bhangra, one rupee note finance secretary, aravalli oldest, champaran 1917 |
 
 ### F2 Science and environment
 
@@ -66,6 +67,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T7 | moon gravity one sixth, household electricity statements, helium balloons, aluminium oxide layer, iris controls pupil, skin largest organ, liver largest gland, stapes smallest bone, femur longest bone, coal non-renewable, air composition order, iucn red list |
 | T8 | myopia concave lens, planet sizes order, water hardness statements, hydrogen sulphide smell, etiolation chlorophyll light, hepatitis liver, pneumonia lungs, cataract eye, arthritis joints, biodegradable waste, ozone hole antarctica, jim corbett first national park |
 | T9 | hertz frequency, anemometer wind, hygrometer humidity, seismograph earthquakes, odometer distance, dry ice solid co2, acids react metals vessels, heart statements, vitamin k clotting, environment laws chronology, acid rain so2, sundarbans tiger |
+| T10 | hypermetropia convex lens, neon signs, photosynthesis oxygen from water, conductors feel colder, scurvy, rickets, night blindness, beriberi, silent valley kerala, em spectrum wavelength order, biodiversity hotspots india, mitochondria powerhouse |
 
 ### F3 Current affairs
 
@@ -80,3 +82,4 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T7 | deepavali unesco 2025, who pandemic agreement 2025, cwg 2030 ahmedabad, genome-edited rice 2025, nobel economics 2025 |
 | T8 | gita natyashastra memory of world, sanae takaichi japan pm, shubman gill test captain, 3i/atlas interstellar, booker 2025 flesh szalay |
 | T9 | labour codes 2025, india efta tepa, winter olympics 2026 italy, vikram 3201 processor, khel ratna 2024 awardees |
+| T10 | ai impact summit 2026, hockey asia cup 2025 rajgir, z-morh tunnel sonamarg, iyq 2025 quantum, cji surya kant |

@@ -1,0 +1,648 @@
+%P D
+Train tickets sold at a station in one week, by class
+
+| Day | Sleeper | AC 3-tier | AC 2-tier |
+|---|---|---|---|
+| Monday | 420 | 180 | 60 |
+| Tuesday | 380 | 160 | 50 |
+| Wednesday | 400 | 200 | 70 |
+| Thursday | 450 | 210 | 80 |
+| Friday | 520 | 240 | 90 |
+| Saturday | 600 | 280 | 120 |
+| Sunday | 590 | 260 | 100 |
+
+@@ D|Day with the most AC 3-tier tickets|e|p|C
+On which day were the most AC 3-tier tickets sold?
+A) Friday
+B) Sunday
+C) Saturday
+D) Thursday
+=
+Given: AC 3-tier column: 180, 160, 200, 210, 240, 280, 260.
+Step 1: The largest value is 280.
+Step 2: 280 tickets were sold on Saturday.
+Common mistake: reading the Sunday row (260, option B), or picking the day with the most tickets of all classes without checking the column.
+
+@@ D|Total tickets sold on one day|m|p|B
+How many tickets of all three classes were sold on Friday?
+A) 760
+B) 850
+C) 830
+D) 940
+=
+Given: Friday — Sleeper 520, AC 3-tier 240, AC 2-tier 90.
+Step 1: 520 + 240 = 760.
+Step 2: 760 + 90 = 850.
+Common mistake: leaving out the AC 2-tier tickets (760, option A).
+
+@@ D|Average daily Sleeper tickets|m|p|A
+What was the average number of Sleeper tickets sold per day during the week?
+A) 480
+B) 474
+C) 560
+D) 420
+=
+Given: Sleeper column: 420, 380, 400, 450, 520, 600, 590.
+Step 1: Total = 3,360.
+Step 2: Average = 3,360 ÷ 7 = 480.
+Common mistake: dividing by 6 instead of 7 (560, option C), or giving Monday's figure (420, option D).
+
+@@ D|Percentage rise in AC 2-tier tickets|m|p|D
+By what percentage did the number of AC 2-tier tickets sold on Saturday exceed the number sold on Tuesday?
+A) 70%
+B) 58.3%
+C) 240%
+D) 140%
+=
+Given: Tuesday 50, Saturday 120.
+Step 1: Increase = 120 − 50 = 70.
+Step 2: Percentage increase = 70 ÷ 50 × 100 = 140%.
+Common mistake: dividing the increase by Saturday's figure (70 ÷ 120 ≈ 58.3%, option B), or giving Saturday as a percentage of Tuesday (240%, option C).
+
+@@ D|Revenue from AC classes compared with Sleeper|h|p|A
+The fares are ₹500 (Sleeper), ₹1,300 (AC 3-tier) and ₹1,900 (AC 2-tier). On Saturday, by how much did the revenue from the two AC classes together exceed the revenue from Sleeper tickets?
+A) ₹2,92,000
+B) ₹64,000
+C) ₹5,92,000
+D) ₹1,92,000
+=
+Given: Saturday — Sleeper 600, AC 3-tier 280, AC 2-tier 120.
+Step 1: Sleeper revenue = 600 × 500 = ₹3,00,000.
+Step 2: AC revenue = 280 × 1,300 + 120 × 1,900 = 3,64,000 + 2,28,000 = ₹5,92,000.
+Step 3: Difference = 5,92,000 − 3,00,000 = ₹2,92,000.
+Common mistake: giving the AC revenue itself (₹5,92,000, option C), or comparing only AC 3-tier with Sleeper (₹64,000, option B).
+
+@@ Q|Share of profit when capital is invested for different periods|m|n|B
+A invests ₹30,000 for 12 months and B invests ₹40,000 for 6 months in a business. Out of a profit of ₹15,000, what is A's share?
+A) ₹6,429
+B) ₹9,000
+C) ₹7,500
+D) ₹6,000
+=
+Given: profit is shared in the ratio of capital × time.
+Step 1: A : B = 30,000 × 12 : 40,000 × 6 = 3,60,000 : 2,40,000 = 3 : 2.
+Step 2: A's share = 15,000 × 3/5 = ₹9,000.
+Common mistake: ignoring the time and using 3 : 4 (A gets ≈ ₹6,429, option A), or giving B's share (₹6,000, option D).
+
+@@ Q|Probability of drawing a ball that is not green|m|n|D
+A bag holds 4 red, 3 blue and 5 green balls. One ball is taken out at random. What is the probability that it is not green?
+A) 5/12
+B) 1/4
+C) 1/3
+D) 7/12
+=
+Given: total balls = 4 + 3 + 5 = 12; not green = 4 + 3 = 7.
+Step 1: Probability = favourable ÷ total.
+Step 2: = 7/12.
+Common mistake: giving the probability that it is green (5/12, option A), or counting only the blue balls (3/12 = 1/4, option B).
+
+@@ Q|Rate of compound interest from amounts in successive years|m|n|C
+A sum of money at compound interest (compounded annually) amounts to ₹14,400 in 2 years and to ₹17,280 in 3 years. What is the rate of interest?
+A) 25%
+B) 16.7%
+C) 20%
+D) 12%
+=
+Given: amount after 2 years ₹14,400; after 3 years ₹17,280.
+Step 1: Interest in the third year = 17,280 − 14,400 = ₹2,880, earned on ₹14,400.
+Step 2: Rate = 2,880 ÷ 14,400 × 100 = 20%.
+Common mistake: dividing by the later amount (2,880 ÷ 17,280 ≈ 16.7%, option B).
+
+@@ Q|Speed of the stream from downstream and upstream speeds|m|n|A
+A boat goes downstream at 18 km/h and upstream at 12 km/h. What is the speed of the stream?
+A) 3 km/h
+B) 15 km/h
+C) 6 km/h
+D) 1.5 km/h
+=
+Given: downstream = boat + stream = 18; upstream = boat − stream = 12.
+Step 1: Subtracting, 2 × stream = 6.
+Step 2: Stream = 3 km/h (and the boat's speed in still water = 15 km/h).
+Common mistake: giving the boat's speed in still water (15 km/h, option B), or forgetting to halve the difference (6 km/h, option C).
+
+@@ Q|Average after one number is removed|e|n|B
+The average of five numbers is 18. If the number 26 is removed, what is the average of the remaining four numbers?
+A) 17
+B) 16
+C) 18
+D) 15
+=
+Given: sum of the five numbers = 5 × 18 = 90.
+Step 1: Sum of the remaining four = 90 − 26 = 64.
+Step 2: Average = 64 ÷ 4 = 16.
+Common mistake: assuming the average stays the same (18, option C).
+
+@@ Q|Ratio after mixing equal amounts of two mixtures|h|n|C
+Two vessels contain milk and water in the ratios 3 : 1 and 5 : 3. Equal quantities from the two vessels are poured into a third vessel. What is the ratio of milk to water in the third vessel?
+A) 8 : 4
+B) 15 : 8
+C) 11 : 5
+D) 7 : 3
+=
+Given: take 8 litres from each vessel (8 is a multiple of both 4 and 8).
+Step 1: First vessel: milk 6, water 2. Second vessel: milk 5, water 3.
+Step 2: Milk : water = (6 + 5) : (2 + 3) = 11 : 5.
+Common mistake: adding the ratio terms directly ((3 + 5) : (1 + 3) = 8 : 4, option A), which ignores the different totals of the two ratios.
+
+@@ Q|Second number from HCF and LCM|m|n|D
+The HCF of two numbers is 12 and their LCM is 360. If one of the numbers is 72, what is the other?
+A) 30
+B) 90
+C) 48
+D) 60
+=
+Given: product of two numbers = HCF × LCM.
+Step 1: 72 × other = 12 × 360 = 4,320.
+Step 2: Other = 4,320 ÷ 72 = 60. (Check: HCF(72, 60) = 12 and LCM = 360.)
+Common mistake: dividing the LCM by 12 (30, option A), which ignores the given number.
+
+@@ Q|Volume of a cylinder from its curved surface|h|n|A
+The curved surface area of a cylinder is 880 cm² and its height is 10 cm. What is its volume? (Take π = 22/7.)
+A) 6,160 cm³
+B) 1,540 cm³
+C) 3,080 cm³
+D) 12,320 cm³
+=
+Given: curved surface area = 2πrh = 880; h = 10.
+Step 1: 2 × 22/7 × r × 10 = 880, so r = 880 × 7 ÷ 440 = 14 cm.
+Step 2: Volume = πr²h = 22/7 × 14 × 14 × 10 = 6,160 cm³.
+Common mistake: taking the radius as 7 cm (1,540 cm³, option B), or using the diameter in the volume formula.
+
+@@ Q|Selling price after two successive discounts|m|n|C
+An article marked at ₹2,000 is sold after two successive discounts of 20% and 10%. What is its selling price?
+A) ₹1,400
+B) ₹1,600
+C) ₹1,440
+D) ₹1,460
+=
+Given: marked price ₹2,000.
+Step 1: After 20% off: 2,000 × 0.8 = ₹1,600.
+Step 2: After a further 10% off: 1,600 × 0.9 = ₹1,440.
+Common mistake: adding the discounts and taking 30% off at once (₹1,400, option A), or applying only the first discount (₹1,600, option B).
+
+@@ Q|Unit digit of a power of 7|m|n|B
+What is the unit digit of 7³⁵?
+A) 7
+B) 3
+C) 9
+D) 1
+=
+Given: the unit digits of powers of 7 repeat in the cycle 7, 9, 3, 1.
+Step 1: 35 ÷ 4 leaves a remainder of 3.
+Step 2: So 7³⁵ ends in the third digit of the cycle, 3.
+Common mistake: taking the first digit of the cycle (7, option A), or the last one, which belongs to powers divisible by 4 (1, option D).
+
+@@ M|Series of doubling and adding one|m|d|A
+Which number completes the pattern 2, 5, 11, 23, 47, ?
+A) 95
+B) 94
+C) 96
+D) 71
+=
+Answer steps: each term is twice the previous term plus 1: 2 × 2 + 1 = 5, 5 × 2 + 1 = 11, 11 × 2 + 1 = 23, 23 × 2 + 1 = 47, so 47 × 2 + 1 = 95.
+Why not the others: (B) only doubles. (C) adds 2 after doubling. (D) adds the next difference as 24, treating the differences 3, 6, 12, 24 as fixed jumps from 47.
+Key point: The differences 3, 6, 12, 24, 48 also double — a check on the answer (47 + 48 = 95).
+
+@@ M|Coding by moving each letter one place forward|m|d|D
+If PENCIL is written as QFODJM in a certain code, how is ERASER written in that code?
+A) FSBSFS
+B) DQZRDQ
+C) FSATFS
+D) FSBTFS
+=
+Answer steps: each letter moves one place forward (P → Q, E → F, N → O …). ERASER: E → F, R → S, A → B, S → T, E → F, R → S, giving FSBTFS.
+Why not the others: (A) leaves the S unchanged. (B) moves each letter one place back. (C) leaves the A unchanged.
+Key point: Check every letter of the answer, not only the first few.
+
+@@ M|Relation through the only son of a grandfather|m|d|C
+Pointing to a man in a photograph, Arun says, "He is the son of the only son of my grandfather." If the man is not Arun, how is he related to Arun?
+A) Grandson
+B) Uncle
+C) Brother
+D) Nephew
+=
+Answer steps: the only son of Arun's grandfather is Arun's father. The father's son, other than Arun, is Arun's brother.
+Why not the others: (A) is the man's relation to the grandfather. (B) would be another son of the grandfather, but there is only one. (D) would be a brother's son.
+Key point: "Only son of my grandfather" (on the father's side) means "my father".
+
+@@ M|Compass heading after rotations in degrees|m|d|B
+Kiran stands with his face towards the north. He rotates 90° clockwise, then 180° anticlockwise, and finally 45° clockwise. Towards which direction is his face now?
+A) South-west
+B) North-west
+C) North-east
+D) West
+=
+Answer steps: north → 90° clockwise → east; east → 180° anticlockwise → west; west → 45° clockwise → north-west.
+Why not the others: (A) turns the last 45° anticlockwise. (C) ignores the 180° turn. (D) leaves out the last turn.
+Key point: Clockwise from west moves towards north.
+
+@@ M|Right angles made by clock hands in half a day|h|d|D
+How many times are the hour hand and the minute hand of a clock at right angles to each other in 12 hours?
+A) 24
+B) 11
+C) 44
+D) 22
+=
+Answer steps: in every hour the hands are at right angles twice, which would give 24 in 12 hours. But between 2 and 4 o'clock and between 8 and 10 o'clock, one right angle is shared (at 3:00 and 9:00), so 2 are lost. 24 − 2 = 22.
+Why not the others: (A) does not allow for the shared right angles at 3 and 9. (B) is the number of times the hands coincide in 12 hours. (C) is the number for a full day of 24 hours.
+Key point: In 12 hours the hands coincide 11 times and are opposite 11 times.
+
+@@ M|Odd one out among metals|e|d|A
+Which one is different from the others?
+A) Brass
+B) Copper
+C) Iron
+D) Aluminium
+=
+Answer steps: copper, iron and aluminium are pure metals (elements); brass is an alloy of copper and zinc.
+Why not the others: (B), (C) and (D) are all elements.
+Key point: Bronze (copper and tin) and steel (iron and carbon) are other common alloys.
+
+@@ M|Children between two people in a row|e|d|C
+In a row of 40 children, Ravi is 15th from the left end and Meena is 10th from the right end. How many children are there between Ravi and Meena?
+A) 16
+B) 14
+C) 15
+D) 17
+=
+Answer steps: Meena's position from the left = 40 − 10 + 1 = 31. Children between them = 31 − 15 − 1 = 15.
+Why not the others: (A) forgets to subtract 1. (B) subtracts 1 twice. (D) adds an extra 2.
+Key point: Change both positions to the same end before comparing them.
+
+@@ L|Assumptions behind a toothpaste advertisement|m|d|A
+Statement: "Use our new toothpaste for whiter teeth in seven days." — an advertisement.
+Assumptions:
+I. People want whiter teeth.
+II. No other toothpaste can make teeth whiter.
+A) Only I is implicit
+B) Only II is implicit
+C) Both I and II are implicit
+D) Neither I nor II is implicit
+=
+Answer steps: an advertisement promising whiter teeth assumes people want whiter teeth, so I is implicit. It does not need other toothpastes to be useless, so II is not implicit.
+Why not the others: (B) and (C) accept II, which is a much stronger claim than the advertisement makes. (D) rejects I, without which the advertisement would have no point.
+Key point: An assumption is what the speaker must take for granted, not the strongest claim one could add.
+
+@@ L|Signs to interchange to make an equation true|h|d|B
+Which two signs must be interchanged to make the following equation correct?
+16 ÷ 4 + 3 × 2 − 5 = 9
+A) + and −
+B) × and +
+C) ÷ and ×
+D) × and −
+=
+Answer steps: interchanging × and + gives 16 ÷ 4 × 3 + 2 − 5 = 4 × 3 + 2 − 5 = 12 + 2 − 5 = 9, which is correct.
+Why not the others: (A) gives 16 ÷ 4 − 3 × 2 + 5 = 4 − 6 + 5 = 3. (C) gives 16 × 4 + 3 ÷ 2 − 5 = 60.5. (D) gives 16 ÷ 4 + 3 − 2 × 5 = −3.
+Key point: Try each pair and apply BODMAS to the new expression.
+
+@@ L|Syllogism with some and all|m|d|C
+Statements:
+Some pens are books.
+All books are bags.
+Conclusions:
+I. Some pens are bags.
+II. All bags are pens.
+A) Only II follows
+B) Neither I nor II follows
+C) Only I follows
+D) Both I and II follow
+=
+Answer steps: the pens that are books are also bags, so some pens are bags (I). Nothing says every bag is a pen, so II does not follow.
+Why not the others: (A) and (D) accept II, which reverses an "All" statement. (B) rejects I, which follows directly.
+Key point: "All A are B" cannot be turned round to "All B are A".
+
+@@ L|Five friends at a round table|h|d|D
+P, Q, R, S and T sit around a circular table facing the centre. Q sits to the immediate left of P. R sits second to the right of P. S does not sit next to Q. Who sits to the immediate right of P?
+A) T
+B) Q
+C) R
+D) S
+=
+Answer steps: when people face the centre, "left" is clockwise and "right" is anticlockwise. Number the seats 1 to 5 clockwise with P in seat 1. Q is in seat 2 and R in seat 4 (two places anticlockwise). Seats 3 and 5 remain; seat 3 is next to Q, so S takes seat 5 and T seat 3. Seat 5 is P's immediate right, so S sits there.
+Why not the others: (A) T is in seat 3, between Q and R. (B) Q is to P's left. (C) R is second to P's right, not next to P.
+Key point: Facing the centre, your right hand points anticlockwise.
+
+@@ L|Small cubes with exactly two painted faces|m|d|A
+A cube painted on all its faces is cut into 27 equal smaller cubes. How many of the small cubes have exactly two faces painted?
+A) 12
+B) 8
+C) 6
+D) 1
+=
+Answer steps: the cubes with two painted faces lie along the edges, one in the middle of each edge (3 − 2 = 1 per edge). A cube has 12 edges, so 12 small cubes.
+Why not the others: (B) counts the corner cubes, which have three painted faces. (C) counts the face-centre cubes, which have one. (D) is the hidden centre cube, with none.
+Key point: For an n × n × n cut, the two-face cubes number 12(n − 2).
+
+@@ L|Second word in a meaningful order|m|d|C
+Arrange the words in a meaningful order: 1. Fruit 2. Seed 3. Flower 4. Plant. Which word comes second?
+A) Seed
+B) Flower
+C) Plant
+D) Fruit
+=
+Answer steps: the life cycle runs seed → plant → flower → fruit, so the second word is Plant.
+Why not the others: (A) comes first. (B) comes third. (D) comes last.
+Key point: Order words by the natural stages of a process.
+
+@@ G|Founders and the empires or dynasties they began|m|m|D|F1:chandragupta maurya,harihara bukka vijayanagara,babur mughal,aibak slave dynasty
+Match the founders in List-I with the empires or dynasties in List-II:
+
+List-I
+(A) Chandragupta Maurya
+(B) Harihara and Bukka
+(C) Babur
+(D) Qutb-ud-din Aibak
+
+List-II
+(I) Mamluk (Slave) dynasty of Delhi
+(II) Mughal Empire
+(III) Maurya Empire
+(IV) Vijayanagara Empire
+A) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+B) (A)-(III), (B)-(II), (C)-(IV), (D)-(I)
+C) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+D) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+=
+Why: Chandragupta Maurya founded the Maurya Empire about 321 BCE (III); Harihara and Bukka founded Vijayanagara in 1336 (IV); Babur founded the Mughal Empire after the First Battle of Panipat in 1526 (II); Qutb-ud-din Aibak founded the Mamluk (Slave) dynasty in 1206 (I).
+Why not the others: (A) swaps Chandragupta and Harihara–Bukka; (B) swaps Harihara–Bukka and Babur; (C) swaps Babur and Aibak.
+Key point: Aibak began the Qutb Minar, which Iltutmish completed.
+
+@@ G|Founding of reform and learned bodies in order|h|q|B|F1:asiatic society brahmo samaj ramakrishna mission muslim league order
+Arrange the following in the order in which they were founded (earliest first):
+A. Ramakrishna Mission
+B. Asiatic Society of Bengal
+C. All-India Muslim League
+D. Brahmo Samaj
+A) D, B, A, C
+B) B, D, A, C
+C) B, A, D, C
+D) B, D, C, A
+=
+Why: Asiatic Society, by William Jones in Calcutta (1784); Brahmo Samaj, by Raja Ram Mohan Roy (1828); Ramakrishna Mission, by Swami Vivekananda (1897); All-India Muslim League, at Dhaka (1906).
+Why not the others: (A) puts the Brahmo Samaj before the Asiatic Society. (C) puts the Ramakrishna Mission before the Brahmo Samaj. (D) puts the Muslim League before the Ramakrishna Mission.
+Key point: 1784, 1828, 1897, 1906.
+
+@@ G|Southernmost point of India|m|d|D|F1:indira point southernmost
+Which is the southernmost point of the territory of India?
+A) Kanyakumari
+B) Rameswaram
+C) Dhanushkodi
+D) Indira Point
+=
+Why: Indira Point, at the southern tip of Great Nicobar Island, is India's southernmost point, about 6.7° N.
+Why not the others: (A) is the southern tip of the mainland, not of all of India. (B) and (C) are on Pamban Island in Tamil Nadu, facing Sri Lanka.
+Key point: Indira Point is closer to Indonesia's Sumatra than to the Indian mainland.
+
+@@ G|Statements about the Fundamental Duties|m|s|A|F1:fundamental duties statements
+Consider the following statements about the Fundamental Duties in the Indian Constitution:
+A. They were added by the 42nd Amendment in 1976.
+B. They are listed in Article 51A, in Part IVA.
+C. Like the Fundamental Rights, they can be enforced directly in a court of law.
+D. There were ten duties at first; an eleventh was added in 2002.
+Which of the statements given above are correct?
+A) A, B and D only
+B) A and B only
+C) A, B, C and D
+D) B, C and D only
+=
+Why: A, B and D are correct: the duties were added on the advice of the Swaran Singh Committee, and the 86th Amendment (2002) added the duty of parents to provide education to children aged 6–14.
+Why not the others: C is wrong: the duties are not directly enforceable in court. Options (C) and (D) include C; (B) leaves out the correct statement D.
+Key point: The idea of Fundamental Duties was taken from the Constitution of the former USSR.
+
+@@ G|Folk dances and their states|m|m|B|F1:garba,lavani,ghoomar,bhangra
+Match the folk dances in List-I with their states in List-II:
+
+List-I
+(A) Garba
+(B) Lavani
+(C) Ghoomar
+(D) Bhangra
+
+List-II
+(I) Punjab
+(II) Rajasthan
+(III) Maharashtra
+(IV) Gujarat
+A) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+B) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+C) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)
+D) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
+=
+Why: Garba — Gujarat, danced during Navratri (IV); Lavani — Maharashtra, to the beat of the dholki (III); Ghoomar — Rajasthan, with swirling skirts (II); Bhangra — Punjab, linked to the harvest festival of Baisakhi (I).
+Why not the others: (A) swaps Garba and Lavani; (C) swaps Lavani and Ghoomar; (D) swaps Ghoomar and Bhangra.
+Key point: Garba was added to UNESCO's list of intangible cultural heritage in 2023.
+
+@@ G|Official who signs the one-rupee note|m|d|C|F1:one rupee note finance secretary
+Unlike other Indian currency notes, the ₹1 note carries the signature of:
+A) the RBI Governor
+B) the Finance Minister
+C) the Finance Secretary
+D) the Chief Economic Adviser
+=
+Why: The ₹1 note is issued by the Government of India, not the RBI, so it is signed by the Finance Secretary. All other notes are issued by the RBI and signed by its Governor.
+Why not the others: (A) signs every note except the ₹1 note. (B) and (D) sign no currency notes.
+Key point: ₹1 coins and notes are the government's own liability; other notes are the RBI's.
+
+@@ G|Oldest mountain range in India|e|d|B|F1:aravalli oldest
+Which is the oldest mountain range in India?
+A) Himalayas
+B) Aravalli
+C) Western Ghats
+D) Satpura
+=
+Why: The Aravalli Range, running about 700 km from Gujarat through Rajasthan and Haryana to Delhi, is among the oldest fold mountains in the world. Its highest peak is Guru Shikhar on Mount Abu.
+Why not the others: (A) is the youngest range in India and is still rising. (C) and (D) are younger than the Aravallis.
+Key point: The Aravallis slow the spread of the Thar Desert eastwards.
+
+@@ G|Cause of Gandhiji's first satyagraha in India|m|d|D|F1:champaran 1917
+Gandhiji's first satyagraha in India, in 1917, was in support of:
+A) mill workers of Ahmedabad
+B) peasants of Kheda who could not pay land revenue
+C) salt-makers on the coast of Gujarat
+D) indigo farmers of Champaran
+=
+Why: In Champaran (Bihar), farmers were forced by European planters to grow indigo on part of their land (the tinkathia system). Gandhiji's inquiry there in 1917 led to the system being ended.
+Why not the others: (A) and (B) were his campaigns of 1918. (C) relates to the Salt March of 1930.
+Key point: Rajkumar Shukla, a farmer from Champaran, persuaded Gandhiji to go there.
+
+@@ S|Lens used to correct long-sightedness|m|d|C|F2:hypermetropia convex lens
+A person can see distant objects clearly but not nearby ones (hypermetropia). Which lens corrects this defect?
+A) Concave lens
+B) Cylindrical lens
+C) Convex lens
+D) Plane glass
+=
+Why: In hypermetropia, light from nearby objects is focused behind the retina. A convex (converging) lens bends the light more so that it focuses on the retina.
+Why not the others: (A) corrects myopia (short-sightedness). (B) corrects astigmatism. (D) does not change the focus.
+Key point: Convex lenses also correct presbyopia, the near-vision loss of old age.
+
+@@ S|Gas that glows in advertising tubes|e|d|A|F2:neon signs
+Which gas gives the bright reddish-orange glow in advertising sign tubes?
+A) Neon
+B) Argon
+C) Chlorine
+D) Hydrogen
+=
+Why: Neon, a noble gas, glows reddish-orange when an electric current passes through it at low pressure.
+Why not the others: (B) is used to fill filament bulbs. (C) is a poisonous gas used to disinfect water. (D) is highly flammable.
+Key point: Noble gases are unreactive because their outer electron shells are full.
+
+@@ S|Source of the oxygen given off in photosynthesis|h|a|A|F2:photosynthesis oxygen from water
+Assertion (A): The oxygen given off by plants during photosynthesis comes from water, not from carbon dioxide.
+Reason (R): In the light reaction, energy from sunlight is used to split water molecules, releasing oxygen.
+A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion
+B) Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion
+C) Assertion is true, but Reason is false
+D) Assertion is false, but Reason is true
+=
+Why: Both are true. Splitting water with light energy (photolysis) releases oxygen, while carbon from carbon dioxide goes into glucose. Experiments with a heavy isotope of oxygen confirmed this. So (R) explains (A).
+Why not the others: (B) denies the link. (C) and (D) call a true statement false.
+Key point: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂, in the presence of light and chlorophyll.
+
+@@ S|Why a steel spoon feels colder than a wooden one|m|a|C|F2:conductors feel colder
+Assertion (A): On a cold morning, a steel spoon feels colder to the touch than a wooden spoon lying beside it.
+Reason (R): The steel spoon is at a lower temperature than the wooden spoon.
+A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion
+B) Both Assertion and Reason are true, but Reason is not the correct explanation of Assertion
+C) Assertion is true, but Reason is false
+D) Assertion is false, but Reason is true
+=
+Why: (A) is true but (R) is false. Both spoons are at the same room temperature. Steel is a good conductor and draws heat away from the hand quickly, so it feels colder; wood is a poor conductor.
+Why not the others: (A) and (B) accept the false Reason. (D) calls the true Assertion false.
+Key point: How cold something feels depends on how fast it takes heat from your skin.
+
+@@ S|Deficiency diseases and their vitamins|m|m|D|F2:scurvy,rickets,night blindness,beriberi
+Match the deficiency diseases in List-I with the vitamins whose lack causes them in List-II:
+
+List-I
+(A) Scurvy
+(B) Rickets
+(C) Night blindness
+(D) Beriberi
+
+List-II
+(I) Vitamin B1 (thiamine)
+(II) Vitamin A
+(III) Vitamin D
+(IV) Vitamin C
+A) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+B) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)
+C) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
+D) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+=
+Why: Scurvy — vitamin C, causing bleeding gums (IV); rickets — vitamin D, causing soft, bent bones in children (III); night blindness — vitamin A (II); beriberi — vitamin B1, affecting the nerves and heart (I).
+Why not the others: (A) swaps scurvy and rickets; (B) swaps rickets and night blindness; (C) swaps night blindness and beriberi.
+Key point: Sunlight on the skin helps the body make vitamin D.
+
+@@ S|State of the Silent Valley National Park|m|d|B|F2:silent valley kerala
+The Silent Valley National Park, known for its untouched tropical rainforest and the lion-tailed macaque, is in which state?
+A) Karnataka
+B) Kerala
+C) Tamil Nadu
+D) Goa
+=
+Why: Silent Valley lies in the Palakkad district of Kerala, in the Nilgiri hills of the Western Ghats. A people's movement in the 1970s stopped a dam that would have flooded it, and it became a national park in 1984.
+Why not the others: (A) has Bandipur and Nagarhole. (C) has Mudumalai. (D) has Bhagwan Mahavir National Park.
+Key point: Silent Valley is part of the Nilgiri Biosphere Reserve, India's first biosphere reserve.
+
+@@ S|Electromagnetic waves in order of wavelength|m|q|C|F2:em spectrum wavelength order
+Arrange the following in increasing order of wavelength (shortest first):
+A. X-rays
+B. Radio waves
+C. Gamma rays
+D. Visible light
+A) A, C, D, B
+B) C, A, B, D
+C) C, A, D, B
+D) B, D, A, C
+=
+Why: Gamma rays have the shortest wavelength, then X-rays, then visible light; radio waves are the longest.
+Why not the others: (A) puts X-rays before gamma rays. (B) puts radio waves before visible light. (D) gives the order from longest to shortest.
+Key point: Shorter wavelength means higher frequency and more energy.
+
+@@ S|Statements about India's biodiversity hotspots|h|s|D|F2:biodiversity hotspots india
+Consider the following statements about the global biodiversity hotspots found in India:
+A. Parts of four global hotspots lie in India.
+B. The Western Ghats (with Sri Lanka) is one of them.
+C. The Thar Desert is one of them.
+D. The Nicobar Islands are part of the Sundaland hotspot.
+Which of the statements given above are correct?
+A) A and B only
+B) A, B and C only
+C) B, C and D only
+D) A, B and D only
+=
+Why: A, B and D are correct: India has parts of the Himalaya, Indo-Burma, Western Ghats–Sri Lanka and Sundaland hotspots.
+Why not the others: C is wrong: the Thar Desert is not a hotspot; hotspots need very high numbers of endemic species under severe threat. Options (B) and (C) include C; (A) leaves out the correct statement D.
+Key point: The idea of hotspots was proposed by Norman Myers in 1988.
+
+@@ S|Cell part called the powerhouse|e|d|B|F2:mitochondria powerhouse
+Which part of the cell is known as its "powerhouse"?
+A) Nucleus
+B) Mitochondrion
+C) Golgi body
+D) Endoplasmic reticulum
+=
+Why: Mitochondria break down food (glucose) in respiration and release energy in the form of ATP.
+Why not the others: (A) controls the cell and holds its DNA. (C) packs and sends out proteins. (D) is a network of tubes that moves materials and makes proteins and fats.
+Key point: Mitochondria have their own DNA.
+
+@@ C|Venue of the India AI Impact Summit|e|d|A|F3:ai impact summit 2026
+The India AI Impact Summit, attended by leaders from many countries in February 2026, was held at which venue?
+A) Bharat Mandapam, New Delhi
+B) Jio World Centre, Mumbai
+C) Mahatma Mandir, Gandhinagar
+D) Hyderabad International Convention Centre
+=
+Why: The summit and the India AI Impact Expo were held at Bharat Mandapam, Pragati Maidan, from 16 to 20 February 2026, with the main summit on 19–20 February.
+Why not the others: (B), (C) and (D) are other large convention centres in India.
+Key point: It followed the earlier global AI summits at Bletchley Park (UK, 2023), Seoul (2024) and Paris (2025).
+
+@@ C|State that hosted the 2025 men's hockey Asia Cup final|m|d|B|F3:hockey asia cup 2025 rajgir
+India won the men's hockey Asia Cup in September 2025, beating South Korea 4–1 in the final. In which state was the tournament held?
+A) Odisha
+B) Bihar
+C) Jharkhand
+D) Punjab
+=
+Why: The tournament was held at Rajgir, Bihar, and the final was played on 7 September 2025. It was India's fourth Asia Cup title, and it earned India a direct place in the 2026 FIH World Cup in Belgium and the Netherlands.
+Why not the others: (A) has hosted hockey World Cups at Bhubaneswar and Rourkela. (C) and (D) are other strong hockey states.
+Key point: India went through the 2025 tournament unbeaten.
+
+@@ C|Town connected by the Z-Morh tunnel|m|d|C|F3:z-morh tunnel sonamarg
+The Z-Morh tunnel, opened on 13 January 2025, gives all-weather road access to which tourist town in Jammu and Kashmir?
+A) Gulmarg
+B) Dharamshala
+C) Sonamarg
+D) Leh
+=
+Why: The tunnel, about 6.4 km long, lies on the Srinagar–Leh road near Sonamarg, which used to be cut off by snow in winter. It also improves connectivity towards Ladakh.
+Why not the others: (A) is another J&K resort, on a different road. (B) is in Himachal Pradesh. (D) is in Ladakh, much further along the road.
+Key point: The Zojila tunnel, being built further east, will extend all-weather access to Ladakh.
+
+@@ C|What the 2025 quantum year marked|m|d|A|F3:iyq 2025 quantum
+The United Nations observed 2025 as the International Year of Quantum Science and Technology. It marked 100 years since the development of:
+A) Quantum mechanics
+B) Einstein's theory of general relativity
+C) The discovery of the electron
+D) Mendeleev's periodic table
+=
+Why: The UN General Assembly adopted the resolution in June 2024. Werner Heisenberg's matrix mechanics (1925) and Erwin Schrödinger's wave equation (1926) laid the foundations of quantum mechanics.
+Why not the others: (B) dates from 1915. (C) was discovered by J. J. Thomson in 1897. (D) was published in 1869.
+Key point: Quantum mechanics underlies lasers, transistors and the computer chip.
+
+@@ C|Statements about the 53rd Chief Justice of India|h|s|D|F3:cji surya kant
+Consider the following statements:
+A. Justice Surya Kant became the 53rd Chief Justice of India on 24 November 2025.
+B. He succeeded Justice B. R. Gavai.
+C. He is the first Chief Justice of India from Haryana.
+D. The Chief Justice of India is sworn in by the Vice-President.
+Which of the statements given above are correct?
+A) A and B only
+B) A, B, C and D
+C) B, C and D only
+D) A, B and C only
+=
+Why: A, B and C are correct. Justice Surya Kant, from Hisar, took the oath at Rashtrapati Bhavan; his term runs until February 2027.
+Why not the others: D is wrong: the President administers the oath to the Chief Justice of India. Options (B) and (C) include D; (A) leaves out the correct statement C.
+Key point: Supreme Court judges retire at 65.
