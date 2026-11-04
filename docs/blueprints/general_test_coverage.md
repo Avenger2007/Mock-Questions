@@ -47,6 +47,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T2 | buddha first sermon sarnath, freedom struggle chronology 1905-1942, bhakra sutlej, hirakud mahanadi, sardar sarovar narmada, tehri bhagirathi, palk strait, strait of gibraltar, bering strait, strait of malacca, president election impeachment, article 17, niti aayog planning commission, kathakali kerala |
 | T3 | battles chronology panipat-buxar, inc 1885 bombay, shipki la himachal, nathu la sikkim, zoji la ladakh, bomdi la arunachal, sahara largest hot desert, article 324, article 280, article 148, article 315, preamble 42nd amendment, inflation target 4 percent, konark odisha |
 | T4 | mughal emperors order, arya samaj dayananda, peninsular rivers, equator equal day night, vice president rajya sabha chairman, 73rd amendment panchayati raj, 61st amendment voting age, 86th amendment rte, 101st amendment gst, nso gdp estimates, sebi securities regulator, nabard rural credit, rbi issues currency, discovery of india nehru |
+| T5 | lothal dockyard, dandi march 1930, kangchenjunga sikkim, 38th parallel korea, durand line, mcmahon line, radcliffe line, lok sabha minimum age 25, seventh schedule lists, eighth schedule languages, tenth schedule anti-defection, first schedule states, fiscal deficit meaning, indian nobel laureates order |
 
 ### F2 Science and environment
 
@@ -56,6 +57,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T2 | convex mirror rear view, sound needs medium, rusting oxygen water, laughing gas n2o, o universal donor, insulin pancreas, thyroxine thyroid, adrenaline adrenal, growth hormone pituitary, western ghats hotspot, atmosphere layers order, kaziranga rhino assam |
 | T3 | refraction bent straw, boiling point altitude, mercury liquid metal, common salt nacl, quicklime cao, bleaching powder caocl2, plaster of paris, chloroplast photosynthesis, blood components, eutrophication, ecological levels order, ramsar wetlands |
 | T4 | red longest wavelength, fuse heating effect, graphite conducts, stomach hcl, arteries away from heart, fleming penicillin, hooke cell, jenner smallpox vaccine, mendel inheritance, paris agreement, primary succession order, ex situ conservation |
+| T5 | barometer pressure, joule energy, watt power, pascal pressure, ohm resistance, lpg butane, ice floats less dense, xylem water transport, digestion statements, methane paddy cattle, water cycle order, gir asiatic lion |
 
 ### F3 Current affairs
 
@@ -65,3 +67,4 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T2 | census 2027 digital caste, pope leo xiv, womens world cup 2025, nisar launch, international booker 2025 heart lamp |
 | T3 | income-tax act 2025, india uk ceta, divya deshmukh womens world cup, spadex docking, phalke award mohanlal |
 | T4 | chenab bridge, brics 2025 rio india chair 2026, wtc final 2025, sunita williams return 2025, jnanpith 59th vinod kumar shukla |
+| T5 | pamban bridge 2025, timor-leste asean 2025, neeraj chopra 90 m doha, isro 100th launch nvs-02, magsaysay 2025 educate girls |
