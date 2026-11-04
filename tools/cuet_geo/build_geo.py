@@ -1,0 +1,28 @@
+# usage: build_geo.py N geoNN.json -> CUET/Geography/CUET GEOGRAPHY TEST N.json
+import json,sys,os
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__))); from units import topic
+n=int(sys.argv[1]); src=json.load(open(sys.argv[2],encoding='utf-8'))
+meta={"test_id":f"CUET27_GEOGRAPHY_TEST_{n:02d}","series_id":"CUET27_GEOGRAPHY","exam":"CUET (UG) 2027","title":f"CUET Geography Test {n}",
+ "subject":"Geography / Geology (Code: 313)","subject_code":"313","test_number":n,"paper_number":n,"status":"revised",
+ "syllabus_source":"CUET SYLLABUS/Geography - 313.pdf (NTA syllabus for CUET (UG) 2026, latest published)",
+ "notification_source":"Hermes folder/Information Bulletin.pdf (NTA CUET (UG) 2026)",
+ "past_paper_reference":"Pattern benchmark only: NTA CUET (UG) domain-paper format and public Geography shift analyses (no questions copied)",
+ "textbooks":["NCERT Class 12 Fundamentals of Human Geography (rationalised)","NCERT Class 12 India: People and Economy (rationalised)"],
+ "duration_minutes":60,"total_questions":50,"questions_to_attempt":50,"marking_scheme":{"correct":"+5","incorrect":"-1","unattempted":"0"},
+ "instructions":["All 50 questions are compulsory.","Each correct answer earns 5 marks; each incorrect answer deducts 1 mark; unattempted questions earn 0.","One set of 5 questions is based on a passage or table; the set stays together."]}
+qs=[]
+for i,q in enumerate(src['q'],1):
+    o={'id':f'CUET27-GEO-T{n:02d}-Q{i:02d}'}
+    if q.get('case'):
+        o['case_id']=f'CUET27-GEO-T{n:02d}-CASE'
+        pas=src['passages'][q['case']]
+        lead='Study the following table and answer the question that follows.' if pas.lstrip().startswith('|') or '\n|' in pas else 'Read the following passage and answer the question that follows.'
+        q['question']=lead+'\n\n'+pas+'\n\nQuestion: '+q['question']
+    if q['format'] in ('statements','match-list','sequence','assertion-reason') and 'Choose the correct' not in q['question']: q['question']+='\nChoose the correct answer from the options given below:'
+    o['topic']=topic(q['topic'])
+    for k in ['sub_topic','difficulty','format','question','options','correct_option','explanation']: o[k]=q[k]
+    qs.append(o)
+assert len(qs)==50, len(qs)
+meta['questions']=qs
+p=f'CUET/Geography/CUET GEOGRAPHY TEST {n}.json'
+json.dump(meta,open(p,'w',encoding='utf-8'),ensure_ascii=False,indent=2);open(p,'a').write('\n');print('wrote',p,len(qs))

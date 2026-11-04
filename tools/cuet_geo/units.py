@@ -1,0 +1,18 @@
+U={'A1':('Fundamentals of Human Geography','Human Geography: Nature and Scope',2),
+'A2':('Fundamentals of Human Geography','The World Population',4),
+'A3':('Fundamentals of Human Geography','Human Development',3),
+'A4':('Fundamentals of Human Geography','Primary Activities',4),
+'A5':('Fundamentals of Human Geography','Secondary Activities',3),
+'A6':('Fundamentals of Human Geography','Tertiary and Quaternary Activities',3),
+'A7':('Fundamentals of Human Geography','Transport and Communication',3),
+'A8':('Fundamentals of Human Geography','International Trade',2),
+'B1':('India: People and Economy','Population',4),
+'B2':('India: People and Economy','Human Settlements',2),
+'B3':('India: People and Economy','Land Resources and Agriculture',4),
+'B4':('India: People and Economy','Water Resources',3),
+'B5':('India: People and Economy','Mineral and Energy Resources',4),
+'B6':('India: People and Economy','Planning and Sustainable Development',2),
+'B7':('India: People and Economy','Transport and Communication',3),
+'B8':('India: People and Economy','International Trade',2),
+'B9':('India: People and Economy','Geographical Perspective on Selected Issues and Problems',2)}
+def topic(u): b,c,_=U[u]; return f'{b}: {c}'

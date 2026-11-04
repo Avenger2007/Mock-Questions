@@ -37,7 +37,7 @@ Each file's `status` field reads `revised` (meets the standard) or `pending_revi
 | 5 | Economics | 309 | ✅ | 15 / 15 | [economics.md](docs/blueprints/economics.md) |
 | 6 | English | 101 | ✅ | 15 / 15 | [english.md](docs/blueprints/english.md) |
 | 7 | General Test | 501 | ✅ | 15 / 15 | [general_test.md](docs/blueprints/general_test.md) |
-| 8 | Geography | 313 | ✅ | — | — |
+| 8 | Geography | 313 | ✅ | 1 / 15 (pilot) | [geography.md](docs/blueprints/geography.md) |
 | 9 | Hindi | 102 | ✅ | — | — |
 | 10 | History | 314 | ✅ | — | — |
 | 11 | Mass Media | 318 | ✅ | — | — |
