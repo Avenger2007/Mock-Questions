@@ -40,99 +40,116 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | Test | Answer facts |
 |---|---|
 | T1 | ratzel definition, neo-determinism stop and go |
+| T2 | possibilism, approaches chronology |
 
 ### A2 The world population
 
 | Test | Answer facts |
 |---|---|
 | T1 | 90 percent on 10 percent land, natural growth from cbr and cdr, factors of population distribution, negative growth |
+| T2 | year of highest natural growth from table, demographic transition stage 1, demographic transition stage 2, growth rate percent from table, demographic transition stage 3 |
 
 ### A3 Human development
 
 | Test | Answer facts |
 |---|---|
 | T1 | mahbub-ul-haq concept, approaches to human development, four pillars of human development |
+| T2 | hdi access to resources, human poverty index, gnh bhutan |
 
 ### A4 Primary activities
 
 | Test | Answer facts |
 |---|---|
 | T1 | ladang, extensive grain grasslands, dairy farming capital intensive, open-cast mining |
+| T2 | nomadic animals by region, ranching regions, truck farming, kolkhoz |
 
 ### A5 Secondary activities
 
 | Test | Answer facts |
 |---|---|
 | T1 | animal-based industries, footloose industries, agglomeration economies |
+| T2 | size classification of industry, technopolis silicon valley, basic industries |
 
 ### A6 Tertiary and quaternary activities
 
 | Test | Answer facts |
 |---|---|
 | T1 | quinary gold collar, periodic markets, outsourcing reasons |
+| T2 | tourism largest tertiary, medical tourism |
 
 ### A7 Transport and communication (world)
 
 | Test | Answer facts |
 |---|---|
 | T1 | suez panama rhine great lakes, big inch, air routes distribution |
+| T2 | big trunk route, trans-canadian highway, satellite cost invariant, cyberspace e-services |
 
 ### A8 International trade (world)
 
 | Test | Answer facts |
 |---|---|
 | T1 | entrepot ports, wto 1995 geneva |
+| T2 | port types by function, dumping |
 
 ### B1 Population of India
 
 | Test | Answer facts |
 |---|---|
 | T1 | lowest density arunachal, growth phases, kirata sino-tibetan, marginal worker 183 days |
+| T2 | highest density bihar, density calculation, buddhists distribution, four worker categories |
 
 ### B2 Human settlements
 
 | Test | Answer facts |
 |---|---|
 | T1 | hamleted local names, functional towns |
+| T2 | dispersed settlements, town evolution |
 
 ### B3 Land resources and agriculture
 
 | Test | Answer facts |
 |---|---|
 | T1 | cropping intensity, fallow other than current, kharif season |
+| T2 | crops leading states, green revolution irrigated areas, problems of indian agriculture, net sown area percent |
 
 ### B4 Water resources
 
 | Test | Answer facts |
 |---|---|
 | T1 | water basin share, groundwater use high nw, rainwater harvesting benefits |
+| T2 | water laws, reuse of waste water, agriculture largest water user, arsenic west bengal bihar |
 
 ### B5 Mineral and energy resources
 
 | Test | Answer facts |
 |---|---|
 | T1 | iron ore mines, jaduguda uranium, geothermal manikaran, okhla bio-energy |
+| T2 | oilfields locations, mica jharkhand, jharia largest coalfield, minerals in peninsular rocks |
 
 ### B6 Planning and sustainable development
 
 | Test | Answer facts |
 |---|---|
 | T1 | harike barrage origin, lift canals stage ii, protective vs extensive irrigation, water-intensive crops discouraged, warabandi |
+| T2 | dpap fourth plan, hadp fifteen districts |
 
 ### B7 Transport and communication (India)
 
 | Test | Answer facts |
 |---|---|
 | T1 | konkan railway, nhdp corridors, bro 1960, transport chronology |
+| T2 | railway gauges, pawan hans, insat irs |
 
 ### B8 International trade (India)
 
 | Test | Answer facts |
 |---|---|
 | T1 | west coast ports order, kandla karachi |
+| T2 | east coast ports order, visakhapatnam landlocked |
 
 ### B9 Selected issues and problems
 
 | Test | Answer facts |
 |---|---|
 | T1 | man-made land degradation, pull factors migration |
+| T2 | slums location, noise decibel |
