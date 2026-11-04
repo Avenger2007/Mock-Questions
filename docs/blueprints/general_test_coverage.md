@@ -57,6 +57,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T12 | jallianwala bagh amritsar, kuchipudi, odissi, manipuri, mohiniyattam, narmada tapi krishna kaveri north south, attorney general statements, income tax direct, kosi sorrow of bihar, ain-i-akbari, baburnama, harshacharita, rajatarangini, president minimum age 35 |
 | T13 | jaipur pink city, forward bloc, ghadar party, home rule league, hsra, k2 kangchenjunga nanda devi anamudi height order, monsoon statements, undp hdr, wef gender gap, imf weo, ti cpi, ganges river dolphin aquatic, president oath cji, akbar jizya |
 | T14 | banyan national tree, ravi shankar, zakir hussain, hariprasad chaurasia, amjad ali khan, chandragupta bindusara ashoka kanishka order, ordinance statements, irdai insurance, majuli assam, pongal, onam, lohri, nuakhai, warren hastings |
+| T15 | gateway of india mumbai, lokmanya tilak, deshbandhu cr das, frontier gandhi, netaji bose, andhra gujarat nagaland telangana formation order, union territories statements, blue revolution fish, mp forest cover, meenakshi, jagannath, somnath, kashi vishwanath, treaty of allahabad shah alam |
 
 ### F2 Science and environment
 
@@ -76,6 +77,7 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T12 | sodium na, kidneys urea, elastic potential energy, slaked lime, bleaching powder, washing soda, baking soda uses, sound speed solids, keibul lamjao manipur, magnet statements, butterfly life cycle order, chlorophyll magnesium |
 | T13 | diamond hardest, clinical thermometer, concave mirror dentist, heart, lungs, kidneys, brain systems, evaporation wind, wild ass gujarat, plant respiration statements, planets distance order, carbonate acid co2 |
 | T14 | jupiter largest planet, ammeter current, violet bends most, botany, zoology, seismology, cytology, metals conduct heat electrons, nagarjunsagar srisailam tiger reserve, moon statements, atomic number order, capillaries |
+| T15 | vitamin c ascorbic, venus earth twin, wind renewable, uranium, tungsten, silicon, chlorine uses, scattering blue sky, keoladeo birds, vaccines statements, earth layers order, zinc galvanising |
 
 ### F3 Current affairs
 
@@ -95,3 +97,4 @@ Facts only: the answer to a GK, science, environment or current-affairs item, an
 | T12 | navi mumbai airport 2025, asian games 2026 japan, vice president radhakrishnan, intl year woman farmer 2026, lvm3 bluebird block 2 |
 | T13 | womens t20 wc 2026 australia, nobel literature 2026 carson, nobel physics 2026 halzen icecube, cop31 turkiye antalya, cwg 2026 glasgow |
 | T14 | wimbledon 2026 sinner, nobel peace 2026 pillay, nobel medicine 2026 optogenetics, padma vibhushan 2026 n rajam, nobel chemistry 2026 kagan soai |
+| T15 | hockey world cup 2026 germany, nobel economics 2026 hall woodford, jnanpith 2025 vairamuthu, international booker 2026 taiwan travelogue, chess olympiad 2026 samarkand |
