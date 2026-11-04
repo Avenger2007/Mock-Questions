@@ -39,83 +39,100 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 
 | Test | Answer facts |
 |---|---|
+| T1 | ratzel definition, neo-determinism stop and go |
 
 ### A2 The world population
 
 | Test | Answer facts |
 |---|---|
+| T1 | 90 percent on 10 percent land, natural growth from cbr and cdr, factors of population distribution, negative growth |
 
 ### A3 Human development
 
 | Test | Answer facts |
 |---|---|
+| T1 | mahbub-ul-haq concept, approaches to human development, four pillars of human development |
 
 ### A4 Primary activities
 
 | Test | Answer facts |
 |---|---|
+| T1 | ladang, extensive grain grasslands, dairy farming capital intensive, open-cast mining |
 
 ### A5 Secondary activities
 
 | Test | Answer facts |
 |---|---|
+| T1 | animal-based industries, footloose industries, agglomeration economies |
 
 ### A6 Tertiary and quaternary activities
 
 | Test | Answer facts |
 |---|---|
+| T1 | quinary gold collar, periodic markets, outsourcing reasons |
 
 ### A7 Transport and communication (world)
 
 | Test | Answer facts |
 |---|---|
+| T1 | suez panama rhine great lakes, big inch, air routes distribution |
 
 ### A8 International trade (world)
 
 | Test | Answer facts |
 |---|---|
+| T1 | entrepot ports, wto 1995 geneva |
 
 ### B1 Population of India
 
 | Test | Answer facts |
 |---|---|
+| T1 | lowest density arunachal, growth phases, kirata sino-tibetan, marginal worker 183 days |
 
 ### B2 Human settlements
 
 | Test | Answer facts |
 |---|---|
+| T1 | hamleted local names, functional towns |
 
 ### B3 Land resources and agriculture
 
 | Test | Answer facts |
 |---|---|
+| T1 | cropping intensity, fallow other than current, kharif season |
 
 ### B4 Water resources
 
 | Test | Answer facts |
 |---|---|
+| T1 | water basin share, groundwater use high nw, rainwater harvesting benefits |
 
 ### B5 Mineral and energy resources
 
 | Test | Answer facts |
 |---|---|
+| T1 | iron ore mines, jaduguda uranium, geothermal manikaran, okhla bio-energy |
 
 ### B6 Planning and sustainable development
 
 | Test | Answer facts |
 |---|---|
+| T1 | harike barrage origin, lift canals stage ii, protective vs extensive irrigation, water-intensive crops discouraged, warabandi |
 
 ### B7 Transport and communication (India)
 
 | Test | Answer facts |
 |---|---|
+| T1 | konkan railway, nhdp corridors, bro 1960, transport chronology |
 
 ### B8 International trade (India)
 
 | Test | Answer facts |
 |---|---|
+| T1 | west coast ports order, kandla karachi |
 
 ### B9 Selected issues and problems
 
 | Test | Answer facts |
 |---|---|
+| T1 | man-made land degradation, pull factors migration |
