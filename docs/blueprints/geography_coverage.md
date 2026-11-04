@@ -51,6 +51,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | areal differentiation, post-modernism |
 | T11 | welfare school humanistic, exploration and description |
 | T12 | ratzel definition, semple definition, blache definition, cultural environment elements |
+| T13 | approaches chronology, fields and sub-fields |
 
 ### A2 The world population
 
@@ -68,6 +69,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | development growth negative correlation, impact of population change, country density calculation |
 | T11 | fertile soils population, dense population regions, climate extremes, demographic transition stage 1 |
 | T12 | immigrants emigrants, components of population change, density definition, heavy rainfall sparse population |
+| T13 | push and pull factors international, population control measures, natural growth rate percent, dt stages order |
 
 ### A3 Human development
 
@@ -85,6 +87,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | small countries better hdi, high hdi features, basic needs ilo |
 | T11 | medium hdi countries, three aspects of hd, growth versus development |
 | T12 | hdi education indicator, amartya sen freedom, gnh bhutan, equity pillar example |
+| T13 | basic needs six, life expectancy hdi, hdi scores statements |
 
 ### A4 Primary activities
 
@@ -102,6 +105,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | mediterranean regions, gathering features, shifting cultivation names match |
 | T11 | red collar workers, plantation features, open-cast mining, farming systems examples match |
 | T12 | dairy farming capital intensive, nomadism regions, gathering products, transhumance groups india |
+| T13 | ranching regions, mining factors, nomadic animals by region, slash and burn |
 
 ### A5 Secondary activities
 
@@ -119,6 +123,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | chemical based industries, industry raw material statements, manufacturing terms match |
 | T11 | perishable raw materials, small scale employment, high-tech features |
 | T12 | agglomeration economies, government policy location, size classification of industry, manufacturing evolution order |
+| T13 | footloose industries, manufacture latin origin, modern manufacturing features |
 
 ### A6 Tertiary and quaternary activities
 
@@ -136,6 +141,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | quinary definition, retail trading definition |
 | T11 | medical tourism, homestay culture, tourism largest tertiary |
 | T12 | nodes and links, distance measures, outsourcing reasons |
+| T13 | quaternary outsourcing not tied, non-store retail, transport definition |
 
 ### A7 Transport and communication (world)
 
@@ -153,6 +159,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | road short distance, panama canal statements, world highways match |
 | T11 | air routes distribution, water transport advantages, union pacific stations order |
 | T12 | big trunk route, cyberspace e-services, cape of good hope route, orient express |
+| T13 | volga waterway, danube waterway, satellite cost invariant, suez canal sea level |
 
 ### A8 International trade (world)
 
@@ -170,6 +177,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | bot from table, bot change from table, services share calculation, export growth calculation, composition shift from table |
 | T11 | trade terms match, slave trade abolition |
 | T12 | trade blocs headquarters, port types by function |
+| T13 | bases of international trade, wto criticism |
 
 ### B1 Population of India
 
@@ -187,6 +195,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | christians distribution, density change 1951-2011, work participation rate, states density order |
 | T11 | sikhs distribution, decadal growth rate calculation, states by area order |
 | T12 | marginal worker 183 days, four worker categories, combined density calculation, india share world population |
+| T13 | language families share order, wpr calculation, kirata sino-tibetan |
 
 ### B2 Human settlements
 
@@ -204,6 +213,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | transport towns, settlement regions match |
 | T11 | clustered settlements, urban agglomeration |
 | T12 | industrial towns, religious towns, town size classes |
+| T13 | rural settlement sites, settlement factors statements |
 
 ### B3 Land resources and agriculture
 
@@ -221,6 +231,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | rapeseed mustard rajasthan, monsoon dependence, small holdings, irrigation land degradation |
 | T11 | green revolution irrigated areas, common property resources, crops features match |
 | T12 | rice staple second after china, land use change, tea regions, narma cotton |
+| T13 | oilseeds match, pulses nitrogen, south india three seasons crops |
 
 ### B4 Water resources
 
@@ -238,6 +249,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | irrigated nsa nw 85, water volumes order, per capita water decline |
 | T11 | per capita water calculation, water problems match, water conservation measures |
 | T12 | watershed management definition, haryali, neeru meeru arvary, rooftop rwh case calculation, watershed people participation |
+| T13 | water laws chronology, irrigation need, water borne diseases |
 
 ### B5 Mineral and energy resources
 
@@ -255,6 +267,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | iron ore areas match, conventional energy sources, assam oilfields, natural gas sources |
 | T11 | nuclear power stations, okhla bio-energy, wind and solar regions |
 | T12 | minerals in peninsular rocks, damodar coalfields, kerala monazite thorium |
+| T13 | haematite magnetite, bio-energy benefits, mica properties |
 
 ### B6 Planning and sustainable development
 
@@ -272,6 +285,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | hadp activities, drought prone areas |
 | T11 | ignp shelterbelt plantation, dpap aims |
 | T12 | three aspects sustainable development, ignp cropping change |
+| T13 | bharmaur gaddi, tribal sub plan fifth plan, itdp priorities, bharmaur female literacy calculation, bharmaur transhumance decline |
 
 ### B7 Transport and communication (India)
 
@@ -289,6 +303,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | transport communication milestones order, pipeline cost features, rural roads share |
 | T11 | insat irs, road types authority match, railway gauges |
 | T12 | transport bodies chronology, insat 1983, waterways 1 percent |
+| T13 | personal vs mass communication, postal network largest, bro 1960 |
 
 ### B8 International trade (India)
 
@@ -306,6 +321,7 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | haldia subsidiary, major ports count |
 | T11 | chennai artificial oldest, ennore |
 | T12 | mumbai natural harbour, sea trade 95 percent |
+| T13 | foodgrain imports declined, major minor port control |
 
 ### B9 Selected issues and problems
 
@@ -323,3 +339,4 @@ Written **before** any test, so that repeats are prevented rather than fixed. Ru
 | T10 | industrial water pollutants, push factors rural |
 | T11 | slum share calculation, uncollected waste calculation, slum features, urban waste as resource, slum dwellers conditions |
 | T12 | noise location specific, slums location |
+| T13 | solid waste items, natural water pollution sources |
