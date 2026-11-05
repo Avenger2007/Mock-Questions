@@ -401,3 +401,7 @@ Branch `fix-iat-milestone-15` applies the documented Tests 1–15 audit repairs 
 ## IAT Tests 16–17 — 5 November 2026
 
 Completed two original 60-item review drafts on iat-tests-16-17, based on corrected-bank commit 1de7c68. Added 19 exact scientific diagrams, detailed WHY and individual alternative explanations, displayed Mathematics/Physics working, 30 recent-PYQ Mathematics comparisons and 84 calculation checks. Replaced repeated/unlisted planning seeds, retained the 9/42/9 editorial mix and preserved all previous 900 canonical items. A remote content checkpoint preceded final visual-review and documentation changes. Review notes record verification and pending independent academic/timed review. Main and earlier branches remain unchanged.
+
+## 5 November 2026 — Tests 18–19 and full-plan tracking
+
+Authored 120 items, 21 exact diagrams and detailed worked solutions on iat-tests-18-19; saved remote checkpoint 9d60db0 before long delivery checks. Replaced a repeated two-axis circle task with centre/chord/tangent reasoning and a routine yield task with isotope abundance. All 85 numerical probes pass. Updated all 1,500 plan rows, wrote 360 literal future angle briefs and a 640-entry official-scope checklist with owners and honest evidence/alignment states. Repaired a header/footer-only page and strengthened the exporter to reject such pages. Previous 1,020 canonical items remain unchanged. Final academic and timed review remain pending.

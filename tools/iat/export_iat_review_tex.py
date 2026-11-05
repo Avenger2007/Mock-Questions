@@ -52,7 +52,7 @@ for sec,title in [('B','Biology'),('C','Chemistry'),('M','Mathematics'),('P','Ph
    image_size=r'width=.82\linewidth,height=10.5cm' if t>=16 else r'width=.60\linewidth,height=7.8cm'
    parts.append(r'\begin{center}\includegraphics['+image_size+r',keepaspectratio]{\detokenize{'+str(image)+r'}}\end{center}')
   parts.extend(r'\textbf{'+a+r')} '+rich(v[3:])+r'\par' for a,v in zip('ABCD',q['options']))
-  parts.append(r'\end{minipage}\par\vspace{3mm}\hrule\vspace{4mm}')
+  parts.append(r'\end{minipage}\par' if t>=18 and num%15==0 else r'\end{minipage}\par\vspace{2mm}\hrule\vspace{2mm}' if t>=18 and sec=='M' else r'\end{minipage}\par\vspace{3mm}\hrule\vspace{4mm}')
  parts.append(r'\newpage')
 parts.append(r'\section*{Answer key and worked solutions}')
 parts.append(r'\textit{Every solution explains the selected choice and the alternative errors.}\par')
@@ -80,7 +80,10 @@ question_numbers=[int(m[1]) for m in re.finditer(r'(?m)^Q(\d{1,2})\b',question_t
 solution_numbers=[int(m[1]) for m in re.finditer(r'(?m)^Q(\d{1,2})[ \t]*/[ \t]*[ABCD]\b',solution_text)]
 question_count=len(question_numbers);solution_count=len(solution_numbers)
 assert question_numbers==list(range(1,61)) and solution_numbers==list(range(1,61)), (question_numbers,solution_numbers)
-assert all(page.get_text().strip() for page in document)
+def body_text(page):
+ return '\n'.join(line for line in page.get_text().splitlines() if line.strip() not in ['OURMOCKS / IAT PREPARATION','REVIEW DRAFT',str(page.number+1)]).strip()
+empty_pages=[page.number+1 for page in document if not body_text(page)]
+assert not empty_pages, ('Header/footer-only pages',empty_pages)
 delivery=review/(stem+'.json');delivery.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 images={q['image_reference']:digest(root/data['image_base_path']/q['image_reference']) for q in data['questions'] if q.get('image_reference')}

@@ -29,7 +29,7 @@ for cx,title in [(2.5,'X'),(7.5,'Y')]:
   for th in np.arange(3)*2*np.pi/3:
    for delta in [-.11,.11]:
     ang=th+delta;line(a,cx+1.7*np.cos(ang),4+1.7*np.sin(ang),cx+1.50*np.cos(ang),4+1.50*np.sin(ang));a.add_patch(Ellipse((cx+1.45*np.cos(ang),4+1.45*np.sin(ang)),.32,.20,angle=np.degrees(ang),fill=False,lw=1.7))
-txt(a,2.5,.8,'Lines: septa; small ovals: ovules',13);txt(a,7.5,.8,'Outer circle: ovary wall',13);save(f,18,2)
+txt(a,5,1.0,'Lines: septa; small ovals: ovules',13);txt(a,5,.45,'Outer circle: ovary wall',13);save(f,18,2)
 f,a=graph('Light intensity (arbitrary units)','Net CO₂ exchange (arbitrary units)');a.plot([0,1,2,3,4],[-2,0,3,6,7],'k-o');a.axhline(0,color='black',lw=.8);a.plot([3,3,0],[-2,6,6],'k--');a.text(3,-2.7,'L',ha='center');a.set(xlim=(0,4.3),ylim=(-3,8),xticks=[0,1,2,3,4],yticks=[-2,0,2,4,6,8]);save(f,18,4)
 f,a=board('Circular recombinant maps: junctions came from E')
 for cx,title,site in [(2.5,'X',1),(7.5,'Y',2)]:

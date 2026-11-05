@@ -1,6 +1,6 @@
 # IAT Test 1 manual-review package
 
-**Latest authored checkpoint, 5 November 2026:** New Tests 16 and 17 add 120 review-draft items, with 19 linked figures, full worked solutions and 84 source-bound calculation checks. JSON/HTML/PDF deliveries and the complete 17-paper structural check are recorded in tests16_17/. See [review notes](IAT_NEW_TESTS_16_17_REVIEW_NOTES.md). Earlier corrected tests remain unchanged. Independent academic and timed review remain pending.
+**Latest authored checkpoint, 5 November 2026:** New Tests 18 and 19 add 120 review-draft items, 21 linked figures, detailed worked solutions and 85 source-bound calculation checks. Final delivery hashes and the complete 19-paper validation are in tests18_19/. See [review notes](IAT_NEW_TESTS_18_19_REVIEW_NOTES.md). The updated 25-test CSV and 640-entry syllabus checklist distinguish actual evidence from future coverage obligations. Independent academic and timed review remain pending.
 
 
 **Current checkpoint, 3 November 2026:** The documented milestone fixes have been applied to canonical Tests 1–15 and all delivery JSON/HTML/PDF files regenerated. See [correction report](milestone15_fixes/CORRECTION_REPORT.md) and its final hash manifest. The audit below is historical evidence for the repair; the bank still awaits independent academic and timed review. Earlier notes, page counts and check files describe their dated snapshots unless replaced by current source-bound records.

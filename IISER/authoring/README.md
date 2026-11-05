@@ -1,3 +1,5 @@
+**Latest snapshot, 5 November 2026:** Tests 18–19 are authored in eight subject TSVs, with 21 exact image specifications and 30 individual Mathematics PYQ comparisons. Canonical JSON takes priority over these historical rows. The tests18_19_checkpoint.json guard freezes reassembly after final review. See ../review/IAT_NEW_TESTS_18_19_REVIEW_NOTES.md.
+
 # Test 6–7 authoring checkpoint (1 November 2026)
 
 **Tests 16–17, finalised 5 November 2026:** Their eight subject TSVs preserve individual authorship; tests16_17_math_calibration.tsv records all 30 Mathematics comparisons. The option-review TSV is historical pre-final evidence, not a separate live source. Canonical JSON is authoritative after the checkpoint. The tests16_17_checkpoint.json file freezes this snapshot and blocks accidental regeneration over later corrections. Export directly from canonical JSON after subsequent edits. See ../review/IAT_NEW_TESTS_16_17_REVIEW_NOTES.md.

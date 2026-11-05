@@ -32,7 +32,7 @@ probe(18,18,(20-300*F(50,1000)+F(5,2)*(-4),20-300*F(50,1000)+F(5,2)*(-1)),(-5,F(
 probe(18,22,(F(3,100)-F(12,100)/6)*6,F(6,100),'0.060','Subtract Fe electron demand from dichromate equivalents, then use thiosulfate electron stoichiometry.')
 probe(18,23,2*F(40-(-20),40),3,'3','Reverse barrier from the transition-state energy cycle, then common-temperature ratio.')
 probe(18,26,1-F(1,3),F(2,3),'2/3','Conserved solute and pressure equality set final reverse-osmosis volume.')
-probe(18,27,min(F(4,100)*F(5,100),F(3,100)*F(5,100))*F(1435,10)*F(8,10),F(1722,10000),'0.1722 g','Select limiting ion and apply recovery fraction.')
+probe(18,27,F(636-630,10)/2*F(5,100),F(15,1000),'0.0150 mol','Infer the heavy isotope number fraction from the weighted mass and multiply total atom moles.')
 probe(18,28,(80-330-500)-(120-350-360),-160,'F is favoured by 160 kJ despite Cl\'s more exothermic isolated electron gain','Sum every stage on the common per-atom mole basis.')
 n=s.solve(s.Eq(3*(x-5),9*(x-15)),x)[0]
 probe(18,30,(n,14-(-s.log(s.sqrt(s.Rational(1,10)**10*F(n,1000)/F(1,5)),10))),(20,F(17,2)),'8.50','Recover acid amount from two buffer ratios and calculate equivalence hydrolysis.')
@@ -47,7 +47,8 @@ poly=s.together(H-Kw/H-C*Ka/(Ka+H)).as_numer_denom()[0]
 hroot=[float(s.re(r)) for r in s.nroots(poly,maxsteps=100) if abs(float(s.im(r)))<1e-16 and s.re(r)>0][0]
 probe(19,29,int(1e-7<hroot<1.052e-7),1,'Slightly below 7, with water autoionisation important','Solve full charge-balance cubic including water rather than using small-ionisation shortcut.')
 # All thirty mathematics questions, independently recomputed.
-probe(18,31,sum(s.solve((1-x)**2+(2-x)**2-x*x,x)),6,'6','Solve both positive circle radii.')
+hc=s.solve(s.Eq(x*x+(x-1)**2,(x-2)**2+(x-3)**2),x)[0]
+probe(18,31,s.sqrt(2*hc**2-(hc**2+(hc-1)**2)),s.sqrt(2),r'\(\sqrt2\)','Recover the equidistant centre on y=x and independently evaluate its positive power at the origin.')
 probe(18,32,s.Rational(4)/(1-F(1,9))+9,F(27,2),'27/2','Recover ellipse semiaxis squares from reconstructed endpoints.')
 area=2*(s.integrate(x*x,(x,0,1))+s.integrate(2-x*x,(x,1,s.sqrt(2))))
 probe(18,33,area,8*(s.sqrt(2)-1)/3,r'\(8(\sqrt2-1)/3\)','Integrate the two polynomial gaps independently.')

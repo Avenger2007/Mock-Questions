@@ -67,7 +67,7 @@
     "hard": 9,
     "basis": "user-directed editorial mix, not measured item difficulty"
   },
-  "content_revision": "tests18_19_authored_v1",
+  "content_revision": "tests18_19_reviewed_v2",
   "questions": [
     {
       "id": "IAT27-T18-Q01",
@@ -604,20 +604,20 @@
       "section": "C",
       "subject": "Chemistry",
       "topic": "Some Basic Concepts of Chemistry",
-      "sub_topic": "Limiting ion and isolated precipitation yield",
+      "sub_topic": "Isotope abundance from a weighted atomic mass followed by sample mole accounting",
       "class_level": "11",
-      "syllabus_anchor": "Some Basic Concepts of Chemistry: Chemical Equations and Stoichiometry",
+      "syllabus_anchor": "Some Basic Concepts of Chemistry: Atomic and Molecular Masses; Mole Concept",
       "difficulty": "easy",
       "format": "numerical",
-      "question": "40.0 mL of 0.050 M AgNO3 is mixed with 30.0 mL of 0.050 M NaCl. AgCl precipitates in a 1:1 reaction and is isolated at 80.0% of theoretical yield. Using molar mass AgCl=143.5 g/mol, what mass is isolated?",
+      "question": "A hypothetical element has only two isotopes with masses 63 u and 65 u. Its mean atomic mass is 63.6 u. A representative sample contains 0.0500 mol of atoms. How many moles of the heavier isotope are present?",
       "options": [
-        "A) 0.1722 g",
-        "B) 0.2296 g",
-        "C) 0.2153 g",
-        "D) 0.4018 g"
+        "A) 0.0150 mol",
+        "B) 0.0350 mol",
+        "C) 0.0300 mol",
+        "D) 0.0250 mol"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) 0.1722 g.\nGiven: Both solutions are 0.050 M; volumes are 0.0400 and 0.0300 L.\nFormula/Principle: The smaller reactant mole amount limits a 1:1 precipitation; isolated mass equals theoretical mass times fractional yield.\nStep 1: \\[n(\\ce{Ag+})=0.050(0.0400)=0.00200\\text{ mol},\\quad n(\\ce{Cl-})=0.050(0.0300)=0.00150\\text{ mol}.\\]\nStep 2: Chloride limits precipitation, so \\[m=0.00150(143.5)(0.800)=0.1722\\text{ g}.\\]\nWhy: Mixing changes concentrations but not the supplied mole counts. A precipitate cannot use more chloride than is present, and an isolated yield below 100% reduces the recoverable mass after the stoichiometric maximum is found.\nWhy not the others: (B) uses all silver as limiting while still applying yield. (C) is approximately the theoretical mass before recovery loss. (D) adds reactant mole amounts rather than matching them in the 1:1 reaction.\nKey point: Determine the limiting amount before applying a recovery percentage."
+      "explanation": "Answer: (A) 0.0150 mol.\nGiven: The two isotope masses are 63 u and 65 u; their weighted mean is 63.6 u. The sample contains 0.0500 mol atoms.\nFormula/Principle: Mean atomic mass is weighted by the number fraction of each isotope, which is also its mole fraction.\nStep 1: If f is the heavier-isotope fraction, \\[63(1-f)+65f=63.6\\Rightarrow2f=0.6\\Rightarrow f=0.300.\\]\nStep 2: \\[n_{65}=f n_{\\rm total}=0.300(0.0500)=0.0150\\text{ mol}.\\]\nStep 3: The lighter isotope contributes 0.0350 mol, and the sum returns the stated total.\nWhy: Isotopes of an element have different masses but contribute to the same atomic population. The mean is therefore a number-weighted average, not an equal-weight midpoint unless the abundances are equal. Multiplying the inferred fraction by total atom moles gives isotope moles directly, without treating the average mass as the mass of every atom.\nWhy not the others: (B) gives the lighter-isotope amount. (C) treats the 0.6 u shift above 63 u as a fraction without dividing by the 2 u isotope gap. (D) assumes equal abundance despite the mean lying below 64 u.\nKey point: Infer isotope number fractions from the full mass gap before converting a total sample amount."
     },
     {
       "id": "IAT27-T18-Q28",
@@ -684,20 +684,20 @@
       "section": "M",
       "subject": "Mathematics",
       "topic": "Coordinate geometry",
-      "sub_topic": "Two-axis tangency leaves two admissible radii through one point",
+      "sub_topic": "Centre-line and chord constraints precede an external tangent-length calculation",
       "class_level": "11",
-      "syllabus_anchor": "Coordinate geometry: Circles; Tangency",
+      "syllabus_anchor": "Coordinate geometry: Circles; Perpendicular Bisector; Tangents",
       "difficulty": "medium",
       "format": "numerical",
-      "question": "A circle lies in the first quadrant, is tangent to both coordinate axes and passes through (1,2). What is the sum of the radii of all such circles?",
+      "question": "A circle passes through A=(0,1) and B=(2,3), and its centre lies on y=x. What is the length of a tangent segment drawn from the origin to the circle?",
       "options": [
-        "A) 6",
-        "B) 3",
-        "C) 5",
-        "D) 2"
+        "A) \\(\\sqrt2\\)",
+        "B) 2",
+        "C) \\(\\sqrt{5/2}\\)",
+        "D) \\(3/\\sqrt2\\)"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) 6.\nGiven: A first-quadrant circle tangent to both axes has centre \\((r,r)\\), with \\(r>0\\).\nFormula/Principle: The centre-to-point distance equals the radius.\nStep 1: \\[(1-r)^2+(2-r)^2=r^2.\\]\nStep 2: Simplification gives \\[r^2-6r+5=0\\ \\Rightarrow\\ r=1\\text{ or }5.\\]\nStep 3: Both are positive and have centres in the first quadrant, so the requested sum is \\(1+5=6\\).\nWorked derivation: \\[r_1+r_2=6,\\qquad (r_1,r_2)=(1,5).\\]\nWhy: Tangency to two perpendicular axes constrains both centre coordinates, leaving one radius parameter. The point condition can still admit two geometrically different circles. Both roots satisfy the original distance and positivity requirements, so neither may be discarded merely for being larger than the given point's coordinates.\nWhy not the others: (B) uses the half-sum of the quadratic roots. (C) retains only the larger circle. (D) counts circles rather than summing their radii.\nKey point: Impose all tangency constraints before solving and check every admissible radius."
+      "explanation": "Answer: (A) \\(\\sqrt2\\).\nGiven: Write the centre as \\((h,h)\\), since it lies on y=x.\nFormula/Principle: Equal centre-to-endpoint distances determine h; an external point has squared tangent length equal to its squared centre distance minus radius squared.\nStep 1: Equidistance from A and B gives \\[h^2+(h-1)^2=(h-2)^2+(h-3)^2\\Rightarrow8h=12\\Rightarrow h=3/2.\\]\nStep 2: The radius squared is \\[r^2=(3/2)^2+(3/2-1)^2=5/2.\\]\nStep 3: The origin-to-centre distance squared is \\[OC^2=(3/2)^2+(3/2)^2=9/2>r^2,\\] so a real tangent exists.\nStep 4: \\[OT=\\sqrt{OC^2-r^2}=\\sqrt{9/2-5/2}=\\sqrt2.\\]\nWorked derivation: \\[CT\\perp OT,\\qquad OT^2+CT^2=OC^2,\\qquad OT=\\sqrt2.\\]\nWhy: The line containing the centre must be combined with the perpendicular-bisector condition supplied by the two points. The tangent is drawn from a different point, the origin, and its length is not the radius or the centre distance. The positive power check confirms that the proposed external tangent is geometrically possible before taking its square root.\nWhy not the others: (B) reports the squared tangent length as a length. (C) gives the circle radius. (D) gives the origin-to-centre distance.\nKey point: Recover the centre from chord information before using the right triangle at a tangent contact."
     },
     {
       "id": "IAT27-T18-Q32",
