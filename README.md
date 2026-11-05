@@ -94,3 +94,8 @@ Each exam has its own instructions file and 25 planned tests per series. Mock au
 **IAT pilot (29 Oct 2026):** 60 original questions, 15 per subject, six exact diagrams, 180 minutes, +4/-1/0, and worked solutions. Uses the verified 2026 pattern; no 2027 brochure is claimed. Status remains `pending_revision` for manual academic review. See [review files and reproduction commands](IISER/review/README.md). Run `python validate_iat.py`; the CUET validator does not validate this schema.
 
 **Analysis and audit PDFs:** [14-page student PYQ guide](output/pdf/IAT_PYQ_Analysis_Student_Guide.pdf) and [19-page Test 1 audit](output/pdf/IAT_Test_1_Full_Audit.pdf). The audit recommends content/style/difficulty revisions before final release; it leaves the test unchanged. [Evidence and reproduction notes](output/iat_reports/README.md).
+
+
+## IAT authoring checkpoint — 5 November 2026
+
+Tests 1–17 are authored review drafts (1,020 items). Continue from remote branch iat-tests-16-17, which includes the Tests 1–15 milestone corrections. New Tests 16–17 have canonical JSON, diagrams, printable worked-solution PDFs, offline HTML and source-bound checks. See IISER/review/IAT_NEW_TESTS_16_17_REVIEW_NOTES.md and docs/blueprints/iat_series_continuity.md. Eight tests remain reserved. Independent academic and timed review are pending before student release.

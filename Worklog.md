@@ -396,3 +396,8 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 ## IAT milestone corrections — 3 November 2026
 
 Branch `fix-iat-milestone-15` applies the documented Tests 1–15 audit repairs to canonical JSON at fixed IDs: scientific assumptions, listed-syllabus replacements, repeated task angles, demand, detailed explanations and figures. The correction report, item change ledger, source-bound checks and rebuilt review PDFs/HTML are in `IISER/review/milestone15_fixes/`. Strict validation covers all 900 items; arithmetic probes are targeted author-side checks, not an independent 900-answer certificate. The bank remains pending hidden-key academic and timed review. `main` and earlier test branches are preserved.
+
+
+## IAT Tests 16–17 — 5 November 2026
+
+Completed two original 60-item review drafts on iat-tests-16-17, based on corrected-bank commit 1de7c68. Added 19 exact scientific diagrams, detailed WHY and individual alternative explanations, displayed Mathematics/Physics working, 30 recent-PYQ Mathematics comparisons and 84 calculation checks. Replaced repeated/unlisted planning seeds, retained the 9/42/9 editorial mix and preserved all previous 900 canonical items. A remote content checkpoint preceded final visual-review and documentation changes. Review notes record verification and pending independent academic/timed review. Main and earlier branches remain unchanged.

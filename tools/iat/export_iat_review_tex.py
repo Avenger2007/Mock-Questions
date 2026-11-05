@@ -59,7 +59,9 @@ parts.append(r'\textit{Every solution explains the selected choice and the alter
 for sec,title in [('B','Biology'),('C','Chemistry'),('M','Mathematics'),('P','Physics')]:
  parts.append(r'\subsection*{'+title+'}')
  for q in [x for x in data['questions'] if x['section']==sec]:
-  num=int(q['id'][-2:]);parts.append(r'\Needspace{10\baselineskip}')
+  num=int(q['id'][-2:])
+  # Keep the last worked exercise together instead of stranding its key point.
+  parts.append(r'\Needspace{28\baselineskip}' if t>=16 and num==60 else r'\Needspace{10\baselineskip}')
   parts.append(r'\textcolor{brand}{\textbf{Q'+str(num)+r' / '+q['correct_option']+r'}}\quad '+escaped(q['sub_topic'])+r'\par')
   parts.append(explanation(q['explanation']))
   parts.append(r'\vspace{2mm}\hrule\vspace{3mm}')

@@ -2,6 +2,8 @@
 import csv,json,re
 from pathlib import Path
 R=Path(__file__).resolve().parents[2]
+if (R/'IISER/authoring/tests16_17_checkpoint.json').exists():
+ raise SystemExit('Frozen authoring snapshot: edit canonical JSON and regenerate its deliveries; do not overwrite later corrections from historical TSVs.')
 plan_path=R/'docs/blueprints/iat_25_test_slots.tsv'
 with plan_path.open() as f:
  reader=csv.DictReader(f,delimiter='\t');fields=reader.fieldnames;slots=list(reader)
