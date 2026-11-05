@@ -49,7 +49,8 @@ for sec,title in [('B','Biology'),('C','Chemistry'),('M','Mathematics'),('P','Ph
   parts.append(r'\textcolor{brand}{\textbf{Q'+str(num)+r'}}\quad '+rich(q['question'])+r'\par')
   if q.get('image_reference'):
    image=(root/data['image_base_path']/q['image_reference']).resolve();assert image.is_file()
-   parts.append(r'\begin{center}\includegraphics[width=.60\linewidth,height=7.8cm,keepaspectratio]{\detokenize{'+str(image)+r'}}\end{center}')
+   image_size=r'width=.82\linewidth,height=10.5cm' if t>=16 else r'width=.60\linewidth,height=7.8cm'
+   parts.append(r'\begin{center}\includegraphics['+image_size+r',keepaspectratio]{\detokenize{'+str(image)+r'}}\end{center}')
   parts.extend(r'\textbf{'+a+r')} '+rich(v[3:])+r'\par' for a,v in zip('ABCD',q['options']))
   parts.append(r'\end{minipage}\par\vspace{3mm}\hrule\vspace{4mm}')
  parts.append(r'\newpage')
