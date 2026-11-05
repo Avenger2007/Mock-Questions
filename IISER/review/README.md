@@ -56,3 +56,7 @@ New Tests 10 and 11 are authored review drafts. Their canonical JSON, figure sou
 IAT New Tests 12 and 13 are authored review drafts on `iat-tests-12-13`, with canonical JSON, linked figures, delivery JSON and PDF, and source-bound render checks. Each has 60 questions and detailed solutions; the figure minimum is exceeded in all three required subjects. See `IAT_NEW_TESTS_12_13_REVIEW_NOTES.md` for overlap decisions, item-level Mathematics checks, figure purpose and pending independent review.
 
 IAT New Tests 14 and 15 are authored review drafts on `iat-tests-14-15`. Canonical JSON, original figure sources and PNGs, delivery JSON/PDF and render checks travel together. See `IAT_NEW_TESTS_14_15_REVIEW_NOTES.md` for repeated-angle replacements, item-level Mathematics checks, quantitative validation and the remaining academic/timed review.
+
+## Tests 20–21, 5 November 2026
+
+Canonical JSON and byte-identical review JSON, offline HTML and printable PDFs are available as `IAT_NEW_TEST_20` and `IAT_NEW_TEST_21`. See `IAT_NEW_TESTS_20_21_REVIEW_NOTES.md` and `tests20_21/final_manifest.json`. The authoring branch is local `iat-tests-20-21`; the supplied token was rejected by GitHub, so no successful remote checkpoint is claimed. Independent academic and timed review remain pending.

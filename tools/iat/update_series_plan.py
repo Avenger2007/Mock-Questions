@@ -12,11 +12,12 @@ slots=list(csv.DictReader((D/'iat_25_test_slots.tsv').open(),delimiter='\t'));fi
 briefs=list(csv.DictReader((D/'iat_tests20_25_angle_briefs.tsv').open(),delimiter='\t'))
 assert len(briefs)==24
 for row in briefs:
+ if int(row['test'])<=21:continue
  angles=row['ordered_angle_briefs'].split('|');assert len(angles)==15,(row['test'],row['subject'],len(angles))
  start='BCMP'.index(row['subject'])*15+1
  for n,angle in enumerate(angles,start):lookup[int(row['test']),n].update(focus=angle,angle_seed='Reserved original task: '+angle,state='concrete reservation; syllabus and semantic review required before authorship')
 actual={}
-for test in range(1,20):
+for test in range(1,22):
  p=R/'IISER'/('IAT TEST 1.json' if test==1 else f'IAT NEW TEST {test}.json')
  for q in json.loads(p.read_text())['questions']:
   n=int(q['id'][-2:]);actual[test,n]=(q,str(p.relative_to(R)))
@@ -70,15 +71,15 @@ for para in re.split(r'\n\s*\n',text):
 # Each named scope item has a prospective owner. These are reservations, not automatic claims of tested mastery.
 stop=set('the a an and or of in on to for with as by its is are from different general some introduction concept simple various properties applications types their it at be which into between same'.split())
 def tokens(s):return {w[:-1] if w.endswith('s') and len(w)>4 else w for w in norm(s).split() if w not in stop and len(w)>2}
-future=[r for r in slots if int(r['test'])>=20];loads=Counter();owners=defaultdict(list)
+material={'B-001': [20, 1], 'B-012': [21, 2], 'B-013': [21, 2], 'B-017': [20, 2], 'B-018': [21, 15], 'B-026': [20, 14], 'B-030': [20, 14], 'B-040': [20, 14], 'B-034': [21, 14], 'B-035': [21, 14], 'B-054': [20, 4], 'B-058': [21, 4], 'B-059': [21, 4], 'B-061': [21, 4], 'B-084': [21, 13], 'B-085': [21, 13], 'B-086': [21, 13], 'B-066': [21, 5], 'B-087': [21, 5], 'B-088': [21, 5], 'B-090': [21, 5], 'B-068': [20, 5], 'B-106': [20, 15], 'B-102': [20, 6], 'B-110': [20, 6], 'B-129': [20, 7], 'B-133': [20, 11], 'B-119': [21, 11], 'B-138': [21, 12], 'B-139': [20, 8], 'B-145': [21, 8], 'B-150': [20, 9], 'B-152': [20, 9], 'B-153': [21, 9], 'C-009': [20, 21], 'C-013': [20, 21], 'C-010': [21, 21], 'C-015': [21, 19], 'C-017': [21, 19], 'C-021': [21, 20], 'C-022': [21, 20], 'C-023': [21, 20], 'C-028': [21, 16], 'C-034': [20, 16], 'C-038': [21, 18], 'C-039': [21, 18], 'C-040': [21, 18], 'C-054': [20, 30], 'C-055': [20, 30], 'C-061': [21, 30], 'C-064': [21, 30], 'C-068': [21, 30], 'C-073': [21, 30], 'C-062': [20, 27], 'C-069': [20, 27], 'C-072': [20, 27], 'C-082': [21, 27], 'C-085': [21, 28], 'C-091': [21, 28], 'C-087': [20, 29], 'C-111': [20, 23], 'C-122': [20, 25], 'C-125': [20, 25], 'C-123': [21, 24], 'C-136': [21, 23], 'C-142': [21, 25], 'C-149': [20, 26], 'C-148': [21, 26], 'C-150': [21, 26], 'M-010': [20, 33], 'M-017': [20, 32], 'M-028': [21, 42], 'M-026': [20, 34], 'M-031': [20, 43], 'M-035': [21, 39], 'M-036': [21, 39], 'M-039': [20, 45], 'M-044': [20, 45], 'M-049': [20, 45], 'M-040': [21, 41], 'M-045': [21, 41], 'M-050': [21, 37], 'M-053': [20, 31], 'M-058': [21, 31], 'M-063': [21, 31], 'M-065': [21, 32], 'M-066': [20, 36], 'M-068': [20, 36], 'M-069': [20, 36], 'M-075': [21, 40], 'M-082': [20, 39], 'M-087': [20, 37], 'M-096': [20, 35], 'M-097': [21, 34], 'M-100': [21, 33], 'M-109': [20, 38], 'M-111': [20, 40], 'P-004': [20, 46], 'P-005': [20, 46], 'P-007': [21, 46], 'P-009': [21, 46], 'P-012': [21, 46], 'P-016': [21, 46], 'P-023': [20, 47], 'P-026': [21, 47], 'P-029': [21, 47], 'P-032': [21, 47], 'P-036': [21, 48], 'P-039': [21, 48], 'P-043': [21, 48], 'P-056': [20, 48], 'P-059': [20, 48], 'P-061': [21, 49], 'P-066': [20, 49], 'P-074': [20, 49], 'P-078': [21, 50], 'P-081': [21, 50], 'P-084': [21, 50], 'P-087': [20, 50], 'P-088': [20, 50], 'P-095': [20, 51], 'P-100': [20, 52], 'P-101': [21, 51], 'P-105': [20, 53], 'P-107': [21, 53], 'P-117': [21, 54], 'P-133': [20, 54], 'P-139': [21, 55], 'P-140': [21, 55], 'P-143': [21, 56], 'P-161': [20, 55], 'P-163': [20, 56], 'P-167': [20, 56], 'P-164': [21, 57], 'P-166': [21, 57], 'P-170': [19, 59], 'P-171': [21, 59], 'P-174': [20, 57], 'P-176': [20, 57], 'P-182': [20, 58], 'P-197': [21, 60], 'P-199': [21, 60], 'P-207': [20, 60]}
+future=[r for r in slots if int(r['test'])>=22];loads=Counter();owners=defaultdict(list)
 for leaf in catalog:
  candidates=[r for r in future if r['subject']==leaf['subject'] and r['chapter_code']==leaf['chapter_code']]
- assert candidates,leaf
  words=tokens(leaf['official_topic']+' '+leaf['official_parent'])
  def score(r):return len(words&tokens(r['focus']))/(max(1,len(words))**.5)-.10*loads[r['id']]
- overrides={'B-138':(21,12),'B-036':(23,14),'B-072':(24,13),'B-070':(24,13),'B-071':(24,13),'P-203':(22,60),'P-204':(22,60),'P-205':(22,60)}
- forced=overrides.get(leaf['topic_id'])
- chosen=lookup[forced] if forced else max(candidates,key=score);hits=words&tokens(chosen['focus']);loads[chosen['id']]+=1;owners[chosen['id']].append(leaf['topic_id'])
+ overrides={'B-036':(23,14),'B-072':(24,13),'B-070':(24,13),'B-071':(24,13),'P-203':(22,60),'P-204':(22,60),'P-205':(22,60),'P-172':(25,58)}
+ forced=material.get(leaf['topic_id'],overrides.get(leaf['topic_id']))
+ chosen=lookup[tuple(forced)] if forced else max(candidates,key=score);hits=words&tokens(chosen['focus']);loads[chosen['id']]+=1;owners[chosen['id']].append(leaf['topic_id'])
  # A text-evidence candidate is disclosed as such, never marked academically covered by a word match.
  evidence=[]
  phrase=norm(leaf['official_topic'])
@@ -87,15 +88,23 @@ for leaf in catalog:
   hay=norm(q['question']+' '+q['explanation']+' '+q.get('syllabus_anchor',''))
   if len(phrase)>8 and phrase in hay:evidence.append(q['id'])
  leaf.update(planned_owner=chosen['id'],planned_angle=chosen['focus'],scope_status='scheduled; authored coverage must be explicitly verified',alignment_status='related words in brief' if hits else 'manual alignment needed; no shared words in the brief',candidate_authored_evidence=';'.join(evidence[:20]),evidence_status='literal phrase candidates only; not verified coverage',required_action='Verify this named topic is materially tested in an authored stem, solution or labelled distractor; reassign if the brief cannot address it.')
+# Explicit author mappings evidence only the aspect actually tested, not every fact in a broad printed phrase.
+material_ledger=[]
+for leaf in catalog:
+ if leaf['topic_id'] not in material:continue
+ test,n=material[leaf['topic_id']];q,path=actual[test,n]
+ leaf.update(scope_status='material aspect evidenced; comprehensive breadth not certified',candidate_authored_evidence=q['id'],evidence_status='explicit author mapping to actual item; independent scope review pending',required_action='Verify the recorded material aspect and audit residual breadth of the official phrase before closing series coverage.')
+ material_ledger.append(dict(topic_id=leaf['topic_id'],official_topic=leaf['official_topic'],question_id=q['id'],material_aspect=q['sub_topic'],source_json=path,source_json_sha256=hashlib.sha256((R/path).read_bytes()).hexdigest(),scope='Material evidence for this aspect; no claim that every fact under a broad syllabus phrase is exhausted.'))
+(R/'IISER/review/tests20_21/syllabus_material_evidence.json').write_text(json.dumps(material_ledger,ensure_ascii=False,indent=2)+'\n')
 extra=['syllabus_scope_ids','syllabus_targets','syllabus_anchor','source_json','source_question_sha256','semantic_review_status','required_before_authoring','plan_updated']
 plan=[]
 for r in slots:
  out=dict(r);key=int(r['test']),int(r['question']);q,path=actual.get(key,({},''))
- out.update(syllabus_scope_ids=';'.join(owners[r['id']]),syllabus_targets='; '.join(v['official_topic'] for v in catalog if v['planned_owner']==r['id']),syllabus_anchor=q.get('syllabus_anchor','Legacy authored item; explicit fine-grained syllabus anchor must be verified') if q else 'Assigned official scope IDs; primary/contrast alignment must be checked before drafting',source_json=path,source_question_sha256=hashlib.sha256(q['question'].encode()).hexdigest() if q else'',semantic_review_status='full-bank screen and authored comparison recorded; independent review pending' if key[0] in (18,19) else 'earlier review evidence retained' if q else 'not authored; compare object, constraints, method, conclusion and distractors against entire current bank',required_before_authoring='' if q else'Validate every assigned scope ID; sharpen or replace brief; solve independently; compare PYQ demand; reject cosmetic reuse and unlisted extensions',plan_updated='2026-11-05')
+ out.update(syllabus_scope_ids=';'.join(owners[r['id']]),syllabus_targets='; '.join(v['official_topic'] for v in catalog if v['planned_owner']==r['id']),syllabus_anchor=q.get('syllabus_anchor','Legacy authored item; explicit fine-grained syllabus anchor must be verified') if q else 'Assigned official scope IDs; primary/contrast alignment must be checked before drafting',source_json=path,source_question_sha256=hashlib.sha256(q['question'].encode()).hexdigest() if q else'',semantic_review_status='full-bank screen and authored comparison recorded; independent review pending' if key[0] in (18,19,20,21) else 'earlier review evidence retained' if q else 'not authored; compare object, constraints, method, conclusion and distractors against entire current bank',required_before_authoring='' if q else'Validate every assigned scope ID; sharpen or replace brief; solve independently; compare PYQ demand; reject cosmetic reuse and unlisted extensions',plan_updated='2026-11-05')
  plan.append(out)
 assert len(plan)==1500 and len({r['id'] for r in plan})==1500
 assert all(sum(int(r['test'])==t for r in plan)==60 for t in range(1,26))
-assert len({norm(r['focus']) for r in future})==360
+assert len({norm(r['focus']) for r in future})==240
 (T/'plan_data.json').write_text(json.dumps({'plan':[list(plan[0])]+[list(r.values()) for r in plan],'coverage':[list(catalog[0])]+[list(r.values()) for r in catalog]},ensure_ascii=False))
-summary={'official_named_scope_entries':len(catalog),'by_subject':dict(Counter(r['subject'] for r in catalog)),'unallocated':sum(not r['planned_owner'] for r in catalog),'future_slots':360,'wording_alignment_review_entries':sum(r['alignment_status'].startswith('manual alignment') for r in catalog),'max_scope_entries_per_future_slot':max(loads.values()),'authored_tests':19,'authored_questions':1140,'remaining_tests':6,'remaining_questions':360,'syllabus_sha256':hashlib.sha256(syll.read_bytes()).hexdigest(),'scope':'All extracted official topic phrases/sentences have a future owner. Scheduling is not proof of existing or final comprehensive question coverage; wording-only alignment flags require manual review and, where necessary, brief revision. Linear Programming is a heading-only ambiguity with no listed subtopics and remains on hold.'}
+summary={'official_named_scope_entries':len(catalog),'by_subject':dict(Counter(r['subject'] for r in catalog)),'unallocated':sum(not r['planned_owner'] for r in catalog),'future_slots':240,'wording_alignment_review_entries':sum(r['alignment_status'].startswith('manual alignment') for r in catalog),'max_scope_entries_per_future_slot':max(loads.values()),'authored_tests':21,'authored_questions':1260,'remaining_tests':4,'remaining_questions':240,'explicit_material_evidence_entries':len(material_ledger),'syllabus_sha256':hashlib.sha256(syll.read_bytes()).hexdigest(),'scope':'Each extracted official phrase has either explicit material-aspect evidence or a future owner. Material evidence does not certify exhaustive breadth. Scheduling is not proof of existing or final comprehensive question coverage; wording-only alignment flags require manual review and, where necessary, brief revision. Linear Programming is a heading-only ambiguity with no listed subtopics and remains on hold.'}
 (D/'iat_coverage_plan_check.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary,indent=2))

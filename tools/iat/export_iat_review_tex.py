@@ -57,6 +57,7 @@ for sec,title in [('B','Biology'),('C','Chemistry'),('M','Mathematics'),('P','Ph
 parts.append(r'\section*{Answer key and worked solutions}')
 parts.append(r'\textit{Every solution explains the selected choice and the alternative errors.}\par')
 for sec,title in [('B','Biology'),('C','Chemistry'),('M','Mathematics'),('P','Physics')]:
+ if t>=20:parts.append(r'\Needspace{14\baselineskip}')
  parts.append(r'\subsection*{'+title+'}')
  for q in [x for x in data['questions'] if x['section']==sec]:
   num=int(q['id'][-2:])

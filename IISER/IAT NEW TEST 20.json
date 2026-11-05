@@ -802,20 +802,20 @@
       "section": "M",
       "subject": "Mathematics",
       "topic": "Differentiation",
-      "sub_topic": "Regular vertical tangent and reciprocal-coordinate second derivative",
+      "sub_topic": "Separate a regular vertical tangent from two crossing regular parameter branches",
       "class_level": "12",
       "syllabus_anchor": "Differentiation: parametric derivatives; tangents",
       "difficulty": "medium",
       "format": "numerical",
-      "question": "For t>0 a curve is given by \\(x=t^3-3t,\\ y=t^2+t\\). At its vertical tangent, what are the tangent equation and \\(d^2x/dy^2\\)?",
+      "question": "For the real parametric curve \\(x=t^2,\\ y=t^3-t\\), classify the tangent at the origin and find the angle between the two distinct tangents at the self-intersection (1,0).",
       "options": [
-        "A) x=-2; 2/3",
-        "B) x=2; 2/3",
-        "C) x=-2; 0",
-        "D) y=2; 3/2"
+        "A) Regular vertical tangent at the origin; right angle at (1,0)",
+        "B) Singular point at the origin; right angle at (1,0)",
+        "C) Regular horizontal tangent at the origin; angle π/4 at (1,0)",
+        "D) Regular vertical tangent at the origin; coincident tangents at (1,0)"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) x=-2 and d²x/dy²=2/3.\nGiven: The parameter t is positive.\nFormula/Principle: A regular vertical tangent has x'=0 and y' nonzero. Use y locally as the independent coordinate.\nStep 1: \\(x'=3t^2-3=0\\) gives t=1 in the domain; \\(y'=2t+1=3\\), so speed is nonzero. The point is (-2,2).\nStep 2: \\[\\frac{d^2x}{dy^2}=\\frac{x''y'-x'y''}{(y')^3}.\\]\nWorked derivation: \\[\\left.\\frac{d^2x}{dy^2}\\right|_{t=1}=\\frac{6\\cdot3-0\\cdot2}{27}=\\frac23.\\]\nWhy: A vanishing dx/dt alone does not imply a singular curve. The nonzero dy/dt permits a regular graph x(y).\nWhy not the others: (B) The x coordinate is -2. (C) x'=0 does not force the second derivative to vanish. (D) y=2 is horizontal and the reciprocal derivative is not valid here.\nKey point: Check regularity before interpreting a parametric tangent."
+      "explanation": "Answer: (A) The origin is regular with a vertical tangent; the self-intersection has perpendicular tangents.\nGiven: The entire real parameter domain is included.\nFormula/Principle: Distinct parameters at one point can produce different tangent branches; regularity requires a nonzero velocity vector.\nStep 1: At the origin t=0, \\(x\\prime=2t=0\\) and \\(y\\prime=3t^2-1=-1\\). The velocity is nonzero and the tangent is x=0.\nStep 2: The point (1,0) has two preimages, t=1 and t=-1. Both are regular, with slopes \\[m=\\frac{3t^2-1}{2t}=1\\quad\\hbox{and}\\quad-1.\\]\nWorked derivation: \\[m_1m_2=-1\\ \\Rightarrow\\ \\theta=\\pi/2.\\]\nWhy: A vertical tangent at one regular parameter is different from a geometric self-intersection with two regular parameter branches.\nWhy not the others: (B) The velocity at zero is (0,-1), not zero. (C) It exchanges horizontal and vertical tangency and miscounts the crossing angle. (D) The two slopes at (1,0) have opposite signs and are distinct.\nKey point: Check both parameter preimages and their velocities before classifying a parametric curve."
     },
     {
       "id": "IAT27-T20-Q38",
@@ -842,20 +842,20 @@
       "section": "M",
       "subject": "Mathematics",
       "topic": "Limit & continuity",
-      "sub_topic": "Parameter cancellation in a finite second-order trigonometric limit",
+      "sub_topic": "Cancel constant terms and use the second-order limit to recover a parameter difference",
       "class_level": "12",
       "syllabus_anchor": "Limits and Continuity: standard trigonometric limits",
       "difficulty": "medium",
       "format": "numerical",
-      "question": "For real a,b the limit \\(\\lim_{x\\to0}(\\sin x+a\\cos x+b-x)/x^2\\) is finite and equals 3. What is a+b?",
+      "question": "For real a,b the limit \\(\\lim_{x\\to0}(\\sin x+a\\cos x+b-x)/x^2\\) is finite and equals 3. What is a-b?",
       "options": [
         "A) -6",
         "B) 6",
-        "C) 0",
+        "C) -12",
         "D) 3"
       ],
       "correct_option": "C",
-      "explanation": "Answer: (C) 0.\nGiven: A finite two-sided limit after division by x².\nFormula/Principle: Constant and linear terms must cancel before the quadratic contribution can remain finite.\nStep 1: The constant term is a+b; finiteness forces b=-a. The linear term of sin x cancels the displayed -x.\nStep 2: \\[\\frac{\\sin x-x}{x^2}+a\\frac{\\cos x-1}{x^2}\\longrightarrow0-a/2.\\] The value 3 gives a=-6 and b=6.\nWorked derivation: \\[a+b=-6+6=0.\\]\nWhy: The standard trigonometric limits evaluate the remaining second-order term only after the lower-order terms vanish. No infinite-series convergence assumption is needed.\nWhy not the others: (A) It reports a alone. (B) It reports b alone. (D) It reports the limit rather than the requested parameter sum.\nKey point: Enforce finiteness before evaluating the surviving order."
+      "explanation": "Answer: (C) -12.\nGiven: A finite two-sided limit after division by x².\nFormula/Principle: Constant and linear terms must cancel before the quadratic contribution can remain finite.\nStep 1: The constant term is a+b; finiteness forces b=-a. The linear term of sin x cancels the displayed -x.\nStep 2: \\[\\frac{\\sin x-x}{x^2}+a\\frac{\\cos x-1}{x^2}\\longrightarrow0-a/2.\\] The value 3 gives a=-6 and b=6.\nWorked derivation: \\[a-b=-6-6=-12.\\]\nWhy: The standard trigonometric limits evaluate the remaining second-order term only after the lower-order terms vanish.\nWhy not the others: (A) It reports a alone. (B) It reports b alone. (D) It reports the limit rather than the requested parameter difference.\nKey point: Enforce finiteness before evaluating the surviving order."
     },
     {
       "id": "IAT27-T20-Q40",
@@ -922,40 +922,40 @@
       "section": "M",
       "subject": "Mathematics",
       "topic": "Quadratic Equations",
-      "sub_topic": "Exactly one common quadratic root with multiplicity checked",
+      "sub_topic": "Coefficient-exchanged distinct quadratics and a repeated common root",
       "class_level": "11",
       "syllabus_anchor": "Quadratic Equations: roots; factorisation",
       "difficulty": "easy",
       "format": "numerical",
-      "question": "The polynomials \\(x^2-3x+2\\) and \\(x^2-(k+2)x+2k\\) share exactly one distinct root. For which real k is that common root a repeated root of the second polynomial?",
+      "question": "The distinct polynomials \\(P(x)=x^2+px+q\\) and \\(Q(x)=x^2+qx+p\\) have real coefficients and exactly one distinct common root. That root is a repeated root of P. What is p+q?",
       "options": [
         "A) 1",
-        "B) 3",
+        "B) -3",
         "C) 0",
-        "D) 2"
+        "D) -1"
       ],
       "correct_option": "D",
-      "explanation": "Answer: (D) k=2.\nGiven: The first polynomial has roots 1 and 2.\nFormula/Principle: Factor both polynomials before distinguishing distinct roots from multiplicity.\nStep 1: \\[x^2-(k+2)x+2k=(x-2)(x-k).\\] The root 2 is always common; k=1 would give two distinct common roots and is excluded.\nStep 2: The common root is repeated in the second polynomial exactly when k=2.\nWorked derivation: \\[k=2\\ \\Rightarrow\\ Q(x)=(x-2)^2,\\quad \\{1,2\\}\\cap\\{2\\}=\\{2\\}.\\]\nWhy: A double root still counts as only one distinct common root.\nWhy not the others: (A) It gives both roots 1 and 2 in common. (B) The second roots are 2 and 3, each simple. (C) The second roots are 2 and 0, each simple.\nKey point: Distinct-root counts and algebraic multiplicity are different."
+      "explanation": "Answer: (D) p+q=-1.\nGiven: P and Q are distinct, so p≠q.\nFormula/Principle: A common root must also annihilate their difference; a monic quadratic with a repeated root r is (x-r)².\nStep 1: \\[P(x)-Q(x)=(p-q)(x-1).\\] Since p≠q, the common root is 1.\nStep 2: Repetition in P forces \\(P=(x-1)^2=x^2-2x+1\\), hence p=-2 and q=1.\nWorked derivation: \\[p+q=-1,\\qquad Q=x^2+x-2=(x-1)(x+2).\\] There is exactly one distinct common root, as required.\nWhy: Subtraction identifies the only possible common root before multiplicity fixes the two coefficients.\nWhy not the others: (A) It reports q alone. (B) It reports p-q rather than the sum. (C) It assumes equal opposite coefficients, incompatible with the repeated root.\nKey point: Verify the distinct-polynomial condition before cancelling a parameter factor."
     },
     {
       "id": "IAT27-T20-Q44",
       "section": "M",
       "subject": "Mathematics",
       "topic": "Coordinate geometry",
-      "sub_topic": "Hyperbola chord direction and length from symmetric endpoints",
+      "sub_topic": "Admissible hyperbola-circle chords after excluding axis-parallel point pairs",
       "class_level": "11",
       "syllabus_anchor": "Coordinate Geometry: hyperbola; straight lines",
       "difficulty": "medium",
       "format": "numerical",
-      "question": "A chord of \\(x^2/4-y^2=1\\) has midpoint M=(3,1). What are its slope and length?",
+      "question": "A line joins two distinct intersection points of the hyperbola \\(x^2/4-y^2=1\\) and the circle \\(x^2+y^2=9\\). Only lines parallel to neither coordinate axis are allowed. How many such lines exist, and what is the length of each corresponding chord?",
       "options": [
-        "A) 3/4 and √5",
-        "B) 4/3 and 5√(7/5)",
-        "C) 3/4 and 5√(5/7)",
-        "D) -3/4 and 5√(7/5)"
+        "A) Two lines; length 6",
+        "B) Four lines; length 6",
+        "C) Two lines; length 3",
+        "D) Two lines; length 4√2"
       ],
       "correct_option": "A",
-      "explanation": "Answer: (A) The slope is 3/4 and the length is √5.\nGiven: Endpoints can be written \\((3+u,1+v)\\) and \\((3-u,1-v)\\).\nFormula/Principle: Subtracting the two conic equations cancels the quadratic displacement terms and fixes the chord direction.\nStep 1: Subtraction gives \\(3u-4v=0\\), so v=3u/4.\nStep 2: The remaining equation is \\[9/4-1-1+u^2/4-v^2=0\\ \\Rightarrow\\ 1/4-5u^2/16=0.\\] Thus u²=4/5.\nWorked derivation: \\[L=2\\sqrt{u^2+v^2}=2\\sqrt{(25/16)(4/5)}=\\sqrt5.\\]\nWhy: Both endpoints, rather than the midpoint itself, lie on the hyperbola. Their symmetric equations determine direction and half-length separately.\nWhy not the others: (B) It inverts the chord slope. (C) Its length does not satisfy both endpoint equations. (D) It reverses the direction constraint's sign.\nKey point: Use symmetric endpoint substitution for a conic chord with known midpoint."
+      "explanation": "Answer: (A) Two lines, each with chord length 6.\nGiven: Both endpoints satisfy both conic equations; horizontal and vertical joining lines are excluded.\nFormula/Principle: Solve the simultaneous equations for squared coordinates, then classify the possible point pairs.\nStep 1: \\[x^2-4y^2=4,\\quad x^2+y^2=9\\ \\Rightarrow\\ y^2=1,\\quad x^2=8.\\] The four intersection points are \\((\\pm2\\sqrt2,\\pm1)\\).\nStep 2: Of their six joining pairs, two give horizontal lines and two vertical lines. The other two join opposite corners, hence antipodal circle points.\nWorked derivation: \\[N=6-2-2=2,\\quad L=\\sqrt{(4\\sqrt2)^2+2^2}=6.\\]\nWhy: Excluding axis-parallel pairs selects only the two diameters; both endpoints must still be actual hyperbola-circle intersections.\nWhy not the others: (B) It retains forbidden axis-parallel lines. (C) Three is the circle radius, not the diameter. (D) It uses only horizontal separation and omits the vertical difference.\nKey point: Use conic intersections to enumerate admissible chords before measuring them."
     },
     {
       "id": "IAT27-T20-Q45",

@@ -36,7 +36,7 @@ for x in [1.5,2.8,4.1]:
  line(a,(x,3.9),(x,4.7));line(a,(x,4.5),(x+.3,5));a.add_patch(Circle((x+.25,4.65),.10,fill=False));line(a,(x,4.1),(x-.2,3.3))
 a.add_patch(Ellipse((7.5,4.3),1.3,3,fill=False,lw=2))
 for y in [3.4,4,4.7]:line(a,(7.95,y),(8.8,y-.4))
-text(a,3,2,'P: nodes, scale leaves, axillary buds');text(a,7.5,2,'Q: lateral roots; no nodes');save(f,21,2,'Biology','Homologous organ diagnosis despite a shared storage function.','P horizontal nodal swollen axis with scale leaves and buds; Q vertical swollen axis with lateral roots and no nodes.','P is a nodal underground axis; Q has lateral roots without nodes.')
+text(a,3,2,'P: nodes, scale leaves\nand axillary buds',13);text(a,7.5,2,'Q: lateral roots;\nno nodes',13);save(f,21,2,'Biology','Homologous organ diagnosis despite a shared storage function.','P horizontal nodal swollen axis with scale leaves and buds; Q vertical swollen axis with lateral roots and no nodes.','P is a nodal underground axis; Q has lateral roots without nodes.')
 f,a=board('Cereal embryo: axis and lateral structure')
 line(a,(6,2.2),(6,5.7));a.add_patch(Ellipse((6,5.8),1.3,1.6,fill=False,lw=2));a.add_patch(Ellipse((6,2),1.2,1.5,fill=False,lw=2));a.add_patch(Ellipse((3.7,4),2.8,3.8,fill=False,lw=2));line(a,(4.7,4),(6,4));text(a,6,5.7,'Plumule',13);text(a,6,2,'Radicle',13);text(a,7.5,5.9,'P');text(a,7.5,2,'Q');text(a,3.7,4,'R',20);save(f,21,15,'Biology','Read the two protective sheaths and lateral cotyledon.','Embryonal axis with plumule above and radicle below; enclosing upper P and lower Q; a large lateral R attached to the axis.','P surrounds the plumule, Q surrounds the radicle, and R is lateral to the embryonal axis.')
 f,a=board('Frontier orbital occupancies before ionisation')
