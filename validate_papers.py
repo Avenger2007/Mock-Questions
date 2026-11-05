@@ -140,7 +140,7 @@ def validate_subject(cuet_dir, subject_name):
             expl = q.get("explanation", "")
             # Look for explicit conclusion in explanation
             # Structured explanations state the key on an "Answer:" line; trust that line when present
-            m = re.findall(r"^Answer:[^\n]*?\(([A-D])\)", expl, re.MULTILINE) or \
+            m = re.findall(r"^(?:Answer|उत्तर):[^\n]*?\(([A-D])\)", expl, re.MULTILINE) or \
                 re.findall(r"(?:option|answer is|correct option is|correct answer is)\s+([A-D])\b", expl, re.IGNORECASE)
             if m:
                 last_m = m[-1].upper()

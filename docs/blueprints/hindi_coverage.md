@@ -1,0 +1,73 @@
+# Coverage map — CUET Hindi, Tests 1–15
+
+This map was written **before** any test, so that repeats are prevented rather than fixed later.
+
+**Rules:**
+- **Passage themes:** every passage theme is used **once** in the series (§A).
+- **Targets:** every target is tested **once** in the series. Targets are words, मुहावरे and लोकोक्तियाँ, संधि / समास / उपसर्ग / प्रत्यय words, अलंकार and रस examples, and रचनाएँ.
+  - Before a test is shipped, its targets are checked against the ledgers in §C, then added to them (`mark_hin.py`).
+  - Distractors may repeat.
+- **Closed sets:** the categories themselves (the rasas, the संधि types, the कारक, the समास types) recur, always with new examples.
+- **Weights:** each test follows the section weights of the blueprint (§3).
+
+## A. Passage themes per test (all original, ≤ 300 words)
+
+| Test | R1 तथ्यात्मक | R2 कथात्मक | R3 साहित्यिक |
+|---|---|---|---|
+| 1 | वर्षा जल संचयन और भूजल | नानी की पुरानी सिलाई मशीन | बसंत का आगमन (पद्य) |
+| 2 | योग और नियमित व्यायाम | बिजली गुल होने वाली रात | पहाड़ी गाँव की सुबह (गद्य) |
+| 3 | हिंदी भाषा का विकास: अपभ्रंश से खड़ी बोली तक | मेले में खोया बच्चा | किसान (पद्य) |
+| 4 | डिजिटल साक्षरता और ऑनलाइन धोखाधड़ी से बचाव | डाकिया चाचा की अंतिम चिट्ठी | नदी तट पर संध्या (गद्य) |
+| 5 | हिमालय के हिमनद | पहला वेतन | दीपक (पद्य) |
+| 6 | भारत की हथकरघा परंपरा | परीक्षा से पहले की रात | वर्षा की पहली बूँदें (गद्य) |
+| 7 | पक्षियों का प्रवास | बूढ़ा माली और आम का पेड़ | मातृभूमि (पद्य) |
+| 8 | कृत्रिम बुद्धिमत्ता: संभावनाएँ और सावधानियाँ | रेल की खिड़की से | शरद की चाँदनी (गद्य) |
+| 9 | भारतीय रेल की कहानी | कुम्हार का बेटा | पर्वत (पद्य) |
+| 10 | प्लास्टिक प्रदूषण | सैनिक का पत्र | पुराना घर (गद्य) |
+| 11 | भारत के लोकनृत्य और लोकगीत | छात्रावास का पहला दिन | वृक्ष की पुकार (पद्य) |
+| 12 | मिट्टी का स्वास्थ्य और जैविक खेती | नानी की कहानियाँ और मोबाइल | महानगर की भीड़ (गद्य) |
+| 13 | हिंदी पत्रकारिता का आरंभ | अजनबी की मदद | श्रम की महिमा (पद्य) |
+| 14 | बाघ संरक्षण और वन्यजीव अभयारण्य | बेटी की साइकिल | पतझड़ (गद्य) |
+| 15 | भारतीय डाक व्यवस्था | विदाई समारोह | समय (पद्य) |
+
+## B. Verbal-ability slots per test
+
+| Section | Qs | Slot plan |
+|---|---|---|
+| V1 क्रम-व्यवस्था | 4 | 1 शब्दकोश / वर्ण-क्रम, 1 वाक्यांशों से वाक्य, 1 वाक्यों से अनुच्छेद, 1 rotating (उद्गम, संधि-भेद, क्रिया-भेद, काल, अलंकार or writers by date) |
+| V2 सुमेलन | 5 | एक शब्द; मुहावरे / लोकोक्तियाँ; समास or संधि; रस, छंद or अलंकार; लेखक ↔ रचना (rotating with उपसर्ग / प्रत्यय or श्रुतिसम-भिन्नार्थक pairs) |
+| V3 सही शब्द / शुद्ध प्रयोग | 7 | वर्तनी 2, शुद्ध / अशुद्ध वाक्य 2, रिक्त स्थान 1, मुहावरा / लोकोक्ति 2 |
+| V4 शब्द-भंडार | 7 | पर्यायवाची 2, विलोम 2, अनेकार्थी 1, एक शब्द 1, शब्द-उद्गम 1. One V4 item per test is a multi-select |
+| V5 व्याकरण | 8 | संधि, समास, उपसर्ग and प्रत्यय (1 each), plus 4 rotating among संज्ञा, सर्वनाम, विशेषण, क्रिया, क्रिया-विशेषण, कारक, लिंग, वचन, काल and वाच्य |
+| V6 काव्यांग और साहित्य | 4 | अलंकार, रस, छंद and Hindi literature (1 each) |
+
+**Multi-selects:** each test has three, in different sections.
+
+## C. Ledgers (filled as tests are shipped)
+
+**What counts as a target:**
+- the key word of a synonym, antonym, अनेकार्थी, एक-शब्द, वर्तनी or उद्गम item
+- the मुहावरे and लोकोक्तियाँ tested
+- the संधि, समास, उपसर्ग and प्रत्यय words tested
+- the अलंकार, रस and छंद examples
+- the writers and works in literature items
+
+### C1 शब्द (पर्यायवाची, विलोम, अनेकार्थी, एक शब्द, वर्तनी, उद्गम)
+
+| Test | Targets |
+|---|---|
+
+### C2 मुहावरे और लोकोक्तियाँ
+
+| Test | Targets |
+|---|---|
+
+### C3 व्याकरण के उदाहरण (संधि, समास, उपसर्ग, प्रत्यय, लिंग, वचन)
+
+| Test | Targets |
+|---|---|
+
+### C4 काव्यांग और साहित्य (अलंकार, रस और छंद के उदाहरण; लेखक और रचनाएँ)
+
+| Test | Targets |
+|---|---|
