@@ -24,7 +24,8 @@ def norm(s): return re.sub(r'[\s.,;:!?\'"()\-–—।|‘’“”=]+',' ',s.lo
 old=[]
 for f in glob.glob('CUET/Hindi/CUET HINDI TEST *.json'):
     o=json.load(open(f,encoding='utf-8'))
-    if o.get('status')=='revised':
+    me=re.search(r'hin(\d+)\.json$',sys.argv[1]); me=int(me.group(1)) if me else -1
+    if o.get('status')=='revised' and o['test_number']!=me:
         for q in o['questions']: old.append((o['test_number'],q['sub_topic'],norm(q['question'].split('प्रश्न: ')[-1])[:200]))
 for i,q in enumerate(src,1):
     b=norm(q['question'])[:200]
