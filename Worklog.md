@@ -423,3 +423,29 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 ### Tools added
 - `docs/blueprints/geography.md` (pattern, PYQ analysis, unit quotas, difficulty, formats, out-of-scope list) and `docs/blueprints/geography_coverage.md` (case-set plan, unit rotation, fact ledger).
 - `tools/cuet_geo/` — compact draft format and converter, checker, builder, ledger marker, ship script, item patcher and series re-indexer; drafts of all 15 tests in `drafts/`.
+
+## Hindi (102) — revised to the CUET 2027 standard (completed 6 Nov 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `8baeb60` (blueprint, coverage map and tools), `7d76330` (pilot Test 1) … `9109907` (Test 15) on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | old papers, status `pending_revision` | **15 rewritten tests** (`CUET HINDI TEST 1–15.json`), planned first in a coverage map; status `revised` |
+| Paper structure | 50 compulsory | unchanged: 50 compulsory questions, 60 min, +5 / −1 (NTA pattern) |
+| Reading | mixed passages | per test 3 original passages × 5 questions: a factual prose passage, a narrative passage, and a literary piece (verse in odd tests, lalit prose in even tests). Themes include rainwater harvesting, Hindi journalism (उदंत मार्तंड), tiger conservation, the Indian postal system, a daughter's bicycle and a farewell speech |
+| Verbal ability | uneven | 35 questions in six fixed blocks: क्रम-व्यवस्था 4, सुमेलन 5, सही शब्द / शुद्ध प्रयोग 7, शब्द-भंडार 7, व्याकरण 8, काव्यांग और साहित्य 4, with rotating slots (संधि / समास, रस → अलंकार → छंद, मुहावरे / लोकोक्तियाँ, लेखक-रचना / श्रुतिसम / उपसर्ग) |
+| Difficulty | uneven | **8 easy / 32 medium / 10 hard in every test**; each passage runs easy, medium ×3, hard |
+| Formats | almost all direct | per test: 15 passage, 5 match-list, 4 sequence, 3 multi-select statements (in three different sections), 23 direct |
+| Explanations | 1–2 lines | every item: क्यों / अन्य विकल्प क्यों नहीं / मुख्य बिंदु |
+| Order and keys | section-wise | key 13 / 12 / 13 / 12 (odd tests) and 12 / 13 / 12 / 13 (even tests); sequence answers never in A-B-C-D order; match patterns differ within a test; correct option never clearly the longest |
+
+**Coverage ledger:** every target word, idiom, grammar example and literary example is recorded in `docs/blueprints/hindi_coverage.md` §C (C1 शब्द, C2 मुहावरे-लोकोक्तियाँ, C3 व्याकरण, C4 काव्यांग-साहित्य) and used once in the series. `hin_check.py` flags repeated targets (`REPEAT-TARGET`), sub-topic or stem overlap with earlier tests (`OVERLAP`) and over-long correct options (`LONGEST`). Every flag was cleared before shipping.
+
+**Verification:** `validate_papers.py CUET --subject "Hindi"` — 0 parse errors, 0 wrong counts, 0 key/explanation mismatches, 0 runs > 3, 0 self-referential options, 0 within- or cross-paper duplicate stems, 0 passage gaps, 0 difficulty deviations; series key A 25.1%, B 24.9%, C 25.1%, D 24.9%.
+
+**Known limits:** PYQs were analysed for pattern only; no question is copied. Classical example lines (दोहे, पद and well-known poems) are quoted as illustrations, as textbooks do. A few later छंद items (हरिगीतिका, बरवै, छप्पय, उल्लाला, गण) go slightly beyond the commonest school list because the core examples were already used.
+
+### Tools added
+- `docs/blueprints/hindi.md` (pattern, PYQ analysis, section plan, difficulty, formats, out-of-scope list) and `docs/blueprints/hindi_coverage.md` (passage themes, slot rotation, target ledgers).
+- `tools/cuet_hindi/` — compact draft format and converter, checker, ledger marker, ship script, item patcher, text editor and series re-indexer; drafts of all 15 tests in `drafts/`.

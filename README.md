@@ -38,7 +38,7 @@ Each file's `status` field reads `revised` (meets the standard) or `pending_revi
 | 6 | English | 101 | ✅ | 15 / 15 | [english.md](docs/blueprints/english.md) |
 | 7 | General Test | 501 | ✅ | 15 / 15 | [general_test.md](docs/blueprints/general_test.md) |
 | 8 | Geography | 313 | ✅ | 15 / 15 | [geography.md](docs/blueprints/geography.md) |
-| 9 | Hindi | 102 | ✅ | — | — |
+| 9 | Hindi | 102 | ✅ | 15 / 15 | [hindi.md](docs/blueprints/hindi.md) |
 | 10 | History | 314 | ✅ | — | — |
 | 11 | Mass Media | 318 | ✅ | — | — |
 | 12 | Mathematics | 319 | ✅ | — | — |
