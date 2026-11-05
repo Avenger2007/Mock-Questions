@@ -15,7 +15,7 @@ for(const [key,name,file] of outputs){
  const actual=sh.getRange(`A1:${letter(rows[0].length-1)}${rows.length}`).values;
  if(JSON.stringify(actual)!==JSON.stringify(rows))throw new Error('Round-trip changed metadata');
  const quote=v=>'"'+String(v??'').replaceAll('"','""')+'"';
- await fs.writeFile(path.join(root,'docs/blueprints',file),'\ufeff'+actual.map(r=>r.map(quote).join(',')).join('\r\n')+'\r\n');
+ await fs.writeFile(path.join(root,'docs/blueprints',file),'\ufeff'+actual.map(r=>r.map(quote).join(',')).join('\n')+'\n');
  console.log(file,actual.length-1,'records; workbook cell round-trip exact');
 }
 

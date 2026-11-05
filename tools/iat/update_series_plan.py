@@ -76,7 +76,7 @@ for leaf in catalog:
  assert candidates,leaf
  words=tokens(leaf['official_topic']+' '+leaf['official_parent'])
  def score(r):return len(words&tokens(r['focus']))/(max(1,len(words))**.5)-.10*loads[r['id']]
- overrides={'B-138':(21,12),'B-036':(23,14),'B-072':(24,13),'B-070':(24,13),'B-071':(24,13)}
+ overrides={'B-138':(21,12),'B-036':(23,14),'B-072':(24,13),'B-070':(24,13),'B-071':(24,13),'P-203':(22,60),'P-204':(22,60),'P-205':(22,60)}
  forced=overrides.get(leaf['topic_id'])
  chosen=lookup[forced] if forced else max(candidates,key=score);hits=words&tokens(chosen['focus']);loads[chosen['id']]+=1;owners[chosen['id']].append(leaf['topic_id'])
  # A text-evidence candidate is disclosed as such, never marked academically covered by a word match.
@@ -91,7 +91,7 @@ extra=['syllabus_scope_ids','syllabus_targets','syllabus_anchor','source_json','
 plan=[]
 for r in slots:
  out=dict(r);key=int(r['test']),int(r['question']);q,path=actual.get(key,({},''))
- out.update(syllabus_scope_ids=';'.join(owners[r['id']]),syllabus_targets='; '.join(v['official_topic'] for v in catalog if v['planned_owner']==r['id']),syllabus_anchor=q.get('syllabus_anchor','Assigned official scope IDs; primary/contrast alignment must be checked before drafting'),source_json=path,source_question_sha256=hashlib.sha256(q['question'].encode()).hexdigest() if q else'',semantic_review_status='full-bank screen and authored comparison recorded; independent review pending' if key[0] in (18,19) else 'earlier review evidence retained' if q else 'not authored; compare object, constraints, method, conclusion and distractors against entire current bank',required_before_authoring='' if q else'Validate every assigned scope ID; sharpen or replace brief; solve independently; compare PYQ demand; reject cosmetic reuse and unlisted extensions',plan_updated='2026-11-05')
+ out.update(syllabus_scope_ids=';'.join(owners[r['id']]),syllabus_targets='; '.join(v['official_topic'] for v in catalog if v['planned_owner']==r['id']),syllabus_anchor=q.get('syllabus_anchor','Legacy authored item; explicit fine-grained syllabus anchor must be verified') if q else 'Assigned official scope IDs; primary/contrast alignment must be checked before drafting',source_json=path,source_question_sha256=hashlib.sha256(q['question'].encode()).hexdigest() if q else'',semantic_review_status='full-bank screen and authored comparison recorded; independent review pending' if key[0] in (18,19) else 'earlier review evidence retained' if q else 'not authored; compare object, constraints, method, conclusion and distractors against entire current bank',required_before_authoring='' if q else'Validate every assigned scope ID; sharpen or replace brief; solve independently; compare PYQ demand; reject cosmetic reuse and unlisted extensions',plan_updated='2026-11-05')
  plan.append(out)
 assert len(plan)==1500 and len({r['id'] for r in plan})==1500
 assert all(sum(int(r['test'])==t for r in plan)==60 for t in range(1,26))
