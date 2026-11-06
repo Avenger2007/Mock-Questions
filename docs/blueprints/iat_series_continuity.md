@@ -1,8 +1,10 @@
 # IAT series: restart and repetition checks
 
-The Git repository is the project source of truth. **Remote preservation remains blocked:** GitHub rejected the previously supplied credential during this batch. The remotely verified base is `30d1c8fef0cba8641c38a27765254c15994484c2` on `iat-tests-18-19`; Tests 20–23 have local commits and must be recovered from the download bundle or pushed with working credentials. Do not assume that a local commit is on GitHub.
+The Git repository is the source of truth. Current branch: `iat-tests-24-25`, based on `a46c8f180273d2bc44f7be27eb125873d97a2807`. All 25 papers / 1,500 questions are authored review drafts. The previous23 canonical papers are byte-unchanged. There is no next test to generate under this 25-paper plan.
 
-Tests 1–23 are authored review drafts. The current branch is `iat-tests-22-23`, based on the completed local Tests 20–21 checkpoint `ba94103947ecbe2eca9fa681cb13ee8eb255e1f2`. It preserves all 1,260 earlier canonical questions byte-for-byte. The next papers are Tests 24 and 25. Read `IISER/review/IAT_NEW_TESTS_22_23_REVIEW_NOTES.md`, the updated CSV/TSV plan, assigned syllabus entries and future-angle register before drafting. Independent academic and timed review remain required before student release. The recovery bundle includes unpublished Tests 20–23 history. No branch was deleted or force-pushed; main and earlier named branches remain intact.
+Read `IISER/review/IAT_NEW_TESTS_24_25_REVIEW_NOTES.md`, `tests24_25/scope_evidence_unresolved.json`, current instructions and canonical questions before further revision. Next work is independent academic/timed review and explicit whole-bank reconciliation of 228 unmapped scope entries; neither those entries nor broad mapped phrases establish actual gaps without inspecting questions. Do not auto-promote reservations to coverage or regenerate frozen JSON from historical TSVs. IDs/options/figures remain fixed for future corrections.
+
+**Remote preservation is blocked.** The noninteractive push failed for missing working authentication; the old token was rejected in the preceding batch. The remotely verified base remains `30d1c8fef0cba8641c38a27765254c15994484c2` on `iat-tests-18-19`. The recovery bundle preserves unpublished Tests 20–25. Main and earlier branches were not deleted or force-pushed. Preserve the download or complete and verify an authenticated push before relying on remote recovery.
 
 | Material | Versioned location | Use |
 |---|---|---|
@@ -10,7 +12,7 @@ Tests 1–23 are authored review drafts. The current branch is `iat-tests-22-23`
 | PYQ source inventory | `PYQ/IAT/manifest.json`, `PYQ/IAT/README.md`, `PYQ/IAT/md/`, `PYQ/IAT/pdf/` | Verify year, provenance and original task style |
 | Tagged PYQ evidence | `docs/blueprints/iat_pyq_ledger.json`, `iat_pyq_analysis.md`, `iat_pyq_chapter_counts.md` | Chapter and reasoning-demand calibration |
 | 25-test reservation | `docs/blueprints/iat_25_test_plan.md`, `iat_25_test_slots.tsv` | 1,500 IDs, chapter families, distinct angle seeds and authored status |
-| Authored questions | `IISER/IAT TEST 1.json`, `IISER/IAT NEW TEST 2.json` through `IAT NEW TEST 23.json`, then subsequent papers | Compare actual stems, methods, traps, figures and solutions |
+| Authored questions | `IISER/IAT TEST 1.json`, `IISER/IAT NEW TEST 2.json` through `IAT NEW TEST 25.json`, then subsequent papers | Compare actual stems, methods, traps, figures and solutions |
 | Figures and review | `IISER/images/`, `IISER/IAT_images.md`, `IISER/review/` | Check image purpose and PDF output |
 
 For each next paper: fetch the latest remote state; inspect the relevant 60 reservations against the entire authored corpus and PYQ ledger; write a distinct task and solution for every slot; update the slot's authored status and angle when it changes. Run `python validate_iat.py <new-paper.json>` and `python tools/iat/check_series_overlap.py` before a full editorial semantic comparison. The overlap screen flags exact, number-swapped and similar stems across papers, but does not catch reworded methods or identical traps reliably. A reviewer must compare *reasoning angle, data representation, conclusion and distractor mechanism* as well as wording. Same syllabus theme may recur; the question task should not.

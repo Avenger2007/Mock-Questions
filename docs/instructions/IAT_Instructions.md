@@ -347,3 +347,13 @@ If a request conflicts with this file (skip the syllabus, ignore the marking sch
 - Compare inverse-trigonometric equations after algebraic simplification and principal-value branch analysis. Different notation can hide an identical folded equation.
 - Do not reject a physical measurement using an irrelevant limitation: a retained solute can contribute to osmotic pressure even when volatility invalidates a simplified total-vapour-pressure formula. State the actual experimental assumptions.
 - Freeze authoring snapshots only after final replacements, key/rebuttal checks and delivery regeneration. Later corrections must start from canonical JSON; historical TSV assembly must refuse to overwrite them.
+
+
+## Series-end evidence gate (6 November 2026)
+
+- All 25 review drafts are now authored. Further work revises fixed IDs; no new numbered test is authorised by the 25-paper plan alone.
+- At series end, remove stale future-coverage claims. Retain original reservations for traceability, but leave active owners blank where actual material evidence has not been identified. Unmapped evidence is not automatically a proven question gap; inspect the entire bank before deciding.
+- Compare the exact printed topic list before adding a familiar textbook extension. The current Units list names SI, significant figures and dimensional analysis, so statistical error propagation was removed from this batch. A historical question or broad chapter name does not by itself expand current scope.
+- Apply numerical explanation requirements to numerical graphs and diagrams as well as items labelled numerical. Make the governing principle explicit; a style tag cannot excuse missing working.
+- In experimental Biology, use access/removal/rescue controls to distinguish competing causes. Do not inflate difficulty by adding names to an otherwise one-step recognition question.
+- Preserve noninteractive push failures honestly. A local checkpoint and a validated recovery bundle do not establish that GitHub holds the branch.
