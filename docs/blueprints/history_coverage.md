@@ -52,69 +52,81 @@ This map was written **before** any test, so that repeats are prevented rather t
 | Test | Answer facts |
 |---|---|
 | T1 | drains laid out first, harappan brick ratio 4-2-1, citadel west raised platform, harappan house privacy, drainage implies planning authority |
+| T2 | harappa brick robbers railway, mohenjodaro great bath, kalibangan ploughed field, dholavira water reservoirs, harappan script undeciphered, harappan script right to left, harappan script not alphabetic, daya ram sahni harappa, lothal gujarat, archaeogenetics ancient dna rakhigarhi |
 
 ### H2 Early states: inscriptional evidence
 
 | Test | Answer facts |
 |---|---|
 | T1 | prayaga prashasti harisena, junagadh sudarshana lake, prabhavati gupta land grant, ashokan inscriptions dhamma prakrit, chandragupta maurya c 321 bce, ashoka 3rd c bce, kanishka kushana, samudragupta 4th c ce, megasthenes indica, punch-marked coins silver copper |
+| T2 | sreni guild, gahapati head of household, agrahara land to brahmanas, gana sangha oligarchy, magadha rise reasons, rajagaha pataliputra capital, prinsep mint officer, dhamma mahamatta |
 
 ### H3 Social histories: the Mahabharata
 
 | Test | Answer facts |
 |---|---|
 | T1 | eight forms of marriage, kanyadana father's duty, paternal estate divided among sons, endogamy, ghatotkacha bhima hidimba, mahabharata composed over 1000 years |
+| T2 | varna duties brahmanas kshatriyas vaishyas shudras, sukthankar critical edition 1919, mlechchha meaning, duryodhana eldest kaurava |
 
 ### H4 Buddhism and Jainism
 
 | Test | Answer facts |
 |---|---|
 | T1 | vinaya pitaka rules for sangha, sutta pitaka teachings, abhidhamma pitaka philosophy, therigatha bhikkhunis, tirthankara meaning, amaravati andhra pradesh, bodhisatta mahayana |
+| T2 | lumbini birth, bodh gaya enlightenment, sarnath first sermon, kusinagara mahaparinibbana, jaina five vows, makkhali gosala fatalist, vishnu ten avatars |
 
 ### H5 Travellers' accounts
 
 | Test | Answer facts |
 |---|---|
 | T1 | kitab-ul-hind al-biruni, rihla ibn battuta, travels in the mughal empire bernier, abdur razzaq ambassador herat, al-biruni barriers, ibn battuta muhammad bin tughlaq, al-biruni 11th century, ibn battuta 1333, abdur razzaq 1440s, bernier 1656-68 |
+| T2 | al-biruni arabic writer, al-biruni translated sanskrit works, al-biruni caste persia comparison, bernier physician dara shukoh, barbosa south india trade |
 
 ### H6 Bhakti–Sufi traditions
 
 | Test | Answer facts |
 |---|---|
 | T1 | 12 alvars 63 nayanars, karaikkal ammaiyar nayanar, tevaram nayanars, basavanna virashaiva, khanqah hospice, bijak kabirpanth |
+| T2 | muinuddin chishti ajmer, nizamuddin auliya delhi, fariduddin ajodhan, salim chishti fatehpur sikri, appar nayanar 7th century, basavanna 12th century, nizamuddin d 1325, guru nanak 1469, mirabai raidas guru, guru nanak nankana sahib |
 
 ### H7 Vijayanagara
 
 | Test | Answer facts |
 |---|---|
 | T1 | colin mackenzie surveyor, krishnadeva raya amuktamalyada, domingo paes, abdur razzaq vijayanagara visit, rama raya talikota 1565, hampi pampadevi, vijayanagara dynasties |
+| T2 | vijayanagara founded 1336, krishnadeva raya accession 1509, talikota 1565, mackenzie hampi 1800, tungabhadra north-east basin, kamalapuram tank, hiriya canal, abdur razzaq seven fortifications, amara-nayaka military commanders, kudirai chettis horse merchants |
 
 ### H8 Mughal empire and agrarian society
 
 | Test | Answer facts |
 |---|---|
 | T1 | khud-kashta, pahi-kashta, muqaddam headman, jins-i kamil, ain-i akbari abul fazl, jahangir tobacco ban, muqaddam chosen by elders, panchayat expulsion power, panchayat common fund |
+| T2 | polaj, chachar banjar fallow years, one-third average produce revenue, ain prices wages agra region, land classification graded revenue |
 
 ### H9 Colonialism and rural society
 
 | Test | Answer facts |
 |---|---|
 | T1 | permanent settlement 1793, sunset law, jotedars rich peasants, fifth report 1813, paharias rajmahal hills, 1793 permanent settlement, 1813 fifth report, santhal revolt 1855-56, deccan riots 1875 |
+| T2 | ryotwari bombay deccan, limitation law 1859, lathyal, jotedars rich peasants, cotton boom american civil war 1861, burdwan auction 1797, buchanan physician survey |
 
 ### H10 The Revolt of 1857
 
 | Test | Answer facts |
 |---|---|
 | T1 | shah mal barout, gonoo singhbhum, ahmadullah shah faizabad, kunwar singh arrah, subsidiary alliance wellesley 1798, meerut 10 may 1857, dalhousie cherry awadh |
+| T2 | cartridges greased rumour, bone dust flour rumour, plassey hundred years prophecy, plassey 1757, awadh subsidiary alliance 1801, awadh annexation 1856, revolt 1857 meerut, bahadur shah zafar rangoon, thomas jones barker relief of lucknow |
 
 ### H11 Mahatma Gandhi and the national movement
 
 | Test | Answer facts |
 |---|---|
 | T1 | khilafat non-cooperation, chauri chaura 1922 withdrawal, lawyers boycott courts, champaran 1917, rowlatt satyagraha 1919, lahore purna swaraj 1929, gandhi-irwin pact 1931, gandhi return 1915, lahore 1929 nehru president, quit india august 1942 |
+| T2 | fortnightly reports home department, hind swaraj 1909, harijan journal, gandhi autobiography, kheda 1918, non-cooperation 1920, salt march 1930, quit india 1942, champaran bihar, second round table 1931, gandhi assassination 30 january 1948 |
 
 ### H12 The making of the Constitution
 
 | Test | Answer facts |
 |---|---|
 | T1 | rajendra prasad president ca, ambedkar drafting committee, nehru objectives resolution, s n mukherjee chief draughtsman, ca 11 sessions 165 days, ca elected by provincial legislatures, muslim league boycott, gandhi hindustani national language |
+| T2 | three lists union state concurrent, no national language declared, ambedkar strong centre, ca first meeting 9 december 1946, ng ranga minorities poor, bn rau constitutional adviser |
