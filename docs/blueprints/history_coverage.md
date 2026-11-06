@@ -65,6 +65,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | classify finds material, classify finds function, indirect evidence sculpture, function of artefacts uncertain, magan oman, dilmun bahrain, shortughai afghanistan, mohenjodaro sindh, saddle querns grinding cereals, sealing clay impression |
 | T13 | no rulers equal status view, several rulers view, single state view, no king names known, copper bronze tools, ships on seals, faience luxury large centres, bathroom paved bricks |
 | T14 | cunningham chinese pilgrims accounts, cunningham early historic interest, cunningham could not date seal, cunningham missed harappa age, harappan sites north to south, courtyard cooking weaving, partition sites pakistan search india, harappan 4500 years |
+| T15 | chanhudaro craft production, carnelian firing red, nageshwar balakot shell, waste craft centre indicator, khetri copper expedition |
 
 ### H2 Early states: inscriptional evidence
 
@@ -84,6 +85,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | mahajanapadas sixth century bce, megasthenes visit c 300 bce, kushana mat statues, harshacharita seventh century, cities on routes, votive inscriptions craftspeople, nbpw fine pottery, cities linked countryside, indica fragments, inscriptions hard surfaces |
 | T13 | magadha iron mines, magadha elephants forests, magadha ganga communication, magadha fertile land, inscriptions damaged faint, not all deciphered, inscriptions commissioner perspective, inscriptions ignore daily life, rajagaha house of king, kushana central asia nw india |
 | T14 | janapada land jana, oligarchy power shared, samantas landholders, sreni guild, mahajanapadas fortified capitals, ashoka first inscriptions stone, magadha bihar |
+| T15 | mahajanapadas west to east, plough fertile alluvium, irrigation not only state, hoe hilly tracts, irrigation wells tanks canals, megasthenes ambassador chandragupta, brahmi ashokan script |
 
 ### H3 Social histories: the Mahabharata
 
@@ -103,6 +105,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | gotra named after vedic seer, woman took husband gotra, gotami-puta son of gotami, satavahana queens kept father gotra, brahmanical rules not universal |
 | T13 | gandhari advice peace, ekalavya thumb, ghatotkacha bhima hidimba, draupadi question dice, varna hierarchy order, manusmriti women six means, hastinapura uttar pradesh |
 | T14 | mahabharata single author false, mahabharata 100000 verses, range social situations, narrative didactic sections, hastinapura five levels, varna divine origin claim, pandavas won kurukshetra |
+| T15 | mahasammata great elect, itihasa thus it was, nishada forest dweller, gotra vedic seer group, satakani unique brahmana, satakani no intermarriage claim, satakani married rudradaman kin, satakani destroyed kshatriya pride, manusmriti men seven means, vaishya agriculture trade |
 
 ### H4 Buddhism and Jainism
 
@@ -122,6 +125,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | lumbini birth, bodh gaya enlightenment, sarnath first sermon, kusinagara mahaparinibbana, texts written after buddha, dipavamsa mahavamsa sri lanka, pali older sanskrit later, pilgrims took texts china, middle path moderation, sanchi madhya pradesh |
 | T13 | satavahanas donated stupas, ivory workers guild sanchi gateway, ordinary donors stupas, not only kings donated, empty seat meditation, stupa mahaparinibbana symbol, wheel first sermon, tree enlightenment symbol, anda hemispherical mound, jaina texts prakrit |
 | T14 | stupa parts bottom to top, sanchi madhya pradesh, amaravati andhra pradesh, sarnath uttar pradesh, bodh gaya bihar, sanchi animals snakes popular traditions, sangha buddhist order |
+| T15 | nibbana extinguishing desire, vihara monastery, upasika lay woman follower, anicca impermanent, vishnu principal deity, linga human form, local deities identified, bhakti not sacrifice, gajalakshmi maya sculpture, tipitaka three baskets |
 
 ### H5 Travellers' accounts
 
@@ -141,6 +145,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | battuta two crops a year, battuta bazaars mosque temple, daulatabad rivalled delhi, postal system merchants credit, al-biruni euclid sanskrit, kitab chapter structure question, muhammad bin tughlaq patron learning |
 | T13 | bernier no private property land, landholders could not pass land children, no improving landlords, poor mass rich minority no middle, crown ownership not in mughal records |
 | T14 | bernier arrives 1656, bernier leaves 1668, bernier published 1670, bernier translated european languages, travellers noted unfamiliar, insiders took for granted, travellers background bias, travellers languages varied, al-biruni patanjali grammar, bernier shah jahan reign |
+| T15 | seydi ali reis turkey, monserrate spain, mahmud wali balkhi afghanistan, peter mundy england, bernier artisans no incentive, cities opportunities drive resources, al-biruni khwarizm uzbekistan |
 
 ### H6 Bhakti–Sufi traditions
 
@@ -160,6 +165,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | sufis criticised dogma, sufis devotion love god, sufism developed 11th century, sufis interpreted quran, khalifa successor, dargah tomb shrine, urs death anniversary, barakat spiritual grace, tamil veda nalayira, shabad hymns nanak |
 | T13 | nanak kartarpur centre, angad successor 1539, arjan compiles adi granth 1604, gobind singh tegh bahadur compositions, alvar immersed devotion, nayanar leaders devotees shiva, virashaiva heroes of shiva, lingayat wearers of linga, kabir julaha, basavanna kalachuri |
 | T14 | alvars tamil compositions, vachanas kannada, nanak punjabi hymns, kabir sant bhasha, mirabai merta, mirabai sisodia mewar, mirabai defied norms krishna, mirabai no text oral, inam tax free land khanqah, akbar ajmer fourteen times |
+| T15 | tughluq first sultan visit ajmer, jahanara ajmer pilgrimage, chola temples grants, akbar ajmer fourteen times, silsila chain, qadiri abdul qadir jilani, chishti town chisht afghanistan, silsila naming not burial, nayanars hostility jainism buddhism, tasawwuf sufism term |
 
 ### H7 Vijayanagara
 
@@ -179,6 +185,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | abdur razzaq visit 1440s, paes visit 1520s, krishnadeva raya died 1529, aravidu 1542, kings palace largest enclosure, audience hall pillar slots, mahanavami dibba festival platform, kamalapuram tank royal centre, muslim quarter mosques mandapa style, portuguese trading military stations |
 | T13 | chinese porcelain urban core, ordinary houses little evidence, shrines throughout urban core, wells tanks water sources, raichur doab 1512, orissa subdued 1514, bijapur defeated 1520, nagalapuram mother, city sacked abandoned after 1565, rivalry deccan sultans fertile valleys |
 | T14 | abdur razzaq seven fortifications, paes rome size, barbosa ordinary houses, nikitin russian merchant, walls no mortar wedge blocks, indo-islamic gateway arch dome, sangama first dynasty |
+| T15 | krishnadeva raya accession 1509, raichur doab 1512, orissa subdued 1514, bijapur defeated 1520, vitthala maharashtra form vishnu, vijayanagara markets spices textiles gems, vijayanagara krishna river to south |
 
 ### H8 Mughal empire and agrarian society
 
@@ -198,6 +205,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | two crops a year kharif rabi, bengal fifty rice varieties, new world tomatoes potatoes chillies, peasants grew cash crops, 85 percent villages, abundant land mobile peasants, ain persian |
 | T13 | mughal emperors order, forest products honey beeswax lac, zamindars did not cultivate |
 | T14 | ottomans turkey, safavids iran, ming china, mughals india empire, ain totalling errors, ain data not uniform, ain prices wages agra region, ain rich statistics, careri silver india, mughal silver coins |
+| T15 | abul fazl akbar court, careri italian traveller silver, rani bhabani rajshahi, lohanis overland trade, forest products demand, forest mawas refuge, elephants captured sold, forest dwellers not isolated, ain third volume akbar nama, kisan asami peasants |
 
 ### H9 Colonialism and rural society
 
@@ -217,6 +225,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | hodges rajmahal 1780s, buchanan journey 1810, santhal pargana 1855, cotton boom ends 1865, lathyal, benami fictitious name, kist instalment, mahal revenue estate, burdwan raja mother transfer, zamindars paid tribute paharias |
 | T13 | buchanan team surveyors, buchanan minerals, buchanan company interests, buchanan not just landscape, hodges picturesque romantic, diwani 1765, deccan cotton for britain |
 | T14 | supa poona 12 may 1875, ryots burnt account books bonds, police posts villages, commission evidence statements statistics, official reports concerns |
+| T15 | jotedars haowladars gantidars mandals, women property not taken over, rajmahal jharkhand, deccan price fall 1832 |
 
 ### H10 The Revolt of 1857
 
@@ -236,6 +245,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | signal evening gun bugle, bell of arms seized, treasury plundered, jail telegraph record room attacked, lucknow capital awadh, 85 sepoys sentenced meerut, rebels attacked moneylenders |
 | T13 | jhansi raja death, lakshmi bai adopted son, jhansi rises 1857, rani lakshmi bai dies 1858, awadh nursery bengal army, last mughal emperor, taluqdars peasants united |
 | T14 | 85 sepoys sentenced meerut, meerut jail comrades freed, sepoys ride to delhi, sepoys at red fort gates, subsidiary alliance protection, british contingent stationed, ally pays for troops, no treaties without permission, sati abolished 1829, widow remarriage 1856, western education english, annexation misgovernment heir, revolt began sepoys |
+| T15 | shah mal barout, gonoo singhbhum, hazrat mahal lucknow, bahadur shah delhi, british images saviours, british images revenge, first war of independence, nationalists not villains, wellesley not awadh annexation, rebels attacked moneylenders |
 
 ### H11 Mahatma Gandhi and the national movement
 
@@ -255,6 +265,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | salt march women large numbers, salt march raj not forever, salt march european american press, salt march not chauri chaura, rajendra prasad bihar, rajagopalachari madras, pant united provinces, patel gujarat, gandhi claimed congress represented all india, lal bal pal radicals, dandi gujarat coast |
 | T13 | labour government 1945, direct action day 1946, gandhi calcutta 15 august 1947, gandhi absent delhi celebrations, northern andhra hill tribes forest laws, awadh peasants taxes, kumaun refused loads, students left government schools, noncooperation renounce titles councils, civil disobedience salt law, quit india do or die, kheda revenue remission, khilafat caliphate restoration, dandi march name |
 | T14 | gandhi autobiography retrospective, gandhi letters published, newspapers gandhi journals, police reports bias, prisoners released pact, champaran tenure crops choice, hind swaraj meaning home rule, congress ministries resign war consultation |
+| T15 | ministries cripps labour direct action order, jp narayan underground, kamaladevi women salt protests, ali brothers khilafat, godse assassination, gandhi baba maharaj names, non-cooperation 1920, gandhi resumed civil disobedience 1932 |
 
 ### H12 The making of the Constitution
 
@@ -274,3 +285,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | english 15 years, limited franchise 1946, constituent assembly framed constitution, princely states represented assembly |
 | T13 | draft discussed clause by clause, 26 january chosen 1930 link, joint electorates adopted, rajendra prasad first president india |
 | T14 | six key members ca, ca met new delhi, ca three years |
+| T15 | cabinet mission plan 1946, league boycotts assembly 1946, gandhi assassinated before adoption, constitution adopted 26 november 1949, constitution in force 1950 not 1949, patel british left mischief, temples open all castes |
