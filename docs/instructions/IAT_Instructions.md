@@ -338,3 +338,12 @@ Adjust the section order and ranges to match the real paper once the PYQs are an
 If a request conflicts with this file (skip the syllabus, ignore the marking scheme, generate by script), do not comply: explain the conflict and ask how to proceed.
 
 > **Legacy note:** the old generator scripts in `IISER/` (`gen_paper*.py`, `generate_paper*.py`) belong to an earlier, templated approach and must not be used to write content.
+
+
+## Additional checks from Tests 22–23 (6 November 2026)
+
+- Compare the actual governing task and conclusion with earlier questions. Changing the carbonyl partner in the same Tollens/iodoform inference or replacing equal initial activities by equal numbers in a mixture problem can still repeat an existing task. Read the earlier solution before accepting a replacement.
+- Check each fine-grained scope ID against its full printed parent. A d-block example is not evidence for s-block; chemical basicity is not evidence for physical properties; a first-order differential equation does not automatically test logarithmic differentiation. Record the assessed aspect and any residual breadth. A future assignment is a backstop, not completed coverage.
+- Compare inverse-trigonometric equations after algebraic simplification and principal-value branch analysis. Different notation can hide an identical folded equation.
+- Do not reject a physical measurement using an irrelevant limitation: a retained solute can contribute to osmotic pressure even when volatility invalidates a simplified total-vapour-pressure formula. State the actual experimental assumptions.
+- Freeze authoring snapshots only after final replacements, key/rebuttal checks and delivery regeneration. Later corrections must start from canonical JSON; historical TSV assembly must refuse to overwrite them.

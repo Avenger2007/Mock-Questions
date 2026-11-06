@@ -35,15 +35,21 @@ def main():
         data = json.loads(path.read_text(encoding='utf-8'))
         if isinstance(data.get('questions'), list):
             papers.append((path, data['questions']))
+    cache = {(p.name, q['id']): (normalise(q['question']), normalise(q['question'], True)) for p, qs in papers for q in qs}
     issues = []
     for (left_path, left), (right_path, right) in itertools.combinations(papers, 2):
         for a, b in itertools.product(left, right):
             if a.get('subject') != b.get('subject'):
                 continue
-            first, second = normalise(a['question']), normalise(b['question'])
-            masked_a, masked_b = normalise(a['question'], True), normalise(b['question'], True)
-            score = difflib.SequenceMatcher(None, first, second).ratio()
-            masked_score = difflib.SequenceMatcher(None, masked_a, masked_b).ratio()
+            first, masked_a = cache[(left_path.name, a['id'])]
+            second, masked_b = cache[(right_path.name, b['id'])]
+            plain = difflib.SequenceMatcher(None, first, second)
+            masked = difflib.SequenceMatcher(None, masked_a, masked_b)
+            # quick_ratio is an upper bound: pruning cannot remove a candidate.
+            if plain.quick_ratio() < args.threshold and masked.quick_ratio() < args.threshold:
+                continue
+            score = plain.ratio()
+            masked_score = masked.ratio()
             if first == second or masked_a == masked_b or max(score, masked_score) >= args.threshold:
                 issues.append({
                     'left': f"{left_path.name}:{a['id']}",

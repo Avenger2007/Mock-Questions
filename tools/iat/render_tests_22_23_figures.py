@@ -41,21 +41,17 @@ line(a,(3.5,4.1),(6.4,4.1));txt(a,4.95,4.65,"3′O — P — O5′",14)
 line(a,(8,4.1),(9.3,4.1));txt(a,9.0,5,"Free 3′ OH",12);txt(a,5,1,"Boxes show sugar attachment positions; bases and OH labels are explicit.",12)
 save(f,23,14,'Biology','Read sugar composition and the exposed backbone extension end.','Two sugars each2OH; G/Ubasesat1;free5phosphateleft;internucleotide3O-P-O5 link;free3OHright.','Two 2-prime-hydroxyl sugars are connected from 3-prime oxygen through phosphate to 5-prime oxygen; a free 3-prime OH is on the right.')
 f,a=board('Nitrophenol positional isomers')
-for cx,sub,lab in [(2.5,np.pi/6,'X: ortho'),(7.5,-np.pi/2,'Y: para')]:
+for cx,sub,lab in [(2.5,np.pi/6,'P: ortho'),(7.5,-np.pi/2,'Q: para')]:
  ang=np.pi/2+np.arange(7)*np.pi/3;pts=np.column_stack([cx+1.15*np.cos(ang),4.2+1.15*np.sin(ang)]);a.plot(pts[:,0],pts[:,1],'k',lw=2);a.add_patch(Circle((cx,4.2),.57,fill=False,lw=1.5));line(a,(cx,5.35),(cx,5.8));txt(a,cx,6.1,'OH',16)
  p=np.array([cx,4.2])+1.15*np.array([np.cos(sub),np.sin(sub)]);q=np.array([cx,4.2])+1.7*np.array([np.cos(sub),np.sin(sub)]);line(a,p,q);txt(a,*(q+.25*np.array([np.cos(sub),np.sin(sub)])),'NO₂',15);txt(a,cx,1.2,lab,16)
-save(f,22,16,'Chemistry','Compare the geometrical opportunities for internal hydrogen bonding.','Two aromatic rings; OH atC1both;NO2adjacentX/oppositeY; no hydrogen-bond or dimer answer arrows.','The nitro group is adjacent to OH in X and opposite OH in Y.')
+save(f,22,16,'Chemistry','Compare the geometrical opportunities for internal hydrogen bonding.','Two aromatic rings; OH atC1both;NO2adjacentP/oppositeQ; no hydrogen-bond or dimer answer arrows.','The nitro group is adjacent to OH in P and opposite OH in Q.')
 f,a=board('Unsaturated hydroxy acid: explicit substituents')
 for y in [3.94,4.06]:line(a,(4.2,y),(5.8,y))
 txt(a,4,4,'C',20);txt(a,6,4,'C',20)
 for p,q,lab in [((3.8,4.2),(2.5,5.4),'CH₂OH'),((3.8,3.8),(2.5,2.6),'H'),((6.2,4.2),(7.5,5.4),'H'),((6.2,3.8),(7.5,2.6),'COOH')]:line(a,p,q);txt(a,*q,lab,18)
 save(f,22,25,'Chemistry','Assign principal group, locants and double-bond configuration.','C=C withCH2OHupperleft/Hlowerleft;Hupperright/COOHlowerright; no name or E/Zdescriptor.','CH2OH and COOH lie on opposite sides of the central double bond.')
-f,a=board('Seven-proton species: supplied orbital occupancy')
-for x,lab,ar in [(1.4,'1s','↑↓'),(3.0,'2s','↑'),(4.6,'2p','↑'),(5.7,'','↑'),(6.8,'','↑'),(8.6,'3s','↑')]:
- a.add_patch(Rectangle((x-.45,3.4),.9,1.0,fill=False,lw=2));txt(a,x,3.9,ar,24)
- if lab:txt(a,x,2.7,lab,18)
-line(a,(4.15,2.15),(7.25,2.15));txt(a,5.7,1.65,'Three separate 2p orbitals',14)
-save(f,23,18,'Chemistry','Count occupation and spin before classifying charge and excitation.','1spair,2ssingle,threeparallel2psingles,3ssingle;nucleus7protons; no element or charge answer.','The diagram contains one paired 1s orbital and five singly occupied orbitals across 2s, 2p and 3s.')
+f,a=plt.subplots(figsize=(8,6));f.subplots_adjust(left=.16,bottom=.22,right=.94,top=.90);rr=np.linspace(0,12,600);pp=rr**2*(2-rr)**2*np.exp(-rr);a.plot(rr,pp/pp.max(),'k',lw=2);a.plot([0,2],[0,0],'ko');a.set(xlim=(0,12),ylim=(-.04,1.15),xticks=[0,2,4,6,8,10,12],yticks=[0,.5,1],xlabel='Radius r / a₀',ylabel='Radial probability P(r), relative');a.text(.5,-.24,'Angular distribution spherical; P(r)/r² has a positive limit at r=0.',transform=a.transAxes,ha='center',fontsize=12)
+save(f,23,18,'Chemistry','Distinguish an interior nodal shell from the radial origin and local density.','Radial P zero at0and2a0; positive inner/outerlobes; spherical angular distribution andpositiveP/r2limit stated; no orbital name.','Radial probability has two positive lobes separated by a node at 2a0; the origin is also zero from the shell factor.')
 f,a=plt.subplots(figsize=(8,6));f.subplots_adjust(left=.16,bottom=.14,right=.95,top=.93);xx=[0,1,2,3,4];yy=[0,40,-40,30,-20]
 for j in range(4):
  u=np.linspace(0,1,80);a.plot(j+u,(yy[j]+yy[j+1])/2+(yy[j]-yy[j+1])/2*np.cos(np.pi*u),'k',lw=2)
