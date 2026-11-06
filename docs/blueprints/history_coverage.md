@@ -60,6 +60,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | rakhigarhi haryana, kalibangan rajasthan, harappa punjab pakistan, dholavira kutch, cholistan banawali plough models, shortughai canals not punjab, dholavira reservoirs agriculture, fire altars kalibangan lothal, houses courtyard, cholistan sites abandoned 1800 bce |
 | T8 | stratigraphy layers, palaeobotany plant remains, archaeozoologists, archaeogenetics ancient dna, script on many objects signboard, kalibangan two crops furrows, indus valley civilisation |
 | T9 | seals long-distance communication, intact sealing untampered, seals animal motif script, early harappan before 2600, mature harappan 2600 1900 bce, cholistan sites abandoned 1800 bce, daya ram sahni harappa, streets grid right angles, priest-king statue, great bath citadel |
+| T10 | fish bones harappan diet, domesticated cattle sheep goat buffalo pig, wild boar deer gharial bones, chert weights, harappan script right to left, meluhha mesopotamia, harappa first site named |
 
 ### H2 Early states: inscriptional evidence
 
@@ -74,6 +75,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | bimbisara 6th century bce, mahapadma nanda 4th century bce, prabhavati gupta 5th century, harshavardhana 7th century, kautilya minister chandragupta, kalinga war remorse, samantas landholders |
 | T8 | prayaga prashasti harisena, prayaga on ashokan pillar, dakshinapatha kings released, prashasti sanskrit, prashasti limits |
 | T9 | prashasti praise, jataka previous births, epigraphy inscriptions, sudarshana lake junagadh, ashoka greek aramaic afghanistan, danguna village grant, pataliputra patna |
+| T10 | chandragupta maurya 321 bce, kalinga war 261 bce, kushana rule first century, samudragupta fourth century, taxila northwest centre, ujjayini malwa centre, tosali orissa centre, suvarnagiri karnataka centre, vellalar landowners, megasthenes six subcommittees |
 
 ### H3 Social histories: the Mahabharata
 
@@ -88,6 +90,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | shungas kanvas brahmanas, mauryas low origin, shakas mlechchhas, kuru lineage, mahabharata composition begins 500 bce, sukthankar critical edition 1919, hastinapura excavated 1951, critical edition completed 1966, purusha sukta, yudhishthira eldest pandava |
 | T8 | jatis not fixed, mandasor silk weavers lata, mandasor sun temple, purusha sukta, dharmasutras 500 bce, manusmriti 200 bce 200 ce, mandasor silk weavers 5th century, narrative didactic sections, kauravas sons dhritarashtra |
 | T9 | hidimba married bhima, bb lal hastinapura, vyasa author, ganesha scribe, paternal estate divided among sons, stridhana children inherit, royal women controlled land, dice duryodhana challenge, mahabharata sanskrit |
+| T10 | dhritarashtra blind king, pandu father pandavas, kunti mother pandavas, draupadi married five pandavas, only kshatriyas kings, fa xian clapper, war between cousins |
 
 ### H4 Buddhism and Jainism
 
@@ -102,6 +105,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | makkhali gosala fatalist, ajita kesakambalin materialist, mahavira karma renunciation, buddha individual agency, sangha simple life, bhikkhus alms, sangha equality, vessantara jataka sanchi, siddhartha gautama |
 | T8 | sanchi carved gateways, ajanta paintings jatakas, ellora kailashnatha monolith, barabar ajivika caves, buddha teaching 6th century bce, buddha images mathura taxila, amaravati discovered 1796, sanchi rediscovered 1818, vedic deities agni indra soma, upanishads atman brahman |
 | T9 | jainism life in stones, jaina scholars languages, jaina five vows, vedic deities agni indra soma, upanishads atman brahman, ashokan inscriptions dhamma prakrit, puranas simple sanskrit, shiva linga, be lamps unto yourselves |
+| T10 | mahapajapati gotami bhikkhuni, therigatha bhikkhunis, sangha consensus vote, bodhisattas mahayana, makkhali gosala ajivika, hinayana lesser vehicle |
 
 ### H5 Travellers' accounts
 
@@ -116,6 +120,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | al-biruni ghazni mahmud, ibn battuta muhammad bin tughlaq, bernier physician dara shukoh, monserrate jesuit akbar, bernier camp towns, al-biruni rejected pollution, ibn battuta qazi |
 | T8 | al-biruni language barrier, al-biruni religious difference, al-biruni insularity, ibn battuta envoy china, bernier published 1670, rihla arabic |
 | T9 | delhi 28 gates, bernier camp towns, al-biruni rejected pollution, barbosa south india trade, tarababad musicians market, kitab-ul-hind al-biruni |
+| T10 | battuta left tangier, battuta reached sind 1333, battuta qazi delhi, battuta china envoy 1342, monserrate jesuit akbar, tavernier jeweller, manucci never returned, abdur razzaq calicut, bernier contrasts europe, kitab-ul-hind arabic |
 
 ### H6 Bhakti–Sufi traditions
 
@@ -130,6 +135,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | alvars nayanars diverse backgrounds, karaikkal ammaiyar woman devotee, chola support shiva temples, ulatbansi upside-down, namghar shankaradeva, vachanas kannada |
 | T8 | basavanna questioned caste rebirth, kabir one reality, guru nanak rejected ritual, mirabai krishna devotion, nalayira compiled 10th century, hujwiri lahore 11th century, shankaradeva 15th century, khalsa 1699 gobind singh, baba farid adi granth, shaikh pir murshid |
 | T9 | jamaat khana hall, langar futuh charity, khanqah visitors all walks, ghiyaspur yamuna, chishti assimilated local traditions |
+| T10 | bijak granthavali adi granth, kabir many names ultimate reality, ulatbansi, nanak talwandi, mirabai raidas, hujwiri kashf-ul-mahjub, baba farid adi granth, alvars vishnu devotees, zikr remembrance |
 
 ### H7 Vijayanagara
 
@@ -144,6 +150,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | amara-nayakas collected taxes, amara-nayakas tribute court, amara-nayakas independent kingdoms, nicolo de conti 1420, virupaksha hall 1510, greenlaw photographs 1856, hampi world heritage 1986, king's palace largest enclosure, virupaksha form of shiva |
 | T8 | walls enclosed fields, paes rome size, kudirai chettis horse merchants, mackenzie virupaksha priests, chariot streets gopurams, krishnadeva raya amuktamalyada |
 | T9 | virupaksha sacred centre, hazara rama temple royal, lotus mahal name british, vitthala stone chariot, hindu suratrana, raya gopurams, hampi karnataka |
+| T10 | amara-nayakas territories, narapati lord of men, gajapati elephants, ashvapati horses, vijayanagara dynasties, mackenzie surveyor general, hiriya canal tungabhadra |
 
 ### H8 Mughal empire and agrarian society
 
@@ -158,6 +165,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | cotton deccan, sugarcane bengal, maize western india, tobacco deccan first, polaj parauti chachar banjar order, shah nahar punjab, muzarian |
 | T8 | peshkash elephants, jangli forest dwellers, milkiyat zamindar, miras watan artisans, zamindars sell bequeath, zamindars forts contingents, zamindars colonised land, women petitions panchayat, abul fazl akbar court |
 | T9 | wooden plough iron tip, seed drill oxen, babur irrigation wheel lahore, baburnama memoir, akbar nama 1590s, rajasthan gujarat maharashtra revenue records, east india company records eastern india, little republics village, pahi-kashta |
+| T10 | tobacco reached deccan, akbar tobacco 1604, jahangir banned tobacco, tobacco widely consumed seventeenth, jins-i kamil perfect crops, muqaddam headman, patwari accountant, kharif autumn, shikar hunting, babur villages set up quickly |
 
 ### H9 Colonialism and rural society
 
@@ -172,6 +180,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | damin-i-koh 1832, santhals settled agriculture plough, santhal villages 1473, santhal revolt causes, paharias pushed deeper |
 | T8 | paharias rajmahal hills, santhals damin-i-koh plough, sahukar moneylender, collector district revenue, santhals arrive 1780s, damin-i-koh 1832, santhal villages 1473, santhal pargana created, paharias hoe, revenue fixed perpetuity |
 | T9 | ryotwari settled with ryot, soil survey average income, early demands high ryots deserted, cotton supply association 1857, buchanan 1810-11 journey, ryot cultivator |
+| T10 | sunset law, revenue fixed in perpetuity, revenue due despite harvest failure, fifth report 1813, amla rent collector, paharias jhum shifting |
 
 ### H10 The Revolt of 1857
 
@@ -186,6 +195,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | lakshmi bai adopted son, sepoy panchayats night, bahadur shah leader, firangi foreigners |
 | T8 | dalhousie annexed awadh, canning governor-general 1857, colin campbell relief lucknow, subsidiary alliance wellesley 1798, british images saviours, first war of independence, lakshmi bai masculine warrior, danka shah drum, enfield rifle cartridges |
 | T9 | cartridges greased rumour, bone dust flour rumour, chapatis distribution, plassey hundred years prophecy, dalhousie annexed awadh, bahadur shah leader, colin campbell relief lucknow, felice beato photographs, nana sahib peshwa baji rao, british called it mutiny |
+| T10 | proclamations all communities, proclamations bahadur shah name, azamgarh proclamation, firangi foreigners term, ishtahar notice, danka shah ahmadullah, taluqdars awadh landholders, in memoriam paton, wajid ali shah calcutta exile |
 
 ### H11 Mahatma Gandhi and the national movement
 
@@ -200,6 +210,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | gandhi calcutta 15 august 1947, gandhi noakhali bihar, godse assassination, chauri chaura 1922 withdrawal, lahore purna swaraj 1929, gandhi-irwin pact 1931, government of india act 1935, gandhi-irwin salt coast, gokhale mentor |
 | T8 | gandhi untouchability programme, gandhi khadi, gandhi village self-reliance, jallianwala bagh amritsar 1919, congress linguistic committees, fortnightly reports home department, gandhi born 1869 |
 | T9 | gokhale mentor, jinnah moderate, tilak radical, lahore 1929 nehru president, newspapers gandhi journals, gandhi letters published, police reports bias, swaraj within a year, first rtc 1930 without congress, gandhi lawyer |
+| T10 | salt law state monopoly, salt every household grievance, march began sabarmati ashram, officials resign posts march, march world attention press |
 
 ### H12 The making of the Constitution
 
@@ -214,3 +225,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | separate electorates own representatives, joint electorates all voters, reserved seats, universal adult franchise, ambedkar earlier separate electorates, untouchability abolished, reserved seats jobs, nehru american french revolutions, gandhi hindustani national language |
 | T8 | ca first meeting 9 december 1946, objectives resolution december 1946, independence 15 august 1947, constitution in force 26 january 1950, congress 82 percent seats, public suggestions assembly, nehru objectives resolution |
 | T9 | pocker bahadur separate electorates, pant suicidal minorities, ng ranga minorities poor, ambedkar strong centre, partition strong centre, ca elected by provincial legislatures, ambedkar drafting committee |
+| T10 | dhulekar hindi speech, durgabai hindi propaganda, language committee compromise, no national language, government of india act 1935 ca, provincial elections 1945-46, cabinet mission plan 1946, pocker bahadur speech august 1947, somnath lahiri, congress dominated assembly |
