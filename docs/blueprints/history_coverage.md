@@ -56,6 +56,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | cunningham first dg asi, marshall announced 1924, wheeler stratigraphy, rd banerji mohenjodaro seals, harappa excavations 1921, mohenjodaro excavations 1925, lothal sr rao 1955, dholavira rs bisht 1990, steatite seals, harappan weights chert binary, faience ground sand |
 | T4 | harappan burials pits, burial goods afterlife, jewellery men women burials, named after first site, mohenjodaro great bath, archaeozoologists |
 | T5 | citadel mud brick platforms, lower town residential walled, warehouse wooden upper portions, great bath steps north south, mother goddess figurines, proto-shiva seal, stone lingas, harappan religion uncertain, millets gujarat, mohenjodaro 700 wells, mature harappan 2600 1900 bce |
+| T6 | cunningham seal report 1875, marshall announced 1924, wheeler dg 1944, rakhigarhi dna 2010s, meluhha mesopotamian texts, meluhha products, omani copper nickel, 375 400 signs, mohenjodaro sindh, marshall horizontal units |
 
 ### H2 Early states: inscriptional evidence
 
@@ -66,6 +67,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | vajji vaishali, kosala shravasti, avanti ujjayini, gandhara taxila, arthashastra kautilya, five mauryan political centres, kushana first gold coins, iron ploughshare |
 | T4 | yaudheya copper coins, gupta gold coins, roman coins south india, kushana first gold coins, mat mathura kushana statues, sixteen mahajanapadas, kharosthi northwest |
 | T5 | ashokan edicts 3rd century bce, rudradaman junagadh 2nd century ce, prayaga prashasti 4th century, prinsep deciphers 1838, pataligrama, gandatindu jataka, numismatics coins |
+| T6 | arthashastra kautilya, megasthenes indica, harshacharita banabhatta, sangam muvendar, land grants copper plates, grants to religious institutions, prabhavati gupta chandragupta ii daughter, rudradaman shaka, ashoka grandson chandragupta |
 
 ### H3 Social histories: the Mahabharata
 
@@ -76,6 +78,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | ekalavya thumb, drona teacher, hidimba rakshasa bhima, draupadi polyandry, manusmriti 200 bce 200 ce, stridhana, patriliny |
 | T4 | exogamy outside unit, polygyny several wives, polyandry several husbands, endogamy, chandalas outside village, chandalas discarded utensils, fa xian clapper, xuanzang outcastes outside city, mahabharata 100000 verses, bhagavad gita krishna arjuna |
 | T5 | vyasa ganesha tradition, sutas charioteer-bards, brahmanas wrote down epic, itihasa thus it was, draupadi question dice, kurukshetra war |
+| T6 | nishada forest dweller, suta charioteer bard, chandala lowest, mlechchha outsiders, only kshatriyas kings, gandhari advice peace, kuru lineage |
 
 ### H4 Buddhism and Jainism
 
@@ -86,6 +89,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | rigveda compiled, buddha teaching, ashoka relics stupas, mahayana develops, mahapajapati gotami first bhikkhuni, anicca anatta dukkha, buddhism conduct over birth, chaitya chita funeral pyre, garbhagriha sanctum |
 | T4 | sanchi plaster casts, amaravati dispersed sanchi preserved, hh cole casts, wheel first sermon, shalabhanjika popular beliefs |
 | T5 | bhikkhu alms, upasika lay follower, kutagarashala debate hut, theravada elders, rigveda 1500 bce, barabar caves ajivikas, dashavatara deogarh 5th century, kailashnatha ellora 8th century, pali language buddhist texts, mahavira 24th tirthankara |
+| T6 | harmika abode of gods, yashti chhatri, vedika railing, buddha images mathura taxila, puranas simple sanskrit, ahimsa jainism |
 
 ### H5 Travellers' accounts
 
@@ -96,6 +100,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | ibn battuta coconut paan, bernier sati lahore, al-biruni sanskrit caste texts, tavernier jeweller six visits, slaves sold in markets, female slaves spies, ibn battuta bought slaves gifts, kitab-ul-hind 80 chapters, ibn battuta tangier morocco |
 | T4 | delhi vast city wall, daulatabad size, indian textiles demand, marco polo 13th century, nikitin 15th century, barbosa 16th century, manucci 17th century, al-biruni languages syriac persian hebrew sanskrit, karkhanas workshops |
 | T5 | bernier widows forced, women labour crucial, merchant women courts, delhi 28 gates, al-biruni ghazni mahmud, bernier france |
+| T6 | uluq horse post, dawa three stations per mile, dawa rod copper bells, foot post faster khurasan fruits, postal system integration |
 
 ### H6 Bhakti–Sufi traditions
 
@@ -106,6 +111,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | silsila chain, ziyarat pilgrimage, sama music, murid disciple, kabir granthavali dadupanth, jagannatha vishnu puri, shankaradeva assam vaishnavism |
 | T4 | nalayira divyaprabandham alvars, tevaram nayanars, adi granth guru arjan, vachanas virashaiva, ulama scholars, zimmi jizya, guru angad successor |
 | T5 | basavanna karnataka, shankaradeva assam, mirabai rajasthan, kabir benares, alvars 6th 9th century, muinuddin ajmer 12th century, kabir 14th 15th century, adi granth 1604, lingayats burial, be-sharia qalandars |
+| T6 | saguna attributes, nirguna abstract, pir master, wali friend of god, kabir terms many traditions, khalsa 1699 gobind singh |
 
 ### H7 Vijayanagara
 
@@ -116,6 +122,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | virupaksha hall krishnadeva raya, gopurams dwarfed shrines, vitthala vishnu, lotus mahal name british, krishnadeva raya tuluva, hazara rama temple royal, orders signed shri virupaksha |
 | T4 | nicolo de conti italian, abdur razzaq persia, nikitin russian merchant, nuniz portuguese, raya king, gajapati orissa, vitthala stone chariot |
 | T5 | vijayanagara city of victory, hampi pampadevi, karnataka samrajyamu, yavana northwest, aravidu dynasty, talikota sultanates alliance, vijayanagara tungabhadra |
+| T6 | sangama saluva tuluva aravidu order, nagalapuram mother, greenlaw photographs 1856, harihara bukka founders |
 
 ### H8 Mughal empire and agrarian society
 
@@ -126,6 +133,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | babur panipat 1526, akbar accession 1556, ain-i akbari completed 1598, aurangzeb death 1707, women field work, women crafts spinning, women inheritance rights, bride-price, milkiyat zamindar, jangli forest dwellers |
 | T4 | amin official, patwari accountant, jajmani system, raiyat peasant, silver bullion exports, babur irrigation wheel lahore, peshkash elephants |
 | T5 | jati panchayat each caste, rajasthan jati panchayats disputes, state respected jati panchayats, kharif rabi seasons, maize africa spain, ain five books |
+| T6 | ain-i akbari abul fazl, baburnama memoir, rajasthan gujarat maharashtra revenue records, east india company records eastern india, miras watan artisans, khud-kashta, shikar emperor justice |
 
 ### H9 Colonialism and rural society
 
@@ -136,6 +144,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | benami fictitious name, amla rent collector, mahal revenue estate, jhum shifting cultivation, permanent settlement aims, ryotwari 30 years, sahukar moneylender |
 | T4 | revenue demand fixed high, prices low 1790s, revenue invariable, bombay deccan settlement 1820s, limitation law 1859, american civil war 1861, deccan riots report 1878, cornwallis permanent settlement, cotton 90 percent 1862 |
 | T5 | kist instalment, taluqdar holds taluq, ryot cultivator, bigha land unit, fifth report thousand pages, fifth of series, fifth report read critically, cleveland pacification paharias, permanent settlement zamindars |
+| T6 | cornwallis permanent settlement, cleveland pacification paharias, buchanan physician survey, burdwan auction 1797, paharias mahua, hodges watercolours, interest not exceed principal |
 
 ### H10 The Revolt of 1857
 
@@ -146,6 +155,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | meerut outbreak may 1857, delhi recaptured september 1857, rani lakshmi bai dies 1858, bahadur shah dies rangoon 1862, martial law 1857, estates returned to landholders, ishtahar proclamation, chapatis distribution |
 | T4 | in memoriam noel paton, thomas jones barker relief of lucknow, clemency canning punch, justice punch cartoon, officers sepoys 1820s friendly, 1840s officers superiority, sepoys from awadh villages, mangal pandey barrackpore, sepoys marched delhi |
 | T5 | awadh annexed misgovernment, wajid ali shah calcutta, summary settlement 1856, court dependents lost livelihood, awadh grievances linked |
+| T6 | rebel administration mughal model, rebels collected revenue, rebel structures could not survive, summary settlement 1856, mangal pandey barrackpore, meerut 10 may 1857, bahadur shah zafar rangoon, felice beato photographs, lakshmi bai jhansi |
 
 ### H11 Mahatma Gandhi and the national movement
 
@@ -156,6 +166,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | northern andhra hill tribes forest laws, kumaun refused loads, awadh peasants taxes, students left government schools, satyagraha south africa, charkha dignity of labour, shahid amin gorakhpur rumours |
 | T4 | gokhale year travel, pre-gandhi nationalism professionals, gandhi two decades south africa, second round table 1931, government of india act 1935, congress ministries resign 1939, cripps mission 1942, ali brothers khilafat, 1937 congress eight provinces, league 1940 autonomy |
 | T5 | chauri chaura police station burnt, kheda revenue remission, noakhali peace mission, ahmedabad mill workers, ahmedabad mill strike 1918, independence day 26 january 1930, quit india 1942, noakhali 1946, harijan children of god, purna swaraj complete independence |
+| T6 | swadeshi indian goods, boycott foreign cloth, satyagraha truth force, ahimsa nonviolence, gandhi arrested quit india, quit india strikes sabotage, jp narayan underground, south africa 1893, hind swaraj 1909, gandhi return 1915, bhu speech 1916, gandhi dhoti poor, rowlatt act campaign |
 
 ### H12 The making of the Constitution
 
@@ -166,3 +177,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | pocker bahadur separate electorates, minorities need own voice, patel poison body politic, pant suicidal minorities, separate electorates partition fear |
 | T4 | somnath lahiri british influence, dhulekar hindi, durgabai hindi opposition, santhanam states powers, objectives resolution december 1946, independence 15 august 1947, pocker bahadur 27 august 1947, constitution in force 26 january 1950, ca 300 members, patel behind the scenes |
 | T5 | km munshi gujarat, alladi madras, hansa mehta women justice, bn rau constitutional adviser, objectives resolution sovereign republic, justice equality freedom, safeguards minorities tribal depressed, ambedkar law minister, universal adult franchise |
+| T6 | union list, state list, concurrent list, article 356, hindi devanagari official, provinces choose own language, gradual transition english, longest constitution, rajendra prasad president ca |
