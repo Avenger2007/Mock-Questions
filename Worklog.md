@@ -449,3 +449,30 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 ### Tools added
 - `docs/blueprints/hindi.md` (pattern, PYQ analysis, section plan, difficulty, formats, out-of-scope list) and `docs/blueprints/hindi_coverage.md` (passage themes, slot rotation, target ledgers).
 - `tools/cuet_hindi/` — compact draft format and converter, checker, ledger marker, ship script, item patcher, text editor and series re-indexer; drafts of all 15 tests in `drafts/`.
+
+## History (314) — revised to the CUET 2027 standard (completed 6 Nov 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `04ce0a9` (blueprint, coverage map, tools and pilot Test 1), `1a75466` (authoring scripts) … `a28414a` (Test 15) on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | old papers, status `pending_revision` | **15 rewritten tests** (`CUET HISTORY TEST 1–15.json`), planned first in a coverage map; status `revised` |
+| Paper structure | 50 compulsory | unchanged: 50 compulsory questions, 60 min, +5 / −1 (NTA pattern) |
+| Syllabus | mixed, including dropped chapters | NCERT *Themes in Indian History* I–III, 12 in-syllabus themes (H1–H12); Kings and Chronicles, Colonial Cities and Partition left out as out of syllabus |
+| Theme balance | uneven | Part I 17 / Part II 16 / Part III 17 in every test (quotas 5-4-4-4, 4-4-4-4, 4-4-5-4); the passage theme takes 5 |
+| Source passage | rare | one original source-based passage × 5 questions per test, rotating across themes (e.g. Mohenjodaro drains, the Chishti khanqah, the Salt March, the Mahanavami, Bernier on crown ownership, the Deccan riots, Harappan craft production) |
+| Difficulty | uneven | **8 easy / 32 medium / 10 hard in every test** |
+| Formats | almost all direct | per test: 5 case-based, 7 match-list, 6 statements, 4 sequence, 28 direct (≥3 fill-in-the-blank, ≥2 incorrect-pair) |
+| Explanations | 1–2 lines | every item: Why / Why not the others / Key point |
+| Order and keys | uneven | key 13 / 12 / 13 / 12 (odd tests) and 12 / 13 / 12 / 13 (even tests); sequence answers never in A-B-C-D order; match patterns differ within a test; correct option never clearly the longest |
+
+**Coverage ledger:** every answer fact is recorded per theme and test in `docs/blueprints/history_coverage.md` §C, and no fact is used more than twice in the series (in different tests and formats). `his_check.py` flags repeated targets (`REPEAT-TARGET`), sub-topic or stem overlap with earlier tests (`OVERLAP`), over-long correct options (`LONGEST`) and quota drift (`QUOTA`). Every flag was cleared before shipping.
+
+**Verification:** `validate_papers.py CUET --subject "History"` — 0 parse errors, 0 wrong counts, 0 option-count errors, 0 key/explanation mismatches, 0 runs > 3, 0 self-referential options, 0 within- or cross-paper duplicate stems, 0 passage gaps, 0 difficulty deviations; series key A 25.1%, B 24.9%, C 25.1%, D 24.9%.
+
+**Known limits:** PYQs were analysed for pattern only; no question is copied, and items close to known PYQs were avoided. Passages are original summaries of NCERT content, not quotations from sources. Later tests use some non-chronological sequences (north to south, west to east, story order, stupa parts) because the main chronologies were already used.
+
+### Tools added
+- `docs/blueprints/history.md` (pattern, PYQ analysis, theme quotas, difficulty, formats, out-of-scope list) and `docs/blueprints/history_coverage.md` (passage themes, sequence rotation, answer-fact ledgers).
+- `tools/cuet_his/` — compact draft format and converter, checker, ledger marker, ship script, item patcher, match relabeller and series re-indexer; drafts of all 15 tests in `drafts/`.
