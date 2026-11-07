@@ -59,5 +59,5 @@ for t in [24,25]:
 save('method_signatures.json',signatures);save('chapter_style_coverage.json',coverage)
 save('final_manifest.json',dict(baseline='a46c8f180273d2bc44f7be27eb125873d97a2807',papers=manifest,previous_1380_unchanged=True,
  structural_questions=1500,calculation_checks=127,math_calibration_rows=30,images=len(specs),
- branch='iat-tests-24-25',remote_push_status='No working push authentication; local commits and downloadable recovery bundle',release_status='Authored review drafts; independent hidden-key academic and timed review pending.'))
+ branch='iat-tests-24-25',remote_push_status=('Verified content checkpoint '+json.loads((O/'remote_preservation.json').read_text())['verified_content_commit']+' on iat-tests-24-25; verify later pushes separately' if (O/'remote_preservation.json').exists() else 'Remote preservation not independently verified'),release_status='Authored review drafts; independent hidden-key academic and timed review pending.'))
 print('Verified 25 papers / 1500 questions; 120 new deliveries; 127 calculation checks; 18 images; previous 1380 unchanged.')

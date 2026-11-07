@@ -56,6 +56,8 @@ Do not advertise complete corner-by-corner syllabus coverage or student release 
 
 ## Persistence
 
+**Update, 7 November 2026:** The ordinary push succeeded and GitHub matched content checkpoint `ba97e4b5abad20e6ad5e8539ce3be8608d6c880c` on `iat-tests-24-25`. All previously local Tests 20–25 history is now stored on this branch. See `tests24_25/remote_preservation.json`. The failures below describe the earlier 6 November checkpoint, not the current remote status. Academic release and scope-evidence limitations above are unchanged.
+
 Draft checkpoints and final deliverables are committed on `iat-tests-24-25`; main and earlier branches are not overwritten, deleted or force-pushed. A clean-URL noninteractive push was attempted and failed because no working GitHub authentication was available (`could not read Username; terminal prompts disabled`). The previously supplied token had already been rejected in the preceding batch. No credential was written into repository files or a remote URL.
 
-The new branch is local only. The recovery bundle includes unpublished Tests 20–25 history since remotely verified base `30d1c8fef0cba8641c38a27765254c15994484c2`. Preserve the downloadable review package and bundle until an authenticated push is verified. A local commit or successful bundle check is not a successful GitHub push.
+At that earlier checkpoint the new branch was local only. The recovery bundle includes unpublished Tests 20–25 history since remotely verified base `30d1c8fef0cba8641c38a27765254c15994484c2`. Preserve the downloadable review package and bundle until an authenticated push is verified. A local commit or successful bundle check is not a successful GitHub push.

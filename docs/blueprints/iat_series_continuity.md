@@ -1,10 +1,10 @@
 # IAT series: restart and repetition checks
 
-The Git repository is the source of truth. Current branch: `iat-tests-24-25`, based on `a46c8f180273d2bc44f7be27eb125873d97a2807`. All 25 papers / 1,500 questions are authored review drafts. The previous23 canonical papers are byte-unchanged. There is no next test to generate under this 25-paper plan.
+The Git repository is the source of truth. Current branch: `iat-tests-24-25`, based on `a46c8f180273d2bc44f7be27eb125873d97a2807`. All 25 papers / 1,500 questions are authored review drafts. The previous 23 canonical papers are byte-unchanged. There is no next test to generate under this 25-paper plan.
 
 Read `IISER/review/IAT_NEW_TESTS_24_25_REVIEW_NOTES.md`, `tests24_25/scope_evidence_unresolved.json`, current instructions and canonical questions before further revision. Next work is independent academic/timed review and explicit whole-bank reconciliation of 228 unmapped scope entries; neither those entries nor broad mapped phrases establish actual gaps without inspecting questions. Do not auto-promote reservations to coverage or regenerate frozen JSON from historical TSVs. IDs/options/figures remain fixed for future corrections.
 
-**Remote preservation is blocked.** The noninteractive push failed for missing working authentication; the old token was rejected in the preceding batch. The remotely verified base remains `30d1c8fef0cba8641c38a27765254c15994484c2` on `iat-tests-18-19`. The recovery bundle preserves unpublished Tests 20–25. Main and earlier branches were not deleted or force-pushed. Preserve the download or complete and verify an authenticated push before relying on remote recovery.
+**Remote preservation verified, 7 November 2026.** The ordinary push of `iat-tests-24-25` succeeded, and `git ls-remote` matched content checkpoint `ba97e4b5abad20e6ad5e8539ce3be8608d6c880c`. Tests 20–25 and their ancestry are now on that named branch. Earlier authentication failures remain historical evidence; they are no longer the current preservation status. Main and older branches were not deleted or force-pushed. Fetch the named branch before new work and verify each later push independently. The standalone recovery bundle remains an additional backup.
 
 | Material | Versioned location | Use |
 |---|---|---|
