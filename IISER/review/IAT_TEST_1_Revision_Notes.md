@@ -1,3 +1,5 @@
+> **Historical snapshot — milestone corrections, 4 November 2026:** Later canonical changes supersede affected content, answer descriptions, page counts and validation claims below. Read [the correction report](milestone15_fixes/CORRECTION_REPORT.md) and its final source-bound evidence for the current Tests 1–15 checkpoint.
+
 # Test 1: response to the baseline audit
 
 30 October 2026. The current workspace contained the earlier draft. The earlier revised downloads and claimed local commit were unavailable here. This revision is restored from the available baseline and audit findings; byte-for-byte identity to an unavailable prior download is not claimed. The preserved baseline is `baseline/IAT_TEST_1_before_revision.json`. Render/check records bind the actual delivered revision by SHA-256.

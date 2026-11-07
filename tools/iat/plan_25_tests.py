@@ -5,6 +5,8 @@ import csv, json, re
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'docs/blueprints/iat_25_test_slots.tsv'
+if OUT.exists() and 'milestone revision applied' in OUT.read_text():
+    raise SystemExit('Do not overwrite reviewed slot revisions with historical seeds; edit the versioned TSV directly.')
 BLUE = (ROOT / 'docs/blueprints/iat.md').read_text()
 TAX = json.loads((ROOT / 'docs/blueprints/iat_taxonomy.json').read_text())
 P1 = json.loads((ROOT / 'IISER/IAT TEST 1.json').read_text())

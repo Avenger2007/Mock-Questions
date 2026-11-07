@@ -318,6 +318,47 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 ### Tools added
 - `docs/blueprints/computer_science.md` (pattern, 2025 PYQ analysis, weights, formats, out-of-syllabus list) and `docs/blueprints/computer_science_coverage.md` (case themes and angle banks with "Used in" columns).
 
+## IAT New Tests 2 and 3 — fresh review drafts (31 Oct 2026)
+
+- Recreated both papers from the 25-test slot plan under distinct `IAT NEW TEST` names after the previous uncommitted drafts were unavailable. Each has 60 questions (15 per subject), editorial tiers 9/42/9, balanced A–D keys and detailed worked explanations including why the alternatives fail.
+- Added six exact, question-bearing figures per paper: two each for Biology, Chemistry and Physics. Updated the image register, figure generator, instructions and authored slot records. Replaced two semantic repeats found against Test 1.
+- Exported answer-and-explanation review PDFs (46 and 45 pages). The validator and render checks confirm the JSON/PDF hashes, 60 questions and solutions, loaded images, and no detected layout overflow. The item-level mathematics calibration and remaining review requirements are recorded in `IISER/review/IAT_NEW_TESTS_2_3_REVIEW_NOTES.md`.
+- These are authoring drafts awaiting independent subject-expert and timed-student review, and 2027 brochure verification. The session workflow now requires a verified commit and remote push before treating a paper as safely stored.
+- After remote authentication became available, pushed the two draft commits to `iat-new-tests-2-3` and verified remote HEAD. Added `docs/blueprints/iat_series_continuity.md` and `tools/iat/check_series_overlap.py` to restart from versioned PYQs, the slot plan and every authored test. The series-wide text screen reports zero candidates among Tests 1–3 at its default threshold; semantic angle comparison remains an editorial task.
+
+## IAT New Tests 4 and 5 — review drafts (31 Oct 2026)
+
+- Authored 120 further questions from the reserved slots, each paper with 15 questions per subject, editorial tiers 9/42/9 and 15 keys per letter. Explanations include a worked WHY and alternatives; both papers remain pending independent academic and timed-student review.
+- Generated six purpose-built figures in Test 4 and eight in Test 5. Review PDFs contain 60 questions and 60 solutions each, with loaded images and no detected overflow. Replaced three Test 5 Mathematics items after a cross-paper similarity screen identified close earlier stems; a looser pass led to three additional method/data revisions. The default screen now reports zero candidates across Tests 1–5. See `IISER/review/IAT_NEW_TESTS_4_5_REVIEW_NOTES.md` for the 30-item mathematics task review.
+- Updated the 25-test register: 300 authored draft slots across Tests 1–5, with 1,200 reserved for Tests 6–25. Remote push verification remains required before calling this session durable.
+
+## IAT New Tests 2–5 — explanation revision (1 Nov 2026)
+
+- Audited all 240 explanations and revised each for explanatory depth. All 120 Mathematics/Physics items now include a displayed worked derivation; Biology/Chemistry `Why` sections were expanded with evidence, mechanism and constraints. See `IISER/review/IAT_NEW_TESTS_2_5_EXPLANATION_REVISION.md` for the measured results and review limits.
+- Added strict explanation rules and a release checklist to the IAT instructions, plus a mechanical validator gate for the Mathematics/Physics derivation in every new paper. Regenerated four delivery bundles after the last source edit; each PDF contains 60 solutions, figures and parsed mathematics with no reported overflow.
+- The papers remain `pending_revision` for independent hidden-key subject review and timed attempt; a committed review PDF is not academic approval.
+
+## IAT New Tests 6 and 7 — authored review drafts (1 Nov 2026)
+
+- Completed 120 individually authored questions from the reserved slots, with 15 per subject and 9/42/9 editorial tiers per paper. Final keys are 15 per letter. Each of the 60 Mathematics/Physics items has a displayed worked derivation and every distractor has an individually labelled explanation.
+- Drew and registered six question-bearing figures for each paper: two Biology, two Chemistry and two Physics. Generated delivery JSON, HTML and 51-page PDF for each. Source/delivery/PDF checksums, parsed mathematics, all loaded images and zero detected overflow are recorded in the render checks.
+- Replaced five weak hard-labelled Mathematics tasks with multi-stage problems and replaced one integral too close in method to Test 1. The default cross-paper text similarity screen reports zero candidates among Tests 1–7. Updated the 25-test slot register to 420 authored draft slots and 1,080 reservations.
+- See `IISER/review/IAT_NEW_TESTS_6_7_REVIEW_NOTES.md` for the item-level review and limits. Both papers remain pending independent hidden-key academic review and timed-student calibration.
+
+## IAT New Tests 8 and 9 — authored review drafts (1 Nov 2026)
+
+- Authored 120 new questions from the 25-test reservations. Each test has 15 questions per subject, 9/42/9 editorial difficulty tiers, balanced keys and detailed explanations; all Mathematics and Physics questions have displayed derivations.
+- Drew and registered six figures for Test 8 and eight for Test 9, including at least two per Biology, Chemistry and Physics. Generated canonical JSON and delivery JSON/HTML/PDF with strict math parsing and no detected overflow; pages and item-level mathematics audit are in `IISER/review/IAT_NEW_TESTS_8_9_REVIEW_NOTES.md`.
+- Reworked same-method candidate tasks and upgraded hard Mathematics slots. One text-overlap candidate remains after semantic review: Test 4's coordinate-plane projection and Test 9's oblique-line projection use distinct calculations. Updated the 25-test register to 540 authored draft slots, 960 reserved.
+- Independent hidden-key academic and timed-student review remains pending. Verify the remote branch HEAD before treating the session as durable.
+
+## IAT New Tests 10 and 11 — authored review drafts (3 Nov 2026)
+
+- Authored 120 new items against fixed syllabus slots. Each paper has 15 questions per subject, editorial tiers 9/42/9, balanced A–D keys and detailed `Why` plus distractor analyses; all Mathematics and Physics items have displayed derivations.
+- Drew and registered eight figure-linked questions in Test 10 and twelve in Test 11. Rendered 31- and 33-page review PDFs using the versioned XeLaTeX exporter, with 60 question/solution pairs each, source/delivery/PDF/image checksums, no empty pages, no overfull lines and no missing glyphs.
+- Replaced repeated reasoning tasks found against earlier papers, including cardiac output, capacitor charge, fixed telescoping sum and simple two-factor integral, then replaced further Hardy–Weinberg, rms-speed and hydrogen-transition ratio repeats in a manual scan. The series-wide default similarity screen now reports zero candidates. The 25-test slot register has 660 authored review-draft slots and 840 reservations.
+- See `IISER/review/IAT_NEW_TESTS_10_11_REVIEW_NOTES.md` for item-level Mathematics review and remaining independent academic and timed-student checks.
+
 ## Economics (309) — revised to the CUET 2027 standard (completed 3 Nov 2026)
 
 **Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `6216323` (blueprint, coverage map, pilot Test 1) … `020da25` (Test 15) on `main`, plus the final commit for this entry.
@@ -476,3 +517,44 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 ### Tools added
 - `docs/blueprints/history.md` (pattern, PYQ analysis, theme quotas, difficulty, formats, out-of-scope list) and `docs/blueprints/history_coverage.md` (passage themes, sequence rotation, answer-fact ledgers).
 - `tools/cuet_his/` — compact draft format and converter, checker, ledger marker, ship script, item patcher, match relabeller and series re-indexer; drafts of all 15 tests in `drafts/`.
+## IAT New Tests 12 and 13 — authored review drafts (3 Nov 2026)
+
+- Authored 120 questions from reserved syllabus slots. Each paper has 15 questions per subject, editorial tiers 9/42/9, balanced 15-per-letter keys, detailed WHY and distractor analyses, and displayed derivations for all Mathematics/Physics items.
+- Drew and registered 11 question-bearing figures in Test 12 and 10 in Test 13. The 31- and 30-page review PDFs contain 60 questions and 60 solutions each, with source/delivery/PDF/image hashes, no empty pages, no overfull text and no missing glyphs. Expanded all one-sentence `Why` sections and replaced pooled distractor rationales with individual errors.
+- Replaced text-similar combustion, divisibility, monotonicity, trigonometry and lattice-path tasks; documented residual method-distinct overlap-screen candidates. Updated the 25-test register to 780 authored review-draft slots and 720 reservations, and merged independent `main` Economics/Computer Science changes into this IAT branch without changing `main`.
+- See `IISER/review/IAT_NEW_TESTS_12_13_REVIEW_NOTES.md` for 30 Mathematics task checks and remaining independent academic, timed-student and 2027-notification review gates.
+
+
+## IAT milestone corrections — 3 November 2026
+
+Branch `fix-iat-milestone-15` applies the documented Tests 1–15 audit repairs to canonical JSON at fixed IDs: scientific assumptions, listed-syllabus replacements, repeated task angles, demand, detailed explanations and figures. The correction report, item change ledger, source-bound checks and rebuilt review PDFs/HTML are in `IISER/review/milestone15_fixes/`. Strict validation covers all 900 items; arithmetic probes are targeted author-side checks, not an independent 900-answer certificate. The bank remains pending hidden-key academic and timed review. `main` and earlier test branches are preserved.
+
+
+## IAT Tests 16–17 — 5 November 2026
+
+Completed two original 60-item review drafts on iat-tests-16-17, based on corrected-bank commit 1de7c68. Added 19 exact scientific diagrams, detailed WHY and individual alternative explanations, displayed Mathematics/Physics working, 30 recent-PYQ Mathematics comparisons and 84 calculation checks. Replaced repeated/unlisted planning seeds, retained the 9/42/9 editorial mix and preserved all previous 900 canonical items. A remote content checkpoint preceded final visual-review and documentation changes. Review notes record verification and pending independent academic/timed review. Main and earlier branches remain unchanged.
+
+## 5 November 2026 — Tests 18–19 and full-plan tracking
+
+Authored 120 items, 21 exact diagrams and detailed worked solutions on iat-tests-18-19; saved remote checkpoint 9d60db0 before long delivery checks. Replaced a repeated two-axis circle task with centre/chord/tangent reasoning and a routine yield task with isotope abundance. All 85 numerical probes pass. Updated all 1,500 plan rows, wrote 360 literal future angle briefs and a 640-entry official-scope checklist with owners and honest evidence/alignment states. Repaired a header/footer-only page and strengthened the exporter to reject such pages. Previous 1,020 canonical items remain unchanged. Final academic and timed review remain pending.
+
+## 5 November 2026 — IAT Tests 20–21
+
+Authored 120 fixed-ID review items with detailed WHY, labelled distractor analysis, explicit Mathematics/Physics derivations and 15 exact figures. All 21 papers / 1,260 questions pass structural validation; the previous 1,140 items are unchanged. Passed 86 source-bound calculation probes and recorded 30 item-level Mathematics PYQ comparisons. Replaced near-repeated tangent, common-root and midpoint-chord drafts; removed a beyond-NCERT colour mechanism. Updated all 1,500 plan slots and 640 scope phrases, distinguishing 143 material evidence aspects from remaining future backstops. Final PDFs, offline HTML, manifests and recovery bundle accompany the drafts. Local branch iat-tests-20-21: GitHub rejected the supplied transient token, so remote preservation is not complete. Main and older branches were not overwritten. Independent academic and timed review remain pending.
+
+## 6 November 2026 — restored workspace and IAT Tests 22–23
+
+Restored the existing repository and all 75 saved draft rows, then completed 120 individually authored questions on iat-tests-22-23. Added 17 exact scientific figures, full causal explanations and displayed Mathematics/Physics derivations. Direct comparison rejected ten near-repeated drafts before freeze; the edit log preserves their replacements and explicit pre-freeze option exchanges. Passed 105 source-bound numerical probes and 30 Mathematics/PYQ comparisons. All 23 papers / 1,380 questions pass structural validation; the earlier 1,260 canonical questions remain byte-unchanged. Reconciled the 1,500-slot CSV/TSV and 640-entry scope checklist: 291 entries have limited material-aspect evidence with 316 links; 349 retain future backstops. Corrected several overbroad scope mappings and revised Test 24 P59. PDFs and offline HTML were rebuilt after final replacements. GitHub rejected the old credential; recovery bundle/package preserve unpublished Tests 20–23. Main and earlier branches were not overwritten. Independent academic and timed review remain pending.
+
+## 6 November 2026 — IAT Tests 24–25 and completed draft index
+
+Authored 120 fixed-ID questions on iat-tests-24-25, checkpointing each subject pair before assembly. Added 18 exact figures, detailed explanations, explicit numerical working and 30 recent-PYQ Mathematics comparisons. Replaced repeated reservation angles, rejected a statistical error-analysis draft under the printed Units scope, and strengthened two hard Biology experiments. Passed 127 exact calculation/enumeration probes, all 25 structural checks and final PDF/HTML source bindings. Previous 1,380 questions are byte-unchanged. Updated the all 25 index and 1,500-slot plan;544 links evidence aspects of 412 of 640 printed scope entries, while 228 remain honestly unmapped for whole-bank review. PDFs 43/44pages were visually inspected. Noninteractive clean-URL push failed for missing authentication; recovery bundle preserves unpublished Tests 20–25. Academic, timed and exhaustive scope review remain pending.
+
+## 7 November 2026 — verified IAT25 remote preservation
+
+Pushed iat-tests-24-25 successfully using transient authentication and a clean remote URL. GitHub exactly matched authored-content checkpoint ba97e4b5abad20e6ad5e8539ce3be8608d6c880c. This preserves the previously unpublished Tests20–25 commits and all25 authored drafts on the named branch. Updated current continuity and preservation metadata while retaining historical failure records. No test question, option, figure, PDF or syllabus mapping changed. Main and earlier branches were not force-pushed or deleted. Academic, timed and residual-scope review remain pending.
+
+
+## 7 November 2026 — integrate all 25 IAT review drafts into main
+
+Merged the completed IAT series from iat-tests-24-25 into the current main history, retaining the newer CUET subject revisions and both work logs. All 25 canonical papers, 1,500 questions, review deliveries, figures, 25-test plan and audit evidence are preserved. Canonical paper content is unchanged by this integration. Academic, timed-student and residual-scope review remain pending. The separate IAT notes-agent instructions are outside the repository and excluded from this commit.

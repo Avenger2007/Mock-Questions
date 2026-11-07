@@ -7,6 +7,7 @@ import json
 import re
 import sys
 from collections import Counter
+from fractions import Fraction
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -51,6 +52,12 @@ def validate(path):
             check(isinstance(opt, str) and opt.startswith(letter + ') '), f'{label}: option prefix {letter}')
         normal = [re.sub(r'\s+', '', opt[3:]).casefold() for opt in opts]
         check(len(set(normal)) == 4, f'{label}: duplicate option text')
+        rationals=[]
+        for opt in opts:
+            value=opt[3:].strip().replace('−','-').replace(' ','')
+            if re.fullmatch(r'[+-]?\d+(?:\.\d+)?(?:/\d+)?',value):
+                rationals.append(Fraction(value))
+        check(len(rationals)==len(set(rationals)),f'{label}: mathematically equivalent rational options')
         key = q.get('correct_option')
         check(isinstance(key, str) and key in 'ABCD' and len(key) == 1, f'{label}: invalid key')
         check(q.get('explanation', '').startswith(f'Answer: ({key})'), f'{label}: explanation/key disagreement')
@@ -58,8 +65,23 @@ def validate(path):
         check(q.get('difficulty') in {'easy', 'medium', 'hard'}, f'{label}: invalid tier')
         check(q.get('format') in {'conceptual', 'numerical', 'diagram', 'graph', 'data', 'experiment'}, f'{label}: invalid format')
         if q.get('format') == 'numerical':
-            for part in ['Given:', 'Formula/Principle:', 'Step 1:', 'Common mistake:']:
+            for part in ['Given:', 'Formula/Principle:', 'Step 1:']:
                 check(part in q.get('explanation',''), f'{label}: missing solution component {part}')
+        explanation=q.get('explanation','')
+        for part in ['Why:', 'Why not the others:', 'Key point:']:
+            check(part in explanation, f'{label}: missing revised explanation component {part}')
+        # Apply the same floor to Test 1. Passing these checks is not an academic verdict.
+        if sec in 'MP':
+            check('Worked derivation:' in explanation,f'{label}: missing explicit worked derivation')
+        if sec in 'MP' or (sec=='C' and q.get('format')=='numerical'):
+            check('\\[' in explanation and '\\]' in explanation,f'{label}: missing typeset display derivation')
+        if 'Why not the others:' in explanation:
+            wrong=explanation.split('Why not the others:',1)[1].split('Key point:',1)[0]
+            for letter in 'ABCD':
+                if letter!=key:
+                    check(bool(re.search(rf'(?<!\w)\({letter}\)',wrong)),f'{label}: missing distractor explanation {letter}')
+            check(not re.search(rf'(?<!\w)\({key}\)(?=\s)',wrong),
+                  f'{label}: distractor explanation rejects selected answer')
         stem = re.sub(r'\W+', '', q.get('question', '')).casefold()
         check(stem not in seen_stems, f'{label}: duplicate question stem')
         seen_stems.add(stem)
@@ -84,6 +106,9 @@ def validate(path):
     letters = ''.join(q['correct_option'] if isinstance(q.get('correct_option'), str) else '?' for q in qs)
     check(not re.search(r'(.)\1{3}', letters), 'four identical answers in a row')
     check(len(images) == len(set(images)), 'duplicate image reference')
+    for sec in 'BCP':
+        check(sum('image_reference' in q for q in qs if q.get('section') == sec) >= 2,
+              f'{sec}: fewer than two image-based questions')
     report = {'file': str(path.relative_to(ROOT)), 'questions': len(qs), 'tiers':dict(tiers),
               'answer_counts':dict(keys), 'images':len(images), 'errors':errors,
               'scope':'Mechanical schema/design validation only; academic review remains required.'}

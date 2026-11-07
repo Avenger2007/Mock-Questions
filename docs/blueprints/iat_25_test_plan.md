@@ -1,8 +1,19 @@
 # IAT: 25-test slot and angle plan
 
-30 October 2026. This is an **editorial reservation for 1,500 original questions**. The [slot register](iat_25_test_slots.tsv) lists each fixed ID, subject, syllabus chapter, class, subtopic focus, angle seed, dominant task target, difficulty target and authoring state. Test 1's 60 rows point to its already authored paper. Tests 2 and 3 have 120 separately specified angle briefs. Tests 4–25 reserve 1,320 distinct combinations of subtopic focus and reasoning demand; the eventual question author must turn each seed into a specific, independently solved task and reject semantic repeats before publication. A unique phrase in a spreadsheet is not proof of a genuinely different question.
+Updated 6 November 2026. **All 25 review drafts are authored:1,500 fixed question IDs.** The [CSV](iat_25_test_plan.csv) matches all core cells in the [TSV](iat_25_test_slots.tsv) and all canonical stem hashes. Tests 24–25 complete the reserved subject/chapter allocation with sharpened original tasks; original reservations are retained in their reconciliation report. The historical angle register must not overwrite authored content.
+
+## Full-syllabus tracking and limits
+
+The [scope checklist](iat_syllabus_coverage.csv) retains 640 printed official2026 phrases: B163/C153/M116/P208. They include broad, overlapping and repeated wording, not640 independent facts. The cumulative ledger has 544 source-bound links supporting material aspects of 412 entries. **228 entries still require explicit evidence mapping across the actual 25 papers.** This does not prove228 missing topics, and a mapped aspect does not certify every detail in its phrase.
+
+There are no future slots. Unresolved active owners are blank, with prior reservations retained in `prior_reserved_owner`; they must be reconciled against actual questions or, if genuinely absent, addressed through a reviewed fixed-ID revision. Do not label the entire syllabus covered solely from scheduling, word matches or25/25 authoring. See [review notes](../../IISER/review/IAT_NEW_TESTS_24_25_REVIEW_NOTES.md), `scope_evidence_unresolved.json` and `syllabus_material_evidence.json` in the latest review directory.
+
+Canonical JSON is authoritative. The metadata builder checks CSV hashes before rebuilding and the spreadsheet-readable views pass a workbook-cell round-trip check. Frozen TSV assemblers refuse to overwrite subsequent canonical corrections. General power-series convergence, Doppler extensions, detailed deleted p-block units, logic gates and Zener regulation remain excluded; heading-only Linear Programming remains on hold.
+
 
 ## What “equal coverage” means here
+
+The 3 November milestone correction checkpoint updates 80 authored focus records, restores T14 Q37 to a genuine matrix task, and removes T14 Q41's unlisted general-series convergence requirement. Its actual-versus-reserved chapter comparison is in `IISER/review/milestone15_fixes/chapter_coverage.json`. Broad family totals are preserved; this does not establish that every subtopic is equally practised or independently approved. Read the canonical tasks and their syllabus anchors when reconciling residual scope evidence. The original plan generator now refuses to overwrite these edited slot records.
 
 Each test has **15 Biology, 15 Chemistry, 15 Mathematics and 15 Physics** questions, with no best-three scoring. Across 25 tests, every retained syllabus family is represented. We do not force each chapter to appear the same number of times: genetics is much broader and more frequent in the acquired PYQs than a narrow chapter such as electromagnetic waves. The minimum frequency for a retained family in the reservation is 5 slots; no current family is dropped simply because it was rare in the recent papers. A chapter's slot count is a preparation choice, not an official paper quota.
 
@@ -26,7 +37,7 @@ The [auditable PYQ analysis](iat_pyq_analysis.md) covers 539 English entries acr
 | Figure/structure | 4 | 4 | 0 | 5 |
 | Graph/table/experiment | 3 | 1 | 0 | 1 |
 
-The task mix is an editorial approximation of the recent PYQ tags: Biology included mechanisms, diagrams, tables and experiments; Chemistry often used structural representations; Mathematics was mostly numerical and conceptual; Physics mixed numerical and visual modelling. A chemical structure can use mhchem text. A diagram target calls for a purposeful representation, never an arbitrary decorative file. The register's task targets may be changed when a specific question needs a better form; record the reason rather than forcing a bad diagram to meet a quota.
+The task mix is an editorial approximation of the recent PYQ tags: Biology included mechanisms, diagrams, tables and experiments; Chemistry often used structural representations; Mathematics was mostly numerical and conceptual; Physics mixed numerical and visual modelling. The user's revised minimum is **two genuine image-based questions in each of Biology, Chemistry and Physics per paper**. A chemical structure can use mhchem text in other questions, but each counted image must contribute to the solution. Mathematics follows its mostly numerical/conceptual PYQ mix and receives item-level calibration. Record any replaced slot angle rather than forcing a decorative figure.
 
 ## Difficulty and progression
 

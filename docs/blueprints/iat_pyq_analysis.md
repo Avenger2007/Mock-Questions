@@ -63,7 +63,7 @@ Physics frequently requires choosing the model before substituting: signed versu
 
 Physics appears harder under this rubric, and 2024–2026 have more hard tags than 2023. This is a reviewer judgement affected by the acquired copies and task classification, not a statistically demonstrated rising difficulty trend. No empirical score distribution is available. Publish no predicted cut-off or score-to-rank conversion from these tags.
 
-The OurMocks **9 easy / 39 medium / 12 hard** split is an editorial design target, not the observed distribution of every PYQ. Pilot subject splits are 3/9/3 in Biology and 2/10/3 in each other subject. Budget approximately 1.5 minutes for easy, 2–3 for medium, and 4–5 for hard questions, with time left for switching subjects and reviewing. The detailed pilot plan totals about 168 minutes; real timings need a human timed trial.
+The current OurMocks target is **9 easy / 42 medium / 9 hard**, an editorial policy rather than an observed or official PYQ quota. For Test 1, subject splits are Biology 3/10/2, Chemistry 2/10/3, Mathematics 2/11/2 and Physics 2/11/2; later papers rotate the extra easy and hard slots. The earlier 9/39/12 proposal is superseded. Budget approximately 1.5 minutes for easy, 2–3 for medium, and 4–5 for hard questions, with time left for switching subjects and reviewing. The detailed pilot plan totals about 168 minutes; real timings need a human timed trial.
 
 ## Prediction translated into preparation priorities
 

@@ -1,3 +1,5 @@
+> **Historical snapshot — milestone corrections, 4 November 2026:** Later canonical changes supersede affected content, answer descriptions, page counts and validation claims below. Read [the correction report](milestone15_fixes/CORRECTION_REPORT.md) and its final source-bound evidence for the current Tests 1–15 checkpoint.
+
 # Current verification record
 
 Supersedes the original notes preserved in `baseline/original_review_notes.md`.

@@ -94,3 +94,12 @@ Each exam has its own instructions file and 25 planned tests per series. Mock au
 **IAT pilot (29 Oct 2026):** 60 original questions, 15 per subject, six exact diagrams, 180 minutes, +4/-1/0, and worked solutions. Uses the verified 2026 pattern; no 2027 brochure is claimed. Status remains `pending_revision` for manual academic review. See [review files and reproduction commands](IISER/review/README.md). Run `python validate_iat.py`; the CUET validator does not validate this schema.
 
 **Analysis and audit PDFs:** [14-page student PYQ guide](output/pdf/IAT_PYQ_Analysis_Student_Guide.pdf) and [19-page Test 1 audit](output/pdf/IAT_Test_1_Full_Audit.pdf). The audit recommends content/style/difficulty revisions before final release; it leaves the test unchanged. [Evidence and reproduction notes](output/iat_reports/README.md).
+
+
+## IAT authoring checkpoint — 6 November 2026
+
+All 25 IAT review drafts are authored: 1,500 questions, 375 per subject. Tests 24–25 add 120 individually solved items, 18 scientific figures, detailed WHY and displayed Mathematics/Physics working. All 127 author probes and all 25 structural checks pass; the previous 1,380 canonical questions are unchanged. The [review notes](IISER/review/IAT_NEW_TESTS_24_25_REVIEW_NOTES.md) document PYQ calibration, changed angles, render checks and limitations.
+
+The [completed CSV plan](docs/blueprints/iat_25_test_plan.csv) mirrors all 1,500 fixed slots. The [scope checklist](docs/blueprints/iat_syllabus_coverage.csv) records 412 printed entries with limited material-aspect evidence through 544 links; 228 need explicit evidence review and are not automatically proved missing. Authored completion is not exhaustive syllabus or academic certification. Independent hidden-key subject and timed review remain pending.
+
+**Remote checkpoint verified, 7 November 2026:** Branch `iat-tests-24-25` was pushed successfully, and GitHub matched content commit `ba97e4b5abad20e6ad5e8539ce3be8608d6c880c`. This includes the previously unpublished Tests 20–25 history. No credential is stored in repository files or the remote URL. Main and earlier branches remain intact. The downloadable recovery bundle remains an additional backup.
