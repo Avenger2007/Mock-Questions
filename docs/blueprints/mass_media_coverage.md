@@ -50,6 +50,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | lasswell who says what, shannon weaver noise, osgood schramm circular, berlo smcr, tv delhi 1959, site 1975 satellite, colour tv 1982, hum log social soap, hickys bengal gazette 1780, udant martand 1826, vernacular press act 1878, emergency censorship 1975, group communication class, feedback missing lasswell, stereotyping repeated simplified image, krishi darshan 1967 farmers, mcluhan global village, prasar bharati air dd |
 | T2 | semantic barrier word meaning, physical barrier noise environment, psychological barrier attitude, cultural barrier gestures differ, samachar darpan bengali, kesari tilak, young india gandhi, amrita bazar english overnight, aristotle model earliest, lasswell 1948, osgood schramm 1954, berlo 1960, mass communication large scattered audience, westley maclean gatekeeper, dance helical spiral, development communication social change, doordarshan separate 1976, written letter verbal not nonverbal |
 | T3 | noise interferes with message, encoding into symbols, linear model one way, schramm field of experience overlap, two way communication adjust message, intrapersonal within self, interpersonal two persons, group communication small gathering, mass communication tv bulletin, hum log 1984, buniyaad 1986, ramayan 1987, mahabharat 1988, popular culture mass media, anna fm first community radio |
+| T4 | mirat ul akhbar ram mohan roy, bombay samachar marzban, the hindu subramania iyer, al hilal azad, cable tv gulf war 1991, zee tv 1992 private hindi, prasar bharati 1997, dd news 2003, gutenberg press 1450, marconi wireless, bbc tv 1936, www 1989, nonverbal gestures expressions, aristotle persuasion speaker, kinesics body movement, decoding receiver interprets, functions inform educate entertain, kheda communication project |
 
 ### M2 Journalism
 
@@ -58,6 +59,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | inverted pyramid most important first, lead first paragraph, 5w1h why cause, caption photo text, verify before publishing fake news, timeliness recent, proximity nearness, prominence famous people, human interest emotions, press freedom 19 1 a, 19 2 restrictions, rti act 2005, pci censure not jail, sensationalism exaggeration, nose for news |
 | T2 | byline writer name, dateline place date, deck subheadline, masthead paper name, romesh thappar press freedom, bennett coleman newsprint, shreya singhal 66a, puttaswamy privacy, reporter files copy, sub editor edits headline, news editor page plan, printing last, editorial newspaper opinion, paid news undisclosed payment, plagiarism copying without credit, stet let it stand, official secrets act 1923, partisanship not journalist quality |
 | T3 | contempt of courts act 1971, copyright act 1957 creative works, working journalists act 1955, prasar bharati act 1990, impact news value, novelty unusual, conflict clash, prb act 1867, indian press act 1910, press council 1966 set up, rti act 2005, beat fixed area, advertorial ad like article, defamation reputation, embargo publish after time, op ed outside writers, investigative journalism hidden wrongdoing |
+| T4 | rule of thirds grid, candid unposed, photo essay series story, cropping trim, pci quasi judicial 1978, pci chair retired judge, pci print only not tv, pci complaints both ways, newsroom hierarchy editor to sub, pti news agency, yellow journalism sensational, stop press last minute, trial by media prejudge, criticism not restriction 19 2, feature soft news human interest |
 
 ### M3 Advertising and Public Relations
 
@@ -66,6 +68,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | cross promotion two brands, merchandising branded products, covert advertising product placement, public service advertising social, ivy lee father pr, press release written media, pr earned not paid, house journal employees, race model pr steps, aida action, asci self regulation, amul topical ads, crisis speak early one voice |
 | T2 | informational ad facts, client brief objectives, transit advertising buses, media planning choose media, comparative advertising fair claims, jago grahak jago consumer rights, incredible india tourism, pulse polio do boond, swachh bharat sanitation, surrogate advertising banned products |
 | T3 | account servicing client link, creative department copy visuals, media department buys space, research department consumer study, bernays crystallizing public opinion, prsi 1958, national pr day 21 april, press conference two way, brand image perception, usp unique selling proposition, institutional advertising company image, billboard outdoor, sponsorship event visibility |
+| T4 | lobbying lawmakers, spin slanted, media relations journalists, community relations neighbours, asci 1985, asci voluntary not govt, ads fund media, ads inform consumers, copy words of ad, cooperative advertising shared cost, teaser campaign curiosity, press kit material journalists, pro functions not editing |
 
 ### M4 TV production and programmes
 
@@ -74,6 +77,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | stripping weekday slot, stacking similar block, hammocking weak between strong, tentpoling strong between weak, script recce shoot edit, storyboard shot drawings, post production graphics music, barc ratings |
 | T2 | reality show unscripted, docudrama reconstruction real events, game show prizes, talk show host guests, shot sizes widest to closest, trp television rating point, recce location survey, floor manager studio floor |
 | T3 | high angle weak, low angle powerful, birds eye overhead, dutch angle tilt unease, producer budget schedule, vision mixer switches feeds, teleprompter script lens, soap opera continuing serial, chroma key green screen, colour grading post production |
+| T4 | cut instant, dissolve blend, fade to black, wipe across, tv news story assignment shoot edit air, anchor presents bulletin, prime time largest audience, voice over unseen narrator |
 
 ### M5 Radio
 
@@ -82,6 +86,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | dynamic mic rugged no power, condenser mic phantom power, mixer combines inputs, amplifier boosts signal, active voice direct ear, imagery theatre of mind, omnidirectional all directions, on air light |
 | T2 | phone in listeners call, radio feature mix elements, radio drama dialogue effects, radio talk one speaker, cardioid front heart, bidirectional figure eight, ribbon mic delicate, acoustic treatment echo, fm frequency modulation, talkback producer presenter, round off numbers radio |
 | T3 | jingle short catchy, signature tune programme opening, cue signal start, fade in gradually louder, radio production script record edit broadcast, radio sound only, am amplitude long range, lapel mic clipped |
+| T4 | conversational style one listener, repetition radio recap, sound effects set scene, bidirectional figure eight, dialogue format relatable questions |
 
 ### M6 Cinema
 
@@ -90,6 +95,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | lumiere paris 1895, flaherty nanook, grierson coined documentary, phalke raja harishchandra, genre shared conventions, western frontier, musical song dance, animation frames drawings, raja harishchandra 1913, alam ara 1931, pather panchali 1955, manthan 1976, documentary research before shoot, action genre stunts, cinematographe camera projector |
 | T2 | biopic real life, thriller suspense, horror fear, film noir dark crime, pre production script casting, dubbing post production, distribution to exhibitors, exhibition screening, bhuvan shome 1969, ankur 1974, aakrosh 1980, ardh satya 1983, phalke father indian cinema, nfdc funded parallel cinema, cbfc certification cinematograph act |
 | T3 | cinematographer camera lighting, film editor assembles shots, art director sets, choreographer dance, science fiction imagined science, mythological raja harishchandra, melodrama heightened emotion, war film battles, kisan kanya 1937 colour, do bigha zamin 1953, mother india 1957 oscar, sholay 1975, documentary real events, screenplay dialogue scenes, trailer preview promote |
+| T4 | clapperboard sync, rushes daily footage, final cut, location shooting outside studio, films division 1948, documentary narration interviews archive, observational documentary no narration, documentary reconstruction, producer distributor exhibitor audience, film studio sets, subtitles translation text, ftii pune training |
 
 ### M7 Social media
 
@@ -98,6 +104,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | trolling provoke, cyberstalking repeated tracking, phishing fake messages, identity theft impersonation, citizens question leaders, misinformation spreads fast, hashtag collective identity, anyone can campaign, blogging wordpress, cyber helpline 1930, spam bad netiquette |
 | T2 | metoo harassment, iac jan lokpal, arab spring uprisings, nirbhaya womens safety, capital letters shouting, identify yourself online, forward unverified wrong, privacy consent photos, microblogging short posts, cybercrime gov in portal, it act 2000 cyber law |
 | T3 | hacking unauthorised access, cyber fraud money, morphing altered photo, ransomware locks files, facebook social networking, linkedin professional network, pinterest image sharing, viral rapid spread, digital footprint trail, bots automated accounts |
+| T4 | influencer following, meme humorous spread, livestream real time, story disappears 24 hours, online communities shared interests, marginalised voices, algorithms personalise feeds, youtube video sharing, two factor authentication, clickbait misleading headline |
 
 ### M8 New media
 
@@ -106,3 +113,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | few to many model, gigantic organisations infrastructure, individuals post globally, many sources same information, convergence one platform, one medium triggers another, citizen journalism |
 | T2 | ott streaming internet, podcast on demand audio, mojo smartphone reporting, data journalism data analysis, web 2.0 user generated, economic convergence ownership across media, echo chamber similar views |
 | T3 | bypass gatekeepers, digital divide unequal access, fake news faster than corrections, ott over the top, technological convergence smartphone, one way flow not new media |
+| T4 | deepfake ai fake video, algorithm decides feed, paywall pay to read, podcast on demand audio, leaders speak directly citizens, online campaigns offline impact, fact checking sites, internet network of networks, digital first publishing |
