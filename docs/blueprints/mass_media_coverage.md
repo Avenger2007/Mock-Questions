@@ -61,6 +61,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | newspaper permanent reread, radio portable illiterate, tv audio visual, internet interactive, prasar bharati autonomous, prasar bharati runs air dd, prasar bharati set up by act, akashvani 1957, bombay tv 1972, prasar bharati 1997, dd kisan 2015, gesture wave goodbye, mass comm impersonal, subculture group, udant martand calcutta, ethnocentrism barrier, opinion leader not shannon weaver |
 | T13 | berlo source skills, berlo message code treatment, berlo channel five senses, berlo receiver attitudes, lasswell verbal model, osgood schramm both encode decode, westley maclean gatekeeper, samachar darpan 1818, bombay samachar 1822, kesari 1881, young india 1919, oral communication spoken, schramm father communication studies, media literacy analyse, mass comm no immediate feedback, high culture elite, al hilal azad |
 | T14 | mcluhan global village, habermas public sphere, lasswell who says what, berlo smcr, kinesics body movement, proxemics space, paralanguage tone pitch, chitrahaar 1982, buniyaad 1986, ramayan 1987, mahabharat 1988, smile nonverbal, formal communication official, jargon semantic barrier, kathputli folk puppetry, sambad kaumudi ram mohan roy, tv broadcast not interpersonal |
+| T15 | serial stereotype community, representation shapes outsiders view, insider consultation authentic, serial spreads culture regions, diverse characters counter stereotype, cultural imperialism western media, glocalisation adapt local, popular culture mass media, lasswell 1948, westley maclean 1957, berlo 1960, dance helical 1967, two step flow opinion leaders, tv serial not folk |
 
 ### M2 Journalism
 
@@ -80,6 +81,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | photo essay series story, caption identifies who where what, consent dignity vulnerable subjects, cropping must not change meaning, wide establishes close up emotion, spot news photo, feature photo, sports action photo, portrait photo, photo story plan shoot select caption, photo agency supplies, infographics data visual |
 | T13 | banner headline full width, jump line continued, standfirst summary below headline, pull quote enlarged, prp act 2023 replaced prb, prgi registration, prp books excluded, investigative tip documents response publish, daily newspaper every day, copy written news material, reporter preference not news value, foreign correspondent abroad, bureau office another city, filler small space |
 | T14 | pti india, reuters uk, ap usa, afp france, press freedom implied 19 1 a, 19 2 restrictions, restriction by law only, prb act 1867, indian press act 1910, official secrets act 1923, working journalists act 1955, reporter gathers news, column centimetre space, soft news street artist, sub editor not reporting, leak secret information, newsprint paper |
+| T15 | malayala manorama malayalam, eenadu telugu, dainik jagran hindi, anandabazar bengali, copyright act 1957 creative works, fair dealing news reporting, facts not copyrightable, romesh thappar 1950, bennett coleman 1972, shreya singhal 2015, puttaswamy 2017, monthly magazine, ear panel masthead sides, fact checker verifies, long sentences not news writing, press accreditation, editions different cities |
 
 ### M3 Advertising and Public Relations
 
@@ -99,6 +101,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | ad headline attention, body copy details, call to action, ad visual image, advertiser controls message, pr more credible, pr and ads integrated, advertiser pays, banner ad website, publicity stunt, aida desire, issue management anticipate |
 | T13 | pioneering ad new category, competitive ad rival brands, advocacy ad public issue, reminder advertising known brand, ccpa misleading ads, endorser liability, cpa 2019 covers all media, target audience campaign, agency pitch new client, publics groups, agency not printing, grunig two way symmetrical |
 | T14 | account executive client, copywriter writes copy, art director visuals ad, media planner chooses media, pr no bribes journalists, pr disclose client, prsi code ethics, hoarding roadside, advertising budget, haat rural promotion, accounts not pr, imc consistent message |
+| T15 | press agentry publicity, public information one way, two way asymmetric persuade, grunig two way symmetrical, ads consumerism criticism, ads gender stereotypes, ads fund media, leaflet handout, ad campaign series theme, bandwagon appeal everyone, boilerplate company background, corporate film company story |
 
 ### M4 TV production and programmes
 
@@ -118,6 +121,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | shot list, shooting schedule, release form permission, treatment outline, audience research planning, focus group qualitative, social media audience feedback, footage recorded video, time code frames, av script audio column |
 | T13 | crane shot rises, tracking shot follows, handheld shaky, steadicam smooth, reality show unscripted, docudrama reconstruction real events, talk show host guests, camera operator, 4 3 standard tv, extreme close up detail |
 | T14 | ticker scrolling text, logo bug corner, full screen graphic data, split screen two pictures, tv idea research script shoot, rerun repeat, establishing shot setting, pcr director gallery |
+| T15 | terrestrial antenna, cable tv wire, dth direct to home, iptv internet, key light main source, fill light softens, back light separates, remote control channels, pre recorded later broadcast, anthology series separate stories |
 
 ### M5 Radio
 
@@ -137,6 +141,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | mann ki baat monthly address, hawa mahal radio plays, binaca geetmala countdown, yuv vani youth, phone in announce screen air wrap, request show listeners songs, broadcast delay live calls, phonetic spelling names |
 | T13 | station id name frequency, radio filler spare time, time check, sign off end transmission, radio interview level record edit broadcast, frequency hertz, write for ear short sentences, gyan vani educational fm |
 | T14 | station director heads, radio producer plans, radio engineer technical, rj radio jockey, cr nonprofit run, cr small coverage area, anna fm first community radio, radio blind medium, polar pattern directions, mann ki baat 2014 |
+| T15 | radio spot ad, jingle short catchy, sponsored programme, live read presenter, radio drama script rehearse record mix, listener radio audience, ameen sayani binaca, mp3 audio format |
 
 ### M6 Cinema
 
@@ -156,6 +161,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | cross cutting two places, jump cut abrupt, match cut similar shape, flashback past, piracy harms revenue, cinematograph amendment 2023 camcording, satellite ott rights revenue, mother india 1957 oscar, salaam bombay 1988, lagaan 2001, naatu naatu 2023, comedy laugh, junior artists extras, cbfc renamed 1983 |
 | T13 | lumiere paris 1895, actuality films everyday life, flaherty staging reconstruction, grierson creative treatment actuality, nanook narrative vs actuality, expository narrator argument, archival footage history, documentary music allowed |
 | T14 | cannes france, berlinale germany, venice oldest italy, iffi goa festival, ua age categories 2023, a certificate adults, s certificate specialised, kaagaz ke phool cinemascope 1959, sholay 1975, my dear kuttichathan 3d 1984, lagaan 2001, protagonist main character, film producer finance, nfai pune archive |
+| T15 | montage editing meaning, mise en scene arrangement, diegetic sound story world, non diegetic score, phalke award lifetime, devika rani first phalke 1969, phalke award government, cinema hall screening, kollywood tamil, indian panorama iffi, pyaasa guru dutt |
 
 ### M7 Social media
 
@@ -175,6 +181,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | data breach leak, end to end encryption, privacy policy data use, geotag location, fake news emotional language, check source date, fact check sites verify, selfie self photo, social engineering manipulate, digital wellbeing screen time |
 | T13 | mention tags user, repost shares, handle username, hashtag topic label, 66c identity theft, 66d personation, 67 obscene electronic, 66a struck down, reels short video, strong password mix, trojan disguised malware |
 | T14 | cyber activism lake campaign, profile picture collective identity, morphed government order fake, online to offline mobilisation, slacktivism criticism |
+| T15 | phishing avoid links, malware antivirus, two factor authentication, privacy settings who sees, screenshots evidence cybercrime, forwarding spreads bullying bystander, cyberbullying always on, upload post content, blog online journal, digital citizenship responsible |
 
 ### M8 New media
 
@@ -194,3 +201,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T12 | anuradha bhasin 2020 internet speech, shutdowns proportionate, digital divide rural poor, smartphone internet apps, freemium model, long tail niche |
 | T13 | listicle numbered list, news quiz interactive, slideshow images click, long form in depth, arpanet 1969, www 1989, vsnl 1995, facebook 2004, ebook digital book, cloud storage remote servers |
 | T14 | bandwidth data rate, broadband high speed, wifi wireless local, 5g mobile generation, ott age classification, ott no cbfc certification, ott parental lock, e learning online courses, augmented reality overlay |
+| T15 | chatbot conversation, deepfake ai fake video, algorithm decides feed, machine translation languages, vsnl 1995, it act 2000, digital india 2015, dpdp act 2023, video conferencing, subscription video on demand |
