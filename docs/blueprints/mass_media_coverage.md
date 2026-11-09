@@ -55,6 +55,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | chitrahaar film songs, surabhi culture, turning point science, malgudi days narayan, shannon weaver telephone, schramm field of experience overlap, berlo no feedback, feedback missing lasswell, hickys bengal gazette 1780, bombay samachar 1822, kesari 1881, young india 1919, channel medium, transactional simultaneous, social marketing social good, site isro nasa, doordarshan ads 1976, feedback not barrier |
 | T7 | upward communication, downward communication, horizontal communication peers, grapevine informal, representation shapes perception, stereotypes simplify, under representation rare, bombay tv 1972, doordarshan separate 1976, cable act 1995, dd free dish 2004, mass media radio tv newspapers, shannon weaver transmitter signal, mcluhan hot cool media, site 2400 villages, technical noise static, phone call not mass media |
 | T8 | surveillance environment news, correlation interpret, transmission of culture, entertainment function, community radio marginalised voice, mobile phones farmers prices, kisan call centres 2004, telegraph 1844, telephone 1876, baird tv 1926, telstar 1962, written communication letter email, context setting meaning, asiad 1982 tv expansion, vpa repealed 1882 ripon, socialisation media values, berlo no noise element |
+| T9 | sender newsreader, message news content, channel radio waves, receiver listener, insat expanded dd reach, dd kisan 2015, sansad tv 2021, shannon weaver 1949, osgood schramm 1954, westley maclean 1957, dance helical 1967, magazine print medium, selective perception beliefs, dd motto satyam shivam sundaram, cultural imperialism western media, participatory communication community, tv broadcast not group |
 
 ### M2 Journalism
 
@@ -68,6 +69,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | columnist regular opinion, correspondent reports from place, stringer part time per story, photojournalist pictures, active voice news, attribution source named, short paragraphs, fact check steps, obituary death life, embedded journalism military, readers editor complaints, kicker above headline, conflict of interest, length not news value |
 | T7 | dele remove, caps capitals, trs transpose, run on no break, no altering news photos, restraint graphic images, children photos care, copyright act 1957 passed, contempt act 1971, it act 2000, dpdp act 2023, headline summarises attracts, scoop exclusive, morgue newspaper archive, deadline copy time, hate speech incite group, proofreader checks typesetting |
 | T8 | nbdsa tv news complaints, bccc entertainment content, trai tariffs, prgi registers periodicals, headline present tense, headline drops articles, headline accurate to story, interview steps research questions conduct write, weekly once a week, slug story label, advocacy journalism cause, cut from bottom trimming, article 361a parliament reporting, dateline not headline |
+| T9 | sting operation hidden camera, sting public interest justification, entrapment unethical sting, mcmc paid news elections, paid news deceives voters, fabrication invented facts, chequebook journalism paying sources, doorstepping confront at home, puff piece flattering, fair criticism not contempt, truth defence contempt 2006, scandalising court contempt, ethics moral principles, right of reply response |
 
 ### M3 Advertising and Public Relations
 
@@ -81,6 +83,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | employee relations staff, investor relations shareholders, public affairs government, customer relations buyers, logo visual symbol, brand loyalty repeat, brand ambassador, trademark protects brand, broadcast advertising radio tv, ivy lee declaration 1906, point of purchase store display, word of mouth publicity, infomercial long demo |
 | T7 | reach how many, frequency how often, impression one view, cpm cost per thousand, press release 5ws, media advisory invite, backgrounder context, press release not paid, sales promotion free gift, bernays engineering of consent, wall painting rural ads, copywriter writes copy, ambush marketing event |
 | T8 | pro handles media crisis, no comment fuels rumours, press release key facts first, single spokesperson consistent message, transparency rebuilds trust, native advertising matches platform, display ads banners, search ads results, influencer marketing creators, corrective advertising false claims |
+| T9 | newspaper ads quick local, magazine long life quality, tv ads sight sound motion, radio ads cheap sound, asci truthful claims, asci decency, asci influencer disclosure 2021, crisis stages prepare respond recover learn, cinema advertising theatres, puffery exaggeration, brand extension new product, coupon not pr tool |
 
 ### M4 TV production and programmes
 
@@ -94,6 +97,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | pan horizontal, tilt vertical, zoom lens, dolly moves camera, post production log rough fine master, doordarshan public broadcaster, key light main source, counter programming rival |
 | T7 | pre production booking guests research, rundown running order, multi camera live switching, lower third name caption, audience feedback interactive social media |
 | T8 | vox pop street opinions, sound bite short clip, b roll supporting footage, live phono phone report, pitch commission produce telecast, target audience children channel, 16 9 widescreen, dth direct to home |
+| T9 | over the shoulder shot, two shot both, pov shot character eyes, cutaway shot other, back light separates, fill light softens, high key bright few shadows, low key dark contrast, kbc quiz game show, simulcast same time two media, promo upcoming programme |
 
 ### M5 Radio
 
@@ -107,6 +111,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | fade out gradually silent, cross fade blend, sound bed music under speech, segue one item into next, radio spell abbreviations, radio attribution first, read aloud check, community radio local, sound lock double doors, air motto bahujan hitaya |
 | T7 | vividh bharati entertainment, external services abroad, news services division bulletins, fm rainbow urban music, open ended questions, avoid verbal nods, research guest, radio spot ad, radio script double spacing, ob van outside broadcast |
 | T8 | magazine programme items, running commentary live event, countdown ranked songs, radio quiz listeners answer, shortwave ionosphere, fm vhf 88 108, medium wave am, radio cheap portable, vu meter level, avoid long lists radio |
+| T9 | public service radio, commercial radio advertising, community radio local, internet radio streams, radio feature research record script mix, control room producer engineer, ad lib unscripted, stereo two channels |
 
 ### M6 Cinema
 
@@ -120,6 +125,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | newsreel current events, short film brief, feature film full length, experimental film breaks rules, genre expectations audience, genre marketing, genres evolve, film many genres, films division 1948, central board film censors 1951, ftii 1960, nfdc 1975, alam ara first talkie, ray honorary oscar 1992, foley sound effects |
 | T7 | phalke award lifetime, national film awards government, iffi goa festival, filmfare magazine, line producer budget daily, call sheet schedule, continuity errors, development securing rights, casting pre production, principal photography, colour grading post, director creative control, persistence of vision, apu trilogy ray |
 | T8 | silent film no sound, talkie synchronised sound, technicolor colour process, cgi computer images, a certificate adults, u certificate unrestricted, s certificate specialised, pather panchali 1955, bhuvan shome 1969, ankur 1974, manthan 1976, bollywood hindi mumbai, shot reverse shot conversation, take one recording |
+| T9 | casting director actors, costume designer clothes, sound designer soundtrack, location manager places, lumiere bombay 1896, raja harishchandra silent, men played women roles, alam ara 1931, kisan kanya 1937 colour, kaagaz ke phool cinemascope 1959, my dear kuttichathan 3d 1984, film score music, remake new version, calcutta film society 1947 ray |
 
 ### M7 Social media
 
@@ -133,6 +139,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | cyberbullying repeated hurt, screenshots evidence cybercrime, cyber helpline 1930, forwarding spreads bullying bystander, morphing offence it act |
 | T7 | reddit forum, quora q and a, telegram messaging channels, wikipedia wiki collaborative, portal complaint steps, social networking sites, doxxing private info, never share otp |
 | T8 | fandom fans, online support group, diaspora groups connected, alumni groups former students, model code social media, mcmc precertify ads, cvigil app, instagram photo video sharing, smishing sms phishing, pib fact check government |
+| T9 | engagement likes comments, follower subscribed, trending topic spike, verified badge authentic, dm direct message, sim swap fraud, lurking read not post, disinformation deliberate |
 
 ### M8 New media
 
@@ -146,3 +153,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | prosumer produces consumes, digital native, gatekeeper editor traditional, hyperlink connects pages, one newsroom many platforms, cultural convergence participation, multiskilled journalist, e paper digital replica, mobile first news |
 | T7 | filter bubble algorithm, infodemic crisis flood, digital literacy skills, information overload, ai writes simple reports, ai images misinformation, label ai content, streaming without download, news aggregator collects |
 | T8 | traditional revenue ads subscriptions, anyone can publish, news spreads across platforms minutes, vlog video blog, push notification alert, transmedia storytelling |
+| T9 | ott age classification, grievance officer intermediaries, intermediaries remove unlawful content, second screen phone tv, explainer background, cord cutting streaming |
