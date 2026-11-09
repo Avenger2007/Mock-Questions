@@ -57,6 +57,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T8 | surveillance environment news, correlation interpret, transmission of culture, entertainment function, community radio marginalised voice, mobile phones farmers prices, kisan call centres 2004, telegraph 1844, telephone 1876, baird tv 1926, telstar 1962, written communication letter email, context setting meaning, asiad 1982 tv expansion, vpa repealed 1882 ripon, socialisation media values, berlo no noise element |
 | T9 | sender newsreader, message news content, channel radio waves, receiver listener, insat expanded dd reach, dd kisan 2015, sansad tv 2021, shannon weaver 1949, osgood schramm 1954, westley maclean 1957, dance helical 1967, magazine print medium, selective perception beliefs, dd motto satyam shivam sundaram, cultural imperialism western media, participatory communication community, tv broadcast not group |
 | T10 | lasswell content analysis, lasswell media analysis, lasswell audience analysis, lasswell effect analysis, emergency censorship 1975, blank editorial protest, press council dissolved emergency, emergency ended 1977, krishi darshan 1967 farmers, site 1975 satellite, colour tv 1982, hum log 1984, print media newspapers, empathy understanding, heterogeneous audience mixed, visual communication images, tv 1959 unesco help, podcast not folk media |
+| T11 | radio club bombay 1923, ibc losses isbs 1930, all india radio 1936, vividh bharati 1957 radio ceylon, radio private state private fm, dd national general, dd bharati arts culture, dd india international, dd sports sport, folk media local language trusted, nukkad natak social messages, song and drama division 1954, fm madras 1977, private fm 2001 |
 
 ### M2 Journalism
 
@@ -72,6 +73,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T8 | nbdsa tv news complaints, bccc entertainment content, trai tariffs, prgi registers periodicals, headline present tense, headline drops articles, headline accurate to story, interview steps research questions conduct write, weekly once a week, slug story label, advocacy journalism cause, cut from bottom trimming, article 361a parliament reporting, dateline not headline |
 | T9 | sting operation hidden camera, sting public interest justification, entrapment unethical sting, mcmc paid news elections, paid news deceives voters, fabrication invented facts, chequebook journalism paying sources, doorstepping confront at home, puff piece flattering, fair criticism not contempt, truth defence contempt 2006, scandalising court contempt, ethics moral principles, right of reply response |
 | T10 | letters to editor readers views, business page economy, city page local news, supplement extra section, objectivity fairness, persistence journalist, protect sources, general knowledge journalist, inverted pyramid order lead details background, editor heads newspaper, tabloid format, credit line photo, correction published mistake, decency morality restriction, printing press not source |
+| T11 | spot news scene, follow up later developments, interpretative report explains, human interest story emotions, defamation civil criminal, truth public good defence, fair comment defence, page dummy placement proof plate, lead story front page, anonymous source unnamed, norms of journalistic conduct, editorial cartoon, libel written defamation, jargon not good news writing |
 
 ### M3 Advertising and Public Relations
 
@@ -87,6 +89,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T8 | pro handles media crisis, no comment fuels rumours, press release key facts first, single spokesperson consistent message, transparency rebuilds trust, native advertising matches platform, display ads banners, search ads results, influencer marketing creators, corrective advertising false claims |
 | T9 | newspaper ads quick local, magazine long life quality, tv ads sight sound motion, radio ads cheap sound, asci truthful claims, asci decency, asci influencer disclosure 2021, crisis stages prepare respond recover learn, cinema advertising theatres, puffery exaggeration, brand extension new product, coupon not pr tool |
 | T10 | full service agency, creative boutique, media buying agency, in house agency, media relations long term, pr never lie, exclusive interview offer, journalists not bound to publish, tv commercial, testimonial customer, brand positioning mind, amul girl mascot, press tour facility visit |
+| T11 | asci self regulation, prsi professional body, aaai agencies association, cbc davp government ads, consistency builds brand image, crisis damages brand image, csr improves image, pr campaign objectives publics messages evaluate, digital advertising online, pib government pr, reminder advertising known brand, lifestyle advertising |
 
 ### M4 TV production and programmes
 
@@ -102,6 +105,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T8 | vox pop street opinions, sound bite short clip, b roll supporting footage, live phono phone report, pitch commission produce telecast, target audience children channel, 16 9 widescreen, dth direct to home |
 | T9 | over the shoulder shot, two shot both, pov shot character eyes, cutaway shot other, back light separates, fill light softens, high key bright few shadows, low key dark contrast, kbc quiz game show, simulcast same time two media, promo upcoming programme |
 | T10 | boom mic pole, wireless mic no cable, nat sound location, sync sound recorded with picture, bulletin headlines top story sports close, breaking news urgent, infotainment, pilot episode test |
+| T11 | talent show performers judged, cookery show recipes, panel discussion experts debate, mythological serial epics, non linear editing random access, captions added post, editing follows shoot, tv schedule fixed times, uplink to satellite, ob production live sports |
 
 ### M5 Radio
 
@@ -117,6 +121,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T8 | magazine programme items, running commentary live event, countdown ranked songs, radio quiz listeners answer, shortwave ionosphere, fm vhf 88 108, medium wave am, radio cheap portable, vu meter level, avoid long lists radio |
 | T9 | public service radio, commercial radio advertising, community radio local, internet radio streams, radio feature research record script mix, control room producer engineer, ad lib unscripted, stereo two channels |
 | T10 | actuality real sound, wrap voice and clip, voicer reporter only, copy story read by newsreader, reverberation reflection, absorb panels carpets, dead studio little echo, newsreader reads bulletin, ram radio audience measurement, mic sound to electrical |
+| T11 | back announce just heard, trail upcoming radio, link connects items, outro closing, radio bulletin tune headlines details recap, antenna receives signal, dont blow into mic, drm digital radio |
 
 ### M6 Cinema
 
@@ -132,6 +137,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T8 | silent film no sound, talkie synchronised sound, technicolor colour process, cgi computer images, a certificate adults, u certificate unrestricted, s certificate specialised, pather panchali 1955, bhuvan shome 1969, ankur 1974, manthan 1976, bollywood hindi mumbai, shot reverse shot conversation, take one recording |
 | T9 | casting director actors, costume designer clothes, sound designer soundtrack, location manager places, lumiere bombay 1896, raja harishchandra silent, men played women roles, alam ara 1931, kisan kanya 1937 colour, kaagaz ke phool cinemascope 1959, my dear kuttichathan 3d 1984, film score music, remake new version, calcutta film society 1947 ray |
 | T10 | prequel before, sequel continues, spin off minor character, franchise series of films, parallel cinema real locations, benegal rural injustice, nfdc funded parallel cinema, set rehearse roll action cut, multiplex several screens, box office ticket sales, cameo brief appearance |
+| T11 | adoor malayalam, kasaravalli kannada, jahnu barua assamese, ray bengali, single screens declined, ott direct release, festivals independent films, do bigha zamin 1953, meghe dhaka tara 1960, uski roti 1969, aakrosh 1980, projector screens film, credits names crew, slow motion high frame rate |
 
 ### M7 Social media
 
@@ -147,6 +153,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T8 | fandom fans, online support group, diaspora groups connected, alumni groups former students, model code social media, mcmc precertify ads, cvigil app, instagram photo video sharing, smishing sms phishing, pib fact check government |
 | T9 | engagement likes comments, follower subscribed, trending topic spike, verified badge authentic, dm direct message, sim swap fraud, lurking read not post, disinformation deliberate |
 | T10 | sockpuppet fake account, brigading coordinated attack, astroturfing fake grassroots, shadow ban hidden, social media ugc, social media networks connections, global instant reach, emoji emotion, parental controls |
+| T11 | crowdfunding many donors, live tweeting real time, online poll opinions, thread connected posts, spam unwanted bulk, cert in cyber incidents, credit creators sharing, reverse image search |
 
 ### M8 New media
 
@@ -162,3 +169,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T8 | traditional revenue ads subscriptions, anyone can publish, news spreads across platforms minutes, vlog video blog, push notification alert, transmedia storytelling |
 | T9 | ott age classification, grievance officer intermediaries, intermediaries remove unlawful content, second screen phone tv, explainer background, cord cutting streaming |
 | T10 | convergence newsroom multiple platforms, one medium triggers another, user generated content readers photos, print adds depth analysis, new paradigm many sources participation |
+| T11 | web 1.0 read only, www not same as internet, mobile main internet access india, search engine finds pages, cookies track browsing, creative commons reuse |
