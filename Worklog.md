@@ -517,6 +517,33 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 ### Tools added
 - `docs/blueprints/history.md` (pattern, PYQ analysis, theme quotas, difficulty, formats, out-of-scope list) and `docs/blueprints/history_coverage.md` (passage themes, sequence rotation, answer-fact ledgers).
 - `tools/cuet_his/` — compact draft format and converter, checker, ledger marker, ship script, item patcher, match relabeller and series re-indexer; drafts of all 15 tests in `drafts/`.
+## Mass Media (318) — revised to the CUET 2027 standard (completed 9 Nov 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `8067283` (blueprint, coverage map, tools and pilot Test 1), `f61a11b` (Test 2) … `8aaebdc` (Test 15) on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | old papers, status `pending_revision` | **15 rewritten tests** (`CUET MASS MEDIA TEST 1–15.json`), planned first in a coverage map; status `revised` |
+| Paper structure | 50 compulsory | unchanged: 50 compulsory questions, 60 min, +5 / −1 (NTA pattern) |
+| Syllabus | mixed | CUET Mass Media / Mass Communication syllabus in 8 units (M1 communication, M2 journalism, M3 advertising and PR, M4 television, M5 radio, M6 cinema, M7 social media, M8 new media) |
+| Unit balance | uneven | quotas M1 9, M2 9, M3 7, M4 5, M5 5, M6 6, M7 5, M8 4 in every test; the case unit takes 5, borrowing ±1 from a neighbour only where needed |
+| Case set | rare | one original case × 5 questions per test, rotating across units (e.g. editing a flood report, a millet-snack launch, a farm radio show, *Manthan*, a cyberbullying incident, a food-recall crisis, a sting and paid-news complaint, a migrant workers' photo essay, Lumière–Flaherty–Grierson, a hashtag campaign for a lake, a TV serial's portrayal of a hill community) |
+| Difficulty | uneven | **8 easy / 32 medium / 10 hard in every test** |
+| Formats | almost all direct | per test: 5 case-based, 7 match-list (each in a different unit), 6 statements, 4 sequence, 28 direct (≥3 fill-in-the-blank, ≥2 NOT/wrongly) |
+| Explanations | 1–2 lines | every item: Why / Why not the others / Key point |
+| Order and keys | uneven | key 13 / 12 / 13 / 12 (odd tests) and 12 / 13 / 12 / 13 (even tests); sequence answers never in A-B-C-D order; match patterns differ within a test; correct option never clearly the longest |
+
+**Coverage ledger:** every answer fact is recorded per unit and test in `docs/blueprints/mass_media_coverage.md` §C, and no fact is used more than twice in the series. `mm_check.py` flags repeated targets (`REPEAT-TARGET`), sub-topic or stem overlap with earlier tests (`OVERLAP`), over-long correct options (`LONGEST`) and quota drift. Every flag was cleared before shipping; one Test 10 sub-topic overlap found after shipping was renamed in `1570e4c`.
+
+**Verification:** `validate_papers.py CUET --subject "Mass Media"` — 0 parse errors, 0 wrong counts, 0 option-count errors, 0 key/explanation mismatches, 0 runs > 3, 0 self-referential options, 0 within- or cross-paper duplicate stems, 0 passage gaps, 0 difficulty deviations; series key A 25.1%, B 24.9%, C 25.1%, D 24.9%.
+
+**Known limits:** PYQs were analysed for pattern only; no question is copied. Cases are original scenarios, not real reports. Later tests draw some sequences from laws, court rulings and film or programme release order because the main media chronologies were already used twice.
+
+### Tools added
+- `docs/blueprints/mass_media.md` (pattern, PYQ analysis, unit quotas, difficulty, formats) and `docs/blueprints/mass_media_coverage.md` (case rotation, answer-fact ledgers).
+- `tools/cuet_mm/` — compact draft format and converter, checker, ledger marker, ship script, item patcher, match relabeller and series re-indexer; drafts of all 15 tests in `drafts/`.
+
 ## IAT New Tests 12 and 13 — authored review drafts (3 Nov 2026)
 
 - Authored 120 questions from reserved syllabus slots. Each paper has 15 questions per subject, editorial tiers 9/42/9, balanced 15-per-letter keys, detailed WHY and distractor analyses, and displayed derivations for all Mathematics/Physics items.

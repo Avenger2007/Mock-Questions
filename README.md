@@ -40,7 +40,7 @@ Each file's `status` field reads `revised` (meets the standard) or `pending_revi
 | 8 | Geography | 313 | ✅ | 15 / 15 | [geography.md](docs/blueprints/geography.md) |
 | 9 | Hindi | 102 | ✅ | 15 / 15 | [hindi.md](docs/blueprints/hindi.md) |
 | 10 | History | 314 | ✅ | 15 / 15 | [history.md](docs/blueprints/history.md) |
-| 11 | Mass Media | 318 | ✅ | — | — |
+| 11 | Mass Media | 318 | ✅ | 15 / 15 | [mass_media.md](docs/blueprints/mass_media.md) |
 | 12 | Mathematics | 319 | ✅ | — | — |
 | 13 | Physics | 322 | ✅ | — | — |
 | 14 | Political Science | 323 | ✅ | — | — |
