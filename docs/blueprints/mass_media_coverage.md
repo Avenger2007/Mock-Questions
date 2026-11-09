@@ -53,6 +53,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T4 | mirat ul akhbar ram mohan roy, bombay samachar marzban, the hindu subramania iyer, al hilal azad, cable tv gulf war 1991, zee tv 1992 private hindi, prasar bharati 1997, dd news 2003, gutenberg press 1450, marconi wireless, bbc tv 1936, www 1989, nonverbal gestures expressions, aristotle persuasion speaker, kinesics body movement, decoding receiver interprets, functions inform educate entertain, kheda communication project |
 | T5 | proxemics space, chronemics time, haptics touch, paralanguage tone pitch, culture learned transmitted, culture changes over time, media spread culture across regions, first press commission 1952, rni 1956, press council 1966, second press commission 1978, sender starts communication, mcluhan medium is the message, folk media traditional forms, hicky calcutta, intercultural different cultures, mass comm no immediate feedback |
 | T6 | chitrahaar film songs, surabhi culture, turning point science, malgudi days narayan, shannon weaver telephone, schramm field of experience overlap, berlo no feedback, feedback missing lasswell, hickys bengal gazette 1780, bombay samachar 1822, kesari 1881, young india 1919, channel medium, transactional simultaneous, social marketing social good, site isro nasa, doordarshan ads 1976, feedback not barrier |
+| T7 | upward communication, downward communication, horizontal communication peers, grapevine informal, representation shapes perception, stereotypes simplify, under representation rare, bombay tv 1972, doordarshan separate 1976, cable act 1995, dd free dish 2004, mass media radio tv newspapers, shannon weaver transmitter signal, mcluhan hot cool media, site 2400 villages, technical noise static, phone call not mass media |
 
 ### M2 Journalism
 
@@ -64,6 +65,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T4 | rule of thirds grid, candid unposed, photo essay series story, cropping trim, pci quasi judicial 1978, pci chair retired judge, pci print only not tv, pci complaints both ways, newsroom hierarchy editor to sub, pti news agency, yellow journalism sensational, stop press last minute, trial by media prejudge, criticism not restriction 19 2, feature soft news human interest |
 | T5 | summary lead 5ws, quotation lead, question lead, anecdotal lead, pci norms accuracy fairness, rape victim identity protected, juvenile identity protected, no gifts for coverage, romesh thappar 1950, sakal papers 1962, bennett coleman 1972, indian express 1985, 5w1h questions, hard news breaking events, copy editing corrects, fair dealing news reporting, off the record not for publication, slogan not news component |
 | T6 | columnist regular opinion, correspondent reports from place, stringer part time per story, photojournalist pictures, active voice news, attribution source named, short paragraphs, fact check steps, obituary death life, embedded journalism military, readers editor complaints, kicker above headline, conflict of interest, length not news value |
+| T7 | dele remove, caps capitals, trs transpose, run on no break, no altering news photos, restraint graphic images, children photos care, copyright act 1957 passed, contempt act 1971, it act 2000, dpdp act 2023, headline summarises attracts, scoop exclusive, morgue newspaper archive, deadline copy time, hate speech incite group, proofreader checks typesetting |
 
 ### M3 Advertising and Public Relations
 
@@ -75,6 +77,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T4 | lobbying lawmakers, spin slanted, media relations journalists, community relations neighbours, asci 1985, asci voluntary not govt, ads fund media, ads inform consumers, copy words of ad, cooperative advertising shared cost, teaser campaign curiosity, press kit material journalists, pro functions not editing |
 | T5 | fear appeal danger, humour appeal, celebrity endorsement, emotional appeal family, ads increase demand, ads help new brands, economies of scale ads, advertising paid not free, campaign research creative media evaluation, classified ads categories, slogan memorable line, csr goodwill, press conference questions |
 | T6 | employee relations staff, investor relations shareholders, public affairs government, customer relations buyers, logo visual symbol, brand loyalty repeat, brand ambassador, trademark protects brand, broadcast advertising radio tv, ivy lee declaration 1906, point of purchase store display, word of mouth publicity, infomercial long demo |
+| T7 | reach how many, frequency how often, impression one view, cpm cost per thousand, press release 5ws, media advisory invite, backgrounder context, press release not paid, sales promotion free gift, bernays engineering of consent, wall painting rural ads, copywriter writes copy, ambush marketing event |
 
 ### M4 TV production and programmes
 
@@ -86,6 +89,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T4 | cut instant, dissolve blend, fade to black, wipe across, tv news story assignment shoot edit air, anchor presents bulletin, prime time largest audience, voice over unseen narrator |
 | T5 | director guides shots, sound recordist audio, gaffer lighting electrician, continuity script supervisor, barc weekly viewership data, people meter sample homes, ratings measure viewing not liking, advertisers use ratings, live telecast as it happens, sitcom situation comedy, piece to camera reporter |
 | T6 | pan horizontal, tilt vertical, zoom lens, dolly moves camera, post production log rough fine master, doordarshan public broadcaster, key light main source, counter programming rival |
+| T7 | pre production booking guests research, rundown running order, multi camera live switching, lower third name caption, audience feedback interactive social media |
 
 ### M5 Radio
 
@@ -97,6 +101,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T4 | conversational style one listener, repetition radio recap, sound effects set scene, bidirectional figure eight, dialogue format relatable questions |
 | T5 | pop filter plosives, headphones monitor, transmitter sends signal, studio monitor speakers playback, sound path mic mixer transmitter receiver, rj radio jockey, dead air silence, signposting what comes next |
 | T6 | fade out gradually silent, cross fade blend, sound bed music under speech, segue one item into next, radio spell abbreviations, radio attribution first, read aloud check, community radio local, sound lock double doors, air motto bahujan hitaya |
+| T7 | vividh bharati entertainment, external services abroad, news services division bulletins, fm rainbow urban music, open ended questions, avoid verbal nods, research guest, radio spot ad, radio script double spacing, ob van outside broadcast |
 
 ### M6 Cinema
 
@@ -108,6 +113,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T4 | clapperboard sync, rushes daily footage, final cut, location shooting outside studio, films division 1948, documentary narration interviews archive, observational documentary no narration, documentary reconstruction, producer distributor exhibitor audience, film studio sets, subtitles translation text, ftii pune training |
 | T5 | manthan parallel cinema, manthan farmers funded rs 2, parallel cinema realism low budget, manthan white revolution, manthan social change tool, hybrid genre mixes |
 | T6 | newsreel current events, short film brief, feature film full length, experimental film breaks rules, genre expectations audience, genre marketing, genres evolve, film many genres, films division 1948, central board film censors 1951, ftii 1960, nfdc 1975, alam ara first talkie, ray honorary oscar 1992, foley sound effects |
+| T7 | phalke award lifetime, national film awards government, iffi goa festival, filmfare magazine, line producer budget daily, call sheet schedule, continuity errors, development securing rights, casting pre production, principal photography, colour grading post, director creative control, persistence of vision, apu trilogy ray |
 
 ### M7 Social media
 
@@ -119,6 +125,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T4 | influencer following, meme humorous spread, livestream real time, story disappears 24 hours, online communities shared interests, marginalised voices, algorithms personalise feeds, youtube video sharing, two factor authentication, clickbait misleading headline |
 | T5 | privacy settings who sees, block stop contact, report flag abuse, mute hide posts, online petitions signatures, slacktivism low effort, social media organise protests, whatsapp messaging, catfishing fake identity, dpdp act 2023 personal data |
 | T6 | cyberbullying repeated hurt, screenshots evidence cybercrime, cyber helpline 1930, forwarding spreads bullying bystander, morphing offence it act |
+| T7 | reddit forum, quora q and a, telegram messaging channels, wikipedia wiki collaborative, portal complaint steps, social networking sites, doxxing private info, never share otp |
 
 ### M8 New media
 
@@ -130,3 +137,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T4 | deepfake ai fake video, algorithm decides feed, paywall pay to read, podcast on demand audio, leaders speak directly citizens, online campaigns offline impact, fact checking sites, internet network of networks, digital first publishing |
 | T5 | hyperlocal small area, crowdsourcing many users, live blog continuous updates, newsletter email digest, phone video becomes tv news, low distribution cost online, opinion forms quickly, traditional large investment, new media digital platforms, net neutrality equal data |
 | T6 | prosumer produces consumes, digital native, gatekeeper editor traditional, hyperlink connects pages, one newsroom many platforms, cultural convergence participation, multiskilled journalist, e paper digital replica, mobile first news |
+| T7 | filter bubble algorithm, infodemic crisis flood, digital literacy skills, information overload, ai writes simple reports, ai images misinformation, label ai content, streaming without download, news aggregator collects |

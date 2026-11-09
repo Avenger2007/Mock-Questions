@@ -15,7 +15,7 @@ OUT=$(python3 validate_papers.py CUET --subject "Mass Media" 2>&1)
 echo "$OUT" | grep -E "TEST $N\.json" && { echo "VALIDATION ISSUE"; exit 1; } || true
 echo "$OUT" | grep -E "JSON Parse Errors|Cross-Paper|Within-Paper|Difficulty Dev|Missing Inline"
 python3 $T/mark_mm.py $N $T/drafts/mm$NN.json
-git add "$F" docs/blueprints/mass_media_coverage.md $T/drafts/mm$NN.txt
+git add "$F" docs/blueprints/mass_media_coverage.md $T/drafts/mm$NN.txt; git add -f $T/drafts/mm$NN.json
 git commit -q -m "$2
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
