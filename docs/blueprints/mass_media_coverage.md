@@ -59,6 +59,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | lasswell content analysis, lasswell media analysis, lasswell audience analysis, lasswell effect analysis, emergency censorship 1975, blank editorial protest, press council dissolved emergency, emergency ended 1977, krishi darshan 1967 farmers, site 1975 satellite, colour tv 1982, hum log 1984, print media newspapers, empathy understanding, heterogeneous audience mixed, visual communication images, tv 1959 unesco help, podcast not folk media |
 | T11 | radio club bombay 1923, ibc losses isbs 1930, all india radio 1936, vividh bharati 1957 radio ceylon, radio private state private fm, dd national general, dd bharati arts culture, dd india international, dd sports sport, folk media local language trusted, nukkad natak social messages, song and drama division 1954, fm madras 1977, private fm 2001 |
 | T12 | newspaper permanent reread, radio portable illiterate, tv audio visual, internet interactive, prasar bharati autonomous, prasar bharati runs air dd, prasar bharati set up by act, akashvani 1957, bombay tv 1972, prasar bharati 1997, dd kisan 2015, gesture wave goodbye, mass comm impersonal, subculture group, udant martand calcutta, ethnocentrism barrier, opinion leader not shannon weaver |
+| T13 | berlo source skills, berlo message code treatment, berlo channel five senses, berlo receiver attitudes, lasswell verbal model, osgood schramm both encode decode, westley maclean gatekeeper, samachar darpan 1818, bombay samachar 1822, kesari 1881, young india 1919, oral communication spoken, schramm father communication studies, media literacy analyse, mass comm no immediate feedback, high culture elite, al hilal azad |
 
 ### M2 Journalism
 
@@ -76,6 +77,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | letters to editor readers views, business page economy, city page local news, supplement extra section, objectivity fairness, persistence journalist, protect sources, general knowledge journalist, inverted pyramid order lead details background, editor heads newspaper, tabloid format, credit line photo, correction published mistake, decency morality restriction, printing press not source |
 | T11 | spot news scene, follow up later developments, interpretative report explains, human interest story emotions, defamation civil criminal, truth public good defence, fair comment defence, page dummy placement proof plate, lead story front page, anonymous source unnamed, norms of journalistic conduct, editorial cartoon, libel written defamation, jargon not good news writing |
 | T12 | photo essay series story, caption identifies who where what, consent dignity vulnerable subjects, cropping must not change meaning, wide establishes close up emotion, spot news photo, feature photo, sports action photo, portrait photo, photo story plan shoot select caption, photo agency supplies, infographics data visual |
+| T13 | banner headline full width, jump line continued, standfirst summary below headline, pull quote enlarged, prp act 2023 replaced prb, prgi registration, prp books excluded, investigative tip documents response publish, daily newspaper every day, copy written news material, reporter preference not news value, foreign correspondent abroad, bureau office another city, filler small space |
 
 ### M3 Advertising and Public Relations
 
@@ -93,6 +95,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | full service agency, creative boutique, media buying agency, in house agency, media relations long term, pr never lie, exclusive interview offer, journalists not bound to publish, tv commercial, testimonial customer, brand positioning mind, amul girl mascot, press tour facility visit |
 | T11 | asci self regulation, prsi professional body, aaai agencies association, cbc davp government ads, consistency builds brand image, crisis damages brand image, csr improves image, pr campaign objectives publics messages evaluate, digital advertising online, pib government pr, reminder advertising known brand, lifestyle advertising |
 | T12 | ad headline attention, body copy details, call to action, ad visual image, advertiser controls message, pr more credible, pr and ads integrated, advertiser pays, banner ad website, publicity stunt, aida desire, issue management anticipate |
+| T13 | pioneering ad new category, competitive ad rival brands, advocacy ad public issue, reminder advertising known brand, ccpa misleading ads, endorser liability, cpa 2019 covers all media, target audience campaign, agency pitch new client, publics groups, agency not printing, grunig two way symmetrical |
 
 ### M4 TV production and programmes
 
@@ -110,6 +113,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | boom mic pole, wireless mic no cable, nat sound location, sync sound recorded with picture, bulletin headlines top story sports close, breaking news urgent, infotainment, pilot episode test |
 | T11 | talent show performers judged, cookery show recipes, panel discussion experts debate, mythological serial epics, non linear editing random access, captions added post, editing follows shoot, tv schedule fixed times, uplink to satellite, ob production live sports |
 | T12 | shot list, shooting schedule, release form permission, treatment outline, audience research planning, focus group qualitative, social media audience feedback, footage recorded video, time code frames, av script audio column |
+| T13 | crane shot rises, tracking shot follows, handheld shaky, steadicam smooth, reality show unscripted, docudrama reconstruction real events, talk show host guests, camera operator, 4 3 standard tv, extreme close up detail |
 
 ### M5 Radio
 
@@ -127,6 +131,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | actuality real sound, wrap voice and clip, voicer reporter only, copy story read by newsreader, reverberation reflection, absorb panels carpets, dead studio little echo, newsreader reads bulletin, ram radio audience measurement, mic sound to electrical |
 | T11 | back announce just heard, trail upcoming radio, link connects items, outro closing, radio bulletin tune headlines details recap, antenna receives signal, dont blow into mic, drm digital radio |
 | T12 | mann ki baat monthly address, hawa mahal radio plays, binaca geetmala countdown, yuv vani youth, phone in announce screen air wrap, request show listeners songs, broadcast delay live calls, phonetic spelling names |
+| T13 | station id name frequency, radio filler spare time, time check, sign off end transmission, radio interview level record edit broadcast, frequency hertz, write for ear short sentences, gyan vani educational fm |
 
 ### M6 Cinema
 
@@ -144,6 +149,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | prequel before, sequel continues, spin off minor character, franchise series of films, parallel cinema real locations, benegal rural injustice, nfdc funded parallel cinema, set rehearse roll action cut, multiplex several screens, box office ticket sales, cameo brief appearance |
 | T11 | adoor malayalam, kasaravalli kannada, jahnu barua assamese, ray bengali, single screens declined, ott direct release, festivals independent films, do bigha zamin 1953, meghe dhaka tara 1960, uski roti 1969, aakrosh 1980, projector screens film, credits names crew, slow motion high frame rate |
 | T12 | cross cutting two places, jump cut abrupt, match cut similar shape, flashback past, piracy harms revenue, cinematograph amendment 2023 camcording, satellite ott rights revenue, mother india 1957 oscar, salaam bombay 1988, lagaan 2001, naatu naatu 2023, comedy laugh, junior artists extras, cbfc renamed 1983 |
+| T13 | lumiere paris 1895, actuality films everyday life, flaherty staging reconstruction, grierson creative treatment actuality, nanook narrative vs actuality, expository narrator argument, archival footage history, documentary music allowed |
 
 ### M7 Social media
 
@@ -161,6 +167,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | sockpuppet fake account, brigading coordinated attack, astroturfing fake grassroots, shadow ban hidden, social media ugc, social media networks connections, global instant reach, emoji emotion, parental controls |
 | T11 | crowdfunding many donors, live tweeting real time, online poll opinions, thread connected posts, spam unwanted bulk, cert in cyber incidents, credit creators sharing, reverse image search |
 | T12 | data breach leak, end to end encryption, privacy policy data use, geotag location, fake news emotional language, check source date, fact check sites verify, selfie self photo, social engineering manipulate, digital wellbeing screen time |
+| T13 | mention tags user, repost shares, handle username, hashtag topic label, 66c identity theft, 66d personation, 67 obscene electronic, 66a struck down, reels short video, strong password mix, trojan disguised malware |
 
 ### M8 New media
 
@@ -178,3 +185,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | convergence newsroom multiple platforms, one medium triggers another, user generated content readers photos, print adds depth analysis, new paradigm many sources participation |
 | T11 | web 1.0 read only, www not same as internet, mobile main internet access india, search engine finds pages, cookies track browsing, creative commons reuse |
 | T12 | anuradha bhasin 2020 internet speech, shutdowns proportionate, digital divide rural poor, smartphone internet apps, freemium model, long tail niche |
+| T13 | listicle numbered list, news quiz interactive, slideshow images click, long form in depth, arpanet 1969, www 1989, vsnl 1995, facebook 2004, ebook digital book, cloud storage remote servers |
