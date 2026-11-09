@@ -52,6 +52,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | noise interferes with message, encoding into symbols, linear model one way, schramm field of experience overlap, two way communication adjust message, intrapersonal within self, interpersonal two persons, group communication small gathering, mass communication tv bulletin, hum log 1984, buniyaad 1986, ramayan 1987, mahabharat 1988, popular culture mass media, anna fm first community radio |
 | T4 | mirat ul akhbar ram mohan roy, bombay samachar marzban, the hindu subramania iyer, al hilal azad, cable tv gulf war 1991, zee tv 1992 private hindi, prasar bharati 1997, dd news 2003, gutenberg press 1450, marconi wireless, bbc tv 1936, www 1989, nonverbal gestures expressions, aristotle persuasion speaker, kinesics body movement, decoding receiver interprets, functions inform educate entertain, kheda communication project |
 | T5 | proxemics space, chronemics time, haptics touch, paralanguage tone pitch, culture learned transmitted, culture changes over time, media spread culture across regions, first press commission 1952, rni 1956, press council 1966, second press commission 1978, sender starts communication, mcluhan medium is the message, folk media traditional forms, hicky calcutta, intercultural different cultures, mass comm no immediate feedback |
+| T6 | chitrahaar film songs, surabhi culture, turning point science, malgudi days narayan, shannon weaver telephone, schramm field of experience overlap, berlo no feedback, feedback missing lasswell, hickys bengal gazette 1780, bombay samachar 1822, kesari 1881, young india 1919, channel medium, transactional simultaneous, social marketing social good, site isro nasa, doordarshan ads 1976, feedback not barrier |
 
 ### M2 Journalism
 
@@ -62,6 +63,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | contempt of courts act 1971, copyright act 1957 creative works, working journalists act 1955, prasar bharati act 1990, impact news value, novelty unusual, conflict clash, prb act 1867, indian press act 1910, press council 1966 set up, rti act 2005, beat fixed area, advertorial ad like article, defamation reputation, embargo publish after time, op ed outside writers, investigative journalism hidden wrongdoing |
 | T4 | rule of thirds grid, candid unposed, photo essay series story, cropping trim, pci quasi judicial 1978, pci chair retired judge, pci print only not tv, pci complaints both ways, newsroom hierarchy editor to sub, pti news agency, yellow journalism sensational, stop press last minute, trial by media prejudge, criticism not restriction 19 2, feature soft news human interest |
 | T5 | summary lead 5ws, quotation lead, question lead, anecdotal lead, pci norms accuracy fairness, rape victim identity protected, juvenile identity protected, no gifts for coverage, romesh thappar 1950, sakal papers 1962, bennett coleman 1972, indian express 1985, 5w1h questions, hard news breaking events, copy editing corrects, fair dealing news reporting, off the record not for publication, slogan not news component |
+| T6 | columnist regular opinion, correspondent reports from place, stringer part time per story, photojournalist pictures, active voice news, attribution source named, short paragraphs, fact check steps, obituary death life, embedded journalism military, readers editor complaints, kicker above headline, conflict of interest, length not news value |
 
 ### M3 Advertising and Public Relations
 
@@ -72,6 +74,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | account servicing client link, creative department copy visuals, media department buys space, research department consumer study, bernays crystallizing public opinion, prsi 1958, national pr day 21 april, press conference two way, brand image perception, usp unique selling proposition, institutional advertising company image, billboard outdoor, sponsorship event visibility |
 | T4 | lobbying lawmakers, spin slanted, media relations journalists, community relations neighbours, asci 1985, asci voluntary not govt, ads fund media, ads inform consumers, copy words of ad, cooperative advertising shared cost, teaser campaign curiosity, press kit material journalists, pro functions not editing |
 | T5 | fear appeal danger, humour appeal, celebrity endorsement, emotional appeal family, ads increase demand, ads help new brands, economies of scale ads, advertising paid not free, campaign research creative media evaluation, classified ads categories, slogan memorable line, csr goodwill, press conference questions |
+| T6 | employee relations staff, investor relations shareholders, public affairs government, customer relations buyers, logo visual symbol, brand loyalty repeat, brand ambassador, trademark protects brand, broadcast advertising radio tv, ivy lee declaration 1906, point of purchase store display, word of mouth publicity, infomercial long demo |
 
 ### M4 TV production and programmes
 
@@ -82,6 +85,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | high angle weak, low angle powerful, birds eye overhead, dutch angle tilt unease, producer budget schedule, vision mixer switches feeds, teleprompter script lens, soap opera continuing serial, chroma key green screen, colour grading post production |
 | T4 | cut instant, dissolve blend, fade to black, wipe across, tv news story assignment shoot edit air, anchor presents bulletin, prime time largest audience, voice over unseen narrator |
 | T5 | director guides shots, sound recordist audio, gaffer lighting electrician, continuity script supervisor, barc weekly viewership data, people meter sample homes, ratings measure viewing not liking, advertisers use ratings, live telecast as it happens, sitcom situation comedy, piece to camera reporter |
+| T6 | pan horizontal, tilt vertical, zoom lens, dolly moves camera, post production log rough fine master, doordarshan public broadcaster, key light main source, counter programming rival |
 
 ### M5 Radio
 
@@ -92,6 +96,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | jingle short catchy, signature tune programme opening, cue signal start, fade in gradually louder, radio production script record edit broadcast, radio sound only, am amplitude long range, lapel mic clipped |
 | T4 | conversational style one listener, repetition radio recap, sound effects set scene, bidirectional figure eight, dialogue format relatable questions |
 | T5 | pop filter plosives, headphones monitor, transmitter sends signal, studio monitor speakers playback, sound path mic mixer transmitter receiver, rj radio jockey, dead air silence, signposting what comes next |
+| T6 | fade out gradually silent, cross fade blend, sound bed music under speech, segue one item into next, radio spell abbreviations, radio attribution first, read aloud check, community radio local, sound lock double doors, air motto bahujan hitaya |
 
 ### M6 Cinema
 
@@ -102,6 +107,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | cinematographer camera lighting, film editor assembles shots, art director sets, choreographer dance, science fiction imagined science, mythological raja harishchandra, melodrama heightened emotion, war film battles, kisan kanya 1937 colour, do bigha zamin 1953, mother india 1957 oscar, sholay 1975, documentary real events, screenplay dialogue scenes, trailer preview promote |
 | T4 | clapperboard sync, rushes daily footage, final cut, location shooting outside studio, films division 1948, documentary narration interviews archive, observational documentary no narration, documentary reconstruction, producer distributor exhibitor audience, film studio sets, subtitles translation text, ftii pune training |
 | T5 | manthan parallel cinema, manthan farmers funded rs 2, parallel cinema realism low budget, manthan white revolution, manthan social change tool, hybrid genre mixes |
+| T6 | newsreel current events, short film brief, feature film full length, experimental film breaks rules, genre expectations audience, genre marketing, genres evolve, film many genres, films division 1948, central board film censors 1951, ftii 1960, nfdc 1975, alam ara first talkie, ray honorary oscar 1992, foley sound effects |
 
 ### M7 Social media
 
@@ -112,6 +118,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | hacking unauthorised access, cyber fraud money, morphing altered photo, ransomware locks files, facebook social networking, linkedin professional network, pinterest image sharing, viral rapid spread, digital footprint trail, bots automated accounts |
 | T4 | influencer following, meme humorous spread, livestream real time, story disappears 24 hours, online communities shared interests, marginalised voices, algorithms personalise feeds, youtube video sharing, two factor authentication, clickbait misleading headline |
 | T5 | privacy settings who sees, block stop contact, report flag abuse, mute hide posts, online petitions signatures, slacktivism low effort, social media organise protests, whatsapp messaging, catfishing fake identity, dpdp act 2023 personal data |
+| T6 | cyberbullying repeated hurt, screenshots evidence cybercrime, cyber helpline 1930, forwarding spreads bullying bystander, morphing offence it act |
 
 ### M8 New media
 
@@ -122,3 +129,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T3 | bypass gatekeepers, digital divide unequal access, fake news faster than corrections, ott over the top, technological convergence smartphone, one way flow not new media |
 | T4 | deepfake ai fake video, algorithm decides feed, paywall pay to read, podcast on demand audio, leaders speak directly citizens, online campaigns offline impact, fact checking sites, internet network of networks, digital first publishing |
 | T5 | hyperlocal small area, crowdsourcing many users, live blog continuous updates, newsletter email digest, phone video becomes tv news, low distribution cost online, opinion forms quickly, traditional large investment, new media digital platforms, net neutrality equal data |
+| T6 | prosumer produces consumes, digital native, gatekeeper editor traditional, hyperlink connects pages, one newsroom many platforms, cultural convergence participation, multiskilled journalist, e paper digital replica, mobile first news |
