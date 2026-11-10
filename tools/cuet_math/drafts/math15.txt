@@ -1,0 +1,1238 @@
+# CUET Mathematics Test 15 — odd key: A 4/4/4/3, B1 and B2 9/8/9/9.
+
+@@ C1|A² − 5A for the matrix with rows 1 2 and 3 4|m|n|A|a squared minus 5a two i
+For \(A = \begin{bmatrix}1&2\\3&4\end{bmatrix}\), the matrix \(A^2 - 5A\) equals:
+A) \(2I\)
+B) \(-2I\)
+C) \(O\)
+D) \(5I\)
+=
+Given: \(A^2 = \begin{bmatrix}7&10\\15&22\end{bmatrix}\), \(5A = \begin{bmatrix}5&10\\15&20\end{bmatrix}\)
+Formula: subtract entry by entry
+Step 1: \(A^2 - 5A = \begin{bmatrix}2&0\\0&2\end{bmatrix} = 2I\)
+Common mistake: \(-2I\) (B) gets the sign of \(|A| = 4 - 6 = -2\) wrong in \(A^2 - 5A + |A|I = O\).
+Key point: For a 2 × 2 matrix, \(A^2 - (\text{trace})A + |A|I = O\); here \(|A| = -2\).
+
+@@ C1|Entries of one row times cofactors of another row|m|d|C|row times other row cofactors
+For a \(3 \times 3\) matrix \(A = [a_{ij}]\) with cofactors \(C_{ij}\), the sum \(a_{11}C_{21} + a_{12}C_{22} + a_{13}C_{23}\) equals:
+A) \(|A|\)
+B) \(1\)
+C) \(0\)
+D) \(-|A|\)
+=
+Why: This expansion is the determinant of the matrix whose second row is replaced by the first row. That matrix has two equal rows, so its determinant is 0.
+Why not the others: (A) needs the entries and cofactors of the same row. (B) and (D) have no basis.
+Key point: Entries of one row times the cofactors of a different row always sum to 0.
+
+@@ C1|Value of k giving infinitely many solutions in two unknowns|h|n|D|kx 2y 8x ky infinitely many
+The system \(kx + 2y = 3\), \(8x + ky = 6\) has infinitely many solutions when:
+A) \(k = \pm 4\)
+B) \(k = -4\)
+C) \(k = 2\)
+D) \(k = 4\)
+=
+Given: \(|A| = k^2 - 16 = 0 \Rightarrow k = \pm 4\)
+Formula: check whether the equations agree
+Step 1: \(k = 4\): \(4x + 2y = 3\) doubled is \(8x + 4y = 6\), the second equation, so there are infinitely many solutions
+Step 2: \(k = -4\): \(-4x + 2y = 3\) times \(-2\) is \(8x - 4y = -6\), but the second equation says \(8x - 4y = 6\), so there is no solution
+Common mistake: (A) treats both roots of \(|A| = 0\) alike.
+Key point: When \(|A| = 0\), the equations either agree (infinitely many) or clash (none).
+
+@@ C1|Product of a matrix and the swap matrix|e|n|B|ab with swap matrix
+If \(A = \begin{bmatrix}1&2\\3&4\end{bmatrix}\) and \(B = \begin{bmatrix}0&1\\1&0\end{bmatrix}\), then \(AB\) is:
+A) \(\begin{bmatrix}3&4\\1&2\end{bmatrix}\)
+B) \(\begin{bmatrix}2&1\\4&3\end{bmatrix}\)
+C) \(\begin{bmatrix}0&2\\3&0\end{bmatrix}\)
+D) \(\begin{bmatrix}1&3\\2&4\end{bmatrix}\)
+=
+Given: multiply each row of \(A\) by each column of \(B\)
+Formula: row 1: \((1 \cdot 0 + 2 \cdot 1,\ 1 \cdot 1 + 2 \cdot 0) = (2, 1)\)
+Step 1: row 2: \((3 \cdot 0 + 4 \cdot 1,\ 3 \cdot 1 + 4 \cdot 0) = (4, 3)\)
+Common mistake: (A) is \(BA\), which swaps the rows instead of the columns. (C) multiplies entry by entry.
+Key point: Multiplying on the right by \(B\) swaps the columns of \(A\).
+
+@@ C2|Derivative of (sin x)ˣ|m|n|D|sin x power x derivative
+For \(0 < x < \pi\), \(\dfrac{d}{dx}(\sin x)^x\) equals:
+A) \(x(\sin x)^{x-1}\cos x\)
+B) \((\sin x)^x\log\sin x\)
+C) \((\sin x)^x\,x\cot x\)
+D) \((\sin x)^x(\log\sin x + x\cot x)\)
+=
+Given: \(\log y = x\log\sin x\)
+Formula: \(\dfrac{1}{y}\dfrac{dy}{dx} = \log\sin x + x \cdot \dfrac{\cos x}{\sin x}\)
+Step 1: \(\dfrac{dy}{dx} = (\sin x)^x(\log\sin x + x\cot x)\)
+Common mistake: (A) treats the exponent as constant. (B) treats the base as constant.
+Key point: When both base and exponent vary, take logs first.
+
+@@ C2|Extrema of x⁴ − 2x² — which hold|m|s|B|x4 minus 2x2 statements
+For \(g(x) = x^4 - 2x^2\), consider the following statements:
+(A) \(g'(x) = 4x^3 - 4x\)
+(B) \(g\) has local minima at \(x = 1\) and \(x = -1\).
+(C) \(g\) has a local maximum at \(x = 0\).
+(D) The least value of \(g\) on \(\mathbb{R}\) is 0.
+Which of the statements given above are correct?
+A) (A) and (B) only
+B) (A), (B) and (C) only
+C) (B), (C) and (D) only
+D) (A), (B), (C) and (D)
+=
+Why: \(g'(x) = 4x(x - 1)(x + 1)\) and \(g''(x) = 12x^2 - 4\). \(g''(\pm 1) = 8 > 0\) gives (B); \(g''(0) = -4 < 0\) gives (C).
+Why not the others: (D) is false: \(g(\pm 1) = 1 - 2 = -1 < 0\). Options (C) and (D) include (D); (A) leaves out (C).
+Key point: Compare the values at all local minima to find the least value.
+
+@@ C2|Largest sector for a fixed perimeter of 20 cm|h|n|A|sector perimeter twenty max area
+A sector of a circle has perimeter 20 cm. Its largest possible area is:
+A) \(25\) cm²
+B) \(50\) cm²
+C) \(\dfrac{100}{\pi}\) cm²
+D) \(20\) cm²
+=
+Given: radius \(r\), angle \(\theta\): \(2r + r\theta = 20\), so \(r\theta = 20 - 2r\)
+Formula: area \(A = \dfrac{1}{2}r^2\theta = \dfrac{1}{2}r(20 - 2r) = 10r - r^2\)
+Step 1: \(A' = 10 - 2r = 0 \Rightarrow r = 5\); \(A'' = -2 < 0\)
+Step 2: \(A = 50 - 25 = 25\) cm²
+Common mistake: \(50\) (B) forgets the \(\dfrac{1}{2}\) in the sector area. \(\dfrac{100}{\pi}\) (C) uses a full circle of circumference 20.
+Key point: Write the area in one variable using the perimeter.
+
+@@ C3|Integral of sin x/(1 + cos x)²|m|n|C|sin over one plus cos squared
+\(\displaystyle\int\dfrac{\sin x}{(1 + \cos x)^2}\,dx\) equals:
+A) \(-\dfrac{1}{1 + \cos x} + C\)
+B) \(\log(1 + \cos x) + C\)
+C) \(\dfrac{1}{1 + \cos x} + C\)
+D) \(-\log(1 + \cos x) + C\)
+=
+Given: \(t = 1 + \cos x\), \(dt = -\sin x\,dx\)
+Formula: \(-\int t^{-2}\,dt = t^{-1}\)
+Step 1: \(\dfrac{1}{1 + \cos x} + C\)
+Common mistake: (A) loses one of the two minus signs. (D) treats the integrand as \(\dfrac{f'}{f}\).
+Key point: Track the sign from \(dt = -\sin x\,dx\).
+
+@@ C3|Area between y² = 4x and y = 2x|h|n|A|area y2 4x and y 2x
+The area of the region enclosed by \(y^2 = 4x\) and \(y = 2x\) is:
+A) \(\dfrac{1}{3}\)
+B) \(\dfrac{2}{3}\)
+C) \(\dfrac{1}{6}\)
+D) \(\dfrac{4}{3}\)
+=
+Given: \(y^2 = 2y \Rightarrow y = 0, 2\); in terms of \(y\): line \(x = \dfrac{y}{2}\), parabola \(x = \dfrac{y^2}{4}\)
+Formula: area \(= \displaystyle\int_0^2\left(\dfrac{y}{2} - \dfrac{y^2}{4}\right)dy\)
+Step 1: \(\left[\dfrac{y^2}{4} - \dfrac{y^3}{12}\right]_0^2 = 1 - \dfrac{2}{3}\)
+Step 2: \(= \dfrac{1}{3}\)
+Common mistake: \(\dfrac{4}{3}\) (D) is the area under the parabola alone, from \(x = 0\) to 1.
+Key point: Integrating along \(y\) avoids splitting the region.
+
+@@ C3|Integral of cos x from 0 to π/2|e|n|B|definite cos x zero pi by 2
+\(\displaystyle\int_0^{\pi/2}\cos x\,dx\) equals:
+A) \(0\)
+B) \(1\)
+C) \(-1\)
+D) \(\dfrac{\pi}{2}\)
+=
+Given: antiderivative \(\sin x\)
+Formula: \(\sin\dfrac{\pi}{2} - \sin 0\)
+Step 1: \(1 - 0 = 1\)
+Common mistake: \(-1\) (C) integrates \(\cos x\) as \(-\sin x\).
+Key point: \(\int\cos x\,dx = \sin x\).
+
+@@ C4|Integrating factor of x y′ − y = x² log x|m|n|D|if x y prime minus y
+The integrating factor of \(x\dfrac{dy}{dx} - y = x^2\log x\) (\(x > 0\)) is:
+A) \(x\)
+B) \(\log x\)
+C) \(e^x\)
+D) \(\dfrac{1}{x}\)
+=
+Given: divide by \(x\): \(\dfrac{dy}{dx} - \dfrac{1}{x}y = x\log x\)
+Formula: I.F. \(= e^{\int P\,dx}\) with \(P = -\dfrac{1}{x}\)
+Step 1: \(e^{-\log x} = \dfrac{1}{x}\)
+Common mistake: (A) misses the minus sign in \(P\).
+Key point: Put the equation in the form \(y' + Py = Q\) first.
+
+@@ C4|Separable equation y′ = (x + 1)y with y(0) = 2|m|n|C|y prime x plus one y two
+The solution of \(\dfrac{dy}{dx} = (x + 1)y\) with \(y(0) = 2\) gives \(y(2)\) equal to:
+A) \(2e^2\)
+B) \(e^4\)
+C) \(2e^4\)
+D) \(2 + e^4\)
+=
+Given: \(\dfrac{dy}{y} = (x + 1)\,dx\)
+Formula: \(\log y = \dfrac{x^2}{2} + x + c\), so \(y = Ce^{x^2/2 + x}\)
+Step 1: \(y(0) = 2\): \(C = 2\)
+Step 2: \(y(2) = 2e^{2 + 2} = 2e^4\)
+Common mistake: \(2e^2\) (A) integrates \(x + 1\) as \(x\). \(2 + e^4\) (D) adds the constant.
+Key point: The constant multiplies the exponential.
+
+@@ C5|Four probabilities with dice, coins and calendars|m|m|A|dice coins calendar match
+Match List-I with List-II.
+
+List-I
+(A) Sum 10 with two dice
+(B) At least one six with two dice
+(C) Two heads with two coins
+(D) A leap year has 53 Sundays
+
+List-II
+(I) \(\dfrac{2}{7}\)
+(II) \(\dfrac{1}{4}\)
+(III) \(\dfrac{11}{36}\)
+(IV) \(\dfrac{1}{12}\)
+A) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+B) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+C) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)
+D) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
+=
+Step 1: \((4, 6), (5, 5), (6, 4)\): \(\dfrac{3}{36} = \dfrac{1}{12}\) (IV)
+Step 2: \(1 - \left(\dfrac{5}{6}\right)^2 = \dfrac{11}{36}\) (III)
+Step 3: \(\dfrac{1}{2} \times \dfrac{1}{2} = \dfrac{1}{4}\) (II)
+Step 4: 52 weeks and 2 extra days; 2 of the 7 possible pairs include a Sunday: \(\dfrac{2}{7}\) (I)
+Common mistake: Giving \(\dfrac{1}{3}\) for (B) by adding \(\dfrac{1}{6} + \dfrac{1}{6}\); that counts \((6, 6)\) twice.
+Key point: "At least one" is 1 minus "none".
+
+@@ C5|Variance when X takes 1, 2 and 4|m|n|B|variance one two four
+\(X\) takes the values 1, 2, 4 with probabilities 0.5, 0.25, 0.25. The variance of \(X\) is:
+A) \(2\)
+B) \(1.5\)
+C) \(5.5\)
+D) \(3.5\)
+=
+Given: \(E(X) = 0.5 + 0.5 + 1 = 2\)
+Formula: \(E(X^2) = 0.5 + 1 + 4 = 5.5\); \(\text{Var}(X) = E(X^2) - [E(X)]^2\)
+Step 1: \(5.5 - 4 = 1.5\)
+Common mistake: \(2\) (A) is the mean. \(5.5\) (C) is \(E(X^2)\).
+Key point: Subtract the square of the mean.
+
+@@ C6|A bounded region with five corners — which claims fail|m|s|C|five corners bounded statements
+For \(Z = 2x + 3y\) subject to \(x + y \le 6\), \(x \le 4\), \(y \le 5\), \(x, y \ge 0\), consider the following statements:
+(A) \((1, 5)\) is a corner point.
+(B) The maximum value of \(Z\) is 17.
+(C) The feasible region is unbounded.
+(D) \(Z = 8\) at the corner \((4, 0)\).
+Which of the statements given above is/are NOT correct?
+A) (A) only
+B) (B) only
+C) (C) only
+D) (A) and (D) only
+=
+Why: The corners are \((0, 0)\), \((4, 0)\), \((4, 2)\), \((1, 5)\), \((0, 5)\), with \(Z = 0, 8, 14, 17, 15\). Only (C) is false: the region is a closed pentagon.
+Why not the others: (A) \(x + y = 6\) meets \(y = 5\) there. (B) the largest corner value. (D) \(2 \times 4 = 8\). Options (A), (B) and (D) name a true statement as false.
+Key point: Upper bounds on \(x\), \(y\) and \(x + y\) close the region.
+
+@@ M1|Properties of four relations|m|m|C|properties four relations match
+Match each relation in List-I with its properties in List-II.
+
+List-I
+(A) On \(\mathbb{Z}\): \(a\,R\,b\) if \(a - b\) is even
+(B) On \(\mathbb{R}\): \(a\,R\,b\) if \(a \le b\)
+(C) On lines in a plane: \(L_1\,R\,L_2\) if \(L_1 \perp L_2\)
+(D) On \(\{1, 2, 3\}\): \(R = \{(1, 2)\}\)
+
+List-II
+(I) Symmetric only
+(II) Transitive, but neither reflexive nor symmetric
+(III) An equivalence relation
+(IV) Reflexive and transitive, but not symmetric
+A) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
+B) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+C) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+D) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
+=
+Step 1: \(a - a = 0\) is even; evenness is symmetric; even + even is even (III)
+Step 2: \(a \le a\); \(\le\) chains; but \(1 \le 2\) does not give \(2 \le 1\) (IV)
+Step 3: no line is perpendicular to itself; perpendicularity is symmetric; \(L_1 \perp L_2 \perp L_3\) makes \(L_1 \parallel L_3\) (I)
+Step 4: no \((1, 1)\); no \((2, 1)\); with only one pair, transitivity holds automatically (II)
+Common mistake: Calling (D) "neither of the three"; a relation with no chain \((a, b), (b, c)\) is transitive.
+Key point: Transitivity fails only when a chain exists without its shortcut.
+
+@@ M1|Reflexive symmetric relations on three elements containing (1, 2)|m|n|A|reflexive symmetric containing 1 2
+The number of relations on \(\{1, 2, 3\}\) that are reflexive and symmetric and contain \((1, 2)\) is:
+A) \(4\)
+B) \(2\)
+C) \(8\)
+D) \(16\)
+=
+Given: \((1, 1), (2, 2), (3, 3)\) are forced; \((1, 2)\) forces \((2, 1)\)
+Formula: the pairs \(\{1, 3\}\) and \(\{2, 3\}\) are free, each in or out together with its reverse
+Step 1: \(2^2 = 4\)
+Common mistake: \(16\) (D) treats \((1, 3)\), \((3, 1)\), \((2, 3)\), \((3, 2)\) as four independent choices.
+Key point: In a symmetric relation, a pair and its reverse are chosen together.
+
+@@ M1|Is x² + 2x + 3 one-one or onto on R?|h|d|D|x2 plus 2x plus 3
+The function \(f: \mathbb{R} \to \mathbb{R}\), \(f(x) = x^2 + 2x + 3\), is:
+A) both one-one and onto
+B) one-one, but not onto
+C) onto, but not one-one
+D) neither one-one nor onto
+=
+Why: \(f(0) = 3 = f(-2)\), so \(f\) is not one-one. \(f(x) = (x + 1)^2 + 2 \ge 2\), so values below 2 are never reached and \(f\) is not onto.
+Why not the others: (A) and (B) need one-one. (C) needs every real number as a value.
+Key point: Completing the square shows the range of a quadratic.
+
+@@ M2|cos⁻¹(−1/2) − sin⁻¹(1)|e|n|B|cos inv minus half minus sin inv one
+The value of \(\cos^{-1}\left(-\dfrac{1}{2}\right) - \sin^{-1}(1)\) is:
+A) \(\dfrac{7\pi}{6}\)
+B) \(\dfrac{\pi}{6}\)
+C) \(-\dfrac{\pi}{6}\)
+D) \(\dfrac{\pi}{3}\)
+=
+Given: \(\cos^{-1}\left(-\dfrac{1}{2}\right) = \dfrac{2\pi}{3}\), \(\sin^{-1}(1) = \dfrac{\pi}{2}\)
+Formula: subtract
+Step 1: \(\dfrac{2\pi}{3} - \dfrac{\pi}{2} = \dfrac{\pi}{6}\)
+Common mistake: \(-\dfrac{\pi}{6}\) (C) takes \(\cos^{-1}\left(-\dfrac{1}{2}\right) = \dfrac{\pi}{3}\).
+Key point: \(\cos^{-1}\) of a negative number lies in \(\left(\dfrac{\pi}{2}, \pi\right]\).
+
+@@ M2|Solving sin⁻¹(2x − 1) = π/6|m|n|C|sin inv 2x minus 1 pi by 6
+If \(\sin^{-1}(2x - 1) = \dfrac{\pi}{6}\), then \(x\) is:
+A) \(\dfrac{1}{4}\)
+B) \(\dfrac{1}{2}\)
+C) \(\dfrac{3}{4}\)
+D) \(1\)
+=
+Given: \(2x - 1 = \sin\dfrac{\pi}{6} = \dfrac{1}{2}\)
+Formula: solve the linear equation
+Step 1: \(2x = \dfrac{3}{2} \Rightarrow x = \dfrac{3}{4}\)
+Common mistake: \(\dfrac{1}{4}\) (A) subtracts 1 instead of adding it.
+Key point: Take \(\sin\) of both sides.
+
+@@ M3|Square of a rotation matrix|m|n|D|rotation matrix squared
+If \(A = \begin{bmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{bmatrix}\), then \(A^2\) is:
+A) \(\begin{bmatrix}\cos^2\theta&-\sin^2\theta\\\sin^2\theta&\cos^2\theta\end{bmatrix}\)
+B) \(I\)
+C) \(\begin{bmatrix}\cos 2\theta&\sin 2\theta\\-\sin 2\theta&\cos 2\theta\end{bmatrix}\)
+D) \(\begin{bmatrix}\cos 2\theta&-\sin 2\theta\\\sin 2\theta&\cos 2\theta\end{bmatrix}\)
+=
+Given: \(a_{11} = \cos^2\theta - \sin^2\theta\), \(a_{12} = -\cos\theta\sin\theta - \sin\theta\cos\theta\)
+Formula: \(\cos^2\theta - \sin^2\theta = \cos 2\theta\), \(2\sin\theta\cos\theta = \sin 2\theta\)
+Step 1: \(A^2 = \begin{bmatrix}\cos 2\theta&-\sin 2\theta\\\sin 2\theta&\cos 2\theta\end{bmatrix}\)
+Common mistake: (A) squares each entry. (C) has the signs of \(\sin 2\theta\) swapped.
+Key point: Squaring a rotation by \(\theta\) gives a rotation by \(2\theta\).
+
+@@ M3|Product of a row matrix and a column matrix|e|n|A|row times column eleven
+\(\begin{bmatrix}1&2\end{bmatrix}\begin{bmatrix}3\\4\end{bmatrix}\) equals:
+A) \(\begin{bmatrix}11\end{bmatrix}\)
+B) \(\begin{bmatrix}3&4\\6&8\end{bmatrix}\)
+C) \(\begin{bmatrix}3&8\end{bmatrix}\)
+D) not defined
+=
+Given: orders \(1 \times 2\) and \(2 \times 1\), so the product is \(1 \times 1\)
+Formula: multiply row by column
+Step 1: \(3 + 8 = 11\)
+Common mistake: (B) is the product in the other order, column times row.
+Key point: The order of the product is (rows of the first) × (columns of the second).
+
+@@ M4|Properties of determinants — which hold|m|s|D|properties of determinants statements
+Consider the following statements:
+(A) Interchanging two rows changes the sign of a determinant.
+(B) If every entry of a row is 0, the determinant is 0.
+(C) \(|A^T| = |A|\) for every square matrix.
+(D) For a \(3 \times 3\) matrix, \(|2A| = 8|A|\).
+Which of the statements given above are correct?
+A) (A) and (B) only
+B) (A), (B) and (C) only
+C) (B), (C) and (D) only
+D) (A), (B), (C) and (D)
+=
+Why: (A), (B), (C) are standard properties. (D) each of the 3 rows gives a factor 2: \(2^3 = 8\).
+Why not the others: All four are true, so every other option leaves out a true statement.
+Key point: Multiplying a matrix by \(k\) multiplies every row by \(k\).
+
+@@ M4|A 2 × 2 determinant in x that is constant|m|n|C|x x plus 1 x minus 1 x
+The value of \(\begin{vmatrix}x&x + 1\\x - 1&x\end{vmatrix}\) is:
+A) \(0\)
+B) \(x\)
+C) \(1\)
+D) \(-1\)
+=
+Given: \(x \cdot x - (x + 1)(x - 1)\)
+Formula: \((x + 1)(x - 1) = x^2 - 1\)
+Step 1: \(x^2 - x^2 + 1 = 1\)
+Common mistake: \(-1\) (D) subtracts in the wrong order.
+Key point: The \(x^2\) terms cancel, so the value does not depend on \(x\).
+
+@@ M4|Sum of the roots of a 3 × 3 determinant equation|h|n|B|det x 2 3 roots sum
+The sum of the roots of \(\begin{vmatrix}x&2&3\\2&x&3\\2&3&x\end{vmatrix} = 0\) is:
+A) \(-5\)
+B) \(0\)
+C) \(5\)
+D) \(10\)
+=
+Given: each row sums to \(x + 5\); \(C_1 \to C_1 + C_2 + C_3\) gives \((x + 5)\begin{vmatrix}1&2&3\\1&x&3\\1&3&x\end{vmatrix}\)
+Formula: \(R_2 - R_1\), \(R_3 - R_1\): \((x + 5)\begin{vmatrix}1&2&3\\0&x - 2&0\\0&1&x - 3\end{vmatrix}\)
+Step 1: \((x + 5)(x - 2)(x - 3) = 0\), so the roots are \(-5\), 2, 3
+Step 2: Sum \(= -5 + 2 + 3 = 0\)
+Common mistake: \(5\) (C) uses only the roots 2 and 3.
+Key point: Equal row sums let you take out a common factor.
+
+@@ M5|Derivative of e^(x²)|e|n|A|derivative e x squared
+\(\dfrac{d}{dx}e^{x^2}\) equals:
+A) \(2xe^{x^2}\)
+B) \(e^{x^2}\)
+C) \(x^2e^{x^2 - 1}\)
+D) \(2e^{x^2}\)
+=
+Given: chain rule with inner function \(x^2\)
+Formula: \(e^{x^2} \times 2x\)
+Step 1: \(2xe^{x^2}\)
+Common mistake: (B) forgets the derivative of \(x^2\). (C) treats \(e\) as the variable.
+Key point: Multiply by the derivative of the exponent.
+
+@@ M5|Removable gap in (x² − 9)/(x − 3)|m|n|D|x2 minus 9 over x minus 3
+\(f(x) = \dfrac{x^2 - 9}{x - 3}\) for \(x \ne 3\) and \(f(3) = k\). If \(f\) is continuous at 3, then \(k\) is:
+A) \(0\)
+B) \(3\)
+C) \(9\)
+D) \(6\)
+=
+Given: \(\dfrac{x^2 - 9}{x - 3} = x + 3\) for \(x \ne 3\)
+Formula: \(k = \lim_{x \to 3}(x + 3)\)
+Step 1: \(k = 6\)
+Common mistake: \(0\) (A) substitutes 3 in the numerator only.
+Key point: Cancel the common factor before taking the limit.
+
+@@ M5|Implicit slope of x² + xy + y² = 7 at (1, 2)|m|n|C|x2 xy y2 seven slope
+For \(x^2 + xy + y^2 = 7\), the value of \(\dfrac{dy}{dx}\) at \((1, 2)\) is:
+A) \(\dfrac{4}{5}\)
+B) \(-\dfrac{5}{4}\)
+C) \(-\dfrac{4}{5}\)
+D) \(-1\)
+=
+Given: differentiate: \(2x + y + xy' + 2yy' = 0\)
+Formula: \(y' = -\dfrac{2x + y}{x + 2y}\)
+Step 1: At \((1, 2)\): \(-\dfrac{2 + 2}{1 + 4} = -\dfrac{4}{5}\)
+Common mistake: (B) inverts the fraction. (A) drops the minus sign.
+Key point: Differentiate \(xy\) by the product rule.
+
+@@ M5|Second-order identity for y = e^(m sin⁻¹x)|h|n|B|e m sin inverse identity
+If \(y = e^{m\sin^{-1}x}\), then \((1 - x^2)\dfrac{d^2y}{dx^2} - x\dfrac{dy}{dx} = ky\), where \(k\) is:
+A) \(m\)
+B) \(m^2\)
+C) \(-m^2\)
+D) \(0\)
+=
+Given: \(y' = \dfrac{my}{\sqrt{1 - x^2}}\), so \(\sqrt{1 - x^2}\,y' = my\)
+Formula: differentiate: \(\sqrt{1 - x^2}\,y'' - \dfrac{x}{\sqrt{1 - x^2}}y' = my'\)
+Step 1: Multiply by \(\sqrt{1 - x^2}\): \((1 - x^2)y'' - xy' = m\sqrt{1 - x^2}\,y'\)
+Step 2: \(= m \cdot my = m^2y\), so \(k = m^2\)
+Common mistake: \(m\) (A) stops before replacing \(\sqrt{1 - x^2}\,y'\) by \(my\).
+Key point: Clear the square root before differentiating again.
+
+@@ M6|Four extreme values|m|m|A|four extreme values match
+Match List-I with List-II.
+
+List-I
+(A) Maximum of \(\sin x + \cos x\)
+(B) Minimum of \(x^2 - 4x + 7\)
+(C) Maximum of \(xe^{-x}\) for \(x \ge 0\)
+(D) Minimum of \(x + \dfrac{1}{x}\) for \(x > 0\)
+
+List-II
+(I) \(2\)
+(II) \(\sqrt{2}\)
+(III) \(\dfrac{1}{e}\)
+(IV) \(3\)
+A) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)
+B) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)
+C) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
+D) (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
+=
+Step 1: \(\sin x + \cos x = \sqrt{2}\sin\left(x + \dfrac{\pi}{4}\right)\), maximum \(\sqrt{2}\) (II)
+Step 2: \((x - 2)^2 + 3\), minimum 3 (IV)
+Step 3: derivative \((1 - x)e^{-x} = 0\) at 1; value \(\dfrac{1}{e}\) (III)
+Step 4: \(1 - \dfrac{1}{x^2} = 0\) at 1; value 2 (I)
+Common mistake: Giving 2 for (A) by adding the separate maxima of \(\sin x\) and \(\cos x\); they are never 1 at the same \(x\).
+Key point: Find where the derivative is 0, then evaluate the function there.
+
+@@ M6|Rate of change of a cube's volume|m|n|C|cube side rate volume
+The edge of a cube increases at 3 cm/s. When the edge is 10 cm, the volume increases at:
+A) \(300\) cm³/s
+B) \(90\) cm³/s
+C) \(900\) cm³/s
+D) \(3000\) cm³/s
+=
+Given: \(V = a^3\), \(\dfrac{da}{dt} = 3\)
+Formula: \(\dfrac{dV}{dt} = 3a^2\dfrac{da}{dt}\)
+Step 1: \(3 \times 100 \times 3 = 900\)
+Common mistake: \(300\) (A) forgets the rate 3.
+Key point: Multiply by the rate of the edge.
+
+@@ M6|Open square-based box of volume 32 with least surface|h|n|D|open box volume 32 least surface
+An open box with a square base has volume 32 cm³. Its least possible surface area is:
+A) \(64\) cm²
+B) \(32\) cm²
+C) \(96\) cm²
+D) \(48\) cm²
+=
+Given: base side \(x\), height \(h = \dfrac{32}{x^2}\)
+Formula: \(S = x^2 + 4xh = x^2 + \dfrac{128}{x}\); \(S' = 2x - \dfrac{128}{x^2} = 0 \Rightarrow x^3 = 64\)
+Step 1: \(x = 4\), \(h = 2\)
+Step 2: \(S = 16 + 32 = 48\)
+Common mistake: \(64\) (A) adds a lid, counting the base twice.
+Key point: An open box has only one square face.
+
+@@ M7|Integral of 1/x + 2x|e|n|B|integral one over x plus 2x
+\(\displaystyle\int\left(\dfrac{1}{x} + 2x\right)dx\) equals:
+A) \(-\dfrac{1}{x^2} + 2 + C\)
+B) \(\log|x| + x^2 + C\)
+C) \(\log|x| + 2x^2 + C\)
+D) \(x^2 + C\)
+=
+Given: integrate term by term
+Formula: \(\int\dfrac{dx}{x} = \log|x|\), \(\int 2x\,dx = x^2\)
+Step 1: \(\log|x| + x^2 + C\)
+Common mistake: (A) differentiates. (C) forgets to halve \(2x^2\).
+Key point: \(\dfrac{1}{x}\) integrates to a logarithm, not a power.
+
+@@ M7|Four facts about integrals — which claims fail|m|s|A|four integral facts statements
+Consider the following statements:
+(A) \(\displaystyle\int\log x\,dx = \dfrac{1}{x} + C\)
+(B) \(\displaystyle\int_0^{\pi}\sin x\,dx = 2\)
+(C) \(\displaystyle\int_{-a}^{a}f(x)\,dx = 0\) when \(f\) is odd.
+(D) \(\displaystyle\int\dfrac{dx}{\sqrt{1 - x^2}} = \sin^{-1}x + C\)
+Which of the statements given above is/are NOT correct?
+A) (A) only
+B) (B) only
+C) (B) and (C) only
+D) (D) only
+=
+Why: Only (A) is false: \(\dfrac{1}{x}\) is the derivative of \(\log x\); by parts, \(\int\log x\,dx = x\log x - x + C\).
+Why not the others: (B) \([-\cos x]_0^{\pi} = 1 + 1\). (C) the two halves cancel. (D) standard. Options (B), (C) and (D) name a true statement as false.
+Key point: Do not confuse a derivative with an integral.
+
+@@ M7|Integral of 1/(x² − 9)|m|n|C|one over x2 minus 9
+\(\displaystyle\int\dfrac{dx}{x^2 - 9}\) equals:
+A) \(\dfrac{1}{3}\log\left|\dfrac{x - 3}{x + 3}\right| + C\)
+B) \(\dfrac{1}{6}\log\left|\dfrac{x + 3}{x - 3}\right| + C\)
+C) \(\dfrac{1}{6}\log\left|\dfrac{x - 3}{x + 3}\right| + C\)
+D) \(\dfrac{1}{6}\tan^{-1}\dfrac{x}{3} + C\)
+=
+Given: \(\int\dfrac{dx}{x^2 - a^2} = \dfrac{1}{2a}\log\left|\dfrac{x - a}{x + a}\right|\)
+Formula: \(a = 3\)
+Step 1: \(\dfrac{1}{6}\log\left|\dfrac{x - 3}{x + 3}\right| + C\)
+Common mistake: (A) uses \(\dfrac{1}{a}\) in place of \(\dfrac{1}{2a}\). (B) inverts the fraction, which changes the sign.
+Key point: For \(x^2 - a^2\), the answer is a logarithm, not \(\tan^{-1}\).
+
+@@ M7|Definite integral of 1/((x + 1)(x + 2)) on [0, 1]|m|n|D|partial fractions zero one log
+\(\displaystyle\int_0^1\dfrac{dx}{(x + 1)(x + 2)}\) equals:
+A) \(\log 2\)
+B) \(\log\dfrac{3}{4}\)
+C) \(\log 6\)
+D) \(\log\dfrac{4}{3}\)
+=
+Given: \(\dfrac{1}{(x + 1)(x + 2)} = \dfrac{1}{x + 1} - \dfrac{1}{x + 2}\)
+Formula: antiderivative \(\log\dfrac{x + 1}{x + 2}\)
+Step 1: \(\log\dfrac{2}{3} - \log\dfrac{1}{2} = \log\dfrac{4}{3}\)
+Common mistake: \(\log\dfrac{3}{4}\) (B) subtracts the limits the wrong way round.
+Key point: Split into partial fractions first.
+
+@@ M8|Area under y = x² between x = 1 and x = 2|m|n|B|area x2 one to two
+The area bounded by \(y = x^2\), the \(x\)-axis and the lines \(x = 1\) and \(x = 2\) is:
+A) \(\dfrac{8}{3}\)
+B) \(\dfrac{7}{3}\)
+C) \(3\)
+D) \(\dfrac{1}{3}\)
+=
+Given: area \(= \displaystyle\int_1^2 x^2\,dx\)
+Formula: \(\left[\dfrac{x^3}{3}\right]_1^2\)
+Step 1: \(\dfrac{8}{3} - \dfrac{1}{3} = \dfrac{7}{3}\)
+Common mistake: \(\dfrac{8}{3}\) (A) integrates from 0 to 2.
+Key point: Use the given lines as the limits.
+
+@@ M9|Facts about differential equations — which hold|m|s|C|facts differential equations statements
+Consider the following statements:
+(A) The degree of \((y'')^2 + \sin(y') = 0\) is 2.
+(B) \(y = Ce^x\) is the general solution of \(\dfrac{dy}{dx} = y\).
+(C) The integrating factor of \(\dfrac{dy}{dx} + y\cot x = 1\) is \(\sin x\).
+(D) \(\dfrac{dy}{dx} = \dfrac{x + y}{x}\) is homogeneous.
+Which of the statements given above are correct?
+A) (A) and (B) only
+B) (A), (B) and (C) only
+C) (B), (C) and (D) only
+D) (A), (B), (C) and (D)
+=
+Why: (B) \(\dfrac{dy}{y} = dx\). (C) \(e^{\int\cot x\,dx} = e^{\log\sin x} = \sin x\). (D) the right side depends only on \(\dfrac{y}{x}\): \(1 + \dfrac{y}{x}\).
+Why not the others: (A) is false: \(\sin(y')\) is not a polynomial in \(y'\), so the degree is not defined. Options (A), (B) and (D) include (A).
+Key point: Degree needs the equation to be a polynomial in its derivatives.
+
+@@ M9|Separable equation y′ = sin²y|m|n|A|y prime sin squared y
+The general solution of \(\dfrac{dy}{dx} = \sin^2 y\) is:
+A) \(\cot y + x = C\)
+B) \(\tan y = x + C\)
+C) \(-\cos y = x + C\)
+D) \(\cot y = x + C\)
+=
+Given: \(\text{cosec}^2 y\,dy = dx\)
+Formula: \(\int\text{cosec}^2 y\,dy = -\cot y\)
+Step 1: \(-\cot y = x + c\), i.e. \(\cot y + x = C\)
+Common mistake: (D) loses the minus sign from integrating \(\text{cosec}^2 y\).
+Key point: \(\dfrac{d}{dy}\cot y = -\text{cosec}^2 y\).
+
+@@ M9|Homogeneous equation 2xy y′ = x² + y² through (1, 0)|h|n|D|homogeneous 2xy x2 plus y2
+The solution of \(2xy\dfrac{dy}{dx} = x^2 + y^2\) through \((1, 0)\) gives, for \(y > 0\), \(y(2)\) equal to:
+A) \(2\)
+B) \(\sqrt{3}\)
+C) \(1\)
+D) \(\sqrt{2}\)
+=
+Given: \(y = vx\): \(v + xv' = \dfrac{1 + v^2}{2v}\), so \(xv' = \dfrac{1 - v^2}{2v}\)
+Formula: \(\dfrac{2v\,dv}{1 - v^2} = \dfrac{dx}{x} \Rightarrow -\log|1 - v^2| = \log|x| + c\), so \(x(1 - v^2) = C\), i.e. \(x^2 - y^2 = Cx\)
+Step 1: Through \((1, 0)\): \(C = 1\)
+Step 2: At \(x = 2\): \(4 - y^2 = 2\), so \(y = \sqrt{2}\)
+Common mistake: \(\sqrt{3}\) (B) takes \(C = 1\) but uses \(x^2 - y^2 = C\).
+Key point: After substituting \(y = vx\), separate \(v\) and \(x\).
+
+@@ M10|Dot products, cross products and perpendicularity|m|m|B|dot cross perpendicular match
+Match List-I with List-II.
+
+List-I
+(A) \(|\vec{a} \times \vec{b}|\) when \(|\vec{a}| = 2\), \(|\vec{b}| = 5\), angle \(30^\circ\)
+(B) \(\vec{a}\cdot\vec{b}\) when \(|\vec{a}| = 3\), \(|\vec{b}| = 4\), angle \(60^\circ\)
+(C) \(\lambda\) making \(2\hat{i} + \lambda\hat{j} + \hat{k}\) perpendicular to \(\hat{i} - 2\hat{j} + 3\hat{k}\)
+(D) \(|\vec{a} + \vec{b}|\) for \(\vec{a} = \hat{i} + \hat{j}\), \(\vec{b} = \hat{j} + \hat{k}\)
+
+List-II
+(I) \(\sqrt{6}\)
+(II) \(5\)
+(III) \(6\)
+(IV) \(\dfrac{5}{2}\)
+A) (A)-(III), (B)-(II), (C)-(IV), (D)-(I)
+B) (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
+C) (A)-(II), (B)-(III), (C)-(I), (D)-(IV)
+D) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)
+=
+Step 1: \(2 \times 5 \times \sin 30^\circ = 5\) (II)
+Step 2: \(3 \times 4 \times \cos 60^\circ = 6\) (III)
+Step 3: \(2 - 2\lambda + 3 = 0 \Rightarrow \lambda = \dfrac{5}{2}\) (IV)
+Step 4: \(\vec{a} + \vec{b} = \hat{i} + 2\hat{j} + \hat{k}\), magnitude \(\sqrt{6}\) (I)
+Common mistake: Using \(\cos 30^\circ\) in (A); the cross product uses the sine.
+Key point: Dot product uses cosine; cross product uses sine.
+
+@@ M10|Angle between 2i − j + k and i + j − 2k|m|n|C|angle 2 minus 1 1 and 1 1 minus 2
+The angle between \(2\hat{i} - \hat{j} + \hat{k}\) and \(\hat{i} + \hat{j} - 2\hat{k}\) is:
+A) \(\cos^{-1}\dfrac{1}{6}\)
+B) \(\dfrac{\pi}{2}\)
+C) \(\cos^{-1}\left(-\dfrac{1}{6}\right)\)
+D) \(\dfrac{2\pi}{3}\)
+=
+Given: dot product \(2 - 1 - 2 = -1\); each magnitude \(\sqrt{6}\)
+Formula: \(\cos\theta = \dfrac{\vec{a}\cdot\vec{b}}{|\vec{a}||\vec{b}|}\)
+Step 1: \(\cos\theta = -\dfrac{1}{6}\)
+Common mistake: (A) drops the sign; the angle between vectors can be obtuse.
+Key point: A negative dot product means an obtuse angle.
+
+@@ M10|Unit vector perpendicular to i + j + k and i + 2j + 3k|h|n|A|unit perpendicular cross product
+A unit vector perpendicular to both \(\hat{i} + \hat{j} + \hat{k}\) and \(\hat{i} + 2\hat{j} + 3\hat{k}\) is:
+A) \(\dfrac{1}{\sqrt{6}}(\hat{i} - 2\hat{j} + \hat{k})\)
+B) \(\hat{i} - 2\hat{j} + \hat{k}\)
+C) \(\dfrac{1}{\sqrt{6}}(\hat{i} + 2\hat{j} + \hat{k})\)
+D) \(\dfrac{1}{\sqrt{6}}(-\hat{i} - 2\hat{j} + \hat{k})\)
+=
+Given: \(\vec{a} \times \vec{b} = (3 - 2)\hat{i} - (3 - 1)\hat{j} + (2 - 1)\hat{k} = \hat{i} - 2\hat{j} + \hat{k}\)
+Formula: divide by its magnitude \(\sqrt{1 + 4 + 1} = \sqrt{6}\)
+Step 1: \(\dfrac{1}{\sqrt{6}}(\hat{i} - 2\hat{j} + \hat{k})\)
+Common mistake: (B) is perpendicular but not a unit vector. (C) drops the minus sign in the \(\hat{j}\) term, which breaks perpendicularity.
+Key point: Check: the dot product with each vector is 0.
+
+@@ M11|Cartesian equation of a line through (2, −1, 4)|e|n|D|cartesian line 2 minus 1 4
+The Cartesian equation of the line through \((2, -1, 4)\) with direction ratios \(1, 2, -3\) is:
+A) \(\dfrac{x + 2}{1} = \dfrac{y - 1}{2} = \dfrac{z + 4}{-3}\)
+B) \(\dfrac{x - 1}{2} = \dfrac{y - 2}{-1} = \dfrac{z + 3}{4}\)
+C) \(\dfrac{x - 2}{1} = \dfrac{y + 1}{2} = \dfrac{z - 4}{3}\)
+D) \(\dfrac{x - 2}{1} = \dfrac{y + 1}{2} = \dfrac{z - 4}{-3}\)
+=
+Given: point \((2, -1, 4)\), direction ratios \((1, 2, -3)\)
+Formula: \(\dfrac{x - x_1}{a} = \dfrac{y - y_1}{b} = \dfrac{z - z_1}{c}\)
+Step 1: \(\dfrac{x - 2}{1} = \dfrac{y + 1}{2} = \dfrac{z - 4}{-3}\)
+Common mistake: (A) uses the wrong signs for the point. (B) swaps the point and the direction.
+Key point: Subtract the point's coordinates in the numerators.
+
+@@ M11|Angle between lines with directions (1, 2, 2) and (2, −1, 2)|m|n|B|angle lines four ninths
+The angle between \(\dfrac{x - 1}{1} = \dfrac{y + 2}{2} = \dfrac{z}{2}\) and \(\dfrac{x}{2} = \dfrac{y - 3}{-1} = \dfrac{z + 1}{2}\) is:
+A) \(\cos^{-1}\dfrac{4}{3}\)
+B) \(\cos^{-1}\dfrac{4}{9}\)
+C) \(\dfrac{\pi}{2}\)
+D) \(\cos^{-1}\dfrac{2}{9}\)
+=
+Given: directions \((1, 2, 2)\) and \((2, -1, 2)\), each of magnitude 3
+Formula: \(\cos\theta = \dfrac{|b_1\cdot b_2|}{|b_1||b_2|}\)
+Step 1: \(2 - 2 + 4 = 4\)
+Step 2: \(\cos\theta = \dfrac{4}{9}\)
+Common mistake: (A) divides by one magnitude only, giving a cosine above 1.
+Key point: Use only the denominators of the symmetric form.
+
+@@ M11|Shortest distance between r = λ(i + k) and r = j + μ(i + j)|m|n|A|skew one over root three
+The shortest distance between \(\vec{r} = \lambda(\hat{i} + \hat{k})\) and \(\vec{r} = \hat{j} + \mu(\hat{i} + \hat{j})\) is:
+A) \(\dfrac{1}{\sqrt{3}}\)
+B) \(\sqrt{3}\)
+C) \(1\)
+D) \(\dfrac{1}{3}\)
+=
+Given: \(\vec{a}_2 - \vec{a}_1 = \hat{j}\); \(\vec{b}_1 \times \vec{b}_2 = (0 - 1)\hat{i} - (0 - 1)\hat{j} + (1 - 0)\hat{k} = -\hat{i} + \hat{j} + \hat{k}\)
+Formula: \(d = \dfrac{|(\vec{a}_2 - \vec{a}_1)\cdot(\vec{b}_1 \times \vec{b}_2)|}{|\vec{b}_1 \times \vec{b}_2|}\)
+Step 1: \(\dfrac{1}{\sqrt{3}}\)
+Common mistake: \(1\) (C) forgets to divide by \(\sqrt{3}\). \(\dfrac{1}{3}\) (D) divides by the square of the magnitude.
+Key point: Project the joining vector onto the common perpendicular.
+
+@@ M12|An unbounded minimum problem — which claims fail|m|s|C|min 3x 2y unbounded statements
+For \(Z = 3x + 2y\) subject to \(x + 2y \ge 6\), \(3x + y \ge 6\), \(x, y \ge 0\), consider the following statements:
+(A) The feasible region is unbounded.
+(B) \(\left(\dfrac{6}{5}, \dfrac{12}{5}\right)\) is a corner point.
+(C) The minimum value of \(Z\) is 12, at \((0, 6)\).
+(D) \(Z\) has no maximum value on the region.
+Which of the statements given above is/are NOT correct?
+A) (A) only
+B) (B) only
+C) (C) only
+D) (B) and (D) only
+=
+Why: The corners are \((0, 6)\), \(\left(\dfrac{6}{5}, \dfrac{12}{5}\right)\), \((6, 0)\), with \(Z = 12, \dfrac{42}{5}, 18\). Only (C) is false: the minimum is \(\dfrac{42}{5}\) at \(\left(\dfrac{6}{5}, \dfrac{12}{5}\right)\), and \(3x + 2y < \dfrac{42}{5}\) has no point in the region.
+Why not the others: (A) nothing bounds \(x\) or \(y\) above. (B) the two lines meet there. (D) \(Z\) grows without limit. Options (A), (B) and (D) name a true statement as false.
+Key point: Always evaluate the corner where two constraint lines meet.
+
+@@ M13|Union of two mutually exclusive events|e|n|D|union mutually exclusive
+\(A\) and \(B\) are mutually exclusive with \(P(A) = 0.4\) and \(P(B) = 0.3\). Then \(P(A \cup B)\) is:
+A) \(0.12\)
+B) \(0.58\)
+C) \(0.1\)
+D) \(0.7\)
+=
+Given: \(P(A \cap B) = 0\)
+Formula: \(P(A \cup B) = P(A) + P(B)\)
+Step 1: \(0.7\)
+Common mistake: \(0.58\) (B) treats the events as independent.
+Key point: Mutually exclusive events cannot happen together.
+
+@@ M13|Bayes' theorem with two bags of white and black balls|h|n|A|two bags white black bayes
+Bag I has 4 white and 6 black balls; bag II has 7 white and 3 black balls. A bag is chosen at random and a ball drawn from it is white. The probability that it came from bag I is:
+A) \(\dfrac{4}{11}\)
+B) \(\dfrac{7}{11}\)
+C) \(\dfrac{2}{5}\)
+D) \(\dfrac{1}{2}\)
+=
+Given: \(P(\text{I}) = P(\text{II}) = \dfrac{1}{2}\); \(P(W \mid \text{I}) = 0.4\), \(P(W \mid \text{II}) = 0.7\)
+Formula: \(P(\text{I} \mid W) = \dfrac{\frac{1}{2}(0.4)}{\frac{1}{2}(0.4) + \frac{1}{2}(0.7)}\)
+Step 1: \(\dfrac{0.4}{1.1} = \dfrac{4}{11}\)
+Common mistake: \(\dfrac{7}{11}\) (B) is bag II's chance. \(\dfrac{2}{5}\) (C) is \(P(W \mid \text{I})\).
+Key point: With equal priors, compare the likelihoods.
+
+@@ M13|Sum 8 given that the first die is even|m|n|B|sum eight first even
+Two dice are thrown. The probability that the sum is 8, given that the first die shows an even number, is:
+A) \(\dfrac{5}{36}\)
+B) \(\dfrac{1}{6}\)
+C) \(\dfrac{1}{3}\)
+D) \(\dfrac{1}{12}\)
+=
+Given: first die even: 18 outcomes
+Formula: favourable: \((2, 6), (4, 4), (6, 2)\), i.e. 3 outcomes
+Step 1: \(\dfrac{3}{18} = \dfrac{1}{6}\)
+Common mistake: \(\dfrac{5}{36}\) (A) is P(sum 8) without the condition.
+Key point: The condition shrinks the sample space.
+
+@@ AM1|Congruences and remainders — which hold|m|s|B|congruences remainders statements
+Consider the following statements:
+(A) \(17 \equiv 2 \pmod 5\)
+(B) If \(a \equiv b \pmod n\), then \(a^2 \equiv b^2 \pmod n\).
+(C) The remainder when \(2^{20}\) is divided by 3 is 1.
+(D) \(25 \equiv 4 \pmod 6\)
+Which of the statements given above are correct?
+A) (A) and (B) only
+B) (A), (B) and (C) only
+C) (B), (C) and (D) only
+D) (A), (B), (C) and (D)
+=
+Why: (A) \(17 = 3 \times 5 + 2\). (B) congruences can be multiplied. (C) \(2 \equiv -1 \pmod 3\), so \(2^{20} \equiv (-1)^{20} = 1\).
+Why not the others: (D) is false: \(25 = 4 \times 6 + 1\), so \(25 \equiv 1 \pmod 6\). Options (C) and (D) include (D); (A) leaves out (C).
+Key point: Replacing a number by a negative residue simplifies powers.
+
+@@ AM1|B's share of profit when B joins three months late|h|n|D|partnership b joins three months
+A starts a business with ₹40,000. After 3 months B joins with ₹60,000. The profit at the end of the year is ₹34,000. B's share is:
+A) ₹16,000
+B) ₹20,400
+C) ₹17,000
+D) ₹18,000
+=
+Given: A: \(40000 \times 12 = 4{,}80{,}000\); B: \(60000 \times 9 = 5{,}40{,}000\)
+Formula: ratio \(480 : 540 = 8 : 9\)
+Step 1: B's share \(= 34000 \times \dfrac{9}{17}\)
+Step 2: \(= ₹18{,}000\)
+Common mistake: ₹20,400 (B) uses capital alone, \(4 : 6\), ignoring time. ₹16,000 (A) is A's share.
+Key point: Profit is shared in the ratio of capital × time.
+
+@@ AM1|Start needed in a 200 m race to finish together|m|n|A|start two hundred race
+In a 200 m race, A runs at 8 m/s and B at 6 m/s. How much start must A give B so that they finish together?
+A) \(50\) m
+B) \(40\) m
+C) \(25\) m
+D) \(60\) m
+=
+Given: A's time \(= \dfrac{200}{8} = 25\) s
+Formula: in 25 s, B runs \(6 \times 25 = 150\) m
+Step 1: Start \(= 200 - 150 = 50\) m
+Common mistake: \(25\) m (C) is A's time, not a distance.
+Key point: Both must finish in the same time.
+
+@@ AM1|Two filling pipes and a leak|m|n|C|two pipes and a leak
+Two pipes fill a tank in 20 minutes and 30 minutes. A leak can empty the full tank in 60 minutes. With all three working, the empty tank fills in:
+A) \(12\) min
+B) \(20\) min
+C) \(15\) min
+D) \(10\) min
+=
+Given: rates \(\dfrac{1}{20}\), \(\dfrac{1}{30}\), \(-\dfrac{1}{60}\)
+Formula: net rate \(= \dfrac{3 + 2 - 1}{60} = \dfrac{1}{15}\)
+Step 1: 15 minutes
+Common mistake: \(12\) min (A) ignores the leak.
+Key point: A leak subtracts its rate.
+
+@@ AM1|Solving 3x − 5 < 7|e|n|A|three x minus five lt seven
+The solution of \(3x - 5 < 7\) is:
+A) \(x < 4\)
+B) \(x > 4\)
+C) \(x < \dfrac{2}{3}\)
+D) \(x \le 4\)
+=
+Given: add 5: \(3x < 12\)
+Formula: divide by the positive number 3
+Step 1: \(x < 4\)
+Common mistake: (D) turns a strict inequality into \(\le\).
+Key point: Dividing by a positive number keeps the direction.
+
+@@ AM1|Mixing two milk-water mixtures in the ratio 1 : 2|h|n|D|milk water three one five three
+Vessel P has milk and water in the ratio 3 : 1; vessel Q has them in the ratio 5 : 3. They are mixed in the ratio 1 : 2 (P : Q). The ratio of milk to water in the result is:
+A) \(4 : 1\)
+B) \(3 : 2\)
+C) \(8 : 5\)
+D) \(2 : 1\)
+=
+Given: milk fraction \(\dfrac{3}{4}\) in P and \(\dfrac{5}{8}\) in Q
+Formula: milk in 3 parts \(= 1 \times \dfrac{3}{4} + 2 \times \dfrac{5}{8} = \dfrac{3}{4} + \dfrac{5}{4} = 2\)
+Step 1: water \(= 3 - 2 = 1\)
+Step 2: milk : water \(= 2 : 1\)
+Common mistake: adding the ratio terms directly ignores that P is measured in quarters and Q in eighths.
+Key point: Convert each ratio to a fraction of the whole before mixing.
+
+@@ AM2|Facts about matrices and determinants — which claims fail|m|s|C|matrix cancellation statements
+Consider the following statements about square matrices:
+(A) If \(A\) is \(2 \times 2\) with \(|A| = 3\), then \(|3A| = 27\).
+(B) A matrix that is both symmetric and skew-symmetric is a zero matrix.
+(C) If \(AB = AC\), then \(B = C\).
+(D) \((A^{-1})^{-1} = A\) for every invertible \(A\).
+Which of the statements given above is/are NOT correct?
+A) (A) only
+B) (B) only
+C) (C) only
+D) (A) and (D) only
+=
+Why: Only (C) is false: with \(A = O\), \(AB = AC\) for every \(B\), \(C\). Cancelling needs \(A\) to be invertible.
+Why not the others: (A) \(3^2 \times 3 = 27\). (B) \(A = A^T = -A\) gives \(A = O\). (D) standard. Options (A), (B) and (D) name a true statement as false.
+Key point: Matrices can be cancelled only when they are invertible.
+
+@@ AM2|Finding A from A + B and A − B|m|n|B|a from a plus b a minus b
+If \(A + B = \begin{bmatrix}4&2\\6&8\end{bmatrix}\) and \(A - B = \begin{bmatrix}2&0\\2&4\end{bmatrix}\), then \(A\) is:
+A) \(\begin{bmatrix}6&2\\8&12\end{bmatrix}\)
+B) \(\begin{bmatrix}3&1\\4&6\end{bmatrix}\)
+C) \(\begin{bmatrix}1&1\\2&2\end{bmatrix}\)
+D) \(\begin{bmatrix}2&1\\3&4\end{bmatrix}\)
+=
+Given: add the two equations: \(2A = \begin{bmatrix}6&2\\8&12\end{bmatrix}\)
+Formula: divide by 2
+Step 1: \(A = \begin{bmatrix}3&1\\4&6\end{bmatrix}\)
+Common mistake: (A) forgets to halve. (C) is \(B\).
+Key point: Add to eliminate \(B\), as with ordinary equations.
+
+@@ AM2|Type of the matrix with rows 1 2 and 2 1|e|d|A|type of matrix one two two one
+The matrix \(\begin{bmatrix}1&2\\2&1\end{bmatrix}\) is:
+A) symmetric
+B) skew-symmetric
+C) singular
+D) the identity matrix
+=
+Why: \(a_{12} = a_{21} = 2\), so the matrix equals its transpose.
+Why not the others: (B) needs zero diagonal entries. (C) \(|A| = 1 - 4 = -3 \ne 0\). (D) the off-diagonal entries are not 0.
+Key point: A matrix is symmetric when \(A^T = A\).
+
+@@ AM2|One unknown from three pairwise sums|m|n|D|x plus y y plus z z plus x
+For the system \(x + y = 5\), \(y + z = 7\), \(z + x = 6\), the value of \(y\) is:
+A) \(2\)
+B) \(4\)
+C) \(5\)
+D) \(3\)
+=
+Given: \(|A| = \begin{vmatrix}1&1&0\\0&1&1\\1&0&1\end{vmatrix} = 1(1) - 1(0 - 1) + 0 = 2 \ne 0\)
+Formula: adding all three: \(2(x + y + z) = 18\), so \(x + y + z = 9\)
+Step 1: \(y = 9 - (z + x) = 9 - 6 = 3\)
+Common mistake: \(2\) (A) is \(x\); \(4\) (B) is \(z\).
+Key point: Adding symmetric equations gives the total quickly.
+
+@@ AM3|Marginal and average values from revenue and cost|m|m|A|mr mc ar match
+Match List-I with List-II.
+
+List-I
+(A) MR at \(x = 10\) when \(R = 50x - x^2\)
+(B) MC at \(x = 4\) when \(C = \dfrac{x^3}{3} - x^2 + 10x\)
+(C) Output that maximises \(R = 80x - 2x^2\)
+(D) Average revenue at \(x = 10\) when \(R = 50x - x^2\)
+
+List-II
+(I) \(30\)
+(II) \(18\)
+(III) \(40\)
+(IV) \(20\)
+A) (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+B) (A)-(III), (B)-(II), (C)-(IV), (D)-(I)
+C) (A)-(I), (B)-(IV), (C)-(II), (D)-(III)
+D) (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+=
+Step 1: \(MR = 50 - 2x = 30\) (I)
+Step 2: \(MC = x^2 - 2x + 10 = 16 - 8 + 10 = 18\) (II)
+Step 3: \(80 - 4x = 0 \Rightarrow x = 20\) (IV)
+Step 4: \(AR = \dfrac{R}{x} = 50 - x = 40\) (III)
+Common mistake: Swapping (A) and (D); MR is the derivative of \(R\), while AR is \(R\) divided by \(x\).
+Key point: For linear demand, MR falls twice as fast as AR.
+
+@@ AM3|Output range over which revenue rises|m|n|D|revenue 600x minus 3x2 increasing
+The revenue is \(R = 600x - 3x^2\). Revenue is increasing for:
+A) \(x > 100\)
+B) \(x < 200\)
+C) \(x < 300\)
+D) \(x < 100\)
+=
+Given: \(R'(x) = 600 - 6x\)
+Formula: \(R' > 0\)
+Step 1: \(x < 100\)
+Common mistake: \(x < 200\) (B) solves \(600 - 3x > 0\), forgetting to differentiate \(x^2\).
+Key point: Revenue rises while marginal revenue is positive.
+
+@@ AM3|Definite integral of 2x/(1 + x²) on [0, 2]|m|n|C|two x over one plus x2 zero two
+\(\displaystyle\int_0^2\dfrac{2x}{1 + x^2}\,dx\) equals:
+A) \(\log 4\)
+B) \(2\log 5\)
+C) \(\log 5\)
+D) \(\dfrac{4}{5}\)
+=
+Given: the numerator is the derivative of \(1 + x^2\)
+Formula: antiderivative \(\log(1 + x^2)\)
+Step 1: \(\log 5 - \log 1 = \log 5\)
+Common mistake: \(\log 4\) (A) substitutes into \(x^2\) only.
+Key point: \(\int\dfrac{f'}{f} = \log f\).
+
+@@ AM3|Integral of x^(−1/2) from 1 to 4|e|n|B|one over root x one to four
+\(\displaystyle\int_1^4\dfrac{dx}{\sqrt{x}}\) equals:
+A) \(1\)
+B) \(2\)
+C) \(4\)
+D) \(\dfrac{3}{2}\)
+=
+Given: \(\dfrac{1}{\sqrt{x}} = x^{-1/2}\), antiderivative \(2\sqrt{x}\)
+Formula: \(2\sqrt{4} - 2\sqrt{1}\)
+Step 1: \(4 - 2 = 2\)
+Common mistake: \(1\) (A) uses \(\sqrt{x}\) as the antiderivative, forgetting the factor 2.
+Key point: \(\int x^{-1/2}\,dx = 2x^{1/2}\).
+
+@@ AM3|Producer surplus at the equilibrium of quadratic demand and supply|h|n|D|producer surplus equilibrium quadratic
+Demand is \(p = 40 - x^2\) and supply is \(p = 3x^2 + 8x + 8\). The producer surplus at equilibrium is:
+A) \(\dfrac{16}{3}\)
+B) \(40\)
+C) \(72\)
+D) \(32\)
+=
+Given: \(40 - x^2 = 3x^2 + 8x + 8 \Rightarrow x^2 + 2x - 8 = 0 \Rightarrow x_0 = 2\), \(p_0 = 36\)
+Formula: \(PS = p_0x_0 - \displaystyle\int_0^{2}(3x^2 + 8x + 8)\,dx\)
+Step 1: \(\int_0^2(3x^2 + 8x + 8)\,dx = 8 + 16 + 16 = 40\)
+Step 2: \(PS = 72 - 40 = 32\)
+Common mistake: \(\dfrac{16}{3}\) (A) is the consumer surplus. \(40\) (B) stops at the integral.
+Key point: Producer surplus lies between the price line and the supply curve.
+
+@@ AM3|Separable equation y′ = 2y/x with y(1) = 3|m|n|C|y prime 2y over x three
+The solution of \(\dfrac{dy}{dx} = \dfrac{2y}{x}\) with \(y(1) = 3\) gives \(y(2)\) equal to:
+A) \(6\)
+B) \(9\)
+C) \(12\)
+D) \(24\)
+=
+Given: \(\dfrac{dy}{y} = \dfrac{2\,dx}{x}\)
+Formula: \(\log y = 2\log x + c\), so \(y = Cx^2\)
+Step 1: \(y(1) = 3\): \(C = 3\)
+Step 2: \(y(2) = 3 \times 4 = 12\)
+Common mistake: \(6\) (A) takes \(y = Cx\).
+Key point: \(2\log x = \log x^2\).
+
+@@ AM3|Ticket price that maximises a cinema's revenue|h|n|A|cinema price cut revenue
+A cinema sells 400 tickets at ₹100. For every ₹5 cut in price, 40 more tickets are sold. The maximum revenue is:
+A) ₹45,000
+B) ₹40,000
+C) ₹75
+D) ₹50,000
+=
+Given: after \(n\) cuts, price \(100 - 5n\), tickets \(400 + 40n\)
+Formula: \(R = (100 - 5n)(400 + 40n) = 40000 + 2000n - 200n^2\)
+Step 1: \(R' = 2000 - 400n = 0 \Rightarrow n = 5\)
+Step 2: price ₹75, tickets 600: \(R = ₹45{,}000\)
+Common mistake: ₹40,000 (B) is the revenue before any cut. ₹75 (C) is the best price, not the revenue.
+Key point: Write revenue as price × quantity in one variable.
+
+@@ AM3|Definite integral of 3x² + 2x + 2 on [0, 2]|m|n|C|definite 3x2 2x 2 zero two
+\(\displaystyle\int_0^2(3x^2 + 2x + 2)\,dx\) equals:
+A) \(12\)
+B) \(14\)
+C) \(16\)
+D) \(20\)
+=
+Given: antiderivative \(x^3 + x^2 + 2x\)
+Formula: evaluate from 0 to 2
+Step 1: \(8 + 4 + 4 - 0 = 16\)
+Common mistake: \(12\) (A) forgets the constant term 2. \(20\) (D) uses \(2x^2\) for \(\int 2x\,dx\).
+Key point: A constant \(c\) integrates to \(cx\).
+
+@@ AM4|n from the mean and variance of a binomial|m|n|B|binomial mean 4 variance 3
+A binomial variable has mean 4 and variance 3. The number of trials \(n\) is:
+A) \(12\)
+B) \(16\)
+C) \(4\)
+D) \(8\)
+=
+Given: \(np = 4\), \(npq = 3\)
+Formula: \(q = \dfrac{3}{4}\), so \(p = \dfrac{1}{4}\)
+Step 1: \(n = \dfrac{4}{1/4} = 16\)
+Common mistake: \(12\) (A) uses \(n = \dfrac{3}{1/4}\).
+Key point: Divide variance by mean to get \(q\).
+
+@@ AM4|Marks within one SD of the mean|m|n|D|within one sd 0.6826
+Marks are normally distributed with mean 50 and SD 5. Given \(P(0 < Z < 1) = 0.3413\), the probability that a student scores between 45 and 55 is:
+A) \(0.3413\)
+B) \(0.1587\)
+C) \(0.8413\)
+D) \(0.6826\)
+=
+Given: \(z = \dfrac{45 - 50}{5} = -1\), \(z = \dfrac{55 - 50}{5} = 1\)
+Formula: \(P(-1 < Z < 1) = 2 \times 0.3413\)
+Step 1: \(0.6826\)
+Common mistake: \(0.3413\) (A) counts only one side of the mean.
+Key point: The normal curve is symmetric about the mean.
+
+@@ AM4|P(X = 1) for a Poisson variable with variance 3|m|n|A|poisson variance three p one
+A Poisson variable has variance 3. Then \(P(X = 1)\) is:
+A) \(3e^{-3}\)
+B) \(e^{-3}\)
+C) \(\dfrac{9}{2}e^{-3}\)
+D) \(3e^{3}\)
+=
+Given: mean = variance \(= 3\)
+Formula: \(P(X = 1) = \lambda e^{-\lambda}\)
+Step 1: \(3e^{-3}\)
+Common mistake: \(e^{-3}\) (B) is \(P(X = 0)\). \(\dfrac{9}{2}e^{-3}\) (C) is \(P(X = 2)\).
+Key point: For a Poisson variable, the variance equals the mean.
+
+@@ AM4|Variance of 3X − 2 from the variance of X|e|n|C|variance three x minus two
+If \(\text{Var}(X) = 2\), then \(\text{Var}(3X - 2)\) is:
+A) \(6\)
+B) \(16\)
+C) \(18\)
+D) \(4\)
+=
+Given: \(\text{Var}(aX + b) = a^2\,\text{Var}(X)\)
+Formula: \(9 \times 2\)
+Step 1: \(18\)
+Common mistake: \(6\) (A) multiplies by 3 instead of 9. \(16\) (B) subtracts 2.
+Key point: Adding a constant does not change the variance.
+
+@@ AM4|n making P(X = 1) = P(X = 2) for p = 1/4|h|n|B|binomial p1 equals p2 quarter
+For \(X \sim B\left(n, \dfrac{1}{4}\right)\), \(P(X = 1) = P(X = 2)\). Then \(n\) is:
+A) \(6\)
+B) \(7\)
+C) \(8\)
+D) \(5\)
+=
+Given: \(\binom{n}{1}pq^{n-1} = \binom{n}{2}p^2q^{n-2}\)
+Formula: divide: \(q = \dfrac{n - 1}{2}p\)
+Step 1: \(\dfrac{3}{4} = \dfrac{n - 1}{8}\)
+Step 2: \(n - 1 = 6\), so \(n = 7\)
+Common mistake: \(6\) (A) stops at \(n - 1\).
+Key point: Divide the two probabilities to cancel common factors.
+
+@@ AM5|Components of a time series from examples|m|m|A|time series components examples match
+Match each example in List-I with the component in List-II.
+
+List-I
+(A) Higher umbrella sales every monsoon
+(B) A steady rise in population over decades
+(C) Booms and slumps in business every 7–10 years
+(D) A fall in output because of an earthquake
+
+List-II
+(I) Seasonal variation
+(II) Cyclical variation
+(III) Irregular variation
+(IV) Secular trend
+A) (A)-(I), (B)-(IV), (C)-(II), (D)-(III)
+B) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
+C) (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+D) (A)-(I), (B)-(IV), (C)-(III), (D)-(II)
+=
+Step 1: repeats every year (I)
+Step 2: long-term direction (IV)
+Step 3: waves lasting several years (II)
+Step 4: unpredictable shock (III)
+Common mistake: Calling (C) seasonal; seasonal patterns repeat within a year.
+Key point: Classify by how long the pattern takes to repeat.
+
+@@ AM5|Second three-yearly moving average|m|n|C|second three yearly 24
+For the values 20, 24, 22, 26, 30, 28 over six years, the second three-yearly moving average is:
+A) \(22\)
+B) \(26\)
+C) \(24\)
+D) \(23\)
+=
+Given: the second group is the 2nd to 4th values
+Formula: \(\dfrac{24 + 22 + 26}{3}\)
+Step 1: \(\dfrac{72}{3} = 24\)
+Common mistake: \(22\) (A) is the first moving average.
+Key point: Each moving average drops one value and adds the next.
+
+@@ AM5|Four-year trend with half-year coding and a 2024 forecast|h|n|B|four year trend 2024 forecast
+Values for 2020–2023 were 12, 15, 17, 20. Coding the years as \(x = -3, -1, 1, 3\) and fitting \(y = a + bx\) by least squares, the estimate for 2024 is:
+A) \(21.2\)
+B) \(22.5\)
+C) \(23\)
+D) \(24.5\)
+=
+Given: \(\sum y = 64\), \(\sum x^2 = 20\)
+Formula: \(a = \dfrac{64}{4} = 16\), \(b = \dfrac{\sum xy}{\sum x^2}\)
+Step 1: \(\sum xy = -36 - 15 + 17 + 60 = 26\), so \(b = 1.3\)
+Step 2: 2024 has \(x = 5\): \(y = 16 + 6.5 = 22.5\)
+Common mistake: \(21.2\) (A) uses \(x = 4\); with half-year coding, each year adds 2.
+Key point: With an even number of years, codes go up in steps of 2.
+
+@@ AM6|Hypotheses and the t-distribution — which hold|m|s|D|hypotheses t distribution statements
+Consider the following statements:
+(A) The null hypothesis \(H_0\) is the hypothesis being tested.
+(B) A one-sample \(t\)-test has \(n - 1\) degrees of freedom.
+(C) As the sample size grows, the \(t\)-distribution approaches the normal distribution.
+(D) The \(t\)-distribution is symmetric about 0.
+Which of the statements given above are correct?
+A) (A) and (B) only
+B) (A), (B) and (C) only
+C) (B), (C) and (D) only
+D) (A), (B), (C) and (D)
+=
+Why: All four are standard facts about hypothesis testing and the \(t\)-distribution.
+Why not the others: All four are true, so every other option leaves out a true statement.
+Key point: The \(t\)-curve is bell-shaped like the normal curve, with heavier tails.
+
+@@ AM6|t-statistic for 9 observations with mean 52|m|n|A|t nine obs mean 52
+A sample of 9 has mean 52 and standard deviation 6 (divisor \(n - 1\)). To test \(H_0: \mu = 48\), the \(t\)-statistic is:
+A) \(2\)
+B) \(0.67\)
+C) \(6\)
+D) \(\dfrac{4}{3}\)
+=
+Given: SE \(= \dfrac{6}{\sqrt{9}} = 2\)
+Formula: \(t = \dfrac{\bar{x} - \mu_0}{\text{SE}}\)
+Step 1: \(\dfrac{52 - 48}{2} = 2\)
+Common mistake: \(0.67\) (B) divides by \(s = 6\). \(\dfrac{4}{3}\) (D) divides by 3.
+Key point: Divide by the standard error, \(\dfrac{s}{\sqrt{n}}\).
+
+@@ AM6|Degrees of freedom for a sample of 20|e|n|C|df sample twenty
+The degrees of freedom for a one-sample \(t\)-test with a sample of 20 are:
+A) \(20\)
+B) \(18\)
+C) \(19\)
+D) \(21\)
+=
+Given: \(n = 20\)
+Formula: df \(= n - 1\)
+Step 1: \(19\)
+Common mistake: \(18\) (B) uses \(n - 2\), which belongs to other tests.
+Key point: One parameter (the mean) is estimated, so one degree of freedom is lost.
+
+@@ AM7|Interest, compound amount, perpetuity and depreciation|m|m|B|si ci perpetuity depreciation match
+Match List-I with List-II.
+
+List-I
+(A) Simple interest on ₹5,000 at 8% for 3 years
+(B) Amount of ₹8,000 at 5% compounded annually for 2 years
+(C) Present value of a perpetuity of ₹600 a year at 4%
+(D) Yearly straight-line depreciation: cost ₹60,000, scrap ₹6,000, life 6 years
+
+List-II
+(I) ₹8,820
+(II) ₹1,200
+(III) ₹9,000
+(IV) ₹15,000
+A) (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+B) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+C) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
+D) (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
+=
+Step 1: \(\dfrac{5000 \times 8 \times 3}{100} = ₹1{,}200\) (II)
+Step 2: \(8000 \times 1.05^2 = 8000 \times 1.1025 = ₹8{,}820\) (I)
+Step 3: \(\dfrac{600}{0.04} = ₹15{,}000\) (IV)
+Step 4: \(\dfrac{60000 - 6000}{6} = ₹9{,}000\) (III)
+Common mistake: Giving ₹10,000 for (D) by ignoring the scrap value.
+Key point: A perpetuity's present value is the payment divided by the rate.
+
+@@ AM7|Amount after two years at 8% compounded half-yearly|m|n|A|eight percent half yearly two years
+The amount of ₹20,000 after 2 years at 8% per annum compounded half-yearly is about (use \((1.04)^4 = 1.16986\)):
+A) ₹23,397
+B) ₹23,328
+C) ₹23,200
+D) ₹21,632
+=
+Given: \(i = 0.04\) per half-year, \(n = 4\)
+Formula: \(A = P(1 + i)^n\)
+Step 1: \(20000 \times 1.16986 \approx ₹23{,}397\)
+Common mistake: ₹23,328 (B) compounds yearly at 8%. ₹23,200 (C) is simple interest.
+Key point: Halve the rate and double the number of periods.
+
+@@ AM7|Nominal monthly rate that gives an effective 12.68%|h|n|D|nominal from effective 12.68
+The effective annual rate is 12.68%. Given \((1.01)^{12} = 1.1268\), the nominal annual rate compounded monthly is:
+A) \(12.68\%\)
+B) \(1\%\)
+C) \(10.56\%\)
+D) \(12\%\)
+=
+Given: \(\left(1 + \dfrac{r}{12}\right)^{12} = 1.1268 = (1.01)^{12}\)
+Formula: \(\dfrac{r}{12} = 0.01\)
+Step 1: \(r = 0.12\)
+Step 2: \(12\%\) per annum
+Common mistake: \(1\%\) (B) is the monthly rate. \(10.56\%\) (C) divides 12.68 by 1.2.
+Key point: The nominal rate is the periodic rate times the number of periods.
+
+@@ AM7|Value after two years of reducing-balance depreciation|m|n|C|reducing balance two years ten percent
+A machine costing ₹50,000 depreciates at 10% a year on the reducing balance. Its value after 2 years is:
+A) ₹40,000
+B) ₹45,000
+C) ₹40,500
+D) ₹41,000
+=
+Given: \(V = C(1 - r)^n\)
+Formula: \(50000 \times 0.9^2\)
+Step 1: \(50000 \times 0.81 = ₹40{,}500\)
+Common mistake: ₹40,000 (A) takes 10% of the original cost each year (straight line).
+Key point: Each year's charge is on the reduced value.
+
+@@ AM8|Formulating a two-vitamin diet problem — which claims fail|m|s|B|two vitamin diet statements
+A diet needs at least 8 units of vitamin A and at least 10 units of vitamin C. Food P gives 2 units of A and 1 unit of C per unit and costs ₹4; food Q gives 1 unit of A and 2 units of C per unit and costs ₹5. With \(x\) units of P and \(y\) of Q, consider the following statements:
+(A) The vitamin A constraint is \(2x + y \ge 8\).
+(B) The vitamin C constraint is \(x + 2y \le 10\).
+(C) The objective is to minimise \(Z = 4x + 5y\).
+(D) The minimum cost is ₹28, at \((2, 4)\).
+Which of the statements given above is/are NOT correct?
+A) (A) only
+B) (B) only
+C) (C) and (D) only
+D) (D) only
+=
+Why: Only (B) is false: "at least 10" gives \(x + 2y \ge 10\).
+Why not the others: (A) and (C) follow from the data. (D) corners \((0, 8)\), \((2, 4)\), \((10, 0)\) give \(Z = 40, 28, 40\), and \(4x + 5y < 28\) has no point in the region. Options (A), (C) and (D) name a true statement as false.
+Key point: "At least" means \(\ge\); "at most" means \(\le\).
+
+@@ AM8|Maximum of 2x + 5y from given corner points|e|n|D|max 2x 5y corners
+The corner points of a bounded feasible region are \((0, 0)\), \((5, 0)\), \((3, 4)\) and \((0, 6)\). The maximum of \(Z = 2x + 5y\) is:
+A) \(26\)
+B) \(10\)
+C) \(25\)
+D) \(30\)
+=
+Given: evaluate \(Z\) at each corner
+Formula: \(Z = 0, 10, 26, 30\)
+Step 1: The maximum is 30, at \((0, 6)\)
+Common mistake: \(26\) (A) assumes the corner where two constraints meet is always the best.
+Key point: Compare all the corner values.
