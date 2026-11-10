@@ -544,6 +544,32 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 - `docs/blueprints/mass_media.md` (pattern, PYQ analysis, unit quotas, difficulty, formats) and `docs/blueprints/mass_media_coverage.md` (case rotation, answer-fact ledgers).
 - `tools/cuet_mm/` — compact draft format and converter, checker, ledger marker, ship script, item patcher, match relabeller and series re-indexer; drafts of all 15 tests in `drafts/`.
 
+## Mathematics / Applied Mathematics (319) — revised to the CUET 2027 standard (completed 11 Nov 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `d8cf87e` (blueprint, coverage map, tools and pilot Test 1), `a7d3be2` (Test 2) … `aaa937e` (Test 15) on `main`, with fixes `07eb034` and `07dfc49`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | old 50-question papers, status `pending_revision` | **15 rewritten tests** (`CUET MATHEMATICS TEST 1–15.json`), planned first in a coverage map; status `revised` |
+| Paper structure | 50 questions, one section | NTA pattern: **85 questions per file** — Section A (common) 15, Section B1 (Mathematics) 35, Section B2 (Applied Mathematics) 35; a candidate attempts A + either B1 or B2 = 50; 60 min, +5 / −1 |
+| Syllabus | mixed, some out-of-scope items | gated to the NTA 2026 syllabus (latest published): 6 common units, 13 Mathematics units, 8 Applied Mathematics units; inverse-trig properties and composition left out |
+| Unit balance | uneven | fixed quotas in every test: A — C1 4, C2 3, C3 3, C4 2, C5 2, C6 1; B1 — M1 3, M2 2, M3 2, M4 3, M5 4, M6 3, M7 4, M8 1, M9 3, M10 3, M11 3, M12 1, M13 3; B2 — AM1 6, AM2 4, AM3 8, AM4 5, AM5 3, AM6 3, AM7 4, AM8 2 |
+| Difficulty | uneven | **A 2 / 10 / 3 and B1, B2 6 / 22 / 7 (easy / medium / hard) in every test**; Tests 11–15 carry the hardest items |
+| Formats | almost all direct | per test: 7 match-list (A 1, B1 3, B2 3, each in a different unit, all with different answer patterns) and 10 statement items (A 2, B1 4, B2 4) alternating "correct" / "NOT correct"; the rest numerical or direct |
+| Explanations | 1–2 lines | numericals: Given / Formula / Step-by-step / Common mistake / Key point; concept items: Why / Why not the others / Key point |
+| Order and keys | uneven | key A 4/4/4/3, B1 and B2 9/8/9/9 (odd tests) and A 3/4/4/4, B1 and B2 9/9/8/9 (even tests); no answer run longer than 3; correct option never clearly the longest |
+
+**Coverage ledger:** every test's items are listed per unit in `docs/blueprints/mathematics_coverage.md`, and `math_index.py` prints every earlier sub-topic per unit. `math_check.py` flags sub-topic or stem overlap with earlier tests (`OVERLAP`), over-long correct options (`LONGEST`), quota and difficulty drift. Close repeats of earlier NCERT-style items found by the checker were replaced before shipping (about 40 across Tests 13–15).
+
+**Verification:** `validate_papers.py CUET --subject "Mathematics"` — 0 parse errors, 0 wrong counts, 0 option-count errors, 0 key/explanation mismatches, 0 runs > 3, 0 within- or cross-paper duplicate stems, 0 difficulty deviations; series key A 25.3%, B 24.6%, C 24.8%, D 25.3%.
+
+**Known limits:** PYQs were analysed for pattern only; no question is copied. Some standard NCERT results (for example the King property integrals and the parallel-lines distance formula) appear in more than one test with different numbers.
+
+### Tools added
+- `docs/blueprints/mathematics.md` (pattern, PYQ analysis, unit quotas, difficulty, formats, out-of-scope list) and `docs/blueprints/mathematics_coverage.md` (host units for match and statement items, per-test item ledger).
+- `tools/cuet_math/` — compact draft format and converter, checker, item index, ledger marker, ship script, item patcher and replacer, match relabeller and series re-indexer; drafts of all 15 tests in `drafts/`.
+
 ## IAT New Tests 12 and 13 — authored review drafts (3 Nov 2026)
 
 - Authored 120 questions from reserved syllabus slots. Each paper has 15 questions per subject, editorial tiers 9/42/9, balanced 15-per-letter keys, detailed WHY and distractor analyses, and displayed derivations for all Mathematics/Physics items.
