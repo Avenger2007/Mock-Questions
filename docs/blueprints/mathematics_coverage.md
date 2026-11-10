@@ -47,6 +47,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | four determinants match, missing entry inverse, order transpose product, system sum of squares |
 | T8 | det of product ab, det diagonal 234, commutator ab minus ba, cramer x det minus 7 |
 | T9 | product rules statements, ax equals b det one, det minus a order 3, dependent system infinite |
+| T10 | adj from a adj a 5i, inverse self square identity, lower triangular det, fifth power nilpotent |
 
 ### C2 Calculus: derivatives, monotonicity, maxima and minima
 
@@ -61,6 +62,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | second derivative x2 log x, sphere volume rate, min surface cylinder |
 | T8 | absolute min cubic interval, second derivative log sin, rectangle under parabola |
 | T9 | decreasing quartic 3x4, second derivative ex cos, wire square circle |
+| T10 | sin plus cos statements, second derivative tan, box from rectangle sheet |
 
 ### C3 Integration and area
 
@@ -75,6 +77,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | four definite statements, definite 4x cubed, area below axis |
 | T8 | four indefinite statements, definite one over x plus one, area cubic both sides |
 | T9 | definite x over x2 plus 1, integral x minus 3, area under circle part |
+| T10 | definite tan squared, integral cos 3x, area parabola line six minus x |
 
 ### C4 Differential equations
 
@@ -89,6 +92,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | separable 1 plus y over x, separable xy squared |
 | T8 | order degree third, separable tan inverse |
 | T9 | two y over x statements, separable e minus y |
+| T10 | four solutions value at one match, separable y plus one cos |
 
 ### C5 Probability distributions
 
@@ -103,6 +107,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | distribution k statements, expected aces two draws |
 | T8 | two coin distribution statements, two red of three draws |
 | T9 | k x plus one match, dice product square |
+| T10 | variance four valued, variance red balls drawn |
 
 ### C6 Linear programming
 
@@ -117,6 +122,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | lpp max four corners |
 | T8 | lpp values match |
 | T9 | lpp max 5x 4y |
+| T10 | max x plus y statements |
 
 ### M1 Relations and functions
 
@@ -131,6 +137,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | divides relation statements, count equivalence relations, swap neighbours bijection |
 | T8 | counts relations functions match, 2x on z, smallest reflexive transitive |
 | T9 | a le b squared statements, cubic plus x bijection, reflexive symmetric count |
+| T10 | x squared on reals, pair related a plus d, x over x plus one |
 
 ### M2 Inverse trigonometric functions
 
@@ -145,6 +152,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | cos inverse outside branch, sec inverse two |
 | T8 | cos inverse minus one, domain sin inverse log |
 | T9 | four principal values match, sin inverse sin four |
+| T10 | reduce angle principal match, sin inverse cos three pi five |
 
 ### M3 Matrices
 
@@ -159,6 +167,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | skew matrix statements, power all ones |
 | T8 | symmetric skew parts statements, unknowns scalar matrix eq |
 | T9 | rotation squared, aij i plus j |
+| T10 | matrix algebra rules statements, three a minus b |
 
 ### M4 Determinants
 
@@ -173,6 +182,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | vandermonde numeric, cofactor a21, k inconsistent system |
 | T8 | det x one one x, det 2i order 3, inverse from cubic identity |
 | T9 | columns sum zero det, cofactor a23 one to nine, system from given inverse |
+| T10 | det one a b plus c, det inverse times det adj, inverse entry from cofactor |
 
 ### M5 Continuity and differentiability
 
@@ -187,6 +197,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | simplify then differentiate match, implicit folium slope, log diff x power sin x, tan inverse derivative at one |
 | T8 | derivatives at a point match, continuity one minus cos 2x, parametric second t2 t3, sin inverse derivative zero |
 | T9 | two modulus corners, cos inverse substitution, log diff product quotient, log x squared derivative |
+| T10 | x mod x statements, parametric e t cos sin, continuity root expression k, derivative log cos |
 
 ### M6 Applications of derivatives
 
@@ -201,6 +212,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | cubic analysis statements, sand cone height rate, least value shifted square |
 | T8 | log x over x statements, rectangle area rate, cone in sphere |
 | T9 | extreme values match, sphere surface rate, largest triangle in circle |
+| T10 | x minus one e x increasing, shadow lamp post rate, max one over x power x |
 
 ### M7 Integrals
 
@@ -215,6 +227,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | complete square minus six x, king x sin over 1 plus cos2, parts twice x2 ex, definite cos 2x |
 | T8 | root 4x minus x2, partial x over product, x root 2 minus x, integral 2x plus ex |
 | T9 | definite properties statements, sin cubed, log one plus tan, definite arctan zero one |
+| T10 | four standard a two match, x sec squared parts, three moduli one to four, sec tan integral |
 
 ### M8 Applications of integrals
 
@@ -229,6 +242,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | parabola horizontal line area |
 | T8 | standard areas statements three |
 | T9 | area x2 plus 1 |
+| T10 | area sin zero two pi |
 
 ### M9 Differential equations
 
@@ -243,6 +257,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | integrating factors match, homogeneous x plus 2y, linear 2y e minus x |
 | T8 | linear y plus one, homogeneous x plus y over x minus y, if constant three |
 | T9 | linear two y over x statements, homogeneous exponential, degree two cubed |
+| T10 | linear y over x x squared, homogeneous square root, order circles origin |
 
 ### M10 Vectors
 
@@ -257,6 +272,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | cross from dot, perpendicular lambda, parallelogram adjacent sides |
 | T8 | vector quantities match, unit perpendicular two vectors, three unit vectors sum zero |
 | T9 | segment quantities match, projection 232 on 121, perpendicular to sum others |
+| T10 | cross dot facts statements, angle i j minus k, parallelogram two a plus b |
 
 ### M11 Three-dimensional geometry
 
@@ -271,6 +287,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | line facts statements, angle 110 101, points at distance on line |
 | T8 | line two points statements, parallel lines distance new, skew lines distance three |
 | T9 | dr of 2x 3y z, dc from angles, intersecting lines zero |
+| T10 | line vector form facts match, angle 3 minus 6 2, skew distance three root nineteen |
 
 ### M12 Linear programming
 
@@ -285,6 +302,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | unbounded min 4x 3y |
 | T8 | lpp max three constraints |
 | T9 | tied minimum statements |
+| T10 | min minus 3x plus 4y |
 
 ### M13 Probability
 
@@ -299,6 +317,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | union conditional match, both independent, bayes truth six |
 | T8 | second ace given first, bayes insured drivers, union from conditional |
 | T9 | three given sum eight, both from conditional, bayes hostellers grade |
+| T10 | union 0.7 statements, two heads given first head, bayes lost card diamond |
 
 ### AM1 Numbers, quantification and numerical applications
 
@@ -313,6 +332,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | congruence rules statements, stream from round trip, pipe closed partway, 57 mod 8, race head starts, modulus at least |
 | T8 | remainders calendar statements, upstream twice as long, pipes alternate hours, negative coefficient inequality, mix solutions one to two, integers double inequality |
 | T9 | four everyday quantities match, two remainders smallest, dead heat start, five minus x, twice as efficient days, water change ratio |
+| T10 | pipes six twelve statements, two power forty mod seven, two moduli inequality, alligation 30 45 40, three workers pairwise, stream round trip ratio |
 
 ### AM2 Algebra
 
@@ -327,6 +347,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | inverse from identity, det 2a order 2, fruit bills matrix, det adj inverse |
 | T8 | operations triangular match, inverse diagonal 2 3, three item prices, solve axb identity |
 | T9 | cramer z det six, type skew 2x2, row matrix column x, onion wheat rice |
+| T10 | symmetric 2 1 1 1 statements, a squared minus 2a equals 3i, three schemes interest, det 4 minus 2 3 1 |
 
 ### AM3 Calculus
 
@@ -341,6 +362,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | cost function match, substitution x root, parts x e2x definite, quotient x over 1 plus x, de of a cos b sin, decreasing x ex, demand from mr, log x over x |
 | T8 | profit function statements, definite ex 0 2, cost rate over time, cs quadratic demand linear supply, divide then integrate, de of two exponentials, profit after tax, log one plus x minus x |
 | T9 | recognise integrals match, greatest revenue value, cs reciprocal demand, derivative log x2 plus 1, local min x plus 9 over x, definite 6x2 minus 4x, separable minus y over x, profit from mr mc |
+| T10 | marginal cost cubic three, x e x squared, producer surplus equilibrium, derivative 3x2 minus log, min average cost cubic, root x one to four, separable y squared, price at max profit |
 
 ### AM4 Probability distributions
 
@@ -355,6 +377,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | binomial facts statements, poisson exactly two, normal upper tail two sd, expected heads two, binomial two sixes three |
 | T8 | poisson mean three statements, three heads six tosses, normal minus one to two, uniform mean one to four, sd from moments |
 | T9 | binomial facts general statements, poisson at most one mean two, at most one six four, mean three valued 0 1 2, normal value from tail |
+| T10 | binomial poisson values match, normal below minus one, two doublets four throws, sd binomial sixteen quarter, lottery expected gain |
 
 ### AM5 Time-based data
 
@@ -369,6 +392,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | trend equation values match, least squares method name, four year trend forecast |
 | T8 | third three year average, ice cream seasonal, trend crosses target |
 | T9 | moving averages seven match, cyclical length, six year trend forecast |
+| T10 | moving averages behaviour statements, second five yearly, seven year trend forecast |
 
 ### AM6 Inferential statistics
 
@@ -383,6 +407,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | sampling facts statements, t for n 36, t from five values |
 | T8 | t test steps match, sampling mean and se, t from six values |
 | T9 | sampling t distribution statements, t for n 49, t from sums n 10 |
+| T10 | t test quantities n 25 match, t five obs mu five, t from sum x squared sixteen |
 
 ### AM7 Financial mathematics
 
@@ -397,6 +422,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | financial values match, emi two months, bond three year discount, slm scrap value |
 | T8 | finance terms statements, cagr 50k 72k, pv annuity three years, book value two years |
 | T9 | emi sinking perpetuity statements, half yearly sinking two years, emi three year, slm eight years |
+| T10 | cagr perpetuity bond statements, effective monthly twelve, bond half yearly coupons, slm eight years scrap |
 
 ### AM8 Linear programming
 
@@ -411,4 +437,5 @@ The host for a format may move to a neighbouring unit when the planned item woul
 | T7 | bounded lpp statements, dealer fans machines |
 | T8 | constraints chairs tables match, diet two foods min |
 | T9 | lpp general statements, two products two machines |
+| T10 | five corner values match, min 5x 7y unbounded |
 
