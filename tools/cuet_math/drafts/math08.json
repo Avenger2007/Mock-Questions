@@ -1,0 +1,1449 @@
+{
+ "q": [
+  {
+   "unit": "C1",
+   "section": "A",
+   "sub_topic": "Determinant of a product of two matrices",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(11\\)",
+    "B) \\(-11\\)",
+    "C) \\(-10\\)",
+    "D) \\(1\\)"
+   ],
+   "correct_option": "B",
+   "targets": "C1:det of product ab",
+   "question": "For \\(A = \\begin{bmatrix}2&3\\\\1&-4\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}1&-2\\\\-1&3\\end{bmatrix}\\), \\(|AB|\\) is:",
+   "explanation": "Answer: (B) \\(-11\\)\nGiven: \\(|A| = -8 - 3 = -11\\), \\(|B| = 3 - 2 = 1\\)\nFormula: \\(|AB| = |A||B|\\)\nStep 1: \\(|AB| = -11 \\times 1 = -11\\)\nCommon mistake: \\(11\\) (A) drops the sign of \\(|A|\\). \\(1\\) (D) is \\(|B|\\) alone.\nKey point: Multiply the determinants instead of multiplying the matrices."
+  },
+  {
+   "unit": "C1",
+   "section": "A",
+   "sub_topic": "Determinant of a diagonal matrix",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(9\\)",
+    "B) \\(12\\)",
+    "C) \\(24\\)",
+    "D) \\(6\\)"
+   ],
+   "correct_option": "C",
+   "targets": "C1:det diagonal 234",
+   "question": "The determinant of \\(\\begin{bmatrix}2&0&0\\\\0&3&0\\\\0&0&4\\end{bmatrix}\\) is:",
+   "explanation": "Answer: (C) \\(24\\)\nGiven: a diagonal matrix\nFormula: determinant = product of the diagonal entries\nStep 1: \\(2 \\times 3 \\times 4 = 24\\)\nCommon mistake: \\(9\\) (A) adds the diagonal entries.\nKey point: For triangular and diagonal matrices, multiply down the diagonal."
+  },
+  {
+   "unit": "C1",
+   "section": "A",
+   "sub_topic": "AB − BA for two simple matrices",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(O\\)",
+    "B) \\(\\begin{bmatrix}0&0\\\\1&0\\end{bmatrix}\\)",
+    "C) \\(\\begin{bmatrix}1&0\\\\0&0\\end{bmatrix}\\)",
+    "D) \\(\\begin{bmatrix}0&1\\\\0&0\\end{bmatrix}\\)"
+   ],
+   "correct_option": "D",
+   "targets": "C1:commutator ab minus ba",
+   "question": "For \\(A = \\begin{bmatrix}1&0\\\\0&0\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}0&1\\\\0&0\\end{bmatrix}\\), the matrix \\(AB - BA\\) is:",
+   "explanation": "Answer: (D) \\(\\begin{bmatrix}0&1\\\\0&0\\end{bmatrix}\\)\nGiven: multiply row by column\nFormula: find \\(AB\\) and \\(BA\\) separately\nStep 1: \\(AB = \\begin{bmatrix}0&1\\\\0&0\\end{bmatrix}\\)\nStep 2: \\(BA = \\begin{bmatrix}0&0\\\\0&0\\end{bmatrix}\\)\nStep 3: \\(AB - BA = \\begin{bmatrix}0&1\\\\0&0\\end{bmatrix}\\)\nCommon mistake: \\(O\\) (A) assumes \\(AB = BA\\). (B) is the transpose of the answer.\nKey point: Matrix multiplication is not commutative in general."
+  },
+  {
+   "unit": "C1",
+   "section": "A",
+   "sub_topic": "One unknown of a 3 × 3 system with determinant −7",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(2\\)",
+    "B) \\(1\\)",
+    "C) \\(-2\\)",
+    "D) \\(3\\)"
+   ],
+   "correct_option": "A",
+   "targets": "C1:cramer x det minus 7",
+   "question": "For the system \\(x + 2y - z = 3\\), \\(2x - y + z = 4\\), \\(x + y + z = 4\\), the value of \\(x\\) is:",
+   "explanation": "Answer: (A) \\(2\\)\nGiven: \\(|A| = \\begin{vmatrix}1&2&-1\\\\2&-1&1\\\\1&1&1\\end{vmatrix} = 1(-1 - 1) - 2(2 - 1) - 1(2 + 1) = -7\\)\nFormula: \\(x = \\dfrac{|A_x|}{|A|}\\)\nStep 1: \\(|A_x| = \\begin{vmatrix}3&2&-1\\\\4&-1&1\\\\4&1&1\\end{vmatrix} = 3(-1 - 1) - 2(4 - 4) - 1(4 + 4) = -14\\)\nStep 2: \\(x = \\dfrac{-14}{-7} = 2\\); the full solution is \\((2, 1, 1)\\)\nCommon mistake: \\(1\\) (B) is \\(y\\) (or \\(z\\)). \\(-2\\) (C) loses the sign of \\(|A|\\).\nKey point: Check the solution in all three equations."
+  },
+  {
+   "unit": "C2",
+   "section": "A",
+   "sub_topic": "Absolute minimum of a cubic on [1, 5]",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(28\\)",
+    "B) \\(24\\)",
+    "C) \\(29\\)",
+    "D) \\(56\\)"
+   ],
+   "correct_option": "B",
+   "targets": "C2:absolute min cubic interval",
+   "question": "The absolute minimum value of \\(f(x) = 2x^3 - 15x^2 + 36x + 1\\) on \\([1, 5]\\) is:",
+   "explanation": "Answer: (B) \\(24\\)\nGiven: \\(f'(x) = 6x^2 - 30x + 36 = 6(x - 2)(x - 3)\\)\nFormula: compare \\(f\\) at the critical points and the end points\nStep 1: \\(f(1) = 24\\), \\(f(2) = 29\\), \\(f(3) = 28\\), \\(f(5) = 56\\)\nStep 2: Absolute minimum \\(= 24\\) at \\(x = 1\\)\nCommon mistake: \\(28\\) (A) is the local minimum; it ignores the end point. \\(56\\) (D) is the absolute maximum.\nKey point: On a closed interval, always check the end points."
+  },
+  {
+   "unit": "C2",
+   "section": "A",
+   "sub_topic": "Second derivative of log sin x at π/4",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(-1\\)",
+    "B) \\(2\\)",
+    "C) \\(-2\\)",
+    "D) \\(1\\)"
+   ],
+   "correct_option": "C",
+   "targets": "C2:second derivative log sin",
+   "question": "If \\(y = \\log(\\sin x)\\), then \\(\\dfrac{d^2y}{dx^2}\\) at \\(x = \\dfrac{\\pi}{4}\\) is:",
+   "explanation": "Answer: (C) \\(-2\\)\nGiven: chain rule\nFormula: \\(y' = \\dfrac{\\cos x}{\\sin x} = \\cot x\\)\nStep 1: \\(y'' = -\\text{cosec}^2x\\)\nStep 2: At \\(\\dfrac{\\pi}{4}\\): \\(-(\\sqrt{2})^2 = -2\\)\nCommon mistake: \\(-1\\) (A) uses \\(\\text{cosec}\\dfrac{\\pi}{4} = 1\\). \\(2\\) (B) forgets that the derivative of \\(\\cot x\\) is negative.\nKey point: \\(\\dfrac{d}{dx}\\cot x = -\\text{cosec}^2x\\)."
+  },
+  {
+   "unit": "C2",
+   "section": "A",
+   "sub_topic": "Largest rectangle under a parabola",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(16\\)",
+    "B) \\(24\\)",
+    "C) \\(48\\)",
+    "D) \\(32\\)"
+   ],
+   "correct_option": "D",
+   "targets": "C2:rectangle under parabola",
+   "question": "A rectangle has two vertices on the \\(x\\)-axis and two on the curve \\(y = 12 - x^2\\), above the axis. Its largest possible area is:",
+   "explanation": "Answer: (D) \\(32\\)\nGiven: vertices \\((\\pm x, 0)\\) and \\((\\pm x, 12 - x^2)\\)\nFormula: \\(A(x) = 2x(12 - x^2) = 24x - 2x^3\\)\nStep 1: \\(A'(x) = 24 - 6x^2 = 0 \\Rightarrow x = 2\\); \\(A''(2) = -24 < 0\\)\nStep 2: \\(A = 4 \\times 8 = 32\\)\nCommon mistake: \\(16\\) (A) uses width \\(x\\) instead of \\(2x\\). \\(48\\) (C) takes the full height 12 at \\(x = 2\\).\nKey point: The width is \\(2x\\) because the rectangle is symmetric."
+  },
+  {
+   "unit": "C3",
+   "section": "A",
+   "sub_topic": "Four indefinite integrals — which are right",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) and (B) only",
+    "B) (A), (B) and (C) only",
+    "C) (B), (C) and (D) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "B",
+   "targets": "C3:four indefinite statements",
+   "question": "Consider the following statements:\n(A) \\(\\int e^{2x}\\,dx = \\dfrac{e^{2x}}{2} + C\\)\n(B) \\(\\int\\dfrac{dx}{1 + x^2} = \\tan^{-1}x + C\\)\n(C) \\(\\int\\sec^2x\\,dx = \\tan x + C\\)\n(D) \\(\\int\\log x\\,dx = \\dfrac{1}{x} + C\\)\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (B) (A), (B) and (C) only\nWhy: (A), (B) and (C) are standard results.\nWhy not the others: (D) is false: \\(\\dfrac{1}{x}\\) is the derivative of \\(\\log x\\), not its integral; \\(\\int\\log x\\,dx = x\\log x - x + C\\). Options (C) and (D) include (D); (A) leaves out (C).\nKey point: Do not confuse a derivative with an integral."
+  },
+  {
+   "unit": "C3",
+   "section": "A",
+   "sub_topic": "Definite integral of 1/x + 1 from 1 to e",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(e + 1\\)",
+    "B) \\(1\\)",
+    "C) \\(e\\)",
+    "D) \\(e - 1\\)"
+   ],
+   "correct_option": "C",
+   "targets": "C3:definite one over x plus one",
+   "question": "\\(\\displaystyle\\int_1^e\\left(\\dfrac{1}{x} + 1\\right)dx\\) equals:",
+   "explanation": "Answer: (C) \\(e\\)\nGiven: \\(\\int\\left(\\dfrac{1}{x} + 1\\right)dx = \\log x + x\\)\nFormula: \\(F(e) - F(1)\\)\nStep 1: \\(F(e) = 1 + e\\); \\(F(1) = 0 + 1 = 1\\)\nStep 2: \\(e + 1 - 1 = e\\)\nCommon mistake: \\(e + 1\\) (A) forgets the lower limit. \\(e - 1\\) (D) drops the \\(\\log\\) term.\nKey point: Evaluate every term at both limits."
+  },
+  {
+   "unit": "C3",
+   "section": "A",
+   "sub_topic": "Area for y = x³ across the origin",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\dfrac{15}{4}\\) sq units",
+    "B) \\(4\\) sq units",
+    "C) \\(\\dfrac{9}{2}\\) sq units",
+    "D) \\(\\dfrac{17}{4}\\) sq units"
+   ],
+   "correct_option": "D",
+   "targets": "C3:area cubic both sides",
+   "question": "The area bounded by \\(y = x^3\\), the \\(x\\)-axis and the lines \\(x = -1\\) and \\(x = 2\\) is:",
+   "explanation": "Answer: (D) \\(\\dfrac{17}{4}\\) sq units\nGiven: \\(x^3 < 0\\) on \\((-1, 0)\\) and \\(> 0\\) on \\((0, 2)\\)\nFormula: split at \\(x = 0\\)\nStep 1: \\(\\left|\\int_{-1}^0 x^3\\,dx\\right| = \\dfrac{1}{4}\\)\nStep 2: \\(\\int_0^2 x^3\\,dx = 4\\)\nStep 3: Area \\(= \\dfrac{1}{4} + 4 = \\dfrac{17}{4}\\)\nCommon mistake: \\(\\dfrac{15}{4}\\) (A) integrates straight across, so the left part cancels. \\(4\\) (B) ignores the left part.\nKey point: Split where the curve crosses the axis."
+  },
+  {
+   "unit": "C4",
+   "section": "A",
+   "sub_topic": "Order and degree with a squared second derivative",
+   "difficulty": "easy",
+   "format": "direct",
+   "options": [
+    "A) order 3, degree 1",
+    "B) order 2, degree 2",
+    "C) order 3, degree 2",
+    "D) order 2, degree 1"
+   ],
+   "correct_option": "A",
+   "targets": "C4:order degree third",
+   "question": "The order and degree of \\(\\dfrac{d^3y}{dx^3} + \\left(\\dfrac{d^2y}{dx^2}\\right)^2 + y = 0\\) are:",
+   "explanation": "Answer: (A) order 3, degree 1\nWhy: The highest derivative is the third (order 3), and it appears to the power 1 (degree 1).\nWhy not the others: (B) and (C) read the degree from \\(\\left(\\dfrac{d^2y}{dx^2}\\right)^2\\), which is not the highest derivative. (D) takes the wrong highest derivative.\nKey point: Degree is the power of the highest-order derivative only."
+  },
+  {
+   "unit": "C4",
+   "section": "A",
+   "sub_topic": "Separable equation dy/dx = x(1 + y²) through the origin",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(0\\)",
+    "B) \\(\\sqrt{3}\\)",
+    "C) \\(1\\)",
+    "D) \\(\\dfrac{\\pi}{4}\\)"
+   ],
+   "correct_option": "C",
+   "targets": "C4:separable tan inverse",
+   "question": "The solution of \\(\\dfrac{dy}{dx} = x(1 + y^2)\\) with \\(y(0) = 0\\) gives the value of \\(y\\) at \\(x = \\sqrt{\\dfrac{\\pi}{2}}\\) as:",
+   "explanation": "Answer: (C) \\(1\\)\nGiven: \\(\\dfrac{dy}{1 + y^2} = x\\,dx\\)\nFormula: \\(\\tan^{-1}y = \\dfrac{x^2}{2} + c\\)\nStep 1: \\(y(0) = 0 \\Rightarrow c = 0\\), so \\(y = \\tan\\left(\\dfrac{x^2}{2}\\right)\\)\nStep 2: At \\(x = \\sqrt{\\pi/2}\\): \\(\\dfrac{x^2}{2} = \\dfrac{\\pi}{4}\\), so \\(y = 1\\)\nCommon mistake: \\(\\dfrac{\\pi}{4}\\) (D) stops at \\(\\tan^{-1}y\\). \\(\\sqrt{3}\\) (B) uses \\(\\dfrac{\\pi}{3}\\) by forgetting to halve \\(x^2\\).\nKey point: Undo \\(\\tan^{-1}\\) at the end."
+  },
+  {
+   "unit": "C5",
+   "section": "A",
+   "sub_topic": "Heads in two tosses — which claims fail",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) only",
+    "B) (B) and (D) only",
+    "C) (C) only",
+    "D) (D) only"
+   ],
+   "correct_option": "D",
+   "targets": "C5:two coin distribution statements",
+   "question": "\\(X\\) is the number of heads when two fair coins are tossed. Consider the following statements:\n(A) \\(P(X = 1) = \\dfrac{1}{2}\\)\n(B) \\(E(X) = 1\\)\n(C) \\(\\text{Var}(X) = \\dfrac{1}{2}\\)\n(D) \\(P(X \\ge 1) = \\dfrac{1}{2}\\)\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (D) (D) only\nWhy: Only (D) is false: \\(P(X \\ge 1) = 1 - \\dfrac{1}{4} = \\dfrac{3}{4}\\).\nWhy not the others: (A) HT, TH. (B) \\(0 + \\dfrac{1}{2} + 2 \\cdot \\dfrac{1}{4} = 1\\). (C) \\(E(X^2) = \\dfrac{1}{2} + 1 = \\dfrac{3}{2}\\), so \\(\\text{Var} = \\dfrac{3}{2} - 1 = \\dfrac{1}{2}\\). Options (A), (B) and (C) name a true statement as false.\nKey point: \"At least one\" = 1 − P(none)."
+  },
+  {
+   "unit": "C5",
+   "section": "A",
+   "sub_topic": "Exactly two red balls in three draws",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\dfrac{1}{2}\\)",
+    "B) \\(\\dfrac{3}{10}\\)",
+    "C) \\(\\dfrac{1}{5}\\)",
+    "D) \\(\\dfrac{9}{50}\\)"
+   ],
+   "correct_option": "B",
+   "targets": "C5:two red of three draws",
+   "question": "A bag has 4 red and 6 black balls. Three balls are drawn at once. The probability that exactly two are red is:",
+   "explanation": "Answer: (B) \\(\\dfrac{3}{10}\\)\nGiven: \\(\\binom{10}{3} = 120\\) equally likely selections\nFormula: favourable \\(= \\binom{4}{2}\\binom{6}{1}\\)\nStep 1: \\(6 \\times 6 = 36\\)\nStep 2: \\(P = \\dfrac{36}{120} = \\dfrac{3}{10}\\)\nCommon mistake: \\(\\dfrac{1}{5}\\) (C) counts only \\(\\binom{4}{2}\\binom{6}{1}\\) over \\(\\binom{10}{3}\\) after dropping the factor \\(\\binom{6}{1}\\): \\(\\dfrac{6}{30}\\). \\(\\dfrac{9}{50}\\) (D) treats the draws as with replacement.\nKey point: Choose the reds and the blacks separately, then multiply."
+  },
+  {
+   "unit": "C6",
+   "section": "A",
+   "sub_topic": "Values from one five-cornered region",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)",
+    "B) (A)-(III), (B)-(II), (C)-(I), (D)-(IV)",
+    "C) (A)-(IV), (B)-(I), (C)-(II), (D)-(III)",
+    "D) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)"
+   ],
+   "correct_option": "A",
+   "targets": "C6:lpp values match",
+   "question": "For \\(Z = 2x + 3y\\) subject to \\(x + y \\ge 2\\), \\(x + 2y \\le 10\\), \\(x \\le 6\\), \\(x, y \\ge 0\\), match List-I with List-II.\n\nList-I\n(A) Maximum value of \\(Z\\)\n(B) Minimum value of \\(Z\\)\n(C) Number of corner points\n(D) Value of \\(Z\\) at \\((0, 5)\\)\n\nList-II\n(I) \\(5\\)\n(II) \\(4\\)\n(III) \\(15\\)\n(IV) \\(18\\)",
+   "explanation": "Answer: (A) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)\nGiven: corners \\((2, 0)\\), \\((6, 0)\\), \\((6, 2)\\), \\((0, 5)\\), \\((0, 2)\\)\nStep 1: \\(Z = 4, 12, 18, 15, 6\\)\nStep 2: Maximum \\(18\\) (IV); minimum \\(4\\) (II); five corners (I); \\(Z(0, 5) = 15\\) (III)\nCommon mistake: (B) swaps the maximum and \\(Z(0, 5)\\). (C) swaps the minimum and the count. (D) swaps the count and \\(Z(0, 5)\\).\nKey point: \\((6, 2)\\) comes from \\(x = 6\\) on the line \\(x + 2y = 10\\)."
+  },
+  {
+   "unit": "M1",
+   "section": "B1",
+   "sub_topic": "Counts on a three-element set",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(III), (B)-(I), (C)-(II), (D)-(IV)",
+    "B) (A)-(I), (B)-(III), (C)-(II), (D)-(IV)",
+    "C) (A)-(III), (B)-(II), (C)-(I), (D)-(IV)",
+    "D) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+   ],
+   "correct_option": "A",
+   "targets": "M1:counts relations functions match",
+   "question": "For \\(A = \\{1, 2, 3\\}\\), match List-I with List-II.\n\nList-I\n(A) Number of relations on \\(A\\)\n(B) Number of reflexive relations on \\(A\\)\n(C) Number of functions from \\(A\\) to \\(A\\)\n(D) Number of one-one functions from \\(A\\) to \\(A\\)\n\nList-II\n(I) \\(64\\)\n(II) \\(27\\)\n(III) \\(512\\)\n(IV) \\(6\\)",
+   "explanation": "Answer: (A) (A)-(III), (B)-(I), (C)-(II), (D)-(IV)\nStep 1: \\(A \\times A\\) has 9 pairs: \\(2^9 = 512\\) relations (III)\nStep 2: The 3 diagonal pairs are fixed: \\(2^6 = 64\\) (I)\nStep 3: Each of 3 elements has 3 images: \\(3^3 = 27\\) (II)\nStep 4: One-one: \\(3! = 6\\) (IV)\nCommon mistake: (B) swaps all relations and reflexive ones. (C) swaps reflexive relations and functions. (D) swaps all functions and one-one functions.\nKey point: A relation is any subset of \\(A \\times A\\)."
+  },
+  {
+   "unit": "M1",
+   "section": "B1",
+   "sub_topic": "The function 2x on the integers",
+   "difficulty": "medium",
+   "format": "direct",
+   "options": [
+    "A) onto but not one-one",
+    "B) one-one but not onto",
+    "C) one-one and onto",
+    "D) neither one-one nor onto"
+   ],
+   "correct_option": "B",
+   "targets": "M1:2x on z",
+   "question": "The function \\(f: \\mathbb{Z} \\to \\mathbb{Z}\\), \\(f(x) = 2x\\), is:",
+   "explanation": "Answer: (B) one-one but not onto\nWhy: \\(2x_1 = 2x_2 \\Rightarrow x_1 = x_2\\), so \\(f\\) is one-one. Odd integers such as 3 are never of the form \\(2x\\) with \\(x \\in \\mathbb{Z}\\), so \\(f\\) is not onto.\nWhy not the others: (A) and (D) deny one-one. (C) claims onto; it would be onto from \\(\\mathbb{R}\\) to \\(\\mathbb{R}\\), but not on \\(\\mathbb{Z}\\).\nKey point: The domain and codomain decide whether a function is onto."
+  },
+  {
+   "unit": "M1",
+   "section": "B1",
+   "sub_topic": "Smallest reflexive and transitive relation",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(5\\)",
+    "B) \\(7\\)",
+    "C) \\(6\\)",
+    "D) \\(9\\)"
+   ],
+   "correct_option": "C",
+   "targets": "M1:smallest reflexive transitive",
+   "question": "On \\(\\{1, 2, 3\\}\\), the number of elements in the smallest relation that contains \\((1, 2)\\) and \\((2, 3)\\) and is reflexive and transitive is:",
+   "explanation": "Answer: (C) \\(6\\)\nGiven: start with \\((1, 2), (2, 3)\\)\nFormula: add what reflexivity and transitivity force, and nothing else\nStep 1: Reflexive: add \\((1, 1), (2, 2), (3, 3)\\)\nStep 2: Transitive: \\((1, 2), (2, 3)\\) force \\((1, 3)\\)\nStep 3: \\(\\{(1,1), (2,2), (3,3), (1,2), (2,3), (1,3)\\}\\) has 6 elements and is transitive\nCommon mistake: \\(5\\) (A) forgets \\((1, 3)\\). \\(7\\) (B) adds a reverse pair, which symmetry would need but is not asked for.\nKey point: Add only what the required properties force."
+  },
+  {
+   "unit": "M2",
+   "section": "B1",
+   "sub_topic": "Principal value of cos⁻¹(−1)",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(0\\)",
+    "B) \\(-\\pi\\)",
+    "C) \\(\\dfrac{\\pi}{2}\\)",
+    "D) \\(\\pi\\)"
+   ],
+   "correct_option": "D",
+   "targets": "M2:cos inverse minus one",
+   "question": "The principal value of \\(\\cos^{-1}(-1)\\) is:",
+   "explanation": "Answer: (D) \\(\\pi\\)\nGiven: \\(\\cos\\pi = -1\\)\nFormula: principal branch \\([0, \\pi]\\)\nStep 1: \\(\\pi\\) lies in the branch, so the value is \\(\\pi\\)\nCommon mistake: \\(-\\pi\\) (B) is outside \\([0, \\pi]\\).\nKey point: The principal value of \\(\\cos^{-1}\\) is never negative."
+  },
+  {
+   "unit": "M2",
+   "section": "B1",
+   "sub_topic": "Domain of sin⁻¹(log₂ x)",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\left[\\dfrac{1}{2}, 2\\right]\\)",
+    "B) \\([-1, 1]\\)",
+    "C) \\((0, 2]\\)",
+    "D) \\([1, 2]\\)"
+   ],
+   "correct_option": "A",
+   "targets": "M2:domain sin inverse log",
+   "question": "The domain of \\(f(x) = \\sin^{-1}(\\log_2x)\\) is:",
+   "explanation": "Answer: (A) \\(\\left[\\dfrac{1}{2}, 2\\right]\\)\nGiven: \\(-1 \\le \\log_2x \\le 1\\)\nFormula: \\(2^{-1} \\le x \\le 2^1\\)\nStep 1: \\(\\dfrac{1}{2} \\le x \\le 2\\)\nCommon mistake: (B) is the domain of \\(\\sin^{-1}\\) itself, not of \\(f\\). (D) uses \\(0 \\le \\log_2x \\le 1\\).\nKey point: Put the inner function between \\(-1\\) and 1, then solve."
+  },
+  {
+   "unit": "M3",
+   "section": "B1",
+   "sub_topic": "Symmetric and skew-symmetric parts",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) and (B) only",
+    "B) (A), (B) and (C) only",
+    "C) (B), (C) and (D) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "B",
+   "targets": "M3:symmetric skew parts statements",
+   "question": "For a square matrix \\(A\\), consider the following statements:\n(A) \\(A + A^T\\) is symmetric.\n(B) \\(A - A^T\\) is skew-symmetric.\n(C) \\(A\\) can be written as the sum of a symmetric and a skew-symmetric matrix.\n(D) A skew-symmetric matrix of order 3 can have a non-zero diagonal entry.\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (B) (A), (B) and (C) only\nWhy: (A) \\((A + A^T)^T = A^T + A\\). (B) \\((A - A^T)^T = -(A - A^T)\\). (C) \\(A = \\dfrac{1}{2}(A + A^T) + \\dfrac{1}{2}(A - A^T)\\).\nWhy not the others: (D) is false: \\(a_{ii} = -a_{ii}\\) forces every diagonal entry to be 0. Options (C) and (D) include (D); (A) leaves out (C).\nKey point: Every square matrix splits into symmetric and skew-symmetric parts."
+  },
+  {
+   "unit": "M3",
+   "section": "B1",
+   "sub_topic": "Unknowns from a matrix equation with a scalar",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(9\\)",
+    "B) \\(8\\)",
+    "C) \\(13\\)",
+    "D) \\(11\\)"
+   ],
+   "correct_option": "D",
+   "targets": "M3:unknowns scalar matrix eq",
+   "question": "If \\(2\\begin{bmatrix}x&5\\\\7&y - 3\\end{bmatrix} + \\begin{bmatrix}3&-4\\\\1&2\\end{bmatrix} = \\begin{bmatrix}7&6\\\\15&14\\end{bmatrix}\\), then \\(x + y\\) is:",
+   "explanation": "Answer: (D) \\(11\\)\nGiven: compare entries\nFormula: (1, 1): \\(2x + 3 = 7\\); (2, 2): \\(2(y - 3) + 2 = 14\\)\nStep 1: \\(x = 2\\)\nStep 2: \\(2y - 4 = 14 \\Rightarrow y = 9\\)\nStep 3: \\(x + y = 11\\)\nCommon mistake: \\(9\\) (A) is \\(y\\) alone. \\(8\\) (B) solves \\(y - 3 + 2 = 14\\) without doubling, then subtracts.\nKey point: Multiply every entry by the scalar before comparing."
+  },
+  {
+   "unit": "M4",
+   "section": "B1",
+   "sub_topic": "Unknown in a 2 × 2 determinant equal to 15",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(4\\)",
+    "B) \\(\\pm\\sqrt{14}\\)",
+    "C) \\(\\pm 4\\)",
+    "D) \\(16\\)"
+   ],
+   "correct_option": "C",
+   "targets": "M4:det x one one x",
+   "question": "If \\(\\begin{vmatrix}x&1\\\\1&x\\end{vmatrix} = 15\\), then \\(x\\) is:",
+   "explanation": "Answer: (C) \\(\\pm 4\\)\nGiven: \\(x^2 - 1 = 15\\)\nFormula: solve the quadratic\nStep 1: \\(x^2 = 16 \\Rightarrow x = \\pm 4\\)\nCommon mistake: \\(4\\) (A) misses the negative root. \\(\\pm\\sqrt{14}\\) (B) uses \\(x^2 + 1\\).\nKey point: A square has two square roots."
+  },
+  {
+   "unit": "M4",
+   "section": "B1",
+   "sub_topic": "Determinant of 2I of order 3",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(8\\)",
+    "B) \\(2\\)",
+    "C) \\(6\\)",
+    "D) \\(4\\)"
+   ],
+   "correct_option": "A",
+   "targets": "M4:det 2i order 3",
+   "question": "The determinant of \\(2I_3\\) (twice the identity matrix of order 3) is:",
+   "explanation": "Answer: (A) \\(8\\)\nGiven: \\(|I_3| = 1\\)\nFormula: \\(|kA| = k^3|A|\\) for order 3\nStep 1: \\(2^3 \\times 1 = 8\\)\nCommon mistake: \\(6\\) (C) adds the diagonal entries.\nKey point: Each row contributes one factor of \\(k\\)."
+  },
+  {
+   "unit": "M4",
+   "section": "B1",
+   "sub_topic": "Inverse from a cubic matrix identity",
+   "difficulty": "hard",
+   "format": "direct",
+   "options": [
+    "A) \\(\\dfrac{1}{4}(A^2 + 6A - 9I)\\)",
+    "B) \\(\\dfrac{1}{4}(A^2 - 6A + 9I)\\)",
+    "C) \\(4(A^2 - 6A + 9I)\\)",
+    "D) \\(\\dfrac{1}{9}(A^2 - 6A + 4I)\\)"
+   ],
+   "correct_option": "B",
+   "targets": "M4:inverse from cubic identity",
+   "question": "For \\(A = \\begin{bmatrix}2&-1&1\\\\-1&2&-1\\\\1&-1&2\\end{bmatrix}\\), it is known that \\(A^3 - 6A^2 + 9A - 4I = O\\). Then \\(A^{-1}\\) equals:",
+   "explanation": "Answer: (B) \\(\\dfrac{1}{4}(A^2 - 6A + 9I)\\)\nWhy: Rewrite as \\(A(A^2 - 6A + 9I) = 4I\\). Multiplying by \\(A^{-1}\\) gives \\(A^2 - 6A + 9I = 4A^{-1}\\), so \\(A^{-1} = \\dfrac{1}{4}(A^2 - 6A + 9I)\\). (\\(|A| = 4 \\ne 0\\), so \\(A^{-1}\\) exists.)\nWhy not the others: (A) changes the signs. (C) multiplies by 4 instead of dividing. (D) treats the coefficient 9 as the divisor.\nKey point: Move the \\(I\\) term across and factor out \\(A\\)."
+  },
+  {
+   "unit": "M5",
+   "section": "B1",
+   "sub_topic": "Derivatives evaluated at a point",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(III), (B)-(II), (C)-(IV), (D)-(I)",
+    "B) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+    "C) (A)-(II), (B)-(III), (C)-(I), (D)-(IV)",
+    "D) (A)-(II), (B)-(III), (C)-(IV), (D)-(I)"
+   ],
+   "correct_option": "D",
+   "targets": "M5:derivatives at a point match",
+   "question": "Match List-I with List-II.\n\nList-I\n(A) \\(\\dfrac{d}{dx}(x^3 + 2x)\\) at \\(x = 1\\)\n(B) \\(\\dfrac{d}{dx}\\sin^2x\\) at \\(x = \\dfrac{\\pi}{4}\\)\n(C) \\(\\dfrac{d}{dx}e^{x^2}\\) at \\(x = 0\\)\n(D) \\(\\dfrac{d}{dx}\\sqrt{x^2 + 9}\\) at \\(x = 4\\)\n\nList-II\n(I) \\(\\dfrac{4}{5}\\)\n(II) \\(5\\)\n(III) \\(1\\)\n(IV) \\(0\\)",
+   "explanation": "Answer: (D) (A)-(II), (B)-(III), (C)-(IV), (D)-(I)\nStep 1: \\(3x^2 + 2 = 5\\) (II)\nStep 2: \\(2\\sin x\\cos x = \\sin 2x = 1\\) (III)\nStep 3: \\(2xe^{x^2} = 0\\) (IV)\nStep 4: \\(\\dfrac{x}{\\sqrt{x^2 + 9}} = \\dfrac{4}{5}\\) (I)\nCommon mistake: (A) swaps the first two. (B) swaps (B) and (C). (C) swaps (C) and (D).\nKey point: Differentiate fully before substituting."
+  },
+  {
+   "unit": "M5",
+   "section": "B1",
+   "sub_topic": "Value making (1 − cos 2x)/x² continuous",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(1\\)",
+    "B) \\(4\\)",
+    "C) \\(2\\)",
+    "D) \\(0\\)"
+   ],
+   "correct_option": "C",
+   "targets": "M5:continuity one minus cos 2x",
+   "question": "\\(f(x) = \\dfrac{1 - \\cos 2x}{x^2}\\) for \\(x \\ne 0\\) and \\(f(0) = k\\). \\(f\\) is continuous at 0 when \\(k\\) is:",
+   "explanation": "Answer: (C) \\(2\\)\nGiven: \\(1 - \\cos 2x = 2\\sin^2x\\)\nFormula: \\(\\lim_{x \\to 0}\\dfrac{\\sin x}{x} = 1\\)\nStep 1: \\(\\dfrac{2\\sin^2x}{x^2} = 2\\left(\\dfrac{\\sin x}{x}\\right)^2 \\to 2\\)\nStep 2: \\(k = 2\\)\nCommon mistake: \\(1\\) (A) uses \\(1 - \\cos 2x = \\sin^2x\\). \\(4\\) (B) uses \\(\\dfrac{\\sin 2x}{x} \\to 2\\) and squares.\nKey point: Rewrite \\(1 - \\cos 2x\\) as \\(2\\sin^2x\\)."
+  },
+  {
+   "unit": "M5",
+   "section": "B1",
+   "sub_topic": "Second derivative for x = t², y = t³",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\dfrac{3}{4}\\)",
+    "B) \\(\\dfrac{3}{2}\\)",
+    "C) \\(3\\)",
+    "D) \\(\\dfrac{3}{8}\\)"
+   ],
+   "correct_option": "A",
+   "targets": "M5:parametric second t2 t3",
+   "question": "If \\(x = t^2\\) and \\(y = t^3\\), then \\(\\dfrac{d^2y}{dx^2}\\) at \\(t = 1\\) is:",
+   "explanation": "Answer: (A) \\(\\dfrac{3}{4}\\)\nGiven: \\(\\dfrac{dy}{dx} = \\dfrac{3t^2}{2t} = \\dfrac{3t}{2}\\)\nFormula: \\(\\dfrac{d^2y}{dx^2} = \\dfrac{d}{dt}\\left(\\dfrac{dy}{dx}\\right) \\div \\dfrac{dx}{dt}\\)\nStep 1: \\(\\dfrac{d}{dt}\\left(\\dfrac{3t}{2}\\right) = \\dfrac{3}{2}\\)\nStep 2: \\(\\dfrac{3}{2} \\div 2t = \\dfrac{3}{4t}\\); at \\(t = 1\\): \\(\\dfrac{3}{4}\\)\nCommon mistake: \\(\\dfrac{3}{2}\\) (B) forgets to divide by \\(\\dfrac{dx}{dt}\\). \\(3\\) (C) multiplies by \\(\\dfrac{dx}{dt}\\) instead.\nKey point: The second derivative needs one more division by \\(\\dfrac{dx}{dt}\\)."
+  },
+  {
+   "unit": "M5",
+   "section": "B1",
+   "sub_topic": "Derivative of sin⁻¹ x at the origin",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(0\\)",
+    "B) \\(1\\)",
+    "C) \\(\\dfrac{\\pi}{2}\\)",
+    "D) \\(-1\\)"
+   ],
+   "correct_option": "B",
+   "targets": "M5:sin inverse derivative zero",
+   "question": "The derivative of \\(\\sin^{-1}x\\) at \\(x = 0\\) is:",
+   "explanation": "Answer: (B) \\(1\\)\nGiven: \\(\\dfrac{d}{dx}\\sin^{-1}x = \\dfrac{1}{\\sqrt{1 - x^2}}\\)\nStep 1: At \\(x = 0\\): \\(1\\)\nCommon mistake: \\(0\\) (A) is \\(\\sin^{-1}0\\), the value of the function.\nKey point: Differentiate first, then substitute."
+  },
+  {
+   "unit": "M6",
+   "section": "B1",
+   "sub_topic": "Analysis of (log x)/x — which claims fail",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) only",
+    "B) (B) and (D) only",
+    "C) (C) only",
+    "D) (D) only"
+   ],
+   "correct_option": "D",
+   "targets": "M6:log x over x statements",
+   "question": "For \\(f(x) = \\dfrac{\\log x}{x}\\), \\(x > 0\\), consider the following statements:\n(A) \\(f\\) is strictly increasing on \\((0, e)\\).\n(B) \\(f\\) has a maximum at \\(x = e\\).\n(C) The maximum value of \\(f\\) is \\(\\dfrac{1}{e}\\).\n(D) \\(f\\) is strictly decreasing on \\((0, 1)\\).\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (D) (D) only\nWhy: \\(f'(x) = \\dfrac{1 - \\log x}{x^2}\\). Only (D) is false: on \\((0, 1)\\), \\(1 - \\log x > 0\\), so \\(f\\) increases.\nWhy not the others: (A) \\(f' > 0\\) for \\(x < e\\). (B) \\(f'\\) changes from + to − at \\(e\\). (C) \\(f(e) = \\dfrac{1}{e}\\). Options (A), (B) and (C) name a true statement as false.\nKey point: \\((0, 1)\\) is part of \\((0, e)\\), where \\(f\\) increases."
+  },
+  {
+   "unit": "M6",
+   "section": "B1",
+   "sub_topic": "Rate of change of a rectangle's area",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(2\\) cm²/min",
+    "B) \\(-2\\) cm²/min",
+    "C) \\(62\\) cm²/min",
+    "D) \\(12\\) cm²/min"
+   ],
+   "correct_option": "A",
+   "targets": "M6:rectangle area rate",
+   "question": "The length \\(x\\) of a rectangle decreases at 5 cm/min and its width \\(y\\) increases at 4 cm/min. When \\(x = 8\\) cm and \\(y = 6\\) cm, the area changes at:",
+   "explanation": "Answer: (A) \\(2\\) cm²/min\nGiven: \\(\\dfrac{dx}{dt} = -5\\), \\(\\dfrac{dy}{dt} = 4\\)\nFormula: \\(A = xy \\Rightarrow \\dfrac{dA}{dt} = x\\dfrac{dy}{dt} + y\\dfrac{dx}{dt}\\)\nStep 1: \\(8(4) + 6(-5) = 32 - 30 = 2\\)\nCommon mistake: \\(-2\\) (B) pairs each length with its own rate. \\(62\\) (C) treats both rates as increases.\nKey point: A decreasing quantity has a negative rate."
+  },
+  {
+   "unit": "M6",
+   "section": "B1",
+   "sub_topic": "Largest cone inside a sphere of radius 3",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\dfrac{16\\pi}{3}\\)",
+    "B) \\(\\dfrac{32\\pi}{3}\\)",
+    "C) \\(8\\pi\\)",
+    "D) \\(36\\pi\\)"
+   ],
+   "correct_option": "B",
+   "targets": "M6:cone in sphere",
+   "question": "The largest volume of a right circular cone inscribed in a sphere of radius 3 is:",
+   "explanation": "Answer: (B) \\(\\dfrac{32\\pi}{3}\\)\nGiven: cone height \\(h\\), base radius \\(r\\), with \\(r^2 = 6h - h^2\\) (from the sphere)\nFormula: \\(V = \\dfrac{1}{3}\\pi r^2h = \\dfrac{\\pi}{3}(6h^2 - h^3)\\)\nStep 1: \\(V'(h) = \\dfrac{\\pi}{3}(12h - 3h^2) = 0 \\Rightarrow h = 4\\)\nStep 2: \\(r^2 = 24 - 16 = 8\\)\nStep 3: \\(V = \\dfrac{1}{3}\\pi(8)(4) = \\dfrac{32\\pi}{3}\\)\nCommon mistake: \\(36\\pi\\) (D) is the volume of the sphere. \\(8\\pi\\) (C) forgets the \\(\\dfrac{1}{3}\\).\nKey point: The best cone has height \\(\\dfrac{4}{3}\\) of the radius."
+  },
+  {
+   "unit": "M7",
+   "section": "B1",
+   "sub_topic": "Integral of 1/√(4x − x²)",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\sin^{-1}\\left(\\dfrac{x + 2}{2}\\right) + C\\)",
+    "B) \\(\\dfrac{1}{2}\\sin^{-1}\\left(\\dfrac{x - 2}{2}\\right) + C\\)",
+    "C) \\(\\sin^{-1}\\left(\\dfrac{x - 2}{2}\\right) + C\\)",
+    "D) \\(\\log|x - 2 + \\sqrt{4x - x^2}| + C\\)"
+   ],
+   "correct_option": "C",
+   "targets": "M7:root 4x minus x2",
+   "question": "\\(\\displaystyle\\int\\dfrac{dx}{\\sqrt{4x - x^2}}\\) equals:",
+   "explanation": "Answer: (C) \\(\\sin^{-1}\\left(\\dfrac{x - 2}{2}\\right) + C\\)\nGiven: \\(4x - x^2 = 4 - (x - 2)^2\\)\nFormula: \\(\\int\\dfrac{du}{\\sqrt{a^2 - u^2}} = \\sin^{-1}\\dfrac{u}{a}\\)\nStep 1: \\(u = x - 2\\), \\(a = 2\\): \\(\\sin^{-1}\\left(\\dfrac{x - 2}{2}\\right) + C\\)\nCommon mistake: (B) adds a \\(\\dfrac{1}{a}\\), which belongs to the \\(\\tan^{-1}\\) form. (A) completes the square with the wrong sign.\nKey point: The \\(\\sin^{-1}\\) form has no \\(\\dfrac{1}{a}\\) in front."
+  },
+  {
+   "unit": "M7",
+   "section": "B1",
+   "sub_topic": "Partial fractions for x/((x + 1)(x + 2))",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\log|x + 1| - 2\\log|x + 2| + C\\)",
+    "B) \\(\\log\\left|\\dfrac{x + 1}{x + 2}\\right| + C\\)",
+    "C) \\(2\\log|x + 1| - \\log|x + 2| + C\\)",
+    "D) \\(2\\log|x + 2| - \\log|x + 1| + C\\)"
+   ],
+   "correct_option": "D",
+   "targets": "M7:partial x over product",
+   "question": "\\(\\displaystyle\\int\\dfrac{x}{(x + 1)(x + 2)}\\,dx\\) equals:",
+   "explanation": "Answer: (D) \\(2\\log|x + 2| - \\log|x + 1| + C\\)\nGiven: \\(\\dfrac{x}{(x + 1)(x + 2)} = \\dfrac{A}{x + 1} + \\dfrac{B}{x + 2}\\)\nFormula: cover-up: \\(A = \\dfrac{-1}{1} = -1\\); \\(B = \\dfrac{-2}{-1} = 2\\)\nStep 1: \\(-\\log|x + 1| + 2\\log|x + 2| + C\\)\nCommon mistake: (A) has both signs reversed. (C) swaps \\(A\\) and \\(B\\).\nKey point: Find each constant by putting the root of its factor in the rest."
+  },
+  {
+   "unit": "M7",
+   "section": "B1",
+   "sub_topic": "Definite integral of x√(2 − x) using a property",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\dfrac{16\\sqrt{2}}{15}\\)",
+    "B) \\(\\dfrac{8\\sqrt{2}}{15}\\)",
+    "C) \\(\\dfrac{16}{15}\\)",
+    "D) \\(\\dfrac{32\\sqrt{2}}{15}\\)"
+   ],
+   "correct_option": "A",
+   "targets": "M7:x root 2 minus x",
+   "question": "\\(\\displaystyle\\int_0^2 x\\sqrt{2 - x}\\,dx\\) equals:",
+   "explanation": "Answer: (A) \\(\\dfrac{16\\sqrt{2}}{15}\\)\nGiven: \\(\\int_0^a f(x)\\,dx = \\int_0^a f(a - x)\\,dx\\)\nFormula: \\(\\int_0^2(2 - x)\\sqrt{x}\\,dx = \\int_0^2(2x^{1/2} - x^{3/2})dx\\)\nStep 1: \\(\\left[\\dfrac{4}{3}x^{3/2} - \\dfrac{2}{5}x^{5/2}\\right]_0^2 = \\dfrac{4}{3}(2\\sqrt{2}) - \\dfrac{2}{5}(4\\sqrt{2})\\)\nStep 2: \\(\\dfrac{8\\sqrt{2}}{3} - \\dfrac{8\\sqrt{2}}{5} = \\dfrac{16\\sqrt{2}}{15}\\)\nCommon mistake: \\(\\dfrac{16}{15}\\) (C) treats \\(2^{3/2}\\) as 2. \\(\\dfrac{8\\sqrt{2}}{15}\\) (B) uses \\(\\dfrac{2}{3}x^{3/2}\\) for \\(\\int 2x^{1/2}\\).\nKey point: The property moves the square root onto the simpler variable."
+  },
+  {
+   "unit": "M7",
+   "section": "B1",
+   "sub_topic": "Integral of 2x + eˣ",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(2 + e^x + C\\)",
+    "B) \\(x^2 + e^x + C\\)",
+    "C) \\(x^2 + xe^x + C\\)",
+    "D) \\(2x^2 + e^x + C\\)"
+   ],
+   "correct_option": "B",
+   "targets": "M7:integral 2x plus ex",
+   "question": "\\(\\displaystyle\\int(2x + e^x)\\,dx\\) equals:",
+   "explanation": "Answer: (B) \\(x^2 + e^x + C\\)\nGiven: integrate term by term\nFormula: \\(\\int 2x\\,dx = x^2\\), \\(\\int e^x\\,dx = e^x\\)\nStep 1: \\(x^2 + e^x + C\\)\nCommon mistake: (A) differentiates instead. (D) forgets to divide by the new power.\nKey point: \\(e^x\\) is its own integral."
+  },
+  {
+   "unit": "M8",
+   "section": "B1",
+   "sub_topic": "Standard areas — which are right",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) and (B) only",
+    "B) (B), (C) and (D) only",
+    "C) (A), (B) and (C) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "C",
+   "targets": "M8:standard areas statements three",
+   "question": "Consider the following statements:\n(A) The area enclosed by \\(x^2 + y^2 = 4\\) is \\(4\\pi\\).\n(B) The area enclosed by \\(\\dfrac{x^2}{4} + y^2 = 1\\) is \\(2\\pi\\).\n(C) The area under \\(y = x\\) from \\(x = 0\\) to \\(x = 2\\) is 2.\n(D) The area bounded by \\(y^2 = x\\) and \\(x = 1\\) is \\(\\dfrac{2}{3}\\).\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (C) (A), (B) and (C) only\nWhy: (A) \\(\\pi r^2 = 4\\pi\\). (B) \\(\\pi ab = \\pi(2)(1)\\). (C) a triangle with base and height 2.\nWhy not the others: (D) is false: the region has two halves, \\(2\\int_0^1\\sqrt{x}\\,dx = \\dfrac{4}{3}\\). Options (B) and (D) include (D); (A) leaves out (C).\nKey point: \\(y^2 = x\\) has a branch above and a branch below the axis."
+  },
+  {
+   "unit": "M9",
+   "section": "B1",
+   "sub_topic": "Linear equation y′ + y = 1 through the origin",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(1\\)",
+    "B) \\(2\\)",
+    "C) \\(\\log 2\\)",
+    "D) \\(\\dfrac{1}{2}\\)"
+   ],
+   "correct_option": "D",
+   "targets": "M9:linear y plus one",
+   "question": "The solution of \\(\\dfrac{dy}{dx} + y = 1\\) with \\(y(0) = 0\\) gives \\(y(\\log 2)\\) equal to:",
+   "explanation": "Answer: (D) \\(\\dfrac{1}{2}\\)\nGiven: I.F. \\(= e^x\\)\nFormula: \\(ye^x = \\int e^x\\,dx = e^x + C\\)\nStep 1: \\(y = 1 + Ce^{-x}\\); \\(y(0) = 0 \\Rightarrow C = -1\\)\nStep 2: \\(y = 1 - e^{-x}\\); \\(y(\\log 2) = 1 - \\dfrac{1}{2} = \\dfrac{1}{2}\\)\nCommon mistake: \\(1\\) (A) drops the \\(Ce^{-x}\\) term. \\(2\\) (B) uses \\(e^{\\log 2}\\) instead of \\(e^{-\\log 2}\\).\nKey point: \\(e^{-\\log 2} = \\dfrac{1}{2}\\)."
+  },
+  {
+   "unit": "M9",
+   "section": "B1",
+   "sub_topic": "Homogeneous equation (x + y)/(x − y)",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\tan^{-1}\\left(\\dfrac{x}{y}\\right) = \\dfrac{1}{2}\\log(x^2 + y^2) + C\\)",
+    "B) \\(\\tan^{-1}\\left(\\dfrac{y}{x}\\right) = \\dfrac{1}{2}\\log(x^2 + y^2) + C\\)",
+    "C) \\(\\tan^{-1}\\left(\\dfrac{y}{x}\\right) = \\log(x^2 + y^2) + C\\)",
+    "D) \\(y^2 - 2xy - x^2 = C\\)"
+   ],
+   "correct_option": "B",
+   "targets": "M9:homogeneous x plus y over x minus y",
+   "question": "The general solution of \\(\\dfrac{dy}{dx} = \\dfrac{x + y}{x - y}\\) is:",
+   "explanation": "Answer: (B) \\(\\tan^{-1}\\left(\\dfrac{y}{x}\\right) = \\dfrac{1}{2}\\log(x^2 + y^2) + C\\)\nGiven: \\(y = vx\\): \\(v + x\\dfrac{dv}{dx} = \\dfrac{1 + v}{1 - v}\\)\nFormula: \\(x\\dfrac{dv}{dx} = \\dfrac{1 + v^2}{1 - v} \\Rightarrow \\dfrac{1 - v}{1 + v^2}dv = \\dfrac{dx}{x}\\)\nStep 1: \\(\\tan^{-1}v - \\dfrac{1}{2}\\log(1 + v^2) = \\log|x| + c\\)\nStep 2: \\(\\dfrac{1}{2}\\log(1 + v^2) + \\log|x| = \\dfrac{1}{2}\\log(x^2 + y^2)\\), so \\(\\tan^{-1}\\dfrac{y}{x} = \\dfrac{1}{2}\\log(x^2 + y^2) + C\\)\nCommon mistake: (C) forgets the \\(\\dfrac{1}{2}\\) from \\(\\int\\dfrac{v}{1 + v^2}dv\\). (A) writes \\(v\\) as \\(\\dfrac{x}{y}\\).\nKey point: Split \\(\\dfrac{1 - v}{1 + v^2}\\) into a \\(\\tan^{-1}\\) part and a \\(\\log\\) part."
+  },
+  {
+   "unit": "M9",
+   "section": "B1",
+   "sub_topic": "Integrating factor when P = 3",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(e^{3x}\\)",
+    "B) \\(e^{-3x}\\)",
+    "C) \\(3x\\)",
+    "D) \\(e^{x^3}\\)"
+   ],
+   "correct_option": "A",
+   "targets": "M9:if constant three",
+   "question": "The integrating factor of \\(\\dfrac{dy}{dx} + 3y = x\\) is:",
+   "explanation": "Answer: (A) \\(e^{3x}\\)\nGiven: \\(P = 3\\)\nFormula: I.F. \\(= e^{\\int P\\,dx}\\)\nStep 1: \\(e^{3x}\\)\nCommon mistake: (C) stops at \\(\\int P\\,dx\\). (B) takes \\(P = -3\\).\nKey point: A positive \\(P\\) gives a positive exponent."
+  },
+  {
+   "unit": "M10",
+   "section": "B1",
+   "sub_topic": "Four quantities for 2i − j + 2k and i + 2j − 2k",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(I), (B)-(III), (C)-(IV), (D)-(II)",
+    "B) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+    "C) (A)-(I), (B)-(IV), (C)-(II), (D)-(III)",
+    "D) (A)-(I), (B)-(IV), (C)-(III), (D)-(II)"
+   ],
+   "correct_option": "D",
+   "targets": "M10:vector quantities match",
+   "question": "For \\(\\vec{a} = 2\\hat{i} - \\hat{j} + 2\\hat{k}\\) and \\(\\vec{b} = \\hat{i} + 2\\hat{j} - 2\\hat{k}\\), match List-I with List-II.\n\nList-I\n(A) \\(|\\vec{a}|\\)\n(B) \\(\\vec{a}\\cdot\\vec{b}\\)\n(C) Projection of \\(\\vec{a}\\) on \\(\\vec{b}\\)\n(D) \\(|\\vec{a} + \\vec{b}|\\)\n\nList-II\n(I) \\(3\\)\n(II) \\(\\sqrt{10}\\)\n(III) \\(-\\dfrac{4}{3}\\)\n(IV) \\(-4\\)",
+   "explanation": "Answer: (D) (A)-(I), (B)-(IV), (C)-(III), (D)-(II)\nStep 1: \\(\\sqrt{4 + 1 + 4} = 3\\) (I)\nStep 2: \\(2 - 2 - 4 = -4\\) (IV)\nStep 3: \\(|\\vec{b}| = 3\\), so the projection is \\(-\\dfrac{4}{3}\\) (III)\nStep 4: \\(\\vec{a} + \\vec{b} = 3\\hat{i} + \\hat{j}\\), magnitude \\(\\sqrt{10}\\) (II)\nCommon mistake: (A) swaps the dot product and the projection. (B) swaps \\(|\\vec{a}|\\) and \\(|\\vec{a} + \\vec{b}|\\). (C) swaps the projection and \\(|\\vec{a} + \\vec{b}|\\).\nKey point: Projection = dot product ÷ length of the vector projected onto."
+  },
+  {
+   "unit": "M10",
+   "section": "B1",
+   "sub_topic": "Unit vectors perpendicular to i + j + k and i − j",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\pm(\\hat{i} + \\hat{j} - 2\\hat{k})\\)",
+    "B) \\(\\pm\\dfrac{1}{\\sqrt{6}}(\\hat{i} + \\hat{j} - 2\\hat{k})\\)",
+    "C) \\(\\pm\\dfrac{1}{\\sqrt{2}}(\\hat{i} - \\hat{j})\\)",
+    "D) \\(\\pm\\dfrac{1}{6}(\\hat{i} + \\hat{j} - 2\\hat{k})\\)"
+   ],
+   "correct_option": "B",
+   "targets": "M10:unit perpendicular two vectors",
+   "question": "The unit vectors perpendicular to both \\(\\hat{i} + \\hat{j} + \\hat{k}\\) and \\(\\hat{i} - \\hat{j}\\) are:",
+   "explanation": "Answer: (B) \\(\\pm\\dfrac{1}{\\sqrt{6}}(\\hat{i} + \\hat{j} - 2\\hat{k})\\)\nGiven: \\(\\vec{a} = (1, 1, 1)\\), \\(\\vec{b} = (1, -1, 0)\\)\nFormula: \\(\\pm\\dfrac{\\vec{a} \\times \\vec{b}}{|\\vec{a} \\times \\vec{b}|}\\)\nStep 1: \\(\\vec{a} \\times \\vec{b} = (0 + 1)\\hat{i} - (0 - 1)\\hat{j} + (-1 - 1)\\hat{k} = \\hat{i} + \\hat{j} - 2\\hat{k}\\)\nStep 2: Magnitude \\(\\sqrt{6}\\)\nCommon mistake: (A) is not a unit vector. (D) divides by 6 instead of \\(\\sqrt{6}\\). (C) is \\(\\vec{b}\\) itself.\nKey point: Normalise the cross product."
+  },
+  {
+   "unit": "M10",
+   "section": "B1",
+   "sub_topic": "Sum of dot products of three unit vectors adding to zero",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\dfrac{3}{2}\\)",
+    "B) \\(0\\)",
+    "C) \\(-\\dfrac{3}{2}\\)",
+    "D) \\(-3\\)"
+   ],
+   "correct_option": "C",
+   "targets": "M10:three unit vectors sum zero",
+   "question": "\\(\\vec{a}\\), \\(\\vec{b}\\), \\(\\vec{c}\\) are unit vectors with \\(\\vec{a} + \\vec{b} + \\vec{c} = \\vec{0}\\). Then \\(\\vec{a}\\cdot\\vec{b} + \\vec{b}\\cdot\\vec{c} + \\vec{c}\\cdot\\vec{a}\\) is:",
+   "explanation": "Answer: (C) \\(-\\dfrac{3}{2}\\)\nGiven: \\(|\\vec{a} + \\vec{b} + \\vec{c}|^2 = 0\\)\nFormula: \\(|\\vec{a}|^2 + |\\vec{b}|^2 + |\\vec{c}|^2 + 2(\\vec{a}\\cdot\\vec{b} + \\vec{b}\\cdot\\vec{c} + \\vec{c}\\cdot\\vec{a}) = 0\\)\nStep 1: \\(3 + 2S = 0\\)\nStep 2: \\(S = -\\dfrac{3}{2}\\)\nCommon mistake: \\(-3\\) (D) forgets to divide by 2. \\(\\dfrac{3}{2}\\) (A) loses the sign.\nKey point: Square the zero vector equation."
+  },
+  {
+   "unit": "M11",
+   "section": "B1",
+   "sub_topic": "A line through two points — which claims fail",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) only",
+    "B) (B) and (D) only",
+    "C) (D) only",
+    "D) (C) only"
+   ],
+   "correct_option": "D",
+   "targets": "M11:line two points statements",
+   "question": "For the line through \\((1, 2, -1)\\) and \\((3, 4, 1)\\), consider the following statements:\n(A) Its direction ratios are \\(2, 2, 2\\).\n(B) Its direction cosines are \\(\\dfrac{1}{\\sqrt{3}}, \\dfrac{1}{\\sqrt{3}}, \\dfrac{1}{\\sqrt{3}}\\).\n(C) It passes through \\((2, 3, 1)\\).\n(D) Its equation is \\(\\dfrac{x - 1}{1} = \\dfrac{y - 2}{1} = \\dfrac{z + 1}{1}\\).\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (D) (C) only\nWhy: Only (C) is false: the midpoint is \\((2, 3, 0)\\); at \\(x = 2\\) the line has \\(z = 0\\), not 1.\nWhy not the others: (A) \\((3 - 1, 4 - 2, 1 + 1)\\). (B) \\(2, 2, 2\\) scaled by \\(\\sqrt{12}\\). (D) direction ratios \\(1, 1, 1\\) are proportional to \\(2, 2, 2\\). Options (A), (B) and (C) name a true statement as false.\nKey point: Check a point by putting it into the equation of the line."
+  },
+  {
+   "unit": "M11",
+   "section": "B1",
+   "sub_topic": "Distance between lines with directions 2i − j + k and 4i − 2j + 2k",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\sqrt{\\dfrac{11}{6}}\\)",
+    "B) \\(\\sqrt{11}\\)",
+    "C) \\(\\dfrac{11}{6}\\)",
+    "D) \\(\\sqrt{\\dfrac{6}{11}}\\)"
+   ],
+   "correct_option": "A",
+   "targets": "M11:parallel lines distance new",
+   "question": "The distance between the lines \\(\\vec{r} = (\\hat{i} + \\hat{j}) + \\lambda(2\\hat{i} - \\hat{j} + \\hat{k})\\) and \\(\\vec{r} = (2\\hat{i} + \\hat{j} - \\hat{k}) + \\mu(4\\hat{i} - 2\\hat{j} + 2\\hat{k})\\) is:",
+   "explanation": "Answer: (A) \\(\\sqrt{\\dfrac{11}{6}}\\)\nGiven: the directions are parallel; take \\(\\vec{b} = (2, -1, 1)\\); \\(\\vec{a}_2 - \\vec{a}_1 = (1, 0, -1)\\)\nFormula: \\(d = \\dfrac{|\\vec{b} \\times (\\vec{a}_2 - \\vec{a}_1)|}{|\\vec{b}|}\\)\nStep 1: \\(\\vec{b} \\times (\\vec{a}_2 - \\vec{a}_1) = (1 - 0)\\hat{i} - (-2 - 1)\\hat{j} + (0 + 1)\\hat{k} = \\hat{i} + 3\\hat{j} + \\hat{k}\\)\nStep 2: \\(d = \\dfrac{\\sqrt{11}}{\\sqrt{6}} = \\sqrt{\\dfrac{11}{6}}\\)\nCommon mistake: \\(\\sqrt{11}\\) (B) forgets to divide by \\(|\\vec{b}|\\). (D) divides the other way.\nKey point: Parallel lines use a cross product with one direction only."
+  },
+  {
+   "unit": "M11",
+   "section": "B1",
+   "sub_topic": "Shortest distance with directions 2i − j + k and 3i − 5j + 2k",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(10\\)",
+    "B) \\(\\dfrac{4}{\\sqrt{59}}\\)",
+    "C) \\(\\dfrac{10}{\\sqrt{59}}\\)",
+    "D) \\(\\dfrac{\\sqrt{59}}{10}\\)"
+   ],
+   "correct_option": "C",
+   "targets": "M11:skew lines distance three",
+   "question": "The shortest distance between \\(\\vec{r} = (\\hat{i} + \\hat{j}) + \\lambda(2\\hat{i} - \\hat{j} + \\hat{k})\\) and \\(\\vec{r} = (2\\hat{i} + \\hat{j} - \\hat{k}) + \\mu(3\\hat{i} - 5\\hat{j} + 2\\hat{k})\\) is:",
+   "explanation": "Answer: (C) \\(\\dfrac{10}{\\sqrt{59}}\\)\nGiven: \\(\\vec{b}_1 = (2, -1, 1)\\), \\(\\vec{b}_2 = (3, -5, 2)\\), \\(\\vec{a}_2 - \\vec{a}_1 = (1, 0, -1)\\)\nFormula: \\(d = \\dfrac{|(\\vec{b}_1 \\times \\vec{b}_2)\\cdot(\\vec{a}_2 - \\vec{a}_1)|}{|\\vec{b}_1 \\times \\vec{b}_2|}\\)\nStep 1: \\(\\vec{b}_1 \\times \\vec{b}_2 = (-2 + 5)\\hat{i} - (4 - 3)\\hat{j} + (-10 + 3)\\hat{k} = 3\\hat{i} - \\hat{j} - 7\\hat{k}\\), magnitude \\(\\sqrt{59}\\)\nStep 2: Dot product \\(= 3 + 0 + 7 = 10\\)\nStep 3: \\(d = \\dfrac{10}{\\sqrt{59}}\\)\nCommon mistake: \\(10\\) (A) forgets to divide. \\(\\dfrac{4}{\\sqrt{59}}\\) (B) uses \\(+7\\) as \\(-7\\) in the dot product, getting \\(3 - 7\\).\nKey point: Watch the signs in the triple product."
+  },
+  {
+   "unit": "M12",
+   "section": "B1",
+   "sub_topic": "Maximum of 2x + 5y with three constraints",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(30\\)",
+    "B) \\(33\\)",
+    "C) \\(27\\)",
+    "D) \\(14\\)"
+   ],
+   "correct_option": "B",
+   "targets": "M12:lpp max three constraints",
+   "question": "The maximum value of \\(Z = 2x + 5y\\) subject to \\(x + 4y \\le 24\\), \\(3x + y \\le 21\\), \\(x + y \\le 9\\), \\(x, y \\ge 0\\) is:",
+   "explanation": "Answer: (B) \\(33\\)\nGiven: corners \\((0, 0)\\), \\((7, 0)\\), \\((6, 3)\\), \\((4, 5)\\), \\((0, 6)\\)\nFormula: \\((6, 3)\\) from \\(3x + y = 21\\), \\(x + y = 9\\); \\((4, 5)\\) from \\(x + 4y = 24\\), \\(x + y = 9\\)\nStep 1: \\(Z = 0, 14, 27, 33, 30\\)\nStep 2: Maximum \\(= 33\\) at \\((4, 5)\\)\nCommon mistake: \\(30\\) (A) uses the axis corner \\((0, 6)\\). \\(27\\) (C) uses the other intersection.\nKey point: With three constraints, find every intersection that lies in the region."
+  },
+  {
+   "unit": "M13",
+   "section": "B1",
+   "sub_topic": "An ace again, given the first card was an ace",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\dfrac{1}{13}\\)",
+    "B) \\(\\dfrac{4}{51}\\)",
+    "C) \\(\\dfrac{1}{221}\\)",
+    "D) \\(\\dfrac{1}{17}\\)"
+   ],
+   "correct_option": "D",
+   "targets": "M13:second ace given first",
+   "question": "Two cards are drawn one after another without replacement. Given that the first is an ace, the probability that the second is also an ace is:",
+   "explanation": "Answer: (D) \\(\\dfrac{1}{17}\\)\nGiven: after one ace is drawn, 3 aces remain among 51 cards\nFormula: \\(P = \\dfrac{3}{51}\\)\nStep 1: \\(\\dfrac{3}{51} = \\dfrac{1}{17}\\)\nCommon mistake: \\(\\dfrac{1}{221}\\) (C) is \\(P(\\text{both aces})\\), not the conditional. \\(\\dfrac{4}{51}\\) (B) forgets that one ace is gone.\nKey point: The condition changes what is left in the pack."
+  },
+  {
+   "unit": "M13",
+   "section": "B1",
+   "sub_topic": "Bayes' theorem: insured drivers and an accident",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\dfrac{1}{52}\\)",
+    "B) \\(\\dfrac{3}{26}\\)",
+    "C) \\(\\dfrac{45}{52}\\)",
+    "D) \\(\\dfrac{1}{6}\\)"
+   ],
+   "correct_option": "A",
+   "targets": "M13:bayes insured drivers",
+   "question": "An insurer covers 2,000 scooter riders, 4,000 car drivers and 6,000 truck drivers. The chances of an accident are 0.01, 0.03 and 0.15. An insured person has an accident. The probability that the person is a scooter rider is:",
+   "explanation": "Answer: (A) \\(\\dfrac{1}{52}\\)\nGiven: priors \\(\\dfrac{1}{6}, \\dfrac{1}{3}, \\dfrac{1}{2}\\)\nFormula: \\(P(S \\mid \\text{acc}) = \\dfrac{P(S)P(\\text{acc} \\mid S)}{\\sum P(E_i)P(\\text{acc} \\mid E_i)}\\)\nStep 1: Expected accidents: \\(2000(0.01) = 20\\), \\(4000(0.03) = 120\\), \\(6000(0.15) = 900\\)\nStep 2: \\(P = \\dfrac{20}{20 + 120 + 900} = \\dfrac{20}{1040} = \\dfrac{1}{52}\\)\nCommon mistake: \\(\\dfrac{1}{6}\\) (D) is the prior share of scooter riders. \\(\\dfrac{45}{52}\\) (C) is the answer for truck drivers.\nKey point: Counting expected cases gives the same result as the formula."
+  },
+  {
+   "unit": "M13",
+   "section": "B1",
+   "sub_topic": "Union from a conditional probability",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(0.9\\)",
+    "B) \\(0.2\\)",
+    "C) \\(0.7\\)",
+    "D) \\(0.6\\)"
+   ],
+   "correct_option": "C",
+   "targets": "M13:union from conditional",
+   "question": "\\(P(A) = 0.4\\), \\(P(B) = 0.5\\) and \\(P(B \\mid A) = 0.5\\). Then \\(P(A \\cup B)\\) is:",
+   "explanation": "Answer: (C) \\(0.7\\)\nGiven: \\(P(A \\cap B) = P(A)P(B \\mid A) = 0.2\\)\nFormula: \\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\)\nStep 1: \\(0.4 + 0.5 - 0.2 = 0.7\\)\nCommon mistake: \\(0.9\\) (A) forgets to subtract the overlap. \\(0.2\\) (B) is \\(P(A \\cap B)\\).\nKey point: Use the multiplication rule to find the overlap first."
+  },
+  {
+   "unit": "AM1",
+   "section": "B2",
+   "sub_topic": "Remainders and calendars — which hold",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) and (B) only",
+    "B) (B), (C) and (D) only",
+    "C) (A), (B) and (C) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "C",
+   "targets": "AM1:remainders calendar statements",
+   "question": "Consider the following statements:\n(A) The last digit of \\(7^4\\) is 1.\n(B) \\(2^{10} \\equiv 1 \\pmod{11}\\)\n(C) If today is Wednesday, the day after 30 days is a Friday.\n(D) \\(25 \\equiv 4 \\pmod 6\\)\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (C) (A), (B) and (C) only\nWhy: (A) \\(7^4 = 2401\\). (B) \\(1024 = 11 \\times 93 + 1\\). (C) \\(30 \\equiv 2 \\pmod 7\\), and Wednesday + 2 = Friday.\nWhy not the others: (D) is false: \\(25 = 6 \\times 4 + 1\\), so \\(25 \\equiv 1\\). Options (B) and (D) include (D); (A) leaves out (C).\nKey point: Days of the week repeat modulo 7."
+  },
+  {
+   "unit": "AM1",
+   "section": "B2",
+   "sub_topic": "Stream speed when upstream takes twice as long",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\dfrac{5}{3}\\) km/h",
+    "B) \\(2.5\\) km/h",
+    "C) \\(\\dfrac{10}{3}\\) km/h",
+    "D) \\(1\\) km/h"
+   ],
+   "correct_option": "A",
+   "targets": "AM1:upstream twice as long",
+   "question": "A swimmer's speed in still water is 5 km/h. Swimming a fixed distance upstream takes twice as long as swimming it downstream. The speed of the stream is:",
+   "explanation": "Answer: (A) \\(\\dfrac{5}{3}\\) km/h\nGiven: same distance, time upstream = 2 × time downstream\nFormula: speed downstream = 2 × speed upstream\nStep 1: \\(5 + s = 2(5 - s)\\)\nStep 2: \\(3s = 5 \\Rightarrow s = \\dfrac{5}{3}\\)\nCommon mistake: \\(\\dfrac{10}{3}\\) (C) is the upstream speed. \\(2.5\\) (B) halves the still-water speed.\nKey point: For a fixed distance, time and speed are inversely proportional."
+  },
+  {
+   "unit": "AM1",
+   "section": "B2",
+   "sub_topic": "Two pipes opened in turn",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(11\\) hours",
+    "B) \\(12\\) hours",
+    "C) \\(6\\) hours",
+    "D) \\(12.5\\) hours"
+   ],
+   "correct_option": "B",
+   "targets": "AM1:pipes alternate hours",
+   "question": "Pipe A fills a tank in 10 hours and pipe B in 15 hours. Starting with A, they are opened alternately for one hour each. The tank is full after:",
+   "explanation": "Answer: (B) \\(12\\) hours\nGiven: one two-hour cycle fills \\(\\dfrac{1}{10} + \\dfrac{1}{15} = \\dfrac{1}{6}\\)\nFormula: count cycles, then check the last hours\nStep 1: After 5 cycles (10 hours): \\(\\dfrac{5}{6}\\)\nStep 2: Hour 11 (A): \\(\\dfrac{5}{6} + \\dfrac{1}{10} = \\dfrac{28}{30}\\), not yet full\nStep 3: Hour 12 (B): \\(\\dfrac{28}{30} + \\dfrac{2}{30} = 1\\), full\nCommon mistake: \\(6\\) hours (C) counts cycles, not hours. \\(11\\) hours (A) stops before checking that the tank is full.\nKey point: Check the final hour step by step."
+  },
+  {
+   "unit": "AM1",
+   "section": "B2",
+   "sub_topic": "Linear inequality with a negative coefficient",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(x \\le -2\\)",
+    "B) \\(x \\ge 2\\)",
+    "C) \\(x \\le 7\\)",
+    "D) \\(x \\ge -2\\)"
+   ],
+   "correct_option": "D",
+   "targets": "AM1:negative coefficient inequality",
+   "question": "The solution of \\(-2x + 5 \\le 9\\) is:",
+   "explanation": "Answer: (D) \\(x \\ge -2\\)\nGiven: \\(-2x \\le 4\\)\nFormula: dividing by a negative number reverses the inequality\nStep 1: \\(x \\ge -2\\)\nCommon mistake: (A) divides by \\(-2\\) without reversing the sign.\nKey point: Multiply or divide by a negative → flip the inequality."
+  },
+  {
+   "unit": "AM1",
+   "section": "B2",
+   "sub_topic": "Mixing two milk solutions in the ratio 1 : 2",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(2 : 1\\)",
+    "B) \\(11 : 5\\)",
+    "C) \\(13 : 7\\)",
+    "D) \\(3 : 2\\)"
+   ],
+   "correct_option": "A",
+   "targets": "AM1:mix solutions one to two",
+   "question": "Vessel P has milk and water in the ratio 3 : 1, and vessel Q in the ratio 5 : 3. If 1 litre from P is mixed with 2 litres from Q, the ratio of milk to water in the mixture is:",
+   "explanation": "Answer: (A) \\(2 : 1\\)\nGiven: milk fractions \\(\\dfrac{3}{4}\\) and \\(\\dfrac{5}{8}\\)\nFormula: add the milk and the water separately\nStep 1: Milk \\(= \\dfrac{3}{4} + 2 \\cdot \\dfrac{5}{8} = 2\\) litres\nStep 2: Water \\(= \\dfrac{1}{4} + 2 \\cdot \\dfrac{3}{8} = 1\\) litre\nStep 3: Ratio \\(2 : 1\\)\nCommon mistake: \\(11 : 5\\) (B) mixes equal quantities instead of 1 : 2.\nKey point: Weight each vessel by the amount taken from it."
+  },
+  {
+   "unit": "AM1",
+   "section": "B2",
+   "sub_topic": "Integer solutions of a double inequality",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(4\\)",
+    "B) \\(2\\)",
+    "C) \\(3\\)",
+    "D) \\(5\\)"
+   ],
+   "correct_option": "C",
+   "targets": "AM1:integers double inequality",
+   "question": "The number of integers \\(x\\) satisfying \\(2 < 3x - 1 \\le 11\\) is:",
+   "explanation": "Answer: (C) \\(3\\)\nGiven: add 1 throughout: \\(3 < 3x \\le 12\\)\nFormula: divide by 3: \\(1 < x \\le 4\\)\nStep 1: Integers: \\(2, 3, 4\\)\nCommon mistake: \\(4\\) (A) includes \\(x = 1\\), but the inequality at 1 is strict.\nKey point: Watch which end is strict and which is not."
+  },
+  {
+   "unit": "AM2",
+   "section": "B2",
+   "sub_topic": "Operations on one upper triangular matrix",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+    "B) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)",
+    "C) (A)-(IV), (B)-(I), (C)-(III), (D)-(II)",
+    "D) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)"
+   ],
+   "correct_option": "B",
+   "targets": "AM2:operations triangular match",
+   "question": "For \\(A = \\begin{bmatrix}1&2\\\\0&1\\end{bmatrix}\\), match List-I with List-II.\n\nList-I\n(A) \\(A^2\\)\n(B) \\(A^T\\)\n(C) \\(A^{-1}\\)\n(D) \\(A + A^T\\)\n\nList-II\n(I) \\(\\begin{bmatrix}1&-2\\\\0&1\\end{bmatrix}\\)\n(II) \\(\\begin{bmatrix}2&2\\\\2&2\\end{bmatrix}\\)\n(III) \\(\\begin{bmatrix}1&0\\\\2&1\\end{bmatrix}\\)\n(IV) \\(\\begin{bmatrix}1&4\\\\0&1\\end{bmatrix}\\)",
+   "explanation": "Answer: (B) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)\nStep 1: \\(A^2 = \\begin{bmatrix}1&4\\\\0&1\\end{bmatrix}\\) (IV)\nStep 2: \\(A^T = \\begin{bmatrix}1&0\\\\2&1\\end{bmatrix}\\) (III)\nStep 3: \\(|A| = 1\\), \\(A^{-1} = \\begin{bmatrix}1&-2\\\\0&1\\end{bmatrix}\\) (I)\nStep 4: \\(A + A^T = \\begin{bmatrix}2&2\\\\2&2\\end{bmatrix}\\) (II)\nCommon mistake: (A) swaps \\(A^2\\) and \\(A^T\\). (C) swaps \\(A^T\\) and \\(A^{-1}\\). (D) swaps \\(A^{-1}\\) and \\(A + A^T\\).\nKey point: \\(A^{-1}\\) here only changes the sign of the off-diagonal entry."
+  },
+  {
+   "unit": "AM2",
+   "section": "B2",
+   "sub_topic": "Inverse of a diagonal matrix",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\begin{bmatrix}3&0\\\\0&2\\end{bmatrix}\\)",
+    "B) \\(\\begin{bmatrix}-2&0\\\\0&-3\\end{bmatrix}\\)",
+    "C) \\(\\dfrac{1}{6}\\begin{bmatrix}2&0\\\\0&3\\end{bmatrix}\\)",
+    "D) \\(\\begin{bmatrix}\\tfrac{1}{2}&0\\\\0&\\tfrac{1}{3}\\end{bmatrix}\\)"
+   ],
+   "correct_option": "D",
+   "targets": "AM2:inverse diagonal 2 3",
+   "question": "The inverse of \\(\\begin{bmatrix}2&0\\\\0&3\\end{bmatrix}\\) is:",
+   "explanation": "Answer: (D) \\(\\begin{bmatrix}\\tfrac{1}{2}&0\\\\0&\\tfrac{1}{3}\\end{bmatrix}\\)\nGiven: a diagonal matrix\nFormula: invert each diagonal entry\nStep 1: \\(\\begin{bmatrix}\\tfrac{1}{2}&0\\\\0&\\tfrac{1}{3}\\end{bmatrix}\\)\nCommon mistake: (A) is the adjoint, without dividing by 6. (C) divides the original by 6 without swapping.\nKey point: Check: the product with the original is \\(I\\)."
+  },
+  {
+   "unit": "AM2",
+   "section": "B2",
+   "sub_topic": "Prices of three stationery items",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) ₹8",
+    "B) ₹5",
+    "C) ₹3",
+    "D) ₹7"
+   ],
+   "correct_option": "A",
+   "targets": "AM2:three item prices",
+   "question": "A pen, a pencil and an eraser cost \\(p\\), \\(q\\) and \\(r\\) rupees. It is given that \\(p + 2q + r = 21\\), \\(2p + q + r = 24\\) and \\(p + q + 2r = 19\\). The price of a pen is:",
+   "explanation": "Answer: (A) ₹8\nGiven: three linear equations\nFormula: eliminate step by step (or use Cramer's rule, \\(|A| = 4\\))\nStep 1: Second minus first: \\(p - q = 3\\)\nStep 2: Adding all three: \\(4(p + q + r) = 64 \\Rightarrow p + q + r = 16\\); first minus this: \\(q = 5\\)\nStep 3: \\(p = 8\\), \\(r = 3\\); check \\(8 + 5 + 6 = 19\\) ✓\nCommon mistake: ₹5 (B) is the pencil. ₹3 (C) is the eraser.\nKey point: Adding the equations often gives a useful total."
+  },
+  {
+   "unit": "AM2",
+   "section": "B2",
+   "sub_topic": "Solving A X B = I for X",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\begin{bmatrix}0&1\\\\1&1\\end{bmatrix}\\)",
+    "B) \\(\\begin{bmatrix}3&2\\\\5&3\\end{bmatrix}\\)",
+    "C) \\(\\begin{bmatrix}1&1\\\\1&0\\end{bmatrix}\\)",
+    "D) \\(\\begin{bmatrix}1&-1\\\\-1&0\\end{bmatrix}\\)"
+   ],
+   "correct_option": "C",
+   "targets": "AM2:solve axb identity",
+   "question": "If \\(\\begin{bmatrix}2&1\\\\3&2\\end{bmatrix}X\\begin{bmatrix}-3&2\\\\5&-3\\end{bmatrix} = I\\), then \\(X\\) is:",
+   "explanation": "Answer: (C) \\(\\begin{bmatrix}1&1\\\\1&0\\end{bmatrix}\\)\nGiven: \\(AXB = I \\Rightarrow X = A^{-1}B^{-1}\\)\nFormula: \\(A^{-1} = \\begin{bmatrix}2&-1\\\\-3&2\\end{bmatrix}\\) (\\(|A| = 1\\)); \\(B^{-1} = \\begin{bmatrix}3&2\\\\5&3\\end{bmatrix}\\) (\\(|B| = -1\\))\nStep 1: \\(X = \\begin{bmatrix}2&-1\\\\-3&2\\end{bmatrix}\\begin{bmatrix}3&2\\\\5&3\\end{bmatrix} = \\begin{bmatrix}1&1\\\\1&0\\end{bmatrix}\\)\nCommon mistake: (A) multiplies \\(B^{-1}A^{-1}\\), in the wrong order. (B) is \\(B^{-1}\\) alone.\nKey point: Remove \\(A\\) from the left and \\(B\\) from the right."
+  },
+  {
+   "unit": "AM3",
+   "section": "B2",
+   "sub_topic": "A profit function — which claims fail",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) only",
+    "B) (B) and (D) only",
+    "C) (C) only",
+    "D) (D) only"
+   ],
+   "correct_option": "D",
+   "targets": "AM3:profit function statements",
+   "question": "The profit (in ₹ thousand) from \\(x\\) units is \\(P(x) = -x^2 + 30x - 125\\). Consider the following statements:\n(A) The break-even outputs are 5 and 25 units.\n(B) Profit is greatest at \\(x = 15\\).\n(C) The greatest profit is ₹100 thousand.\n(D) Profit increases as output rises beyond 15 units.\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (D) (D) only\nWhy: Only (D) is false: \\(P'(x) = 30 - 2x < 0\\) for \\(x > 15\\), so profit falls.\nWhy not the others: (A) \\(x^2 - 30x + 125 = (x - 5)(x - 25)\\). (B) \\(P'(15) = 0\\), \\(P'' = -2 < 0\\). (C) \\(P(15) = -225 + 450 - 125 = 100\\). Options (A), (B) and (C) name a true statement as false.\nKey point: Beyond the maximum, profit decreases."
+  },
+  {
+   "unit": "AM3",
+   "section": "B2",
+   "sub_topic": "Definite integral of eˣ on [0, 2]",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(e^2\\)",
+    "B) \\(e^2 - 1\\)",
+    "C) \\(2e\\)",
+    "D) \\(e^2 + 1\\)"
+   ],
+   "correct_option": "B",
+   "targets": "AM3:definite ex 0 2",
+   "question": "\\(\\displaystyle\\int_0^2 e^x\\,dx\\) equals:",
+   "explanation": "Answer: (B) \\(e^2 - 1\\)\nGiven: \\(\\int e^x\\,dx = e^x\\)\nFormula: \\(F(2) - F(0)\\)\nStep 1: \\(e^2 - e^0 = e^2 - 1\\)\nCommon mistake: \\(e^2\\) (A) treats \\(e^0\\) as 0.\nKey point: \\(e^0 = 1\\)."
+  },
+  {
+   "unit": "AM3",
+   "section": "B2",
+   "sub_topic": "Rate of change of total cost over time",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) ₹60 per day",
+    "B) ₹20 per day",
+    "C) ₹300 per day",
+    "D) ₹30 per day"
+   ],
+   "correct_option": "A",
+   "targets": "AM3:cost rate over time",
+   "question": "The cost of producing \\(x\\) units is \\(C = 100 + 0.5x^2\\). Output is rising at 3 units per day. When \\(x = 20\\), the cost is rising at:",
+   "explanation": "Answer: (A) ₹60 per day\nGiven: \\(\\dfrac{dx}{dt} = 3\\)\nFormula: \\(\\dfrac{dC}{dt} = \\dfrac{dC}{dx}\\cdot\\dfrac{dx}{dt} = x\\cdot\\dfrac{dx}{dt}\\)\nStep 1: \\(20 \\times 3 = 60\\)\nCommon mistake: ₹20 (B) is the marginal cost per unit, not per day. ₹300 (C) is \\(C(20)\\) minus the fixed cost.\nKey point: Chain rule: per unit × units per day = per day."
+  },
+  {
+   "unit": "AM3",
+   "section": "B2",
+   "sub_topic": "Consumer surplus with a quadratic demand and linear supply",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(24\\)",
+    "B) \\(\\dfrac{416}{3}\\)",
+    "C) \\(\\dfrac{128}{3}\\)",
+    "D) \\(\\dfrac{64}{3}\\)"
+   ],
+   "correct_option": "C",
+   "targets": "AM3:cs quadratic demand linear supply",
+   "question": "The demand function is \\(p = 40 - x^2\\) and the supply function is \\(p = 3x + 12\\). The consumer surplus at market equilibrium is:",
+   "explanation": "Answer: (C) \\(\\dfrac{128}{3}\\)\nGiven: \\(40 - x^2 = 3x + 12 \\Rightarrow x^2 + 3x - 28 = 0 \\Rightarrow x_0 = 4\\), \\(p_0 = 24\\)\nFormula: CS \\(= \\int_0^{x_0}(40 - x^2)\\,dx - p_0x_0\\)\nStep 1: \\(\\int_0^4(40 - x^2)dx = 160 - \\dfrac{64}{3} = \\dfrac{416}{3}\\)\nStep 2: CS \\(= \\dfrac{416}{3} - 96 = \\dfrac{128}{3}\\)\nCommon mistake: \\(24\\) (A) is the producer surplus. \\(\\dfrac{416}{3}\\) (B) forgets to subtract the expenditure.\nKey point: Use the positive root for the equilibrium quantity."
+  },
+  {
+   "unit": "AM3",
+   "section": "B2",
+   "sub_topic": "Integral after dividing x³ + 1 by x + 1",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\dfrac{x^3}{3} + \\dfrac{x^2}{2} + x + C\\)",
+    "B) \\(\\log|x + 1| + C\\)",
+    "C) \\(\\dfrac{x^4}{4} + x + C\\)",
+    "D) \\(\\dfrac{x^3}{3} - \\dfrac{x^2}{2} + x + C\\)"
+   ],
+   "correct_option": "D",
+   "targets": "AM3:divide then integrate",
+   "question": "\\(\\displaystyle\\int\\dfrac{x^3 + 1}{x + 1}\\,dx\\) equals:",
+   "explanation": "Answer: (D) \\(\\dfrac{x^3}{3} - \\dfrac{x^2}{2} + x + C\\)\nGiven: \\(x^3 + 1 = (x + 1)(x^2 - x + 1)\\)\nFormula: \\(\\int(x^2 - x + 1)\\,dx\\)\nStep 1: \\(\\dfrac{x^3}{3} - \\dfrac{x^2}{2} + x + C\\)\nCommon mistake: (A) uses \\(x^2 + x + 1\\), the factor of \\(x^3 - 1\\). (C) integrates the numerator only.\nKey point: Factor before integrating a fraction."
+  },
+  {
+   "unit": "AM3",
+   "section": "B2",
+   "sub_topic": "Differential equation of A e^(3x) + B e^(−3x)",
+   "difficulty": "medium",
+   "format": "direct",
+   "options": [
+    "A) \\(\\dfrac{d^2y}{dx^2} + 9y = 0\\)",
+    "B) \\(\\dfrac{d^2y}{dx^2} = 9y\\)",
+    "C) \\(\\dfrac{dy}{dx} = 3y\\)",
+    "D) \\(\\dfrac{d^2y}{dx^2} = 3y\\)"
+   ],
+   "correct_option": "B",
+   "targets": "AM3:de of two exponentials",
+   "question": "The differential equation of the family \\(y = Ae^{3x} + Be^{-3x}\\) is:",
+   "explanation": "Answer: (B) \\(\\dfrac{d^2y}{dx^2} = 9y\\)\nWhy: \\(y' = 3Ae^{3x} - 3Be^{-3x}\\), \\(y'' = 9Ae^{3x} + 9Be^{-3x} = 9y\\). Two constants are removed, so the order is 2.\nWhy not the others: (A) fits \\(A\\cos 3x + B\\sin 3x\\). (C) has order 1 and fits \\(Ae^{3x}\\) only. (D) forgets to square the 3.\nKey point: Each differentiation brings down another factor of 3."
+  },
+  {
+   "unit": "AM3",
+   "section": "B2",
+   "sub_topic": "Output that maximises profit after a tax",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(18\\)",
+    "B) \\(20\\)",
+    "C) \\(22\\)",
+    "D) \\(16\\)"
+   ],
+   "correct_option": "A",
+   "targets": "AM3:profit after tax",
+   "question": "Revenue is \\(R = 100x - x^2\\) and cost is \\(C = x^2 + 20x + 300\\). A tax of ₹8 per unit is imposed. The output that now maximises profit is:",
+   "explanation": "Answer: (A) \\(18\\)\nGiven: \\(P = R - C - 8x = -2x^2 + 72x - 300\\)\nFormula: \\(P'(x) = 0\\)\nStep 1: \\(-4x + 72 = 0 \\Rightarrow x = 18\\); \\(P'' = -4 < 0\\)\nCommon mistake: \\(20\\) (B) is the output before the tax. \\(22\\) (C) adds the tax instead of subtracting it.\nKey point: A per-unit tax adds to cost and lowers the best output."
+  },
+  {
+   "unit": "AM3",
+   "section": "B2",
+   "sub_topic": "Where log(1 + x) − x increases",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\((0, \\infty)\\)",
+    "B) \\((-1, \\infty)\\)",
+    "C) \\((1, \\infty)\\)",
+    "D) \\((-1, 0)\\)"
+   ],
+   "correct_option": "D",
+   "targets": "AM3:log one plus x minus x",
+   "question": "The function \\(f(x) = \\log(1 + x) - x\\), \\(x > -1\\), is strictly increasing on:",
+   "explanation": "Answer: (D) \\((-1, 0)\\)\nGiven: \\(f'(x) = \\dfrac{1}{1 + x} - 1 = \\dfrac{-x}{1 + x}\\)\nFormula: \\(1 + x > 0\\), so the sign is that of \\(-x\\)\nStep 1: \\(f'(x) > 0 \\iff x < 0\\), i.e. on \\((-1, 0)\\)\nCommon mistake: (A) is where \\(f\\) decreases.\nKey point: Simplify \\(f'\\) to one fraction before reading its sign."
+  },
+  {
+   "unit": "AM4",
+   "section": "B2",
+   "sub_topic": "A Poisson distribution with mean 3",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A), (B) and (C) only",
+    "B) (A) and (B) only",
+    "C) (B), (C) and (D) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "A",
+   "targets": "AM4:poisson mean three statements",
+   "question": "\\(X\\) has a Poisson distribution with \\(\\lambda = 3\\). Consider the following statements:\n(A) The mean of \\(X\\) is 3.\n(B) The variance of \\(X\\) is 3.\n(C) \\(P(X = 0) = e^{-3}\\).\n(D) \\(P(X = 1) = e^{-3}\\).\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (A) (A), (B) and (C) only\nWhy: (A) and (B) both equal \\(\\lambda\\). (C) \\(\\dfrac{e^{-3}3^0}{0!} = e^{-3}\\).\nWhy not the others: (D) is false: \\(P(X = 1) = 3e^{-3}\\). Options (C) and (D) include (D); (B) leaves out (C).\nKey point: \\(P(X = r) = \\dfrac{e^{-\\lambda}\\lambda^r}{r!}\\)."
+  },
+  {
+   "unit": "AM4",
+   "section": "B2",
+   "sub_topic": "Exactly three heads in six tosses",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\dfrac{3}{16}\\)",
+    "B) \\(\\dfrac{5}{16}\\)",
+    "C) \\(\\dfrac{1}{2}\\)",
+    "D) \\(\\dfrac{15}{64}\\)"
+   ],
+   "correct_option": "B",
+   "targets": "AM4:three heads six tosses",
+   "question": "A fair coin is tossed six times. The probability of exactly three heads is:",
+   "explanation": "Answer: (B) \\(\\dfrac{5}{16}\\)\nGiven: \\(n = 6\\), \\(p = \\dfrac{1}{2}\\)\nFormula: \\(\\binom{6}{3}\\left(\\dfrac{1}{2}\\right)^6\\)\nStep 1: \\(\\dfrac{20}{64} = \\dfrac{5}{16}\\)\nCommon mistake: \\(\\dfrac{1}{2}\\) (C) assumes \"half the tosses\" is certain. \\(\\dfrac{15}{64}\\) (D) uses \\(\\binom{6}{2}\\).\nKey point: \\(\\binom{6}{3} = 20\\)."
+  },
+  {
+   "unit": "AM4",
+   "section": "B2",
+   "sub_topic": "Normal probability between −1 and 2 SDs",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(0.1359\\)",
+    "B) \\(0.6826\\)",
+    "C) \\(0.8185\\)",
+    "D) \\(0.9544\\)"
+   ],
+   "correct_option": "C",
+   "targets": "AM4:normal minus one to two",
+   "question": "\\(X\\) is normal with mean 100 and SD 15. Given \\(P(0 < Z < 1) = 0.3413\\) and \\(P(0 < Z < 2) = 0.4772\\), \\(P(85 < X < 130)\\) is:",
+   "explanation": "Answer: (C) \\(0.8185\\)\nGiven: \\(Z = \\dfrac{85 - 100}{15} = -1\\), \\(Z = \\dfrac{130 - 100}{15} = 2\\)\nFormula: \\(P(-1 < Z < 2) = P(0 < Z < 1) + P(0 < Z < 2)\\) (by symmetry)\nStep 1: \\(0.3413 + 0.4772 = 0.8185\\)\nCommon mistake: \\(0.1359\\) (A) subtracts the two areas, which is right only when both \\(Z\\) values have the same sign.\nKey point: When the interval straddles the mean, add the two areas."
+  },
+  {
+   "unit": "AM4",
+   "section": "B2",
+   "sub_topic": "Mean of a uniform distribution on 1 to 4",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(2\\)",
+    "B) \\(3\\)",
+    "C) \\(10\\)",
+    "D) \\(2.5\\)"
+   ],
+   "correct_option": "D",
+   "targets": "AM4:uniform mean one to four",
+   "question": "\\(X\\) takes the values 1, 2, 3, 4, each with probability \\(\\dfrac{1}{4}\\). Then \\(E(X)\\) is:",
+   "explanation": "Answer: (D) \\(2.5\\)\nGiven: equal probabilities\nFormula: \\(E(X) = \\sum xP(x)\\)\nStep 1: \\(\\dfrac{1 + 2 + 3 + 4}{4} = 2.5\\)\nCommon mistake: \\(10\\) (C) adds the values without the probabilities.\nKey point: The expected value need not be a possible value."
+  },
+  {
+   "unit": "AM4",
+   "section": "B2",
+   "sub_topic": "Standard deviation from E(X) and E(X²)",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(4\\)",
+    "B) \\(2\\)",
+    "C) \\(\\sqrt{10}\\)",
+    "D) \\(10\\)"
+   ],
+   "correct_option": "B",
+   "targets": "AM4:sd from moments",
+   "question": "\\(E(X) = 3\\) and \\(E(X^2) = 13\\). The standard deviation of \\(X\\) is:",
+   "explanation": "Answer: (B) \\(2\\)\nGiven: \\(E(X) = 3\\), \\(E(X^2) = 13\\)\nFormula: \\(\\text{Var}(X) = E(X^2) - [E(X)]^2\\)\nStep 1: \\(13 - 9 = 4\\)\nStep 2: SD \\(= \\sqrt{4} = 2\\)\nCommon mistake: \\(4\\) (A) stops at the variance. \\(\\sqrt{10}\\) (C) subtracts 3 instead of 9.\nKey point: Square the mean before subtracting."
+  },
+  {
+   "unit": "AM5",
+   "section": "B2",
+   "sub_topic": "Third three-yearly moving average",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(18\\)",
+    "B) \\(\\dfrac{49}{3}\\)",
+    "C) \\(\\dfrac{59}{3}\\)",
+    "D) \\(16\\)"
+   ],
+   "correct_option": "A",
+   "targets": "AM5:third three year average",
+   "question": "For the values 12, 15, 18, 16, 20, 23, the third three-yearly moving average is:",
+   "explanation": "Answer: (A) \\(18\\)\nGiven: three-yearly averages use values 1–3, 2–4, 3–5, 4–6\nFormula: third average = mean of values 3, 4, 5\nStep 1: \\(\\dfrac{18 + 16 + 20}{3} = 18\\)\nCommon mistake: \\(\\dfrac{49}{3}\\) (B) is the second average. \\(\\dfrac{59}{3}\\) (C) is the fourth.\nKey point: Each average moves one value along."
+  },
+  {
+   "unit": "AM5",
+   "section": "B2",
+   "sub_topic": "Ice cream sales rising every summer",
+   "difficulty": "easy",
+   "format": "direct",
+   "options": [
+    "A) Secular trend",
+    "B) Cyclical variation",
+    "C) Seasonal variation",
+    "D) Irregular variation"
+   ],
+   "correct_option": "C",
+   "targets": "AM5:ice cream seasonal",
+   "question": "The rise in ice cream sales every summer is an example of:",
+   "explanation": "Answer: (C) Seasonal variation\nWhy: The pattern repeats within each year at the same season.\nWhy not the others: A secular trend is long-term. Cyclical variation spans several years. Irregular variation is unpredictable.\nKey point: Repeats every year → seasonal."
+  },
+  {
+   "unit": "AM5",
+   "section": "B2",
+   "sub_topic": "First year a trend value passes a target",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(2025\\)",
+    "B) \\(2026\\)",
+    "C) \\(2028\\)",
+    "D) \\(2027\\)"
+   ],
+   "correct_option": "D",
+   "targets": "AM5:trend crosses target",
+   "question": "Sales for 2020–2024 were 20, 24, 23, 28, 30. Using a least squares line with \\(x = -2, -1, 0, 1, 2\\), the first year in which the trend value exceeds 35 is:",
+   "explanation": "Answer: (D) \\(2027\\)\nGiven: \\(\\sum y = 125\\), \\(\\sum xy = -40 - 24 + 0 + 28 + 60 = 24\\), \\(\\sum x^2 = 10\\)\nFormula: \\(a = 25\\), \\(b = 2.4\\), so \\(y = 25 + 2.4x\\)\nStep 1: \\(25 + 2.4x > 35 \\Rightarrow x > 4.17\\)\nStep 2: First whole \\(x\\) is 5, i.e. \\(2022 + 5 = 2027\\)\nCommon mistake: \\(2026\\) (B) uses \\(x = 4\\), where the trend is 34.6, still below 35.\nKey point: Round up to the next whole year when the value must exceed the target."
+  },
+  {
+   "unit": "AM6",
+   "section": "B2",
+   "sub_topic": "Steps of a one-sample t-test",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(III), (B)-(II), (C)-(IV), (D)-(I)",
+    "B) (A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+    "C) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+    "D) (A)-(III), (B)-(II), (C)-(I), (D)-(IV)"
+   ],
+   "correct_option": "A",
+   "targets": "AM6:t test steps match",
+   "question": "A sample of 16 has mean 52 and SD 8. \\(H_0: \\mu = 50\\) is tested at the 5% level (table value 2.131). Match List-I with List-II.\n\nList-I\n(A) Degrees of freedom\n(B) Standard error\n(C) t-statistic\n(D) Decision\n\nList-II\n(I) Do not reject \\(H_0\\)\n(II) \\(2\\)\n(III) \\(15\\)\n(IV) \\(1\\)",
+   "explanation": "Answer: (A) (A)-(III), (B)-(II), (C)-(IV), (D)-(I)\nStep 1: df \\(= 16 - 1 = 15\\) (III)\nStep 2: SE \\(= \\dfrac{8}{\\sqrt{16}} = 2\\) (II)\nStep 3: \\(t = \\dfrac{52 - 50}{2} = 1\\) (IV)\nStep 4: \\(1 < 2.131\\), so do not reject \\(H_0\\) (I)\nCommon mistake: (B) swaps df and SE. (C) swaps SE and \\(t\\). (D) swaps \\(t\\) and the decision.\nKey point: Reject only when \\(|t|\\) exceeds the table value."
+  },
+  {
+   "unit": "AM6",
+   "section": "B2",
+   "sub_topic": "Mean and standard error of the sample mean",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(50\\) and \\(10\\)",
+    "B) \\(50\\) and \\(2\\)",
+    "C) \\(2\\) and \\(50\\)",
+    "D) \\(50\\) and \\(0.4\\)"
+   ],
+   "correct_option": "B",
+   "targets": "AM6:sampling mean and se",
+   "question": "A population has mean 50 and SD 10. For samples of size 25, the mean and the standard error of the sample mean are:",
+   "explanation": "Answer: (B) \\(50\\) and \\(2\\)\nGiven: \\(\\mu = 50\\), \\(\\sigma = 10\\), \\(n = 25\\)\nFormula: mean of \\(\\bar{x}\\) is \\(\\mu\\); SE \\(= \\dfrac{\\sigma}{\\sqrt{n}}\\)\nStep 1: Mean \\(= 50\\)\nStep 2: SE \\(= \\dfrac{10}{5} = 2\\)\nCommon mistake: (A) uses \\(\\sigma\\) itself as the SE. (D) divides by \\(n\\) instead of \\(\\sqrt{n}\\).\nKey point: Sample means vary less than single observations."
+  },
+  {
+   "unit": "AM6",
+   "section": "B2",
+   "sub_topic": "t-statistic from six observations",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(1.70\\)",
+    "B) \\(0.63\\)",
+    "C) \\(2\\)",
+    "D) \\(1.55\\)"
+   ],
+   "correct_option": "D",
+   "targets": "AM6:t from six values",
+   "question": "A sample gives 3, 5, 6, 7, 9, 12. To test \\(H_0: \\mu = 5\\), the t-statistic (with \\(s\\) using divisor \\(n - 1\\)) is about:",
+   "explanation": "Answer: (D) \\(1.55\\)\nGiven: \\(n = 6\\), \\(\\bar{x} = 7\\)\nFormula: \\(s^2 = \\dfrac{\\sum(x - \\bar{x})^2}{n - 1}\\), \\(t = \\dfrac{\\bar{x} - \\mu}{s/\\sqrt{n}}\\)\nStep 1: Deviations \\(-4, -2, -1, 0, 2, 5\\); squares add to 50; \\(s^2 = 10\\), \\(s \\approx 3.162\\)\nStep 2: \\(\\dfrac{s}{\\sqrt{6}} \\approx 1.291\\)\nStep 3: \\(t = \\dfrac{2}{1.291} \\approx 1.55\\)\nCommon mistake: \\(1.70\\) (A) uses divisor \\(n\\) (\\(s^2 \\approx 8.33\\)). \\(0.63\\) (B) divides by \\(s\\). \\(2\\) (C) is \\(\\bar{x} - \\mu\\).\nKey point: Use \\(n - 1\\) for a sample standard deviation."
+  },
+  {
+   "unit": "AM7",
+   "section": "B2",
+   "sub_topic": "Bonds, perpetuities and rates — which claims fail",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (B) only",
+    "B) (B) and (C) only",
+    "C) (D) only",
+    "D) (A) only"
+   ],
+   "correct_option": "D",
+   "targets": "AM7:finance terms statements",
+   "question": "Consider the following statements:\n(A) A bond selling above its face value is said to sell at a discount.\n(B) A perpetuity of ₹500 a year at 5% is worth ₹10,000.\n(C) Under the straight-line method, depreciation is the same every year.\n(D) The effective rate for 12% compounded monthly is more than 12%.\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (D) (A) only\nWhy: Only (A) is false: above face value is a premium; below face value is a discount.\nWhy not the others: (B) \\(\\dfrac{500}{0.05} = 10{,}000\\). (C) the same amount is written off each year. (D) \\((1.01)^{12} - 1 \\approx 12.68\\%\\). Options (A), (B) and (C) name a true statement as false.\nKey point: Premium = above face value; discount = below."
+  },
+  {
+   "unit": "AM7",
+   "section": "B2",
+   "sub_topic": "CAGR from ₹50,000 to ₹72,000 in two years",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(22\\%\\)",
+    "B) \\(44\\%\\)",
+    "C) \\(20\\%\\)",
+    "D) \\(10\\%\\)"
+   ],
+   "correct_option": "C",
+   "targets": "AM7:cagr 50k 72k",
+   "question": "An investment grows from ₹50,000 to ₹72,000 in 2 years. The compound annual growth rate is:",
+   "explanation": "Answer: (C) \\(20\\%\\)\nGiven: growth factor \\(\\dfrac{72{,}000}{50{,}000} = 1.44\\) over 2 years\nFormula: \\(\\text{CAGR} = (1.44)^{1/2} - 1\\)\nStep 1: \\(\\sqrt{1.44} = 1.2\\)\nStep 2: CAGR \\(= 20\\%\\)\nCommon mistake: \\(44\\%\\) (B) is the total growth. \\(22\\%\\) (A) halves the total growth (simple average).\nKey point: CAGR uses a root, not division by the number of years."
+  },
+  {
+   "unit": "AM7",
+   "section": "B2",
+   "sub_topic": "Present value of a three-year annuity",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) ₹12,434.26",
+    "B) ₹15,000",
+    "C) ₹16,550",
+    "D) ₹13,636.36"
+   ],
+   "correct_option": "A",
+   "targets": "AM7:pv annuity three years",
+   "question": "The present value of ₹5,000 received at the end of each year for 3 years at 10% compounded annually is about:",
+   "explanation": "Answer: (A) ₹12,434.26\nGiven: three payments of ₹5,000\nFormula: \\(PV = 5000\\left(\\dfrac{1}{1.1} + \\dfrac{1}{1.21} + \\dfrac{1}{1.331}\\right)\\)\nStep 1: \\(0.9091 + 0.8264 + 0.7513 = 2.4869\\)\nStep 2: \\(PV \\approx 12{,}434.26\\)\nCommon mistake: ₹15,000 (B) ignores discounting. ₹16,550 (C) is the future value \\(5000(1 + 1.1 + 1.21)\\).\nKey point: Each payment is discounted for its own number of years."
+  },
+  {
+   "unit": "AM7",
+   "section": "B2",
+   "sub_topic": "Book value after two years of straight-line depreciation",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) ₹54,000",
+    "B) ₹48,000",
+    "C) ₹42,000",
+    "D) ₹12,000"
+   ],
+   "correct_option": "B",
+   "targets": "AM7:book value two years",
+   "question": "A machine costs ₹60,000 and is depreciated by ₹6,000 each year (straight-line method). Its book value after 2 years is:",
+   "explanation": "Answer: (B) ₹48,000\nGiven: depreciation ₹6,000 per year\nFormula: book value = cost − total depreciation\nStep 1: \\(60{,}000 - 12{,}000 = 48{,}000\\)\nCommon mistake: ₹54,000 (A) is after 1 year. ₹12,000 (D) is the total depreciation.\nKey point: Book value falls by the same amount every year."
+  },
+  {
+   "unit": "AM8",
+   "section": "B2",
+   "sub_topic": "Writing constraints for chairs and tables",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+    "B) (A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+    "C) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+    "D) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)"
+   ],
+   "correct_option": "C",
+   "targets": "AM8:constraints chairs tables match",
+   "question": "A firm makes \\(x\\) chairs and \\(y\\) tables. Match List-I with List-II.\n\nList-I\n(A) At least 10 chairs must be made\n(B) At most 50 items in total can be made\n(C) Chairs must be at least twice the tables\n(D) A chair takes 3 hours and a table 5 hours; 120 hours are available\n\nList-II\n(I) \\(3x + 5y \\le 120\\)\n(II) \\(x \\ge 10\\)\n(III) \\(x \\ge 2y\\)\n(IV) \\(x + y \\le 50\\)",
+   "explanation": "Answer: (C) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)\nWhy: \"At least\" gives \\(\\ge\\) (II); \"at most\" gives \\(\\le\\) (IV); \"chairs at least twice tables\" gives \\(x \\ge 2y\\) (III); total hours used must not exceed 120 (I).\nWhy not the others: (A) swaps the first two. (B) swaps the total and the ratio. (D) swaps the ratio and the hours.\nKey point: \"Twice the tables\" multiplies \\(y\\), not \\(x\\)."
+  },
+  {
+   "unit": "AM8",
+   "section": "B2",
+   "sub_topic": "Least cost of a diet with two foods",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) ₹40",
+    "B) ₹28",
+    "C) ₹26",
+    "D) ₹32"
+   ],
+   "correct_option": "B",
+   "targets": "AM8:diet two foods min",
+   "question": "Food A gives 2 units of vitamin and 1 unit of mineral per kg, at ₹4 per kg. Food B gives 1 unit of vitamin and 2 units of mineral per kg, at ₹5 per kg. At least 8 units of vitamin and 10 units of mineral are needed. The least cost is:",
+   "explanation": "Answer: (B) ₹28\nGiven: \\(2x + y \\ge 8\\), \\(x + 2y \\ge 10\\), \\(x, y \\ge 0\\); \\(Z = 4x + 5y\\)\nFormula: corners \\((10, 0)\\), \\((2, 4)\\), \\((0, 8)\\)\nStep 1: \\(Z = 40, 28, 40\\)\nStep 2: \\(4x + 5y < 28\\) has no point in the region, so the least cost is ₹28 at \\((2, 4)\\)\nCommon mistake: ₹40 (A) checks only the axis corners. ₹26 (C) is a value below the minimum that no feasible point reaches.\nKey point: For an unbounded minimum, confirm with the half-plane test."
+  }
+ ]
+}
