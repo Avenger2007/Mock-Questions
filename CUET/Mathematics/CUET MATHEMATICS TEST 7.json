@@ -3,770 +3,1506 @@
   "series_id": "CUET27_MATHEMATICS",
   "exam": "CUET (UG) 2027",
   "title": "CUET Mathematics Test 7",
-  "subject": "Mathematics (Code: 319)",
+  "subject": "Mathematics / Applied Mathematics (Code: 319)",
+  "subject_code": "319",
   "test_number": 7,
   "paper_number": 7,
-  "status": "pending_revision",
-  "syllabus_source": "cuet mathematics syllabus.pdf",
-  "notification_source": "Information Bulletin.pdf",
-  "past_paper_reference": "N/A",
+  "status": "revised",
+  "syllabus_source": "CUET SYLLABUS/Mathematics - 319.pdf (NTA syllabus for CUET (UG) 2026, latest published)",
+  "notification_source": "Hermes folder/Information Bulletin.pdf (NTA CUET (UG) 2026)",
+  "past_paper_reference": "Pattern benchmark only: NTA CUET (UG) 319 papers 2024, 2025 and 2026, analysed for format and level (no questions copied)",
+  "textbooks": [
+    "NCERT Mathematics, Class XII, Parts I and II",
+    "CBSE Applied Mathematics, Class XII curriculum (Section B2)"
+  ],
   "duration_minutes": 60,
-  "total_questions": 50,
+  "total_questions": 85,
+  "questions_to_attempt": 50,
   "marking_scheme": {
-    "correct": 5,
-    "incorrect": -1,
-    "unattempted": 0
+    "correct": "+5",
+    "incorrect": "-1",
+    "unattempted": "0"
   },
+  "instructions": [
+    "Attempt all 15 questions of Section A (common to Mathematics and Applied Mathematics).",
+    "Then attempt all 35 questions of EITHER Section B1 (Mathematics) OR Section B2 (Applied Mathematics) — 50 questions in total.",
+    "Each correct answer earns 5 marks; each incorrect answer deducts 1 mark; unattempted questions earn 0."
+  ],
+  "sections": [
+    {
+      "id": "A",
+      "title": "Section A — common to Mathematics and Applied Mathematics (compulsory)",
+      "question_range": "1-15",
+      "questions": 15,
+      "attempt": 15
+    },
+    {
+      "id": "B1",
+      "title": "Section B1 — Mathematics",
+      "question_range": "16-50",
+      "questions": 35,
+      "attempt": "35 if chosen"
+    },
+    {
+      "id": "B2",
+      "title": "Section B2 — Applied Mathematics",
+      "question_range": "51-85",
+      "questions": 35,
+      "attempt": "35 if chosen"
+    }
+  ],
+  "common_sections": [
+    "A"
+  ],
+  "optional_sections": [
+    "B1",
+    "B2"
+  ],
   "questions": [
     {
-      "id": "CUET_MATH_2026_P7_L7_Q01",
-      "topic": "Relations and Functions",
-      "sub_topic": "",
-      "difficulty": "easy",
-      "question": "If f(x) = √(x - 3), the domain of f is:",
+      "id": "CUET27-MAT-T07-Q01",
+      "section": "A",
+      "topic": "Integration and its Applications",
+      "sub_topic": "Four definite integrals — which are right",
+      "difficulty": "medium",
+      "format": "statements",
+      "question": "Consider the following statements:\n(A) \\(\\displaystyle\\int_0^{\\pi}\\sin x\\,dx = 2\\)\n(B) \\(\\displaystyle\\int_{-1}^{1}x^3\\,dx = 0\\)\n(C) \\(\\displaystyle\\int_0^1 e^x\\,dx = e\\)\n(D) \\(\\displaystyle\\int_1^2\\dfrac{dx}{x} = \\log 2\\)\nWhich of the statements given above are correct?\nChoose the correct answer from the options given below:",
       "options": [
-        "A) (3, ∞)",
-        "B) [3, ∞)",
-        "C) [0, ∞)",
-        "D) ℝ"
+        "A) (A) and (B) only",
+        "B) (A), (B) and (D) only",
+        "C) (B), (C) and (D) only",
+        "D) (A), (B), (C) and (D)"
       ],
       "correct_option": "B",
-      "explanation": "For √(x-3) to be real, x-3 ≥ 0, so x ≥ 3. Domain = [3, ∞)."
+      "explanation": "Answer: (B) (A), (B) and (D) only\nWhy: (A) \\([-\\cos x]_0^{\\pi} = 1 + 1 = 2\\). (B) \\(x^3\\) is odd. (D) \\(\\log 2 - \\log 1 = \\log 2\\).\nWhy not the others: (C) is false: \\([e^x]_0^1 = e - 1\\). Options (C) and (D) include (C); (A) leaves out (D).\nKey point: \\(e^0 = 1\\), not 0."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q02",
-      "topic": "Inverse Trigonometric Functions",
-      "sub_topic": "",
+      "id": "CUET27-MAT-T07-Q02",
+      "section": "A",
+      "topic": "Integration and its Applications",
+      "sub_topic": "Definite integral of 4x³ on [0, 1]",
       "difficulty": "easy",
-      "question": "The value of sin⁻¹(√3/2) is:",
+      "format": "numerical",
+      "question": "\\(\\displaystyle\\int_0^1 4x^3\\,dx\\) equals:",
       "options": [
-        "A) 2π/3",
-        "B) π/6",
-        "C) π/3",
-        "D) π/4"
+        "A) \\(4\\)",
+        "B) \\(3\\)",
+        "C) \\(0\\)",
+        "D) \\(1\\)"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) \\(1\\)\nGiven: \\(\\int 4x^3\\,dx = x^4\\)\nFormula: \\(F(1) - F(0)\\)\nStep 1: \\(1 - 0 = 1\\)\nCommon mistake: \\(4\\) (A) keeps the coefficient without dividing by the new power.\nKey point: Raise the power by one and divide by the new power."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q03",
+      "section": "A",
+      "topic": "Calculus: Derivatives, Increasing/Decreasing Functions, Maxima and Minima",
+      "sub_topic": "Can of least surface area for a fixed volume",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "A closed cylindrical can holds \\(16\\pi\\) cm³. Its least possible total surface area is:",
+      "options": [
+        "A) \\(16\\pi\\) cm²",
+        "B) \\(24\\pi\\) cm²",
+        "C) \\(32\\pi\\) cm²",
+        "D) \\(20\\pi\\) cm²"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) \\(24\\pi\\) cm²\nGiven: \\(\\pi r^2h = 16\\pi \\Rightarrow h = \\dfrac{16}{r^2}\\)\nFormula: \\(S = 2\\pi r^2 + 2\\pi rh = 2\\pi r^2 + \\dfrac{32\\pi}{r}\\)\nStep 1: \\(S'(r) = 4\\pi r - \\dfrac{32\\pi}{r^2} = 0 \\Rightarrow r^3 = 8 \\Rightarrow r = 2\\); \\(S'' > 0\\), so it is a minimum\nStep 2: \\(h = 4\\)\nStep 3: \\(S = 8\\pi + 16\\pi = 24\\pi\\)\nCommon mistake: \\(16\\pi\\) (A) gives only the curved surface \\(2\\pi rh\\). \\(32\\pi\\) (C) uses \\(r = 1\\).\nKey point: For the least surface, the height equals the diameter."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q04",
+      "section": "A",
+      "topic": "Calculus: Derivatives, Increasing/Decreasing Functions, Maxima and Minima",
+      "sub_topic": "Rate of change of the volume of a balloon",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "The radius of a spherical balloon increases at \\(0.5\\) cm/s. The rate at which its volume increases when the radius is 10 cm is:",
+      "options": [
+        "A) \\(400\\pi\\) cm³/s",
+        "B) \\(100\\pi\\) cm³/s",
+        "C) \\(200\\pi\\) cm³/s",
+        "D) \\(\\dfrac{2000\\pi}{3}\\) cm³/s"
       ],
       "correct_option": "C",
-      "explanation": "sin(π/3) = √3/2, and π/3 ∈ [-π/2, π/2]. Hence sin⁻¹(√3/2) = π/3."
+      "explanation": "Answer: (C) \\(200\\pi\\) cm³/s\nGiven: \\(\\dfrac{dr}{dt} = 0.5\\), \\(r = 10\\)\nFormula: \\(V = \\dfrac{4}{3}\\pi r^3 \\Rightarrow \\dfrac{dV}{dt} = 4\\pi r^2\\dfrac{dr}{dt}\\)\nStep 1: \\(4\\pi(100)(0.5) = 200\\pi\\)\nCommon mistake: \\(400\\pi\\) (A) leaves out \\(\\dfrac{dr}{dt}\\). \\(\\dfrac{2000\\pi}{3}\\) (D) multiplies the volume by \\(\\dfrac{dr}{dt}\\) instead of differentiating.\nKey point: Differentiate with respect to time, then substitute."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q03",
-      "topic": "Matrices",
-      "sub_topic": "",
-      "difficulty": "easy",
-      "question": "If A = [[1, 2], [3, 4]] and B = [[5, 6], [7, 8]], then A + B equals:",
+      "id": "CUET27-MAT-T07-Q05",
+      "section": "A",
+      "topic": "Algebra: Matrices, Determinants, Inverse and the Matrix Method",
+      "sub_topic": "Missing entry of an inverse from AB = I",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "For \\(A = \\begin{bmatrix}1&2\\\\3&5\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}-5&2\\\\3&b\\end{bmatrix}\\), it is given that \\(AB = I\\). Then \\(b\\) is:",
       "options": [
-        "A) [[5, 12], [21, 32]]",
-        "B) [[6, 8], [10, 12]]",
-        "C) [[6, 7], [10, 11]]",
-        "D) [[6, 8], [9, 12]]"
+        "A) \\(1\\)",
+        "B) \\(-1\\)",
+        "C) \\(-2\\)",
+        "D) \\(2\\)"
       ],
       "correct_option": "B",
-      "explanation": "Matrix addition: add corresponding elements. A+B = [[1+5, 2+6], [3+7, 4+8]] = [[6,8],[10,12]]."
+      "explanation": "Answer: (B) \\(-1\\)\nGiven: \\(AB = I\\), so the (1, 2) entry of \\(AB\\) is 0\nFormula: (row 1 of \\(A\\)) · (column 2 of \\(B\\)) \\(= 1(2) + 2(b)\\)\nStep 1: \\(2 + 2b = 0 \\Rightarrow b = -1\\)\nStep 2: Check the (2, 2) entry: \\(3(2) + 5(-1) = 1\\) ✓\nCommon mistake: \\(1\\) (A) sets \\(2 + 2b = 4\\) by mixing up the entries. \\(-2\\) (C) solves \\(2 + b = 0\\), forgetting the factor 2.\nKey point: Each entry of a product gives one equation."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q04",
-      "topic": "Determinants",
-      "sub_topic": "",
-      "difficulty": "easy",
-      "question": "The value of |3 7; 2 5| is:",
-      "options": [
-        "A) 15",
-        "B) 29",
-        "C) 1",
-        "D) 13"
-      ],
-      "correct_option": "C",
-      "explanation": "|A| = 3(5) - 7(2) = 15 - 14 = 1."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q05",
-      "topic": "Continuity and Differentiability",
-      "sub_topic": "",
-      "difficulty": "easy",
-      "question": "The function f(x) = 1/x is:",
-      "options": [
-        "A) Discontinuous at x=1",
-        "B) Continuous everywhere",
-        "C) Continuous only for x > 0",
-        "D) Continuous except at x=0"
-      ],
-      "correct_option": "D",
-      "explanation": "f(x) = 1/x is a rational function, continuous on its domain ℝ\\{0}, discontinuous at x=0."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q06",
-      "topic": "Applications of Derivatives",
-      "sub_topic": "",
-      "difficulty": "easy",
-      "question": "The rate of change of area of a circle with respect to its radius when r = 3 is:",
-      "options": [
-        "A) 12π",
-        "B) 3π",
-        "C) 9π",
-        "D) 6π"
-      ],
-      "correct_option": "D",
-      "explanation": "Area A = πr². dA/dr = 2πr. At r=3, rate = 2π(3) = 6π."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q07",
-      "topic": "Integrals",
-      "sub_topic": "",
-      "difficulty": "easy",
-      "question": "∫cos x dx equals:",
-      "options": [
-        "A) -cos x + C",
-        "B) cos x + C",
-        "C) -sin x + C",
-        "D) sin x + C"
-      ],
-      "correct_option": "D",
-      "explanation": "The integral of cos x is sin x + C."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q08",
-      "topic": "Differential Equations",
-      "sub_topic": "",
-      "difficulty": "easy",
-      "question": "The degree of the differential equation (d²y/dx²)³ + (dy/dx)⁵ + y = 0 is:",
-      "options": [
-        "A) 2",
-        "B) 5",
-        "C) 1",
-        "D) 3"
-      ],
-      "correct_option": "D",
-      "explanation": "The degree is the power of the highest derivative. Here d²y/dx² has power 3, so degree = 3."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q09",
-      "topic": "Vectors",
-      "sub_topic": "",
-      "difficulty": "easy",
-      "question": "If a = 3i + 4j + 12k, then |a| equals:",
-      "options": [
-        "A) 13",
-        "B) √169",
-        "C) 19",
-        "D) 5"
-      ],
-      "correct_option": "A",
-      "explanation": "|a| = √(3² + 4² + 12²) = √(9 + 16 + 144) = √169 = 13."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q10",
-      "topic": "Probability",
-      "sub_topic": "",
-      "difficulty": "easy",
-      "question": "Two dice are thrown. The probability that the sum is less than 5 is:",
-      "options": [
-        "A) 1/9",
-        "B) 1/12",
-        "C) 1/6",
-        "D) 2/9"
-      ],
-      "correct_option": "C",
-      "explanation": "Favorable outcomes: sum=2:(1,1), sum=3:(1,2),(2,1), sum=4:(1,3),(2,2),(3,1) = 6 outcomes. P = 6/36 = 1/6."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q11",
-      "topic": "Relations and Functions",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "If f: ℝ → ℝ is defined by f(x) = x² + 1, then f is:",
-      "options": [
-        "A) One-one and onto",
-        "B) Onto but not one-one",
-        "C) Neither one-one nor onto",
-        "D) One-one but not onto"
-      ],
-      "correct_option": "C",
-      "explanation": "f(x) = x²+1 is not one-one (f(1)=f(-1)=2) and not onto (values < 1 are not achieved)."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q12",
-      "topic": "Inverse Trigonometric Functions",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "The value of tan⁻¹(-1) is:",
-      "options": [
-        "A) π/4",
-        "B) -π/4",
-        "C) 3π/4",
-        "D) π/2"
-      ],
-      "correct_option": "B",
-      "explanation": "tan(-π/4) = -1, and -π/4 ∈ (-π/2, π/2). Hence tan⁻¹(-1) = -π/4."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q13",
-      "topic": "Determinants",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "If A is a 3×3 matrix and |A| = -2, then |adj A| equals:",
-      "options": [
-        "A) 4",
-        "B) -2",
-        "C) 8",
-        "D) -4"
-      ],
-      "correct_option": "A",
-      "explanation": "For n×n matrix, |adj A| = |A|^(n-1). Here n=3, so |adj A| = (-2)² = 4."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q14",
-      "topic": "Matrices",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "If A = [[1, 2, 3], [2, 3, 4], [3, 4, 5]], then the trace of A is:",
-      "options": [
-        "A) 12",
-        "B) 15",
-        "C) 6",
-        "D) 9"
-      ],
-      "correct_option": "D",
-      "explanation": "Trace = sum of diagonal elements = 1 + 3 + 5 = 9."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q15",
-      "topic": "Continuity and Differentiability",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "The derivative of f(x) = ln(x² + 1) is:",
-      "options": [
-        "A) 2x/(x²+1)",
-        "B) x/(x²+1)",
-        "C) 1/(x²+1)",
-        "D) 2x·ln(x²+1)"
-      ],
-      "correct_option": "A",
-      "explanation": "By chain rule: d/dx ln(x²+1) = 1/(x²+1) · 2x = 2x/(x²+1)."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q16",
-      "topic": "Applications of Derivatives",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "The function f(x) = x·e^(-x) has a local maximum at x equals:",
-      "options": [
-        "A) 2",
-        "B) 1",
-        "C) -1",
-        "D) 0"
-      ],
-      "correct_option": "B",
-      "explanation": "f'(x) = e^(-x) - x·e^(-x) = e^(-x)(1-x) = 0 → x=1. f''(1) = -e^(-1) < 0, so maximum at x=1."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q17",
-      "topic": "Integrals",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "Evaluate ∫x·cos x dx.",
-      "options": [
-        "A) x·sin x - cos x + C",
-        "B) x·sin x + cos x + C",
-        "C) x·sin x + sin x + C",
-        "D) x·cos x + sin x + C"
-      ],
-      "correct_option": "B",
-      "explanation": "By parts: u=x, dv=cos x dx. ∫x·cos x dx = x·sin x - ∫sin x dx = x·sin x + cos x + C."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q18",
-      "topic": "Differential Equations",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "The solution of dy/dx + y = 0 with y(0) = 2 is:",
-      "options": [
-        "A) y = 2e^(-x)",
-        "B) y = e^(2x)",
-        "C) y = 2e^x",
-        "D) y = e^(-2x)"
-      ],
-      "correct_option": "A",
-      "explanation": "Separating: dy/y = -dx. ln|y| = -x + C, y = Ce^(-x). With y(0)=2: C=2. So y = 2e^(-x)."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q19",
-      "topic": "Vectors",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "The area of the triangle with vertices (0,0), (3,0), and (0,4) using vector cross product is:",
-      "options": [
-        "A) 7",
-        "B) 6",
-        "C) 5",
-        "D) 12"
-      ],
-      "correct_option": "B",
-      "explanation": "Vectors: a = 3i, b = 4j. Area = ½|a × b| = ½|3i × 4j| = ½|12k| = 6."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q20",
-      "topic": "3D Geometry",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "The equation of the line passing through (2, -1, 3) and perpendicular to the plane 3x - y + 2z = 5 is:",
-      "options": [
-        "A) (x-2)/3 = (y+1)/1 = (z-3)/2",
-        "B) (x-2)/2 = (y+1)/(-1) = (z-3)/3",
-        "C) (x+2)/3 = (y-1)/(-1) = (z+3)/2",
-        "D) (x-2)/3 = (y+1)/(-1) = (z-3)/2"
-      ],
-      "correct_option": "D",
-      "explanation": "The direction ratios are the coefficients of the plane: (3, -1, 2). Line through (2,-1,3) with these ratios: (x-2)/3 = (y+1)/(-1) = (z-3)/2."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q21",
+      "id": "CUET27-MAT-T07-Q06",
+      "section": "A",
       "topic": "Linear Programming",
-      "sub_topic": "",
+      "sub_topic": "Maximum of 4x + y on a four-cornered region",
       "difficulty": "medium",
-      "question": "Maximize Z = 5x + 3y subject to x ≥ 0, y ≥ 0, x + y ≤ 6. The maximum value is:",
+      "format": "numerical",
+      "question": "The maximum value of \\(Z = 4x + y\\) subject to \\(x + y \\le 50\\), \\(3x + y \\le 90\\), \\(x, y \\ge 0\\) is:",
       "options": [
-        "A) 18",
-        "B) 25",
-        "C) 15",
-        "D) 30"
+        "A) \\(120\\)",
+        "B) \\(110\\)",
+        "C) \\(50\\)",
+        "D) \\(200\\)"
       ],
-      "correct_option": "D",
-      "explanation": "Corner points: (0,0)→0, (6,0)→30, (0,6)→18. Maximum Z = 30 at (6,0)."
+      "correct_option": "A",
+      "explanation": "Answer: (A) \\(120\\)\nGiven: corners \\((0, 0)\\), \\((30, 0)\\), \\((20, 30)\\), \\((0, 50)\\)\nFormula: evaluate \\(Z\\) at each corner\nStep 1: \\(Z = 0, 120, 110, 50\\)\nStep 2: Maximum \\(= 120\\) at \\((30, 0)\\)\nCommon mistake: \\(110\\) (B) assumes the meeting point of the two lines is always best. \\(200\\) (D) uses \\((50, 0)\\), which breaks \\(3x + y \\le 90\\).\nKey point: Check every corner; the intersection is not always the optimum."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q22",
-      "topic": "Probability",
-      "sub_topic": "",
+      "id": "CUET27-MAT-T07-Q07",
+      "section": "A",
+      "topic": "Differential Equations",
+      "sub_topic": "Separable equation dy/dx = xy² through (0, 1)",
       "difficulty": "medium",
-      "question": "A box contains 4 red, 3 blue, and 2 green balls. Three balls are drawn at random. The probability that all are red is:",
+      "format": "numerical",
+      "question": "The solution of \\(\\dfrac{dy}{dx} = xy^2\\) with \\(y(0) = 1\\) gives \\(y(1)\\) equal to:",
       "options": [
-        "A) 4/9",
-        "B) 2/21",
-        "C) 1/6",
-        "D) 1/21"
-      ],
-      "correct_option": "D",
-      "explanation": "Total balls = 9. P(all red) = C(4,3)/C(9,3) = 4/84 = 1/21."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q23",
-      "topic": "Continuity and Differentiability",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "If y = e^(x²), then dy/dx equals:",
-      "options": [
-        "A) x²·e^(x²)",
-        "B) 2e^(x²)",
-        "C) 2x·e^(x²)",
-        "D) e^(x²)"
-      ],
-      "correct_option": "C",
-      "explanation": "By chain rule: dy/dx = e^(x²) · d/dx(x²) = 2x·e^(x²)."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q24",
-      "topic": "Continuity and Differentiability",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "If f(x) = sin⁻¹(2x), then f'(x) equals:",
-      "options": [
-        "A) 1/√(1-x²)",
-        "B) 2/√(1-4x²)",
-        "C) 2x/√(1-4x²)",
-        "D) 1/√(1-4x²)"
+        "A) \\(\\dfrac{1}{2}\\)",
+        "B) \\(2\\)",
+        "C) \\(-2\\)",
+        "D) \\(\\dfrac{2}{3}\\)"
       ],
       "correct_option": "B",
-      "explanation": "f'(x) = 1/√(1-(2x)²) · 2 = 2/√(1-4x²)."
+      "explanation": "Answer: (B) \\(2\\)\nGiven: \\(\\dfrac{dy}{y^2} = x\\,dx\\)\nFormula: \\(-\\dfrac{1}{y} = \\dfrac{x^2}{2} + c\\)\nStep 1: \\(y(0) = 1\\): \\(c = -1\\), so \\(\\dfrac{1}{y} = 1 - \\dfrac{x^2}{2}\\)\nStep 2: At \\(x = 1\\): \\(\\dfrac{1}{y} = \\dfrac{1}{2} \\Rightarrow y = 2\\)\nCommon mistake: \\(\\dfrac{1}{2}\\) (A) stops at \\(\\dfrac{1}{y}\\). \\(\\dfrac{2}{3}\\) (D) integrates \\(y^{-2}\\) as \\(+\\dfrac{1}{y}\\).\nKey point: \\(\\int y^{-2}dy = -y^{-1}\\)."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q25",
-      "topic": "Integrals",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "Evaluate ∫(3x² + 2x + 1) dx.",
+      "id": "CUET27-MAT-T07-Q08",
+      "section": "A",
+      "topic": "Algebra: Matrices, Determinants, Inverse and the Matrix Method",
+      "sub_topic": "Sum of squares of the solution of a 3 × 3 system",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "For the system \\(x - y + z = 4\\), \\(2x + y - 3z = 0\\), \\(x + y + z = 2\\), the value of \\(x^2 + y^2 + z^2\\) is:",
       "options": [
-        "A) x³ + x² + x + C",
-        "B) 3x³ + 2x² + x + C",
-        "C) 6x + 2 + C",
-        "D) x³ + x² + C"
+        "A) \\(4\\)",
+        "B) \\(5\\)",
+        "C) \\(3\\)",
+        "D) \\(6\\)"
       ],
-      "correct_option": "A",
-      "explanation": "∫3x² dx = x³, ∫2x dx = x², ∫1 dx = x. Sum = x³ + x² + x + C."
+      "correct_option": "D",
+      "explanation": "Answer: (D) \\(6\\)\nGiven: \\(|A| = \\begin{vmatrix}1&-1&1\\\\2&1&-3\\\\1&1&1\\end{vmatrix} = 1(1 + 3) + 1(2 + 3) + 1(2 - 1) = 10 \\ne 0\\), so the solution is unique\nFormula: subtract the first equation from the third\nStep 1: \\(2y = -2 \\Rightarrow y = -1\\); then \\(x + z = 3\\)\nStep 2: Second equation: \\(2x - 1 - 3z = 0 \\Rightarrow 2x - 3z = 1\\); with \\(x = 3 - z\\): \\(6 - 5z = 1 \\Rightarrow z = 1\\), \\(x = 2\\)\nStep 3: \\(x^2 + y^2 + z^2 = 4 + 1 + 1 = 6\\)\nCommon mistake: \\(5\\) (B) leaves out \\(z^2\\). \\(4\\) (A) is \\(x^2\\) alone. \\(3\\) (C) adds \\(x + |y|\\) instead of squaring.\nKey point: Find all three values, then substitute."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q26",
-      "topic": "Vectors",
-      "sub_topic": "",
+      "id": "CUET27-MAT-T07-Q09",
+      "section": "A",
+      "topic": "Differential Equations",
+      "sub_topic": "Separable equation (1 + y)/x through (1, 1)",
       "difficulty": "medium",
-      "question": "The projection of vector a = 4i + 3j on vector b = i + j is:",
+      "format": "numerical",
+      "question": "The solution of \\(\\dfrac{dy}{dx} = \\dfrac{1 + y}{x}\\) with \\(y(1) = 1\\) gives \\(y(3)\\) equal to:",
       "options": [
-        "A) 5/√2",
-        "B) 7/2",
-        "C) 7/√2",
-        "D) 5/2"
+        "A) \\(3\\)",
+        "B) \\(6\\)",
+        "C) \\(5\\)",
+        "D) \\(2\\)"
       ],
       "correct_option": "C",
-      "explanation": "Projection = (a·b)/|b| = (4+3)/√2 = 7/√2."
+      "explanation": "Answer: (C) \\(5\\)\nGiven: \\(\\dfrac{dy}{1 + y} = \\dfrac{dx}{x}\\)\nFormula: \\(\\log|1 + y| = \\log|x| + c \\Rightarrow 1 + y = Cx\\)\nStep 1: \\(y(1) = 1\\): \\(2 = C\\), so \\(y = 2x - 1\\)\nStep 2: \\(y(3) = 5\\)\nCommon mistake: \\(6\\) (B) takes \\(y = Cx\\) with \\(C = 2\\). \\(3\\) (A) takes \\(y = x\\).\nKey point: Keep the 1 with \\(y\\) when separating."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q27",
-      "topic": "3D Geometry",
-      "sub_topic": "",
+      "id": "CUET27-MAT-T07-Q10",
+      "section": "A",
+      "topic": "Calculus: Derivatives, Increasing/Decreasing Functions, Maxima and Minima",
+      "sub_topic": "Second derivative of x² log x at x = 1",
       "difficulty": "medium",
-      "question": "The distance between the parallel planes 2x - y + 2z = 4 and 2x - y + 2z = 10 is:",
+      "format": "numerical",
+      "question": "If \\(y = x^2\\log x\\), then \\(\\dfrac{d^2y}{dx^2}\\) at \\(x = 1\\) is:",
       "options": [
-        "A) 6/√9",
-        "B) 6/3",
-        "C) 3",
-        "D) 2"
-      ],
-      "correct_option": "D",
-      "explanation": "Distance = |d₁-d₂|/√(a²+b²+c²) = |4-10|/√(4+1+4) = 6/3 = 2."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q28",
-      "topic": "Matrices",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "If A = [[0, 1], [-1, 0]], then A⁴ equals:",
-      "options": [
-        "A) [[1, 0], [0, 1]]",
-        "B) [[0, 1], [-1, 0]]",
-        "C) [[0, -1], [1, 0]]",
-        "D) [[-1, 0], [0, -1]]"
+        "A) \\(3\\)",
+        "B) \\(2\\)",
+        "C) \\(1\\)",
+        "D) \\(5\\)"
       ],
       "correct_option": "A",
-      "explanation": "A² = [[-1,0],[0,-1]] = -I. A⁴ = (A²)² = (-I)² = I."
+      "explanation": "Answer: (A) \\(3\\)\nGiven: product rule\nFormula: \\(y' = 2x\\log x + x^2 \\cdot \\dfrac{1}{x} = 2x\\log x + x\\)\nStep 1: \\(y'' = 2\\log x + 2x \\cdot \\dfrac{1}{x} + 1 = 2\\log x + 3\\)\nStep 2: At \\(x = 1\\): \\(0 + 3 = 3\\)\nCommon mistake: \\(2\\) (B) forgets that the \\(x\\) in \\(y'\\) differentiates to 1. \\(1\\) (C) is \\(y'\\) at \\(x = 1\\).\nKey point: Use the product rule again for the second derivative."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q29",
-      "topic": "Applications of Derivatives",
-      "sub_topic": "",
-      "difficulty": "medium",
-      "question": "The function f(x) = x³ - 3x² + 4 has a local minimum at x equals:",
+      "id": "CUET27-MAT-T07-Q11",
+      "section": "A",
+      "topic": "Algebra: Matrices, Determinants, Inverse and the Matrix Method",
+      "sub_topic": "Order of the transpose of a product",
+      "difficulty": "easy",
+      "format": "numerical",
+      "question": "\\(A\\) is a \\(2 \\times 3\\) matrix and \\(B\\) is a \\(3 \\times 4\\) matrix. The order of \\((AB)^T\\) is:",
       "options": [
-        "A) 0",
-        "B) -1",
-        "C) 1",
-        "D) 2"
+        "A) \\(2 \\times 4\\)",
+        "B) \\(3 \\times 3\\)",
+        "C) \\(4 \\times 2\\)",
+        "D) \\(4 \\times 3\\)"
       ],
-      "correct_option": "D",
-      "explanation": "f'(x) = 3x² - 6x = 3x(x-2) = 0 → x=0 or x=2. f''(x) = 6x-6. f''(2) = 6 > 0, so minimum at x=2."
+      "correct_option": "C",
+      "explanation": "Answer: (C) \\(4 \\times 2\\)\nGiven: \\(A\\) is \\(2 \\times 3\\), \\(B\\) is \\(3 \\times 4\\)\nFormula: \\((m \\times n)(n \\times p)\\) gives \\(m \\times p\\)\nStep 1: \\(AB\\) is \\(2 \\times 4\\)\nStep 2: Its transpose is \\(4 \\times 2\\)\nCommon mistake: \\(2 \\times 4\\) (A) is the order of \\(AB\\), before transposing.\nKey point: Transposing swaps rows and columns."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q30",
-      "topic": "Probability",
-      "sub_topic": "",
+      "id": "CUET27-MAT-T07-Q12",
+      "section": "A",
+      "topic": "Integration and its Applications",
+      "sub_topic": "Area of a region lying below the x-axis",
       "difficulty": "medium",
-      "question": "If A and B are events with P(A) = 0.5, P(B) = 0.3, and P(A∩B) = 0.1, then P(A|B) equals:",
+      "format": "numerical",
+      "question": "The area of the region bounded by \\(y = x^2 - 4x\\) and the \\(x\\)-axis is:",
       "options": [
-        "A) 1/3",
-        "B) 2/3",
-        "C) 1/5",
-        "D) 1/2"
+        "A) \\(\\dfrac{32}{3}\\) sq units",
+        "B) \\(-\\dfrac{32}{3}\\) sq units",
+        "C) \\(\\dfrac{16}{3}\\) sq units",
+        "D) \\(\\dfrac{64}{3}\\) sq units"
       ],
       "correct_option": "A",
-      "explanation": "P(A|B) = P(A∩B)/P(B) = 0.1/0.3 = 1/3."
+      "explanation": "Answer: (A) \\(\\dfrac{32}{3}\\) sq units\nGiven: \\(x^2 - 4x = 0\\) at \\(x = 0, 4\\); the curve lies below the axis between them\nFormula: Area \\(= \\left|\\int_0^4(x^2 - 4x)\\,dx\\right|\\)\nStep 1: \\(\\left[\\dfrac{x^3}{3} - 2x^2\\right]_0^4 = \\dfrac{64}{3} - 32 = -\\dfrac{32}{3}\\)\nStep 2: Area \\(= \\dfrac{32}{3}\\)\nCommon mistake: (B) reports the integral itself; an area cannot be negative. (D) keeps only \\(\\dfrac{64}{3}\\).\nKey point: Below the axis, take the absolute value of the integral."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q31",
-      "topic": "Differential Equations",
-      "sub_topic": "",
+      "id": "CUET27-MAT-T07-Q13",
+      "section": "A",
+      "topic": "Probability Distributions",
+      "sub_topic": "A distribution with one unknown — which claims fail",
       "difficulty": "medium",
-      "question": "The general solution of dy/dx = x/y is:",
+      "format": "statements",
+      "question": "\\(X\\) takes the values 0, 1, 2, 3 with probabilities \\(0.2\\), \\(k\\), \\(0.3\\), \\(0.1\\). Consider the following statements:\n(A) \\(k = 0.4\\)\n(B) \\(P(X \\le 1) = 0.6\\)\n(C) \\(E(X) = 1.3\\)\n(D) \\(P(X \\ge 2) = 0.3\\)\nWhich of the statements given above is/are NOT correct?\nChoose the correct answer from the options given below:",
       "options": [
-        "A) y² = 2x + C",
-        "B) y² = x² + C",
-        "C) y = x + C",
-        "D) y = x² + C"
+        "A) (A) only",
+        "B) (B) and (D) only",
+        "C) (C) only",
+        "D) (D) only"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) (D) only\nWhy: Only (D) is false: \\(P(X \\ge 2) = 0.3 + 0.1 = 0.4\\).\nWhy not the others: (A) the probabilities add to 1. (B) \\(0.2 + 0.4\\). (C) \\(0 + 0.4 + 0.6 + 0.3 = 1.3\\). Options (A), (B) and (C) name a true statement as false.\nKey point: \"At least 2\" includes every value from 2 upwards."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q14",
+      "section": "A",
+      "topic": "Algebra: Matrices, Determinants, Inverse and the Matrix Method",
+      "sub_topic": "Four determinants from one 2 × 2 matrix",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "For \\(A = \\begin{bmatrix}2&1\\\\4&3\\end{bmatrix}\\), match List-I with List-II.\n\nList-I\n(A) \\(|A|\\)\n(B) \\(|A^{-1}|\\)\n(C) \\(|3A|\\)\n(D) \\(|A^2|\\)\n\nList-II\n(I) \\(\\dfrac{1}{2}\\)\n(II) \\(4\\)\n(III) \\(2\\)\n(IV) \\(18\\)\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)",
+        "B) (A)-(I), (B)-(III), (C)-(IV), (D)-(II)",
+        "C) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+        "D) (A)-(III), (B)-(I), (C)-(II), (D)-(IV)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)\nStep 1: \\(|A| = 6 - 4 = 2\\) (III)\nStep 2: \\(|A^{-1}| = \\dfrac{1}{|A|} = \\dfrac{1}{2}\\) (I)\nStep 3: \\(|3A| = 3^2|A| = 18\\) (IV), since the order is 2\nStep 4: \\(|A^2| = |A|^2 = 4\\) (II)\nCommon mistake: (B) swaps \\(|A|\\) and \\(|A^{-1}|\\). (C) swaps \\(|A^{-1}|\\) and \\(|3A|\\). (D) swaps \\(|3A|\\) and \\(|A^2|\\).\nKey point: \\(|kA| = k^n|A|\\) for a matrix of order \\(n\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q15",
+      "section": "A",
+      "topic": "Probability Distributions",
+      "sub_topic": "Expected number of aces in two draws",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "Two cards are drawn without replacement from a well-shuffled pack of 52. The expected number of aces is:",
+      "options": [
+        "A) \\(\\dfrac{1}{13}\\)",
+        "B) \\(\\dfrac{33}{221}\\)",
+        "C) \\(\\dfrac{2}{13}\\)",
+        "D) \\(\\dfrac{4}{13}\\)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) \\(\\dfrac{2}{13}\\)\nGiven: \\(X\\) = number of aces, values 0, 1, 2\nFormula: \\(E(X) = \\sum xP(x)\\)\nStep 1: \\(P(1) = \\dfrac{2 \\times 4 \\times 48}{52 \\times 51} = \\dfrac{32}{221}\\); \\(P(2) = \\dfrac{4 \\times 3}{52 \\times 51} = \\dfrac{1}{221}\\)\nStep 2: \\(E(X) = \\dfrac{32}{221} + \\dfrac{2}{221} = \\dfrac{34}{221} = \\dfrac{2}{13}\\)\nCommon mistake: \\(\\dfrac{1}{13}\\) (A) is the chance that one card is an ace. \\(\\dfrac{33}{221}\\) (B) counts the two-ace case once instead of twice.\nKey point: Each value is weighted by how many aces it represents."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q16",
+      "section": "B1",
+      "topic": "Unit I: Inverse Trigonometric Functions",
+      "sub_topic": "Principal value of sec⁻¹ 2",
+      "difficulty": "easy",
+      "format": "numerical",
+      "question": "The principal value of \\(\\sec^{-1}(2)\\) is:",
+      "options": [
+        "A) \\(\\dfrac{\\pi}{3}\\)",
+        "B) \\(\\dfrac{\\pi}{6}\\)",
+        "C) \\(\\dfrac{2\\pi}{3}\\)",
+        "D) \\(\\dfrac{\\pi}{4}\\)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) \\(\\dfrac{\\pi}{3}\\)\nGiven: \\(\\sec\\theta = 2 \\iff \\cos\\theta = \\dfrac{1}{2}\\)\nFormula: principal branch \\([0, \\pi] - \\left\\{\\dfrac{\\pi}{2}\\right\\}\\)\nStep 1: \\(\\theta = \\dfrac{\\pi}{3}\\)\nCommon mistake: \\(\\dfrac{\\pi}{6}\\) (B) solves \\(\\sin\\theta = \\dfrac{1}{2}\\).\nKey point: Turn \\(\\sec\\) into \\(\\cos\\) first."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q17",
+      "section": "B1",
+      "topic": "Unit III: Applications of Derivatives",
+      "sub_topic": "Analysis of x³ − 6x² + 9x + 1",
+      "difficulty": "medium",
+      "format": "statements",
+      "question": "For \\(f(x) = x^3 - 6x^2 + 9x + 1\\), consider the following statements:\n(A) \\(f\\) is strictly increasing on \\((3, \\infty)\\).\n(B) \\(f\\) has a local maximum at \\(x = 1\\) with value 5.\n(C) The local minimum value of \\(f\\) is 1.\n(D) \\(f\\) is strictly decreasing on \\((0, 1)\\).\nWhich of the statements given above are correct?\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A), (B) and (C) only",
+        "B) (A) and (B) only",
+        "C) (B), (C) and (D) only",
+        "D) (A), (B), (C) and (D)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) (A), (B) and (C) only\nWhy: \\(f'(x) = 3(x - 1)(x - 3)\\). (A) \\(f' > 0\\) for \\(x > 3\\). (B) \\(f'\\) changes from + to − at 1, and \\(f(1) = 5\\). (C) \\(f(3) = 27 - 54 + 27 + 1 = 1\\).\nWhy not the others: (D) is false: \\(f' > 0\\) on \\((0, 1)\\), so \\(f\\) increases there. Options (C) and (D) include (D); (B) leaves out (C).\nKey point: Read the sign of \\(f'\\) on each interval between critical points."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q18",
+      "section": "B1",
+      "topic": "Unit IV: Three-dimensional Geometry",
+      "sub_topic": "Reading a line in symmetric form — which claims fail",
+      "difficulty": "medium",
+      "format": "statements",
+      "question": "For the line \\(\\dfrac{x - 1}{2} = \\dfrac{y + 1}{3} = \\dfrac{z - 2}{6}\\), consider the following statements:\n(A) Its direction ratios are \\(2, 3, 6\\).\n(B) Its direction cosines are \\(\\dfrac{2}{7}, \\dfrac{3}{7}, \\dfrac{6}{7}\\).\n(C) It passes through \\((1, -1, 2)\\).\n(D) It is perpendicular to the line \\(\\dfrac{x}{3} = \\dfrac{y}{2} = \\dfrac{z}{1}\\).\nWhich of the statements given above is/are NOT correct?\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A) only",
+        "B) (B) and (D) only",
+        "C) (C) only",
+        "D) (D) only"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) (D) only\nWhy: Only (D) is false: \\(2(3) + 3(2) + 6(1) = 18 \\ne 0\\).\nWhy not the others: (A) read the denominators. (B) \\(\\sqrt{4 + 9 + 36} = 7\\). (C) read the numerators with signs changed. Options (A), (B) and (C) name a true statement as false.\nKey point: Lines are perpendicular when \\(a_1a_2 + b_1b_2 + c_1c_2 = 0\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q19",
+      "section": "B1",
+      "topic": "Unit IV: Vectors",
+      "sub_topic": "Size of a cross product from the dot product",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "\\(|\\vec{a}| = 3\\), \\(|\\vec{b}| = 4\\) and \\(\\vec{a}\\cdot\\vec{b} = 6\\). Then \\(|\\vec{a} \\times \\vec{b}|\\) is:",
+      "options": [
+        "A) \\(6\\)",
+        "B) \\(6\\sqrt{3}\\)",
+        "C) \\(12\\)",
+        "D) \\(3\\sqrt{3}\\)"
       ],
       "correct_option": "B",
-      "explanation": "Separating: y dy = x dx. Integrating: y²/2 = x²/2 + C₁, so y² = x² + C."
+      "explanation": "Answer: (B) \\(6\\sqrt{3}\\)\nGiven: \\(|\\vec{a}|^2|\\vec{b}|^2 = 144\\)\nFormula: \\(|\\vec{a} \\times \\vec{b}|^2 + (\\vec{a}\\cdot\\vec{b})^2 = |\\vec{a}|^2|\\vec{b}|^2\\)\nStep 1: \\(|\\vec{a} \\times \\vec{b}|^2 = 144 - 36 = 108\\)\nStep 2: \\(|\\vec{a} \\times \\vec{b}| = 6\\sqrt{3}\\)\nCommon mistake: \\(12\\) (C) is \\(|\\vec{a}||\\vec{b}|\\). \\(6\\) (A) copies the dot product.\nKey point: \\(\\cos^2\\theta + \\sin^2\\theta = 1\\) links the two products."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q32",
-      "topic": "Integrals",
-      "sub_topic": "",
+      "id": "CUET27-MAT-T07-Q20",
+      "section": "B1",
+      "topic": "Unit VI: Probability",
+      "sub_topic": "Probabilities from P(A), P(B) and P(A ∩ B)",
       "difficulty": "medium",
-      "question": "The value of ∫₀^(π/2) sin x·cos x dx is:",
+      "format": "match-list",
+      "question": "\\(P(A) = 0.6\\), \\(P(B) = 0.5\\) and \\(P(A \\cap B) = 0.2\\). Match List-I with List-II.\n\nList-I\n(A) \\(P(A \\cup B)\\)\n(B) \\(P(A \\mid B)\\)\n(C) \\(P(B \\mid A)\\)\n(D) \\(P(A' \\cap B')\\)\n\nList-II\n(I) \\(0.9\\)\n(II) \\(0.1\\)\n(III) \\(0.4\\)\n(IV) \\(\\dfrac{1}{3}\\)\nChoose the correct answer from the options given below:",
       "options": [
-        "A) π/4",
-        "B) 1",
-        "C) 0",
-        "D) 1/2"
+        "A) (A)-(I), (B)-(IV), (C)-(III), (D)-(II)",
+        "B) (A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+        "C) (A)-(I), (B)-(III), (C)-(II), (D)-(IV)",
+        "D) (A)-(I), (B)-(III), (C)-(IV), (D)-(II)"
       ],
       "correct_option": "D",
-      "explanation": "∫₀^(π/2) sin x·cos x dx = ½∫₀^(π/2) sin 2x dx = ½[-cos 2x/2]₀^(π/2) = ½[(1-(-1))/2] = ½(1) = 1/2."
+      "explanation": "Answer: (D) (A)-(I), (B)-(III), (C)-(IV), (D)-(II)\nStep 1: \\(0.6 + 0.5 - 0.2 = 0.9\\) (I)\nStep 2: \\(\\dfrac{0.2}{0.5} = 0.4\\) (III)\nStep 3: \\(\\dfrac{0.2}{0.6} = \\dfrac{1}{3}\\) (IV)\nStep 4: \\(1 - P(A \\cup B) = 0.1\\) (II)\nCommon mistake: (A) swaps the two conditionals. (B) swaps the union and its complement. (C) swaps \\(P(B \\mid A)\\) and \\(P(A' \\cap B')\\).\nKey point: Divide by the probability of the event that is given."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q33",
-      "topic": "Matrices",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "If A = [[1, 1, 0], [0, 1, 1], [0, 0, 1]], then A⁴ equals:",
+      "id": "CUET27-MAT-T07-Q21",
+      "section": "B1",
+      "topic": "Unit II: Matrices",
+      "sub_topic": "Fifth power of the all-ones 2 × 2 matrix",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "If \\(A = \\begin{bmatrix}1&1\\\\1&1\\end{bmatrix}\\), then \\(A^5\\) equals:",
       "options": [
-        "A) [[1, 4, 6], [0, 1, 4], [0, 0, 1]]",
-        "B) [[1, 4, 0], [0, 1, 4], [0, 0, 1]]",
-        "C) [[4, 4, 0], [0, 4, 4], [0, 0, 4]]",
-        "D) [[1, 6, 4], [0, 1, 6], [0, 0, 1]]"
-      ],
-      "correct_option": "A",
-      "explanation": "A = I + N where N = [[0,1,0],[0,0,1],[0,0,0]]. N³ = 0. A⁴ = I + 4N + 6N² = [[1,4,6],[0,1,4],[0,0,1]]."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q34",
-      "topic": "Inverse Trigonometric Functions",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "The value of sin(2 tan⁻¹(2)) is:",
-      "options": [
-        "A) 2/√5",
-        "B) 2/5",
-        "C) 3/5",
-        "D) 4/5"
+        "A) \\(32A\\)",
+        "B) \\(5A\\)",
+        "C) \\(8A\\)",
+        "D) \\(16A\\)"
       ],
       "correct_option": "D",
-      "explanation": "Let θ = tan⁻¹(2), so tan θ = 2. sin(2θ) = 2 tan θ/(1+tan²θ) = 4/(1+4) = 4/5."
+      "explanation": "Answer: (D) \\(16A\\)\nGiven: \\(A^2 = \\begin{bmatrix}2&2\\\\2&2\\end{bmatrix} = 2A\\)\nFormula: \\(A^n = 2^{n-1}A\\)\nStep 1: \\(A^3 = 2A^2 = 4A\\), \\(A^4 = 8A\\), \\(A^5 = 16A\\)\nCommon mistake: \\(32A\\) (A) uses \\(2^n\\) instead of \\(2^{n-1}\\). \\(5A\\) (B) adds instead of multiplying.\nKey point: Find a pattern from \\(A^2\\)."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q35",
-      "topic": "Continuity and Differentiability",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "If y = cot⁻¹(x), then dy/dx equals:",
+      "id": "CUET27-MAT-T07-Q22",
+      "section": "B1",
+      "topic": "Unit III: Continuity and Differentiability",
+      "sub_topic": "Slope of x³ + y³ = 3xy at a point",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "For the curve \\(x^3 + y^3 = 3xy\\), \\(\\dfrac{dy}{dx}\\) at \\(\\left(\\dfrac{3}{2}, \\dfrac{3}{2}\\right)\\) is:",
       "options": [
-        "A) -1/√(1-x²)",
-        "B) 1/(1+x²)",
-        "C) 1/(x²-1)",
-        "D) -1/(1+x²)"
-      ],
-      "correct_option": "D",
-      "explanation": "Let y = cot⁻¹(x), so cot y = x. Differentiating: -csc²y · dy/dx = 1. dy/dx = -1/csc²y = -1/(1+cot²y) = -1/(1+x²)."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q36",
-      "topic": "Applications of Derivatives",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "The maximum area of a rectangle inscribed in a circle of radius 5 is:",
-      "options": [
-        "A) 25π",
-        "B) 25",
-        "C) 50",
-        "D) 100"
-      ],
-      "correct_option": "C",
-      "explanation": "For a rectangle inscribed in a circle, maximum area occurs for a square. Diagonal = 10. Side = 10/√2 = 5√2. Area = (5√2)² = 50."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q37",
-      "topic": "Integrals",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "Evaluate ∫₀^∞ x·e^(-x) dx.",
-      "options": [
-        "A) 0",
-        "B) 1",
-        "C) e",
-        "D) Diverges"
+        "A) \\(1\\)",
+        "B) \\(-1\\)",
+        "C) \\(0\\)",
+        "D) \\(\\dfrac{3}{2}\\)"
       ],
       "correct_option": "B",
-      "explanation": "Using integration by parts: u=x, dv=e^(-x)dx. ∫x·e^(-x)dx = -x·e^(-x) + ∫e^(-x)dx = -x·e^(-x) - e^(-x). Evaluated from 0 to ∞: [0-0] - [0-1] = 1."
+      "explanation": "Answer: (B) \\(-1\\)\nGiven: differentiate both sides with respect to \\(x\\)\nFormula: \\(3x^2 + 3y^2y' = 3y + 3xy'\\)\nStep 1: \\(y'(y^2 - x) = y - x^2 \\Rightarrow y' = \\dfrac{y - x^2}{y^2 - x}\\)\nStep 2: At the point: \\(\\dfrac{1.5 - 2.25}{2.25 - 1.5} = -1\\)\nCommon mistake: \\(1\\) (A) drops a sign when moving \\(3xy'\\) across. \\(0\\) (C) forgets the product rule on \\(3xy\\).\nKey point: Differentiate \\(xy\\) with the product rule."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q38",
-      "topic": "Differential Equations",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "The solution of dy/dx = (y/x) + tan(y/x) is:",
+      "id": "CUET27-MAT-T07-Q23",
+      "section": "B1",
+      "topic": "Unit V: Linear Programming",
+      "sub_topic": "Minimum of 4x + 3y on an unbounded region",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "The minimum value of \\(Z = 4x + 3y\\) subject to \\(x + 2y \\ge 8\\), \\(3x + 2y \\ge 12\\), \\(x, y \\ge 0\\) is:",
       "options": [
-        "A) cos(y/x) = Cx",
-        "B) y = Cx",
-        "C) sin(y/x) = Cx",
-        "D) y/x = Cx"
+        "A) \\(18\\)",
+        "B) \\(32\\)",
+        "C) \\(17\\)",
+        "D) \\(16\\)"
       ],
       "correct_option": "C",
-      "explanation": "This is homogeneous. Let y = vx: v + x dv/dx = v + tan v. So x dv/dx = tan v. cot v dv = dx/x. ln|sin v| = ln|x| + C₁. sin v = Cx, so sin(y/x) = Cx."
+      "explanation": "Answer: (C) \\(17\\)\nGiven: corners \\((8, 0)\\), \\((2, 3)\\), \\((0, 6)\\); \\((2, 3)\\) comes from subtracting the two lines: \\(2x = 4\\)\nFormula: evaluate \\(Z\\), then check the open half-plane \\(4x + 3y < 17\\)\nStep 1: \\(Z = 32, 17, 18\\)\nStep 2: \\(4x + 3y < 17\\) has no point in common with the region, so the minimum is 17\nCommon mistake: \\(18\\) (A) misses the corner where the two lines meet. \\(16\\) (D) uses \\((4, 0)\\), which breaks \\(x + 2y \\ge 8\\).\nKey point: On an unbounded region, confirm the smallest corner value with the half-plane test."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q39",
-      "topic": "Vectors",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "The scalar triple product [a b c] where a = i + j, b = j + k, c = i + k equals:",
+      "id": "CUET27-MAT-T07-Q24",
+      "section": "B1",
+      "topic": "Unit III: Integrals",
+      "sub_topic": "Completing the square in x² − 6x + 13",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "\\(\\displaystyle\\int\\dfrac{dx}{x^2 - 6x + 13}\\) equals:",
       "options": [
-        "A) -1",
-        "B) 1",
-        "C) 2",
-        "D) 0"
+        "A) \\(\\tan^{-1}\\left(\\dfrac{x - 3}{2}\\right) + C\\)",
+        "B) \\(\\dfrac{1}{2}\\tan^{-1}\\left(\\dfrac{x + 3}{2}\\right) + C\\)",
+        "C) \\(\\dfrac{1}{4}\\log\\left|\\dfrac{x - 5}{x - 1}\\right| + C\\)",
+        "D) \\(\\dfrac{1}{2}\\tan^{-1}\\left(\\dfrac{x - 3}{2}\\right) + C\\)"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) \\(\\dfrac{1}{2}\\tan^{-1}\\left(\\dfrac{x - 3}{2}\\right) + C\\)\nGiven: \\(x^2 - 6x + 13 = (x - 3)^2 + 4\\)\nFormula: \\(\\int\\dfrac{dx}{u^2 + a^2} = \\dfrac{1}{a}\\tan^{-1}\\dfrac{u}{a}\\), with \\(a = 2\\)\nStep 1: \\(\\dfrac{1}{2}\\tan^{-1}\\left(\\dfrac{x - 3}{2}\\right) + C\\)\nCommon mistake: (A) drops the \\(\\dfrac{1}{a}\\). (B) completes the square as \\((x + 3)^2\\). (C) uses the \\(u^2 - a^2\\) form.\nKey point: Half the coefficient of \\(x\\), with its sign, goes inside the square."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q25",
+      "section": "B1",
+      "topic": "Unit III: Applications of Derivatives",
+      "sub_topic": "Height of a cone of sand rising",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "Sand pours at 12 cm³/s and forms a cone whose height is always one-sixth of its radius. The rate at which the height rises when the height is 4 cm is:",
+      "options": [
+        "A) \\(\\dfrac{1}{12\\pi}\\) cm/s",
+        "B) \\(\\dfrac{1}{48\\pi}\\) cm/s",
+        "C) \\(\\dfrac{1}{4\\pi}\\) cm/s",
+        "D) \\(48\\pi\\) cm/s"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) \\(\\dfrac{1}{48\\pi}\\) cm/s\nGiven: \\(r = 6h\\), \\(\\dfrac{dV}{dt} = 12\\)\nFormula: \\(V = \\dfrac{1}{3}\\pi r^2h = \\dfrac{1}{3}\\pi(36h^2)h = 12\\pi h^3\\)\nStep 1: \\(\\dfrac{dV}{dt} = 36\\pi h^2\\dfrac{dh}{dt}\\)\nStep 2: \\(12 = 36\\pi(16)\\dfrac{dh}{dt} \\Rightarrow \\dfrac{dh}{dt} = \\dfrac{12}{576\\pi} = \\dfrac{1}{48\\pi}\\)\nCommon mistake: \\(\\dfrac{1}{12\\pi}\\) (A) uses \\(h = 2\\). \\(48\\pi\\) (D) inverts the answer.\nKey point: Write \\(V\\) in terms of the one variable you need."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q26",
+      "section": "B1",
+      "topic": "Unit III: Applications of Derivatives",
+      "sub_topic": "Least value of (x − 3)² + 5",
+      "difficulty": "easy",
+      "format": "numerical",
+      "question": "The minimum value of \\(f(x) = (x - 3)^2 + 5\\) is:",
+      "options": [
+        "A) \\(3\\)",
+        "B) \\(0\\)",
+        "C) \\(5\\)",
+        "D) \\(8\\)"
       ],
       "correct_option": "C",
-      "explanation": "[a b c] = a·(b×c). b×c = |i j k; 0 1 1; 1 0 1| = i(1) - j(-1) + k(-1) = i + j - k. a·(b×c) = 1+1+0 = 2."
+      "explanation": "Answer: (C) \\(5\\)\nGiven: \\((x - 3)^2 \\ge 0\\), with equality at \\(x = 3\\)\nFormula: \\(f'(x) = 2(x - 3) = 0 \\Rightarrow x = 3\\)\nStep 1: \\(f(3) = 5\\)\nCommon mistake: \\(3\\) (A) gives the point, not the value.\nKey point: Minimum value means \\(f\\) at the minimum point."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q40",
-      "topic": "3D Geometry",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "The shortest distance between the skew lines r = i + j + t(2i - j + k) and r = 2i + k + s(i + j - k) is:",
+      "id": "CUET27-MAT-T07-Q27",
+      "section": "B1",
+      "topic": "Unit IV: Vectors",
+      "sub_topic": "Value making two vectors perpendicular",
+      "difficulty": "easy",
+      "format": "numerical",
+      "question": "The vectors \\(2\\hat{i} + \\lambda\\hat{j} + \\hat{k}\\) and \\(\\hat{i} - 2\\hat{j} + 3\\hat{k}\\) are perpendicular when \\(\\lambda\\) is:",
       "options": [
-        "A) √2",
-        "B) 2/√3",
-        "C) 1/√3",
-        "D) 0"
-      ],
-      "correct_option": "D",
-      "explanation": "a₁ = (1,1,0), b₁ = (2,-1,1), a₂ = (2,0,1), b₂ = (1,1,-1). a₂-a₁ = (1,-1,1). b₁×b₂ = |i j k; 2 -1 1; 1 1 -1| = i(1-1) - j(-2-1) + k(2+1) = 3j + 3k. (a₂-a₁)·(b₁×b₂) = 0-3+3 = 0. Distance = 0. The lines intersect!"
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q41",
-      "topic": "Linear Programming",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "Maximize Z = 3x + 2y subject to x + y ≤ 6, 2x + y ≤ 8, x, y ≥ 0. The maximum value is:",
-      "options": [
-        "A) 16",
-        "B) 18",
-        "C) 14",
-        "D) 12"
-      ],
-      "correct_option": "C",
-      "explanation": "Corner points: (0,0)→0, (4,0)→12, (0,6)→12. Intersection of x+y=6 and 2x+y=8: x=2, y=4. Z = 3(2) + 2(4) = 6+8 = 14. Maximum is 14."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q42",
-      "topic": "Probability",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "A fair coin is tossed 4 times. The probability of getting exactly 2 heads is:",
-      "options": [
-        "A) 1/2",
-        "B) 1/4",
-        "C) 5/16",
-        "D) 3/8"
-      ],
-      "correct_option": "D",
-      "explanation": "P(X=2) = C(4,2)/2⁴ = 6/16 = 3/8."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q43",
-      "topic": "Continuity and Differentiability",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "If y = x^(sin x), then dy/dx equals:",
-      "options": [
-        "A) x^(sin x)(cos x/x)",
-        "B) x^(sin x)(sin x/x)",
-        "C) x^(sin x)(cos x·ln x - sin x/x)",
-        "D) x^(sin x)(cos x·ln x + sin x/x)"
-      ],
-      "correct_option": "D",
-      "explanation": "ln y = sin x · ln x. (1/y)y' = cos x · ln x + sin x/x. y' = y(cos x·ln x + sin x/x) = x^(sin x)(cos x·ln x + sin x/x)."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q44",
-      "topic": "Integrals",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "The area bounded by y = x² and y = 2x is:",
-      "options": [
-        "A) 4/3",
-        "B) 2/3",
-        "C) 1/3",
-        "D) 8/3"
+        "A) \\(\\dfrac{5}{2}\\)",
+        "B) \\(-\\dfrac{5}{2}\\)",
+        "C) \\(2\\)",
+        "D) \\(5\\)"
       ],
       "correct_option": "A",
-      "explanation": "Curves intersect at x=0 and x=2. Area = ∫₀² (2x - x²) dx = [x² - x³/3]₀² = 4 - 8/3 = 4/3."
+      "explanation": "Answer: (A) \\(\\dfrac{5}{2}\\)\nGiven: perpendicular \\(\\iff\\) dot product \\(= 0\\)\nFormula: \\(2 - 2\\lambda + 3 = 0\\)\nStep 1: \\(\\lambda = \\dfrac{5}{2}\\)\nCommon mistake: \\(-\\dfrac{5}{2}\\) (B) drops the minus sign of \\(-2\\lambda\\).\nKey point: Set the dot product to zero."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q45",
-      "topic": "Matrices",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "If the matrix A = [[2, 1], [1, 2]] has eigenvalue 3, then the other eigenvalue is:",
+      "id": "CUET27-MAT-T07-Q28",
+      "section": "B1",
+      "topic": "Unit III: Differential Equations",
+      "sub_topic": "Homogeneous equation (x + 2y)/x",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "The general solution of \\(\\dfrac{dy}{dx} = \\dfrac{x + 2y}{x}\\) is:",
       "options": [
-        "A) 1",
-        "B) -1",
-        "C) 0",
-        "D) 2"
+        "A) \\(x - y = Cx^2\\)",
+        "B) \\(x + y = Cx\\)",
+        "C) \\(x + y = Cx^2\\)",
+        "D) \\(y = x\\log|x| + Cx\\)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) \\(x + y = Cx^2\\)\nGiven: \\(y = vx\\): \\(v + x\\dfrac{dv}{dx} = 1 + 2v\\)\nFormula: \\(x\\dfrac{dv}{dx} = 1 + v \\Rightarrow \\dfrac{dv}{1 + v} = \\dfrac{dx}{x}\\)\nStep 1: \\(\\log|1 + v| = \\log|x| + c \\Rightarrow 1 + \\dfrac{y}{x} = Cx\\)\nStep 2: \\(x + y = Cx^2\\)\nCommon mistake: (B) forgets to multiply through by \\(x\\). (D) solves \\(\\dfrac{dy}{dx} = 1 + \\dfrac{y}{x}\\).\nKey point: Check: \\(y = Cx^2 - x\\) gives \\(y' = 2Cx - 1 = 1 + \\dfrac{2y}{x}\\) ✓."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q29",
+      "section": "B1",
+      "topic": "Unit II: Matrices",
+      "sub_topic": "A skew-symmetric matrix — which claims fail",
+      "difficulty": "medium",
+      "format": "statements",
+      "question": "For \\(A = \\begin{bmatrix}0&2\\\\-2&0\\end{bmatrix}\\), consider the following statements:\n(A) \\(A\\) is skew-symmetric.\n(B) \\(A^2 = -4I\\).\n(C) \\(A\\) is invertible.\n(D) \\(A + A^T = 2A\\).\nWhich of the statements given above is/are NOT correct?\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A) only",
+        "B) (B) and (C) only",
+        "C) (D) only",
+        "D) (C) and (D) only"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) (D) only\nWhy: Only (D) is false: \\(A^T = -A\\), so \\(A + A^T = O\\).\nWhy not the others: (A) \\(A^T = -A\\). (B) \\(A^2 = \\begin{bmatrix}-4&0\\\\0&-4\\end{bmatrix}\\). (C) \\(|A| = 4 \\ne 0\\). Options (A), (B) and (D) name a true statement as false.\nKey point: For a skew-symmetric matrix, \\(A + A^T = O\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q30",
+      "section": "B1",
+      "topic": "Unit III: Integrals",
+      "sub_topic": "Definite integral of x sin x/(1 + cos² x) on [0, π]",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "\\(\\displaystyle\\int_0^{\\pi}\\dfrac{x\\sin x}{1 + \\cos^2x}\\,dx\\) equals:",
+      "options": [
+        "A) \\(\\dfrac{\\pi^2}{4}\\)",
+        "B) \\(\\dfrac{\\pi}{4}\\)",
+        "C) \\(\\dfrac{\\pi^2}{2}\\)",
+        "D) \\(\\pi\\)"
       ],
       "correct_option": "A",
-      "explanation": "Characteristic equation: (2-μ)² - 1 = 0 → μ² - 4μ + 3 = 0 → (μ-1)(μ-3) = 0. Eigenvalues are 1 and 3."
+      "explanation": "Answer: (A) \\(\\dfrac{\\pi^2}{4}\\)\nGiven: call the integral \\(I\\); replace \\(x\\) by \\(\\pi - x\\)\nFormula: \\(I = \\int_0^{\\pi}\\dfrac{(\\pi - x)\\sin x}{1 + \\cos^2x}dx\\)\nStep 1: Add: \\(2I = \\pi\\int_0^{\\pi}\\dfrac{\\sin x}{1 + \\cos^2x}dx\\)\nStep 2: Put \\(t = \\cos x\\): \\(\\int_{-1}^{1}\\dfrac{dt}{1 + t^2} = \\dfrac{\\pi}{4} + \\dfrac{\\pi}{4} = \\dfrac{\\pi}{2}\\)\nStep 3: \\(2I = \\dfrac{\\pi^2}{2} \\Rightarrow I = \\dfrac{\\pi^2}{4}\\)\nCommon mistake: \\(\\dfrac{\\pi^2}{2}\\) (C) forgets to halve \\(2I\\). \\(\\dfrac{\\pi}{4}\\) (B) drops the factor \\(\\pi\\).\nKey point: The property removes the \\(x\\) in front."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q46",
-      "topic": "3D Geometry",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "The radius of the circle inscribed in the triangle formed by x=0, y=0, and 3x + 4y = 12 is:",
+      "id": "CUET27-MAT-T07-Q31",
+      "section": "B1",
+      "topic": "Unit III: Continuity and Differentiability",
+      "sub_topic": "Derivatives after simplifying first",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "Match List-I with List-II (for \\(x\\) in suitable domains).\n\nList-I\n(A) \\(\\log(\\sec x + \\tan x)\\)\n(B) \\(\\tan^{-1}\\left(\\dfrac{2x}{1 - x^2}\\right)\\), \\(|x| < 1\\)\n(C) \\(e^{2\\log x}\\)\n(D) \\(\\log(\\log x)\\)\n\nList-II\n(I) \\(2x\\)\n(II) \\(\\sec x\\)\n(III) \\(\\dfrac{1}{x\\log x}\\)\n(IV) \\(\\dfrac{2}{1 + x^2}\\)\nChoose the correct answer from the options given below:",
       "options": [
-        "A) 2",
-        "B) 6/5",
-        "C) 1",
-        "D) 3"
-      ],
-      "correct_option": "C",
-      "explanation": "Triangle vertices: (0,0), (4,0), (0,3). Right triangle with legs 3, 4, hypotenuse 5. Inradius r = (a+b-c)/2 = (3+4-5)/2 = 1."
-    },
-    {
-      "id": "CUET_MATH_2026_P7_L7_Q47",
-      "topic": "Probability",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "The number of ways to arrange the letters of 'BANANA' such that all A's are together is:",
-      "options": [
-        "A) 120",
-        "B) 60",
-        "C) 24",
-        "D) 12"
+        "A) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)",
+        "B) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+        "C) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+        "D) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)"
       ],
       "correct_option": "D",
-      "explanation": "Treat all 3 A's as one block. Now we have 4 items: [AAA], B, N, N. Arrangements = 4!/2! = 24/2 = 12."
+      "explanation": "Answer: (D) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)\nStep 1: \\(\\dfrac{\\sec x\\tan x + \\sec^2x}{\\sec x + \\tan x} = \\sec x\\) (II)\nStep 2: \\(\\tan^{-1}\\dfrac{2x}{1 - x^2} = 2\\tan^{-1}x\\), derivative \\(\\dfrac{2}{1 + x^2}\\) (IV)\nStep 3: \\(e^{2\\log x} = x^2\\), derivative \\(2x\\) (I)\nStep 4: \\(\\dfrac{1}{\\log x}\\cdot\\dfrac{1}{x}\\) (III)\nCommon mistake: (A) swaps the first two. (B) swaps (B) and (C). (C) swaps (C) and (D).\nKey point: Simplify the function before differentiating."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q48",
-      "topic": "Integrals",
-      "sub_topic": "",
-      "difficulty": "hard",
-      "question": "The value of ∫₀^(π/2) sin⁴x dx is:",
+      "id": "CUET27-MAT-T07-Q32",
+      "section": "B1",
+      "topic": "Unit I: Relations and Functions",
+      "sub_topic": "The relation \"divides\" on N",
+      "difficulty": "medium",
+      "format": "statements",
+      "question": "On \\(\\mathbb{N}\\), let \\(a\\,R\\,b\\) mean that \\(a\\) divides \\(b\\). Consider the following statements:\n(A) \\(R\\) is reflexive.\n(B) \\(R\\) is transitive.\n(C) \\(R\\) is symmetric.\n(D) \\(R\\) is not an equivalence relation.\nWhich of the statements given above are correct?\nChoose the correct answer from the options given below:",
       "options": [
-        "A) π/2",
-        "B) 3π/8",
-        "C) 3π/16",
-        "D) π/4"
+        "A) (A) and (B) only",
+        "B) (A), (B) and (C) only",
+        "C) (A), (B) and (D) only",
+        "D) (A), (B), (C) and (D)"
       ],
       "correct_option": "C",
-      "explanation": "Using reduction formula: ∫₀^(π/2) sin⁴x dx = (3/4)(1/2)(π/2) = 3π/16."
+      "explanation": "Answer: (C) (A), (B) and (D) only\nWhy: (A) every \\(a\\) divides itself. (B) if \\(a \\mid b\\) and \\(b \\mid c\\), then \\(a \\mid c\\). (D) follows because \\(R\\) is not symmetric.\nWhy not the others: (C) is false: \\(2 \\mid 4\\) but \\(4 \\nmid 2\\). Options (B) and (D) include (C); (A) leaves out (D).\nKey point: One counterexample is enough to break symmetry."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q49",
-      "topic": "Continuity and Differentiability",
-      "sub_topic": "",
+      "id": "CUET27-MAT-T07-Q33",
+      "section": "B1",
+      "topic": "Unit IV: Three-dimensional Geometry",
+      "sub_topic": "Points on a line at a given distance from a point",
       "difficulty": "hard",
-      "question": "If y = tan⁻¹((1-cos x)/sin x), then dy/dx equals:",
+      "format": "numerical",
+      "question": "The points on the line \\(\\dfrac{x - 1}{2} = \\dfrac{y - 2}{2} = \\dfrac{z - 3}{1}\\) at a distance of 6 units from \\((1, 2, 3)\\) are:",
       "options": [
-        "A) -1",
-        "B) 1",
-        "C) 1/2",
-        "D) -1/2"
+        "A) \\((5, 6, 5)\\) and \\((-3, -2, 1)\\)",
+        "B) \\((13, 14, 9)\\) and \\((-11, -10, -3)\\)",
+        "C) \\((3, 4, 4)\\) and \\((-1, 0, 2)\\)",
+        "D) \\((5, 6, 5)\\) only"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) \\((5, 6, 5)\\) and \\((-3, -2, 1)\\)\nGiven: a general point is \\((2t + 1, 2t + 2, t + 3)\\)\nFormula: distance from \\((1, 2, 3)\\) \\(= |t|\\sqrt{4 + 4 + 1} = 3|t|\\)\nStep 1: \\(3|t| = 6 \\Rightarrow t = \\pm 2\\)\nStep 2: \\(t = 2\\): \\((5, 6, 5)\\); \\(t = -2\\): \\((-3, -2, 1)\\)\nCommon mistake: (B) takes \\(t = \\pm 6\\), forgetting the factor 3. (D) forgets the negative value of \\(t\\).\nKey point: The parameter measures distance only after multiplying by the length of the direction vector."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q34",
+      "section": "B1",
+      "topic": "Unit III: Integrals",
+      "sub_topic": "Integration by parts twice: x² eˣ",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "\\(\\displaystyle\\int x^2e^x\\,dx\\) equals:",
+      "options": [
+        "A) \\(e^x(x^2 + 2x + 2) + C\\)",
+        "B) \\(e^x(x^2 - 2x) + C\\)",
+        "C) \\(e^x(x^2 - 2x + 2) + C\\)",
+        "D) \\(x^2e^x - 2e^x + C\\)"
       ],
       "correct_option": "C",
-      "explanation": "(1-cos x)/sin x = tan(x/2). So y = tan⁻¹(tan(x/2)) = x/2 (for appropriate domain). dy/dx = 1/2."
+      "explanation": "Answer: (C) \\(e^x(x^2 - 2x + 2) + C\\)\nGiven: \\(u = x^2\\), \\(dv = e^x\\,dx\\)\nFormula: \\(\\int u\\,dv = uv - \\int v\\,du\\)\nStep 1: \\(x^2e^x - \\int 2xe^x\\,dx\\)\nStep 2: \\(\\int 2xe^x\\,dx = 2(xe^x - e^x)\\)\nStep 3: \\(x^2e^x - 2xe^x + 2e^x = e^x(x^2 - 2x + 2) + C\\)\nCommon mistake: (A) gets the alternating signs wrong. (B) stops after the second step and drops \\(+2e^x\\).\nKey point: Check by differentiating: \\(e^x(x^2 - 2x + 2 + 2x - 2) = x^2e^x\\) ✓."
     },
     {
-      "id": "CUET_MATH_2026_P7_L7_Q50",
-      "topic": "Differential Equations",
-      "sub_topic": "",
+      "id": "CUET27-MAT-T07-Q35",
+      "section": "B1",
+      "topic": "Unit II: Determinants",
+      "sub_topic": "Value of k making a symmetric system inconsistent",
       "difficulty": "hard",
-      "question": "The differential equation of the family of curves y = A e^(3x) + B e^(-2x) is:",
+      "format": "numerical",
+      "question": "The system \\(kx + y + z = 1\\), \\(x + ky + z = 1\\), \\(x + y + kz = 1\\) has no solution when \\(k\\) equals:",
       "options": [
-        "A) y'' - y' + 6y = 0",
-        "B) y'' + y' + 6y = 0",
-        "C) y'' + y' - 6y = 0",
-        "D) y'' - y' - 6y = 0"
+        "A) \\(-2\\)",
+        "B) \\(1\\)",
+        "C) \\(2\\)",
+        "D) \\(0\\)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) \\(-2\\)\nGiven: \\(|A| = \\begin{vmatrix}k&1&1\\\\1&k&1\\\\1&1&k\\end{vmatrix} = k^3 - 3k + 2 = (k - 1)^2(k + 2)\\)\nFormula: \\(|A| = 0\\) at \\(k = 1\\) or \\(k = -2\\); check each\nStep 1: \\(k = 1\\): all three equations are \\(x + y + z = 1\\), so there are infinitely many solutions\nStep 2: \\(k = -2\\): adding the equations gives \\(0 = 3\\), so there is no solution\nCommon mistake: \\(1\\) (B) treats \\(|A| = 0\\) as \"no solution\" without checking.\nKey point: When \\(|A| = 0\\), test for consistency before deciding."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q36",
+      "section": "B1",
+      "topic": "Unit III: Continuity and Differentiability",
+      "sub_topic": "Derivative of tan⁻¹ x at x = 1",
+      "difficulty": "easy",
+      "format": "numerical",
+      "question": "The derivative of \\(\\tan^{-1}x\\) at \\(x = 1\\) is:",
+      "options": [
+        "A) \\(1\\)",
+        "B) \\(\\dfrac{\\pi}{4}\\)",
+        "C) \\(2\\)",
+        "D) \\(\\dfrac{1}{2}\\)"
       ],
       "correct_option": "D",
-      "explanation": "y = Ae^(3x) + Be^(-2x). y' = 3Ae^(3x) - 2Be^(-2x). y'' = 9Ae^(3x) + 4Be^(-2x). Then y'' - y' - 6y = 9Ae^(3x) + 4Be^(-2x) - 3Ae^(3x) + 2Be^(-2x) - 6Ae^(3x) - 6Be^(-2x) = 0."
+      "explanation": "Answer: (D) \\(\\dfrac{1}{2}\\)\nGiven: \\(\\dfrac{d}{dx}\\tan^{-1}x = \\dfrac{1}{1 + x^2}\\)\nStep 1: At \\(x = 1\\): \\(\\dfrac{1}{2}\\)\nCommon mistake: \\(\\dfrac{\\pi}{4}\\) (B) is \\(\\tan^{-1}1\\), the value of the function.\nKey point: Differentiate first, then substitute."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q37",
+      "section": "B1",
+      "topic": "Unit III: Differential Equations",
+      "sub_topic": "Linear equation y′ + 2y = e^(−x) with y(0) = 2",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "The solution of \\(\\dfrac{dy}{dx} + 2y = e^{-x}\\) with \\(y(0) = 2\\) gives \\(y(\\log 2)\\) equal to:",
+      "options": [
+        "A) \\(1\\)",
+        "B) \\(\\dfrac{1}{2}\\)",
+        "C) \\(\\dfrac{5}{4}\\)",
+        "D) \\(\\dfrac{3}{4}\\)"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) \\(\\dfrac{3}{4}\\)\nGiven: I.F. \\(= e^{2x}\\)\nFormula: \\(ye^{2x} = \\int e^{-x}e^{2x}dx = e^x + C\\)\nStep 1: \\(y = e^{-x} + Ce^{-2x}\\); \\(y(0) = 1 + C = 2 \\Rightarrow C = 1\\)\nStep 2: \\(y(\\log 2) = \\dfrac{1}{2} + \\dfrac{1}{4} = \\dfrac{3}{4}\\)\nCommon mistake: \\(\\dfrac{1}{2}\\) (B) drops the \\(Ce^{-2x}\\) term. \\(\\dfrac{5}{4}\\) (C) takes \\(C = 3\\), adding the 1 from \\(e^0\\) instead of subtracting it.\nKey point: \\(e^{-2\\log 2} = \\dfrac{1}{4}\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q38",
+      "section": "B1",
+      "topic": "Unit II: Determinants",
+      "sub_topic": "Cofactor A₂₁ of a 3 × 3 matrix",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "For \\(A = \\begin{bmatrix}2&-3&5\\\\6&0&4\\\\1&5&-7\\end{bmatrix}\\), the cofactor \\(A_{21}\\) is:",
+      "options": [
+        "A) \\(-4\\)",
+        "B) \\(46\\)",
+        "C) \\(4\\)",
+        "D) \\(-46\\)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) \\(4\\)\nGiven: delete row 2 and column 1\nFormula: \\(A_{21} = (-1)^{2+1}M_{21}\\)\nStep 1: \\(M_{21} = \\begin{vmatrix}-3&5\\\\5&-7\\end{vmatrix} = 21 - 25 = -4\\)\nStep 2: \\(A_{21} = -(-4) = 4\\)\nCommon mistake: \\(-4\\) (A) is the minor, without the sign. \\(46\\) (B) adds \\(21 + 25\\).\nKey point: The sign is negative when \\(i + j\\) is odd."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q39",
+      "section": "B1",
+      "topic": "Unit I: Relations and Functions",
+      "sub_topic": "Number of equivalence relations on three elements",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "The number of equivalence relations on \\(\\{1, 2, 3\\}\\) is:",
+      "options": [
+        "A) \\(5\\)",
+        "B) \\(3\\)",
+        "C) \\(4\\)",
+        "D) \\(8\\)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) \\(5\\)\nGiven: each equivalence relation matches a way of splitting the set into classes\nFormula: count the partitions of \\(\\{1, 2, 3\\}\\)\nStep 1: All separate: 1 way; one pair plus a single: 3 ways; all together: 1 way\nStep 2: \\(1 + 3 + 1 = 5\\)\nCommon mistake: \\(3\\) (B) counts only the \"one pair\" splits. \\(4\\) (C) misses the all-together case or the all-separate case.\nKey point: Equivalence relations correspond to partitions."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q40",
+      "section": "B1",
+      "topic": "Unit III: Integrals",
+      "sub_topic": "Definite integral of cos 2x on [0, π/4]",
+      "difficulty": "easy",
+      "format": "numerical",
+      "question": "\\(\\displaystyle\\int_0^{\\pi/4}\\cos 2x\\,dx\\) equals:",
+      "options": [
+        "A) \\(1\\)",
+        "B) \\(\\dfrac{1}{2}\\)",
+        "C) \\(2\\)",
+        "D) \\(0\\)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) \\(\\dfrac{1}{2}\\)\nGiven: \\(\\int\\cos 2x\\,dx = \\dfrac{\\sin 2x}{2}\\)\nFormula: \\(F\\left(\\dfrac{\\pi}{4}\\right) - F(0)\\)\nStep 1: \\(\\dfrac{\\sin(\\pi/2)}{2} - 0 = \\dfrac{1}{2}\\)\nCommon mistake: \\(1\\) (A) forgets to divide by 2.\nKey point: Divide by the coefficient of \\(x\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q41",
+      "section": "B1",
+      "topic": "Unit III: Applications of the Integrals",
+      "sub_topic": "Area between x² = 4y and the line y = 1",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "The area of the region bounded by \\(x^2 = 4y\\) and the line \\(y = 1\\) is:",
+      "options": [
+        "A) \\(\\dfrac{4}{3}\\) sq units",
+        "B) \\(\\dfrac{16}{3}\\) sq units",
+        "C) \\(4\\) sq units",
+        "D) \\(\\dfrac{8}{3}\\) sq units"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) \\(\\dfrac{8}{3}\\) sq units\nGiven: \\(x = \\pm 2\\sqrt{y}\\); the region spans \\(0 \\le y \\le 1\\)\nFormula: Area \\(= 2\\int_0^1 2\\sqrt{y}\\,dy\\) (horizontal strips)\nStep 1: \\(\\int_0^1 2\\sqrt{y}\\,dy = 2 \\cdot \\dfrac{2}{3} = \\dfrac{4}{3}\\)\nStep 2: Double for both sides: \\(\\dfrac{8}{3}\\)\nCommon mistake: \\(\\dfrac{4}{3}\\) (A) takes only one side of the parabola. \\(4\\) (C) is the area of the rectangle \\(4 \\times 1\\).\nKey point: Use symmetry about the \\(y\\)-axis."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q42",
+      "section": "B1",
+      "topic": "Unit I: Inverse Trigonometric Functions",
+      "sub_topic": "Simplifying cos⁻¹(cos 7π/6)",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "\\(\\cos^{-1}\\left(\\cos\\dfrac{7\\pi}{6}\\right)\\) equals:",
+      "options": [
+        "A) \\(\\dfrac{7\\pi}{6}\\)",
+        "B) \\(\\dfrac{5\\pi}{6}\\)",
+        "C) \\(\\dfrac{\\pi}{6}\\)",
+        "D) \\(-\\dfrac{\\pi}{6}\\)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) \\(\\dfrac{5\\pi}{6}\\)\nGiven: \\(\\dfrac{7\\pi}{6}\\) lies outside \\([0, \\pi]\\)\nFormula: \\(\\cos\\dfrac{7\\pi}{6} = -\\dfrac{\\sqrt{3}}{2}\\)\nStep 1: \\(\\cos^{-1}\\left(-\\dfrac{\\sqrt{3}}{2}\\right) = \\pi - \\dfrac{\\pi}{6} = \\dfrac{5\\pi}{6}\\)\nCommon mistake: \\(\\dfrac{7\\pi}{6}\\) (A) cancels \\(\\cos^{-1}\\) and \\(\\cos\\) without checking the branch. \\(\\dfrac{\\pi}{6}\\) (C) drops the minus sign.\nKey point: The answer must lie in \\([0, \\pi]\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q43",
+      "section": "B1",
+      "topic": "Unit VI: Probability",
+      "sub_topic": "Both of two independent events",
+      "difficulty": "easy",
+      "format": "numerical",
+      "question": "\\(A\\) and \\(B\\) are independent with \\(P(A) = 0.3\\) and \\(P(B) = 0.4\\). Then \\(P(A \\cap B)\\) is:",
+      "options": [
+        "A) \\(0.7\\)",
+        "B) \\(0.12\\)",
+        "C) \\(0.58\\)",
+        "D) \\(0.1\\)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) \\(0.12\\)\nGiven: independent events\nFormula: \\(P(A \\cap B) = P(A)P(B)\\)\nStep 1: \\(0.3 \\times 0.4 = 0.12\\)\nCommon mistake: \\(0.7\\) (A) adds the probabilities. \\(0.58\\) (C) is \\(P(A \\cup B)\\).\nKey point: \"And\" for independent events means multiply."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q44",
+      "section": "B1",
+      "topic": "Unit III: Differential Equations",
+      "sub_topic": "Integrating factors of four linear equations",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "Match List-I with List-II.\n\nList-I (Equation)\n(A) \\(\\dfrac{dy}{dx} + \\dfrac{y}{x} = x^2\\)\n(B) \\(\\dfrac{dy}{dx} - 2y = 1\\)\n(C) \\(\\dfrac{dy}{dx} + y\\cot x = 1\\)\n(D) \\(x\\dfrac{dy}{dx} - y = x^2\\)\n\nList-II (Integrating factor)\n(I) \\(\\dfrac{1}{x}\\)\n(II) \\(\\sin x\\)\n(III) \\(e^{-2x}\\)\n(IV) \\(x\\)\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+        "B) (A)-(I), (B)-(III), (C)-(II), (D)-(IV)",
+        "C) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+        "D) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)\nStep 1: \\(P = \\dfrac{1}{x}\\): \\(e^{\\log x} = x\\) (IV)\nStep 2: \\(P = -2\\): \\(e^{-2x}\\) (III)\nStep 3: \\(P = \\cot x\\): \\(e^{\\log\\sin x} = \\sin x\\) (II)\nStep 4: Divide by \\(x\\): \\(P = -\\dfrac{1}{x}\\), so \\(e^{-\\log x} = \\dfrac{1}{x}\\) (I)\nCommon mistake: (B) swaps \\(x\\) and \\(\\dfrac{1}{x}\\). (C) swaps \\(e^{-2x}\\) and \\(\\sin x\\). (D) swaps \\(\\sin x\\) and \\(\\dfrac{1}{x}\\).\nKey point: Divide by the coefficient of \\(\\dfrac{dy}{dx}\\) before reading \\(P\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q45",
+      "section": "B1",
+      "topic": "Unit IV: Three-dimensional Geometry",
+      "sub_topic": "Angle between lines with ratios 1, 1, 0 and 1, 0, 1",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "The angle between two lines with direction ratios \\(1, 1, 0\\) and \\(1, 0, 1\\) is:",
+      "options": [
+        "A) \\(\\dfrac{\\pi}{6}\\)",
+        "B) \\(\\dfrac{\\pi}{3}\\)",
+        "C) \\(\\dfrac{\\pi}{4}\\)",
+        "D) \\(\\dfrac{\\pi}{2}\\)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) \\(\\dfrac{\\pi}{3}\\)\nGiven: \\(\\vec{b}_1 = (1, 1, 0)\\), \\(\\vec{b}_2 = (1, 0, 1)\\)\nFormula: \\(\\cos\\theta = \\dfrac{|\\vec{b}_1\\cdot\\vec{b}_2|}{|\\vec{b}_1||\\vec{b}_2|}\\)\nStep 1: \\(\\dfrac{1}{\\sqrt{2}\\sqrt{2}} = \\dfrac{1}{2}\\)\nStep 2: \\(\\theta = \\dfrac{\\pi}{3}\\)\nCommon mistake: \\(\\dfrac{\\pi}{4}\\) (C) uses \\(\\cos\\theta = \\dfrac{1}{\\sqrt{2}}\\), dividing by only one magnitude.\nKey point: Divide by both magnitudes."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q46",
+      "section": "B1",
+      "topic": "Unit II: Determinants",
+      "sub_topic": "Determinant with rows 1, x, x²",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "The value of \\(\\begin{vmatrix}1&1&1\\\\1&2&4\\\\1&3&9\\end{vmatrix}\\) is:",
+      "options": [
+        "A) \\(-2\\)",
+        "B) \\(2\\)",
+        "C) \\(0\\)",
+        "D) \\(6\\)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) \\(2\\)\nGiven: subtract row 1 from rows 2 and 3\nFormula: \\(R_2 \\to R_2 - R_1\\), \\(R_3 \\to R_3 - R_1\\)\nStep 1: \\(\\begin{vmatrix}1&1&1\\\\0&1&3\\\\0&2&8\\end{vmatrix}\\)\nStep 2: Expand along column 1: \\(1(8 - 6) = 2\\)\nCommon mistake: \\(-2\\) (A) gets the sign of the \\(2 \\times 2\\) minor wrong. \\(6\\) (D) adds the minors.\nKey point: Row operations create zeros and make the expansion short."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q47",
+      "section": "B1",
+      "topic": "Unit III: Continuity and Differentiability",
+      "sub_topic": "Derivative of x to the power sin x at π/2",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "If \\(y = x^{\\sin x}\\) (\\(x > 0\\)), then \\(\\dfrac{dy}{dx}\\) at \\(x = \\dfrac{\\pi}{2}\\) is:",
+      "options": [
+        "A) \\(\\dfrac{\\pi}{2}\\)",
+        "B) \\(0\\)",
+        "C) \\(1\\)",
+        "D) \\(\\dfrac{2}{\\pi}\\)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) \\(1\\)\nGiven: \\(\\log y = \\sin x\\log x\\)\nFormula: \\(\\dfrac{1}{y}\\dfrac{dy}{dx} = \\cos x\\log x + \\dfrac{\\sin x}{x}\\)\nStep 1: At \\(x = \\dfrac{\\pi}{2}\\): \\(y = \\dfrac{\\pi}{2}\\); the bracket is \\(0 + \\dfrac{2}{\\pi}\\)\nStep 2: \\(\\dfrac{dy}{dx} = \\dfrac{\\pi}{2}\\cdot\\dfrac{2}{\\pi} = 1\\)\nCommon mistake: \\(\\dfrac{2}{\\pi}\\) (D) stops at \\(\\dfrac{1}{y}\\dfrac{dy}{dx}\\). \\(\\dfrac{\\pi}{2}\\) (A) is \\(y\\) itself.\nKey point: Multiply back by \\(y\\) after logarithmic differentiation."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q48",
+      "section": "B1",
+      "topic": "Unit IV: Vectors",
+      "sub_topic": "Area of a parallelogram from adjacent sides",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "The area of the parallelogram with adjacent sides \\(\\hat{i} - \\hat{j} + 3\\hat{k}\\) and \\(2\\hat{i} - 7\\hat{j} + \\hat{k}\\) is:",
+      "options": [
+        "A) \\(\\dfrac{15\\sqrt{2}}{2}\\)",
+        "B) \\(30\\)",
+        "C) \\(15\\sqrt{2}\\)",
+        "D) \\(5\\sqrt{2}\\)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) \\(15\\sqrt{2}\\)\nGiven: \\(\\vec{a} = (1, -1, 3)\\), \\(\\vec{b} = (2, -7, 1)\\)\nFormula: Area \\(= |\\vec{a} \\times \\vec{b}|\\)\nStep 1: \\(\\vec{a} \\times \\vec{b} = (-1 + 21)\\hat{i} - (1 - 6)\\hat{j} + (-7 + 2)\\hat{k} = 20\\hat{i} + 5\\hat{j} - 5\\hat{k}\\)\nStep 2: \\(\\sqrt{400 + 25 + 25} = \\sqrt{450} = 15\\sqrt{2}\\)\nCommon mistake: \\(\\dfrac{15\\sqrt{2}}{2}\\) (A) halves, as for a triangle.\nKey point: Parallelogram: full cross product; triangle: half of it."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q49",
+      "section": "B1",
+      "topic": "Unit VI: Probability",
+      "sub_topic": "Bayes' theorem: a report of a six",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "A man speaks the truth 3 times out of 4. He throws a die and reports that it is a six. The probability that it is actually a six is:",
+      "options": [
+        "A) \\(\\dfrac{3}{8}\\)",
+        "B) \\(\\dfrac{1}{8}\\)",
+        "C) \\(\\dfrac{3}{4}\\)",
+        "D) \\(\\dfrac{5}{8}\\)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) \\(\\dfrac{3}{8}\\)\nGiven: \\(P(\\text{six}) = \\dfrac{1}{6}\\), \\(P(\\text{not six}) = \\dfrac{5}{6}\\); \\(P(\\text{report} \\mid \\text{six}) = \\dfrac{3}{4}\\), \\(P(\\text{report} \\mid \\text{not six}) = \\dfrac{1}{4}\\)\nFormula: Bayes' theorem\nStep 1: Numerator \\(= \\dfrac{1}{6}\\cdot\\dfrac{3}{4} = \\dfrac{3}{24}\\)\nStep 2: Denominator \\(= \\dfrac{3}{24} + \\dfrac{5}{6}\\cdot\\dfrac{1}{4} = \\dfrac{3}{24} + \\dfrac{5}{24} = \\dfrac{8}{24}\\)\nStep 3: \\(P = \\dfrac{3}{8}\\)\nCommon mistake: \\(\\dfrac{3}{4}\\) (C) is the chance he tells the truth, not the chance it is a six. \\(\\dfrac{5}{8}\\) (D) is the chance it is not a six.\nKey point: A rare event stays fairly unlikely even after a fairly reliable report."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q50",
+      "section": "B1",
+      "topic": "Unit I: Relations and Functions",
+      "sub_topic": "Swapping odd and even neighbours on N",
+      "difficulty": "medium",
+      "format": "direct",
+      "question": "\\(f: \\mathbb{N} \\to \\mathbb{N}\\) is given by \\(f(n) = n + 1\\) if \\(n\\) is odd and \\(f(n) = n - 1\\) if \\(n\\) is even. Then \\(f\\) is:",
+      "options": [
+        "A) one-one but not onto",
+        "B) onto but not one-one",
+        "C) neither one-one nor onto",
+        "D) one-one and onto"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) one-one and onto\nWhy: \\(f\\) swaps 1 and 2, 3 and 4, and so on. Two different inputs never give the same output, and every natural number is the image of its partner.\nWhy not the others: (A), (B) and (C) each deny one of the two properties, but both hold.\nKey point: A function that pairs elements and swaps them is a bijection."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q51",
+      "section": "B2",
+      "topic": "Unit VIII: Linear Programming",
+      "sub_topic": "Dealer's profit from fans and sewing machines",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "A dealer has ₹5,760 to buy fans at ₹360 each and sewing machines at ₹240 each, and space for at most 20 items. The profit is ₹22 on a fan and ₹18 on a sewing machine. The maximum profit is:",
+      "options": [
+        "A) ₹360",
+        "B) ₹392",
+        "C) ₹352",
+        "D) ₹440"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) ₹392\nGiven: \\(360x + 240y \\le 5760 \\Rightarrow 3x + 2y \\le 48\\); \\(x + y \\le 20\\); \\(x, y \\ge 0\\); \\(Z = 22x + 18y\\)\nFormula: corners \\((0, 0)\\), \\((16, 0)\\), \\((0, 20)\\) and the intersection\nStep 1: \\(3x + 2y = 48\\), \\(x + y = 20\\) give \\(x = 8\\), \\(y = 12\\)\nStep 2: \\(Z(16, 0) = 352\\), \\(Z(0, 20) = 360\\), \\(Z(8, 12) = 176 + 216 = 392\\)\nCommon mistake: ₹360 (A) buys only sewing machines. ₹440 (D) uses \\((20, 0)\\), which breaks the budget.\nKey point: Write each condition as an inequality before finding corners."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q52",
+      "section": "B2",
+      "topic": "Unit I: Numbers, Quantification and Numerical Applications",
+      "sub_topic": "Stream speed from a round trip",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "A boat whose speed in still water is 10 km/h goes 24 km upstream and comes back in 5 hours. The speed of the stream is:",
+      "options": [
+        "A) \\(4\\) km/h",
+        "B) \\(3\\) km/h",
+        "C) \\(2\\) km/h",
+        "D) \\(1\\) km/h"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) \\(2\\) km/h\nGiven: upstream speed \\(10 - s\\), downstream speed \\(10 + s\\)\nFormula: \\(\\dfrac{24}{10 - s} + \\dfrac{24}{10 + s} = 5\\)\nStep 1: \\(\\dfrac{24(20)}{100 - s^2} = 5 \\Rightarrow 100 - s^2 = 96\\)\nStep 2: \\(s = 2\\) km/h\nCommon mistake: \\(4\\) km/h (A) stops at \\(s^2 = 4\\).\nKey point: Add the two times, then clear the denominators."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q53",
+      "section": "B2",
+      "topic": "Unit V: Time-based Data",
+      "sub_topic": "Values from one trend equation",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "A trend line is \\(y = 50 + 4x\\), with origin at 2020 and \\(x\\) in years. Match List-I with List-II.\n\nList-I\n(A) Trend value for 2020\n(B) Trend value for 2023\n(C) Yearly increase in trend value\n(D) Trend value for 2018\n\nList-II\n(I) \\(62\\)\n(II) \\(50\\)\n(III) \\(42\\)\n(IV) \\(4\\)\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+        "B) (A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+        "C) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+        "D) (A)-(II), (B)-(I), (C)-(III), (D)-(IV)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)\nStep 1: 2020 is \\(x = 0\\): \\(50\\) (II)\nStep 2: 2023 is \\(x = 3\\): \\(62\\) (I)\nStep 3: The slope: \\(4\\) per year (IV)\nStep 4: 2018 is \\(x = -2\\): \\(42\\) (III)\nCommon mistake: (B) swaps the 2020 and 2023 values. (C) swaps the 2023 value and the slope. (D) swaps the slope and the 2018 value.\nKey point: Years before the origin have negative \\(x\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q54",
+      "section": "B2",
+      "topic": "Unit V: Time-based Data",
+      "sub_topic": "Trend line for four years, then a forecast",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "Values for 2020–2023 were 10, 14, 15, 21. Coding the years as \\(x = -3, -1, 1, 3\\) (unit: half a year), the least squares trend estimate for 2024 is:",
+      "options": [
+        "A) \\(25.2\\)",
+        "B) \\(21.8\\)",
+        "C) \\(23.5\\)",
+        "D) \\(22\\)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) \\(23.5\\)\nGiven: \\(\\sum y = 60\\), \\(\\sum xy = -30 - 14 + 15 + 63 = 34\\), \\(\\sum x^2 = 20\\)\nFormula: \\(a = \\dfrac{\\sum y}{n}\\), \\(b = \\dfrac{\\sum xy}{\\sum x^2}\\)\nStep 1: \\(a = 15\\), \\(b = 1.7\\), so \\(y = 15 + 1.7x\\)\nStep 2: 2024 is \\(x = 5\\): \\(15 + 8.5 = 23.5\\)\nCommon mistake: \\(25.2\\) (A) uses \\(x = 6\\), forgetting that the codes go up in steps of 2. \\(21.8\\) (B) uses \\(x = 4\\).\nKey point: With an even number of years, the codes are odd numbers."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q55",
+      "section": "B2",
+      "topic": "Unit IV: Probability Distributions",
+      "sub_topic": "Exactly two sixes in three throws",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "A die is thrown three times. The probability of exactly two sixes is:",
+      "options": [
+        "A) \\(\\dfrac{1}{36}\\)",
+        "B) \\(\\dfrac{25}{216}\\)",
+        "C) \\(\\dfrac{1}{72}\\)",
+        "D) \\(\\dfrac{5}{72}\\)"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) \\(\\dfrac{5}{72}\\)\nGiven: \\(n = 3\\), \\(p = \\dfrac{1}{6}\\), \\(q = \\dfrac{5}{6}\\)\nFormula: \\(\\binom{3}{2}p^2q\\)\nStep 1: \\(3 \\times \\dfrac{1}{36} \\times \\dfrac{5}{6} = \\dfrac{15}{216} = \\dfrac{5}{72}\\)\nCommon mistake: \\(\\dfrac{1}{36}\\) (A) leaves out \\(q\\) and \\(\\binom{3}{2}\\). \\(\\dfrac{25}{216}\\) (B) swaps \\(p\\) and \\(q\\).\nKey point: Count the arrangements with \\(\\binom{n}{r}\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q56",
+      "section": "B2",
+      "topic": "Unit II: Algebra",
+      "sub_topic": "Determinant of the adjoint of an inverse",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "\\(A\\) is a square matrix of order 3 with \\(|A| = 2\\). Then \\(|\\text{adj}(A^{-1})|\\) is:",
+      "options": [
+        "A) \\(4\\)",
+        "B) \\(\\dfrac{1}{4}\\)",
+        "C) \\(\\dfrac{1}{2}\\)",
+        "D) \\(\\dfrac{1}{8}\\)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) \\(\\dfrac{1}{4}\\)\nGiven: \\(|A^{-1}| = \\dfrac{1}{2}\\)\nFormula: \\(|\\text{adj}\\,B| = |B|^{n-1} = |B|^2\\) for order 3\nStep 1: \\(|\\text{adj}(A^{-1})| = \\left(\\dfrac{1}{2}\\right)^2 = \\dfrac{1}{4}\\)\nCommon mistake: \\(4\\) (A) is \\(|\\text{adj}\\,A|\\). \\(\\dfrac{1}{8}\\) (D) uses the power 3.\nKey point: Apply \\(|\\text{adj}\\,B| = |B|^{n-1}\\) to \\(B = A^{-1}\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q57",
+      "section": "B2",
+      "topic": "Unit III: Calculus",
+      "sub_topic": "Definite integral of x e^(2x) on [0, 1]",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "\\(\\displaystyle\\int_0^1 xe^{2x}\\,dx\\) equals:",
+      "options": [
+        "A) \\(\\dfrac{e^2 + 1}{4}\\)",
+        "B) \\(\\dfrac{e^2 - 1}{4}\\)",
+        "C) \\(\\dfrac{e^2}{4}\\)",
+        "D) \\(\\dfrac{e^2 + 1}{2}\\)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) \\(\\dfrac{e^2 + 1}{4}\\)\nGiven: \\(u = x\\), \\(dv = e^{2x}dx\\), \\(v = \\dfrac{e^{2x}}{2}\\)\nFormula: \\(\\left[\\dfrac{xe^{2x}}{2}\\right]_0^1 - \\int_0^1\\dfrac{e^{2x}}{2}dx\\)\nStep 1: First part \\(= \\dfrac{e^2}{2}\\)\nStep 2: Second part \\(= \\left[\\dfrac{e^{2x}}{4}\\right]_0^1 = \\dfrac{e^2 - 1}{4}\\)\nStep 3: \\(\\dfrac{e^2}{2} - \\dfrac{e^2 - 1}{4} = \\dfrac{e^2 + 1}{4}\\)\nCommon mistake: \\(\\dfrac{e^2 - 1}{4}\\) (B) is the second part only. \\(\\dfrac{e^2}{4}\\) (C) forgets the lower limit, where \\(e^0 = 1\\).\nKey point: Keep track of \\(e^0 = 1\\) at the lower limit."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q58",
+      "section": "B2",
+      "topic": "Unit IV: Probability Distributions",
+      "sub_topic": "Probability more than two SDs above the mean",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "\\(X\\) is normal with mean 60 and standard deviation 5. Given \\(P(0 < Z < 2) = 0.4772\\), \\(P(X > 70)\\) is:",
+      "options": [
+        "A) \\(0.0228\\)",
+        "B) \\(0.4772\\)",
+        "C) \\(0.9772\\)",
+        "D) \\(0.5228\\)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) \\(0.0228\\)\nGiven: \\(Z = \\dfrac{70 - 60}{5} = 2\\)\nFormula: \\(P(Z > 2) = 0.5 - P(0 < Z < 2)\\)\nStep 1: \\(0.5 - 0.4772 = 0.0228\\)\nCommon mistake: \\(0.4772\\) (B) is the area between the mean and \\(Z = 2\\). \\(0.9772\\) (C) is \\(P(Z < 2)\\).\nKey point: Each half of the normal curve has area 0.5."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q59",
+      "section": "B2",
+      "topic": "Unit IV: Probability Distributions",
+      "sub_topic": "Expected number of heads in two tosses",
+      "difficulty": "easy",
+      "format": "numerical",
+      "question": "A fair coin is tossed twice. The expected number of heads is:",
+      "options": [
+        "A) \\(2\\)",
+        "B) \\(0.5\\)",
+        "C) \\(1\\)",
+        "D) \\(1.5\\)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) \\(1\\)\nGiven: \\(X\\) is binomial with \\(n = 2\\), \\(p = \\dfrac{1}{2}\\)\nFormula: \\(E(X) = np\\)\nStep 1: \\(2 \\times \\dfrac{1}{2} = 1\\)\nCommon mistake: \\(0.5\\) (B) is the chance of a head on one toss.\nKey point: Expected count = number of trials × chance of success."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q60",
+      "section": "B2",
+      "topic": "Unit I: Numbers, Quantification and Numerical Applications",
+      "sub_topic": "Head starts in a 200 m race",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "In a 200 m race, A can give B a start of 20 m and C a start of 38 m. In a 200 m race, B can give C a start of:",
+      "options": [
+        "A) \\(18\\) m",
+        "B) \\(20\\) m",
+        "C) \\(22\\) m",
+        "D) \\(19\\) m"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) \\(20\\) m\nGiven: while A runs 200 m, B runs 180 m and C runs 162 m\nFormula: B : C \\(= 180 : 162 = 10 : 9\\)\nStep 1: While B runs 200 m, C runs \\(200 \\times \\dfrac{9}{10} = 180\\) m\nStep 2: B gives C a start of 20 m\nCommon mistake: \\(18\\) m (A) subtracts the starts, \\(38 - 20\\), which ignores the different speeds.\nKey point: Starts compare distances run in the same time; use ratios, not differences."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q61",
+      "section": "B2",
+      "topic": "Unit VI: Inferential Statistics",
+      "sub_topic": "t-statistic for a sample of 36",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "A sample of 36 has mean 101.5 and standard deviation 6. To test \\(H_0: \\mu = 100\\), the t-statistic is:",
+      "options": [
+        "A) \\(1.5\\)",
+        "B) \\(9\\)",
+        "C) \\(0.25\\)",
+        "D) \\(3\\)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) \\(1.5\\)\nGiven: \\(\\bar{x} = 101.5\\), \\(s = 6\\), \\(n = 36\\)\nFormula: \\(t = \\dfrac{\\bar{x} - \\mu}{s/\\sqrt{n}}\\)\nStep 1: \\(\\dfrac{s}{\\sqrt{n}} = \\dfrac{6}{6} = 1\\)\nStep 2: \\(t = \\dfrac{1.5}{1} = 1.5\\)\nCommon mistake: \\(0.25\\) (C) divides by \\(s\\) instead of \\(s/\\sqrt{n}\\). \\(9\\) (B) multiplies by \\(\\sqrt{n}\\) twice.\nKey point: Divide by the standard error, not by \\(s\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q62",
+      "section": "B2",
+      "topic": "Unit III: Calculus",
+      "sub_topic": "Derivative of x/(1 + x)",
+      "difficulty": "easy",
+      "format": "numerical",
+      "question": "\\(\\dfrac{d}{dx}\\left(\\dfrac{x}{1 + x}\\right)\\) equals:",
+      "options": [
+        "A) \\(\\dfrac{1}{1 + x}\\)",
+        "B) \\(\\dfrac{1}{(1 + x)^2}\\)",
+        "C) \\(\\dfrac{-1}{(1 + x)^2}\\)",
+        "D) \\(\\dfrac{2x + 1}{(1 + x)^2}\\)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) \\(\\dfrac{1}{(1 + x)^2}\\)\nGiven: quotient rule\nFormula: \\(\\dfrac{(1 + x)(1) - x(1)}{(1 + x)^2}\\)\nStep 1: \\(\\dfrac{1}{(1 + x)^2}\\)\nCommon mistake: (C) subtracts in the wrong order. (D) adds the two terms.\nKey point: Quotient rule: (bottom × top′ − top × bottom′) / bottom²."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q63",
+      "section": "B2",
+      "topic": "Unit II: Algebra",
+      "sub_topic": "Price of fruit from two bills",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "One customer pays ₹260 for 2 kg of apples and 3 kg of bananas; another pays ₹250 for 3 kg of apples and 1 kg of bananas. Using matrices, the price of apples per kg is:",
+      "options": [
+        "A) ₹70",
+        "B) ₹40",
+        "C) ₹80",
+        "D) ₹60"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) ₹70\nGiven: \\(2a + 3b = 260\\), \\(3a + b = 250\\)\nFormula: \\(X = A^{-1}B\\) with \\(A = \\begin{bmatrix}2&3\\\\3&1\\end{bmatrix}\\), \\(|A| = -7\\)\nStep 1: \\(a = \\dfrac{1}{-7}(1 \\times 260 - 3 \\times 250) = \\dfrac{-490}{-7} = 70\\)\nStep 2: \\(b = 250 - 210 = 40\\); check \\(140 + 120 = 260\\) ✓\nCommon mistake: ₹40 (B) is the price of bananas.\nKey point: Check the answer in both equations."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q64",
+      "section": "B2",
+      "topic": "Unit IV: Probability Distributions",
+      "sub_topic": "A binomial distribution — which claims fail",
+      "difficulty": "medium",
+      "format": "statements",
+      "question": "\\(X\\) is binomial with \\(n = 10\\) and \\(p = 0.4\\). Consider the following statements:\n(A) The mean is 4.\n(B) The variance is 2.4.\n(C) \\(P(X = 0) = (0.6)^{10}\\).\n(D) The standard deviation is 2.4.\nWhich of the statements given above is/are NOT correct?\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A) only",
+        "B) (B) and (D) only",
+        "C) (C) only",
+        "D) (D) only"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) (D) only\nWhy: Only (D) is false: the standard deviation is \\(\\sqrt{2.4} \\approx 1.55\\).\nWhy not the others: (A) \\(np = 4\\). (B) \\(npq = 10(0.4)(0.6) = 2.4\\). (C) all ten are failures. Options (A), (B) and (C) name a true statement as false.\nKey point: Standard deviation is the square root of the variance."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q65",
+      "section": "B2",
+      "topic": "Unit VI: Inferential Statistics",
+      "sub_topic": "t-statistic from five observations",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "A sample gives 6, 8, 10, 12, 14. To test \\(H_0: \\mu = 8\\), the t-statistic (with \\(s\\) using divisor \\(n - 1\\)) is about:",
+      "options": [
+        "A) \\(1.58\\)",
+        "B) \\(1.41\\)",
+        "C) \\(0.63\\)",
+        "D) \\(2\\)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) \\(1.41\\)\nGiven: \\(n = 5\\), \\(\\bar{x} = 10\\)\nFormula: \\(s^2 = \\dfrac{\\sum(x - \\bar{x})^2}{n - 1}\\), \\(t = \\dfrac{\\bar{x} - \\mu}{s/\\sqrt{n}}\\)\nStep 1: Deviations \\(-4, -2, 0, 2, 4\\); squares add to 40; \\(s^2 = 10\\), \\(s \\approx 3.162\\)\nStep 2: \\(\\dfrac{s}{\\sqrt{5}} = \\sqrt{2} \\approx 1.414\\)\nStep 3: \\(t = \\dfrac{2}{1.414} \\approx 1.41\\)\nCommon mistake: \\(1.58\\) (A) uses divisor \\(n\\) (\\(s^2 = 8\\)). \\(0.63\\) (C) divides by \\(s\\). \\(2\\) (D) is \\(\\bar{x} - \\mu\\).\nKey point: Compute the mean, then \\(s\\), then the standard error."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q66",
+      "section": "B2",
+      "topic": "Unit VIII: Linear Programming",
+      "sub_topic": "A bounded LPP — which claims fail",
+      "difficulty": "medium",
+      "format": "statements",
+      "question": "For maximising \\(Z = 3x + 2y\\) subject to \\(x + y \\le 4\\), \\(x \\le 3\\), \\(x, y \\ge 0\\), consider the following statements:\n(A) The feasible region is bounded.\n(B) \\((3, 1)\\) is a corner point.\n(C) The maximum value of \\(Z\\) is 11.\n(D) The minimum value of \\(Z\\) on the region is 8.\nWhich of the statements given above is/are NOT correct?\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A) only",
+        "B) (B) and (D) only",
+        "C) (C) only",
+        "D) (D) only"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) (D) only\nWhy: Corners \\((0, 0)\\), \\((3, 0)\\), \\((3, 1)\\), \\((0, 4)\\) give \\(Z = 0, 9, 11, 8\\). Only (D) is false: the minimum is 0, at the origin.\nWhy not the others: (A) the region is a closed quadrilateral. (B) it is where \\(x = 3\\) meets \\(x + y = 4\\). (C) 11 is the largest corner value. Options (A), (B) and (C) name a true statement as false.\nKey point: Include the origin when it is a corner."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q67",
+      "section": "B2",
+      "topic": "Unit III: Calculus",
+      "sub_topic": "Costs from one quadratic cost function",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "For \\(C(x) = 0.5x^2 + 20x + 800\\), match List-I with List-II.\n\nList-I\n(A) Fixed cost\n(B) Marginal cost at \\(x = 10\\)\n(C) Average cost at \\(x = 40\\)\n(D) Output at which average cost is least\n\nList-II\n(I) \\(40\\)\n(II) \\(60\\)\n(III) \\(800\\)\n(IV) \\(30\\)\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+        "B) (A)-(III), (B)-(II), (C)-(IV), (D)-(I)",
+        "C) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+        "D) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)\nStep 1: \\(C(0) = 800\\) (III)\nStep 2: \\(MC = x + 20\\); at 10: \\(30\\) (IV)\nStep 3: \\(AC = 0.5x + 20 + \\dfrac{800}{x}\\); at 40: \\(20 + 20 + 20 = 60\\) (II)\nStep 4: \\(\\dfrac{d}{dx}AC = 0.5 - \\dfrac{800}{x^2} = 0 \\Rightarrow x = 40\\) (I)\nCommon mistake: (A) swaps fixed cost and MC. (B) swaps MC and AC. (D) swaps the least-cost output and the AC value.\nKey point: Average cost is total cost divided by output."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q68",
+      "section": "B2",
+      "topic": "Unit VII: Financial Mathematics",
+      "sub_topic": "Price of a three-year bond when yield exceeds coupon",
+      "difficulty": "hard",
+      "format": "numerical",
+      "question": "A bond of face value ₹1,000 pays an 8% coupon annually and is redeemed at par after 3 years. If the market yield is 10%, its price is about:",
+      "options": [
+        "A) ₹950.26",
+        "B) ₹1,000",
+        "C) ₹1,050.25",
+        "D) ₹940.00"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) ₹950.26\nGiven: coupons ₹80 each year, ₹1,000 returned at the end of year 3\nFormula: price = present value of all cash flows at 10%\nStep 1: \\(\\dfrac{80}{1.1} + \\dfrac{80}{1.21} + \\dfrac{1{,}080}{1.331} \\approx 72.73 + 66.12 + 811.42\\)\nStep 2: Price \\(\\approx 950.26\\)\nCommon mistake: ₹1,000 (B) ignores the gap between the coupon and the yield. ₹1,050.25 (C) would be the price if the yield were below the coupon rate.\nKey point: Yield above coupon → bond sells at a discount."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q69",
+      "section": "B2",
+      "topic": "Unit I: Numbers, Quantification and Numerical Applications",
+      "sub_topic": "Pipe closed partway through filling",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "Pipes A and B fill a tank in 12 hours and 15 hours. Both are opened together, and A is closed after 4 hours. B alone fills the rest in:",
+      "options": [
+        "A) \\(6\\) hours",
+        "B) \\(9\\) hours",
+        "C) \\(5\\) hours",
+        "D) \\(8\\) hours"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) \\(6\\) hours\nGiven: together they fill \\(\\dfrac{1}{12} + \\dfrac{1}{15} = \\dfrac{9}{60} = \\dfrac{3}{20}\\) per hour\nFormula: work done = rate × time\nStep 1: In 4 hours: \\(\\dfrac{12}{20} = \\dfrac{3}{5}\\) of the tank\nStep 2: Remaining \\(\\dfrac{2}{5}\\) at \\(\\dfrac{1}{15}\\) per hour: \\(\\dfrac{2}{5} \\times 15 = 6\\) hours\nCommon mistake: \\(9\\) hours (B) uses \\(\\dfrac{3}{5}\\) as the remaining part. \\(8\\) hours (D) assumes A did all the work in the first 4 hours.\nKey point: Work out the fraction left before finding the time."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q70",
+      "section": "B2",
+      "topic": "Unit II: Algebra",
+      "sub_topic": "Determinant of 2A for a 2 × 2 matrix",
+      "difficulty": "easy",
+      "format": "numerical",
+      "question": "\\(A\\) is a square matrix of order 2 with \\(|A| = 3\\). Then \\(|2A|\\) is:",
+      "options": [
+        "A) \\(6\\)",
+        "B) \\(24\\)",
+        "C) \\(9\\)",
+        "D) \\(12\\)"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) \\(12\\)\nGiven: \\(n = 2\\), \\(k = 2\\)\nFormula: \\(|kA| = k^n|A|\\)\nStep 1: \\(2^2 \\times 3 = 12\\)\nCommon mistake: \\(6\\) (A) multiplies by 2 only once. \\(24\\) (B) uses \\(k^3\\).\nKey point: The power of \\(k\\) is the order of the matrix."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q71",
+      "section": "B2",
+      "topic": "Unit I: Numbers, Quantification and Numerical Applications",
+      "sub_topic": "Value of 57 mod 8",
+      "difficulty": "easy",
+      "format": "numerical",
+      "question": "The value of \\(57 \\bmod 8\\) is:",
+      "options": [
+        "A) \\(7\\)",
+        "B) \\(3\\)",
+        "C) \\(5\\)",
+        "D) \\(1\\)"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) \\(1\\)\nGiven: \\(57 = 8 \\times 7 + 1\\)\nFormula: \\(a \\bmod n\\) is the remainder on division by \\(n\\)\nStep 1: Remainder \\(= 1\\)\nCommon mistake: \\(7\\) (A) gives the quotient.\nKey point: The remainder lies between 0 and \\(n - 1\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q72",
+      "section": "B2",
+      "topic": "Unit VII: Financial Mathematics",
+      "sub_topic": "Four values in financial mathematics",
+      "difficulty": "medium",
+      "format": "match-list",
+      "question": "Match List-I with List-II.\n\nList-I\n(A) Present value of a perpetuity of ₹600 a year at 8%\n(B) Present value of ₹11,000 due in one year at 10%\n(C) Effective annual rate for 10% compounded half-yearly\n(D) CAGR when ₹10,000 grows to ₹12,100 in 2 years\n\nList-II\n(I) ₹10,000\n(II) \\(10.25\\%\\)\n(III) \\(10\\%\\)\n(IV) ₹7,500\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A)-(I), (B)-(IV), (C)-(II), (D)-(III)",
+        "B) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)",
+        "C) (A)-(IV), (B)-(I), (C)-(II), (D)-(III)",
+        "D) (A)-(IV), (B)-(I), (C)-(III), (D)-(II)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) (A)-(IV), (B)-(I), (C)-(II), (D)-(III)\nStep 1: \\(\\dfrac{600}{0.08} = 7{,}500\\) (IV)\nStep 2: \\(\\dfrac{11{,}000}{1.1} = 10{,}000\\) (I)\nStep 3: \\((1.05)^2 - 1 = 0.1025\\) (II)\nStep 4: \\(\\left(\\dfrac{12{,}100}{10{,}000}\\right)^{1/2} - 1 = 1.1 - 1 = 10\\%\\) (III)\nCommon mistake: (A) swaps the two present values. (B) swaps a present value and the effective rate. (D) swaps the effective rate and the CAGR.\nKey point: Compounding more often makes the effective rate exceed the nominal rate."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q73",
+      "section": "B2",
+      "topic": "Unit VII: Financial Mathematics",
+      "sub_topic": "Straight-line depreciation with scrap value",
+      "difficulty": "easy",
+      "format": "numerical",
+      "question": "A machine costs ₹80,000, has a scrap value of ₹8,000 and a life of 6 years. The annual depreciation by the straight-line method is:",
+      "options": [
+        "A) ₹13,333.33",
+        "B) ₹14,400",
+        "C) ₹12,000",
+        "D) ₹1,333.33"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) ₹12,000\nGiven: depreciable amount \\(= 80{,}000 - 8{,}000 = 72{,}000\\)\nFormula: \\(\\dfrac{\\text{cost} - \\text{scrap}}{\\text{life}}\\)\nStep 1: \\(\\dfrac{72{,}000}{6} = 12{,}000\\)\nCommon mistake: ₹13,333.33 (A) ignores the scrap value. ₹14,400 (B) divides by 5.\nKey point: Only cost minus scrap is spread over the life."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q74",
+      "section": "B2",
+      "topic": "Unit I: Numbers, Quantification and Numerical Applications",
+      "sub_topic": "Modulus inequality with ≥",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "The solution set of \\(|2x - 3| \\ge 5\\) is:",
+      "options": [
+        "A) \\((-\\infty, -1] \\cup [4, \\infty)\\)",
+        "B) \\([-1, 4]\\)",
+        "C) \\((-\\infty, -4] \\cup [1, \\infty)\\)",
+        "D) \\([4, \\infty)\\)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) \\((-\\infty, -1] \\cup [4, \\infty)\\)\nGiven: \\(|u| \\ge 5 \\iff u \\le -5\\) or \\(u \\ge 5\\)\nFormula: solve each part\nStep 1: \\(2x - 3 \\ge 5 \\Rightarrow x \\ge 4\\)\nStep 2: \\(2x - 3 \\le -5 \\Rightarrow x \\le -1\\)\nCommon mistake: (B) solves \\(|2x - 3| \\le 5\\). (D) forgets the negative case.\nKey point: \"\\(\\ge\\)\" with a modulus gives two separate pieces."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q75",
+      "section": "B2",
+      "topic": "Unit IV: Probability Distributions",
+      "sub_topic": "Poisson probability of exactly two",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "For a Poisson distribution with mean 2, \\(P(X = 2)\\) is:",
+      "options": [
+        "A) \\(4e^{-2}\\)",
+        "B) \\(2e^{-2}\\)",
+        "C) \\(e^{-2}\\)",
+        "D) \\(2e^{-1}\\)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) \\(2e^{-2}\\)\nGiven: \\(\\lambda = 2\\)\nFormula: \\(P(X = r) = \\dfrac{e^{-\\lambda}\\lambda^r}{r!}\\)\nStep 1: \\(\\dfrac{e^{-2} \\cdot 4}{2} = 2e^{-2}\\)\nCommon mistake: \\(4e^{-2}\\) (A) forgets to divide by \\(2!\\).\nKey point: Divide by \\(r!\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q76",
+      "section": "B2",
+      "topic": "Unit III: Calculus",
+      "sub_topic": "Differential equation of A cos x + B sin x",
+      "difficulty": "medium",
+      "format": "direct",
+      "question": "The differential equation of the family \\(y = A\\cos x + B\\sin x\\) is:",
+      "options": [
+        "A) \\(\\dfrac{d^2y}{dx^2} - y = 0\\)",
+        "B) \\(\\dfrac{dy}{dx} + y = 0\\)",
+        "C) \\(\\dfrac{d^2y}{dx^2} + y = 0\\)",
+        "D) \\(\\dfrac{d^2y}{dx^2} = \\dfrac{dy}{dx}\\)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) \\(\\dfrac{d^2y}{dx^2} + y = 0\\)\nWhy: \\(y' = -A\\sin x + B\\cos x\\) and \\(y'' = -A\\cos x - B\\sin x = -y\\). Two constants are removed, so the equation has order 2.\nWhy not the others: (A) fits \\(Ae^x + Be^{-x}\\). (B) has order 1 and fits \\(Ae^{-x}\\). (D) fits \\(A + Be^x\\).\nKey point: The number of constants is the order of the equation."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q77",
+      "section": "B2",
+      "topic": "Unit III: Calculus",
+      "sub_topic": "Where x eˣ decreases",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "The function \\(f(x) = xe^x\\) is strictly decreasing on:",
+      "options": [
+        "A) \\((-1, \\infty)\\)",
+        "B) \\((0, \\infty)\\)",
+        "C) \\((-\\infty, 0)\\)",
+        "D) \\((-\\infty, -1)\\)"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) \\((-\\infty, -1)\\)\nGiven: \\(f'(x) = e^x + xe^x = e^x(1 + x)\\)\nFormula: \\(e^x > 0\\), so the sign is that of \\(1 + x\\)\nStep 1: \\(f'(x) < 0 \\iff x < -1\\)\nCommon mistake: (A) is where \\(f\\) increases. (C) reads the sign of \\(x\\) instead of \\(1 + x\\).\nKey point: Factor out \\(e^x\\), which is always positive."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q78",
+      "section": "B2",
+      "topic": "Unit III: Calculus",
+      "sub_topic": "Price from a marginal revenue function",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "The marginal revenue is \\(MR = 16 - x^2\\). The price when \\(x = 3\\) units are sold is:",
+      "options": [
+        "A) \\(13\\)",
+        "B) \\(7\\)",
+        "C) \\(39\\)",
+        "D) \\(16\\)"
+      ],
+      "correct_option": "A",
+      "explanation": "Answer: (A) \\(13\\)\nGiven: \\(R = \\int(16 - x^2)dx = 16x - \\dfrac{x^3}{3}\\) (with \\(R(0) = 0\\))\nFormula: price \\(p = \\dfrac{R}{x} = 16 - \\dfrac{x^2}{3}\\)\nStep 1: At \\(x = 3\\): \\(16 - 3 = 13\\)\nCommon mistake: \\(7\\) (B) is \\(MR(3)\\). \\(39\\) (C) is \\(R(3)\\).\nKey point: Price is average revenue, \\(\\dfrac{R}{x}\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q79",
+      "section": "B2",
+      "topic": "Unit I: Numbers, Quantification and Numerical Applications",
+      "sub_topic": "Congruences and their rules — which hold",
+      "difficulty": "medium",
+      "format": "statements",
+      "question": "Consider the following statements:\n(A) \\(3^4 \\equiv 1 \\pmod 5\\)\n(B) If \\(a \\equiv b \\pmod n\\), then \\(ac \\equiv bc \\pmod n\\) for every integer \\(c\\).\n(C) \\(100 \\equiv 2 \\pmod 7\\)\n(D) \\(-8 \\equiv 3 \\pmod 5\\)\nWhich of the statements given above are correct?\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A) and (B) only",
+        "B) (A), (B) and (C) only",
+        "C) (B), (C) and (D) only",
+        "D) (A), (B), (C) and (D)"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) (A), (B) and (C) only\nWhy: (A) \\(81 - 1 = 80\\). (B) \\(ac - bc = c(a - b)\\) is a multiple of \\(n\\). (C) \\(100 - 2 = 98 = 7 \\times 14\\).\nWhy not the others: (D) is false: \\(-8 - 3 = -11\\) is not a multiple of 5 (in fact \\(-8 \\equiv 2\\)). Options (C) and (D) include (D); (A) leaves out (C).\nKey point: Negative numbers: add multiples of \\(n\\) until the value lies in \\(0, \\ldots, n - 1\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q80",
+      "section": "B2",
+      "topic": "Unit II: Algebra",
+      "sub_topic": "Inverse from A² − 5A + 7I = O",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "For \\(A = \\begin{bmatrix}3&1\\\\-1&2\\end{bmatrix}\\), it is known that \\(A^2 - 5A + 7I = O\\). Then \\(A^{-1}\\) is:",
+      "options": [
+        "A) \\(\\dfrac{1}{7}\\begin{bmatrix}3&1\\\\-1&2\\end{bmatrix}\\)",
+        "B) \\(\\dfrac{1}{5}\\begin{bmatrix}2&-1\\\\1&3\\end{bmatrix}\\)",
+        "C) \\(\\dfrac{1}{7}\\begin{bmatrix}2&-1\\\\1&3\\end{bmatrix}\\)",
+        "D) \\(\\dfrac{1}{7}\\begin{bmatrix}-2&1\\\\-1&-3\\end{bmatrix}\\)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) \\(\\dfrac{1}{7}\\begin{bmatrix}2&-1\\\\1&3\\end{bmatrix}\\)\nGiven: \\(A^2 - 5A + 7I = O\\)\nFormula: multiply by \\(A^{-1}\\): \\(A - 5I + 7A^{-1} = O\\)\nStep 1: \\(A^{-1} = \\dfrac{1}{7}(5I - A)\\)\nStep 2: \\(5I - A = \\begin{bmatrix}2&-1\\\\1&3\\end{bmatrix}\\)\nStep 3: Check with the adjoint: \\(|A| = 7\\), \\(\\text{adj}\\,A = \\begin{bmatrix}2&-1\\\\1&3\\end{bmatrix}\\) ✓\nCommon mistake: (D) uses \\(A - 5I\\), which has the wrong sign. (B) divides by 5 instead of 7.\nKey point: An identity like this gives \\(A^{-1}\\) without the adjoint."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q81",
+      "section": "B2",
+      "topic": "Unit VII: Financial Mathematics",
+      "sub_topic": "EMI for a two-month loan",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "A loan of ₹20,000 is repaid in 2 equal monthly instalments at 1% interest per month (reducing balance). The EMI is about:",
+      "options": [
+        "A) ₹10,100",
+        "B) ₹10,200",
+        "C) ₹10,000",
+        "D) ₹10,150.25"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) ₹10,150.25\nGiven: \\(P = 20{,}000\\), \\(i = 0.01\\), \\(n = 2\\)\nFormula: \\(\\text{EMI} = \\dfrac{Pi(1 + i)^n}{(1 + i)^n - 1}\\)\nStep 1: \\((1.01)^2 = 1.0201\\)\nStep 2: \\(\\dfrac{20{,}000 \\times 0.01 \\times 1.0201}{0.0201} = \\dfrac{204.02}{0.0201} \\approx 10{,}150.25\\)\nCommon mistake: ₹10,100 (A) adds one month's interest on half the loan. ₹10,200 (B) adds interest on the full loan to each half.\nKey point: Check: month 1 interest 200, balance after EMI ≈ 10,049.75; month 2 interest ≈ 100.50, total ≈ 10,150.25 ✓."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q82",
+      "section": "B2",
+      "topic": "Unit III: Calculus",
+      "sub_topic": "Integral of x√(x² + 1)",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "\\(\\displaystyle\\int x\\sqrt{x^2 + 1}\\,dx\\) equals:",
+      "options": [
+        "A) \\(\\dfrac{2}{3}(x^2 + 1)^{3/2} + C\\)",
+        "B) \\(\\dfrac{1}{2}(x^2 + 1)^{1/2} + C\\)",
+        "C) \\(\\dfrac{x^2}{2}\\cdot\\dfrac{2}{3}(x^2 + 1)^{3/2} + C\\)",
+        "D) \\(\\dfrac{1}{3}(x^2 + 1)^{3/2} + C\\)"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) \\(\\dfrac{1}{3}(x^2 + 1)^{3/2} + C\\)\nGiven: \\(t = x^2 + 1\\), \\(dt = 2x\\,dx\\)\nFormula: \\(\\dfrac{1}{2}\\int t^{1/2}dt = \\dfrac{1}{2}\\cdot\\dfrac{2}{3}t^{3/2}\\)\nStep 1: \\(\\dfrac{1}{3}(x^2 + 1)^{3/2} + C\\)\nCommon mistake: (A) forgets the \\(\\dfrac{1}{2}\\) from \\(dt = 2x\\,dx\\). (C) integrates each factor separately.\nKey point: Account for the constant in \\(dt\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q83",
+      "section": "B2",
+      "topic": "Unit VI: Inferential Statistics",
+      "sub_topic": "Parameters, standard error and degrees of freedom",
+      "difficulty": "medium",
+      "format": "statements",
+      "question": "Consider the following statements:\n(A) A parameter describes a population.\n(B) The standard error of the sample mean is \\(\\dfrac{\\sigma}{\\sqrt{n}}\\).\n(C) For a one-sample t-test with \\(n = 12\\), the degrees of freedom are 11.\n(D) A larger sample gives a larger standard error.\nWhich of the statements given above are correct?\nChoose the correct answer from the options given below:",
+      "options": [
+        "A) (A) and (B) only",
+        "B) (B), (C) and (D) only",
+        "C) (A), (B), (C) and (D)",
+        "D) (A), (B) and (C) only"
+      ],
+      "correct_option": "D",
+      "explanation": "Answer: (D) (A), (B) and (C) only\nWhy: (A) a statistic describes a sample; a parameter describes the population. (B) is the standard formula. (C) df \\(= n - 1\\).\nWhy not the others: (D) is false: \\(\\sqrt{n}\\) is in the denominator, so a larger sample gives a smaller standard error. Options (B) and (C) include (D); (A) leaves out (C).\nKey point: Bigger samples give more precise estimates."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q84",
+      "section": "B2",
+      "topic": "Unit III: Calculus",
+      "sub_topic": "Integral of (log x)/x",
+      "difficulty": "medium",
+      "format": "numerical",
+      "question": "\\(\\displaystyle\\int\\dfrac{\\log x}{x}\\,dx\\) equals:",
+      "options": [
+        "A) \\(\\log(\\log x) + C\\)",
+        "B) \\((\\log x)^2 + C\\)",
+        "C) \\(\\dfrac{(\\log x)^2}{2} + C\\)",
+        "D) \\(-\\dfrac{1}{x^2} + C\\)"
+      ],
+      "correct_option": "C",
+      "explanation": "Answer: (C) \\(\\dfrac{(\\log x)^2}{2} + C\\)\nGiven: \\(t = \\log x\\), \\(dt = \\dfrac{dx}{x}\\)\nFormula: \\(\\int t\\,dt = \\dfrac{t^2}{2}\\)\nStep 1: \\(\\dfrac{(\\log x)^2}{2} + C\\)\nCommon mistake: (A) is \\(\\int\\dfrac{dx}{x\\log x}\\). (B) forgets to halve.\nKey point: Spot \\(\\dfrac{1}{x}\\) as the derivative of \\(\\log x\\)."
+    },
+    {
+      "id": "CUET27-MAT-T07-Q85",
+      "section": "B2",
+      "topic": "Unit V: Time-based Data",
+      "sub_topic": "Method that minimises the sum of squared deviations",
+      "difficulty": "easy",
+      "format": "direct",
+      "question": "The method of measuring trend that fits a straight line by making the sum of squared deviations least is the:",
+      "options": [
+        "A) moving averages method",
+        "B) least squares method",
+        "C) freehand method",
+        "D) semi-averages method"
+      ],
+      "correct_option": "B",
+      "explanation": "Answer: (B) least squares method\nWhy: The least squares method chooses \\(a\\) and \\(b\\) in \\(y = a + bx\\) to make \\(\\sum(y - \\hat{y})^2\\) as small as possible.\nWhy not the others: Moving averages smooth data without fitting a line. The freehand method is drawn by eye. Semi-averages joins two group means.\nKey point: \"Least squares\" names exactly what it minimises."
     }
   ]
 }
