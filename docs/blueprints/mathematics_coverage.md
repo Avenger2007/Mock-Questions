@@ -120,7 +120,7 @@ The host for a format may move to a neighbouring unit when the planned item woul
 |---|---|
 | T1 | standard derivatives match, continuity piecewise k, parametric first derivative, parametric second derivative |
 | T2 | continuity differentiability facts, chain rule sin x2, implicit circle slope, log differentiation sin power x |
-| T3 | chain rule exp sin, continuity removable k, parametric first derivative parabola, inverse trig substitution derivative |
+| T3 | chain rule exp sin, continuity removable k, parametric t plus reciprocal, inverse trig substitution derivative |
 
 ### M6 Applications of derivatives
 
