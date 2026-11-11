@@ -1,0 +1,786 @@
+# CUET Physics Test 6 — even key 12/13/12/13. Hosts: match P1 P2 P4 P5 P7 P8; statements P2 P3 P5 P6 P8 P9; sequence P2 P5 P8. Depth: two-step.
+
+@@ P1|Field and potential of a charged conducting sphere|m|m|B|charged sphere field potential regions
+A conducting sphere of radius \(R\) carries charge \(Q\). Match each quantity in List-I with its value in List-II (\(k = \dfrac{1}{4\pi\varepsilon_0}\)).
+
+List-I
+(A) Field at a point inside the sphere
+(B) Potential at a point inside the sphere
+(C) Field just outside the surface
+(D) Potential at a distance \(2R\) from the centre
+
+List-II
+(I) \(\dfrac{kQ}{2R}\)
+(II) \(\dfrac{kQ}{R^2}\)
+(III) zero
+(IV) \(\dfrac{kQ}{R}\)
+A) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+B) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+C) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+D) (A)-(III), (B)-(II), (C)-(IV), (D)-(I)
+=
+Step 1: No field inside a conductor (III)
+Step 2: So the potential inside equals the surface value \(\dfrac{kQ}{R}\) (IV)
+Step 3: Outside, the sphere acts as a point charge: \(\dfrac{kQ}{R^2}\) at the surface (II)
+Step 4: At \(2R\): \(\dfrac{kQ}{2R}\) (I)
+Common mistake: Swapping (A) and (B): zero field does not mean zero potential.
+Key point: Outside, a charged sphere behaves like a point charge at its centre.
+
+@@ P1|Third charge that holds two like charges in equilibrium|h|n|D|three charge equilibrium
+Charges \(+q\) and \(+9q\) are fixed 16 cm apart. A third charge \(Q\) is placed on the line between them so that all three charges are in equilibrium. The value of \(Q\) is:
+A) \(+\dfrac{9q}{16}\)
+B) \(-\dfrac{3q}{4}\)
+C) \(-\dfrac{q}{16}\)
+D) \(-\dfrac{9q}{16}\)
+=
+Given: \(Q\) at \(x\) from \(+q\), so \(16 - x\) from \(+9q\)
+Formula: equilibrium of \(Q\): \(\dfrac{q}{x^2} = \dfrac{9q}{(16 - x)^2}\); equilibrium of \(+q\): \(\dfrac{|Q|}{x^2} = \dfrac{9q}{16^2}\)
+Step 1: \(16 - x = 3x \Rightarrow x = 4\) cm
+Step 2: \(|Q| = \dfrac{9q \times 16}{256} = \dfrac{9q}{16}\)
+Step 3: \(Q\) must pull \(+q\) towards it, against the push of \(+9q\), so \(Q\) is negative
+Common mistake: \(+\dfrac{9q}{16}\) (A) gets the size right but not the sign; a positive \(Q\) would push both outer charges away.
+Key point: Check the equilibrium of each charge, not only the middle one.
+
+@@ P1|Potential on the axis of a charged ring|e|n|A|ring axial potential
+A ring of radius 3 cm carries a charge of 10 nC spread uniformly. The potential at a point on its axis 4 cm from the centre is:
+A) 1800 V
+B) 3000 V
+C) 2250 V
+D) zero
+=
+Given: \(Q = 10^{-8}\) C, \(R = 0.03\) m, \(x = 0.04\) m
+Formula: \(V = \dfrac{kQ}{\sqrt{R^2 + x^2}}\)
+Step 1: \(\sqrt{R^2 + x^2} = 0.05\) m
+Step 2: \(V = \dfrac{9 \times 10^9 \times 10^{-8}}{0.05} = 1800\) V
+Common mistake: 3000 V (B) is the potential at the centre, \(\dfrac{kQ}{R}\). 2250 V (C) uses only \(x\).
+Key point: Every bit of the ring is the same distance \(\sqrt{R^2 + x^2}\) from an axial point.
+
+@@ P1|Side-by-side air and dielectric halves of one capacitor|m|n|C|dielectric half area parallel
+A parallel plate air capacitor of 5 pF has a dielectric of \(K = 3\) inserted so that it fills the full gap over half the plate area. The new capacitance is:
+A) 15 pF
+B) 7.5 pF
+C) 10 pF
+D) 20 pF
+=
+Given: \(C_0 = 5\) pF; two halves side by side
+Formula: each half is a capacitor of \(\dfrac{C_0}{2}\) (air) or \(\dfrac{KC_0}{2}\) (dielectric), joined in parallel
+Step 1: \(\dfrac{C_0}{2} = 2.5\) pF; \(\dfrac{KC_0}{2} = 7.5\) pF
+Step 2: \(C = 2.5 + 7.5 = 10\) pF
+Common mistake: 15 pF (A) treats the whole area as filled.
+Key point: Dividing the area gives capacitors in parallel; dividing the gap gives capacitors in series.
+
+@@ P1|Speed of an electron accelerated through 100 V|m|n|B|electron speed accelerated potential
+An electron starts from rest and is accelerated through a potential difference of 100 V. Its final speed is about (\(m_e = 9.1 \times 10^{-31}\) kg):
+A) \(3.5 \times 10^{13}\) m s⁻¹
+B) \(5.9 \times 10^{6}\) m s⁻¹
+C) \(4.2 \times 10^{6}\) m s⁻¹
+D) \(5.9 \times 10^{5}\) m s⁻¹
+=
+Given: \(eV = 1.6 \times 10^{-17}\) J
+Formula: \(\dfrac{1}{2}mv^2 = eV\)
+Step 1: \(v^2 = \dfrac{2 \times 1.6 \times 10^{-17}}{9.1 \times 10^{-31}} \approx 3.5 \times 10^{13}\)
+Step 2: \(v \approx 5.9 \times 10^6\) m s⁻¹
+Common mistake: \(3.5 \times 10^{13}\) (A) is \(v^2\); take the square root. \(4.2 \times 10^6\) (C) forgets the 2.
+Key point: Work done by the field becomes kinetic energy.
+
+@@ P1|Surface charge densities of two connected spheres|m|n|D|connected spheres charge density
+Two charged conducting spheres of radii 1 cm and 2 cm are joined by a thin wire. The ratio of the surface charge densities \(\dfrac{\sigma_1}{\sigma_2}\) (smaller to larger) is:
+A) \(\dfrac{1}{2}\)
+B) \(\dfrac{1}{4}\)
+C) 4
+D) 2
+=
+Given: \(R_1 = 1\) cm, \(R_2 = 2\) cm; joined, so at the same potential
+Formula: \(\dfrac{kQ_1}{R_1} = \dfrac{kQ_2}{R_2}\); \(\sigma = \dfrac{Q}{4\pi R^2}\)
+Step 1: \(\dfrac{Q_1}{Q_2} = \dfrac{R_1}{R_2} = \dfrac{1}{2}\)
+Step 2: \(\dfrac{\sigma_1}{\sigma_2} = \dfrac{Q_1}{Q_2} \times \dfrac{R_2^2}{R_1^2} = \dfrac{1}{2} \times 4 = 2\)
+Common mistake: \(\dfrac{1}{2}\) (A) is the ratio of the charges, not the densities.
+Key point: \(\sigma \propto \dfrac{1}{R}\): charge crowds at sharp points, which is why lightning conductors are pointed.
+
+@@ P1|Common voltage after series capacitors are reconnected in parallel|h|n|A|series then parallel reconnect
+Capacitors of \(4\ \mu\text{F}\) and \(6\ \mu\text{F}\) are charged in series by a 100 V battery. They are then disconnected and joined in parallel, positive plate to positive plate. The common potential difference is:
+A) 48 V
+B) 100 V
+C) 24 V
+D) 60 V
+=
+Given: \(C_s = \dfrac{4 \times 6}{10} = 2.4\ \mu\text{F}\)
+Formula: \(Q = C_sV\); in parallel \(V' = \dfrac{Q_{total}}{C_1 + C_2}\)
+Step 1: Each capacitor carries \(Q = 2.4 \times 100 = 240\ \mu\text{C}\)
+Step 2: In parallel: \(Q_{total} = 480\ \mu\text{C}\) on \(10\ \mu\text{F}\), so \(V' = 48\) V
+Common mistake: 24 V (C) forgets that both capacitors carry 240 μC.
+Key point: In series every capacitor carries the full charge \(C_sV\).
+
+@@ P2|Readings for a cell of emf 10 V and internal resistance 1 Ω|m|m|C|cell short circuit open circuit load
+A cell has emf 10 V and internal resistance \(1\ \Omega\). Match each quantity in List-I with its value in List-II.
+
+List-I
+(A) Current when its terminals are short-circuited
+(B) Terminal voltage on open circuit
+(C) Current through a \(4\ \Omega\) load
+(D) Power delivered to the \(4\ \Omega\) load
+
+List-II
+(I) 16 W
+(II) 2 A
+(III) 10 V
+(IV) 10 A
+A) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+B) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
+C) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+D) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)
+=
+Step 1: Short circuit: \(I = \dfrac{\varepsilon}{r} = 10\) A (IV)
+Step 2: Open circuit: no current, so \(V = \varepsilon = 10\) V (III)
+Step 3: \(I = \dfrac{10}{4 + 1} = 2\) A (II)
+Step 4: \(P = I^2R = 4 \times 4 = 16\) W (I)
+Common mistake: Swapping (A) and (B); with zero external resistance the current is largest and the terminal voltage is zero.
+Key point: Internal resistance limits the short-circuit current.
+
+@@ P2|Microscopic picture of conduction — which hold|m|s|B|relaxation time temperature,electron density metal temperature,drift field proportional
+Consider the following statements about conduction in a metal:
+(A) The resistivity is inversely proportional to the relaxation time.
+(B) The relaxation time decreases as the temperature rises.
+(C) The drift velocity is proportional to the applied electric field.
+(D) The number density of free electrons rises sharply with temperature.
+Which of the statements given above are correct?
+A) (A) and (B) only
+B) (A), (B) and (C) only
+C) (B), (C) and (D) only
+D) (A), (B), (C) and (D)
+=
+Why: (A) \(\rho = \dfrac{m}{ne^2\tau}\). (B) faster ion vibrations mean more frequent collisions. (C) \(v_d = \dfrac{eE\tau}{m}\).
+Why not the others: (D) is false: in a metal \(n\) is practically fixed; its resistivity rises because \(\tau\) falls. Options (C) and (D) include (D); (A) leaves out (C).
+Key point: Metals and semiconductors differ: in a semiconductor, heating raises \(n\) sharply.
+
+@@ P2|Current from two cells in four arrangements, in increasing order|m|q|D|cell arrangements current order
+Two cells, each of emf 2 V and internal resistance \(1\ \Omega\), are used with an external \(2\ \Omega\) resistor. Arrange these in increasing order of the current in the resistor:
+(A) one cell alone
+(B) both cells in series, aiding
+(C) both cells in parallel
+(D) both cells in series, opposing each other
+A) (D), (C), (A), (B)
+B) (A), (D), (C), (B)
+C) (D), (A), (B), (C)
+D) (D), (A), (C), (B)
+=
+Step 1: (A) \(\dfrac{2}{2 + 1} \approx 0.67\) A; (B) \(\dfrac{4}{2 + 2} = 1\) A
+Step 2: (C) emf 2 V, \(r = 0.5\ \Omega\): \(\dfrac{2}{2.5} = 0.8\) A; (D) net emf 0, current 0
+Step 3: Increasing: (D), (A), (C), (B)
+Common mistake: Thinking parallel cells double the current; the emf stays 2 V and only the internal resistance halves.
+Key point: Series raises the emf; parallel lowers the internal resistance.
+
+@@ P2|Current in one branch of a series–parallel circuit|m|n|A|branch current series parallel
+A 6 V source of negligible internal resistance is connected to a \(2\ \Omega\) resistor in series with a parallel pair of \(3\ \Omega\) and \(6\ \Omega\). The current in the \(6\ \Omega\) resistor is:
+A) 0.5 A
+B) 1 A
+C) 1.5 A
+D) 0.75 A
+=
+Given: \(3 \parallel 6 = 2\ \Omega\); total \(4\ \Omega\)
+Formula: \(I = \dfrac{V}{R}\); current divides inversely as resistance
+Step 1: Total current \(= \dfrac{6}{4} = 1.5\) A; voltage across the pair \(= 1.5 \times 2 = 3\) V
+Step 2: Current in \(6\ \Omega\) \(= \dfrac{3}{6} = 0.5\) A
+Common mistake: 1.5 A (C) is the total current. 1 A (B) is the current in the \(3\ \Omega\) branch.
+Key point: Find the voltage across the parallel pair first.
+
+@@ P2|Change in resistance when a wire is stretched by 10%|h|n|B|stretched wire percentage resistance
+A wire is stretched so that its length increases by 10%, its volume staying the same. Its resistance increases by:
+A) 10%
+B) 21%
+C) 20%
+D) 11%
+=
+Given: \(l' = 1.1l\); volume fixed so \(A' = \dfrac{A}{1.1}\)
+Formula: \(R = \dfrac{\rho l}{A} \propto l^2\) at fixed volume
+Step 1: \(\dfrac{R'}{R} = (1.1)^2 = 1.21\)
+Step 2: Increase \(= 21\%\)
+Common mistake: 10% (A) ignores the reduced cross-section. 20% (C) uses the small-change rule \(2 \times 10\%\), which is only approximate.
+Key point: At constant volume \(R \propto l^2\).
+
+@@ P2|Drift speeds in a thin and a thick wire in series|m|n|C|drift speed ratio series wires
+Two wires of the same material, with diameters in the ratio 1 : 2, are joined in series and carry a current. The ratio of the drift speeds (thin to thick) is:
+A) 1 : 4
+B) 2 : 1
+C) 4 : 1
+D) 1 : 2
+=
+Given: same \(I\), same \(n\); \(\dfrac{A_1}{A_2} = \left(\dfrac{1}{2}\right)^2 = \dfrac{1}{4}\)
+Formula: \(I = neAv_d \Rightarrow v_d \propto \dfrac{1}{A}\)
+Step 1: \(\dfrac{v_1}{v_2} = \dfrac{A_2}{A_1} = 4\)
+Common mistake: 2 : 1 (B) uses the diameter ratio instead of the area ratio.
+Key point: Electrons speed up where the wire narrows, as water does in a narrow pipe.
+
+@@ P3|Magnetic dipoles and field lines — which claims fail|m|s|A|field lines inside bar magnet,current loop dipole
+Consider the following statements:
+(A) Inside a bar magnet, the field lines run from the north pole to the south pole.
+(B) A current loop behaves as a magnetic dipole.
+(C) Paramagnetic substances are weakly attracted by a strong magnet.
+(D) Magnetic field lines never cross one another.
+Which of the statements given above is/are NOT correct?
+A) (A) only
+B) (B) only
+C) (C) only
+D) (D) only
+=
+Why: Only (A) is false: magnetic field lines form closed loops, running from N to S outside the magnet and from S to N inside it.
+Why not the others: (B) a loop has a moment \(m = IA\) and a field like a bar magnet's. (C) their small positive susceptibility gives a weak pull. (D) a crossing would give two field directions at a point. Options (B), (C) and (D) name a true statement as false.
+Key point: Magnetic field lines have no beginning or end.
+
+@@ P3|Pitch of a proton's helical path|h|n|D|helix pitch proton
+A proton moves at \(2 \times 10^6\) m s⁻¹ at \(60^\circ\) to a uniform field of 0.1 T. The pitch of its helical path is about (\(m_p = 1.67 \times 10^{-27}\) kg):
+A) 1.14 m
+B) 0.33 m
+C) 0.10 m
+D) 0.66 m
+=
+Given: \(v_\parallel = v\cos 60^\circ = 1 \times 10^6\) m s⁻¹
+Formula: \(T = \dfrac{2\pi m}{qB}\); pitch \(= v_\parallel T\)
+Step 1: \(T = \dfrac{2\pi \times 1.67 \times 10^{-27}}{1.6 \times 10^{-20}} \approx 6.56 \times 10^{-7}\) s
+Step 2: Pitch \(= 10^6 \times 6.56 \times 10^{-7} \approx 0.66\) m
+Common mistake: 1.14 m (A) uses \(v\sin 60^\circ\) for the component along the field.
+Key point: The component along \(B\) is unaffected, so it sets the pitch.
+
+@@ P3|Distance at which a wire's field equals a given value|m|n|B|wire field distance for value
+A long straight wire carries 5 A. At what distance from it is its magnetic field \(1 \times 10^{-5}\) T?
+A) 1 m
+B) 10 cm
+C) 1 cm
+D) 31.4 cm
+=
+Given: \(I = 5\) A, \(B = 10^{-5}\) T
+Formula: \(r = \dfrac{\mu_0I}{2\pi B}\)
+Step 1: \(r = \dfrac{2 \times 10^{-7} \times 5}{10^{-5}} = 0.1\) m
+Common mistake: 31.4 cm (D) uses \(\dfrac{\mu_0I}{2B}\), dropping the \(\pi\).
+Key point: \(\dfrac{\mu_0}{2\pi} = 2 \times 10^{-7}\) T m A⁻¹.
+
+@@ P3|Extra resistance to raise a voltmeter's range|m|n|C|voltmeter range extension
+A voltmeter of total resistance \(1000\ \Omega\) reads up to 5 V. To make it read up to 25 V, the resistance to be added in series is:
+A) \(5000\ \Omega\)
+B) \(2500\ \Omega\)
+C) \(4000\ \Omega\)
+D) \(25000\ \Omega\)
+=
+Given: full-scale current \(I_g = \dfrac{5}{1000} = 5\) mA
+Formula: total resistance needed \(= \dfrac{25}{I_g}\)
+Step 1: \(\dfrac{25}{5 \times 10^{-3}} = 5000\ \Omega\)
+Step 2: Extra resistance \(= 5000 - 1000 = 4000\ \Omega\)
+Common mistake: \(5000\ \Omega\) (A) is the new total, not the extra resistance.
+Key point: The current for full deflection stays the same.
+
+@@ P3|Net force on a rectangular loop beside a long wire|h|n|A|force loop near wire
+A long straight wire carries 10 A. A rectangular loop carrying 2 A lies in the same plane with its 20 cm sides parallel to the wire, at 5 cm and 15 cm from it. The current in the nearer side is in the same direction as in the wire. The net force on the loop is about:
+A) \(1.07 \times 10^{-5}\) N, attractive
+B) \(1.6 \times 10^{-5}\) N, attractive
+C) \(1.07 \times 10^{-5}\) N, repulsive
+D) \(2.1 \times 10^{-5}\) N, repulsive
+=
+Given: \(I_1 = 10\) A, \(I_2 = 2\) A, \(l = 0.2\) m, \(r_1 = 0.05\) m, \(r_2 = 0.15\) m
+Formula: \(F = \dfrac{\mu_0I_1I_2l}{2\pi r}\); the two short sides' forces cancel
+Step 1: Near side (attractive): \(\dfrac{2 \times 10^{-7} \times 20 \times 0.2}{0.05} = 1.6 \times 10^{-5}\) N
+Step 2: Far side (repulsive): \(\dfrac{8 \times 10^{-7}}{0.15} \approx 0.53 \times 10^{-5}\) N
+Step 3: Net \(\approx 1.07 \times 10^{-5}\) N towards the wire
+Common mistake: \(1.6 \times 10^{-5}\) N (B) leaves out the repulsion on the far side.
+Key point: The nearer side wins because the field is stronger there.
+
+@@ P3|Magnetic moment of the electron in a hydrogen orbit|m|n|D|orbiting electron magnetic moment
+The electron in a hydrogen atom moves at \(2.2 \times 10^6\) m s⁻¹ in an orbit of radius \(0.53 \times 10^{-10}\) m. Its orbital magnetic moment is about:
+A) \(1.87 \times 10^{-23}\) A m²
+B) \(9.3 \times 10^{-21}\) A m²
+C) \(4.7 \times 10^{-24}\) A m²
+D) \(9.3 \times 10^{-24}\) A m²
+=
+Given: \(v = 2.2 \times 10^6\) m s⁻¹, \(r = 0.53 \times 10^{-10}\) m
+Formula: \(I = \dfrac{ev}{2\pi r}\), \(\mu = I\pi r^2 = \dfrac{evr}{2}\)
+Step 1: \(evr = 1.6 \times 10^{-19} \times 2.2 \times 10^6 \times 0.53 \times 10^{-10} \approx 1.87 \times 10^{-23}\)
+Step 2: \(\mu = \dfrac{1.87 \times 10^{-23}}{2} \approx 9.3 \times 10^{-24}\) A m²
+Common mistake: \(1.87 \times 10^{-23}\) (A) forgets to divide by 2.
+Key point: This value is close to the Bohr magneton, \(9.27 \times 10^{-24}\) A m².
+
+@@ P3|Relative permeability from susceptibility|e|n|C|relative permeability from susceptibility
+A ferromagnetic sample has a magnetic susceptibility of 499. Its relative permeability is:
+A) 499
+B) 498
+C) 500
+D) \(\dfrac{1}{499}\)
+=
+Given: \(\chi = 499\)
+Formula: \(\mu_r = 1 + \chi\)
+Step 1: \(\mu_r = 500\)
+Common mistake: 499 (A) takes \(\mu_r = \chi\).
+Key point: \(\mu = \mu_r\mu_0\).
+
+@@ P4|Expressions for four kinds of induced emf|m|m|D|induced emf kinds expressions
+Match each kind of induced emf in List-I with its expression in List-II.
+
+List-I
+(A) Motional emf in a rod
+(B) Self-induced emf
+(C) Mutually induced emf in a second coil
+(D) emf of a coil rotating in a uniform field
+
+List-II
+(I) \(-L\dfrac{dI}{dt}\)
+(II) \(Blv\)
+(III) \(NBA\omega\sin\omega t\)
+(IV) \(-M\dfrac{dI_1}{dt}\)
+A) (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+B) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
+C) (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
+D) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+=
+Step 1: Rod: \(Blv\) (II)
+Step 2: Self-induction: \(-L\dfrac{dI}{dt}\) (I)
+Step 3: Mutual induction: \(-M\dfrac{dI_1}{dt}\) (IV)
+Step 4: a.c. generator: \(NBA\omega\sin\omega t\) (III)
+Common mistake: Swapping (B) and (C); self-induction uses the coil's own current, mutual uses the other coil's.
+Key point: All four come from Faraday's law.
+
+@@ P4|Capacitance for resonance at 50 Hz with an inductor of 1/π H|h|n|C|capacitance for resonance
+An inductor of \(\dfrac{1}{\pi}\) H is to resonate at 50 Hz in a series LCR circuit. The capacitance needed is:
+A) \(\dfrac{10}{\pi}\ \mu\text{F}\)
+B) \(\dfrac{1}{\pi}\ \mu\text{F}\)
+C) \(\dfrac{100}{\pi}\ \mu\text{F}\)
+D) \(\dfrac{1000}{\pi}\ \mu\text{F}\)
+=
+Given: \(L = \dfrac{1}{\pi}\) H, \(\nu = 50\) Hz
+Formula: \(X_L = X_C\), i.e. \(2\pi\nu L = \dfrac{1}{2\pi\nu C}\)
+Step 1: \(X_L = 2\pi \times 50 \times \dfrac{1}{\pi} = 100\ \Omega\)
+Step 2: \(C = \dfrac{1}{2\pi \times 50 \times 100} = \dfrac{10^{-4}}{\pi}\) F \(= \dfrac{100}{\pi}\ \mu\text{F}\)
+Common mistake: \(\dfrac{10}{\pi}\ \mu\text{F}\) (A) slips a power of ten in converting F to μF.
+Key point: Find \(X_L\) first, then choose \(C\) to match it.
+
+@@ P4|Primary current of a transformer with 90% efficiency|m|n|B|transformer efficiency primary current
+A transformer with an efficiency of 90% delivers 9 A at 100 V from its secondary. Its primary is connected to 230 V. The primary current is about:
+A) 3.9 A
+B) 4.35 A
+C) 4.8 A
+D) 9 A
+=
+Given: output \(= 100 \times 9 = 900\) W, \(\eta = 0.9\), \(V_p = 230\) V
+Formula: input \(= \dfrac{\text{output}}{\eta}\), \(I_p = \dfrac{\text{input}}{V_p}\)
+Step 1: Input \(= \dfrac{900}{0.9} = 1000\) W
+Step 2: \(I_p = \dfrac{1000}{230} \approx 4.35\) A
+Common mistake: 3.9 A (A) treats the transformer as ideal (\(\dfrac{900}{230}\)).
+Key point: Real transformers lose energy as heat in the windings and the core.
+
+@@ P4|Phase angle of an LCR circuit with net reactance equal to R|m|n|A|phase angle lcr value
+A series LCR circuit has \(R = 100\ \Omega\), \(X_L = 200\ \Omega\) and \(X_C = 100\ \Omega\). The phase difference between current and voltage is:
+A) \(45^\circ\), current lagging
+B) \(45^\circ\), current leading
+C) \(90^\circ\), current lagging
+D) zero
+=
+Given: \(X_L - X_C = 100\ \Omega\), \(R = 100\ \Omega\)
+Formula: \(\tan\phi = \dfrac{X_L - X_C}{R}\)
+Step 1: \(\tan\phi = 1\), so \(\phi = 45^\circ\)
+Step 2: \(X_L > X_C\): inductive, so the current lags
+Common mistake: (B) gets the angle but the wrong sense; current leads only when \(X_C > X_L\).
+Key point: The larger reactance decides whether the circuit is inductive or capacitive.
+
+@@ P4|Force needed to pull a loop out of a field at steady speed|h|n|D|force pull loop out of field
+A square loop of side 10 cm and resistance \(0.5\ \Omega\) is pulled out of a uniform field of 0.5 T at a steady 2 m s⁻¹, its plane perpendicular to the field. The force needed is:
+A) 0.1 N
+B) 0.02 N
+C) 0.005 N
+D) 0.01 N
+=
+Given: \(l = 0.1\) m, \(R = 0.5\ \Omega\), \(B = 0.5\) T, \(v = 2\) m s⁻¹
+Formula: \(\varepsilon = Blv\), \(I = \dfrac{\varepsilon}{R}\), \(F = IlB\)
+Step 1: \(\varepsilon = 0.5 \times 0.1 \times 2 = 0.1\) V; \(I = 0.2\) A
+Step 2: \(F = 0.2 \times 0.1 \times 0.5 = 0.01\) N
+Common mistake: 0.1 N (A) confuses the emf in volts with the force.
+Key point: The pulling force equals the magnetic drag \(\dfrac{B^2l^2v}{R}\) at steady speed.
+
+@@ P4|Reactance of a 0.1 H inductor at 100 Hz|e|n|B|inductive reactance value 100 hz
+The reactance of a 0.1 H inductor at 100 Hz is about:
+A) \(31.4\ \Omega\)
+B) \(62.8\ \Omega\)
+C) \(10\ \Omega\)
+D) \(6.28\ \Omega\)
+=
+Given: \(L = 0.1\) H, \(\nu = 100\) Hz
+Formula: \(X_L = 2\pi\nu L\)
+Step 1: \(X_L = 2 \times 3.14 \times 100 \times 0.1 = 62.8\ \Omega\)
+Common mistake: \(10\ \Omega\) (C) uses \(\nu L\) without \(2\pi\).
+Key point: Inductive reactance doubles when the frequency doubles.
+
+@@ P5|Quantities describing a plane EM wave|m|m|A|em wave k omega relations
+For a plane EM wave of wavelength \(\lambda\) and frequency \(\nu\) in vacuum, match each quantity in List-I with its expression in List-II.
+
+List-I
+(A) Wave number \(k\)
+(B) Angular frequency \(\omega\)
+(C) Frequency \(\nu\)
+(D) Ratio \(\dfrac{E_0}{B_0}\)
+
+List-II
+(I) \(c\)
+(II) \(2\pi\nu\)
+(III) \(\dfrac{2\pi}{\lambda}\)
+(IV) \(\dfrac{c}{\lambda}\)
+A) (A)-(III), (B)-(II), (C)-(IV), (D)-(I)
+B) (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
+C) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+D) (A)-(III), (B)-(II), (C)-(I), (D)-(IV)
+=
+Step 1: \(k = \dfrac{2\pi}{\lambda}\) (III)
+Step 2: \(\omega = 2\pi\nu\) (II)
+Step 3: \(c = \nu\lambda\), so \(\nu = \dfrac{c}{\lambda}\) (IV)
+Step 4: \(\dfrac{E_0}{B_0} = c\) (I)
+Common mistake: Swapping (A) and (B); \(k\) is "per metre", \(\omega\) is "per second".
+Key point: \(\dfrac{\omega}{k} = c\) in vacuum.
+
+@@ P5|Uses of EM radiation — which hold|m|s|C|uv lasik,microwave oven,gamma remote control
+Consider the following statements:
+(A) Ultraviolet lasers are used in LASIK eye surgery.
+(B) X-rays are used in medical diagnosis.
+(C) Microwaves are used in ovens to heat food.
+(D) Gamma rays are used in TV remote controls.
+Which of the statements given above are correct?
+A) (A) and (B) only
+B) (B), (C) and (D) only
+C) (A), (B) and (C) only
+D) (A), (B), (C) and (D)
+=
+Why: (A) UV is used for precise eye surgery. (B) X-rays pass through soft tissue. (C) microwave frequencies match a resonance of water molecules.
+Why not the others: (D) is false: remote controls use infrared LEDs; gamma rays are far too energetic and harmful. Options (B) and (D) include (D); (A) leaves out (C).
+Key point: Learn one use per band from the NCERT table.
+
+@@ P5|Radiations in increasing order of photon energy|m|q|B|photon energy order bands
+Arrange these in increasing order of photon energy:
+(A) visible light
+(B) radio waves
+(C) gamma rays
+(D) infrared
+A) (C), (A), (D), (B)
+B) (B), (D), (A), (C)
+C) (D), (B), (A), (C)
+D) (B), (A), (D), (C)
+=
+Step 1: \(E = h\nu\): energy rises with frequency
+Step 2: Frequency: radio < infrared < visible < gamma
+Step 3: Increasing energy: (B), (D), (A), (C)
+Common mistake: (D) places visible below infrared; infrared has a longer wavelength, so lower energy.
+Key point: Gamma photons carry millions of times the energy of radio photons.
+
+@@ P6|Mirrors and lenses in different media — which claims fail|m|s|B|mirror focal length medium independent,convex rear view
+Consider the following statements:
+(A) A convex mirror is used as a rear-view mirror because it gives a wider field of view.
+(B) The focal length of a spherical mirror changes when it is immersed in water.
+(C) The focal length of a glass lens changes when it is immersed in water.
+(D) A real image formed by a single thin lens is always inverted.
+Which of the statements given above is/are NOT correct?
+A) (A) only
+B) (B) only
+C) (C) only
+D) (D) only
+=
+Why: Only (B) is false: a mirror's focal length is \(\dfrac{R}{2}\); reflection does not depend on the medium.
+Why not the others: (A) a convex mirror shows a diminished, wide view. (C) the lens maker's formula uses \(\dfrac{n_g}{n_m}\). (D) real images by a single lens or mirror are inverted. Options (A), (C) and (D) name a true statement as false.
+Key point: Refraction depends on the medium; reflection does not.
+
+@@ P6|Object distance for a real image twice the size in a concave mirror|m|n|D|object distance magnification mirror
+A concave mirror of focal length 10 cm forms a real image twice the size of the object. The object distance is:
+A) 5 cm
+B) 30 cm
+C) 20 cm
+D) 15 cm
+=
+Given: \(f = -10\) cm, real image so \(m = -2\), hence \(v = 2u\)
+Formula: \(\dfrac{1}{v} + \dfrac{1}{u} = \dfrac{1}{f}\)
+Step 1: \(\dfrac{1}{2u} + \dfrac{1}{u} = \dfrac{3}{2u} = -\dfrac{1}{10}\)
+Step 2: \(u = -15\) cm, i.e. 15 cm in front
+Common mistake: 5 cm (A) takes \(m = +2\) (virtual image), giving \(u = -5\) cm.
+Key point: Real images in a mirror have negative magnification.
+
+@@ P6|Shift of an object seen through a glass slab|m|n|A|glass slab normal shift
+A glass slab (\(n = 1.5\)) 6 cm thick is placed over a mark. Seen from directly above, the mark appears raised by:
+A) 2 cm
+B) 4 cm
+C) 3 cm
+D) 9 cm
+=
+Given: \(t = 6\) cm, \(n = 1.5\)
+Formula: shift \(= t\left(1 - \dfrac{1}{n}\right)\)
+Step 1: \(1 - \dfrac{1}{1.5} = \dfrac{1}{3}\)
+Step 2: Shift \(= 6 \times \dfrac{1}{3} = 2\) cm
+Common mistake: 4 cm (B) is the apparent depth \(\dfrac{t}{n}\), not the shift.
+Key point: The shift does not depend on how far the slab is from the mark.
+
+@@ P6|First point where bright fringes of two wavelengths coincide|h|n|C|ydse two wavelengths coincide
+In Young's experiment (\(d = 1\) mm, \(D = 1\) m), light of 600 nm and 480 nm is used together. The nearest point to the central maximum where bright fringes of both coincide is at:
+A) 1.2 mm
+B) 4.8 mm
+C) 2.4 mm
+D) 0.6 mm
+=
+Given: \(\lambda_1 = 600\) nm, \(\lambda_2 = 480\) nm
+Formula: coincidence when \(n_1\lambda_1 = n_2\lambda_2\); \(y = \dfrac{n_1\lambda_1D}{d}\)
+Step 1: \(\dfrac{n_1}{n_2} = \dfrac{480}{600} = \dfrac{4}{5}\), so \(n_1 = 4\), \(n_2 = 5\)
+Step 2: \(y = \dfrac{4 \times 600 \times 10^{-9} \times 1}{10^{-3}} = 2.4\) mm
+Common mistake: 0.6 mm (D) is just one fringe width of the 600 nm light.
+Key point: Find the smallest whole numbers in the ratio of the wavelengths.
+
+@@ P6|Eyepiece focal length from telescope length and magnification|e|n|B|telescope eyepiece from length
+A telescope in normal adjustment is 105 cm long and has a magnifying power of 20. The focal length of its eyepiece is:
+A) 100 cm
+B) 5 cm
+C) 5.25 cm
+D) 4.75 cm
+=
+Given: \(f_o + f_e = 105\) cm, \(\dfrac{f_o}{f_e} = 20\)
+Formula: \(f_o = 20f_e\)
+Step 1: \(21f_e = 105\)
+Step 2: \(f_e = 5\) cm (and \(f_o = 100\) cm)
+Common mistake: 5.25 cm (C) divides 105 by 20 instead of 21.
+Key point: Two equations, two unknowns.
+
+@@ P6|Magnification of a microscope with a given object distance|h|n|D|microscope objective object distance
+A compound microscope has an objective of focal length 1 cm and an eyepiece of focal length 5 cm. An object is 1.2 cm from the objective, and the final image is at the near point (25 cm). The magnifying power is about:
+A) 25
+B) 36
+C) 50
+D) 30
+=
+Given: \(u_o = -1.2\) cm, \(f_o = 1\) cm, \(f_e = 5\) cm, \(D = 25\) cm
+Formula: \(m = m_o \times m_e\), \(m_e = 1 + \dfrac{D}{f_e}\)
+Step 1: \(\dfrac{1}{v_o} = 1 - \dfrac{1}{1.2} = \dfrac{1}{6}\), so \(v_o = 6\) cm; \(|m_o| = \dfrac{6}{1.2} = 5\)
+Step 2: \(m_e = 1 + 5 = 6\); \(m = 5 \times 6 = 30\)
+Common mistake: 25 (A) uses \(\dfrac{D}{f_e} = 5\) for the eyepiece, which applies when the image is at infinity.
+Key point: Find the objective's image first; it is the eyepiece's object.
+
+@@ P6|Speed of light in a medium with sin C = 3/5|m|n|A|speed from critical angle sine
+For light going from a medium into air, the critical angle \(C\) has \(\sin C = \dfrac{3}{5}\). The speed of light in the medium is:
+A) \(1.8 \times 10^8\) m s⁻¹
+B) \(5 \times 10^8\) m s⁻¹
+C) \(2.4 \times 10^8\) m s⁻¹
+D) \(1.2 \times 10^8\) m s⁻¹
+=
+Given: \(\sin C = \dfrac{3}{5}\)
+Formula: \(n = \dfrac{1}{\sin C}\), \(v = \dfrac{c}{n} = c\sin C\)
+Step 1: \(n = \dfrac{5}{3}\)
+Step 2: \(v = 3 \times 10^8 \times \dfrac{3}{5} = 1.8 \times 10^8\) m s⁻¹
+Common mistake: \(2.4 \times 10^8\) (C) uses \(\cos C = \dfrac{4}{5}\).
+Key point: \(v = c\sin C\) for light leaving a medium into air.
+
+@@ P6|Power of a diverging lens of focal length 25 cm|e|n|C|diverging lens power
+The power of a diverging lens of focal length 25 cm is:
+A) \(+4\) D
+B) \(-0.04\) D
+C) \(-4\) D
+D) \(-25\) D
+=
+Given: \(f = -25\) cm \(= -0.25\) m
+Formula: \(P = \dfrac{1}{f}\)
+Step 1: \(P = \dfrac{1}{-0.25} = -4\) D
+Common mistake: \(-0.04\) D (B) uses \(f\) in centimetres.
+Key point: Diverging lenses have negative power.
+
+@@ P6|Slit width for the first minimum at 30°|m|n|D|single slit first minimum width
+Light of wavelength 600 nm falls on a single slit, and the first minimum of the diffraction pattern is at \(30^\circ\). The width of the slit is:
+A) 0.6 μm
+B) 0.3 μm
+C) 2.4 μm
+D) 1.2 μm
+=
+Given: \(\lambda = 600\) nm, \(\theta = 30^\circ\)
+Formula: first minimum: \(a\sin\theta = \lambda\)
+Step 1: \(a = \dfrac{600 \times 10^{-9}}{0.5}\)
+Step 2: \(a = 1.2 \times 10^{-6}\) m \(= 1.2\) μm
+Common mistake: 0.3 μm (B) multiplies by \(\sin\theta\) instead of dividing.
+Key point: Narrower slits spread the light to larger angles.
+
+@@ P7|Experiments and what they show|m|m|B|experiments wave particle evidence
+Match each observation in List-I with what it shows in List-II.
+
+List-I
+(A) Photoelectric effect
+(B) Interference in Young's experiment
+(C) Images formed by the electron microscope
+(D) Hallwachs' and Lenard's observations with ultraviolet light
+
+List-II
+(I) Wave nature of electrons
+(II) Particle nature of light
+(III) Wave nature of light
+(IV) Negatively charged particles are emitted from metal surfaces
+A) (A)-(III), (B)-(II), (C)-(I), (D)-(IV)
+B) (A)-(II), (B)-(III), (C)-(I), (D)-(IV)
+C) (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
+D) (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
+=
+Step 1: Photoelectric effect needs photons (II)
+Step 2: Fringes need waves (III)
+Step 3: The electron microscope relies on the short de Broglie wavelength of electrons (I)
+Step 4: Hallwachs and Lenard found UV light makes metals emit negative charges (IV)
+Common mistake: Swapping (A) and (B); light shows wave behaviour in interference and particle behaviour in photoemission.
+Key point: Light and matter both show dual nature.
+
+@@ P7|Change in stopping potential between 300 nm and 400 nm light|m|n|A|stopping potential difference wavelengths
+The same metal is lit first with 300 nm light and then with 400 nm light. The difference between the two stopping potentials is about (\(hc = 1240\) eV nm):
+A) 1.03 V
+B) 0.1 V
+C) 4.13 V
+D) 3.1 V
+=
+Given: \(\lambda_1 = 300\) nm, \(\lambda_2 = 400\) nm
+Formula: \(eV_0 = \dfrac{hc}{\lambda} - \phi_0\); \(\phi_0\) cancels in the difference
+Step 1: Photon energies: \(\dfrac{1240}{300} \approx 4.13\) eV and \(\dfrac{1240}{400} = 3.1\) eV
+Step 2: \(\Delta V_0 = 4.13 - 3.1 \approx 1.03\) V
+Common mistake: 4.13 V (C) is the photon energy at 300 nm, not a stopping potential difference.
+Key point: The work function need not be known to find a difference in \(V_0\).
+
+@@ P7|Ratio of electron wavelengths at 100 V and 400 V|m|n|D|electron wavelength ratio voltages
+Electrons are accelerated from rest through 100 V in one case and 400 V in another. The ratio of their de Broglie wavelengths \(\dfrac{\lambda_{100}}{\lambda_{400}}\) is:
+A) 1 : 4
+B) 4 : 1
+C) 1 : 2
+D) 2 : 1
+=
+Given: \(V_1 = 100\) V, \(V_2 = 400\) V
+Formula: \(\lambda = \dfrac{h}{\sqrt{2meV}} \propto \dfrac{1}{\sqrt{V}}\)
+Step 1: \(\dfrac{\lambda_1}{\lambda_2} = \sqrt{\dfrac{400}{100}} = 2\)
+Common mistake: 1 : 4 (A) uses \(\lambda \propto \dfrac{1}{V}\) and inverts.
+Key point: Four times the voltage halves the wavelength.
+
+@@ P7|Fastest photoelectron speed for 1 eV kinetic energy|e|n|C|photoelectron speed from energy
+The fastest photoelectrons from a metal have a kinetic energy of 1 eV. Their speed is about (\(m_e = 9.1 \times 10^{-31}\) kg):
+A) \(3.5 \times 10^{11}\) m s⁻¹
+B) \(4.2 \times 10^{5}\) m s⁻¹
+C) \(5.9 \times 10^{5}\) m s⁻¹
+D) \(5.9 \times 10^{6}\) m s⁻¹
+=
+Given: \(K = 1.6 \times 10^{-19}\) J
+Formula: \(v = \sqrt{\dfrac{2K}{m}}\)
+Step 1: \(\dfrac{2K}{m} = \dfrac{3.2 \times 10^{-19}}{9.1 \times 10^{-31}} \approx 3.5 \times 10^{11}\)
+Step 2: \(v \approx 5.9 \times 10^5\) m s⁻¹
+Common mistake: \(3.5 \times 10^{11}\) (A) is \(v^2\). \(4.2 \times 10^5\) (B) forgets the 2.
+Key point: Convert eV to joules before using \(\dfrac{1}{2}mv^2\).
+
+@@ P8|Hydrogen spectral series|m|m|D|hydrogen series regions
+Match each item in List-I with List-II.
+
+List-I
+(A) Lyman series
+(B) Balmer series
+(C) Paschen series
+(D) Shortest wavelength in the hydrogen spectrum
+
+List-II
+(I) Infrared; final level \(n = 3\)
+(II) Ultraviolet; final level \(n = 1\)
+(III) About 91 nm
+(IV) Visible (partly); final level \(n = 2\)
+A) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)
+B) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+C) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)
+D) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
+=
+Step 1: Lyman ends on \(n = 1\): ultraviolet (II)
+Step 2: Balmer ends on \(n = 2\): its first lines are visible (IV)
+Step 3: Paschen ends on \(n = 3\): infrared (I)
+Step 4: Series limit of Lyman, \(\dfrac{1240}{13.6} \approx 91\) nm (III)
+Common mistake: Swapping (A) and (B); only the Balmer series has visible lines.
+Key point: The lower the final level, the more energetic the photons.
+
+@@ P8|Nuclear composition — which hold|m|s|A|carbon 14 neutrons protons,isotopes hydrogen
+Consider the following statements:
+(A) The mass number of a nucleus is its total number of nucleons.
+(B) \(^{1}\text{H}\) and \(^{2}\text{H}\) are isotopes.
+(C) Protons and neutrons in a nucleus are held together by the nuclear force.
+(D) In \(^{14}_{6}\text{C}\), the number of neutrons equals the number of protons.
+Which of the statements given above are correct?
+A) (A), (B) and (C) only
+B) (A) and (B) only
+C) (B), (C) and (D) only
+D) (A), (B), (C) and (D)
+=
+Why: (A) \(A = Z + N\). (B) same \(Z = 1\), different \(A\). (C) only the strong nuclear force overcomes proton repulsion.
+Why not the others: (D) is false: \(N = 14 - 6 = 8\), while \(Z = 6\). Options (C) and (D) include (D); (B) leaves out (C).
+Key point: \(N = A - Z\).
+
+@@ P8|Nuclei in increasing order of binding energy per nucleon|m|q|C|binding per nucleon order
+Arrange these nuclei in increasing order of binding energy per nucleon:
+(A) \(^{56}\text{Fe}\)
+(B) \(^{2}\text{H}\)
+(C) \(^{238}\text{U}\)
+(D) \(^{4}\text{He}\)
+A) (B), (C), (D), (A)
+B) (B), (D), (A), (C)
+C) (B), (D), (C), (A)
+D) (A), (C), (D), (B)
+=
+Step 1: \(^{2}\text{H}\): about 1.1 MeV; \(^{4}\text{He}\): about 7.1 MeV
+Step 2: \(^{238}\text{U}\): about 7.6 MeV; \(^{56}\text{Fe}\): about 8.8 MeV (the peak)
+Step 3: Increasing: (B), (D), (C), (A)
+Common mistake: (B) puts iron below uranium by assuming heavier nuclei are always more tightly bound.
+Key point: The curve rises steeply, peaks near \(A = 56\) and falls slowly.
+
+@@ P8|Ratio of the first Lyman and first Balmer wavelengths|h|n|B|lyman balmer first line ratio
+The ratio of the wavelength of the first line of the Lyman series to that of the first line of the Balmer series in hydrogen is:
+A) \(\dfrac{27}{5}\)
+B) \(\dfrac{5}{27}\)
+C) \(\dfrac{1}{4}\)
+D) \(\dfrac{3}{4}\)
+=
+Given: Lyman first line \(2 \to 1\); Balmer first line \(3 \to 2\)
+Formula: \(\lambda \propto \dfrac{1}{\Delta E}\), with \(\Delta E = 13.6\left(\dfrac{1}{n_f^2} - \dfrac{1}{n_i^2}\right)\)
+Step 1: \(\Delta E_L \propto 1 - \dfrac{1}{4} = \dfrac{3}{4}\); \(\Delta E_B \propto \dfrac{1}{4} - \dfrac{1}{9} = \dfrac{5}{36}\)
+Step 2: \(\dfrac{\lambda_L}{\lambda_B} = \dfrac{5/36}{3/4} = \dfrac{5}{27}\)
+Common mistake: \(\dfrac{27}{5}\) (A) is the ratio of the energies, not the wavelengths.
+Key point: The larger energy jump gives the shorter wavelength.
+
+@@ P8|Mass converted in one fission releasing 200 MeV|e|n|D|mass equivalent energy fission
+One fission releases about 200 MeV. The mass converted into energy in one fission is about (1 u = 931.5 MeV):
+A) 2.15 u
+B) 186 300 u
+C) 0.0215 u
+D) 0.215 u
+=
+Given: \(E = 200\) MeV
+Formula: \(\Delta m = \dfrac{E}{931.5}\) u
+Step 1: \(\Delta m = \dfrac{200}{931.5} \approx 0.215\) u
+Common mistake: 186 300 u (B) multiplies by 931.5 instead of dividing.
+Key point: A fraction of one atomic mass unit releases hundreds of MeV.
+
+@@ P9|Diode conduction — which claims fail|m|s|C|ideal diode reverse resistance,majority minority bias currents
+Consider the following statements:
+(A) In forward bias, the current is mainly due to majority carriers.
+(B) In reverse bias, the small current is due to minority carriers.
+(C) An ideal diode has zero resistance in reverse bias.
+(D) The \(V\)–\(I\) characteristic of a diode is not a straight line.
+Which of the statements given above is/are NOT correct?
+A) (A) only
+B) (B) only
+C) (C) only
+D) (D) only
+=
+Why: Only (C) is false: an ideal diode has zero resistance in forward bias and infinite resistance in reverse bias.
+Why not the others: (A) the lowered barrier lets majority carriers diffuse across. (B) the raised barrier blocks majority carriers; minority carriers drift across. (D) the current rises steeply after the knee. Options (A), (B) and (D) name a true statement as false.
+Key point: Ideal diode: short circuit forward, open circuit reverse.
+
+@@ P9|Current through a silicon diode and resistor in series|e|n|B|diode series resistor current
+A silicon diode (forward drop 0.7 V) is connected in forward bias in series with a \(430\ \Omega\) resistor across a 5 V supply. The current is:
+A) 11.6 mA
+B) 10 mA
+C) 1.6 mA
+D) 100 mA
+=
+Given: \(V = 5\) V, \(V_D = 0.7\) V, \(R = 430\ \Omega\)
+Formula: \(I = \dfrac{V - V_D}{R}\)
+Step 1: \(V - V_D = 4.3\) V
+Step 2: \(I = \dfrac{4.3}{430} = 0.01\) A \(= 10\) mA
+Common mistake: 11.6 mA (A) ignores the diode drop (\(\dfrac{5}{430}\)).
+Key point: A conducting diode takes a nearly fixed voltage.
+
+@@ P9|Bias of a diode from the potentials of its two sides|m|d|A|bias from potentials
+The p-side of a p–n junction diode is at \(-2\) V and the n-side is at \(-5\) V. The diode is:
+A) forward biased
+B) reverse biased
+C) unbiased
+D) in breakdown
+=
+Why: The p-side is 3 V higher in potential than the n-side, which is forward bias.
+Why not the others: Reverse bias (B) needs the n-side higher. (C) there is a 3 V difference. (D) breakdown needs a large reverse voltage.
+Key point: Compare the potentials of the two sides, not their signs.
