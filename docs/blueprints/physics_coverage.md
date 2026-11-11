@@ -55,6 +55,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T11 | dielectric isolated capacitor effects match, zero field not zero potential, like charges separate pe falls, four distributions field order, electron deflection plates, stacked dielectric layers capacitance, field from 3d potential, merged drops potential |
 | T12 | square charges centre e v match, isolated sphere stored energy, shell plus centre charge potential, balanced capacitor bridge, dipole work 60 to 180, hemisphere flux uniform field, potential difference near point charge |
 | T13 | surface density varies curvature, cavity shielding zero field, capacitor steady state dc circuit, two sheets unequal charge between, zero potential points two charges, four charges square assembly energy, capacitor plate force, total flux one microcoulomb |
+| T14 | battery connected gap doubled match, dipole field falls cube, non uniform net force, four capacitors capacitance order, electron crossing time plates, charged pendulum horizontal field, dipole axial potential, series to parallel extra charge |
 
 ### P2 Current Electricity
 
@@ -73,6 +74,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T11 | internal resistance depends electrolyte, parallel cells small load, best grouping cells maximum current, copper carbon temperature compensation, heat internal resistance minute, voltmeter loading reading, electrons per second filament |
 | T12 | energy power values match, ohmic resistance constant current, diode non ohmic, power four parts circuit order, wire drawn radius halved, field from current density resistivity, heater coils parallel time |
 | T13 | resistivity orders materials match, weaker source charged parallel, parallel wires current ratio, bulb half voltage power, unbalanced bridge pd, drift time one metre |
+| T14 | heat proportional current squared, lower resistance more power fixed v, square with diagonal resistance, reversed cell series current, parallel series power ratio unequal, electrons per square mm current density, cell efficiency load |
 
 ### P3 Magnetic Effects of Current and Magnetism
 
@@ -91,6 +93,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T11 | toroid solenoid fields match, alpha radius after acceleration, antiparallel wires outside point field, voltage sensitivity galvanometer, velocity selector then circle proton, galvanometer voltmeter ammeter pair, relative permeability from b h |
 | T12 | period independent speed, magnetic force no work, levitating wire current, coil moment from centre field, electron kinetic energy circle, wire along solenoid axis force, bar magnet moment axial field, solenoid turns per metre |
 | T13 | dipole torque energy orientations match, loop uniform field no net force, loop as dipole, four wires force order, proton deflection field strip, electron parallel to wire force, galvanometer deflection torque balance, short magnet equatorial field |
+| T14 | loop moments values match, equal momentum radius proton alpha, field at nucleus orbiting electron, toroid field value, galvanometer two series resistors, magnetic force work zero, half maximum torque angle |
 
 ### P4 Electromagnetic Induction and Alternating Currents
 
@@ -109,6 +112,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T11 | lcr resonance quantities match, inductance core dependence, mutual inductance reciprocal, generator peak emf order, lcr average power off resonance, coil flipped charge, transformer load primary current |
 | T12 | reactances ac dc match, choke coil lamp inductance, generator emf plane at 30, magnetic field energy volume, small loop centre large loop mutual, capacitor reactance frequency |
 | T13 | step up not more power, laminated core eddy, generator average power load, rc power factor leads, rod oblique velocity emf, iron core inductance, resonance capacitance quadrupled |
+| T14 | generator emf expressions match, magnet falls slower ring, lenz energy conservation, four induced emfs order, lc combined voltage, capacitor peak current mains, loop entering field emf |
 
 ### P5 Electromagnetic Waves
 
@@ -127,6 +131,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T11 | e over b equals c, radiation pressure, wave equation wavelength e0, one micrometre band |
 | T12 | 600 nm wave quantities match, displacement current steady dc zero, displacement current magnetic field, frequencies wavelength order |
 | T13 | speed relative permittivity match, displacement current dv dt, x rays radio same speed |
+| T14 | gamma shortest wavelength, visible range, wave electric magnetic force ratio, one megahertz wavelength |
 
 ### P6 Optics
 
@@ -145,6 +150,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T11 | ydse changes effects match, lens in denser liquid diverges, minimum object image distance 4f, intensity path difference sixth, fibre core cladding critical angle, prism incidence at minimum deviation, telescope separation near point image, first secondary maximum angle, biconvex unequal radii |
 | T12 | central fringe bright false, diffraction central double, microscope near point total magnification, convex concave contact image, mirror image on screen magnified, spot in slab both faces, slit separation angular fringe width, moon image objective, relative index glass water, speed from wavelength in medium |
 | T13 | concave mirror 10 cm positions match, focal length depends colour, lens medium dependence, magnifier telescope power order, glass sphere image two surfaces, limiting prism angle, fringes opposite sides distance, lens power to add, glass to water refraction angle, mirror focal length in water |
+| T14 | wave optics values match, two lens system final image, thin prisms cancel deviation, microscope object distance infinity, convex mirror person image height, wavelength in glass from angles, screen distance fringe width, phase from path difference quarter, delay one cm glass |
 
 ### P7 Dual Nature of Matter and Radiation
 
@@ -163,6 +169,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T11 | matter wave values match, stopping potential differs metals, saturation all collected, electrons photons wavelength order, sunlight photon flux |
 | T12 | photoelectric values match 4 ev, laser force on mirror, work function speed ratio two wavelengths, photons in laser pulse |
 | T13 | de broglie falls with speed, photon momentum h over lambda, threshold from stopping potential, electron energy matching x ray wavelength, photons for microamp current |
+| T14 | 6.2 ev photon properties match, kmax independent intensity, slope h over e, momenta photons particles order, threshold frequency from kmax |
 
 ### P8 Atoms and Nuclei
 
@@ -181,6 +188,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T11 | nuclear force repulsive short, radius cube root, de broglie bohr third orbit, ionisation frequency n2, deuteron triton fusion energy, oxygen mass defect |
 | T12 | hydrogen lines wavelengths match, binding peak iron, fusion conserves nucleons, hydrogen series limits order, photon from orbit radii, deuterium kilogram fusion energy |
 | T13 | atomic nuclear energies match, series limits ratio, ground state orbital frequency, sun mass loss per second, neutron separation energy carbon 13 |
+| T14 | levels crowd together high n, absorbs matching photons, identify transition 97 nm, lithium 7 binding per nucleon, fission fusion energy per mass compare, neutrons uranium 235 |
 
 ### P9 Electronic Devices
 
@@ -199,3 +207,4 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T11 | silicon carrier densities match, centre tap peak silicon drop, parallel diode branches current |
 | T12 | forward bias barrier lowers false, diffusion forms depletion, doping factor increase electrons, germanium diode load voltage |
 | T13 | diode characteristic regions match, donor increases holes false, conductivity rises temperature, diode circuits current order |
+| T14 | semiconductor terms definitions match, two silicon diodes series current, full wave pulses per second |
