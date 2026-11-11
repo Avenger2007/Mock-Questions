@@ -1,0 +1,804 @@
+{
+ "q": [
+  {
+   "unit": "P1",
+   "sub_topic": "Which square arrangements cancel E, V or both",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+    "B) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+    "C) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)",
+    "D) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)"
+   ],
+   "correct_option": "B",
+   "targets": "P1:square charges centre e v match",
+   "question": "Charges of equal size \\(q\\) are placed at the corners of a square as described in List-I. Match each with the field \\(E\\) and potential \\(V\\) at the centre in List-II.\n\nList-I\n(A) \\(+q\\) at all four corners\n(B) \\(+q\\) and \\(-q\\) at alternate corners\n(C) \\(+q\\) at the two top corners, \\(-q\\) at the two bottom corners\n(D) \\(+q\\) at three corners, the fourth empty\n\nList-II\n(I) \\(E \\ne 0\\), \\(V = 0\\)\n(II) \\(E = 0\\), \\(V \\ne 0\\)\n(III) \\(E \\ne 0\\), \\(V \\ne 0\\)\n(IV) \\(E = 0\\), \\(V = 0\\)",
+   "explanation": "Answer: (B) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)\nStep 1: (A) opposite fields cancel in pairs; potentials add to \\(\\dfrac{4kq}{r}\\) (II)\nStep 2: (B) opposite corners carry like charges, so fields cancel; potentials sum to zero (IV)\nStep 3: (C) potentials cancel, but all four fields have a downward part (I)\nStep 4: (D) the uncancelled charge leaves a field, and the potential is \\(\\dfrac{3kq}{r}\\) (III)\nCommon mistake: Assuming \\(E = 0\\) wherever \\(V = 0\\); in (C) the potential vanishes but the field does not.\nKey point: Fields add as vectors; potentials add as numbers."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Energy stored on an isolated sphere carrying 1 μC",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 0.1 J",
+    "B) 0.025 J",
+    "C) \\(5 \\times 10^{-8}\\) J",
+    "D) 0.05 J"
+   ],
+   "correct_option": "D",
+   "targets": "P1:isolated sphere stored energy",
+   "question": "An isolated metal sphere of radius 9 cm carries a charge of \\(1\\ \\mu\\text{C}\\). The energy stored in its field is:",
+   "explanation": "Answer: (D) 0.05 J\nGiven: \\(R = 0.09\\) m, \\(Q = 10^{-6}\\) C\nFormula: \\(C = 4\\pi\\varepsilon_0R\\), \\(U = \\dfrac{Q^2}{2C}\\)\nStep 1: \\(C = \\dfrac{0.09}{9 \\times 10^9} = 10^{-11}\\) F\nStep 2: \\(U = \\dfrac{10^{-12}}{2 \\times 10^{-11}} = 0.05\\) J\nCommon mistake: 0.1 J (A) drops the \\(\\dfrac{1}{2}\\).\nKey point: Treat an isolated sphere as a capacitor with \\(C = 4\\pi\\varepsilon_0R\\)."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Potential inside a charged shell with an opposite charge at its centre",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) zero",
+    "B) \\(-180\\) V",
+    "C) \\(+180\\) V",
+    "D) \\(+45\\) V"
+   ],
+   "correct_option": "A",
+   "targets": "P1:shell plus centre charge potential",
+   "question": "A thin spherical shell of radius 10 cm carries \\(+2\\) nC, and a point charge of \\(-1\\) nC is held at its centre. The potential at a point 5 cm from the centre is:",
+   "explanation": "Answer: (A) zero\nGiven: shell \\(Q = 2 \\times 10^{-9}\\) C, \\(R = 0.1\\) m; centre charge \\(q = -10^{-9}\\) C; \\(r = 0.05\\) m\nFormula: inside a shell its potential is constant at \\(\\dfrac{kQ}{R}\\); add the point charge's \\(\\dfrac{kq}{r}\\)\nStep 1: Shell: \\(\\dfrac{9 \\times 10^9 \\times 2 \\times 10^{-9}}{0.1} = +180\\) V\nStep 2: Centre charge: \\(\\dfrac{9 \\times 10^9 \\times (-10^{-9})}{0.05} = -180\\) V; total \\(= 0\\)\nCommon mistake: \\(-180\\) V (B) leaves out the shell, assuming its zero field inside means zero potential.\nKey point: A shell's field vanishes inside it, but its potential does not."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Capacitance of a balanced bridge of five capacitors",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(14\\ \\mu\\text{F}\\)",
+    "B) \\(3.5\\ \\mu\\text{F}\\)",
+    "C) \\(2\\ \\mu\\text{F}\\)",
+    "D) \\(7\\ \\mu\\text{F}\\)"
+   ],
+   "correct_option": "C",
+   "targets": "P1:balanced capacitor bridge",
+   "question": "Between points A and B, one path has \\(2\\ \\mu\\text{F}\\) and \\(4\\ \\mu\\text{F}\\) in series, and a parallel path has \\(1\\ \\mu\\text{F}\\) and \\(2\\ \\mu\\text{F}\\) in series. A \\(5\\ \\mu\\text{F}\\) capacitor joins the two junction points. The capacitance between A and B is:",
+   "explanation": "Answer: (C) \\(2\\ \\mu\\text{F}\\)\nGiven: upper path \\(2, 4\\); lower path \\(1, 2\\); bridge \\(5\\ \\mu\\text{F}\\)\nFormula: in series, voltage divides inversely as capacitance; equal junction potentials mean no charge on the bridge\nStep 1: Upper junction: \\(V_{2\\mu F} = \\dfrac{4}{6}V\\); lower junction: \\(V_{1\\mu F} = \\dfrac{2}{3}V\\). These are equal, so the bridge carries no charge\nStep 2: \\(C = \\dfrac{2 \\times 4}{6} + \\dfrac{1 \\times 2}{3} = \\dfrac{4}{3} + \\dfrac{2}{3} = 2\\ \\mu\\text{F}\\)\nCommon mistake: \\(7\\ \\mu\\text{F}\\) (D) adds the bridge capacitor in parallel; at balance it plays no part.\nKey point: A balanced bridge lets you remove the middle element."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Work to turn a dipole from 60° to 180° in a field",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(1 \\times 10^{-4}\\) J",
+    "B) \\(3 \\times 10^{-4}\\) J",
+    "C) \\(4 \\times 10^{-4}\\) J",
+    "D) \\(1.73 \\times 10^{-4}\\) J"
+   ],
+   "correct_option": "B",
+   "targets": "P1:dipole work 60 to 180",
+   "question": "An electric dipole of moment \\(2 \\times 10^{-8}\\) C m is in a uniform field of \\(1 \\times 10^4\\) N C⁻¹. The work needed to turn it from \\(60^\\circ\\) to \\(180^\\circ\\) with the field is:",
+   "explanation": "Answer: (B) \\(3 \\times 10^{-4}\\) J\nGiven: \\(pE = 2 \\times 10^{-4}\\) J\nFormula: \\(W = pE(\\cos\\theta_1 - \\cos\\theta_2)\\)\nStep 1: \\(\\cos 60^\\circ - \\cos 180^\\circ = 0.5 - (-1) = 1.5\\)\nStep 2: \\(W = 2 \\times 10^{-4} \\times 1.5 = 3 \\times 10^{-4}\\) J\nCommon mistake: \\(4 \\times 10^{-4}\\) J (C) turns it from \\(0^\\circ\\), not from \\(60^\\circ\\).\nKey point: A dipole's energy is \\(-pE\\cos\\theta\\); the work is the change in it."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Flux through the curved face of a hemisphere in a uniform field",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 12.6 N m² C⁻¹",
+    "B) zero",
+    "C) 3.14 N m² C⁻¹",
+    "D) 6.28 N m² C⁻¹"
+   ],
+   "correct_option": "D",
+   "targets": "P1:hemisphere flux uniform field",
+   "question": "A hemisphere of radius 10 cm sits in a uniform field of 200 N C⁻¹ that is parallel to its axis. The flux through its curved surface is about:",
+   "explanation": "Answer: (D) 6.28 N m² C⁻¹\nGiven: \\(R = 0.1\\) m, \\(E = 200\\) N C⁻¹\nFormula: the curved face and the flat base form a closed surface with no charge inside, so their fluxes are equal and opposite; the base flux is \\(\\pi R^2E\\)\nStep 1: \\(\\pi R^2 = 3.14 \\times 0.01 = 0.0314\\) m²\nStep 2: \\(\\Phi = 0.0314 \\times 200 \\approx 6.28\\) N m² C⁻¹\nCommon mistake: 12.6 (A) uses the curved area \\(2\\pi R^2\\); only the area projected across the field counts.\nKey point: In a uniform field, flux depends on the area seen face-on."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Potential difference between two points near a 1 nC charge",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 90 V",
+    "B) 270 V",
+    "C) 180 V",
+    "D) 45 V"
+   ],
+   "correct_option": "A",
+   "targets": "P1:potential difference near point charge",
+   "question": "The potential difference between points 5 cm and 10 cm from a point charge of 1 nC is:",
+   "explanation": "Answer: (A) 90 V\nGiven: \\(q = 10^{-9}\\) C\nFormula: \\(V = \\dfrac{kq}{r}\\)\nStep 1: \\(V_5 = \\dfrac{9}{0.05} = 180\\) V; \\(V_{10} = \\dfrac{9}{0.1} = 90\\) V\nStep 2: \\(\\Delta V = 90\\) V\nCommon mistake: 270 V (B) adds the two potentials.\nKey point: Only differences in potential matter for work."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Electrical energy and power values",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)",
+    "B) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)",
+    "C) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+    "D) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+   ],
+   "correct_option": "C",
+   "targets": "P2:energy power values match",
+   "question": "Match each item in List-I with its value in List-II.\n\nList-I\n(A) One kilowatt-hour\n(B) A 220 V appliance drawing 5 A\n(C) A \\(2\\ \\Omega\\) resistor carrying 3 A\n(D) A \\(100\\ \\Omega\\) resistor across 200 V\n\nList-II\n(I) 18 W\n(II) 400 W\n(III) \\(3.6 \\times 10^{6}\\) J\n(IV) 1100 W",
+   "explanation": "Answer: (C) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)\nStep 1: \\(1000\\ \\text{W} \\times 3600\\ \\text{s} = 3.6 \\times 10^6\\) J (III)\nStep 2: \\(P = VI = 1100\\) W (IV)\nStep 3: \\(P = I^2R = 18\\) W (I)\nStep 4: \\(P = \\dfrac{V^2}{R} = 400\\) W (II)\nCommon mistake: Reading the kilowatt-hour as a unit of power; it is a unit of energy.\nKey point: Pick \\(VI\\), \\(I^2R\\) or \\(\\dfrac{V^2}{R}\\) to suit the data given."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Where Ohm's law holds and fails — which hold",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) and (C) only",
+    "B) (A), (B) and (C) only",
+    "C) (B), (C) and (D) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "B",
+   "targets": "P2:ohmic resistance constant current,diode non ohmic",
+   "question": "Consider the following statements:\n(A) A junction diode does not obey Ohm's law.\n(B) For some devices the current depends on the sign of the applied voltage, not just its size.\n(C) A metal wire at constant temperature obeys Ohm's law.\n(D) An ohmic conductor at constant temperature has a resistance that rises with the current.\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (B) (A), (B) and (C) only\nWhy: (A) its \\(V\\)–\\(I\\) graph is curved. (B) a diode conducts one way only. (C) at fixed temperature \\(V \\propto I\\).\nWhy not the others: (D) is false: for an ohmic conductor at constant temperature \\(R\\) does not depend on the current. Options (C) and (D) include (D); (A) leaves out (B).\nKey point: Ohm's law is a property of some materials, not a universal law."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Power in four parts of one circuit in increasing order",
+   "difficulty": "medium",
+   "format": "sequence",
+   "options": [
+    "A) (D), (C), (A), (B)",
+    "B) (A), (D), (C), (B)",
+    "C) (D), (A), (B), (C)",
+    "D) (D), (A), (C), (B)"
+   ],
+   "correct_option": "D",
+   "targets": "P2:power four parts circuit order",
+   "question": "A battery of emf 15 V and internal resistance \\(1\\ \\Omega\\) drives a \\(2\\ \\Omega\\) resistor in series with a parallel pair of \\(3\\ \\Omega\\) and \\(6\\ \\Omega\\). Arrange the power used in these in increasing order:\n(A) the internal resistance\n(B) the \\(2\\ \\Omega\\) resistor\n(C) the \\(3\\ \\Omega\\) resistor\n(D) the \\(6\\ \\Omega\\) resistor",
+   "explanation": "Answer: (D) (D), (A), (C), (B)\nStep 1: \\(3 \\parallel 6 = 2\\ \\Omega\\); total \\(= 1 + 2 + 2 = 5\\ \\Omega\\); \\(I = 3\\) A\nStep 2: (A) \\(9 \\times 1 = 9\\) W; (B) \\(9 \\times 2 = 18\\) W; pair voltage \\(= 6\\) V, so (C) \\(\\dfrac{36}{3} = 12\\) W and (D) \\(\\dfrac{36}{6} = 6\\) W\nStep 3: Increasing: (D), (A), (C), (B)\nCommon mistake: Assuming the largest resistor uses most power; in parallel the smaller one takes more.\nKey point: In series \\(P \\propto R\\); in parallel \\(P \\propto \\dfrac{1}{R}\\)."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Resistance after a wire is drawn out to half its radius",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(80\\ \\Omega\\)",
+    "B) \\(20\\ \\Omega\\)",
+    "C) \\(40\\ \\Omega\\)",
+    "D) \\(10\\ \\Omega\\)"
+   ],
+   "correct_option": "A",
+   "targets": "P2:wire drawn radius halved",
+   "question": "A wire of resistance \\(5\\ \\Omega\\) is drawn out until its radius is half the original. Its new resistance is:",
+   "explanation": "Answer: (A) \\(80\\ \\Omega\\)\nGiven: volume fixed; \\(r \\to \\dfrac{r}{2}\\) makes \\(A \\to \\dfrac{A}{4}\\) and \\(l \\to 4l\\)\nFormula: \\(R = \\dfrac{\\rho l}{A}\\)\nStep 1: \\(R' = R \\times \\dfrac{4}{1/4} = 16R\\)\nStep 2: \\(R' = 80\\ \\Omega\\)\nCommon mistake: \\(20\\ \\Omega\\) (B) accounts for the smaller area but not the longer length.\nKey point: Drawing a wire changes length and area together."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Field inside a copper wire from its current density",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(1.2 \\times 10^{14}\\) V m⁻¹",
+    "B) \\(8.5 \\times 10^{-15}\\) V m⁻¹",
+    "C) \\(3.4 \\times 10^{-2}\\) V m⁻¹",
+    "D) \\(3.4 \\times 10^{-8}\\) V m⁻¹"
+   ],
+   "correct_option": "C",
+   "targets": "P2:field from current density resistivity",
+   "question": "Copper has resistivity \\(1.7 \\times 10^{-8}\\ \\Omega\\) m. When the current density in a copper wire is \\(2 \\times 10^6\\) A m⁻², the electric field inside it is:",
+   "explanation": "Answer: (C) \\(3.4 \\times 10^{-2}\\) V m⁻¹\nGiven: \\(\\rho = 1.7 \\times 10^{-8}\\ \\Omega\\) m, \\(j = 2 \\times 10^6\\) A m⁻²\nFormula: \\(E = \\rho j\\)\nStep 1: \\(E = 1.7 \\times 10^{-8} \\times 2 \\times 10^6 = 3.4 \\times 10^{-2}\\) V m⁻¹\nCommon mistake: \\(1.2 \\times 10^{14}\\) (A) divides \\(j\\) by \\(\\rho\\).\nKey point: A small field drives a large current in a good conductor."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Time to boil water with two heater coils in parallel",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 25 minutes",
+    "B) 6 minutes",
+    "C) 12.5 minutes",
+    "D) 5 minutes"
+   ],
+   "correct_option": "B",
+   "targets": "P2:heater coils parallel time",
+   "question": "One heater coil boils a kettle of water in 10 minutes and another in 15 minutes on the same supply. Used together in parallel on that supply, they boil it in:",
+   "explanation": "Answer: (B) 6 minutes\nGiven: \\(t_1 = 10\\) min, \\(t_2 = 15\\) min; heat needed \\(H\\) is fixed\nFormula: \\(P = \\dfrac{H}{t}\\); in parallel the powers add\nStep 1: \\(\\dfrac{1}{t} = \\dfrac{1}{10} + \\dfrac{1}{15} = \\dfrac{1}{6}\\)\nStep 2: \\(t = 6\\) minutes\nCommon mistake: 25 minutes (A) is the time in series, where the resistances add.\nKey point: In parallel each coil gets the full voltage, so the powers add."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Charged particles in a uniform magnetic field — the false claim",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) only",
+    "B) (B) only",
+    "C) (C) only",
+    "D) (D) only"
+   ],
+   "correct_option": "D",
+   "targets": "P3:period independent speed,magnetic force no work",
+   "question": "Consider the following statements:\n(A) A magnetic force does no work on a moving charge.\n(B) The speed of a charged particle in a uniform magnetic field stays constant.\n(C) A charge moving parallel to the field travels in a straight line.\n(D) The period of a charge's circular motion in the field depends on its speed.\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (D) (D) only\nWhy: Only (D) is false: \\(T = \\dfrac{2\\pi m}{qB}\\); a faster particle moves on a larger circle in the same time.\nWhy not the others: (A) the force is always perpendicular to the velocity. (B) so no work changes the kinetic energy. (C) \\(\\sin 0^\\circ = 0\\), so there is no force. Options (A), (B) and (C) name a true statement as false.\nKey point: Radius grows with speed; period does not."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Current that levitates a wire above a long straight wire",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 98 A, opposite to the lower current",
+    "B) 98 A, in the same direction as the lower current",
+    "C) 49 A, opposite to the lower current",
+    "D) 9.8 A, opposite to the lower current"
+   ],
+   "correct_option": "A",
+   "targets": "P3:levitating wire current",
+   "question": "A long horizontal wire carries 50 A. A second parallel wire of mass 0.01 kg per metre is to float 1 cm above it. The current needed in the upper wire is (\\(g = 9.8\\) m s⁻²):",
+   "explanation": "Answer: (A) 98 A, opposite to the lower current\nGiven: \\(I_1 = 50\\) A, \\(d = 0.01\\) m, mass per metre \\(= 0.01\\) kg m⁻¹\nFormula: \\(\\dfrac{\\mu_0I_1I_2}{2\\pi d} = (\\text{mass per metre}) \\times g\\)\nStep 1: \\(2 \\times 10^{-7} \\times \\dfrac{50 \\times I_2}{0.01} = 0.098\\), so \\(I_2 = \\dfrac{0.098}{10^{-3}} = 98\\) A\nStep 2: The force must push the upper wire up, i.e. repel, so the currents are opposite\nCommon mistake: (B) has the right size but like currents attract and would pull the wire down.\nKey point: Opposite currents repel; that repulsion can balance weight."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Magnetic moment of a coil from the field at its centre",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 0.0314 A m²",
+    "B) 1 A m²",
+    "C) 3.14 A m²",
+    "D) 31.4 A m²"
+   ],
+   "correct_option": "C",
+   "targets": "P3:coil moment from centre field",
+   "question": "A coil of 100 turns and radius 10 cm produces a field of \\(6.28 \\times 10^{-4}\\) T at its centre. Its magnetic moment is about:",
+   "explanation": "Answer: (C) 3.14 A m²\nGiven: \\(N = 100\\), \\(R = 0.1\\) m, \\(B = 6.28 \\times 10^{-4}\\) T\nFormula: \\(B = \\dfrac{\\mu_0NI}{2R}\\); \\(m = NI\\pi R^2\\)\nStep 1: \\(I = \\dfrac{2RB}{\\mu_0N} = \\dfrac{2 \\times 0.1 \\times 6.28 \\times 10^{-4}}{1.256 \\times 10^{-6} \\times 100} = 1\\) A\nStep 2: \\(m = 100 \\times 1 \\times 3.14 \\times 0.01 = 3.14\\) A m²\nCommon mistake: 0.0314 (A) leaves out the 100 turns.\nKey point: Find the current first, then the moment."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Kinetic energy of an electron circling at 2 cm in 1 mT",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 70 eV",
+    "B) 35 eV",
+    "C) 3.5 eV",
+    "D) 350 eV"
+   ],
+   "correct_option": "B",
+   "targets": "P3:electron kinetic energy circle",
+   "question": "In a 1 mT magnetic field an electron is seen to circle on a path 2 cm in radius. How much kinetic energy does it have?",
+   "explanation": "Answer: (B) 35 eV\nGiven: \\(r = 0.02\\) m, \\(B = 10^{-3}\\) T\nFormula: \\(v = \\dfrac{eBr}{m}\\), \\(K = \\dfrac{1}{2}mv^2\\)\nStep 1: \\(v = \\dfrac{1.6 \\times 10^{-19} \\times 10^{-3} \\times 0.02}{9.1 \\times 10^{-31}} \\approx 3.5 \\times 10^6\\) m s⁻¹\nStep 2: \\(K = \\dfrac{1}{2} \\times 9.1 \\times 10^{-31} \\times 1.24 \\times 10^{13} \\approx 5.6 \\times 10^{-18}\\) J \\(\\approx 35\\) eV\nCommon mistake: 70 eV (A) drops the \\(\\dfrac{1}{2}\\).\nKey point: Convert joules to eV by dividing by \\(1.6 \\times 10^{-19}\\)."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Force on a wire lying along a solenoid's axis",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 0.5 N",
+    "B) 0.25 N",
+    "C) 0.05 N",
+    "D) zero"
+   ],
+   "correct_option": "D",
+   "targets": "P3:wire along solenoid axis force",
+   "question": "A straight wire 1 m long carrying 5 A lies along the axis of a long solenoid in which the field is 0.1 T. The force on the wire is:",
+   "explanation": "Answer: (D) zero\nGiven: the solenoid's field is along its axis, parallel to the wire\nFormula: \\(F = BIl\\sin\\theta\\)\nStep 1: \\(\\theta = 0^\\circ\\), so \\(\\sin\\theta = 0\\)\nStep 2: \\(F = 0\\)\nCommon mistake: 0.5 N (A) uses \\(F = BIl\\) without checking the angle.\nKey point: A current along the field feels no force."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Moment of a short bar magnet from its axial field",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 2 A m²",
+    "B) 4 A m²",
+    "C) 0.2 A m²",
+    "D) 20 A m²"
+   ],
+   "correct_option": "A",
+   "targets": "P3:bar magnet moment axial field",
+   "question": "The magnetic field 10 cm from the centre of a short bar magnet, on its axis, is \\(4 \\times 10^{-4}\\) T. The magnetic moment of the magnet is:",
+   "explanation": "Answer: (A) 2 A m²\nGiven: \\(r = 0.1\\) m, \\(B = 4 \\times 10^{-4}\\) T\nFormula: \\(B_{axial} = \\dfrac{\\mu_0}{4\\pi}\\dfrac{2m}{r^3}\\)\nStep 1: \\(m = \\dfrac{Br^3}{2 \\times 10^{-7}} = \\dfrac{4 \\times 10^{-4} \\times 10^{-3}}{2 \\times 10^{-7}}\\)\nStep 2: \\(m = 2\\) A m²\nCommon mistake: 4 A m² (B) uses the equatorial formula, which lacks the factor 2.\nKey point: The axial field is twice the equatorial field at the same distance."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Turns per metre for a 6.28 mT solenoid at 5 A",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 100",
+    "B) 5000",
+    "C) 1000",
+    "D) 200"
+   ],
+   "correct_option": "C",
+   "targets": "P3:solenoid turns per metre",
+   "question": "A long solenoid carrying 5 A has a field of \\(6.28 \\times 10^{-3}\\) T inside it. Its number of turns per metre is:",
+   "explanation": "Answer: (C) 1000\nGiven: \\(B = 6.28 \\times 10^{-3}\\) T, \\(I = 5\\) A\nFormula: \\(B = \\mu_0nI \\Rightarrow n = \\dfrac{B}{\\mu_0I}\\)\nStep 1: \\(\\mu_0I = 4\\pi \\times 10^{-7} \\times 5 = 6.28 \\times 10^{-6}\\)\nStep 2: \\(n = 1000\\) m⁻¹\nCommon mistake: 5000 (B) multiplies by the current instead of dividing.\nKey point: The field depends on turns per unit length, not the total."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Reactances of an inductor and a capacitor at 50 Hz and on d.c.",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(I), (B)-(III), (C)-(IV), (D)-(II)",
+    "B) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)",
+    "C) (A)-(III), (B)-(I), (C)-(II), (D)-(IV)",
+    "D) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)"
+   ],
+   "correct_option": "B",
+   "targets": "P4:reactances ac dc match",
+   "question": "Match each item in List-I with its reactance in List-II.\n\nList-I\n(A) A 0.5 H inductor at 50 Hz\n(B) A \\(20\\ \\mu\\text{F}\\) capacitor at 50 Hz\n(C) The 0.5 H inductor on steady d.c.\n(D) The \\(20\\ \\mu\\text{F}\\) capacitor on steady d.c.\n\nList-II\n(I) about \\(159\\ \\Omega\\)\n(II) infinite\n(III) about \\(157\\ \\Omega\\)\n(IV) zero",
+   "explanation": "Answer: (B) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)\nStep 1: \\(X_L = 2\\pi \\times 50 \\times 0.5 \\approx 157\\ \\Omega\\) (III)\nStep 2: \\(X_C = \\dfrac{1}{2\\pi \\times 50 \\times 2 \\times 10^{-5}} \\approx 159\\ \\Omega\\) (I)\nStep 3: On d.c. \\(\\omega = 0\\), so \\(X_L = 0\\) (IV)\nStep 4: \\(X_C = \\dfrac{1}{0}\\), infinite: a capacitor blocks d.c. (II)\nCommon mistake: Swapping (C) and (D); the inductor passes d.c. freely and the capacitor blocks it.\nKey point: \\(X_L\\) rises with frequency; \\(X_C\\) falls."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Choke needed to run a 100 V, 500 W lamp on 200 V mains",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 0.064 H",
+    "B) 0.127 H",
+    "C) 0.32 H",
+    "D) 0.11 H"
+   ],
+   "correct_option": "D",
+   "targets": "P4:choke coil lamp inductance",
+   "question": "A lamp rated 100 V, 500 W is to be run from a 200 V, 50 Hz supply by putting a pure inductor in series with it. The inductance needed is about:",
+   "explanation": "Answer: (D) 0.11 H\nGiven: lamp \\(R = \\dfrac{100^2}{500} = 20\\ \\Omega\\), rated current \\(I = \\dfrac{500}{100} = 5\\) A\nFormula: \\(Z = \\dfrac{V}{I}\\), \\(X_L = \\sqrt{Z^2 - R^2}\\), \\(L = \\dfrac{X_L}{2\\pi\\nu}\\)\nStep 1: \\(Z = \\dfrac{200}{5} = 40\\ \\Omega\\); \\(X_L = \\sqrt{1600 - 400} \\approx 34.6\\ \\Omega\\)\nStep 2: \\(L = \\dfrac{34.6}{314} \\approx 0.11\\) H\nCommon mistake: 0.064 H (A) takes \\(X_L = 20\\ \\Omega\\), adding resistance and reactance directly. 0.127 H (B) takes \\(X_L = Z\\).\nKey point: A choke drops voltage without wasting power, unlike a series resistor."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Instantaneous emf of a coil whose plane is at 30° to the field",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 86.6 V",
+    "B) 50 V",
+    "C) 100 V",
+    "D) zero"
+   ],
+   "correct_option": "A",
+   "targets": "P4:generator emf plane at 30",
+   "question": "An a.c. generator gives a peak emf of 100 V. At the instant its coil's plane makes \\(30^\\circ\\) with the magnetic field, the emf is about:",
+   "explanation": "Answer: (A) 86.6 V\nGiven: \\(\\varepsilon_0 = 100\\) V; plane at \\(30^\\circ\\) to \\(\\vec{B}\\), so the normal is at \\(60^\\circ\\) to \\(\\vec{B}\\)\nFormula: \\(\\varepsilon = \\varepsilon_0\\sin\\theta\\), with \\(\\theta\\) between the normal and \\(\\vec{B}\\)\nStep 1: \\(\\theta = 60^\\circ\\)\nStep 2: \\(\\varepsilon = 100 \\times 0.866 \\approx 86.6\\) V\nCommon mistake: 50 V (B) puts \\(30^\\circ\\) straight into \\(\\sin\\theta\\); the angle in the formula is measured from the normal.\nKey point: The emf is greatest when the coil's plane lies along the field."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Energy stored in a 0.5 T field filling one litre",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 200 J",
+    "B) \\(1 \\times 10^{5}\\) J",
+    "C) 100 J",
+    "D) 0.125 J"
+   ],
+   "correct_option": "C",
+   "targets": "P4:magnetic field energy volume",
+   "question": "A uniform magnetic field of 0.5 T fills a volume of \\(1 \\times 10^{-3}\\) m³. The energy stored in it is about:",
+   "explanation": "Answer: (C) 100 J\nGiven: \\(B = 0.5\\) T, \\(V = 10^{-3}\\) m³\nFormula: energy density \\(u = \\dfrac{B^2}{2\\mu_0}\\)\nStep 1: \\(u = \\dfrac{0.25}{2 \\times 1.26 \\times 10^{-6}} \\approx 1 \\times 10^5\\) J m⁻³\nStep 2: \\(U = uV \\approx 100\\) J\nCommon mistake: \\(1 \\times 10^5\\) J (B) is the energy density, not multiplied by the volume.\nKey point: Strong magnetic fields store large energy densities."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Mutual inductance of a small loop at the centre of a large one",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(2 \\times 10^{-9}\\) H",
+    "B) \\(9.9 \\times 10^{-10}\\) H",
+    "C) \\(3.1 \\times 10^{-6}\\) H",
+    "D) \\(1 \\times 10^{-6}\\) H"
+   ],
+   "correct_option": "B",
+   "targets": "P4:small loop centre large loop mutual",
+   "question": "A small loop of radius 1 cm lies at the centre of a large loop of radius 20 cm, in the same plane. Their mutual inductance is about:",
+   "explanation": "Answer: (B) \\(9.9 \\times 10^{-10}\\) H\nGiven: \\(R = 0.2\\) m, \\(r = 0.01\\) m; the large loop's field is nearly uniform over the small one\nFormula: \\(B = \\dfrac{\\mu_0I}{2R}\\), \\(\\Phi = B\\pi r^2\\), \\(M = \\dfrac{\\Phi}{I} = \\dfrac{\\mu_0\\pi r^2}{2R}\\)\nStep 1: \\(\\mu_0\\pi r^2 = 1.26 \\times 10^{-6} \\times 3.14 \\times 10^{-4} \\approx 3.95 \\times 10^{-10}\\)\nStep 2: \\(M = \\dfrac{3.95 \\times 10^{-10}}{0.4} \\approx 9.9 \\times 10^{-10}\\) H\nCommon mistake: \\(2 \\times 10^{-9}\\) H (A) uses \\(\\dfrac{\\mu_0I}{R}\\) for the centre field, dropping the 2.\nKey point: Mutual inductance is the flux in one loop per unit current in the other."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Frequency at which a 1 μF capacitor has 1 kΩ reactance",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 1000 Hz",
+    "B) 6280 Hz",
+    "C) 1.59 Hz",
+    "D) 159 Hz"
+   ],
+   "correct_option": "D",
+   "targets": "P4:capacitor reactance frequency",
+   "question": "At what frequency does a \\(1\\ \\mu\\text{F}\\) capacitor have a reactance of \\(1\\ \\text{k}\\Omega\\)?",
+   "explanation": "Answer: (D) 159 Hz\nGiven: \\(C = 10^{-6}\\) F, \\(X_C = 10^3\\ \\Omega\\)\nFormula: \\(X_C = \\dfrac{1}{2\\pi\\nu C} \\Rightarrow \\nu = \\dfrac{1}{2\\pi X_CC}\\)\nStep 1: \\(\\nu = \\dfrac{1}{6.28 \\times 10^3 \\times 10^{-6}} = \\dfrac{1}{6.28 \\times 10^{-3}}\\)\nStep 2: \\(\\nu \\approx 159\\) Hz\nCommon mistake: 1000 Hz (A) is \\(\\omega\\) in rad s⁻¹, not the frequency.\nKey point: \\(\\omega = 2\\pi\\nu\\); keep them apart."
+  },
+  {
+   "unit": "P5",
+   "sub_topic": "Wave quantities for 600 nm light in vacuum",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)",
+    "B) (A)-(II), (B)-(III), (C)-(I), (D)-(IV)",
+    "C) (A)-(IV), (B)-(I), (C)-(III), (D)-(II)",
+    "D) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)"
+   ],
+   "correct_option": "A",
+   "targets": "P5:600 nm wave quantities match",
+   "question": "For light of wavelength 600 nm in vacuum, match each quantity in List-I with its value in List-II.\n\nList-I\n(A) Frequency\n(B) Period\n(C) Wave number \\(k = \\dfrac{2\\pi}{\\lambda}\\)\n(D) Angular frequency\n\nList-II\n(I) \\(1.05 \\times 10^{7}\\) m⁻¹\n(II) \\(3.14 \\times 10^{15}\\) rad s⁻¹\n(III) \\(2 \\times 10^{-15}\\) s\n(IV) \\(5 \\times 10^{14}\\) Hz",
+   "explanation": "Answer: (A) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)\nStep 1: \\(\\nu = \\dfrac{3 \\times 10^8}{6 \\times 10^{-7}} = 5 \\times 10^{14}\\) Hz (IV)\nStep 2: \\(T = \\dfrac{1}{\\nu} = 2 \\times 10^{-15}\\) s (III)\nStep 3: \\(k = \\dfrac{6.28}{6 \\times 10^{-7}} \\approx 1.05 \\times 10^7\\) m⁻¹ (I)\nStep 4: \\(\\omega = 2\\pi\\nu \\approx 3.14 \\times 10^{15}\\) rad s⁻¹ (II)\nCommon mistake: Swapping (A) and (D); \\(\\omega\\) is \\(2\\pi\\) times the frequency.\nKey point: \\(\\dfrac{\\omega}{k} = c\\) is a quick check."
+  },
+  {
+   "unit": "P5",
+   "sub_topic": "Displacement current — which hold",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) and (B) only",
+    "B) (B), (C) and (D) only",
+    "C) (A), (B) and (C) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "C",
+   "targets": "P5:displacement current steady dc zero,displacement current magnetic field",
+   "question": "Consider the following statements:\n(A) A displacement current exists between the plates of a capacitor while it charges.\n(B) A displacement current produces a magnetic field, just as a conduction current does.\n(C) The displacement current equals \\(\\varepsilon_0\\dfrac{d\\Phi_E}{dt}\\).\n(D) A displacement current flows between the plates of a fully charged capacitor on steady d.c.\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (C) (A), (B) and (C) only\nWhy: (A) the field between the plates is changing. (B) Maxwell added it to Ampere's law for this reason. (C) this is its definition.\nWhy not the others: (D) is false: once charged, the field is steady, \\(\\dfrac{d\\Phi_E}{dt} = 0\\), so there is no displacement current. Options (B) and (D) include (D); (A) leaves out (C).\nKey point: A changing electric field acts as a current."
+  },
+  {
+   "unit": "P5",
+   "sub_topic": "Four frequencies in increasing order of wavelength",
+   "difficulty": "medium",
+   "format": "sequence",
+   "options": [
+    "A) (A), (C), (B), (D)",
+    "B) (D), (B), (C), (A)",
+    "C) (D), (C), (B), (A)",
+    "D) (B), (D), (C), (A)"
+   ],
+   "correct_option": "B",
+   "targets": "P5:frequencies wavelength order",
+   "question": "Arrange these electromagnetic waves in increasing order of wavelength:\n(A) \\(1 \\times 10^{9}\\) Hz\n(B) \\(1 \\times 10^{15}\\) Hz\n(C) \\(1 \\times 10^{12}\\) Hz\n(D) \\(3 \\times 10^{19}\\) Hz",
+   "explanation": "Answer: (B) (D), (B), (C), (A)\nStep 1: \\(\\lambda = \\dfrac{c}{\\nu}\\): the highest frequency has the shortest wavelength\nStep 2: (D) 10 pm; (B) 300 nm; (C) 0.3 mm; (A) 30 cm\nStep 3: Increasing wavelength: (D), (B), (C), (A)\nCommon mistake: (A) lists them by increasing frequency, the reverse order.\nKey point: Wavelength and frequency are inversely proportional."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Interference and diffraction patterns — the false claim",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) only",
+    "B) (B) only",
+    "C) (C) only",
+    "D) (D) only"
+   ],
+   "correct_option": "D",
+   "targets": "P6:central fringe bright false,diffraction central double",
+   "question": "Consider the following statements:\n(A) The central maximum in single-slit diffraction is twice as wide as the other maxima.\n(B) The fringes in Young's experiment are of nearly equal width.\n(C) In single-slit diffraction the secondary maxima grow fainter away from the centre.\n(D) In Young's experiment the central fringe is dark.\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (D) (D) only\nWhy: Only (D) is false: at the centre the path difference is zero, so the waves arrive in phase and the central fringe is bright.\nWhy not the others: (A) it spans \\(-\\dfrac{\\lambda}{a}\\) to \\(+\\dfrac{\\lambda}{a}\\). (B) \\(\\beta = \\dfrac{\\lambda D}{d}\\) is the same for all. (C) each secondary maximum comes from a smaller uncancelled part of the slit. Options (A), (B) and (C) name a true statement as false.\nKey point: Zero path difference means a bright centre."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Magnification of a microscope with the final image at the near point",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 200",
+    "B) 224",
+    "C) 24",
+    "D) 250"
+   ],
+   "correct_option": "B",
+   "targets": "P6:microscope near point total magnification",
+   "question": "A compound microscope has \\(f_o = 1.2\\) cm and \\(f_e = 3\\) cm. An object is 1.25 cm from the objective, and the final image is at the near point (25 cm). The magnifying power is about:",
+   "explanation": "Answer: (B) 224\nGiven: \\(u_o = -1.25\\) cm, \\(f_o = 1.2\\) cm, \\(f_e = 3\\) cm, \\(D = 25\\) cm\nFormula: \\(\\dfrac{1}{v} - \\dfrac{1}{u} = \\dfrac{1}{f}\\); \\(m = m_o \\times m_e\\) with \\(m_e = 1 + \\dfrac{D}{f_e}\\)\nStep 1: \\(\\dfrac{1}{v_o} = \\dfrac{1}{1.2} - \\dfrac{1}{1.25} = \\dfrac{1}{30}\\), so \\(v_o = 30\\) cm and \\(m_o = \\dfrac{30}{1.25} = 24\\)\nStep 2: \\(m_e = 1 + \\dfrac{25}{3} \\approx 9.33\\); \\(m \\approx 24 \\times 9.33 \\approx 224\\)\nCommon mistake: 24 (C) gives only the objective's magnification.\nKey point: Find each lens's magnification, then multiply."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Image through a convex and a concave lens in contact",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 12 cm from the pair on the object's side, virtual",
+    "B) 60 cm from the pair on the far side, real",
+    "C) 20 cm from the pair on the object's side, virtual",
+    "D) 12 cm from the pair on the far side, real"
+   ],
+   "correct_option": "A",
+   "targets": "P6:convex concave contact image",
+   "question": "A convex lens of focal length 20 cm is in contact with a concave lens of focal length 10 cm. An object is placed 30 cm from the pair. The image is formed:",
+   "explanation": "Answer: (A) 12 cm from the pair on the object's side, virtual\nGiven: \\(f_1 = +20\\) cm, \\(f_2 = -10\\) cm, \\(u = -30\\) cm\nFormula: \\(\\dfrac{1}{f} = \\dfrac{1}{f_1} + \\dfrac{1}{f_2}\\); \\(\\dfrac{1}{v} = \\dfrac{1}{f} + \\dfrac{1}{u}\\)\nStep 1: \\(\\dfrac{1}{f} = \\dfrac{1}{20} - \\dfrac{1}{10} = -\\dfrac{1}{20}\\), so the pair diverges with \\(f = -20\\) cm\nStep 2: \\(\\dfrac{1}{v} = -\\dfrac{1}{20} - \\dfrac{1}{30} = -\\dfrac{1}{12}\\), so \\(v = -12\\) cm: virtual\nCommon mistake: (B) uses the convex lens alone.\nKey point: The stronger concave lens makes the pair diverging."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Focal length of a mirror that throws a 4× image on a screen",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 0.5 m",
+    "B) 0.3 m",
+    "C) 0.4 m",
+    "D) 1.6 m"
+   ],
+   "correct_option": "C",
+   "targets": "P6:mirror image on screen magnified",
+   "question": "A concave mirror throws a real image, four times the size of the object, onto a screen. The screen is 1.5 m from the object. The focal length of the mirror is:",
+   "explanation": "Answer: (C) 0.4 m\nGiven: \\(|v| = 4|u|\\); object and screen on the same side, so \\(|v| - |u| = 1.5\\) m\nFormula: \\(\\dfrac{1}{f} = \\dfrac{1}{v} + \\dfrac{1}{u}\\)\nStep 1: \\(3|u| = 1.5\\), so \\(u = -0.5\\) m and \\(v = -2\\) m\nStep 2: \\(\\dfrac{1}{f} = -\\dfrac{1}{2} - \\dfrac{1}{0.5} = -2.5\\), so \\(|f| = 0.4\\) m\nCommon mistake: 0.5 m (A) is the object distance.\nKey point: Write both distances in terms of one unknown, then use the given gap."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Apparent depth of a spot seen from the far face of a slab",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 7 cm",
+    "B) 4.5 cm",
+    "C) 4.67 cm",
+    "D) 3 cm"
+   ],
+   "correct_option": "D",
+   "targets": "P6:spot in slab both faces",
+   "question": "A glass slab (\\(n = 1.5\\)) is 12 cm thick. A small spot inside it appears to be 5 cm below the top face when seen from above. Seen from below, through the bottom face, it appears to be at a depth of:",
+   "explanation": "Answer: (D) 3 cm\nGiven: apparent depth from the top \\(= 5\\) cm, \\(n = 1.5\\)\nFormula: real depth \\(= n \\times\\) apparent depth\nStep 1: Real depth from the top \\(= 7.5\\) cm, so from the bottom it is \\(12 - 7.5 = 4.5\\) cm\nStep 2: Apparent depth from below \\(= \\dfrac{4.5}{1.5} = 3\\) cm\nCommon mistake: 7 cm (A) subtracts the apparent depth from the thickness. 4.5 cm (B) is the real distance.\nKey point: Find the real position first; apparent depths do not add up to the thickness."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Slit separation for an angular fringe width of 0.2°",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(3 \\times 10^{-6}\\) m",
+    "B) 0.17 mm",
+    "C) 1.7 mm",
+    "D) 0.017 mm"
+   ],
+   "correct_option": "B",
+   "targets": "P6:slit separation angular fringe width",
+   "question": "In a double-slit experiment with light of wavelength 600 nm, the angular width of each fringe is \\(0.2^\\circ\\). The slit separation is about:",
+   "explanation": "Answer: (B) 0.17 mm\nGiven: \\(\\lambda = 6 \\times 10^{-7}\\) m, \\(\\theta = 0.2^\\circ = 0.2 \\times \\dfrac{\\pi}{180} \\approx 3.49 \\times 10^{-3}\\) rad\nFormula: \\(\\theta = \\dfrac{\\lambda}{d}\\)\nStep 1: \\(d = \\dfrac{6 \\times 10^{-7}}{3.49 \\times 10^{-3}}\\)\nStep 2: \\(d \\approx 1.7 \\times 10^{-4}\\) m \\(= 0.17\\) mm\nCommon mistake: \\(3 \\times 10^{-6}\\) m (A) uses 0.2 as if it were in radians.\nKey point: Convert degrees to radians before using small-angle formulas."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Diameter of the Moon's image formed by a 15 m objective",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 13.7 cm",
+    "B) 1.37 m",
+    "C) 1.37 cm",
+    "D) 9.2 mm"
+   ],
+   "correct_option": "A",
+   "targets": "P6:moon image objective",
+   "question": "A telescope objective of focal length 15 m forms an image of the Moon (diameter \\(3.48 \\times 10^6\\) m, distance \\(3.8 \\times 10^8\\) m). The diameter of the image is about:",
+   "explanation": "Answer: (A) 13.7 cm\nGiven: \\(f_o = 15\\) m; the Moon subtends \\(\\alpha = \\dfrac{3.48 \\times 10^6}{3.8 \\times 10^8} \\approx 9.16 \\times 10^{-3}\\) rad\nFormula: image size \\(= f_o\\alpha\\)\nStep 1: \\(15 \\times 9.16 \\times 10^{-3} \\approx 0.137\\) m\nStep 2: Diameter \\(\\approx 13.7\\) cm\nCommon mistake: 9.2 mm (D) gives the angle in milliradians as if it were the size.\nKey point: A distant object's image forms at the focal plane, with size \\(f\\alpha\\)."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Refractive index of glass relative to water",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 0.89",
+    "B) 2.0",
+    "C) 1.125",
+    "D) 0.17"
+   ],
+   "correct_option": "C",
+   "targets": "P6:relative index glass water",
+   "question": "Glass has a refractive index of 1.5 and water of \\(\\dfrac{4}{3}\\). The refractive index of glass relative to water is:",
+   "explanation": "Answer: (C) 1.125\nGiven: \\(n_g = 1.5\\), \\(n_w = \\dfrac{4}{3}\\)\nFormula: \\(n_{gw} = \\dfrac{n_g}{n_w}\\)\nStep 1: \\(n_{gw} = \\dfrac{1.5}{4/3} = 1.125\\)\nCommon mistake: 0.89 (A) inverts the ratio, giving water relative to glass.\nKey point: Relative index is the ratio of absolute indices."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Speed of light in a medium from its wavelength there",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(4.5 \\times 10^{8}\\) m s⁻¹",
+    "B) \\(3 \\times 10^{8}\\) m s⁻¹",
+    "C) \\(1.33 \\times 10^{8}\\) m s⁻¹",
+    "D) \\(2 \\times 10^{8}\\) m s⁻¹"
+   ],
+   "correct_option": "D",
+   "targets": "P6:speed from wavelength in medium",
+   "question": "Light of wavelength 600 nm in vacuum has a wavelength of 400 nm in a certain medium. The speed of light in the medium is:",
+   "explanation": "Answer: (D) \\(2 \\times 10^{8}\\) m s⁻¹\nGiven: \\(\\lambda_0 = 600\\) nm, \\(\\lambda = 400\\) nm\nFormula: frequency is unchanged, so \\(\\dfrac{v}{c} = \\dfrac{\\lambda}{\\lambda_0}\\)\nStep 1: \\(v = 3 \\times 10^8 \\times \\dfrac{400}{600} = 2 \\times 10^8\\) m s⁻¹\nCommon mistake: \\(4.5 \\times 10^8\\) (A) inverts the ratio, giving a speed faster than light.\nKey point: Wavelength shrinks in a medium in proportion to speed."
+  },
+  {
+   "unit": "P7",
+   "sub_topic": "Photoelectric values for 4 eV light on a 2 eV metal",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+    "B) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)",
+    "C) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+    "D) (A)-(IV), (B)-(I), (C)-(II), (D)-(III)"
+   ],
+   "correct_option": "B",
+   "targets": "P7:photoelectric values match 4 ev",
+   "question": "Light of photon energy 4 eV falls on a metal of work function 2 eV (\\(hc = 1240\\) eV nm). Match each quantity in List-I with its value in List-II.\n\nList-I\n(A) Maximum kinetic energy of the photoelectrons\n(B) Stopping potential\n(C) Threshold wavelength of the metal\n(D) Maximum kinetic energy if 6 eV photons are used instead\n\nList-II\n(I) 620 nm\n(II) 2 V\n(III) 4 eV\n(IV) 2 eV",
+   "explanation": "Answer: (B) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)\nStep 1: \\(K_{max} = 4 - 2 = 2\\) eV (IV)\nStep 2: \\(V_0 = \\dfrac{K_{max}}{e} = 2\\) V (II)\nStep 3: \\(\\lambda_0 = \\dfrac{1240}{2} = 620\\) nm (I)\nStep 4: \\(6 - 2 = 4\\) eV (III)\nCommon mistake: Swapping (A) and (B); one is an energy in eV, the other a voltage in V.\nKey point: Raising the photon energy by 2 eV raises \\(K_{max}\\) by 2 eV."
+  },
+  {
+   "unit": "P7",
+   "sub_topic": "Force of a 1 W laser beam on a perfect mirror",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(3.3 \\times 10^{-9}\\) N",
+    "B) \\(6 \\times 10^{8}\\) N",
+    "C) \\(6.7 \\times 10^{-9}\\) N",
+    "D) \\(3 \\times 10^{-8}\\) N"
+   ],
+   "correct_option": "C",
+   "targets": "P7:laser force on mirror",
+   "question": "A 1 W laser beam falls normally on a perfectly reflecting mirror. The force it exerts on the mirror is about:",
+   "explanation": "Answer: (C) \\(6.7 \\times 10^{-9}\\) N\nGiven: \\(P = 1\\) W; each photon has momentum \\(\\dfrac{E}{c}\\)\nFormula: reflection reverses momentum: \\(F = \\dfrac{2P}{c}\\)\nStep 1: Momentum delivered per second by absorption would be \\(\\dfrac{P}{c} = 3.3 \\times 10^{-9}\\) N\nStep 2: Reflection doubles it: \\(F \\approx 6.7 \\times 10^{-9}\\) N\nCommon mistake: \\(3.3 \\times 10^{-9}\\) N (A) is the force on a black, absorbing surface.\nKey point: A reflected photon transfers twice its momentum."
+  },
+  {
+   "unit": "P7",
+   "sub_topic": "Work function from the ratio of photoelectron speeds at two wavelengths",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 2.07 eV",
+    "B) 3.62 eV",
+    "C) 1.03 eV",
+    "D) 2.76 eV"
+   ],
+   "correct_option": "D",
+   "targets": "P7:work function speed ratio two wavelengths",
+   "question": "Light of 300 nm ejects photoelectrons from a metal with a maximum speed twice that for light of 400 nm. The work function of the metal is about (\\(hc = 1240\\) eV nm):",
+   "explanation": "Answer: (D) 2.76 eV\nGiven: \\(E_1 = \\dfrac{1240}{300} \\approx 4.13\\) eV, \\(E_2 = \\dfrac{1240}{400} = 3.1\\) eV; \\(v_1 = 2v_2\\), so \\(K_1 = 4K_2\\)\nFormula: \\(K = E - \\phi_0\\)\nStep 1: \\(4.13 - \\phi_0 = 4(3.1 - \\phi_0)\\)\nStep 2: \\(3\\phi_0 = 12.4 - 4.13 = 8.27\\), so \\(\\phi_0 \\approx 2.76\\) eV\nCommon mistake: 2.07 eV (A) takes \\(K_1 = 2K_2\\); kinetic energy goes as the square of speed.\nKey point: Twice the speed means four times the kinetic energy."
+  },
+  {
+   "unit": "P7",
+   "sub_topic": "Photons in a 1 mJ laser pulse at 500 nm",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(2.5 \\times 10^{15}\\)",
+    "B) \\(2.5 \\times 10^{18}\\)",
+    "C) \\(4 \\times 10^{-16}\\)",
+    "D) \\(1.6 \\times 10^{12}\\)"
+   ],
+   "correct_option": "A",
+   "targets": "P7:photons in laser pulse",
+   "question": "A laser pulse of wavelength 500 nm carries 1 mJ of energy. The number of photons in it is about (\\(hc = 1240\\) eV nm):",
+   "explanation": "Answer: (A) \\(2.5 \\times 10^{15}\\)\nGiven: \\(E_{pulse} = 10^{-3}\\) J, \\(\\lambda = 500\\) nm\nFormula: photon energy \\(= \\dfrac{1240}{\\lambda}\\) eV; \\(N = \\dfrac{E_{pulse}}{E_{photon}}\\)\nStep 1: \\(E_{photon} = 2.48\\) eV \\(\\approx 3.97 \\times 10^{-19}\\) J\nStep 2: \\(N = \\dfrac{10^{-3}}{3.97 \\times 10^{-19}} \\approx 2.5 \\times 10^{15}\\)\nCommon mistake: \\(2.5 \\times 10^{18}\\) (B) takes the pulse as 1 J.\nKey point: Divide the total energy by the energy of one photon."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Wavelengths of four hydrogen lines",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+    "B) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+    "C) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+    "D) (A)-(II), (B)-(III), (C)-(IV), (D)-(I)"
+   ],
+   "correct_option": "C",
+   "targets": "P8:hydrogen lines wavelengths match",
+   "question": "Match each hydrogen transition in List-I with the wavelength emitted in List-II.\n\nList-I\n(A) \\(n = 3 \\to 1\\)\n(B) \\(n = 3 \\to 2\\)\n(C) \\(n = 4 \\to 3\\)\n(D) \\(n = 5 \\to 2\\)\n\nList-II\n(I) about 434 nm\n(II) about 103 nm\n(III) about 1875 nm\n(IV) about 656 nm",
+   "explanation": "Answer: (C) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)\nStep 1: (A) 12.09 eV: \\(\\dfrac{1240}{12.09} \\approx 103\\) nm (II)\nStep 2: (B) 1.89 eV: about 656 nm (IV)\nStep 3: (C) 0.66 eV: about 1875 nm (III)\nStep 4: (D) \\(13.6\\left(\\dfrac{1}{4} - \\dfrac{1}{25}\\right) \\approx 2.86\\) eV: about 434 nm (I)\nCommon mistake: Swapping (A) and (B); a jump to \\(n = 1\\) is far more energetic.\nKey point: Lyman lines are ultraviolet, Balmer visible, Paschen infrared."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Binding energy, fission and fusion — which hold",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) and (C) only",
+    "B) (A), (B) and (C) only",
+    "C) (B), (C) and (D) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "B",
+   "targets": "P8:binding peak iron,fusion conserves nucleons",
+   "question": "Consider the following statements:\n(A) The binding energy per nucleon is greatest near mass number 56.\n(B) Energy is released when a heavy nucleus splits into two medium-mass nuclei.\n(C) The mass of a nucleus is less than the total mass of its free nucleons.\n(D) In fusion the total number of nucleons decreases.\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (B) (A), (B) and (C) only\nWhy: (A) iron sits at the peak of the curve. (B) the fragments are more tightly bound. (C) the difference is the mass defect.\nWhy not the others: (D) is false: nucleons are conserved in every nuclear reaction; only the binding changes. Options (C) and (D) include (D); (A) leaves out (B).\nKey point: Mass, not the number of nucleons, turns into energy."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Four hydrogen wavelengths in increasing order",
+   "difficulty": "medium",
+   "format": "sequence",
+   "options": [
+    "A) (B), (C), (D), (A)",
+    "B) (D), (B), (C), (A)",
+    "C) (A), (C), (D), (B)",
+    "D) (B), (D), (C), (A)"
+   ],
+   "correct_option": "D",
+   "targets": "P8:hydrogen series limits order",
+   "question": "Arrange these hydrogen wavelengths in increasing order:\n(A) first line of the Balmer series\n(B) series limit of the Lyman series\n(C) series limit of the Balmer series\n(D) first line of the Lyman series",
+   "explanation": "Answer: (D) (B), (D), (C), (A)\nStep 1: (B) \\(\\dfrac{1240}{13.6} \\approx 91\\) nm; (D) \\(\\dfrac{1240}{10.2} \\approx 122\\) nm\nStep 2: (C) \\(\\dfrac{1240}{3.4} \\approx 365\\) nm; (A) \\(\\dfrac{1240}{1.89} \\approx 656\\) nm\nStep 3: Increasing: (B), (D), (C), (A)\nCommon mistake: (B) puts the first Lyman line before the limit; the limit is the most energetic line, so the shortest.\nKey point: Each series ends at its limit, its shortest wavelength."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Photon from a jump between orbits of radii 4.77 Å and 2.12 Å",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 1.89 eV",
+    "B) 10.2 eV",
+    "C) 12.1 eV",
+    "D) 0.66 eV"
+   ],
+   "correct_option": "A",
+   "targets": "P8:photon from orbit radii",
+   "question": "In a hydrogen atom the electron jumps from an orbit of radius 4.77 Å to one of radius 2.12 Å (\\(a_0 = 0.53\\) Å). The energy of the emitted photon is about:",
+   "explanation": "Answer: (A) 1.89 eV\nGiven: \\(r_n = n^2a_0\\): \\(\\dfrac{4.77}{0.53} = 9\\), so \\(n = 3\\); \\(\\dfrac{2.12}{0.53} = 4\\), so \\(n = 2\\)\nFormula: \\(E_n = -\\dfrac{13.6}{n^2}\\) eV\nStep 1: \\(E_3 = -1.51\\) eV, \\(E_2 = -3.4\\) eV\nStep 2: Photon energy \\(= 1.89\\) eV\nCommon mistake: 12.1 eV (C) takes the lower orbit as \\(n = 1\\).\nKey point: Identify \\(n\\) from the radius before using the energy formula."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Energy from fusing all the deuterium in 1 kg",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(1.6 \\times 10^{14}\\) J",
+    "B) \\(7.9 \\times 10^{13}\\) J",
+    "C) \\(7.9 \\times 10^{10}\\) J",
+    "D) \\(4.9 \\times 10^{26}\\) J"
+   ],
+   "correct_option": "B",
+   "targets": "P8:deuterium kilogram fusion energy",
+   "question": "Each fusion of two deuterons releases 3.27 MeV. If all the deuterons in 1 kg of deuterium fused this way, the energy released would be about (\\(N_A = 6.0 \\times 10^{23}\\) mol⁻¹):",
+   "explanation": "Answer: (B) \\(7.9 \\times 10^{13}\\) J\nGiven: molar mass 2 g; 1 kg \\(= 500\\) mol \\(= 3.0 \\times 10^{26}\\) deuterons\nFormula: reactions \\(= \\dfrac{N}{2}\\); energy \\(=\\) reactions \\(\\times 3.27 \\times 1.6 \\times 10^{-13}\\) J\nStep 1: Reactions \\(= 1.5 \\times 10^{26}\\)\nStep 2: Energy \\(= 1.5 \\times 10^{26} \\times 5.2 \\times 10^{-13} \\approx 7.9 \\times 10^{13}\\) J\nCommon mistake: \\(1.6 \\times 10^{14}\\) J (A) counts one reaction per deuteron. \\(4.9 \\times 10^{26}\\) (D) leaves the answer in MeV.\nKey point: Two deuterons are used in each reaction."
+  },
+  {
+   "unit": "P9",
+   "sub_topic": "Formation and biasing of a p–n junction — the false claim",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) only",
+    "B) (B) only",
+    "C) (C) only",
+    "D) (D) only"
+   ],
+   "correct_option": "C",
+   "targets": "P9:forward bias barrier lowers false,diffusion forms depletion",
+   "question": "Consider the following statements:\n(A) Diffusion of majority carriers across the junction creates the depletion region.\n(B) The barrier potential opposes further diffusion of majority carriers.\n(C) In forward bias the barrier potential increases.\n(D) In reverse bias a small current flows, carried by minority carriers.\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (C) (C) only\nWhy: Only (C) is false: forward bias opposes the barrier, lowering it so that majority carriers can cross.\nWhy not the others: (A) carriers that cross leave behind charged ions. (B) the field of those ions pushes back. (D) minority carriers are swept across by the junction field. Options (A), (B) and (D) name a true statement as false.\nKey point: Forward bias lowers the barrier; reverse bias raises it."
+  },
+  {
+   "unit": "P9",
+   "sub_topic": "How much doping at one part in 10⁸ raises silicon's electron density",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(10^{8}\\)",
+    "B) \\(1.5 \\times 10^{16}\\)",
+    "C) \\(3 \\times 10^{12}\\)",
+    "D) \\(3.3 \\times 10^{4}\\)"
+   ],
+   "correct_option": "D",
+   "targets": "P9:doping factor increase electrons",
+   "question": "Silicon has \\(5 \\times 10^{28}\\) atoms per m³ and an intrinsic carrier density of \\(1.5 \\times 10^{16}\\) m⁻³. It is doped with arsenic at one atom in \\(10^8\\). The electron density increases by a factor of about:",
+   "explanation": "Answer: (D) \\(3.3 \\times 10^{4}\\)\nGiven: donors \\(= \\dfrac{5 \\times 10^{28}}{10^8} = 5 \\times 10^{20}\\) m⁻³\nFormula: each donor gives one electron; factor \\(= \\dfrac{n_e}{n_i}\\)\nStep 1: \\(n_e \\approx 5 \\times 10^{20}\\) m⁻³\nStep 2: Factor \\(= \\dfrac{5 \\times 10^{20}}{1.5 \\times 10^{16}} \\approx 3.3 \\times 10^4\\)\nCommon mistake: \\(10^8\\) (A) confuses the doping ratio with the increase in carriers.\nKey point: A tiny trace of dopant multiplies the carriers tens of thousands of times."
+  },
+  {
+   "unit": "P9",
+   "sub_topic": "Voltage across a load fed through a germanium diode",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 3.0 V",
+    "B) 3.3 V",
+    "C) 2.6 V",
+    "D) 0.3 V"
+   ],
+   "correct_option": "A",
+   "targets": "P9:germanium diode load voltage",
+   "question": "A 3.3 V source drives a \\(1\\ \\text{k}\\Omega\\) load through a forward-biased germanium diode (0.3 V drop). The voltage across the load is:",
+   "explanation": "Answer: (A) 3.0 V\nGiven: \\(V = 3.3\\) V, diode drop 0.3 V\nFormula: \\(V_{load} = V - V_{diode}\\)\nStep 1: \\(V_{load} = 3.3 - 0.3 = 3.0\\) V (current 3 mA)\nCommon mistake: 2.6 V (C) uses the silicon drop of 0.7 V.\nKey point: Germanium drops about 0.3 V; silicon about 0.7 V."
+  }
+ ]
+}

@@ -53,6 +53,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T9 | electrostatic work processes match, isolated sphere capacitance, three series capacitors charge voltage, alpha kinetic energy kilovolt, spheres touched force change, electron force between plates, opposite polarity capacitors energy lost |
 | T10 | gauss law any distribution, outside charge zero flux, equilateral triangle two charges field, work separate opposite charges, area doubled gap halved capacitance, line charge field value, capacitor bank voltage rating, dipole equatorial field value |
 | T11 | dielectric isolated capacitor effects match, zero field not zero potential, like charges separate pe falls, four distributions field order, electron deflection plates, stacked dielectric layers capacitance, field from 3d potential, merged drops potential |
+| T12 | square charges centre e v match, isolated sphere stored energy, shell plus centre charge potential, balanced capacitor bridge, dipole work 60 to 180, hemisphere flux uniform field, potential difference near point charge |
 
 ### P2 Current Electricity
 
@@ -69,6 +70,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T9 | identical cells series parallel emf r, manganin standard resistor, resistivity independent length, four ohm groupings order, wire cut four parallel, mobility drift speed field, parallel pair series power branch |
 | T10 | conduction terms meanings match, nichrome wire resistance diameter, heater coil halved power, opposing cells weaker terminal voltage, number parallel resistors current, drift speed current density |
 | T11 | internal resistance depends electrolyte, parallel cells small load, best grouping cells maximum current, copper carbon temperature compensation, heat internal resistance minute, voltmeter loading reading, electrons per second filament |
+| T12 | energy power values match, ohmic resistance constant current, diode non ohmic, power four parts circuit order, wire drawn radius halved, field from current density resistivity, heater coils parallel time |
 
 ### P3 Magnetic Effects of Current and Magnetism
 
@@ -85,6 +87,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T9 | ammeter series high resistance false, radial field linear scale, loop current from centre field, proton deuteron equal ke radius, parallel wires force two metres, square coil maximum torque, galvanometer resistance from shunt, electron speed circle field |
 | T10 | susceptibility kinds match, ampere law any closed loop, solenoid uniform inside, period of revolution particles order, electron revolution frequency, perpendicular loops net field, semicircular wire force, magnetisation from moment volume |
 | T11 | toroid solenoid fields match, alpha radius after acceleration, antiparallel wires outside point field, voltage sensitivity galvanometer, velocity selector then circle proton, galvanometer voltmeter ammeter pair, relative permeability from b h |
+| T12 | period independent speed, magnetic force no work, levitating wire current, coil moment from centre field, electron kinetic energy circle, wire along solenoid axis force, bar magnet moment axial field, solenoid turns per metre |
 
 ### P4 Electromagnetic Induction and Alternating Currents
 
@@ -101,6 +104,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T9 | ac quantities sine equation match, inductor energy stored, rc circuit impedance current, rl circuit average power, self inductance flux linkage, resonance current resistance only |
 | T10 | capacitor current leads, inductor no average power, loop current falling field, aircraft wing emf, lcr capacitor voltage off resonance, mains peak voltage, transmission line loss |
 | T11 | lcr resonance quantities match, inductance core dependence, mutual inductance reciprocal, generator peak emf order, lcr average power off resonance, coil flipped charge, transformer load primary current |
+| T12 | reactances ac dc match, choke coil lamp inductance, generator emf plane at 30, magnetic field energy volume, small loop centre large loop mutual, capacitor reactance frequency |
 
 ### P5 Electromagnetic Waves
 
@@ -117,6 +121,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T9 | em waves history scientists, ozone absorbs uv, radio lower frequency microwaves, wavelengths frequency order |
 | T10 | em detectors match, wavelength in medium ghz, lasik ultraviolet |
 | T11 | e over b equals c, radiation pressure, wave equation wavelength e0, one micrometre band |
+| T12 | 600 nm wave quantities match, displacement current steady dc zero, displacement current magnetic field, frequencies wavelength order |
 
 ### P6 Optics
 
@@ -133,6 +138,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T9 | red faster in glass, frequency unchanged refraction, concave mirror 45 cm image, concave lens object at f, concave refracting surface image, simple microscope infinity, fourth bright fringe distance, prism minimum deviation index 1.5, index from real apparent depth, tir conditions denser rarer |
 | T10 | power to focal length match, concave magnified real false, convex always virtual, fringe width settings order, image height convex lens, path difference third dark, central band screen width, prism normal incidence deviation, light time glass plate, bird seen by fish apparent height |
 | T11 | ydse changes effects match, lens in denser liquid diverges, minimum object image distance 4f, intensity path difference sixth, fibre core cladding critical angle, prism incidence at minimum deviation, telescope separation near point image, first secondary maximum angle, biconvex unequal radii |
+| T12 | central fringe bright false, diffraction central double, microscope near point total magnification, convex concave contact image, mirror image on screen magnified, spot in slab both faces, slit separation angular fringe width, moon image objective, relative index glass water, speed from wavelength in medium |
 
 ### P7 Dual Nature of Matter and Radiation
 
@@ -149,6 +155,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T9 | work function threshold wavelength match, wavelength for stopping potential, photoelectron speed 200 nm, voltage for electron wavelength |
 | T10 | caesium visible emission, stopping potential intensity independent, electron momentum from wavelength, photon equal momentum electron, stopping potential from threshold wavelength |
 | T11 | matter wave values match, stopping potential differs metals, saturation all collected, electrons photons wavelength order, sunlight photon flux |
+| T12 | photoelectric values match 4 ev, laser force on mirror, work function speed ratio two wavelengths, photons in laser pulse |
 
 ### P8 Atoms and Nuclei
 
@@ -165,6 +172,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T9 | hydrogen n2 radius energies match, series regions, lyman ends n1, transitions photon energy order, electron speed third orbit, lithium proton q value |
 | T10 | nuclear constants match, paschen first line wavelength, minimum energy balmer lines, angular momentum third orbit, uranium mass per day reactor |
 | T11 | nuclear force repulsive short, radius cube root, de broglie bohr third orbit, ionisation frequency n2, deuteron triton fusion energy, oxygen mass defect |
+| T12 | hydrogen lines wavelengths match, binding peak iron, fusion conserves nucleons, hydrogen series limits order, photon from orbit radii, deuterium kilogram fusion energy |
 
 ### P9 Electronic Devices
 
@@ -181,3 +189,4 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T9 | n type majority holes false, band overlap conductor, electron density p type, forward bias depletion narrows |
 | T10 | dopant valency carriers match, rectifier pure dc false, full wave ripple double, ripple frequency rectifiers order |
 | T11 | silicon carrier densities match, centre tap peak silicon drop, parallel diode branches current |
+| T12 | forward bias barrier lowers false, diffusion forms depletion, doping factor increase electrons, germanium diode load voltage |
