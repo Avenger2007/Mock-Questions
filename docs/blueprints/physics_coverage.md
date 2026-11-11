@@ -50,6 +50,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T6 | charged sphere field potential regions, three charge equilibrium, ring axial potential, dielectric half area parallel, electron speed accelerated potential, connected spheres charge density, series then parallel reconnect |
 | T7 | dielectric polarisation field reduced, isolated capacitor dielectric voltage, force middle charge line, field bisector two equal charges, energy density capacitor gap, dipole work rotate ninety, capacitor network branch charge, point charge potential value |
 | T8 | gauss line sheet shell fields, equipotentials never intersect, field steepest potential decrease, potential values order, proton speed potential drop, plate separation doubled isolated, field from potential gradient, flux cube face centre charge |
+| T9 | electrostatic work processes match, isolated sphere capacitance, three series capacitors charge voltage, alpha kinetic energy kilovolt, spheres touched force change, electron force between plates, opposite polarity capacitors energy lost |
 
 ### P2 Current Electricity
 
@@ -63,6 +64,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T6 | cell short circuit open circuit load, relaxation time temperature, electron density metal temperature, drift field proportional, cell arrangements current order, branch current series parallel, stretched wire percentage resistance, drift speed ratio series wires |
 | T7 | parallel three resistors readings, internal resistance voltmeter readings, mixed grouping cells current, temperature from resistance rise, series resistor voltage share, series parallel heat ratio |
 | T8 | kirchhoff any circuit, balanced bridge no current, circular wire resistance points, series bulbs power ratio, short circuit current internal resistance, electrons count current time, relaxation time copper |
+| T9 | identical cells series parallel emf r, manganin standard resistor, resistivity independent length, four ohm groupings order, wire cut four parallel, mobility drift speed field, parallel pair series power branch |
 
 ### P3 Magnetic Effects of Current and Magnetism
 
@@ -76,6 +78,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T6 | field lines inside bar magnet, current loop dipole, helix pitch proton, wire field distance for value, voltmeter range extension, force loop near wire, orbiting electron magnetic moment, relative permeability from susceptibility |
 | T7 | meters conversion ideal resistance, magnetic force no kinetic energy, solenoid end half field, loop torque order shapes, ammeter range extension shunt, midpoint field opposite currents, electron radius after acceleration, coil turns centre field |
 | T8 | magnetic force situations, loop rewound turns field factor, field inside thick wire, alpha force magnetic field, circle square same wire moment, susceptibility from magnetisation, shunt one ninth current share |
+| T9 | ammeter series high resistance false, radial field linear scale, loop current from centre field, proton deuteron equal ke radius, parallel wires force two metres, square coil maximum torque, galvanometer resistance from shunt, electron speed circle field |
 
 ### P4 Electromagnetic Induction and Alternating Currents
 
@@ -89,6 +92,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T6 | induced emf kinds expressions, capacitance for resonance, transformer efficiency primary current, phase angle lcr value, force pull loop out of field, inductive reactance value 100 hz |
 | T7 | wattless current, average ac zero, generator emf revolutions per second, self inductance from emf, average power phase equations, impedance above resonance, coaxial solenoids mutual inductance |
 | T8 | induction devices laws roles, mutual inductance orientation, induced emf open circuit, component currents mains order, sliding rod power dissipated, transformer secondary turns, resonant frequency hertz |
+| T9 | ac quantities sine equation match, inductor energy stored, rc circuit impedance current, rl circuit average power, self inductance flux linkage, resonance current resistance only |
 
 ### P5 Electromagnetic Waves
 
@@ -102,6 +106,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T6 | em wave k omega relations, uv lasik, microwave oven, gamma remote control, photon energy order bands |
 | T7 | wavelength to frequency bands, displacement current value, wavelength in medium |
 | T8 | x rays frequency uv, infrared physiotherapy, omega from wave number, light travel time sun |
+| T9 | em waves history scientists, ozone absorbs uv, radio lower frequency microwaves, wavelengths frequency order |
 
 ### P6 Optics
 
@@ -115,6 +120,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T6 | mirror focal length medium independent, convex rear view, object distance magnification mirror, glass slab normal shift, ydse two wavelengths coincide, telescope eyepiece from length, microscope objective object distance, speed from critical angle sine, diverging lens power, single slit first minimum width |
 | T7 | convex lens image positions, telescope objective focal length long, microscope image inverted, lens power order, lens two positions focal length, ydse dark fringes either side, thin prism angle from deviation, refraction glass to air angle, convex mirror magnification value, microscope intermediate image |
 | T8 | critical angle values indices, microscope tube length, equiconcave lens maker, unequal slits intensity ratio, apparent depth two layers, convex mirror focal from image, two convex lenses power, single slit angular width central, speed ratio two media |
+| T9 | red faster in glass, frequency unchanged refraction, concave mirror 45 cm image, concave lens object at f, concave refracting surface image, simple microscope infinity, fourth bright fringe distance, prism minimum deviation index 1.5, index from real apparent depth, tir conditions denser rarer |
 
 ### P7 Dual Nature of Matter and Radiation
 
@@ -128,6 +134,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T6 | experiments wave particle evidence, stopping potential difference wavelengths, electron wavelength ratio voltages, photoelectron speed from energy |
 | T7 | kmax frequency slope h, stopping potential slope same, kmax not proportional, photocurrent quantum efficiency, proton wavelength kinetic energy, threshold frequency from work function |
 | T8 | photon electron values match, photoemission instantaneous, intense light below threshold, same voltage particles wavelength order, photons per second ratio colours |
+| T9 | work function threshold wavelength match, wavelength for stopping potential, photoelectron speed 200 nm, voltage for electron wavelength |
 
 ### P8 Atoms and Nuclei
 
@@ -141,6 +148,7 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T6 | hydrogen series regions, carbon 14 neutrons protons, isotopes hydrogen, binding per nucleon order, lyman balmer first line ratio, mass equivalent energy fission |
 | T7 | bohr quantities scaling n, ionise from n three wavelength, balmer series limit, carbon twelve binding energy, energy equivalent one gram |
 | T8 | rutherford model line spectrum, nucleus size range, excitation energy 2 to 4, hydrogen line 4 to 2 wavelength, fission energy from binding curve, nuclear radius ratio mass numbers |
+| T9 | hydrogen n2 radius energies match, series regions, lyman ends n1, transitions photon energy order, electron speed third orbit, lithium proton q value |
 
 ### P9 Electronic Devices
 
@@ -154,3 +162,4 @@ Six match-list items, each in a different unit; six statement items (file order 
 | T6 | ideal diode reverse resistance, majority minority bias currents, diode series resistor current, bias from potentials |
 | T7 | rectifier output filter centre tap, holes direction field, holes positive carriers, thermal pair generation, depletion region formation order |
 | T8 | diode circuit currents, rectifier peak output rms input, centre tap diodes conducting |
+| T9 | n type majority holes false, band overlap conductor, electron density p type, forward bias depletion narrows |
