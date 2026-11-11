@@ -58,6 +58,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | acharya narendra dev socialist, rajagopalachari swatantra, deen dayal upadhyaya jana sangh, ak gopalan cpi, kerala 1957 ems namboodiripad, congress 364 of 489 fptp |
 | T2 | election commission 1950 sukumar sen, ballot box per candidate, evm 2004, jana sangh 1951 sp mukherjee, congress factions |
 | T3 | election commission 1950, jana sangh 1951 sp mukherjee, swatantra 1959, third general election 1962, congress socialist party 1934 |
+| T4 | first general election 1952, second general election 1957, third general election 1962, fourth general election 1967, jana sangh akhand bharat, cpi abandoned violent revolution 1951 |
 
 ### I2 Nation-building and its problems
 
@@ -66,6 +67,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | src 1953 act 1956 14 states, potti sriramulu andhra, gujarat maharashtra 1960, manipur 1948 universal franchise, razakars nizam hyderabad |
 | T2 | nagaland 1963, gujarat maharashtra 1960, haryana 1966, meghalaya 1972, patel princely states integration, partition religious majorities |
 | T3 | 565 princely states, instrument of accession, hyderabad army september 1948, manipur merger 1949 assembly not consulted, government approach princely states considerations |
+| T4 | partition 80 lakh migrated, punjab bengal divided, ghaffar khan opposed partition, princely states not all joined by august 1947, andhra first linguistic state, hari singh accession october 1947 |
 
 ### I3 Politics of planned development
 
@@ -74,6 +76,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | first plan agriculture, bombay plan 1944 |
 | T2 | planning commission 1950 resolution, kerala model education health |
 | T3 | mahalanobis second plan, kumarappa gandhian economist, kurien operation flood, kn raj first plan, green revolution middle peasants |
+| T4 | planning commission chaired pm, niti aayog 2015, second plan heavy industry, planning commission not constitutional, mixed economy |
 
 ### I4 India's external relations
 
@@ -82,6 +85,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | panchsheel 1954, bandung 1955, tashkent 1966, shimla 1972, krishna menon resigned 1962, indo soviet treaty 1971 reason |
 | T2 | nam belgrade 1961, dalai lama asylum 1959, panchsheel peaceful coexistence, tashkent kosygin mediated, pokhran 1974 |
 | T3 | bandung 1955, chinese aggression 1962, pokhran ii 1998, kargil 1999, nam founders zhou not, no first use doctrine |
+| T4 | pm 1962 nehru, pm 1965 shastri, pm 1971 indira, pm 1998 vajpayee, dhaka surrender 1971, nonalignment reason independent policy |
 
 ### I5 Challenge to and restoration of the Congress system
 
@@ -90,6 +94,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | kamaraj plan 1963, indira pm 1966, 1967 congress lok sabha majority, shastri pm 1964, fourth general election 1967, bank nationalisation 1969, 1971 election garibi hatao, aya ram gaya ram gaya lal haryana |
 | T2 | kamaraj kingmaker, lohia non congressism, vv giri independent president 1969, sanjeeva reddy official candidate, syndicate congress leaders, grand alliance 1971 no positive programme |
 | T3 | congress split 1969 o and r, privy purses abolished, 1971 congress two thirds, jai jawan jai kisan, nijalingappa expelled indira |
+| T4 | nehru died 1964, shastri died tashkent 1966, congress split 1969 o and r, 1971 election garibi hatao, samyukt vidhayak dal, privy purse meaning |
 
 ### I6 Crises of the constitutional order
 
@@ -98,6 +103,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | article 352 internal disturbance, emergency declared 25 june 1975, raj narain election petition, shah commission emergency excesses, emergency press censorship preventive detention, lok sabha term extended |
 | T2 | navnirman gujarat 1974, jp total revolution, supersession judges 1973, railway strike george fernandes, morarji desai first non congress pm, pucl civil liberties |
 | T3 | 42nd amendment lok sabha six years, turkman gate demolition, compulsory sterilisation, committed bureaucracy, congress for democracy jagjivan ram |
+| T4 | 1977 congress lost north, janata government fell, charan singh pm 1979, congress won 1980, bihar movement students jp, elections march 1977 |
 
 ### I7 Regional aspirations and conflicts
 
@@ -106,6 +112,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | anandpur sahib 1973, operation blue star 1984, rajiv longowal accord 1985, mizo accord 1986, states carved out of assam, aasu assam movement |
 | T2 | nagaland 1963, sikkim merger 1975, assam accord 1985, mizoram state 1987, phizo naga national council, dmk annadurai 1949 |
 | T3 | indira assassinated october 1984, anti sikh violence 1984, punjab militancy continued after accord, mnf famine 1959, article 370 august 2019 |
+| T4 | laldenga mizoram, longowal punjab, sheikh abdullah kashmir, mahanta assam, anandpur sahib autonomy, seven sisters north east |
 
 ### I8 Democratic upsurge and coalition politics
 
@@ -114,6 +121,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | mandal commission janata government, 27 percent obc reservation, mandal implemented vp singh 1990, national front 1989, united front 1996, nda 1998, upa 2004 |
 | T2 | vp singh national front, deve gowda united front, chandra shekhar congress support, vajpayee nda, 2014 bjp majority own, coalition era regional parties role |
 | T3 | bjp formed 1980, janata dal 1988, 1989 no single party majority, 1991 congress minority government, rajiv gandhi assassinated 1991, upa left outside support |
+| T4 | chandra shekhar 1990, rao 1991, deve gowda 1996, gujral 1997, bjp 2 seats 1984, nda 1999 2004 full term |
 
 ### I9 Recent issues and challenges
 
@@ -122,6 +130,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | new economic policy 1991 rao |
 | T2 | bamcef 1978, bsp 1984, mandal implemented vp singh 1990, new economic policy 1991 rao, ayodhya december 1992 |
 | T3 | kanshi ram bsp founder, manmohan singh finance minister 1991, mayawati up cm, advani rath yatra 1990, faizabad 1986 unlocking |
+| T4 | bamcef employees federation, obc parties up bihar, bsp dalit support, nep opposition left, bsp first government up 1995 |
 
 ### W1 Collapse of bipolarity
 
@@ -130,6 +139,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | ussr 15 republics, cis formed 1991, russia inherited security council seat, shock therapy rapid imf, gorbachev general secretary 1985, berlin wall fell 1989, lithuania independence 1990, ussr dissolved 1991, glasnost openness, central asian republics |
 | T2 | perestroika restructuring, second world socialist bloc, shock therapy rapid imf, warsaw pact military alliance, berlin wall built 1961, soviet afghanistan 1979, gorbachev general secretary 1985, german unification 1990, chechnya dagestan secessionist, russia military hardware india |
 | T3 | soviet planned economy state ownership, soviet afghanistan 1979, yeltsin president russia, nationalism republics, yugoslavia breakup balkans, tajikistan civil war 2001, india russia multipolar world |
+| T4 | shock therapy world bank imf model, largest garage sale, rouble fell inflation savings, oligarchs inequality welfare dismantled, strong executive president weak parliament |
 
 ### W2 Alternative centres of power
 
@@ -138,6 +148,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | asean 1967, asean regional forum 1994, maastricht treaty 1992, china wto 2001, asean founding members, asean way informal cooperative, japan g7 nuclear |
 | T2 | eu flag anthem currency, eec 1957, maastricht created eu, china special economic zones, rajiv gandhi china 1988 |
 | T3 | eec 1957, asean 1967, maastricht treaty 1992, euro notes 2002, china agriculture 1982 industry 1998, south korea miracle han river, asean community three pillars |
+| T4 | schengen border free, euro common currency, asean economic community market, asean vision 2020, china revolution 1949, china open door 1978, china agriculture 1982 industry 1998, china wto 2001, asean objective growth |
 
 ### W3 South Asia after the Cold War
 
@@ -146,6 +157,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | saarc 1985, safta 2004, maldives multiparty 2005, nepal monarchy abolished 2008, ipkf 1987 accord, bhutan flushed out militants, musharraf 1999 |
 | T2 | mujib bangladesh, bhutto pakistan, gyanendra nepal, ltte sri lanka, bangladesh independence 1971, saarc 1985, pakistan nuclear test 1998, safta in force 2006, saarc members myanmar not, pakistan army clergy landowners |
 | T3 | bangladesh part of pakistan 1971, sri lanka democracy since 1948, bangladesh presidential 1975, sri lanka tamil conflict, nepal monarchy abolished 2008, bangladesh look east, sri lanka human development |
+| T4 | indus waters treaty 1960, ganga water dispute bangladesh, india sri lanka fta, bhutan hydro projects, ayub khan 1958, maldives republic 1968, safta tariffs 20 percent 2007 |
 
 ### W4 International organisations
 
@@ -154,6 +166,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | imf financial regulation, world bank loans development, wto global trade rules, iaea peaceful nuclear energy, security council 15 members, kofi annan ghana, amnesty international ngo human rights |
 | T2 | un founded 1945, five permanent veto, general assembly one vote, india non permanent member, guterres portugal, wto 1995 successor gatt |
 | T3 | trygve lie norway, hammarskjold sweden, u thant burma, ban ki moon south korea, league of nations 1919, un charter 1945, iaea 1957, wto 1995, unsc new members criteria, human rights watch ngo us |
+| T4 | un 51 founding states, india founding member un, imf g7 votes, world bank president us, non permanent members two years, icj hague, unhcr refugees |
 
 ### W5 Security in the contemporary world
 
@@ -162,6 +175,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | npt 1968, bwc 1972, start i 1991, cwc 1992, human security freedom from want fear, internally displaced persons |
 | T2 | traditional security military threat, terrorism non traditional, global poverty threat, hiv aids epidemic threat, balance of power meaning |
 | T3 | abm treaty limits defence, cwc bans chemical, npt nuclear states 1967 rule, start reduce strategic, cooperative security many actors, india security strategy components |
+| T4 | npt 1968, bwc 1972, cwc 1992, ctbt 1996, 9 11 2001 terrorism, human rights three categories |
 
 ### W6 Environment and natural resources
 
@@ -170,6 +184,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | earth summit rio 1992, kyoto protocol 1997, montreal protocol 1987, antarctic treaty 1959, cbdr rio declaration, sacred groves common property |
 | T2 | global commons four areas, montreal protocol ozone, global commons cooperation difficult north south, outer space technology north south, common property community rules |
 | T3 | agenda 21 development practices, unfccc 1992, kyoto binding targets industrial, wcip 1975, club of rome limits to growth, india ratified kyoto 2002 |
+| T4 | rio conventions climate biodiversity forestry, brundtland sustainable development, south development priority, india no binding targets, indigenous peoples un definition, gulf oil 30 percent |
 
 ### W7 Globalisation and its critics
 
@@ -178,3 +193,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T1 | globalisation flows four kinds, mcdonaldisation homogenisation, wsf porto alegre 2001, india reforms 1991, wsf mumbai 2004, cultural heterogenisation jeans kurta |
 | T2 | left critics capitalism phase, right critics traditional culture, advocates prosperity, wsf neo liberal opposition, minimalist state welfare, right wing valentines day |
 | T3 | state capacity globalisation mixed, technology internet globalisation, people flows restricted, interconnectedness, technology cause globalisation, neem patent resistance |
+| T4 | mnc meaning, social safety net, wsf meaning, neo liberalism meaning, globalisation dimensions, seattle 1999 wto protests |
