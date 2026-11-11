@@ -570,6 +570,32 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 - `docs/blueprints/mathematics.md` (pattern, PYQ analysis, unit quotas, difficulty, formats, out-of-scope list) and `docs/blueprints/mathematics_coverage.md` (host units for match and statement items, per-test item ledger).
 - `tools/cuet_math/` — compact draft format and converter, checker, item index, ledger marker, ship script, item patcher and replacer, match relabeller and series re-indexer; drafts of all 15 tests in `drafts/`.
 
+## Physics (322) — revised to the CUET 2027 standard (completed 11 Nov 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `ab6d6ca` (blueprint, coverage map, tools and pilot Test 1), `feaf2bd` (authoring tools), `488a8b2` (Test 2) … `f3263e5` (Test 15) on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | old 50-question papers, status `pending_revision` | **15 rewritten tests** (`CUET PHYSICS TEST 1–15.json`), planned in a coverage map; status `revised` |
+| Paper structure | 50 questions | NTA pattern: 50 questions, all compulsory; 60 min, +5 / −1; no calculator, so every number works by hand |
+| Syllabus | mixed, some out-of-scope items | gated to the NTA 2026 syllabus (latest published), 9 units; radioactivity, Davisson–Germer, polarisation, eddy-current theory, LC oscillations, the cyclotron and Curie's law left out |
+| Unit balance | uneven | fixed quotas in every test: P1 7, P2 6, P3 7, P4 6, P5 3, P6 9, P7 4, P8 5, P9 3 |
+| Difficulty | uneven | **8 / 32 / 10 (easy / medium / hard) in every test**; Tests 11–15 carry the hardest multi-step items |
+| Formats | almost all direct | per test: 6 match-list (each in a different unit, all with different answer patterns), 6 statement items alternating "correct" / "NOT correct", 3 sequence items (answer never A-B-C-D), at least 20 numericals; host units rotate in three sets across the series |
+| Explanations | 1–2 lines | numericals and match/sequence: Given / Formula / Step / Common mistake / Key point; statement items: Why / Why not the others / Key point |
+| Order and keys | uneven | key A 13 / B 12 / C 13 / D 12 (odd tests) and A 12 / B 13 / C 12 / D 13 (even tests); question order shuffled; no answer run longer than 3 |
+
+**Coverage ledger:** every test's items are listed per unit in `docs/blueprints/physics_coverage.md`, and `phy_index.py` prints every earlier sub-topic and stem. `phy_check.py` flags quota, format, key and difficulty drift and sub-topic or stem overlap with earlier tests (`OVERLAP`); close repeats were reworded or replaced before shipping.
+
+**Verification:** `validate_papers.py CUET --subject "Physics"` — 0 parse errors, 0 wrong counts, 0 option-count errors, 0 key/explanation mismatches, 0 runs > 3, 0 within- or cross-paper duplicate stems, 0 difficulty deviations; series key A 25.1%, B 24.9%, C 25.1%, D 24.9% (750 questions).
+
+**Known limits:** PYQs were analysed for pattern only; no question is copied. Some standard NCERT results (for example rectifier pulse frequency and series capacitor sharing) appear in more than one test with different numbers or framing.
+
+### Tools added
+- `docs/blueprints/physics.md` (pattern, PYQ analysis, unit quotas, difficulty, formats, out-of-scope list) and `docs/blueprints/physics_coverage.md` (format host rotation, per-test item ledger).
+- `tools/cuet_phy/` — compact draft format and converter, checker, item index, ledger marker, ship script, item patcher and replacer, match relabeller and series re-indexer; drafts of all 15 tests in `drafts/`.
+
 ## IAT New Tests 12 and 13 — authored review drafts (3 Nov 2026)
 
 - Authored 120 questions from reserved syllabus slots. Each paper has 15 questions per subject, editorial tiers 9/42/9, balanced 15-per-letter keys, detailed WHY and distractor analyses, and displayed derivations for all Mathematics/Physics items.
