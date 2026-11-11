@@ -1,0 +1,804 @@
+{
+ "q": [
+  {
+   "unit": "P1",
+   "sub_topic": "How potential and field fall off with distance",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)",
+    "B) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+    "C) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)",
+    "D) (A)-(III), (B)-(IV), (C)-(II), (D)-(I)"
+   ],
+   "correct_option": "B",
+   "targets": "P1:potential dipole distance dependence,potential inside conductor constant",
+   "question": "Match each quantity in List-I with how it depends on the distance \\(r\\) in List-II.\n\nList-I\n(A) Potential of a point charge\n(B) Potential of a short dipole at an axial point\n(C) Field of a short dipole at an axial point\n(D) Potential inside a charged conducting sphere\n\nList-II\n(I) \\(\\propto \\dfrac{1}{r^3}\\)\n(II) independent of \\(r\\)\n(III) \\(\\propto \\dfrac{1}{r}\\)\n(IV) \\(\\propto \\dfrac{1}{r^2}\\)",
+   "explanation": "Answer: (B) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)\nStep 1: \\(V = \\dfrac{kq}{r}\\) for a point charge (III)\nStep 2: \\(V = \\dfrac{kp}{r^2}\\) on the axis of a short dipole (IV)\nStep 3: \\(E = \\dfrac{2kp}{r^3}\\) on the axis of a short dipole (I)\nStep 4: The field inside a conductor is zero, so the potential there is constant (II)\nCommon mistake: Swapping (B) and (C); for a dipole the potential falls one power of \\(r\\) slower than the field.\nKey point: Field and potential of the same source differ by one power of \\(r\\)."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Capacitor facts — which hold",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) and (B) only",
+    "B) (A), (C) and (D) only",
+    "C) (B), (C) and (D) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "D",
+   "targets": "P1:capacitance independent of charge,series same charge parallel same voltage",
+   "question": "Consider the following statements:\n(A) The capacitance of a parallel plate capacitor does not depend on the charge placed on it.\n(B) Filling the gap of a capacitor with a dielectric increases its capacitance.\n(C) Capacitors joined in series all carry the same charge.\n(D) Capacitors joined in parallel all have the same potential difference.\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (D) (A), (B), (C) and (D)\nWhy: (A) \\(C = \\dfrac{\\varepsilon_0A}{d}\\) depends only on geometry and the medium. (B) \\(C = \\dfrac{K\\varepsilon_0A}{d}\\) with \\(K > 1\\). (C) the same charge flows onto each plate in a series chain. (D) each capacitor in parallel is connected across the same two points.\nWhy not the others: All four statements are true, so every option that leaves one out is wrong.\nKey point: Doubling \\(Q\\) doubles \\(V\\); the ratio \\(C = \\dfrac{Q}{V}\\) stays the same."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Four capacitor arrangements in increasing order of capacitance",
+   "difficulty": "medium",
+   "format": "sequence",
+   "options": [
+    "A) (A), (C), (D), (B)",
+    "B) (D), (A), (C), (B)",
+    "C) (A), (D), (C), (B)",
+    "D) (B), (C), (D), (A)"
+   ],
+   "correct_option": "C",
+   "targets": "P1:capacitance arrangements order",
+   "question": "Arrange these in increasing order of capacitance:\n(A) two \\(2\\ \\mu\\text{F}\\) capacitors in series\n(B) two \\(2\\ \\mu\\text{F}\\) capacitors in parallel\n(C) a single \\(3\\ \\mu\\text{F}\\) capacitor\n(D) a \\(1\\ \\mu\\text{F}\\) air capacitor completely filled with a dielectric of \\(K = 2\\)",
+   "explanation": "Answer: (C) (A), (D), (C), (B)\nStep 1: (A) series: \\(\\dfrac{2 \\times 2}{2 + 2} = 1\\ \\mu\\text{F}\\)\nStep 2: (D) \\(KC_0 = 2\\ \\mu\\text{F}\\)\nStep 3: (C) \\(3\\ \\mu\\text{F}\\); (B) parallel: \\(2 + 2 = 4\\ \\mu\\text{F}\\)\nStep 4: Increasing: (A), (D), (C), (B)\nCommon mistake: Treating series capacitors like series resistors (adding them), which puts (A) at \\(4\\ \\mu\\text{F}\\).\nKey point: Capacitors in series give less than the smallest one; in parallel they add."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Work done in moving a charge between two potentials",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(80\\ \\mu\\text{J}\\)",
+    "B) \\(120\\ \\mu\\text{J}\\)",
+    "C) \\(20\\ \\mu\\text{J}\\)",
+    "D) \\(100\\ \\mu\\text{J}\\)"
+   ],
+   "correct_option": "A",
+   "targets": "P1:work done charge potential difference",
+   "question": "A charge of \\(2\\ \\mu\\text{C}\\) is moved from a point at 10 V to a point at 50 V. The work done against the field is:",
+   "explanation": "Answer: (A) \\(80\\ \\mu\\text{J}\\)\nGiven: \\(q = 2 \\times 10^{-6}\\) C, \\(V_A = 10\\) V, \\(V_B = 50\\) V\nFormula: \\(W = q(V_B - V_A)\\)\nStep 1: \\(V_B - V_A = 40\\) V\nStep 2: \\(W = 2 \\times 10^{-6} \\times 40 = 8 \\times 10^{-5}\\) J \\(= 80\\ \\mu\\text{J}\\)\nCommon mistake: \\(120\\ \\mu\\text{J}\\) (B) adds the two potentials. \\(100\\ \\mu\\text{J}\\) (D) uses only the final potential.\nKey point: Work depends on the potential difference, not on the path."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Three equal capacitors in a mixed grouping",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(18\\ \\mu\\text{F}\\)",
+    "B) \\(9\\ \\mu\\text{F}\\)",
+    "C) \\(2\\ \\mu\\text{F}\\)",
+    "D) \\(4\\ \\mu\\text{F}\\)"
+   ],
+   "correct_option": "B",
+   "targets": "P1:mixed capacitor grouping",
+   "question": "Three \\(6\\ \\mu\\text{F}\\) capacitors are connected so that two are in series and this pair is in parallel with the third. The equivalent capacitance is:",
+   "explanation": "Answer: (B) \\(9\\ \\mu\\text{F}\\)\nGiven: \\(C = 6\\ \\mu\\text{F}\\) each\nFormula: series \\(\\dfrac{C_1C_2}{C_1 + C_2}\\); parallel \\(C_1 + C_2\\)\nStep 1: Series pair: \\(\\dfrac{6 \\times 6}{12} = 3\\ \\mu\\text{F}\\)\nStep 2: With the third in parallel: \\(3 + 6 = 9\\ \\mu\\text{F}\\)\nCommon mistake: \\(4\\ \\mu\\text{F}\\) (D) is two in parallel with the third in series. \\(18\\ \\mu\\text{F}\\) (A) puts all three in parallel.\nKey point: Reduce the innermost group first."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Energy stored after a dielectric enters an isolated capacitor",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 40 mJ",
+    "B) 20 mJ",
+    "C) 5 mJ",
+    "D) 10 mJ"
+   ],
+   "correct_option": "D",
+   "targets": "P1:dielectric isolated capacitor energy",
+   "question": "A \\(4\\ \\mu\\text{F}\\) air capacitor is charged to 100 V and then disconnected from the battery. A dielectric of \\(K = 2\\) is then made to fill the gap completely. The energy now stored is:",
+   "explanation": "Answer: (D) 10 mJ\nGiven: \\(C_0 = 4\\ \\mu\\text{F}\\), \\(V_0 = 100\\) V, \\(K = 2\\); charge fixed\nFormula: \\(U = \\dfrac{Q^2}{2C}\\)\nStep 1: \\(Q = 4 \\times 10^{-6} \\times 100 = 4 \\times 10^{-4}\\) C; \\(U_0 = \\dfrac{1}{2} \\times 4 \\times 10^{-6} \\times 10^4 = 20\\) mJ\nStep 2: \\(C = 8\\ \\mu\\text{F}\\), so \\(U = \\dfrac{U_0}{K} = 10\\) mJ\nCommon mistake: 40 mJ (A) keeps \\(V\\) fixed and uses \\(U = \\dfrac{1}{2}CV^2\\), which applies only while the battery stays connected.\nKey point: Isolated capacitor: \\(Q\\) fixed, so energy falls \\(K\\) times."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Why electrostatic field lines never close on themselves",
+   "difficulty": "medium",
+   "format": "direct",
+   "options": [
+    "A) the electrostatic field is conservative",
+    "B) two field lines can never cross each other",
+    "C) electric charge is always quantised",
+    "D) the field inside a conductor is zero"
+   ],
+   "correct_option": "A",
+   "targets": "P1:conservative field no closed loops",
+   "question": "Electrostatic field lines never form closed loops because:",
+   "explanation": "Answer: (A) the electrostatic field is conservative\nWhy: Along a closed field line the field would do non-zero work on a charge going round it; for a conservative field the work round any closed path is zero, so such a loop cannot exist.\nWhy not the others: (B) is true but a separate property. (C) and (D) are true facts unrelated to the shape of field lines.\nKey point: Electrostatic field lines start on positive charges and end on negative ones."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Kirchhoff's rules and resistivity — which claims fail",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) only",
+    "B) (B) only",
+    "C) (C) only",
+    "D) (D) only"
+   ],
+   "correct_option": "B",
+   "targets": "P2:kirchhoff rules conservation,resistivity length independent",
+   "question": "Consider the following statements:\n(A) Kirchhoff's junction rule follows from the conservation of charge.\n(B) Kirchhoff's loop rule follows from the conservation of momentum.\n(C) The resistivity of a wire does not depend on its length.\n(D) The resistivity of a metal increases as its temperature rises.\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (B) (B) only\nWhy: Only (B) is false: the loop rule follows from the conservation of energy (the electrostatic field is conservative).\nWhy not the others: (A) charge does not pile up at a junction. (C) resistivity is a property of the material; resistance depends on length. (D) more vibrating ions mean more collisions. Options (A), (C) and (D) name a true statement as false.\nKey point: Junction rule: charge; loop rule: energy."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Resistance of a wire at a higher temperature",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(14\\ \\Omega\\)",
+    "B) \\(10.2\\ \\Omega\\)",
+    "C) \\(12\\ \\Omega\\)",
+    "D) \\(2\\ \\Omega\\)"
+   ],
+   "correct_option": "C",
+   "targets": "P2:temperature coefficient resistance",
+   "question": "A wire has resistance \\(10\\ \\Omega\\) at \\(20^\\circ\\)C. Its temperature coefficient of resistance is \\(4 \\times 10^{-3}\\ ^\\circ\\text{C}^{-1}\\). Its resistance at \\(70^\\circ\\)C is:",
+   "explanation": "Answer: (C) \\(12\\ \\Omega\\)\nGiven: \\(R_0 = 10\\ \\Omega\\), \\(\\alpha = 4 \\times 10^{-3}\\ ^\\circ\\text{C}^{-1}\\), \\(\\Delta T = 50^\\circ\\)C\nFormula: \\(R = R_0(1 + \\alpha\\Delta T)\\)\nStep 1: \\(\\alpha\\Delta T = 0.2\\)\nStep 2: \\(R = 10 \\times 1.2 = 12\\ \\Omega\\)\nCommon mistake: \\(2\\ \\Omega\\) (D) is only the increase. \\(14\\ \\Omega\\) (A) uses \\(\\Delta T = 100^\\circ\\)C.\nKey point: Use the change in temperature, not the final temperature."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Heat from a 55 Ω heater on 220 V in 10 minutes",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 528 kJ",
+    "B) 8.8 kJ",
+    "C) 52.8 kJ",
+    "D) 1056 kJ"
+   ],
+   "correct_option": "A",
+   "targets": "P2:joule heating time",
+   "question": "A heater of resistance \\(55\\ \\Omega\\) is connected to 220 V for 10 minutes. The heat produced is:",
+   "explanation": "Answer: (A) 528 kJ\nGiven: \\(R = 55\\ \\Omega\\), \\(V = 220\\) V, \\(t = 600\\) s\nFormula: \\(H = \\dfrac{V^2}{R}t\\)\nStep 1: \\(P = \\dfrac{48400}{55} = 880\\) W\nStep 2: \\(H = 880 \\times 600 = 5.28 \\times 10^5\\) J \\(= 528\\) kJ\nCommon mistake: 8.8 kJ (B) uses \\(t = 10\\) instead of 600 s. 52.8 kJ (C) uses one minute.\nKey point: Time must be in seconds for joules."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Current from four cells in series",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 1.5 A",
+    "B) 0.375 A",
+    "C) 0.5 A",
+    "D) 1 A"
+   ],
+   "correct_option": "D",
+   "targets": "P2:cells in series internal resistance",
+   "question": "Four cells, each of emf 1.5 V and internal resistance \\(0.5\\ \\Omega\\), are joined in series across a \\(4\\ \\Omega\\) resistor. The current is:",
+   "explanation": "Answer: (D) 1 A\nGiven: \\(n = 4\\), \\(\\varepsilon = 1.5\\) V, \\(r = 0.5\\ \\Omega\\), \\(R = 4\\ \\Omega\\)\nFormula: \\(I = \\dfrac{n\\varepsilon}{R + nr}\\)\nStep 1: \\(n\\varepsilon = 6\\) V; \\(nr = 2\\ \\Omega\\)\nStep 2: \\(I = \\dfrac{6}{4 + 2} = 1\\) A\nCommon mistake: 1.5 A (A) ignores the internal resistances.\nKey point: In series both the emfs and the internal resistances add."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Equivalent resistance of a balanced bridge network",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(20\\ \\Omega\\)",
+    "B) \\(3.6\\ \\Omega\\)",
+    "C) \\(2.4\\ \\Omega\\)",
+    "D) \\(1.6\\ \\Omega\\)"
+   ],
+   "correct_option": "B",
+   "targets": "P2:balanced bridge equivalent resistance",
+   "question": "In a bridge network, the arms are \\(P = 2\\ \\Omega\\), \\(Q = 4\\ \\Omega\\), \\(R = 3\\ \\Omega\\) and \\(S = 6\\ \\Omega\\), and a \\(5\\ \\Omega\\) resistor joins the junction of \\(P\\) and \\(Q\\) to the junction of \\(R\\) and \\(S\\). The equivalent resistance between the input corners is:",
+   "explanation": "Answer: (B) \\(3.6\\ \\Omega\\)\nGiven: \\(\\dfrac{P}{Q} = \\dfrac{2}{4} = \\dfrac{R}{S} = \\dfrac{3}{6}\\), so the bridge is balanced\nFormula: balanced bridge: the middle resistor carries no current and can be removed\nStep 1: Upper branch \\(P + Q = 6\\ \\Omega\\); lower branch \\(R + S = 9\\ \\Omega\\)\nStep 2: \\(R_{eq} = \\dfrac{6 \\times 9}{6 + 9} = 3.6\\ \\Omega\\)\nCommon mistake: \\(20\\ \\Omega\\) (A) adds every resistor in series, including the \\(5\\ \\Omega\\).\nKey point: Check the balance condition before solving any bridge."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "SI unit of electron mobility",
+   "difficulty": "easy",
+   "format": "direct",
+   "options": [
+    "A) m V⁻¹ s⁻¹",
+    "B) m² V s⁻¹",
+    "C) V m² s⁻¹",
+    "D) m² V⁻¹ s⁻¹"
+   ],
+   "correct_option": "D",
+   "targets": "P2:mobility si unit",
+   "question": "The SI unit of the mobility of charge carriers is:",
+   "explanation": "Answer: (D) m² V⁻¹ s⁻¹\nWhy: Mobility \\(\\mu = \\dfrac{v_d}{E}\\), so its unit is \\(\\dfrac{\\text{m s}^{-1}}{\\text{V m}^{-1}} = \\text{m}^2\\ \\text{V}^{-1}\\ \\text{s}^{-1}\\).\nWhy not the others: (A) loses one power of metre. (B) and (C) put volts in the numerator.\nKey point: Mobility is drift speed per unit field."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "SI units of magnetic quantities",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(I), (B)-(III), (C)-(IV), (D)-(II)",
+    "B) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+    "C) (A)-(I), (B)-(IV), (C)-(III), (D)-(II)",
+    "D) (A)-(I), (B)-(IV), (C)-(II), (D)-(III)"
+   ],
+   "correct_option": "C",
+   "targets": "P3:magnetic quantities si units",
+   "question": "Match each quantity in List-I with its SI unit in List-II.\n\nList-I\n(A) Magnetic moment\n(B) Magnetic field \\(B\\)\n(C) Permeability of free space \\(\\mu_0\\)\n(D) Magnetic intensity \\(H\\)\n\nList-II\n(I) A m²\n(II) A m⁻¹\n(III) T m A⁻¹\n(IV) N A⁻¹ m⁻¹",
+   "explanation": "Answer: (C) (A)-(I), (B)-(IV), (C)-(III), (D)-(II)\nStep 1: \\(m = IA\\): A m² (I)\nStep 2: \\(F = IlB\\) gives \\(B\\) in N A⁻¹ m⁻¹, i.e. tesla (IV)\nStep 3: \\(B = \\dfrac{\\mu_0I}{2\\pi r}\\) gives \\(\\mu_0\\) in T m A⁻¹ (III)\nStep 4: \\(H = nI\\): A m⁻¹ (II)\nCommon mistake: Swapping (A) and (D); moment has area (m²), intensity has \"per metre\".\nKey point: Derive units from a defining formula."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Field at the centre of a semicircular wire",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(5 \\times 10^{-5}\\) T",
+    "B) \\(1 \\times 10^{-4}\\) T",
+    "C) \\(2.5 \\times 10^{-5}\\) T",
+    "D) \\(1.57 \\times 10^{-4}\\) T"
+   ],
+   "correct_option": "A",
+   "targets": "P3:semicircle field centre",
+   "question": "A wire bent into a semicircle of radius 3.14 cm carries 5 A. The magnetic field at its centre due to the curved part is:",
+   "explanation": "Answer: (A) \\(5 \\times 10^{-5}\\) T\nGiven: \\(I = 5\\) A, \\(R = 3.14 \\times 10^{-2}\\) m\nFormula: semicircle: \\(B = \\dfrac{\\mu_0I}{4R}\\)\nStep 1: \\(\\mu_0I = 4\\pi \\times 10^{-7} \\times 5 = 2\\pi \\times 10^{-6}\\)\nStep 2: \\(B = \\dfrac{2\\pi \\times 10^{-6}}{4 \\times 3.14 \\times 10^{-2}} = 5 \\times 10^{-5}\\) T\nCommon mistake: \\(1 \\times 10^{-4}\\) T (B) is the field of a full loop.\nKey point: A fraction of a loop gives the same fraction of the full-loop field."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Magnetic moment of a 100-turn circular coil",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 31.4 A m²",
+    "B) 0.0314 A m²",
+    "C) 6.28 A m²",
+    "D) 3.14 A m²"
+   ],
+   "correct_option": "D",
+   "targets": "P3:coil magnetic moment",
+   "question": "A circular coil of 100 turns and radius 10 cm carries 1 A. Its magnetic moment is:",
+   "explanation": "Answer: (D) 3.14 A m²\nGiven: \\(N = 100\\), \\(r = 0.1\\) m, \\(I = 1\\) A\nFormula: \\(m = NI\\pi r^2\\)\nStep 1: \\(\\pi r^2 = 0.0314\\) m²\nStep 2: \\(m = 100 \\times 1 \\times 0.0314 = 3.14\\) A m²\nCommon mistake: 0.0314 A m² (B) forgets the 100 turns. 6.28 A m² (C) uses \\(2\\pi r\\) instead of \\(\\pi r^2\\).\nKey point: The moment points along the axis of the coil."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Torque on a coil whose plane is at 60° to the field",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 0.087 N m",
+    "B) 0.05 N m",
+    "C) 0.1 N m",
+    "D) 0.025 N m"
+   ],
+   "correct_option": "B",
+   "targets": "P3:coil torque plane angle",
+   "question": "A rectangular coil of 50 turns, 4 cm × 5 cm, carries 2 A in a uniform field of 0.5 T. The plane of the coil makes \\(60^\\circ\\) with the field. The torque on it is:",
+   "explanation": "Answer: (B) 0.05 N m\nGiven: \\(N = 50\\), \\(A = 2 \\times 10^{-3}\\) m², \\(I = 2\\) A, \\(B = 0.5\\) T\nFormula: \\(\\tau = NIAB\\sin\\theta\\), \\(\\theta\\) = angle between the normal and \\(B\\)\nStep 1: Plane at \\(60^\\circ\\), so the normal is at \\(30^\\circ\\) to \\(B\\)\nStep 2: \\(NIAB = 0.1\\); \\(\\tau = 0.1 \\times \\sin 30^\\circ = 0.05\\) N m\nCommon mistake: 0.087 N m (A) uses the plane's angle, \\(\\sin 60^\\circ\\).\nKey point: \\(\\theta\\) in \\(\\tau = mB\\sin\\theta\\) is measured from the normal (the moment), not the plane."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Series resistance that makes a galvanometer a 10 V voltmeter",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(10\\ \\text{k}\\Omega\\)",
+    "B) \\(0.002\\ \\Omega\\)",
+    "C) \\(9980\\ \\Omega\\)",
+    "D) \\(10020\\ \\Omega\\)"
+   ],
+   "correct_option": "C",
+   "targets": "P3:galvanometer to voltmeter series",
+   "question": "A galvanometer of resistance \\(20\\ \\Omega\\) gives full-scale deflection for 1 mA. To use it as a voltmeter of range 10 V, the resistance to be joined in series is:",
+   "explanation": "Answer: (C) \\(9980\\ \\Omega\\)\nGiven: \\(G = 20\\ \\Omega\\), \\(I_g = 10^{-3}\\) A, \\(V = 10\\) V\nFormula: \\(R = \\dfrac{V}{I_g} - G\\)\nStep 1: \\(\\dfrac{V}{I_g} = 10^4\\ \\Omega\\)\nStep 2: \\(R = 10000 - 20 = 9980\\ \\Omega\\)\nCommon mistake: \\(10\\ \\text{k}\\Omega\\) (A) forgets to subtract \\(G\\). \\(0.002\\ \\Omega\\) (B) is a shunt, which makes an ammeter.\nKey point: The total resistance of the voltmeter must be \\(\\dfrac{V}{I_g}\\)."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Force on a charge moving along the field",
+   "difficulty": "easy",
+   "format": "direct",
+   "options": [
+    "A) zero",
+    "B) \\(qvB\\)",
+    "C) \\(\\dfrac{qvB}{2}\\)",
+    "D) \\(2qvB\\)"
+   ],
+   "correct_option": "A",
+   "targets": "P3:force charge parallel field",
+   "question": "A charged particle moves parallel to a uniform magnetic field. The magnetic force on it is:",
+   "explanation": "Answer: (A) zero\nWhy: \\(F = qvB\\sin\\theta\\) and \\(\\theta = 0^\\circ\\), so \\(F = 0\\); the particle keeps moving in a straight line.\nWhy not the others: \\(qvB\\) (B) is the force when the motion is perpendicular to \\(B\\). (C) and (D) have no basis.\nKey point: A magnetic force needs a velocity component across the field."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Speed passed undeviated by crossed fields",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(6 \\times 10^3\\) m s⁻¹",
+    "B) \\(6.7 \\times 10^{-6}\\) m s⁻¹",
+    "C) \\(1.5 \\times 10^4\\) m s⁻¹",
+    "D) \\(1.5 \\times 10^5\\) m s⁻¹"
+   ],
+   "correct_option": "D",
+   "targets": "P3:velocity selector crossed fields",
+   "question": "A beam of charged particles passes undeviated through crossed electric and magnetic fields of \\(3 \\times 10^4\\) V m⁻¹ and 0.2 T. The speed of the particles is:",
+   "explanation": "Answer: (D) \\(1.5 \\times 10^5\\) m s⁻¹\nGiven: \\(E = 3 \\times 10^4\\) V m⁻¹, \\(B = 0.2\\) T\nFormula: \\(qE = qvB \\Rightarrow v = \\dfrac{E}{B}\\)\nStep 1: \\(v = \\dfrac{3 \\times 10^4}{0.2} = 1.5 \\times 10^5\\) m s⁻¹\nCommon mistake: \\(6 \\times 10^3\\) (A) multiplies \\(E\\) and \\(B\\). \\(6.7 \\times 10^{-6}\\) (B) inverts the ratio.\nKey point: The selected speed does not depend on the charge or mass."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Expressions for reactance, resonance and motional emf",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+    "B) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)",
+    "C) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)",
+    "D) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)"
+   ],
+   "correct_option": "A",
+   "targets": "P4:reactance expressions,resonance angular frequency,motional emf expression",
+   "question": "Match each quantity in List-I with its expression in List-II.\n\nList-I\n(A) Inductive reactance\n(B) Capacitive reactance\n(C) Resonant angular frequency of a series LCR circuit\n(D) emf across a rod of length \\(l\\) moving at speed \\(v\\) perpendicular to \\(B\\)\n\nList-II\n(I) \\(\\dfrac{1}{\\sqrt{LC}}\\)\n(II) \\(\\omega L\\)\n(III) \\(Blv\\)\n(IV) \\(\\dfrac{1}{\\omega C}\\)",
+   "explanation": "Answer: (A) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)\nStep 1: \\(X_L = \\omega L\\) (II)\nStep 2: \\(X_C = \\dfrac{1}{\\omega C}\\) (IV)\nStep 3: Resonance when \\(X_L = X_C\\): \\(\\omega_0 = \\dfrac{1}{\\sqrt{LC}}\\) (I)\nStep 4: Motional emf \\(\\varepsilon = Blv\\) (III)\nCommon mistake: Swapping (A) and (B); an inductor's opposition rises with frequency, a capacitor's falls.\nKey point: At resonance the two reactances cancel."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Transformer facts — which hold",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) and (C) only",
+    "B) (A), (B) and (C) only",
+    "C) (A), (C) and (D) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "C",
+   "targets": "P4:transformer mutual induction dc,step down current",
+   "question": "Consider the following statements about an ideal transformer:\n(A) It works on the principle of mutual induction.\n(B) A step-up transformer increases the current as well as the voltage.\n(C) It does not work on a steady d.c. supply.\n(D) In a step-down transformer, the secondary current is greater than the primary current.\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (C) (A), (C) and (D) only\nWhy: (A) a changing primary flux links the secondary. (C) steady d.c. gives no changing flux. (D) \\(V_pI_p = V_sI_s\\), so lower voltage means higher current.\nWhy not the others: (B) is false: power is conserved, so stepping the voltage up steps the current down. Options (B) and (D) include (B); (A) leaves out (D).\nKey point: A transformer trades voltage for current; it cannot raise both."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Reactances at 50 Hz in increasing order",
+   "difficulty": "hard",
+   "format": "sequence",
+   "options": [
+    "A) (C), (A), (D), (B)",
+    "B) (C), (D), (A), (B)",
+    "C) (D), (C), (B), (A)",
+    "D) (A), (C), (D), (B)"
+   ],
+   "correct_option": "B",
+   "targets": "P4:reactance values order 50 hz",
+   "question": "At 50 Hz (\\(\\omega \\approx 314\\) rad s⁻¹), arrange these in increasing order of reactance:\n(A) a 1 H inductor\n(B) a \\(10\\ \\mu\\text{F}\\) capacitor\n(C) a 0.1 H inductor\n(D) a \\(100\\ \\mu\\text{F}\\) capacitor",
+   "explanation": "Answer: (B) (C), (D), (A), (B)\nStep 1: (A) \\(\\omega L = 314\\ \\Omega\\); (C) \\(31.4\\ \\Omega\\)\nStep 2: (B) \\(\\dfrac{1}{314 \\times 10^{-5}} \\approx 318\\ \\Omega\\); (D) \\(\\dfrac{1}{314 \\times 10^{-4}} \\approx 31.8\\ \\Omega\\)\nStep 3: Increasing: (C), (D), (A), (B)\nCommon mistake: Thinking a larger capacitor has a larger reactance; \\(X_C = \\dfrac{1}{\\omega C}\\) falls as \\(C\\) grows, so (D) is small.\nKey point: \\(X_L \\propto L\\) but \\(X_C \\propto \\dfrac{1}{C}\\)."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "emf across a rod moving through a field",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 4 V",
+    "B) 0.04 V",
+    "C) 1.6 V",
+    "D) 0.4 V"
+   ],
+   "correct_option": "D",
+   "targets": "P4:motional emf rod value",
+   "question": "A rod 0.5 m long moves at 4 m s⁻¹ perpendicular to a uniform magnetic field of 0.2 T. The emf across its ends is:",
+   "explanation": "Answer: (D) 0.4 V\nGiven: \\(B = 0.2\\) T, \\(l = 0.5\\) m, \\(v = 4\\) m s⁻¹\nFormula: \\(\\varepsilon = Blv\\)\nStep 1: \\(\\varepsilon = 0.2 \\times 0.5 \\times 4 = 0.4\\) V\nCommon mistake: 1.6 V (C) leaves out the length \\(l\\).\nKey point: The rod, field and velocity must be mutually perpendicular for \\(\\varepsilon = Blv\\)."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Resonant angular frequency of an LCR circuit",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 250 rad s⁻¹",
+    "B) \\(2.5 \\times 10^5\\) rad s⁻¹",
+    "C) 500 rad s⁻¹",
+    "D) 5000 rad s⁻¹"
+   ],
+   "correct_option": "C",
+   "targets": "P4:resonance angular frequency value",
+   "question": "A series LCR circuit has \\(L = 0.4\\) H and \\(C = 10\\ \\mu\\text{F}\\). Its resonant angular frequency is:",
+   "explanation": "Answer: (C) 500 rad s⁻¹\nGiven: \\(L = 0.4\\) H, \\(C = 10^{-5}\\) F\nFormula: \\(\\omega_0 = \\dfrac{1}{\\sqrt{LC}}\\)\nStep 1: \\(LC = 4 \\times 10^{-6}\\); \\(\\sqrt{LC} = 2 \\times 10^{-3}\\)\nStep 2: \\(\\omega_0 = \\dfrac{1}{2 \\times 10^{-3}} = 500\\) rad s⁻¹\nCommon mistake: \\(2.5 \\times 10^5\\) (B) forgets the square root.\nKey point: \\(\\omega_0\\) does not depend on \\(R\\)."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Inductive reactance from current in an RL circuit",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(100\\ \\Omega\\)",
+    "B) \\(173\\ \\Omega\\)",
+    "C) \\(200\\ \\Omega\\)",
+    "D) \\(300\\ \\Omega\\)"
+   ],
+   "correct_option": "B",
+   "targets": "P4:rl circuit impedance reactance",
+   "question": "A \\(100\\ \\Omega\\) resistor and an inductor in series are connected to a 200 V (rms), 50 Hz supply. The rms current is 1 A. The inductive reactance is about:",
+   "explanation": "Answer: (B) \\(173\\ \\Omega\\)\nGiven: \\(R = 100\\ \\Omega\\), \\(V = 200\\) V, \\(I = 1\\) A\nFormula: \\(Z = \\dfrac{V}{I}\\), \\(Z^2 = R^2 + X_L^2\\)\nStep 1: \\(Z = 200\\ \\Omega\\)\nStep 2: \\(X_L = \\sqrt{200^2 - 100^2} = 100\\sqrt{3} \\approx 173\\ \\Omega\\)\nCommon mistake: \\(100\\ \\Omega\\) (A) subtracts \\(R\\) from \\(Z\\) directly; the voltages add as phasors, not numbers.\nKey point: In an RL circuit, \\(R\\) and \\(X_L\\) combine at right angles."
+  },
+  {
+   "unit": "P5",
+   "sub_topic": "Properties of electromagnetic waves — which claims fail",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) only",
+    "B) (B) only",
+    "C) (C) only",
+    "D) (D) only"
+   ],
+   "correct_option": "D",
+   "targets": "P5:em waves no medium,e and b in phase",
+   "question": "Consider the following statements:\n(A) Electromagnetic waves are transverse.\n(B) In vacuum, all electromagnetic waves travel at the same speed.\n(C) The electric and magnetic fields of an electromagnetic wave oscillate in phase.\n(D) Electromagnetic waves need a material medium to travel.\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (D) (D) only\nWhy: Only (D) is false: EM waves are self-sustaining oscillations of \\(E\\) and \\(B\\) and travel through vacuum, as sunlight shows.\nWhy not the others: (A) \\(E\\) and \\(B\\) are both perpendicular to the direction of travel. (B) every band moves at \\(c\\) in vacuum. (C) \\(E\\) and \\(B\\) reach their peaks together. Options (A), (B) and (C) name a true statement as false.\nKey point: Unlike sound, EM waves need no medium."
+  },
+  {
+   "unit": "P5",
+   "sub_topic": "Frequency of 3 cm microwaves",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(1 \\times 10^{10}\\) Hz",
+    "B) \\(1 \\times 10^{8}\\) Hz",
+    "C) \\(9 \\times 10^{6}\\) Hz",
+    "D) \\(1 \\times 10^{9}\\) Hz"
+   ],
+   "correct_option": "A",
+   "targets": "P5:em wave frequency from wavelength",
+   "question": "The frequency of microwaves of wavelength 3 cm in vacuum is:",
+   "explanation": "Answer: (A) \\(1 \\times 10^{10}\\) Hz\nGiven: \\(\\lambda = 3 \\times 10^{-2}\\) m, \\(c = 3 \\times 10^8\\) m s⁻¹\nFormula: \\(\\nu = \\dfrac{c}{\\lambda}\\)\nStep 1: \\(\\nu = \\dfrac{3 \\times 10^8}{3 \\times 10^{-2}} = 1 \\times 10^{10}\\) Hz\nCommon mistake: \\(1 \\times 10^8\\) Hz (B) uses 3 m instead of 3 cm.\nKey point: 10 GHz lies in the microwave band."
+  },
+  {
+   "unit": "P5",
+   "sub_topic": "Source of gamma rays",
+   "difficulty": "medium",
+   "format": "direct",
+   "options": [
+    "A) fast electrons striking a metal target",
+    "B) nuclei of atoms",
+    "C) vibrating molecules",
+    "D) electrons in outer orbits"
+   ],
+   "correct_option": "B",
+   "targets": "P5:gamma rays origin",
+   "question": "Gamma rays are emitted mainly by:",
+   "explanation": "Answer: (B) nuclei of atoms\nWhy: Gamma rays come from nuclear processes, as a nucleus drops from a higher to a lower energy state.\nWhy not the others: (A) produces X-rays. (C) produces infrared. (D) transitions of outer electrons give visible and ultraviolet light.\nKey point: The shorter the wavelength, the more energetic the process that makes it."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Optical effects and everyday examples",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(I), (B)-(II), (C)-(IV), (D)-(III)",
+    "B) (A)-(II), (B)-(I), (C)-(III), (D)-(IV)",
+    "C) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+    "D) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)"
+   ],
+   "correct_option": "D",
+   "targets": "P6:tir diamond example,dispersion prism example,diffraction slit example",
+   "question": "Match each phenomenon in List-I with an example in List-II.\n\nList-I\n(A) Total internal reflection\n(B) Dispersion\n(C) Diffraction\n(D) Refraction\n\nList-II\n(I) Spectrum formed by a glass prism\n(II) Brilliance of a cut diamond\n(III) A pool looking shallower than it is\n(IV) Light spreading behind a very narrow slit",
+   "explanation": "Answer: (D) (A)-(II), (B)-(I), (C)-(IV), (D)-(III)\nStep 1: Diamond's critical angle is small (about \\(24^\\circ\\)), so light is trapped and reflected many times inside (II)\nStep 2: A prism splits white light because \\(n\\) depends on wavelength (I)\nStep 3: Light bends round the edges of an opening comparable to its wavelength (IV)\nStep 4: Refraction at the water surface raises the apparent position of the bottom (III)\nCommon mistake: Swapping (A) and (B); a diamond's colours are dispersion, but its brilliance is total internal reflection.\nKey point: Link each phenomenon to one standard NCERT example."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Apparent depth of water in a tank",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 16 cm",
+    "B) 9 cm",
+    "C) 3 cm",
+    "D) 8 cm"
+   ],
+   "correct_option": "B",
+   "targets": "P6:apparent depth water",
+   "question": "A tank is filled with water (\\(n = \\dfrac{4}{3}\\)) to a depth of 12 cm. Seen from directly above, the bottom appears to be raised to a depth of:",
+   "explanation": "Answer: (B) 9 cm\nGiven: real depth 12 cm, \\(n = \\dfrac{4}{3}\\)\nFormula: apparent depth \\(= \\dfrac{\\text{real depth}}{n}\\)\nStep 1: \\(\\dfrac{12}{4/3} = 9\\) cm\nCommon mistake: 16 cm (A) multiplies by \\(n\\). 3 cm (C) is the shift, not the apparent depth.\nKey point: Objects under water look nearer to the surface."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Image by a convex lens for an object at 30 cm",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 60 cm from the lens, real, inverted, twice the size",
+    "B) 12 cm from the lens, real, inverted, smaller",
+    "C) 60 cm from the lens on the object side, virtual, erect",
+    "D) 30 cm from the lens, real, inverted, same size"
+   ],
+   "correct_option": "A",
+   "targets": "P6:convex lens image beyond 2f",
+   "question": "An object is 30 cm from a convex lens of focal length 20 cm. The image is:",
+   "explanation": "Answer: (A) 60 cm from the lens, real, inverted, twice the size\nGiven: \\(u = -30\\) cm, \\(f = +20\\) cm\nFormula: \\(\\dfrac{1}{v} - \\dfrac{1}{u} = \\dfrac{1}{f}\\)\nStep 1: \\(\\dfrac{1}{v} = \\dfrac{1}{20} - \\dfrac{1}{30} = \\dfrac{1}{60}\\), so \\(v = +60\\) cm\nStep 2: \\(m = \\dfrac{v}{u} = -2\\): real, inverted, magnified\nCommon mistake: (B) uses \\(\\dfrac{1}{v} = \\dfrac{1}{20} + \\dfrac{1}{30}\\), the mirror form with the wrong sign.\nKey point: An object between \\(f\\) and \\(2f\\) gives an enlarged real image beyond \\(2f\\)."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Image by a convex mirror for an object at its focal distance",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 20 cm behind the mirror, same size",
+    "B) at infinity",
+    "C) 10 cm behind the mirror, erect, half the size",
+    "D) 10 cm in front of the mirror, inverted, half the size"
+   ],
+   "correct_option": "C",
+   "targets": "P6:convex mirror image",
+   "question": "A convex mirror has a focal length of 20 cm. For an object 20 cm in front of it, the image is:",
+   "explanation": "Answer: (C) 10 cm behind the mirror, erect, half the size\nGiven: \\(u = -20\\) cm, \\(f = +20\\) cm\nFormula: \\(\\dfrac{1}{v} + \\dfrac{1}{u} = \\dfrac{1}{f}\\)\nStep 1: \\(\\dfrac{1}{v} = \\dfrac{1}{20} + \\dfrac{1}{20} = \\dfrac{1}{10}\\), so \\(v = +10\\) cm (behind)\nStep 2: \\(m = -\\dfrac{v}{u} = +\\dfrac{1}{2}\\): erect, half size\nCommon mistake: (B) treats the mirror as concave, where an object at \\(F\\) gives an image at infinity.\nKey point: A convex mirror always gives a virtual, erect, diminished image."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Fringe width when the double-slit set-up is put in water",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 0.8 mm",
+    "B) 0.6 mm",
+    "C) 0.3 mm",
+    "D) 0.45 mm"
+   ],
+   "correct_option": "D",
+   "targets": "P6:ydse fringe width in water",
+   "question": "In Young's double-slit experiment the fringe width in air is 0.6 mm. If the whole apparatus is immersed in water (\\(n = \\dfrac{4}{3}\\)), the fringe width becomes:",
+   "explanation": "Answer: (D) 0.45 mm\nGiven: \\(\\beta = 0.6\\) mm, \\(n = \\dfrac{4}{3}\\)\nFormula: \\(\\beta = \\dfrac{\\lambda D}{d}\\); in water \\(\\lambda' = \\dfrac{\\lambda}{n}\\)\nStep 1: \\(\\beta' = \\dfrac{\\beta}{n}\\)\nStep 2: \\(\\beta' = 0.6 \\times \\dfrac{3}{4} = 0.45\\) mm\nCommon mistake: 0.8 mm (A) multiplies by \\(n\\), as if the wavelength grew in water.\nKey point: Light's wavelength shrinks in a denser medium, so the fringes close up."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Width of the central maximum of a single slit",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 2.5 mm",
+    "B) 5 mm",
+    "C) 10 mm",
+    "D) 0.5 mm"
+   ],
+   "correct_option": "B",
+   "targets": "P6:single slit central maximum width",
+   "question": "Light of wavelength 500 nm falls on a slit 0.2 mm wide. The width of the central maximum on a screen 1 m away is:",
+   "explanation": "Answer: (B) 5 mm\nGiven: \\(\\lambda = 5 \\times 10^{-7}\\) m, \\(a = 2 \\times 10^{-4}\\) m, \\(D = 1\\) m\nFormula: width \\(= \\dfrac{2\\lambda D}{a}\\)\nStep 1: \\(\\dfrac{\\lambda D}{a} = 2.5 \\times 10^{-3}\\) m\nStep 2: Width \\(= 2 \\times 2.5 = 5\\) mm\nCommon mistake: 2.5 mm (A) is the distance to the first minimum on one side only.\nKey point: The central maximum stretches between the first minima on both sides."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Length of an astronomical telescope in normal adjustment",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 145 cm",
+    "B) 30 cm",
+    "C) 155 cm",
+    "D) 750 cm"
+   ],
+   "correct_option": "C",
+   "targets": "P6:telescope tube length",
+   "question": "An astronomical telescope has an objective of focal length 150 cm and an eyepiece of focal length 5 cm. In normal adjustment the distance between the lenses is:",
+   "explanation": "Answer: (C) 155 cm\nGiven: \\(f_o = 150\\) cm, \\(f_e = 5\\) cm\nFormula: normal adjustment: \\(L = f_o + f_e\\)\nStep 1: \\(L = 150 + 5 = 155\\) cm\nCommon mistake: 30 cm (B) is the magnifying power \\(\\dfrac{f_o}{f_e}\\). 145 cm (A) subtracts.\nKey point: The focal points of the two lenses coincide in normal adjustment."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Speed of light in a medium with critical angle 30°",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(1.5 \\times 10^8\\) m s⁻¹",
+    "B) \\(6 \\times 10^8\\) m s⁻¹",
+    "C) \\(2.6 \\times 10^8\\) m s⁻¹",
+    "D) \\(3 \\times 10^8\\) m s⁻¹"
+   ],
+   "correct_option": "A",
+   "targets": "P6:critical angle speed in medium",
+   "question": "The critical angle for light going from a medium into air is \\(30^\\circ\\). The speed of light in the medium is:",
+   "explanation": "Answer: (A) \\(1.5 \\times 10^8\\) m s⁻¹\nGiven: \\(C = 30^\\circ\\), \\(c = 3 \\times 10^8\\) m s⁻¹\nFormula: \\(n = \\dfrac{1}{\\sin C}\\), \\(v = \\dfrac{c}{n}\\)\nStep 1: \\(n = \\dfrac{1}{0.5} = 2\\)\nStep 2: \\(v = \\dfrac{3 \\times 10^8}{2} = 1.5 \\times 10^8\\) m s⁻¹\nCommon mistake: \\(6 \\times 10^8\\) (B) multiplies by \\(n\\), which would exceed the speed of light in vacuum.\nKey point: A smaller critical angle means a larger refractive index."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Property of light unchanged by refraction",
+   "difficulty": "medium",
+   "format": "direct",
+   "options": [
+    "A) wavelength",
+    "B) speed",
+    "C) frequency",
+    "D) direction"
+   ],
+   "correct_option": "C",
+   "targets": "P6:frequency unchanged refraction",
+   "question": "When light passes from air into glass, which of these stays the same?",
+   "explanation": "Answer: (C) frequency\nWhy: The frequency is set by the source; each wave crest arriving at the boundary produces one crest beyond it.\nWhy not the others: The speed falls to \\(\\dfrac{c}{n}\\), so the wavelength falls too. The direction changes for oblique incidence.\nKey point: \\(v = \\nu\\lambda\\): \\(\\nu\\) fixed, so \\(\\lambda \\propto v\\)."
+  },
+  {
+   "unit": "P7",
+   "sub_topic": "Photoelectric quantities and their meanings",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(III), (B)-(I), (C)-(II), (D)-(IV)",
+    "B) (A)-(I), (B)-(III), (C)-(II), (D)-(IV)",
+    "C) (A)-(I), (B)-(II), (C)-(III), (D)-(IV)",
+    "D) (A)-(I), (B)-(III), (C)-(IV), (D)-(II)"
+   ],
+   "correct_option": "B",
+   "targets": "P7:photoelectric terms meanings",
+   "question": "Match each quantity in List-I with its meaning in List-II.\n\nList-I\n(A) Work function\n(B) Threshold frequency\n(C) Stopping potential\n(D) de Broglie wavelength\n\nList-II\n(I) Least energy needed to free an electron from the metal surface\n(II) Negative potential that just stops the fastest photoelectrons\n(III) Lowest frequency of light that can eject electrons\n(IV) \\(\\dfrac{h}{p}\\) for a moving particle",
+   "explanation": "Answer: (B) (A)-(I), (B)-(III), (C)-(II), (D)-(IV)\nStep 1: Work function \\(\\phi_0\\): minimum energy to remove an electron (I)\nStep 2: Threshold frequency \\(\\nu_0 = \\dfrac{\\phi_0}{h}\\) (III)\nStep 3: Stopping potential: \\(eV_0 = K_{max}\\) (II)\nStep 4: de Broglie: \\(\\lambda = \\dfrac{h}{p}\\) (IV)\nCommon mistake: Swapping (A) and (B); one is an energy, the other a frequency, linked by \\(\\phi_0 = h\\nu_0\\).\nKey point: \\(K_{max} = h\\nu - \\phi_0 = eV_0\\)."
+  },
+  {
+   "unit": "P7",
+   "sub_topic": "Photon properties — which hold",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A), (B) and (C) only",
+    "B) (A) and (B) only",
+    "C) (B), (C) and (D) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "A",
+   "targets": "P7:photon momentum neutral,photon energy intensity",
+   "question": "Consider the following statements:\n(A) A photon of wavelength \\(\\lambda\\) carries momentum \\(\\dfrac{h}{\\lambda}\\).\n(B) Photons are electrically neutral.\n(C) In a photon–electron collision, total energy and total momentum are conserved.\n(D) The energy of each photon depends on the intensity of the light.\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (A) (A), (B) and (C) only\nWhy: (A) \\(p = \\dfrac{E}{c} = \\dfrac{h}{\\lambda}\\). (B) photons are not deflected by electric or magnetic fields. (C) photon collisions obey the conservation laws.\nWhy not the others: (D) is false: each photon has \\(E = h\\nu\\); a more intense beam has more photons, not more energetic ones. Options (C) and (D) include (D); (B) leaves out (C).\nKey point: Intensity sets the number of photons; frequency sets the energy of each."
+  },
+  {
+   "unit": "P7",
+   "sub_topic": "de Broglie wavelengths at equal kinetic energy in increasing order",
+   "difficulty": "hard",
+   "format": "sequence",
+   "options": [
+    "A) (A), (B), (D), (C)",
+    "B) (C), (B), (D), (A)",
+    "C) (D), (C), (B), (A)",
+    "D) (C), (D), (B), (A)"
+   ],
+   "correct_option": "D",
+   "targets": "P7:de broglie same kinetic energy order",
+   "question": "An electron, a proton, an α-particle and a neutron all have the same kinetic energy. Arrange them in increasing order of de Broglie wavelength:\n(A) electron\n(B) proton\n(C) α-particle\n(D) neutron",
+   "explanation": "Answer: (D) (C), (D), (B), (A)\nStep 1: \\(\\lambda = \\dfrac{h}{\\sqrt{2mK}}\\), so at equal \\(K\\), \\(\\lambda \\propto \\dfrac{1}{\\sqrt{m}}\\)\nStep 2: Mass order: α (about 4 u) > neutron (1.0087 u) > proton (1.0073 u) > electron\nStep 3: Increasing \\(\\lambda\\) = decreasing mass: (C), (D), (B), (A)\nCommon mistake: (B) puts the proton before the neutron; the neutron is slightly heavier, so its wavelength is slightly shorter.\nKey point: The heavier the particle, the shorter its wavelength at a given kinetic energy."
+  },
+  {
+   "unit": "P7",
+   "sub_topic": "Photons emitted per second by a laser",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(1 \\times 10^{19}\\)",
+    "B) \\(1 \\times 10^{13}\\)",
+    "C) \\(1 \\times 10^{16}\\)",
+    "D) \\(5 \\times 10^{15}\\)"
+   ],
+   "correct_option": "C",
+   "targets": "P7:photons per second laser",
+   "question": "A laser emits light of wavelength 600 nm with a power of 3.3 mW. The number of photons it emits per second is about (\\(h = 6.6 \\times 10^{-34}\\) J s):",
+   "explanation": "Answer: (C) \\(1 \\times 10^{16}\\)\nGiven: \\(\\lambda = 6 \\times 10^{-7}\\) m, \\(P = 3.3 \\times 10^{-3}\\) W\nFormula: \\(E = \\dfrac{hc}{\\lambda}\\), \\(n = \\dfrac{P}{E}\\)\nStep 1: \\(E = \\dfrac{6.6 \\times 10^{-34} \\times 3 \\times 10^8}{6 \\times 10^{-7}} = 3.3 \\times 10^{-19}\\) J\nStep 2: \\(n = \\dfrac{3.3 \\times 10^{-3}}{3.3 \\times 10^{-19}} = 1 \\times 10^{16}\\) s⁻¹\nCommon mistake: \\(1 \\times 10^{19}\\) (A) takes the power as 3.3 W, forgetting the milli.\nKey point: Number per second = power ÷ energy of one photon."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Bohr model postulates — which claims fail",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) only",
+    "B) (B) only",
+    "C) (C) only",
+    "D) (D) only"
+   ],
+   "correct_option": "A",
+   "targets": "P8:bohr postulates stationary orbit",
+   "question": "Consider the following statements about the Bohr model of hydrogen:\n(A) The electron radiates energy continuously while moving in a stationary orbit.\n(B) The angular momentum of the electron in an allowed orbit is an integral multiple of \\(\\dfrac{h}{2\\pi}\\).\n(C) The radius of the \\(n\\)th orbit is proportional to \\(n^2\\).\n(D) The ground-state energy of the hydrogen atom is \\(-13.6\\) eV.\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (A) (A) only\nWhy: Only (A) is false: Bohr postulated that an electron in a stationary orbit does not radiate; it emits only when it jumps between orbits.\nWhy not the others: (B) is Bohr's quantum condition \\(mvr = \\dfrac{nh}{2\\pi}\\). (C) \\(r_n = 0.53n^2\\) Å. (D) \\(E_1 = -13.6\\) eV. Options (B), (C) and (D) name a true statement as false.\nKey point: Bohr's postulate removed the classical objection that orbiting electrons must radiate."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Photon energy for the n = 3 to n = 2 jump",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 1.51 eV",
+    "B) 1.89 eV",
+    "C) 3.4 eV",
+    "D) 12.09 eV"
+   ],
+   "correct_option": "B",
+   "targets": "P8:hydrogen transition energy 3 to 2",
+   "question": "The energy of the photon emitted when a hydrogen electron jumps from \\(n = 3\\) to \\(n = 2\\) is:",
+   "explanation": "Answer: (B) 1.89 eV\nGiven: \\(E_n = -\\dfrac{13.6}{n^2}\\) eV\nFormula: \\(h\\nu = E_3 - E_2\\)\nStep 1: \\(E_3 = -1.51\\) eV, \\(E_2 = -3.4\\) eV\nStep 2: \\(h\\nu = -1.51 - (-3.4) = 1.89\\) eV\nCommon mistake: 12.09 eV (D) is the jump from \\(n = 3\\) to \\(n = 1\\).\nKey point: This 1.89 eV line is the red line of the Balmer series."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Radius of the second Bohr orbit",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 1.06 Å",
+    "B) 0.265 Å",
+    "C) 4.77 Å",
+    "D) 2.12 Å"
+   ],
+   "correct_option": "D",
+   "targets": "P8:bohr radius n two",
+   "question": "The radius of the first Bohr orbit of hydrogen is 0.53 Å. The radius of the second orbit is:",
+   "explanation": "Answer: (D) 2.12 Å\nGiven: \\(r_1 = 0.53\\) Å, \\(n = 2\\)\nFormula: \\(r_n = r_1n^2\\)\nStep 1: \\(r_2 = 0.53 \\times 4 = 2.12\\) Å\nCommon mistake: 1.06 Å (A) multiplies by \\(n\\) instead of \\(n^2\\). 4.77 Å (C) is the third orbit.\nKey point: Orbit radii grow as \\(n^2\\)."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Binding energy of the deuteron from atomic masses",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 1.11 MeV",
+    "B) 4.45 MeV",
+    "C) 2.22 MeV",
+    "D) 0.24 MeV"
+   ],
+   "correct_option": "C",
+   "targets": "P8:binding energy deuteron",
+   "question": "Using the masses \\(m(^{1}\\text{H}) = 1.007825\\) u, \\(m_n = 1.008665\\) u and \\(m(^{2}\\text{H}) = 2.014102\\) u, the total binding energy of the deuteron is about (1 u = 931.5 MeV):",
+   "explanation": "Answer: (C) 2.22 MeV\nGiven: \\(m(^{1}\\text{H}) + m_n = 2.016490\\) u, \\(m(^{2}\\text{H}) = 2.014102\\) u\nFormula: \\(E_b = \\Delta m \\times 931.5\\) MeV\nStep 1: \\(\\Delta m = 2.016490 - 2.014102 = 0.002388\\) u\nStep 2: \\(E_b = 0.002388 \\times 931.5 \\approx 2.22\\) MeV\nCommon mistake: 1.11 MeV (A) is the binding energy per nucleon, not the total. 0.24 MeV (D) slips a decimal in \\(\\Delta m\\).\nKey point: Atomic masses can be used directly because the electron masses cancel."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "How nuclear density varies with mass number",
+   "difficulty": "medium",
+   "format": "direct",
+   "options": [
+    "A) is nearly the same for all nuclei",
+    "B) increases with mass number",
+    "C) decreases with mass number",
+    "D) equals the density of the atom"
+   ],
+   "correct_option": "A",
+   "targets": "P8:nuclear density constant",
+   "question": "The density of nuclear matter:",
+   "explanation": "Answer: (A) is nearly the same for all nuclei\nWhy: \\(R = R_0A^{1/3}\\) gives volume \\(\\propto A\\), and mass \\(\\propto A\\), so density does not depend on \\(A\\) (about \\(2.3 \\times 10^{17}\\) kg m⁻³).\nWhy not the others: (B) and (C) contradict \\(V \\propto A\\). (D) the atom is mostly empty, so its density is far smaller.\nKey point: Nuclei are like drops of the same incompressible fluid."
+  },
+  {
+   "unit": "P9",
+   "sub_topic": "Energy levels and majority carriers in doped semiconductors",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)",
+    "B) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+    "C) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+    "D) (A)-(II), (B)-(III), (C)-(IV), (D)-(I)"
+   ],
+   "correct_option": "C",
+   "targets": "P9:donor acceptor levels,majority carriers p n type",
+   "question": "Match List-I with List-II.\n\nList-I\n(A) Donor energy level\n(B) Acceptor energy level\n(C) Majority carriers in a p-type semiconductor\n(D) Majority carriers in an n-type semiconductor\n\nList-II\n(I) Electrons\n(II) Just below the bottom of the conduction band\n(III) Holes\n(IV) Just above the top of the valence band",
+   "explanation": "Answer: (C) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)\nStep 1: A donor's extra electron sits just below the conduction band and is easily freed (II)\nStep 2: An acceptor's empty level sits just above the valence band and easily takes an electron (IV)\nStep 3: p-type: holes are the majority carriers (III)\nStep 4: n-type: electrons are the majority carriers (I)\nCommon mistake: Swapping (A) and (B); donors give electrons to the conduction band, so their level is near it.\nKey point: Small gaps to these levels are why tiny doping greatly raises conductivity."
+  },
+  {
+   "unit": "P9",
+   "sub_topic": "Hole density in an arsenic-doped silicon crystal",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(4.5 \\times 10^{22}\\) m⁻³",
+    "B) \\(5 \\times 10^{9}\\) m⁻³",
+    "C) \\(1.5 \\times 10^{16}\\) m⁻³",
+    "D) \\(5 \\times 10^{6}\\) m⁻³"
+   ],
+   "correct_option": "B",
+   "targets": "P9:mass action law hole density",
+   "question": "Pure silicon has \\(n_i = 1.5 \\times 10^{16}\\) m⁻³. It is doped with arsenic to give \\(4.5 \\times 10^{22}\\) donor atoms per m³. The hole density is about:",
+   "explanation": "Answer: (B) \\(5 \\times 10^{9}\\) m⁻³\nGiven: \\(n_i = 1.5 \\times 10^{16}\\) m⁻³, \\(n_e \\approx N_D = 4.5 \\times 10^{22}\\) m⁻³\nFormula: \\(n_en_h = n_i^2\\)\nStep 1: \\(n_i^2 = 2.25 \\times 10^{32}\\)\nStep 2: \\(n_h = \\dfrac{2.25 \\times 10^{32}}{4.5 \\times 10^{22}} = 5 \\times 10^{9}\\) m⁻³\nCommon mistake: \\(1.5 \\times 10^{16}\\) (C) assumes doping leaves the hole density at \\(n_i\\); extra electrons recombine with holes.\nKey point: Doping raises one carrier and lowers the other, keeping \\(n_en_h = n_i^2\\)."
+  },
+  {
+   "unit": "P9",
+   "sub_topic": "What the depletion region of a p–n junction contains",
+   "difficulty": "medium",
+   "format": "direct",
+   "options": [
+    "A) mobile electrons only",
+    "B) mobile holes only",
+    "C) electrons and holes",
+    "D) immobile ions only"
+   ],
+   "correct_option": "D",
+   "targets": "P9:depletion region immobile ions",
+   "question": "The depletion region of an unbiased p–n junction contains:",
+   "explanation": "Answer: (D) immobile ions only\nWhy: Electrons and holes diffusing across the junction recombine, leaving behind fixed positive donor ions on the n-side and negative acceptor ions on the p-side.\nWhy not the others: The region is \"depleted\" of mobile carriers, so (A), (B) and (C) are wrong.\nKey point: The fixed ions set up the barrier potential."
+  }
+ ]
+}
