@@ -1,0 +1,804 @@
+{
+ "q": [
+  {
+   "unit": "P1",
+   "sub_topic": "Fields from Gauss's theorem for four charge distributions",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(III), (B)-(II), (C)-(IV), (D)-(I)",
+    "B) (A)-(II), (B)-(III), (C)-(IV), (D)-(I)",
+    "C) (A)-(II), (B)-(IV), (C)-(III), (D)-(I)",
+    "D) (A)-(II), (B)-(III), (C)-(I), (D)-(IV)"
+   ],
+   "correct_option": "B",
+   "targets": "P1:gauss line sheet shell fields",
+   "question": "Match each charge distribution in List-I with the magnitude of its electric field in List-II.\n\nList-I\n(A) Infinitely long line of charge density \\(\\lambda\\), at distance \\(r\\)\n(B) Infinite plane sheet of charge density \\(\\sigma\\)\n(C) Uniformly charged thin spherical shell (charge \\(Q\\)), at \\(r\\) outside it\n(D) The same shell, at a point inside it\n\nList-II\n(I) zero\n(II) \\(\\dfrac{\\lambda}{2\\pi\\varepsilon_0r}\\)\n(III) \\(\\dfrac{\\sigma}{2\\varepsilon_0}\\)\n(IV) \\(\\dfrac{Q}{4\\pi\\varepsilon_0r^2}\\)",
+   "explanation": "Answer: (B) (A)-(II), (B)-(III), (C)-(IV), (D)-(I)\nStep 1: Cylindrical Gaussian surface round the line: \\(E \\cdot 2\\pi rl = \\dfrac{\\lambda l}{\\varepsilon_0}\\) (II)\nStep 2: Pillbox through the sheet, flux through two faces: \\(\\dfrac{\\sigma}{2\\varepsilon_0}\\) (III)\nStep 3: Sphere outside the shell encloses \\(Q\\): point-charge field (IV)\nStep 4: Sphere inside encloses nothing (I)\nCommon mistake: Swapping (A) and (B); only the sheet's field is independent of distance.\nKey point: Choose a Gaussian surface that matches the symmetry."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Potential and equipotential surfaces — which hold",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) and (B) only",
+    "B) (B), (C) and (D) only",
+    "C) (A), (B) and (C) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "C",
+   "targets": "P1:equipotentials never intersect,field steepest potential decrease",
+   "question": "Consider the following statements:\n(A) The electric field points in the direction in which the potential decreases most steeply.\n(B) The equipotential surfaces of a point charge are concentric spheres.\n(C) The equipotential surfaces of a uniform field are planes perpendicular to the field.\n(D) Two different equipotential surfaces can intersect.\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (C) (A), (B) and (C) only\nWhy: (A) \\(E = -\\dfrac{dV}{dr}\\). (B) \\(V = \\dfrac{kq}{r}\\) is constant on a sphere. (C) moving across a uniform field changes \\(V\\) only along the field.\nWhy not the others: (D) is false: at an intersection the point would have two potentials and the field two directions. Options (B) and (D) include (D); (A) leaves out (C).\nKey point: Field lines are always perpendicular to equipotentials."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Potentials at four points in increasing order",
+   "difficulty": "medium",
+   "format": "sequence",
+   "options": [
+    "A) (C), (B), (D), (A)",
+    "B) (A), (B), (D), (C)",
+    "C) (D), (C), (B), (A)",
+    "D) (C), (D), (B), (A)"
+   ],
+   "correct_option": "D",
+   "targets": "P1:potential values order",
+   "question": "Arrange these in increasing order of electric potential:\n(A) 10 cm from a \\(+1\\) nC point charge\n(B) 30 cm from a \\(+2\\) nC point charge\n(C) a point on the equatorial line of an electric dipole\n(D) 1 m from a \\(+5\\) nC point charge",
+   "explanation": "Answer: (D) (C), (D), (B), (A)\nStep 1: \\(V = \\dfrac{kq}{r}\\): (A) \\(\\dfrac{9}{0.1} = 90\\) V; (B) \\(\\dfrac{18}{0.3} = 60\\) V; (D) \\(\\dfrac{45}{1} = 45\\) V\nStep 2: (C) on the equatorial line the two charges are equidistant, so \\(V = 0\\)\nStep 3: Increasing: (C), (D), (B), (A)\nCommon mistake: Judging by the size of the charge alone; (D) has the largest charge but is farthest away.\nKey point: The potential on a dipole's equatorial line is zero everywhere."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Speed of a proton moving from 500 V to 0 V",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(3.1 \\times 10^{5}\\) m s⁻¹",
+    "B) \\(9.6 \\times 10^{10}\\) m s⁻¹",
+    "C) \\(2.2 \\times 10^{5}\\) m s⁻¹",
+    "D) \\(1.3 \\times 10^{7}\\) m s⁻¹"
+   ],
+   "correct_option": "A",
+   "targets": "P1:proton speed potential drop",
+   "question": "A proton is released from rest at a point at 500 V and moves to a point at 0 V. Its speed there is about (\\(m_p = 1.67 \\times 10^{-27}\\) kg):",
+   "explanation": "Answer: (A) \\(3.1 \\times 10^{5}\\) m s⁻¹\nGiven: \\(\\Delta V = 500\\) V, \\(q = 1.6 \\times 10^{-19}\\) C\nFormula: \\(\\dfrac{1}{2}mv^2 = q\\Delta V\\)\nStep 1: \\(v^2 = \\dfrac{2 \\times 1.6 \\times 10^{-19} \\times 500}{1.67 \\times 10^{-27}} \\approx 9.6 \\times 10^{10}\\)\nStep 2: \\(v \\approx 3.1 \\times 10^5\\) m s⁻¹\nCommon mistake: \\(1.3 \\times 10^7\\) (D) uses the electron's mass. \\(9.6 \\times 10^{10}\\) (B) is \\(v^2\\).\nKey point: A positive charge speeds up as it moves to lower potential."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Energy of an isolated capacitor when its plate gap is doubled",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 0.025 J",
+    "B) 0.1 J",
+    "C) 0.05 J",
+    "D) 0.2 J"
+   ],
+   "correct_option": "B",
+   "targets": "P1:plate separation doubled isolated",
+   "question": "A \\(10\\ \\mu\\text{F}\\) capacitor is charged to 100 V and disconnected. Its plate separation is then doubled. The energy stored becomes:",
+   "explanation": "Answer: (B) 0.1 J\nGiven: \\(U_0 = \\dfrac{1}{2} \\times 10^{-5} \\times 10^4 = 0.05\\) J; \\(Q\\) fixed\nFormula: \\(U = \\dfrac{Q^2}{2C}\\), \\(C \\propto \\dfrac{1}{d}\\)\nStep 1: Doubling \\(d\\) halves \\(C\\)\nStep 2: \\(U = 2U_0 = 0.1\\) J\nCommon mistake: 0.025 J (A) keeps \\(V\\) fixed; with the battery removed, \\(Q\\) is fixed and \\(V\\) doubles.\nKey point: The extra energy comes from the work done pulling the plates apart."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Field from a potential that varies as 4x²",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 4 V m⁻¹ along \\(+x\\)",
+    "B) 8 V m⁻¹ along \\(+x\\)",
+    "C) 4 V m⁻¹ along \\(-x\\)",
+    "D) 8 V m⁻¹ along \\(-x\\)"
+   ],
+   "correct_option": "D",
+   "targets": "P1:field from potential gradient",
+   "question": "The potential along the \\(x\\)-axis is \\(V = 4x^2\\) volts (\\(x\\) in metres). The electric field at \\(x = 1\\) m is:",
+   "explanation": "Answer: (D) 8 V m⁻¹ along \\(-x\\)\nGiven: \\(V = 4x^2\\)\nFormula: \\(E = -\\dfrac{dV}{dx}\\)\nStep 1: \\(\\dfrac{dV}{dx} = 8x = 8\\) V m⁻¹ at \\(x = 1\\)\nStep 2: \\(E = -8\\) V m⁻¹, i.e. 8 V m⁻¹ along \\(-x\\)\nCommon mistake: (B) drops the minus sign; the field points towards lower potential.\nKey point: The field is the negative gradient of the potential."
+  },
+  {
+   "unit": "P1",
+   "sub_topic": "Flux through one face of a cube with a charge at its centre",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 1000 N m² C⁻¹",
+    "B) 6000 N m² C⁻¹",
+    "C) 167 N m² C⁻¹",
+    "D) 83 N m² C⁻¹"
+   ],
+   "correct_option": "C",
+   "targets": "P1:flux cube face centre charge",
+   "question": "A charge of 8.85 nC is placed at the centre of a cube. The electric flux through one face of the cube is about:",
+   "explanation": "Answer: (C) 167 N m² C⁻¹\nGiven: \\(q = 8.85 \\times 10^{-9}\\) C\nFormula: \\(\\Phi_{total} = \\dfrac{q}{\\varepsilon_0}\\); by symmetry each face gets \\(\\dfrac{1}{6}\\)\nStep 1: \\(\\Phi_{total} = \\dfrac{8.85 \\times 10^{-9}}{8.85 \\times 10^{-12}} = 1000\\) N m² C⁻¹\nStep 2: One face: \\(\\dfrac{1000}{6} \\approx 167\\) N m² C⁻¹\nCommon mistake: 1000 (A) is the flux through the whole cube.\nKey point: Symmetry divides the total flux equally among the six faces."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Network rules and bridge balance — the false claim",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) only",
+    "B) (B) only",
+    "C) (C) only",
+    "D) (D) only"
+   ],
+   "correct_option": "C",
+   "targets": "P2:kirchhoff any circuit,balanced bridge no current",
+   "question": "Consider the following statements:\n(A) The equivalent resistance of resistors in parallel is less than each of them.\n(B) In a balanced Wheatstone bridge, no current flows through the galvanometer.\n(C) Kirchhoff's rules apply only to circuits containing a single cell.\n(D) Round any closed loop, the sum of the potential drops equals the sum of the emfs.\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (C) (C) only\nWhy: Only (C) is false: Kirchhoff's rules apply to any network, with any number of cells; that is their main use.\nWhy not the others: (A) each branch adds a path. (B) at balance the galvanometer ends are at equal potential. (D) this is the loop rule. Options (A), (B) and (D) name a true statement as false.\nKey point: Kirchhoff's rules solve circuits that series–parallel rules cannot."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Resistance between two points of a circular wire",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(2.25\\ \\Omega\\)",
+    "B) \\(3\\ \\Omega\\)",
+    "C) \\(9\\ \\Omega\\)",
+    "D) \\(6\\ \\Omega\\)"
+   ],
+   "correct_option": "A",
+   "targets": "P2:circular wire resistance points",
+   "question": "A uniform wire of resistance \\(12\\ \\Omega\\) is bent into a circle. The resistance between two points on the circle that subtend an angle of \\(90^\\circ\\) at the centre is:",
+   "explanation": "Answer: (A) \\(2.25\\ \\Omega\\)\nGiven: the two arcs are \\(\\dfrac{1}{4}\\) and \\(\\dfrac{3}{4}\\) of the circle\nFormula: arcs in parallel: \\(R = \\dfrac{R_1R_2}{R_1 + R_2}\\)\nStep 1: \\(R_1 = 3\\ \\Omega\\), \\(R_2 = 9\\ \\Omega\\)\nStep 2: \\(R = \\dfrac{27}{12} = 2.25\\ \\Omega\\)\nCommon mistake: \\(3\\ \\Omega\\) (B) takes only the shorter arc. \\(6\\ \\Omega\\) (D) is the diametric value doubled.\nKey point: The two arcs between the points are in parallel."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Ratio of powers of a 60 W and a 100 W bulb in series",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 3 : 5",
+    "B) 1 : 1",
+    "C) 25 : 9",
+    "D) 5 : 3"
+   ],
+   "correct_option": "D",
+   "targets": "P2:series bulbs power ratio",
+   "question": "Bulbs rated 60 W, 220 V and 100 W, 220 V are connected in series across 220 V. The ratio of the power in the 60 W bulb to that in the 100 W bulb is:",
+   "explanation": "Answer: (D) 5 : 3\nGiven: \\(R = \\dfrac{V^2}{P}\\), so \\(R_{60} : R_{100} = 100 : 60 = 5 : 3\\)\nFormula: same current in series, so \\(P = I^2R \\propto R\\)\nStep 1: \\(\\dfrac{P_{60}}{P_{100}} = \\dfrac{R_{60}}{R_{100}}\\)\nStep 2: \\(= \\dfrac{5}{3}\\)\nCommon mistake: 3 : 5 (A) uses the ratings, which apply only at full 220 V each.\nKey point: In series the lower-rated bulb glows brighter."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Terminal voltage from short-circuit current and emf",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 2 V",
+    "B) 1.6 V",
+    "C) 0.4 V",
+    "D) 1.2 V"
+   ],
+   "correct_option": "B",
+   "targets": "P2:short circuit current internal resistance",
+   "question": "A cell of emf 2 V gives a current of 5 A when its terminals are short-circuited. Its terminal voltage when connected to a \\(1.6\\ \\Omega\\) resistor is:",
+   "explanation": "Answer: (B) 1.6 V\nGiven: \\(\\varepsilon = 2\\) V, \\(I_{sc} = 5\\) A\nFormula: \\(r = \\dfrac{\\varepsilon}{I_{sc}}\\), \\(V = \\dfrac{\\varepsilon R}{R + r}\\)\nStep 1: \\(r = \\dfrac{2}{5} = 0.4\\ \\Omega\\)\nStep 2: \\(I = \\dfrac{2}{2} = 1\\) A; \\(V = 1 \\times 1.6 = 1.6\\) V\nCommon mistake: 0.4 V (C) is the drop inside the cell.\nKey point: The short-circuit current reveals the internal resistance."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Electrons passing a point in five minutes at 2 A",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(6.25 \\times 10^{18}\\)",
+    "B) \\(1.25 \\times 10^{19}\\)",
+    "C) 600",
+    "D) \\(3.75 \\times 10^{21}\\)"
+   ],
+   "correct_option": "D",
+   "targets": "P2:electrons count current time",
+   "question": "A steady current of 2 A flows in a wire for 5 minutes. The number of electrons that pass a cross-section is:",
+   "explanation": "Answer: (D) \\(3.75 \\times 10^{21}\\)\nGiven: \\(I = 2\\) A, \\(t = 300\\) s\nFormula: \\(Q = It\\), \\(n = \\dfrac{Q}{e}\\)\nStep 1: \\(Q = 600\\) C\nStep 2: \\(n = \\dfrac{600}{1.6 \\times 10^{-19}} = 3.75 \\times 10^{21}\\)\nCommon mistake: \\(1.25 \\times 10^{19}\\) (B) uses 1 s instead of 300 s.\nKey point: One coulomb is about \\(6.25 \\times 10^{18}\\) electrons."
+  },
+  {
+   "unit": "P2",
+   "sub_topic": "Relaxation time of electrons in copper",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(2.5 \\times 10^{-12}\\) s",
+    "B) \\(2.5 \\times 10^{-14}\\) s",
+    "C) \\(4 \\times 10^{13}\\) s",
+    "D) \\(1.2 \\times 10^{-14}\\) s"
+   ],
+   "correct_option": "B",
+   "targets": "P2:relaxation time copper",
+   "question": "Copper has resistivity \\(1.7 \\times 10^{-8}\\ \\Omega\\) m and \\(8.5 \\times 10^{28}\\) free electrons per m³. The relaxation time of its electrons is about (\\(m_e = 9.1 \\times 10^{-31}\\) kg):",
+   "explanation": "Answer: (B) \\(2.5 \\times 10^{-14}\\) s\nGiven: \\(\\rho = 1.7 \\times 10^{-8}\\ \\Omega\\) m, \\(n = 8.5 \\times 10^{28}\\) m⁻³\nFormula: \\(\\rho = \\dfrac{m}{ne^2\\tau} \\Rightarrow \\tau = \\dfrac{m}{ne^2\\rho}\\)\nStep 1: \\(ne^2\\rho = 8.5 \\times 10^{28} \\times 2.56 \\times 10^{-38} \\times 1.7 \\times 10^{-8} \\approx 3.7 \\times 10^{-17}\\)\nStep 2: \\(\\tau = \\dfrac{9.1 \\times 10^{-31}}{3.7 \\times 10^{-17}} \\approx 2.5 \\times 10^{-14}\\) s\nCommon mistake: \\(4 \\times 10^{13}\\) (C) inverts the ratio. \\(2.5 \\times 10^{-12}\\) (A) slips two powers of ten in \\(e^2 = 2.56 \\times 10^{-38}\\).\nKey point: Collisions happen about every \\(10^{-14}\\) s in a metal."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Magnetic forces in four situations",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)",
+    "B) (A)-(II), (B)-(IV), (C)-(I), (D)-(III)",
+    "C) (A)-(IV), (B)-(I), (C)-(II), (D)-(III)",
+    "D) (A)-(IV), (B)-(II), (C)-(III), (D)-(I)"
+   ],
+   "correct_option": "A",
+   "targets": "P3:magnetic force situations",
+   "question": "Match each situation in List-I with the result in List-II.\n\nList-I\n(A) Two parallel wires with currents in the same direction\n(B) Two parallel wires with currents in opposite directions\n(C) A charge at rest near a current-carrying wire\n(D) A current loop in a uniform magnetic field\n\nList-II\n(I) No magnetic force\n(II) Repulsion\n(III) Net force zero (a torque may act)\n(IV) Attraction",
+   "explanation": "Answer: (A) (A)-(IV), (B)-(II), (C)-(I), (D)-(III)\nStep 1: Like currents attract (IV)\nStep 2: Unlike currents repel (II)\nStep 3: \\(F = qvB\\sin\\theta\\) with \\(v = 0\\): no force (I)\nStep 4: Forces on opposite sides of the loop cancel; only a torque remains (III)\nCommon mistake: Swapping (A) and (B) by analogy with like charges, which repel.\nKey point: A uniform field gives a loop a torque but no net force."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Field at the centre when a one-turn loop is rewound into two turns",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(2B\\)",
+    "B) \\(\\dfrac{B}{2}\\)",
+    "C) \\(B\\)",
+    "D) \\(4B\\)"
+   ],
+   "correct_option": "D",
+   "targets": "P3:loop rewound turns field factor",
+   "question": "A wire bent into a single circular loop gives a field \\(B\\) at its centre. The same wire is rewound into a coil of two turns and carries the same current. The field at the centre becomes:",
+   "explanation": "Answer: (D) \\(4B\\)\nGiven: same length, so \\(2\\pi R = 2 \\times 2\\pi R'\\), giving \\(R' = \\dfrac{R}{2}\\)\nFormula: \\(B = \\dfrac{\\mu_0NI}{2R}\\)\nStep 1: \\(N\\) doubles and \\(R\\) halves\nStep 2: \\(B' = \\dfrac{\\mu_0(2)I}{2(R/2)} = 4B\\)\nCommon mistake: \\(2B\\) (A) doubles the turns but forgets that the radius halves.\nKey point: Rewinding into \\(n\\) turns multiplies the centre field by \\(n^2\\)."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Field inside a thick wire carrying a uniform current",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(2 \\times 10^{-4}\\) T",
+    "B) \\(1 \\times 10^{-4}\\) T",
+    "C) \\(5 \\times 10^{-5}\\) T",
+    "D) zero"
+   ],
+   "correct_option": "C",
+   "targets": "P3:field inside thick wire",
+   "question": "A long straight wire of radius 2 cm carries 10 A spread uniformly over its cross-section. The magnetic field at 1 cm from its axis is:",
+   "explanation": "Answer: (C) \\(5 \\times 10^{-5}\\) T\nGiven: \\(I = 10\\) A, \\(R = 0.02\\) m, \\(r = 0.01\\) m\nFormula: Ampere's law inside: \\(B = \\dfrac{\\mu_0Ir}{2\\pi R^2}\\)\nStep 1: Current enclosed \\(= I\\dfrac{r^2}{R^2} = 2.5\\) A\nStep 2: \\(B = \\dfrac{2 \\times 10^{-7} \\times 2.5}{0.01} = 5 \\times 10^{-5}\\) T\nCommon mistake: \\(2 \\times 10^{-4}\\) T (A) uses the full 10 A at 1 cm, as if outside the wire. \\(1 \\times 10^{-4}\\) T (B) is the field at the surface.\nKey point: Inside the wire the field rises linearly from zero at the axis."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Magnetic force on a doubly charged helium nucleus",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) \\(8 \\times 10^{-14}\\) N",
+    "B) \\(1.6 \\times 10^{-13}\\) N",
+    "C) \\(3.2 \\times 10^{-13}\\) N",
+    "D) \\(1.6 \\times 10^{-19}\\) N"
+   ],
+   "correct_option": "B",
+   "targets": "P3:alpha force magnetic field",
+   "question": "A helium nucleus (α-particle) travelling at \\(1 \\times 10^6\\) m s⁻¹ at right angles to a 0.5 T field experiences a magnetic force of:",
+   "explanation": "Answer: (B) \\(1.6 \\times 10^{-13}\\) N\nGiven: \\(q = 2e = 3.2 \\times 10^{-19}\\) C, \\(v = 10^6\\) m s⁻¹, \\(B = 0.5\\) T\nFormula: \\(F = qvB\\)\nStep 1: \\(F = 3.2 \\times 10^{-19} \\times 10^6 \\times 0.5 = 1.6 \\times 10^{-13}\\) N\nCommon mistake: \\(8 \\times 10^{-14}\\) N (A) uses the charge \\(e\\) instead of \\(2e\\).\nKey point: An α-particle carries charge \\(+2e\\)."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Magnetic moments of a circle and a square from the same wire",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) \\(\\dfrac{4}{\\pi}\\)",
+    "B) \\(\\dfrac{\\pi}{4}\\)",
+    "C) 1",
+    "D) 2"
+   ],
+   "correct_option": "A",
+   "targets": "P3:circle square same wire moment",
+   "question": "A wire of length \\(L\\) is bent once into a circle and once into a square, and carries the same current each time. The ratio of the magnetic moments (circle : square) is:",
+   "explanation": "Answer: (A) \\(\\dfrac{4}{\\pi}\\)\nGiven: circle \\(2\\pi r = L\\); square side \\(\\dfrac{L}{4}\\)\nFormula: \\(m = IA\\)\nStep 1: \\(A_{circle} = \\pi r^2 = \\dfrac{L^2}{4\\pi}\\); \\(A_{square} = \\dfrac{L^2}{16}\\)\nStep 2: \\(\\dfrac{m_c}{m_s} = \\dfrac{16}{4\\pi} = \\dfrac{4}{\\pi}\\)\nCommon mistake: \\(\\dfrac{\\pi}{4}\\) (B) inverts the ratio.\nKey point: For a fixed perimeter, a circle encloses the largest area."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Susceptibility from magnetisation and intensity",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 500",
+    "B) \\(2 \\times 10^{3}\\)",
+    "C) \\(5 \\times 10^{-4}\\)",
+    "D) \\(2 \\times 10^{-3}\\)"
+   ],
+   "correct_option": "D",
+   "targets": "P3:susceptibility from magnetisation",
+   "question": "A material placed in a magnetising field of 1000 A m⁻¹ acquires a magnetisation of 2 A m⁻¹. Its magnetic susceptibility is:",
+   "explanation": "Answer: (D) \\(2 \\times 10^{-3}\\)\nGiven: \\(H = 1000\\) A m⁻¹, \\(M = 2\\) A m⁻¹\nFormula: \\(\\chi = \\dfrac{M}{H}\\)\nStep 1: \\(\\chi = \\dfrac{2}{1000} = 2 \\times 10^{-3}\\)\nCommon mistake: 500 (A) inverts the ratio.\nKey point: A small positive \\(\\chi\\) indicates a paramagnetic material."
+  },
+  {
+   "unit": "P3",
+   "sub_topic": "Galvanometer current when the shunt is one-ninth of its resistance",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 0.9 A",
+    "B) 0.11 A",
+    "C) 0.1 A",
+    "D) 0.01 A"
+   ],
+   "correct_option": "C",
+   "targets": "P3:shunt one ninth current share",
+   "question": "A galvanometer is shunted by a resistance equal to \\(\\dfrac{1}{9}\\) of its own resistance. When a total current of 1 A flows, the current through the galvanometer is:",
+   "explanation": "Answer: (C) 0.1 A\nGiven: \\(S = \\dfrac{G}{9}\\), total \\(I = 1\\) A\nFormula: parallel branches: \\(I_gG = I_sS\\), so \\(\\dfrac{I_g}{I_s} = \\dfrac{S}{G} = \\dfrac{1}{9}\\)\nStep 1: \\(I_g = \\dfrac{1}{1 + 9} \\times 1\\)\nStep 2: \\(I_g = 0.1\\) A\nCommon mistake: 0.11 A (B) takes \\(I_g = \\dfrac{I}{9}\\); the total is shared in the ratio 1 : 9.\nKey point: Current divides inversely as resistance in parallel branches."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Devices and laws of electromagnetic induction",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+    "B) (A)-(IV), (B)-(III), (C)-(II), (D)-(I)",
+    "C) (A)-(IV), (B)-(I), (C)-(III), (D)-(II)",
+    "D) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)"
+   ],
+   "correct_option": "D",
+   "targets": "P4:induction devices laws roles",
+   "question": "Match each item in List-I with its role in List-II.\n\nList-I\n(A) a.c. generator\n(B) Transformer\n(C) Lenz's law\n(D) Faraday's law\n\nList-II\n(I) Gives the direction of the induced current\n(II) Gives the magnitude of the induced emf\n(III) Changes the voltage of an a.c. supply\n(IV) Converts mechanical energy into electrical energy",
+   "explanation": "Answer: (D) (A)-(IV), (B)-(III), (C)-(I), (D)-(II)\nStep 1: A generator turns a coil mechanically in a field (IV)\nStep 2: A transformer steps a.c. voltage up or down (III)\nStep 3: Lenz: the induced current opposes the change (I)\nStep 4: Faraday: \\(|\\varepsilon| = \\dfrac{d\\Phi}{dt}\\) (II)\nCommon mistake: Swapping (C) and (D); Lenz gives the sign, Faraday the size.\nKey point: The minus sign in \\(\\varepsilon = -\\dfrac{d\\Phi}{dt}\\) is Lenz's law."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Inductance and induced emf — which hold",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A), (B) and (C) only",
+    "B) (A) and (B) only",
+    "C) (B), (C) and (D) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "A",
+   "targets": "P4:mutual inductance orientation,induced emf open circuit",
+   "question": "Consider the following statements:\n(A) The self-inductance of a solenoid is proportional to the square of its number of turns.\n(B) The mutual inductance of two coils depends on their relative orientation.\n(C) No emf is induced in a coil if the flux through it is constant, however large.\n(D) An emf is induced only if the circuit is closed.\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (A) (A), (B) and (C) only\nWhy: (A) \\(L = \\dfrac{\\mu_0N^2A}{l}\\). (B) turning one coil changes how much of its flux links the other. (C) emf depends on the rate of change of flux, not its size.\nWhy not the others: (D) is false: an emf appears across an open coil too; a closed circuit is needed only for a current. Options (C) and (D) include (D); (B) leaves out (C).\nKey point: Changing flux makes emf; a closed path makes current."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "rms currents through four components on the 220 V mains in increasing order",
+   "difficulty": "hard",
+   "format": "sequence",
+   "options": [
+    "A) (B), (C), (D), (A)",
+    "B) (B), (D), (C), (A)",
+    "C) (D), (B), (C), (A)",
+    "D) (A), (C), (D), (B)"
+   ],
+   "correct_option": "B",
+   "targets": "P4:component currents mains order",
+   "question": "Each component below is connected alone to a 220 V, 50 Hz supply. Arrange them in increasing order of rms current:\n(A) a \\(50\\ \\Omega\\) resistor\n(B) a pure inductor of \\(\\dfrac{2}{\\pi}\\) H\n(C) a capacitor of \\(\\dfrac{100}{\\pi}\\ \\mu\\text{F}\\)\n(D) a \\(110\\ \\Omega\\) resistor",
+   "explanation": "Answer: (B) (B), (D), (C), (A)\nStep 1: (A) \\(\\dfrac{220}{50} = 4.4\\) A; (D) \\(\\dfrac{220}{110} = 2\\) A\nStep 2: (B) \\(X_L = 2\\pi \\times 50 \\times \\dfrac{2}{\\pi} = 200\\ \\Omega\\), so 1.1 A\nStep 3: (C) \\(X_C = \\dfrac{1}{2\\pi \\times 50 \\times 10^{-4}/\\pi} = 100\\ \\Omega\\), so 2.2 A\nStep 4: Increasing: (B), (D), (C), (A)\nCommon mistake: Taking \\(X_C = 2\\pi\\nu C\\); the capacitive reactance is its reciprocal.\nKey point: Work out each opposition in ohms before comparing."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Power dissipated as a rod slides on rails in a field",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 1 W",
+    "B) 2 W",
+    "C) 0.5 W",
+    "D) 0.25 W"
+   ],
+   "correct_option": "C",
+   "targets": "P4:sliding rod power dissipated",
+   "question": "A rod 0.5 m long slides at 5 m s⁻¹ on parallel rails joined by a \\(2\\ \\Omega\\) resistor, in a field of 0.4 T perpendicular to the rails. The power dissipated in the resistor is (rod and rails have negligible resistance):",
+   "explanation": "Answer: (C) 0.5 W\nGiven: \\(B = 0.4\\) T, \\(l = 0.5\\) m, \\(v = 5\\) m s⁻¹, \\(R = 2\\ \\Omega\\)\nFormula: \\(\\varepsilon = Blv\\), \\(P = \\dfrac{\\varepsilon^2}{R}\\)\nStep 1: \\(\\varepsilon = 0.4 \\times 0.5 \\times 5 = 1\\) V\nStep 2: \\(P = \\dfrac{1}{2} = 0.5\\) W\nCommon mistake: 2 W (B) uses \\(P = \\varepsilon^2R\\).\nKey point: The mechanical power to push the rod equals the electrical power dissipated."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Secondary turns for a 240 V to 6 V transformer",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 32 000",
+    "B) 40",
+    "C) 200",
+    "D) 20"
+   ],
+   "correct_option": "D",
+   "targets": "P4:transformer secondary turns",
+   "question": "An ideal transformer with 800 turns in its primary steps 240 V down to 6 V. The number of turns in its secondary is:",
+   "explanation": "Answer: (D) 20\nGiven: \\(N_p = 800\\), \\(V_p = 240\\) V, \\(V_s = 6\\) V\nFormula: \\(N_s = N_p\\dfrac{V_s}{V_p}\\)\nStep 1: \\(N_s = 800 \\times \\dfrac{6}{240} = 20\\)\nCommon mistake: 32 000 (A) inverts the voltage ratio.\nKey point: The turns ratio equals the voltage ratio."
+  },
+  {
+   "unit": "P4",
+   "sub_topic": "Frequency in hertz at which a 10 mH, 1 μF circuit peaks",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(1 \\times 10^{4}\\) Hz",
+    "B) 1.6 kHz",
+    "C) 159 Hz",
+    "D) 16 kHz"
+   ],
+   "correct_option": "B",
+   "targets": "P4:resonant frequency hertz",
+   "question": "A 10 mH inductor, a \\(1\\ \\mu\\text{F}\\) capacitor and a resistor are in series. The frequency, in hertz, at which the current is largest is about:",
+   "explanation": "Answer: (B) 1.6 kHz\nGiven: \\(L = 10^{-2}\\) H, \\(C = 10^{-6}\\) F\nFormula: \\(\\omega_0 = \\dfrac{1}{\\sqrt{LC}}\\), \\(\\nu_0 = \\dfrac{\\omega_0}{2\\pi}\\)\nStep 1: \\(\\omega_0 = \\dfrac{1}{\\sqrt{10^{-8}}} = 10^4\\) rad s⁻¹\nStep 2: \\(\\nu_0 = \\dfrac{10^4}{6.28} \\approx 1.6\\) kHz\nCommon mistake: \\(1 \\times 10^4\\) Hz (A) is \\(\\omega_0\\) in rad s⁻¹, not the frequency.\nKey point: Divide \\(\\omega\\) by \\(2\\pi\\) to get hertz."
+  },
+  {
+   "unit": "P5",
+   "sub_topic": "Production and uses of EM waves — which claims fail",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) only",
+    "B) (B) only",
+    "C) (C) only",
+    "D) (D) only"
+   ],
+   "correct_option": "D",
+   "targets": "P5:x rays frequency uv,infrared physiotherapy",
+   "question": "Consider the following statements:\n(A) Radio waves can be produced by oscillating electric circuits.\n(B) Electromagnetic waves are produced by accelerated charges.\n(C) Infrared lamps are used in physiotherapy.\n(D) X-rays have lower frequencies than ultraviolet rays.\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (D) (D) only\nWhy: Only (D) is false: X-rays have shorter wavelengths, and so higher frequencies, than ultraviolet.\nWhy not the others: (A) an oscillating LC circuit drives an antenna. (B) every EM wave comes from accelerated charge. (C) infrared heats tissue. Options (A), (B) and (C) name a true statement as false.\nKey point: X-rays lie between ultraviolet and gamma rays."
+  },
+  {
+   "unit": "P5",
+   "sub_topic": "Angular frequency from a wave's wave number",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(3 \\times 10^{15}\\) rad s⁻¹",
+    "B) \\(1 \\times 10^{7}\\) rad s⁻¹",
+    "C) \\(3 \\times 10^{8}\\) rad s⁻¹",
+    "D) \\(4.8 \\times 10^{14}\\) rad s⁻¹"
+   ],
+   "correct_option": "A",
+   "targets": "P5:omega from wave number",
+   "question": "The electric field of an EM wave in vacuum is \\(E = E_0\\sin(1.0 \\times 10^7x - \\omega t)\\), with \\(x\\) in metres. The angular frequency \\(\\omega\\) is:",
+   "explanation": "Answer: (A) \\(3 \\times 10^{15}\\) rad s⁻¹\nGiven: \\(k = 1.0 \\times 10^7\\) m⁻¹\nFormula: \\(\\omega = ck\\)\nStep 1: \\(\\omega = 3 \\times 10^8 \\times 10^7 = 3 \\times 10^{15}\\) rad s⁻¹\nCommon mistake: \\(4.8 \\times 10^{14}\\) (D) is \\(\\nu = \\dfrac{\\omega}{2\\pi}\\), in hertz.\nKey point: \\(\\dfrac{\\omega}{k} = c\\) for EM waves in vacuum."
+  },
+  {
+   "unit": "P5",
+   "sub_topic": "Time for sunlight to reach the Earth",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 50 s",
+    "B) 500 s",
+    "C) 5000 s",
+    "D) 8 s"
+   ],
+   "correct_option": "B",
+   "targets": "P5:light travel time sun",
+   "question": "The Sun is about \\(1.5 \\times 10^{11}\\) m from the Earth. The time sunlight takes to reach the Earth is about:",
+   "explanation": "Answer: (B) 500 s\nGiven: \\(d = 1.5 \\times 10^{11}\\) m, \\(c = 3 \\times 10^8\\) m s⁻¹\nFormula: \\(t = \\dfrac{d}{c}\\)\nStep 1: \\(t = \\dfrac{1.5 \\times 10^{11}}{3 \\times 10^8} = 500\\) s\nCommon mistake: 8 s (D) confuses minutes with seconds; 500 s is about 8 minutes.\nKey point: All EM waves cross this distance in the same time."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Critical angles for four refractive indices",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(III), (B)-(IV), (C)-(I), (D)-(II)",
+    "B) (A)-(I), (B)-(III), (C)-(IV), (D)-(II)",
+    "C) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)",
+    "D) (A)-(III), (B)-(I), (C)-(II), (D)-(IV)"
+   ],
+   "correct_option": "C",
+   "targets": "P6:critical angle values indices",
+   "question": "Match each refractive index in List-I with the critical angle for light going from that medium into air in List-II.\n\nList-I\n(A) \\(n = 2.42\\) (diamond)\n(B) \\(n = \\sqrt{2}\\)\n(C) \\(n = 2\\)\n(D) \\(n = \\dfrac{2}{\\sqrt{3}}\\)\n\nList-II\n(I) \\(45^\\circ\\)\n(II) \\(60^\\circ\\)\n(III) about \\(24^\\circ\\)\n(IV) \\(30^\\circ\\)",
+   "explanation": "Answer: (C) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)\nStep 1: \\(\\sin C = \\dfrac{1}{n}\\); (A) \\(\\dfrac{1}{2.42} \\approx 0.41\\): about \\(24^\\circ\\) (III)\nStep 2: (B) \\(\\dfrac{1}{\\sqrt{2}}\\): \\(45^\\circ\\) (I)\nStep 3: (C) \\(\\dfrac{1}{2}\\): \\(30^\\circ\\) (IV)\nStep 4: (D) \\(\\dfrac{\\sqrt{3}}{2}\\): \\(60^\\circ\\) (II)\nCommon mistake: Swapping (B) and (C); the larger index gives the smaller angle.\nKey point: Diamond sparkles because its critical angle is so small."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Tube length for a microscope magnification of 200",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 200 cm",
+    "B) 20 cm",
+    "C) 2 cm",
+    "D) 10 cm"
+   ],
+   "correct_option": "B",
+   "targets": "P6:microscope tube length",
+   "question": "A compound microscope with \\(f_o = 1\\) cm and \\(f_e = 2.5\\) cm gives a magnifying power of 200 with the final image at infinity (\\(D = 25\\) cm). Its tube length is:",
+   "explanation": "Answer: (B) 20 cm\nGiven: \\(m = 200\\), \\(f_o = 1\\) cm, \\(f_e = 2.5\\) cm, \\(D = 25\\) cm\nFormula: \\(m = \\dfrac{L}{f_o} \\cdot \\dfrac{D}{f_e}\\)\nStep 1: \\(\\dfrac{D}{f_e} = 10\\)\nStep 2: \\(200 = \\dfrac{L}{1} \\times 10\\), so \\(L = 20\\) cm\nCommon mistake: 200 cm (A) leaves out the eyepiece's magnification of 10.\nKey point: The eyepiece and objective share the total magnification."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Focal length of an equiconcave lens",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(+20\\) cm",
+    "B) \\(-40\\) cm",
+    "C) \\(+40\\) cm",
+    "D) \\(-20\\) cm"
+   ],
+   "correct_option": "D",
+   "targets": "P6:equiconcave lens maker",
+   "question": "A biconcave lens of glass (\\(n = 1.5\\)) has both radii of curvature 20 cm. Its focal length is:",
+   "explanation": "Answer: (D) \\(-20\\) cm\nGiven: \\(R_1 = -20\\) cm, \\(R_2 = +20\\) cm, \\(n = 1.5\\)\nFormula: \\(\\dfrac{1}{f} = (n - 1)\\left(\\dfrac{1}{R_1} - \\dfrac{1}{R_2}\\right)\\)\nStep 1: \\(\\dfrac{1}{f} = 0.5 \\times \\left(-\\dfrac{1}{20} - \\dfrac{1}{20}\\right) = -\\dfrac{1}{20}\\)\nStep 2: \\(f = -20\\) cm\nCommon mistake: \\(+20\\) cm (A) has the right size but loses the sign; a biconcave lens diverges.\nKey point: With \\(n = 1.5\\), an equiconcave lens has \\(|f| = R\\)."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Maximum to minimum intensity with unequal slits",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 9 : 1",
+    "B) 4 : 1",
+    "C) 16 : 1",
+    "D) 3 : 1"
+   ],
+   "correct_option": "A",
+   "targets": "P6:unequal slits intensity ratio",
+   "question": "In a double-slit experiment the two slits give intensities \\(I\\) and \\(4I\\) on the screen when used alone. The ratio of the maximum to the minimum intensity in the fringe pattern is:",
+   "explanation": "Answer: (A) 9 : 1\nGiven: \\(I_1 = I\\), \\(I_2 = 4I\\), so amplitudes are in the ratio 1 : 2\nFormula: \\(I_{max} = (\\sqrt{I_1} + \\sqrt{I_2})^2\\), \\(I_{min} = (\\sqrt{I_2} - \\sqrt{I_1})^2\\)\nStep 1: \\(I_{max} = (1 + 2)^2I = 9I\\)\nStep 2: \\(I_{min} = (2 - 1)^2I = I\\); ratio 9 : 1\nCommon mistake: 4 : 1 (B) compares the slit intensities, not the fringe extremes.\nKey point: Amplitudes add; intensities do not."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Apparent depth of a mark under two liquid layers",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 14 cm",
+    "B) 12 cm",
+    "C) 10 cm",
+    "D) 8 cm"
+   ],
+   "correct_option": "C",
+   "targets": "P6:apparent depth two layers",
+   "question": "A vessel holds 8 cm of water (\\(n = \\dfrac{4}{3}\\)) floating on 6 cm of a liquid of index 1.5. Seen from directly above, a mark on the bottom appears to be at a depth of:",
+   "explanation": "Answer: (C) 10 cm\nGiven: \\(t_1 = 8\\) cm, \\(n_1 = \\dfrac{4}{3}\\); \\(t_2 = 6\\) cm, \\(n_2 = 1.5\\)\nFormula: apparent depth \\(= \\dfrac{t_1}{n_1} + \\dfrac{t_2}{n_2}\\)\nStep 1: \\(\\dfrac{8}{4/3} = 6\\) cm; \\(\\dfrac{6}{1.5} = 4\\) cm\nStep 2: Apparent depth \\(= 10\\) cm\nCommon mistake: 14 cm (A) is the real depth.\nKey point: Each layer contributes its own thickness divided by its index."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Focal length of a convex mirror from one image",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 10 cm",
+    "B) 20 cm",
+    "C) 6.7 cm",
+    "D) 30 cm"
+   ],
+   "correct_option": "B",
+   "targets": "P6:convex mirror focal from image",
+   "question": "A convex mirror forms the image of an object placed 20 cm in front of it at 10 cm behind it. Its focal length is:",
+   "explanation": "Answer: (B) 20 cm\nGiven: \\(u = -20\\) cm, \\(v = +10\\) cm\nFormula: \\(\\dfrac{1}{f} = \\dfrac{1}{v} + \\dfrac{1}{u}\\)\nStep 1: \\(\\dfrac{1}{f} = \\dfrac{1}{10} - \\dfrac{1}{20} = \\dfrac{1}{20}\\)\nStep 2: \\(f = +20\\) cm\nCommon mistake: 6.7 cm (C) adds \\(\\dfrac{1}{10}\\) and \\(\\dfrac{1}{20}\\), ignoring that \\(u\\) is negative.\nKey point: Signs carry the physics in the mirror formula."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Power of two convex lenses in contact",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 2.5 D",
+    "B) 60 D",
+    "C) 13.3 D",
+    "D) 7.5 D"
+   ],
+   "correct_option": "D",
+   "targets": "P6:two convex lenses power",
+   "question": "Convex lenses of focal lengths 20 cm and 40 cm are placed in contact. The power of the combination is:",
+   "explanation": "Answer: (D) 7.5 D\nGiven: \\(f_1 = 0.2\\) m, \\(f_2 = 0.4\\) m\nFormula: \\(P = \\dfrac{1}{f_1} + \\dfrac{1}{f_2}\\)\nStep 1: \\(P = 5 + 2.5 = 7.5\\) D\nCommon mistake: 60 D (B) adds the focal lengths in cm instead of the powers.\nKey point: Powers add; focal lengths do not."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Full angular spread of the bright band from a 0.1 mm slit",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) \\(1 \\times 10^{-2}\\) rad",
+    "B) \\(5 \\times 10^{-3}\\) rad",
+    "C) \\(2 \\times 10^{-2}\\) rad",
+    "D) \\(1 \\times 10^{-5}\\) rad"
+   ],
+   "correct_option": "A",
+   "targets": "P6:single slit angular width central",
+   "question": "A slit 0.1 mm wide is lit by 500 nm light. The full angle spanned by the central bright band is:",
+   "explanation": "Answer: (A) \\(1 \\times 10^{-2}\\) rad\nGiven: \\(\\lambda = 5 \\times 10^{-7}\\) m, \\(a = 10^{-4}\\) m\nFormula: angular width \\(= \\dfrac{2\\lambda}{a}\\)\nStep 1: \\(\\dfrac{\\lambda}{a} = 5 \\times 10^{-3}\\) rad\nStep 2: Width \\(= 1 \\times 10^{-2}\\) rad\nCommon mistake: \\(5 \\times 10^{-3}\\) rad (B) gives only the angle to the first minimum on one side.\nKey point: The central maximum spans from \\(-\\dfrac{\\lambda}{a}\\) to \\(+\\dfrac{\\lambda}{a}\\)."
+  },
+  {
+   "unit": "P6",
+   "sub_topic": "Ratio of the speeds of light in two media",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 0.8",
+    "B) 1.25",
+    "C) 1.8",
+    "D) 0.64"
+   ],
+   "correct_option": "A",
+   "targets": "P6:speed ratio two media",
+   "question": "The refractive indices of two media are 1.5 and 1.2. The ratio of the speed of light in the first medium to that in the second is:",
+   "explanation": "Answer: (A) 0.8\nGiven: \\(n_1 = 1.5\\), \\(n_2 = 1.2\\)\nFormula: \\(v = \\dfrac{c}{n}\\), so \\(\\dfrac{v_1}{v_2} = \\dfrac{n_2}{n_1}\\)\nStep 1: \\(\\dfrac{v_1}{v_2} = \\dfrac{1.2}{1.5} = 0.8\\)\nCommon mistake: 1.25 (B) is \\(\\dfrac{n_1}{n_2}\\); speed is inversely proportional to index.\nKey point: Light is slower in the medium with the larger index."
+  },
+  {
+   "unit": "P7",
+   "sub_topic": "Photon and electron values",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(III), (B)-(II), (C)-(I), (D)-(IV)",
+    "B) (A)-(II), (B)-(III), (C)-(I), (D)-(IV)",
+    "C) (A)-(III), (B)-(I), (C)-(II), (D)-(IV)",
+    "D) (A)-(III), (B)-(II), (C)-(IV), (D)-(I)"
+   ],
+   "correct_option": "A",
+   "targets": "P7:photon electron values match",
+   "question": "Match each quantity in List-I with its value in List-II (\\(hc = 1240\\) eV nm, \\(h = 6.6 \\times 10^{-34}\\) J s).\n\nList-I\n(A) Energy of a 1240 nm photon\n(B) Energy of a 310 nm photon\n(C) de Broglie wavelength of an electron accelerated through 150 V\n(D) Momentum of a 660 nm photon\n\nList-II\n(I) 0.1 nm\n(II) 4 eV\n(III) 1 eV\n(IV) \\(1 \\times 10^{-27}\\) kg m s⁻¹",
+   "explanation": "Answer: (A) (A)-(III), (B)-(II), (C)-(I), (D)-(IV)\nStep 1: \\(\\dfrac{1240}{1240} = 1\\) eV (III)\nStep 2: \\(\\dfrac{1240}{310} = 4\\) eV (II)\nStep 3: \\(\\dfrac{1.227}{\\sqrt{150}} \\approx 0.1\\) nm (I)\nStep 4: \\(\\dfrac{6.6 \\times 10^{-34}}{6.6 \\times 10^{-7}} = 10^{-27}\\) kg m s⁻¹ (IV)\nCommon mistake: Swapping (A) and (B); the shorter wavelength carries the larger energy.\nKey point: \\(E\\,(\\text{eV}) = \\dfrac{1240}{\\lambda\\,(\\text{nm})}\\)."
+  },
+  {
+   "unit": "P7",
+   "sub_topic": "Timing, intensity and stopping potential in photoemission — which hold",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) and (B) only",
+    "B) (A), (B) and (C) only",
+    "C) (B), (C) and (D) only",
+    "D) (A), (B), (C) and (D)"
+   ],
+   "correct_option": "B",
+   "targets": "P7:photoemission instantaneous,intense light below threshold",
+   "question": "Consider the following statements:\n(A) Photoelectric emission begins without any noticeable time lag.\n(B) Doubling the intensity of light above the threshold doubles the saturation current.\n(C) The stopping potential depends on the metal and on the frequency of light.\n(D) Very intense light below the threshold frequency causes emission after a delay.\nWhich of the statements given above are correct?",
+   "explanation": "Answer: (B) (A), (B) and (C) only\nWhy: (A) a single photon is absorbed at once. (B) twice the photons free twice the electrons. (C) \\(eV_0 = h\\nu - \\phi_0\\).\nWhy not the others: (D) is false: below \\(\\nu_0\\) no photon has enough energy, so no emission ever occurs. Options (C) and (D) include (D); (A) leaves out (C).\nKey point: Energy is delivered in photons, not spread continuously."
+  },
+  {
+   "unit": "P7",
+   "sub_topic": "Particles accelerated through the same voltage in increasing order of wavelength",
+   "difficulty": "hard",
+   "format": "sequence",
+   "options": [
+    "A) (B), (A), (D), (C)",
+    "B) (C), (A), (D), (B)",
+    "C) (C), (D), (A), (B)",
+    "D) (D), (C), (A), (B)"
+   ],
+   "correct_option": "C",
+   "targets": "P7:same voltage particles wavelength order",
+   "question": "These particles are each accelerated from rest through the same potential difference. Arrange them in increasing order of de Broglie wavelength:\n(A) proton\n(B) electron\n(C) α-particle\n(D) deuteron",
+   "explanation": "Answer: (C) (C), (D), (A), (B)\nStep 1: \\(\\lambda = \\dfrac{h}{\\sqrt{2mqV}}\\), so \\(\\lambda \\propto \\dfrac{1}{\\sqrt{mq}}\\)\nStep 2: \\(mq\\) in units of \\(m_pe\\): α \\(4 \\times 2 = 8\\); deuteron \\(2 \\times 1 = 2\\); proton 1; electron about \\(\\dfrac{1}{1836}\\)\nStep 3: Increasing \\(\\lambda\\): (C), (D), (A), (B)\nCommon mistake: (D) ranks by mass alone; the α-particle's double charge makes its wavelength the shortest.\nKey point: At equal voltage, both mass and charge reduce the wavelength."
+  },
+  {
+   "unit": "P7",
+   "sub_topic": "Photons per second from equal-power red and blue sources",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 1 : 2",
+    "B) 1 : 1",
+    "C) 4 : 1",
+    "D) 2 : 1"
+   ],
+   "correct_option": "D",
+   "targets": "P7:photons per second ratio colours",
+   "question": "A red source (700 nm) and a blue source (350 nm) emit light of the same power. The ratio of the number of photons emitted per second (red : blue) is:",
+   "explanation": "Answer: (D) 2 : 1\nGiven: \\(P\\) equal; \\(E = \\dfrac{hc}{\\lambda}\\)\nFormula: \\(n = \\dfrac{P}{E} = \\dfrac{P\\lambda}{hc} \\propto \\lambda\\)\nStep 1: \\(\\dfrac{n_r}{n_b} = \\dfrac{700}{350}\\)\nStep 2: \\(= 2\\)\nCommon mistake: 1 : 2 (A) inverts the ratio; red photons carry less energy, so more are needed.\nKey point: At equal power, longer wavelength means more photons."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Rutherford's experiment and model — which claims fail",
+   "difficulty": "medium",
+   "format": "statements",
+   "options": [
+    "A) (A) only",
+    "B) (B) only",
+    "C) (C) only",
+    "D) (D) only"
+   ],
+   "correct_option": "D",
+   "targets": "P8:rutherford model line spectrum,nucleus size range",
+   "question": "Consider the following statements:\n(A) In Rutherford's experiment, most α-particles passed through the foil almost undeflected.\n(B) A few α-particles were deflected through more than \\(90^\\circ\\).\n(C) Nuclear sizes are of the order of \\(10^{-15}\\) to \\(10^{-14}\\) m.\n(D) Rutherford's model explains the line spectrum of hydrogen.\nWhich of the statements given above is/are NOT correct?",
+   "explanation": "Answer: (D) (D) only\nWhy: Only (D) is false: Rutherford's model predicts a continuous spectrum (a spiralling electron); Bohr's quantised orbits were needed for lines.\nWhy not the others: (A) most of the atom is empty. (B) a few came close to the nucleus. (C) a nucleus is about \\(10^{4}\\) to \\(10^{5}\\) times smaller than the atom. Options (A), (B) and (C) name a true statement as false.\nKey point: Rutherford found the nucleus; Bohr explained the spectrum."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Energy to raise hydrogen from n = 2 to n = 4",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 3.4 eV",
+    "B) 2.55 eV",
+    "C) 0.85 eV",
+    "D) 12.75 eV"
+   ],
+   "correct_option": "B",
+   "targets": "P8:excitation energy 2 to 4",
+   "question": "The energy needed to raise a hydrogen electron from \\(n = 2\\) to \\(n = 4\\) is:",
+   "explanation": "Answer: (B) 2.55 eV\nGiven: \\(E_2 = -3.4\\) eV, \\(E_4 = -\\dfrac{13.6}{16} = -0.85\\) eV\nFormula: \\(\\Delta E = E_4 - E_2\\)\nStep 1: \\(\\Delta E = -0.85 + 3.4 = 2.55\\) eV\nCommon mistake: 12.75 eV (D) is the jump from \\(n = 1\\) to \\(n = 4\\).\nKey point: Energies are differences between levels."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Wavelength of the n = 4 to n = 2 line",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 486 nm",
+    "B) 656 nm",
+    "C) 365 nm",
+    "D) 434 nm"
+   ],
+   "correct_option": "A",
+   "targets": "P8:hydrogen line 4 to 2 wavelength",
+   "question": "The wavelength of the photon emitted in the jump from \\(n = 4\\) to \\(n = 2\\) in hydrogen is about (\\(hc = 1240\\) eV nm):",
+   "explanation": "Answer: (A) 486 nm\nGiven: \\(E_4 - E_2 = 2.55\\) eV\nFormula: \\(\\lambda = \\dfrac{1240}{\\Delta E}\\)\nStep 1: \\(\\lambda = \\dfrac{1240}{2.55} \\approx 486\\) nm\nCommon mistake: 656 nm (B) is the 3 → 2 line.\nKey point: This blue-green line is the second Balmer line."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Energy released when a heavy nucleus splits into two halves",
+   "difficulty": "hard",
+   "format": "numerical",
+   "options": [
+    "A) 2.16 MeV",
+    "B) 108 MeV",
+    "C) 216 MeV",
+    "D) 0.9 MeV"
+   ],
+   "correct_option": "C",
+   "targets": "P8:fission energy from binding curve",
+   "question": "A nucleus of mass number 240 with binding energy 7.6 MeV per nucleon splits into two nuclei of mass number 120, each with 8.5 MeV per nucleon. The energy released is about:",
+   "explanation": "Answer: (C) 216 MeV\nGiven: \\(A = 240\\); \\(\\Delta(\\text{BE per nucleon}) = 8.5 - 7.6 = 0.9\\) MeV\nFormula: energy released = total BE of products − total BE of parent\nStep 1: Parent: \\(240 \\times 7.6 = 1824\\) MeV; products: \\(240 \\times 8.5 = 2040\\) MeV\nStep 2: Released \\(= 2040 - 1824 = 216\\) MeV\nCommon mistake: 0.9 MeV (D) is the gain per nucleon. 108 MeV (B) counts only one fragment.\nKey point: Moving towards the peak of the curve releases energy."
+  },
+  {
+   "unit": "P8",
+   "sub_topic": "Ratio of radii of nuclei with A = 64 and A = 8",
+   "difficulty": "easy",
+   "format": "numerical",
+   "options": [
+    "A) 8",
+    "B) 4",
+    "C) 2",
+    "D) \\(\\sqrt{8}\\)"
+   ],
+   "correct_option": "C",
+   "targets": "P8:nuclear radius ratio mass numbers",
+   "question": "The ratio of the radius of a nucleus of mass number 64 to that of a nucleus of mass number 8 is:",
+   "explanation": "Answer: (C) 2\nGiven: \\(A_1 = 64\\), \\(A_2 = 8\\)\nFormula: \\(R \\propto A^{1/3}\\)\nStep 1: \\(\\dfrac{R_1}{R_2} = \\left(\\dfrac{64}{8}\\right)^{1/3} = 8^{1/3}\\)\nStep 2: \\(= 2\\)\nCommon mistake: 8 (A) uses \\(R \\propto A\\).\nKey point: Eight times the nucleons gives only twice the radius."
+  },
+  {
+   "unit": "P9",
+   "sub_topic": "Currents in simple diode circuits",
+   "difficulty": "medium",
+   "format": "match-list",
+   "options": [
+    "A) (A)-(I), (B)-(III), (C)-(II), (D)-(IV)",
+    "B) (A)-(III), (B)-(II), (C)-(I), (D)-(IV)",
+    "C) (A)-(III), (B)-(I), (C)-(II), (D)-(IV)",
+    "D) (A)-(III), (B)-(I), (C)-(IV), (D)-(II)"
+   ],
+   "correct_option": "C",
+   "targets": "P9:diode circuit currents",
+   "question": "Match each diode circuit in List-I with its current in List-II.\n\nList-I\n(A) Ideal diode, forward biased, 6 V supply, \\(2\\ \\text{k}\\Omega\\) resistor\n(B) Ideal diode, reverse biased, 6 V supply, \\(2\\ \\text{k}\\Omega\\) resistor\n(C) Silicon diode (0.7 V drop), forward biased, 4.7 V supply, \\(1\\ \\text{k}\\Omega\\) resistor\n(D) Ideal diode, forward biased, 10 V supply, \\(5\\ \\text{k}\\Omega\\) resistor\n\nList-II\n(I) zero\n(II) 4 mA\n(III) 3 mA\n(IV) 2 mA",
+   "explanation": "Answer: (C) (A)-(III), (B)-(I), (C)-(II), (D)-(IV)\nStep 1: \\(\\dfrac{6}{2000} = 3\\) mA (III)\nStep 2: Reverse-biased ideal diode: open circuit (I)\nStep 3: \\(\\dfrac{4.7 - 0.7}{1000} = 4\\) mA (II)\nStep 4: \\(\\dfrac{10}{5000} = 2\\) mA (IV)\nCommon mistake: Swapping (A) and (B); only forward bias lets current flow.\nKey point: Subtract the diode drop for a real silicon diode."
+  },
+  {
+   "unit": "P9",
+   "sub_topic": "Peak output of a half-wave rectifier on 10 V rms",
+   "difficulty": "medium",
+   "format": "numerical",
+   "options": [
+    "A) 14.1 V",
+    "B) 7.07 V",
+    "C) 10 V",
+    "D) 20 V"
+   ],
+   "correct_option": "A",
+   "targets": "P9:rectifier peak output rms input",
+   "question": "A half-wave rectifier with an ideal diode is fed with 10 V (rms) a.c. The peak value of the output voltage is about:",
+   "explanation": "Answer: (A) 14.1 V\nGiven: \\(V_{rms} = 10\\) V\nFormula: \\(V_0 = \\sqrt{2}V_{rms}\\)\nStep 1: \\(V_0 = 1.414 \\times 10 \\approx 14.1\\) V\nCommon mistake: 7.07 V (B) divides by \\(\\sqrt{2}\\) instead of multiplying.\nKey point: An ideal diode passes the full peak of each forward half-cycle."
+  },
+  {
+   "unit": "P9",
+   "sub_topic": "Diodes conducting at any instant in a centre-tap rectifier",
+   "difficulty": "medium",
+   "format": "direct",
+   "options": [
+    "A) none",
+    "B) one",
+    "C) two",
+    "D) both alternately in pairs"
+   ],
+   "correct_option": "B",
+   "targets": "P9:centre tap diodes conducting",
+   "question": "In a centre-tap full-wave rectifier, the number of diodes conducting at any instant (apart from the zero crossings) is:",
+   "explanation": "Answer: (B) one\nWhy: The centre tap makes the two ends of the secondary opposite in sign; in each half-cycle only the diode on the positive end is forward biased.\nWhy not the others: (A) one diode always conducts. (C) and (D) would short the secondary through both diodes.\nKey point: The two diodes take turns, one per half-cycle."
+  }
+ ]
+}
