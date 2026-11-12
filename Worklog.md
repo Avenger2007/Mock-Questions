@@ -622,6 +622,32 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 - `docs/blueprints/political_science.md` (pattern, PYQ analysis, unit quotas, difficulty, formats, out-of-scope list) and `docs/blueprints/political_science_coverage.md` (passage rotation, format host rotation, per-unit topic lists).
 - `tools/cuet_pol/` — compact draft format and converter, checker, answer-fact ledger and marker, ship script, item patcher, match relabeller and series re-indexer; drafts of all 15 tests in `drafts/`.
 
+## Sanskrit (325) — revised to the CUET 2027 standard (completed 12 Nov 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `92a43f0` (blueprint, coverage map, tools and pilot Test 1), `69f6f56` (Test 2) … `c526fcc` (Test 15) on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | old 50-question papers, status `pending_revision` | **15 rewritten tests** (`CUET SANSKRIT TEST 1–15.json`), planned in a coverage map; status `revised` |
+| Paper structure | 50 questions | NTA pattern: 50 questions, all compulsory; 60 min, +5 / −1 |
+| Syllabus | mixed, some out-of-scope items | gated to the NTA 2026 Sanskrit (325) syllabus (latest published): grammar (शब्दरूप, धातुरूप, सन्धि, समास, प्रत्यय, उपपदविभक्ति), language work, छन्द, अलङ्कार and history of Sanskrit literature |
+| Unit balance | uneven | fixed quotas in every test: S1 शब्दरूप 6, S2 धातुरूप 6, S3 सन्धि 5, S4 समास 5, S5 प्रत्यय 6, S6 उपपद 4, S7 भाषिककार्य 5, S8 छन्द 4, S9 अलङ्कार 4, S10 साहित्य 5 |
+| Difficulty | uneven | **8 / 32 / 10 (easy / medium / hard) in every test** |
+| Formats | almost all direct | per test: one original 80–150-word Sanskrit passage with 5 questions (comprehension, कर्ता/विशेष्य/पर्याय/विलोम, vibhakti reason, प्रत्यय, and सन्धि in odd tests / समास in even tests; 15 different themes), 6 match-list (all with different answer patterns, none the identity), 6 statement items alternating "correct" / "NOT", 4 sequence items (paradigm order, metre and alaṅkāra lakṣaṇa reconstruction, literary order; answer never A-B-C-D) and 29 direct items, including at least 3 NOT/incorrect and 3 fill-in items; host units rotate test by test |
+| Explanations | 1–2 lines | Hindi: क्यों / अन्य विकल्प क्यों नहीं / मुख्य बिंदु |
+| Order and keys | uneven | key A 13 / B 12 / C 13 / D 12 (odd tests) and A 12 / B 13 / C 12 / D 13 (even tests); question order shuffled with the passage set kept together; no answer run longer than 3 |
+
+**Coverage ledger:** every test's answer facts are recorded per unit by `mark_san.py` in `docs/blueprints/sanskrit_coverage.md`, and `san_check.py` flags quota, key and difficulty drift, short passages, over-long correct options (`LONGEST`), near-identical sub-topics or stems against earlier tests (`OVERLAP`, threshold 0.95 because paradigm items share templates by design) and answer facts already used twice (`REPEAT-TARGET`); flagged items were reworded or replaced before shipping, and stems that matched old unrevised papers were reworded when the validator caught them.
+
+**Verification:** `validate_papers.py CUET --subject "Sanskrit"` — 0 parse errors, 0 wrong counts, 0 option-count errors, 0 key/explanation mismatches, 0 runs > 3, 0 within- or cross-paper duplicate stems, 0 missing passages, 0 difficulty deviations; series key A 25.1%, B 24.9%, C 25.1%, D 24.9% (750 questions).
+
+**Known limits:** PYQs were analysed for pattern only; no question is copied. Metre and alaṅkāra lakṣaṇa-order items reuse each classical definition at most twice, and a few high-yield literature facts (for example Bhavabhūti's plays and the Bṛhattrayī) appear in more than one test from different angles; no answer fact is used more than twice.
+
+### Tools added
+- `docs/blueprints/sanskrit.md` (pattern, PYQ analysis, unit quotas, difficulty, formats, out-of-scope list) and `docs/blueprints/sanskrit_coverage.md` (passage themes, format host rotation, answer-fact ledgers).
+- `tools/cuet_san/` — compact draft format and converter, checker, answer-fact ledger and marker, ship script, item patcher, match relabeller and series re-indexer; drafts of all 15 tests in `drafts/`.
+
 ## IAT New Tests 12 and 13 — authored review drafts (3 Nov 2026)
 
 - Authored 120 questions from reserved syllabus slots. Each paper has 15 questions per subject, editorial tiers 9/42/9, balanced 15-per-letter keys, detailed WHY and distractor analyses, and displayed derivations for all Mathematics/Physics items.
