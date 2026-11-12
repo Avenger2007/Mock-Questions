@@ -63,6 +63,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | anemometer wind speed, wind vane direction, campbell stokes sunshine, rain gauge rainfall, climate long term average, koppen temperature precipitation |
 | T3 | short range up to 3 days, medium range 3-10 days, long range beyond 10 days, rainfall millimetres, clouds trap long wave radiation frost |
 | T4 | co2 fossil fuel deforestation, ch4 ruminants, n2o nitrogen fertilizer, cfc refrigerants, sw monsoon june september, terminal heat grain filling shortened |
+| T5 | co2 fertilisation c3 crops, heat shortens crop duration, extreme events frequency, sea level salinity coast, imd national weather service, rh highest before sunrise |
 
 ### A2 Genetics and Plant Breeding
 
@@ -72,6 +73,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | quantitative traits continuous variation, polygenic many genes small effect, discontinuous distinct classes, meiosis halves chromosome number, pure line selection self pollinated johannsen, aabbcc 8 gametes 2 power n, wheat self pollinated |
 | T3 | heterosis f1 superiority, emasculation removal anthers, polyploidy more than two sets, mutation heritable change, prophase i substages order, colchicine polyploidy, totipotency tissue culture, uracil not in dna |
 | T4 | semi dwarf short stiff straw no lodging, bagging prevents stray pollen, kalyan sona sonalika, f2 segregation select true breeding, borlaug nobel peace 1970, norin 10 dwarfing genes |
+| T5 | monohybrid f2 3 1, monohybrid genotypic 1 2 1, dihybrid 9 3 3 1, test cross 1 1, tissue culture steps, gamma rays physical mutagen, bt cotton bacillus thuringiensis, mendel success reasons |
 
 ### A3 Biochemistry
 
@@ -81,6 +83,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | ribose pentose rna, starch plant storage, glycogen animal storage, cellulose cell wall, protein structure levels order, enzymes proteins |
 | T3 | fats glycerol fatty acids, unsaturated double bonds, lipids insoluble water, saturated fats solid, buffer resists ph change, vitamin k fat soluble |
 | T4 | protein amino acids, starch glucose monomer, nucleic acid nucleotides, fat glycerol fatty acids, peptide bond, enzyme denaturation heat |
+| T5 | enzymes lower activation energy, enzymes not used up, optimum temperature ph, lock and key, ph 5.2 acidic, nucleotide sugar phosphate base |
 
 ### A4 Microbiology
 
@@ -90,6 +93,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | lactobacillus curd, yeast eukaryote, wide cn ratio n immobilisation |
 | T3 | aspergillus fungus, streptomyces actinomycete, amoeba protozoan, tmv virus, virus nucleic acid protein coat, earthworms aerate casts enrich |
 | T4 | aerobic more energy than fermentation, fermentation without oxygen, decomposition releases co2 nutrients, ammonification nitrification order, trichoderma biocontrol |
+| T5 | nitrosomonas ammonium nitrite, azotobacter free living n, mycorrhiza phosphorus uptake, trichoderma biocontrol, humus definition, methanogens biogas |
 
 ### A5 Seed Science
 
@@ -99,6 +103,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | hard seed coat dormancy, scarification, ga breaks dormancy, double fertilisation zygote pen |
 | T3 | germination events order, anemophily wind maize |
 | T4 | breeder tag golden yellow, foundation tag white, certified tag azure blue, apomixis definition |
+| T5 | self pollination same flower, cross pollination another plant, bees pollinate mustard, epigeal germination cotton |
 
 ### L1 Livestock: Scope, Importance and Breeds
 
@@ -108,6 +113,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | bos indicus zebu, tharparkar dual purpose, anand pattern three tier, crossbred more milk less heat tolerant, operation flood 1970 nddb, rashtriya gokul mission 2014 |
 | T3 | gir gujarat, ongole andhra pradesh, kangayam tamil nadu, rathi rajasthan, india first milk production, rhode island red dual purpose exotic |
 | T4 | nddb 1965 anand, amul gujarat cooperative, holstein friesian highest yield, merino fine wool |
+| T5 | white leghorn egg type, aseel game, cornish meat type, kadaknath black flesh, surti buffalo, black bengal goat |
 
 ### L2 Livestock: Care, Management and Diseases
 
@@ -117,6 +123,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | deep litter husk floor, battery cage tiers, free range outdoors, loose housing cattle, fmd virus blisters, healthy signs moist muzzle bright eyes |
 | T3 | dry off before calving, pregnant separate calving, extra concentrate late pregnancy, navel iodine, coccidiosis damp litter oocysts, layers calcium eggshell, bq bacterial not viral |
 | T4 | hs throat swelling fever, mastitis clots milk, fowl pox comb scabs, ranikhet twisted neck, rinderpest eradicated, groundnut cake concentrate not roughage, lasota vaccine ranikhet |
+| T5 | maize grain energy concentrate, mustard cake protein, mineral mixture, stover dry roughage, newborn calf care steps, shed long axis east west, california mastitis test |
 
 ### L3 Artificial Insemination and Livestock Products
 
@@ -126,6 +133,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | buffalo milk higher fat, paneer acid coagulation |
 | T3 | ai one bull thousands cows, ai prevents reproductive disease, frozen semen after bull death, am pm rule insemination |
 | T4 | lactose milk sugar, ghee from butter |
+| T5 | casein main milk protein, milk poor in iron, cow gestation 280 days |
 
 ### L4 Fisheries
 
@@ -135,6 +143,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | fish gills, fish cold blooded, fins locomotion |
 | T3 | aquaculture definition |
 | T4 | blue revolution fisheries |
+| T5 | pomfret marine fish |
 
 ### C1 Crop Production: Introduction and Modern Agriculture
 
@@ -144,6 +153,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | green revolution wheat, castor oilseed not fibre, jeevamrit microbial culture |
 | T3 | foodgrain 1950-51 about 51 mt, foodgrain above 300 mt, sugar beet sugar crop, sustainable agriculture future generations |
 | T4 | precision vrt gps, remote sensing satellite area, conservation agriculture happy seeder, natural farming beejamrit, sorghum cereal, modern agriculture challenges |
+| T5 | groundnut oilseed, npop organic certification, foodgrains cereals pulses |
 
 ### C2 Soil, Soil Fertility, Fertilizers and Manures
 
@@ -153,6 +163,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | alluvial indo gangetic, black soil swells cracks cotton, red soil iron oxide, laterite leaching, soil sampling steps, gypsum sodic soil, phosphorus purple leaves |
 | T3 | fym bulky organic manure, dhaincha green manure, inm combines sources, green manuring steps, magnesium chlorophyll, npk complex fertilizer |
 | T4 | c h o from air water, ca mg s secondary, nickel micronutrient, optimum ph 6.5-7.5, tilth physical condition, dap calculation 46 p2o5 18 n |
+| T5 | shc twelve parameters, shc ph ec oc, urea cheap npk imbalance, shc grid 2.5 ha irrigated, inm organic plus fertilizer roles |
 
 ### C3 Irrigation and Drainage
 
@@ -162,6 +173,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | border strip wheat, furrow row crops, wild flooding low efficiency, sprinkler unsuited windy, wheat stage order cri tillering jointing flowering, iw cpe cumulative pan evaporation |
 | T3 | surface drains open ditches, tile drains perforated pipes, mole drains bullet plough, vertical drainage pumping wells, watershed common outlet, irrigation volume 1 ha 5 cm 500 m3 |
 | T4 | schedule critical stages, schedule soil moisture depletion, irrigation efficiency order drip sprinkler furrow flooding, tubewells wells largest source |
+| T5 | evapotranspiration definition, effective rainfall, irrigation requirement, delta crop, irrigation requirement calculation, waterlogging roots lack oxygen |
 
 ### C4 Weed Control
 
@@ -171,6 +183,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | weeds prolific seed, weed seed dormancy, weeds compete light water nutrients, weeds alternate hosts, zygogramma parthenium |
 | T3 | eichhornia aquatic weed, cyperus rotundus tubers |
 | T4 | herbicide timing order, critical period first third |
+| T5 | stale seedbed cultural, insects biological control, 2 4 d broadleaf weeds |
 
 ### C5 Field Crops: Cultivation, Protection and Post-harvest
 
@@ -180,6 +193,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | blast pyricularia, red rot colletotrichum, tikka cercospora, wilt fusarium udum, pink bollworm cotton, wheat storage moisture 10-12 |
 | T3 | cajanus cajan pigeon pea, cicer arietinum gram, pennisetum glaucum pearl millet, sorghum bicolor, wheat post harvest order, ergot pearl millet sclerotia |
 | T4 | yellow stem borer rice, helicoverpa gram pod borer, mustard aphid, early shoot borer sugarcane, sugarcane sets, groundnut peg underground pods, gram nipping branching |
+| T5 | sugarcane growth phases, wheat rabi, puccinia wheat rust |
 
 ### H1 Horticulture: Importance, Orchards, Gardens and Propagation
 
@@ -189,6 +203,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | training framework, pruning dead shoots, grapes pruned annually, shrub definition, kitchen garden perennials one side |
 | T3 | climbers need support, air layering gootee |
 | T4 | square system, contour planting slopes, rectangular row spacing wider, triangular equilateral, t budding steps, irrigation frost protection |
+| T5 | mango seedlings not true to type, vegetative identical parent, rootstock resistance, rootstock definition, hedge living fence |
 
 ### H2 Cultivation of Fruits, Vegetables and Flowers
 
@@ -198,6 +213,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | gladiolus corms, rose t budding, canna rhizomes, chrysanthemum terminal cuttings suckers, alphonso mango, black tip brick kiln fumes |
 | T3 | carrot apiaceae, onion alliaceae, spinach chenopodiaceae, brinjal solanaceae, panama wilt banana |
 | T4 | dashehari mango not grape, whiptail molybdenum, marigold seed propagation |
+| T5 | grand naine banana, allahabad safeda guava, coorg honey dew papaya, anab-e-shahi grape, spinach leaves, blossom end rot calcium |
 
 ### H3 Fruit and Vegetable Preservation
 
@@ -207,3 +223,4 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T2 | potato chips steps, sodium benzoate ketchup |
 | T3 | pectin acid sugar balance, guava rich pectin, marmalade citrus peel shreds, jelly fails low acid pectin, jelly end point 5-6 above boiling |
 | T4 | drying lowers water activity, salt pickles, irradiation preservation, canning heat seal, squash 25 percent juice |
+| T5 | tomato ketchup steps, blanching inactivates enzymes |
