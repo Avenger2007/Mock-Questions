@@ -59,83 +59,100 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 
 | Test | Answer facts |
 |---|---|
+| T1 | sw monsoon kerala 1 june, ne monsoon tamil nadu oct-dec, el nino weak monsoon, hygrometer humidity, methane flooded paddy |
 
 ### A2 Genetics and Plant Breeding
 
 | Test | Answer facts |
 |---|---|
+| T1 | mitochondria atp, ribosome protein synthesis, chloroplast photosynthesis, golgi packaging secretion, mitosis stage order, mendel no linkage different chromosomes, vernalization not breeding method |
 
 ### A3 Biochemistry
 
 | Test | Answer facts |
 |---|---|
+| T1 | vitamin a night blindness, vitamin d rickets, vitamin c scurvy, thiamine beriberi, neutral ph 7, sucrose glucose fructose |
 
 ### A4 Microbiology
 
 | Test | Answer facts |
 |---|---|
+| T1 | bacteria prokaryote no nucleus, actinomycetes earthy smell geosmin, fungi acid soils decomposers, yeast ethanol co2, blue green algae rice n fixing |
 
 ### A5 Seed Science
 
 | Test | Answer facts |
 |---|---|
+| T1 | nucleus breeder foundation certified chain, scutellum monocot cotyledon |
 
 ### L1 Livestock: Scope, Importance and Breeds
 
 | Test | Answer facts |
 |---|---|
+| T1 | sahiwal milch, murrah buffalo haryana, jamunapari goat not sheep, kadaknath indigenous mp, verghese kurien white revolution, hallikar draught |
 
 ### L2 Livestock: Care, Management and Diseases
 
 | Test | Answer facts |
 |---|---|
+| T1 | eimeria coccidiosis, clostridium chauvoei bq, pasteurella hs, paramyxovirus ranikhet, colostrum antibodies passive immunity, balanced ration definition 24 hours, mastitis udder |
 
 ### L3 Artificial Insemination and Livestock Products
 
 | Test | Answer facts |
 |---|---|
+| T1 | ai collection artificial vagina, semen dilution extender, frozen semen liquid nitrogen, htst 72c 15 s |
 
 ### L4 Fisheries
 
 | Test | Answer facts |
 |---|---|
+| T1 | rohu indian major carp |
 
 ### C1 Crop Production: Introduction and Modern Agriculture
 
 | Test | Answer facts |
 |---|---|
+| T1 | conservation agriculture three principles, precision agriculture gps vrt, organic no synthetic fertilizer, ndvi remote sensing crop health, berseem forage crop, sesame oilseed not pulse |
 
 ### C2 Soil, Soil Fertility, Fertilizers and Manures
 
 | Test | Answer facts |
 |---|---|
+| T1 | urea 46 n, dap 18-46, mop 60 k2o, ssp 16 p2o5, soil separates size order, urea calculation 92 n 200, zinc khaira rice |
 
 ### C3 Irrigation and Drainage
 
 | Test | Answer facts |
 |---|---|
+| T1 | field capacity definition, pwp no recovery, available water fc minus pwp, cri stage wheat, sar sodium hazard |
 
 ### C4 Weed Control
 
 | Test | Answer facts |
 |---|---|
+| T1 | phalaris minor wheat, orobanche mustard, echinochloa rice, cuscuta berseem, glyphosate non-selective |
 
 ### C5 Field Crops: Cultivation, Protection and Post-harvest
 
 | Test | Answer facts |
 |---|---|
+| T1 | puddling reduces percolation, sri young seedlings 8-12 days, brown planthopper hopper burn, rice 20x15 spacing 33 hills, sri moist not flooded saves water |
 
 ### H1 Horticulture: Importance, Orchards, Gardens and Propagation
 
 | Test | Answer facts |
 |---|---|
+| T1 | mango softwood grafting, banana suckers, guava air layering, grape hardwood cuttings, annual one season, quincunx extra plant centre |
 
 ### H2 Cultivation of Fruits, Vegetables and Flowers
 
 | Test | Answer facts |
 |---|---|
+| T1 | papain papaya latex, buttoning overaged seedlings, potato stem tuber not root |
 
 ### H3 Fruit and Vegetable Preservation
 
 | Test | Answer facts |
 |---|---|
+| T1 | kms not for coloured fruits, sugar preserves osmosis, pectin jelly set |
