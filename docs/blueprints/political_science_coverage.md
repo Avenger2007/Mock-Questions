@@ -63,6 +63,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | kerala government dismissed 1959 article 356, 17 crore voters first election, mexico pri one party |
 | T7 | congress socialist party formed 1934, socialists left congress 1948, first general election completed 1952, cpi government kerala 1957, rajagopalachari first indian governor general |
 | T8 | swatantra free economy land ceilings, jana sangh hindi national language, socialists criticised congress capitalists, cpi russian revolution inspired, ambedkar scheduled castes federation, opposition parties role check |
+| T9 | jana sangh one culture one nation, socialist party splits ssp psp, swatantra against planning nationalisation, cpi founded 1920s, swatantra masani ranga munshi |
 
 ### I2 Nation-building and its problems
 
@@ -76,6 +77,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | three challenges nation building, potti sriramulu fast 56 days, partition division of assets, nehru not keen linguistic states, andhra state 1953, states reorganisation act 1956, maharashtra gujarat 1960, punjab haryana 1966, travancore refused to join |
 | T7 | two nation theory meaning, linguistic state meaning, princely state meaning, refugee meaning, andhra telugu, src appointed 1953 |
 | T8 | gandhi kolkata 15 august 1947, gandhi assassination godse, rss banned after assassination, hyderabad not acceded 1947, east pakistan bangladesh, linguistic states strengthened unity |
+| T9 | fazl ali src chairman, bodhachandra singh manipur, nizam osman ali khan, jinnah pakistan demand, partition problems minorities both sides, telangana peasant movement communists |
 
 ### I3 Politics of planned development
 
@@ -89,6 +91,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | land ceiling meaning, green revolution hyv seeds, operation flood milk cooperatives, zamindari abolition meaning, soviet model five year plans |
 | T7 | second plan tariffs protection, first plan not heavy industry, bhakra nangal foundations, state control inefficiency corruption, green revolution punjab haryana west up |
 | T8 | first plan 1951, second plan 1956, plan holiday 1966, operation flood 1970, odisha iron ore tribals displacement |
+| T9 | charan singh agriculture planning, land ceiling poorly implemented false, green revolution disparity, bihar food crisis 1960s, kerala peoples plan campaign decentralised |
 
 ### I4 India's external relations
 
@@ -102,6 +105,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | panchsheel 1954, dalai lama asylum 1959, nam belgrade 1961, indo soviet treaty 1971, kashmir referred un 1948, nehru foreign minister |
 | T7 | nehru three foreign policy aims, asian relations conference 1947, indonesia freedom conference 1949, nonalignment not isolation neutrality, nonalignment aid both blocs |
 | T8 | hindi chini bhai bhai, mcmahon line, aksai chin, nefa arunachal, credible minimum deterrence, us china pakistan axis 1971 |
+| T9 | indus treaty nehru ayub 1960, 1965 war rann of kutch, shimla indira bhutto 1972, india did not sign npt, 1956 hungary not condemned, 1971 refugees east pakistan |
 
 ### I5 Challenge to and restoration of the Congress system
 
@@ -115,6 +119,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | defection meaning, coalition meaning, non congressism meaning, conscience vote 1969, shastri succeeded nehru 1964, ten point programme 1967 |
 | T7 | indira hatao slogan, congress r 352 seats 1971, 1971 election held early, grand alliance lost 1971, charan singh up cm 1967, pl 480 food imports |
 | T8 | devaluation 1966, fourth general election 1967, bank nationalisation july 1969, giri elected president august 1969, congress o syndicate faction, split ideological framing |
+| T9 | morarji lost leadership 1966, sk patil syndicate bombay, giri won 1969 independent, sanjiva reddy official nominee 1969, congress lost nine states 1967, indira left turn not us pact |
 
 ### I6 Crises of the constitutional order
 
@@ -128,6 +133,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | emergency internal disturbance, 1977 elections not court ordered, 44th amendment armed rebellion, right to move courts suspended, fakhruddin ali ahmed, rss jamaat banned emergency |
 | T7 | committed judiciary meaning, basic structure doctrine meaning, misa detention law, twenty point programme emergency, janata party won 1977, 42nd amendment six years |
 | T8 | emergency weaknesses strengths, 1977 referendum on emergency, congress held south 1977, opposition merged janata, morarji first non congress pm, 111000 arrested preventive detention |
+| T9 | bihar movement march 1974, jp march parliament 1975, elections announced january 1977, shah commission appointed may 1977, cpi supported emergency |
 
 ### I7 Regional aspirations and conflicts
 
@@ -141,6 +147,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | periyar dravidian movement, anti hindi agitation 1965, assam movement 1979 1985, goa portuguese 1961, sheikh abdullah dismissed 1953, indira sheikh accord 1974, kashmir militancy 1989, article 370 abrogated 2019, agp 1985 assam |
 | T7 | goa opinion poll 1967, sikkim became state 1975, bodo autonomy demand, dmk power madras 1967, ladakh buddhists muslims, regional aspirations democratic approach not |
 | T8 | nagaland statehood 1963, mnf armed campaign 1966, manipur tripura states 1972, assam accord 1985, chandigarh shared capital, kashmiriyat |
+| T9 | karbi dimasa autonomy, kazi lhendup dorji sikkim, mgp goa merger maharashtra, farooq abdullah cm, assam movement illegal migrants bangladesh, goa statehood 1987 |
 
 ### I8 Democratic upsurge and coalition politics
 
@@ -154,6 +161,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | bjp 85 seats 1989, bjp 120 seats 1991, bjp 182 seats 1998, bjp 282 seats 2014, vajpayee 13 days 1996, uf congress outside support |
 | T7 | upa formed 2004, upa second term 2009, bjp majority own 2014, nda returned 2019, vp singh national front pm |
 | T8 | coalitions norm after 1989, obc leaders north india, janata dal splits, bjp no majority 1998, congress 197 seats 1989, 2014 first majority since 1984 |
+| T9 | second backward classes commission, mandal task identify sebc, anti mandal protests 1990, 1989 congress not restored, coalition era alliances necessary inference |
 
 ### I9 Recent issues and challenges
 
@@ -167,6 +175,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | obc full form, rath yatra somnath 1990 |
 | T7 | economic crisis 1991, supreme court upheld obc reservation, obc 27 percent, mandal not rajiv, ayodhya secularism debate |
 | T8 | kar sevaks, hindutva savarkar, bahujan meaning, liberalisation meaning, mandal commission appointed janata 1978 |
+| T9 | shah bano 1985, national front government fell 1990, mandal report submitted 1980, bsp founded 1984, vhp ayodhya movement |
 
 ### W1 Collapse of bipolarity
 
@@ -180,6 +189,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | ussr after 1917 revolution, soviet bureaucratic authoritarian, soviet lagged west living standard, communist party dominance, berlin wall falls 1989, yeltsin elected june 1991, soviet coup august 1991, ussr dissolved december 1991, czechoslovakia split peacefully, germany unified 1990, yugoslavia violent breakup, baltic states eu nato, india oil investments russia kazakhstan |
 | T7 | gorbachev last soviet leader, central asia hydrocarbons, russia supports india kashmir, gorbachev reforms unleashed expectations |
 | T8 | ukraine eastern europe republic, kazakhstan central asia, georgia caucasus, latvia baltic, soviet ideology communism, gorbachev no intervention eastern europe, eastern europe communist collapse 1989 |
+| T9 | soviet economy second to us, soviet minimum living standard, soviet no multiparty false, soviet arms spending burden, indo russian strategic agreement 2001, russia successor state ussr, warsaw pact dissolved consequence |
 
 ### W2 Alternative centres of power
 
@@ -193,6 +203,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | marshall plan us aid, oeec 1948 channel aid, council of europe 1949, not all eu members euro, eu influence economic political diplomatic |
 | T7 | asean bangkok declaration 1967, japan un budget contributor, south korea brands, eu biggest economy 2005, asean founded 1967, china open door 1978, rajiv visit china 1988, euro introduced 2002, china overtake us 2040, japan hiroshima nagasaki |
 | T8 | asean ten members, eu no binding common foreign policy, china fdi trade growth, south korea un 1991, thailand asean founder, japan few resources imports, india china trade talks since 1988 |
+| T9 | japan brands sony toyota, south korea asian tiger, denmark sweden resisted euro, india look east 1991, korea divided 38th parallel 1945, korean war ended 1953, koreas joined un 1991, south korea oecd 1996, euro challenge dollar, france eu permanent unsc |
 
 ### W3 South Asia after the Cold War
 
@@ -206,6 +217,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | nepal open border treaty, maldives 1988 coup foiled, sri lanka tsunami help, bangladesh illegal migration, maldives island country, nepal maoists insurgency, pakistan nuclear tests 1998 |
 | T7 | india pakistan cbms, bangladesh military rule, nepal hindu kingdom, ltte defeated 2009, saarc full form, pakistan democracy lack international support, nepal china relations friction |
 | T8 | sinhala majority, ltte armed struggle 1983, ipkf withdrew 1989, sri lanka growth despite conflict, norway iceland mediation |
+| T9 | ayub khan coup 1958, zia ul haq 1977, musharraf takeover 1999, bangladesh democracy restored 1991, maldives economy tourism fishing, awami league 1970 elections, smaller neighbours fear india dominance |
 
 ### W4 International organisations
 
@@ -219,6 +231,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | ga one vote each, sg appointed ga on sc recommendation, p5 veto, india non permanent several times, un 193 members, germany not permanent member |
 | T7 | ecosoc economic social, trusteeship council territories, secretariat sg daily work, security council peace, wto 1995, brazil permanent seat claim, un relevance unipolar world |
 | T8 | imf oversees international finance, world bank loans grants, wto unanimity major powers, amnesty not un agency, un founded 1945 org, unsc enlarged 1965, wto set up 1995 succession, human rights council 2006, veto criticism undemocratic, us largest un budget contributor |
+| T9 | boutros ghali egypt, perez de cuellar peru, waldheim austria, annan ghana sg, india permanent seat peacekeeping, peacebuilding commission 2005, world bank areas human development |
 
 ### W5 Security in the contemporary world
 
@@ -232,6 +245,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | wmd three types, rwanda genocide 1994, sars epidemic |
 | T7 | human security individuals, global threats cooperation, terrorism targets civilians, refugees cross borders, abm treaty 1972, salt ii 1979, ctbt 1996, september 11 attacks 2001, sub saharan africa poorest |
 | T8 | political rights examples, economic rights examples, minority rights cultural identity, humanitarian intervention meaning, security basic meaning freedom from threats, arms race meaning |
+| T9 | population growth six countries, human security people not states false, india internal militancy, migrants vs refugees, global warming sea level maldives, cooperative security ngos red cross |
 
 ### W6 Environment and natural resources
 
@@ -245,6 +259,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | ozone hole antarctic, grasslands overgrazed fisheries, coastal pollution rising, safe water 1 2 billion, carbon dioxide greenhouse gas, shared rivers conflict reason |
 | T7 | ozone depletion cfcs, acid rain sulphur nitrogen, biodiversity loss forests, desertification overgrazing, rio brazil earth summit, indigenous displacement development |
 | T8 | india per capita above average false, north wants equal responsibility, industrialised historical emissions, ozone layer uv protection, kyoto japan, oil central world economy |
+| T9 | western mining philippines, narmada anti dam, franklin river australia, antarctic environmental protocol 1991, resource geopolitics cold war supply, unep environment conferences |
 
 ### W7 Globalisation and its critics
 
@@ -258,3 +273,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T6 | economic globalisation trade investment, political globalisation welfare state, cultural globalisation western food dress, technology internet flows, outsourcing call centres, critics arguments not reduce poverty |
 | T7 | india globalisation not 1947, foreign investment india rose, resistance left right india, 1991 reforms controls removed, globalisation interconnectedness, globalisation not new india history |
 | T8 | flow of ideas, flow of capital, flow of commodities, flow of people, consumer choice globalisation |
+| T9 | globalisation only economic false, welfare state minimalist, recolonisation critique, colonial india primary exporter, welfare cuts poor vulnerable, imf wto drive globalisation |
