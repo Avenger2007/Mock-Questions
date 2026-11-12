@@ -45,8 +45,9 @@ Each file's `status` field reads `revised` (meets the standard) or `pending_revi
 | 13 | Physics | 322 | ✅ | 15 / 15 | [physics.md](docs/blueprints/physics.md) |
 | 14 | Political Science | 323 | ✅ | 15 / 15 | [political_science.md](docs/blueprints/political_science.md) |
 | 15 | Sanskrit | 325 | ✅ | 15 / 15 | [sanskrit.md](docs/blueprints/sanskrit.md) |
+| 16 | Agriculture | 302 | ✅ | 15 / 15 (new series) | [agriculture.md](docs/blueprints/agriculture.md) |
 
-Syllabi are also available for Agriculture, Anthropology, Business Studies, Environmental Science, Home Science, Performing Arts, Psychology and Sociology. These subjects have no tests yet.
+Syllabi are also available for Anthropology, Business Studies, Environmental Science, Home Science, Performing Arts, Psychology and Sociology. These subjects have no tests yet.
 
 ---
 

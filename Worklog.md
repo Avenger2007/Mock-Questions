@@ -689,3 +689,29 @@ Pushed iat-tests-24-25 successfully using transient authentication and a clean r
 ## 7 November 2026 — integrate all 25 IAT review drafts into main
 
 Merged the completed IAT series from iat-tests-24-25 into the current main history, retaining the newer CUET subject revisions and both work logs. All 25 canonical papers, 1,500 questions, review deliveries, figures, 25-test plan and audit evidence are preserved. Canonical paper content is unchanged by this integration. Academic, timed-student and residual-scope review remain pending. The separate IAT notes-agent instructions are outside the repository and excluded from this commit.
+
+## Agriculture (302) — new CUET 2027 series (completed 12 Nov 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `3b1ad34` (blueprint, coverage map and tools), `2987831` (Test 1) … `1f51e16` (Test 15) on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | none (syllabus only) | **15 new tests** (`CUET AGRICULTURE TEST 1–15.json`) and `series_index.json`; status `revised` |
+| Paper structure | — | NTA pattern: 50 questions, all compulsory; 60 min, +5 / −1 |
+| Syllabus | — | gated to the NTA 2026 Agriculture (302) syllabus: Unit I Agrometeorology, Genetics & Plant Breeding, Biochemistry and Microbiology; Unit II Livestock Production; Unit III Crop Production; Unit IV Horticulture |
+| Unit balance | — | sub-unit quotas per test (U1 16 / U2 10 / U3 16 / U4 8: A1 3, A2 5, A3 3, A4 3, A5 2; L1 3, L2 4, L3 2, L4 1; C1 3, C2 4, C3 3, C4 2, C5 4; H1 3, H2 3, H3 2); the passage's sub-unit carries 5 items and other sub-units shift by at most one |
+| Difficulty | — | **8 / 32 / 10 (easy / medium / hard) in every test**; hard = 2 passage inference/calculation items, 4 sequences, 2 statement sets, 1 match, 1 calculation |
+| Formats | — | per test: one original ~200–240-word passage with 5 questions on 15 different themes (rice, cattle, jam/jelly, semi-dwarf wheat, Soil Health Card/INM, layer flock, drip/sprinkler, monsoon advisories, mango, millets, biofertilizers, market milk, *Phalaris minor* resistance, composite fish culture, conservation/precision farming), 6 match-list (all with different answer patterns, none the identity), 6 statement items alternating "correct" / "NOT", 4 sequence items (answer never A-B-C-D) and 29 direct items, including at least 3 NOT, 2 fill-in and 2 "Why" items and one worked calculation |
+| Explanations | — | Why / Why not the others / Key point; calculations show numbered steps |
+| Order and keys | — | key A 13 / B 12 / C 13 / D 12 (odd tests) and A 12 / B 13 / C 12 / D 13 (even tests); question order shuffled with the passage set kept together; no answer run longer than 3 |
+
+**Coverage ledger:** every test's answer facts are recorded per sub-unit by `mark_agri.py` in `docs/blueprints/agriculture_coverage.md`; `agri_check.py` flags quota, key and difficulty drift, over-long correct options (`LONGEST`), near-identical sub-topics or stems against earlier tests (`OVERLAP`), repeated match patterns and identity matches. From Test 10 onward the full ledger was also read by hand before writing, and 26 Test 10 drafts that repeated earlier facts in new wording were replaced before shipping.
+
+**Verification:** `validate_papers.py CUET --subject "Agriculture"` — 0 parse errors, 0 wrong counts, 0 option-count errors, 0 key/explanation mismatches, 0 runs > 3, 0 within- or cross-paper duplicate stems, 0 missing passages, 0 difficulty deviations; series key A 25.1%, B 24.9%, C 25.1%, D 24.9% (750 questions).
+
+**Known limits:** PYQs were analysed for pattern only; no question is copied. A few high-yield facts (for example the Indian major carps, Phalaris in wheat, soil types) recur across tests from different angles. Statistics that change year to year (leading states, production ranks) were kept to long-stable facts but should be rechecked before CUET 2027. Explanations have not yet been proofread by a subject teacher.
+
+### Tools added
+- `docs/blueprints/agriculture.md` (pattern, PYQ analysis, quotas, difficulty, formats) and `docs/blueprints/agriculture_coverage.md` (passage themes, slot rotation, answer-fact ledgers).
+- `tools/cuet_agri/` — compact draft format and converter, checker, ledger and marker, ship script, item patcher, match relabeller and series re-indexer (only `build_agri.py` is tracked, since `.gitignore` excludes `*.py`); drafts of all 15 tests in `drafts/`.
