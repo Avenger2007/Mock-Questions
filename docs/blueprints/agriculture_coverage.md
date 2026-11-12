@@ -60,99 +60,116 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | Test | Answer facts |
 |---|---|
 | T1 | sw monsoon kerala 1 june, ne monsoon tamil nadu oct-dec, el nino weak monsoon, hygrometer humidity, methane flooded paddy |
+| T2 | anemometer wind speed, wind vane direction, campbell stokes sunshine, rain gauge rainfall, climate long term average, koppen temperature precipitation |
 
 ### A2 Genetics and Plant Breeding
 
 | Test | Answer facts |
 |---|---|
 | T1 | mitochondria atp, ribosome protein synthesis, chloroplast photosynthesis, golgi packaging secretion, mitosis stage order, mendel no linkage different chromosomes, vernalization not breeding method |
+| T2 | quantitative traits continuous variation, polygenic many genes small effect, discontinuous distinct classes, meiosis halves chromosome number, pure line selection self pollinated johannsen, aabbcc 8 gametes 2 power n, wheat self pollinated |
 
 ### A3 Biochemistry
 
 | Test | Answer facts |
 |---|---|
 | T1 | vitamin a night blindness, vitamin d rickets, vitamin c scurvy, thiamine beriberi, neutral ph 7, sucrose glucose fructose |
+| T2 | ribose pentose rna, starch plant storage, glycogen animal storage, cellulose cell wall, protein structure levels order, enzymes proteins |
 
 ### A4 Microbiology
 
 | Test | Answer facts |
 |---|---|
 | T1 | bacteria prokaryote no nucleus, actinomycetes earthy smell geosmin, fungi acid soils decomposers, yeast ethanol co2, blue green algae rice n fixing |
+| T2 | lactobacillus curd, yeast eukaryote, wide cn ratio n immobilisation |
 
 ### A5 Seed Science
 
 | Test | Answer facts |
 |---|---|
 | T1 | nucleus breeder foundation certified chain, scutellum monocot cotyledon |
+| T2 | hard seed coat dormancy, scarification, ga breaks dormancy, double fertilisation zygote pen |
 
 ### L1 Livestock: Scope, Importance and Breeds
 
 | Test | Answer facts |
 |---|---|
 | T1 | sahiwal milch, murrah buffalo haryana, jamunapari goat not sheep, kadaknath indigenous mp, verghese kurien white revolution, hallikar draught |
+| T2 | bos indicus zebu, tharparkar dual purpose, anand pattern three tier, crossbred more milk less heat tolerant, operation flood 1970 nddb, rashtriya gokul mission 2014 |
 
 ### L2 Livestock: Care, Management and Diseases
 
 | Test | Answer facts |
 |---|---|
 | T1 | eimeria coccidiosis, clostridium chauvoei bq, pasteurella hs, paramyxovirus ranikhet, colostrum antibodies passive immunity, balanced ration definition 24 hours, mastitis udder |
+| T2 | deep litter husk floor, battery cage tiers, free range outdoors, loose housing cattle, fmd virus blisters, healthy signs moist muzzle bright eyes |
 
 ### L3 Artificial Insemination and Livestock Products
 
 | Test | Answer facts |
 |---|---|
 | T1 | ai collection artificial vagina, semen dilution extender, frozen semen liquid nitrogen, htst 72c 15 s |
+| T2 | buffalo milk higher fat, paneer acid coagulation |
 
 ### L4 Fisheries
 
 | Test | Answer facts |
 |---|---|
 | T1 | rohu indian major carp |
+| T2 | fish gills, fish cold blooded, fins locomotion |
 
 ### C1 Crop Production: Introduction and Modern Agriculture
 
 | Test | Answer facts |
 |---|---|
 | T1 | conservation agriculture three principles, precision agriculture gps vrt, organic no synthetic fertilizer, ndvi remote sensing crop health, berseem forage crop, sesame oilseed not pulse |
+| T2 | green revolution wheat, castor oilseed not fibre, jeevamrit microbial culture |
 
 ### C2 Soil, Soil Fertility, Fertilizers and Manures
 
 | Test | Answer facts |
 |---|---|
 | T1 | urea 46 n, dap 18-46, mop 60 k2o, ssp 16 p2o5, soil separates size order, urea calculation 92 n 200, zinc khaira rice |
+| T2 | alluvial indo gangetic, black soil swells cracks cotton, red soil iron oxide, laterite leaching, soil sampling steps, gypsum sodic soil, phosphorus purple leaves |
 
 ### C3 Irrigation and Drainage
 
 | Test | Answer facts |
 |---|---|
 | T1 | field capacity definition, pwp no recovery, available water fc minus pwp, cri stage wheat, sar sodium hazard |
+| T2 | border strip wheat, furrow row crops, wild flooding low efficiency, sprinkler unsuited windy, wheat stage order cri tillering jointing flowering, iw cpe cumulative pan evaporation |
 
 ### C4 Weed Control
 
 | Test | Answer facts |
 |---|---|
 | T1 | phalaris minor wheat, orobanche mustard, echinochloa rice, cuscuta berseem, glyphosate non-selective |
+| T2 | weeds prolific seed, weed seed dormancy, weeds compete light water nutrients, weeds alternate hosts, zygogramma parthenium |
 
 ### C5 Field Crops: Cultivation, Protection and Post-harvest
 
 | Test | Answer facts |
 |---|---|
 | T1 | puddling reduces percolation, sri young seedlings 8-12 days, brown planthopper hopper burn, rice 20x15 spacing 33 hills, sri moist not flooded saves water |
+| T2 | blast pyricularia, red rot colletotrichum, tikka cercospora, wilt fusarium udum, pink bollworm cotton, wheat storage moisture 10-12 |
 
 ### H1 Horticulture: Importance, Orchards, Gardens and Propagation
 
 | Test | Answer facts |
 |---|---|
 | T1 | mango softwood grafting, banana suckers, guava air layering, grape hardwood cuttings, annual one season, quincunx extra plant centre |
+| T2 | training framework, pruning dead shoots, grapes pruned annually, shrub definition, kitchen garden perennials one side |
 
 ### H2 Cultivation of Fruits, Vegetables and Flowers
 
 | Test | Answer facts |
 |---|---|
 | T1 | papain papaya latex, buttoning overaged seedlings, potato stem tuber not root |
+| T2 | gladiolus corms, rose t budding, canna rhizomes, chrysanthemum terminal cuttings suckers, alphonso mango, black tip brick kiln fumes |
 
 ### H3 Fruit and Vegetable Preservation
 
 | Test | Answer facts |
 |---|---|
 | T1 | kms not for coloured fruits, sugar preserves osmosis, pectin jelly set |
+| T2 | potato chips steps, sodium benzoate ketchup |
