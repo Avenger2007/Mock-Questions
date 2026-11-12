@@ -43,7 +43,7 @@ Each file's `status` field reads `revised` (meets the standard) or `pending_revi
 | 11 | Mass Media | 318 | ✅ | 15 / 15 | [mass_media.md](docs/blueprints/mass_media.md) |
 | 12 | Mathematics | 319 | ✅ | 15 / 15 | [mathematics.md](docs/blueprints/mathematics.md) |
 | 13 | Physics | 322 | ✅ | 15 / 15 | [physics.md](docs/blueprints/physics.md) |
-| 14 | Political Science | 323 | ✅ | — | — |
+| 14 | Political Science | 323 | ✅ | 15 / 15 | [political_science.md](docs/blueprints/political_science.md) |
 | 15 | Sanskrit | 325 | ✅ | — | — |
 
 Syllabi are also available for Agriculture, Anthropology, Business Studies, Environmental Science, Home Science, Performing Arts, Psychology and Sociology. These subjects have no tests yet.

@@ -596,6 +596,32 @@ Per NTA Bulletin Appendix II, there are **37 total subjects**.
 - `docs/blueprints/physics.md` (pattern, PYQ analysis, unit quotas, difficulty, formats, out-of-scope list) and `docs/blueprints/physics_coverage.md` (format host rotation, per-test item ledger).
 - `tools/cuet_phy/` — compact draft format and converter, checker, item index, ledger marker, ship script, item patcher and replacer, match relabeller and series re-indexer; drafts of all 15 tests in `drafts/`.
 
+## Political Science (323) — revised to the CUET 2027 standard (completed 12 Nov 2026)
+
+**Author:** Claude (Claude Code), for Nithish Reddy. **Commits:** `ebe5e59` (blueprint, coverage map, tools and pilot Test 1), `ba7e4ec` (Test 2) … `9341188` (Test 15) on `main`, plus the final commit for this entry.
+
+### What changed
+| Item | Before | After |
+|---|---|---|
+| Tests | old 50-question papers, status `pending_revision` | **15 rewritten tests** (`CUET POLITICAL SCIENCE TEST 1–15.json`), planned in a coverage map; status `revised` |
+| Paper structure | 50 questions | NTA pattern: 50 questions, all compulsory; 60 min, +5 / −1 |
+| Syllabus | mixed, some out-of-scope items | gated to the NTA 2026 syllabus (latest published) and the current NCERT books: *Politics in India since Independence* (9 units) and *Contemporary World Politics* (7 units); the Cold War Era and US Hegemony chapters, the Popular Movements chapter and Class 11 content left out |
+| Unit balance | uneven | 25 questions from each book in every test; base quotas I1 3, I2 3, I3 2, I4 3, I5 3, I6 3, I7 3, I8 3, I9 2 and W1–W4 4, W5–W7 3; the passage unit takes 5 and other units of the same book give way in rotation |
+| Difficulty | uneven | **8 / 32 / 10 (easy / medium / hard) in every test** |
+| Formats | almost all direct | per test: one original 5-question passage (unit rotates across the series), 6 match-list (all with different answer patterns, none the identity), 6 statement items alternating "correct" / "NOT correct", 4 sequence items (answer never A-B-C-D) and 29 direct items, including at least 3 NOT, 3 reason and 2 fill-in-the-blank items; host units rotate test by test |
+| Explanations | 1–2 lines | Why / Why not the others / Key point, resting on NCERT |
+| Order and keys | uneven | key A 13 / B 12 / C 13 / D 12 (odd tests) and A 12 / B 13 / C 12 / D 13 (even tests); question order shuffled with each passage set kept together; no answer run longer than 3 |
+
+**Coverage ledger:** every test's answer facts are recorded per unit by `mark_pol.py` in the ledger, and `pol_check.py` flags quota, key and difficulty drift, over-long correct options (`LONGEST`), sub-topic or stem overlap with earlier tests (`OVERLAP`) and answer facts already used twice (`REPEAT-TARGET`); flagged items were reworded or replaced before shipping. Test 15 carries 5 I3 questions (base 2) because its passage is on the early Five Year Plans, as the coverage map planned.
+
+**Verification:** `validate_papers.py CUET --subject "Political Science"` — 0 parse errors, 0 wrong counts, 0 option-count errors, 0 key/explanation mismatches, 0 runs > 3, 0 within- or cross-paper duplicate stems, 0 missing passages, 0 difficulty deviations; series key A 25.1%, B 24.9%, C 25.1%, D 24.9% (750 questions).
+
+**Known limits:** PYQs were analysed for pattern only; no question is copied. With only 16 short units, a few high-yield facts (for example the 1969 split and the Kyoto Protocol) are tested in more than one test from different angles; no answer fact is used more than twice.
+
+### Tools added
+- `docs/blueprints/political_science.md` (pattern, PYQ analysis, unit quotas, difficulty, formats, out-of-scope list) and `docs/blueprints/political_science_coverage.md` (passage rotation, format host rotation, per-unit topic lists).
+- `tools/cuet_pol/` — compact draft format and converter, checker, answer-fact ledger and marker, ship script, item patcher, match relabeller and series re-indexer; drafts of all 15 tests in `drafts/`.
+
 ## IAT New Tests 12 and 13 — authored review drafts (3 Nov 2026)
 
 - Authored 120 questions from reserved syllabus slots. Each paper has 15 questions per subject, editorial tiers 9/42/9, balanced 15-per-letter keys, detailed WHY and distractor analyses, and displayed derivations for all Mathematics/Physics items.
