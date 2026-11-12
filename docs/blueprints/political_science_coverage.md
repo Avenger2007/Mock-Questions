@@ -67,6 +67,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | dange cpi leader, balraj madhok jana sangh, lohia socialist leader, kripalani kmpp, socialist second votes 1952, jana sangh atomic weapons |
 | T11 | first election oct 1951 feb 1952, first election postponed twice, literacy 15 percent first election, first election results accepted, first election proved critics wrong |
 | T12 | cpi organised cadre, jana sangh urban north base, swatantra support industrialists landlords, csp formed within congress false, congress social coalition classes, cpi support regions |
+| T13 | mookerjee jana sangh founder, rajaji swatantra founder, narendra dev csp founder, ak gopalan kerala communist, evm entire country 2004, congress dominance democratic conditions |
 
 ### I2 Nation-building and its problems
 
@@ -84,6 +85,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | paramountcy lapse princely choice, patel deputy pm home minister, bombay bilingual state, hyderabad largest princely state, vishalandhra telugu madras, four difficult princely states |
 | T11 | hari singh accession 1947 order, manipur merger 1949 order, three states created 2000, telangana state 2014, partition deaths 5 to 10 lakh, punjabi suba movement |
 | T12 | vishalandhra telugu state, mahagujarat gujarati state, samyukta maharashtra marathi, punjabi suba punjabi state, india secular state minorities, hyderabad standstill agreement |
+| T13 | src appointed 1953, states reorganisation act 1956, potti sriramulu fast died, nagaland not 1956 act false, instrument of accession meaning |
 
 ### I3 Politics of planned development
 
@@ -101,6 +103,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | bombay plan industrialists, anand amul cooperative, bhilai steel plant, zamindari abolition intermediaries, green revolution subsidised inputs price support |
 | T11 | first plan cycle of poverty, public sector heavy industries, private sector agriculture trade, green revolution mid 1960s not 1950s, white revolution milk |
 | T12 | second plan quick structural transformation, planning commission not abolished 1977 false, liberalisation away from planning, operation flood rural urban link, planning state role remove poverty |
+| T13 | mahalanobis second plan architect, kumarappa gandhian alternative plan, kn raj hasten slowly, kurien gujarat milk cooperative, second plan tariffs protect industry |
 
 ### I4 India's external relations
 
@@ -118,6 +121,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | first kashmir war 1947 48, china nuclear test 1964, pokhran peaceful explosion 1974, kargil conflict 1999, first no confidence motion 1963, india opposed apartheid |
 | T11 | nehru nuclear disarmament, janata genuine nonalignment |
 | T12 | krishna menon defence minister 1962, kosygin soviet pm tashkent, zhou enlai chinese premier, bhabha led nuclear programme, 1965 indian army lahore, tibetan refugees india |
+| T13 | panchsheel nehru zhou 1954, indo soviet treaty 1971, tashkent not us false, shastri pm 1965 war, bandung conference 1955, nuclear doctrine no first use |
 
 ### I5 Challenge to and restoration of the Congress system
 
@@ -135,6 +139,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | 1967 first election without nehru, congress r minority cpi dmk support, syndicate backed reddy not giri, grand alliance members, bangladesh victory boosted indira 1972, kamaraj madras cm |
 | T11 | atulya ghosh syndicate bengal, annadurai dmk madras 1967, gaya lal defections haryana, charan singh left congress up 1967, congress restored dependent on leader, syndicate thought indira dependent |
 | T12 | congress r requisitionists, congress o syndicate faction split, kamaraj plan leaders resign, svd non congress coalitions, 1967 background economic crisis, garibi hatao social groups |
+| T13 | zakir hussain death vacancy, conscience vote meaning own judgement, ten point programme not all industry, official candidate defeat formalised split inference, senior leaders approved programme reservations |
 
 ### I6 Crises of the constitutional order
 
@@ -152,6 +157,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | an ray chief justice supersession, raj narain defeated indira 1977, jc shah inquiry, sanjay gandhi no official post, janata 295 seats 1977, writers returned awards emergency |
 | T11 | cabinet informed after emergency, elections postponed 1976 emergency, fundamental rights not enforceable false, 1977 congress lost centre first, jp appeal army police, janata components bld |
 | T12 | supersession judges 1973 order, allahabad verdict 1975 order, 42nd amendment passed 1976, 44th amendment 1978, 39th amendment pm election court, janata infighting leadership |
+| T13 | article 352 national emergency, misa preventive detention, twenty point programme emergency, lok nayak jp title, congress for democracy jagjivan ram, emergency effects not court abolition |
 
 ### I7 Regional aspirations and conflicts
 
@@ -169,6 +175,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | sikkim referendum 1975, naga independence 1951, akali coalition governments 1967 1977, mizo accord rajiv not indira, 1987 elections jk rigging, chogyal ruler sikkim |
 | T11 | dmk founded 1949 order, goa liberated 1961 order, anti hindi agitation 1965 order, dmk government madras 1967, siliguri corridor 22 km |
 | T12 | arunachal state 1987 nefa, tripura indigenous minority migration, meghalaya carved assam 1972, goa opinion poll rejected merger, khalistan demand militants, sikkim 22nd state |
+| T13 | anandpur sahib autonomy 1973, blue star june 1984, rajiv longowal accord 1985, accord not end militancy false, nagaland state 1963 order, anandpur resolution 1973 order, sikkim merger 1975 order, mizoram state 1987 order, phizo naga leader |
 
 ### I8 Democratic upsurge and coalition politics
 
@@ -186,6 +193,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | bjp founded 1980 order, janata dal formed 1988, rajiv assassinated 1991 order, manmohan pm 2004, bjp withdrew support nf 1990, congress decline social base |
 | T11 | 1991 congress minority government, 1996 bjp largest 13 days, 1999 nda full term, 2009 upa second term, nf supported by bjp and left, bipolar coalition competition |
 | T12 | rao after rajiv, janata dal vp singh leader, no majority 1989 2014, uf not vajpayee, 1984 sympathy wave, five developments 1990s |
+| T13 | vp singh pm 1989 order, chandra shekhar pm 1990 order, deve gowda pm 1996 order, vajpayee 1999 government order, uf congress outside support |
 
 ### I9 Recent issues and challenges
 
@@ -203,6 +211,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | nep not vp singh false, bsp broadened support, advani arrested bihar 1990, hindutva hinduness, muslim women act 1986 |
 | T11 | ram janmabhoomi belief, dalit meaning oppressed, reservation meaning quota, rath yatra mobilisation, bjp hindutva after 1986 |
 | T12 | bamcef formed 1978 order, muslim women act passed 1986, bsp up government 1995 order, mandal report 1980 order, demolition communal riots aftermath |
+| T13 | shah bano 1985 maintenance, faizabad locks opened 1986, babri demolished 1992, kanshi ram not janata dal false, liberhan commission ayodhya |
 
 ### W1 Collapse of bipolarity
 
@@ -220,6 +229,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | chechnya violent secession, tajikistan decade civil war, nagorno karabakh armenia, georgia two provinces secession, ussr formed 1922, soviet troops hungary 1956, soviet invasion czechoslovakia 1968, tajik civil war ended 2001, russian dominance other regions, soviet energy resources oil steel |
 | T11 | soviet shortages consumer goods, gorbachev criticised both sides, shock therapy collective farms food security, russia not nato, russia nuclear energy space india, us sole superpower after 1991, russia gdp 1999 below 1989 |
 | T12 | gorbachev normalise west, citizens aware western progress, ussr dissolved by un false, russia ukraine belarus cis, spain not soviet bloc, end ideological rivalry |
+| T13 | glasnost openness, perestroika restructuring, shock therapy sudden capitalism, garage sale industries cheap, baltic republics not kazakhstan, yeltsin elected russia president, ruble value fell inflation |
 
 ### W2 Alternative centres of power
 
@@ -237,6 +247,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | china soviet model 1949, deng xiaoping reforms, eu eastern enlargement, asean not supranational, india fta singapore thailand, sri lanka not asean, india china ties restored 1976 |
 | T11 | mao communist revolution 1949, deng open door announced, japan only asian g7, britain no euro left eu, asean mediated cambodia east timor, eu world trade three times us, china no shock therapy gradual |
 | T12 | india china nuclear powers, sez foreign investment china, afta free trade area, japan not permanent, korean war ended 1953 order, india china full ties 1976 order, look east launched 1991, arf set up 1994, china reforms unemployment, eu divided iraq 2003 |
+| T13 | eec 1957 order, asean founded 1967 order, maastricht 1992 order, euro notes 2002 order, asean way informal cooperation, asean vision 2020, asean community pillars not currency |
 
 ### W3 South Asia after the Cold War
 
@@ -254,6 +265,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | nepal 2006 protests seven party, bangladesh river water sharing, sir creek dispute, maldivian democratic party, bangladesh constitution secular socialist, safta fear india invade markets, bhutto power after 1971 |
 | T11 | india pakistan wars 1947 1965 1971, bhutan monarchy, bangladesh saarc founder, nepal india no visa false, sri lanka independence 1948, mujib assassinated 1975 order, maldives coup foiled 1988, nepal democracy 1990, urdu imposition east pakistan, nepal bhutan landlocked |
 | T12 | zia takes power 1977 order, ipkf sent 1987 order, safta signed 2004 order, ltte defeated 2009 order, eelam tamil homeland, mujib one party awami, china pakistan partnership |
+| T13 | gyanendra nepal king, benazir pakistan pm, hasina awami league, ziaur rahman bnp, pakistan democracy obstacles army clergy, saarc established 1985, sri lanka human development |
 
 ### W4 International organisations
 
@@ -271,6 +283,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | unsc reflects 1945 power, unsc underrepresented developing regions, veto reform debate passage, council not expanded with ga, unsc reform needs p5 consent |
 | T11 | un reform two kinds, un needed global issues, non permanent elected ga, sg no veto false, trygve lie first sg, u thant sg 1961, boutros ghali sg 1992, ban ki moon sg 2007, unicef not principal organ, un created prevent war |
 | T12 | human rights council 2006 body, peacebuilding commission recovery, democracy fund un, mdgs agreed 2005, iaea inspections, wto dominated rich powers, unsc criteria not nuclear |
+| T13 | un founded october 1945, sg appointed ga on sc, india founder member un, non permanent two years false, us largest contributor un, amnesty ngo not un, general assembly one vote each |
 
 ### W5 Security in the contemporary world
 
@@ -288,6 +301,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | start i 1991 signed, start ii 1993, rwanda 1994 genocide, sars 2003 outbreak, human security narrow broad, bird flu mad cow epidemics |
 | T11 | disarmament meaning, arms control regulating, confidence building meaning, balance of power rival, third world internal external threats, cooperative security force last resort |
 | T12 | human security people first, global threats affect all, terrorism targets civilians concept, cooperative security many partners, non state actors threats |
+| T13 | npt 1968 order, bwc 1972 order, cwc 1992 order, september 11 2001 order, india military capabilities neighbours, india strategy not bloc |
 
 ### W6 Environment and natural resources
 
@@ -305,6 +319,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | kyoto based on unfccc, global north industrialised, antarctica not owned, environment global agenda 1960s, forest movements south countries |
 | T11 | sacred groves community forest, outer space technology gap, atmosphere montreal ozone, antarctica scientific research treaty, indigenous demand land rights, agenda 21 criticism growth bias |
 | T12 | commons decline privatisation, montreal not ghg false, un working group indigenous 1982, antarctica largest wilderness, saudi arabia quarter oil reserves, sustainable development meaning |
+| T13 | earth summit rio 1992, kyoto emission cuts, our common future brundtland, limits to growth club of rome, cbdr historic emissions reason, auto fuel policy cleaner |
 
 ### W7 Globalisation and its critics
 
@@ -322,3 +337,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T10 | seattle 1999 wto ministerial, nairobi wsf 2007, neem patent symbol, indian social forum counterpart, mncs reduce state decision, cultural globalisation enlarges choices |
 | T11 | neo liberal market over state, india trade before 1991 false, technology enhances state capacity, wsf broad coalition, state remains primary political community, economic globalisation removes barriers |
 | T12 | rich richer poor poorer, resistance against particular programme, resisters use global networks, wsf not party, resistance itself global inference |
+| T13 | globalisation flows ideas capital people, globalisation multi cause false, india reforms 1991, mcdonaldisation homogenisation, jeans kurta hybrid culture, people less mobile visas |
