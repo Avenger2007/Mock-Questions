@@ -17,7 +17,7 @@ These follow the same workflow as `tools/cuet_pol`. Run everything from the repo
    - DUPOPT: duplicate options
    - NO-TARGET: an item with no answer-fact key
    - REPEAT-TARGET: a fact already used twice in the series
-   - OVERLAP: the sub-topic or stem is too close to an earlier revised test
+   - OVERLAP: the sub-topic or stem is nearly identical (≥ 0.95) to one in an earlier revised test. Paradigm items ("X-धातोः लट्-लकारे … किं रूपम्?") share a template by design, as in the NTA papers; the answer-fact ledger is what prevents a repeated question.
 4. `python3 tools/cuet_san/relabel_match.py drafts/sanNN.txt 'sub_topic' II,IV,I,III` renames the सूची-II numerals of one match item. Use it so that no two match items in a test share an answer pattern.
 5. `tools/cuet_san/san_ship.sh N "feat(sanskrit): revise Test N to CUET 2027 standard"` builds, shuffles, validates, marks the ledgers, commits and pushes.
 

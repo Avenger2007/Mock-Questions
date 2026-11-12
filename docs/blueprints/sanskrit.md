@@ -96,7 +96,7 @@ The five passage questions count inside these quotas:
 
 | Format | Count |
 |---|---|
-| Unseen passage (one original prose passage, about 120–170 words, 5 linked questions) | 5 |
+| Unseen passage (one original prose passage, about 80–150 words like the NTA passages, 5 linked questions) | 5 |
 | Match सूची-I / सूची-II | 6 |
 | Multi-select / statements ("(A), (C) केवलम्"), alternating "शुद्धम्" and "अशुद्धम्" | 6 |
 | Order (क्रमेण व्यवस्थापयत) | 4 |

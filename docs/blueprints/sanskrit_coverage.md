@@ -68,57 +68,67 @@ This map was written **before** any test, so that repeats are prevented rather t
 | Test | Answer facts |
 |---|---|
 | T1 | passage1 nadyah sasthi context, pitr trtiya eka, mati caturthi eka, vadhu dvitiya eka, dhenu saptami eka, yusmad tvam prathama, yusmad tvaya trtiya, yusmad tubhyam caturthi, yusmad tava sasthi, kavi sasthi bahu, sakhi trtiya sakhya not sakhina, vidvas prathama bahu |
+| T2 | passage2 tasmat apadana kri, rajan trtiya eka, atman caturthi eka, vac saptami eka, dhanin sasthi bahu, pitr saptami eka, nadi saptami eka, madhu saptami eka, tat sah prathama, tat tena trtiya, tat tasmai caturthi, tat tasmin saptami, matr prathama eka, pathin prathama bahu |
 
 ### S2 धातुरूपाणि
 
 | Test | Answer facts |
 |---|---|
 | T1 | pac lrt praksyati, nam lan anamat, has lot hasatu, nrt vidhilin nrtyet, kr lrt karisyati, jna lrt jnasyati, sak lrt saksyati, kath lat prathama eka, kath lat prathama bahu, kath lat madhyama eka, kath lat uttama bahu, nam lat prathama bahu, labh lan prathama eka, gam lrt madhyama bahu |
+| T2 | srnu lot, apnotu lot, prcchantu lot, sev lat prathama eka, sev lat madhyama eka, sev lat uttama eka, sev lat uttama bahu, as lat prathama bahu, jna lat prathama eka, vand lan uttama eka, pracch lan prathama bahu |
 
 ### S3 सन्धयः
 
 | Test | Answer facts |
 |---|---|
 | T1 | passage1 visarga s to s scutva, sadaiva vrddhi, ityadi yan, vidyalaya dirgha, nayanam ayadi, sat cit scutva |
+| T2 | devalaya dirgha, suryodaya guna, pratyekam yan, pavaka ayadi, himalaya dirgha, vak isa jastva, ramo vadat utva purvarupa, mahotsava not visarga guna |
 
 ### S4 समासाः
 
 | Test | Answer facts |
 |---|---|
 | T1 | ramalaksmanau itaretara dvandva, pitambara bahuvrihi, nilotpala karmadharaya, yathasakti avyayibhava, rajapurusa sasthi tatpurusa, nilakamala not dvigu, kumbhakara upapada, upagangam samipa avyayibhava |
+| T2 | passage2 satyavadin upapada, anurupam avyayibhava, pratidinam avyayibhava, nirmaksikam avyayibhava, candrasekhara bahuvrihi, panipadam samahara dvandva, ghanasyama karmadharaya upamana |
 
 ### S5 प्रत्ययाः
 
 | Test | Answer facts |
 |---|---|
 | T1 | passage1 srutva ktva, gantum tumun, pathitavan ktavatu, karaniyam aniyar, dhanavan matup, laghutvam tva, path satr pathan, balika tap, dharmika thak |
+| T2 | passage2 dhavan satr, hasitavyam tavyat, gatih ktin, nartaki nip, buddhiman matup, pranamya lyap, kr trc karta, guni in not matup, sev sanac sevamana |
 
 ### S6 उपपदविभक्तिः
 
 | Test | Answer facts |
 |---|---|
 | T1 | namah caturthi, svasti caturthi, abhitah dvitiya, saha trtiya sitaya, bhi bhayahetu pancami |
+| T2 | paritah dvitiya, sakam trtiya, bahih pancami, upari sasthi, nikasa dvitiya, nipuna saptami, dhik dvitiya |
 
 ### S7 भाषिककार्यम्
 
 | Test | Answer facts |
 |---|---|
 | T1 | passage1 heat cause few trees, passage1 aropayan karta chatrah, unnatah visesana himalaya, uttarasyam visesana disi, vayam nrtyamah agreement, jalam paryaya niram |
+| T2 | passage2 five hundred rupees, passage2 adhikam visesya dhanam, ratri divasa vilom, sukha duhkha vilom, unnati vilom avanati, balakau gacchatah agreement |
 
 ### S8 छन्दांसि
 
 | Test | Answer facts |
 |---|---|
 | T1 | anustup 8 varna, vamsastha 12 varna, malini 15 varna, sardula 19 varna, vasantatilaka laksana order, indravajra ta ta ja ga ga, kascit kanta mandakranta identify |
+| T2 | indravajra 11 varna, upajati 11 varna, upendravajra 11 varna, sikharini laksana order, malini yati 8 7, ya kundendu sardula identify |
 
 ### S9 अलङ्काराः
 
 | Test | Answer facts |
 |---|---|
 | T1 | yamaka sabdalankara, slesa sabdalankara, anuprasa sabdalankara, utpreksa laksana order, upama laksana fill, udeti savita arthantaranyasa |
+| T2 | upama samya, rupaka abhedaropa, utpreksa sambhavana, slesa anekartha, rupaka laksana order, anuprasa laksana svarasya fill, limpativa utpreksa |
 
 ### S10 साहित्यपरिचयः
 
 | Test | Answer facts |
 |---|---|
 | T1 | uttararamacarita bhavabhuti, mrcchakatika sudraka, mudraraksasa visakhadatta, svapnavasavadatta bhasa, uttararamacarita not kalidasa, sivarajavijaya not kalidasa, ramayana valmiki, kadambari not drama gadya, brhattrayi naisadhiya |
+| T2 | kiratarjuniya bharavi, sisupalavadha magha, naisadhiya sriharsa, buddhacarita asvaghosa, meghaduta not gadya, gitagovinda not gadya, mahabharata vyasa, hitopadesa narayana, ayurveda not veda upaveda |

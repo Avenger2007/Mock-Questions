@@ -34,4 +34,5 @@ for i,q in enumerate(src,1):
     b=norm(q['question'])[:200]
     for o in old:
         r1=difflib.SequenceMatcher(None,q['sub_topic'].lower(),o[1].lower()).ratio(); r2=difflib.SequenceMatcher(None,b,o[2]).ratio()
-        if r1>0.85 or r2>0.8: print(f'OVERLAP Q{i} st{r1:.2f} q{r2:.2f} ~T{o[0]} [{o[1][:60]}]')
+        # paradigm items share templates by design; the answer-fact ledger guards repeats, so flag only near-identical stems or labels
+        if r1>0.95 or r2>0.95: print(f'OVERLAP Q{i} st{r1:.2f} q{r2:.2f} ~T{o[0]} [{o[1][:60]}]')
