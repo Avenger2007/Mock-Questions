@@ -71,6 +71,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | frost below zero, hailstorm cumulonimbus ice, heat wave above normal, drought rainfall deficit, max temperature early afternoon, temperature falls altitude, cold wave crop damage, isohyets equal rainfall |
 | T11 | rain formation steps, dew point saturation, troposphere weather |
 | T12 | cirrus high feathery, cumulonimbus thunderstorm, stratus low grey sheet, nimbostratus steady rain, monsoon mausim season, nitrogen 78 air |
+| T13 | loo hot dry wind, mango showers pre monsoon, kalbaisakhi nor westers, western disturbances winter rain, albedo reflected radiation, fog droplets visibility |
 
 ### A2 Genetics and Plant Breeding
 
@@ -88,6 +89,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | linkage genes inherited together, crossing over prophase i, non sister chromatids, distance more recombination, phenotype, backcross f1 parent, synthetic variety cross pollinated, locus gene position |
 | T11 | germplasm total genetic material, gene bank low temperature, landrace local variety, wild relative uncultivated, clonal selection potato sugarcane, clone single plant vegetative, clone identical, restriction enzymes molecular scissors, gene unit heredity |
 | T12 | bt cotton 2002, bt brinjal moratorium, golden rice beta carotene, herbicide tolerant not insect, mutation breeding steps, vavilov centres origin, swaminathan green revolution india, gibberellic acid not mutagen |
+| T13 | inbreeding depression, selfing homozygosity, inbreds hybrid parents, hybrid development steps, heterozygous tt, breeding objectives not susceptibility, dna deoxyribonucleic acid |
 
 ### A3 Biochemistry
 
@@ -105,6 +107,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | iodine starch blue black, benedict reducing sugar, biuret protein violet, sudan fat red, cofactor non protein helper, nucleic acids phosphate acidic |
 | T11 | ph negative log h, ph 9 basic, one unit tenfold, lemon lower ph than soap, riboflavin vitamin b2, cellulose not lipid |
 | T12 | 20 amino acids proteins, egg albumin protein, keratin protein, nitrogen in proteins, starch insoluble storage osmosis |
+| T13 | vitamin a retinol, vitamin c ascorbic, vitamin d calciferol, vitamin e tocopherol, enzymes biological catalysts, chitin exoskeleton fungi |
 
 ### A4 Microbiology
 
@@ -122,6 +125,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | gram stain steps, pathogens disease causing, mushroom fungi |
 | T11 | carrier lignite charcoal, inoculated seed shade sunlight kills, leghaemoglobin pink nodule, biofertilizer packets calculation, fungicide mixed rhizobium poor nodulation |
 | T12 | npv virus helicoverpa, beauveria fungus insects, pseudomonas fluorescens antagonist, trichogramma egg parasitoid, bacilli rod shaped, autoclave sterilisation 121 |
+| T13 | bacteria binary fission, fungi no chlorophyll, algae photosynthesise, rhizobium legume symbiosis mutualism, curd faster warm bacteria |
 
 ### A5 Seed Science
 
@@ -139,6 +143,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | hypogeal pea, good seed quality weed free |
 | T11 | seed treatment fungicide seed borne, entomophily insects |
 | T12 | purity test inert matter, anther pollen |
+| T13 | test weight 1000 seeds, seed storage cool dry |
 
 ### L1 Livestock: Scope, Importance and Breeds
 
@@ -156,6 +161,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | red sindhi dairy, hariana dual purpose, kankrej dual purpose gujarat, deoni dual purpose maharashtra, heifer, nellore deccani chokla sheep |
 | T11 | hampshire pig, rambouillet sheep, saanen goat, brown swiss cattle, buck male goat, andhra pradesh eggs |
 | T12 | india largest livestock, goat poor man cow, livestock census five years, camel ship desert |
+| T13 | mutton sheep, chevon goat, pork pig, veal calf, khaki campbell duck eggs, kid young goat |
 
 ### L2 Livestock: Care, Management and Diseases
 
@@ -173,6 +179,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | anthrax bacterium, rabies virus, ringworm fungus, babesiosis protozoan tick, silage making steps, dehorning young calves, shed floor slope drain |
 | T11 | sheep shearing, dipping external parasites, goats browsers, clean milking steps, debeaking cannibalism pecking, quarantine new animals |
 | T12 | pulse coccygeal artery, rumination cud, bloat gas rumen, milk fever low calcium, layer life stages, castration docile bullocks |
+| T13 | pigs convert waste meat, sow large litter, piglets iron supplement, buffalo wallow few sweat glands, mineral lick salt minerals, sick animal signs regular rumination |
 
 ### L3 Artificial Insemination and Livestock Products
 
@@ -190,6 +197,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | cream rises fat lighter, milk 87 water, skim milk fat removed, toned milk smp water, sweetened condensed milk |
 | T11 | carotene yellow cow milk, testis sperm |
 | T12 | chill milk 4 c, homogenisation no cream layer, mbrt bacterial quality, milk fat kg calculation, mbrt fast decolour poor |
+| T13 | ai steps cow, buttermilk by product butter |
 
 ### L4 Fisheries
 
@@ -207,6 +215,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | fish rich protein |
 | T11 | magur air breathing |
 | T12 | fish meal poultry feed protein |
+| T13 | fish icing transport |
 
 ### C1 Crop Production: Introduction and Modern Agriculture
 
@@ -224,6 +233,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | ager field cultura, branches agriculture ornithology, mixed farming crops livestock |
 | T11 | dryland low rainfall, moisture conservation, contingency crop planning, agroforestry trees crops, kharif sown monsoon |
 | T12 | icar new delhi apex, iari pusa, irri philippines rice, cimmyt mexico wheat maize, cropping intensity gca nsa, plantation crops wheat not |
+| T13 | agriculture employs half workforce, india largest pulses, small marginal farms, integrated farming system recycle, rabi harvest march april |
 
 ### C2 Soil, Soil Fertility, Fertilizers and Manures
 
@@ -241,6 +251,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | splash raindrop impact, sheet thin layer, gully deep channels, rill small channels tillage, vermicompost steps, furrow slice weight calculation, potassium primary nutrient |
 | T11 | ammonium sulphate 20.6 n sulphur, can calcium ammonium nitrate, rock phosphate acid soils, zinc sulphate zinc deficiency, soil formation stages, organic matter benefits, cec cation exchange capacity |
 | T12 | clay lower bulk density, compaction raises bulk density, sand large pores low porosity, cn ratio calculation 40 0.8, granular structure best, biogas slurry manure |
+| T13 | parent material rock, climate weathering, organisms organic matter, topography slope drainage, ssp calculation 40 p2o5 250, neem coated urea slow nitrification |
 
 ### C3 Irrigation and Drainage
 
@@ -258,6 +269,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | crop water requirement components, rice more water than wheat, sandy soil light frequent irrigation, water use efficiency yield per water, farm pond runoff life saving irrigation |
 | T11 | persian wheel animal buckets, centrifugal pump shallow, submersible deep tubewell, dhenkli lever counterweight, gross depth efficiency calculation, lysimeter et |
 | T12 | awd saves water rice, drain before harvest, rice flowering stress sensitive, saline waterlogged reclamation steps, kuhl himachal channel |
+| T13 | over pumping lowers water table, recharge pits check dams, punjab falling water table rice, pmksy per drop more crop, indira gandhi canal rajasthan |
 
 ### C4 Weed Control
 
@@ -275,6 +287,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | weed plant out of place |
 | T11 | weeds large yield loss, hand weeding labour, mulch blocks light weeds, bathua wheat rabi weed |
 | T12 | allelopathy chemical inhibition, herbicide kills weeds |
+| T13 | isoproturon resistance phalaris, phalaris purple base no auricles, zero till fewer buried seeds, phalaris yield loss value calculation, herbicide rotation modes of action iwm |
 
 ### C5 Field Crops: Cultivation, Protection and Post-harvest
 
@@ -292,6 +305,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | international year millets 2023, minor millets kodo, millets c4 drought rainfed, millet rice water saving calculation, millets gluten free fertilizer shelf life |
 | T11 | wheat 100 kg, mustard 5 kg, gram 75 kg, maize 20 kg, jute golden fibre, harvest index economic biological |
 | T12 | wheat golden straw hard grain, groundnut shell dark inside, sugarcane brix 18, cotton bolls burst, brown rice dehusking, threshing not sowing |
+| T13 | wheat november, rice transplanting july, mustard october, spring sugarcane february march, cotton processing steps, sorghum not oilseed |
 
 ### H1 Horticulture: Importance, Orchards, Gardens and Propagation
 
@@ -309,6 +323,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | mist chamber rooting cuttings, polyhouse plastic film, shade net reduces light, hot bed heated early seedlings, fruit planting steps, windbreak shelter belt wind |
 | T11 | india second fruits vegetables, horticulture more income per area, fruits vitamins minerals, iba rooting cuttings, turmeric not fruit |
 | T12 | tissue culture disease free, banana plantlets tissue culture, hardening plantlets, planting fruit trees monsoon, pinching terminal bud |
+| T13 | hardening reduce water, pricking out transplant seedlings, damping off collapse, potting mixture soil sand fym, m9 dwarfing rootstock apple, nursery raise young plants |
 
 ### H2 Cultivation of Fruits, Vegetables and Flowers
 
@@ -326,6 +341,7 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | okra malvaceae, tomato solanaceae, cucumber cucurbit, garlic cloves, cabbage cool season, staking tomato |
 | T11 | vegetable nursery steps, grapes maharashtra nashik, brinjal eggplant |
 | T12 | papaya ring spot aphids, citrus canker bacterial, guava wilt soil, mango powdery mildew panicles, rose queen flowers, banana harvested green transport |
+| T13 | tuberose perfume, chrysanthemum short day, gerbera cut flower, rose budding cuttings, citrus rutaceae |
 
 ### H3 Fruit and Vegetable Preservation
 
@@ -343,3 +359,4 @@ Odd tests have a key of 13 / 12 / 13 / 12 (A / B / C / D); even tests have 12 / 
 | T10 | pasteurisation below 100, sterilisation all microbes, fermentation sugar acid alcohol, osmotic dehydration syrup, aam papad mango |
 | T11 | moulds fuzzy jam, yeasts alcohol smell, bacteria souring swollen cans, enzymes browning cut apple, rts 10 percent juice |
 | T12 | canning steps, lye peeling sodium hydroxide |
+| T13 | vegetable dehydration steps, sauerkraut cabbage fermentation |
