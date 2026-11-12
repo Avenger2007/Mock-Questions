@@ -76,6 +76,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | passage7 nagarapalikayah sasthi, vac trtiya eka, bhavat prathama bahu, sisu caturthi eka, kartr dvitiya bahu, kavi trtiya bahu, nadi trtiya bahu, rajan trtiya bahu, tat stri sa, tat stri tam, tat stri taya, tat stri tasyai, nadi prathama bahu, idam pum prathama ayam |
 | T8 | passage8 vardhakyat hetu pancami, kavi prathama bahu, pitr pancami eka, yat pum prathama yah, pathin dvitiya eka, aksi trtiya aksna not aksina |
 | T9 | passage9 vrstau saptami eka, vari trtiya eka, guru saptami bahu, nrpa dvitiya bahu, matr dvitiya eka, phala saptami not pancami, rajan saptami not pancami, kim stri ka, kim stri kam, kim stri kaya, kim stri kasyai, sisu dvitiya eka, vidvas sasthi bahu |
+| T10 | passage10 sudhayai sampradana dana, balaka trtiya bahu, muni trtiya bahu, nadi trtiya bahu, rajan trtiya bahu, asmad sasthi eka mama, pitr dvitiya bahu pitrn, vapi saptami eka, go prathama bahu gavah |
 
 ### S2 धातुरूपाणि
 
@@ -90,6 +91,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | sev lrt prathama eka, vand lan prathama eka, labh lat prathama eka, ap vidhilin apnuyat, is lat madhyama eka, pac lot uttama eka, ap lrt madhyama eka, sak vidhilin saknuyat, has lan uttama bahu |
 | T8 | nam lrt prathama bahu, cint lan prathama bahu, jna vidhilin janiyat, pracch vidhilin prathama bahu, pac lan apacat, as lan asit, ni lan anayat, yac lat prathama eka, yac lat madhyama eka, yac lat uttama eka, yac lat uttama bahu, gam lan prathama eka, kath lrt prathama eka, sru lot madhyama bahu |
 | T9 | ni lot nayatu, sak lot saknotu, is lot icchatu, jna lot janatu, gam lat uttama dvi, cint lrt uttama eka, nrt lan prathama bahu, sev lrt uttama bahu, sak lat prathama bahu saknuvanti |
+| T10 | karisyanti lrt, agaccham lan, likhantu lot, bhaveyuh vidhilin, apasyat not lrt, pathet not lrt, vad lan forms order, gam lot madhyama bahu, path lat prathama bahu, vand lrt prathama eka |
 
 ### S3 सन्धयः
 
@@ -104,6 +106,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | passage7 itastatah visarga satva, manobala visarga manah, uccarana ut scutva, paramartha dirgha, harim vande anusvara, nayaka ayadi |
 | T8 | punarapi rutva, deva atra visarga lopa, sivoham utva purvarupa, duscaritra visarga s, sadananda dirgha, mahaisvarya vrddhi, anvaya yan, tat citram scutva |
 | T9 | passage9 tacchrutva scutva, bhavana ayadi, navika ayadi, pavitra ayadi, girisa dirgha, yasoda utva, udgama jastva |
+| T10 | paropakara guna, sadaiva vrddhi, svagatam yan, sayanam ayadi, saccit scutva, jagannatha anunasika, himalaya dirgha, pavaka vigraha pa not po |
 
 ### S4 समासाः
 
@@ -118,6 +121,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | nilambaram karmadharaya, sarahata trtiya tatpurusa, saharsam avyayibhava, caturbhuja bahuvrihi, yathasakti not tatpurusa |
 | T8 | passage8 sakaphala dvandva, vanagata dvitiya tatpurusa, gunayukta trtiya tatpurusa, yupadaru caturthi tatpurusa, vrksapatita pancami tatpurusa, pratidinam not bahuvrihi, rajaputra not bahuvrihi, gangayamune dvandva, satabdi dvigu |
 | T9 | rajapatha not avyayibhava, mahatma not avyayibhava, naranaryau dvandva, triphala dvigu, asvarudha dvitiya tatpurusa, dasanana not dvandva |
+| T10 | passage10 jalasuddhiyantra caturthi tatpurusa, lambodara bahuvrihi, mahapurusa karmadharaya, simhabhita pancami tatpurusa, sukhaduhkhe dvandva, rajaputra tatpurusa, gramagata tatpurusa, desabhakti tatpurusa, pratigrham avyayibhava, triloki vigraha samahara |
 
 ### S5 प्रत्ययाः
 
@@ -132,6 +136,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | passage7 karaniyah aniyar, sthatum tumun, vartamana sanac, niti ktin, adaya lyap, gantavya krt not taddhita, krtavan krt not taddhita, hasitva ktva, jnani in, netavya tavyat |
 | T8 | passage8 raksita kta tap, gatavati ktavatu, krtavan ktavatu, drstavantah ktavatu, pathaniya aniyar, mitrata tal, smrti ktin, aja tap not nip |
 | T9 | passage9 utthaya lyap, ganta trc, pitva ktva, srutavan ktavatu, sukhi in, nitva ktva, balatvam tva, yac sanac yacamana, dhavitum tumun not tavyat |
+| T10 | passage10 drastum drs tumun, agatya not ktva, nidhaya not ktva, pathaniyam aniyar, sriman matup, kr tavyat kartavyam, gam ktavatu stri gatavati |
 
 ### S6 उपपदविभक्तिः
 
@@ -146,6 +151,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | ha dvitiya, vasat caturthi, itara pancami, prsthatah sasthi, prati dvitiya, visvas saptami, bhave saptami |
 | T8 | upari sasthi not dvitiya, namah caturthi not dvitiya, antara dvitiya, asuy caturthi, jugupsa pancami |
 | T9 | samam trtiya, svadha caturthi, adhah sasthi, pravina saptami, vina dvitiya, tra pancami, alam trtiya nisedha |
+| T10 | paritah dvitiya sentence, ramaya namah sentence, pitra saha sentence, ubhayatah dvitiya nadi, svaha caturthi agni, dhik dvitiya durjana |
 
 ### S7 भाषिककार्यम्
 
@@ -160,6 +166,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | passage7 streets parks, passage7 nirmalah visesya margah, kamala pankaja paryaya, surya bhaskara paryaya, megha jalada paryaya, komala vilom kathora, yuvam kuruthah agreement |
 | T8 | passage8 reads ramayana stories, passage8 ahvayat karta priya, sundari balika, madhurani phalani, visalah vrksah, dhavalena vastrena, arohana vilom avarohana, likhavah karta avam |
 | T9 | passage9 mohan asked why so much labour, passage9 aviratam paryaya nirantaram, sitalam jalam, madhurah amrah, visalesu nagaresu, netra paryaya locana, labha vilom hani |
+| T10 | passage10 sudha made solar vehicle, passage10 pariksitavan karta sah, utkarsa vilom apakarsa, adana vilom pradana, pracina vilom arvacina, sajjana vilom durjana, vrksa paryaya not vihaga, te balakah kridati wrong agreement |
 
 ### S8 छन्दांसि
 
@@ -174,6 +181,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | vasantatilaka 14 varna, vamsastha 12 varna, anustup 8 varna, sardula 19 varna, malini laksana order, vasantatilaka second bha, santakaram mandakranta identify |
 | T8 | upendravajra laksana phrase, vamsastha laksana phrase, vasantatilaka laksana phrase, malini laksana phrase, sikharini more than 15, sardula more than 15, mandakranta more than 15, indravajra laksana order, vagarthaviva anustup identify |
 | T9 | sikharini not ma bha na, vasantatilaka not ta ja ja bha, upendravajra laksana order, malini six laghu start, ratrir gamisyati vasantatilaka identify |
+| T10 | malini first na, mandakranta first ma, sikharini first ya, vamsastha first ja, upajati laksana order, indravajra upendravajra differ first gana, dharmaksetre anustup identify |
 
 ### S9 अलङ्काराः
 
@@ -188,6 +196,7 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | balaka simha iva upama, tadaga darpana iva upama, yasah hamsa iva upama, slesa laksana order, hanuman abdhim arthantaranyasa, iva vacaka upama |
 | T8 | anuprasa varnasamya, yamaka bhinnartha avrtti, arthantaranyasa samarthana, utpreksa sambhavana, upama anga order, vidya dhanam rupaka, manye utpreksa vacaka |
 | T9 | kamalam iva komalam upama, vacanamrtam rupaka, payodhara slesa, sarad sasi anuprasa, utpreksa sambhavana statement, rupaka abheda statement, anuprasa varna avrtti statement, utpreksa laksana order, slesa one word many meanings |
+| T10 | rupaka laksana order second, limpativa utpreksa second, kamalam iva ramyam sadharana dharma, navapalasa yamaka second |
 
 ### S10 साहित्यपरिचयः
 
@@ -202,3 +211,4 @@ This map was written **before** any test, so that repeats are prevented rather t
 | T7 | hitopadesa nitikatha, gitagovinda gitikavya, mudraraksasa natakam, kadambari gadya, uttararamacarita not kalidasa, mrcchakatika not kalidasa, veda order, ramayana seven kanda, vasavadatta subandhu |
 | T8 | dasakumaracarita not bana, vasavadatta not bana, ramayana later kanda order, gita mahabharata, adikavi valmiki, vyakarana vedasya mukham |
 | T9 | raghuvamsa subject raghu kings, kumarasambhava subject, kiratarjuniya subject, sisupalavadha subject, vedic literature order, sakuntala heroine, mahabharata 18 parva, kavyaprakasa not katha |
+| T10 | uttararamacarita nayaka rama, svapnavasavadatta nayaka udayana, mrcchakatika nayaka carudatta, abhijnana nayaka dusyanta, mudraraksasa not bhavabhuti, venisamhara not bhavabhuti, vedanga order siksa kalpa, purana count 18, ramayana 24000 sloka |
