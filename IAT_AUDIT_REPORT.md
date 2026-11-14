@@ -20,7 +20,8 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 | 12 | pass | pass | minor: Q48 and Q59 were one step, replaced | fail → fixed: 16 questions repeated earlier tests, replaced | 0 of 60 | all 60 rewritten (30 Maths/Physics as equations only) | Clean after fixes; 8 items flagged |
 | 13 | pass | pass | minor: Q56 was one step, replaced; Q29 is one step, kept | fail → fixed: 12 questions repeated earlier tests, replaced | 0 of 60 | all 60 rewritten (30 Maths/Physics as equations only) | Clean after fixes; 10 items flagged |
 | 14 | pass | pass | minor: Q43, Q46, Q52 and Q56 were one step, replaced | fail → fixed: 18 questions repeated earlier tests, replaced | 0 of 60 | all 60 rewritten (30 Maths/Physics as equations only) | Clean after fixes; 8 items flagged |
-| 15–25 | — | — | — | — | — | — | Not yet audited |
+| 15 | pass | fail → fixed: Q47 (propagation of percentage errors) is not in the syllabus, replaced | minor: Q54 and Q58 were one step, replaced | fail → fixed: 13 questions repeated earlier tests, replaced | 0 of 60 | all 60 rewritten (30 Maths/Physics as equations only) | Clean after fixes; 11 items flagged |
+| 16–25 | — | — | — | — | — | — | Not yet audited |
 
 ## Changes made
 
@@ -214,6 +215,17 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 - **Change made in an earlier test because of this review:** Test 12 Q27 (ΔH > 0 and ΔS > 0, which I had only flagged, is the same question as Test 7 Q30) → sign of the entropy change.
 - **Flagged, left unchanged:** Q2 (figure; floral formula, fourth floral-position item after Tests 4, 9 and 13); Q4 (C₄ plants avoid photorespiration, fourth C₃/C₄ item); Q9 (control for insertional inactivation, related to Test 12 Q9); Q15 (species–area relation, extends Test 4 Q15); Q16 (figure; zero dipole of CO₂ = Test 3 Q16); Q34 (repeated-factor partial fractions, same method as Test 10 Q34); Q49 (rotational fraction for a rolling disc, near Test 7 Q49); Q45 and Q58 are short but not repeats.
 - Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 0 errors. Source text: `IISER/audit/solutions/test14.txt`.
+
+### Test 15 (`IISER/IAT NEW TEST 15.json`)
+- All 60 answers re-derived; no key was wrong. The figure questions (Q2, Q4, Q17, Q24, Q27, Q48, Q57, Q60) state their data in the question text; the figures themselves were not opened.
+- **Out of syllabus, replaced:** Q47 (maximum percentage error of a product) → dimensional analysis of the period of a pendulum.
+- **Replaced for repetition (same key letter):**
+  - Biology: Q5 (fraction of filtered load reabsorbed, fourth clearance calculation) → pulse pressure; Q15 (regression of the corpus luteum starts menstruation = Test 5 Q15) → site of fertilisation and stage at implantation.
+  - Chemistry: Q16 (octet-respecting form of carbonate = Test 1 Q16) → odd-electron molecules; Q18 (1/λ for the 3 → 2 line, one more hydrogen-level item) → capacity of the 4d subshell; Q20 (Markovnikov addition of HBr to propene = Test 2 Q20 and Test 7 Q22) → Baeyer's test; Q21 (S_N1 rate depends only on the substrate = Test 4 Q30) → Grignard reagents and moisture; Q26 (anode of a concentration cell = Test 2 Q26) → electrolysis of molten NaCl; Q29 (degree of ionisation with the same K_a and concentration as Test 7 Q27) → pH after partial neutralisation; Q30 (permanganate in acid and in base = Test 7 Q18) → why transition metals are catalysts.
+  - Mathematics: Q37 (det(adj A), third adjoint item after Test 7 Q37 and Test 11 Q35) → determinant of a 3 × 3 skew-symmetric matrix; Q38 (mutually exclusive events cannot be independent = Test 7 Q38) → P(king or heart).
+  - Physics: Q49 (disc with a concentric hole = Test 8 Q49 exactly) → parallel-axis theorem for a disc; Q53 (energy of a dipole turned through 90°, fourth dipole item) → potential and field at the centre of a charged shell; Q54 (J = I/A, one step) → two cells in series with internal resistance; Q58 (tan φ = X/R, one step) → phase and power in a capacitive circuit.
+- **Flagged, left unchanged:** Q2 (figure; frog heart, as in Test 10 Q2); Q4 (figure; Kranz anatomy = Test 9 Q4); Q8 (lost DNA-damage checkpoint, near Test 9 Q8); Q11 (carrier mother, one more X-linked risk item); Q25 (van 't Hoff factor in one step); Q27 (figure; activation energies from two Arrhenius slopes, the number-swapped Test 4 Q24); Q32 (ellipse from foci and directrices, as in Test 2 Q32); Q33 (area under a parabola, fourth area item); Q36 (surjective but not injective, same classification as Test 11 Q34); Q51 (springs in parallel, near Test 2 Q52); Q57 (figure; total internal reflection at 50°, near Test 7 Q57).
+- Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 0 errors. Source text: `IISER/audit/solutions/test15.txt`.
 
 ## Not verified
 - Rendered PDF pages were not regenerated or inspected for Test 1 after the edit (the exporter needs Playwright and Chromium).
