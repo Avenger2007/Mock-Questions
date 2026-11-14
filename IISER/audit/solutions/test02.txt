@@ -1,9 +1,9 @@
 @@Q Q11
-sub_topic: Sex-linked recessive inheritance and updated carrier risk
-question: A woman's brother has an X-linked recessive disorder; her parents are both unaffected, and so is her husband. The couple's first child is a son, and he is unaffected. Assume complete penetrance and no new mutation. What is the probability that their next child is an affected son?
-A) 1/8
-B) 1/6
-C) 1/12
+sub_topic: Sex-linked recessive inheritance traced through an affected grandfather
+question: A woman's maternal grandfather had an X-linked recessive disorder. Her mother, her father and her husband are all unaffected. Assume complete penetrance and no new mutation. What is the probability that the couple's first child is an affected son?
+A) 1/4
+B) 1/2
+C) 1/8
 D) 1/16
 key: C
 
@@ -93,17 +93,17 @@ Why not the others: (A) 12 needs a normal sperm with 6 chromosomes, and this mei
 Key point: A meiosis-I error affects all four products; a meiosis-II error affects two.
 
 @@ Q11
-Answer: (C) 1/12.
-Given: The woman's brother is affected, so her unaffected mother is a carrier (XᴬXᵃ) and her unaffected father is XᴬY. Her husband is XᴬY. Their first son is unaffected.
-Formula/Principle: Update the woman's carrier probability with the evidence from her first son (Bayes' rule), then multiply by the chance of an affected son.
-Step 1: Before any children, P(woman is a carrier) = 1/2.
-Step 2: P(an unaffected son | carrier) = 1/2; P(an unaffected son | non-carrier) = 1.
-Step 3: P(carrier | unaffected son) = (1/2 × 1/2) ÷ (1/2 × 1/2 + 1/2 × 1) = (1/4) ÷ (3/4) = 1/3.
-Step 4: P(next child is a son) = 1/2; P(a son of a carrier receives Xᵃ) = 1/2.
-Step 5: P(next child is an affected son) = 1/3 × 1/2 × 1/2 = 1/12.
-Why: An affected son gets his X chromosome from his mother, so the brother shows that the woman's mother carries the allele, and the woman has a one-half chance of having received it. Each unaffected son is evidence against her being a carrier, because a carrier's son escapes only half the time. That lowers her carrier probability from 1/2 to 1/3 before the risk for the next child is worked out. The husband's X chromosome is irrelevant to a son.
-Why not the others: (A) 1/8 = 1/2 × 1/2 × 1/2 ignores the information from the unaffected first son. (B) 1/6 uses the updated 1/3 but leaves out the one-half chance that the child is a son. (D) 1/16 halves the carrier probability again without any basis; one unaffected son changes 1/2 to 1/3, not to 1/4.
-Key point: Each unaffected son lowers a possible carrier's probability; update before predicting the next child.
+Answer: (C) 1/8.
+Given: Maternal grandfather affected (XᵃY). The woman's mother, father and husband are unaffected.
+Formula/Principle: A father passes his only X chromosome to every daughter. A carrier mother passes Xᵃ to each child with probability 1/2. A son gets his X from his mother.
+Step 1: The woman's mother received Xᵃ from the affected grandfather, so she is certainly a carrier (XᴬXᵃ).
+Step 2: The woman received Xᴬ from her unaffected father and either X from her mother: P(woman is a carrier) = 1/2.
+Step 3: P(child is a son) = 1/2.
+Step 4: P(a son of a carrier receives Xᵃ) = 1/2.
+Step 5: P(first child is an affected son) = 1/2 × 1/2 × 1/2 = 1/8.
+Why: The allele is followed down the female line. An affected man's daughters are all carriers, so the woman's mother is a certain carrier even though she is unaffected. The woman herself has an even chance of having inherited it. Her husband is unaffected, so he cannot give the allele to a daughter in a way that makes her affected, and he gives a Y, not an X, to a son. So only a son can be affected, and only if the woman is a carrier and passes on Xᵃ.
+Why not the others: (A) 1/4 leaves out one of the three halves; it is the chance that any given son is affected (1/2 × 1/2), not the chance that the child is a son and is affected. (B) 1/2 treats the woman as a certain carrier and the child as certainly a son. (D) 1/16 adds an extra factor of one half, as if the woman's mother were only a possible carrier.
+Key point: Affected father → all daughters are carriers; carrier mother → half her sons are affected.
 
 @@ Q13
 Answer: (D) 90%.
