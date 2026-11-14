@@ -18,7 +18,8 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 | 10 | pass | pass | minor: Q48 was one step, extended to include the energy change; Q36, Q40, Q47, Q51, Q56 are one-step items (see flags) | fail → fixed: 17 questions repeated earlier tests or this test, replaced | 0 of 60 | 30 Maths/Physics rewritten as equations only; 24 Biology/Chemistry solutions rewritten | Clean after fixes; 5 items flagged |
 | 11 | pass | fail → fixed: Q4 (transpiration) and Q15 (interfascicular cambium, secondary growth) are not in the current NCERT text, replaced | minor: Q13, Q46 and Q60 were one step, replaced | fail → fixed: 19 questions repeated earlier tests or this test, replaced | 0 of 60 | all 60 rewritten (30 Maths/Physics as equations only) | Clean after fixes; 8 items flagged |
 | 12 | pass | pass | minor: Q48 and Q59 were one step, replaced | fail → fixed: 16 questions repeated earlier tests, replaced | 0 of 60 | all 60 rewritten (30 Maths/Physics as equations only) | Clean after fixes; 9 items flagged |
-| 13–25 | — | — | — | — | — | — | Not yet audited |
+| 13 | pass | pass | minor: Q56 was one step, replaced; Q29 is one step, kept | fail → fixed: 12 questions repeated earlier tests, replaced | 0 of 60 | all 60 rewritten (30 Maths/Physics as equations only) | Clean after fixes; 10 items flagged |
+| 14–25 | — | — | — | — | — | — | Not yet audited |
 
 ## Changes made
 
@@ -191,6 +192,16 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 - **Change made in an earlier test because of this test:** Test 4 Q9 (ampR/tetR insertional inactivation, the same as the figure question Test 12 Q9) → Ti plasmid of Agrobacterium.
 - **Flagged, left unchanged:** Q4 (figure; ATP from an imposed pH gradient, close to Test 1 Q9); Q5 (postsynaptic receptor block, close to Test 3 Q13 and Test 9 Q5); Q11 (intercross of linked heterozygotes, same method as Test 1 Q4 with different numbers and a different class asked for); Q16 (figure; hybridisation of a nitrile carbon, near Test 4 Q16); Q18 (nitrate formal charge, extends Test 4 Q18); Q21 (figure; Tollens and iodoform, third use after Test 1 Q19 and Test 6 Q23); Q27 (sign of ΔG, qualitative form of Test 1 Q18); Q37 (another x³ − 3ax function); Q57 (width of the resonance curve, which the NCERT text treats only briefly).
 - Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 408 expressions, 0 errors. Source text: `IISER/audit/solutions/test12.txt`.
+
+### Test 13 (`IISER/IAT NEW TEST 13.json`)
+- All 60 answers re-derived; no key was wrong. The ten figure questions (Q1, Q2, Q9, Q15, Q16, Q30, Q53, Q54, Q55, Q60) state their data in the question text; the figures themselves were not opened.
+- **Replaced for repetition (same key letter):**
+  - Biology: Q6 (embryo 2n and endosperm 3n, the plain form of Test 1 Q8) → cells of the pollen grain at shedding; Q7 (leading strand direction = Test 6 Q7) → what accumulates without DNA ligase; Q10 (NPP = GPP − R = Test 8 Q10) → population size from births, deaths and migration; Q11 (operator mutation gives constitutive expression = Test 3 Q12 and Test 6 Q11) → codon–anticodon pairing; Q14 (chromosome number and DNA content at metaphase = Test 1 Q7 and Test 10 Q3) → DNA content in G₂ and in a gamete.
+  - Chemistry: Q17 (low-spin d⁶ has no unpaired electrons = Test 3 Q17) → coordination number and oxidation state in [Co(en)₃]³⁺; Q23 (cyanide bonds through carbon = Test 11 Q22) → aldehydes versus ketones in nucleophilic addition; Q26 (zwitterion at the isoelectric point = Test 3 Q26) → starch and cellulose; Q28 (κ falls and Λm rises on dilution = Test 6 Q26) → lead storage battery.
+  - Mathematics: Q35 (domain of g∘f, third use after Test 3 Q35 and Test 5 Q34) → f(f(x)) for a fractional linear function; Q41 (foot of the perpendicular on 3x + 4y − 10 = 0, the same line as Test 9 Q36) → line through a point perpendicular to a given line.
+  - Physics: Q52 (pulse inverted at a denser string = Test 6 Q52) → resonant frequencies of a closed pipe; Q56 (Z from R, X_L, X_C in one step; = Test 6 Q56) → resonant angular frequency.
+- **Flagged, left unchanged:** Q2 (figure; hypogynous flower, same idea as Test 4 Q2 and Test 9 Q2); Q13 (primary versus secondary thyroid failure, extends Test 6 Q5); Q15 (figure; 900 bp cut into 600 + 300 bp, the same fragment sizes as Test 1 Q11); Q20 (Be > B and N > O, overlaps Test 3 Q19); Q27 (positive deviation, near the figure question Test 9 Q27); Q29 (three half-lives, one step); Q34 (integration by parts, same method as Test 9 Q35); Q36 (determinant after row operations, near Test 9 Q31); Q42 (lattice paths through marked points, same method as Test 3 Q39); Q58 (defines and uses fringe visibility, a term the NCERT text does not use; the formula is given in the question).
+- Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 384 expressions, 0 errors. Source text: `IISER/audit/solutions/test13.txt`.
 
 ## Not verified
 - Rendered PDF pages were not regenerated or inspected for Test 1 after the edit (the exporter needs Playwright and Chromium).
