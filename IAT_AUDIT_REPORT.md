@@ -12,7 +12,8 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 | 4 | pass | fail → fixed: Q46 (error propagation) and Q58 (thin-film interference) are not in the 2026 syllabus, replaced | minor: 4 one-step items labelled medium, strengthened (Q27, Q51, Q53, Q54) | fail → fixed: 7 questions repeated earlier tests (Q5, Q13, Q20, Q30, Q35, Q52, Q60), replaced | 0 of 60 | 30 Maths/Physics rewritten as equations only; 14 Biology/Chemistry solutions rewritten | Clean after fixes; 2 items flagged |
 | 5 | pass | pass; Q58 used the term 'fringe visibility', which the NCERT text does not define, re-asked | minor: 2 one-step items labelled medium, strengthened (Q53, Q56) | fail → fixed: 6 questions repeated earlier tests (Q3, Q19, Q20, Q22, Q57, Q60), replaced | 0 of 60 | 30 Maths/Physics rewritten as equations only; 12 Biology/Chemistry solutions rewritten | Clean after fixes; 2 items flagged |
 | 6 | pass | fail → fixed: Q46 (error propagation) replaced; Q37 reworded (the word 'nullspace' is not in NCERT) | fail → fixed: Q54 was labelled hard but was one step, replaced; Q51 was filed under Oscillations but was not SHM, replaced | fail → fixed: 11 questions repeated earlier tests or another question in this test, replaced | 0 of 60 | 30 Maths/Physics rewritten as equations only; 13 Biology/Chemistry solutions rewritten | Clean after fixes; 3 items flagged |
-| 7–25 | — | — | — | — | — | — | Not yet audited |
+| 7 | pass | fail → fixed: Q45 (arithmetic-geometric series) is not in the 2026 syllabus, replaced | pass | fail → fixed: 12 questions repeated earlier tests or another question in this test, replaced | 0 of 60 | 30 Maths/Physics rewritten as equations only; 15 Biology/Chemistry solutions rewritten | Clean after fixes; 3 items flagged |
+| 8–25 | — | — | — | — | — | — | Not yet audited |
 
 ## Changes made
 
@@ -93,6 +94,27 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 - **Flagged, left unchanged:** Q3 (a one-step subtraction labelled medium); Q11 (lac operon without a repressor, close to Test 3 Q12 on an operator mutant); Q27 (initial-rate orders from a figure, the same skill as Test 2 Q27).
 - Q31–Q60 rewritten as equations only; Q3, Q9, Q14, Q16, Q18–Q21, Q25, Q27–Q30 rewritten in full.
 - Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse, 0 errors. Source text: `IISER/audit/solutions/test06.txt`.
+
+### Test 7 (`IISER/IAT NEW TEST 7.json`)
+- All 60 answers re-derived; no key was wrong. Figure specifications for Q2, Q6, Q17, Q20, Q56 and Q58 agree with their questions.
+- **Out of syllabus, replaced:** Q45 summed an arithmetic-geometric progression (the syllabus lists only AP, GP and Σn, Σn², Σn³) → 1·2 + 2·3 + … + 10·11 from the special series.
+- **Replaced for repetition (same key letter):**
+  - Q1 red alga from pigments and floridean starch = Test 3 Q1 → class of fungi from mycelium and spores.
+  - Q3 spindle checkpoint = Test 2 Q14 → where 70S ribosomes occur in a plant cell.
+  - Q4 light and CO₂ as limiting factors = Test 2 Q4 → why fermentation must regenerate NAD⁺.
+  - Q7 carrier chance 2/3 for an unaffected sibling (already used in Test 1 Q13 and Test 4 Q12) → molecular basis of sickle-cell anaemia.
+  - Q9 insertional inactivation of a marker = Test 4 Q9 → visualising DNA with ethidium bromide under UV.
+  - Q16 carbonate resonance = Test 1 Q16 → intramolecular versus intermolecular hydrogen bonding in nitrophenols.
+  - Q23 HBr with and without peroxide = Test 2 Q20 (and close to Q22 of this test) → Friedel–Crafts acylation.
+  - Q28 van't Hoff factor from a freezing-point ratio = inverse of Test 6 Q25 → elevation of boiling point.
+  - Q31 ellipse eccentricity and directrix = inverse of Test 2 Q32 → distance between parallel lines.
+  - Q33 partial fractions on 1/((x+1)(x+2)) = same denominator as Test 4 Q33 → ∫x cos x dx by parts.
+  - Q35 tangent to x² + xy + y² = 7 = number-swapped Test 3 Q32 → logarithmic differentiation of x^(sin x).
+  - Q40 shortest distance between skew lines = number-swapped Test 2 Q41 → distance of a point from a plane.
+- **Changes made in earlier tests because of this test:** Test 3 Q54 (capacitor at fixed voltage) was a subset of Test 7 Q54, which covers both fixed voltage and fixed charge → now a question on equipotential surfaces. Test 4 Q13 (my earlier replacement on oxygen delivery) overlapped Test 7 Q13 → now heart rate from the spacing of QRS complexes.
+- **Flagged, left unchanged:** Q5 is filed under Human Physiology but tests allergy (Human Health and Disease); Q26 (sucrose is non-reducing) is close to Test 1 Q29; Q47 gives the lift's acceleration although the answer does not need it.
+- Q31–Q60 rewritten as equations only; Q1, Q3, Q4, Q6, Q7, Q9, Q11, Q13, Q15, Q16, Q21, Q23, Q27, Q28, Q29 rewritten in full.
+- Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 432 expressions, 0 errors. Source text: `IISER/audit/solutions/test07.txt`.
 
 ## Not verified
 - Rendered PDF pages were not regenerated or inspected for Test 1 after the edit (the exporter needs Playwright and Chromium).
