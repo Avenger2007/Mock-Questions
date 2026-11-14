@@ -8,7 +8,8 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 |---|---|---|---|---|---|---|---|
 | 1 | pass | pass | pass | pass (within test; series check pending) | 0 of 60 | Maths/Physics had prose in the working → 30 rewritten as equations only; Biology/Chemistry already met the standard | Clean |
 | 2 | pass | pass | minor: 6 one-step items labelled medium, strengthened (Q18, Q25, Q28, Q47, Q51, Q56) | fail → fixed: Q11 and Q43 repeated Test 1 tasks, replaced | 0 of 60 | Maths/Physics prose and thin rebuttals → 30 rewritten as equations only; 11 Biology/Chemistry numerical solutions expanded | Clean after fixes |
-| 3–25 | — | — | — | — | — | — | Not yet audited |
+| 3 | pass | fail → fixed: Q4 (transpiration) is from the deleted Transport in Plants chapter, replaced | minor: 5 one-step items labelled medium, strengthened (Q10, Q27, Q47, Q51, Q58) | pass within test (Q42 uses the same sign-of-f(k) idea as Test 1 Q43 but with two conditions; kept) | 0 of 60 (Q30 data were unrealistic and were corrected) | 30 Maths/Physics rewritten as equations only; 7 Biology/Chemistry numerical solutions expanded | Clean after fixes |
+| 4–25 | — | — | — | — | — | — | Not yet audited |
 
 ## Changes made
 
@@ -26,6 +27,15 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 - Q5, Q6, Q11, Q13, Q18, Q25–Q30: Biology/Chemistry numerical solutions rewritten with every step and a specific reason for each wrong option.
 - Checks: `validate_iat.py` 0 errors, key balance still 15/15/15/15, tiers 9/42/9; KaTeX parse 456 expressions, 0 errors.
 - Source text: `IISER/audit/solutions/test02.txt`.
+
+### Test 3 (`IISER/IAT NEW TEST 3.json`)
+- All 60 answers re-derived; no key was wrong. Figure specifications for Q7, Q15, Q17, Q23, Q48 and Q53 agree with their questions.
+- **Out of syllabus, replaced:** Q4 asked about transpiration and the vapour-pressure gradient, which belongs to Transport in Plants (not in the 2026 syllabus) → now a plant-growth-regulator question (gibberellin restores a dwarf pea; auxin on a cut stump keeps apical dominance), same key letter.
+- **Data corrected:** Q30 gave a 6.0 °C rise, which implies −100.8 kJ/mol for a neutralisation. Changed to a 3.4 °C rise with a strong acid, giving the real value of −57.1 kJ/mol; options updated, key letter unchanged.
+- **Strengthened one-step 'medium' items (same topic and key letter):** Q10 (detritus now includes egested material), Q27 (common-ion solubility → factor relative to pure water), Q47 (F·v → rate of change of speed), Q51 (phase difference now needs the wavelength from v and f), Q58 (optical path → extra phase for a given wavelength).
+- Q3 uses Na⁺–glucose co-transport; the idea is not named in the retained chapters, but the stem supplies everything needed. Left unchanged and flagged for the user.
+- Q31–Q60: all 30 Maths/Physics solutions rewritten as equations only with a check. Q4, Q10, Q11, Q20, Q21, Q27, Q30 rewritten in full.
+- Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 427 expressions, 0 errors. Source text: `IISER/audit/solutions/test03.txt`.
 
 ## Not verified
 - Rendered PDF pages were not regenerated or inspected for Test 1 after the edit (the exporter needs Playwright and Chromium).
