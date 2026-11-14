@@ -1,3 +1,12 @@
+@@Q Q02
+sub_topic: Aestivation of petals
+question: A flower has five petals. The largest petal overlaps the two lateral petals, and these in turn overlap the two smallest anterior petals. What is this arrangement of petals in the bud called, and in which family is it typical?
+A) Valvate; Brassicaceae
+B) Vexillary; Fabaceae (the pea family)
+C) Twisted; Malvaceae
+D) Imbricate; Liliaceae
+key: B
+
 @@Q Q11
 sub_topic: Sex-linked recessive inheritance traced through an affected grandfather
 question: A woman's maternal grandfather had an X-linked recessive disorder. Her mother, her father and her husband are all unaffected. Assume complete penetrance and no new mutation. What is the probability that the couple's first child is an affected son?
@@ -70,6 +79,15 @@ C) 4:3
 D) 3:4
 key: D
 
+@@Q Q55
+sub_topic: Work by a field read from a signed field graph
+question: The figure shows Eₓ as a function of x between 0 and 3a, with E₀, a > 0. A particle of charge +q is released from rest at x=0 and moves along the x-axis under the electric force alone. At which position is its kinetic energy greatest, and what is that kinetic energy?
+A) x=3a; 2qE₀a
+B) x=a; qE₀a
+C) x=2a; qE₀a
+D) x=a; 2qE₀a
+key: D
+
 @@Q Q56
 sub_topic: Balanced Wheatstone bridge and the current drawn at balance
 question: A Wheatstone bridge has upper and lower left arms of 2 Ω and 3 Ω, and upper and lower right arms of 4 Ω and R. An ideal galvanometer joins the two midpoints and shows zero current. An ideal 10 V battery is connected between the top and bottom junctions. What are R and the current drawn from the battery?
@@ -78,6 +96,12 @@ B) 1.5 Ω and 3.8 A
 C) 6 Ω and 3 A
 D) 6 Ω and 1 A
 key: C
+
+@@ Q02
+Answer: (B) Vexillary; Fabaceae (the pea family).
+Why: Aestivation is the way sepals or petals are arranged in the flower bud. In vexillary (papilionaceous) aestivation the largest petal, the standard, overlaps the two lateral petals, the wings, and the wings overlap the two smallest anterior petals, the keel. This butterfly-shaped corolla is typical of pea and bean flowers, family Fabaceae.
+Why not the others: (A) In valvate aestivation the petals just touch at the margins without overlapping, as in Calotropis. (C) In twisted aestivation one margin of each petal overlaps the next in a regular spiral, as in china rose and cotton. (D) In imbricate aestivation the margins overlap but not in any one direction, as in Cassia and gulmohur.
+Key point: Standard overlaps wings, wings overlap keel: vexillary aestivation of the pea family.
 
 @@ Q05
 Answer: (A) 60 mL.
@@ -522,16 +546,17 @@ Why not the others: (B) \(q\,\mathbf B\times\mathbf v=qvB(\hat{\mathbf j}-\hat{\
 Key point: \(|\mathbf F|=qvB\sqrt2\)
 
 @@ Q55
-Answer: (D) Zero.
-Given: \(E_x=+2E_0\ (0<x<a),\quad E_x=-E_0\ (a<x<3a)\)
-Formula/Principle: \(V(x_2)-V(x_1)=-\displaystyle\int_{x_1}^{x_2}E_x\,dx\)
-Step 1: \(\displaystyle\int_0^aE_x\,dx=2E_0a\)
-Step 2: \(\displaystyle\int_a^{3a}E_x\,dx=-E_0(2a)=-2E_0a\)
-Worked derivation: \[V(3a)-V(0)=-\left(2E_0a-2E_0a\right)=0\]
-Check: \[V(a)-V(0)=-2E_0a,\qquad V(3a)-V(a)=+2E_0a\]
-Why: \(E_x=-\dfrac{dV}{dx}\)
-Why not the others: (A) \(-(2E_0a+2E_0a)=-4E_0a\) (\(|E_x|\) used); (B) \(-2E_0a=V(a)-V(0)\); (C) \(+2E_0a=V(3a)-V(a)\).
-Key point: \(\Delta V=-(\text{signed area under }E_x\text{–}x)\)
+Answer: (D) x=a; 2qE₀a.
+Given: \(E_x=+2E_0\ (0<x<a),\quad E_x=-E_0\ (a<x<3a);\quad K(0)=0\)
+Formula/Principle: \(K(x)=q\displaystyle\int_0^xE_x\,dx'\)
+Step 1: \(0<x<a:\ K=2qE_0x\ \ (\text{increasing})\)
+Step 2: \(K(a)=2qE_0a\)
+Step 3: \(a<x<3a:\ K=2qE_0a-qE_0(x-a)\ \ (\text{decreasing})\)
+Worked derivation: \[K_{\max}=K(a)=2qE_0a\]
+Check: \[K(3a)=2qE_0a-qE_0(2a)=0\ \ (\text{particle stops at }x=3a)\]
+Why: \(\dfrac{dK}{dx}=qE_x:\ +\ \text{for }x<a,\ -\ \text{for }x>a\)
+Why not the others: (A) \(K(3a)=0\); (B) \(K(a)=2qE_0a\ne qE_0a\); (C) \(K(2a)=qE_0a<K(a)\).
+Key point: \(K\ \text{is greatest where }E_x\ \text{changes sign from + to −}\)
 
 @@ Q56
 Answer: (C) 6 Ω and 3 A.
