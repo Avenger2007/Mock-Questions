@@ -11,7 +11,8 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 | 3 | pass | fail → fixed: Q4 (transpiration) is from the deleted Transport in Plants chapter, replaced | minor: 5 one-step items labelled medium, strengthened (Q10, Q27, Q47, Q51, Q58) | pass within test (Q42 uses the same sign-of-f(k) idea as Test 1 Q43 but with two conditions; kept) | 0 of 60 (Q30 data were unrealistic and were corrected) | 30 Maths/Physics rewritten as equations only; 7 Biology/Chemistry numerical solutions expanded | Clean after fixes |
 | 4 | pass | fail → fixed: Q46 (error propagation) and Q58 (thin-film interference) are not in the 2026 syllabus, replaced | minor: 4 one-step items labelled medium, strengthened (Q27, Q51, Q53, Q54) | fail → fixed: 7 questions repeated earlier tests (Q5, Q13, Q20, Q30, Q35, Q52, Q60), replaced | 0 of 60 | 30 Maths/Physics rewritten as equations only; 14 Biology/Chemistry solutions rewritten | Clean after fixes; 2 items flagged |
 | 5 | pass | pass; Q58 used the term 'fringe visibility', which the NCERT text does not define, re-asked | minor: 2 one-step items labelled medium, strengthened (Q53, Q56) | fail → fixed: 6 questions repeated earlier tests (Q3, Q19, Q20, Q22, Q57, Q60), replaced | 0 of 60 | 30 Maths/Physics rewritten as equations only; 12 Biology/Chemistry solutions rewritten | Clean after fixes; 2 items flagged |
-| 6–25 | — | — | — | — | — | — | Not yet audited |
+| 6 | pass | fail → fixed: Q46 (error propagation) replaced; Q37 reworded (the word 'nullspace' is not in NCERT) | fail → fixed: Q54 was labelled hard but was one step, replaced; Q51 was filed under Oscillations but was not SHM, replaced | fail → fixed: 11 questions repeated earlier tests or another question in this test, replaced | 0 of 60 | 30 Maths/Physics rewritten as equations only; 13 Biology/Chemistry solutions rewritten | Clean after fixes; 3 items flagged |
+| 7–25 | — | — | — | — | — | — | Not yet audited |
 
 ## Changes made
 
@@ -70,6 +71,28 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 - **Flagged, left unchanged:** Q14 uses non-competitive inhibition (the NCERT chapter names only competitive inhibition, though the graph description is self-contained); Q12 extends the filtered-load idea of Test 2 Q13 with a marker step. The user should decide whether to keep them.
 - Q31–Q60 rewritten as equations only; Q3, Q6, Q12, Q19, Q20, Q21, Q22, Q26, Q27, Q28, Q29, Q30 rewritten in full.
 - Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 444 expressions, 0 errors. Source text: `IISER/audit/solutions/test05.txt`.
+
+### Test 6 (`IISER/IAT NEW TEST 6.json`)
+- All 60 answers re-derived; no key was wrong. Figure specifications for Q2, Q6, Q17, Q27, Q53 and Q58 agree with their questions.
+- **Replaced for repetition (same key letter):**
+  - Q9 sticky versus blunt ligation = Test 2 Q9 → why PCR needs a thermostable polymerase.
+  - Q14 chromosomes and DNA after S phase = Test 1 Q7 → bivalents and chromatids in meiosis I.
+  - Q16 zero dipole of CO₂ = Test 3 Q16 → highest bond order among O₂⁺, O₂, O₂⁻, O₂²⁻.
+  - Q19 Tollens test for propanal versus propanone repeated Q23 of the same test → metamers.
+  - Q21 SN2 inversion = Test 2 Q21 → Wurtz–Fittig preparation of toluene.
+  - Q28 two-step Hess sum = Test 2 Q28 → ΔH − ΔU = Δn(g)RT for ammonia synthesis.
+  - Q30 spin-only moment = Test 2 Q30 → which ion is colourless (d¹⁰).
+  - Q38 conditional draw from 4 red and 3 blue balls = Test 3 Q38 → conditional probability with two dice.
+  - Q39 one forbidden adjacency at a round table = the simpler half of Test 2 Q42 → committee with at least 3 women.
+  - Q47 Atwood machine in an accelerating lift = Test 2 Q46 → block on a rough incline.
+  - Q54 balanced Wheatstone bridge (a third bridge-ratio item, and labelled hard) → maximum power from a cell with internal resistance.
+- **Out of syllabus, replaced:** Q46 percentage uncertainty of a product → dimensional analysis of a drop's oscillation period.
+- **Topic mismatch, replaced:** Q51 used a = 2x, which is not simple harmonic motion → speed at a given displacement in SHM.
+- **Reworded:** Q37 asked what 'spans its nullspace' → 'which nonzero vector v satisfies Av = 0'; options and key unchanged.
+- **Changes made in earlier tests because of this test** (the Test 6 questions carry figures, so the earlier ones were changed): Test 2 Q17 (ionisation isomers by BaCl₂ and AgNO₃ tests) now asks the type of isomerism and the number of ions, on the same figure. Test 3 Q6 (self-incompatibility) is now a question on emasculation and bagging.
+- **Flagged, left unchanged:** Q3 (a one-step subtraction labelled medium); Q11 (lac operon without a repressor, close to Test 3 Q12 on an operator mutant); Q27 (initial-rate orders from a figure, the same skill as Test 2 Q27).
+- Q31–Q60 rewritten as equations only; Q3, Q9, Q14, Q16, Q18–Q21, Q25, Q27–Q30 rewritten in full.
+- Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse, 0 errors. Source text: `IISER/audit/solutions/test06.txt`.
 
 ## Not verified
 - Rendered PDF pages were not regenerated or inspected for Test 1 after the edit (the exporter needs Playwright and Chromium).
