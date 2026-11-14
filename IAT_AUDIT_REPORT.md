@@ -13,7 +13,8 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 | 5 | pass | pass; Q58 used the term 'fringe visibility', which the NCERT text does not define, re-asked | minor: 2 one-step items labelled medium, strengthened (Q53, Q56) | fail → fixed: 6 questions repeated earlier tests (Q3, Q19, Q20, Q22, Q57, Q60), replaced | 0 of 60 | 30 Maths/Physics rewritten as equations only; 12 Biology/Chemistry solutions rewritten | Clean after fixes; 2 items flagged |
 | 6 | pass | fail → fixed: Q46 (error propagation) replaced; Q37 reworded (the word 'nullspace' is not in NCERT) | fail → fixed: Q54 was labelled hard but was one step, replaced; Q51 was filed under Oscillations but was not SHM, replaced | fail → fixed: 11 questions repeated earlier tests or another question in this test, replaced | 0 of 60 | 30 Maths/Physics rewritten as equations only; 13 Biology/Chemistry solutions rewritten | Clean after fixes; 3 items flagged |
 | 7 | pass | fail → fixed: Q45 (arithmetic-geometric series) is not in the 2026 syllabus, replaced | pass | fail → fixed: 12 questions repeated earlier tests or another question in this test, replaced | 0 of 60 | 30 Maths/Physics rewritten as equations only; 15 Biology/Chemistry solutions rewritten | Clean after fixes; 3 items flagged |
-| 8–25 | — | — | — | — | — | — | Not yet audited |
+| 8 | pass | fail → fixed: Q60 (thin-film interference) replaced | pass (Q4 is a simple subtraction labelled medium; flagged) | fail → fixed: 14 questions repeated earlier tests, replaced or re-asked | 0 of 60; Q33 had a malformed option, fixed | 30 Maths/Physics rewritten as equations only; 17 Biology/Chemistry solutions rewritten | Clean after fixes; 3 items flagged |
+| 9–25 | — | — | — | — | — | — | Not yet audited |
 
 ## Changes made
 
@@ -115,6 +116,30 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 - **Flagged, left unchanged:** Q5 is filed under Human Physiology but tests allergy (Human Health and Disease); Q26 (sucrose is non-reducing) is close to Test 1 Q29; Q47 gives the lift's acceleration although the answer does not need it.
 - Q31–Q60 rewritten as equations only; Q1, Q3, Q4, Q6, Q7, Q9, Q11, Q13, Q15, Q16, Q21, Q23, Q27, Q28, Q29 rewritten in full.
 - Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 432 expressions, 0 errors. Source text: `IISER/audit/solutions/test07.txt`.
+
+### Test 8 (`IISER/IAT NEW TEST 8.json`)
+- All 60 answers re-derived; no key was wrong. Figure specifications for Q2, Q15, Q17, Q28, Q53 and Q58 agree with their questions.
+- **Formatting error fixed:** Q33 option D had an unbalanced bracket, `√2−1)/3`; now (√2−1)/3.
+- **Out of syllabus, replaced:** Q60 thin-film reflection → Malus's law with unpolarised light.
+- **Replaced or re-asked for repetition (same key letter):**
+  - Q2 inferior ovary from a figure = Test 4 Q2 → same figure, now asks which plants show this ovary position.
+  - Q5 Bohr shift = Test 5 Q5 → which vessel carries oxygenated blood from the lungs.
+  - Q6 ploidy after double fertilisation = the simple case of Test 1 Q8 → meiotic divisions needed for 100 seeds.
+  - Q13 filtered load minus excretion = Test 2 Q13 → air reaching the alveoli per minute.
+  - Q14 catalase marks peroxisomes = Test 2 Q3 → effect of doubling enzyme at saturating substrate.
+  - Q16 σ and π bonds of a nitrile = Test 4 Q16 → axial and equatorial bonds of PCl₅.
+  - Q18 formal charge on N in nitrate = Test 4 Q18 exactly → bond order and bond length in CO, CO₂, CO₃²⁻.
+  - Q30 Zaitsev product from 2-bromobutane = part of Test 2 Q21 → Finkelstein reaction.
+  - Q32 increasing intervals of a cubic = Test 5 Q32 → rate of change of a sphere's volume.
+  - Q35 trace of X from AX = B = number-swapped Test 4 Q37 → k in A² − 4A + kI = O.
+  - Q38 term independent of x = number-swapped Test 2 Q38 → sum of alternate binomial coefficients.
+  - Q51 period ratio of springs in series and parallel = Test 2 Q52 exactly → displacement where kinetic and potential energies are equal.
+  - Q54 terminal voltage of a cell = number-swapped Test 3 Q55 → current division in a series–parallel network.
+  - Q57 minimum deviation of a prism = inverse of Test 4 Q57 → image in a concave mirror for an object inside the focus.
+- **Changes made in earlier tests because of this test:** Test 2 Q2 (inferior ovary, a third copy without a figure) → vexillary aestivation. Test 2 Q55 used the same field graph and asked for V(3a) − V(0), which Test 8 Q53 also asks → now asks where the kinetic energy of a released charge is greatest, on the same figure. Test 3 Q28 (positive deviation from Raoult's law, repeated here with a figure) → Henry's law.
+- **Flagged, left unchanged:** Q4 (one subtraction, labelled medium); Q27 (sign of ΔG with temperature, the third question of this kind after Test 1 Q18 and Test 7 Q30); Q44 (mean and variance under Y = aX + b, close to Test 6 Q43).
+- Q31–Q60 rewritten as equations only; Q2, Q4–Q7, Q10–Q14, Q16, Q18, Q24, Q25, Q27, Q28, Q30 rewritten in full.
+- Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 421 expressions, 0 errors. Source text: `IISER/audit/solutions/test08.txt`.
 
 ## Not verified
 - Rendered PDF pages were not regenerated or inspected for Test 1 after the edit (the exporter needs Playwright and Chromium).
