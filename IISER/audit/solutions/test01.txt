@@ -1,0 +1,392 @@
+@@ Q31
+Answer: (C) \(2\).
+Given: \(A=\begin{pmatrix}3&1\\1&1\end{pmatrix}\)
+Formula/Principle: \(A^{-1}=\dfrac{\operatorname{adj}A}{\det A},\quad\det A\neq0\)
+Step 1: \(\det A=3\cdot1-1\cdot1=2\)
+Step 2: \(\operatorname{adj}A=\begin{pmatrix}1&-1\\-1&3\end{pmatrix}\)
+Step 3: \(A^{-1}=\dfrac12\begin{pmatrix}1&-1\\-1&3\end{pmatrix}=\begin{pmatrix}\tfrac12&-\tfrac12\\-\tfrac12&\tfrac32\end{pmatrix}\)
+Worked derivation: \[\operatorname{tr}(A^{-1})=\frac12+\frac32=2\]
+Check: \[AA^{-1}=\frac12\begin{pmatrix}3-1&-3+3\\1-1&-1+3\end{pmatrix}=\begin{pmatrix}1&0\\0&1\end{pmatrix}\]
+Why: \(\det A=2\neq0\Rightarrow A^{-1}=\operatorname{adj}A/\det A\)
+Why not the others: (A) \(\operatorname{tr}A=3+1=4\neq\operatorname{tr}(A^{-1})\); (B) \(1/\det A=\tfrac12\neq\tfrac12+\tfrac32\); (D) \(-\tfrac12-\tfrac32=-2\neq+\tfrac12+\tfrac32\).
+Key point: \(\operatorname{tr}(A^{-1})=\dfrac{a+d}{ad-bc}\) for \(A=\begin{pmatrix}a&b\\c&d\end{pmatrix}\)
+
+@@ Q32
+Answer: (B) \(96\).
+Given: \(\text{positions }1,\dots,6;\quad p_B=p_A+2\)
+Formula/Principle: \(N=(\text{number of }(p_A,p_B))\times4!\)
+Step 1: \((p_A,p_B)\in\{(1,3),(2,4),(3,5),(4,6)\}\Rightarrow4\)
+Step 2: \(4!=24\)
+Step 3: \(N=4\times24\)
+Worked derivation: \[N=4\times4!=4\times24=96\]
+Check: \[|p_A-p_B|=2:\ 2\times4\times24=192,\qquad\tfrac12\times192=96\]
+Why: \(p_A<p_B\Rightarrow(p_A,p_B)\ \text{ordered};\quad\text{C, D, E, F distinct}\Rightarrow4!\)
+Why not the others: (A) \(2\times4!=48\) (two position pairs only); (C) \(2\times4\times4!=192\) (\(p_B<p_A\) included); (D) \(5!=120\) (\(p_B=p_A+1\)).
+Key point: \(N=(n-1-k)\,(n-2)!\) for \(n\) objects with exactly \(k\) between the ordered pair
+
+@@ Q33
+Answer: (D) \(-2/3\).
+Given: \(f(x)+2f(1-x)=x^2\quad\forall x\in\mathbb R\)
+Formula/Principle: \(x\to1-x\)
+Step 1: \(f(1-x)+2f(x)=(1-x)^2\)
+Step 2: \(2\,[\,f(1-x)+2f(x)\,]-[\,f(x)+2f(1-x)\,]=2(1-x)^2-x^2\)
+Step 3: \(3f(x)=x^2-4x+2\)
+Step 4: \(f'(x)=\dfrac{2x-4}{3}<0\ \text{for }x<2\)
+Worked derivation: \[\begin{aligned}f(x)&=\frac{x^2-4x+2}{3}=\frac{(x-2)^2-2}{3}\\\min_{[-1,2]}f&=f(2)=\frac{0-2}{3}=-\frac23\end{aligned}\]
+Check: \[f(x)+2f(1-x)=\frac{(x^2-4x+2)+2(x^2+2x-1)}{3}=\frac{3x^2}{3}=x^2\]
+Why: \(f'(x)<0\ \text{on }[-1,2)\Rightarrow\min\text{ at }x=2\in[-1,2]\)
+Why not the others: (A) \(f(2)=-\tfrac23<0\); (B) \(\left|-\tfrac23\right|=\tfrac23\neq f(2)\); (C) \(f(1)=\dfrac{1-4+2}{3}=-\tfrac13>f(2)\).
+Key point: \(f(x)+k\,f(1-x)=g(x)\Rightarrow(1-k^2)f(x)=g(x)-k\,g(1-x)\)
+
+@@ Q34
+Answer: (A) \(-1\).
+Given: \(|z-1|=|z+1|,\quad|z-2i|=\sqrt5,\quad z=x+iy\)
+Formula/Principle: \(|z-z_0|^2=(x-x_0)^2+(y-y_0)^2\)
+Step 1: \((x-1)^2+y^2=(x+1)^2+y^2\Rightarrow-2x=2x\Rightarrow x=0\)
+Step 2: \(x^2+(y-2)^2=5\Rightarrow(y-2)^2=5\)
+Step 3: \(y_1=2+\sqrt5,\quad y_2=2-\sqrt5\)
+Worked derivation: \[\operatorname{Im}(z_1)\operatorname{Im}(z_2)=(2+\sqrt5)(2-\sqrt5)=4-5=-1\]
+Check: \[y^2-4y-1=0\Rightarrow y_1y_2=-1\]
+Why: \(|z-1|=|z+1|\Leftrightarrow x=0;\quad|z-2i|=\sqrt5\Leftrightarrow x^2+(y-2)^2=5\)
+Why not the others: (B) \(|y_1y_2|=1\neq y_1y_2\); (C) \(y^2=5\Rightarrow y_1y_2=-5\) (centre \(2i\) dropped); (D) \(2\times2=4\) (centre ordinate squared).
+Key point: \(y_1y_2=c/a\) for \(ay^2+by+c=0\)
+
+@@ Q35
+Answer: (C) \(\pi^2/4\).
+Given: \(I=\displaystyle\int_0^\pi\frac{x\sin x}{1+\cos^2x}\,dx\)
+Formula/Principle: \(\displaystyle\int_0^af(x)\,dx=\int_0^af(a-x)\,dx\)
+Step 1: \(I=\displaystyle\int_0^\pi\frac{(\pi-x)\sin x}{1+\cos^2x}\,dx\)
+Step 2: \(2I=\pi\displaystyle\int_0^\pi\frac{\sin x}{1+\cos^2x}\,dx\)
+Step 3: \(u=\cos x,\quad du=-\sin x\,dx,\quad x=0\to u=1,\quad x=\pi\to u=-1\)
+Worked derivation: \[\begin{aligned}2I&=\pi\int_{-1}^{1}\frac{du}{1+u^2}=\pi\left[\tan^{-1}u\right]_{-1}^{1}=\pi\left(\frac\pi4+\frac\pi4\right)=\frac{\pi^2}{2}\\I&=\frac{\pi^2}{4}\end{aligned}\]
+Check: \[0<I<\pi\int_0^\pi\frac{\sin x}{1+\cos^2x}\,dx=\frac{\pi^2}{2},\qquad\frac{\pi^2}{4}\approx2.47\]
+Why: \(\sin(\pi-x)=\sin x,\quad\cos^2(\pi-x)=\cos^2x\)
+Why not the others: (A) \(\displaystyle\int_0^\pi\frac{\sin x}{1+\cos^2x}\,dx=\frac\pi2\neq I\); (B) \(2I=\dfrac{\pi^2}{2}\neq I\); (D) \(\dfrac12\cdot\dfrac{\pi^2}{4}=\dfrac{\pi^2}{8}\).
+Key point: \(\displaystyle\int_0^\pi x\,g(\sin x)\,dx=\frac\pi2\int_0^\pi g(\sin x)\,dx\)
+
+@@ Q36
+Answer: (D) \(\sqrt2\).
+Given: \(P=(1,2,3),\quad\text{plane: }x+y+z=3,\quad\mathbf n=(1,1,1),\quad d=3\)
+Formula/Principle: \(\mathbf r'=\mathbf r-2\,\dfrac{\mathbf n\cdot\mathbf r-d}{|\mathbf n|^2}\,\mathbf n\)
+Step 1: \(\mathbf n\cdot P-d=1+2+3-3=3\)
+Step 2: \(|\mathbf n|^2=1+1+1=3\)
+Step 3: \(P'=(1,2,3)-2\cdot\dfrac33\,(1,1,1)=(-1,0,1)\)
+Worked derivation: \[OP'=\sqrt{(-1)^2+0^2+1^2}=\sqrt2\]
+Check: \[\frac{P+P'}{2}=(0,1,2):\ 0+1+2=3;\qquad P-P'=(2,2,2)\parallel\mathbf n\]
+Why: \(\dfrac{P+P'}{2}\in\text{plane},\quad P-P'\parallel\mathbf n\)
+Why not the others: (A) \(OP=\sqrt{1+4+9}=\sqrt{14}\); (B) \(F=(0,1,2),\ OF=\sqrt5\); (C) \(PP'=2\cdot\dfrac{3}{\sqrt3}=2\sqrt3\).
+Key point: \(P'=P-2\lambda\mathbf n,\quad F=P-\lambda\mathbf n,\quad\lambda=\dfrac{\mathbf n\cdot P-d}{|\mathbf n|^2}\)
+
+@@ Q37
+Answer: (B) \(-4\).
+Given: \(f(x)=|x^2-1|+a|x-1|+b|x+1|\)
+Formula/Principle: \(f'(x_0^+)=f'(x_0^-)\ \text{at }x_0=1,\ x_0=-1\)
+Step 1: \(x>1:\ f=(x^2-1)+a(x-1)+b(x+1),\quad f'=2x+a+b\)
+Step 2: \(-1<x<1:\ f=(1-x^2)-a(x-1)+b(x+1),\quad f'=-2x-a+b\)
+Step 3: \(x<-1:\ f=(x^2-1)-a(x-1)-b(x+1),\quad f'=2x-a-b\)
+Step 4: \(x=1:\ 2+a+b=-2-a+b\Rightarrow a=-2\)
+Step 5: \(x=-1:\ 2-a+b=-2-a-b\Rightarrow b=-2\)
+Worked derivation: \[a+b=-2+(-2)=-4\]
+Check: \[f'(1^+)=2-2-2=-2=f'(1^-),\qquad f'(-1^+)=2+2-2=2=f'(-1^-)\]
+Why: \(f'(1^+)-f'(1^-)=4+2a,\quad f'(-1^+)-f'(-1^-)=4+2b\)
+Why not the others: (A) \(a=b=2:\ 4+2a=8\neq0\); (C) \(a=-2,\ b=0:\ 4+2b=4\neq0\); (D) \(a=2,\ b=-2:\ 4+2a=8\neq0\).
+Key point: \(\dfrac{d}{dx}\,c|x-x_0|\ \text{jumps by }2c\text{ at }x_0\)
+
+@@ Q38
+Answer: (A) \(9\).
+Given: \(n_A=n_B=4,\quad\bar x_A=2,\ \sigma_A^2=1,\quad\bar x_B=6,\ \sigma_B^2=9\)
+Formula/Principle: \(\sigma^2=\dfrac{\sum n_i\left[\sigma_i^2+(\bar x_i-\bar x)^2\right]}{\sum n_i}\)
+Step 1: \(\bar x=\dfrac{4(2)+4(6)}{8}=4\)
+Step 2: \(\sigma_A^2+(\bar x_A-\bar x)^2=1+(2-4)^2=5\)
+Step 3: \(\sigma_B^2+(\bar x_B-\bar x)^2=9+(6-4)^2=13\)
+Worked derivation: \[\sigma^2=\frac{4(5)+4(13)}{8}=\frac{20+52}{8}=\frac{72}{8}=9\]
+Check: \[\sum x^2=4(1+2^2)+4(9+6^2)=20+180=200,\qquad\sigma^2=\frac{200}{8}-4^2=25-16=9\]
+Why: \(\sum(x-\bar x)^2=\sum_i n_i\sigma_i^2+\sum_i n_i(\bar x_i-\bar x)^2\)
+Why not the others: (B) \(\dfrac{1+9}{2}=5\) (\((\bar x_i-\bar x)^2\) omitted); (C) \(5+(4+4)=13\) (\(\div2\) omitted); (D) \(\dfrac{72}{4}=18\) (\(n=4\) for 8 values).
+Key point: \(\sigma^2_{\text{combined}}=\overline{\sigma_i^2}+\overline{(\bar x_i-\bar x)^2}\)
+
+@@ Q39
+Answer: (D) \(2\).
+Given: \(L=\displaystyle\lim_{x\to0}\frac{\sqrt{1+3x}-\sqrt{1-x}}{x}\)
+Formula/Principle: \(\sqrt p-\sqrt q=\dfrac{p-q}{\sqrt p+\sqrt q}\)
+Step 1: \((1+3x)-(1-x)=4x\)
+Step 2: \(\dfrac{\sqrt{1+3x}-\sqrt{1-x}}{x}=\dfrac{4x}{x\left(\sqrt{1+3x}+\sqrt{1-x}\right)}=\dfrac{4}{\sqrt{1+3x}+\sqrt{1-x}},\quad x\neq0\)
+Worked derivation: \[L=\frac{4}{\sqrt1+\sqrt1}=\frac42=2\]
+Check: \[\frac{d}{dx}\left[\sqrt{1+3x}-\sqrt{1-x}\right]_{x=0}=\frac32+\frac12=2\]
+Why: \(x\to0:\ \dfrac00\ \text{form};\quad x\neq0\Rightarrow\dfrac{4x}{x}=4\)
+Why not the others: (A) \(\dfrac{4x}{x}=4\) (\(\sqrt{1+3x}+\sqrt{1-x}\) omitted); (B) \(\dfrac{4}{2\cdot2}=1\); (C) \(\sqrt1-\sqrt1=0\) (denominator \(x\to0\) ignored).
+Key point: \(\displaystyle\lim_{x\to0}\frac{\sqrt{1+ax}-\sqrt{1+bx}}{x}=\frac{a-b}{2}\)
+
+@@ Q40
+Answer: (C) \(3/16\).
+Given: \(6!=720\ \text{equally likely assignments}\)
+Formula/Principle: \(N=\dbinom62D_4,\quad D_n=n!\displaystyle\sum_{k=0}^{n}\frac{(-1)^k}{k!}\)
+Step 1: \(\dbinom62=15\)
+Step 2: \(D_4=24\left(1-1+\dfrac12-\dfrac16+\dfrac1{24}\right)=12-4+1=9\)
+Step 3: \(N=15\times9=135\)
+Worked derivation: \[P=\frac{135}{720}=\frac{3}{16}\]
+Check: \[D_4=\underbrace{3!}_{\text{4-cycles}}+\underbrace{3}_{\text{two 2-cycles}}=6+3=9\]
+Why: \(\text{exactly 2 fixed}\Leftrightarrow\text{2 fixed and other 4 deranged}\)
+Why not the others: (A) \(\dfrac{15\times6}{720}=\dfrac18\) (\(D_4=6\)); (B) \(\dfrac{15}{720}=\dfrac1{48}\) (\(D_4=1\)); (D) \(\dfrac{15\times4!}{720}=\dfrac12\) (\(4!\) for \(D_4\)).
+Key point: \(P(\text{exactly }k\text{ fixed})=\dfrac{\binom nkD_{n-k}}{n!}\)
+
+@@ Q41
+Answer: (A) \(3\pi/4\).
+Given: \(\alpha=\tan^{-1}2,\quad\beta=\tan^{-1}3,\quad\alpha,\beta\in\left(\tfrac\pi4,\tfrac\pi2\right)\)
+Formula/Principle: \(\tan(\alpha+\beta)=\dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\)
+Step 1: \(\tan(\alpha+\beta)=\dfrac{2+3}{1-2\cdot3}=\dfrac{5}{-5}=-1\)
+Step 2: \(\tfrac\pi4+\tfrac\pi4<\alpha+\beta<\tfrac\pi2+\tfrac\pi2\Rightarrow\tfrac\pi2<\alpha+\beta<\pi\)
+Worked derivation: \[\tan(\alpha+\beta)=-1,\quad\frac\pi2<\alpha+\beta<\pi\ \Rightarrow\ \alpha+\beta=\frac{3\pi}{4}\]
+Check: \[\tan^{-1}2\approx1.107,\quad\tan^{-1}3\approx1.249,\quad1.107+1.249=2.356\approx\frac{3\pi}{4}\]
+Why: \(xy>1,\ x,y>0\Rightarrow\tan^{-1}x+\tan^{-1}y=\pi+\tan^{-1}\dfrac{x+y}{1-xy}\)
+Why not the others: (B) \(\tan^{-1}(-1)=-\tfrac\pi4<0<\alpha+\beta\); (C) \(\dfrac{2+3}{6-1}=1\Rightarrow\tfrac\pi4<\alpha\); (D) \(\tan(\alpha+\beta)\neq\tan\alpha+\tan\beta=5\).
+Key point: \(\tan^{-1}x+\tan^{-1}y=\tan^{-1}\dfrac{x+y}{1-xy}+\pi\ \ (x,y>0,\ xy>1)\)
+
+@@ Q42
+Answer: (B) \(3\).
+Given: \(\dfrac{dy}{dx}=\dfrac{y}{x(1+x)},\quad x>0,\quad y(1)=2\)
+Formula/Principle: \(\dfrac{1}{x(1+x)}=\dfrac1x-\dfrac1{1+x}\)
+Step 1: \(\displaystyle\int\frac{dy}{y}=\int\left(\frac1x-\frac1{1+x}\right)dx\)
+Step 2: \(\ln y=\ln x-\ln(1+x)+\ln C\Rightarrow y=\dfrac{Cx}{1+x}\)
+Step 3: \(y(1)=\dfrac C2=2\Rightarrow C=4\)
+Worked derivation: \[y(3)=\frac{4\cdot3}{1+3}=\frac{12}{4}=3\]
+Check: \[y=\frac{4x}{1+x}:\quad\frac{dy}{dx}=\frac{4}{(1+x)^2}=\frac{y}{x(1+x)}\]
+Why: \(y(1)=2>0\Rightarrow y>0\ \text{on }x>0\)
+Why not the others: (A) \(C=2:\ \dfrac{2\cdot3}{4}=\dfrac32\); (C) \(\dfrac{4\cdot3}{1+1}=6\) (denominator at \(x=1\)); (D) \(C=4\neq y(3)\).
+Key point: \(\dfrac{dy}{y}=\dfrac{dx}{x(1+x)}\Rightarrow y=\dfrac{Cx}{1+x}\)
+
+@@ Q43
+Answer: (C) \(a>3\).
+Given: \(f(x)=x^2-2ax+a+2,\quad r_1<1<r_2\)
+Formula/Principle: \(\text{leading coefficient}>0:\quad r_1<k<r_2\iff f(k)<0\)
+Step 1: \(f(1)=1-2a+a+2=3-a\)
+Step 2: \(f(1)<0\iff3-a<0\)
+Worked derivation: \[r_1<1<r_2\iff3-a<0\iff a>3\]
+Check: \[a=4:\ x^2-8x+6=0,\quad x=4\pm\sqrt{10}\approx0.84,\ 7.16\]
+Why: \(f(1)<0,\ f(\pm\infty)>0\Rightarrow\text{one root on each side of }1\)
+Why not the others: (A) \(a=3:\ f(1)=0\Rightarrow r=1\); (B) \(a=-2:\ x^2+4x=0\Rightarrow x=-4,\ 0<1\); (D) \(a=0:\ x^2+2=0,\ D=-8<0\).
+Key point: \(\alpha<k<\beta\iff a_0\,f(k)<0\) for \(f=a_0x^2+\dots\)
+
+@@ Q44
+Answer: (D) \(8\sqrt{2}\) square units.
+Given: \(y^2=4x,\quad S=(1,0),\quad\text{chord: }y=x-1\)
+Formula/Principle: \((x,y)=(t^2,2t),\quad\text{tangent: }ty=x+t^2,\quad\text{Area}=\tfrac12\,PQ\cdot h\)
+Step 1: \(2t=t^2-1\Rightarrow t^2-2t-1=0\Rightarrow t_1+t_2=2,\ t_1t_2=-1\)
+Step 2: \((t_1-t_2)^2=(t_1+t_2)^2-4t_1t_2=4+4=8\)
+Step 3: \(PQ^2=(t_1^2-t_2^2)^2+(2t_1-2t_2)^2=(t_1-t_2)^2\left[(t_1+t_2)^2+4\right]=8\cdot8=64\Rightarrow PQ=8\)
+Step 4: \(t_1y-t_2y=t_1^2-t_2^2\Rightarrow y_T=t_1+t_2=2,\quad x_T=t_1y_T-t_1^2=t_1t_2=-1\)
+Step 5: \(h=\dfrac{|x_T-y_T-1|}{\sqrt{1^2+1^2}}=\dfrac{|-1-2-1|}{\sqrt2}=2\sqrt2\)
+Worked derivation: \[\text{Area}=\frac12\cdot8\cdot2\sqrt2=8\sqrt2\]
+Check: \[PQ=\frac{4a}{\sin^2\theta}=\frac{4}{\sin^245^\circ}=8,\qquad x_T=-1=\text{directrix}\]
+Why: \(T=(t_1t_2,\ t_1+t_2)\)
+Why not the others: (A) \(\tfrac12\cdot4\cdot2\sqrt2=4\sqrt2\) (\(PQ=4\)); (B) \(\tfrac12\cdot8\cdot2=8\) (\(h=y_T\)); (C) \(8\cdot2\sqrt2=16\sqrt2\) (\(\tfrac12\) omitted).
+Key point: \(\text{tangents at }t_1,t_2\ \text{meet at }(at_1t_2,\ a(t_1+t_2))\)
+
+@@ Q45
+Answer: (B) \(3\sqrt3/2\) square units.
+Given: \(|\mathbf a|=|\mathbf b|=1,\quad\angle(\mathbf a,\mathbf b)=60^\circ\)
+Formula/Principle: \(\mathcal A=|\mathbf u\times\mathbf v|,\quad\mathbf a\times\mathbf a=\mathbf 0,\quad\mathbf b\times\mathbf a=-\mathbf a\times\mathbf b\)
+Step 1: \((\mathbf a+2\mathbf b)\times(\mathbf a-\mathbf b)=\mathbf a\times\mathbf a-\mathbf a\times\mathbf b+2\mathbf b\times\mathbf a-2\mathbf b\times\mathbf b\)
+Step 2: \(=-\mathbf a\times\mathbf b-2\mathbf a\times\mathbf b=-3\,\mathbf a\times\mathbf b\)
+Step 3: \(|\mathbf a\times\mathbf b|=1\cdot1\cdot\sin60^\circ=\dfrac{\sqrt3}{2}\)
+Worked derivation: \[\mathcal A=3\cdot\frac{\sqrt3}{2}=\frac{3\sqrt3}{2}\]
+Check: \[|\mathbf u|^2=1+4+4\cdot\tfrac12=7,\ |\mathbf v|^2=1+1-1=1,\ \mathbf u\cdot\mathbf v=1+\tfrac12-2=-\tfrac12,\quad\mathcal A^2=7\cdot1-\tfrac14=\tfrac{27}{4}\]
+Why: \(\mathcal A^2=|\mathbf u|^2|\mathbf v|^2-(\mathbf u\cdot\mathbf v)^2\)
+Why not the others: (A) \(|\mathbf a\times\mathbf b|=\dfrac{\sqrt3}{2}\) (factor 3 omitted); (C) \(3\cdot1\) (\(\sin60^\circ=1\)); (D) \(\dfrac12\cdot\dfrac{3\sqrt3}{2}\) (triangle).
+Key point: \((p\mathbf a+q\mathbf b)\times(r\mathbf a+s\mathbf b)=(ps-qr)\,\mathbf a\times\mathbf b\)
+
+@@ Q46
+Answer: (A) Average speed \(2\ \mathrm{m\,s^{-1}}\); average velocity \(0\).
+Given: \((t,v)=(0,0),\ (2,4),\ (4,-4),\ (6,0)\ \text{joined by straight lines};\quad v=0\ \text{at }t=3\ \mathrm s\)
+Formula/Principle: \(\Delta x=\displaystyle\int v\,dt,\quad s=\int|v|\,dt,\quad\bar v=\frac{\Delta x}{\Delta t},\quad\overline{\text{speed}}=\frac{s}{\Delta t}\)
+Step 1: \(0\to2\ \mathrm s:\ \tfrac12(2)(4)=4\ \mathrm m\)
+Step 2: \(2\to3\ \mathrm s:\ \tfrac12(1)(4)=2\ \mathrm m\)
+Step 3: \(3\to4\ \mathrm s:\ \tfrac12(1)(-4)=-2\ \mathrm m\)
+Step 4: \(4\to6\ \mathrm s:\ \tfrac12(2)(-4)=-4\ \mathrm m\)
+Worked derivation: \[\begin{aligned}\Delta x&=4+2-2-4=0\ \mathrm m,&\bar v&=\frac{0}{6}=0\\s&=4+2+2+4=12\ \mathrm m,&\overline{\text{speed}}&=\frac{12}{6}=2\ \mathrm{m\,s^{-1}}\end{aligned}\]
+Check: \[v(t)=-v(6-t)\Rightarrow\Delta x=0\]
+Why: \(s=\displaystyle\int_0^6|v|\,dt\geq\left|\int_0^6v\,dt\right|\)
+Why not the others: (B) \(\bar v=0,\ \overline{\text{speed}}=2\) interchanged; (C) \(\dfrac{4+4}{6}=\dfrac43\) (areas for \(2\to4\ \mathrm s\) omitted); (D) \(\dfrac{4+2+2+4}{6}=2\) used for \(\bar v\).
+Key point: \(\bar v=\dfrac{\int v\,dt}{\Delta t},\quad\overline{\text{speed}}=\dfrac{\int|v|\,dt}{\Delta t}\)
+
+@@ Q47
+Answer: (C) \(ML^{-2}T^{-2}\).
+Given: \(P=a\rho v^2+bh,\quad[a]=1\)
+Formula/Principle: \([bh]=[P]\)
+Step 1: \([P]=\dfrac{[F]}{[A]}=\dfrac{MLT^{-2}}{L^2}=ML^{-1}T^{-2}\)
+Step 2: \([b]=\dfrac{[P]}{[h]}=\dfrac{ML^{-1}T^{-2}}{L}\)
+Step 3: \([b]=ML^{-2}T^{-2}\)
+Worked derivation: \[[b]=\frac{ML^{-1}T^{-2}}{L}=ML^{-2}T^{-2}\]
+Check: \[[\rho g]=(ML^{-3})(LT^{-2})=ML^{-2}T^{-2},\qquad[\rho v^2]=(ML^{-3})(L^2T^{-2})=ML^{-1}T^{-2}=[P]\]
+Why: \([X+Y]\ \text{defined}\Rightarrow[X]=[Y]\)
+Why not the others: (A) \([P]=ML^{-1}T^{-2}\) (\(\div[h]\) omitted); (B) \([g]=LT^{-2}\) (\([\rho]\) omitted); (D) \([\rho]=ML^{-3}\) (\([g]\) omitted).
+Key point: \(P=\rho gh\Rightarrow[b]=[\rho g]\)
+
+@@ Q48
+Answer: (B) \(\tfrac{15}{2}\rho v^2\).
+Given: \(r_1=r,\ v_1=v,\ r_2=\dfrac r2,\ h_1=h_2\)
+Formula/Principle: \(A_1v_1=A_2v_2,\quad P_1+\tfrac12\rho v_1^2=P_2+\tfrac12\rho v_2^2\)
+Step 1: \(\pi r^2v=\pi\left(\dfrac r2\right)^2v_2\Rightarrow v_2=4v\)
+Step 2: \(P_1-P_2=\tfrac12\rho\left(v_2^2-v_1^2\right)\)
+Worked derivation: \[P_1-P_2=\frac12\rho\left[(4v)^2-v^2\right]=\frac12\rho\,(15v^2)=\frac{15}{2}\rho v^2\]
+Check: \[[\rho v^2]=(ML^{-3})(L^2T^{-2})=ML^{-1}T^{-2}=[P];\qquad v_2>v_1\Rightarrow P_1>P_2\]
+Why: \(\text{incompressible, steady, non-viscous, }h_1=h_2\)
+Why not the others: (A) \(v_2=2v:\ \tfrac12\rho(4v^2-v^2)=\tfrac32\rho v^2\); (C) \(\tfrac12\rho(4v)^2=8\rho v^2\) (\(-\tfrac12\rho v^2\) omitted); (D) \(\dfrac{A_1}{A_2}\rho v^2=4\rho v^2\).
+Key point: \(P_1-P_2=\tfrac12\rho v_1^2\left[\left(\dfrac{A_1}{A_2}\right)^2-1\right]\)
+
+@@ Q49
+Answer: (D) \(4\omega/3\) and \(mR^2\omega^2/2\).
+Given: \(I_{\text{disc}}=2mR^2,\quad r_i=R,\quad r_f=\dfrac R2,\quad\omega_i=\omega,\quad\tau_{\text{ext}}=0\)
+Formula/Principle: \(I_i\omega_i=I_f\omega_f,\quad W=K_f-K_i,\quad K=\tfrac12I\omega^2\)
+Step 1: \(I_i=2mR^2+mR^2=3mR^2\)
+Step 2: \(I_f=2mR^2+m\left(\dfrac R2\right)^2=\dfrac94mR^2\)
+Step 3: \(\omega_f=\dfrac{I_i}{I_f}\,\omega=\dfrac{3}{9/4}\,\omega=\dfrac43\omega\)
+Step 4: \(K_i=\tfrac12(3mR^2)\omega^2=\tfrac32mR^2\omega^2\)
+Step 5: \(K_f=\tfrac12\left(\tfrac94mR^2\right)\left(\tfrac43\omega\right)^2=2mR^2\omega^2\)
+Worked derivation: \[W=K_f-K_i=2mR^2\omega^2-\frac32mR^2\omega^2=\frac12mR^2\omega^2\]
+Check: \[K=\frac{L^2}{2I},\quad L=3mR^2\omega:\quad K_f=\frac{9m^2R^4\omega^2}{2\cdot\tfrac94mR^2}=2mR^2\omega^2\]
+Why: \(\tau_{\text{ext}}=0\Rightarrow L=\text{const};\quad W_{\text{actuator}}\neq0\Rightarrow K\neq\text{const}\)
+Why not the others: (A) \(\omega_f=\dfrac{I_f}{I_i}\,\omega=\dfrac34\omega\) (ratio inverted); (B) \(K_f-K_i=\tfrac12mR^2\omega^2\neq0\); (C) \(\omega_f=\omega\Rightarrow L_f=\tfrac94mR^2\omega\neq3mR^2\omega\).
+Key point: \(L=\text{const}\Rightarrow K=\dfrac{L^2}{2I}\propto\dfrac1I\)
+
+@@ Q50
+Answer: (A) Consistent with an irreversible engine.
+Given: \(Q_h=800\ \mathrm J,\quad W=300\ \mathrm J,\quad T_h=500\ \mathrm K,\quad T_c=300\ \mathrm K\)
+Formula/Principle: \(Q_h=W+Q_c,\quad\eta=\dfrac{W}{Q_h},\quad\eta\leq\eta_C=1-\dfrac{T_c}{T_h}\)
+Step 1: \(Q_c=800-300=500\ \mathrm J\)
+Step 2: \(\eta=\dfrac{300}{800}=0.375\)
+Step 3: \(\eta_C=1-\dfrac{300}{500}=0.40\)
+Worked derivation: \[\eta=0.375<\eta_C=0.40\]
+Check: \[\Delta S_{\text{reservoirs}}=-\frac{800}{500}+\frac{500}{300}=-1.600+1.667=+0.067\ \mathrm{J\,K^{-1}}>0\]
+Why: \(\eta<\eta_C\iff\Delta S_{\text{total}}>0\iff\text{irreversible}\)
+Why not the others: (B) \(\text{reversible}\Rightarrow\eta=0.40,\ W=0.40\times800=320\ \mathrm J\neq300\ \mathrm J\); (C) \(300+500=800\ \mathrm J\); (D) \(0.375\not>0.40\).
+Key point: \(\Delta S_{\text{total}}=-\dfrac{Q_h}{T_h}+\dfrac{Q_c}{T_c}\geq0\)
+
+@@ Q51
+Answer: (B) \(3mg/2\).
+Given: \(x_{\text{eq}}=0.10\ \mathrm m,\quad x_0=0.03\ \mathrm m,\quad\dfrac{v_0}{\omega}=0.04\ \mathrm m,\quad\omega=\sqrt{k/m}\)
+Formula/Principle: \(kx_{\text{eq}}=mg,\quad A^2=x_0^2+\left(\dfrac{v_0}{\omega}\right)^2,\quad T=k\,(x_{\text{eq}}+x)\)
+Step 1: \(k=\dfrac{mg}{0.10\ \mathrm m}\)
+Step 2: \(A=\sqrt{0.03^2+0.04^2}=\sqrt{0.0025}=0.05\ \mathrm m\)
+Step 3: \(x_{\max}=0.10+0.05=0.15\ \mathrm m\)
+Worked derivation: \[T_{\max}=k\,(0.15\ \mathrm m)=\frac{mg}{0.10}\,(0.15)=\frac32mg\]
+Check: \[x_{\min}=0.10-0.05=0.05\ \mathrm m>0\Rightarrow T_{\min}=\tfrac12mg>0\]
+Why: \(\tfrac12kA^2=\tfrac12kx_0^2+\tfrac12mv_0^2\)
+Why not the others: (A) \(kA=\dfrac{mg}{0.10}(0.05)=\dfrac{mg}{2}\) (net force); (C) \(A=0.03+0.04=0.07\ \mathrm m\Rightarrow k(0.17)=\dfrac{17}{10}mg\); (D) \(k(0.10)=mg\) (\(A\) omitted).
+Key point: \(T_{\max}=mg\left(1+\dfrac{A}{x_{\text{eq}}}\right)\)
+
+@@ Q52
+Answer: (C) \(508\ \mathrm{Hz}\) and \((127/128)^2T\).
+Given: \(f_s=512\ \mathrm{Hz},\quad f_b=4\ \mathrm{Hz};\quad T'=\left(\dfrac{255}{256}\right)^2T\Rightarrow f_b'=2\ \mathrm{Hz}\)
+Formula/Principle: \(f_s\propto\sqrt T,\quad f_b=|f_s-f_{\text{fork}}|\)
+Step 1: \(f_s'=512\times\dfrac{255}{256}=510\ \mathrm{Hz}\)
+Step 2: \(f_{\text{fork}}=512\pm4=508\ \text{or}\ 516\ \mathrm{Hz}\)
+Step 3: \(|510-508|=2\ \mathrm{Hz},\quad|510-516|=6\ \mathrm{Hz}\Rightarrow f_{\text{fork}}=508\ \mathrm{Hz}\)
+Worked derivation: \[f_b=0:\quad\frac{T''}{T}=\left(\frac{508}{512}\right)^2=\left(\frac{127}{128}\right)^2\]
+Check: \[512\times\frac{127}{128}=508\ \mathrm{Hz}\]
+Why: \(f=\dfrac{1}{2L}\sqrt{\dfrac T\mu},\quad L,\ \mu\ \text{fixed}\)
+Why not the others: (A) \(510-4=506\ \mathrm{Hz}\Rightarrow|512-506|=6\neq4\); (B) \(510\ \mathrm{Hz}=f_s'\Rightarrow|512-510|=2\neq4\); (D) \(516\ \mathrm{Hz}\Rightarrow|510-516|=6\neq2\).
+Key point: \(\dfrac{T''}{T}=\left(\dfrac{f''}{f}\right)^2\)
+
+@@ Q53
+Answer: (D) \(7a/4\).
+Given: \(E_x=-\dfrac{E_0}{a}x\ (0\le x\le a),\quad E_x=-E_0\ (a\le x\le2a),\quad K(0)=\dfrac54qE_0a\)
+Formula/Principle: \(K(x)-K(0)=q\displaystyle\int_0^xE_x\,dx'\)
+Step 1: \(q\displaystyle\int_0^aE_x\,dx=-q\cdot\tfrac12\,a\,E_0=-\tfrac12qE_0a\)
+Step 2: \(K(a)=\tfrac54qE_0a-\tfrac12qE_0a=\tfrac34qE_0a\)
+Step 3: \(x>a:\ K(x)=\tfrac34qE_0a-qE_0(x-a)\)
+Worked derivation: \[K(x)=0\Rightarrow x-a=\frac34a\Rightarrow x=\frac74a\]
+Check: \[q\int_0^{7a/4}E_x\,dx=-qE_0\left(\frac a2+\frac{3a}{4}\right)=-\frac54qE_0a=-K(0),\qquad a<\frac74a<2a\]
+Why: \(qE_x<0\ \text{for }0<x\le2a\Rightarrow K\ \text{decreases monotonically}\)
+Why not the others: (A) \(x=\tfrac54a:\ W=-qE_0\left(\tfrac a2+\tfrac a4\right)=-\tfrac34qE_0a\neq-\tfrac54qE_0a\); (B) \(x=\tfrac32a:\ W=-qE_0\left(\tfrac a2+\tfrac a2\right)=-qE_0a\neq-\tfrac54qE_0a\); (C) \(x=2a:\ W=-qE_0\left(\tfrac a2+a\right)=-\tfrac32qE_0a\neq-\tfrac54qE_0a\).
+Key point: \(\Delta K=q\times(\text{signed area under }E_x\text{–}x)\)
+
+@@ Q54
+Answer: (B) \(12/17\ \mathrm A\) from A to B.
+Given: \(V=12\ \mathrm V;\ \text{top}\to A:\ 2\ \Omega;\ A\to\text{bottom}:\ 4\ \Omega;\ \text{top}\to B:\ 3\ \Omega;\ B\to\text{bottom}:\ 3\ \Omega;\ R_{\text{ammeter}}=0\)
+Formula/Principle: \(V_A=V_B=V_m,\quad I=\dfrac{\Delta V}{R},\quad\sum I_{\text{node}}=0\)
+Step 1: \(R_u=\dfrac{2\times3}{2+3}=\dfrac65\ \Omega\)
+Step 2: \(R_l=\dfrac{4\times3}{4+3}=\dfrac{12}{7}\ \Omega\)
+Step 3: \(I=\dfrac{12}{\frac65+\frac{12}{7}}=\dfrac{12}{\frac{102}{35}}=\dfrac{70}{17}\ \mathrm A\)
+Step 4: \(V_m=I\,R_l=\dfrac{70}{17}\times\dfrac{12}{7}=\dfrac{120}{17}\ \mathrm V\)
+Step 5: \(I_{2\Omega}=\dfrac{12-\frac{120}{17}}{2}=\dfrac{42}{17}\ \mathrm A,\quad I_{4\Omega}=\dfrac{120/17}{4}=\dfrac{30}{17}\ \mathrm A\)
+Worked derivation: \[I_{A\to B}=I_{2\Omega}-I_{4\Omega}=\frac{42}{17}-\frac{30}{17}=\frac{12}{17}\ \mathrm A\]
+Check: \[\text{node B}:\ I_{3\Omega,\text{top}}=\frac{12-\frac{120}{17}}{3}=\frac{28}{17},\quad I_{3\Omega,\text{bottom}}=\frac{120/17}{3}=\frac{40}{17},\quad\frac{40}{17}-\frac{28}{17}=\frac{12}{17}\ \mathrm A\]
+Why: \(R_{\text{ammeter}}=0\Rightarrow V_A=V_B,\ I_{AB}\neq0\)
+Why not the others: (A) \(V_A-V_B=12\cdot\tfrac46-12\cdot\tfrac36=2\ \mathrm V\) (ammeter removed); (C) \(I_{2\Omega}>I_{4\Omega}\Rightarrow A\to B\); (D) \(V_{AB}=0\not\Rightarrow I_{AB}=0\).
+Key point: \(\dfrac{2}{4}\neq\dfrac{3}{3}\Rightarrow I_{AB}\neq0\)
+
+@@ Q55
+Answer: (A) Mass number 234 and atomic number 92.
+Given: \((A,Z)=(238,92);\quad1\,\alpha,\ 2\,\beta^-\)
+Formula/Principle: \(\alpha:\ (A,Z)\to(A-4,\ Z-2);\quad\beta^-:\ (A,Z)\to(A,\ Z+1)\)
+Step 1: \((238,92)\xrightarrow{\alpha}(234,90)\)
+Step 2: \((234,90)\xrightarrow{\beta^-}(234,91)\xrightarrow{\beta^-}(234,92)\)
+Worked derivation: \[A_f=238-4=234,\qquad Z_f=92-2+1+1=92\]
+Check: \[\text{charge}:\ 92=92+2+2(-1);\qquad\text{nucleons}:\ 238=234+4\]
+Why: \(\alpha={}^4_2\mathrm{He},\quad\beta^-={}^{\ 0}_{-1}e\)
+Why not the others: (B) \((234,90)\) (\(2\beta^-\) omitted); (C) \((238,92+2)\) (\(\alpha\) omitted); (D) \(238-2=236\) (\(\Delta A_\alpha=-2\)).
+Key point: \(\Delta A=-4n_\alpha,\quad\Delta Z=-2n_\alpha+n_{\beta^-}\)
+
+@@ Q56
+Answer: (D) \(mgR\sin\theta/(B^2l^2)\).
+Given: \(m,\ l,\ \theta,\ B\perp\text{rail plane},\ R\)
+Formula/Principle: \(\mathcal E=Blv,\quad I=\dfrac{\mathcal E}{R},\quad F_B=BIl\)
+Step 1: \(I=\dfrac{Blv}{R}\)
+Step 2: \(F_B=B\left(\dfrac{Blv}{R}\right)l=\dfrac{B^2l^2v}{R}\)
+Step 3: \(a=0:\ mg\sin\theta=\dfrac{B^2l^2v_t}{R}\)
+Worked derivation: \[v_t=\frac{mgR\sin\theta}{B^2l^2}\]
+Check: \[mg\sin\theta\cdot v_t=I^2R=\frac{B^2l^2v_t^2}{R};\qquad\left[\frac{mgR}{B^2l^2}\right]=\mathrm{m\,s^{-1}}\]
+Why: \(m\dfrac{dv}{dt}=mg\sin\theta-\dfrac{B^2l^2v}{R}\)
+Why not the others: (A) \(mg\cos\theta\perp\text{rails}\); (B) \(\tfrac12mg\sin\theta\neq F_B\); (C) \(2mg\sin\theta\neq F_B\).
+Key point: \(F_B=\dfrac{B^2l^2v}{R}\)
+
+@@ Q57
+Answer: (C) \(7\ \mathrm{cm}\); unchanged.
+Given: \(t_1=6\ \mathrm{cm},\ n_1=\tfrac32;\quad t_2=4\ \mathrm{cm},\ n_2=\tfrac43;\quad n_{\text{air}}=1\)
+Formula/Principle: \(d_{\text{app}}=\displaystyle\sum_i\frac{t_i}{n_i}\quad(\text{near-normal viewing})\)
+Step 1: \(\dfrac{t_1}{n_1}=\dfrac{6}{3/2}=4\ \mathrm{cm}\)
+Step 2: \(\dfrac{t_2}{n_2}=\dfrac{4}{4/3}=3\ \mathrm{cm}\)
+Worked derivation: \[d_{\text{app}}=4+3=7\ \mathrm{cm}\]
+Check: \[\text{reversed order}:\ \frac{4}{4/3}+\frac{6}{3/2}=3+4=7\ \mathrm{cm}\]
+Why: \(\dfrac{t_1}{n_1}+\dfrac{t_2}{n_2}=\dfrac{t_2}{n_2}+\dfrac{t_1}{n_1}\)
+Why not the others: (A) \(6+4=10\ \mathrm{cm}\) (\(n_i=1\)); (B) \(7\ \mathrm{cm}\) but \(3+4=4+3\); (D) \(6\cdot\tfrac32+4\cdot\tfrac43=\tfrac{43}{3}\ \mathrm{cm}\) (\(t_in_i\)).
+Key point: \(d_{\text{app}}=\displaystyle\sum_i\frac{t_i}{n_i}\)
+
+@@ Q58
+Answer: (A) \(10\ \mathrm V\) and \(16\ \mathrm W\).
+Given: \(I=2\ \mathrm A,\quad V_R=8\ \mathrm V,\quad V_L=10\ \mathrm V,\quad V_C=4\ \mathrm V\ (\text{rms})\)
+Formula/Principle: \(V=\sqrt{V_R^2+(V_L-V_C)^2},\quad P=IV_R=VI\cos\phi\)
+Step 1: \(V_L-V_C=10-4=6\ \mathrm V\)
+Step 2: \(V=\sqrt{8^2+6^2}=\sqrt{100}=10\ \mathrm V\)
+Worked derivation: \[P=IV_R=2\times8=16\ \mathrm W\]
+Check: \[\cos\phi=\frac{V_R}{V}=0.8,\quad VI\cos\phi=10\times2\times0.8=16\ \mathrm W;\qquad R=\frac82=4\ \Omega,\ I^2R=16\ \mathrm W\]
+Why: \(V_L\ \text{leads }I\text{ by }90^\circ,\quad V_C\ \text{lags }I\text{ by }90^\circ,\quad\langle P_L\rangle=\langle P_C\rangle=0\)
+Why not the others: (B) \(8+10+4=22\ \mathrm V,\ 22\times2=44\ \mathrm W\) (scalar sum); (C) \(VI=10\times2=20\ \mathrm{VA}\) (\(\cos\phi\) omitted); (D) \(8+10-4=14\ \mathrm V,\ 14\times2=28\ \mathrm W\).
+Key point: \(P=VI\cos\phi=I^2R\)
+
+@@ Q59
+Answer: (B) \(1/2\).
+Given: \(v(t)=V_0\sin\omega t,\quad T=\dfrac{2\pi}{\omega},\quad\text{ideal diode}\)
+Formula/Principle: \(\langle P\rangle=\dfrac{1}{T}\displaystyle\int_0^T\frac{v_R^2}{R}\,dt\)
+Step 1: \(P_{\text{direct}}=\dfrac{V_0^2}{RT}\displaystyle\int_0^T\sin^2\omega t\,dt=\dfrac{V_0^2}{RT}\cdot\dfrac T2=\dfrac{V_0^2}{2R}\)
+Step 2: \(v_R=V_0\sin\omega t\ \left(0<t<\tfrac T2\right),\quad v_R=0\ \left(\tfrac T2<t<T\right)\)
+Step 3: \(P_{\text{half}}=\dfrac{V_0^2}{RT}\displaystyle\int_0^{T/2}\sin^2\omega t\,dt=\dfrac{V_0^2}{RT}\cdot\dfrac T4=\dfrac{V_0^2}{4R}\)
+Worked derivation: \[\frac{P_{\text{half}}}{P_{\text{direct}}}=\frac{V_0^2/4R}{V_0^2/2R}=\frac12\]
+Check: \[V_{\text{rms,half}}=\frac{V_0}{2},\quad V_{\text{rms,direct}}=\frac{V_0}{\sqrt2},\quad\left(\frac{V_0/2}{V_0/\sqrt2}\right)^2=\frac12\]
+Why: \(\langle P\rangle=\dfrac{\langle v_R^2\rangle}{R}\neq\dfrac{\langle v_R\rangle^2}{R}\)
+Why not the others: (A) \(\dfrac{V_0/2}{V_0/\sqrt2}=\dfrac{1}{\sqrt2}\) (rms voltages, not powers); (C) \(\dfrac{(V_0/2)^2}{V_0^2}=\dfrac14\) (\(V_0\) for \(V_{\text{rms,direct}}\)); (D) \(v_R=0\ \text{for }\tfrac T2<t<T\).
+Key point: \(P\propto V_{\text{rms}}^2\)
+
+@@ Q60
+Answer: (D) \(3.0\,\mu\mathrm m\).
+Given: \(\lambda_1=600\ \mathrm{nm},\quad\lambda_2=1000\ \mathrm{nm},\quad n=1.50,\quad\phi_0=\pi\)
+Formula/Principle: \(\delta=(n-1)t,\quad\phi=\pi+\dfrac{2\pi\delta}{\lambda}=2\pi k\)
+Step 1: \(\delta=\left(k-\tfrac12\right)\lambda\Rightarrow\delta=(2r+1)\dfrac{\lambda_1}{2}=(2s+1)\dfrac{\lambda_2}{2}\)
+Step 2: \((2r+1)(300\ \mathrm{nm})=(2s+1)(500\ \mathrm{nm})\Rightarrow3(2r+1)=5(2s+1)\)
+Step 3: \(2r+1=5,\quad2s+1=3\Rightarrow\delta=1500\ \mathrm{nm}\)
+Worked derivation: \[t=\frac{\delta}{n-1}=\frac{1500\ \mathrm{nm}}{0.50}=3000\ \mathrm{nm}=3.0\ \mu\mathrm m\]
+Check: \[\frac{1500}{600}=2.5,\qquad\frac{1500}{1000}=1.5\]
+Why: \(\text{bright}\iff\dfrac{\delta}{\lambda}=k-\tfrac12\ \text{for both }\lambda_1,\ \lambda_2\)
+Why not the others: (A) \(\delta=300\ \mathrm{nm}:\ \dfrac{300}{1000}=0.3\); (B) \(\delta=600\ \mathrm{nm}:\ \dfrac{600}{600}=1.0,\ \dfrac{600}{1000}=0.6\); (C) \(\delta=900\ \mathrm{nm}:\ \dfrac{900}{600}=1.5,\ \dfrac{900}{1000}=0.9\).
+Key point: \(\delta=(n-1)t=\operatorname{lcm}_{\text{odd}}\left(\tfrac{\lambda_1}{2},\tfrac{\lambda_2}{2}\right)\)
