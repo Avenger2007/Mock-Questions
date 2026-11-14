@@ -10,7 +10,8 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 | 2 | pass | pass | minor: 6 one-step items labelled medium, strengthened (Q18, Q25, Q28, Q47, Q51, Q56) | fail → fixed: Q11 and Q43 repeated Test 1 tasks, replaced | 0 of 60 | Maths/Physics prose and thin rebuttals → 30 rewritten as equations only; 11 Biology/Chemistry numerical solutions expanded | Clean after fixes |
 | 3 | pass | fail → fixed: Q4 (transpiration) is from the deleted Transport in Plants chapter, replaced | minor: 5 one-step items labelled medium, strengthened (Q10, Q27, Q47, Q51, Q58) | pass within test (Q42 uses the same sign-of-f(k) idea as Test 1 Q43 but with two conditions; kept) | 0 of 60 (Q30 data were unrealistic and were corrected) | 30 Maths/Physics rewritten as equations only; 7 Biology/Chemistry numerical solutions expanded | Clean after fixes |
 | 4 | pass | fail → fixed: Q46 (error propagation) and Q58 (thin-film interference) are not in the 2026 syllabus, replaced | minor: 4 one-step items labelled medium, strengthened (Q27, Q51, Q53, Q54) | fail → fixed: 7 questions repeated earlier tests (Q5, Q13, Q20, Q30, Q35, Q52, Q60), replaced | 0 of 60 | 30 Maths/Physics rewritten as equations only; 14 Biology/Chemistry solutions rewritten | Clean after fixes; 2 items flagged |
-| 5–25 | — | — | — | — | — | — | Not yet audited |
+| 5 | pass | pass; Q58 used the term 'fringe visibility', which the NCERT text does not define, re-asked | minor: 2 one-step items labelled medium, strengthened (Q53, Q56) | fail → fixed: 6 questions repeated earlier tests (Q3, Q19, Q20, Q22, Q57, Q60), replaced | 0 of 60 | 30 Maths/Physics rewritten as equations only; 12 Biology/Chemistry solutions rewritten | Clean after fixes; 2 items flagged |
+| 6–25 | — | — | — | — | — | — | Not yet audited |
 
 ## Changes made
 
@@ -53,6 +54,22 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 - **Flagged, left unchanged:** Q55 (energy exchange in an ideal LC circuit; LC oscillations are not named in the syllabus, though the energy formulas are) and Q56 (resonance bandwidth; the sharpness of resonance is not named). The user should decide whether to keep them.
 - Q31–Q60 rewritten as equations only; Q3, Q4, Q5, Q10, Q12, Q13, Q15, Q17, Q19, Q20, Q25, Q27, Q28, Q30 rewritten in full.
 - Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 453 expressions, 0 errors. Source text: `IISER/audit/solutions/test04.txt`.
+
+### Test 5 (`IISER/IAT NEW TEST 5.json`)
+- All 60 answers re-derived; no key was wrong. Figure specifications for Q5, Q7, Q14, Q18, Q28, Q48, Q55 and Q58 agree with their questions.
+- **Replaced for repetition (same key letter):**
+  - Q3 peroxisome from catalase in a fraction = Test 2 Q3 → fraction of an unsynchronised culture in S phase.
+  - Q19 λ(3→2)/λ(2→1) = 27/5 = Test 2 Q59 exactly → Bohr radius ratio for He⁺ (n = 3) and H (n = 1).
+  - Q20 isoelectronic ionic radii = Test 1 Q28 → why chlorine has a more negative electron gain enthalpy than fluorine.
+  - Q22 phenoxide resonance and acidity = Test 3 Q25 → IUPAC name of a keto acid.
+  - Q57 the same lens-plus-plane-mirror set-up and numbers as Test 2 Q57 → focal length from a threefold real image on a screen 80 cm away.
+  - Q60 activities of two isotopes with half-lives 2 h and 4 h = Test 3 Q60 → ratio of nuclear radii from R = R₀A^(1/3).
+- **Re-asked on the same figure:** Q58 asked for 'fringe visibility' without defining it → now asks for the amplitude ratio of the two beams from Imax = 9 and Imin = 1 (key letter unchanged).
+- **Strengthened one-step 'medium' items:** Q53 (Gauss's law, now with a charge outside the surface), Q56 (mutual induction, rate now found from a current change).
+- **Change made in Test 3 because of this test:** Test 3 Q5 (lower pH favours unloading of oxygen) repeated the idea of Test 5 Q5, which carries a figure. Test 3 Q5 was replaced by a question on the regulation of breathing by CO₂ and H⁺.
+- **Flagged, left unchanged:** Q14 uses non-competitive inhibition (the NCERT chapter names only competitive inhibition, though the graph description is self-contained); Q12 extends the filtered-load idea of Test 2 Q13 with a marker step. The user should decide whether to keep them.
+- Q31–Q60 rewritten as equations only; Q3, Q6, Q12, Q19, Q20, Q21, Q22, Q26, Q27, Q28, Q29, Q30 rewritten in full.
+- Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 444 expressions, 0 errors. Source text: `IISER/audit/solutions/test05.txt`.
 
 ## Not verified
 - Rendered PDF pages were not regenerated or inspected for Test 1 after the edit (the exporter needs Playwright and Chromium).
