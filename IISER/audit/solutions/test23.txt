@@ -1,0 +1,342 @@
+@@ Q31
+Answer: (B) -1.
+Given: \(A=\begin{pmatrix}0&1\\-2&3\end{pmatrix},\quad A^2-3A+2I=0\)
+Formula/Principle: \(A^2=3A-2I\ \text{reduces every higher power}\)
+Step 1: \(A^3=3A^2-2A=3(3A-2I)-2A=7A-6I\)
+Step 2: \(A^5-3A^4=A^3(A^2-3A)=A^3(-2I)=-2A^3=-14A+12I\)
+Step 3: \(4A^2=12A-8I\)
+Step 4: \(A^5-3A^4+4A^2-I=(-14A+12I)+(12A-8I)-I=3I-2A\)
+Worked derivation: \[3I-2A=\begin{pmatrix}3&-2\\4&-3\end{pmatrix},\qquad\det=(3)(-3)-(-2)(4)=-9+8=-1\]
+Check: \[\lambda=1,2;\ p(\lambda)=\lambda^5-3\lambda^4+4\lambda^2-1:\ p(1)=1,\ p(2)=32-48+16-1=-1;\quad\det=p(1)p(2)=-1\]
+Why: \(\text{polynomials in the same matrix commute and reduce like ordinary polynomials}\)
+Why not the others: (A) \(+1\ (\text{sign lost})\); (C) \(3\ (\text{one diagonal entry})\); (D) \(-3\ (\text{one diagonal entry})\).
+Key point: \(\det p(A)=\prod p(\lambda_i)\)
+
+@@ Q32
+Answer: (D) 12.
+Given: \(\text{tiles}:\ AB,\ AB,\ C,\ C,\ D;\quad D\ \text{at an end}\)
+Formula/Principle: \(\text{arrangements with repeats}=\dfrac{n!}{p!\,q!}\)
+Step 1: \(D\ \text{at the left end}:\ \dfrac{4!}{2!\,2!}=6\)
+Step 2: \(D\ \text{at the right end}:\ \dfrac{4!}{2!\,2!}=6\)
+Worked derivation: \[N=6+6=12\]
+Check: \[\text{all rows}:\ \frac{5!}{2!\,2!}=30;\quad P(D\ \text{at an end})=\frac25;\quad30\times\frac25=12\]
+Why: \(\text{there is one}\ D,\ \text{so the two cases cannot overlap}\)
+Why not the others: (A) \(6\ (\text{one end only})\); (B) \(24=2\times\tfrac{4!}{2!}\); (C) \(30\ (D\ \text{anywhere})\).
+Key point: \(\text{divide by the factorial of each group of identical tiles}\)
+
+@@ Q33
+Answer: (A) 12; g must be onto, while f need not be onto its stated codomain.
+Given: \(f:1\mapsto a,\ 2\mapsto b,\ 3\mapsto c;\quad g:\{a,b,c,d\}\to\{0,1\}\)
+Formula/Principle: \(g\circ f\ \text{onto}\iff g(\{a,b,c\})=\{0,1\}\)
+Step 1: \(\text{assignments of}\ g\ \text{on}\ \{a,b,c\}:\ 2^3=8\)
+Step 2: \(\text{constant ones}:\ 2\Rightarrow8-2=6\)
+Step 3: \(g(d)\in\{0,1\}:\ 2\ \text{choices}\)
+Worked derivation: \[N=(2^3-2)\times2=12\]
+Check: \[\text{all}\ g:\ 2^4=16;\quad g\ \text{constant on}\ \{a,b,c\}:\ 2\times2=4;\quad16-4=12\]
+Why: \(g(\{a,b,c\})=\{0,1\}\Rightarrow g\ \text{onto};\quad d\notin f(\{1,2,3\})\Rightarrow f\ \text{not onto}\)
+Why not the others: (B) \(f\ \text{misses}\ d\); (C) \(14=2^4-2\ (\text{counts onto}\ g,\ \text{not onto}\ g\circ f)\); (D) \(6\ (\text{omits the choice of}\ g(d))\).
+Key point: \(g\circ f\ \text{onto}\Rightarrow g\ \text{onto}\)
+
+@@ Q34
+Answer: (C) -2.
+Given: \(x^3+ax^2+bx-10=0\ (a,b\in\mathbb R),\quad r_1=1+2i\)
+Formula/Principle: \(r_2=\bar r_1;\quad r_1r_2r_3=-\dfrac{(-10)}1=10\)
+Step 1: \(r_2=1-2i,\quad r_1r_2=1+4=5\)
+Step 2: \(r_3=\dfrac{10}5=2\)
+Step 3: \(r_1^2=1+4i-4=-3+4i,\quad r_2^2=-3-4i,\quad r_3^2=4\)
+Worked derivation: \[\sum r_j^2=(-3+4i)+(-3-4i)+4=-2\]
+Check: \[\sum r_j=4,\ \sum r_ir_j=5+2(2)=9:\quad\left(\sum r_j\right)^2-2\sum r_ir_j=16-18=-2\]
+Why: \(\text{squares of complex roots are not squared moduli}\)
+Why not the others: (A) \(+2\ (\text{sign lost})\); (B) \(10=r_1r_2r_3\); (D) \(14=|r_1|^2+|r_2|^2+r_3^2=5+5+4\).
+Key point: \(\sum r_j^2=\left(\sum r_j\right)^2-2\sum r_ir_j\)
+
+@@ Q35
+Answer: (D) 16(√2-1)/3.
+Given: \(I=\displaystyle\int_{-2}^2\left|\min\{x^2,2-x^2\}\right|dx\)
+Formula/Principle: \(\text{even integrand}\Rightarrow I=2\displaystyle\int_0^2;\quad\text{break at}\ x^2=2-x^2\ \text{and at}\ 2-x^2=0\)
+Step 1: \(x^2=2-x^2\Rightarrow x=1;\qquad2-x^2=0\Rightarrow x=\sqrt2\)
+Step 2: \([0,1]:\ \min=x^2\ge0;\quad[1,\sqrt2]:\ \min=2-x^2\ge0;\quad[\sqrt2,2]:\ \min=2-x^2\le0\)
+Step 3: \(\displaystyle\int_0^1x^2dx=\tfrac13\)
+Step 4: \(\displaystyle\int_1^{\sqrt2}(2-x^2)dx=\left[2x-\tfrac{x^3}3\right]_1^{\sqrt2}=\tfrac{4\sqrt2}3-\tfrac53\)
+Step 5: \(\displaystyle\int_{\sqrt2}^2(x^2-2)dx=\left[\tfrac{x^3}3-2x\right]_{\sqrt2}^2=-\tfrac43+\tfrac{4\sqrt2}3\)
+Worked derivation: \[I=2\left(\tfrac13-\tfrac53-\tfrac43+\tfrac{8\sqrt2}3\right)=\frac{16(\sqrt2-1)}3\approx2.21\]
+Check: \[\tfrac13\approx0.333,\ \tfrac{4\sqrt2-5}3\approx0.219,\ \tfrac{4\sqrt2-4}3\approx0.552:\quad2(1.105)\approx2.21\]
+Why: \(\text{the switch of the minimum (at 1) and its sign change (at}\ \sqrt2)\ \text{are different points}\)
+Why not the others: (A) \(0\ (\text{signed integral})\); (B) \(\tfrac{8(\sqrt2-1)}3\ (\text{half-range only})\); (C) \(\tfrac{16\sqrt2}3\ (\text{constants dropped})\).
+Key point: \(\text{find every breakpoint before removing}\ |\cdot|\)
+
+@@ Q36
+Answer: (B) k=4,b=2.
+Given: \(L_1:(1,0,2)+t(1,2,-1),\quad L_2:(b,2,1)+s(2,k,-2)\)
+Formula/Principle: \(\text{same line}\iff\vec d_2\parallel\vec d_1\ \text{and}\ P_2-P_1\parallel\vec d_1\)
+Step 1: \((2,k,-2)=\mu(1,2,-1)\Rightarrow\mu=2,\ k=4\)
+Step 2: \(P_2-P_1=(b-1,\ 2,\ -1)=\lambda(1,2,-1)\)
+Step 3: \(2=2\lambda,\ -1=-\lambda\Rightarrow\lambda=1\Rightarrow b-1=1\Rightarrow b=2\)
+Worked derivation: \[k=4,\quad b=2:\qquad(2,2,1)=(1,0,2)+1\cdot(1,2,-1)\]
+Check: \[b=4:\ (3,2,-1)\ne\lambda(1,2,-1)\Rightarrow\text{parallel, distinct}\]
+Why: \(\text{parallel directions alone allow two distinct lines}\)
+Why not the others: (A) \(b=4:\ \text{parallel but distinct}\); (C) \(k=2:\ (2,2,-2)\nparallel(1,2,-1)\); (D) \(k=-4:\ (2,-4,-2)\nparallel(1,2,-1)\).
+Key point: \(\text{coincident lines share a direction and a point}\)
+
+@@ Q37
+Answer: (A) Both branches have the horizontal tangent y=0.
+Given: \(y^2=x^4\)
+Formula/Principle: \(y^2-x^4=(y-x^2)(y+x^2)=0\)
+Step 1: \(y=x^2\ \ \text{or}\ \ y=-x^2\)
+Step 2: \(y'=2x\ \ \text{or}\ \ y'=-2x\)
+Step 3: \(x=0:\ y'=0\ \text{on both branches}\)
+Worked derivation: \[\text{both branches pass through}\ (0,0)\ \text{with slope}\ 0\Rightarrow\text{tangent}\ y=0\]
+Check: \[y=x^2:\ \frac{2x^3}y=\frac{2x^3}{x^2}=2x\to0\ \ (x\to0)\]
+Why: \(\tfrac00\ \text{in}\ y'=\tfrac{2x^3}y\ \text{is indeterminate, not infinite}\)
+Why not the others: (B) \(y'=0,\ \text{not}\ \infty\); (C) \(y'(0)=0\ne\pm1\); (D) \(0^2=0^4\).
+Key point: \(\text{factor the curve into branches at a singular point}\)
+
+@@ Q38
+Answer: (C) 4 and 7.
+Given: \(\bar x=2,\quad\sigma^2=3;\quad\text{new set}:\ x_i\ \text{and}\ 8-x_i\ \ (2n\ \text{values})\)
+Formula/Principle: \(\sigma_{\text{new}}^2=\dfrac1{2n}\sum\left[(x_i-\mu)^2+(8-x_i-\mu)^2\right]\)
+Step 1: \(\mu=\dfrac1{2n}\sum\left[x_i+(8-x_i)\right]=\dfrac{8n}{2n}=4\)
+Step 2: \(8-x_i-4=-(x_i-4)\Rightarrow\sigma_{\text{new}}^2=\dfrac1n\sum(x_i-4)^2\)
+Step 3: \((x_i-4)^2=(x_i-2)^2-4(x_i-2)+4\)
+Worked derivation: \[\sigma_{\text{new}}^2=3-4(0)+4=7,\qquad\mu=4\]
+Check: \[\text{groups with means}\ 2,\ 6\ \text{and variance}\ 3:\quad3+\frac{(2-4)^2+(6-4)^2}2=3+4=7\]
+Why: \(\text{reflection keeps each group's variance but separates the group means}\)
+Why not the others: (A) \(3\ (\text{between-group term omitted})\); (B) \(\mu=2\ (\text{mean of the original only})\); (D) \(\mu=6\ (\text{mean of the reflected only})\).
+Key point: \(\text{total variance}=\text{within-group}+\text{between-group}\)
+
+@@ Q39
+Answer: (D) 1.
+Given: \(L=\displaystyle\lim_{x\to+\infty}x\sin\frac1{\lfloor x\rfloor}\)
+Formula/Principle: \(n=\lfloor x\rfloor:\ n\le x<n+1;\quad\displaystyle\lim_{u\to0}\frac{\sin u}u=1\)
+Step 1: \(1\le\dfrac xn<1+\dfrac1n\Rightarrow\dfrac xn\to1\)
+Step 2: \(x\sin\dfrac1n=\dfrac xn\cdot\dfrac{\sin(1/n)}{1/n}\)
+Worked derivation: \[L=1\times1=1\]
+Check: \[x=100.5:\ 100.5\sin(0.01)=100.5\times0.0099998\approx1.005\]
+Why: \(\text{the jump of}\ \lfloor x\rfloor\ \text{is}\ 1,\ \text{negligible relative to}\ x\)
+Why not the others: (A) \(0\ (\text{factor}\ x\ \text{ignored})\); (B) \(\text{the squeeze}\ 1\le\tfrac xn<1+\tfrac1n\ \text{gives a limit}\); (C) \(\tfrac xn\to1,\ \text{not}\ 2\).
+Key point: \(\dfrac x{\lfloor x\rfloor}\to1\ \text{as}\ x\to\infty\)
+
+@@ Q40
+Answer: (A) 3/5 and 3/4.
+Given: \(A:\ 1R,1B;\quad B:\ 3R,1B\)
+Formula/Principle: \(P(B\mid R)=\dfrac{P(B)P(R\mid B)}{P(A)P(R\mid A)+P(B)P(R\mid B)}\)
+Step 1: \(\text{P}:\ P(A)=P(B)=\tfrac12,\ P(R\mid A)=\tfrac12,\ P(R\mid B)=\tfrac34\)
+Step 2: \(P_P(B\mid R)=\dfrac{\tfrac12\cdot\tfrac34}{\tfrac12\cdot\tfrac12+\tfrac12\cdot\tfrac34}=\dfrac{3/8}{5/8}=\dfrac35\)
+Step 3: \(\text{Q}:\ 4\ \text{red balls equally likely},\ 3\ \text{from}\ B\)
+Worked derivation: \[P_P(B\mid R)=\tfrac35,\qquad P_Q(B\mid R)=\tfrac34\]
+Check: \[\text{Q by Bayes}:\ P(B)=\tfrac46,\ P(A)=\tfrac26:\ \frac{\tfrac46\cdot\tfrac34}{\tfrac26\cdot\tfrac12+\tfrac46\cdot\tfrac34}=\frac{1/2}{2/3}=\frac34\]
+Why: \(\text{choosing a box uniformly is not choosing a ball uniformly when box sizes differ}\)
+Why not the others: (B) \(\text{protocols interchanged}\); (C) \(\tfrac12\ (\text{no updating})\); (D) \(P_Q=\tfrac34\ne\tfrac12\).
+Key point: \(\text{the prior comes from the sampling mechanism}\)
+
+@@ Q41
+Answer: (B) Three intervals; 3π/2.
+Given: \(\sin2x\cos x>0,\quad0\le x\le\tfrac{5\pi}2\)
+Formula/Principle: \(\sin2x\cos x=2\sin x\cos^2x\)
+Step 1: \(2\sin x\cos^2x>0\iff\sin x>0\ \text{and}\ \cos x\ne0\)
+Step 2: \(\sin x>0:\ x\in(0,\pi)\cup\left(2\pi,\tfrac{5\pi}2\right]\)
+Step 3: \(\cos x=0:\ x=\tfrac\pi2,\ \tfrac{5\pi}2\ \text{removed}\)
+Step 4: \(\left(0,\tfrac\pi2\right),\ \left(\tfrac\pi2,\pi\right),\ \left(2\pi,\tfrac{5\pi}2\right)\)
+Worked derivation: \[N=3,\qquad\text{length}=\tfrac\pi2+\tfrac\pi2+\tfrac\pi2=\tfrac{3\pi}2\]
+Check: \[x=\tfrac\pi4:\ 1\cdot\tfrac{\sqrt2}2>0;\quad x=\tfrac{3\pi}4:\ (-1)\left(-\tfrac{\sqrt2}2\right)>0;\quad x=\tfrac{5\pi}4:\ (1)\left(-\tfrac{\sqrt2}2\right)<0\]
+Why: \(\text{removing the single point}\ \tfrac\pi2\ \text{splits an interval without changing the length}\)
+Why not the others: (A) \(\text{two intervals ignores the split at}\ \tfrac\pi2\); (C) \(\tfrac{5\pi}2\ \text{is the whole range}\); (D) \(\pi\ \text{omits}\ \left(2\pi,\tfrac{5\pi}2\right)\).
+Key point: \(\text{a squared factor removes points but does not change sign}\)
+
+@@ Q42
+Answer: (C) (-∞,1); -1/8.
+Given: \(y'+\dfrac{2y}{x-1}=\dfrac1{(x-1)^2},\quad y(0)=1\)
+Formula/Principle: \(\text{I.F.}=e^{\int\frac2{x-1}dx}=(x-1)^2\)
+Step 1: \(\dfrac d{dx}\left[(x-1)^2y\right]=1\Rightarrow(x-1)^2y=x+C\)
+Step 2: \(y(0)=1:\ 1=C\Rightarrow y=\dfrac{x+1}{(x-1)^2}\)
+Step 3: \(\text{singular at}\ x=1,\ 0<1\Rightarrow\text{interval}\ (-\infty,1)\)
+Step 4: \(y'=\dfrac{(x-1)-2(x+1)}{(x-1)^3}=\dfrac{-(x+3)}{(x-1)^3}\)
+Step 5: \(x<-3:\ y'<0;\quad-3<x<1:\ y'>0\)
+Worked derivation: \[y_{\min}=y(-3)=\frac{-2}{16}=-\frac18\]
+Check: \[x\to-\infty:\ y\to0^-;\quad x\to1^-:\ y\to+\infty;\quad-\tfrac18<0\]
+Why: \(\text{a solution cannot be continued through the singular point of the equation}\)
+Why not the others: (A) \(x=1\ \text{is excluded}\); (B) \(y(-3)=-\tfrac18<0\); (D) \(0\notin(1,\infty)\).
+Key point: \(\text{the solution interval is the component containing the initial point}\)
+
+@@ Q43
+Answer: (A) (1/2,1]∪[5,∞).
+Given: \(x^2-(a+1)x+2a-1=0;\quad\text{real roots},\ \alpha\beta>0\)
+Formula/Principle: \(\Delta\ge0,\quad\alpha\beta=2a-1\)
+Step 1: \(\Delta=(a+1)^2-4(2a-1)=a^2-6a+5=(a-1)(a-5)\)
+Step 2: \(\Delta\ge0\Rightarrow a\le1\ \text{or}\ a\ge5\)
+Step 3: \(2a-1>0\Rightarrow a>\tfrac12\)
+Worked derivation: \[a\in\left(\tfrac12,1\right]\cup[5,\infty)\]
+Check: \[a=1:\ x^2-2x+1=0\Rightarrow x=1,1,\ \alpha\beta=1>0;\quad a=3:\ \Delta=-4<0\]
+Why: \(\text{equal roots are allowed}\ (\Delta=0);\ \text{zero product is not}\)
+Why not the others: (B) \([1,5]:\ \Delta\le0\); (C) \(a=3:\ \Delta<0\); (D) \(a=0:\ \alpha\beta=-1<0\).
+Key point: \(\text{intersect the discriminant and Vieta conditions}\)
+
+@@ Q44
+Answer: (D) u=2; distance 2.
+Given: \(u=\dfrac{3x+4y}5,\quad v=\dfrac{-4x+3y}5;\quad3x+4y=10\)
+Formula/Principle: \(d=\dfrac{|c|}{\sqrt{a^2+b^2}}\ \text{for}\ ax+by=c\)
+Step 1: \(3x+4y=5u\Rightarrow5u=10\Rightarrow u=2\)
+Step 2: \(d=\dfrac{10}{\sqrt{9+16}}=2\)
+Worked derivation: \[u=2,\qquad d=2\]
+Check: \[\left|\tfrac{(3,4)}5\right|=1,\ \ \tfrac{(3,4)}5\cdot\tfrac{(-4,3)}5=0\Rightarrow\text{rotation}\Rightarrow d=|u|=2\]
+Why: \(u\ \text{is the coordinate along the unit normal of the line}\)
+Why not the others: (A) \(v=2\ (\text{axes interchanged})\); (B) \(u=10\ (\text{factor 5 omitted})\); (C) \(d=10\ (\text{not normalised})\).
+Key point: \(\text{rotations preserve distances}\)
+
+@@ Q45
+Answer: (C) n=(1,1,1)/√3; displacement 2/√3.
+Given: \(A(1,0,0),\ B(0,1,0),\ C(0,0,1),\ P(1,1,1)\)
+Formula/Principle: \(\hat n=\dfrac{\vec{AB}\times\vec{AC}}{|\vec{AB}\times\vec{AC}|},\quad\delta=\vec{AP}\cdot\hat n\)
+Step 1: \(\vec{AB}=(-1,1,0),\quad\vec{AC}=(-1,0,1)\)
+Step 2: \(\vec{AB}\times\vec{AC}=(1\cdot1-0,\ 0\cdot(-1)-(-1)(1),\ 0-(1)(-1))=(1,1,1)\)
+Step 3: \(\hat n=\dfrac{(1,1,1)}{\sqrt3}\)
+Step 4: \(\vec{AP}=(0,1,1)\)
+Worked derivation: \[\delta=\frac{0+1+1}{\sqrt3}=\frac2{\sqrt3}\]
+Check: \[x+y+z=1:\quad\frac{1+1+1-1}{\sqrt3}=\frac2{\sqrt3}\]
+Why: \(\text{the order}\ A,B,C\ \text{fixes the sign of}\ \hat n\)
+Why not the others: (A) \(-\tfrac2{\sqrt3}\ (\text{sign inconsistent with}\ \hat n)\); (B) \(\hat n\ \text{reversed gives}\ -\tfrac2{\sqrt3}\); (D) \(|(1,1,1)|=\sqrt3\ne1\).
+Key point: \(\text{signed distance}=(\vec P-\vec A)\cdot\hat n\)
+
+@@ Q47
+Answer: (C) √(6gL).
+Given: \(\text{speed}\ v\ \text{at}\ 60^\circ\ \text{from the downward vertical},\quad T_{\max}=8mg\)
+Formula/Principle: \(T=\dfrac{mv_\theta^2}L+mg\cos\theta;\quad\tfrac12mv_b^2=\tfrac12mv^2+mgh\)
+Step 1: \(h=L(1-\cos60^\circ)=\dfrac L2\Rightarrow v_b^2=v^2+gL\)
+Step 2: \(T_b=\dfrac{m(v^2+gL)}L+mg=\dfrac{mv^2}L+2mg\ \ (\text{largest tension})\)
+Step 3: \(\dfrac{mv^2}L+2mg=8mg\Rightarrow v^2=6gL\)
+Step 4: \(v_{\text{top}}^2=v_b^2-4gL=7gL-4gL=3gL\Rightarrow T_{\text{top}}=3mg-mg=2mg>0\)
+Worked derivation: \[v_{\max}=\sqrt{6gL}\]
+Check: \[T_{60^\circ}=\frac{m(6gL)}L+\frac{mg}2=6.5mg<8mg=T_b\]
+Why: \(\text{both speed and}\ mg\cos\theta\ \text{are greatest at the bottom}\)
+Why not the others: (A) \(\sqrt{\tfrac{15gL}2}:\ T_{60^\circ}=8mg\Rightarrow T_b=9.5mg\); (B) \(\sqrt{8gL}:\ T_b=10mg\); (D) \(\sqrt{4gL}:\ T_b=6mg<8mg\ (\text{not the greatest})\).
+Key point: \(\text{the tension limit is tested at the lowest point}\)
+
+@@ Q48
+Answer: (A) 6 J; 4≤UB-UA≤10 J.
+Given: \(W_{A\to B}=+10\ \mathrm J,\quad W_{B\to A}=-4\ \mathrm J,\quad\Delta K=0,\quad D_1,D_2\ge0\)
+Formula/Principle: \(W_{\text{ext}}=\Delta U+D\)
+Step 1: \(10=\Delta U+D_1\)
+Step 2: \(-4=-\Delta U+D_2\)
+Step 3: \(D_1+D_2=10-4=6\ \mathrm J\)
+Step 4: \(D_1=10-\Delta U\ge0\Rightarrow\Delta U\le10\ \mathrm J;\quad D_2=\Delta U-4\ge0\Rightarrow\Delta U\ge4\ \mathrm J\)
+Worked derivation: \[Q_{\text{diss}}=6\ \mathrm J,\qquad4\ \mathrm J\le U_B-U_A\le10\ \mathrm J\]
+Check: \[\Delta U=7\ \mathrm J:\ D_1=3\ \mathrm J,\ D_2=3\ \mathrm J,\ D_1+D_2=6\ \mathrm J\]
+Why: \(\text{the cycle fixes}\ D_1+D_2,\ \text{not}\ D_1\ \text{and}\ D_2\ \text{separately}\)
+Why not the others: (B) \(14=10+4\ (\text{magnitudes added})\); (C) \(\Delta U=6\ \mathrm J\ \text{is one allowed value, not the only one}\); (D) \(\oint W=6\ \mathrm J\ne0\).
+Key point: \(\text{net work over a closed path}=\text{heat dissipated}\)
+
+@@ Q49
+Answer: (D) a=g/3 uphill; friction 5Mg/6 uphill.
+Given: \(\theta=30^\circ,\quad\tau=MgR,\quad I=\tfrac12MR^2,\quad a=\alpha R\)
+Formula/Principle: \(Ma=f-Mg\sin\theta,\quad I\alpha=\tau-fR\ \ (f\ \text{uphill})\)
+Step 1: \(Ma=f-\dfrac{Mg}2\)
+Step 2: \(\tfrac12MR^2\cdot\dfrac aR=MgR-fR\Rightarrow\tfrac12Ma=Mg-f\)
+Step 3: \(\text{add}:\ \tfrac32Ma=Mg-\dfrac{Mg}2=\dfrac{Mg}2\Rightarrow a=\dfrac g3\)
+Worked derivation: \[f=Ma+\frac{Mg}2=\frac{Mg}3+\frac{Mg}2=\frac{5Mg}6\ \ (\text{uphill})\]
+Check: \[\tfrac12Ma=\frac{Mg}6=Mg-\frac{5Mg}6\]
+Why: \(\text{the torque makes the contact point tend to slip downhill, so friction acts uphill}\)
+Why not the others: (A) \(f\ \text{downhill}\Rightarrow a<0\); (B) \(f=-\tfrac{Mg}6:\ Ma=-\tfrac{2Mg}3\ne\tfrac{Mg}3\); (C) \(a=\tfrac g2,\ f=Mg:\ \tfrac12Ma=\tfrac{Mg}4\ne0\).
+Key point: \(\text{friction opposes the slipping tendency, not the motion of the centre}\)
+
+@@ Q50
+Answer: (B) vc and (√2-1)vc.
+Given: \(v_c=\sqrt{\dfrac{GM}r};\quad\Delta\vec v\ \text{radial or tangential}\)
+Formula/Principle: \(\text{escape}:\ \tfrac12v^2-\dfrac{GM}r\ge0\Rightarrow v\ge\sqrt2\,v_c\)
+Step 1: \(\text{radial}\ u\perp\vec v_c:\ v^2=v_c^2+u^2=2v_c^2\Rightarrow u=v_c\)
+Step 2: \(\text{tangential}\ w\parallel\vec v_c:\ (v_c+w)^2=2v_c^2\Rightarrow w=(\sqrt2-1)v_c\)
+Worked derivation: \[u_{\min}=v_c,\qquad w_{\min}=(\sqrt2-1)v_c\approx0.414\,v_c\]
+Check: \[\Delta K_{\text{radial}}=\tfrac12mv_c^2;\quad\Delta K_{\text{tang}}=\tfrac12m\left[(\sqrt2v_c)^2-v_c^2\right]=\tfrac12mv_c^2\]
+Why: \(\text{the cross term}\ 2\vec v_c\cdot\Delta\vec v\ \text{helps only the tangential increment}\)
+Why not the others: (A) \(\text{cases interchanged}\); (C) \(\sqrt2v_c\ \text{is the final speed, not the increment}\); (D) \(v_c^2+\tfrac{v_c^2}4<2v_c^2\).
+Key point: \(v_{\text{esc}}=\sqrt2\,v_c\)
+
+@@ Q51
+Answer: (C) 1.2×10−4 J; ratio 2.
+Given: \(l=0.10\ \mathrm m,\quad\Delta x=0.020\ \mathrm m,\quad\gamma=0.030\ \mathrm{N\,m^{-1}}\)
+Formula/Principle: \(W=\gamma\,\Delta A_{\text{total}},\quad\text{film}:\ 2\ \text{surfaces}\)
+Step 1: \(\Delta A=l\,\Delta x=0.10\times0.020=2.0\times10^{-3}\ \mathrm{m^2}\)
+Step 2: \(W=2\gamma\Delta A=2\times0.030\times2.0\times10^{-3}=1.2\times10^{-4}\ \mathrm J\)
+Step 3: \(W_1=\gamma\Delta A=6.0\times10^{-5}\ \mathrm J\)
+Worked derivation: \[W=1.2\times10^{-4}\ \mathrm J,\qquad\frac W{W_1}=2\]
+Check: \[F=2\gamma l=2\times0.030\times0.10=6.0\times10^{-3}\ \mathrm N;\quad F\Delta x=1.2\times10^{-4}\ \mathrm J\]
+Why: \(\text{a soap film has a front and a back surface}\)
+Why not the others: (A) \(6.0\times10^{-5}\ \mathrm J\ (\text{one surface})\); (B) \(\text{ratio}=2,\ \text{not}\ 1\); (D) \(2.4\times10^{-4}\ \mathrm J\ (\text{factor 2 applied twice})\).
+Key point: \(F=2\gamma l\ \text{for a film}\)
+
+@@ Q52
+Answer: (A) -RT0/2.
+Given: \(n=1\ \mathrm{mol},\quad PV^{3/2}=\text{const},\quad V_0\to\dfrac{V_0}4,\quad C_V=\tfrac32R\)
+Formula/Principle: \(PV=RT\Rightarrow TV^{1/2}=\text{const};\quad Q=\Delta U+W_{\text{by}}\)
+Step 1: \(T_f=T_0\left(\dfrac{V_0}{V_0/4}\right)^{1/2}=2T_0\)
+Step 2: \(\Delta U=\tfrac32R(2T_0-T_0)=\tfrac32RT_0\)
+Step 3: \(W_{\text{by}}=\displaystyle\int_{V_0}^{V_0/4}P_0V_0^{3/2}V^{-3/2}dV=P_0V_0^{3/2}\left[-2V^{-1/2}\right]_{V_0}^{V_0/4}\)
+Step 4: \(W_{\text{by}}=P_0V_0^{3/2}\left(-\dfrac4{\sqrt{V_0}}+\dfrac2{\sqrt{V_0}}\right)=-2P_0V_0=-2RT_0\)
+Worked derivation: \[Q=\tfrac32RT_0-2RT_0=-\tfrac12RT_0\]
+Check: \[W_{\text{by}}=\frac{P_iV_i-P_fV_f}{k-1}=\frac{RT_0-2RT_0}{1/2}=-2RT_0;\quad C=C_V-\frac R{k-1}=\tfrac32R-2R=-\tfrac R2,\ Q=C\Delta T=-\tfrac12RT_0\]
+Why: \(\text{the work done on the gas}\ (2RT_0)\ \text{exceeds}\ \Delta U\ (1.5RT_0)\)
+Why not the others: (B) \(+\tfrac12RT_0\ (\text{sign reversed})\); (C) \(\tfrac32RT_0=\Delta U\ (\text{work omitted})\); (D) \(Q=0\ \text{needs}\ k=\gamma=\tfrac53\ne\tfrac32\).
+Key point: \(\text{polytropic}\ PV^k:\ C=C_V-\dfrac R{k-1}\)
+
+@@ Q53
+Answer: (D) -kQq/(2R) and 0.
+Given: \(\text{uniform sphere}\ (Q,R);\quad\text{conducting sphere}\ (Q,R);\quad q:\ r=R\to0\)
+Formula/Principle: \(E(r)=\dfrac{kQ_{\text{enc}}}{r^2},\quad W_{\text{field}}=q\displaystyle\int_R^0E\,dr\)
+Step 1: \(\text{uniform}:\ Q_{\text{enc}}=Q\dfrac{r^3}{R^3}\Rightarrow E=\dfrac{kQr}{R^3}\)
+Step 2: \(W=q\displaystyle\int_R^0\frac{kQr}{R^3}dr=\frac{kQq}{R^3}\left[\frac{r^2}2\right]_R^0=-\frac{kQq}{2R}\)
+Step 3: \(\text{conductor}:\ E=0\ (r<R)\Rightarrow W=0\)
+Worked derivation: \[W_{\text{uniform}}=-\frac{kQq}{2R},\qquad W_{\text{conductor}}=0\]
+Check: \[V(0)-V(R)=\frac{3kQ}{2R}-\frac{kQ}R=\frac{kQ}{2R};\quad W=-q\Delta V=-\frac{kQq}{2R}\]
+Why: \(\vec E\ \text{is outward and the displacement is inward}\Rightarrow W<0\)
+Why not the others: (A) \(+\tfrac{kQq}{2R}\ (\text{sign reversed})\); (B) \(\text{the two spheres interchanged}\); (C) \(-\tfrac{kQq}R\ \text{is not}\ -q\Delta V\ \text{for either sphere}\).
+Key point: \(W_{\text{field}}=-q\,\Delta V\)
+
+@@ Q57
+Answer: (A) Air gives total internal reflection; liquid permits emergence with sin r=3√6/8.
+Given: \(n_g=\sqrt3,\quad i=45^\circ,\quad n_{\text{air}}=1,\quad n_{\text{liq}}=\tfrac43\)
+Formula/Principle: \(n_g\sin i=n_{\text{out}}\sin r;\quad\text{TIR}\iff\dfrac{n_g\sin i}{n_{\text{out}}}>1\)
+Step 1: \(n_g\sin i=\sqrt3\cdot\dfrac1{\sqrt2}=\dfrac{\sqrt6}2\approx1.225\)
+Step 2: \(\text{air}:\ \sin r=1.225>1\Rightarrow\text{TIR}\)
+Step 3: \(\text{liquid}:\ \sin r=\dfrac{\sqrt6/2}{4/3}=\dfrac{3\sqrt6}8\approx0.919<1\)
+Worked derivation: \[\text{air: TIR};\qquad\text{liquid}:\ \sin r=\frac{3\sqrt6}8\ \ (r\approx66.7^\circ)\]
+Check: \[\sin i_c(\text{air})=\tfrac1{\sqrt3}\Rightarrow i_c\approx35.3^\circ<45^\circ;\quad\sin i_c(\text{liq})=\tfrac4{3\sqrt3}\Rightarrow i_c\approx50.3^\circ>45^\circ\]
+Why: \(i_c\ \text{depends on both refractive indices}\)
+Why not the others: (B) \(i_c(\text{liq})=50.3^\circ>45^\circ\); (C) \(\tfrac{\sqrt6}2>1\); (D) \(\tfrac{\sqrt6}2\ (\text{not divided by}\ \tfrac43)\).
+Key point: \(\sin i_c=\dfrac{n_{\text{out}}}{n_g}\)
+
+@@ Q58
+Answer: (D) 2I0 and 2I0; constant π would interchange bright and dark positions rather than wash out contrast.
+Given: \(I_1=I_2=I_0;\quad\text{extra phase}\ 0\ \text{or}\ \pi\ \text{for equal times}\)
+Formula/Principle: \(I(\delta)=2I_0(1+\cos\delta)\)
+Step 1: \(\text{bright point of P}\ (\delta=0):\ I(0)=4I_0,\ I(\pi)=0\)
+Step 2: \(\text{dark point of P}\ (\delta=\pi):\ I(\pi)=0,\ I(2\pi)=4I_0\)
+Step 3: \(\langle I\rangle=\tfrac12\left[I(\delta)+I(\delta+\pi)\right]=2I_0+I_0\left[\cos\delta+\cos(\delta+\pi)\right]=2I_0\)
+Worked derivation: \[\langle I\rangle_{\text{bright}}=\langle I\rangle_{\text{dark}}=\tfrac12(4I_0+0)=2I_0\]
+Check: \[\text{constant}\ \pi:\ I=2I_0(1-\cos\delta)\Rightarrow\delta=0:\ 0,\quad\delta=\pi:\ 4I_0\]
+Why: \(\text{a fluctuating phase averages out}\ \cos\delta;\ \text{a constant phase only shifts the pattern}\)
+Why not the others: (A) \(4I_0,\ 0\ (\text{no switching})\); (B) \(0,\ 4I_0\ (\text{the}\ \pi\ \text{state alone})\); (C) \(I_0+I_0=2I_0\ne I_0\).
+Key point: \(\text{incoherent sum}:\ I=I_1+I_2\)
+
+@@ Q59
+Answer: (D) n=4,Z=8,E=-54.4 eV.
+Given: \(r=2a_0,\quad\lambda=\pi a_0\)
+Formula/Principle: \(2\pi r=n\lambda,\quad r=\dfrac{a_0n^2}Z,\quad E_n=-13.6\dfrac{Z^2}{n^2}\ \mathrm{eV}\)
+Step 1: \(n=\dfrac{2\pi(2a_0)}{\pi a_0}=4\)
+Step 2: \(2a_0=\dfrac{16a_0}Z\Rightarrow Z=8\)
+Step 3: \(E=-13.6\times\dfrac{64}{16}=-54.4\ \mathrm{eV}\)
+Worked derivation: \[n=4,\quad Z=8,\quad E=-54.4\ \mathrm{eV}\]
+Check: \[\lambda=\frac{2\pi r}n=\frac{2\pi a_0n}Z=\frac{2\pi a_0\cdot4}8=\pi a_0\]
+Why: \(\text{the radius fixes}\ \tfrac{n^2}Z;\ \text{the wavelength fixes}\ n\)
+Why not the others: (A) \(n=2:\ \lambda=\tfrac{4\pi a_0}2=2\pi a_0\); (B) \(Z=4:\ r=4a_0\); (C) \(n=8:\ \lambda=\tfrac{4\pi a_0}8=\tfrac{\pi a_0}2\).
+Key point: \(\lambda_n=\dfrac{2\pi a_0n}Z\)
+
+@@ Q60
+Answer: (A) 1/2 and 1/2; neither past history fixes the order.
+Given: \(S(t)=e^{-\lambda t},\quad\lambda T=\ln2\)
+Formula/Principle: \(P(\text{survive to}\ t+T\mid\text{survived to}\ t)=\dfrac{S(t+T)}{S(t)}\)
+Step 1: \(\text{old nucleus}:\ \dfrac{S(4T)}{S(3T)}=\dfrac{2^{-4}}{2^{-3}}=\dfrac12\)
+Step 2: \(\text{new nucleus}:\ S(T)=e^{-\ln2}=\dfrac12\)
+Worked derivation: \[\frac{S(t+T)}{S(t)}=e^{-\lambda T}=\frac12\ \ \text{for every}\ t\]
+Check: \[P(\text{old decays before new})=\frac\lambda{\lambda+\lambda}=\frac12\]
+Why: \(\lambda\ \text{is constant: a nucleus does not age}\)
+Why not the others: (B) \(\tfrac1{16}=S(4T)\ (\text{not conditional})\); (C) \(S(T)=\tfrac12\ne1\); (D) \(S(3T)=\tfrac18\ne0\).
+Key point: \(\text{exponential decay is memoryless}\)
