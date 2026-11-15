@@ -6,7 +6,7 @@ from pathlib import Path
 from collections import Counter,defaultdict
 R=Path('.');D=R/'docs/blueprints'
 sha=lambda b:hashlib.sha256(b).hexdigest()
-MOVES={'IAT27-T10-Q19':'STO','IAT27-T11-Q43':'3D','IAT27-T12-Q08':'GEN','IAT27-T12-Q59':'EMW','IAT27-T13-Q41':'COORD','IAT27-T17-Q47':'UNITS'}
+MOVES={'IAT27-T10-Q19':'STO','IAT27-T11-Q43':'3D','IAT27-T12-Q08':'WELFARE','IAT27-T12-Q59':'EMW','IAT27-T13-Q41':'COORD','IAT27-T17-Q47':'UNITS'}
 act={};src={}
 for t in range(1,26):
     p=R/('IISER/IAT TEST 1.json' if t==1 else f'IISER/IAT NEW TEST {t}.json')

@@ -26,7 +26,11 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 | 18 | pass | pass (Q49 uses elastic energy; see flags) | pass | pass | 0 of 60 | 30 Maths/Physics rewritten as equations only; Biology/Chemistry solutions kept | Clean; 1 item flagged |
 | 19 | pass | pass | pass | pass | 0 of 60 | 30 Maths/Physics rewritten as equations only; Biology/Chemistry solutions kept | Clean; 1 item flagged |
 | 20 | pass | pass (Q48 uses a plastic plateau; see flags) | pass | pass | 0 of 60 | 30 Maths/Physics rewritten as equations only; Biology/Chemistry solutions kept | Clean; 1 item flagged |
-| 21–25 | — | — | — | — | — | — | Not yet audited |
+| 21 | pass | pass | pass | pass | 0 of 60 | already detailed; kept | Clean; 1 item flagged |
+| 22 | pass | fail → fixed: Q54 (potentiometer) is not in the syllabus, replaced | pass | pass | 0 of 60 | already detailed; kept (Q54 new) | Clean after fix |
+| 23 | pass | pass | pass | pass | 0 of 60 | already detailed; kept | Clean |
+| 24 | pass | pass | pass | pass | 0 of 60 | already detailed; kept | Clean |
+| 25 | pass | pass | pass | pass | 0 of 60 | already detailed; kept | Clean |
 
 ## Changes made
 
@@ -273,6 +277,20 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 - **The 20 wording-screen candidates were read one by one.** Nineteen are different definite integrals or differential equations that share only the words "Evaluate ∫"; they are not repeats. One pair (Test 4 Q34 and Test 15 Q33) is two area-under-a-parabola questions with different curves; kept and already flagged.
 - **Repeats between figure questions, left for manual handling:** Test 4 Q24 and Test 15 Q27 (activation energies from two Arrhenius slopes); Test 6 Q2, Test 11 Q2 and Test 16 Q2 (root section); Test 9 Q4 and Test 15 Q4 (Kranz anatomy); Test 10 Q2 and Test 15 Q2 (frog heart); Test 6 Q17 and Test 11 Q17 (ionisation isomers); Test 3 Q16 and Test 14 Q16 (zero dipole of CO₂); Test 4 Q16 and Test 16 Q16 (σ and π count); Test 1 Q11 and Test 13 Q15 (900 = 600 + 300 bp gel); floral position in Tests 4, 9, 13 and 14 (Q2).
 - **Direct-substitution items still labelled medium:** Test 10 Q36, Q51, Q56; Test 13 Q29; Test 15 Q25. The easy-labelled questions in those tests are all correctly easy, so labels cannot be swapped without breaking the 9/42/9 split. They are left as they are; a real paper also carries a few direct items.
+
+### Tests 21–25
+- All 300 answers re-derived; no key was wrong. Figure questions were solved from the data in the question text and, by the working rule above, left unchanged.
+- **Out of syllabus, replaced:** Test 22 Q54 (potentiometer; the syllabus lists the Wheatstone bridge only) → Kirchhoff's junction rule and conservation of charge.
+- **No other question in Tests 21–25 was changed.** Their solutions already give a full step-by-step working (Maths and Physics) or concept, reasoning and a reason against each option (Biology and Chemistry), so they were kept. The Maths and Physics solutions in these five tests still contain explanatory sentences; they were not converted to the equations-only layout used in Tests 1–20.
+- **Earlier replacements changed again because they overlapped with Tests 23–25:** Test 12 Q8 (Miller's experiment = Test 23 Q12) → benign and malignant tumours; Test 5 Q20 (amphoteric Al₂O₃ = Test 24 Q19) → formulae of the oxide and chloride from the configuration; Test 11 Q25 (Reimer–Tiemann = Test 24 Q25) → dehydration of ethanol at 413 K and 443 K; Test 11 Q12 (snapdragon 1 : 2 : 1 = Test 25 Q11) → frameshift mutation.
+- **Flagged, left unchanged:** Test 21 Q57 (frequency of maximum capacitor voltage in a series LCR circuit, harder than anything in the NCERT treatment).
+- Checks: `validate_iat.py` 0 errors on all 25 tests; slot plan mismatches 0.
+
+## Final summary (15 November 2026)
+- **Answer keys:** all 1500 questions were re-solved. No wrong key was found.
+- **Questions replaced or reworded:** about 235 across Tests 1–17 and Test 22, almost all for repetition; the out-of-syllabus topics removed were transpiration, propagation of errors, thin-film interference, arithmetico-geometric series, Poisson's ratio, secondary growth and the potentiometer.
+- **Tests needing the user's decision:** the figure-question repeats listed in the follow-up section; the elastic-energy items (Test 2 Q49, Test 6 Q48, Test 18 Q49); the difficulty gap between Tests 1–15 and Tests 16–25; whether Tests 21–25 Maths and Physics solutions should be converted to equations only.
+- **Coverage:** every chapter of the four subjects keeps at least 5 questions across the series; the per-topic evidence ledger still has 228 syllabus phrases without an explicit question mapping (unchanged from before the audit).
 
 ## Not verified
 - Rendered PDF pages were not regenerated or inspected for Test 1 after the edit (the exporter needs Playwright and Chromium).
