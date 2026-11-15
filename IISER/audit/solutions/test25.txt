@@ -1,0 +1,352 @@
+@@ Q31
+Answer: (B) e=1/2; centre (2/3,0).
+Given: \(F(1,0),\quad\text{directrix}\ x=2,\quad PF=e\cdot PM,\quad O(0,0)\ \text{on the conic}\)
+Formula/Principle: \(e=\dfrac{PF}{PM};\quad(x-1)^2+y^2=e^2(x-2)^2\)
+Step 1: \(\text{at}\ O:\ PF=1,\ PM=2\Rightarrow e=\tfrac12\)
+Step 2: \((x-1)^2+y^2=\tfrac14(x-2)^2\)
+Step 3: \(x^2-2x+1+y^2=\tfrac14x^2-x+1\Rightarrow\tfrac34x^2-x+y^2=0\)
+Step 4: \(\tfrac34\left(x^2-\tfrac43x\right)+y^2=0\Rightarrow\tfrac34\left(x-\tfrac23\right)^2+y^2=\tfrac13\)
+Worked derivation: \[e=\tfrac12,\qquad\text{centre}\left(\tfrac23,0\right)\]
+Check: \[a^2=\tfrac49,\ a=\tfrac23:\ \text{focus at}\ \tfrac23+ae=\tfrac23+\tfrac13=1;\quad\text{directrix at}\ \tfrac23+\tfrac ae=\tfrac23+\tfrac43=2\]
+Why: \(e<1\Rightarrow\text{ellipse; its centre is not its focus}\)
+Why not the others: (A) \(e=2=\tfrac{PM}{PF}\ (\text{inverted})\); (C) \((1,0)\ \text{is the focus}\); (D) \(e=1\Rightarrow PF=PM,\ \text{but}\ 1\ne2\).
+Key point: \(\text{focus at}\ c\pm ae,\ \text{directrix at}\ c\pm\dfrac ae\)
+
+@@ Q32
+Answer: (D) 1/3.
+Given: \(y=\dfrac1x,\ x>0;\quad\text{point}\ \left(x_0,\tfrac1{x_0}\right)\)
+Formula/Principle: \(m_T=-\dfrac1{x_0^2},\quad m_N=x_0^2\)
+Step 1: \(\text{tangent}:\ y-\dfrac1{x_0}=-\dfrac1{x_0^2}(x-x_0);\quad y=0\Rightarrow x_T=2x_0\)
+Step 2: \(\text{normal}:\ y-\dfrac1{x_0}=x_0^2(x-x_0);\quad y=0\Rightarrow x_N=x_0-\dfrac1{x_0^3}\)
+Step 3: \(|x_N|=2x_0:\quad x_N=2x_0\Rightarrow-\dfrac1{x_0^3}=x_0\ (\text{impossible})\)
+Step 4: \(x_N=-2x_0\Rightarrow3x_0=\dfrac1{x_0^3}\Rightarrow3x_0^4=1\)
+Worked derivation: \[x_0^4=\tfrac13\]
+Check: \[x_0=3^{-1/4}\approx0.760:\ x_T=1.520,\quad x_N=0.760-\frac1{0.439}=-1.520\]
+Why: \(\text{equal distances allow intercepts on opposite sides of the origin}\)
+Why not the others: (A) \(x_0^4=3:\ x_N=x_0-\tfrac{x_0}3\ne-2x_0\); (B) \(x_0^4=1:\ x_N=0\); (C) \(x_0^4=\tfrac12:\ x_N=x_0-2x_0=-x_0\ne-2x_0\).
+Key point: \(\text{resolve}\ |x_N|=|x_T|\ \text{into both sign cases}\)
+
+@@ Q33
+Answer: (C) 9; not attained under the strict length–width requirement.
+Given: \(2(l+w)=12,\quad l>w>0\)
+Formula/Principle: \(l=x,\ w=6-x;\quad A=x(6-x)\)
+Step 1: \(x>6-x>0\Rightarrow3<x<6\)
+Step 2: \(A=6x-x^2=9-(x-3)^2\)
+Step 3: \(3<x<6\Rightarrow A<9;\quad x\to3^+\Rightarrow A\to9\)
+Worked derivation: \[\sup A=9,\qquad A=9\iff x=3\ (\text{excluded})\]
+Check: \[x=3.1:\ A=3.1\times2.9=8.99<9;\quad x=4:\ A=8\]
+Why: \(\text{the domain is open at}\ x=3\)
+Why not the others: (A) \(4\times2=8\ne6,\ \text{and}\ 8<8.99\); (B) \(l=w=3\ \text{violates}\ l>w\); (D) \(w\to0\Rightarrow A\to0\).
+Key point: \(\text{a supremum on an open interval need not be attained}\)
+
+@@ Q34
+Answer: (A) pi−2 arctan 2.
+Given: \(f(x)=\dfrac{x^3-x^2-x+1}{(x-1)(x^2+1)}\ (x\ne1),\quad f(1)=7\)
+Formula/Principle: \(\text{one point does not change an integral};\quad\displaystyle\int\frac{dx}{x^2+1}=\arctan x\)
+Step 1: \(x^3-x^2-x+1=x^2(x-1)-(x-1)=(x-1)^2(x+1)\)
+Step 2: \(f(x)=\dfrac{(x-1)(x+1)}{x^2+1}=\dfrac{x^2-1}{x^2+1}=1-\dfrac2{x^2+1}\)
+Step 3: \(f<0\ \text{on}\ [0,1),\quad f>0\ \text{on}\ (1,2];\quad F(x)=x-2\arctan x\)
+Step 4: \(\displaystyle\int_0^1(-f)\,dx=-[F(1)-F(0)]=-\left(1-\tfrac\pi2\right)=\tfrac\pi2-1\)
+Step 5: \(\displaystyle\int_1^2f\,dx=F(2)-F(1)=(2-2\arctan2)-\left(1-\tfrac\pi2\right)=1+\tfrac\pi2-2\arctan2\)
+Worked derivation: \[I=\left(\tfrac\pi2-1\right)+\left(1+\tfrac\pi2-2\arctan2\right)=\pi-2\arctan2\approx0.927\]
+Check: \[\tfrac\pi2-1\approx0.571,\quad1+1.571-2.214\approx0.357,\quad0.571+0.357=0.928\]
+Why: \(\text{the value}\ f(1)=7\ \text{has zero width}\)
+Why not the others: (B) \(2-2\arctan2=F(2)-F(0)<0\ (\text{signed integral})\); (C) \(2\arctan2\approx2.21\ne0.927\); (D) \(7\ \text{is a height, not an area}\).
+Key point: \(\text{split}\ |f|\ \text{at the sign change}\)
+
+@@ Q35
+Answer: (C) 4 maps; 3 bijections.
+Given: \(f:1\to2,\ 2\to3,\ 3\to1,\ 4\to4;\quad g\circ f=f\circ g\)
+Formula/Principle: \(g(f(x))=f(g(x))\ \ \forall x\in S\)
+Step 1: \(x=4:\ g(4)=f(g(4))\Rightarrow g(4)\ \text{is a fixed point of}\ f\Rightarrow g(4)=4\)
+Step 2: \(g(1)=a\Rightarrow g(2)=g(f(1))=f(a),\quad g(3)=f^2(a)\)
+Step 3: \(g(1)=g(f(3))=f(g(3))=f^3(a)=a\ \ (\text{consistent for every}\ a)\)
+Step 4: \(a\in\{1,2,3\}:\ g\ \text{permutes}\ \{1,2,3\}\ (\text{bijection});\quad a=4:\ g\equiv4\)
+Worked derivation: \[N_g=4,\qquad N_{\text{bijective}}=3\]
+Check: \[a=2:\ g=(1\to2,\ 2\to3,\ 3\to1,\ 4\to4)=f;\quad f\circ f=f\circ f\]
+Why: \(\text{one choice}\ g(1)\ \text{fixes}\ g\ \text{on the whole 3-cycle}\)
+Why not the others: (A) \(g\equiv4\ \text{omitted}\); (B) \(g\equiv4\ \text{is not a bijection}\); (D) \(g(2),g(3)\ \text{are not free}\).
+Key point: \(\text{commuting maps send orbits to orbits}\)
+
+@@ Q36
+Answer: (B) e2−e3.
+Given: \(\mathbf v+\mathbf e_1\times\mathbf v=2\mathbf e_2;\quad\mathbf e_1\times\mathbf e_2=\mathbf e_3\)
+Formula/Principle: \(\mathbf v=a\mathbf e_1+b\mathbf e_2+c\mathbf e_3;\quad\mathbf e_1\times\mathbf e_3=-\mathbf e_2\)
+Step 1: \(\mathbf e_1\times\mathbf v=b\mathbf e_3-c\mathbf e_2\)
+Step 2: \(a\mathbf e_1+(b-c)\mathbf e_2+(c+b)\mathbf e_3=2\mathbf e_2\)
+Step 3: \(a=0,\quad b-c=2,\quad b+c=0\Rightarrow b=1,\ c=-1\)
+Worked derivation: \[\mathbf v=\mathbf e_2-\mathbf e_3\]
+Check: \[(\mathbf e_2-\mathbf e_3)+\mathbf e_1\times(\mathbf e_2-\mathbf e_3)=(\mathbf e_2-\mathbf e_3)+(\mathbf e_3+\mathbf e_2)=2\mathbf e_2\]
+Why: \(\mathbf e_1\times\mathbf v\ \text{has no}\ \mathbf e_1\ \text{component}\Rightarrow a=0\)
+Why not the others: (A) \(\mathbf e_2+\mathbf e_3:\ \text{gives}\ 2\mathbf e_3\); (C) \(2\mathbf e_2-2\mathbf e_3:\ \text{gives}\ 4\mathbf e_2\); (D) \(a=1\ne0\).
+Key point: \(\text{resolve a vector equation along an orthonormal basis}\)
+
+@@ Q37
+Answer: (D) n=6; trace 128.
+Given: \(A=\begin{pmatrix}2&1\\0&2\end{pmatrix}=2I+N,\quad N=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad N^2=0\)
+Formula/Principle: \((2I+N)^n=2^nI+n2^{n-1}N\)
+Step 1: \(A^n=\begin{pmatrix}2^n&n2^{n-1}\\0&2^n\end{pmatrix}\)
+Step 2: \(n2^{n-1}=3\cdot2^n\Rightarrow n=6\)
+Step 3: \(2^6=64\)
+Worked derivation: \[n=6,\qquad\operatorname{tr}(A^6)=64+64=128\]
+Check: \[A^2=\begin{pmatrix}4&4\\0&4\end{pmatrix}:\ n2^{n-1}=2\cdot2=4;\quad A^6:\ 6\cdot32=192=3\times64\]
+Why: \(\text{the binomial series stops after the}\ N\ \text{term}\)
+Why not the others: (A) \(n=3:\ 3\cdot4=12\ne24\); (B) \(64\ \text{is one diagonal entry}\); (C) \(n=3:\ \operatorname{tr}=16\ne128\).
+Key point: \(N^2=0\Rightarrow(aI+N)^n=a^nI+na^{n-1}N\)
+
+@@ Q38
+Answer: (A) 1/3.
+Given: \(1,2,3,4,5\ \text{in random order};\quad\text{stop when the running sum}\ge6;\quad\text{stopped at 2 numbers}\)
+Formula/Principle: \(P(a=5\mid E)=\dfrac{N(a=5,\ E)}{N(E)},\quad E:\ a+b\ge6\ (a<6\ \text{always})\)
+Step 1: \(a=1:\ b=5\ (1);\quad a=2:\ b=4,5\ (2);\quad a=3:\ b=4,5\ (2)\)
+Step 2: \(a=4:\ b=2,3,5\ (3);\quad a=5:\ b=1,2,3,4\ (4)\)
+Step 3: \(N(E)=1+2+2+3+4=12\)
+Worked derivation: \[P(a=5\mid E)=\frac4{12}=\frac13\]
+Check: \[\text{unordered pairs with sum}\ge6:\ \{1,5\},\{2,4\},\{2,5\},\{3,4\},\{3,5\},\{4,5\}=6;\quad6\times2=12\]
+Why: \(\text{larger first numbers stop at two more often}\)
+Why not the others: (B) \(\tfrac15\ (\text{no conditioning})\); (C) \(\tfrac12\ne\tfrac4{12}\); (D) \(\tfrac14\ne\tfrac4{12}\).
+Key point: \(\text{count ordered pairs inside the conditioning event}\)
+
+@@ Q39
+Answer: (C) 240.
+Given: \(6\ \text{couples};\quad\text{committee of 4 with exactly one complete couple}\)
+Formula/Principle: \(N=(\text{couple})\times(\text{two other couples})\times(\text{one person from each})\)
+Step 1: \(\text{complete couple}:\ \dbinom61=6\)
+Step 2: \(\text{two of the remaining five couples}:\ \dbinom52=10\)
+Step 3: \(\text{one partner from each}:\ 2\times2=4\)
+Worked derivation: \[N=6\times10\times4=240\]
+Check: \[\binom{12}4=495=\underbrace{\binom64 2^4}_{0\ \text{couples}}+\underbrace{240}_{1}+\underbrace{\binom62}_{2}=240+240+15\]
+Why: \(\text{the last two members come from different couples, so no second couple forms}\)
+Why not the others: (A) \(480=6\times20\times4\ (\text{ordered pair of couples})\); (B) \(120=6\times10\times2\); (D) \(360\ne240\).
+Key point: \(\text{choose couples first, then individuals}\)
+
+@@ Q40
+Answer: (D) 4.
+Given: \(P(x)=(1+x)^5\left(1-x+x^2-\dots+x^{10}\right)\)
+Formula/Principle: \((1+x)\displaystyle\sum_{k=0}^{10}(-x)^k=1-(-x)^{11}=1+x^{11}\)
+Step 1: \(P(x)=(1+x)^4(1+x^{11})\)
+Step 2: \((1+x)^4\ \text{has degree}\ 4\Rightarrow[x^{10}]P=0\)
+Step 3: \([x^{12}]P=[x^1](1+x)^4=\dbinom41=4\)
+Worked derivation: \[[x^{12}]P-[x^{10}]P=4-0=4\]
+Check: \[P(x)=1+4x+6x^2+4x^3+x^4+x^{11}+4x^{12}+6x^{13}+4x^{14}+x^{15}\]
+Why: \(\text{powers}\ 5\ \text{to}\ 10\ \text{are absent}\)
+Why not the others: (A) \(-4\ (\text{order reversed})\); (B) \(0\ (\text{misses}\ 4x^{12})\); (C) \(5=\tbinom51\ (\text{from}\ (1+x)^5)\).
+Key point: \(\text{sum the finite geometric factor first}\)
+
+@@ Q41
+Answer: (A) r=−2; sum −15.
+Given: \(a,b,c\ \text{in GP};\quad\sqrt{ac}=6,\quad a+b+c=9,\quad a+c=15,\quad|r|>1\)
+Formula/Principle: \(b^2=ac;\quad b=ar,\ c=ar^2\)
+Step 1: \(b=9-15=-6\quad(b^2=36=ac)\)
+Step 2: \(t^2-15t+36=0\Rightarrow(t-3)(t-12)=0\Rightarrow\{a,c\}=\{3,12\}\)
+Step 3: \(a=3:\ r=\dfrac{-6}3=-2;\qquad a=12:\ r=-\dfrac12\)
+Step 4: \(|r|>1\Rightarrow a=3,\ r=-2\)
+Step 5: \(a_4=12\times(-2)=-24\)
+Worked derivation: \[S_4=3-6+12-24=-15\]
+Check: \[S_4=\frac{a(r^4-1)}{r-1}=\frac{3(16-1)}{-3}=-15\]
+Why: \(b=-\sqrt{ac}\ \text{is allowed in a real GP}\)
+Why not the others: (B) \(r=2\Rightarrow b=6,\ a+b+c=21\ne9\); (C) \(|-\tfrac12|<1\); (D) \(33=3-6+12+24\ (\text{sign of}\ a_4)\).
+Key point: \(b^2=ac\ \text{gives}\ b=\pm\sqrt{ac}\)
+
+@@ Q42
+Answer: (C) a=1; argument pi/3.
+Given: \(x^2-2ax+(a+3)=0,\quad\text{roots}\ z,\bar z,\quad|z|=2\)
+Formula/Principle: \(z\bar z=|z|^2=a+3\)
+Step 1: \(a+3=4\Rightarrow a=1\)
+Step 2: \(x^2-2x+4=0,\quad\Delta=4-16=-12<0\)
+Step 3: \(x=\dfrac{2\pm i\sqrt{12}}2=1\pm i\sqrt3\)
+Step 4: \(z=1+i\sqrt3=2\left(\cos\tfrac\pi3+i\sin\tfrac\pi3\right)\)
+Worked derivation: \[a=1,\qquad\operatorname{Arg}z=\arctan\sqrt3=\frac\pi3\]
+Check: \[|z|=\sqrt{1+3}=2;\quad z+\bar z=2=2a\]
+Why: \(\text{for conjugate roots the product is the squared modulus}\)
+Why not the others: (A) \(a=-1:\ \text{product}=2\ne4\); (B) \(\operatorname{Re}z=1>0\Rightarrow\operatorname{Arg}z<\tfrac\pi2\); (D) \(a=3:\ \text{product}=6\ne4\).
+Key point: \(\text{product of conjugate roots}=|z|^2\)
+
+@@ Q43
+Answer: (B) 12/5.
+Given: \(x_1,\dots,x_5\in[-2,3],\quad\sum x_i=0\)
+Formula/Principle: \(\mathrm{MD}=\tfrac15\sum|x_i|;\quad|x|\le\dfrac x5+\dfrac{12}5\ \text{on}\ [-2,3]\)
+Step 1: \(x\ge0:\ x\le\dfrac x5+\dfrac{12}5\iff x\le3\)
+Step 2: \(x\le0:\ -x\le\dfrac x5+\dfrac{12}5\iff x\ge-2\)
+Step 3: \(\tfrac15\sum|x_i|\le\tfrac1{25}\sum x_i+\tfrac{12}5=\tfrac{12}5\)
+Step 4: \(\text{equality}:\ x_i\in\{-2,3\}:\ -2,-2,-2,3,3\ (\text{sum}\ 0)\)
+Worked derivation: \[\mathrm{MD}_{\max}=\frac{2+2+2+3+3}5=\frac{12}5\]
+Check: \[k\ \text{values at}\ 3,\ 5-k\ \text{at}\ -2:\ 3k-2(5-k)=0\Rightarrow k=2\]
+Why: \(|x|\ \text{is convex, so its largest average is reached at the endpoints}\)
+Why not the others: (A) \(2<\tfrac{12}5\); (C) \(3\ \text{needs every}\ |x_i|=3\); (D) \(\tfrac52>\tfrac{12}5\ (\text{above the bound})\).
+Key point: \(\text{bound a convex function by its chord, then check that the bound is attained}\)
+
+@@ Q44
+Answer: (A) y=2 ln x on (1,infinity); its finite limit zero at 1 does not make the differential equation defined there.
+Given: \(y'=\dfrac y{x\ln x},\quad x>1,\quad y(e)=2\)
+Formula/Principle: \(\dfrac{dy}y=\dfrac{dx}{x\ln x};\quad\displaystyle\int\frac{dx}{x\ln x}=\ln(\ln x)\)
+Step 1: \(\ln|y|=\ln(\ln x)+C\Rightarrow y=K\ln x\)
+Step 2: \(y(e)=2:\ K\ln e=2\Rightarrow K=2\)
+Step 3: \(y=2\ln x,\quad x\in(1,\infty)\)
+Worked derivation: \[y=2\ln x;\qquad\lim_{x\to1^+}y=0,\ \text{but}\ \frac1{x\ln x}\ \text{is undefined at}\ x=1\]
+Check: \[y'=\frac2x;\quad\frac y{x\ln x}=\frac{2\ln x}{x\ln x}=\frac2x\]
+Why: \(\text{the equation, not the solution formula, fixes the domain}\)
+Why not the others: (B) \(y=2x:\ y'=2\ne\tfrac2{\ln x}\); (C) \(\ln x=0\ \text{at}\ x=1\); (D) \(y=\tfrac2{\ln x}:\ y'=-\tfrac2{x\ln^2x}\ne\tfrac2{x\ln^2x}\).
+Key point: \(\text{maximal interval ends at a singular point of the coefficient}\)
+
+@@ Q45
+Answer: (D) g is continuous on its domain, has derivative 1/2 at 1, and has no finite right derivative at zero.
+Given: \(f(x)=x^2\ (0\le x\le1),\quad f(x)=2x-1\ (x>1)\)
+Formula/Principle: \(g=f^{-1};\quad g'(f(x))=\dfrac1{f'(x)}\)
+Step 1: \(0\le y\le1:\ g(y)=\sqrt y;\qquad y>1:\ g(y)=\dfrac{y+1}2\)
+Step 2: \(g(1^-)=1,\ g(1^+)=1\Rightarrow\text{continuous}\)
+Step 3: \(g'(1^-)=\dfrac1{2\sqrt1}=\dfrac12,\quad g'(1^+)=\dfrac12\)
+Step 4: \(\displaystyle\lim_{h\to0^+}\frac{\sqrt h-0}h=\lim_{h\to0^+}\frac1{\sqrt h}=\infty\)
+Worked derivation: \[g'(1)=\tfrac12,\qquad g'_+(0)\ \text{not finite}\]
+Check: \[f'(1^-)=2,\ f'(1^+)=2\Rightarrow g'(1)=\tfrac12;\quad f'(0)=0\Rightarrow g'(0)=\tfrac10\]
+Why: \(f\ \text{is increasing and onto}\ [0,\infty)\ \text{on the given domain}\)
+Why not the others: (A) \(g(1^-)=g(1^+)=1\); (B) \(g'_+(0)=\infty,\ g'(1)=\tfrac12\); (C) \(\text{the domain is}\ [0,\infty),\ \text{where}\ x^2\ \text{is one-one}\).
+Key point: \((f^{-1})'=\dfrac1{f'}\)
+
+@@ Q47
+Answer: (B) 8.0 m s−1; yes, 3.0 m s−2.
+Given: \(m=2.0\ \mathrm{kg},\quad P=v^2+6v\ \mathrm W,\quad F_{\text{drag}}=v\ \mathrm N,\quad u=2.0\ \mathrm{m\,s^{-1}},\quad s=10\ \mathrm m\)
+Formula/Principle: \(F_{\text{eng}}=\dfrac Pv,\quad F_{\text{net}}=ma,\quad v^2=u^2+2as\)
+Step 1: \(F_{\text{eng}}=\dfrac{v^2+6v}v=v+6\ \mathrm N\)
+Step 2: \(F_{\text{net}}=(v+6)-v=6\ \mathrm N\)
+Step 3: \(a=\dfrac62=3.0\ \mathrm{m\,s^{-2}}\ (\text{constant})\)
+Step 4: \(v^2=2^2+2(3)(10)=64\)
+Worked derivation: \[v=8.0\ \mathrm{m\,s^{-1}},\qquad a=3.0\ \mathrm{m\,s^{-2}}\]
+Check: \[F_{\text{net}}s=6\times10=60\ \mathrm J=\tfrac12(2)(64-4);\quad v=8:\ P_{\text{eng}}-P_{\text{drag}}=112-64=48\ \mathrm W=mav\]
+Why: \(\text{the speed-dependent parts of engine force and drag cancel}\)
+Why not the others: (A) \(6.0^2=36\ne64\); (C) \(F_{\text{net}}=6\ \mathrm N\ \text{is constant}\); (D) \(a=1.5\ \mathrm{m\,s^{-2}}\ (\text{divided by}\ m\ \text{twice})\).
+Key point: \(F=\dfrac Pv\)
+
+@@ Q48
+Answer: (C) m1=4M,m2=3M; zero.
+Given: \(\text{shells}\ (m_1,R),\ (m_2,3R);\quad V(0)=-\dfrac{5GM}R,\quad V(2R)=-\dfrac{3GM}R\)
+Formula/Principle: \(V_{\text{shell}}=-\dfrac{Gm}a\ (r\le a),\quad-\dfrac{Gm}r\ (r\ge a)\)
+Step 1: \(V(0)=-\dfrac{Gm_1}R-\dfrac{Gm_2}{3R}\Rightarrow m_1+\dfrac{m_2}3=5M\)
+Step 2: \(V(2R)=-\dfrac{Gm_1}{2R}-\dfrac{Gm_2}{3R}\Rightarrow\dfrac{m_1}2+\dfrac{m_2}3=3M\)
+Step 3: \(\text{subtract}:\ \dfrac{m_1}2=2M\Rightarrow m_1=4M\)
+Step 4: \(\dfrac{m_2}3=5M-4M\Rightarrow m_2=3M\)
+Worked derivation: \[m_1=4M,\quad m_2=3M;\qquad r<R:\ V=\text{const}\Rightarrow W_{\text{ext}}=m_0\Delta V=0\]
+Check: \[V(2R)=-\frac{G(4M)}{2R}-\frac{G(3M)}{3R}=-\frac{2GM}R-\frac{GM}R=-\frac{3GM}R\]
+Why: \(g=0\ \text{inside both shells}\)
+Why not the others: (A) \(V(2R)=-\tfrac{GM}R-\tfrac{3GM}R=-\tfrac{4GM}R\); (B) \(\Delta V=0\ \text{even though}\ V<0\); (D) \(m_2=0\ \text{is not positive, and}\ V(2R)=-\tfrac{5GM}{2R}\).
+Key point: \(\text{work depends on}\ \Delta V,\ \text{not on}\ V\)
+
+@@ Q50
+Answer: (B) L1=2.0 m,L2=1.0 m.
+Given: \(X=L_1-L_2=1.0\ \mathrm m,\quad\alpha_1=1.0\times10^{-5}\ \mathrm{K^{-1}},\quad\alpha_2=2.0\times10^{-5}\ \mathrm{K^{-1}}\)
+Formula/Principle: \(\Delta L=\alpha L\Delta T\Rightarrow\Delta X=(\alpha_1L_1-\alpha_2L_2)\Delta T\)
+Step 1: \(\Delta X=0\Rightarrow\alpha_1L_1=\alpha_2L_2\Rightarrow L_1=2L_2\)
+Step 2: \(L_1-L_2=1.0\Rightarrow2L_2-L_2=1.0\Rightarrow L_2=1.0\ \mathrm m\)
+Worked derivation: \[L_1=2.0\ \mathrm m,\qquad L_2=1.0\ \mathrm m\]
+Check: \[\alpha_1L_1=1.0\times10^{-5}\times2.0=2.0\times10^{-5}\ \mathrm{m\,K^{-1}}=\alpha_2L_2\]
+Why: \(\text{equal absolute expansions cancel in a difference}\)
+Why not the others: (A) \(L_1-L_2=-1.0\ \mathrm m\); (C) \(1.5\times10^{-5}\ne1.0\times10^{-5}\); (D) \(L_1-L_2=0\).
+Key point: \(\alpha_1L_1=\alpha_2L_2\)
+
+@@ Q51
+Answer: (D) Per molecule stays unchanged; per volume doubles.
+Given: \(n\to2n,\quad T\to\dfrac T4;\quad m,\ \sigma\ \text{fixed}\)
+Formula/Principle: \(\bar v\propto\sqrt T,\quad z\propto n\sigma\bar v,\quad\mathcal R=\tfrac12nz\)
+Step 1: \(\dfrac{\bar v_2}{\bar v_1}=\sqrt{\tfrac14}=\tfrac12\)
+Step 2: \(\dfrac{z_2}{z_1}=2\times\tfrac12=1\)
+Step 3: \(\dfrac{\mathcal R_2}{\mathcal R_1}=\dfrac{n_2z_2}{n_1z_1}=2\times1=2\)
+Worked derivation: \[\frac{z_2}{z_1}=1,\qquad\frac{\mathcal R_2}{\mathcal R_1}=2\]
+Check: \[\mathcal R\propto n^2\bar v:\ 2^2\times\tfrac12=2\]
+Why: \(\text{each molecule collides as often as before, but there are twice as many molecules}\)
+Why not the others: (A) \(\mathcal R\ \text{doubles}\); (B) \(z\ \text{is unchanged}\); (C) \(z_2=z_1,\ \mathcal R_2=2\mathcal R_1\).
+Key point: \(z\propto n\sqrt T,\quad\mathcal R\propto n^2\sqrt T\)
+
+@@ Q52
+Answer: (A) 0.025 J.
+Given: \(m=0.20\ \mathrm{kg};\quad(x_1,v_1)=(0.030\ \mathrm m,\ 0.40\ \mathrm{m\,s^{-1}}),\quad(x_2,v_2)=(0.040\ \mathrm m,\ 0.30\ \mathrm{m\,s^{-1}})\)
+Formula/Principle: \(v^2=\omega^2(A^2-x^2),\quad E=\tfrac12m\omega^2A^2\)
+Step 1: \(v_1^2-v_2^2=\omega^2(x_2^2-x_1^2):\ 0.16-0.09=\omega^2(0.0016-0.0009)\)
+Step 2: \(\omega^2=\dfrac{0.070}{0.00070}=100\ \mathrm{s^{-2}}\)
+Step 3: \(A^2=x_1^2+\dfrac{v_1^2}{\omega^2}=0.0009+0.0016=0.0025\ \mathrm{m^2}\)
+Worked derivation: \[E=\tfrac12(0.20)(100)(0.0025)=0.025\ \mathrm J\]
+Check: \[K_1+U_1=\tfrac12(0.20)(0.16)+\tfrac12(0.20)(100)(0.0009)=0.016+0.009=0.025\ \mathrm J\]
+Why: \(\text{subtracting the two states removes}\ A^2\)
+Why not the others: (B) \(0.050\ \mathrm J\ (\text{factor}\ \tfrac12\ \text{missing})\); (C) \(0.016\ \mathrm J=K_1\); (D) \(0.009\ \mathrm J=U_1\).
+Key point: \(E=K+U=\tfrac12mv^2+\tfrac12m\omega^2x^2\)
+
+@@ Q54
+Answer: (A) P diamagnetic, Q paramagnetic, R ferromagnetic below its transition; P has relative permeability below 1.
+Given: \(\text{P}:\ \chi<0,\ \text{small, nearly independent of}\ T;\quad\text{Q}:\ \chi>0,\ \chi\propto\tfrac1T;\quad\text{R}:\ \chi\gg1,\ \text{remanence for}\ T<T_C\)
+Formula/Principle: \(\mu_r=1+\chi;\quad\text{Curie law}:\ \chi=\dfrac CT\)
+Step 1: \(\text{P}:\ \chi<0\Rightarrow\text{diamagnetic}\)
+Step 2: \(\text{Q}:\ \chi=\dfrac CT>0\Rightarrow\text{paramagnetic}\)
+Step 3: \(\text{R}:\ \text{remanence below}\ T_C\Rightarrow\text{ferromagnetic}\)
+Worked derivation: \[\text{P}:\ \mu_r=1+\chi<1\quad(\chi<0)\]
+Check: \[\text{typical}:\ \chi_{\text{dia}}\sim-10^{-5},\quad\chi_{\text{para}}\sim+10^{-5}\ \text{to}\ 10^{-3},\quad\chi_{\text{ferro}}\sim10^3\]
+Why: \(\text{sign, temperature dependence and remanence together fix the class}\)
+Why not the others: (B) \(\chi_P<0\Rightarrow\text{not paramagnetic}\); (C) \(\chi_Q>0\Rightarrow\mu_r>1\); (D) \(\chi_P<0<\chi_Q\).
+Key point: \(\chi<0\ \text{dia};\quad\chi=\tfrac CT\ \text{para};\quad\text{remanence}\ \text{ferro}\)
+
+@@ Q56
+Answer: (C) R=(7+3sqrt(5))/2 ohm; source energy 180−60sqrt(5) J.
+Given: \(\varepsilon=6.0\ \mathrm V,\quad r=1.0\ \Omega,\quad E_R=40\ \mathrm J,\quad t=10\ \mathrm s\)
+Formula/Principle: \(P_R=\dfrac{\varepsilon^2R}{(R+r)^2},\quad E_{\text{src}}=\varepsilon It=\dfrac{\varepsilon^2t}{R+r}\)
+Step 1: \(P_R=\dfrac{40}{10}=4\ \mathrm W\)
+Step 2: \(\dfrac{36R}{(R+1)^2}=4\Rightarrow9R=R^2+2R+1\Rightarrow R^2-7R+1=0\)
+Step 3: \(R=\dfrac{7\pm\sqrt{45}}2=\dfrac{7\pm3\sqrt5}2\ \Omega\)
+Step 4: \(E_{\text{src}}=\dfrac{360}{R+1}\ \text{decreases with}\ R\Rightarrow R=\dfrac{7+3\sqrt5}2\approx6.85\ \Omega\)
+Step 5: \(E_{\text{src}}=\dfrac{720}{9+3\sqrt5}=\dfrac{240}{3+\sqrt5}=\dfrac{240(3-\sqrt5)}4\)
+Worked derivation: \[E_{\text{src}}=180-60\sqrt5\approx45.8\ \mathrm J\]
+Check: \[I=\frac6{7.854}\approx0.764\ \mathrm A:\ I^2Rt\approx0.5836\times6.854\times10\approx40\ \mathrm J;\quad I^2rt\approx5.8\ \mathrm J\]
+Why: \(\text{the larger}\ R\ \text{draws less current, so less is lost in}\ r\)
+Why not the others: (A) \(R\approx0.146\ \Omega:\ E_{\text{src}}=\tfrac{360}{1.146}\approx314\ \mathrm J\); (B) \(R=1\ \Omega:\ P_R=9\ \mathrm W\ne4\ \mathrm W\); (D) \(E_{\text{src}}=40+I^2rt>40\ \mathrm J\).
+Key point: \(\text{two resistances give the same load power:}\ R_1R_2=r^2\)
+
+@@ Q57
+Answer: (B) 4.0 cm; magnification 5.
+Given: \(f=5.0\ \mathrm{cm},\quad\text{eye}\ 5.0\ \mathrm{cm}\ \text{behind the lens},\quad D=25\ \mathrm{cm}\ \text{from the eye}\)
+Formula/Principle: \(\dfrac1v-\dfrac1u=\dfrac1f;\quad M=\dfrac{\beta}{\alpha_0},\ \alpha_0=\dfrac hD\)
+Step 1: \(v=-(25-5)=-20\ \mathrm{cm}\)
+Step 2: \(\dfrac1u=\dfrac1v-\dfrac1f=-\dfrac1{20}-\dfrac15=-\dfrac14\Rightarrow u=-4.0\ \mathrm{cm}\)
+Step 3: \(m=\dfrac vu=\dfrac{-20}{-4}=5\Rightarrow h'=5h\)
+Step 4: \(\beta=\dfrac{h'}{25}=\dfrac{5h}{25},\quad\alpha_0=\dfrac h{25}\)
+Worked derivation: \[|u|=4.0\ \mathrm{cm},\qquad M=\frac{5h/25}{h/25}=5\]
+Check: \[\frac1{-20}-\frac1{-4}=-0.05+0.25=0.20=\frac15\ \mathrm{cm^{-1}}\]
+Why: \(1+\tfrac Df=6\ \text{assumes the eye is at the lens}\)
+Why not the others: (A) \(\tfrac{25}6\ \mathrm{cm}\ (v=-25\ \mathrm{cm})\); (C) \(M=5,\ \text{not}\ 6\); (D) \(u=-5\ \mathrm{cm}\Rightarrow\text{image at}\ \infty\).
+Key point: \(\text{lens distances from the lens; angles from the eye}\)
+
+@@ Q58
+Answer: (D) 1.50 V; only ultraviolet.
+Given: \(\phi=2.0\ \mathrm{eV},\quad\text{offset}=+0.40\ \mathrm V,\quad hc=1240\ \mathrm{eV\,nm}\)
+Formula/Principle: \(K_{\max}=\dfrac{hc}\lambda-\phi=eV_0;\quad\lambda_{\text{th}}=\dfrac{hc}\phi\)
+Step 1: \(E_{400}=\dfrac{1240}{400}=3.10\ \mathrm{eV}\)
+Step 2: \(K_{\max}=3.10-2.00=1.10\ \mathrm{eV}\Rightarrow V_0=1.10\ \mathrm V\)
+Step 3: \(V_{\text{read}}=1.10+0.40=1.50\ \mathrm V\)
+Step 4: \(\lambda_{\text{th}}=\dfrac{1240}{2.0}=620\ \mathrm{nm}\)
+Worked derivation: \[V_{\text{read}}=1.50\ \mathrm V;\qquad800\ \mathrm{nm}>620\ \mathrm{nm}\ (\text{no}),\quad300\ \mathrm{nm}<620\ \mathrm{nm}\ (\text{yes})\]
+Check: \[E_{800}=1.55\ \mathrm{eV}<2.0\ \mathrm{eV};\quad E_{300}=4.13\ \mathrm{eV}>2.0\ \mathrm{eV}\]
+Why: \(\text{the offset shifts the reading, not the threshold}\)
+Why not the others: (A) \(1.10\ \mathrm V\ (\text{offset omitted})\); (B) \(E_{800}<\phi\); (C) \(0.70\ \mathrm V=1.10-0.40\).
+Key point: \(\lambda\le\dfrac{hc}\phi\ \text{for emission}\)
+
+@@ Q59
+Answer: (B) 12.09 eV, because 10.20 eV was already stored in its initial excitation.
+Given: \(E_2-E_1=10.20\ \mathrm{eV},\quad E_3-E_1=12.09\ \mathrm{eV},\quad h\nu_{\text{abs}}=1.89\ \mathrm{eV}\)
+Formula/Principle: \(E_{\text{emitted}}=E_3-E_1\)
+Step 1: \(E_3-E_1=(E_2-E_1)+(E_3-E_2)=10.20+1.89=12.09\ \mathrm{eV}\)
+Step 2: \(\text{direct}:\ 3\to1:\ 12.09\ \mathrm{eV}\)
+Step 3: \(\text{cascade}:\ 3\to2\to1:\ 1.89+10.20=12.09\ \mathrm{eV}\)
+Worked derivation: \[E_{\text{emitted}}=12.09\ \mathrm{eV}=1.89\ \mathrm{eV}\ (\text{absorbed})+10.20\ \mathrm{eV}\ (\text{stored})\]
+Check: \[13.6\left(1-\tfrac19\right)=12.09\ \mathrm{eV};\quad13.6\left(\tfrac14-\tfrac19\right)=1.89\ \mathrm{eV}\]
+Why: \(\text{the atom started}\ 10.20\ \mathrm{eV}\ \text{above the ground state}\)
+Why not the others: (A) \(1.89\ \mathrm{eV}\ (\text{stored energy ignored})\); (C) \(10.20\ \mathrm{eV}\ (\text{absorbed photon ignored})\); (D) \(24.18=2\times12.09\).
+Key point: \(\text{total emitted energy}=E_{\text{initial level}}-E_{\text{final level}}\)
+
+@@ Q60
+Answer: (C) The torque continues to oppose rotation and the drive power remains positive because it supplies Joule heat.
+Given: \(\Phi=K\cos\theta,\quad\theta=\omega t,\quad\text{load}\ R\)
+Formula/Principle: \(\varepsilon=-\dfrac{d\Phi}{dt},\quad I=\dfrac\varepsilon R,\quad P_{\text{drive}}=\tau\omega=I^2R\)
+Step 1: \(\varepsilon=K\omega\sin\theta\)
+Step 2: \(I=\dfrac{K\omega\sin\theta}R\)
+Step 3: \(|\tau|=KI\sin\theta=\dfrac{K^2\omega}R\sin^2\theta\ \ (\text{opposing rotation})\)
+Worked derivation: \[P_{\text{drive}}=|\tau|\omega=\frac{K^2\omega^2}R\sin^2\theta=I^2R\ge0\]
+Check: \[\theta\to\theta+\pi:\ \sin\theta\to-\sin\theta,\ I\to-I,\ \sin^2\theta\ \text{unchanged}\]
+Why: \(\text{current and the geometric factor change sign together}\)
+Why not the others: (A) \(\tau\propto\sin^2\theta\ \text{does not reverse}\); (B) \(I<0\ \text{is still a current}\); (D) \(P_{\text{drive}}=I^2R\ge0\).
+Key point: \(\text{Lenz's law: the induced torque always opposes the rotation}\)
