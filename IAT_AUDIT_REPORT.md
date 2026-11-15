@@ -21,7 +21,8 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 | 13 | pass | pass | minor: Q56 was one step, replaced; Q29 is one step, kept | fail → fixed: 12 questions repeated earlier tests, replaced | 0 of 60 | all 60 rewritten (30 Maths/Physics as equations only) | Clean after fixes; 10 items flagged |
 | 14 | pass | pass | minor: Q43, Q46, Q52 and Q56 were one step, replaced | fail → fixed: 18 questions repeated earlier tests, replaced | 0 of 60 | all 60 rewritten (30 Maths/Physics as equations only) | Clean after fixes; 8 items flagged |
 | 15 | pass | fail → fixed: Q47 (propagation of percentage errors) is not in the syllabus, replaced | minor: Q54 and Q58 were one step, replaced | fail → fixed: 13 questions repeated earlier tests, replaced | 0 of 60 | all 60 rewritten (30 Maths/Physics as equations only) | Clean after fixes; 11 items flagged |
-| 16–25 | — | — | — | — | — | — | Not yet audited |
+| 16 | pass | fail → fixed: Q15 (secondary xylem and phloem from the cambium) is not in the current NCERT text, replaced | pass (harder than Tests 1–15, close to the real paper's upper range) | pass: no repeat of Tests 1–15 except Q29, fixed in Test 8 | 0 of 60 | 30 Maths/Physics rewritten as equations only; Biology/Chemistry solutions were already complete and are kept | Clean after fixes; 4 items flagged |
+| 17–25 | — | — | — | — | — | — | Not yet audited |
 
 ## Changes made
 
@@ -226,6 +227,14 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
   - Physics: Q49 (disc with a concentric hole = Test 8 Q49 exactly) → parallel-axis theorem for a disc; Q53 (energy of a dipole turned through 90°, fourth dipole item) → potential and field at the centre of a charged shell; Q54 (J = I/A, one step) → two cells in series with internal resistance; Q58 (tan φ = X/R, one step) → phase and power in a capacitive circuit.
 - **Flagged, left unchanged:** Q2 (figure; frog heart, as in Test 10 Q2); Q4 (figure; Kranz anatomy = Test 9 Q4); Q8 (lost DNA-damage checkpoint, near Test 9 Q8); Q11 (carrier mother, one more X-linked risk item); Q25 (van 't Hoff factor in one step); Q27 (figure; activation energies from two Arrhenius slopes, the number-swapped Test 4 Q24); Q32 (ellipse from foci and directrices, as in Test 2 Q32); Q33 (area under a parabola, fourth area item); Q36 (surjective but not injective, same classification as Test 11 Q34); Q51 (springs in parallel, near Test 2 Q52); Q57 (figure; total internal reflection at 50°, near Test 7 Q57).
 - Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 0 errors. Source text: `IISER/audit/solutions/test15.txt`.
+
+### Test 16 (`IISER/IAT NEW TEST 16.json`)
+- All 60 answers re-derived; no key was wrong. This test is written at a higher level than Tests 1–15 and repeats almost nothing from them. The figure questions state their data in the question text; the figures themselves were not opened.
+- **Out of syllabus, replaced:** Q15 (direction of secondary xylem and phloem; secondary growth was removed from the NCERT chapter) → living and dead elements of xylem.
+- **Change made in an earlier test because of this test:** Test 8 Q29 (cyclohexene from its ozonolysis product, the same as the figure question Test 16 Q29) → Kolbe's electrolytic method.
+- **Flagged, left unchanged:** Q2 (figure; root and stem bundles, the third such figure after Test 6 Q2 and Test 11 Q2, and one option mentions secondary xylem); Q4 (respiratory quotient of fermentation, which the NCERT text does not discuss); Q16 (figure; σ and π bond count, a longer version of Test 4 Q16); Q22 (Hinsberg test for three amines, extends Test 4 Q22).
+- Q31–Q60 rewritten as equations only. The Biology and Chemistry solutions already give the concept, the reasoning and a reason against each wrong option, so only Q15 was rewritten.
+- Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 0 errors. Source text: `IISER/audit/solutions/test16.txt`.
 
 ## Not verified
 - Rendered PDF pages were not regenerated or inspected for Test 1 after the edit (the exporter needs Playwright and Chromium).
