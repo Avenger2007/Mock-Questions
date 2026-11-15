@@ -1,0 +1,368 @@
+@@ Q31
+Answer: (A) 676.
+Given: \(A=\text{cyclic permutation matrix},\quad B_t=\begin{pmatrix}t^2&t&1\\1&2t+3&t\\t&1&15-2t\end{pmatrix}\)
+Formula/Principle: \(AB=BA\iff B=c_0I+c_1A+c_2A^2=\begin{pmatrix}c_0&c_1&c_2\\c_2&c_0&c_1\\c_1&c_2&c_0\end{pmatrix}\)
+Step 1: \(c_1=t,\ c_2=1\ \text{(consistent in all rows)}\)
+Step 2: \(c_0=t^2=2t+3=15-2t\)
+Step 3: \(2t+3=15-2t\Rightarrow t=3;\quad t^2=9=2(3)+3\)
+Step 4: \(\det\operatorname{circ}(c_0,c_1,c_2)=c_0^3+c_1^3+c_2^3-3c_0c_1c_2\)
+Worked derivation: \[\det B_3=729+27+1-81=676\]
+Check: \[\begin{vmatrix}9&3&1\\1&9&3\\3&1&9\end{vmatrix}=9(81-3)-3(9-9)+1(1-27)=702-0-26=676\]
+Why: \(\text{matrices commuting with the cyclic shift are exactly the circulants}\)
+Why not the others: (B) \(756\ne676\); (C) \(\det\ne0\); (D) \(728=13\times56\ne13\times52\).
+Key point: \(\det\operatorname{circ}(a,b,c)=(a+b+c)(a^2+b^2+c^2-ab-bc-ca)\)
+
+@@ Q32
+Answer: (B) 28.
+Given: \(A\notin\{1,2\},\quad B\notin\{2,3\},\quad C\notin\{3,4\};\quad5\ \text{positions}\)
+Formula/Principle: \(\text{place }A,\ \text{then }B,\ \text{then }C;\ D,E\ \text{in}\ 2!\ \text{ways}\)
+Step 1: \(A=3:\ B=1\Rightarrow C\in\{2,5\};\ B=4\Rightarrow C\in\{1,2,5\};\ B=5\Rightarrow C\in\{1,2\}:\ 7\)
+Step 2: \(A=4:\ B=1\Rightarrow C\in\{2,5\};\ B=5\Rightarrow C\in\{1,2\}:\ 4\)
+Step 3: \(A=5:\ B=1\Rightarrow C\in\{2\};\ B=4\Rightarrow C\in\{1,2\}:\ 3\)
+Worked derivation: \[(7+4+3)\times2!=28\]
+Check: \[A=3,\ B=4,\ C=1:\ D,E\in\{2,5\}\ (\text{valid});\quad14\ \text{placements of }(A,B,C)\]
+Why: \(\text{the last two people fill the remaining two positions freely}\)
+Why not the others: (A) \(36\ne28\); (C) \(24\ne28\); (D) \(20\ne28\).
+Key point: \(\text{case-split on the most restricted person}\)
+
+@@ Q33
+Answer: (C) 60 and 24.
+Given: \(|A|=6,\ |B|=4;\quad\text{classes of sizes }3,2,1\)
+Formula/Principle: \(\text{partitions}:\ \dbinom63\dbinom32\dbinom11;\quad\text{maps}:\ \text{injective labelling of 3 classes by 4 values}\)
+Step 1: \(\dbinom63\dbinom32=20\times3=60\)
+Step 2: \(4\times3\times2=24\)
+Worked derivation: \[60\ \text{relations};\quad24\ \text{maps for each}\]
+Check: \[\text{sizes }3,2,1\ \text{are all different}\Rightarrow\text{no division for equal classes}\]
+Why: \(\text{different classes must have different images}\)
+Why not the others: (A) \(64=4^3\) (images allowed to repeat); (B) \(10\ne60\); (D) \(4\ne24\).
+Key point: \(\text{the relation fixes the partition, not the labels}\)
+
+@@ Q34
+Answer: (D) 11.
+Given: \(z^2-2(a+i)z+b+6i=0\ \text{has a repeated root};\quad a,b\in\mathbb R\)
+Formula/Principle: \(\text{discriminant}=0:\ (a+i)^2=b+6i\)
+Step 1: \(a^2-1+2ai=b+6i\)
+Step 2: \(2a=6\Rightarrow a=3;\quad b=a^2-1=8\)
+Worked derivation: \[a+b=11\]
+Check: \[z^2-2(3+i)z+8+6i=\left(z-(3+i)\right)^2,\quad(3+i)^2=8+6i\]
+Why: \(\text{equate real and imaginary parts}\)
+Why not the others: (A) \(8=b\); (B) \(10\ne11\); (C) \(12=a+b+1\) (\(i^2\) taken as \(0\)).
+Key point: \(\text{a complex equation gives two real equations}\)
+
+@@ Q35
+Answer: (A) π.
+Given: \(F'(x)=\dfrac{x+1}{x^2-2x+2},\quad F(0)=0\)
+Formula/Principle: \(x^2-2x+2=(x-1)^2+1;\quad x+1=(x-1)+2\)
+Step 1: \(F(x)=\tfrac12\ln\left[(x-1)^2+1\right]+2\tan^{-1}(x-1)+C\)
+Step 2: \(F(2)-F(0)=\tfrac12(\ln2-\ln2)+2\left[\tfrac\pi4-\left(-\tfrac\pi4\right)\right]\)
+Worked derivation: \[F(2)=\pi\]
+Check: \[\text{denominator}\ge1>0\Rightarrow F\ \text{continuous on}\ \mathbb R\]
+Why: \(\text{the logarithmic terms cancel by symmetry about}\ x=1\)
+Why not the others: (B) \(\tfrac\pi2\) (factor 2 omitted); (C) \(\ln2\) (arctangent omitted); (D) \(2\pi\ne\pi\).
+Key point: \(\displaystyle\int\frac{du}{u^2+1}=\tan^{-1}u\)
+
+@@ Q36
+Answer: (B) (3,0,6); 3√14.
+Given: \(A=(0,a_2,a_3),\ B=(b_1,0,b_3);\quad P=(2,3,4),\ AP:PB=2:1;\quad AB\parallel x+y+z=0\)
+Formula/Principle: \(P=\dfrac{A+2B}{3};\quad(B-A)\cdot(1,1,1)=0\)
+Step 1: \(\dfrac{2b_1}{3}=2\Rightarrow b_1=3;\quad\dfrac{a_2}{3}=3\Rightarrow a_2=9;\quad a_3+2b_3=12\)
+Step 2: \(3-9+b_3-a_3=0\Rightarrow b_3-a_3=6\)
+Step 3: \(b_3=6,\ a_3=0\Rightarrow A=(0,9,0),\ B=(3,0,6)\)
+Worked derivation: \[AB=\sqrt{9+81+36}=\sqrt{126}=3\sqrt{14}\]
+Check: \[\frac{(0,9,0)+2(3,0,6)}{3}=(2,3,4)\]
+Why: \(\text{section formula for internal division}\ m:n\)
+Why not the others: (A) \((6,0,0):\ \tfrac{2\times6}{3}\ne2\); (C) \((3,0,0):\ b_3=0\Rightarrow a_3=12,\ b_3-a_3\ne6\); (D) \(\sqrt{14}=PB\).
+Key point: \(P=\dfrac{nA+mB}{m+n}\)
+
+@@ Q37
+Answer: (A) Regular vertical tangent at the origin; right angle at (1,0).
+Given: \(x=t^2,\quad y=t^3-t\)
+Formula/Principle: \(\mathbf v(t)=(2t,\ 3t^2-1)\)
+Step 1: \(\text{origin}:\ t=0:\ \mathbf v=(0,-1)\ne\mathbf 0\Rightarrow\text{regular, vertical}\)
+Step 2: \((1,0):\ t=\pm1:\ \mathbf v(1)=(2,2),\ \mathbf v(-1)=(-2,2)\)
+Worked derivation: \[\mathbf v(1)\cdot\mathbf v(-1)=-4+4=0\Rightarrow90^\circ\]
+Check: \[y^2=x(x-1)^2:\ \text{near }(1,0),\ y=\pm(x-1)\]
+Why: \(\text{singular}\iff\mathbf v=\mathbf 0\)
+Why not the others: (B) \(\mathbf v(0)\ne\mathbf 0\); (C) \(\mathbf v(0)\ \text{is vertical}\); (D) \(\mathbf v(1)\not\parallel\mathbf v(-1)\).
+Key point: \(\text{tangent direction}=\left(\dfrac{dx}{dt},\dfrac{dy}{dt}\right)\)
+
+@@ Q38
+Answer: (B) Variance stays 3; mean absolute deviation stays 3/2.
+Given: \(\{0,0,0,4\}\to\{0,0,0,-4\}\)
+Formula/Principle: \(\sigma^2=\dfrac1n\sum(x-\bar x)^2,\quad\text{MAD}=\dfrac1n\sum|x-\bar x|\)
+Step 1: \(\bar x=1:\ \sigma^2=\dfrac{1+1+1+9}{4}=3,\ \text{MAD}=\dfrac{1+1+1+3}{4}=\dfrac32\)
+Step 2: \(\bar x=-1:\ \sigma^2=\dfrac{1+1+1+9}{4}=3,\ \text{MAD}=\dfrac32\)
+Worked derivation: \[\sigma^2=3,\quad\text{MAD}=\tfrac32\ \text{in both sets}\]
+Check: \[x\to-x:\ \bar x\to-\bar x,\ |x-\bar x|\ \text{unchanged}\]
+Why: \(\text{reflection changes location only}\)
+Why not the others: (A) \(\text{neither changes}\); (C) \(\text{MAD}=\tfrac32\ne2\); (D) \(\sigma^2=3\ne4\).
+Key point: \(\text{dispersion is unchanged by}\ x\to-x\ \text{or}\ x\to x+c\)
+
+@@ Q39
+Answer: (C) -12.
+Given: \(\displaystyle\lim_{x\to0}\frac{\sin x+a\cos x+b-x}{x^2}=3\)
+Formula/Principle: \(\sin x=x-\dfrac{x^3}{6}+\dots,\quad\cos x=1-\dfrac{x^2}{2}+\dots\)
+Step 1: \(\text{numerator}=(a+b)-\dfrac a2x^2-\dfrac{x^3}{6}+\dots\)
+Step 2: \(\text{finite}\Rightarrow a+b=0\)
+Step 3: \(-\dfrac a2=3\Rightarrow a=-6,\ b=6\)
+Worked derivation: \[a-b=-12\]
+Check: \[\frac{-6\left(-\tfrac{x^2}{2}\right)}{x^2}=3\]
+Why: \(\text{the constant term must vanish for a finite limit}\)
+Why not the others: (A) \(-6=a\); (B) \(6=b\); (D) \(3\) (value of the limit).
+Key point: \(\text{match powers of }x\text{ in the expansion}\)
+
+@@ Q40
+Answer: (D) 17/24.
+Given: \(P(A>B)=\tfrac12,\quad P(B>C)=\tfrac23,\quad P(C>A)=\tfrac34;\quad\text{independent}\)
+Formula/Principle: \(P(\text{transitive})=1-P(\text{cycle})\)
+Step 1: \(A>B>C>A:\ \tfrac12\cdot\tfrac23\cdot\tfrac34=\tfrac14\)
+Step 2: \(B>A,\ C>B,\ A>C:\ \tfrac12\cdot\tfrac13\cdot\tfrac14=\tfrac1{24}\)
+Worked derivation: \[1-\left(\frac14+\frac1{24}\right)=1-\frac{7}{24}=\frac{17}{24}\]
+Check: \[2^3=8\ \text{outcomes}:\ 2\ \text{cyclic},\ 6\ \text{transitive}\]
+Why: \(\text{three results are either a cycle or have one player beating both others}\)
+Why not the others: (A) \(\tfrac13\ne\tfrac{17}{24}\); (B) \(\tfrac14\) (one cycle); (C) \(\tfrac34\) (second cycle omitted).
+Key point: \(\text{count the complement}\)
+
+@@ Q41
+Answer: (B) \(\pi+\arctan(3x/(1-2x^2))\).
+Given: \(S(x)=\arctan2x+\arctan x,\quad x>\dfrac{1}{\sqrt2}\)
+Formula/Principle: \(\tan S=\dfrac{2x+x}{1-2x^2}\)
+Step 1: \(x>\dfrac{1}{\sqrt2}\Rightarrow1-2x^2<0\Rightarrow\tan S<0\)
+Step 2: \(0<S<\pi,\ \tan S<0\Rightarrow S\in\left(\tfrac\pi2,\pi\right)\)
+Step 3: \(\arctan\dfrac{3x}{1-2x^2}\in\left(-\tfrac\pi2,0\right)\)
+Worked derivation: \[S=\pi+\arctan\frac{3x}{1-2x^2}\]
+Check: \[x=1:\ \arctan2+\arctan1=1.107+0.785=1.893=\pi+\arctan(-3)=3.142-1.249\]
+Why: \(\arctan\ \text{returns values in}\ \left(-\tfrac\pi2,\tfrac\pi2\right)\)
+Why not the others: (A) \(x=1:\ -1.249\ne1.893\); (C) \(-1.249-\pi<0\); (D) \(\tfrac\pi2-1.249=0.322\ne1.893\).
+Key point: \(\arctan a+\arctan b=\pi+\arctan\dfrac{a+b}{1-ab}\ \ (a,b>0,\ ab>1)\)
+
+@@ Q42
+Answer: (D) 13/6.
+Given: \(\dfrac{dx}{dy}+\dfrac xy=y,\quad y>0,\quad x(1)=2\)
+Formula/Principle: \(\text{IF}=e^{\int dy/y}=y:\ \dfrac{d}{dy}(xy)=y^2\)
+Step 1: \(xy=\dfrac{y^3}{3}+C\)
+Step 2: \(2=\dfrac13+C\Rightarrow C=\dfrac53\)
+Worked derivation: \[2x=\frac83+\frac53=\frac{13}{3}\Rightarrow x=\frac{13}{6}\]
+Check: \[x=\frac{y^2}{3}+\frac{5}{3y}:\ \frac{dx}{dy}+\frac xy=\frac{2y}{3}-\frac{5}{3y^2}+\frac y3+\frac{5}{3y^2}=y\]
+Why: \(\text{the equation is linear in }x\text{ as a function of }y\)
+Why not the others: (A) \(\tfrac72\ne\tfrac{13}{6}\); (B) \(\tfrac83=\tfrac{y^3}{3}\) (constant omitted, not divided); (C) \(3\ne\tfrac{13}{6}\).
+Key point: \(\text{choose the dependent variable that makes the equation linear}\)
+
+@@ Q43
+Answer: (D) -1.
+Given: \(P=x^2+px+q,\ Q=x^2+qx+p,\ P\ne Q;\quad\text{one common root, repeated in }P\)
+Formula/Principle: \(P(r)-Q(r)=0\)
+Step 1: \((p-q)r+(q-p)=0\Rightarrow r=1\ \ (p\ne q)\)
+Step 2: \(P=(x-1)^2\Rightarrow p=-2,\ q=1\)
+Worked derivation: \[p+q=-1\]
+Check: \[Q=x^2+x-2=(x-1)(x+2)\ \ (\text{shares only }x=1)\]
+Why: \(\text{subtracting removes the }x^2\text{ terms}\)
+Why not the others: (A) \(1=q\); (B) \(-3=p-q\); (C) \(p+q=0\Rightarrow p=-q\ \text{contradicts}\ p=-2,\ q=1\).
+Key point: \(\text{common root of two quadratics: subtract the equations}\)
+
+@@ Q44
+Answer: (A) Two lines; length 6.
+Given: \(\dfrac{x^2}{4}-y^2=1,\quad x^2+y^2=9\)
+Formula/Principle: \(\text{solve simultaneously}\)
+Step 1: \(\dfrac{x^2}{4}-(9-x^2)=1\Rightarrow x^2=8,\ y^2=1\)
+Step 2: \(\text{points}:\ (\pm2\sqrt2,\ \pm1)\ \ (4\ \text{points})\)
+Step 3: \(\text{pairs not on a line parallel to an axis}:\ \text{diametrically opposite points}\ (2\ \text{pairs})\)
+Worked derivation: \[\text{2 lines, each a diameter}:\ \text{length}=2\times3=6\]
+Check: \[\sqrt{(4\sqrt2)^2+2^2}=\sqrt{36}=6\]
+Why: \(\text{both curves are symmetric about both axes}\)
+Why not the others: (B) \(4\ \text{points give 6 pairs: 2 horizontal, 2 vertical, 2 diagonal}\); (C) \(3=\text{radius}\); (D) \(4\sqrt2\) (horizontal chord).
+Key point: \(\text{symmetric intersection points form a rectangle}\)
+
+@@ Q45
+Answer: (C) √65.
+Given: \(\mathbf a=(2,1),\ J\mathbf a=(-1,2);\quad\mathbf v\cdot\mathbf a=10,\quad\det(\mathbf a,\mathbf v)=15\)
+Formula/Principle: \(\mathbf v=\alpha\mathbf a+\beta J\mathbf a;\quad\det(\mathbf a,J\mathbf a)=|\mathbf a|^2\)
+Step 1: \(\mathbf v\cdot\mathbf a=\alpha|\mathbf a|^2=5\alpha=10\Rightarrow\alpha=2\)
+Step 2: \(\det(\mathbf a,\mathbf v)=\beta|\mathbf a|^2=5\beta=15\Rightarrow\beta=3\)
+Worked derivation: \[|\mathbf v|=|\mathbf a|\sqrt{\alpha^2+\beta^2}=\sqrt5\sqrt{13}=\sqrt{65}\]
+Check: \[\mathbf v=(4,2)+(-3,6)=(1,8):\ 2+8=10,\ 2(8)-1(1)=15,\ |\mathbf v|=\sqrt{65}\]
+Why: \(\mathbf a\perp J\mathbf a,\ |J\mathbf a|=|\mathbf a|\)
+Why not the others: (A) \(5\ne\sqrt{65}\); (B) \(\sqrt{13}\) (\(|\mathbf a|\) omitted); (D) \(\sqrt{85}\ne\sqrt{65}\).
+Key point: \(|\mathbf a|^2|\mathbf v|^2=(\mathbf a\cdot\mathbf v)^2+\det(\mathbf a,\mathbf v)^2\)
+
+@@ Q46
+Answer: (A) a=1,b=2,c=2; K is not fixed.
+Given: \(F=K\rho^av^bL^c\)
+Formula/Principle: \([F]=\mathrm{MLT^{-2}},\ [\rho]=\mathrm{ML^{-3}},\ [v]=\mathrm{LT^{-1}},\ [L]=\mathrm L\)
+Step 1: \(\mathrm M:\ a=1\)
+Step 2: \(\mathrm T:\ -b=-2\Rightarrow b=2\)
+Step 3: \(\mathrm L:\ -3a+b+c=1\Rightarrow c=2\)
+Worked derivation: \[F=K\rho v^2L^2\]
+Check: \[\mathrm{kg\,m^{-3}\cdot m^2s^{-2}\cdot m^2}=\mathrm{kg\,m\,s^{-2}}\]
+Why: \(\text{a dimensionless constant cannot be found by dimensional analysis}\)
+Why not the others: (B) \(b=1:\ \mathrm T^{-1}\ne\mathrm T^{-2}\); (C) \(c=1:\ \mathrm L^0\ne\mathrm L^1\); (D) \(K\ \text{is undetermined}\).
+Key point: \(\text{three base dimensions fix three exponents}\)
+
+@@ Q47
+Answer: (B) A=-3 m s−2, B=+6 m s−2.
+Given: \(m_A=1\ \mathrm{kg},\ m_B=2\ \mathrm{kg};\quad F_A=-3\ \mathrm N,\ F_B=+12\ \mathrm N;\quad A\ \text{left of}\ B\)
+Formula/Principle: \(\text{contact force}\ N\ge0\ (\text{push only})\)
+Step 1: \(\text{assume common }a:\ a=\dfrac{12-3}{3}=3\ \mathrm{m\,s^{-2}}\Rightarrow\text{on }A:\ -3+N'=3\Rightarrow N'=+6\ \mathrm N\ \text{to the right}\)
+Step 2: \(B\ \text{would have to pull }A\ \text{to the right}\Rightarrow\text{tension, not allowed}\Rightarrow N=0\)
+Worked derivation: \[a_A=\frac{-3}{1}=-3\ \mathrm{m\,s^{-2}};\qquad a_B=\frac{12}{2}=+6\ \mathrm{m\,s^{-2}}\]
+Check: \[a_B-a_A=9\ \mathrm{m\,s^{-2}}>0\Rightarrow\text{the blocks separate}\]
+Why: \(\text{the forces pull the blocks apart}\)
+Why not the others: (A) \(\text{needs a pulling contact force}\); (C) \(\text{signs reversed}\); (D) \(\text{net forces are not zero}\).
+Key point: \(\text{test the sign of the contact force}\)
+
+@@ Q48
+Answer: (C) 90 N,150 N; 6/5.
+Given: \(k_1=k,\ k_2=2k;\quad\text{rod 2 yields at}\ 150\ \mathrm N\ \text{and then holds}\ 150\ \mathrm N;\quad W=240\ \mathrm N\)
+Formula/Principle: \(\text{same extension }x;\quad F_1=kx,\ F_2=2kx\ (\text{elastic})\)
+Step 1: \(\text{yield}:\ 2kx_y=150\Rightarrow x_y=\dfrac{75}{k},\ F_1=75\ \mathrm N,\ W_y=225\ \mathrm N\)
+Step 2: \(W=240>225:\ F_2=150\ \mathrm N,\ F_1=240-150=90\ \mathrm N\ (<100\ \mathrm N)\)
+Step 3: \(x=\dfrac{90}{k}\)
+Worked derivation: \[\frac{x}{x_y}=\frac{90}{75}=\frac65\]
+Check: \[90+150=240\ \mathrm N\]
+Why: \(\text{after yielding, all extra load goes to the elastic rod}\)
+Why not the others: (A) \(80,\ 160\ \mathrm N\) (yield ignored); (B) \(100,\ 140\ \mathrm N:\ F_2<150\ \text{after yield}\); (D) \(120\ \mathrm N>100\ \mathrm N\ \text{limit of rod 1}\).
+Key point: \(\text{parallel supports share the extension, not the force}\)
+
+@@ Q49
+Answer: (D) 145/3 degrees C.
+Given: \(T=80,\ 65,\ 55\ ^\circ\mathrm C\ \text{at equal intervals}\)
+Formula/Principle: \(T-T_s=(T_0-T_s)e^{-kt}\Rightarrow\text{excess temperatures in GP}\)
+Step 1: \((65-T_s)^2=(80-T_s)(55-T_s)\)
+Step 2: \(4225-130T_s=4400-135T_s\Rightarrow T_s=35\ ^\circ\mathrm C\)
+Step 3: \(\text{excess}:\ 45,\ 30,\ 20\Rightarrow r=\dfrac23\)
+Worked derivation: \[T_4=35+20\times\frac23=\frac{145}{3}\ ^\circ\mathrm C\approx48.3\ ^\circ\mathrm C\]
+Check: \[\frac{30}{45}=\frac{20}{30}=\frac23\]
+Why: \(\text{equal times}\Rightarrow\text{equal ratios of excess temperature}\)
+Why not the others: (A) \(45\) (constant second difference); (B) \(50\ne\tfrac{145}{3}\); (C) \(40\ne\tfrac{145}{3}\).
+Key point: \(\text{Newton's law of cooling: excess temperature decays exponentially}\)
+
+@@ Q50
+Answer: (A) √(5/6).
+Given: \(1\ \mathrm{mol}\ \text{at}\ 100\ \mathrm K,\quad3\ \mathrm{mol}\ \text{at}\ 300\ \mathrm K;\quad\text{same gas, isolated, rigid}\)
+Formula/Principle: \(\sum n_iC_VT_i=\left(\sum n_i\right)C_VT_f;\quad v_{\text{rms}}\propto\sqrt T\)
+Step 1: \(T_f=\dfrac{1(100)+3(300)}{4}=250\ \mathrm K\)
+Worked derivation: \[\frac{v_f}{v_{\text{hot}}}=\sqrt{\frac{250}{300}}=\sqrt{\frac56}\]
+Check: \[100\ \mathrm K<250\ \mathrm K<300\ \mathrm K\]
+Why: \(\text{internal energy is conserved}\)
+Why not the others: (B) \(\sqrt{\tfrac23}\) (\(T_f=200\ \mathrm K\), unweighted mean); (C) \(\tfrac56\) (root not taken); (D) \(\sqrt3\) (ratio of the initial speeds).
+Key point: \(T_f=\dfrac{\sum n_iT_i}{\sum n_i}\ \text{for the same gas}\)
+
+@@ Q51
+Answer: (B) √2 F/k.
+Given: \(x(0)=0,\ v(0)=0;\quad F\ \text{for}\ t=\dfrac{\pi}{2\omega},\quad\omega=\sqrt{\dfrac km}\)
+Formula/Principle: \(\text{with }F:\ x=\dfrac Fk(1-\cos\omega t)\)
+Step 1: \(\omega t=\dfrac\pi2:\ x_1=\dfrac Fk,\quad v_1=\dfrac Fk\omega\)
+Step 2: \(\text{after removal}:\ A=\sqrt{x_1^2+\left(\dfrac{v_1}{\omega}\right)^2}\)
+Worked derivation: \[A=\sqrt{\left(\frac Fk\right)^2+\left(\frac Fk\right)^2}=\frac{\sqrt2F}{k}\]
+Check: \[\text{work by }F=F\cdot\frac Fk=\frac{F^2}{k}=\tfrac12kA^2\]
+Why: \(\text{while }F\text{ acts the mass oscillates about}\ x=\dfrac Fk\)
+Why not the others: (A) \(\dfrac Fk\) (velocity ignored); (C) \(\dfrac{2F}{k}\) (force kept on for a half period); (D) \(\dfrac{F}{\sqrt2k}\ne\dfrac{\sqrt2F}{k}\).
+Key point: \(A=\sqrt{x^2+\left(\dfrac v\omega\right)^2}\)
+
+@@ Q52
+Answer: (C) 100 Hz; fifth.
+Given: \(L=1.00\ \mathrm m,\ \text{fixed at }0,\ \text{free at }L;\quad\text{nodes at}\ 0,\ 0.40,\ 0.80\ \mathrm m;\quad v=80\ \mathrm{m\,s^{-1}}\)
+Formula/Principle: \(\text{node spacing}=\dfrac\lambda2;\quad f=\dfrac v\lambda;\quad f_1=\dfrac{v}{4L}\)
+Step 1: \(\lambda=2\times0.40=0.80\ \mathrm m\)
+Step 2: \(f=\dfrac{80}{0.80}=100\ \mathrm{Hz}\)
+Step 3: \(f_1=\dfrac{80}{4.00}=20\ \mathrm{Hz}\)
+Worked derivation: \[\frac{f}{f_1}=\frac{100}{20}=5\]
+Check: \[L=\frac{5\lambda}{4}=\frac{5\times0.80}{4}=1.00\ \mathrm m\]
+Why: \(\text{fixed–free string: odd harmonics only}\)
+Why not the others: (A) \(200\ \mathrm{Hz}\) (\(\lambda=0.40\ \mathrm m\)); (B) \(\text{even harmonics are absent}\); (D) \(50\ \mathrm{Hz}\ne\dfrac{80}{0.80}\).
+Key point: \(L=(2n-1)\dfrac\lambda4\)
+
+@@ Q53
+Answer: (D) Inner -q nonuniform, outer +2q uniform; exterior field 2kq/r² radially outward.
+Given: \(+q\ \text{off-centre in the cavity};\quad\text{grounded, disconnected, then}\ +2q\ \text{added}\)
+Formula/Principle: \(\text{Gauss's law inside the conductor}:\ q_{\text{inner}}=-q\)
+Step 1: \(\text{grounded, no external charge}:\ q_{\text{outer}}=0,\ q_{\text{inner}}=-q\)
+Step 2: \(\text{isolated}+2q:\ q_{\text{outer}}=+2q\)
+Worked derivation: \[q_{\text{enclosed}}(r>R)=q-q+2q=2q\Rightarrow E=\frac{2kq}{r^2}\]
+Check: \[\text{net charge on the conductor}=-q+2q=+q\]
+Why: \(\text{the conductor screens the cavity: the outer charge spreads uniformly on the sphere}\)
+Why not the others: (A) \(q_{\text{outer}}=+2q\ne+3q\); (B) \(q_{\text{inner}}=-q\ne0\); (C) \(\text{the exterior field is spherically symmetric}\).
+Key point: \(\text{cavity charge and its induced charge produce no field outside}\)
+
+@@ Q54
+Answer: (A) (√13-1) A.
+Given: \(\text{device}:\ V=(1\ \mathrm{V\,A^{-2}})I^2;\quad\text{source}:\ V=12-2I\)
+Formula/Principle: \(\text{operating point}:\ \text{both relations hold}\)
+Step 1: \(I^2=12-2I\Rightarrow I^2+2I-12=0\)
+Worked derivation: \[I=-1+\sqrt{13}\approx2.61\ \mathrm A\ \ (I\ge0)\]
+Check: \[V=I^2=6.79\ \mathrm V;\quad12-2(2.61)=6.79\ \mathrm V\]
+Why: \(\text{the negative root is not physical}\)
+Why not the others: (B) \(3\ \mathrm A:\ 9\ne6\); (C) \(6\ \mathrm A:\ 36\ne0\); (D) \(\sqrt{13}+1\) (sign of the other root).
+Key point: \(\text{intersection of the characteristic and the load line}\)
+
+@@ Q55
+Answer: (B) 10 V and 2 V.
+Given: \(N_p=100,\ V_p=10\ \mathrm V;\quad N_1=40,\ N_2=60\)
+Formula/Principle: \(V_s=V_p\dfrac{N_s}{N_p}\)
+Step 1: \(V_1=4\ \mathrm V,\quad V_2=6\ \mathrm V\)
+Step 2: \(X\ (\text{undotted to dotted}):\ \text{series aiding}\)
+Step 3: \(Y\ (\text{dotted to dotted}):\ \text{series opposing}\)
+Worked derivation: \[V_X=4+6=10\ \mathrm V;\qquad V_Y=6-4=2\ \mathrm V\]
+Check: \[X\ \text{acts as one}\ 100\text{-turn winding}:\ 10\ \mathrm V\]
+Why: \(\text{dotted ends have the same instantaneous polarity}\)
+Why not the others: (A) \(\text{X and Y interchanged}\); (C) \(V_Y=2\ \mathrm V\ne10\ \mathrm V\); (D) \(4\ \mathrm V,\ 6\ \mathrm V\ \text{are the separate windings}\).
+Key point: \(\text{aiding: add; opposing: subtract}\)
+
+@@ Q56
+Answer: (C) 16 V; reactive voltages partially cancel as phasors.
+Given: \(R=3\ \Omega,\ X_L=8\ \Omega,\ X_C=4\ \Omega,\ V=10\ \mathrm V\)
+Formula/Principle: \(Z=\sqrt{R^2+(X_L-X_C)^2},\quad I=\dfrac VZ,\quad V_L=IX_L\)
+Step 1: \(Z=\sqrt{9+16}=5\ \Omega,\quad I=2\ \mathrm A\)
+Worked derivation: \[V_L=2\times8=16\ \mathrm V\]
+Check: \[V_R=6\ \mathrm V,\ V_C=8\ \mathrm V:\ \sqrt{6^2+(16-8)^2}=10\ \mathrm V\]
+Why: \(V_L\ \text{and}\ V_C\ \text{are}\ 180^\circ\ \text{out of phase}\)
+Why not the others: (A) \(8=X_L\ \text{in ohms};\ \text{rms voltages add as phasors}\); (B) \(\text{no net energy is created}\); (D) \(V_L=16\ \mathrm V>10\ \mathrm V\).
+Key point: \(V^2=V_R^2+(V_L-V_C)^2\)
+
+@@ Q57
+Answer: (D) -180 cm and +180 cm.
+Given: \(n_1=1,\ n_2=1.50,\ R=+20\ \mathrm{cm};\quad u=-30\ \mathrm{cm},\ -60\ \mathrm{cm}\)
+Formula/Principle: \(\dfrac{n_2}{v}-\dfrac{n_1}{u}=\dfrac{n_2-n_1}{R}\)
+Step 1: \(\dfrac{1.5}{v}=\dfrac{0.5}{20}+\dfrac1u=0.025+\dfrac1u\)
+Step 2: \(u=-30:\ \dfrac{1.5}{v}=0.025-0.0333=-\dfrac{1}{120}\Rightarrow v=-180\ \mathrm{cm}\)
+Step 3: \(u=-60:\ \dfrac{1.5}{v}=0.025-0.0167=+\dfrac{1}{120}\Rightarrow v=+180\ \mathrm{cm}\)
+Worked derivation: \[v=-180\ \mathrm{cm}\ (\text{virtual});\qquad v=+180\ \mathrm{cm}\ (\text{real})\]
+Check: \[\text{object focus}:\ \frac1u=-0.025\Rightarrow u=-40\ \mathrm{cm},\ \text{between the two objects}\]
+Why: \(\text{object inside the first focal point}\Rightarrow\text{virtual image}\)
+Why not the others: (A) \(u=-30:\ v<0\); (B) \(u=-60:\ v>0\); (C) \(v=-30,\ +60\ \text{do not satisfy the equation}\).
+Key point: \(\dfrac{n_2}{v}-\dfrac{n_1}{u}=\dfrac{n_2-n_1}{R}\)
+
+@@ Q58
+Answer: (C) Dark; -β/2.
+Given: \(\text{source shifted up by}\ s=\dfrac{L\lambda}{2d};\quad\beta=\dfrac{D\lambda}{d}\)
+Formula/Principle: \(\Delta_{\text{source}}=\dfrac{sd}{L},\quad\Delta_{\text{screen}}=\dfrac{yd}{D}\)
+Step 1: \(\Delta_{\text{source}}=\dfrac{d}{L}\cdot\dfrac{L\lambda}{2d}=\dfrac\lambda2\Rightarrow\text{old centre dark}\)
+Step 2: \(\text{zero path difference}:\ \dfrac{sd}{L}+\dfrac{yd}{D}=0\Rightarrow y=-\dfrac{sD}{L}\)
+Worked derivation: \[y=-\frac{D\lambda}{2d}=-\frac\beta2\]
+Check: \[\text{source up}\Rightarrow\text{upper slit path shorter before the slits}\Rightarrow\text{pattern moves down}\]
+Why: \(\text{source, slit midpoint and central fringe lie on one straight line}\)
+Why not the others: (A) \(\Delta=\tfrac\lambda2\Rightarrow\text{dark}\); (B) \(+\tfrac\beta2\) (sign); (D) \(-\beta\ \text{needs}\ \Delta=\lambda\).
+Key point: \(\dfrac{y}{D}=-\dfrac{s}{L}\)
+
+@@ Q59
+Answer: (A) 2/√3.
+Given: \(K_1=400\ \mathrm{eV};\quad\text{retarding}\ 100\ \mathrm V\Rightarrow K_2=300\ \mathrm{eV}\)
+Formula/Principle: \(\lambda=\dfrac{h}{\sqrt{2mK}}\)
+Step 1: \(\dfrac{\lambda_2}{\lambda_1}=\sqrt{\dfrac{K_1}{K_2}}\)
+Worked derivation: \[\frac{\lambda_2}{\lambda_1}=\sqrt{\frac{400}{300}}=\frac{2}{\sqrt3}\approx1.15\]
+Check: \[K\downarrow\Rightarrow p\downarrow\Rightarrow\lambda\uparrow\]
+Why: \(\lambda\propto K^{-1/2}\)
+Why not the others: (B) \(\tfrac12\ne\tfrac{2}{\sqrt3}\); (C) \(\tfrac{\sqrt3}{2}\) (inverted); (D) \(\tfrac43\) (root not taken).
+Key point: \(\lambda=\dfrac{h}{\sqrt{2meV_{\text{net}}}}\)
+
+@@ Q60
+Answer: (B) 60 mA,30 mA.
+Given: \(\text{branch 1}:\ \text{diode (left to right)}+100\ \Omega;\quad\text{branch 2}:\ \text{diode (right to left)}+200\ \Omega;\quad V=6\ \mathrm V\)
+Formula/Principle: \(\text{ideal diode}:\ \text{forward}\ R=0,\ \text{reverse}\ I=0\)
+Step 1: \(\text{left positive}:\ \text{only branch 1 conducts}:\ I=\dfrac{6}{100}\)
+Step 2: \(\text{right positive}:\ \text{only branch 2 conducts}:\ I=\dfrac{6}{200}\)
+Worked derivation: \[I_1=60\ \mathrm{mA};\qquad I_2=30\ \mathrm{mA}\]
+Check: \[\text{in each case exactly one diode is forward biased}\]
+Why: \(\text{the two diodes face opposite ways}\)
+Why not the others: (A) \(\text{order reversed}\); (C) \(90\ \mathrm{mA}\) (both conducting); (D) \(\text{one branch always conducts}\).
+Key point: \(\text{current flows only through the forward-biased branch}\)

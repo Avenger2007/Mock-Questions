@@ -25,7 +25,8 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 | 17 | pass | fail → fixed: Q47 (propagation of uncertainties) is not in the syllabus, replaced | pass | pass, except Q21, which reused the combustion data of Test 6 Q20; data changed | 0 of 60 | 30 Maths/Physics rewritten as equations only; Q21 rewritten; other Biology/Chemistry solutions kept | Clean after fixes; 3 items flagged |
 | 18 | pass | pass (Q49 uses elastic energy; see flags) | pass | pass | 0 of 60 | 30 Maths/Physics rewritten as equations only; Biology/Chemistry solutions kept | Clean; 1 item flagged |
 | 19 | pass | pass | pass | pass | 0 of 60 | 30 Maths/Physics rewritten as equations only; Biology/Chemistry solutions kept | Clean; 1 item flagged |
-| 20–25 | — | — | — | — | — | — | Not yet audited |
+| 20 | pass | pass (Q48 uses a plastic plateau; see flags) | pass | pass | 0 of 60 | 30 Maths/Physics rewritten as equations only; Biology/Chemistry solutions kept | Clean; 1 item flagged |
+| 21–25 | — | — | — | — | — | — | Not yet audited |
 
 ## Changes made
 
@@ -258,6 +259,12 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 - **Flagged, left unchanged:** Q5 (thyroxine replacement and TSH, the same feedback loop as Test 6 Q5 and Test 13 Q13, asked from a new angle).
 - Q31–Q60 rewritten as equations only. The Biology and Chemistry solutions were already complete and are kept.
 - Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 0 errors. Source text: `IISER/audit/solutions/test19.txt`.
+
+### Test 20 (`IISER/IAT NEW TEST 20.json`)
+- All 60 answers re-derived; no key was wrong, and no question repeats an earlier test. No question was replaced. The figure questions state their data in the question text; the figures themselves were not opened.
+- **Flagged, left unchanged:** Q48 (two parallel rods, one of which yields and then holds a constant force; the NCERT text shows the plastic region on the stress–strain curve but sets no problems on it. The question states the behaviour fully, so it can be solved from the statement).
+- Q31–Q60 rewritten as equations only. The Biology and Chemistry solutions were already complete and are kept.
+- Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 0 errors. Source text: `IISER/audit/solutions/test20.txt`.
 
 ## Not verified
 - Rendered PDF pages were not regenerated or inspected for Test 1 after the edit (the exporter needs Playwright and Chromium).
