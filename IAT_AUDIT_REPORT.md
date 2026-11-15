@@ -295,3 +295,18 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 ## Not verified
 - Rendered PDF pages were not regenerated or inspected for Test 1 after the edit (the exporter needs Playwright and Chromium).
 - Series-wide near-duplicate comparison is done after all 25 tests are read.
+
+## Follow-up on 15 November 2026 (second): Tests 21–25 Maths and Physics solutions
+
+Requested by the user after the final summary above.
+
+- **What changed:** 133 Maths and Physics solutions in Tests 21–25 were rewritten in the equations-only layout used in Tests 1–20: Given, Formula/Principle, numbered steps, Worked derivation, Check, Why, Why not the others, Key point. Test 22 Q54 already had this layout.
+- **What did not change:** no question, option, key, difficulty label or ID. Every solution was re-derived and its final value matches the key.
+- **Left untouched:** the 17 figure questions in Q31–60 of these tests (Test 21 Q53, Q56; Test 22 Q47, Q53, Q55, Q58; Test 23 Q46, Q54, Q55, Q56; Test 24 Q49, Q51, Q56; Test 25 Q46, Q49, Q53, Q55), by the rule that figure questions are handled manually. Their solutions still contain explanatory sentences.
+- **Counts:** Test 21: 28, Test 22: 25, Test 23: 26, Test 24: 27, Test 25: 26, plus Test 22 Q54 done earlier = 133 of 150; 17 figure questions make up the rest.
+- **Checks:** all 25 tests pass `validate_iat.py`; KaTeX check reports 0 errors in Tests 21–25; plan reconciliation still reports 0 slot mismatches.
+- **Source text:** `IISER/audit/solutions/test21.txt` to `test25.txt`.
+
+### Question count
+
+The series has exactly 1,500 questions: 25 tests × 60 questions (15 each of Biology, Chemistry, Mathematics and Physics), counted from the 25 JSON files on 15 November 2026.
