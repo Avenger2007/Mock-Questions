@@ -1,0 +1,367 @@
+@@ Q31
+Answer: (C) −16/9.
+Given: \(r_1=5,\quad r_2=\sqrt{13},\quad\text{line through}\ (0,5),\quad\text{chord lengths differ by}\ 4\)
+Formula/Principle: \(\text{half-chord}=\sqrt{r^2-d^2},\quad d=\text{distance of the line from the origin}\)
+Step 1: \(A=\sqrt{25-d^2},\ B=\sqrt{13-d^2}:\quad2A-2B=4\Rightarrow A-B=2\)
+Step 2: \(A^2-B^2=12\Rightarrow A+B=\dfrac{12}2=6\)
+Step 3: \(A=4,\ B=2\Rightarrow d^2=25-16=9\Rightarrow d=3\)
+Step 4: \(y=mx+5:\ d=\dfrac5{\sqrt{1+m^2}}=3\Rightarrow1+m^2=\dfrac{25}9\Rightarrow m=\pm\dfrac43\)
+Worked derivation: \[m_1m_2=\left(\tfrac43\right)\left(-\tfrac43\right)=-\tfrac{16}9\]
+Check: \[d^2=9:\ 2\sqrt{25-9}=8,\quad2\sqrt{13-9}=4,\quad8-4=4;\qquad x=0:\ d=0,\ 10-2\sqrt{13}\ne4\]
+Why: \(\text{both chords lie on one line, so they share}\ d\)
+Why not the others: (A) \(-\tfrac9{16}\ (\text{slopes inverted})\); (B) \(+\tfrac{16}9\ (\text{opposite signs lost})\); (D) \(-\tfrac43\ (\text{one slope, not the product})\).
+Key point: \(\text{chord}=2\sqrt{r^2-d^2}\)
+
+@@ Q32
+Answer: (D) (2,−1).
+Given: \((y-k)^2=4p(x-h),\ p>0;\quad\text{directrix}\ x=-1;\quad\text{tangent}\ y=x\ \text{at}\ (2,2)\)
+Formula/Principle: \(\text{directrix}:\ x=h-p;\quad2(y-k)y'=4p;\quad\text{focus}\ (h+p,k)\)
+Step 1: \(h-p=-1\)
+Step 2: \(y'=1\ \text{at}\ (2,2):\ 2(2-k)=4p\Rightarrow2-k=2p\)
+Step 3: \((2-k)^2=4p(2-h)\Rightarrow4p^2=4p(2-h)\Rightarrow h=2-p\)
+Step 4: \(2-p-p=-1\Rightarrow p=\tfrac32,\quad h=\tfrac12,\quad k=2-3=-1\)
+Worked derivation: \[F=(h+p,\ k)=\left(\tfrac12+\tfrac32,\ -1\right)=(2,-1)\]
+Check: \[\text{from}\ (2,2):\ \text{to focus}=|2-(-1)|=3;\quad\text{to directrix}=2-(-1)=3\]
+Why: \(\text{point, slope and directrix give three equations for}\ h,k,p\)
+Why not the others: (A) \(\left(\tfrac12,-1\right)\ \text{is the vertex}\); (B) \((2,2)\ \text{is the point of contact}\); (C) \((-1,-1)\ \text{lies on the directrix}\).
+Key point: \(\text{every point of a parabola is equidistant from focus and directrix}\)
+
+@@ Q33
+Answer: (A) It has one stationary point x=e^(−1), which is a global minimum; f'' is positive throughout its domain.
+Given: \(f(x)=x^x,\quad x>0\)
+Formula/Principle: \(\ln f=x\ln x\Rightarrow\dfrac{f'}f=1+\ln x\)
+Step 1: \(f'=x^x(1+\ln x)\)
+Step 2: \(f'=0\Rightarrow\ln x=-1\Rightarrow x=e^{-1}\)
+Step 3: \(x<e^{-1}:\ f'<0;\quad x>e^{-1}:\ f'>0\)
+Step 4: \(f''=x^x(1+\ln x)^2+x^x\cdot\dfrac1x=x^x\left[(1+\ln x)^2+\dfrac1x\right]>0\)
+Worked derivation: \[f_{\min}=f(e^{-1})=e^{-1/e}\approx0.692,\qquad f''>0\ \ \forall x>0\]
+Check: \[f(1)=1>0.692;\quad f(0.1)=10^{-0.1}\approx0.794>0.692\]
+Why: \(\text{one sign change of}\ f'\ (-\to+)\ \text{on a connected domain gives a global minimum}\)
+Why not the others: (B) \(f''(e^{-1})=e\cdot e^{-1/e}>0\); (C) \(x=0\notin\text{domain},\ f'(1)=1\ne0\); (D) \(f'<0\ \text{on}\ (0,e^{-1})\).
+Key point: \((x^x)'=x^x(1+\ln x)\)
+
+@@ Q34
+Answer: (D) Exactly one, namely a=1.
+Given: \(F(a)=\displaystyle\int_0^1\frac{dx}{1+ax},\quad a\ge0\)
+Formula/Principle: \(F(a)=\dfrac{\ln(1+a)}a\ (a>0),\quad F(0)=1\)
+Step 1: \(F(1)=\left[\ln(1+x)\right]_0^1=\ln2\)
+Step 2: \(b>a\ge0,\ x>0:\ \dfrac1{1+bx}<\dfrac1{1+ax}\Rightarrow F(b)<F(a)\)
+Step 3: \(F\ \text{strictly decreasing}\Rightarrow F(a)=\ln2\ \text{at most once}\)
+Worked derivation: \[F(a)=\ln2\iff a=1\]
+Check: \[F(0)=1>\ln2\approx0.693>F(2)=\tfrac{\ln3}2\approx0.549\]
+Why: \(\text{a strictly monotonic function takes each value at most once}\)
+Why not the others: (A) \(F(1)=\ln2\); (B) \(F\ \text{is strictly decreasing}\); (C) \(F(2)\ne\ln2\).
+Key point: \(\text{compare integrands to prove monotonicity}\)
+
+@@ Q35
+Answer: (A) The allowed set is R excluding 0 and 1, and every allowed point has period 3.
+Given: \(f(x)=\dfrac{x-1}x\)
+Formula/Principle: \(\text{period}=\text{least}\ k\ge1\ \text{with}\ f^k(x)=x\)
+Step 1: \(x\ne0;\quad f(1)=0\Rightarrow x\ne1\)
+Step 2: \(f^2(x)=\dfrac{\frac{x-1}x-1}{\frac{x-1}x}=\dfrac{-1}{x-1}\)
+Step 3: \(f^3(x)=\dfrac{\frac{-1}{x-1}-1}{\frac{-1}{x-1}}=\dfrac{-1-(x-1)}{-1}=x\)
+Step 4: \(f(x)=x\Rightarrow x^2-x+1=0,\ \Delta=-3<0\Rightarrow\text{no fixed point}\)
+Worked derivation: \[f^3(x)=x,\ f(x)\ne x\Rightarrow\text{period}=3\ \ \text{on}\ \mathbb R\setminus\{0,1\}\]
+Check: \[x=2:\ 2\to\tfrac12\to-1\to2\]
+Why: \(\text{the period divides 3 and is not 1}\)
+Why not the others: (B) \(f^2(2)=-1\ne2\); (C) \(x=1\ \text{fails at the second step; no fixed points}\); (D) \(f(1)=0,\ f(0)\ \text{undefined}\).
+Key point: \(f^3=\text{identity}\)
+
+@@ Q36
+Answer: (B) (−1/2,1/2,−1/2) transpose.
+Given: \(A=\begin{pmatrix}1&1&0\\0&1&1\\1&0&1\end{pmatrix};\quad B:\ c_2\to c_2+2c_1\)
+Formula/Principle: \(\text{first column}\ v\ \text{of}\ B^{-1}:\ Bv=e_1\)
+Step 1: \(B=\begin{pmatrix}1&3&0\\0&1&1\\1&2&1\end{pmatrix},\quad\det B=\det A=1(1)-1(0-1)+0=2\)
+Step 2: \(v_1+3v_2=1,\quad v_2+v_3=0,\quad v_1+2v_2+v_3=0\)
+Step 3: \(v_3=-v_2\Rightarrow v_1+v_2=0\Rightarrow v_1=-v_2\)
+Step 4: \(-v_2+3v_2=1\Rightarrow v_2=\tfrac12\)
+Worked derivation: \[v=\left(-\tfrac12,\ \tfrac12,\ -\tfrac12\right)^T\]
+Check: \[Bv=\left(-\tfrac12+\tfrac32,\ \tfrac12-\tfrac12,\ -\tfrac12+1-\tfrac12\right)^T=(1,0,0)^T\]
+Why: \(BB^{-1}=I\Rightarrow B\,(\text{column 1 of}\ B^{-1})=e_1\)
+Why not the others: (A) \(Bv=(-1,0,0)^T=-e_1\); (C) \(\left(\tfrac12,\tfrac12,-\tfrac12\right)^T\ \text{is the first column of}\ A^{-1}\); (D) \(Bv=(2,0,0)^T=2e_1\).
+Key point: \(\text{a column of the inverse solves one linear system}\)
+
+@@ Q37
+Answer: (D) 6/61.
+Given: \(3\ \text{dice},\quad E:\ \min=2,\quad S:\ \text{sum}=8\)
+Formula/Principle: \(P(S\mid E)=\dfrac{N(S\cap E)}{N(E)}\)
+Step 1: \(N(\min\ge2)=5^3=125,\quad N(\min\ge3)=4^3=64\)
+Step 2: \(N(E)=125-64=61\)
+Step 3: \(y_i=x_i-2\ge0,\ \min y_i=0,\ \sum y_i=2:\ (2,0,0)\ \text{or}\ (1,1,0)\)
+Step 4: \(\text{orderings}:\ 3+3=6\)
+Worked derivation: \[P(S\mid E)=\frac6{61}\]
+Check: \[(4,2,2):\ 3\ \text{orders};\quad(3,3,2):\ 3\ \text{orders};\quad\text{each has sum 8 and minimum 2}\]
+Why: \(\text{ordered triples are equally likely}\)
+Why not the others: (A) \(\tfrac1{10}\ (\text{unordered classes treated as equally likely})\); (B) \(\tfrac6{125}\ (\text{denominator}\ \min\ge2)\); (C) \(\tfrac3{61}\ (\text{one pattern only})\).
+Key point: \(N(\min=m)=N(\min\ge m)-N(\min\ge m+1)\)
+
+@@ Q38
+Answer: (B) r=2,3; sum 0.
+Given: \((1-2x)^8,\quad x=\tfrac14:\quad T_r=\dbinom8r\left(-\tfrac12\right)^r\)
+Formula/Principle: \(\dfrac{|T_{r+1}|}{|T_r|}=\dfrac{8-r}{r+1}\cdot\dfrac12\)
+Step 1: \(\dfrac{8-r}{2(r+1)}\ge1\iff8-r\ge2r+2\iff r\le2\)
+Step 2: \(r<2:\ |T_{r+1}|>|T_r|;\quad r=2:\ |T_3|=|T_2|;\quad r>2:\ |T_{r+1}|<|T_r|\)
+Step 3: \(T_2=28\times\tfrac14=7,\quad T_3=56\times\left(-\tfrac18\right)=-7\)
+Worked derivation: \[T_2+T_3=7-7=0\]
+Check: \[|T_1|=4,\ |T_2|=7,\ |T_3|=7,\ |T_4|=\tfrac{70}{16}=4.375\]
+Why: \(\text{the two largest terms are equal in size and opposite in sign}\)
+Why not the others: (A) \(|T_4|=4.375<7\); (C) \(14=|T_2|+|T_3|\); (D) \(|T_1|=4<7\).
+Key point: \(\text{use the ratio}\ \left|\tfrac{T_{r+1}}{T_r}\right|\ \text{to find the greatest term}\)
+
+@@ Q39
+Answer: (C) 19.
+Given: \(a_n=2n+1;\quad a_1-a_2+a_3-\dots+(-1)^{n-1}a_n=11\)
+Formula/Principle: \(a_{2j-1}-a_{2j}=-2\)
+Step 1: \(n=2k:\ S=-2k=-n<0\ne11\)
+Step 2: \(n=2k+1:\ S=-2k+a_{2k+1}=-2k+(4k+3)=2k+3=n+2\)
+Step 3: \(n+2=11\Rightarrow n=9\)
+Worked derivation: \[a_9=2(9)+1=19\]
+Check: \[3-5+7-9+11-13+15-17+19=4(-2)+19=11\]
+Why: \(\text{an odd}\ n\ \text{leaves one unpaired positive term}\)
+Why not the others: (A) \(11\ \text{is the sum, not}\ a_n\); (B) \(17=a_8:\ S=-8\); (D) \(21=a_{10}:\ S=-10\).
+Key point: \(\text{split an alternating sum by the parity of}\ n\)
+
+@@ Q40
+Answer: (A) 0 and −1/2.
+Given: \(L(a)=\displaystyle\lim_{x\to0}\frac{\sqrt{1+ax}-1}{x(x-a)}\)
+Formula/Principle: \(\sqrt{1+ax}-1=\dfrac{ax}{\sqrt{1+ax}+1}\)
+Step 1: \(a=0:\ \dfrac{1-1}{x^2}=0\ (x\ne0)\Rightarrow L(0)=0\)
+Step 2: \(a\ne0:\ \dfrac{\sqrt{1+ax}-1}{x(x-a)}=\dfrac a{(x-a)\left(\sqrt{1+ax}+1\right)}\)
+Step 3: \(x\to0:\ L(a)=\dfrac a{(-a)(2)}=-\dfrac12\)
+Worked derivation: \[L(0)=0,\qquad\lim_{a\to0}L(a)=-\tfrac12\]
+Check: \[a=1,\ x=0.01:\ \frac{\sqrt{1.01}-1}{0.01(-0.99)}=\frac{0.0049876}{-0.0099}\approx-0.504\]
+Why: \(\text{the cancellation of}\ a\ \text{is valid only for}\ a\ne0\)
+Why not the others: (B) \(L(0)=0\ne-\tfrac12\); (C) \(L(a)=-\tfrac12\ \text{for}\ a\ne0\); (D) \(\text{sign lost and the two values interchanged}\).
+Key point: \(\text{treat the exceptional parameter value separately}\)
+
+@@ Q41
+Answer: (C) a=2,b=1; distance sqrt(6)/4.
+Given: \(x+y+z=1,\quad x-y+z=0,\quad2x+az=b\)
+Formula/Principle: \(\text{line of the first two planes must satisfy the third identically}\)
+Step 1: \(\text{subtract}:\ 2y=1\Rightarrow y=\tfrac12,\quad x+z=\tfrac12\)
+Step 2: \(x=\tfrac12-z:\ 2\left(\tfrac12-z\right)+az=b\Rightarrow1+(a-2)z=b\)
+Step 3: \(\text{for all}\ z:\ a=2,\ b=1\)
+Step 4: \(d^2=x^2+z^2+\tfrac14,\ x+z=\tfrac12\Rightarrow\text{minimum at}\ x=z=\tfrac14\)
+Worked derivation: \[d=\sqrt{\tfrac1{16}+\tfrac1{16}+\tfrac14}=\sqrt{\tfrac6{16}}=\frac{\sqrt6}4\]
+Check: \[\left(\tfrac14,\tfrac12,\tfrac14\right)\cdot(1,0,-1)=0\ \ (\text{foot is perpendicular to the direction of the line})\]
+Why: \(a\ne2\Rightarrow\text{one point};\quad a=2,\ b\ne1\Rightarrow\text{no point}\)
+Why not the others: (A) \(b\ne1:\ 1=b\ \text{fails}\); (B) \(a=1:\ z=-1\ (\text{single point})\); (D) \(\tfrac{\sqrt2}2=\left|\left(\tfrac12,\tfrac12,0\right)\right|\ (\text{not the nearest point})\).
+Key point: \(\text{three planes share a line when the third equation is a combination of the first two}\)
+
+@@ Q42
+Answer: (B) 12.
+Given: \(6\ \text{distinct beads on a hexagon},\ A\ \text{opposite}\ B;\quad\text{rotations and reflections identified}\)
+Formula/Principle: \(\text{fix}\ A\ (\text{removes rotations});\ \text{divide by 2 for reflection when no arrangement is self-mirror}\)
+Step 1: \(A\ \text{fixed}\Rightarrow B\ \text{opposite};\quad C,D,E,F:\ 4!=24\)
+Step 2: \(\text{reflection in the}\ AB\ \text{axis swaps the other four vertices in two pairs}\)
+Step 3: \(\text{distinct beads}\Rightarrow\text{no arrangement equals its mirror image}\)
+Worked derivation: \[N=\frac{24}2=12\]
+Check: \[\text{Burnside}\ (|D_6|=12):\ \text{labelled placements}=6\times1\times4!=144;\ \text{only the identity fixes any};\quad\frac{144}{12}=12\]
+Why: \(\text{each necklace corresponds to exactly two of the 24 fixed-}A\ \text{arrangements}\)
+Why not the others: (A) \(24\ (\text{mirror images counted separately})\); (C) \(6=\tfrac{24}4\); (D) \(48=2\times24\).
+Key point: \(\text{necklace count}=\dfrac{\text{circular count}}2\ \text{for distinct beads}\)
+
+@@ Q43
+Answer: (A) The nonzero real axis together with the unit circle.
+Given: \(z\ne0,\quad z+\dfrac1z\in\mathbb R\)
+Formula/Principle: \(w\in\mathbb R\iff w=\bar w;\quad\dfrac1z=\dfrac{\bar z}{|z|^2}\)
+Step 1: \(z+\dfrac1z=\bar z+\dfrac1{\bar z}\)
+Step 2: \(z-\bar z=\dfrac1{\bar z}-\dfrac1z=\dfrac{z-\bar z}{|z|^2}\)
+Step 3: \((z-\bar z)\left(1-\dfrac1{|z|^2}\right)=0\)
+Step 4: \(z=\bar z\ (z\ \text{real})\ \ \text{or}\ \ |z|=1\)
+Worked derivation: \[\{z\in\mathbb R,\ z\ne0\}\cup\{|z|=1\}\]
+Check: \[z=re^{i\theta}:\ \operatorname{Im}\left(z+\tfrac1z\right)=\left(r-\tfrac1r\right)\sin\theta;\quad z=i:\ i+\tfrac1i=0\in\mathbb R\]
+Why: \(\text{each factor gives one part of the locus}\)
+Why not the others: (B) \(z=2:\ 2.5\in\mathbb R,\ |z|\ne1\); (C) \(z=2i:\ 2i-\tfrac i2=\tfrac{3i}2\notin\mathbb R\); (D) \(z=0\ \text{undefined};\ z=i\ \text{missing}\).
+Key point: \(\text{do not cancel a factor that can be zero}\)
+
+@@ Q44
+Answer: (B) Infinitely many solutions exist; for every c≥0, y=0 on 0≤x≤c and y=(x−c)² on x≥c is one.
+Given: \((y')^2=4y,\quad y(0)=0,\quad y\ge0,\quad x\ge0\)
+Formula/Principle: \(y'=2\sqrt y\Rightarrow\dfrac{dy}{2\sqrt y}=dx\Rightarrow\sqrt y=x-c\)
+Step 1: \(y=(x-c)^2\ \ (x\ge c)\)
+Step 2: \(y\equiv0:\ (0)^2=4(0)\ \ (\text{also a solution})\)
+Step 3: \(y_c(x)=\begin{cases}0,&0\le x\le c\\(x-c)^2,&x\ge c\end{cases}\)
+Step 4: \(x=c:\ y=0\ \text{and}\ y'=0\ \text{from both sides}\Rightarrow y_c\in C^1\)
+Worked derivation: \[x\ge c:\ (y')^2=[2(x-c)]^2=4(x-c)^2=4y;\qquad x\le c:\ 0=0;\qquad c\ge0\ \text{arbitrary}\]
+Check: \[c=0:\ y=x^2,\ y(0)=0,\ (2x)^2=4x^2\]
+Why: \(\sqrt y\ \text{is not Lipschitz at}\ y=0\Rightarrow\text{uniqueness fails}\)
+Why not the others: (A) \(y_c\ \text{with}\ c>0\ \text{also works}\); (C) \(y=x^2\ \text{also works}\); (D) \(y\equiv0\ \text{satisfies the equation directly}\).
+Key point: \(\text{dividing by}\ \sqrt y\ \text{loses solutions that stay at}\ y=0\)
+
+@@ Q45
+Answer: (C) For theta in [0,pi/2] together with theta=2pi.
+Given: \(\arcsin(\sin\theta)=\arccos(\cos\theta),\quad0\le\theta\le2\pi\)
+Formula/Principle: \(\arcsin\in\left[-\tfrac\pi2,\tfrac\pi2\right],\quad\arccos\in[0,\pi]\)
+Step 1: \(0\le\theta\le\tfrac\pi2:\ \arcsin(\sin\theta)=\theta,\ \arccos(\cos\theta)=\theta\)
+Step 2: \(\tfrac\pi2<\theta\le\pi:\ \pi-\theta\ \text{and}\ \theta;\quad\pi-\theta=\theta\Rightarrow\theta=\tfrac\pi2\ (\text{not in this range})\)
+Step 3: \(\pi<\theta<2\pi:\ \arcsin(\sin\theta)<0<\arccos(\cos\theta)\)
+Step 4: \(\theta=2\pi:\ 0=0\)
+Worked derivation: \[\theta\in\left[0,\tfrac\pi2\right]\cup\{2\pi\}\]
+Check: \[\theta=\tfrac{3\pi}4:\ \tfrac\pi4\ne\tfrac{3\pi}4;\quad\theta=\tfrac{3\pi}2:\ -\tfrac\pi2\ne\tfrac\pi2\]
+Why: \(\text{the two inverse functions fold}\ \theta\ \text{into different principal ranges}\)
+Why not the others: (A) \(\theta=\tfrac{3\pi}4\ \text{fails}\); (B) \(\theta=\tfrac\pi4\ \text{also works}\); (D) \(\theta=\tfrac{3\pi}2\ \text{fails}\).
+Key point: \(\arcsin(\sin\theta)=\theta\ \text{only on}\ \left[-\tfrac\pi2,\tfrac\pi2\right]\)
+
+@@ Q46
+Answer: (D) 4 and 8.
+Given: \(m,\ v_0;\quad\text{(i) constant force}\ F;\quad\text{(ii) constant power}\ P\ \text{removed}\)
+Formula/Principle: \(Fs=\tfrac12mv_0^2;\quad\dfrac d{dt}\left(\tfrac12mv^2\right)=-P\)
+Step 1: \(s_F=\dfrac{mv_0^2}{2F}\propto v_0^2\)
+Step 2: \(mv\dfrac{dv}{dt}=-P\Rightarrow dt=-\dfrac{mv\,dv}P\)
+Step 3: \(ds=v\,dt=-\dfrac{mv^2dv}P\)
+Step 4: \(s_P=\dfrac mP\displaystyle\int_0^{v_0}v^2dv=\dfrac{mv_0^3}{3P}\propto v_0^3\)
+Worked derivation: \[\frac{s_F(2v_0)}{s_F(v_0)}=2^2=4,\qquad\frac{s_P(2v_0)}{s_P(v_0)}=2^3=8\]
+Check: \[[s_P]=\frac{\mathrm{kg\,(m\,s^{-1})^3}}{\mathrm{kg\,m^2\,s^{-3}}}=\mathrm m\]
+Why: \(\text{constant power means a braking force}\ \tfrac Pv\ \text{that changes with speed}\)
+Why not the others: (A) \(s\not\propto v_0\); (B) \(s_P\propto v_0^3,\ \text{not}\ v_0^2\); (C) \(\text{the two models interchanged}\).
+Key point: \(s_F\propto v_0^2,\quad s_P\propto v_0^3\)
+
+@@ Q47
+Answer: (C) alpha: M T−1; beta: L−1; gamma: M L T−2; no, consistency is necessary but not sufficient.
+Given: \(P=\alpha v^2e^{-\beta x}+\gamma\sqrt{ax};\quad[P]=ML^2T^{-3},\ [v]=LT^{-1},\ [a]=LT^{-2},\ [x]=L\)
+Formula/Principle: \([\beta x]=1;\quad\text{each term has}\ [P]\)
+Step 1: \([\beta]=L^{-1}\)
+Step 2: \([\alpha]=\dfrac{ML^2T^{-3}}{L^2T^{-2}}=MT^{-1}\)
+Step 3: \([\sqrt{ax}]=\sqrt{L^2T^{-2}}=LT^{-1}\)
+Step 4: \([\gamma]=\dfrac{ML^2T^{-3}}{LT^{-1}}=MLT^{-2}\)
+Worked derivation: \[[\alpha]=MT^{-1},\quad[\beta]=L^{-1},\quad[\gamma]=MLT^{-2}\]
+Check: \[(MT^{-1})(L^2T^{-2})=ML^2T^{-3};\quad(MLT^{-2})(LT^{-1})=ML^2T^{-3}\]
+Why: \(\text{dimensional analysis cannot fix pure numbers or confirm the functional form}\)
+Why not the others: (A) \([\beta]=L\Rightarrow[\beta x]=L^2\ne1\); (B) \([\alpha]=ML^2T^{-3}\Rightarrow[\alpha v^2]\ne[P]\); (D) \([\alpha]=MT^{-2}\Rightarrow[\alpha v^2]=ML^2T^{-4}\ne[P]\).
+Key point: \(\text{dimensional consistency is necessary, not sufficient}\)
+
+@@ Q48
+Answer: (A) 4 and 1/2.
+Given: \(8\ \text{drops of radius}\ r\to1\ \text{drop of radius}\ R\)
+Formula/Principle: \(\text{volume conserved};\quad v_t=\dfrac{2r^2(\rho-\sigma)g}{9\eta}\propto r^2;\quad U=\gamma\times\text{area}\)
+Step 1: \(\tfrac43\pi R^3=8\times\tfrac43\pi r^3\Rightarrow R=2r\)
+Step 2: \(\dfrac{v_f}{v_i}=\dfrac{R^2}{r^2}=4\)
+Step 3: \(U_i=\gamma\cdot8\cdot4\pi r^2=32\pi\gamma r^2\)
+Step 4: \(U_f=\gamma\cdot4\pi(2r)^2=16\pi\gamma r^2\)
+Worked derivation: \[\frac{v_f}{v_i}=4,\qquad\frac{U_f}{U_i}=\frac{16}{32}=\frac12\]
+Check: \[n\ \text{drops}:\ \frac{v_f}{v_i}=n^{2/3}=8^{2/3}=4,\quad\frac{U_f}{U_i}=n^{-1/3}=8^{-1/3}=\frac12\]
+Why: \(\text{weight}\propto r^3,\ \text{drag}\propto rv\Rightarrow v\propto r^2\)
+Why not the others: (B) \(2=\tfrac Rr\ (\text{linear}),\ \tfrac14\ne\tfrac12\); (C) \(U_f<U_i\); (D) \(8\ \text{is the volume ratio}\).
+Key point: \(v_t\propto r^2;\ \text{coalescence lowers the surface energy}\)
+
+@@ Q50
+Answer: (A) ln2/(3/2+2 ln2).
+Given: \(n=1,\ C_V=\tfrac32R;\quad(T,V)\to(2T,V)\to(2T,2V)\to(T,2V)\to(T,V)\)
+Formula/Principle: \(\eta=\dfrac{W_{\text{net}}}{Q_{\text{in}}};\quad W_{\text{isothermal}}=RT\ln\dfrac{V_f}{V_i}\)
+Step 1: \(Q_1=C_V(2T-T)=\tfrac32RT\ \ (\text{in}),\quad W_1=0\)
+Step 2: \(Q_2=W_2=R(2T)\ln2=2RT\ln2\ \ (\text{in})\)
+Step 3: \(Q_3=-\tfrac32RT\ \ (\text{out}),\quad W_3=0\)
+Step 4: \(Q_4=W_4=RT\ln\tfrac12=-RT\ln2\ \ (\text{out})\)
+Step 5: \(W_{\text{net}}=2RT\ln2-RT\ln2=RT\ln2,\quad Q_{\text{in}}=\tfrac32RT+2RT\ln2\)
+Worked derivation: \[\eta=\frac{RT\ln2}{\tfrac32RT+2RT\ln2}=\frac{\ln2}{\tfrac32+2\ln2}\approx\frac{0.693}{2.886}\approx0.240\]
+Check: \[\sum Q=\tfrac32RT+2RT\ln2-\tfrac32RT-RT\ln2=RT\ln2=W_{\text{net}};\quad\eta<\eta_{\text{Carnot}}=1-\tfrac T{2T}=0.5\]
+Why: \(\text{without a regenerator the isochoric heating is paid for from outside}\)
+Why not the others: (B) \(\tfrac12\ (\text{Carnot value; isochoric heat omitted})\); (C) \(\tfrac{\ln2}{3+\ln2}\approx0.188\ne0.240\); (D) \(\eta=1\ \text{needs}\ Q_{\text{out}}=0\).
+Key point: \(Q_{\text{in}}\ \text{is the sum of all positive heats}\)
+
+@@ Q52
+Answer: (B) 340 m s−1; 0.050 m.
+Given: \(f=340\ \mathrm{Hz},\quad L_1=0.20\ \mathrm m,\quad L_2=0.70\ \mathrm m\)
+Formula/Principle: \(L_1+e=\dfrac\lambda4,\quad L_2+e=\dfrac{3\lambda}4\)
+Step 1: \(L_2-L_1=\dfrac\lambda2=0.50\ \mathrm m\Rightarrow\lambda=1.00\ \mathrm m\)
+Step 2: \(v=f\lambda=340\times1.00=340\ \mathrm{m\,s^{-1}}\)
+Step 3: \(e=\dfrac\lambda4-L_1=0.25-0.20=0.050\ \mathrm m\)
+Worked derivation: \[v=340\ \mathrm{m\,s^{-1}},\qquad e=0.050\ \mathrm m\]
+Check: \[\frac{3\lambda}4-e=0.75-0.05=0.70\ \mathrm m=L_2;\quad e=\frac{L_2-3L_1}2=\frac{0.70-0.60}2=0.050\ \mathrm m\]
+Why: \(e\ \text{cancels in}\ L_2-L_1\ \text{but not in}\ L_1\ \text{alone}\)
+Why not the others: (A) \(170\ \mathrm{m\,s^{-1}}\ (\text{spacing taken as}\ \lambda)\); (C) \(e=0:\ \tfrac\lambda4=0.25\ne0.20\ \mathrm m\); (D) \(680\ \mathrm{m\,s^{-1}}\ (\text{spacing taken as}\ \tfrac\lambda4)\).
+Key point: \(v=2f(L_2-L_1),\quad e=\dfrac{L_2-3L_1}2\)
+
+@@ Q53
+Answer: (C) Potential vanishes, but the field is nonzero and opposite to p.
+Given: \(\text{dipole}\ \vec p;\quad\text{point on the equatorial plane at}\ r\gg\text{separation}\)
+Formula/Principle: \(V=\dfrac{kp\cos\theta}{r^2},\quad\vec E_{\text{eq}}=-\dfrac{k\vec p}{r^3}\)
+Step 1: \(\theta=90^\circ:\ V=\dfrac{kp\cos90^\circ}{r^2}=0\)
+Step 2: \(\text{components of}\ \vec E_+\ \text{and}\ \vec E_-\ \text{perpendicular to}\ \vec p\ \text{cancel}\)
+Step 3: \(\text{components antiparallel to}\ \vec p\ \text{add}\)
+Worked derivation: \[V=0,\qquad\vec E=-\frac{k\vec p}{r^3}\ne0\]
+Check: \[V=\frac{kq}{r_+}-\frac{kq}{r_-}=0\ \ (r_+=r_-);\quad E_\theta=\frac{kp\sin90^\circ}{r^3}=\frac{kp}{r^3}\]
+Why: \(E=-\nabla V\ \text{depends on how}\ V\ \text{changes, not on its value}\)
+Why not the others: (A) \(E=\tfrac{kp}{r^3}\ne0\); (B) \(V=0,\ E\ne0\ (\text{reversed})\); (D) \(V\ \text{is a scalar};\ \vec E\ \text{is antiparallel to}\ \vec p\).
+Key point: \(V=0\ \text{does not imply}\ E=0\)
+
+@@ Q54
+Answer: (B) Constant voltage gives delta T=80 K; constant current has no nonnegative finite steady solution.
+Given: \(R=10(1+0.010\,\Delta T)=10+0.10\,\Delta T\ \Omega,\quad P_{\text{loss}}=0.10\,\Delta T\ \mathrm W,\quad V=12\ \mathrm V\ \text{or}\ I=1.20\ \mathrm A\)
+Formula/Principle: \(\text{steady state}:\ P_{\text{elec}}=P_{\text{loss}};\quad P=\dfrac{V^2}R\ \text{or}\ I^2R\)
+Step 1: \(\text{constant}\ V:\ \dfrac{144}{10+0.10\Delta T}=0.10\Delta T\)
+Step 2: \(0.01\Delta T^2+\Delta T-144=0\Rightarrow\Delta T^2+100\Delta T-14400=0\)
+Step 3: \((\Delta T-80)(\Delta T+180)=0\Rightarrow\Delta T=80\ \mathrm K\)
+Step 4: \(\text{constant}\ I:\ 1.44(10+0.10\Delta T)=0.10\Delta T\Rightarrow14.4=-0.044\Delta T\Rightarrow\Delta T<0\)
+Worked derivation: \[\text{constant}\ V:\ \Delta T=80\ \mathrm K;\qquad\text{constant}\ I:\ \text{no solution with}\ \Delta T\ge0\]
+Check: \[\Delta T=80\ \mathrm K:\ R=18\ \Omega,\ P=\frac{144}{18}=8\ \mathrm W=0.10\times80\]
+Why: \(\text{rising}\ R\ \text{lowers}\ \tfrac{V^2}R\ \text{but raises}\ I^2R\ (0.144>0.10\ \mathrm{W\,K^{-1}})\)
+Why not the others: (A) \(\text{constant}\ I:\ \Delta T<0\); (C) \(\text{the two supplies interchanged}\); (D) \(P(\Delta T=0)=14.4\ \mathrm W>0\).
+Key point: \(\dfrac{V^2}R\ \text{is self-limiting};\ I^2R\ \text{is self-reinforcing when}\ R\ \text{rises with}\ T\)
+
+@@ Q55
+Answer: (D) 1/4; two.
+Given: \(\dfrac{N_D}{N_P}=2\ \text{initially},\quad\dfrac{N_D}{N_P}=11\ \text{at time}\ t;\quad N_P+N_D=\text{const}\)
+Formula/Principle: \(N_P=N_0\left(\tfrac12\right)^{t/T}\)
+Step 1: \(\text{initial total}=N_0+2N_0=3N_0\)
+Step 2: \(\text{later total}=N_P+11N_P=12N_P\)
+Step 3: \(12N_P=3N_0\Rightarrow\dfrac{N_P}{N_0}=\dfrac14\)
+Step 4: \(\left(\tfrac12\right)^{t/T}=\tfrac14\Rightarrow\dfrac tT=2\)
+Worked derivation: \[\frac{N_P}{N_0}=\frac14,\qquad t=2T\]
+Check: \[N_D=2N_0+\left(N_0-\tfrac{N_0}4\right)=\tfrac{11N_0}4;\quad\frac{N_D}{N_P}=\frac{11/4}{1/4}=11\]
+Why: \(\text{the daughters present at the start must be counted in the total}\)
+Why not the others: (A) \(\tfrac1{11}=\tfrac{N_P}{N_D}\); (B) \(\tfrac1{12}\ (\text{initial daughters ignored})\); (C) \(\tfrac2{11}\ (\text{ratio of the two ratios})\).
+Key point: \(N_P+N_D\ \text{is conserved for a stable daughter}\)
+
+@@ Q57
+Answer: (B) +80 cm and −160 cm.
+Given: \(n_g=1.50,\quad R_1=+20\ \mathrm{cm},\quad R_2=-20\ \mathrm{cm},\quad n_m=\tfrac43\ \text{or}\ 1.60\)
+Formula/Principle: \(\dfrac1f=\left(\dfrac{n_g}{n_m}-1\right)\left(\dfrac1{R_1}-\dfrac1{R_2}\right)\)
+Step 1: \(\dfrac1{R_1}-\dfrac1{R_2}=\dfrac1{20}+\dfrac1{20}=\dfrac1{10}\ \mathrm{cm^{-1}}\)
+Step 2: \(n_m=\tfrac43:\ \dfrac{n_g}{n_m}-1=\dfrac98-1=\dfrac18\Rightarrow\dfrac1{f_1}=\dfrac1{80}\ \mathrm{cm^{-1}}\)
+Step 3: \(n_m=1.60:\ \dfrac{n_g}{n_m}-1=\dfrac{15}{16}-1=-\dfrac1{16}\Rightarrow\dfrac1{f_2}=-\dfrac1{160}\ \mathrm{cm^{-1}}\)
+Worked derivation: \[f_1=+80\ \mathrm{cm},\qquad f_2=-160\ \mathrm{cm}\]
+Check: \[f_{\text{air}}=\frac1{0.5\times0.1}=20\ \mathrm{cm};\quad\frac{f_1}{f_{\text{air}}}=\frac{0.5}{1/8}=4,\quad\frac{f_2}{f_{\text{air}}}=\frac{0.5}{-1/16}=-8\]
+Why: \(n_m>n_g\ \text{reverses the sign of the power}\)
+Why not the others: (A) \(+20\ \mathrm{cm}\ \text{is the focal length in air}\); (C) \(\text{both signs reversed}\); (D) \(\text{curvature factor taken as}\ \tfrac15\ \mathrm{cm^{-1}}\).
+Key point: \(\text{use the relative index}\ \dfrac{n_g}{n_m}\)
+
+@@ Q58
+Answer: (D) sqrt(2) A; 10 W.
+Given: \(V=10\ \mathrm V,\quad I_R=1.0\ \mathrm A,\quad I_C=1.0\ \mathrm A\ \ (\text{rms, parallel})\)
+Formula/Principle: \(I=\sqrt{I_R^2+I_C^2}\ \ (I_C\ \text{leads}\ V\ \text{by}\ 90^\circ);\quad P=VI_R\)
+Step 1: \(I=\sqrt{1.0^2+1.0^2}=\sqrt2\ \mathrm A\)
+Step 2: \(P=10\times1.0=10\ \mathrm W\)
+Worked derivation: \[I=\sqrt2\ \mathrm A\approx1.41\ \mathrm A,\qquad P=10\ \mathrm W\]
+Check: \[\cos\phi=\frac{I_R}I=\frac1{\sqrt2};\quad VI\cos\phi=10\times\sqrt2\times\frac1{\sqrt2}=10\ \mathrm W\]
+Why: \(\text{an ideal capacitor returns its stored energy each cycle}\Rightarrow\langle P_C\rangle=0\)
+Why not the others: (A) \(2.0\ \mathrm A\ (\text{arithmetic sum}),\ 20\ \mathrm W\ (\text{apparent})\); (B) \(1.0\ \mathrm A\ (I_C\ \text{omitted})\); (C) \(P=I_R^2R=10\ \mathrm W\ne0\).
+Key point: \(\text{branch currents at}\ 90^\circ\ \text{add as phasors}\)
+
+@@ Q59
+Answer: (A) P is metallic, Q is intrinsic semiconducting and R is insulating; Q can have unequal electron and hole current contributions despite equal carrier concentrations.
+Given: \(\text{P}:\ E_g=0,\ \rho\uparrow\ \text{with}\ T;\quad\text{Q}:\ \text{small}\ E_g,\ n=p,\ \mu_e>\mu_h;\quad\text{R}:\ \text{large}\ E_g\)
+Formula/Principle: \(\sigma=e(n\mu_e+p\mu_h)\)
+Step 1: \(\text{P}:\ E_g=0,\ \dfrac{d\rho}{dT}>0\Rightarrow\text{metal}\)
+Step 2: \(\text{Q}:\ n=p=n_i\Rightarrow\text{intrinsic semiconductor}\)
+Step 3: \(\text{R}:\ E_g\gg kT,\ n\approx0\Rightarrow\text{insulator}\)
+Step 4: \(\dfrac{\sigma_e}{\sigma_h}=\dfrac{n\mu_e}{p\mu_h}=\dfrac{\mu_e}{\mu_h}\)
+Worked derivation: \[n=p,\ \mu_e>\mu_h\Rightarrow\frac{\sigma_e}{\sigma_h}=\frac{\mu_e}{\mu_h}>1\]
+Check: \[\text{Si at 300 K}:\ \mu_e\approx0.135,\ \mu_h\approx0.048\ \mathrm{m^2\,V^{-1}\,s^{-1}}\Rightarrow\frac{\sigma_e}{\sigma_h}\approx2.8\]
+Why: \(\text{intrinsic fixes}\ n=p,\ \text{not}\ \mu_e=\mu_h\)
+Why not the others: (B) \(n=p\Rightarrow\text{not extrinsic}\); (C) \(\mu_e\ne\mu_h\ \text{is given}\); (D) \(E_g=0\Rightarrow\text{metal}\).
+Key point: \(J=e(n\mu_e+p\mu_h)E\)
+
+@@ Q60
+Answer: (C) It remains w because the wavelength decrease cancels the focal-length increase.
+Given: \(\text{slit width}\ a;\quad\text{air}:\ \lambda_0,\ f,\ w;\quad\text{liquid}:\ n=1.50,\ f_m=1.50f\)
+Formula/Principle: \(w=\dfrac{2f\lambda}a,\quad\lambda_m=\dfrac{\lambda_0}n\)
+Step 1: \(w=\dfrac{2f\lambda_0}a\)
+Step 2: \(\lambda_m=\dfrac{\lambda_0}{1.50}\)
+Step 3: \(w_m=\dfrac{2f_m\lambda_m}a=\dfrac{2(1.50f)(\lambda_0/1.50)}a\)
+Worked derivation: \[w_m=\frac{2f\lambda_0}a=w\]
+Check: \[\theta_1=\frac\lambda a:\ \theta_m=\frac{\theta_0}{1.50};\quad w_m=2f_m\theta_m=2(1.50f)\frac{\theta_0}{1.50}=2f\theta_0\]
+Why: \(\text{the angular width falls by}\ 1.50\ \text{and the focal length rises by}\ 1.50\)
+Why not the others: (A) \(1.50w\ (\text{focal length only})\); (B) \(\tfrac w{1.50}\ (\text{wavelength only})\); (D) \(2.25w=1.50\times1.50\,w\).
+Key point: \(w=\dfrac{2f\lambda_{\text{medium}}}a\)
