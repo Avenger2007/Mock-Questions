@@ -17,3 +17,340 @@ Check: \[\text{in}:\ 5.0\ \mathrm A;\quad\text{out}:\ 4.0+1.0=5.0\ \mathrm A\]
 Why: \(\text{no charge accumulates at a junction in a steady state}\Rightarrow\dfrac{dq}{dt}=0\)
 Why not the others: (A) \(I_4\ \text{into the junction}:\ 6.0\ \mathrm A\ne4.0\ \mathrm A\); (C) \(9.0=2.0+3.0+4.0\) (all currents added); (D) \(\text{energy conservation gives the loop rule},\ \sum\Delta V=0\).
 Key point: \(\text{junction rule}:\ \text{charge};\quad\text{loop rule}:\ \text{energy}\)
+
+@@ Q31
+Answer: (A) (4,4); 8/3.
+Given: \(y^2=4x,\quad A(1,2),\quad B(9,6)\)
+Formula/Principle: \(2y\,y'=4\Rightarrow y'=\dfrac2y;\quad\text{area}=\displaystyle\int_{y_A}^{y_B}\left(x_{\text{chord}}-x_{\text{parabola}}\right)dy\)
+Step 1: \(m_{AB}=\dfrac{6-2}{9-1}=\dfrac12\)
+Step 2: \(\dfrac2y=\dfrac12\Rightarrow y=4,\quad x=\dfrac{16}4=4\)
+Step 3: \(AB:\ y-2=\tfrac12(x-1)\Rightarrow x=2y-3\)
+Step 4: \(\text{area}=\displaystyle\int_2^6\left(2y-3-\frac{y^2}4\right)dy=\left[y^2-3y-\frac{y^3}{12}\right]_2^6\)
+Worked derivation: \[\text{area}=(36-18-18)-\left(4-6-\tfrac23\right)=0+\tfrac83=\tfrac83\]
+Check: \[\triangle\,(1,2),(9,6),(4,4):\ \tfrac12|1(6-4)+9(4-2)+4(2-6)|=2;\quad\tfrac43\times2=\tfrac83\ \ (\text{Archimedes})\]
+Why: \(2y-3-\tfrac{y^2}4=-\tfrac14(y-2)(y-6)\ge0\ \text{on}\ [2,6]\)
+Why not the others: (B) \(\tfrac43=\tfrac12\cdot\tfrac83\); (C) \((2,2):\ 4\ne8\); (D) \(\tfrac{16}3=2\cdot\tfrac83\).
+Key point: \(\text{parabolic segment}=\tfrac43\times\text{triangle with vertex at the parallel tangent}\)
+
+@@ Q32
+Answer: (D) There is a maximum at 0 and minima at -1 and 1.
+Given: \(f'(u)=\dfrac{u-1}{u+1},\quad g(x)=f(x^2)\)
+Formula/Principle: \(g'(x)=f'(x^2)\cdot2x\)
+Step 1: \(g'(x)=\dfrac{2x(x^2-1)}{x^2+1}=\dfrac{2x(x-1)(x+1)}{x^2+1}\)
+Step 2: \(g'(x)=0\Rightarrow x=-1,\ 0,\ 1\)
+Step 3: \(x<-1:\ g'<0;\quad-1<x<0:\ g'>0;\quad0<x<1:\ g'<0;\quad x>1:\ g'>0\)
+Worked derivation: \[x=\pm1:\ (-\to+)\ \text{minima};\qquad x=0:\ (+\to-)\ \text{maximum}\]
+Check: \[g'(-2)=\tfrac{-12}5<0,\ g'\left(-\tfrac12\right)=\tfrac{(-1)(-3/4)}{5/4}=\tfrac35>0,\ g'\left(\tfrac12\right)=-\tfrac35<0,\ g'(2)=\tfrac{12}5>0\]
+Why: \(\text{the factor}\ 2x\ \text{from the inner function gives the extra stationary point}\ x=0\)
+Why not the others: (A) \(g'(\pm1)=0\ \text{also, and}\ x=0\ \text{is a maximum}\); (B) \(g'(0)=0\ \text{also, and}\ \pm1\ \text{are minima}\); (C) \(\text{one maximum, two minima}\).
+Key point: \((f\circ h)'=f'(h)\,h'\ \text{vanishes when either factor does}\)
+
+@@ Q33
+Answer: (B) (5-6 ln 2)/16.
+Given: \(I=\displaystyle\int_0^1\frac{x\ln(1+x)}{(1+x)^3}\,dx\)
+Formula/Principle: \(u=1+x;\quad\displaystyle\int\frac{\ln u}{u^2}du=-\frac{\ln u+1}u,\quad\int\frac{\ln u}{u^3}du=-\frac{\ln u}{2u^2}-\frac1{4u^2}\)
+Step 1: \(I=\displaystyle\int_1^2\frac{(u-1)\ln u}{u^3}du=\int_1^2\frac{\ln u}{u^2}du-\int_1^2\frac{\ln u}{u^3}du=I_1-I_2\)
+Step 2: \(I_1=\left[-\dfrac{\ln u+1}u\right]_1^2=-\dfrac{\ln2+1}2+1=\dfrac{1-\ln2}2\)
+Step 3: \(I_2=\left[-\dfrac{\ln u}{2u^2}-\dfrac1{4u^2}\right]_1^2=-\dfrac{\ln2}8-\dfrac1{16}+\dfrac14=\dfrac3{16}-\dfrac{\ln2}8\)
+Worked derivation: \[I=\frac12-\frac{\ln2}2-\frac3{16}+\frac{\ln2}8=\frac5{16}-\frac{3\ln2}8=\frac{5-6\ln2}{16}\approx0.053\]
+Check: \[\frac d{du}\left(-\frac{\ln u+1}u\right)=-\frac1{u^2}+\frac{\ln u+1}{u^2}=\frac{\ln u}{u^2};\quad0<I<\max\frac{x\ln(1+x)}{(1+x)^3}<\frac{\ln2}{4}\approx0.17\]
+Why: \(x=u-1\ \text{splits the integrand into two standard forms}\)
+Why not the others: (A) \(\tfrac{1-\ln2}2=I_1\ \text{only}\); (C) \(\tfrac{5-2\ln2}{16}\approx0.226\ne0.053\); (D) \(\tfrac{3-2\ln2}{16}=I_2\ \text{only}\).
+Key point: \(\text{shift}\ u=1+x,\ \text{then integrate by parts}\)
+
+@@ Q34
+Answer: (C) 10.
+Given: \(A=\{1,2,3\};\quad R\ \text{symmetric and transitive, not reflexive}\)
+Formula/Principle: \((a,b)\in R\Rightarrow(b,a)\in R\Rightarrow(a,a),(b,b)\in R;\quad R=\text{equivalence relation on a subset}\ S\subsetneq A\)
+Step 1: \(|S|=0:\ R=\varnothing\Rightarrow1\)
+Step 2: \(|S|=1:\ \dbinom31\times B_1=3\times1=3\)
+Step 3: \(|S|=2:\ \dbinom32\times B_2=3\times2=6\)
+Step 4: \(|S|=3:\ B_3=5\ \text{(reflexive, excluded)}\)
+Worked derivation: \[N=1+3+6=10\]
+Check: \[\sum_{k=0}^3\binom3kB_k=1+3+6+5=15=B_4;\quad15-5=10\]
+Why: \(\text{an element in no pair breaks reflexivity but not symmetry or transitivity}\)
+Why not the others: (A) \(3\ \text{counts}\ |S|=1\ \text{only}\); (B) \(6\ \text{counts}\ |S|=2\ \text{only}\); (D) \(15\ \text{includes the 5 equivalence relations on}\ A\).
+Key point: \(\text{symmetric}+\text{transitive}=\text{equivalence relation on the set of elements used}\)
+
+@@ Q35
+Answer: (A) a=6; infinitely many.
+Given: \(x+2y+z=3,\quad2x+4y+2z=a,\quad z=1\)
+Formula/Principle: \(R_2-2R_1:\ 0=a-6\)
+Step 1: \(\text{consistent}\iff a=6\)
+Step 2: \(z=1\Rightarrow x+2y=2\)
+Step 3: \(y=t\Rightarrow x=2-2t\)
+Worked derivation: \[(x,y,z)=(2-2t,\ t,\ 1),\quad t\in\mathbb R\ \Rightarrow\ \text{infinitely many solutions}\]
+Check: \[t=0:\ (2,0,1):\ 2+0+1=3,\ 4+0+2=6;\qquad\operatorname{rank}A=\operatorname{rank}[A|b]=2<3\]
+Why: \(\det A=0\Rightarrow\text{no unique solution; either none or infinitely many}\)
+Why not the others: (B) \(a=3:\ 0=-3\); (C) \(\operatorname{rank}=2<3\Rightarrow\text{one free parameter}\); (D) \(a=6\ \text{is consistent}\).
+Key point: \(\text{dependent rows need the same dependence on the right-hand side}\)
+
+@@ Q36
+Answer: (B) 5/11.
+Given: \(P(S_1)=\tfrac12,\ P(S_2)=\tfrac23,\ P(S_3)=\tfrac34;\quad\text{stop at the 2nd failure, on trial 4}\)
+Formula/Principle: \(\{T=4\}=\{\text{exactly one }F\text{ in trials 1–3}\}\cap\{F_4\};\quad P(S_1\mid T=4)=\dfrac{P(S_1\cap T=4)}{P(T=4)}\)
+Step 1: \(P(FSS)=\tfrac12\cdot\tfrac23\cdot\tfrac34=\tfrac14\)
+Step 2: \(P(SFS)=\tfrac12\cdot\tfrac13\cdot\tfrac34=\tfrac18\)
+Step 3: \(P(SSF)=\tfrac12\cdot\tfrac23\cdot\tfrac14=\tfrac1{12}\)
+Step 4: \(P(F_4)=p_4\ \text{multiplies numerator and denominator}\)
+Worked derivation: \[P(S_1\mid T=4)=\frac{\left(\tfrac18+\tfrac1{12}\right)p_4}{\left(\tfrac14+\tfrac18+\tfrac1{12}\right)p_4}=\frac{5/24}{11/24}=\frac5{11}\]
+Check: \[P(F_1\mid T=4)=\frac{6/24}{11/24}=\frac6{11};\quad\frac5{11}+\frac6{11}=1\]
+Why: \(\text{the three allowed prefixes are not equally likely}\)
+Why not the others: (A) \(\tfrac23=\tfrac{2\ \text{patterns}}{3\ \text{patterns}}\ (\text{unweighted})\); (C) \(\tfrac12=P(S_1)\ (\text{unconditioned})\); (D) \(\tfrac3{11}=\tfrac{1/8}{11/24}\ (\text{omits}\ SSF)\).
+Key point: \(\text{weight each pattern by its own probability before conditioning}\)
+
+@@ Q37
+Answer: (D) 16.
+Given: \(\text{digits}\ 0,1,2,3,4\ \text{once each};\quad d_1\ne0\)
+Formula/Principle: \(11\mid N\iff(d_1+d_3+d_5)-(d_2+d_4)\equiv0\pmod{11}\)
+Step 1: \(S=d_1+d_3+d_5,\quad d_2+d_4=10-S\Rightarrow2S-10\equiv0\pmod{11}\)
+Step 2: \(3\le S\le9\Rightarrow-4\le2S-10\le8\Rightarrow2S-10=0\Rightarrow S=5\)
+Step 3: \(\{d_1,d_3,d_5\}=\{0,1,4\}\ \text{or}\ \{0,2,3\}\)
+Step 4: \(\text{each set}:\ 3!\times2!=12\ \text{arrangements};\quad d_1=0:\ 2!\times2!=4\)
+Worked derivation: \[N=2\times(12-4)=16\]
+Check: \[13024=11\times1184:\quad(1+0+4)-(3+2)=0\]
+Why: \(\text{both admissible sets contain}\ 0,\ \text{so each loses its leading-zero arrangements}\)
+Why not the others: (A) \(24=2\times12\ (\text{leading zeros kept})\); (B) \(12\ (\text{one set, uncorrected})\); (C) \(20=24-4\ (\text{only one set corrected})\).
+Key point: \(\text{alternating digit sums must differ by a multiple of 11}\)
+
+@@ Q38
+Answer: (A) 20-5√5.
+Given: \([x^2](1+x)^n=[x^2](1+\sqrt5x)^{n-3},\quad n\ge4\)
+Formula/Principle: \([x^r](1+ax)^m=\dbinom mra^r\)
+Step 1: \(\dbinom n2=5\dbinom{n-3}2\Rightarrow n(n-1)=5(n-3)(n-4)\)
+Step 2: \(n^2-n=5n^2-35n+60\Rightarrow2n^2-17n+30=0\Rightarrow(2n-5)(n-6)=0\)
+Step 3: \(n\in\mathbb Z\Rightarrow n=6\)
+Step 4: \([x^3](1+x)^6=\dbinom63=20\)
+Step 5: \([x^3](1+\sqrt5x)^3=\dbinom33(\sqrt5)^3=5\sqrt5\)
+Worked derivation: \[20-5\sqrt5\approx8.82\]
+Check: \[\binom62=15=5\binom32=5\times3\]
+Why: \(n=\tfrac52\ \text{is not an integer}\)
+Why not the others: (B) \(20+5\sqrt5\ (\text{sum})\); (C) \((\sqrt5)^3=5\sqrt5\ne\sqrt5\); (D) \(5\sqrt5-20\ (\text{order reversed})\).
+Key point: \(\text{the factor}\ a^r\ \text{changes with the power compared}\)
+
+@@ Q39
+Answer: (C) 6.
+Given: \(\displaystyle\sum_{k=1}^n(2k-1)^2=8\sum_{k=1}^n(2k-1)-2\)
+Formula/Principle: \(\displaystyle\sum_{k=1}^n(2k-1)=n^2,\quad\sum_{k=1}^n(2k-1)^2=\frac{n(4n^2-1)}3\)
+Step 1: \(\dfrac{n(4n^2-1)}3=8n^2-2\)
+Step 2: \(4n^3-n=24n^2-6\Rightarrow4n^3-24n^2-n+6=0\)
+Step 3: \(4n^2(n-6)-(n-6)=0\Rightarrow(n-6)(4n^2-1)=0\)
+Worked derivation: \[n=6\quad\left(n=\pm\tfrac12\ \text{rejected}\right)\]
+Check: \[1+9+25+49+81+121=286;\quad8\times36-2=286\]
+Why: \(n\ \text{counts terms}\Rightarrow n\in\mathbb Z^+\)
+Why not the others: (A) \(n=4:\ 84\ne126\); (B) \(n=5:\ 165\ne198\); (D) \(n=8:\ 680\ne510\).
+Key point: \(\displaystyle\sum_{k=1}^n(2k-1)^2=\frac{n(2n-1)(2n+1)}3\)
+
+@@ Q40
+Answer: (B) For a=0, f'(0)=0 but f' is not continuous there; no a makes the extension continuously differentiable at zero.
+Given: \(f(x)=x^2\sin\tfrac1x\ (x\ne0),\quad f(0)=a\)
+Formula/Principle: \(f'(0)=\displaystyle\lim_{h\to0}\frac{f(h)-f(0)}h;\quad f'\ \text{continuous at}\ 0\iff\lim_{x\to0}f'(x)=f'(0)\)
+Step 1: \(\left|x^2\sin\tfrac1x\right|\le x^2\to0\Rightarrow\text{continuity needs}\ a=0\)
+Step 2: \(f'(0)=\displaystyle\lim_{h\to0}h\sin\tfrac1h=0\quad\left(|h\sin\tfrac1h|\le|h|\right)\)
+Step 3: \(x\ne0:\ f'(x)=2x\sin\tfrac1x-\cos\tfrac1x\)
+Step 4: \(x_n=\dfrac1{2n\pi}:\ f'(x_n)=-1;\qquad x_n=\dfrac1{(2n+1)\pi}:\ f'(x_n)=+1\)
+Worked derivation: \[f'(0)=0,\qquad\lim_{x\to0}f'(x)\ \text{does not exist}\ (-1\ne+1)\]
+Check: \[a\ne0:\ \lim_{x\to0}f(x)=0\ne a\Rightarrow\text{not continuous}\Rightarrow\text{not differentiable}\]
+Why: \(\text{the choice of}\ a\ \text{cannot change}\ f'(x)\ \text{for}\ x\ne0\)
+Why not the others: (A) \(\lim f'\ \text{does not exist}\); (C) \(a=0\Rightarrow f'(0)=0\); (D) \(\text{continuity needs}\ a=0,\ \text{and then}\ f'(0)\ \text{exists}\).
+Key point: \(\text{differentiable at a point does not imply}\ f'\ \text{continuous there}\)
+
+@@ Q41
+Answer: (D) All y=nπ with integer n; value 2π/3.
+Given: \(y'=\sin y,\quad y(0)=\tfrac\pi2,\quad0<y<\pi\)
+Formula/Principle: \(\displaystyle\int\csc y\,dy=\ln\left|\tan\tfrac y2\right|+C\)
+Step 1: \(y=c\ \text{constant}\Rightarrow\sin c=0\Rightarrow c=n\pi,\ n\in\mathbb Z\)
+Step 2: \(\dfrac{dy}{\sin y}=dx\Rightarrow\ln\tan\tfrac y2=x+C\)
+Step 3: \(y(0)=\tfrac\pi2:\ \ln\tan\tfrac\pi4=0=C\Rightarrow\tan\tfrac y2=e^x\)
+Step 4: \(x=\ln\sqrt3:\ \tan\tfrac y2=\sqrt3\Rightarrow\tfrac y2=\tfrac\pi3\)
+Worked derivation: \[y(\ln\sqrt3)=\tfrac{2\pi}3;\qquad\text{constant solutions}\ y=n\pi\]
+Check: \[y=2\arctan e^x:\ y'=\frac{2e^x}{1+e^{2x}}=\frac{2\tan\frac y2}{1+\tan^2\frac y2}=\sin y\]
+Why: \(0<\tfrac y2<\tfrac\pi2\ \text{fixes the branch of}\ \arctan\)
+Why not the others: (A) \(y=\pi,\ 2\pi,\dots\ \text{are also constant solutions};\ \tfrac\pi3\ne\tfrac{2\pi}3\); (B) \(\tfrac\pi3=\tfrac y2,\ \text{not}\ y\); (C) \(y=0,\ 2\pi,\dots\ \text{are also constant solutions}\).
+Key point: \(\text{list the zeros of the right-hand side before dividing by it}\)
+
+@@ Q42
+Answer: (A) (-2,2,0); 3√2.
+Given: \(P(1,2,3),\quad\vec d=(1,0,1),\quad x+y+z=0\)
+Formula/Principle: \(Q=P+t\vec d,\quad PQ=|t|\,|\vec d|\)
+Step 1: \(Q=(1+t,\ 2,\ 3+t)\)
+Step 2: \((1+t)+2+(3+t)=0\Rightarrow2t=-6\Rightarrow t=-3\)
+Step 3: \(Q=(-2,2,0)\)
+Worked derivation: \[PQ=3\sqrt{1^2+0^2+1^2}=3\sqrt2\]
+Check: \[-2+2+0=0;\quad PQ^2=(1+2)^2+(2-2)^2+(3-0)^2=18\]
+Why: \(\text{the distance is measured along}\ \vec d,\ \text{not along the normal}\)
+Why not the others: (B) \((-1,0,1),\ 2\sqrt3:\ \text{foot of the perpendicular}\); (C) \(0+2+2=4\ne0\); (D) \(2\sqrt3=\tfrac{|1+2+3|}{\sqrt3}\ (\text{perpendicular distance})\).
+Key point: \(\text{substitute the parametric point into the plane}\)
+
+@@ Q43
+Answer: (C) 2.
+Given: \(\mathbf a=(1,1,0),\quad\mathbf a\times\mathbf v=(0,0,2)\)
+Formula/Principle: \(\mathbf a\times\mathbf v=(a_2v_3-a_3v_2,\ a_3v_1-a_1v_3,\ a_1v_2-a_2v_1)\)
+Step 1: \(\mathbf v=(x,y,z):\ \mathbf a\times\mathbf v=(z,\ -z,\ y-x)\)
+Step 2: \(z=0,\quad y-x=2\Rightarrow\mathbf v=(t,\ t+2,\ 0)\)
+Step 3: \(|\mathbf v|^2=t^2+(t+2)^2=2t^2+4t+4=2(t+1)^2+2\)
+Worked derivation: \[|\mathbf v|^2_{\min}=2\ \ \text{at}\ t=-1,\quad\mathbf v=(-1,1,0)\]
+Check: \[\mathbf a\cdot\mathbf v=-1+1=0;\quad|\mathbf a\times\mathbf v|=|\mathbf a||\mathbf v|\Rightarrow2=\sqrt2\,|\mathbf v|\Rightarrow|\mathbf v|^2=2\]
+Why: \(\text{a component of}\ \mathbf v\ \text{along}\ \mathbf a\ \text{adds length but no cross product}\)
+Why not the others: (A) \(1<2\ (\text{below the minimum})\); (B) \(4=|(0,2,0)|^2\ (t=0)\); (D) \(\mathbf v=0\Rightarrow\mathbf a\times\mathbf v=0\).
+Key point: \(|\mathbf v|_{\min}=\dfrac{|\mathbf a\times\mathbf v|}{|\mathbf a|}\)
+
+@@ Q44
+Answer: (B) a=2; mean 13/5.
+Given: \(x_i=1,3,5;\quad f_i=a,2,1;\quad\sigma^2=\tfrac{56}{25}\)
+Formula/Principle: \(\bar x=\dfrac{\sum f_ix_i}{\sum f_i},\quad\sigma^2=\dfrac{\sum f_ix_i^2}{\sum f_i}-\bar x^2\)
+Step 1: \(\bar x=\dfrac{a+6+5}{a+3}=\dfrac{a+11}{a+3},\quad\dfrac{\sum f_ix_i^2}{\sum f_i}=\dfrac{a+18+25}{a+3}=\dfrac{a+43}{a+3}\)
+Step 2: \(\sigma^2=\dfrac{(a+43)(a+3)-(a+11)^2}{(a+3)^2}=\dfrac{24a+8}{(a+3)^2}\)
+Step 3: \(25(24a+8)=56(a+3)^2\Rightarrow56a^2-264a+304=0\Rightarrow7a^2-33a+38=0\)
+Step 4: \((7a-19)(a-2)=0\Rightarrow a=2\ \ (a\in\mathbb Z)\)
+Worked derivation: \[a=2,\qquad\bar x=\frac{13}5\]
+Check: \[\frac{2+18+25}5-\left(\frac{13}5\right)^2=9-\frac{169}{25}=\frac{56}{25}\]
+Why: \(\text{a frequency is a non-negative integer}\)
+Why not the others: (A) \(a=\tfrac{19}7\notin\mathbb Z\); (C) \(3=\tfrac{1+3+5}3\ (\text{unweighted})\); (D) \(a=1:\ \sigma^2=\tfrac{32}{16}=2\ne\tfrac{56}{25}\).
+Key point: \(\sigma^2=\overline{x^2}-\bar x^2\ \text{with frequency weights}\)
+
+@@ Q45
+Answer: (D) 2π/9.
+Given: \(\arcsin x+\arccos(2x^2-1)=\tfrac{2\pi}3\)
+Formula/Principle: \(\theta=\arcsin x\in\left[-\tfrac\pi2,\tfrac\pi2\right]:\ 2x^2-1=-\cos2\theta;\quad\arccos(-c)=\pi-\arccos c;\quad\arccos(\cos2\theta)=2|\theta|\)
+Step 1: \(\arccos(2x^2-1)=\pi-2|\theta|\)
+Step 2: \(\theta+\pi-2|\theta|=\tfrac{2\pi}3\)
+Step 3: \(\theta\ge0:\ \pi-\theta=\tfrac{2\pi}3\Rightarrow\theta=\tfrac\pi3\)
+Step 4: \(\theta<0:\ \pi+3\theta=\tfrac{2\pi}3\Rightarrow\theta=-\tfrac\pi9\)
+Worked derivation: \[\sum\arcsin x=\frac\pi3-\frac\pi9=\frac{2\pi}9\]
+Check: \[\theta=\tfrac\pi3:\ x=\tfrac{\sqrt3}2,\ \arccos\tfrac12=\tfrac\pi3,\ \tfrac\pi3+\tfrac\pi3=\tfrac{2\pi}3;\quad\theta=-\tfrac\pi9:\ -\tfrac\pi9+\left(\pi-\tfrac{2\pi}9\right)=\tfrac{2\pi}3\]
+Why: \(|\theta|\ \text{gives one linear equation for each sign of}\ \theta\)
+Why not the others: (A) \(\tfrac\pi3\ (\theta\ge0\ \text{only})\); (B) \(-\tfrac\pi9\ (\theta<0\ \text{only})\); (C) \(\tfrac\pi3+\tfrac\pi9=\tfrac{4\pi}9\ (\text{sign lost})\).
+Key point: \(\arccos(\cos\phi)=|\phi|\ \text{for}\ |\phi|\le\pi\)
+
+@@ Q46
+Answer: (C) 0.64 g cm−3, two significant figures.
+Given: \(m_1=20.600\ \mathrm g,\quad m_2=20.584\ \mathrm g,\quad V=0.0250\ \mathrm{cm^3}\)
+Formula/Principle: \(\rho=\dfrac{m_1-m_2}V;\quad\text{subtraction: least decimal places; division: least significant figures}\)
+Step 1: \(\Delta m=20.600-20.584=0.016\ \mathrm g\ \ (3\ \text{d.p.}\Rightarrow2\ \text{s.f.})\)
+Step 2: \(V=0.0250\ \mathrm{cm^3}\ \ (3\ \text{s.f.})\)
+Step 3: \(\rho=\dfrac{0.016}{0.0250}=0.640\ \mathrm{g\,cm^{-3}}\)
+Worked derivation: \[\rho=0.64\ \mathrm{g\,cm^{-3}}\ \ (2\ \text{s.f.})\]
+Check: \[0.64\times0.0250=0.016\ \mathrm g\]
+Why: \(\text{subtracting nearly equal numbers reduces the significant figures from 5 to 2}\)
+Why not the others: (A) \(4\ \text{s.f.}>2\ \text{s.f.}\); (B) \(1\ \text{s.f.}<2\ \text{s.f.}\); (D) \(20.6-20.6=0\ (\text{rounded too early})\).
+Key point: \(\text{round only the final result}\)
+
+@@ Q48
+Answer: (A) 2000 N; 10.2 ohm.
+Given: \(A=1.00\ \mathrm{mm^2}=1.00\times10^{-6}\ \mathrm{m^2},\quad Y=2.0\times10^{11}\ \mathrm{Pa},\quad R=10.0\ \Omega,\quad\varepsilon=0.010\)
+Formula/Principle: \(F=YA\varepsilon;\quad R=\dfrac{\rho L}A,\quad AL=\text{constant}\)
+Step 1: \(F=(2.0\times10^{11})(1.00\times10^{-6})(0.010)=2000\ \mathrm N\)
+Step 2: \(L'=L(1+\varepsilon),\quad A'=\dfrac A{1+\varepsilon}\)
+Step 3: \(\dfrac{R'}R=\dfrac{L'}L\cdot\dfrac A{A'}=(1+\varepsilon)^2\approx1+2\varepsilon=1.020\)
+Worked derivation: \[F=2000\ \mathrm N,\qquad R'=10.0\times1.020=10.2\ \Omega\]
+Check: \[(1.010)^2=1.0201\Rightarrow R'=10.201\ \Omega\approx10.2\ \Omega;\quad\frac FA=2.0\times10^9\ \mathrm{Pa}=Y\varepsilon\]
+Why: \(\text{the wire gets longer and thinner; both raise}\ R\)
+Why not the others: (B) \(10.1\ \Omega=R(1+\varepsilon)\ (\text{area change ignored})\); (C) \(200\ \mathrm N=\tfrac{2000}{10}\); (D) \(9.8\ \Omega=R(1-2\varepsilon)\).
+Key point: \(\dfrac{\Delta R}R=2\dfrac{\Delta L}L\ \text{at constant volume and resistivity}\)
+
+@@ Q49
+Answer: (D) Radiation was 4 W, and the new steady temperature is higher than T0.
+Given: \(P_{\text{in}}=10\ \mathrm W,\quad P_{\text{cond}}=6\ \mathrm W,\quad P_{\text{rad}}(T)\ \text{increasing in}\ T\)
+Formula/Principle: \(\text{steady state}:\ P_{\text{in}}=P_{\text{cond}}+P_{\text{rad}}\)
+Step 1: \(P_{\text{rad}}(T_0)=10-6=4\ \mathrm W\)
+Step 2: \(\text{link removed, at}\ T_0:\ \dfrac{dU}{dt}=10-4=+6\ \mathrm W>0\Rightarrow T\ \text{rises}\)
+Step 3: \(\text{new steady state}:\ P_{\text{rad}}(T_{\text{new}})=10\ \mathrm W\)
+Worked derivation: \[P_{\text{rad}}(T_{\text{new}})=10\ \mathrm W>4\ \mathrm W=P_{\text{rad}}(T_0)\Rightarrow T_{\text{new}}>T_0\]
+Check: \[\text{before}:\ 10=6+4;\qquad\text{after}:\ 10=0+10\]
+Why: \(\text{the remaining loss channel must carry the whole input}\)
+Why not the others: (A) \(6\ \mathrm W\ \text{was the conduction loss}\); (B) \(\text{at}\ T_0:\ 10\ne4\); (C) \(10\ \mathrm W\ \text{ignores the}\ 6\ \mathrm W\ \text{conducted}\).
+Key point: \(\text{steady state means power in}=\text{power out}\)
+
+@@ Q50
+Answer: (B) 2.
+Given: \(p_A=p_B,\ n_A=n_B;\quad\vec V_A=0,\quad|\vec V_B|=U=w\ \ (w=\text{thermal rms speed})\)
+Formula/Principle: \(p=nkT;\quad\vec v=\vec U+\vec c,\ \langle\vec c\rangle=0\Rightarrow\langle v^2\rangle=U^2+\langle c^2\rangle\)
+Step 1: \(T_A=\dfrac p{nk}=T_B\Rightarrow\langle c^2\rangle_A=\langle c^2\rangle_B=w^2\)
+Step 2: \(\langle v_A^2\rangle=w^2\)
+Step 3: \(\langle v_B^2\rangle=U^2+2\vec U\cdot\langle\vec c\rangle+w^2=w^2+0+w^2=2w^2\)
+Worked derivation: \[\frac{\langle K_B\rangle}{\langle K_A\rangle}=\frac{\tfrac12m(2w^2)}{\tfrac12mw^2}=2\]
+Check: \[\langle K_B\rangle=\tfrac12mU^2+\tfrac32kT=\tfrac32kT+\tfrac32kT\quad\left(\tfrac12mw^2=\tfrac32kT\right)\]
+Why: \(\text{pressure and temperature measure only the random part of the motion}\)
+Why not the others: (A) \(1\ (U^2\ \text{omitted})\); (C) \(\sqrt2=\tfrac{v_{rms,B}}{v_{rms,A}}\); (D) \(4=\tfrac{(U+w)^2}{w^2}\).
+Key point: \(\langle K\rangle_{\text{lab}}=\tfrac12mU^2+\tfrac32kT\)
+
+@@ Q51
+Answer: (C) A.
+Given: \(x_1=A\cos\omega t,\quad x_2=A\cos[\omega(t-\tau)],\quad\tau=\dfrac T3\)
+Formula/Principle: \(\cos P+\cos Q=2\cos\dfrac{P-Q}2\cos\dfrac{P+Q}2\)
+Step 1: \(\phi=\omega\tau=\dfrac{2\pi}T\cdot\dfrac T3=\dfrac{2\pi}3\)
+Step 2: \(x_1+x_2=2A\cos\dfrac\phi2\cos\left(\omega t-\dfrac\phi2\right)\)
+Step 3: \(\cos\dfrac\phi2=\cos\dfrac\pi3=\dfrac12\)
+Worked derivation: \[A_{\text{res}}=2A\cdot\tfrac12=A\]
+Check: \[A_{\text{res}}^2=A^2+A^2+2A^2\cos\tfrac{2\pi}3=2A^2-A^2=A^2\]
+Why: \(\text{the two maxima are separated by one third of a period}\)
+Why not the others: (A) \(2A\ (\phi=0)\); (B) \(\sqrt3A\ (\phi=\tfrac\pi3)\); (D) \(0\ (\phi=\pi)\).
+Key point: \(A_{\text{res}}=2A\left|\cos\tfrac\phi2\right|\)
+
+@@ Q52
+Answer: (A) First upward at L/v; second downward at 2L/v.
+Given: \(\text{pulse}\ (+)\ \text{from}\ x=\tfrac L2\ \text{moving right};\quad\text{left end fixed, right end free}\)
+Formula/Principle: \(\text{free end}:\ +\to+;\quad\text{fixed end}:\ +\to-;\quad t=\dfrac dv\)
+Step 1: \(d_1=\tfrac L2+\tfrac L2=L\Rightarrow t_1=\dfrac Lv,\quad\text{sign}=+\)
+Step 2: \(d_2=L+\tfrac L2+\tfrac L2=2L\Rightarrow t_2=\dfrac{2L}v,\quad\text{sign}=-\)
+Worked derivation: \[(t_1,\text{sign}_1)=\left(\tfrac Lv,+\right),\qquad(t_2,\text{sign}_2)=\left(\tfrac{2L}v,-\right)\]
+Check: \[t_2-t_1=\frac Lv=\frac{2(L/2)}v\ \ (\text{midpoint}\to\text{fixed end}\to\text{midpoint})\]
+Why: \(y=0\ \text{at a fixed end forces inversion};\quad\tfrac{\partial y}{\partial x}=0\ \text{at a free end does not}\)
+Why not the others: (B) \(\text{free and fixed rules interchanged}\); (C) \(\tfrac L{2v}\ \text{is a one-way time}\); (D) \(\text{fixed-end inversion omitted}\).
+Key point: \(\text{fixed end inverts, free end does not}\)
+
+@@ Q56
+Answer: (D) 64 W; 64 percent.
+Given: \(\dfrac{N_p}{N_s}=5,\quad V_p=100\ \mathrm V,\quad r_s=1\ \Omega,\quad R_L=4\ \Omega,\quad P_{\text{core}}=20\ \mathrm W\)
+Formula/Principle: \(E_s=V_p\dfrac{N_s}{N_p},\quad I_s=\dfrac{E_s}{r_s+R_L},\quad\eta=\dfrac{P_{\text{load}}}{P_{\text{load}}+P_{\text{Cu}}+P_{\text{core}}}\)
+Step 1: \(E_s=\dfrac{100}5=20\ \mathrm V\)
+Step 2: \(I_s=\dfrac{20}{1+4}=4\ \mathrm A\)
+Step 3: \(P_{\text{load}}=4^2\times4=64\ \mathrm W\)
+Step 4: \(P_{\text{Cu}}=4^2\times1=16\ \mathrm W\)
+Worked derivation: \[\eta=\frac{64}{64+16+20}=\frac{64}{100}=64\%\]
+Check: \[E_sI_s=20\times4=80\ \mathrm W=64+16;\quad P_{\text{in}}=80+20=100\ \mathrm W\]
+Why: \(\text{the load voltage is}\ 20-4\times1=16\ \mathrm V,\ \text{not}\ 20\ \mathrm V\)
+Why not the others: (A) \(80\ \mathrm W=E_sI_s\); (B) \(\tfrac{64}{80}=80\%\ (\text{core loss omitted})\); (C) \(100\ \mathrm W=P_{\text{in}}\).
+Key point: \(\eta=\dfrac{\text{output}}{\text{output}+\text{all losses}}\)
+
+@@ Q57
+Answer: (A) -20 cm; 20.
+Given: \(f_o=80\ \mathrm{cm},\quad f_e=5\ \mathrm{cm},\quad\text{eyepiece moved}\ 1\ \mathrm{cm}\ \text{toward the objective}\)
+Formula/Principle: \(\dfrac1v-\dfrac1u=\dfrac1f;\quad M=\dfrac\beta\alpha\)
+Step 1: \(\text{normal adjustment}:\ d=80+5=85\ \mathrm{cm};\quad d'=84\ \mathrm{cm}\)
+Step 2: \(u_e=-(84-80)=-4\ \mathrm{cm}\)
+Step 3: \(\dfrac1v=\dfrac15+\dfrac1{-4}=-\dfrac1{20}\Rightarrow v=-20\ \mathrm{cm}\)
+Step 4: \(\alpha=\dfrac h{f_o}=\dfrac h{80},\quad\beta=\dfrac h{|u_e|}=\dfrac h4\)
+Worked derivation: \[v=-20\ \mathrm{cm},\qquad|M|=\frac{h/4}{h/80}=20\]
+Check: \[h'=\frac vuh=5h,\quad\beta=\frac{5h}{20}=\frac h4;\quad|M|=\frac{f_o}{f_e}\left(1+\frac{f_e}{|v|}\right)=16\times\frac54=20\]
+Why: \(\text{the objective image stays at 80 cm; only the eyepiece setting changes}\)
+Why not the others: (B) \(v<0\ (\text{virtual})\); (C) \(16=\tfrac{f_o}{f_e}\ (\text{normal adjustment})\); (D) \(-4\ \mathrm{cm}=u_e\).
+Key point: \(|M|=\dfrac{f_o}{|u_e|}\)
+
+@@ Q59
+Answer: (B) KA=KB=K/2; ratio 2.
+Given: \(m_A=m,\quad m_B=4m,\quad K_A+K_B=K\)
+Formula/Principle: \(\lambda=\dfrac h{\sqrt{2mK}}\)
+Step 1: \(\lambda_A\lambda_B=\dfrac{h^2}{\sqrt{2mK_A}\sqrt{8mK_B}}=\dfrac{h^2}{4m\sqrt{K_AK_B}}\)
+Step 2: \(K_AK_B=K_A(K-K_A)=\dfrac{K^2}4-\left(K_A-\dfrac K2\right)^2\le\dfrac{K^2}4\)
+Step 3: \(\text{maximum at}\ K_A=K_B=\dfrac K2\)
+Step 4: \(\dfrac{\lambda_A}{\lambda_B}=\sqrt{\dfrac{m_BK_B}{m_AK_A}}=\sqrt{\dfrac{4m}m}=2\)
+Worked derivation: \[K_A=K_B=\frac K2,\qquad\frac{\lambda_A}{\lambda_B}=2,\qquad(\lambda_A\lambda_B)_{\min}=\frac{h^2}{2mK}\]
+Check: \[K_A=\tfrac{4K}5,\ K_B=\tfrac K5:\ \sqrt{K_AK_B}=\tfrac{2K}5<\tfrac K2\Rightarrow\lambda_A\lambda_B=\tfrac{5h^2}{8mK}>\tfrac{h^2}{2mK}\]
+Why: \(\text{a fixed sum gives the largest product at equal shares}\)
+Why not the others: (A) \(\text{equal momenta, but}\ \tfrac58>\tfrac12\); (C) \(\text{equal}\ K,\ \text{unequal}\ m\Rightarrow\lambda_A\ne\lambda_B\); (D) \(\sqrt{K_AK_B}=\tfrac{2K}5<\tfrac K2\).
+Key point: \(\lambda\propto\dfrac1{\sqrt{mK}}\)
+
+@@ Q60
+Answer: (D) Electrons are majority mobile carriers; positive fixed donor ions balance their excess charge approximately in the neutral bulk.
+Given: \(\text{Si with donors}\ N_D\ (\text{all ionised}),\quad n\gg p,\quad\text{no net charge added}\)
+Formula/Principle: \(\mathrm D\to\mathrm D^++e^-;\quad\rho=e\left(p+N_D^+-n\right)\)
+Step 1: \(\text{each donor}:\ \text{one mobile}\ e^-\ \text{and one fixed}\ \mathrm D^+\)
+Step 2: \(\rho=0\Rightarrow n=p+N_D^+\)
+Step 3: \(n\gg p\Rightarrow n\approx N_D^+\)
+Worked derivation: \[\rho=e\left(p+N_D^+-n\right)\approx0,\qquad n\approx N_D\gg p\]
+Check: \[np=n_i^2\Rightarrow p=\frac{n_i^2}{N_D}\ll n_i\ll n\]
+Why: \(\text{n-type names the majority carrier, not the net charge}\)
+Why not the others: (A) \(\rho\approx0,\ \text{not}\ <0\); (B) \(\mathrm D^+\ \text{ions are bound to the lattice}\); (C) \(\text{donor ions are}\ +,\ \text{and}\ n\gg p\).
+Key point: \(\text{doping changes carrier numbers, not the net charge}\)
