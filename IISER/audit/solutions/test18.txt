@@ -1,0 +1,373 @@
+@@ Q31
+Answer: (A) \(\sqrt2\).
+Given: \(A=(0,1),\ B=(2,3)\ \text{on the circle};\quad\text{centre }C=(h,h)\)
+Formula/Principle: \(CA^2=CB^2;\quad\text{tangent length}^2=OC^2-r^2\)
+Step 1: \(h^2+(h-1)^2=(h-2)^2+(h-3)^2\Rightarrow-2h+1=-10h+13\Rightarrow h=\tfrac32\)
+Step 2: \(r^2=\tfrac94+\tfrac14=\tfrac52\)
+Step 3: \(OC^2=\tfrac94+\tfrac94=\tfrac92\)
+Worked derivation: \[\text{tangent length}=\sqrt{\tfrac92-\tfrac52}=\sqrt2\]
+Check: \[CB^2=\left(\tfrac12\right)^2+\left(\tfrac32\right)^2=\tfrac52\]
+Why: \(\text{tangent}\perp\text{radius}\Rightarrow\text{right-angled triangle with hypotenuse }OC\)
+Why not the others: (B) \(2=\text{tangent length}^2\); (C) \(\sqrt{\tfrac52}=r\); (D) \(\dfrac{3}{\sqrt2}=OC\).
+Key point: \(\text{tangent length from }P=\sqrt{S(P)}\)
+
+@@ Q32
+Answer: (D) 27/2.
+Given: \(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1;\quad\text{chord: midpoint }(1,1),\ \text{slope }-2,\ \text{length }2\sqrt5\)
+Formula/Principle: \(\text{points on the chord}:\ (1+t,\ 1-2t);\quad\text{distance from the midpoint}=|t|\sqrt5\)
+Step 1: \(|t|\sqrt5=\sqrt5\Rightarrow t=\pm1\Rightarrow\text{endpoints }(2,-1),\ (0,3)\)
+Step 2: \((0,3):\ \dfrac{9}{b^2}=1\Rightarrow b^2=9\)
+Step 3: \((2,-1):\ \dfrac{4}{a^2}+\dfrac19=1\Rightarrow a^2=\dfrac92\)
+Worked derivation: \[a^2+b^2=\frac92+9=\frac{27}{2}\]
+Check: \[\text{slope of the chord with midpoint }(x_0,y_0)=-\frac{b^2x_0}{a^2y_0}=-\frac{9}{9/2}=-2\]
+Why: \(\text{the midpoint and half-length fix both endpoints}\)
+Why not the others: (A) \(9=b^2\); (B) \(\tfrac92=a^2\); (C) \(18=2b^2\).
+Key point: \(\text{slope of a chord bisected at }(x_0,y_0):\ -\dfrac{b^2x_0}{a^2y_0}\)
+
+@@ Q33
+Answer: (B) \(8(\sqrt2-1)/3\).
+Given: \(y=1,\quad y=|x^2-1|,\quad|x^2-1|\le1\)
+Formula/Principle: \(|x^2-1|\le1\iff|x|\le\sqrt2;\quad A=\displaystyle\int\left(1-|x^2-1|\right)dx\)
+Step 1: \(|x|\le1:\ 1-(1-x^2)=x^2\Rightarrow2\displaystyle\int_0^1x^2\,dx=\frac23\)
+Step 2: \(1\le|x|\le\sqrt2:\ 1-(x^2-1)=2-x^2\Rightarrow2\displaystyle\int_1^{\sqrt2}(2-x^2)\,dx\)
+Step 3: \(2\left[2x-\dfrac{x^3}{3}\right]_1^{\sqrt2}=2\left(\dfrac{4\sqrt2}{3}-\dfrac53\right)=\dfrac{8\sqrt2-10}{3}\)
+Worked derivation: \[A=\frac23+\frac{8\sqrt2-10}{3}=\frac{8(\sqrt2-1)}{3}\approx1.10\]
+Check: \[x=0:\ |x^2-1|=1\ (\text{curves touch});\quad x=\pm\sqrt2:\ |x^2-1|=1\]
+Why: \(\text{the expression inside the modulus changes sign at}\ x=\pm1\)
+Why not the others: (A) \(\dfrac{8\sqrt2}{3}\) (\(-\tfrac83\) omitted); (C) \(\dfrac{4(\sqrt2-1)}{3}\) (one side only); (D) \(\dfrac23\) (\(|x|\le1\) only).
+Key point: \(\text{split the integral where the modulus changes form}\)
+
+@@ Q34
+Answer: (C) \(\pi/8\).
+Given: \(I=\displaystyle\int_0^{\pi/2}\frac{\sin x\cos x}{1+\sin^4x}\,dx\)
+Formula/Principle: \(u=\sin^2x,\quad du=2\sin x\cos x\,dx\)
+Step 1: \(x=0\Rightarrow u=0;\quad x=\tfrac\pi2\Rightarrow u=1\)
+Step 2: \(I=\dfrac12\displaystyle\int_0^1\frac{du}{1+u^2}\)
+Worked derivation: \[I=\frac12\left[\tan^{-1}u\right]_0^1=\frac12\cdot\frac\pi4=\frac\pi8\]
+Check: \[0\le\frac{\sin x\cos x}{1+\sin^4x}\le\frac12\Rightarrow0<I<\frac\pi4\]
+Why: \(\sin^4x=(\sin^2x)^2\)
+Why not the others: (A) \(\tfrac\pi4\) (factor \(\tfrac12\) omitted); (B) \(\tfrac12\) (denominator taken as 1); (D) \(1\ne\tfrac\pi8\).
+Key point: \(\displaystyle\int\frac{du}{1+u^2}=\tan^{-1}u\)
+
+@@ Q35
+Answer: (A) 1/8.
+Given: \(f(x)=x+\ln x,\ x>0;\quad g=f^{-1}\)
+Formula/Principle: \(g'(y)=\dfrac{1}{f'(x)},\quad g''(y)=-\dfrac{f''(x)}{[f'(x)]^3},\quad y=f(x)\)
+Step 1: \(f(1)=1\Rightarrow g(1)=1\)
+Step 2: \(f'(x)=1+\dfrac1x\Rightarrow f'(1)=2;\quad f''(x)=-\dfrac{1}{x^2}\Rightarrow f''(1)=-1\)
+Worked derivation: \[g''(1)=-\frac{-1}{2^3}=\frac18\]
+Check: \[g'(1)=\frac12;\quad f\ \text{concave}\Rightarrow g\ \text{convex}\Rightarrow g''>0\]
+Why: \(f(g(y))=y\Rightarrow f'g'=1\Rightarrow f''(g')^2+f'g''=0\)
+Why not the others: (B) \(-\tfrac18\) (sign); (C) \(\tfrac14=[g'(1)]^2\); (D) \(-\tfrac14\ne\tfrac18\).
+Key point: \(g''=-\dfrac{f''}{(f')^3}\)
+
+@@ Q36
+Answer: (B) f is its own inverse and has no real fixed point.
+Given: \(f(x)=\dfrac{ax+b}{x-a},\quad f(0)=2,\quad f(1)=3\)
+Formula/Principle: \(y=\dfrac{ax+b}{x-a}\iff x=\dfrac{ay+b}{y-a}\)
+Step 1: \(f(0)=-\dfrac ba=2\Rightarrow b=-2a\)
+Step 2: \(f(1)=\dfrac{a+b}{1-a}=\dfrac{-a}{1-a}=3\Rightarrow a=\dfrac32,\ b=-3\)
+Step 3: \(f(x)=x\iff x^2-2ax-b=0\iff x^2-3x+3=0\)
+Worked derivation: \[D=9-12=-3<0\Rightarrow\text{no real fixed point};\qquad f^{-1}=f\]
+Check: \[a^2+b=\tfrac94-3=-\tfrac34\ne0\Rightarrow f\ \text{is not constant}\]
+Why: \(y(x-a)=ax+b\Rightarrow x(y-a)=ay+b\ \ (\text{same form})\)
+Why not the others: (A) \(f^{-1}=f\ \text{exists}\); (C) \(D<0\); (D) \(a^2+b\ne0\).
+Key point: \(\dfrac{ax+b}{cx-a}\ \text{is an involution}\)
+
+@@ Q37
+Answer: (D) -1.
+Given: \(A^3=I,\quad B_t=I+A+tA^2\)
+Formula/Principle: \(\text{eigenvalues of }A:\ 1,\ \omega,\ \omega^2;\quad\operatorname{tr}B^{-1}=\sum\dfrac{1}{\mu_i}\)
+Step 1: \(\mu_1=2+t\)
+Step 2: \(\mu_2=1+\omega+t\omega^2=(t-1)\omega^2,\quad\mu_3=1+\omega^2+t\omega=(t-1)\omega\)
+Step 3: \(\operatorname{tr}B^{-1}=\dfrac{1}{t+2}+\dfrac{\omega+\omega^2}{t-1}=\dfrac{1}{t+2}-\dfrac{1}{t-1}=\dfrac{-3}{(t+2)(t-1)}\)
+Step 4: \(\dfrac{-3}{(t+2)(t-1)}=-\dfrac34\Rightarrow t^2+t-6=0\Rightarrow t=2,\ -3\)
+Worked derivation: \[2+(-3)=-1\]
+Check: \[\det B_t=(t+2)(t-1)^2\ne0\ \text{for}\ t=2,\ -3\]
+Why: \(1+\omega+\omega^2=0,\quad\dfrac{1}{\omega^2}=\omega,\quad\dfrac1\omega=\omega^2\)
+Why not the others: (A) \(1\ne-1\); (B) \(-2\) (\(t=-2\) makes \(B_t\) singular); (C) \(2\) (one root only).
+Key point: \(\text{a polynomial in }A\ \text{has eigenvalues}\ p(\lambda_i)\)
+
+@@ Q38
+Answer: (A) 1/3.
+Given: \(3\ \text{labels from}\ \{1,\dots,7\};\quad\max-\min=4\)
+Formula/Principle: \(P=\dfrac{n(\text{favourable})}{n(\text{condition})}\)
+Step 1: \((\min,\max)\in\{(1,5),(2,6),(3,7)\};\ \text{middle label: 3 choices each}\Rightarrow9\ \text{subsets}\)
+Step 2: \(\text{containing }4:\ \{1,4,5\},\ \{2,4,6\},\ \{3,4,7\}\Rightarrow3\)
+Worked derivation: \[P=\frac39=\frac13\]
+Check: \[4\ \text{is strictly between min and max in all three pairs}\]
+Why: \(\text{label 4 can only be the middle label}\)
+Why not the others: (B) \(\tfrac37\) (condition ignored); (C) \(\tfrac19\) (one subset only); (D) \(\tfrac23\) (complement).
+Key point: \(\text{list the conditioned sample space}\)
+
+@@ Q39
+Answer: (C) \(\pi/2\).
+Given: \(\tan x+\cot x=4,\quad x\in(0,\pi)\)
+Formula/Principle: \(\tan x+\cot x=\dfrac{1}{\sin x\cos x}=\dfrac{2}{\sin2x}\)
+Step 1: \(\sin2x=\dfrac12,\quad2x\in(0,2\pi)\)
+Step 2: \(2x=\dfrac\pi6,\ \dfrac{5\pi}{6}\Rightarrow x=\dfrac\pi{12},\ \dfrac{5\pi}{12}\)
+Worked derivation: \[\frac\pi{12}+\frac{5\pi}{12}=\frac\pi2\]
+Check: \[\tan15^\circ+\cot15^\circ=0.268+3.732=4\]
+Why: \(x\in\left(\tfrac\pi2,\pi\right):\ \tan x+\cot x<0\)
+Why not the others: (A) \(\pi\ne\tfrac\pi2\); (B) \(\tfrac\pi4\) (average of the roots); (D) \(\tfrac{3\pi}{2}\ne\tfrac\pi2\).
+Key point: \(\tan x+\cot x=2\csc2x\)
+
+@@ Q40
+Answer: (D) \(2\sqrt2\).
+Given: \(P_1:\ x+y=1;\quad P_2:\ y+z=1;\quad\text{plane through }P_1\cap P_2,\ \perp\ 2x-y+z=0\)
+Formula/Principle: \(\text{pencil}:\ \alpha(x+y-1)+\beta(y+z-1)=0,\quad\mathbf n=(\alpha,\ \alpha+\beta,\ \beta)\)
+Step 1: \(\mathbf n\cdot(2,-1,1)=2\alpha-\alpha-\beta+\beta=\alpha=0\)
+Step 2: \(\alpha=0\Rightarrow\text{plane}:\ y+z=1\)
+Step 3: \(d=\dfrac{|1+4-1|}{\sqrt2}\)
+Worked derivation: \[d=\frac{4}{\sqrt2}=2\sqrt2\]
+Check: \[(0,1,1)\cdot(2,-1,1)=0\]
+Why: \(\text{the form}\ P_1+\lambda P_2=0\ \text{misses the plane}\ P_2\ \text{itself}\)
+Why not the others: (A) \(\sqrt2\ne\dfrac{4}{\sqrt2}\); (B) \(4\) (not divided by \(|\mathbf n|\)); (C) \(\dfrac{3}{\sqrt2}\ne\dfrac{4}{\sqrt2}\).
+Key point: \(\text{use two parameters for a pencil of planes}\)
+
+@@ Q41
+Answer: (B) \(\sqrt{7/3}\).
+Given: \(\operatorname{proj}_{\mathbf b}\mathbf a=\mathbf b,\quad\operatorname{proj}_{\mathbf a}\mathbf b=\dfrac{\mathbf a}{4}\)
+Formula/Principle: \(\operatorname{proj}_{\mathbf b}\mathbf a=\dfrac{\mathbf a\cdot\mathbf b}{|\mathbf b|^2}\mathbf b\)
+Step 1: \(\mathbf a\cdot\mathbf b=|\mathbf b|^2\)
+Step 2: \(\mathbf a\cdot\mathbf b=\dfrac{|\mathbf a|^2}{4}\Rightarrow|\mathbf a|^2=4|\mathbf b|^2\)
+Step 3: \(|\mathbf a+\mathbf b|^2=4|\mathbf b|^2+|\mathbf b|^2+2|\mathbf b|^2=7|\mathbf b|^2\)
+Step 4: \(|\mathbf a-\mathbf b|^2=4|\mathbf b|^2+|\mathbf b|^2-2|\mathbf b|^2=3|\mathbf b|^2\)
+Worked derivation: \[\frac{|\mathbf a+\mathbf b|}{|\mathbf a-\mathbf b|}=\sqrt{\frac73}\]
+Check: \[\cos\theta=\frac{|\mathbf b|^2}{2|\mathbf b|\cdot|\mathbf b|}=\frac12\Rightarrow\theta=60^\circ\]
+Why: \(\text{only the ratio of lengths and the angle are fixed}\)
+Why not the others: (A) \(\sqrt3\ne\sqrt{\tfrac73}\); (C) \(\tfrac73\) (root not taken); (D) \(1\) (\(\mathbf a\cdot\mathbf b=0\)).
+Key point: \(|\mathbf a\pm\mathbf b|^2=|\mathbf a|^2+|\mathbf b|^2\pm2\,\mathbf a\cdot\mathbf b\)
+
+@@ Q42
+Answer: (D) -1.
+Given: \(|z|=1,\quad|z-1||z+1|=1\)
+Formula/Principle: \(|z-1||z+1|=|z^2-1|;\quad\left|e^{i\phi}-1\right|=2\left|\sin\tfrac\phi2\right|\)
+Step 1: \(z^2=e^{i\phi}:\ 2\left|\sin\tfrac\phi2\right|=1\Rightarrow\phi=\pm\dfrac\pi3\)
+Step 2: \(z^6=(z^2)^3=e^{\pm i\pi}\)
+Worked derivation: \[z^6=-1\]
+Check: \[z=e^{i\pi/6}:\ z^2-1=\tfrac12+\tfrac{\sqrt3}{2}i-1,\ |z^2-1|=1\]
+Why: \(\text{four points }z\text{ satisfy the conditions, all with the same}\ z^6\)
+Why not the others: (A) \(1:\ \phi=0\Rightarrow|z^2-1|=0\); (B) \(i\ne e^{\pm i\pi}\); (C) \(-i\ne e^{\pm i\pi}\).
+Key point: \(|z^2-1|=2|\sin(\arg z)|\ \text{on}\ |z|=1\)
+
+@@ Q43
+Answer: (C) 3.
+Given: \(x^2-kx+k+3=0,\ 1\le k\le12;\quad r,s>0\ \text{distinct};\quad\left|\dfrac1r-\dfrac1s\right|>\dfrac12\)
+Formula/Principle: \(r+s=k,\ rs=k+3,\ |r-s|=\sqrt D,\ D=k^2-4k-12\)
+Step 1: \(D>0\Rightarrow(k-6)(k+2)>0\Rightarrow k\ge7\)
+Step 2: \(\left|\dfrac1r-\dfrac1s\right|=\dfrac{\sqrt D}{k+3}>\dfrac12\Rightarrow4(k^2-4k-12)>(k+3)^2\)
+Step 3: \(3k^2-22k-57>0\Rightarrow k>\dfrac{22+\sqrt{1168}}{6}=9.36\)
+Worked derivation: \[k=10,\ 11,\ 12\Rightarrow3\ \text{values}\]
+Check: \[k=10:\ \frac{\sqrt{48}}{13}=0.533>0.5;\qquad k=9:\ \frac{\sqrt{33}}{12}=0.479<0.5\]
+Why: \(r+s>0,\ rs>0\Rightarrow\text{both roots positive}\)
+Why not the others: (A) \(1\ne3\); (B) \(2\ne3\); (D) \(4\) (\(k=9\) fails).
+Key point: \(\left|\dfrac1r-\dfrac1s\right|=\dfrac{\sqrt D}{rs}\)
+
+@@ Q44
+Answer: (A) 0.
+Given: \(\left(x^2+x^{-1}\right)^8\left(x-x^{-1}\right)^6\)
+Formula/Principle: \(\dbinom8ix^{16-3i}\cdot\dbinom6j(-1)^jx^{6-2j}\)
+Step 1: \(16-3i+6-2j=0\Rightarrow3i+2j=22\)
+Step 2: \(0\le i\le8,\ 0\le j\le6:\ (i,j)=(4,5),\ (6,2)\)
+Step 3: \((4,5):\ \dbinom84\dbinom65(-1)^5=-420;\quad(6,2):\ \dbinom86\dbinom62(+1)=+420\)
+Worked derivation: \[-420+420=0\]
+Check: \[(2,8):\ j=8>6\ \text{excluded}\]
+Why: \(\text{both admissible pairs must be included}\)
+Why not the others: (B) \(420\) (\((4,5)\) omitted); (C) \(-420\) (\((6,2)\) omitted); (D) \(840\) (sign of \((4,5)\) ignored).
+Key point: \(\text{solve the exponent equation over all index pairs}\)
+
+@@ Q45
+Answer: (B) 72.
+Given: \(|r|<1;\quad\dfrac{a}{1-r}=12;\quad a+ar^2+ar^4+\dots=\dfrac{a}{1-r^2}=9\)
+Formula/Principle: \(\displaystyle\sum a^2r^{2n}=\frac{a^2}{1-r^2}\)
+Step 1: \(\dfrac{12}{9}=1+r\Rightarrow r=\dfrac13\)
+Step 2: \(a=12\left(1-\dfrac13\right)=8\)
+Worked derivation: \[\frac{a^2}{1-r^2}=\frac{64}{8/9}=72\]
+Check: \[\frac{8}{1-\frac19}=9\]
+Why: \(\dfrac{a^2}{1-r^2}=\dfrac{a}{1-r}\cdot\dfrac{a}{1+r}=12\times6\)
+Why not the others: (A) \(36\ne72\); (C) \(81=9^2\); (D) \(144=12^2\).
+Key point: \(\text{sum of squares of a GP is a GP with ratio}\ r^2\)
+
+@@ Q46
+Answer: (B) Zero; gravity supplies the inward acceleration.
+Given: \(v_{\text{top}}=\sqrt{gR}\)
+Formula/Principle: \(\text{top}:\ N+mg=\dfrac{mv^2}{R}\)
+Step 1: \(N=\dfrac{m(gR)}{R}-mg\)
+Worked derivation: \[N=0;\qquad a=\frac{v^2}{R}=g\ \text{(towards the centre)}\]
+Check: \[v<\sqrt{gR}\Rightarrow N<0\ \text{(contact lost)}\]
+Why: \(\text{at the top both}\ N\ \text{and}\ mg\ \text{point towards the centre}\)
+Why not the others: (A) \(N=0\ne mg\); (C) \(a=g\ne0\); (D) \(N=0\ne2mg\).
+Key point: \(v_{\min,\text{top}}=\sqrt{gR}\)
+
+@@ Q47
+Answer: (C) 0.60 m.
+Given: \(m_1=1.0\ \mathrm{kg},\ u=6.0\ \mathrm{m\,s^{-1}};\quad m_2=2.0\ \mathrm{kg};\quad k=20\ \mathrm{N\,m^{-1}};\quad f=4.0\ \mathrm N\)
+Formula/Principle: \(m_1u=(m_1+m_2)v;\quad\tfrac12(m_1+m_2)v^2=\tfrac12kx^2+fx\)
+Step 1: \(v=\dfrac{6.0}{3.0}=2.0\ \mathrm{m\,s^{-1}}\)
+Step 2: \(K=\tfrac12(3.0)(2.0)^2=6.0\ \mathrm J\)
+Step 3: \(10x^2+4x-6=0\)
+Worked derivation: \[x=\frac{-4+\sqrt{16+240}}{20}=\frac{12}{20}=0.60\ \mathrm m\]
+Check: \[10(0.36)+4(0.60)=3.6+2.4=6.0\ \mathrm J\]
+Why: \(\text{momentum is conserved in the collision; energy is not}\)
+Why not the others: (A) \(1.0\ \mathrm m\ne0.60\ \mathrm m\); (B) \(0.30\ \mathrm m:\ 0.9+1.2\ne6.0\); (D) \(\sqrt{0.60}\ \mathrm m\) (friction omitted).
+Key point: \(\text{collision first (momentum), then compression (work–energy)}\)
+
+@@ Q48
+Answer: (D) \(1,\sqrt3/2\).
+Given: \(\text{chord tunnel at distance}\ \dfrac R2\ \text{from the centre}\)
+Formula/Principle: \(g(r)=\dfrac{g}{R}r\ \text{towards the centre};\quad\text{along the tunnel}:\ a=-\dfrac gRs\)
+Step 1: \(\omega=\sqrt{\dfrac gR}\ \text{for every chord}\Rightarrow\dfrac{T}{T_{\text{diameter}}}=1\)
+Step 2: \(\text{amplitude}=\sqrt{R^2-\dfrac{R^2}{4}}=\dfrac{\sqrt3}{2}R\)
+Worked derivation: \[\frac{v_{\max}}{v_{\max,\text{diameter}}}=\frac{\omega\,\frac{\sqrt3}{2}R}{\omega R}=\frac{\sqrt3}{2}\]
+Check: \[T=2\pi\sqrt{\frac Rg}\approx84\ \text{min for the Earth}\]
+Why: \(\text{component of the force along the tunnel}=-\dfrac{mg}{R}r\cos\theta=-\dfrac{mg}{R}s\)
+Why not the others: (A) \(T\ \text{ratio}=1\ne\tfrac12\); (B) \(T\ \text{ratio}=1,\ v\ \text{ratio}=\tfrac{\sqrt3}{2}\ \text{(interchanged)}\); (C) \(v\ \text{ratio}=\tfrac{\sqrt3}{2}\ne\tfrac12\).
+Key point: \(\text{same period for every straight tunnel}\)
+
+@@ Q49
+Answer: (A) \(3\sigma^2AL/(4Y)\).
+Given: \(\text{wires }(A,L,Y)\ \text{and}\ (2A,L,Y)\ \text{in series};\quad\text{limit stress }\sigma\)
+Formula/Principle: \(U=\dfrac{F^2L}{2AY}\)
+Step 1: \(\text{same }F;\ \text{stress}=\dfrac FA>\dfrac{F}{2A}\Rightarrow\text{thin wire reaches }\sigma\text{ first}:\ F=\sigma A\)
+Step 2: \(U_1=\dfrac{\sigma^2A^2L}{2AY}=\dfrac{\sigma^2AL}{2Y}\)
+Step 3: \(U_2=\dfrac{\sigma^2A^2L}{2(2A)Y}=\dfrac{\sigma^2AL}{4Y}\)
+Worked derivation: \[U=U_1+U_2=\frac{3\sigma^2AL}{4Y}\]
+Check: \[U_2=\tfrac12\cdot\frac{(\sigma/2)^2}{Y}\cdot(2AL)=\frac{\sigma^2AL}{4Y}\]
+Why: \(\text{energy density}=\dfrac{\text{stress}^2}{2Y}\)
+Why not the others: (B) \(\dfrac{\sigma^2AL}{2Y}=U_1\); (C) \(\dfrac{3\sigma^2AL}{2Y}\) (both at \(\sigma\)); (D) \(\dfrac{\sigma^2AL}{4Y}=U_2\).
+Key point: \(\text{series: same force, different stress}\)
+
+@@ Q50
+Answer: (C) 25/6.
+Given: \(\text{series}:\ 100^\circ\mathrm C\ |\ k_1\ |\ 40^\circ\mathrm C\ |\ k_2\ |\ 0^\circ\mathrm C;\quad\text{same }L,\ A\)
+Formula/Principle: \(H=\dfrac{kA\,\Delta T}{L}\)
+Step 1: \(k_1(100-40)=k_2(40-0)\Rightarrow\dfrac{k_1}{k_2}=\dfrac23\)
+Step 2: \(H_{\text{series}}=\dfrac{k_1A}{L}(60)\)
+Step 3: \(H_{\text{parallel}}=\dfrac{(k_1+k_2)A}{L}(100)\)
+Worked derivation: \[\frac{H_{\text{parallel}}}{H_{\text{series}}}=\frac{(2+3)(100)}{2(60)}=\frac{25}{6}\]
+Check: \[H_{\text{series}}=\frac{k_2A}{L}(40):\ 3\times40=120=2\times60\]
+Why: \(\text{steady state}\Rightarrow\text{same heat current in both rods in series}\)
+Why not the others: (A) \(\tfrac52\ne\tfrac{25}{6}\); (B) \(\tfrac{6}{25}\) (inverted); (D) \(\tfrac56\ne\tfrac{25}{6}\).
+Key point: \(\text{the junction temperature gives the ratio of conductivities}\)
+
+@@ Q51
+Answer: (B) \(16,1/(8\sqrt2)\).
+Given: \(C_V=3R;\quad\lambda\to\dfrac\lambda8;\quad\text{reversible adiabatic}\)
+Formula/Principle: \(\lambda=\dfrac{1}{\sqrt2\pi d^2n}\propto V;\quad\gamma=\dfrac{C_V+R}{C_V};\quad PV^\gamma,\ TV^{\gamma-1}=\text{constant};\quad\tau=\dfrac{\lambda}{v_{\text{rms}}}\)
+Step 1: \(\dfrac{V_2}{V_1}=\dfrac18,\quad\gamma=\dfrac43\)
+Step 2: \(\dfrac{P_2}{P_1}=8^{4/3}=16\)
+Step 3: \(\dfrac{T_2}{T_1}=8^{1/3}=2\Rightarrow\dfrac{v_2}{v_1}=\sqrt2\)
+Worked derivation: \[\frac{\tau_2}{\tau_1}=\frac{1/8}{\sqrt2}=\frac{1}{8\sqrt2}\]
+Check: \[\frac{P_2V_2}{P_1V_1}=\frac{16}{8}=2=\frac{T_2}{T_1}\]
+Why: \(\text{fixed }N\ \text{and}\ d\Rightarrow\lambda\propto\dfrac1n\propto V\)
+Why not the others: (A) \(P\ \text{ratio}=8\) (isothermal); (C) \(2=T\ \text{ratio}\); (D) \(\dfrac{\sqrt2}{8}\) (speed ratio inverted).
+Key point: \(\tau=\dfrac{\lambda}{v}\)
+
+@@ Q52
+Answer: (D) \(8\theta_0\).
+Given: \(L\to\dfrac L4\ \text{at the lowest point};\quad\text{angular momentum about the pivot conserved}\)
+Formula/Principle: \(v_{\max}=\theta_0\sqrt{gL};\quad mvL=mv'\dfrac L4\)
+Step 1: \(v'=4v=4\theta_0\sqrt{gL}\)
+Step 2: \(v'=\theta'\sqrt{g\dfrac L4}=\dfrac{\theta'}{2}\sqrt{gL}\)
+Worked derivation: \[\theta'=8\theta_0\]
+Check: \[\tfrac12mv'^2=16\times\tfrac12mv^2\ \ (\text{work done by the pulling force})\]
+Why: \(\text{the pull is along the string}\Rightarrow\text{zero torque about the pivot}\)
+Why not the others: (A) \(2\theta_0\) (speed unchanged); (B) \(4\theta_0\) (\(\sqrt{L/4}\) factor omitted); (C) \(\dfrac{\theta_0}{2}\ne8\theta_0\).
+Key point: \(\theta_{\max}=\dfrac{v_{\max}}{\sqrt{gL}}\)
+
+@@ Q53
+Answer: (C) \(V,\;CV^2/2\).
+Given: \(A:\ 0;\quad B:\ V;\quad C\ \text{between }A,M;\quad2C\ \text{between }M,B;\quad q_M=+CV\)
+Formula/Principle: \(q_M=C(V_M-V_A)+2C(V_M-V_B)\)
+Step 1: \(CV=CV_M+2C(V_M-V)\Rightarrow3CV_M=3CV\)
+Step 2: \(V_M=V\)
+Worked derivation: \[U=\tfrac12C(V-0)^2+\tfrac12(2C)(V-V)^2=\tfrac12CV^2\]
+Check: \[q_M=C(V)+2C(0)=CV\]
+Why: \(\text{the isolated node carries net charge}\Rightarrow\text{the two capacitors do not hold equal charges}\)
+Why not the others: (A) \(V_M=\dfrac{2V}{3}\) (\(q_M=0\) assumed); (B) \(V_M=\dfrac V3\ne V\); (D) \(U=\dfrac32CV^2\ne\dfrac12CV^2\).
+Key point: \(\text{charge conservation on the isolated node}\)
+
+@@ Q54
+Answer: (A) \(+\mu B,0,\text{ unstable}\).
+Given: \(\boldsymbol\mu\parallel\mathbf B\ \text{initially};\quad\mathbf B\to-\mathbf B\)
+Formula/Principle: \(U=-\boldsymbol\mu\cdot\mathbf B=-\mu B\cos\theta,\quad\tau=\mu B\sin\theta\)
+Step 1: \(\theta=180^\circ\)
+Worked derivation: \[U=-\mu B\cos180^\circ=+\mu B;\qquad\tau=\mu B\sin180^\circ=0\]
+Check: \[\frac{d^2U}{d\theta^2}=\mu B\cos\theta\Big|_{180^\circ}=-\mu B<0\]
+Why: \(U\ \text{maximum}\Rightarrow\text{unstable equilibrium}\)
+Why not the others: (B) \(U=+\mu B\ne-\mu B\); (C) \(\tau=0\ne\mu B\); (D) \(U\ne0,\ \tau=0\).
+Key point: \(\theta=0:\ \text{stable};\quad\theta=180^\circ:\ \text{unstable}\)
+
+@@ Q55
+Answer: (D) \(a>R/\sqrt2\).
+Given: \(\text{rings at}\ x=\pm a;\quad E_1(s)=\dfrac{kQs}{(R^2+s^2)^{3/2}}\)
+Formula/Principle: \(E(x)=E_1(x-a)+E_1(x+a);\quad\text{restoring}\iff\dfrac{dE}{dx}\Big|_0<0\ (q>0)\)
+Step 1: \(\dfrac{dE_1}{ds}=kQ\,\dfrac{R^2-2s^2}{(R^2+s^2)^{5/2}}\)
+Step 2: \(\dfrac{dE}{dx}\Big|_0=2kQ\,\dfrac{R^2-2a^2}{(R^2+a^2)^{5/2}}\)
+Worked derivation: \[R^2-2a^2<0\iff a>\frac{R}{\sqrt2}\]
+Check: \[E(0)=E_1(-a)+E_1(a)=0\]
+Why: \(\text{each ring's axial field is greatest at}\ s=\dfrac{R}{\sqrt2}\)
+Why not the others: (A) \(a<\dfrac{R}{\sqrt2}:\ \dfrac{dE}{dx}>0\ (\text{unstable})\); (B) \(a=0:\ \dfrac{dE}{dx}>0\); (C) \(a=\dfrac{R}{\sqrt2}:\ \text{linear term}=0\).
+Key point: \(\text{stability from the sign of}\ \dfrac{dE}{dx}\ \text{at the equilibrium point}\)
+
+@@ Q56
+Answer: (B) 12.5 W.
+Given: \(R_V=6\ \Omega;\quad V=6\ \mathrm V\ (R=6\ \Omega);\quad V=5\ \mathrm V\ (R=3\ \Omega)\)
+Formula/Principle: \(R_p=\dfrac{RR_V}{R+R_V},\quad V=\dfrac{ER_p}{R_p+r},\quad P_{\max}=\dfrac{E^2}{4r}\)
+Step 1: \(R_p=3\ \Omega:\ 6=\dfrac{3E}{3+r}\Rightarrow E=6+2r\)
+Step 2: \(R_p=2\ \Omega:\ 5=\dfrac{2E}{2+r}\Rightarrow2E=10+5r\)
+Step 3: \(12+4r=10+5r\Rightarrow r=2\ \Omega,\ E=10\ \mathrm V\)
+Worked derivation: \[P_{\max}=\frac{10^2}{4\times2}=12.5\ \mathrm W\]
+Check: \[R=r=2\ \Omega:\ I=2.5\ \mathrm A,\ P=I^2R=12.5\ \mathrm W\]
+Why: \(\text{maximum power transfer at}\ R=r\)
+Why not the others: (A) \(6.25\ \mathrm W\) (halved again); (C) \(25\ \mathrm W=\dfrac{E^2}{2r}\); (D) \(50\ \mathrm W=\dfrac{E^2}{r}\).
+Key point: \(\text{the voltmeter loads the circuit: use}\ R\parallel R_V\)
+
+@@ Q57
+Answer: (D) 8 cm.
+Given: \(m_1=-2\ (\text{real});\quad\text{object moved 6 cm closer};\quad m_2=+4\ (\text{virtual})\)
+Formula/Principle: \(m=\dfrac{f}{f+u}\ \ (u<0)\Rightarrow|u|=f\left(1-\dfrac1m\right)\)
+Step 1: \(m=-2:\ |u_1|=f\left(1+\dfrac12\right)=\dfrac{3f}{2}\)
+Step 2: \(m=+4:\ |u_2|=f\left(1-\dfrac14\right)=\dfrac{3f}{4}\)
+Step 3: \(|u_1|-|u_2|=\dfrac{3f}{4}=6\ \mathrm{cm}\)
+Worked derivation: \[f=8\ \mathrm{cm}\]
+Check: \[|u_1|=12\ \mathrm{cm}:\ v=24\ \mathrm{cm};\qquad|u_2|=6\ \mathrm{cm}:\ \frac1v=\frac18-\frac16\Rightarrow v=-24\ \mathrm{cm},\ m=4\]
+Why: \(\text{real image}:\ |u|>f;\quad\text{virtual image}:\ |u|<f\)
+Why not the others: (A) \(4\ \mathrm{cm}:\ \tfrac{3f}{4}=3\ne6\); (B) \(6\ \mathrm{cm}:\ 4.5\ne6\); (C) \(12\ \mathrm{cm}:\ 9\ne6\).
+Key point: \(m=\dfrac{f}{f+u}\)
+
+@@ Q58
+Answer: (A) B's work function exceeds A's by 1.5 eV, and the stopping-potential difference stays 1.5 V.
+Given: \(K_A=2.0\ \mathrm{eV},\quad K_B=0.5\ \mathrm{eV}\ \text{at the same }f\)
+Formula/Principle: \(K_{\max}=hf-\phi=eV_s\)
+Step 1: \(K_A-K_B=\phi_B-\phi_A=1.5\ \mathrm{eV}\)
+Step 2: \(f\to f+\Delta f:\ K_A,\ K_B\ \text{both rise by}\ h\,\Delta f\)
+Worked derivation: \[V_{s,A}-V_{s,B}=\frac{\phi_B-\phi_A}{e}=1.5\ \mathrm V\ \ (\text{independent of }f)\]
+Check: \[\text{the two}\ V_s\text{–}f\ \text{lines are parallel, slope}\ \frac he\]
+Why: \(\text{smaller}\ K_{\max}\ \text{at the same}\ f\Rightarrow\text{larger work function}\)
+Why not the others: (B) \(\phi_B>\phi_A\); (C) \(K_A\ne K_B\Rightarrow\phi_A\ne\phi_B\); (D) \(2.5=2.0+0.5\) (sum, not difference).
+Key point: \(\text{same slope for all metals; intercepts differ}\)
+
+@@ Q59
+Answer: (C) 20 fm; it supplies an upper scale bound, not an exact radius measurement.
+Given: \(K=7.2\ \mathrm{MeV},\quad q_1=2e,\quad q_2=50e,\quad ke^2=1.44\ \mathrm{MeV\,fm}\)
+Formula/Principle: \(K=\dfrac{k(2e)(50e)}{r_0}\)
+Step 1: \(r_0=\dfrac{100\,ke^2}{K}\)
+Worked derivation: \[r_0=\frac{100\times1.44}{7.2}=20\ \mathrm{fm}\]
+Check: \[\frac{144\ \mathrm{MeV\,fm}}{20\ \mathrm{fm}}=7.2\ \mathrm{MeV}\]
+Why: \(\text{Coulomb's law still holds at}\ r_0\Rightarrow R_{\text{nucleus}}<r_0\)
+Why not the others: (A) \(10\ \mathrm{fm}\) (\(q_1=e\)); (B) \(r_0\ \text{is a bound, not}\ R\); (D) \(40\ \mathrm{fm}\ne20\ \mathrm{fm}\).
+Key point: \(\text{distance of closest approach}=\dfrac{kq_1q_2}{K}\)
+
+@@ Q60
+Answer: (B) 6.75 J.
+Given: \(L=2.0\ \mathrm H,\quad I_0=3.0\ \mathrm A,\quad R_1=2.0\ \Omega,\ R_2=6.0\ \Omega\ \text{in series}\)
+Formula/Principle: \(U=\tfrac12LI_0^2;\quad\text{series}:\ P\propto R\)
+Step 1: \(U=\tfrac12(2.0)(3.0)^2=9.0\ \mathrm J\)
+Step 2: \(\dfrac{Q_2}{U}=\dfrac{R_2}{R_1+R_2}=\dfrac68\)
+Worked derivation: \[Q_2=\frac34\times9.0=6.75\ \mathrm J\]
+Check: \[Q_1=2.25\ \mathrm J;\quad6.75+2.25=9.0\ \mathrm J\]
+Why: \(\text{same current at every instant}\Rightarrow\text{heat}\ \int i^2R\,dt\propto R\)
+Why not the others: (A) \(9.0\ \mathrm J=U\); (C) \(2.25\ \mathrm J=Q_1\); (D) \(18\ \mathrm J=LI_0^2\).
+Key point: \(\text{all the stored energy is dissipated, shared in the ratio of resistances}\)
