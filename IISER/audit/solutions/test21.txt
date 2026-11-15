@@ -1,0 +1,375 @@
+@@ Q31
+Answer: (B) k=0; (1,1).
+Given: \(x^2-y^2-2x+2y+k=0\)
+Formula/Principle: \(X^2-Y^2+k=0\ \text{is a pair of lines}\iff k=0\)
+Step 1: \(x^2-2x=(x-1)^2-1,\quad-(y^2-2y)=-(y-1)^2+1\)
+Step 2: \((x-1)^2-(y-1)^2+k=0\)
+Step 3: \(k=0:\ (x-1)^2=(y-1)^2\Rightarrow(x-y)(x+y-2)=0\)
+Step 4: \(x=y,\ x+y=2\Rightarrow x=1,\ y=1\)
+Worked derivation: \[k=0,\qquad(x-y)(x+y-2)=0,\qquad\text{meeting point }(1,1)\]
+Check: \[(1,1):\ 1-1-2+2+0=0;\quad\Delta=abc+2fgh-af^2-bg^2-ch^2=-k-1+1=-k=0\]
+Why: \(k\ne0\Rightarrow(x-1)^2-(y-1)^2=-k\ne0\ \text{(hyperbola)}\)
+Why not the others: (A) \((0,0):\ x-y=0\ \text{but}\ x+y-2=-2\ne0\); (C) \(k=1\ne0\); (D) \(k=-1\ne0\).
+Key point: \(\text{complete the squares first; the lines meet at the centre}\)
+
+@@ Q32
+Answer: (A) (1,5/4); 5/4.
+Given: \(\text{circle through }(1,0),(0,2);\quad\text{orthogonal to }x^2+y^2=1\)
+Formula/Principle: \(\text{orthogonal circles}:\ d^2=r_1^2+r_2^2\Rightarrow h^2+k^2=r^2+1\)
+Step 1: \((h-1)^2+k^2=r^2\Rightarrow h^2+k^2-2h+1=r^2\)
+Step 2: \((r^2+1)-2h+1=r^2\Rightarrow h=1\)
+Step 3: \(h^2+(k-2)^2=r^2\Rightarrow h^2+k^2-4k+4=r^2\)
+Step 4: \((r^2+1)-4k+4=r^2\Rightarrow k=\tfrac54\)
+Worked derivation: \[r^2=h^2+k^2-1=1+\tfrac{25}{16}-1=\tfrac{25}{16}\Rightarrow r=\tfrac54\]
+Check: \[(0-1)^2+\left(2-\tfrac54\right)^2=1+\tfrac9{16}=\tfrac{25}{16};\quad(1-1)^2+\left(0-\tfrac54\right)^2=\tfrac{25}{16}\]
+Why: \(\text{radii to a common point are perpendicular}\Rightarrow\text{Pythagoras on the centres}\)
+Why not the others: (B) \(\tfrac{\sqrt{41}}4=\sqrt{h^2+k^2}=d\ne r\); (C) \((0-1)^2+(2-\tfrac34)^2=\tfrac{41}{16}\ne\tfrac9{16}\); (D) \((1-0)^2+(0-1)^2=2\ne1\).
+Key point: \(d^2=r_1^2+r_2^2\ \text{for orthogonal circles}\)
+
+@@ Q33
+Answer: (C) (17-5√5)/12.
+Given: \(f(x)=x^2+x\ \text{on}\ [0,1],\quad g=f^{-1}\ \text{on}\ [0,2]\)
+Formula/Principle: \(\displaystyle\int_0^1g(y)\,dy=a\cdot1-\int_0^af(x)\,dx,\quad f(a)=1;\qquad A=\int_0^1(f-g)\,dx\)
+Step 1: \(a^2+a=1\Rightarrow a=\dfrac{\sqrt5-1}2\)
+Step 2: \(\displaystyle\int_0^1(x^2+x)\,dx=\tfrac13+\tfrac12=\tfrac56\)
+Step 3: \(\displaystyle\int_0^1g=a-\frac{a^3}3-\frac{a^2}2\)
+Step 4: \(a^2=1-a,\quad a^3=a-a^2=2a-1\)
+Step 5: \(A=\tfrac56-a+\dfrac{2a-1}3+\dfrac{1-a}2=\left(\tfrac56-\tfrac13+\tfrac12\right)+a\left(-1+\tfrac23-\tfrac12\right)=1-\tfrac{5a}6\)
+Worked derivation: \[A=1-\frac56\cdot\frac{\sqrt5-1}2=\frac{12-5\sqrt5+5}{12}=\frac{17-5\sqrt5}{12}\approx0.485\]
+Check: \[f(x)-x=x^2\ge0\Rightarrow f\ge x\ge g\ \text{on}\ [0,1];\quad0<0.485<\tfrac56\]
+Why: \(g\ \text{reaches}\ 1\ \text{only at}\ y=2;\ \text{on}\ [0,1]\ \text{its graph mirrors}\ f\ \text{on}\ [0,a]\)
+Why not the others: (A) \(\tfrac{5\sqrt5-7}{12}\approx0.348\ne0.485\); (B) \(\tfrac12\ne0.485\); (D) \(\tfrac56=\int_0^1f\ \text{only}\).
+Key point: \(\text{match the endpoints of the inverse before using the reflection identity}\)
+
+@@ Q34
+Answer: (D) 1.
+Given: \(I=\displaystyle\int_0^{\pi/2}\frac{dx}{1+\sin x}\)
+Formula/Principle: \(t=\tan\tfrac x2:\quad\sin x=\dfrac{2t}{1+t^2},\quad dx=\dfrac{2\,dt}{1+t^2}\)
+Step 1: \(x=0\Rightarrow t=0;\quad x=\tfrac\pi2\Rightarrow t=1\)
+Step 2: \(1+\sin x=\dfrac{1+t^2+2t}{1+t^2}=\dfrac{(1+t)^2}{1+t^2}\)
+Step 3: \(I=\displaystyle\int_0^1\frac{1+t^2}{(1+t)^2}\cdot\frac{2\,dt}{1+t^2}=\int_0^1\frac{2\,dt}{(1+t)^2}\)
+Worked derivation: \[I=\left[-\frac2{1+t}\right]_0^1=-1+2=1\]
+Check: \[\frac1{1+\sin x}=\sec^2x-\sec x\tan x\Rightarrow\left[\tan x-\sec x\right]_0^{\pi/2}=\lim_{x\to\pi/2}\frac{\sin x-1}{\cos x}-(-1)=0+1=1\]
+Why: \(\text{the integrand is continuous on}\ [0,\tfrac\pi2]\ \text{with values between}\ \tfrac12\ \text{and}\ 1\)
+Why not the others: (A) \(\tfrac\pi2=\int_0^{\pi/2}1\,dx\); (B) \(2=\int_0^12\,dt\); (C) \(\tfrac12=\int_0^1\tfrac{dt}{(1+t)^2}\).
+Key point: \(1+\sin x=\dfrac{(1+t)^2}{1+t^2}\ \text{with}\ t=\tan\tfrac x2\)
+
+@@ Q35
+Answer: (B) (1/2,∞); not attained.
+Given: \(y=x^2,\quad\text{normal at}\ (t,t^2),\ t\ne0\)
+Formula/Principle: \(m_{\text{tangent}}=2t,\quad m_{\text{normal}}=-\dfrac1{2t}\)
+Step 1: \(y-t^2=-\dfrac1{2t}(x-t)\)
+Step 2: \(x=0:\ b(t)=t^2+\dfrac t{2t}=t^2+\tfrac12\)
+Step 3: \(t\ne0\Rightarrow t^2\in(0,\infty)\Rightarrow b\in(\tfrac12,\infty)\)
+Worked derivation: \[\{b(t):t\ne0\}=\left(\tfrac12,\infty\right),\qquad\inf b=\tfrac12\ \text{(only at}\ t=0\text{, excluded)}\]
+Check: \[t=1:\ y-1=-\tfrac12(x-1)\Rightarrow y(0)=\tfrac32=1^2+\tfrac12\]
+Why: \(t^2>0\ \text{strictly, and}\ t^2\to0^+\ \text{as}\ t\to0\)
+Why not the others: (A) \(b=\tfrac12\iff t=0\ \text{(excluded)}\); (C) \(b\ge\tfrac12>0\); (D) \(b=t^2+\tfrac12>0\).
+Key point: \(b(t)=t^2+\tfrac12\)
+
+@@ Q36
+Answer: (A) [-2,∞); the proposed replacement is not a function into that codomain.
+Given: \(f(x)=x^3-3x,\quad x\in[1,\infty)\)
+Formula/Principle: \(f:D\to C\ \text{needs}\ f(D)\subseteq C;\quad\text{bijective}\iff\text{injective and}\ f(D)=C\)
+Step 1: \(f'(x)=3x^2-3=3(x^2-1)>0\ \text{for}\ x>1\Rightarrow\text{strictly increasing}\)
+Step 2: \(f(1)=1-3=-2,\quad\lim_{x\to\infty}f(x)=\infty\)
+Step 3: \(f([1,\infty))=[-2,\infty)\)
+Worked derivation: \[C_{\min}=[-2,\infty);\qquad f(1)=-2\notin[0,\infty)\]
+Check: \[f(2)=8-6=2,\quad f(\sqrt3)=0:\quad x\in[1,\sqrt3)\Rightarrow f(x)<0\]
+Why: \(\text{an output outside the codomain means the rule is not a map into it}\)
+Why not the others: (B) \(f(1)=-2\notin[0,\infty)\); (C) \([0,\infty)\not\supseteq f(D)\); (D) \((-\infty,-2)\ \text{is not attained}\Rightarrow\mathbb R\ \text{is not the smallest}\).
+Key point: \(\text{check}\ f(D)\subseteq C\ \text{before asking about onto}\)
+
+@@ Q37
+Answer: (A) 3.
+Given: \(X+X^T+XX^T=3I,\quad\operatorname{tr}X=0,\quad\det(I+X)>0,\quad X\in\mathbb R^{2\times2}\)
+Formula/Principle: \(\det(I+X)=1+\operatorname{tr}X+\det X\ \ (2\times2)\)
+Step 1: \((I+X)(I+X)^T=I+X+X^T+XX^T=I+3I=4I\)
+Step 2: \(\det(I+X)^2=\det(4I)=4^2=16\)
+Step 3: \(\det(I+X)>0\Rightarrow\det(I+X)=4\)
+Worked derivation: \[4=1+0+\det X\Rightarrow\det X=3\]
+Check: \[X=\begin{pmatrix}0&-\sqrt3\\\sqrt3&0\end{pmatrix}:\ X+X^T=0,\ XX^T=3I,\ \operatorname{tr}X=0,\ \det X=3\]
+Why: \(\text{the sign condition removes}\ \det(I+X)=-4\)
+Why not the others: (B) \(1+0+1=2\ne4\); (C) \(1+0+0=1\ne4\); (D) \(1+0-3=-2\ne4\).
+Key point: \(Y=I+X\Rightarrow YY^T=4I\)
+
+@@ Q38
+Answer: (C) q=1/8; 4/5.
+Given: \(P(X)=\tfrac12,\ P(Y)=\tfrac13\ \text{(independent)};\quad P(S\mid11,10,01,00)=1,\tfrac12,\tfrac14,q\)
+Formula/Principle: \(w_{xy}=P(x,y)P(S\mid x,y);\quad X\perp Y\mid S\iff w_{11}w_{00}=w_{10}w_{01}\)
+Step 1: \(w_{11}=\tfrac12\cdot\tfrac13\cdot1=\tfrac16\)
+Step 2: \(w_{10}=\tfrac12\cdot\tfrac23\cdot\tfrac12=\tfrac16\)
+Step 3: \(w_{01}=\tfrac12\cdot\tfrac13\cdot\tfrac14=\tfrac1{24}\)
+Step 4: \(w_{00}=\tfrac12\cdot\tfrac23\cdot q=\tfrac q3\)
+Step 5: \(\tfrac16\cdot\tfrac q3=\tfrac16\cdot\tfrac1{24}\Rightarrow q=\tfrac18,\quad w_{00}=\tfrac1{24}\)
+Step 6: \(P(S)=\tfrac16+\tfrac16+\tfrac1{24}+\tfrac1{24}=\tfrac5{12}\)
+Worked derivation: \[P(X\mid S)=\frac{\tfrac16+\tfrac16}{\tfrac5{12}}=\frac45\]
+Check: \[P(Y\mid S)=\frac{\tfrac16+\tfrac1{24}}{\tfrac5{12}}=\frac12;\quad P(X,Y\mid S)=\frac{1/6}{5/12}=\frac25=\frac45\cdot\frac12\]
+Why: \(\text{a }2\times2\text{ table factorises exactly when its cross-products are equal}\)
+Why not the others: (A) \(q=\tfrac14:\ \tfrac1{72}\ne\tfrac1{144}\); (B) \(\tfrac23\ne\tfrac45\); (D) \(q=0:\ 0\ne\tfrac1{144}\).
+Key point: \(\text{selection reweights the table; test}\ w_{11}w_{00}=w_{10}w_{01}\)
+
+@@ Q39
+Answer: (D) 3,4,2.
+Given: \(\sin^2x-a\sin x=0,\quad x\in[0,2\pi)\)
+Formula/Principle: \(\sin x(\sin x-a)=0\Rightarrow\sin x=0\ \text{or}\ \sin x=a\)
+Step 1: \(\sin x=0\Rightarrow x=0,\ \pi\quad(2\ \text{roots for every}\ a)\)
+Step 2: \(a=1:\ \sin x=1\Rightarrow x=\tfrac\pi2\quad(1\ \text{root})\Rightarrow N=3\)
+Step 3: \(a=\tfrac12:\ x=\tfrac\pi6,\ \tfrac{5\pi}6\quad(2\ \text{roots})\Rightarrow N=4\)
+Step 4: \(a=\tfrac32>1:\ \text{no root}\Rightarrow N=2\)
+Worked derivation: \[\left(N(1),N(\tfrac12),N(\tfrac32)\right)=(3,4,2)\]
+Check: \[x=\tfrac\pi6,\ a=\tfrac12:\ \tfrac14-\tfrac12\cdot\tfrac12=0\]
+Why: \(\text{distinct solutions are counted once, whatever their multiplicity}\)
+Why not the others: (A) \(N(1)=2\ \text{omits}\ \tfrac\pi2\); (B) \(N(\tfrac12)=3\ \text{omits one of}\ \tfrac\pi6,\tfrac{5\pi}6\); (C) \(N(1)=4\ \text{counts}\ \tfrac\pi2\ \text{twice}\).
+Key point: \(|a|>1\Rightarrow\sin x=a\ \text{has no solution}\)
+
+@@ Q40
+Answer: (A) 18.
+Given: \(\dfrac x2+\dfrac y3+\dfrac z6=1;\quad P(2,0,0),\ Q(0,3,0),\ R(0,0,6)\)
+Formula/Principle: \(A=\tfrac12|\vec{PQ}\times\vec{PR}|,\quad d=\dfrac{|c|}{\sqrt{l^2+m^2+n^2}}\ \text{for}\ lx+my+nz=c\)
+Step 1: \(\vec{PQ}=(-2,3,0),\quad\vec{PR}=(-2,0,6)\)
+Step 2: \(\vec{PQ}\times\vec{PR}=(3\cdot6-0,\ 0\cdot(-2)-(-2)\cdot6,\ 0-3\cdot(-2))=(18,12,6)\)
+Step 3: \(A=\tfrac12\sqrt{324+144+36}=\tfrac12\sqrt{504}=3\sqrt{14}\)
+Step 4: \(3x+2y+z=6\Rightarrow d=\dfrac6{\sqrt{9+4+1}}=\dfrac6{\sqrt{14}}\)
+Worked derivation: \[Ad=3\sqrt{14}\cdot\frac6{\sqrt{14}}=18\]
+Check: \[V_{OPQR}=\frac{2\cdot3\cdot6}6=6=\frac13Ad\Rightarrow Ad=18\]
+Why: \(\sqrt{14}\ \text{cancels between the area and the distance}\)
+Why not the others: (B) \(6\ne18\); (C) \(3\sqrt{14}=A\ \text{alone}\); (D) \(36=|\vec{PQ}\times\vec{PR}|\,d\ \text{(factor}\ \tfrac12\ \text{missing)}\).
+Key point: \(Ad=3V=\dfrac{abc}2\ \text{for intercepts}\ a,b,c\)
+
+@@ Q41
+Answer: (C) -2.
+Given: \(|\mathbf a|=|\mathbf b|=1,\ \mathbf a\cdot\mathbf b=0,\ |\mathbf c|=3,\ \mathbf c\cdot\mathbf a=1,\ \mathbf c\cdot\mathbf b=2,\ \mathbf c\cdot(\mathbf a\times\mathbf b)<0\)
+Formula/Principle: \(\mathbf c=\alpha\mathbf a+\beta\mathbf b+\gamma(\mathbf a\times\mathbf b),\quad|\mathbf c|^2=\alpha^2+\beta^2+\gamma^2\)
+Step 1: \(\alpha=\mathbf c\cdot\mathbf a=1,\quad\beta=\mathbf c\cdot\mathbf b=2\)
+Step 2: \(9=1+4+\gamma^2\Rightarrow\gamma=\pm2\)
+Step 3: \(\gamma<0\Rightarrow\gamma=-2\)
+Worked derivation: \[\mathbf a\cdot(\mathbf b\times\mathbf c)=(\mathbf a\times\mathbf b)\cdot\mathbf c=\gamma=-2\]
+Check: \[\mathbf a=\hat i,\ \mathbf b=\hat j,\ \mathbf c=(1,2,-2):\ \begin{vmatrix}1&0&0\\0&1&0\\1&2&-2\end{vmatrix}=-2,\quad|\mathbf c|=3\]
+Why: \(\mathbf a,\ \mathbf b,\ \mathbf a\times\mathbf b\ \text{form an orthonormal basis}\)
+Why not the others: (A) \(+2\Rightarrow\gamma>0\); (B) \(\gamma^2=5\Rightarrow|\mathbf c|^2=10\ne9\); (D) \(\gamma^2=9\Rightarrow|\mathbf c|^2=14\ne9\).
+Key point: \([\mathbf a\,\mathbf b\,\mathbf c]=\mathbf c\cdot(\mathbf a\times\mathbf b)\)
+
+@@ Q42
+Answer: (D) (u-1/4)²+v²=1/16, excluding 0.
+Given: \(\operatorname{Re}z=2,\quad w=\dfrac1z=u+iv\)
+Formula/Principle: \(z=\dfrac1w=\dfrac{u-iv}{u^2+v^2}\)
+Step 1: \(\operatorname{Re}z=\dfrac u{u^2+v^2}=2\)
+Step 2: \(u^2+v^2-\dfrac u2=0,\quad(u,v)\ne(0,0)\)
+Step 3: \(\left(u-\tfrac14\right)^2+v^2=\tfrac1{16}\)
+Worked derivation: \[\left(u-\tfrac14\right)^2+v^2=\tfrac1{16},\qquad w\ne0\ \left(\tfrac1z\ne0\ \text{for every finite}\ z\right)\]
+Check: \[z=2\Rightarrow w=\tfrac12:\ \left(\tfrac14\right)^2=\tfrac1{16};\quad z=2+2i\Rightarrow w=\tfrac{1-i}4:\ 0+\tfrac1{16}=\tfrac1{16}\]
+Why: \(\text{multiplying by}\ u^2+v^2\ \text{adds the point}\ (0,0)\ \text{to the algebraic curve}\)
+Why not the others: (A) \(w=\tfrac12:\ (\tfrac12-\tfrac12)^2+0=0\ne\tfrac14\); (B) \(w=0\ \text{is not a value of}\ \tfrac1z\); (C) \(z=2+2i\Rightarrow u=\tfrac14\ne\tfrac12\).
+Key point: \(\text{inversion maps a line not through }0\text{ to a circle through }0\text{ with }0\text{ removed}\)
+
+@@ Q43
+Answer: (C) a>0.
+Given: \(q(x)=x^2-2ax+2a>0\ \ \forall x\in[0,1]\)
+Formula/Principle: \(q(x)=(x-a)^2+2a-a^2;\quad\text{vertex at}\ x=a\)
+Step 1: \(a\le0:\ q(0)=2a\le0\Rightarrow\text{fails}\)
+Step 2: \(0<a<1:\ \min q=q(a)=a(2-a)>0\)
+Step 3: \(a\ge1:\ q\ \text{decreasing on}\ [0,1]\Rightarrow\min q=q(1)=1-2a+2a=1>0\)
+Worked derivation: \[\min_{[0,1]}q=\begin{cases}2a\le0,&a\le0\\a(2-a)>0,&0<a<1\\1,&a\ge1\end{cases}\Rightarrow a>0\]
+Check: \[a=3:\ q(x)=x^2-6x+6,\ q(0)=6,\ q(1)=1,\ \text{roots}\ 3\pm\sqrt3\notin[0,1]\]
+Why: \(\text{positivity is needed only on}\ [0,1],\ \text{not on}\ \mathbb R\)
+Why not the others: (A) \(a=3\ \text{works but is excluded}\); (B) \(a=0:\ q(0)=0\); (D) \(a=1:\ q=(x-1)^2+1>0\ \text{is excluded}\).
+Key point: \(\text{compare the vertex with the interval}\)
+
+@@ Q44
+Answer: (B) -336.
+Given: \(S=\displaystyle\sum_{k=0}^8(-1)^kk(k-1)(k-2)\binom8k2^{8-k}\)
+Formula/Principle: \((2-x)^8=\displaystyle\sum_{k=0}^8\binom8k2^{8-k}(-1)^kx^k;\quad\dfrac{d^3}{dx^3}x^k=k(k-1)(k-2)x^{k-3}\)
+Step 1: \(\dfrac{d^3}{dx^3}(2-x)^8=8\cdot7\cdot6\,(-1)^3(2-x)^5=-336(2-x)^5\)
+Step 2: \(\dfrac{d^3}{dx^3}\displaystyle\sum_k(\cdots)x^k\Big|_{x=1}=S\)
+Worked derivation: \[S=-336(2-1)^5=-336\]
+Check: \[n=3:\ \sum_{k}(-1)^kk(k-1)(k-2)\tbinom3k2^{3-k}=(-1)^3\cdot6=-6=\frac{d^3}{dx^3}(2-x)^3\]
+Why: \(\text{three derivatives give the falling factorial}\ k(k-1)(k-2)\)
+Why not the others: (A) \(+336\ \text{drops}\ (-1)^3\); (C) \(0=-336(2-2)^5\ \text{at}\ x=2\); (D) \(-168=-\tfrac{336}2\).
+Key point: \(\text{falling factorial weights}\leftrightarrow\text{derivatives of the binomial expansion}\)
+
+@@ Q45
+Answer: (D) -128.
+Given: \(a_1,\dots,a_7\ \text{in GP},\quad a_4=-2\)
+Formula/Principle: \(a_j=a_4r^{\,j-4}\Rightarrow a_{4-i}\,a_{4+i}=a_4^2\)
+Step 1: \(a_1a_7=a_2a_6=a_3a_5=(-2)^2=4\)
+Step 2: \(\displaystyle\prod_{j=1}^7a_j=4\cdot4\cdot4\cdot a_4\)
+Worked derivation: \[\prod_{j=1}^7a_j=64\times(-2)=-128=(-2)^7\]
+Check: \[r=1:\ (-2)^7=-128;\quad\prod a_4r^{\,j-4}=a_4^7r^{-3-2-1+0+1+2+3}=a_4^7\]
+Why: \(\text{the exponents of}\ r\ \text{cancel in symmetric pairs}\)
+Why not the others: (A) \(+128\ \text{loses the sign of}\ a_4\); (B) \(-64=(-2)\cdot32\); (C) \(64=4^3\ \text{omits}\ a_4\).
+Key point: \(\text{product of }2m+1\text{ GP terms}=(\text{middle term})^{2m+1}\)
+
+@@ Q46
+Answer: (A) arctan(5/2); 18 m.
+Given: \(v_{\text{cam}}=2\ \mathrm{m\,s^{-1}}\ (x),\quad(x',y)=(6,15)\ \mathrm m\ \text{at}\ 1\ \mathrm s,\ (12,20)\ \mathrm m\ \text{at}\ 2\ \mathrm s,\quad g=10\ \mathrm{m\,s^{-2}}\)
+Formula/Principle: \(x'=(u_x-v_{\text{cam}})t,\quad y=u_yt-\tfrac12gt^2\)
+Step 1: \(6=(u_x-2)(1)\Rightarrow u_x=8\ \mathrm{m\,s^{-1}}\)
+Step 2: \(15=u_y(1)-5\Rightarrow u_y=20\ \mathrm{m\,s^{-1}}\)
+Step 3: \(\tan\theta=\dfrac{u_y}{u_x}=\dfrac{20}8=\dfrac52\)
+Step 4: \(20t-5t^2=15\Rightarrow t^2-4t+3=0\Rightarrow t=1\ \mathrm s,\ 3\ \mathrm s\)
+Worked derivation: \[x'(3)=(8-2)(3)=18\ \mathrm m,\qquad\theta=\arctan\tfrac52\]
+Check: \[t=2\ \mathrm s:\ x'=6\times2=12\ \mathrm m,\quad y=40-20=20\ \mathrm m\]
+Why: \(\text{the angle uses laboratory components; the coordinate asked is camera-relative}\)
+Why not the others: (B) \(\tfrac{20}6=\tfrac{10}3\ \text{uses}\ u_x-2\); (C) \(24\ \mathrm m=8\times3\ \text{(laboratory)}\); (D) \(\tfrac53\ne\tfrac52,\ 12\ \mathrm m=x'(2)\).
+Key point: \(\vec v_{\text{rel}}=\vec v-\vec v_{\text{cam}}\)
+
+@@ Q47
+Answer: (A) 0 J and -4 N s.
+Given: \(m=1\ \mathrm{kg},\quad v_{ix}=+2\ \mathrm{m\,s^{-1}},\quad v_{fx}=-2\ \mathrm{m\,s^{-1}},\quad\vec F\perp\vec v\)
+Formula/Principle: \(W=\Delta K=\tfrac12m(v_f^2-v_i^2),\quad J_x=m(v_{fx}-v_{ix})\)
+Step 1: \(W=\tfrac12(1)(2^2-2^2)=0\ \mathrm J\)
+Step 2: \(J_x=(1)(-2-2)=-4\ \mathrm{N\,s}\)
+Worked derivation: \[W=0\ \mathrm J,\qquad J_x=-4\ \mathrm{N\,s}\]
+Check: \[P=\vec F\cdot\vec v=0\Rightarrow W=\int P\,dt=0;\quad|\Delta\vec p|=2mv=4\ \mathrm{N\,s}\]
+Why: \(K\propto v^2\ \text{(no direction)};\quad\vec p\ \text{reverses}\)
+Why not the others: (B) \(\Delta K=0\ne4\ \mathrm J,\ J_x\ne0\); (C) \(J_x=-4\ \mathrm{N\,s}\ne0\); (D) \(W=0\ne-4\ \mathrm J\).
+Key point: \(\vec F\perp\vec v:\ \text{zero work, non-zero impulse}\)
+
+@@ Q48
+Answer: (C) 1/4.
+Given: \(M,\ L,\quad\text{impulse}\ J\ \text{at}\ \tfrac L6\ \text{from the centre},\quad I_{CM}=\tfrac{ML^2}{12}\)
+Formula/Principle: \(MV=J,\quad I_{CM}\omega=J\cdot\tfrac L6,\quad K=\tfrac12MV^2+\tfrac12I_{CM}\omega^2\)
+Step 1: \(V=\dfrac JM\Rightarrow K_{tr}=\dfrac{J^2}{2M}\)
+Step 2: \(\omega=\dfrac{JL/6}{ML^2/12}=\dfrac{2J}{ML}\)
+Step 3: \(K_{rot}=\tfrac12\cdot\dfrac{ML^2}{12}\cdot\dfrac{4J^2}{M^2L^2}=\dfrac{J^2}{6M}\)
+Worked derivation: \[\frac{K_{rot}}{K_{tr}+K_{rot}}=\frac{\tfrac16}{\tfrac12+\tfrac16}=\frac{1/6}{4/6}=\frac14\]
+Check: \[\frac{K_{rot}}{K_{tr}}=\frac{Md^2}{I_{CM}}=\frac{L^2/36}{L^2/12}=\frac13\Rightarrow\frac{1/3}{1+1/3}=\frac14\]
+Why: \(\text{the impulse fixes}\ p;\ \text{its lever arm fixes}\ L_{CM}\)
+Why not the others: (A) \(\tfrac12\Rightarrow K_{rot}=K_{tr}\ (\text{needs}\ d^2=\tfrac{L^2}{12})\); (B) \(\tfrac34=\tfrac{K_{tr}}{K}\); (D) \(\tfrac13=\tfrac{K_{rot}}{K_{tr}}\).
+Key point: \(\dfrac{K_{rot}}{K_{tr}}=\dfrac{Md^2}{I_{CM}}\)
+
+@@ Q49
+Answer: (B) 24 cm; the same pressure jump as on Earth.
+Given: \(h=4\ \mathrm{cm},\quad\theta=0,\quad g'=\dfrac g6;\quad\gamma,\ \rho,\ r\ \text{unchanged}\)
+Formula/Principle: \(h=\dfrac{2\gamma\cos\theta}{\rho gr},\quad\Delta p=\dfrac{2\gamma}r\ (\theta=0)\)
+Step 1: \(\dfrac{h'}h=\dfrac g{g'}=6\Rightarrow h'=6\times4=24\ \mathrm{cm}\)
+Step 2: \(\Delta p'=\dfrac{2\gamma}r=\Delta p\)
+Worked derivation: \[h'=24\ \mathrm{cm},\qquad\Delta p'=\Delta p\]
+Check: \[\rho g'h'=\rho\cdot\frac g6\cdot6h=\rho gh=\frac{2\gamma}r\]
+Why: \(\Delta p\ \text{depends only on}\ \gamma\ \text{and the curvature}\ \tfrac1r\)
+Why not the others: (A) \(\Delta p'=\rho g'h'=\rho gh,\ \text{not}\ 6\rho gh\); (C) \(h\propto\tfrac1g\Rightarrow h'\ne4\ \mathrm{cm}\); (D) \(\tfrac23\ \mathrm{cm}=\tfrac h6\ (\text{inverted})\).
+Key point: \(h\propto\dfrac1g;\quad\Delta p=\dfrac{2\gamma}r\)
+
+@@ Q50
+Answer: (D) 2600 J and 3800 J.
+Given: \(T_h=600\ \mathrm K,\ T_r=300\ \mathrm K,\ T_c=250\ \mathrm K,\ Q_h=1200\ \mathrm J,\ Q_{\text{leak}}=400\ \mathrm J\)
+Formula/Principle: \(\eta=1-\dfrac{T_r}{T_h},\quad\mathrm{COP}=\dfrac{T_c}{T_r-T_c}\)
+Step 1: \(\eta=1-\tfrac{300}{600}=0.5\Rightarrow W=0.5\times1200=600\ \mathrm J\)
+Step 2: \(Q_{\text{engine}\to\text{room}}=1200-600=600\ \mathrm J\)
+Step 3: \(\mathrm{COP}=\tfrac{250}{50}=5\Rightarrow Q_c=5\times600=3000\ \mathrm J\)
+Step 4: \(Q_{\text{fridge}\to\text{room}}=3000+600=3600\ \mathrm J\)
+Step 5: \(Q_{c,\text{net}}=3000-400=2600\ \mathrm J\)
+Worked derivation: \[Q_{\text{room,net}}=600+3600-400=3800\ \mathrm J\]
+Check: \[Q_h+Q_{c,\text{net}}=1200+2600=3800\ \mathrm J\ \ (\text{energy conservation})\]
+Why: \(\text{the leak returns}\ 400\ \mathrm J\ \text{from the room to the chamber}\)
+Why not the others: (A) \(3000,\ 4200\ \text{ignore the leak}\); (B) \(4200\ne3800\ \text{(leak not subtracted from the room)}\); (C) \(2200\ne2600,\ 3400\ne3800\).
+Key point: \(\text{net cooling}=\text{gross cooling}-\text{leak}\)
+
+@@ Q51
+Answer: (C) √(T/μ)/(2L); four.
+Given: \(\mu_1=\mu,\ \mu_2=4\mu,\ \text{length}\ L\ \text{each, tension}\ T;\quad\text{nodes at both ends and at the junction}\)
+Formula/Principle: \(v_i=\sqrt{\dfrac T{\mu_i}},\quad f=\dfrac{n_iv_i}{2L}\)
+Step 1: \(v_1=\sqrt{\dfrac T\mu}=v,\quad v_2=\sqrt{\dfrac T{4\mu}}=\dfrac v2\)
+Step 2: \(\dfrac{n_1v}{2L}=\dfrac{n_2v}{4L}\Rightarrow n_2=2n_1\)
+Step 3: \(n_1=1,\ n_2=2\)
+Step 4: \(\text{nodes}:\ (n_1+1)+(n_2+1)-1=2+3-1=4\)
+Worked derivation: \[f=\frac v{2L}=\frac1{2L}\sqrt{\frac T\mu},\qquad N=4\]
+Check: \[\lambda_1=\frac vf=2L,\quad\lambda_2=\frac{v/2}f=L:\quad L=1\cdot\frac{\lambda_1}2=2\cdot\frac{\lambda_2}2\]
+Why: \(\text{the frequency is common; the wavelengths differ}\)
+Why not the others: (A) \(f=\tfrac v{4L}\Rightarrow n_1=\tfrac12\); (B) \(f=\tfrac vL\Rightarrow n_1=2,\ n_2=4\ \text{(not lowest)}\); (D) \(N=3\ \text{omits the internal node of the heavy segment}\).
+Key point: \(n_2=2n_1\ \text{when}\ v_2=\tfrac{v_1}2\)
+
+@@ Q52
+Answer: (B) At R; GM/R².
+Given: \(\text{solid sphere}\ (M,R);\quad\text{concentric shell}\ (M,2R)\)
+Formula/Principle: \(g(r)=\dfrac{GM_{\text{enc}}(r)}{r^2};\quad g_{\text{shell,inside}}=0\)
+Step 1: \(r\le R:\ g=\dfrac{GMr}{R^3}\ (\text{increasing}),\quad g(R)=\dfrac{GM}{R^2}\)
+Step 2: \(R<r<2R:\ g=\dfrac{GM}{r^2}\ (\text{decreasing}),\quad g(2R^-)=\dfrac{GM}{4R^2}\)
+Step 3: \(r>2R:\ g=\dfrac{2GM}{r^2},\quad g(2R^+)=\dfrac{2GM}{4R^2}=\dfrac{GM}{2R^2}\)
+Worked derivation: \[g_{\max}=g(R)=\frac{GM}{R^2}>\frac{GM}{2R^2}=g(2R^+)\]
+Check: \[g(0)=0;\quad g(2R^+)-g(2R^-)=\frac{GM}{4R^2}\ (\text{jump from the shell})\]
+Why: \(\text{the shell adds nothing for}\ r<2R\)
+Why not the others: (A) \(\tfrac{GM}{2R^2}<\tfrac{GM}{R^2}\); (C) \(g(0)=0\); (D) \(M_{\text{enc}}(R)=M,\ \text{not}\ 2M\).
+Key point: \(\text{only enclosed mass contributes to}\ g\)
+
+@@ Q54
+Answer: (D) V/2; 5C0V²/16.
+Given: \(C_A=C_B=C_C=C_0;\quad V_A=V,\ V_B=V_C=0\)
+Formula/Principle: \(V_{\text{common}}=\dfrac{q_1+q_2}{C_1+C_2},\quad H=U_i-U_f,\quad U=\tfrac12CV^2\)
+Step 1: \(\text{A–B}:\ V_1=\dfrac{C_0V+0}{2C_0}=\dfrac V2\Rightarrow V_B=\dfrac V2\ (\text{then isolated})\)
+Step 2: \(\text{A–C}:\ V_2=\dfrac{C_0(V/2)+0}{2C_0}=\dfrac V4\)
+Step 3: \(U_i=\tfrac12C_0V^2\)
+Step 4: \(U_f=\tfrac12C_0\left[\left(\tfrac V2\right)^2+2\left(\tfrac V4\right)^2\right]=\tfrac12C_0V^2\cdot\tfrac38=\tfrac3{16}C_0V^2\)
+Worked derivation: \[H=\tfrac12C_0V^2-\tfrac3{16}C_0V^2=\tfrac5{16}C_0V^2,\qquad V_B=\tfrac V2\]
+Check: \[H_1=\tfrac12\cdot\tfrac{C_0}2V^2=\tfrac14C_0V^2,\quad H_2=\tfrac12\cdot\tfrac{C_0}2\left(\tfrac V2\right)^2=\tfrac1{16}C_0V^2,\quad H_1+H_2=\tfrac5{16}C_0V^2\]
+Why: \(\text{B is isolated during the second connection}\)
+Why not the others: (A) \(\tfrac V3\ \text{needs all three connected together}\); (B) \(\tfrac V4=V_A=V_C\ne V_B\); (C) \(\tfrac14C_0V^2=H_1\ \text{only}\).
+Key point: \(H=\tfrac12\dfrac{C_1C_2}{C_1+C_2}(\Delta V)^2\ \text{for each connection}\)
+
+@@ Q55
+Answer: (A) 1 ohm; 6/5 A.
+Given: \(E_1=12\ \mathrm V,\ E_2=6\ \mathrm V,\ r_1=r_2=1\ \Omega;\quad\text{load}\ R\ \text{across the common terminals (voltage}\ U)\)
+Formula/Principle: \(I_k=\dfrac{E_k-U}{r_k},\quad I_1+I_2=\dfrac UR\)
+Step 1: \((12-U)+(6-U)=\dfrac UR\Rightarrow U=\dfrac{18R}{2R+1}\)
+Step 2: \(I_2=0\Rightarrow U=6\ \mathrm V:\ 18R=12R+6\Rightarrow R=1\ \Omega\)
+Step 3: \(R=2\ \Omega:\ U=\dfrac{36}5=7.2\ \mathrm V\)
+Worked derivation: \[I_{\text{charge}}=\frac{U-E_2}{r_2}=\frac{7.2-6}1=\frac65\ \mathrm A\]
+Check: \[I_1=12-7.2=4.8\ \mathrm A,\quad I_R=\frac{7.2}2=3.6\ \mathrm A,\quad4.8=3.6+1.2\]
+Why: \(U>E_2\Rightarrow\text{current enters the positive terminal of the 6 V cell}\)
+Why not the others: (B) \(R=2\ \Omega\Rightarrow U=7.2\ \mathrm V\ne6\ \mathrm V\); (C) \(\tfrac{18}5\ \mathrm A=I_R\); (D) \(R=\tfrac12\ \Omega\Rightarrow U=4.5\ \mathrm V\ne6\ \mathrm V\).
+Key point: \(\text{a cell is charged when the terminal voltage exceeds its emf}\)
+
+@@ Q57
+Answer: (C) 5√2 rad s−1; 2/√3.
+Given: \(L=1\ \mathrm H,\quad C=0.010\ \mathrm F,\quad R=10\ \Omega\)
+Formula/Principle: \(\dfrac{V_C}E=\dfrac{X_C}Z=\dfrac1{\sqrt{(1-\omega^2LC)^2+\omega^2R^2C^2}}\)
+Step 1: \(LC=0.010\ \mathrm{s^2},\quad R^2C^2=100\times10^{-4}=0.010\ \mathrm{s^2}\)
+Step 2: \(u=\omega^2:\ D(u)=(1-0.01u)^2+0.01u\)
+Step 3: \(\dfrac{dD}{du}=-0.02(1-0.01u)+0.01=0\Rightarrow1-0.01u=\tfrac12\Rightarrow u=50\ \mathrm{s^{-2}}\)
+Step 4: \(D_{\min}=\left(\tfrac12\right)^2+\tfrac12=\tfrac34\)
+Worked derivation: \[\omega=\sqrt{50}=5\sqrt2\ \mathrm{rad\,s^{-1}},\qquad\frac{V_C}E=\frac1{\sqrt{3/4}}=\frac2{\sqrt3}\approx1.155\]
+Check: \[\omega=10:\ D=0+1=1\Rightarrow\frac{V_C}E=1<1.155;\quad\omega^2=\frac1{LC}-\frac{R^2}{2L^2}=100-50=50\]
+Why: \(V_C=IX_C\ \text{and}\ X_C\ \text{falls with}\ \omega\Rightarrow\text{the peak lies below}\ \omega_0\)
+Why not the others: (A) \(\omega=10:\ \tfrac{V_C}E=1\ (\text{current resonance})\); (B) \(\omega=10:\ 1\ne\sqrt2\); (D) \(\omega=5:\ D=0.5625+0.25=0.8125\Rightarrow1.109\ne2\).
+Key point: \(\omega_{V_C\max}^2=\dfrac1{LC}-\dfrac{R^2}{2L^2}\)
+
+@@ Q58
+Answer: (B) 41/35 cm; 1/35 cm toward.
+Given: \(f_o=1\ \mathrm{cm},\quad f_e=5\ \mathrm{cm},\quad d=11\ \mathrm{cm},\quad v_e=-25\ \mathrm{cm}\)
+Formula/Principle: \(\dfrac1v-\dfrac1u=\dfrac1f\)
+Step 1: \(\text{image at}\ \infty:\ |u_e|=5\ \mathrm{cm}\Rightarrow v_o=11-5=6\ \mathrm{cm}\)
+Step 2: \(\dfrac1{u_o}=\dfrac16-1=-\dfrac56\Rightarrow|u_o|=\dfrac65\ \mathrm{cm}\)
+Step 3: \(\dfrac1{u_e}=\dfrac1{-25}-\dfrac15=-\dfrac6{25}\Rightarrow|u_e|=\dfrac{25}6\ \mathrm{cm}\)
+Step 4: \(v_o'=11-\dfrac{25}6=\dfrac{41}6\ \mathrm{cm}\)
+Step 5: \(\dfrac1{u_o'}=\dfrac6{41}-1=-\dfrac{35}{41}\Rightarrow|u_o'|=\dfrac{41}{35}\ \mathrm{cm}\)
+Worked derivation: \[\frac65-\frac{41}{35}=\frac{42-41}{35}=\frac1{35}\ \mathrm{cm}\ \ (\text{toward the objective})\]
+Check: \[\frac{35}{41}+\frac6{41}=1=\frac1{f_o};\quad\frac6{25}-\frac1{25}=\frac15=\frac1{f_e}\]
+Why: \(\text{a nearer final image needs a longer}\ v_o,\ \text{so a shorter}\ |u_o|\)
+Why not the others: (A) \(\tfrac65\ \mathrm{cm}\ \text{is the initial distance}\); (C) \(\tfrac{41}{35}<\tfrac{42}{35}\Rightarrow\text{toward, not away}\); (D) \(\tfrac{35}{41}\ \mathrm{cm}<f_o\Rightarrow\text{no real intermediate image}\).
+Key point: \(\text{work back from the eyepiece to the objective}\)
+
+@@ Q59
+Answer: (D) E=2E0 cos(ωt) along y and B=0; their sum generally does not obey the single-wave ratio.
+Given: \(\vec E_1=E_0\cos(kx-\omega t)\hat y,\ \vec B_1=\dfrac{E_0}c\cos(kx-\omega t)\hat z;\quad\vec E_2=E_0\cos(kx+\omega t)\hat y,\ \vec B_2=-\dfrac{E_0}c\cos(kx+\omega t)\hat z\)
+Formula/Principle: \(\vec E=\vec E_1+\vec E_2,\quad\vec B=\vec B_1+\vec B_2\)
+Step 1: \(x=0:\ \cos(-\omega t)=\cos(\omega t)\)
+Step 2: \(\vec E=2E_0\cos(\omega t)\,\hat y\)
+Step 3: \(\vec B=\dfrac{E_0}c\cos(\omega t)\hat z-\dfrac{E_0}c\cos(\omega t)\hat z=0\)
+Worked derivation: \[\vec E(0,t)=2E_0\cos(\omega t)\,\hat y,\qquad\vec B(0,t)=0\Rightarrow E\ne cB\]
+Check: \[\vec E=2E_0\cos kx\cos\omega t\,\hat y,\quad\vec B=\frac{2E_0}c\sin kx\sin\omega t\,\hat z:\ x=0\Rightarrow B=0\]
+Why: \(E=cB\ \text{holds for each travelling wave, not for their standing-wave sum}\)
+Why not the others: (A) \(E\ \text{and}\ B\ \text{interchanged}\); (B) \(B=0\ne\tfrac Ec\); (C) \(E=2E_0\cos\omega t\ne0\).
+Key point: \(\text{in a standing EM wave the}\ E\ \text{antinodes are}\ B\ \text{nodes}\)
+
+@@ Q60
+Answer: (C) 0.5 me; impossible.
+Given: \(M_P^{\text{atom}}-M_D^{\text{atom}}=1.5\,m_e;\quad(A,Z)\to(A,Z-1)\)
+Formula/Principle: \(M^{\text{nuc}}=M^{\text{atom}}-Zm_e;\quad Q_{\beta^+}=\left(M_P^{\text{nuc}}-M_D^{\text{nuc}}-m_e\right)c^2\)
+Step 1: \(M_P^{\text{nuc}}-M_D^{\text{nuc}}=\left(M_P^{\text{atom}}-Zm_e\right)-\left(M_D^{\text{atom}}-(Z-1)m_e\right)\)
+Step 2: \(=1.5\,m_e-m_e=0.5\,m_e\)
+Worked derivation: \[Q_{\beta^+}=(0.5-1)\,m_ec^2=-0.5\,m_ec^2<0\Rightarrow\text{not possible}\]
+Check: \[Q_{\beta^+}=\left(\Delta M^{\text{atom}}-2m_e\right)c^2=(1.5-2)\,m_ec^2=-0.5\,m_ec^2\]
+Why: \(\beta^+\ \text{decay needs}\ \Delta M^{\text{atom}}>2m_e\)
+Why not the others: (A) \(1.5\,m_e\ \text{is the atomic, not nuclear, difference}\); (B) \(1.5+1=2.5\ (\text{wrong sign})\); (D) \(0.5\,m_e<m_e\Rightarrow Q<0\).
+Key point: \(Q_{\beta^+}=\left(M_P^{\text{atom}}-M_D^{\text{atom}}-2m_e\right)c^2\)
