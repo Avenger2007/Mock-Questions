@@ -149,7 +149,7 @@ Numerical Chemistry questions also carry `Given:`, `Formula/Principle:`, `Step 1
 ## 8. Syllabus coverage
 
 - The plan gives each subject 500 slots. Every chapter in `Syllabus.md` has slots, and every focus line is used at least once (the checker enforces this).
-- Class 11 / Class 12 slots: Biology 250 / 250, Chemistry 255 / 245, Mathematics 290 / 210, Physics 260 / 240 (see the plan for the current numbers).
+- Class 11 / Class 12 slots: Biology 250 / 250, Chemistry 250 / 250, Mathematics 285 / 215, Physics 260 / 240 (see the plan for the current numbers).
 - Chapter weights are 60% syllabus breadth and 40% share in the NEST 2024 (two sessions), 2025 and 2026 papers, with a minimum of 5 slots, so no listed chapter is dropped. The largest chapters have 40 slots (inheritance, molecular basis of inheritance, equilibrium, hydrocarbons, coordination compounds, relations and functions, conics, integrals); the smallest have 5.
 - The past-paper sample is 80 questions per subject. Re-check the weights if NEST 2027 changes the pattern or when more papers are analysed.
 - If a slot must be changed during authoring, edit its CSV row, write the reason in `notes`, and keep the chapter's total unless the user agrees otherwise.
