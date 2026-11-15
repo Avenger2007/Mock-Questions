@@ -8,6 +8,7 @@ This is the single rule file for the NEST mock-test series (NISER Bhubaneswar an
 | `NISER/Syllabus.md` | official NEST syllabus, by chapter, with the "not listed" topics |
 | `NISER/NEST_25_Test_Plan.md` and `.csv` | the 25-test plan: 2,000 slots, one per question |
 | `tools/nest/plan_25_tests.py` | builds and checks the plan (metadata only) |
+| `docs/blueprints/nest_pyq_analysis.md` | what the 2024–2026 papers show: chapter counts, style, figures |
 | `NISER/NEST_images.md` | one entry per figure question |
 | `NISER/NEST TEST <N>.json` | the tests (not written yet) |
 
@@ -148,10 +149,19 @@ Numerical Chemistry questions also carry `Given:`, `Formula/Principle:`, `Step 1
 ## 8. Syllabus coverage
 
 - The plan gives each subject 500 slots. Every chapter in `Syllabus.md` has slots, and every focus line is used at least once (the checker enforces this).
-- Class 11 / Class 12 slots: Biology 255 / 245, Chemistry 270 / 230, Mathematics 285 / 215, Physics 260 / 240.
-- Smallest chapters get 5 slots (frog anatomy, reproductive health, mathematical induction); the largest get 35–40 (inheritance, molecular basis of inheritance, equilibrium, integrals, matrices and determinants, probability).
-- These weights come from syllabus breadth. **They are not yet calibrated against NEST previous-year papers.** After the PYQ analysis (section 10), adjust the chapter slot counts in `tools/nest/plan_25_tests.py` and regenerate, before Test 1 is written.
+- Class 11 / Class 12 slots: Biology 250 / 250, Chemistry 255 / 245, Mathematics 290 / 210, Physics 260 / 240 (see the plan for the current numbers).
+- Chapter weights are 60% syllabus breadth and 40% share in the NEST 2024 (two sessions), 2025 and 2026 papers, with a minimum of 5 slots, so no listed chapter is dropped. The largest chapters have 40 slots (inheritance, molecular basis of inheritance, equilibrium, hydrocarbons, coordination compounds, relations and functions, conics, integrals); the smallest have 5.
+- The past-paper sample is 80 questions per subject. Re-check the weights if NEST 2027 changes the pattern or when more papers are analysed.
 - If a slot must be changed during authoring, edit its CSV row, write the reason in `notes`, and keep the chapter's total unless the user agrees otherwise.
+
+---
+
+### Style targets from the past papers
+
+- **Biology:** at least 10 of the 20 questions are experiment, data-table, pedigree, graph or applied-case questions. Recall-only questions belong in the easy slots.
+- **Chemistry:** about one-third organic, one-third inorganic, one-third physical in each section (the plan gives the exact chapters). Organic questions are mostly two- or three-step sequences or reasoned orderings.
+- **Mathematics:** prefer "number of solutions", "which statement must hold" and parameter-condition questions to long routine computation.
+- **Physics:** one or two estimation or real-context questions per section; a dimensional-analysis or significant-figure question in most tests.
 
 ---
 
@@ -168,8 +178,8 @@ Numerical Chemistry questions also carry `Given:`, `Formula/Principle:`, `Step 1
 ## 10. Before Test 1 (pre-start checklist)
 
 - [ ] NEST 2027 brochure checked; pattern table and `Syllabus.md` updated if anything changed.
-- [ ] PYQ analysis written in `docs/blueprints/nest_pyq_analysis.md` from the official papers at `https://www.nestexam.in` (question papers with answers are published there for 2007–2026). Use only the current single-correct format for calibration; older papers had other formats. Record findings, not the papers.
-- [ ] Chapter weights and style mix in the plan adjusted to the PYQ analysis, and the plan regenerated and checked.
+- [x] PYQ analysis written in `docs/blueprints/nest_pyq_analysis.md` from the official papers on `https://www.nestexam.in` (NEST 2024 two sessions, 2025, 2026; 320 questions). Tags are in `docs/blueprints/nest_pyq_tags.txt`. The papers themselves are not stored.
+- [x] Chapter weights in the plan adjusted to the PYQ analysis; plan regenerated and checked (15 November 2026).
 - [ ] The user has approved the PYQ summary and the plan.
 - [ ] `validate_nest.py` written: 80 questions, 20 per section, fixed IDs, 3/13/4 per section, 5/5/5/5 keys per section, required solution labels, KaTeX check, image-register match.
 - [ ] Test 1 written as the pilot and approved by the user before Tests 2–25.

@@ -6,7 +6,7 @@ Each exam has its own authoring rules, because the patterns, syllabi and marking
 |---|---|---|
 | CUET (UG) | [CUET_Instructions.md](CUET_Instructions.md) | Active (v3.1, CUET 2027 standard, 15 tests per subject) |
 | IISER Aptitude Test (IAT) | [IAT_Instructions.md](IAT_Instructions.md) | 25 tests; authorised PYQ collection in [`PYQ/IAT/`](../../PYQ/IAT/); analysis/blueprint approval pending; 2027 pattern still to verify |
-| NISER — NEST | [NISER/NISER_Test_Instructions.md](../../NISER/NISER_Test_Instructions.md) | v2 (15 Nov 2026) — syllabus and 25-test plan written; PYQ calibration and Test 1 pending |
+| NISER — NEST | [NISER/NISER_Test_Instructions.md](../../NISER/NISER_Test_Instructions.md) | v2 (15 Nov 2026) — syllabus, PYQ analysis (2024–2026) and calibrated 25-test plan written; validator and Test 1 pending |
 | COMEDK UGET | [COMEDK_Instructions.md](COMEDK_Instructions.md) | v1 ready — 25 tests; waiting for PYQs and official syllabus PDFs |
 
 A new exam's file should copy the CUET file's structure: Aim, Strict Command, Genuine Authorship, Answer-Key Integrity, Reference Materials, Difficulty Standard, Series Structure, Workflow, Quality Checklist and Output Format. Then replace the exam-specific parts (pattern, marking, sections, syllabus source) with that exam's official documents.

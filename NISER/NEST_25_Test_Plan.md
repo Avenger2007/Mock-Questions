@@ -1,22 +1,22 @@
 # NEST 25-test plan
 
-Written 15 November 2026. **Status: plan only; no NEST test is written yet.** The slot table is [NEST_25_Test_Plan.csv](NEST_25_Test_Plan.csv) (2,000 rows). It is built and checked by `tools/nest/plan_25_tests.py`. The rules for writing the tests are in [NISER_Test_Instructions.md](NISER_Test_Instructions.md) and the syllabus is in [Syllabus.md](Syllabus.md).
+Status on 15 November 2026: **plan only; no NEST test is written yet** (2000 of 2000 slots are `planned`). The slot table is [NEST_25_Test_Plan.csv](NEST_25_Test_Plan.csv). It is built and checked by `tools/nest/plan_25_tests.py`; this page is rewritten by `tools/nest/plan_summary.py`. Rules: [NISER_Test_Instructions.md](NISER_Test_Instructions.md). Syllabus: [Syllabus.md](Syllabus.md). Past-paper analysis: [nest_pyq_analysis.md](../docs/blueprints/nest_pyq_analysis.md).
 
 ## What the plan fixes
 
-- **25 tests × 80 questions = 2,000 slots**, 500 per subject. Each test has Biology Q1–20, Chemistry Q21–40, Mathematics Q41–60, Physics Q61–80.
+- **25 tests × 80 questions = 2,000 slots**, 500 per subject: Biology Q1–20, Chemistry Q21–40, Mathematics Q41–60, Physics Q61–80.
 - **Fixed IDs** `NEST27-TNN-QNN`.
-- **Difficulty:** 3 easy, 13 medium, 4 hard in every section of every test. Each chapter gets about 15% easy and 20% hard of its own slots.
+- **Difficulty:** 3 easy, 13 medium, 4 hard in every section of every test; each chapter gets about 15% easy and 20% hard of its own slots.
 - **Coverage:** every chapter of the official syllabus has slots, spread evenly over the 25 tests, and every focus line is used at least once.
-- **No repetition by design:** every slot has a different (chapter, focus, angle). The focus is the syllabus sub-topic; the angle is the kind of task. A focus that returns later in the series returns with a different task.
+- **No repetition by design:** every slot has a different (chapter, focus, angle). The focus is the syllabus sub-topic; the angle is the kind of task.
 
-## How it was built (and its limits)
+## How it was built, and its limits
 
-- Method taken from the IAT plan (`docs/blueprints/iat_25_test_plan.md` and `.csv`): fixed slots, a chapter taxonomy from the official syllabus, a stated difficulty mix, and a record per question that is updated when the test is written.
-- Changes from the IAT plan, made because of the IAT audit: uniqueness of (chapter, focus, angle) is enforced by the checker; the plan and the tests are reconciled in the same commit; chapters not in the syllabus have no slots.
-- **Chapter weights follow syllabus breadth. They are not yet calibrated against NEST previous-year papers.** The official papers with answers are on `https://www.nestexam.in`. Calibrate before Test 1: change the slot numbers in the script, regenerate, and re-check.
+- Method taken from the IAT plan (`docs/blueprints/iat_25_test_plan.md` and `.csv`): fixed slots, a chapter taxonomy from the official syllabus, a stated difficulty mix, and one record per question that is updated when the test is written.
+- Added after the IAT audit: uniqueness of (chapter, focus, angle) is enforced by the checker; plan and tests are reconciled in the same commit; topics not in the syllabus have no slots.
+- **Chapter weights = 60% syllabus breadth + 40% share in the NEST 2024 (two sessions), 2025 and 2026 papers**, rounded to 5, minimum 5. The past-paper sample is 80 questions per subject, so the weights are a guide, not a forecast.
 - The NEST 2027 syllabus was not published on 15 November 2026; the plan uses the NEST 2026 syllabus.
-- The `angle` is a brief, not a format label. The question `format` (numerical, conceptual, graph, data, diagram, experiment) is set when the question is written.
+- The `angle` is a brief, not a format label. The question `format` is set when the question is written.
 
 ## CSV columns
 
@@ -41,128 +41,130 @@ Written 15 November 2026. **Status: plan only; no NEST test is written yet.** Th
 
 ## Chapter allocation
 
-### Biology (500 slots; Class 11: 255, Class 12: 245)
+"Past papers" is the number of questions from that chapter in the four papers analysed (out of 80 per subject). "Breadth" is the slot count before calibration.
 
-| Code | Chapter | Class | Slots | Easy / Medium / Hard | Focus lines |
-|---|---|---:|---:|---:|---:|
-| `B-LIVCLS` | The Living World; Biological Classification | 11 | 15 | 3 / 9 / 3 | 6 |
-| `B-PLANTK` | Plant Kingdom | 11 | 10 | 2 / 6 / 2 | 4 |
-| `B-ANIMK` | Animal Kingdom | 11 | 15 | 2 / 10 / 3 | 5 |
-| `B-MORPH` | Morphology of Flowering Plants | 11 | 10 | 1 / 7 / 2 | 4 |
-| `B-ANAT` | Anatomy of Flowering Plants | 11 | 10 | 1 / 7 / 2 | 4 |
-| `B-FROG` | Structural Organisation in Animals (frog) | 11 | 5 | 0 / 4 / 1 | 3 |
-| `B-CELL` | Cell: The Unit of Life | 11 | 20 | 3 / 13 / 4 | 7 |
-| `B-BIOMOL` | Biomolecules | 11 | 20 | 3 / 13 / 4 | 6 |
-| `B-CYCLE` | Cell Cycle and Cell Division | 11 | 15 | 2 / 10 / 3 | 5 |
-| `B-PHOTO` | Photosynthesis in Higher Plants | 11 | 20 | 3 / 13 / 4 | 6 |
-| `B-RESP` | Respiration in Plants | 11 | 15 | 2 / 10 / 3 | 5 |
-| `B-PGR` | Plant Growth and Development | 11 | 10 | 1 / 7 / 2 | 4 |
-| `B-BREATH` | Breathing and Exchange of Gases | 11 | 10 | 2 / 6 / 2 | 4 |
-| `B-CIRC` | Body Fluids and Circulation | 11 | 15 | 2 / 10 / 3 | 5 |
-| `B-DIGEST` | Digestion and Absorption | 11 | 10 | 2 / 6 / 2 | 4 |
-| `B-EXCR` | Excretory Products and their Elimination | 11 | 15 | 3 / 9 / 3 | 5 |
-| `B-LOCO` | Locomotion and Movement | 11 | 10 | 1 / 7 / 2 | 4 |
-| `B-NEURAL` | Neural Control and Coordination | 11 | 15 | 2 / 10 / 3 | 5 |
-| `B-ENDO` | Chemical Coordination and Integration | 11 | 15 | 2 / 10 / 3 | 6 |
-| `B-REPFL` | Sexual Reproduction in Flowering Plants | 12 | 15 | 2 / 10 / 3 | 6 |
-| `B-HUMREP` | Human Reproduction | 12 | 15 | 2 / 10 / 3 | 5 |
-| `B-REPH` | Reproductive Health | 12 | 5 | 1 / 4 / 0 | 3 |
-| `B-INHER` | Principles of Inheritance and Variation | 12 | 35 | 5 / 23 / 7 | 11 |
-| `B-MOLB` | Molecular Basis of Inheritance | 12 | 35 | 5 / 23 / 7 | 11 |
-| `B-EVOL` | Evolution | 12 | 20 | 3 / 13 / 4 | 6 |
-| `B-HEALTH` | Human Health and Diseases | 12 | 20 | 3 / 12 / 5 | 7 |
-| `B-MICRO` | Microbes in Human Welfare | 12 | 10 | 1 / 7 / 2 | 4 |
-| `B-BTP` | Biotechnology: Principles and Processes | 12 | 25 | 4 / 16 / 5 | 7 |
-| `B-BTA` | Biotechnology and its Applications | 12 | 15 | 3 / 9 / 3 | 5 |
-| `B-POP` | Organisms and Populations | 12 | 20 | 3 / 13 / 4 | 5 |
-| `B-ECO` | Ecosystem | 12 | 15 | 3 / 9 / 3 | 5 |
-| `B-BIODIV` | Biodiversity and its Conservation | 12 | 15 | 3 / 9 / 3 | 5 |
+### Biology (500 slots; Class 11: 250, Class 12: 250)
 
-### Chemistry (500 slots; Class 11: 270, Class 12: 230)
+| Code | Chapter | Class | Past papers | Breadth | Slots | Easy / Medium / Hard | Focus lines |
+|---|---|---:|---:|---:|---:|---:|---:|
+| `B-LIVCLS` | The Living World; Biological Classification | 11 | 6 | 15 | 25 | 4 / 16 / 5 | 6 |
+| `B-PLANTK` | Plant Kingdom | 11 | 0 | 10 | 5 | 0 / 4 / 1 | 4 |
+| `B-ANIMK` | Animal Kingdom | 11 | 0 | 15 | 10 | 1 / 7 / 2 | 5 |
+| `B-MORPH` | Morphology of Flowering Plants | 11 | 0 | 10 | 5 | 0 / 4 / 1 | 4 |
+| `B-ANAT` | Anatomy of Flowering Plants | 11 | 3 | 10 | 15 | 3 / 9 / 3 | 4 |
+| `B-FROG` | Structural Organisation in Animals (frog) | 11 | 0 | 5 | 5 | 0 / 4 / 1 | 3 |
+| `B-CELL` | Cell: The Unit of Life | 11 | 6 | 20 | 25 | 4 / 16 / 5 | 7 |
+| `B-BIOMOL` | Biomolecules | 11 | 7 | 20 | 30 | 5 / 19 / 6 | 6 |
+| `B-CYCLE` | Cell Cycle and Cell Division | 11 | 2 | 15 | 15 | 3 / 9 / 3 | 5 |
+| `B-PHOTO` | Photosynthesis in Higher Plants | 11 | 4 | 20 | 25 | 4 / 16 / 5 | 6 |
+| `B-RESP` | Respiration in Plants | 11 | 2 | 15 | 15 | 2 / 10 / 3 | 5 |
+| `B-PGR` | Plant Growth and Development | 11 | 1 | 10 | 10 | 1 / 8 / 1 | 4 |
+| `B-BREATH` | Breathing and Exchange of Gases | 11 | 2 | 10 | 10 | 1 / 7 / 2 | 4 |
+| `B-CIRC` | Body Fluids and Circulation | 11 | 1 | 15 | 10 | 2 / 6 / 2 | 5 |
+| `B-DIGEST` | Digestion and Absorption | 11 | 0 | 10 | 5 | 1 / 4 / 0 | 4 |
+| `B-EXCR` | Excretory Products and their Elimination | 11 | 0 | 15 | 10 | 2 / 6 / 2 | 5 |
+| `B-LOCO` | Locomotion and Movement | 11 | 0 | 10 | 5 | 1 / 3 / 1 | 4 |
+| `B-NEURAL` | Neural Control and Coordination | 11 | 2 | 15 | 15 | 2 / 10 / 3 | 5 |
+| `B-ENDO` | Chemical Coordination and Integration | 11 | 0 | 15 | 10 | 2 / 6 / 2 | 6 |
+| `B-REPFL` | Sexual Reproduction in Flowering Plants | 12 | 0 | 15 | 10 | 1 / 7 / 2 | 6 |
+| `B-HUMREP` | Human Reproduction | 12 | 0 | 15 | 10 | 1 / 7 / 2 | 5 |
+| `B-REPH` | Reproductive Health | 12 | 0 | 5 | 5 | 1 / 3 / 1 | 3 |
+| `B-INHER` | Principles of Inheritance and Variation | 12 | 8 | 35 | 40 | 6 / 26 / 8 | 11 |
+| `B-MOLB` | Molecular Basis of Inheritance | 12 | 7 | 35 | 40 | 6 / 26 / 8 | 11 |
+| `B-EVOL` | Evolution | 12 | 7 | 20 | 30 | 5 / 19 / 6 | 6 |
+| `B-HEALTH` | Human Health and Diseases | 12 | 4 | 20 | 20 | 3 / 13 / 4 | 7 |
+| `B-MICRO` | Microbes in Human Welfare | 12 | 0 | 10 | 5 | 0 / 5 / 0 | 4 |
+| `B-BTP` | Biotechnology: Principles and Processes | 12 | 5 | 25 | 25 | 4 / 16 / 5 | 7 |
+| `B-BTA` | Biotechnology and its Applications | 12 | 0 | 15 | 10 | 1 / 6 / 3 | 5 |
+| `B-POP` | Organisms and Populations | 12 | 5 | 20 | 25 | 4 / 15 / 6 | 5 |
+| `B-ECO` | Ecosystem | 12 | 3 | 15 | 15 | 2 / 9 / 4 | 5 |
+| `B-BIODIV` | Biodiversity and its Conservation | 12 | 2 | 15 | 15 | 3 / 9 / 3 | 5 |
 
-| Code | Chapter | Class | Slots | Easy / Medium / Hard | Focus lines |
-|---|---|---:|---:|---:|---:|
-| `C-MOLE` | Some Basic Concepts of Chemistry | 11 | 20 | 3 / 13 / 4 | 5 |
-| `C-ATOM` | Structure of Atom | 11 | 25 | 4 / 16 / 5 | 7 |
-| `C-PERIOD` | Classification of Elements and Periodicity; s and p block trends | 11 | 30 | 5 / 19 / 6 | 8 |
-| `C-BOND` | Chemical Bonding and Molecular Structure | 11 | 35 | 5 / 23 / 7 | 9 |
-| `C-THERMO` | Chemical Thermodynamics; The Gaseous State | 11 | 35 | 5 / 23 / 7 | 9 |
-| `C-EQUIL` | Equilibrium | 11 | 40 | 6 / 26 / 8 | 10 |
-| `C-REDOX` | Redox Reactions | 11 | 15 | 2 / 10 / 3 | 3 |
-| `C-GOC` | Organic Chemistry: Basic Principles and Techniques | 11 | 35 | 5 / 23 / 7 | 9 |
-| `C-HC` | Hydrocarbons | 11 | 35 | 5 / 23 / 7 | 9 |
-| `C-SOLN` | Solutions | 12 | 25 | 4 / 16 / 5 | 7 |
-| `C-ELECTRO` | Electrochemistry | 12 | 30 | 5 / 19 / 6 | 7 |
-| `C-KIN` | Chemical Kinetics | 12 | 30 | 5 / 19 / 6 | 7 |
-| `C-DF` | d and f Block Elements | 12 | 25 | 4 / 16 / 5 | 7 |
-| `C-COORD` | Coordination Compounds | 12 | 30 | 4 / 20 / 6 | 7 |
-| `C-HALO` | Haloalkanes and Haloarenes | 12 | 20 | 3 / 13 / 4 | 6 |
-| `C-ALC` | Alcohols, Phenols and Ethers | 12 | 20 | 3 / 13 / 4 | 6 |
-| `C-CARB` | Aldehydes, Ketones and Carboxylic Acids | 12 | 25 | 4 / 16 / 5 | 6 |
-| `C-AMINE` | Amines | 12 | 15 | 2 / 10 / 3 | 4 |
-| `C-BIOM` | Biomolecules | 12 | 10 | 1 / 7 / 2 | 4 |
+### Chemistry (500 slots; Class 11: 250, Class 12: 250)
+
+| Code | Chapter | Class | Past papers | Breadth | Slots | Easy / Medium / Hard | Focus lines |
+|---|---|---:|---:|---:|---:|---:|---:|
+| `C-MOLE` | Some Basic Concepts of Chemistry | 11 | 2 | 20 | 15 | 2 / 10 / 3 | 5 |
+| `C-ATOM` | Structure of Atom | 11 | 3 | 25 | 20 | 3 / 13 / 4 | 7 |
+| `C-PERIOD` | Classification of Elements and Periodicity; s and p block trends | 11 | 2 | 30 | 25 | 4 / 16 / 5 | 8 |
+| `C-BOND` | Chemical Bonding and Molecular Structure | 11 | 6 | 35 | 35 | 5 / 23 / 7 | 9 |
+| `C-THERMO` | Chemical Thermodynamics; The Gaseous State | 11 | 5 | 35 | 35 | 5 / 23 / 7 | 9 |
+| `C-EQUIL` | Equilibrium | 11 | 7 | 40 | 40 | 6 / 26 / 8 | 10 |
+| `C-REDOX` | Redox Reactions | 11 | 3 | 15 | 15 | 2 / 10 / 3 | 3 |
+| `C-GOC` | Organic Chemistry: Basic Principles and Techniques | 11 | 2 | 35 | 25 | 4 / 16 / 5 | 9 |
+| `C-HC` | Hydrocarbons | 11 | 7 | 35 | 40 | 6 / 26 / 8 | 9 |
+| `C-SOLN` | Solutions | 12 | 2 | 25 | 20 | 3 / 13 / 4 | 7 |
+| `C-ELECTRO` | Electrochemistry | 12 | 3 | 30 | 25 | 4 / 16 / 5 | 7 |
+| `C-KIN` | Chemical Kinetics | 12 | 5 | 30 | 30 | 5 / 19 / 6 | 7 |
+| `C-DF` | d and f Block Elements | 12 | 6 | 25 | 30 | 5 / 19 / 6 | 7 |
+| `C-COORD` | Coordination Compounds | 12 | 8 | 30 | 40 | 6 / 26 / 8 | 7 |
+| `C-HALO` | Haloalkanes and Haloarenes | 12 | 1 | 20 | 15 | 2 / 10 / 3 | 6 |
+| `C-ALC` | Alcohols, Phenols and Ethers | 12 | 7 | 20 | 30 | 4 / 20 / 6 | 6 |
+| `C-CARB` | Aldehydes, Ketones and Carboxylic Acids | 12 | 6 | 25 | 30 | 5 / 19 / 6 | 6 |
+| `C-AMINE` | Amines | 12 | 2 | 15 | 15 | 2 / 10 / 3 | 4 |
+| `C-BIOM` | Biomolecules | 12 | 3 | 10 | 15 | 2 / 10 / 3 | 4 |
 
 ### Mathematics (500 slots; Class 11: 285, Class 12: 215)
 
-| Code | Chapter | Class | Slots | Easy / Medium / Hard | Focus lines |
-|---|---|---:|---:|---:|---:|
-| `M-SETS` | Sets | 11 | 10 | 1 / 8 / 1 | 3 |
-| `M-RELFUN` | Relations and Functions | 11 | 30 | 5 / 19 / 6 | 7 |
-| `M-TRIG` | Trigonometric Functions | 11 | 25 | 4 / 16 / 5 | 5 |
-| `M-PMI` | Principle of Mathematical Induction | 11 | 5 | 0 / 4 / 1 | 2 |
-| `M-CMPLX` | Complex Numbers and Quadratic Equations | 11 | 25 | 4 / 16 / 5 | 5 |
-| `M-INEQ` | Linear Inequalities | 11 | 10 | 2 / 6 / 2 | 3 |
-| `M-PNC` | Permutations and Combinations | 11 | 25 | 4 / 16 / 5 | 5 |
-| `M-BINOM` | Binomial Theorem | 11 | 15 | 2 / 10 / 3 | 3 |
-| `M-SEQ` | Sequence and Series | 11 | 20 | 3 / 13 / 4 | 5 |
-| `M-LINES` | Straight Lines | 11 | 20 | 3 / 13 / 4 | 4 |
-| `M-CONIC` | Conic Sections | 11 | 30 | 5 / 19 / 6 | 5 |
-| `M-LIMDER` | Limits and Derivatives | 11 | 20 | 3 / 13 / 4 | 5 |
-| `M-STAT` | Statistics | 11 | 15 | 2 / 10 / 3 | 3 |
-| `M-PROB` | Probability | 11 | 35 | 5 / 23 / 7 | 7 |
-| `M-INVTRIG` | Inverse Trigonometric Functions | 12 | 15 | 2 / 10 / 3 | 3 |
-| `M-MATDET` | Matrices and Determinants | 12 | 35 | 5 / 22 / 8 | 8 |
-| `M-CONTDIFF` | Continuity and Differentiability | 12 | 25 | 4 / 16 / 5 | 6 |
-| `M-AOD` | Applications of Derivatives | 12 | 30 | 5 / 19 / 6 | 5 |
-| `M-INTEG` | Integrals | 12 | 35 | 6 / 22 / 7 | 7 |
-| `M-AREA` | Applications of the Integrals | 12 | 10 | 1 / 7 / 2 | 2 |
-| `M-DE` | Differential Equations | 12 | 20 | 3 / 13 / 4 | 4 |
-| `M-VEC` | Vectors | 12 | 20 | 3 / 13 / 4 | 4 |
-| `M-3D` | Three-dimensional Geometry | 12 | 15 | 2 / 10 / 3 | 3 |
-| `M-LPP` | Linear Programming | 12 | 10 | 1 / 7 / 2 | 2 |
+| Code | Chapter | Class | Past papers | Breadth | Slots | Easy / Medium / Hard | Focus lines |
+|---|---|---:|---:|---:|---:|---:|---:|
+| `M-SETS` | Sets | 11 | 1 | 10 | 10 | 1 / 7 / 2 | 3 |
+| `M-RELFUN` | Relations and Functions | 11 | 8 | 30 | 40 | 6 / 26 / 8 | 8 |
+| `M-TRIG` | Trigonometric Functions | 11 | 4 | 25 | 25 | 4 / 16 / 5 | 5 |
+| `M-PMI` | Principle of Mathematical Induction | 11 | 0 | 5 | 5 | 1 / 4 / 0 | 2 |
+| `M-CMPLX` | Complex Numbers and Quadratic Equations | 11 | 8 | 25 | 35 | 6 / 22 / 7 | 7 |
+| `M-INEQ` | Linear Inequalities | 11 | 0 | 10 | 5 | 1 / 4 / 0 | 3 |
+| `M-PNC` | Permutations and Combinations | 11 | 2 | 25 | 20 | 3 / 13 / 4 | 5 |
+| `M-BINOM` | Binomial Theorem | 11 | 1 | 15 | 10 | 1 / 7 / 2 | 3 |
+| `M-SEQ` | Sequence and Series | 11 | 2 | 20 | 15 | 2 / 10 / 3 | 5 |
+| `M-LINES` | Straight Lines | 11 | 2 | 20 | 15 | 2 / 10 / 3 | 4 |
+| `M-CONIC` | Conic Sections | 11 | 9 | 30 | 40 | 6 / 26 / 8 | 6 |
+| `M-LIMDER` | Limits and Derivatives | 11 | 3 | 20 | 20 | 3 / 13 / 4 | 5 |
+| `M-STAT` | Statistics | 11 | 0 | 15 | 10 | 1 / 7 / 2 | 3 |
+| `M-PROB` | Probability | 11 | 6 | 35 | 35 | 6 / 22 / 7 | 7 |
+| `M-INVTRIG` | Inverse Trigonometric Functions | 12 | 2 | 15 | 15 | 2 / 10 / 3 | 3 |
+| `M-MATDET` | Matrices and Determinants | 12 | 5 | 35 | 35 | 5 / 22 / 8 | 8 |
+| `M-CONTDIFF` | Continuity and Differentiability | 12 | 7 | 25 | 35 | 5 / 22 / 8 | 6 |
+| `M-AOD` | Applications of Derivatives | 12 | 0 | 30 | 25 | 4 / 16 / 5 | 5 |
+| `M-INTEG` | Integrals | 12 | 7 | 35 | 40 | 6 / 26 / 8 | 7 |
+| `M-AREA` | Applications of the Integrals | 12 | 2 | 10 | 10 | 1 / 7 / 2 | 2 |
+| `M-DE` | Differential Equations | 12 | 4 | 20 | 20 | 3 / 13 / 4 | 4 |
+| `M-VEC` | Vectors | 12 | 1 | 20 | 15 | 3 / 9 / 3 | 4 |
+| `M-3D` | Three-dimensional Geometry | 12 | 2 | 15 | 15 | 3 / 9 / 3 | 3 |
+| `M-LPP` | Linear Programming | 12 | 0 | 10 | 5 | 0 / 4 / 1 | 2 |
 
 ### Physics (500 slots; Class 11: 260, Class 12: 240)
 
-| Code | Chapter | Class | Slots | Easy / Medium / Hard | Focus lines |
-|---|---|---:|---:|---:|---:|
-| `P-UNITS` | Units and Measurements | 11 | 10 | 1 / 7 / 2 | 3 |
-| `P-KIN1D` | Motion in a Straight Line | 11 | 15 | 2 / 10 / 3 | 3 |
-| `P-KIN2D` | Motion in a Plane | 11 | 20 | 3 / 13 / 4 | 4 |
-| `P-NLM` | Laws of Motion | 11 | 25 | 4 / 16 / 5 | 5 |
-| `P-WEP` | Work, Energy and Power | 11 | 25 | 4 / 16 / 5 | 5 |
-| `P-ROT` | System of Particles and Rotational Motion | 11 | 25 | 4 / 16 / 5 | 5 |
-| `P-GRAV` | Gravitation | 11 | 20 | 3 / 13 / 4 | 4 |
-| `P-SOLIDS` | Mechanical Properties of Solids | 11 | 10 | 1 / 7 / 2 | 3 |
-| `P-FLUIDS` | Mechanical Properties of Fluids | 11 | 20 | 3 / 13 / 4 | 4 |
-| `P-THERMAL` | Thermal Properties of Matter | 11 | 15 | 3 / 9 / 3 | 4 |
-| `P-THERMO` | Thermodynamics | 11 | 20 | 3 / 13 / 4 | 4 |
-| `P-KTG` | Kinetic Theory of Gases | 11 | 15 | 2 / 9 / 4 | 4 |
-| `P-SHM` | Oscillations | 11 | 20 | 3 / 12 / 5 | 4 |
-| `P-WAVES` | Waves | 11 | 20 | 3 / 13 / 4 | 5 |
-| `P-EFIELD` | Electric Charges and Fields | 12 | 25 | 4 / 16 / 5 | 5 |
-| `P-EPOT` | Electrostatic Potential and Capacitance | 12 | 25 | 4 / 16 / 5 | 5 |
-| `P-CURR` | Current Electricity | 12 | 25 | 4 / 16 / 5 | 5 |
-| `P-MAGMOV` | Moving Charges and Magnetism | 12 | 25 | 4 / 16 / 5 | 6 |
-| `P-MAGMAT` | Magnetism and Matter | 12 | 10 | 1 / 8 / 1 | 3 |
-| `P-EMI` | Electromagnetic Induction | 12 | 15 | 3 / 9 / 3 | 3 |
-| `P-AC` | Alternating Current | 12 | 20 | 3 / 13 / 4 | 5 |
-| `P-EMW` | Electromagnetic Waves | 12 | 10 | 1 / 8 / 1 | 3 |
-| `P-RAY` | Ray Optics | 12 | 25 | 4 / 16 / 5 | 6 |
-| `P-WAVEOPT` | Wave Optics | 12 | 15 | 2 / 10 / 3 | 4 |
-| `P-DUAL` | Dual Nature of Radiation and Matter | 12 | 15 | 2 / 10 / 3 | 3 |
-| `P-ATOMS` | Atoms | 12 | 10 | 1 / 7 / 2 | 3 |
-| `P-NUCLEI` | Nuclei | 12 | 10 | 1 / 7 / 2 | 3 |
-| `P-SEMI` | Semiconductor Electronics | 12 | 10 | 2 / 6 / 2 | 3 |
+| Code | Chapter | Class | Past papers | Breadth | Slots | Easy / Medium / Hard | Focus lines |
+|---|---|---:|---:|---:|---:|---:|---:|
+| `P-UNITS` | Units and Measurements | 11 | 5 | 10 | 20 | 3 / 13 / 4 | 3 |
+| `P-KIN1D` | Motion in a Straight Line | 11 | 0 | 15 | 10 | 1 / 7 / 2 | 3 |
+| `P-KIN2D` | Motion in a Plane | 11 | 1 | 20 | 15 | 2 / 10 / 3 | 4 |
+| `P-NLM` | Laws of Motion | 11 | 1 | 25 | 20 | 3 / 13 / 4 | 5 |
+| `P-WEP` | Work, Energy and Power | 11 | 4 | 25 | 25 | 4 / 16 / 5 | 5 |
+| `P-ROT` | System of Particles and Rotational Motion | 11 | 2 | 25 | 20 | 3 / 13 / 4 | 5 |
+| `P-GRAV` | Gravitation | 11 | 4 | 20 | 20 | 3 / 13 / 4 | 4 |
+| `P-SOLIDS` | Mechanical Properties of Solids | 11 | 0 | 10 | 5 | 0 / 5 / 0 | 3 |
+| `P-FLUIDS` | Mechanical Properties of Fluids | 11 | 3 | 20 | 20 | 3 / 13 / 4 | 4 |
+| `P-THERMAL` | Thermal Properties of Matter | 11 | 4 | 15 | 20 | 3 / 13 / 4 | 4 |
+| `P-THERMO` | Thermodynamics | 11 | 6 | 20 | 25 | 4 / 15 / 6 | 4 |
+| `P-KTG` | Kinetic Theory of Gases | 11 | 3 | 15 | 15 | 2 / 9 / 4 | 4 |
+| `P-SHM` | Oscillations | 11 | 5 | 20 | 25 | 4 / 15 / 6 | 4 |
+| `P-WAVES` | Waves | 11 | 3 | 20 | 20 | 4 / 12 / 4 | 5 |
+| `P-EFIELD` | Electric Charges and Fields | 12 | 3 | 25 | 25 | 4 / 16 / 5 | 5 |
+| `P-EPOT` | Electrostatic Potential and Capacitance | 12 | 3 | 25 | 25 | 4 / 16 / 5 | 5 |
+| `P-CURR` | Current Electricity | 12 | 1 | 25 | 20 | 3 / 13 / 4 | 5 |
+| `P-MAGMOV` | Moving Charges and Magnetism | 12 | 5 | 25 | 25 | 4 / 16 / 5 | 6 |
+| `P-MAGMAT` | Magnetism and Matter | 12 | 0 | 10 | 5 | 0 / 4 / 1 | 3 |
+| `P-EMI` | Electromagnetic Induction | 12 | 1 | 15 | 10 | 1 / 8 / 1 | 3 |
+| `P-AC` | Alternating Current | 12 | 0 | 20 | 10 | 1 / 8 / 1 | 5 |
+| `P-EMW` | Electromagnetic Waves | 12 | 4 | 10 | 15 | 3 / 9 / 3 | 3 |
+| `P-RAY` | Ray Optics | 12 | 7 | 25 | 30 | 5 / 19 / 6 | 6 |
+| `P-WAVEOPT` | Wave Optics | 12 | 2 | 15 | 15 | 2 / 10 / 3 | 4 |
+| `P-DUAL` | Dual Nature of Radiation and Matter | 12 | 1 | 15 | 10 | 1 / 7 / 2 | 3 |
+| `P-ATOMS` | Atoms | 12 | 6 | 10 | 20 | 3 / 13 / 4 | 3 |
+| `P-NUCLEI` | Nuclei | 12 | 5 | 10 | 20 | 3 / 13 / 4 | 3 |
+| `P-SEMI` | Semiconductor Electronics | 12 | 1 | 10 | 10 | 2 / 6 / 2 | 3 |
 
 ## Focus lines by chapter
 
@@ -226,16 +228,16 @@ Written 15 November 2026. **Status: plan only; no NEST test is written yet.** Th
 ### Mathematics
 
 - **Sets** (`M-SETS`): subsets, intervals and power set; union, intersection, difference and complement; counting with Venn diagrams.
-- **Relations and Functions** (`M-RELFUN`): Cartesian product; domain and range of a relation; domain and range of real functions; modulus, signum and greatest integer functions; exponential and logarithmic functions and their graphs; algebra and composition of functions; reflexive, symmetric, transitive and equivalence relations; one-one and onto functions.
+- **Relations and Functions** (`M-RELFUN`): Cartesian product; domain and range of a relation; domain and range of real functions; modulus, signum and greatest integer functions; exponential and logarithmic functions and their graphs; algebra and composition of functions; reflexive, symmetric, transitive and equivalence relations; one-one and onto functions; functional equations and counting functions.
 - **Trigonometric Functions** (`M-TRIG`): radian measure; signs, domain, range and graphs; sum and difference formulae; multiple angle identities: 2x and 3x; sum-to-product and product-to-sum; general solution of trigonometric equations.
 - **Principle of Mathematical Induction** (`M-PMI`): the induction step and simple applications; divisibility and sum statements by induction.
-- **Complex Numbers and Quadratic Equations** (`M-CMPLX`): algebra of complex numbers; conjugate and modulus; Argand plane and polar form; loci in the Argand plane; quadratic equations with real coefficients: complex roots; nature and relations of roots.
+- **Complex Numbers and Quadratic Equations** (`M-CMPLX`): algebra of complex numbers; conjugate and modulus; Argand plane and polar form; loci in the Argand plane; quadratic equations with real coefficients: complex roots; nature and relations of roots; polynomial equations: number of real roots; conditions on coefficients for rational or integer roots.
 - **Linear Inequalities** (`M-INEQ`): inequalities in one variable; graphical solution in two variables; systems of linear inequalities.
 - **Permutations and Combinations** (`M-PNC`): fundamental principle of counting; permutations with restrictions; permutations with repeated objects; combinations and selection problems; relations between nPr and nCr.
 - **Binomial Theorem** (`M-BINOM`): general and middle term; coefficient extraction; sums of binomial coefficients and Pascal triangle.
 - **Sequence and Series** (`M-SEQ`): arithmetic mean and its use; G.P.: general term and sum of n terms; infinite G.P.; A.M.–G.M. relation; special sums: Σk, Σk², Σk³.
 - **Straight Lines** (`M-LINES`): slope and angle between two lines; forms of the equation of a line; distance of a point from a line; normal form; families of lines, concurrency and reflection.
-- **Conic Sections** (`M-CONIC`): circle: standard equation; parabola: standard equation, focus, directrix, latus rectum; ellipse: standard equation and eccentricity; hyperbola: standard equation and eccentricity; degenerate conics and identifying a conic.
+- **Conic Sections** (`M-CONIC`): circle: standard equation; parabola: standard equation, focus, directrix, latus rectum; ellipse: standard equation and eccentricity; hyperbola: standard equation and eccentricity; degenerate conics and identifying a conic; circles touching lines and each other.
 - **Limits and Derivatives** (`M-LIMDER`): limits of polynomial and rational functions; trigonometric limits; exponential and logarithmic limits; derivative from first principles and as a rate; product, quotient and chain rule.
 - **Statistics** (`M-STAT`): range and mean deviation; variance and standard deviation of ungrouped data; variance and standard deviation of grouped data; effect of change of scale.
 - **Probability** (`M-PROB`): sample space and events; addition rule; mutually exclusive and exhaustive events; classical probability with counting; conditional probability; multiplication theorem and independent events; total probability; Bayes theorem.
@@ -284,15 +286,15 @@ Written 15 November 2026. **Status: plan only; no NEST test is written yet.** Th
 ## Using the plan
 
 1. Print the 80 rows of the test you are about to write.
-2. Write each question to its row. If a row cannot be met (for example the focus does not give a good hard question), edit the row and give the reason in `notes`; keep the chapter total.
+2. Write each question to its row. If a row cannot be met, edit the row and give the reason in `notes`; keep the chapter total.
 3. After the test is written, set `state`, `source_json` and `question_sha256` for its 80 rows in the same commit.
 4. Run `python3 tools/nest/plan_25_tests.py --check`. It fails if a (chapter, focus, angle) is used twice, if a section is not 20 questions with 3/13/4, or if a focus line has no slot.
-5. The script refuses to regenerate the CSV once any row is no longer `planned`, so authored tests cannot be overwritten.
+5. The generator refuses to rewrite the CSV once any row is no longer `planned`, so authored tests cannot be overwritten.
 
-## Checks passed on 15 November 2026
+## Checks passed
 
-- 2,000 slots, 2,000 different IDs.
-- 2,000 different (chapter, focus, angle) tasks.
+- 2000 slots, 2000 different IDs.
+- 2000 different (chapter, focus, angle) tasks.
 - Every one of the 100 sections has 20 slots with 3 easy, 13 medium, 4 hard.
-- All 103 chapters and all 522 focus lines have at least one slot.
-- No chapter appears more than twice in one section.
+- All 103 chapters and all 526 focus lines have at least one slot.
+- Most questions from one chapter in one section: 2.
