@@ -23,8 +23,9 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 | 15 | pass | fail → fixed: Q47 (propagation of percentage errors) is not in the syllabus, replaced | minor: Q54 and Q58 were one step, replaced | fail → fixed: 13 questions repeated earlier tests, replaced | 0 of 60 | all 60 rewritten (30 Maths/Physics as equations only) | Clean after fixes; 11 items flagged |
 | 16 | pass | fail → fixed: Q15 (secondary xylem and phloem from the cambium) is not in the current NCERT text, replaced | pass (harder than Tests 1–15, close to the real paper's upper range) | pass: no repeat of Tests 1–15 except Q29, fixed in Test 8 | 0 of 60 | 30 Maths/Physics rewritten as equations only; Biology/Chemistry solutions were already complete and are kept | Clean after fixes; 4 items flagged |
 | 17 | pass | fail → fixed: Q47 (propagation of uncertainties) is not in the syllabus, replaced | pass | pass, except Q21, which reused the combustion data of Test 6 Q20; data changed | 0 of 60 | 30 Maths/Physics rewritten as equations only; Q21 rewritten; other Biology/Chemistry solutions kept | Clean after fixes; 3 items flagged |
-| 18 | pass | pass (Q49 uses elastic energy; see flags) | pass | pass | 0 of 60 | 30 Maths/Physics rewritten as equations only; Biology/Chemistry solutions kept | Clean; 2 items flagged |
-| 19–25 | — | — | — | — | — | — | Not yet audited |
+| 18 | pass | pass (Q49 uses elastic energy; see flags) | pass | pass | 0 of 60 | 30 Maths/Physics rewritten as equations only; Biology/Chemistry solutions kept | Clean; 1 item flagged |
+| 19 | pass | pass | pass | pass | 0 of 60 | 30 Maths/Physics rewritten as equations only; Biology/Chemistry solutions kept | Clean; 1 item flagged |
+| 20–25 | — | — | — | — | — | — | Not yet audited |
 
 ## Changes made
 
@@ -247,10 +248,16 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 - Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 0 errors. Source text: `IISER/audit/solutions/test17.txt`.
 
 ### Test 18 (`IISER/IAT NEW TEST 18.json`)
-- All 60 answers re-derived; no key was wrong, and no question repeats an earlier test. No question was replaced. The figure questions state their data in the question text; the figures themselves were not opened.
-- **Flagged, left unchanged:** Q49 (elastic energy stored in stretched wires; this formula was removed from the NCERT chapter, the same point as Test 2 Q49 and Test 6 Q48); Q15 (figure; the answer depends on which side of the insert the figure marks as orientation X, which I could not confirm without opening it).
+- All 60 answers re-derived; no key was wrong, and no question repeats an earlier test. No question was replaced. The Q15 figure was opened and agrees with the key (H sites 2 kb and 6 kb apart in orientation X); the other figures were not opened.
+- **Flagged, left unchanged:** Q49 (elastic energy stored in stretched wires; this formula was removed from the NCERT chapter, the same point as Test 2 Q49 and Test 6 Q48).
 - Q31–Q60 rewritten as equations only. The Biology and Chemistry solutions were already complete and are kept.
 - Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 0 errors. Source text: `IISER/audit/solutions/test18.txt`.
+
+### Test 19 (`IISER/IAT NEW TEST 19.json`)
+- All 60 answers re-derived; no key was wrong, and no question repeats an earlier test. No question was replaced. The figure questions state their data in the question text; the figures themselves were not opened.
+- **Flagged, left unchanged:** Q5 (thyroxine replacement and TSH, the same feedback loop as Test 6 Q5 and Test 13 Q13, asked from a new angle).
+- Q31–Q60 rewritten as equations only. The Biology and Chemistry solutions were already complete and are kept.
+- Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 0 errors. Source text: `IISER/audit/solutions/test19.txt`.
 
 ## Not verified
 - Rendered PDF pages were not regenerated or inspected for Test 1 after the edit (the exporter needs Playwright and Chromium).

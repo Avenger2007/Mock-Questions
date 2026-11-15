@@ -1,0 +1,369 @@
+@@ Q31
+Answer: (A) \(8\sqrt2\).
+Given: \(F_1=(-3,0),\ F_2=(3,0),\quad2a=10,\quad PF_1=4\)
+Formula/Principle: \(PF_1+PF_2=2a;\quad\text{Heron}:\ \Delta=\sqrt{s(s-p)(s-q)(s-r)}\)
+Step 1: \(PF_2=10-4=6,\quad F_1F_2=6\)
+Step 2: \(s=\dfrac{4+6+6}{2}=8\)
+Worked derivation: \[\Delta=\sqrt{8\times4\times2\times2}=\sqrt{128}=8\sqrt2\]
+Check: \[\text{height}=\frac{2\Delta}{6}=\frac{8\sqrt2}{3}=y_P;\quad x_P=-\frac53:\ \frac{25/9}{25}+\frac{128/9}{16}=\frac19+\frac89=1\]
+Why: \(\text{sum of focal distances}=2a\)
+Why not the others: (B) \(4\sqrt2\) (half); (C) \(10=2a\); (D) \(16\sqrt2\) (double).
+Key point: \(PF_1+PF_2=2a\)
+
+@@ Q32
+Answer: (D) f is twice differentiable with f''(0)=0.
+Given: \(f(x)=|x-\sin x|\)
+Formula/Principle: \(x-\sin x=\dfrac{x^3}{6}-\dfrac{x^5}{120}+\dots\)
+Step 1: \(x-\sin x\ \text{has the sign of }x\Rightarrow f(x)=\operatorname{sgn}(x)\,(x-\sin x)\)
+Step 2: \(f(x)=\dfrac{|x|^3}{6}+O(|x|^5)\)
+Step 3: \(f'(x)=\operatorname{sgn}(x)(1-\cos x)\Rightarrow f'(0)=0\)
+Worked derivation: \[f''(0)=\lim_{h\to0}\frac{f'(h)-f'(0)}{h}=\lim_{h\to0}\frac{\operatorname{sgn}(h)(1-\cos h)}{h}=0\]
+Check: \[f''(x)=\operatorname{sgn}(x)\sin x=|\sin x|\to0\]
+Why: \(\text{the zero of}\ x-\sin x\ \text{at}\ 0\ \text{is of order 3}\)
+Why not the others: (A) \(f'(0)=0\ \text{exists}\); (B) \(f''(0)=0\ \text{exists}\); (C) \(f''(0)=0\ne1\).
+Key point: \(|g|\ \text{loses smoothness only to the order of the zero of }g\)
+
+@@ Q33
+Answer: (B) -1/2.
+Given: \(I(a)=\displaystyle\int_{-1}^1|x-a|\,dx=\frac32\)
+Formula/Principle: \(\text{split at}\ x=a\ \text{when}\ |a|\le1\)
+Step 1: \(|a|\le1:\ I=\displaystyle\int_{-1}^a(a-x)\,dx+\int_a^1(x-a)\,dx=\frac{(a+1)^2}{2}+\frac{(1-a)^2}{2}=a^2+1\)
+Step 2: \(a^2+1=\dfrac32\Rightarrow a=\pm\dfrac{1}{\sqrt2}\)
+Step 3: \(|a|>1:\ I=2|a|=\dfrac32\Rightarrow|a|=\dfrac34\ (\text{contradiction})\)
+Worked derivation: \[\frac{1}{\sqrt2}\times\left(-\frac{1}{\sqrt2}\right)=-\frac12\]
+Check: \[I(0)=1,\quad I(1)=2\Rightarrow\tfrac32\ \text{is attained for}\ 0<|a|<1\]
+Why: \(\text{the breakpoint }a\text{ lies inside the interval only for}\ |a|\le1\)
+Why not the others: (A) \(-\tfrac94\ne-\tfrac12\); (C) \(+\tfrac12\) (sign); (D) \(0\ne-\tfrac12\).
+Key point: \(\displaystyle\int_{-1}^1|x-a|\,dx=a^2+1\ (|a|\le1),\ 2|a|\ (|a|\ge1)\)
+
+@@ Q34
+Answer: (C) 4.
+Given: \(f(x)=x^2,\ \{-2,-1,0,1,2\}\to\{0,1,4\};\quad f(g(y))=y\)
+Formula/Principle: \(g(y)\in f^{-1}(y)\)
+Step 1: \(f^{-1}(0)=\{0\},\quad f^{-1}(1)=\{\pm1\},\quad f^{-1}(4)=\{\pm2\}\)
+Worked derivation: \[1\times2\times2=4\]
+Check: \[g:\ 0\mapsto0,\ 1\mapsto-1,\ 4\mapsto2:\ f(g(y))=y\]
+Why: \(\text{choices for different }y\text{ are independent}\)
+Why not the others: (A) \(2\) (one fibre only); (B) \(8\) (\(f^{-1}(0)\) counted as 2); (D) \(f\ \text{is onto}\Rightarrow\text{right inverses exist}\).
+Key point: \(\text{number of right inverses}=\prod|f^{-1}(y)|\)
+
+@@ Q35
+Answer: (A) -2 and 6.
+Given: \(A=\begin{pmatrix}a&b&0\\b&a&0\\0&0&2\end{pmatrix},\quad\operatorname{adj}A=2A\)
+Formula/Principle: \(A\,\operatorname{adj}A=(\det A)I\Rightarrow2A^2=(\det A)I\)
+Step 1: \(A^2=\begin{pmatrix}a^2+b^2&2ab&0\\2ab&a^2+b^2&0\\0&0&4\end{pmatrix}\)
+Step 2: \(2ab=0,\quad2\times4=\det A=8,\quad2(a^2+b^2)=8\)
+Step 3: \(\det A=2(a^2-b^2)=8\Rightarrow a^2-b^2=4,\ a^2+b^2=4\Rightarrow b=0,\ a=\pm2\)
+Worked derivation: \[\operatorname{tr}A=2a+2=6\ \text{or}\ -2\]
+Check: \[a=-2:\ A=\operatorname{diag}(-2,-2,2),\ \operatorname{adj}A=\operatorname{diag}(-4,-4,4)=2A\]
+Why: \(\text{both signs of }a\text{ satisfy every condition}\)
+Why not the others: (B) \(2\ne-2\); (C) \(-6\ne-2\); (D) \(a=-2\ \text{also works}\).
+Key point: \(A\,\operatorname{adj}A=(\det A)I\)
+
+@@ Q36
+Answer: (B) 2/5.
+Given: \(P(A)=0.4,\ P(B)=0.5,\ \text{independent}\)
+Formula/Principle: \(P(A\mid\text{exactly one})=\dfrac{P(A\cap B')}{P(A\cap B')+P(A'\cap B)}\)
+Step 1: \(P(A\cap B')=0.4\times0.5=0.20\)
+Step 2: \(P(A'\cap B)=0.6\times0.5=0.30\)
+Worked derivation: \[\frac{0.20}{0.50}=\frac25\]
+Check: \[0.20+0.30+0.20+0.30=1\]
+Why: \(\text{exactly one}=(A\cap B')\cup(A'\cap B)\)
+Why not the others: (A) \(\tfrac12\ne\tfrac25\); (C) \(\tfrac15=P(A\cap B')\); (D) \(\tfrac45\ne\tfrac25\).
+Key point: \(\text{here the condition leaves}\ P(A)\ \text{unchanged because}\ P(B)=\tfrac12\)
+
+@@ Q37
+Answer: (D) 3.
+Given: \(4R,\ 3U;\quad\text{no }UU;\quad\text{avoid }(2,1)\)
+Formula/Principle: \(\text{no two }U\text{ adjacent}:\ \dbinom{4+1}{3}=10;\quad\text{subtract paths through }(2,1)\)
+Step 1: \(\text{prefix to }(2,1):\ RRU,\ RUR,\ URR;\quad\text{suffix }(2R,2U)\ \text{with no }UU:\ URUR,\ URRU,\ RURU\)
+Step 2: \(RRU:\ \text{suffix must start with }R\Rightarrow1;\quad RUR:\ 3;\quad URR:\ 3\)
+Step 3: \(\text{through }(2,1):\ 1+3+3=7\)
+Worked derivation: \[10-7=3\]
+Check: \[URURURR\ \text{passes}\ (1,1),(2,2):\ \text{avoids}\ (2,1)\]
+Why: \(\text{the junction between prefix and suffix must also avoid }UU\)
+Why not the others: (A) \(10\) (vertex condition ignored); (B) \(7\) (paths through the vertex); (C) \(10-6=4\) (miscount of the junction case).
+Key point: \(\text{complement counting with a boundary check}\)
+
+@@ Q38
+Answer: (A) 70.
+Given: \(\displaystyle\sum_{k=0}^n\frac{(-1)^k}{k+1}\binom nk=\frac19\)
+Formula/Principle: \(\displaystyle\int_0^1(1-x)^n\,dx=\sum_{k=0}^n\binom nk(-1)^k\frac{1}{k+1}\)
+Step 1: \(\displaystyle\int_0^1(1-x)^n\,dx=\frac{1}{n+1}\)
+Step 2: \(\dfrac{1}{n+1}=\dfrac19\Rightarrow n=8\)
+Worked derivation: \[\binom84=70\]
+Check: \[n=1:\ 1-\tfrac12=\tfrac12=\tfrac{1}{1+1}\]
+Why: \(\text{integrating}\ x^k\ \text{gives the factor}\ \dfrac{1}{k+1}\)
+Why not the others: (B) \(56=\dbinom83\); (C) \(126=\dbinom94\); (D) \(28=\dbinom82\).
+Key point: \(\displaystyle\sum\frac{(-1)^k}{k+1}\binom nk=\frac{1}{n+1}\)
+
+@@ Q39
+Answer: (C) \(3(3/2)^{n-1}-2\).
+Given: \(S_n=3a_n-2n\)
+Formula/Principle: \(a_n=S_n-S_{n-1}\)
+Step 1: \(n=1:\ a_1=3a_1-2\Rightarrow a_1=1\)
+Step 2: \(a_n=3a_n-3a_{n-1}-2\Rightarrow a_n=\tfrac32a_{n-1}+1\)
+Step 3: \(a_n+2=\tfrac32(a_{n-1}+2),\quad a_1+2=3\)
+Worked derivation: \[a_n=3\left(\tfrac32\right)^{n-1}-2\]
+Check: \[a_2=\tfrac52:\ S_2=\tfrac72=3\cdot\tfrac52-4\]
+Why: \(\text{the shift by }2\text{ removes the constant term}\)
+Why not the others: (A) \(a_1=5\ne1\); (B) \(a_2=\tfrac32\ne\tfrac52\); (D) \(a_2=0\ne\tfrac52\).
+Key point: \(a_n=pa_{n-1}+q\Rightarrow a_n+\dfrac{q}{p-1}\ \text{is geometric}\)
+
+@@ Q40
+Answer: (D) 2.
+Given: \(f\ \text{continuous at }0,\ f(0)=1,\ f(2x)-f(x)=2x\)
+Formula/Principle: \(f(x)-f\left(\tfrac x2\right)=x\ \text{(telescoping)}\)
+Step 1: \(f(x)-f\left(\dfrac{x}{2^n}\right)=x\left(1+\dfrac12+\dots+\dfrac{1}{2^{n-1}}\right)=2x\left(1-2^{-n}\right)\)
+Step 2: \(n\to\infty:\ f\left(\dfrac{x}{2^n}\right)\to f(0)=1\)
+Worked derivation: \[f(x)=1+2x\Rightarrow f'(0)=2\]
+Check: \[f(2x)-f(x)=(1+4x)-(1+2x)=2x\]
+Why: \(\text{continuity at }0\ \text{fixes the limit of the telescoped term}\)
+Why not the others: (A) \(0\ne2\); (B) \(1=f(0)\); (C) \(4\ne2\).
+Key point: \(\text{iterate the scaling relation down to the point of continuity}\)
+
+@@ Q41
+Answer: (B) \(e\).
+Given: \(xy'=y-x,\quad x>0,\quad y(1)=1\)
+Formula/Principle: \(y=vx\Rightarrow y'=v+xv'\)
+Step 1: \(x(v+xv')=vx-x\Rightarrow xv'=-1\)
+Step 2: \(v=-\ln x+C;\quad v(1)=1\Rightarrow C=1\)
+Step 3: \(y=x(1-\ln x)\)
+Worked derivation: \[y=0\Rightarrow\ln x=1\Rightarrow x=e\]
+Check: \[y'=1-\ln x-1=-\ln x;\quad\frac{y-x}{x}=-\ln x\]
+Why: \(x>0\Rightarrow\text{only the factor}\ 1-\ln x\ \text{can vanish}\)
+Why not the others: (A) \(y(1)=1\ne0\); (C) \(y(e^{-1})=2e^{-1}\ne0\); (D) \(y(e^2)=-e^2\ne0\).
+Key point: \(\text{homogeneous equation}:\ y=vx\)
+
+@@ Q42
+Answer: (D) 19/9.
+Given: \(P=(2,1,0);\quad\text{line}:\ \mathbf r_0=(1,0,1),\ \mathbf d=(1,2,2)\)
+Formula/Principle: \(t=\dfrac{(P-\mathbf r_0)\cdot\mathbf d}{|\mathbf d|^2},\quad F=\mathbf r_0+t\mathbf d,\quad P'=2F-P\)
+Step 1: \(P-\mathbf r_0=(1,1,-1);\quad t=\dfrac{1+2-2}{9}=\dfrac19\)
+Step 2: \(F=\left(\dfrac{10}{9},\dfrac29,\dfrac{11}{9}\right)\)
+Step 3: \(P'=\left(\dfrac{20}{9}-2,\ \dfrac49-1,\ \dfrac{22}{9}\right)=\left(\dfrac29,-\dfrac59,\dfrac{22}{9}\right)\)
+Worked derivation: \[\frac29-\frac59+\frac{22}{9}=\frac{19}{9}\]
+Check: \[(P-F)\cdot\mathbf d=\left(\tfrac89,\tfrac79,-\tfrac{11}{9}\right)\cdot(1,2,2)=\tfrac{8+14-22}{9}=0\]
+Why: \(F\ \text{is the midpoint of}\ PP'\)
+Why not the others: (A) \(\tfrac{17}{9}\ne\tfrac{19}{9}\); (B) \(\tfrac19=t\); (C) \(3=\text{sum of coordinates of }P\).
+Key point: \(\text{image}=2\times\text{foot}-\text{point}\)
+
+@@ Q43
+Answer: (C) \(0\).
+Given: \(\mathbf a\times\mathbf b=\mathbf a\times\mathbf c\)
+Formula/Principle: \(V=|\mathbf a\cdot(\mathbf b\times\mathbf c)|=|\mathbf c\cdot(\mathbf a\times\mathbf b)|\)
+Step 1: \(\mathbf c\cdot(\mathbf a\times\mathbf b)=\mathbf c\cdot(\mathbf a\times\mathbf c)\)
+Worked derivation: \[\mathbf c\cdot(\mathbf a\times\mathbf c)=0\Rightarrow V=0\]
+Check: \[\mathbf a\times(\mathbf b-\mathbf c)=\mathbf 0\Rightarrow\mathbf b-\mathbf c=\lambda\mathbf a\ \text{or}\ \mathbf a=\mathbf 0\Rightarrow\text{coplanar}\]
+Why: \(\text{a triple product with a repeated vector vanishes}\)
+Why not the others: (A) \(|\mathbf a||\mathbf b\times\mathbf c|\ \text{needs}\ \mathbf a\perp\text{plane of }\mathbf b,\mathbf c\); (B) \(1\ne0\); (D) \(V=0\ \text{always}\).
+Key point: \([\mathbf a\ \mathbf b\ \mathbf c]=0\iff\text{coplanar}\)
+
+@@ Q44
+Answer: (A) 6.
+Given: \(\text{values }0,2,6;\ \text{frequencies }p,4,2;\quad\text{MAD about the mean}=\dfrac53\)
+Formula/Principle: \(\bar x=\dfrac{\sum fx}{\sum f},\quad\text{MAD}=\dfrac{\sum f|x-\bar x|}{\sum f}\)
+Step 1: \(\bar x=\dfrac{8+12}{p+6}=\dfrac{20}{p+6}\)
+Step 2: \(p\ge4\Rightarrow\bar x\le2:\ \sum f|x-\bar x|=p\bar x+4(2-\bar x)+2(6-\bar x)=20+(p-6)\bar x\)
+Step 3: \(\dfrac{20+(p-6)\frac{20}{p+6}}{p+6}=\dfrac53\Rightarrow\dfrac{40p}{(p+6)^2}=\dfrac53\Rightarrow p^2-12p+36=0\)
+Worked derivation: \[p=6\]
+Check: \[\bar x=\tfrac53:\ \frac{6(\tfrac53)+4(\tfrac13)+2(\tfrac{13}{3})}{12}=\frac{10+\tfrac43+\tfrac{26}{3}}{12}=\frac{20}{12}=\frac53\]
+Why: \(p<4\Rightarrow\bar x>2:\ \sum f|x-\bar x|=(p+4)\bar x-8+12-2\bar x\ \text{gives no integer solution}\)
+Why not the others: (B) \(p=3:\ \bar x=\tfrac{20}{9},\ \text{MAD}=\tfrac{136}{81}\); (C) \(p=4:\ \bar x=2,\ \text{MAD}=\tfrac85\); (D) \(p=12:\ \text{MAD}=\tfrac{40}{27}\).
+Key point: \(\text{the sign of}\ x-\bar x\ \text{depends on the unknown}\)
+
+@@ Q45
+Answer: (B) \(3/\sqrt{37}\).
+Given: \(\tan\alpha+\tan\beta=3,\quad\tan\alpha\tan\beta=\tfrac12,\quad\alpha,\beta\ \text{acute}\)
+Formula/Principle: \(\cos(\alpha-\beta)=\cos\alpha\cos\beta\,(1+\tan\alpha\tan\beta)\)
+Step 1: \(\dfrac{1}{\cos^2\alpha\cos^2\beta}=(1+\tan^2\alpha)(1+\tan^2\beta)=1+(t_1^2+t_2^2)+t_1^2t_2^2\)
+Step 2: \(t_1^2+t_2^2=9-1=8\Rightarrow1+8+\tfrac14=\tfrac{37}{4}\)
+Step 3: \(\cos\alpha\cos\beta=\dfrac{2}{\sqrt{37}}\)
+Worked derivation: \[\cos(\alpha-\beta)=\frac{2}{\sqrt{37}}\times\frac32=\frac{3}{\sqrt{37}}\]
+Check: \[\tan(\alpha-\beta)=\frac{\sqrt{9-2}}{1+\tfrac12}=\frac{2\sqrt7}{3}:\ \cos=\frac{3}{\sqrt{9+28}}\]
+Why: \(\text{acute angles}\Rightarrow\cos\alpha\cos\beta>0\)
+Why not the others: (A) \(\dfrac{1}{\sqrt{37}}\ne\dfrac{3}{\sqrt{37}}\); (C) \(\dfrac{3}{\sqrt7}>1\); (D) \(\dfrac{2}{\sqrt{37}}=\cos\alpha\cos\beta\).
+Key point: \(\text{use symmetric functions of}\ \tan\alpha,\ \tan\beta\)
+
+@@ Q46
+Answer: (B) -21 m/s.
+Given: \(a_p=2t\ \mathrm{m\,s^{-2}},\ v_p(0)=0;\quad\text{ball}:\ u=18\ \mathrm{m\,s^{-1}},\ g=10\ \mathrm{m\,s^{-2}}\)
+Formula/Principle: \(x_p=\dfrac{t^3}{3},\quad x_b=18t-5t^2\)
+Step 1: \(x_b=x_p:\ 18t-5t^2=\dfrac{t^3}{3}\Rightarrow t^2+15t-54=0\)
+Step 2: \((t-3)(t+18)=0\Rightarrow t=3\ \mathrm s\)
+Step 3: \(v_b=18-30=-12\ \mathrm{m\,s^{-1}},\quad v_p=t^2=9\ \mathrm{m\,s^{-1}}\)
+Worked derivation: \[v_{\text{rel}}=v_b-v_p=-12-9=-21\ \mathrm{m\,s^{-1}}\]
+Check: \[x_b(3)=54-45=9\ \mathrm m=\frac{27}{3}\]
+Why: \(\text{the platform is at rest at}\ t=0\Rightarrow\text{ground speed of the ball}=18\ \mathrm{m\,s^{-1}}\)
+Why not the others: (A) \(-12=v_b\); (C) \(-9=-v_p\); (D) \(+21\) (sign).
+Key point: \(\text{meet when positions are equal; relative velocity}=v_b-v_p\)
+
+@@ Q47
+Answer: (C) \(mg/k\), yes.
+Given: \(\text{initial compression}\ x_0=\dfrac{3mg}{2k},\ \text{released from rest}\)
+Formula/Principle: \(\text{equilibrium compression}\ x_e=\dfrac{mg}{k};\quad\text{SHM about}\ x_e\)
+Step 1: \(A=x_0-x_e=\dfrac{mg}{2k}\)
+Step 2: \(\text{rise}=2A=\dfrac{mg}{k}\)
+Step 3: \(\text{compression at the top}=x_e-A=\dfrac{mg}{2k}>0\)
+Worked derivation: \[\text{rise}=\frac{mg}{k};\qquad\text{spring still compressed}\Rightarrow\text{contact kept}\]
+Check: \[\tfrac12k\left(\tfrac{3mg}{2k}\right)^2-\tfrac12k\left(\tfrac{mg}{2k}\right)^2=\frac{m^2g^2}{k}=mg\cdot\frac{mg}{k}\]
+Why: \(A<x_e\Rightarrow\text{the spring never reaches its natural length}\)
+Why not the others: (A) \(\dfrac{3mg}{2k}\) (rise to natural length); (B) \(\dfrac{9mg}{8k}\) (gravity term mishandled); (D) \(\dfrac{mg}{2k}=A\).
+Key point: \(\text{separation needs}\ A>x_e\)
+
+@@ Q48
+Answer: (D) \(2MR^2/3\).
+Given: \(\dfrac{K_{\text{trans}}}{K_{\text{total}}}=\dfrac35,\quad v=\omega R\)
+Formula/Principle: \(K_{\text{total}}=\tfrac12Mv^2\left(1+\dfrac{I}{MR^2}\right)\)
+Step 1: \(\dfrac{1}{1+\frac{I}{MR^2}}=\dfrac35\Rightarrow\dfrac{I}{MR^2}=\dfrac23\)
+Worked derivation: \[I=\frac23MR^2\ \ (\text{thin spherical shell})\]
+Check: \[K_{\text{rot}}=\tfrac12\cdot\tfrac23MR^2\cdot\frac{v^2}{R^2}=\tfrac13Mv^2;\quad\frac{1/2}{1/2+1/3}=\frac35\]
+Why: \(\text{rolling without slipping}:\ \omega=\dfrac vR\)
+Why not the others: (A) \(\tfrac32MR^2\) (inverted); (B) \(\tfrac35MR^2\) (fraction itself); (C) \(\tfrac25MR^2:\ \text{ratio}=\tfrac57\).
+Key point: \(\dfrac{K_{\text{trans}}}{K}=\dfrac{1}{1+I/MR^2}\)
+
+@@ Q49
+Answer: (A) Downward by H/4.
+Given: \(\text{before}:\ \tfrac H2\ \text{in liquid}\ \rho,\ \tfrac H2\ \text{in liquid}\ \tfrac\rho2;\quad\text{after}:\ \text{lower liquid only}\)
+Formula/Principle: \(\text{weight}=\text{total buoyant force}\)
+Step 1: \(\rho_bH=\rho\cdot\dfrac H2+\dfrac\rho2\cdot\dfrac H2\Rightarrow\rho_b=\dfrac34\rho\)
+Step 2: \(\text{after}:\ \rho_bH=\rho h\Rightarrow h=\dfrac34H\)
+Worked derivation: \[\Delta=\frac34H-\frac12H=\frac H4\ \text{(downward)}\]
+Check: \[\tfrac34H<H\Rightarrow\text{the block still floats}\]
+Why: \(\text{the upper liquid had supplied part of the buoyancy}\)
+Why not the others: (B) \(\text{less buoyancy}\Rightarrow\text{sinks, not rises}\); (C) \(\tfrac H2\ \text{would submerge it fully}\); (D) \(\text{buoyancy changed}\).
+Key point: \(\text{each liquid contributes}\ \rho_iV_ig\)
+
+@@ Q50
+Answer: (C) \(11V/5\).
+Given: \(P_i=3P,\ V_i=V;\quad P_{\text{ext}}=P;\quad Q=0;\quad\text{monatomic}\)
+Formula/Principle: \(\Delta U=-W,\quad U=\tfrac32PV,\quad W=P_{\text{ext}}\,\Delta V\)
+Step 1: \(\tfrac32\left(PV_f-3PV\right)=-P(V_f-V)\)
+Step 2: \(\tfrac32V_f-\tfrac92V=-V_f+V\Rightarrow\tfrac52V_f=\tfrac{11}{2}V\)
+Worked derivation: \[V_f=\frac{11}{5}V\]
+Check: \[\frac{T_f}{T_i}=\frac{P\cdot\tfrac{11}{5}V}{3PV}=\frac{11}{15}<1\]
+Why: \(\text{irreversible}\Rightarrow PV^\gamma=\text{constant does not apply}\)
+Why not the others: (A) \(3V\) (isothermal); (B) \(3^{3/5}V\) (reversible adiabatic); (D) \(\dfrac{5V}{3}\ne\dfrac{11V}{5}\).
+Key point: \(\text{use the first law with}\ W=P_{\text{ext}}\Delta V\)
+
+@@ Q51
+Answer: (B) Leftward at 10 m/s.
+Given: \(A=0.020\ \mathrm m,\quad\lambda=0.40\ \mathrm m;\quad x=0,\ t=0:\ y=0,\ \dfrac{\partial y}{\partial x}>0,\ \dfrac{\partial y}{\partial t}=+\pi\ \mathrm{m\,s^{-1}}\)
+Formula/Principle: \(y=A\sin(kx\mp\omega t):\ \dfrac{\partial y}{\partial t}=\mp v\dfrac{\partial y}{\partial x}\)
+Step 1: \(\dfrac{\partial y}{\partial t}>0,\ \dfrac{\partial y}{\partial x}>0\Rightarrow\text{lower sign: }y=A\sin(kx+\omega t)\ \text{(leftward)}\)
+Step 2: \(A\omega=\pi\Rightarrow\omega=\dfrac{\pi}{0.020}=50\pi\ \mathrm{rad\,s^{-1}}\Rightarrow f=25\ \mathrm{Hz}\)
+Worked derivation: \[v=f\lambda=25\times0.40=10\ \mathrm{m\,s^{-1}}\]
+Check: \[k=\frac{2\pi}{0.40}=5\pi;\quad\frac\omega k=10\ \mathrm{m\,s^{-1}}\]
+Why: \(\text{for a rightward wave a point on a rising slope moves down}\)
+Why not the others: (A) \(\text{rightward}:\ \dfrac{\partial y}{\partial t}<0\); (C) \(25=f\ \text{in Hz}\); (D) \(\text{both errors}\).
+Key point: \(\dfrac{\partial y}{\partial t}=\mp v\dfrac{\partial y}{\partial x}\)
+
+@@ Q52
+Answer: (D) \(8\pi^2d^3/(3GT^2)\).
+Given: \(r_1=\dfrac d3,\ r_2=\dfrac{2d}{3},\ \text{separation }d,\ \text{period }T\)
+Formula/Principle: \(m_1r_1=m_2r_2;\quad\dfrac{Gm_1m_2}{d^2}=m_2\omega^2r_2\)
+Step 1: \(m_1=2m_2\)
+Step 2: \(m_1=\dfrac{\omega^2r_2d^2}{G}=\dfrac{4\pi^2}{T^2}\cdot\dfrac{2d}{3}\cdot\dfrac{d^2}{G}\)
+Worked derivation: \[m_1=\frac{8\pi^2d^3}{3GT^2}\]
+Check: \[m_1+m_2=\frac32m_1=\frac{4\pi^2d^3}{GT^2}\]
+Why: \(\text{the heavier body is nearer the centre of mass}\)
+Why not the others: (A) \(\dfrac{4\pi^2d^3}{3GT^2}=m_2\); (B) \(\dfrac{4\pi^2d^3}{GT^2}=m_1+m_2\); (C) \(\dfrac{8\pi^2d^3}{GT^2}\ne m_1\).
+Key point: \(T^2=\dfrac{4\pi^2d^3}{G(m_1+m_2)}\)
+
+@@ Q53
+Answer: (C) \(-3kQq/(16a^2),0,kQq/(4a)\).
+Given: \(-q\ \text{at}\ x=-a,\ +q\ \text{at}\ x=+a,\ +Q\ \text{at}\ x=3a\)
+Formula/Principle: \(F=\dfrac{kq_1q_2}{r^2},\quad U=\dfrac{kq_1q_2}{r}\)
+Step 1: \(F_{+q}=-\dfrac{kQq}{(2a)^2}=-\dfrac{kQq}{4a^2}\ \ (\text{repelled})\)
+Step 2: \(F_{-q}=+\dfrac{kQq}{(4a)^2}=+\dfrac{kQq}{16a^2}\ \ (\text{attracted})\)
+Step 3: \(U=\dfrac{kQq}{2a}-\dfrac{kQq}{4a}\)
+Worked derivation: \[F_x=-\frac{3kQq}{16a^2};\qquad\tau=0;\qquad U=\frac{kQq}{4a}\]
+Check: \[\text{all forces act along the }x\text{-axis through the centre}\Rightarrow\tau=0\]
+Why: \(\text{the nearer charge feels the stronger force}\)
+Why not the others: (A) \(+\dfrac{3kQq}{16a^2}\) (sign); (B) \(\text{distances }3a\text{ used for both}\); (D) \(F\ne0,\ \tau=0\).
+Key point: \(\text{non-uniform field}\Rightarrow\text{net force on a dipole}\)
+
+@@ Q54
+Answer: (A) \(3,3/4\).
+Given: \(C_0=\dfrac{\varepsilon_0A}{d};\quad X:\ \text{dielectric over half the area};\quad Y:\ \text{dielectric over half the gap};\quad\dfrac{C_X}{C_Y}=\dfrac43\)
+Formula/Principle: \(C_X=\dfrac{C_0}{2}(1+K)\ (\text{parallel});\quad C_Y=\dfrac{2KC_0}{1+K}\ (\text{series})\)
+Step 1: \(\dfrac{C_X}{C_Y}=\dfrac{(1+K)^2}{4K}=\dfrac43\)
+Step 2: \(3K^2-10K+3=0\Rightarrow K=3\ \text{or}\ \tfrac13\Rightarrow K=3\)
+Step 3: \(U=\dfrac{Q^2}{2C}\Rightarrow\dfrac{U_X}{U_Y}=\dfrac{C_Y}{C_X}\)
+Worked derivation: \[K=3;\qquad\frac{U_X}{U_Y}=\frac34\]
+Check: \[C_X=2C_0,\quad C_Y=\tfrac32C_0\]
+Why: \(\text{same charge}\Rightarrow\text{energy}\propto\dfrac1C\)
+Why not the others: (B) \(\tfrac43\) (inverted); (C) \(K=\tfrac13<1\); (D) \(K=4:\ \dfrac{25}{16}\ne\dfrac43\).
+Key point: \(\text{side by side: parallel; one behind the other: series}\)
+
+@@ Q55
+Answer: (D) \(5R/6,V/(5R)\).
+Given: \(\text{cube of 12 resistors }R;\ V\ \text{across a body diagonal }AB\)
+Formula/Principle: \(\text{symmetry}:\ I\to\dfrac I3,\ \dfrac I6,\ \dfrac I3\)
+Step 1: \(V=\dfrac I3R+\dfrac I6R+\dfrac I3R=\dfrac56IR\)
+Step 2: \(R_{\text{eq}}=\dfrac56R,\quad I=\dfrac{6V}{5R}\)
+Worked derivation: \[I_{\text{middle}}=\frac I6=\frac{V}{5R}\]
+Check: \[3\times\frac I3=6\times\frac I6=I\]
+Why: \(\text{the three vertices adjacent to }A\text{ are at one potential, as are the three adjacent to }B\)
+Why not the others: (A) \(R_{\text{eq}}\ne R\); (B) \(R_{\text{eq}}\ne\dfrac R2\); (C) \(\dfrac{V}{6R}\ne\dfrac{V}{5R}\).
+Key point: \(R_{\text{body diagonal}}=\dfrac56R\)
+
+@@ Q56
+Answer: (B) \(\mu_0I^2/(2\pi d)\), parallel to C towards B.
+Given: \(A=(0,0),\ B=(d,0),\ C=\left(\tfrac d2,\tfrac{\sqrt3}{2}d\right);\quad I_A,\ I_B\ \text{out};\ I_C\ \text{in}\)
+Formula/Principle: \(F_0=\dfrac{\mu_0I^2}{2\pi d}\ \text{per unit length};\ \text{like currents attract, unlike repel}\)
+Step 1: \(\mathbf F_{AB}=F_0(1,0)\)
+Step 2: \(\mathbf F_{AC}=F_0\left(-\tfrac12,-\tfrac{\sqrt3}{2}\right)\ \ (\text{away from }C)\)
+Worked derivation: \[\mathbf F=F_0\left(\tfrac12,-\tfrac{\sqrt3}{2}\right),\qquad|\mathbf F|=F_0=\frac{\mu_0I^2}{2\pi d}\]
+Check: \[\overrightarrow{CB}=\left(\tfrac d2,-\tfrac{\sqrt3}{2}d\right)\parallel\mathbf F\]
+Why: \(\text{two forces of equal size at}\ 120^\circ\ \text{give a resultant of the same size}\)
+Why not the others: (A) \(\sqrt3F_0\) (all currents parallel); (C) \(\mathbf F\ne0\); (D) \(2F_0\) (forces taken as parallel).
+Key point: \(\text{add the two forces as vectors}\)
+
+@@ Q57
+Answer: (D) \(4/3\text{ A},0.6\).
+Given: \(N_p:N_s=3:1,\ V_p=120\ \mathrm V;\quad R=6\ \Omega,\ X_L=10\ \Omega,\ X_C=2\ \Omega\)
+Formula/Principle: \(V_s=\dfrac{V_p}{3},\quad Z=\sqrt{R^2+(X_L-X_C)^2},\quad I_p=\dfrac{I_s}{3},\quad\cos\phi=\dfrac RZ\)
+Step 1: \(V_s=40\ \mathrm V,\quad Z=\sqrt{36+64}=10\ \Omega\)
+Step 2: \(I_s=4\ \mathrm A\)
+Worked derivation: \[I_p=\frac43\ \mathrm A;\qquad\cos\phi=\frac{6}{10}=0.6\]
+Check: \[P=I_s^2R=96\ \mathrm W=120\times\tfrac43\times0.6\]
+Why: \(\text{an ideal transformer does not change the phase angle}\)
+Why not the others: (A) \(4\ \mathrm A=I_s\); (B) \(\cos\phi=1\ \text{needs}\ X_L=X_C\); (C) \(12\ \mathrm A=3I_s,\ 0.8=\sin\phi\).
+Key point: \(Z_{\text{reflected}}=\left(\dfrac{N_p}{N_s}\right)^2Z\)
+
+@@ Q58
+Answer: (A) \([0,\theta)\cup(\pi-\theta,\pi]\).
+Given: \(n=2,\quad OP=\dfrac{3R}{4},\quad\alpha=\angle(\text{ray},\ OP)\)
+Formula/Principle: \(\text{sine rule in }\triangle OPS:\ \dfrac{\sin i}{OP}=\dfrac{\sin\alpha}{R};\quad\sin i_c=\dfrac1n\)
+Step 1: \(\sin i=\dfrac34\sin\alpha\)
+Step 2: \(\text{escape}:\ \sin i<\dfrac12\iff\sin\alpha<\dfrac23\)
+Worked derivation: \[\alpha\in[0,\theta)\cup(\pi-\theta,\pi],\qquad\theta=\arcsin\frac23\]
+Check: \[\alpha=\tfrac\pi2:\ \sin i=\tfrac34>\tfrac12\ (\text{total internal reflection})\]
+Why: \(\sin(\pi-\alpha)=\sin\alpha\Rightarrow\text{forward and backward rays are treated alike}\)
+Why not the others: (B) \(\alpha=\pi:\ i=0\ \text{also escapes}\); (C) \(\text{these rays are totally reflected}\); (D) \(\alpha=\tfrac\pi2\ \text{does not escape}\).
+Key point: \(\sin i=\dfrac{OP}{R}\sin\alpha\)
+
+@@ Q59
+Answer: (C) The fields are equal; no conduction current crosses the ideal gap.
+Given: \(\text{plate radius }a,\ \text{uniform }E(t)\ \text{for}\ r<a\)
+Formula/Principle: \(\displaystyle\oint\mathbf B\cdot d\mathbf l=\mu_0\varepsilon_0\frac{d\Phi_E}{dt}\)
+Step 1: \(r=\dfrac a2:\ B\cdot2\pi\dfrac a2=\mu_0\varepsilon_0\dot E\,\pi\dfrac{a^2}{4}\Rightarrow B=\dfrac{\mu_0\varepsilon_0\dot E\,a}{4}\)
+Step 2: \(r=2a:\ B\cdot2\pi(2a)=\mu_0\varepsilon_0\dot E\,\pi a^2\Rightarrow B=\dfrac{\mu_0\varepsilon_0\dot E\,a}{4}\)
+Worked derivation: \[B\left(\tfrac a2\right)=B(2a)=\frac{\mu_0\varepsilon_0a}{4}\frac{dE}{dt}\]
+Check: \[B(r)=\frac{\mu_0\varepsilon_0\dot E}{2}\,r\ (r<a),\qquad B(r)=\frac{\mu_0\varepsilon_0\dot E}{2}\,\frac{a^2}{r}\ (r>a)\]
+Why: \(\text{displacement current}\ \varepsilon_0\dfrac{d\Phi_E}{dt}\ \text{replaces the conduction current in the gap}\)
+Why not the others: (A) \(\text{no charges cross the gap}\); (B) \(I_d\ne0\); (D) \(B\ne0\).
+Key point: \(I_d=\varepsilon_0\dfrac{d\Phi_E}{dt}\)
+
+@@ Q60
+Answer: (B) 100 counts/min.
+Given: \(S_0=80\ \text{counts min}^{-1},\quad b=20\ \text{counts min}^{-1};\quad t=T_{1/2};\quad\text{efficiency}\times2\)
+Formula/Principle: \(R=\eta S+b\)
+Step 1: \(S=\dfrac{80}{2}=40\ \text{counts min}^{-1}\)
+Step 2: \(\text{doubled efficiency}:\ 2\times40=80\ \text{counts min}^{-1}\)
+Worked derivation: \[R=80+20=100\ \text{counts min}^{-1}\]
+Check: \[\text{without the geometry change}:\ 40+20=60\]
+Why: \(\text{the background is not from the source}\)
+Why not the others: (A) \(60\) (efficiency change omitted); (C) \(180\) (decay omitted); (D) \(50=\tfrac12\times100\).
+Key point: \(\text{only the source signal decays and scales with efficiency}\)
