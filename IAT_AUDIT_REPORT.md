@@ -22,7 +22,8 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 | 14 | pass | pass | minor: Q43, Q46, Q52 and Q56 were one step, replaced | fail → fixed: 18 questions repeated earlier tests, replaced | 0 of 60 | all 60 rewritten (30 Maths/Physics as equations only) | Clean after fixes; 8 items flagged |
 | 15 | pass | fail → fixed: Q47 (propagation of percentage errors) is not in the syllabus, replaced | minor: Q54 and Q58 were one step, replaced | fail → fixed: 13 questions repeated earlier tests, replaced | 0 of 60 | all 60 rewritten (30 Maths/Physics as equations only) | Clean after fixes; 11 items flagged |
 | 16 | pass | fail → fixed: Q15 (secondary xylem and phloem from the cambium) is not in the current NCERT text, replaced | pass (harder than Tests 1–15, close to the real paper's upper range) | pass: no repeat of Tests 1–15 except Q29, fixed in Test 8 | 0 of 60 | 30 Maths/Physics rewritten as equations only; Biology/Chemistry solutions were already complete and are kept | Clean after fixes; 4 items flagged |
-| 17–25 | — | — | — | — | — | — | Not yet audited |
+| 17 | pass | fail → fixed: Q47 (propagation of uncertainties) is not in the syllabus, replaced | pass | pass, except Q21, which reused the combustion data of Test 6 Q20; data changed | 0 of 60 | 30 Maths/Physics rewritten as equations only; Q21 rewritten; other Biology/Chemistry solutions kept | Clean after fixes; 3 items flagged |
+| 18–25 | — | — | — | — | — | — | Not yet audited |
 
 ## Changes made
 
@@ -235,6 +236,14 @@ Scores: **pass**, **minor** (small fixes made) or **fail** (questions replaced o
 - **Flagged, left unchanged:** Q2 (figure; root and stem bundles, the third such figure after Test 6 Q2 and Test 11 Q2, and one option mentions secondary xylem); Q4 (respiratory quotient of fermentation, which the NCERT text does not discuss); Q16 (figure; σ and π bond count, a longer version of Test 4 Q16); Q22 (Hinsberg test for three amines, extends Test 4 Q22).
 - Q31–Q60 rewritten as equations only. The Biology and Chemistry solutions already give the concept, the reasoning and a reason against each wrong option, so only Q15 was rewritten.
 - Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 0 errors. Source text: `IISER/audit/solutions/test16.txt`.
+
+### Test 17 (`IISER/IAT NEW TEST 17.json`)
+- All 60 answers re-derived; no key was wrong. The figure questions state their data in the question text; the figures themselves were not opened.
+- **Out of syllabus, replaced:** Q47 (percentage uncertainty of a density from subtracted volume readings) → average speed over two equal distances.
+- **Data changed:** Q21 used 0.900 g, 1.320 g CO₂ and 0.540 g H₂O, the same numbers as Test 6 Q20. It now uses 1.16 g, 2.64 g CO₂ and 1.08 g H₂O with molar mass 116, giving C₆H₁₂O₂; the key letter is unchanged.
+- **Flagged, left unchanged:** Q14 (cells re-entering the cycle from quiescence, close to my Test 14 Q3 on G₀); Q20 (electron gain enthalpy of F and Cl, as in Test 10 Q28, with an added part on O⁻); Q54 (Wheatstone bridge with a temperature-dependent arm, same idea as Test 11 Q56).
+- Q31–Q60 rewritten as equations only. The Biology and Chemistry solutions were already complete and are kept, apart from Q21.
+- Checks: `validate_iat.py` 0 errors, 15/15/15/15, 9/42/9; KaTeX parse 0 errors. Source text: `IISER/audit/solutions/test17.txt`.
 
 ## Not verified
 - Rendered PDF pages were not regenerated or inspected for Test 1 after the edit (the exporter needs Playwright and Chromium).
