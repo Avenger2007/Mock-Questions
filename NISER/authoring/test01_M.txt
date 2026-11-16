@@ -1,0 +1,445 @@
+@@ Q41
+format: conceptual
+sub_topic: Domain and range of a relation defined on a finite set
+Q: Let \(A=\{1,2,3,4,5,6,7,8\}\). For a positive integer \(k\), let \(R_k=\{(x,y)\in A\times A: xy=k\}\). For which values of \(k\) does the domain of \(R_k\) have exactly three elements?
+A) \(k=4\) and \(k=16\) only
+B) \(k=4,\ 9\) and \(16\) only
+C) \(k=16\) only
+D) \(k=4,\ 16\) and \(36\) only
+KEY: A
+SOL:
+Answer: (A) \(k=4\) and \(k=16\) only.
+Given: \(A=\{1,\dots,8\},\quad R_k=\{(x,y)\in A\times A:\ xy=k\}\)
+Formula/Principle: \(\operatorname{dom}R_k=\{d:\ d\mid k,\ 1\le d\le8,\ 1\le\tfrac kd\le8\};\quad(d,\tfrac kd)\in R_k\iff(\tfrac kd,d)\in R_k\)
+Step 1: \(\text{elements of the domain pair up as}\ d\leftrightarrow\tfrac kd;\ \text{an odd count needs}\ d=\tfrac kd\Rightarrow k=d^2\)
+Step 2: \(k\in\{1,4,9,16,25,36,49,64\}\)
+Step 3: \(k=4:\ \{1,2,4\}\ (3);\quad k=16:\ \{2,4,8\}\ (3)\)
+Step 4: \(k=1:\ \{1\};\ k=9:\ \{3\}\ (\tfrac91=9>8);\ k=25:\ \{5\};\ k=36:\ \{6\}\ (\tfrac{36}4=9>8);\ k=49:\ \{7\};\ k=64:\ \{8\}\)
+Worked derivation: \[|\operatorname{dom}R_k|=3\iff k\in\{4,16\}\]
+Check: \[R_4=\{(1,4),(2,2),(4,1)\},\qquad R_{16}=\{(2,8),(4,4),(8,2)\}\]
+Why: \(xy=k\ \text{is symmetric in}\ x\ \text{and}\ y,\ \text{so the domain equals the range}\)
+Why not the others: (B) \(k=9:\ (1,9)\notin A\times A\Rightarrow\operatorname{dom}=\{3\}\); (C) \(k=4\ \text{also gives}\ \{1,2,4\}\); (D) \(k=36:\ (4,9),(9,4)\notin A\times A\Rightarrow\operatorname{dom}=\{6\}\).
+Key point: \(\text{both}\ d\ \text{and}\ \tfrac kd\ \text{must lie in}\ A\)
+
+@@ Q42
+format: numerical
+sub_topic: Domain and range of a real function with a square root
+Q: Let \(f(x)=\sqrt{9-x^2}\) be a real function. How many integers are there in its domain and in its range, respectively?
+A) 7 and 7
+B) 6 and 3
+C) 7 and 4
+D) 9 and 4
+KEY: C
+SOL:
+Answer: (C) 7 and 4.
+Given: \(f(x)=\sqrt{9-x^2}\)
+Formula/Principle: \(\sqrt u\ \text{is real}\iff u\ge0\)
+Step 1: \(9-x^2\ge0\Rightarrow-3\le x\le3\Rightarrow\text{domain}=[-3,3]\)
+Step 2: \(\text{integers in the domain}:\ -3,-2,-1,0,1,2,3\ (7)\)
+Step 3: \(0\le9-x^2\le9\Rightarrow0\le f(x)\le3\Rightarrow\text{range}=[0,3]\)
+Worked derivation: \[\text{integers in the range}:\ 0,1,2,3\ (4)\]
+Check: \[f(\pm3)=0,\quad f(0)=3,\quad f(\pm\sqrt5)=2,\quad f(\pm2\sqrt2)=1\]
+Why: \(\text{the graph is the upper half of the circle}\ x^2+y^2=9\)
+Why not the others: (A) \(\text{range}\ne[-3,3]:\ \sqrt{\ }\ge0\); (B) \(\text{end points}\ \pm3\ \text{and}\ 0,3\ \text{are included}\); (D) \(|x|\le3,\ \text{not}\ |x|\le4\).
+Key point: \(y=\sqrt{a^2-x^2}:\ \text{domain}\ [-a,a],\ \text{range}\ [0,a]\)
+
+@@ Q43
+format: numerical
+sub_topic: Counting solutions with the graph of the sine function
+Q: How many real solutions does the equation \(\sin x=\dfrac{x}{20}\) have?
+A) 9
+B) 11
+C) 13
+D) 12
+KEY: B
+SOL:
+Answer: (B) 11.
+Given: \(\sin x=\dfrac x{20}\)
+Formula/Principle: \(|\sin x|\le1\Rightarrow|x|\le20;\quad\text{both sides are odd functions}\)
+Step 1: \(x=0\ \text{is a solution};\ \text{count}\ x>0\ \text{and double}\)
+Step 2: \(\sin x>0\ \text{on}\ (0,\pi),\ (2\pi,3\pi),\ (4\pi,5\pi),\ (6\pi,7\pi);\quad6\pi\approx18.85,\ 7\pi\approx21.99\)
+Step 3: \((0,\pi):\ \text{slope of}\ \tfrac x{20}\ \text{at}\ 0\ \text{is}\ \tfrac1{20}<1,\ \text{and}\ \tfrac\pi{20}>\sin\pi=0\Rightarrow1\ \text{solution}\)
+Step 4: \((2\pi,3\pi):\ \tfrac{2.5\pi}{20}\approx0.39<1\Rightarrow2;\qquad(4\pi,5\pi):\ \tfrac{4.5\pi}{20}\approx0.71<1\Rightarrow2\)
+Step 5: \((6\pi,20]:\ \tfrac x{20}\ge0.94,\ \sin x\le\sin20=\sin(20-6\pi)\approx\sin1.15\approx0.91\Rightarrow0\)
+Worked derivation: \[N=1+2(1+2+2)=11\]
+Check: \[x=6.5\pi\approx20.42>20:\ \text{the peak of the fourth arch lies outside}\ |x|\le20\]
+Why: \(\text{each full positive arch that rises above the line is cut twice}\)
+Why not the others: (A) \(9\ \text{omits the arch}\ (4\pi,5\pi)\); (C) \(13\ \text{counts two solutions in}\ (6\pi,7\pi)\); (D) \(\text{an even count is impossible: solutions come in pairs}\ \pm x\ \text{with}\ x=0\).
+Key point: \(\text{bound}\ |x|\ \text{first, then count arch by arch}\)
+
+@@ Q44
+format: numerical
+sub_topic: Modulus of complex numbers on the unit circle: greatest and least value of an expression
+Q: For complex numbers \(z\) with \(|z|=1\), let \(f(z)=|z+1|+|z^2+1|\). What are the least and the greatest values of \(f\)?
+A) 0 and 4
+B) \(\sqrt2\) and \(\dfrac94\)
+C) 2 and 4
+D) \(\sqrt2\) and 4
+KEY: D
+SOL:
+Answer: (D) \(\sqrt2\) and 4.
+Given: \(|z|=1,\quad f(z)=|z+1|+|z^2+1|\)
+Formula/Principle: \(z=e^{i\theta}:\ |z+1|=2\left|\cos\tfrac\theta2\right|,\quad|z^2+1|=|z|\,|z+\bar z|=2|\cos\theta|\)
+Step 1: \(t=|z+1|=2\left|\cos\tfrac\theta2\right|\in[0,2]\)
+Step 2: \(2\cos\theta=4\cos^2\tfrac\theta2-2=t^2-2\Rightarrow|z^2+1|=|t^2-2|\)
+Step 3: \(f=t+|t^2-2|\)
+Step 4: \(0\le t\le\sqrt2:\ f=2+t-t^2;\ f(0)=2,\ f\left(\tfrac12\right)=\tfrac94,\ f(\sqrt2)=\sqrt2\)
+Step 5: \(\sqrt2\le t\le2:\ f=t^2+t-2\ \text{(increasing)};\ f(\sqrt2)=\sqrt2,\ f(2)=4\)
+Worked derivation: \[f_{\min}=\sqrt2,\qquad f_{\max}=4\]
+Check: \[z=i:\ |1+i|+|i^2+1|=\sqrt2+0=\sqrt2;\qquad z=1:\ 2+2=4\]
+Why: \(\text{both terms depend on}\ \theta\ \text{only through}\ t=|z+1|\)
+Why not the others: (A) \(f=0\ \text{needs}\ z=-1\ \text{and}\ z^2=-1\ \text{together}\); (B) \(\tfrac94\ \text{is only a local maximum on}\ [0,\sqrt2]\); (C) \(2=f(-1)\ \text{is not the least:}\ f(i)=\sqrt2<2\).
+Key point: \(|z|=1\Rightarrow|z^2+1|=|z+\bar z|\)
+
+@@ Q45
+format: numerical
+sub_topic: Fundamental principle of counting with a restricted digit
+Q: How many four-digit numbers have all four digits different and are divisible by 5?
+A) 1008
+B) 1120
+C) 896
+D) 952
+KEY: D
+SOL:
+Answer: (D) 952.
+Given: \(\text{four different digits};\ \text{first digit}\ne0;\ \text{last digit}\in\{0,5\}\)
+Formula/Principle: \(\text{multiplication principle, with separate cases for the last digit}\)
+Step 1: \(\text{last digit}\ 0:\ 9\times8\times7=504\)
+Step 2: \(\text{last digit}\ 5:\ \text{first digit}\in\{1,2,3,4,6,7,8,9\}\ (8);\ \text{then}\ 8\times7\)
+Step 3: \(8\times8\times7=448\)
+Worked derivation: \[N=504+448=952\]
+Check: \[\text{ignoring the first-digit rule:}\ 2\times9\times8\times7=1008;\ \text{numbers}\ 0\,\_\,\_\,5:\ 8\times7=56;\quad1008-56=952\]
+Why: \(\text{when the last digit is}\ 5,\ \text{zero is still unused and cannot be the first digit}\)
+Why not the others: (A) \(1008\ \text{includes}\ 56\ \text{strings that begin with}\ 0\); (B) \(1120\ne504+448\); (C) \(896=2\times448\ \text{treats the case of last digit}\ 0\ \text{like that of}\ 5\).
+Key point: \(\text{split into cases when zero behaves differently}\)
+
+@@ Q46
+format: numerical
+sub_topic: Arithmetic means inserted between two numbers
+Q: \(n\) arithmetic means are inserted between 2 and 38. The ratio of the second mean to the second-last mean is \(1:3\). What are \(n\) and the sum of all the means?
+A) 8 and 180
+B) 8 and 160
+C) 9 and 180
+D) 7 and 140
+KEY: B
+SOL:
+Answer: (B) 8 and 160.
+Given: \(2,\ A_1,\ A_2,\dots,A_n,\ 38\ \text{in A.P.};\quad A_2:A_{n-1}=1:3\)
+Formula/Principle: \(d=\dfrac{38-2}{n+1},\quad A_k=2+kd,\quad\displaystyle\sum_{k=1}^nA_k=n\cdot\dfrac{2+38}2\)
+Step 1: \(A_2=2+2d,\quad A_{n-1}=38-2d\)
+Step 2: \(3(2+2d)=38-2d\Rightarrow8d=32\Rightarrow d=4\)
+Step 3: \(n+1=\dfrac{36}4=9\Rightarrow n=8\)
+Worked derivation: \[\sum A_k=8\times20=160\]
+Check: \[6,10,14,18,22,26,30,34:\quad\frac{10}{30}=\frac13,\quad\text{sum}=160\]
+Why: \(\text{the means are symmetric about}\ 20,\ \text{the mean of}\ 2\ \text{and}\ 38\)
+Why not the others: (A) \(180=9\times20\ \text{counts nine means}\); (C) \(n=9\Rightarrow d=3.6,\ \tfrac{9.2}{30.8}\ne\tfrac13\); (D) \(n=7\Rightarrow d=4.5,\ \tfrac{11}{29}\ne\tfrac13\).
+Key point: \(\text{sum of}\ n\ \text{arithmetic means between}\ a\ \text{and}\ b=n\cdot\dfrac{a+b}2\)
+
+@@ Q47
+format: numerical
+sub_topic: Lines through a point making a given angle with a given line
+Q: How many straight lines pass through the point (2, 3) and make an angle of 45° with the line \(x-2y=4\), and what is the sum of their slopes?
+A) 2 lines; \(\dfrac83\)
+B) 1 line; 3
+C) 2 lines; \(\dfrac{10}3\)
+D) 4 lines; 0
+KEY: A
+SOL:
+Answer: (A) 2 lines; \(\dfrac83\).
+Given: \(x-2y=4\Rightarrow m_1=\tfrac12;\quad\theta=45^\circ;\quad\text{point}\ (2,3)\)
+Formula/Principle: \(\tan\theta=\left|\dfrac{m-m_1}{1+mm_1}\right|\)
+Step 1: \(\left|\dfrac{m-\tfrac12}{1+\tfrac m2}\right|=1\Rightarrow m-\tfrac12=\pm\left(1+\tfrac m2\right)\)
+Step 2: \(+:\ \tfrac m2=\tfrac32\Rightarrow m=3\)
+Step 3: \(-:\ \tfrac{3m}2=-\tfrac12\Rightarrow m=-\tfrac13\)
+Worked derivation: \[2\ \text{lines};\qquad3+\left(-\tfrac13\right)=\tfrac83\]
+Check: \[3\times\left(-\tfrac13\right)=-1\ \ (\text{the two lines are perpendicular, each at}\ 45^\circ\ \text{to the given line})\]
+Why: \(\text{a line can be turned through}\ 45^\circ\ \text{in two senses}\)
+Why not the others: (B) \(\text{the case}\ m=-\tfrac13\ \text{is omitted}\); (C) \(\tfrac{10}3=3+\tfrac13\ \text{(sign of the second slope lost)}\); (D) \(|\cdot|=1\ \text{gives two linear equations, so two slopes}\).
+Key point: \(\text{the modulus in}\ \tan\theta\ \text{gives two lines through a point}\)
+
+@@ Q48
+format: numerical
+sub_topic: Greatest value of x² + y² and of y/x on a circle
+Q: A point \((x,y)\) moves on the circle \(x^2+y^2-6x-8y+21=0\). What are the greatest values of \(x^2+y^2\) and of \(\dfrac yx\)?
+A) 7 and \(\dfrac{12+2\sqrt{21}}5\)
+B) 49 and \(\dfrac43\)
+C) 49 and \(\dfrac{12+2\sqrt{21}}5\)
+D) 25 and \(\dfrac{12-2\sqrt{21}}5\)
+KEY: C
+SOL:
+Answer: (C) 49 and \(\dfrac{12+2\sqrt{21}}5\).
+Given: \(x^2+y^2-6x-8y+21=0\)
+Formula/Principle: \(x^2+y^2=OP^2;\quad\dfrac yx=\text{slope of}\ OP;\quad\text{tangent}\ y=mx:\ \dfrac{|3m-4|}{\sqrt{1+m^2}}=r\)
+Step 1: \((x-3)^2+(y-4)^2=9+16-21=4\Rightarrow C(3,4),\ r=2\)
+Step 2: \(OC=5\Rightarrow OP_{\max}=5+2=7\Rightarrow(x^2+y^2)_{\max}=49\)
+Step 3: \((3m-4)^2=4(1+m^2)\Rightarrow5m^2-24m+12=0\)
+Step 4: \(m=\dfrac{24\pm\sqrt{576-240}}{10}=\dfrac{24\pm4\sqrt{21}}{10}=\dfrac{12\pm2\sqrt{21}}5\)
+Worked derivation: \[(x^2+y^2)_{\max}=49,\qquad\left(\frac yx\right)_{\max}=\frac{12+2\sqrt{21}}5\approx4.23\]
+Check: \[OC=5>r=2\Rightarrow O\ \text{is outside the circle, so two tangents exist;}\quad\frac{12-2\sqrt{21}}5\approx0.57<\frac43<4.23\]
+Why: \(\text{the extreme slopes of}\ OP\ \text{are the slopes of the tangents from}\ O\)
+Why not the others: (A) \(7=OP_{\max},\ \text{not}\ OP_{\max}^2\); (B) \(\tfrac43\ \text{is the slope of}\ OC,\ \text{not the greatest slope}\); (D) \(25=OC^2,\ \text{and}\ \tfrac{12-2\sqrt{21}}5\ \text{is the least value of}\ \tfrac yx\).
+Key point: \(\text{read}\ x^2+y^2\ \text{as a squared distance and}\ \tfrac yx\ \text{as a slope}\)
+
+@@ Q49
+format: conceptual
+sub_topic: Parabola y² = −4ax: direction of opening, focus, directrix and latus rectum
+Q: For the parabola \(y^2=-12x\), which description is correct?
+A) It opens to the right; focus (3, 0); directrix \(x=-3\); latus rectum 12
+B) It opens to the left; focus (−3, 0); directrix \(x=-3\); latus rectum 12
+C) It opens to the left; focus (−3, 0); directrix \(x=3\); latus rectum 12
+D) It opens downwards; focus (0, −3); directrix \(y=3\); latus rectum 12
+KEY: C
+SOL:
+Answer: (C) It opens to the left; focus (−3, 0); directrix \(x=3\); latus rectum 12.
+Given: \(y^2=-12x\)
+Formula/Principle: \(y^2=-4ax\ (a>0):\ \text{opens left, focus}\ (-a,0),\ \text{directrix}\ x=a,\ \text{latus rectum}\ 4a\)
+Step 1: \(4a=12\Rightarrow a=3\)
+Step 2: \(y^2\ge0\Rightarrow x\le0\Rightarrow\text{opens to the left}\)
+Worked derivation: \[\text{focus}\ (-3,0),\qquad\text{directrix}\ x=3,\qquad\text{latus rectum}=12\]
+Check: \[P(-3,6):\ 36=-12(-3);\quad PF=6,\quad\text{distance to}\ x=3\ \text{is}\ 6\]
+Why: \(\text{the focus and the directrix lie on opposite sides of the vertex}\)
+Why not the others: (A) \(x\le0\Rightarrow\text{not to the right}\); (B) \(\text{the directrix}\ x=-3\ \text{passes through the focus}\); (D) \(\text{the squared variable is}\ y,\ \text{so the axis is the}\ x\text{-axis}\).
+Key point: \(y^2=-4ax:\ \text{focus}\ (-a,0),\ \text{directrix}\ x=a\)
+
+@@ Q50
+format: conceptual
+sub_topic: Limits of a rational function at a removable point and at a pole
+Q: Let \(f(x)=\dfrac{x^3-3x+2}{x^2-3x+2}\) for \(x\ne1,\ 2\). Which statement is correct?
+A) \(\displaystyle\lim_{x\to1}f(x)=0\); as \(x\to2\) there is no finite limit, with \(f(x)\to-\infty\) from the left and \(+\infty\) from the right
+B) \(\displaystyle\lim_{x\to1}f(x)\) does not exist because the expression is of the form \(\dfrac00\); \(\displaystyle\lim_{x\to2}f(x)=4\)
+C) \(\displaystyle\lim_{x\to1}f(x)=3\) and \(\displaystyle\lim_{x\to2}f(x)=4\)
+D) \(\displaystyle\lim_{x\to1}f(x)=0\); \(f(x)\to+\infty\) from both sides as \(x\to2\)
+KEY: A
+SOL:
+Answer: (A) \(\displaystyle\lim_{x\to1}f(x)=0\); as \(x\to2\) there is no finite limit, with \(f(x)\to-\infty\) from the left and \(+\infty\) from the right.
+Given: \(f(x)=\dfrac{x^3-3x+2}{x^2-3x+2},\ x\ne1,2\)
+Formula/Principle: \(\text{cancel the common factor before taking the limit}\)
+Step 1: \(x^3-3x+2=(x-1)(x^2+x-2)=(x-1)^2(x+2)\)
+Step 2: \(x^2-3x+2=(x-1)(x-2)\)
+Step 3: \(f(x)=\dfrac{(x-1)(x+2)}{x-2}\quad(x\ne1,2)\)
+Step 4: \(\displaystyle\lim_{x\to1}f(x)=\dfrac{0\times3}{-1}=0\)
+Worked derivation: \[x\to2:\ (x-1)(x+2)\to4>0,\quad x-2\to0^-\Rightarrow f\to-\infty;\quad x-2\to0^+\Rightarrow f\to+\infty\]
+Check: \[f(1.9)=\frac{0.9\times3.9}{-0.1}=-35.1,\qquad f(2.1)=\frac{1.1\times4.1}{0.1}=45.1,\qquad f(1.01)=\frac{0.01\times3.01}{-0.99}\approx-0.03\]
+Why: \(\tfrac00\ \text{is a form, not a value;}\ \text{the factor}\ (x-1)\ \text{cancels once and one more remains in the numerator}\)
+Why not the others: (B) \(\text{the}\ \tfrac00\ \text{form at}\ 1\ \text{has the limit}\ 0;\ 4\ \text{is only the numerator at}\ 2\); (C) \(3=x+2\ \text{at}\ 1\ \text{forgets the factor}\ (x-1)\); (D) \(x-2\ \text{changes sign at}\ 2\).
+Key point: \(\text{factorise; a remaining zero in the denominator gives one-sided infinite limits}\)
+
+@@ Q51
+format: conceptual
+sub_topic: Sample space of an experiment that can stop early
+Q: A fair die is rolled until a six appears or three rolls have been made, whichever happens first. The outcome is recorded as the list of numbers rolled. How many points does the sample space have, are they equally likely, and what is the probability that the experiment ends on the first roll?
+A) 216; equally likely; \(\dfrac1{216}\)
+B) 156; equally likely; \(\dfrac1{156}\)
+C) 3; equally likely; \(\dfrac13\)
+D) 156; not equally likely; \(\dfrac16\)
+KEY: D
+SOL:
+Answer: (D) 156; not equally likely; \(\dfrac16\).
+Given: \(\text{stop at the first six or after three rolls}\)
+Formula/Principle: \(\text{sample space}=\text{set of all possible recorded lists};\quad P(\text{list})=\left(\tfrac16\right)^{\text{length}}\)
+Step 1: \(\text{length 1}:\ (6)\ \to1\)
+Step 2: \(\text{length 2}:\ (a,6),\ a\ne6\ \to5\)
+Step 3: \(\text{length 3}:\ (a,b,c),\ a,b\ne6,\ c\ \text{any}\ \to5\times5\times6=150\)
+Step 4: \(P(6)=\tfrac16,\quad P(a,6)=\tfrac1{36},\quad P(a,b,c)=\tfrac1{216}\)
+Worked derivation: \[|S|=1+5+150=156,\qquad P(\text{ends on the first roll})=\tfrac16\]
+Check: \[1\cdot\tfrac16+5\cdot\tfrac1{36}+150\cdot\tfrac1{216}=\tfrac{36+30+150}{216}=1\]
+Why: \(\text{lists of different lengths have different probabilities}\)
+Why not the others: (A) \(216\ \text{assumes three rolls are always made}\); (B) \(P(6)=\tfrac16\ne\tfrac1{156}\); (C) \(\text{the outcome is the list of numbers, not only the number of rolls}\).
+Key point: \(\text{sample points need not be equally likely}\)
+
+@@ Q52
+format: numerical
+sub_topic: Principal values of inverse sine and inverse cosine of a number outside the principal range
+Q: With angles in radians and principal values of the inverse functions, what is the value of \(\sin^{-1}(\sin10)+\cos^{-1}(\cos10)\)?
+A) 0
+B) \(7\pi-20\)
+C) \(20-7\pi\)
+D) \(\pi\)
+KEY: B
+SOL:
+Answer: (B) \(7\pi-20\).
+Given: \(\sin^{-1}:[-1,1]\to\left[-\tfrac\pi2,\tfrac\pi2\right],\quad\cos^{-1}:[-1,1]\to[0,\pi];\quad3\pi\approx9.42,\ 4\pi\approx12.57\)
+Formula/Principle: \(\sin(3\pi-x)=\sin x,\quad\cos(4\pi-x)=\cos x\)
+Step 1: \(3\pi-10\approx-0.58\in\left[-\tfrac\pi2,\tfrac\pi2\right]\Rightarrow\sin^{-1}(\sin10)=3\pi-10\)
+Step 2: \(4\pi-10\approx2.57\in[0,\pi]\Rightarrow\cos^{-1}(\cos10)=4\pi-10\)
+Worked derivation: \[(3\pi-10)+(4\pi-10)=7\pi-20\approx1.99\]
+Check: \[\sin10\approx-0.544=\sin(-0.575);\qquad\cos10\approx-0.839=\cos(2.566);\qquad-0.575+2.566=1.991\]
+Why: \(\text{each inverse function returns the angle in its own principal range}\)
+Why not the others: (A) \(0\ \text{would need the two values to be equal and opposite}\); (C) \(20-7\pi<0,\ \text{but the sum is}\ -0.575+2.566>0\); (D) \(\pi\ \text{is}\ \sin^{-1}u+\cos^{-1}u+\tfrac\pi2,\ \text{a different identity}\).
+Key point: \(\sin^{-1}(\sin x)\ne x\ \text{outside}\ \left[-\tfrac\pi2,\tfrac\pi2\right]\)
+
+@@ Q53
+format: numerical
+sub_topic: Transpose and product of matrices: a matrix with A Aᵀ a scalar matrix
+Q: Let \(A=\begin{pmatrix}1&2\\a&b\end{pmatrix}\) with real \(a,\ b\) satisfy \(AA^T=5I\). How many such pairs \((a,b)\) are there, and what is \(\det A\)?
+A) Two pairs; \(\det A=5\) for one and \(-5\) for the other
+B) One pair; \(\det A=5\)
+C) Two pairs; \(\det A=5\) for both
+D) Infinitely many pairs; \(\det A\) is not fixed
+KEY: A
+SOL:
+Answer: (A) Two pairs; \(\det A=5\) for one and \(-5\) for the other.
+Given: \(A=\begin{pmatrix}1&2\\a&b\end{pmatrix},\quad AA^T=5I\)
+Formula/Principle: \((AA^T)_{ij}=(\text{row}\ i)\cdot(\text{row}\ j)\)
+Step 1: \(AA^T=\begin{pmatrix}5&a+2b\\a+2b&a^2+b^2\end{pmatrix}\)
+Step 2: \(a+2b=0\Rightarrow a=-2b\)
+Step 3: \(a^2+b^2=5\Rightarrow5b^2=5\Rightarrow b=\pm1\)
+Step 4: \((a,b)=(-2,1)\ \text{or}\ (2,-1)\)
+Worked derivation: \[\det A=b-2a:\quad(-2,1)\to1+4=5;\qquad(2,-1)\to-1-4=-5\]
+Check: \[\det(AA^T)=(\det A)^2=\det(5I)=25\Rightarrow\det A=\pm5\]
+Why: \(\text{the second row must be perpendicular to}\ (1,2)\ \text{and have the same length}\ \sqrt5\)
+Why not the others: (B) \(b=-1\ \text{is also allowed}\); (C) \((2,-1)\ \text{gives}\ -5\); (D) \(\text{two equations fix}\ (a,b)\ \text{up to sign}\).
+Key point: \(AA^T=kI\Rightarrow\text{rows are mutually perpendicular with length}\ \sqrt k\)
+
+@@ Q54
+format: numerical
+sub_topic: Points of discontinuity of a greatest integer function of sin x
+Q: Let \([\,t\,]\) denote the greatest integer not exceeding \(t\). At how many points of the open interval \((0,\pi)\) is \(f(x)=[\,2\sin x\,]\) discontinuous?
+A) 2
+B) 1
+C) 4
+D) 3
+KEY: D
+SOL:
+Answer: (D) 3.
+Given: \(f(x)=[2\sin x],\quad0<x<\pi\)
+Formula/Principle: \([t]\ \text{can be discontinuous only where}\ t\ \text{is an integer}\)
+Step 1: \(0<2\sin x\le2\ \text{on}\ (0,\pi)\Rightarrow2\sin x\in\{1,2\}\ \text{to be checked}\)
+Step 2: \(2\sin x=1\Rightarrow x=\tfrac\pi6,\ \tfrac{5\pi}6:\ f\ \text{jumps between}\ 0\ \text{and}\ 1\)
+Step 3: \(2\sin x=2\Rightarrow x=\tfrac\pi2:\ f\left(\tfrac\pi2\right)=2,\ \text{but}\ f=1\ \text{on both sides}\)
+Worked derivation: \[f=\begin{cases}0,&0<x<\tfrac\pi6\ \text{or}\ \tfrac{5\pi}6<x<\pi\\1,&\tfrac\pi6\le x\le\tfrac{5\pi}6,\ x\ne\tfrac\pi2\\2,&x=\tfrac\pi2\end{cases}\Rightarrow3\ \text{points}\]
+Check: \[\lim_{x\to\pi/2}f(x)=1\ne2=f\left(\tfrac\pi2\right);\qquad\lim_{x\to\pi/6^-}f=0\ne1=\lim_{x\to\pi/6^+}f\]
+Why: \(\text{at}\ \tfrac\pi2\ \text{the limit exists but differs from the value}\)
+Why not the others: (A) \(2\ \text{omits}\ x=\tfrac\pi2\); (B) \(1\ \text{counts only}\ x=\tfrac\pi2\); (C) \(2\sin x=0\ \text{has no solution inside}\ (0,\pi)\).
+Key point: \(\text{check every point where the inside of}\ [\ ]\ \text{is an integer, including touching points}\)
+
+@@ Q55
+format: numerical
+sub_topic: Rate of change of the distance of a moving point from the origin
+Q: A particle moves along the curve \(y=\sqrt x\) so that its \(x\)-coordinate increases at 3 units per second. At what rate is its distance from the origin increasing when it is at the point (4, 2)?
+A) 3 units per second
+B) \(\dfrac{27\sqrt5}{20}\) units per second
+C) \(\dfrac{27}{20}\) units per second
+D) \(\dfrac{9\sqrt5}{20}\) units per second
+KEY: B
+SOL:
+Answer: (B) \(\dfrac{27\sqrt5}{20}\) units per second.
+Given: \(y=\sqrt x,\quad\dfrac{dx}{dt}=3,\quad(x,y)=(4,2)\)
+Formula/Principle: \(r^2=x^2+y^2=x^2+x\Rightarrow2r\dfrac{dr}{dt}=(2x+1)\dfrac{dx}{dt}\)
+Step 1: \(r=\sqrt{16+4}=2\sqrt5\)
+Step 2: \(2(2\sqrt5)\dfrac{dr}{dt}=(9)(3)=27\)
+Worked derivation: \[\frac{dr}{dt}=\frac{27}{4\sqrt5}=\frac{27\sqrt5}{20}\approx3.02\ \text{units per second}\]
+Check: \[\vec v=\left(3,\ \tfrac{3}{2\sqrt4}\right)=\left(3,\tfrac34\right);\quad\frac{\vec r\cdot\vec v}{r}=\frac{12+1.5}{2\sqrt5}=\frac{27}{4\sqrt5}\]
+Why: \(\dfrac{dr}{dt}\ \text{is the component of the velocity along}\ OP\)
+Why not the others: (A) \(3\ \text{is}\ \tfrac{dx}{dt},\ \text{not}\ \tfrac{dr}{dt}\); (C) \(\tfrac{27}{20}\ \text{uses}\ r=10\ \text{in place of}\ 2\sqrt5\); (D) \(\tfrac{9\sqrt5}{20}\ \text{omits the factor}\ \tfrac{dx}{dt}=3\).
+Key point: \(\dfrac{dr}{dt}=\dfrac{\vec r\cdot\vec v}{r}\)
+
+@@ Q56
+format: conceptual
+sub_topic: A function defined by an integral evaluated by substitution
+Q: For \(x>0\), let \(F(x)=\displaystyle\int_1^x\frac{\ln t}{t}\,dt\). Which statement is correct?
+A) \(F\) is increasing on \((0,\infty)\)
+B) \(F\left(\dfrac1e\right)=-\dfrac12\)
+C) \(F(x)=F\left(\dfrac1x\right)\) for all \(x>0\), and the least value of \(F\) is 0, at \(x=1\)
+D) \(F(x)\le\dfrac12\) for all \(x>0\)
+KEY: C
+SOL:
+Answer: (C) \(F(x)=F\left(\dfrac1x\right)\) for all \(x>0\), and the least value of \(F\) is 0, at \(x=1\).
+Given: \(F(x)=\displaystyle\int_1^x\frac{\ln t}t\,dt,\quad x>0\)
+Formula/Principle: \(u=\ln t,\ du=\dfrac{dt}t\)
+Step 1: \(F(x)=\displaystyle\int_0^{\ln x}u\,du=\frac{(\ln x)^2}2\)
+Step 2: \(\ln\tfrac1x=-\ln x\Rightarrow F\left(\tfrac1x\right)=\dfrac{(-\ln x)^2}2=F(x)\)
+Step 3: \((\ln x)^2\ge0,\ \text{with equality only at}\ x=1\)
+Worked derivation: \[F(x)=\frac{(\ln x)^2}2\ge0=F(1),\qquad F(x)=F\left(\frac1x\right)\]
+Check: \[F'(x)=\frac{\ln x}x:\ <0\ \text{on}\ (0,1),\ >0\ \text{on}\ (1,\infty);\qquad F(e)=F\left(\tfrac1e\right)=\tfrac12\]
+Why: \(\text{for}\ x<1\ \text{the integrand is negative and the limits are reversed, so}\ F>0\)
+Why not the others: (A) \(F'(x)<0\ \text{on}\ (0,1)\); (B) \(F\left(\tfrac1e\right)=\tfrac{(-1)^2}2=+\tfrac12\); (D) \(F(e^2)=2>\tfrac12\).
+Key point: \(\displaystyle\int\frac{\ln t}t\,dt=\frac{(\ln t)^2}2+C\)
+
+@@ Q57
+format: numerical
+sub_topic: Finding the integrand from its partial-fraction integral
+Q: It is given that \(\displaystyle\int\frac{ax+b}{(x-1)(x-2)}\,dx=3\ln|x-1|+2\ln|x-2|+C\). What are \(a\) and \(b\)?
+A) \(a=5,\ b=8\)
+B) \(a=5,\ b=-8\)
+C) \(a=1,\ b=-4\)
+D) \(a=6,\ b=-7\)
+KEY: B
+SOL:
+Answer: (B) \(a=5,\ b=-8\).
+Given: \(\displaystyle\int\frac{ax+b}{(x-1)(x-2)}dx=3\ln|x-1|+2\ln|x-2|+C\)
+Formula/Principle: \(\dfrac d{dx}\ln|x-k|=\dfrac1{x-k}\)
+Step 1: \(\dfrac{ax+b}{(x-1)(x-2)}=\dfrac3{x-1}+\dfrac2{x-2}\)
+Step 2: \(ax+b=3(x-2)+2(x-1)=5x-8\)
+Worked derivation: \[a=5,\qquad b=-8\]
+Check: \[x=1:\ a+b=-3=3(1-2);\qquad x=2:\ 2a+b=2=2(2-1)\]
+Why: \(\text{differentiating the answer gives the partial fractions of the integrand}\)
+Why not the others: (A) \(b=+8\ \text{has the wrong sign}\); (C) \(x-4=3(x-2)-2(x-1)\ \text{(sign of the second term)}\); (D) \(6x-7\ \text{gives}\ -1\ \text{at}\ x=1,\ \text{not}\ -3\).
+Key point: \(\dfrac A{x-1}+\dfrac B{x-2}\Rightarrow\text{numerator}=A(x-2)+B(x-1)\)
+
+@@ Q58
+format: conceptual
+sub_topic: Order and degree of a differential equation; a solution outside the general solution
+Q: The family of lines \(y=cx+c^2\), where \(c\) is an arbitrary constant, is the general solution of a differential equation. Which statement about this differential equation is correct?
+A) It has order 2 and degree 1
+B) It has order 1 and degree 1
+C) It has order 1 and degree 2, and \(y=-\dfrac{x^2}4\) also satisfies it although it is not obtained for any value of \(c\)
+D) It has order 1 and degree 2, and \(y=-\dfrac{x^2}4\) does not satisfy it
+KEY: C
+SOL:
+Answer: (C) It has order 1 and degree 2, and \(y=-\dfrac{x^2}4\) also satisfies it although it is not obtained for any value of \(c\).
+Given: \(y=cx+c^2\)
+Formula/Principle: \(\text{eliminate}\ c\ \text{using}\ y'=c;\quad\text{order}=\text{highest derivative},\ \text{degree}=\text{its highest power}\)
+Step 1: \(y'=c\)
+Step 2: \(y=xy'+(y')^2\)
+Step 3: \(\text{order}=1,\quad\text{degree}=2\)
+Step 4: \(y=-\tfrac{x^2}4:\ y'=-\tfrac x2\)
+Worked derivation: \[xy'+(y')^2=-\frac{x^2}2+\frac{x^2}4=-\frac{x^2}4=y\]
+Check: \[y=cx+c^2\ \text{is a straight line for every}\ c;\ y=-\tfrac{x^2}4\ \text{is a parabola, so it is not a member of the family}\]
+Why: \(\text{one arbitrary constant gives order 1; the square of}\ y'\ \text{gives degree 2}\)
+Why not the others: (A) \(\text{one constant}\Rightarrow\text{order 1}\); (B) \((y')^2\ \text{appears}\Rightarrow\text{degree 2}\); (D) \(\text{direct substitution shows that it does satisfy the equation}\).
+Key point: \(\text{number of arbitrary constants}=\text{order}\)
+
+@@ Q59
+format: numerical
+sub_topic: Internal and external division of a segment in space
+Q: Let A = (1, 2, 3) and B = (7, −4, 9). The point P divides AB internally in the ratio 1 : 2 and the point Q divides AB externally in the ratio 1 : 2. What is the distance PQ?
+A) \(4\sqrt3\)
+B) \(6\sqrt3\)
+C) 8
+D) \(8\sqrt3\)
+KEY: D
+SOL:
+Answer: (D) \(8\sqrt3\).
+Given: \(A(1,2,3),\ B(7,-4,9);\quad AP:PB=1:2\ \text{(internal)},\quad AQ:QB=1:2\ \text{(external)}\)
+Formula/Principle: \(\vec P=\dfrac{m\vec B+n\vec A}{m+n},\quad\vec Q=\dfrac{m\vec B-n\vec A}{m-n}\quad(m:n=1:2)\)
+Step 1: \(\vec P=\dfrac{(7,-4,9)+2(1,2,3)}3=\dfrac{(9,0,15)}3=(3,0,5)\)
+Step 2: \(\vec Q=\dfrac{(7,-4,9)-2(1,2,3)}{-1}=-(5,-8,3)=(-5,8,-3)\)
+Step 3: \(\vec{PQ}=(-8,8,-8)\)
+Worked derivation: \[PQ=\sqrt{64+64+64}=8\sqrt3\]
+Check: \[AB=\sqrt{36+36+36}=6\sqrt3;\quad AP=\tfrac13AB=2\sqrt3;\quad AQ=AB=6\sqrt3\ \text{on the other side of}\ A;\quad2\sqrt3+6\sqrt3=8\sqrt3\]
+Why: \(\text{for the ratio}\ 1:2\ \text{the external point lies beyond}\ A,\ \text{not beyond}\ B\)
+Why not the others: (A) \(4\sqrt3=AQ-AP\ \text{(Q taken on the same side as P)}\); (B) \(6\sqrt3=AB\); (C) \(8\ \text{is one component of}\ \vec{PQ}\).
+Key point: \(\text{external division in the ratio}\ m:n\ \text{with}\ m<n\ \text{lies on the side of the first point}\)
+
+@@ Q60
+format: numerical
+sub_topic: A point with one known coordinate on a segment in space
+Q: The point P(2, a, b) lies on the line segment joining A(1, −1, 4) and B(4, 5, −2). In what ratio does P divide AB, and what is \(a+b\)?
+A) 1 : 2; \(a+b=3\)
+B) 2 : 1; \(a+b=3\)
+C) 1 : 3; \(a+b=3\)
+D) 1 : 2; \(a+b=1\)
+KEY: A
+SOL:
+Answer: (A) 1 : 2; \(a+b=3\).
+Given: \(A(1,-1,4),\ B(4,5,-2),\ P(2,a,b)\ \text{on}\ AB\)
+Formula/Principle: \(\vec P=\vec A+t(\vec B-\vec A),\quad AP:PB=t:(1-t)\)
+Step 1: \(\vec B-\vec A=(3,6,-6)\)
+Step 2: \(1+3t=2\Rightarrow t=\tfrac13\)
+Step 3: \(a=-1+6\left(\tfrac13\right)=1,\quad b=4-6\left(\tfrac13\right)=2\)
+Worked derivation: \[AP:PB=\tfrac13:\tfrac23=1:2,\qquad a+b=3\]
+Check: \[\frac{1\cdot(4,5,-2)+2\cdot(1,-1,4)}{3}=\frac{(6,3,6)}3=(2,1,2)\]
+Why: \(\text{the known}\ x\text{-coordinate fixes the parameter}\ t\)
+Why not the others: (B) \(2:1\ \text{gives}\ x=3\); (C) \(1:3\ \text{gives}\ x=\tfrac74\); (D) \(a+b=1+2=3,\ \text{not}\ 1\).
+Key point: \(\text{one coordinate of a point on a segment fixes the ratio}\)

@@ -180,9 +180,16 @@ Numerical Chemistry questions also carry `Given:`, `Formula/Principle:`, `Step 1
 - [ ] NEST 2027 brochure checked; pattern table and `Syllabus.md` updated if anything changed.
 - [x] PYQ analysis written in `docs/blueprints/nest_pyq_analysis.md` from the official papers on `https://www.nestexam.in` (NEST 2024 two sessions, 2025, 2026; 320 questions). Tags are in `docs/blueprints/nest_pyq_tags.txt`. The papers themselves are not stored.
 - [x] Chapter weights in the plan adjusted to the PYQ analysis; plan regenerated and checked (15 November 2026).
-- [ ] The user has approved the PYQ summary and the plan.
-- [ ] `validate_nest.py` written: 80 questions, 20 per section, fixed IDs, 3/13/4 per section, 5/5/5/5 keys per section, required solution labels, KaTeX check, image-register match.
-- [ ] Test 1 written as the pilot and approved by the user before Tests 2–25.
+- [x] The user approved the PYQ summary and the plan (15 November 2026).
+- [x] `validate_nest.py` written: 80 questions, 20 per section, fixed IDs, match with the plan row, 3/13/4 and 5/5/5/5 per section, required solution labels, image-register match. KaTeX is checked with `node tools/iat/check_katex.mjs "<file>"`.
+- [x] Test 1 written as the pilot (`NISER/NEST TEST 1.json`, source text in `NISER/authoring/test01_*.txt`).
+- [ ] The user has approved pilot Test 1 before Tests 2–25 are written.
+
+### How a test is written and built
+
+- Questions and solutions are typed by hand in `NISER/authoring/testNN_B.txt`, `_C`, `_M`, `_P`, one block per question (format in `tools/nest/build_test.py`).
+- `python3 tools/nest/build_test.py N` assembles the JSON; chapter, class and difficulty are taken from the plan row. `--mark` also records the test in the plan CSV.
+- `python3 validate_nest.py` checks every NEST test.
 
 ## 11. Per-test workflow
 

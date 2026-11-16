@@ -1,0 +1,435 @@
+@@ Q61
+format: numerical
+sub_topic: Numerical value of a derived quantity in a new system of base units
+Q: In a new system of units, the unit of length is 10 cm, the unit of mass is 100 g and the unit of time is 0.1 s. What are the numerical values of an energy of 1 J and of a power of 1 W in this system?
+A) 0.1 and 1
+B) 10 and 10
+C) 100 and 10
+D) 10 and 1
+KEY: D
+SOL:
+Answer: (D) 10 and 1.
+Given: \(L_u=0.10\ \mathrm m,\quad M_u=0.10\ \mathrm{kg},\quad T_u=0.10\ \mathrm s\)
+Formula/Principle: \([E]=ML^2T^{-2},\quad[P]=ML^2T^{-3};\quad\text{numerical value}=\dfrac{\text{quantity}}{\text{unit}}\)
+Step 1: \(E_u=M_uL_u^2T_u^{-2}=\dfrac{0.10\times(0.10)^2}{(0.10)^2}=0.10\ \mathrm J\)
+Step 2: \(P_u=\dfrac{E_u}{T_u}=\dfrac{0.10\ \mathrm J}{0.10\ \mathrm s}=1.0\ \mathrm W\)
+Worked derivation: \[1\ \mathrm J=\frac{1}{0.10}=10\ \text{units},\qquad1\ \mathrm W=\frac{1}{1.0}=1\ \text{unit}\]
+Check: \[10\ \text{units of energy in}\ 10\ \text{units of time (1 s)}=1\ \text{unit of power}=1\ \mathrm W\]
+Why: \(\text{a smaller unit gives a larger numerical value:}\ n_1u_1=n_2u_2\)
+Why not the others: (A) \(0.1\ \text{is the size of the new unit in joule, not the numerical value of}\ 1\ \mathrm J\); (B) \(P_u=1\ \mathrm W\Rightarrow1,\ \text{not}\ 10\); (C) \(100\ \text{uses}\ T_u^{-3}\ \text{for energy}\).
+Key point: \(n_2=n_1\left(\dfrac{M_1}{M_2}\right)^a\left(\dfrac{L_1}{L_2}\right)^b\left(\dfrac{T_1}{T_2}\right)^c\)
+
+@@ Q62
+format: graph
+sub_topic: Magnitudes of the sum and difference of two equal vectors as the angle between them changes
+Q: Two vectors \(\vec A\) and \(\vec B\) have the same magnitude \(A\), and the angle between them is \(\theta\). The magnitudes \(R=|\vec A+\vec B|\) and \(D=|\vec A-\vec B|\) are plotted against \(\theta\) from 0 to \(\pi\). Which description of the two graphs is correct?
+A) Both are straight lines; R falls from \(2A\) to 0, D rises from 0 to \(2A\), and they cross at \(\theta=\dfrac\pi2\) where both equal \(A\)
+B) R falls from \(2A\) to 0 and D rises from 0 to \(2A\) along curves; they cross at \(\theta=\dfrac\pi2\), where both equal \(\sqrt2A\)
+C) R falls from \(2A\) to 0 and D rises from 0 to \(2A\) along curves; they cross at \(\theta=\dfrac\pi3\), where both equal \(\sqrt3A\)
+D) R stays equal to \(2A\) and D stays equal to 0 for all \(\theta\)
+KEY: B
+SOL:
+Answer: (B) R falls from \(2A\) to 0 and D rises from 0 to \(2A\) along curves; they cross at \(\theta=\dfrac\pi2\), where both equal \(\sqrt2A\).
+Given: \(|\vec A|=|\vec B|=A,\quad\text{angle}=\theta\in[0,\pi]\)
+Formula/Principle: \(|\vec A\pm\vec B|^2=A^2+A^2\pm2A^2\cos\theta\)
+Step 1: \(R=\sqrt{2A^2(1+\cos\theta)}=2A\cos\dfrac\theta2\)
+Step 2: \(D=\sqrt{2A^2(1-\cos\theta)}=2A\sin\dfrac\theta2\)
+Step 3: \(R=D\Rightarrow\tan\dfrac\theta2=1\Rightarrow\theta=\dfrac\pi2\)
+Worked derivation: \[R(0)=2A,\ R(\pi)=0;\quad D(0)=0,\ D(\pi)=2A;\quad R\left(\tfrac\pi2\right)=D\left(\tfrac\pi2\right)=2A\cdot\tfrac1{\sqrt2}=\sqrt2A\]
+Check: \[R^2+D^2=4A^2\ \text{for every}\ \theta;\quad\theta=\tfrac\pi2:\ 2A^2+2A^2=4A^2\]
+Why: \(\cos\tfrac\theta2\ \text{and}\ \sin\tfrac\theta2\ \text{are not linear in}\ \theta\)
+Why not the others: (A) \(R\left(\tfrac\pi2\right)=\sqrt2A\ne A;\ \text{the graphs are not straight}\); (C) \(\theta=\tfrac\pi3:\ R=\sqrt3A,\ D=A\ne R\); (D) \(R=2A,\ D=0\ \text{only at}\ \theta=0\).
+Key point: \(|\vec A+\vec B|=2A\cos\tfrac\theta2,\quad|\vec A-\vec B|=2A\sin\tfrac\theta2\)
+
+@@ Q63
+format: conceptual
+sub_topic: Atwood machine in the limit of one very heavy mass
+Q: Masses \(m_1\) and \(m_2\) hang from the two ends of a light string that passes over a light frictionless pulley. If \(m_2\) is made very much larger than \(m_1\), what do the acceleration of the masses and the tension in the string approach?
+A) \(g\) and 0
+B) \(g\) and \(m_2g\)
+C) \(g\) and \(2m_1g\)
+D) 0 and \(m_1g\)
+KEY: C
+SOL:
+Answer: (C) \(g\) and \(2m_1g\).
+Given: \(m_2\gg m_1;\ \text{light string, light frictionless pulley}\)
+Formula/Principle: \(m_2g-T=m_2a,\quad T-m_1g=m_1a\)
+Step 1: \(a=\dfrac{(m_2-m_1)g}{m_1+m_2}\)
+Step 2: \(T=m_1(g+a)=\dfrac{2m_1m_2g}{m_1+m_2}\)
+Step 3: \(\dfrac{m_1}{m_2}\to0:\ a=\dfrac{\left(1-\tfrac{m_1}{m_2}\right)g}{1+\tfrac{m_1}{m_2}}\to g\)
+Worked derivation: \[T=\frac{2m_1g}{1+\tfrac{m_1}{m_2}}\to2m_1g\]
+Check: \[m_1\ \text{rises with}\ a=g:\ T-m_1g=m_1g\Rightarrow T=2m_1g\]
+Why: \(\text{the heavy mass falls almost freely and pulls the light mass up with acceleration}\ g\)
+Why not the others: (A) \(T=0\ \text{would leave}\ m_1\ \text{in free fall downward, but it accelerates upward}\); (B) \(T=m_2g\ \text{would give}\ m_2\ \text{zero acceleration}\); (D) \(a=0\ \text{needs}\ m_1=m_2\).
+Key point: \(T=\dfrac{2m_1m_2g}{m_1+m_2}\ \text{is fixed by the lighter mass when the other is very heavy}\)
+
+@@ Q64
+format: experiment
+sub_topic: Work-energy theorem with friction on an incline and on a floor
+Q: A block is released from rest at a height of 0.60 m on a rough incline whose base is 0.80 m long. It slides down, passes smoothly on to a rough horizontal floor and stops after moving 1.60 m on the floor. The coefficient of kinetic friction \(\mu\) is the same on both surfaces. The incline is then replaced by a steeper one of the same height with a base 0.45 m long. What are \(\mu\) and the distance the block now moves on the floor?
+A) 0.25 and 1.95 m
+B) 0.25 and 1.60 m
+C) 0.375 and 1.60 m
+D) 0.25 and 2.40 m
+KEY: A
+SOL:
+Answer: (A) 0.25 and 1.95 m.
+Given: \(h=0.60\ \mathrm m,\quad b=0.80\ \mathrm m,\quad d=1.60\ \mathrm m;\quad b'=0.45\ \mathrm m\)
+Formula/Principle: \(W_{\text{gravity}}+W_{\text{friction}}=\Delta K=0;\quad f_{\text{incline}}=\mu mg\cos\theta,\ \text{path}=\dfrac b{\cos\theta}\)
+Step 1: \(W_{f,\text{incline}}=-\mu mg\cos\theta\cdot\dfrac b{\cos\theta}=-\mu mgb\)
+Step 2: \(mgh-\mu mgb-\mu mgd=0\Rightarrow h=\mu(b+d)\)
+Step 3: \(\mu=\dfrac{0.60}{0.80+1.60}=0.25\)
+Step 4: \(b'+d'=\dfrac h\mu=2.40\ \mathrm m\)
+Worked derivation: \[d'=2.40-0.45=1.95\ \mathrm m\]
+Check: \[\text{energy per unit weight:}\ 0.60=0.25\times0.45+0.25\times1.95=0.1125+0.4875\]
+Why: \(\text{friction work on an incline depends only on its horizontal length, so}\ b+d\ \text{is fixed by}\ h\ \text{and}\ \mu\)
+Why not the others: (B) \(d\ \text{stays}\ 1.60\ \mathrm m\ \text{only if}\ b\ \text{is unchanged}\); (C) \(0.375=\tfrac{0.60}{1.60}\ \text{ignores friction on the incline}\); (D) \(2.40\ \mathrm m\ \text{is}\ b'+d',\ \text{not}\ d'\).
+Key point: \(h=\mu\times(\text{total horizontal distance})\)
+
+@@ Q65
+format: numerical
+sub_topic: Motion of the centre of mass with and without external horizontal force
+Q: A man of mass 60 kg stands at one end of a plank of mass 40 kg that lies on ice. He walks 3.0 m along the plank. In case 1 the plank is frozen firmly to the ice. In case 2 the plank is free and the ice is frictionless. How far does the centre of mass of the man and plank move in each case, and how far does the man move relative to the ice in case 2?
+A) 3.0 m in case 1; 1.8 m in case 2; 3.0 m
+B) 1.8 m in case 1; zero in case 2; 1.2 m
+C) 1.8 m in case 1; zero in case 2; 1.8 m
+D) 1.2 m in case 1; 1.2 m in case 2; 1.2 m
+KEY: B
+SOL:
+Answer: (B) 1.8 m in case 1; zero in case 2; 1.2 m.
+Given: \(m=60\ \mathrm{kg},\quad M=40\ \mathrm{kg},\quad s_{\text{rel}}=3.0\ \mathrm m\)
+Formula/Principle: \(\Delta x_{cm}=\dfrac{m\Delta x_m+M\Delta x_M}{m+M};\quad\vec F_{\text{ext}}=0\Rightarrow\Delta x_{cm}=0\ \text{(from rest)}\)
+Step 1: \(\text{case 1}:\ \Delta x_m=3.0\ \mathrm m,\ \Delta x_M=0\Rightarrow\Delta x_{cm}=\dfrac{60\times3.0}{100}=1.8\ \mathrm m\)
+Step 2: \(\text{case 2}:\ 60\Delta x_m+40\Delta x_M=0,\quad\Delta x_m-\Delta x_M=3.0\ \mathrm m\)
+Step 3: \(\Delta x_M=-\tfrac32\Delta x_m\Rightarrow\tfrac52\Delta x_m=3.0\ \mathrm m\)
+Worked derivation: \[\Delta x_m=1.2\ \mathrm m,\quad\Delta x_M=-1.8\ \mathrm m,\quad\Delta x_{cm}=0\]
+Check: \[60\times1.2-40\times1.8=72-72=0;\qquad1.2-(-1.8)=3.0\ \mathrm m\]
+Why: \(\text{in case 1 the ice exerts a horizontal force on the plank; in case 2 no horizontal external force acts}\)
+Why not the others: (A) \(3.0\ \mathrm m\ \text{is the man's displacement in case 1, not that of the centre of mass}\); (C) \(1.8\ \mathrm m\ \text{is the plank's displacement in case 2}\); (D) \(\text{the centre of mass moves}\ 1.8\ \mathrm m\ \text{in case 1 and not at all in case 2}\).
+Key point: \(\text{no external force}\Rightarrow\text{the centre of mass of a system at rest stays where it is}\)
+
+@@ Q66
+format: numerical
+sub_topic: Speeds at perihelion and aphelion from conservation of angular momentum and energy
+Q: A planet moves round a star of mass \(M\) in an ellipse. Its distance from the star is \(r\) at perihelion and \(3r\) at aphelion. What are its speed at perihelion and the ratio of its speeds at perihelion and aphelion?
+A) \(\sqrt{\dfrac{GM}{r}}\) and 3
+B) \(\sqrt{\dfrac{3GM}{2r}}\) and \(\sqrt3\)
+C) \(\sqrt{\dfrac{2GM}{r}}\) and 3
+D) \(\sqrt{\dfrac{3GM}{2r}}\) and 3
+KEY: D
+SOL:
+Answer: (D) \(\sqrt{\dfrac{3GM}{2r}}\) and 3.
+Given: \(r_p=r,\quad r_a=3r\)
+Formula/Principle: \(mv_pr_p=mv_ar_a;\quad\tfrac12mv_p^2-\dfrac{GMm}{r_p}=\tfrac12mv_a^2-\dfrac{GMm}{r_a}\)
+Step 1: \(v_pr=v_a(3r)\Rightarrow\dfrac{v_p}{v_a}=3\)
+Step 2: \(\tfrac12v_p^2-\tfrac12\left(\dfrac{v_p}3\right)^2=\dfrac{GM}r-\dfrac{GM}{3r}\)
+Step 3: \(\tfrac12v_p^2\cdot\dfrac89=\dfrac{2GM}{3r}\Rightarrow v_p^2=\dfrac{3GM}{2r}\)
+Worked derivation: \[v_p=\sqrt{\frac{3GM}{2r}},\qquad\frac{v_p}{v_a}=3\]
+Check: \[a=\frac{r+3r}2=2r:\quad v_p^2=GM\left(\frac2r-\frac1a\right)=GM\left(\frac2r-\frac1{2r}\right)=\frac{3GM}{2r}\]
+Why: \(\text{gravity is a central and conservative force, so angular momentum and energy are both conserved}\)
+Why not the others: (A) \(\sqrt{\tfrac{GM}r}\ \text{is the speed in a circular orbit of radius}\ r\); (B) \(\sqrt3\ \text{would follow from}\ v\propto r^{-1/2},\ \text{which holds for circular orbits only}\); (C) \(\sqrt{\tfrac{2GM}r}\ \text{is the escape speed from distance}\ r\).
+Key point: \(v_pr_p=v_ar_a\)
+
+@@ Q67
+format: conceptual
+sub_topic: Force on the base of vessels of different shapes
+Q: Three open vessels have flat bases of the same area and are filled with water to the same height. Vessel X widens upwards, vessel Y has vertical walls and vessel Z narrows upwards, so they hold different weights of water. Which statement about the force exerted by the water on the base is correct?
+A) It is the same in all three vessels; in X and Z the walls exert vertical forces on the water that make up the difference from its weight
+B) It equals the weight of the water in each vessel, so it is greatest in X
+C) It is greatest in Z, because the water is squeezed into a narrower space
+D) It cannot be compared, because the pressure at the base depends on the shape of the vessel
+KEY: A
+SOL:
+Answer: (A) It is the same in all three vessels; in X and Z the walls exert vertical forces on the water that make up the difference from its weight.
+Given: \(\text{same base area}\ A,\ \text{same height}\ h,\ \text{same liquid}\)
+Formula/Principle: \(P=P_a+\rho gh;\quad F_{\text{water on base}}=\rho ghA\ \text{(gauge)}\)
+Step 1: \(P_{\text{base}}=P_a+\rho gh\ \text{in all three (depends only on depth)}\)
+Step 2: \(F_X=F_Y=F_Z=\rho ghA\)
+Step 3: \(W_X>\rho ghA=W_Y>W_Z\)
+Worked derivation: \[\text{water in equilibrium:}\quad\rho ghA=W+F_{\text{walls, downward}}\ \Rightarrow\ F_{\text{walls}}=\rho ghA-W\]
+Check: \[Y:\ F_{\text{walls}}=0\ (\text{vertical walls});\quad X:\ F_{\text{walls}}<0\ (\text{walls push up});\quad Z:\ F_{\text{walls}}>0\ (\text{walls push down})\]
+Why: \(\text{pressure in a liquid at rest depends on depth, not on the amount of liquid above}\)
+Why not the others: (B) \(F=W\ \text{only for vertical walls}\); (C) \(P\ \text{at depth}\ h\ \text{is the same whatever the width}\); (D) \(P=P_a+\rho gh\ \text{has no shape term}\).
+Key point: \(P=P_a+\rho gh\ \text{(hydrostatic paradox)}\)
+
+@@ Q68
+format: graph
+sub_topic: Anomalous expansion of water: volume against temperature
+Q: The volume V of 1 kg of water is plotted against temperature from 0 °C to 10 °C. Which description of the graph, with its consequence for a pond in winter, is correct?
+A) V rises steadily with temperature; the coldest water is the densest and lies at the bottom
+B) V has a maximum at 4 °C; water at 4 °C is the lightest and floats on top
+C) V falls to a minimum at 4 °C and then rises; water at 4 °C is the densest and stays at the bottom while the surface cools further and freezes
+D) V has a minimum at 0 °C; water at 0 °C sinks, so the pond freezes from the bottom upwards
+KEY: C
+SOL:
+Answer: (C) V falls to a minimum at 4 °C and then rises; water at 4 °C is the densest and stays at the bottom while the surface cools further and freezes.
+Given: \(m=1\ \mathrm{kg}\ \text{of water},\quad0\ ^\circ\mathrm C\le T\le10\ ^\circ\mathrm C\)
+Formula/Principle: \(\rho=\dfrac mV;\quad\text{water contracts on heating from}\ 0\ ^\circ\mathrm C\ \text{to}\ 4\ ^\circ\mathrm C\ \text{and expands above}\ 4\ ^\circ\mathrm C\)
+Step 1: \(0\to4\ ^\circ\mathrm C:\ \dfrac{dV}{dT}<0\)
+Step 2: \(T>4\ ^\circ\mathrm C:\ \dfrac{dV}{dT}>0\)
+Step 3: \(V_{\min}\ \text{at}\ 4\ ^\circ\mathrm C\Rightarrow\rho_{\max}\ \text{at}\ 4\ ^\circ\mathrm C\)
+Worked derivation: \[\rho(4\ ^\circ\mathrm C)>\rho(T\ne4\ ^\circ\mathrm C)\ \Rightarrow\ \text{water at}\ 4\ ^\circ\mathrm C\ \text{sinks; water colder than}\ 4\ ^\circ\mathrm C\ \text{stays on top}\]
+Check: \[\rho(4\ ^\circ\mathrm C)\approx1000\ \mathrm{kg\,m^{-3}},\quad\rho(0\ ^\circ\mathrm C)\approx999.8\ \mathrm{kg\,m^{-3}},\quad\rho(10\ ^\circ\mathrm C)\approx999.7\ \mathrm{kg\,m^{-3}}\]
+Why: \(\text{once the pond is at}\ 4\ ^\circ\mathrm C,\ \text{further cooling makes the surface water lighter, so convection stops}\)
+Why not the others: (A) \(V\ \text{falls between}\ 0\ \text{and}\ 4\ ^\circ\mathrm C\); (B) \(V\ \text{is least, not greatest, at}\ 4\ ^\circ\mathrm C\); (D) \(\text{water at}\ 0\ ^\circ\mathrm C\ \text{is lighter than water at}\ 4\ ^\circ\mathrm C\ \text{and stays on top}\).
+Key point: \(\text{water has its maximum density at}\ 4\ ^\circ\mathrm C\)
+
+@@ Q69
+format: conceptual
+sub_topic: First law for a polytropic expansion: heat absorbed while the gas cools
+Q: One mole of a monatomic ideal gas (\(C_V=\tfrac32R\)) expands slowly along the path \(PV^{4/3}=\) constant. Which statement about this expansion is correct?
+A) The temperature falls and the gas absorbs heat; its molar heat capacity along this path is \(-\tfrac32R\)
+B) The temperature falls and the gas gives out heat; its molar heat capacity along this path is \(+\tfrac32R\)
+C) The temperature rises and the gas absorbs heat; its molar heat capacity along this path is \(+\tfrac92R\)
+D) The temperature falls and no heat is exchanged, because the path is steeper than an isotherm
+KEY: A
+SOL:
+Answer: (A) The temperature falls and the gas absorbs heat; its molar heat capacity along this path is \(-\tfrac32R\).
+Given: \(n=1\ \mathrm{mol},\quad C_V=\tfrac32R,\quad PV^{k}=\text{constant},\ k=\tfrac43\)
+Formula/Principle: \(Q=\Delta U+W;\quad PV=RT\Rightarrow TV^{k-1}=\text{constant};\quad W=\dfrac{P_1V_1-P_2V_2}{k-1}=-\dfrac{R\,\Delta T}{k-1}\)
+Step 1: \(TV^{1/3}=\text{constant};\ V\ \text{increases}\Rightarrow\Delta T<0\)
+Step 2: \(\Delta U=\tfrac32R\,\Delta T<0\)
+Step 3: \(W=-\dfrac{R\,\Delta T}{1/3}=-3R\,\Delta T>0\)
+Step 4: \(Q=\tfrac32R\,\Delta T-3R\,\Delta T=-\tfrac32R\,\Delta T\)
+Worked derivation: \[\Delta T<0\Rightarrow Q>0;\qquad C=\frac Q{\Delta T}=-\frac32R\]
+Check: \[C=C_V-\frac R{k-1};\quad k=1:\ C\to\infty\ (\text{isothermal});\quad k=\tfrac53:\ C=\tfrac32R-\tfrac32R=0\ (\text{adiabatic});\quad1<k<\tfrac53:\ C<0\]
+Why: \(\text{the gas does more work}\ (3R|\Delta T|)\ \text{than its internal energy supplies}\ (1.5R|\Delta T|);\ \text{the rest comes in as heat}\)
+Why not the others: (B) \(Q\ \text{and}\ \Delta T\ \text{have opposite signs here, so}\ C<0\); (C) \(TV^{1/3}=\text{constant}\Rightarrow T\ \text{falls in an expansion}\); (D) \(Q=0\ \text{needs}\ k=\gamma=\tfrac53,\ \text{not}\ \tfrac43\).
+Key point: \(\text{polytropic}\ PV^k:\ C=C_V-\dfrac R{k-1}\)
+
+@@ Q70
+format: experiment
+sub_topic: Pressure of a molecular beam on a wall
+Q: A parallel beam of molecules, each of mass \(5.0\times10^{-26}\) kg and speed 500 m s⁻¹, strikes a wall at right angles. The beam contains \(1.0\times10^{20}\) molecules per cubic metre. The molecules rebound elastically. What is the pressure on the wall, and how does it change if the molecules stick to the wall instead?
+A) 1.25 Pa; it doubles
+B) 2.5 Pa; it does not change
+C) 2.5 Pa; it becomes half
+D) 0.83 Pa; it becomes half
+KEY: C
+SOL:
+Answer: (C) 2.5 Pa; it becomes half.
+Given: \(m=5.0\times10^{-26}\ \mathrm{kg},\quad v=500\ \mathrm{m\,s^{-1}},\quad n=1.0\times10^{20}\ \mathrm{m^{-3}}\)
+Formula/Principle: \(P=\dfrac FA=(\text{molecules striking per unit area per second})\times(\text{momentum change of each})\)
+Step 1: \(\text{rate per unit area}=nv=1.0\times10^{20}\times500=5.0\times10^{22}\ \mathrm{m^{-2}\,s^{-1}}\)
+Step 2: \(\text{elastic}:\ \Delta p=2mv=2\times5.0\times10^{-26}\times500=5.0\times10^{-23}\ \mathrm{kg\,m\,s^{-1}}\)
+Step 3: \(P=nv\cdot2mv=2nmv^2\)
+Worked derivation: \[P=5.0\times10^{22}\times5.0\times10^{-23}=2.5\ \mathrm{Pa};\qquad\text{sticking}:\ \Delta p=mv\Rightarrow P=1.25\ \mathrm{Pa}\]
+Check: \[2nmv^2=2\times10^{20}\times5.0\times10^{-26}\times2.5\times10^5=2.5\ \mathrm{N\,m^{-2}}\]
+Why: \(\text{a rebounding molecule changes its momentum by}\ 2mv,\ \text{a sticking one by}\ mv\)
+Why not the others: (A) \(1.25\ \mathrm{Pa}\ \text{is the pressure for sticking molecules}\); (B) \(\Delta p\ \text{changes from}\ 2mv\ \text{to}\ mv\); (D) \(\tfrac13nmv^2\ \text{is for molecules moving in all directions, not for a beam}\).
+Key point: \(\text{pressure}=\text{rate of momentum transfer per unit area}\)
+
+@@ Q71
+format: numerical
+sub_topic: Phase difference and greatest separation of two particles in SHM
+Q: Two particles execute simple harmonic motion of the same amplitude \(A\) and the same frequency along the same line about the same mean position. They pass each other, moving in opposite directions, each time their displacement is \(\dfrac A2\). What are their phase difference and the greatest distance between them during the motion?
+A) \(\dfrac\pi3\) and \(A\)
+B) \(\dfrac{2\pi}3\) and \(\sqrt3A\)
+C) \(\pi\) and \(2A\)
+D) \(\dfrac{2\pi}3\) and \(A\)
+KEY: B
+SOL:
+Answer: (B) \(\dfrac{2\pi}3\) and \(\sqrt3A\).
+Given: \(x_1=A\sin\phi_1,\quad x_2=A\sin\phi_2;\quad x_1=x_2=\tfrac A2\ \text{with opposite velocities}\)
+Formula/Principle: \(v=A\omega\cos\phi;\quad x_1-x_2=2A\sin\dfrac{\phi_1-\phi_2}2\cos\dfrac{\phi_1+\phi_2}2\)
+Step 1: \(\sin\phi=\tfrac12\Rightarrow\phi=\tfrac\pi6\ (v>0)\ \text{or}\ \tfrac{5\pi}6\ (v<0)\)
+Step 2: \(\phi_1=\tfrac\pi6,\ \phi_2=\tfrac{5\pi}6\Rightarrow\Delta\phi=\tfrac{2\pi}3\)
+Step 3: \(|x_1-x_2|_{\max}=2A\sin\dfrac{\Delta\phi}2=2A\sin\dfrac\pi3\)
+Worked derivation: \[\Delta\phi=\frac{2\pi}3,\qquad|x_1-x_2|_{\max}=2A\cdot\frac{\sqrt3}2=\sqrt3A\]
+Check: \[\phi_1=-\tfrac\pi3,\ \phi_2=\tfrac\pi3:\ x_1=-\tfrac{\sqrt3}2A,\ x_2=+\tfrac{\sqrt3}2A,\ \text{separation}=\sqrt3A\]
+Why: \(\text{the two particles are two points}\ 120^\circ\ \text{apart on the reference circle; their projections are farthest apart when the chord is parallel to the line of motion}\)
+Why not the others: (A) \(\Delta\phi=\tfrac\pi3\ \text{would make them meet at}\ x=\tfrac{\sqrt3}2A\); (C) \(\Delta\phi=\pi\ \text{would make them meet only at}\ x=0\); (D) \(A\ \text{is}\ 2A\sin\tfrac\pi6,\ \text{the value for}\ \Delta\phi=\tfrac\pi3\).
+Key point: \(\text{greatest separation}=2A\sin\dfrac{\Delta\phi}2\)
+
+@@ Q72
+format: conceptual
+sub_topic: Wave on a string at fixed power and frequency when the tension is changed
+Q: A vibrator sends a sinusoidal wave of amplitude \(A\) along a long string and supplies a fixed average power at a fixed frequency. The tension in the string is made four times as large, with the power and the frequency unchanged. What happens to the wavelength and the amplitude?
+A) The wavelength doubles; the amplitude stays \(A\)
+B) The wavelength is halved; the amplitude becomes \(\sqrt2A\)
+C) The wavelength doubles; the amplitude becomes \(\dfrac A2\)
+D) The wavelength doubles; the amplitude becomes \(\dfrac A{\sqrt2}\)
+KEY: D
+SOL:
+Answer: (D) The wavelength doubles; the amplitude becomes \(\dfrac A{\sqrt2}\).
+Given: \(T'=4T;\quad f,\ \mu,\ P\ \text{unchanged}\)
+Formula/Principle: \(v=\sqrt{\dfrac T\mu},\quad\lambda=\dfrac vf,\quad P=\tfrac12\mu\omega^2A^2v\)
+Step 1: \(v'=\sqrt{\dfrac{4T}\mu}=2v\)
+Step 2: \(\lambda'=\dfrac{2v}f=2\lambda\)
+Step 3: \(\tfrac12\mu\omega^2A'^2(2v)=\tfrac12\mu\omega^2A^2v\Rightarrow A'^2=\dfrac{A^2}2\)
+Worked derivation: \[\lambda'=2\lambda,\qquad A'=\frac A{\sqrt2}\]
+Check: \[\frac{P'}{P}=\frac{A'^2v'}{A^2v}=\frac12\times2=1\]
+Why: \(\text{energy per unit length}\ \tfrac12\mu\omega^2A^2\ \text{is carried away at speed}\ v;\ \text{a faster wave needs less energy per unit length for the same power}\)
+Why not the others: (A) \(\text{same}\ A\ \text{with}\ 2v\ \text{would double the power}\); (B) \(v\ \text{increases with tension, so}\ \lambda\ \text{increases}\); (C) \(A'=\tfrac A2\ \text{would halve the power:}\ \tfrac14\times2=\tfrac12\).
+Key point: \(P=\tfrac12\mu\omega^2A^2v\)
+
+@@ Q73
+format: numerical
+sub_topic: Net Coulomb force at a corner of an equilateral triangle
+Q: Three point charges of \(+2.0\ \mu\mathrm C\) each are placed at the corners of an equilateral triangle of side 0.30 m in air. What is the magnitude of the net force on any one of them? \(\left(\dfrac1{4\pi\varepsilon_0}=9.0\times10^9\ \mathrm{N\,m^2\,C^{-2}}\right)\)
+A) 0.40 N
+B) 0.80 N
+C) 0.69 N
+D) 0.35 N
+KEY: C
+SOL:
+Answer: (C) 0.69 N.
+Given: \(q=2.0\times10^{-6}\ \mathrm C,\quad a=0.30\ \mathrm m,\quad k=9.0\times10^9\ \mathrm{N\,m^2\,C^{-2}}\)
+Formula/Principle: \(F=\dfrac{kq^2}{a^2};\quad F_{\text{net}}=\sqrt{F^2+F^2+2F^2\cos60^\circ}=\sqrt3F\)
+Step 1: \(F=\dfrac{9.0\times10^9\times(2.0\times10^{-6})^2}{(0.30)^2}=\dfrac{0.036}{0.090}=0.40\ \mathrm N\)
+Step 2: \(\text{the two forces are repulsive, each along a side, with}\ 60^\circ\ \text{between them}\)
+Worked derivation: \[F_{\text{net}}=\sqrt3\times0.40=0.69\ \mathrm N\]
+Check: \[\text{components along the bisector:}\ 2F\cos30^\circ=2\times0.40\times0.866=0.69\ \mathrm N;\ \text{perpendicular components cancel}\]
+Why: \(\text{forces add as vectors (principle of superposition)}\)
+Why not the others: (A) \(0.40\ \mathrm N\ \text{is the force due to one charge only}\); (B) \(0.80\ \mathrm N=2F\ \text{adds the magnitudes as if the forces were parallel}\); (D) \(0.35\ \mathrm N=F\cos30^\circ\ \text{is one component of one force}\).
+Key point: \(\text{two equal forces at}\ 60^\circ\ \text{give}\ \sqrt3F\)
+
+@@ Q74
+format: conceptual
+sub_topic: Field and potential at the midpoint between two equal like charges
+Q: Two point charges, each \(+q\), are fixed a distance \(d\) apart in air. With \(k=\dfrac1{4\pi\varepsilon_0}\) and the potential taken as zero at infinity, what are the electric field and the potential at the midpoint between them?
+A) Field zero; potential \(\dfrac{4kq}d\)
+B) Field zero; potential zero
+C) Field \(\dfrac{8kq}{d^2}\); potential zero
+D) Field zero; potential \(\dfrac{2kq}d\)
+KEY: A
+SOL:
+Answer: (A) Field zero; potential \(\dfrac{4kq}d\).
+Given: \(q_1=q_2=+q,\quad r_1=r_2=\dfrac d2\)
+Formula/Principle: \(\vec E=\sum\dfrac{kq_i}{r_i^2}\hat r_i\ \text{(vector sum)};\quad V=\sum\dfrac{kq_i}{r_i}\ \text{(scalar sum)}\)
+Step 1: \(E_1=E_2=\dfrac{kq}{(d/2)^2}=\dfrac{4kq}{d^2},\ \text{in opposite directions}\Rightarrow E=0\)
+Step 2: \(V_1=V_2=\dfrac{kq}{d/2}=\dfrac{2kq}d\)
+Worked derivation: \[E=0,\qquad V=\frac{2kq}d+\frac{2kq}d=\frac{4kq}d\]
+Check: \[\text{work to bring}\ q_0\ \text{from infinity to the midpoint}=q_0V=\frac{4kqq_0}d\ne0,\ \text{although the force there is zero}\]
+Why: \(\text{fields are vectors and cancel; potentials are scalars of the same sign and add}\)
+Why not the others: (B) \(V=0\ \text{at the midpoint is for charges}\ +q\ \text{and}\ -q\); (C) \(\tfrac{8kq}{d^2}\ \text{and}\ V=0\ \text{are for charges}\ +q\ \text{and}\ -q\); (D) \(\tfrac{2kq}d\ \text{is the potential of one charge only}\).
+Key point: \(E=0\ \text{does not mean}\ V=0\)
+
+@@ Q75
+format: graph
+sub_topic: Drift speed against electric field at two temperatures
+Q: The drift speed \(v_d\) of electrons in a copper wire is plotted against the applied electric field \(E\), for small fields, at 300 K and at 400 K. Which description of the two graphs is correct?
+A) Both are straight lines through the origin; the 400 K line is steeper, because the electrons move faster when hot
+B) Both are curves that flatten out, because the drift speed cannot exceed the thermal speed
+C) Both are the same straight line, because the number density of electrons does not change with temperature
+D) Both are straight lines through the origin; the 400 K line is less steep, because the relaxation time and so the mobility are smaller
+KEY: D
+SOL:
+Answer: (D) Both are straight lines through the origin; the 400 K line is less steep, because the relaxation time and so the mobility are smaller.
+Given: \(v_d\ \text{against}\ E\ \text{for copper at}\ 300\ \mathrm K\ \text{and}\ 400\ \mathrm K\)
+Formula/Principle: \(v_d=\dfrac{e\tau}mE=\mu E,\quad\mu=\dfrac{e\tau}m\)
+Step 1: \(v_d\propto E\Rightarrow\text{straight line through the origin, slope}=\mu\)
+Step 2: \(T\ \text{higher}\Rightarrow\text{more frequent collisions with the vibrating ions}\Rightarrow\tau\ \text{smaller}\)
+Step 3: \(\mu(400\ \mathrm K)<\mu(300\ \mathrm K)\)
+Worked derivation: \[\text{slope}=\mu=\frac{e\tau}m:\qquad\text{slope}_{400\ \mathrm K}<\text{slope}_{300\ \mathrm K}\]
+Check: \[\rho=\frac m{ne^2\tau}:\ \tau\ \text{smaller}\Rightarrow\rho\ \text{larger, as observed for metals on heating}\]
+Why: \(\text{for a metal}\ n\ \text{is fixed; the temperature acts through}\ \tau\)
+Why not the others: (A) \(\text{thermal speed is random and gives no drift;}\ \tau\ \text{falls, so the slope falls}\); (B) \(\text{Ohm's law holds for a metal at small fields:}\ v_d\propto E\); (C) \(n\ \text{is unchanged, but}\ \tau\ \text{changes, so the slope changes}\).
+Key point: \(\text{mobility}\ \mu=\dfrac{v_d}E=\dfrac{e\tau}m\)
+
+@@ Q76
+format: numerical
+sub_topic: Field at the centre of a coil when the same wire is rewound into two turns
+Q: A wire bent into a single circular loop carries a current \(I\) and produces a magnetic field \(B\) at its centre. The same wire is rewound into a circular coil of two turns and carries the same current. What is the field at the centre now?
+A) \(2B\)
+B) \(4B\)
+C) \(\dfrac B2\)
+D) \(8B\)
+KEY: B
+SOL:
+Answer: (B) \(4B\).
+Given: \(\text{length of wire}\ L=2\pi R;\quad N'=2\)
+Formula/Principle: \(B=\dfrac{\mu_0NI}{2R}\ \text{(centre of a circular coil, from the Biot–Savart law)}\)
+Step 1: \(2\times2\pi R'=2\pi R\Rightarrow R'=\dfrac R2\)
+Step 2: \(B'=\dfrac{\mu_0(2)I}{2(R/2)}=\dfrac{2\mu_0I}R\)
+Worked derivation: \[\frac{B'}B=\frac{2\mu_0I/R}{\mu_0I/2R}=4\]
+Check: \[N\ \text{turns from the same wire:}\ R'=\frac RN\Rightarrow B'=N^2B=2^2B\]
+Why: \(\text{the number of turns doubles and the radius is halved; each change doubles the field}\)
+Why not the others: (A) \(2B\ \text{counts the turns but not the smaller radius}\); (C) \(\tfrac B2\ \text{inverts the dependence on radius and ignores the turns}\); (D) \(8B=N^3B\).
+Key point: \(\text{same wire, same current:}\ B\propto N^2\)
+
+@@ Q77
+format: numerical
+sub_topic: Displacement current in a capacitor being charged
+Q: A parallel plate capacitor of capacitance 2.0 nF is being charged so that the potential difference between its plates rises at \(5.0\times10^6\ \mathrm{V\,s^{-1}}\). The field between the plates is uniform. What are the displacement current through the whole area between the plates and through a central area equal to half the plate area?
+A) 10 mA and 10 mA
+B) Zero and zero, because no charge crosses the gap
+C) 10 mA and 5.0 mA
+D) 20 mA and 10 mA
+KEY: C
+SOL:
+Answer: (C) 10 mA and 5.0 mA.
+Given: \(C=2.0\times10^{-9}\ \mathrm F,\quad\dfrac{dV}{dt}=5.0\times10^6\ \mathrm{V\,s^{-1}}\)
+Formula/Principle: \(I_d=\varepsilon_0\dfrac{d\Phi_E}{dt};\quad\Phi_E=EA=\dfrac q{\varepsilon_0}\Rightarrow I_d=\dfrac{dq}{dt}=C\dfrac{dV}{dt}\)
+Step 1: \(I_d=2.0\times10^{-9}\times5.0\times10^6=1.0\times10^{-2}\ \mathrm A=10\ \mathrm{mA}\)
+Step 2: \(\text{uniform field}:\ \Phi_E\propto\text{area}\Rightarrow I_d\left(\tfrac A2\right)=\tfrac12I_d\)
+Worked derivation: \[I_d(A)=10\ \mathrm{mA},\qquad I_d\left(\tfrac A2\right)=5.0\ \mathrm{mA}\]
+Check: \[\text{conduction current in the wires}=\frac{dq}{dt}=C\frac{dV}{dt}=10\ \mathrm{mA}=I_d\ \ (\text{continuity of total current})\]
+Why: \(\text{a changing electric flux acts as a current even where no charge flows}\)
+Why not the others: (A) \(\text{half the area encloses half the flux}\); (B) \(I_d\ \text{is due to changing flux, not to moving charge}\); (D) \(C\tfrac{dV}{dt}=10\ \mathrm{mA},\ \text{not}\ 20\ \mathrm{mA}\).
+Key point: \(I_d=\varepsilon_0\dfrac{d\Phi_E}{dt}\ \text{equals the charging current}\)
+
+@@ Q78
+format: conceptual
+sub_topic: Motion of the real image in a concave mirror as the object approaches the focus
+Q: A small object moves along the principal axis of a concave mirror at constant speed, from a point far beyond the centre of curvature C towards the focus F. Which statement about its real image is correct?
+A) The image moves towards the mirror and is always slower than the object
+B) The image moves away from the mirror at the same speed as the object throughout
+C) The image moves away from the mirror; it is faster than the object while the object is beyond C and slower when the object is between C and F
+D) The image moves away from the mirror; it is slower than the object while the object is beyond C, has the same speed when the object is at C, and is faster when the object is between C and F
+KEY: D
+SOL:
+Answer: (D) The image moves away from the mirror; it is slower than the object while the object is beyond C, has the same speed when the object is at C, and is faster when the object is between C and F.
+Given: \(\text{object on the axis, speed}\ v_o,\ \text{moving from beyond}\ C\ \text{to}\ F\)
+Formula/Principle: \(\dfrac1v+\dfrac1u=\dfrac1f\Rightarrow-\dfrac1{v^2}\dfrac{dv}{dt}-\dfrac1{u^2}\dfrac{du}{dt}=0\)
+Step 1: \(\dfrac{dv}{dt}=-\dfrac{v^2}{u^2}\dfrac{du}{dt}=-m^2\dfrac{du}{dt}\)
+Step 2: \(\text{object and image move in opposite directions along the axis:}\ \text{object towards the mirror}\Rightarrow\text{image away from it}\)
+Step 3: \(|u|>2f:\ |m|<1;\quad|u|=2f:\ |m|=1;\quad f<|u|<2f:\ |m|>1\)
+Worked derivation: \[v_{\text{image}}=m^2v_o:\quad<v_o\ \text{beyond}\ C,\quad=v_o\ \text{at}\ C,\quad>v_o\ \text{between}\ C\ \text{and}\ F\]
+Check: \[f=10\ \mathrm{cm}:\ |u|=30\ \mathrm{cm}\Rightarrow|v|=15\ \mathrm{cm},\ m^2=\tfrac14;\quad|u|=15\ \mathrm{cm}\Rightarrow|v|=30\ \mathrm{cm},\ m^2=4\]
+Why: \(\text{the image travels from}\ F\ \text{to}\ C\ \text{while the object comes in from infinity to}\ C,\ \text{and from}\ C\ \text{to infinity while the object goes from}\ C\ \text{to}\ F\)
+Why not the others: (A) \(\text{a real image moves opposite to the object, so away from the mirror}\); (B) \(m^2=1\ \text{only when the object is at}\ C\); (C) \(\text{the two regions are interchanged}\).
+Key point: \(\text{axial speed of image}=m^2\times\text{speed of object}\)
+
+@@ Q79
+format: experiment
+sub_topic: What large-angle scattering of alpha particles shows, and its dependence on Z
+Q: In a Geiger–Marsden type experiment with a thin gold foil (Z = 79), most alpha particles pass almost undeflected, and about 1 in 8000 is deflected by more than 90°. The gold foil is replaced by a silver foil (Z = 47) with the same number of atoms per unit area, and the same beam is used. Which conclusion from the gold result, with the prediction for silver, is correct?
+A) The positive charge is spread over the whole atom; more alpha particles are deflected by more than 90° with silver
+B) The positive charge and most of the mass are in a very small nucleus; fewer alpha particles are deflected by more than 90° with silver
+C) The alpha particles are turned back by collisions with electrons; the number deflected by more than 90° does not change
+D) The positive charge and most of the mass are in a very small nucleus; more alpha particles are deflected by more than 90° with silver
+KEY: B
+SOL:
+Answer: (B) The positive charge and most of the mass are in a very small nucleus; fewer alpha particles are deflected by more than 90° with silver.
+Given: \(\text{gold}:\ Z=79,\ \text{about}\ 1\ \text{in}\ 8000\ \text{deflected by more than}\ 90^\circ;\quad\text{silver}:\ Z=47,\ \text{same atoms per unit area}\)
+Formula/Principle: \(F=\dfrac1{4\pi\varepsilon_0}\dfrac{(2e)(Ze)}{r^2};\quad\text{head-on closest approach}\ d=\dfrac{2Ze^2}{4\pi\varepsilon_0K}\)
+Step 1: \(\text{most pass undeflected}\Rightarrow\text{most of the atom is empty space}\)
+Step 2: \(\text{a few turn back}\Rightarrow\text{a large force at very small}\ r\Rightarrow\text{charge and mass concentrated in a tiny nucleus}\)
+Step 3: \(\text{a deflection of more than}\ 90^\circ\ \text{needs an approach to within about}\ d\ \text{of the nucleus; target area per nucleus}\propto d^2\propto Z^2\)
+Worked derivation: \[\frac{N_{\text{Ag}}}{N_{\text{Au}}}\approx\left(\frac{47}{79}\right)^2\approx0.35<1\]
+Check: \[\frac{d_{\text{Ag}}}{d_{\text{Au}}}=\frac{47}{79}\approx0.59;\qquad0.59^2\approx0.35\]
+Why: \(\text{a smaller nuclear charge repels less, so the alpha particle must pass closer to be turned back, and fewer do}\)
+Why not the others: (A) \(\text{a spread-out charge gives only small deflections, so}\ 1\ \text{in}\ 8000\ \text{turning back could not occur}\); (C) \(m_e\approx\tfrac{m_\alpha}{7300}:\ \text{an electron cannot turn an alpha particle back}\); (D) \(\text{the force is proportional to}\ Z,\ \text{so a smaller}\ Z\ \text{gives fewer large deflections, not more}\).
+Key point: \(\text{large-angle scattering}\Rightarrow\text{nucleus; its amount increases with}\ Z\)
+
+@@ Q80
+format: numerical
+sub_topic: Radius and density of two nuclei of different mass number
+Q: The nuclei \(^{27}\mathrm{Al}\) and \(^{125}\mathrm{Te}\) are compared. What are the ratio of their radii and the ratio of their nuclear densities?
+A) 3 : 5 and 1 : 1
+B) 27 : 125 and 1 : 1
+C) 3 : 5 and 27 : 125
+D) 9 : 25 and 5 : 3
+KEY: A
+SOL:
+Answer: (A) 3 : 5 and 1 : 1.
+Given: \(A_1=27,\quad A_2=125\)
+Formula/Principle: \(R=R_0A^{1/3};\quad\rho=\dfrac{Am_N}{\tfrac43\pi R^3}\)
+Step 1: \(\dfrac{R_1}{R_2}=\left(\dfrac{27}{125}\right)^{1/3}=\dfrac35\)
+Step 2: \(\rho=\dfrac{Am_N}{\tfrac43\pi R_0^3A}=\dfrac{3m_N}{4\pi R_0^3}\ \ (\text{independent of}\ A)\)
+Worked derivation: \[R_1:R_2=3:5,\qquad\rho_1:\rho_2=1:1\]
+Check: \[\frac{V_1}{V_2}=\left(\frac35\right)^3=\frac{27}{125}=\frac{A_1}{A_2}\ \Rightarrow\ \frac{\text{mass}}{\text{volume}}\ \text{is the same}\]
+Why: \(\text{the volume of a nucleus is proportional to the number of nucleons, because the nuclear force is short-ranged and saturates}\)
+Why not the others: (B) \(27:125\ \text{is the ratio of volumes, not of radii}\); (C) \(\text{density does not depend on}\ A\); (D) \(9:25\ \text{is the ratio of surface areas}\).
+Key point: \(R=R_0A^{1/3}\Rightarrow\text{nuclear density is the same for all nuclei}\)
