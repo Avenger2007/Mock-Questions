@@ -183,7 +183,7 @@ Numerical Chemistry questions also carry `Given:`, `Formula/Principle:`, `Step 1
 - [x] The user approved the PYQ summary and the plan (15 November 2026).
 - [x] `validate_nest.py` written: 80 questions, 20 per section, fixed IDs, match with the plan row, 3/13/4 and 5/5/5/5 per section, required solution labels, image-register match. KaTeX is checked with `node tools/iat/check_katex.mjs "<file>"`.
 - [x] Test 1 written as the pilot (`NISER/NEST TEST 1.json`, source text in `NISER/authoring/test01_*.txt`).
-- [ ] The user has approved pilot Test 1 before Tests 2–25 are written.
+- [x] The user approved pilot Test 1 on 17 November 2026. Tests 2–25 are on hold until the user says to start.
 
 ### How a test is written and built
 
