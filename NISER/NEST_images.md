@@ -36,3 +36,29 @@ One entry per question that needs a figure, in the format given in `NISER/NISER_
 - **Labels:** axis titles, the "42" tick, "r = i" on the dotted line.
 - **Must not show:** the words "critical angle", "total internal reflection", any refractive index value, or any ray diagram.
 - **Alt text:** Graph of refraction angle r against incidence angle i for light passing from medium A to medium B; the curve rises from the origin, steepens, and ends at r = 90 degrees when i = 42 degrees, with no curve beyond i = 42 degrees.
+
+## NEST Test 3
+
+### NEST_T03_Q11.png — Test 3, Q11 (Biology, transverse sections of a dicot and a monocot root)
+- **Purpose:** the student counts xylem and phloem patches and notes the pith to tell a dicot root from a monocot root.
+- **Size and style:** 1600 × 800 px, white background, two circular sections side by side, clean line-art in the style of a textbook diagram (black outlines, xylem patches filled dark red, phloem patches filled green, pith pale yellow, cortex unshaded with faint cell outlines), sans-serif labels 24 px or larger.
+- **Must show:** Left section labelled "X" underneath: outer epidermis, wide cortex, a thin endodermis ring and pericycle; inside it exactly 4 xylem patches (wedge-shaped, pointing outwards) alternating with exactly 4 phloem patches around the centre; the xylem wedges meet near the centre so that there is no pith. Right section labelled "Y" underneath: same outer layers; inside the endodermis exactly 14 small xylem patches alternating with exactly 14 phloem patches arranged in a ring; a large central pith filling the middle. One leader line on each section labelled "xylem", one labelled "phloem", and on Y one labelled "pith".
+- **Labels:** "X", "Y", "xylem", "phloem", "pith", "endodermis".
+- **Must not show:** the words "dicot", "monocot", "diarch/tetrarch/polyarch", any count written on the figure, or any secondary growth (no cambium ring).
+- **Alt text:** Two transverse sections of young roots side by side; section X has four xylem patches alternating with four phloem patches and no pith, section Y has many xylem patches alternating with phloem patches around a large central pith.
+
+### NEST_T03_Q32.png — Test 3, Q32 (Chemistry, first ionisation enthalpies of group 13)
+- **Purpose:** the student reads the irregular trend after Al and explains it.
+- **Size and style:** 1200 × 800 px, white background, five vertical bars of equal width in one colour (dark teal), black axes, light grey horizontal grid lines, sans-serif labels 24 px or larger.
+- **Must show:** x-axis with categories in this order: B, Al, Ga, In, Tl. y-axis "First ionisation enthalpy / kJ mol⁻¹" from 0 to 900 with ticks every 100. Bar heights exactly: B 801, Al 577, Ga 579, In 558, Tl 589. The value printed just above each bar (801, 577, 579, 558, 589).
+- **Labels:** element symbols under the bars, the five values above the bars, axis title.
+- **Must not show:** any trend line, arrows, the words "shielding", "d-electrons", "f-electrons", "lanthanoid", or atomic numbers.
+- **Alt text:** Bar chart of first ionisation enthalpy for B, Al, Ga, In and Tl with values 801, 577, 579, 558 and 589 kJ per mole.
+
+### NEST_T03_Q74.png — Test 3, Q74 (Physics, two rectangular cycles in opposite directions)
+- **Purpose:** the student reads the corner values, finds the enclosed area and sees that the direction decides the sign of the work.
+- **Size and style:** 1600 × 750 px, white background, two side-by-side panels with identical axes, rectangles drawn in dark blue (3 px) with a bold arrowhead on the middle of each side, light grey grid, sans-serif labels 24 px or larger.
+- **Must show:** In each panel: x-axis "V / L" from 0 to 4 with ticks every 0.5; y-axis "p / 10⁵ Pa" from 0 to 2.5 with ticks every 0.5. A rectangle with corners at (1.0, 1.0), (3.0, 1.0), (3.0, 2.0), (1.0, 2.0), with thin dashed guide lines from the corners to the axes. Left panel titled "I": arrows go along the top from left to right, down the right side, along the bottom from right to left, up the left side (clockwise). Right panel titled "II": the same rectangle with all arrows reversed (anticlockwise).
+- **Labels:** "I" and "II" above the panels; axis titles.
+- **Must not show:** shading of the enclosed area, the words "clockwise", "engine", "refrigerator", any value of work or heat.
+- **Alt text:** Two identical rectangular cycles on pressure–volume axes, each with corners at volumes 1 L and 3 L and pressures 1 and 2 times 10 to the 5 pascal; the left panel, labelled I, has arrows going clockwise and the right panel, labelled II, has arrows going anticlockwise.

@@ -1,0 +1,422 @@
+@@ Q61
+format: experiment
+sub_topic: Torque on a bar magnet in a uniform field and work to turn it from stable to unstable equilibrium
+Q: A bar magnet of magnetic moment \(2.0\ \mathrm{A\,m^2}\) hangs in a uniform horizontal magnetic field of 0.050 T. In an experiment, the torque needed to hold it with its axis at 30° to the field is measured. Then the magnet is turned slowly from the direction of the field to the opposite direction. What are the torque at 30° and the work done in turning it?
+A) 0.087 N m; 0.20 J
+B) 0.050 N m; 0.10 J
+C) 0.050 N m; 0.20 J
+D) 0.10 N m; 0.20 J
+KEY: C
+SOL:
+Answer: (C) 0.050 N m; 0.20 J.
+Given: \(m=2.0\ \mathrm{A\,m^2},\ B=0.050\ \mathrm T,\ \theta=30^\circ;\ \theta:0\to180^\circ\)
+Formula/Principle: \(\tau=mB\sin\theta;\quad U=-mB\cos\theta;\quad W=U_f-U_i\)
+Step 1: \(\tau=2.0\times0.050\times\sin30^\circ=0.050\ \mathrm{N\,m}\)
+Step 2: \(U(0^\circ)=-mB=-0.10\ \mathrm J,\quad U(180^\circ)=+mB=+0.10\ \mathrm J\)
+Worked derivation: \[W=\int_0^\pi mB\sin\theta\,d\theta=mB\left[-\cos\theta\right]_0^\pi=2mB=0.20\ \mathrm J\]
+Check: \[U_f-U_i=0.10-(-0.10)=0.20\ \mathrm J\ \checkmark;\ \text{net flux of}\ \vec B\ \text{through any closed surface around the magnet is}\ 0\ \text{(no isolated poles)}\]
+Why: \(\text{turning the dipole against the field stores energy}\ 2mB\)
+Why not the others: (A) \(\text{uses}\ \cos30^\circ\ \text{for the torque}\); (B) \(mB\ \text{is the work for}\ 0\to90^\circ\); (D) \(\text{uses}\ \sin90^\circ\ \text{for the torque}\).
+Key point: \(\tau=mB\sin\theta,\ W_{0\to180^\circ}=2mB\)
+
+@@ Q62
+format: conceptual
+sub_topic: Relation between the electric and magnetic fields of a plane electromagnetic wave in vacuum
+Q: Which statement about a plane electromagnetic wave travelling in vacuum is correct?
+A) \(\vec E\) and \(\vec B\) oscillate in phase, are perpendicular to each other and to the direction of travel, and their amplitudes satisfy \(E_0=cB_0\)
+B) \(\vec E\) and \(\vec B\) oscillate 90° out of phase, so that one is maximum when the other is zero
+C) The wave needs a material medium, because the fields must act on charges to travel
+D) Waves of higher frequency travel faster in vacuum
+KEY: A
+SOL:
+Answer: (A) \(\vec E\) and \(\vec B\) oscillate in phase, are perpendicular to each other and to the direction of travel, and their amplitudes satisfy \(E_0=cB_0\).
+Given: \(\text{plane wave along}\ z:\ E_x=E_0\sin(kz-\omega t),\ B_y=B_0\sin(kz-\omega t)\)
+Formula/Principle: \(c=\dfrac1{\sqrt{\mu_0\varepsilon_0}},\quad\dfrac{E_0}{B_0}=c,\quad c=\dfrac\omega k\)
+Step 1: \(\vec E\perp\vec B\perp\hat z\ \text{(transverse wave)}\)
+Step 2: \(\text{same phase}\ (kz-\omega t)\ \text{in both fields}\)
+Worked derivation: \[B_0=\frac{E_0}{c}:\ E_0=30\ \mathrm{V\,m^{-1}}\Rightarrow B_0=\frac{30}{3\times10^8}=1.0\times10^{-7}\ \mathrm T\]
+Check: \[\text{units: }\frac{\mathrm{V\,m^{-1}}}{\mathrm T}=\frac{\mathrm{V\,m^{-1}}}{\mathrm{V\,s\,m^{-2}}}=\mathrm{m\,s^{-1}}\ \checkmark\]
+Why: \(\text{a changing}\ \vec E\ \text{produces}\ \vec B\ \text{and vice versa, so they rise and fall together}\)
+Why not the others: (B) \(\text{in a travelling wave in vacuum they are in phase}\); (C) \(\text{EM waves travel through vacuum}\); (D) \(\text{all frequencies travel at}\ c\ \text{in vacuum}\).
+Key point: \(E_0=cB_0,\ \vec E\perp\vec B\perp\vec v,\ \text{in phase}\)
+
+@@ Q63
+format: numerical
+sub_topic: Image formed by refraction at a convex spherical end of a glass rod for an object at infinity
+Q: A long glass rod of refractive index 1.5 has one end ground into a convex hemispherical surface of radius 10 cm. A narrow beam of light parallel to the axis falls on this end from air. Where are the rays brought to a focus?
+A) 20 cm inside the rod
+B) 10 cm inside the rod
+C) 15 cm inside the rod
+D) 30 cm inside the rod
+KEY: D
+SOL:
+Answer: (D) 30 cm inside the rod.
+Given: \(n_1=1.0,\ n_2=1.5,\ R=+10\ \mathrm{cm},\ u=-\infty\)
+Formula/Principle: \(\dfrac{n_2}v-\dfrac{n_1}u=\dfrac{n_2-n_1}R\)
+Step 1: \(\dfrac{n_1}u\to0\)
+Step 2: \(\dfrac{1.5}v=\dfrac{0.5}{10}\)
+Worked derivation: \[v=\frac{1.5\times10}{0.5}=30\ \mathrm{cm}\]
+Check: \[\text{limit}\ R\to\infty:\ v\to\infty\ \text{(flat end: no focusing)}\ \checkmark;\ v>0\ \text{means a real image inside}\]
+Why: \(\text{the convex end bends rays towards the axis, and they meet inside the glass}\)
+Why not the others: (A) \(\dfrac{R}{n_2-n_1}=20\ \text{forgets}\ n_2\ \text{on the left}\); (B) \(\text{takes the focus at the centre of curvature}\); (C) \(n_2R=15\ \text{forgets}\ n_2-n_1\).
+Key point: \(f_2=\dfrac{n_2R}{n_2-n_1}\ \text{for a single surface}\)
+
+@@ Q64
+format: experiment
+sub_topic: Focal length of a glass lens measured in air and predicted in water using the lens maker formula
+Q: A thin biconvex glass lens (refractive index 1.5) is found by experiment to have a focal length of 20 cm in air. It is then immersed in water of refractive index \(\tfrac43\). What focal length should be measured in water?
+A) 20 cm
+B) 80 cm
+C) 26.7 cm
+D) 15 cm
+KEY: B
+SOL:
+Answer: (B) 80 cm.
+Given: \(n_g=1.5,\ n_w=\tfrac43,\ f_{\text{air}}=20\ \mathrm{cm}\)
+Formula/Principle: \(\dfrac1f=\left(\dfrac{n_g}{n_m}-1\right)\left(\dfrac1{R_1}-\dfrac1{R_2}\right)\)
+Step 1: \(\text{air: }\dfrac1{20}=(1.5-1)K=0.5K\)
+Step 2: \(\text{water: }\dfrac1{f_w}=\left(\dfrac{1.5}{4/3}-1\right)K=0.125K\)
+Worked derivation: \[\frac{f_w}{f_{\text{air}}}=\frac{0.5}{0.125}=4\Rightarrow f_w=80\ \mathrm{cm}\]
+Check: \[\text{limit}\ n_m\to n_g:\ f\to\infty\ \text{(lens disappears)}\ \checkmark;\ \text{water is closer to glass, so}\ f\ \text{increases}\]
+Why: \(\text{refraction at each surface depends on the relative index}\ n_g/n_m\)
+Why not the others: (A) \(f\ \text{depends on the medium}\); (C) \(\text{multiplies by}\ n_w\); (D) \(\text{divides by}\ n_w\).
+Key point: \(\dfrac{f_m}{f_{\text{air}}}=\dfrac{n_g-1}{n_g/n_m-1}\)
+
+@@ Q65
+format: numerical
+sub_topic: Number of fringes in a fixed region of a Young double-slit pattern when the wavelength changes
+Q: In a Young double-slit experiment with light of wavelength 600 nm, 12 bright fringes are seen in a certain region of the screen. The slits and the screen are kept fixed, and the light is changed to wavelength 400 nm. How many bright fringes are now seen in the same region?
+A) 18
+B) 8
+C) 12
+D) 27
+KEY: A
+SOL:
+Answer: (A) 18.
+Given: \(\lambda_1=600\ \mathrm{nm},\ N_1=12;\ \lambda_2=400\ \mathrm{nm};\ d,\ D\ \text{fixed}\)
+Formula/Principle: \(\beta=\dfrac{\lambda D}d;\quad N=\dfrac{\text{width}}{\beta}\propto\dfrac1\lambda\)
+Step 1: \(N_1\beta_1=N_2\beta_2\Rightarrow N_1\lambda_1=N_2\lambda_2\)
+Step 2: \(N_2=12\times\dfrac{600}{400}\)
+Worked derivation: \[N_2=12\times1.5=18\]
+Check: \[12\times600=7200=18\times400\ \checkmark\]
+Why: \(\text{shorter wavelength gives narrower fringes, so more fit in the same width}\)
+Why not the others: (B) \(\text{multiplies by}\ \tfrac{\lambda_2}{\lambda_1}\); (C) \(\text{fringe width depends on}\ \lambda\); (D) \(\text{uses}\ \left(\tfrac32\right)^2\).
+Key point: \(N\lambda=\text{constant for a fixed region}\)
+
+@@ Q66
+format: numerical
+sub_topic: Comparing the n = 2 state of He⁺ with the ground state of hydrogen in the Bohr model
+Q: In the Bohr model, compare the electron in the n = 2 orbit of a singly ionised helium atom (He⁺, Z = 2) with the electron in the n = 1 orbit of a hydrogen atom. Which statement is correct?
+A) He⁺ has 4 times the energy magnitude, the same radius and twice the speed
+B) He⁺ has the same energy, the same radius and the same speed
+C) He⁺ has the same energy and the same speed, but twice the orbit radius
+D) He⁺ has the same energy, twice the radius and half the speed
+KEY: C
+SOL:
+Answer: (C) He⁺ has the same energy and the same speed, but twice the orbit radius.
+Given: \(\text{He}^+:\ Z=2,\ n=2;\quad\text{H}:\ Z=1,\ n=1\)
+Formula/Principle: \(r_n=a_0\dfrac{n^2}Z,\quad v_n=v_0\dfrac Zn,\quad E_n=-13.6\dfrac{Z^2}{n^2}\ \mathrm{eV}\)
+Step 1: \(r=a_0\dfrac{4}{2}=2a_0\ \text{vs}\ a_0\)
+Step 2: \(v=v_0\dfrac22=v_0\ \text{vs}\ v_0\)
+Step 3: \(E=-13.6\times\dfrac44=-13.6\ \mathrm{eV}\ \text{vs}\ -13.6\ \mathrm{eV}\)
+Worked derivation: \[\frac{r_{\text{He}^+}}{r_{\text H}}=2,\quad\frac{v_{\text{He}^+}}{v_{\text H}}=1,\quad\frac{E_{\text{He}^+}}{E_{\text H}}=1\]
+Check: \[K=\tfrac12mv^2\ \text{equal, and}\ E=-K\ \text{in Bohr orbits, so equal energies}\ \checkmark\]
+Why: \(E\ \text{and}\ v\ \text{depend on}\ Z/n,\ \text{but}\ r\ \text{depends on}\ n^2/Z\)
+Why not the others: (A) \(\text{uses}\ n=1\ \text{for He}^+\); (B) \(r\propto\tfrac{n^2}Z=2\ne1\); (D) \(v\propto\tfrac Zn=1\).
+Key point: \(r\propto\dfrac{n^2}Z,\ v\propto\dfrac Zn,\ E\propto\dfrac{Z^2}{n^2}\)
+
+@@ Q67
+format: numerical
+sub_topic: Binding energy and binding energy per nucleon of helium-4 from atomic masses
+Q: Atomic masses: \(^1_1\mathrm H=1.007825\ \mathrm u\), neutron \(=1.008665\ \mathrm u\), \(^4_2\mathrm{He}=4.002603\ \mathrm u\); 1 u = 931.5 MeV/c². What are the binding energy of the helium-4 nucleus and its binding energy per nucleon?
+A) 7.07 MeV; 1.77 MeV
+B) 28.3 MeV; 14.2 MeV
+C) 3728 MeV; 932 MeV
+D) 28.3 MeV; 7.07 MeV
+KEY: D
+SOL:
+Answer: (D) 28.3 MeV; 7.07 MeV.
+Given: \(m_{\text H}=1.007825\ \mathrm u,\ m_n=1.008665\ \mathrm u,\ M_{\text{He}}=4.002603\ \mathrm u\)
+Formula/Principle: \(\Delta m=Zm_{\text H}+Nm_n-M;\quad B=\Delta m\,c^2\ \text{(energy conservation: energy released on forming the nucleus)}\)
+Step 1: \(Zm_{\text H}+Nm_n=2(1.007825)+2(1.008665)=4.032980\ \mathrm u\)
+Step 2: \(\Delta m=4.032980-4.002603=0.030377\ \mathrm u\)
+Worked derivation: \[B=0.030377\times931.5=28.30\ \mathrm{MeV},\qquad\frac BA=\frac{28.30}4=7.07\ \mathrm{MeV}\]
+Check: \[\text{using atomic masses, the electron masses cancel (2 in}\ 2\,{}^1\mathrm H,\ 2\ \text{in He)};\ 7.07\ \mathrm{MeV}\ \text{is the known value for}\ {}^4\mathrm{He}\]
+Why: \(\text{the nucleus is lighter than its separate nucleons by}\ \Delta m\)
+Why not the others: (A) \(\text{divides by 4 twice}\); (B) \(\text{divides by}\ Z=2\ \text{instead of}\ A=4\); (C) \(\text{is the rest energy of the whole atom}\).
+Key point: \(B=[Zm_{\text H}+Nm_n-M]c^2,\ \text{per nucleon}=B/A\)
+
+@@ Q68
+format: graph
+sub_topic: Dimensional analysis of the oscillation period of a liquid drop and the linear graph it predicts
+Q: The period T of small oscillations of a liquid drop is believed to depend only on its density ρ, its radius r and the surface tension σ of the liquid. Using dimensional analysis, which graph is expected to be a straight line through the origin for drops of one liquid?
+A) T against r
+B) T² against r³
+C) T against r²
+D) T² against r
+KEY: B
+SOL:
+Answer: (B) T² against r³.
+Given: \(T=k\rho^ar^b\sigma^c;\ [\rho]=ML^{-3},\ [r]=L,\ [\sigma]=MT^{-2}\)
+Formula/Principle: \(\text{equate powers of}\ M,L,T\ \text{on both sides}\)
+Step 1: \(M:\ a+c=0;\quad L:\ -3a+b=0;\quad T:\ -2c=1\)
+Step 2: \(c=-\tfrac12,\ a=\tfrac12,\ b=\tfrac32\)
+Worked derivation: \[T=k\sqrt{\frac{\rho r^3}{\sigma}}\Rightarrow T^2=\frac{k^2\rho}{\sigma}\,r^3\]
+Check: \[\left[\sqrt{\frac{\rho r^3}{\sigma}}\right]=\sqrt{\frac{ML^{-3}L^3}{MT^{-2}}}=T\ \checkmark\]
+Why: \(\text{for one liquid}\ \rho\ \text{and}\ \sigma\ \text{are fixed, so}\ T^2\propto r^3\)
+Why not the others: (A) \(T\propto r^{3/2},\ \text{not}\ r\); (C) \(T\propto r^{3/2},\ \text{not}\ r^2\); (D) \(T^2\propto r^3,\ \text{not}\ r\).
+Key point: \(T\propto\sqrt{\rho r^3/\sigma}\)
+
+@@ Q69
+format: numerical
+sub_topic: Projectile on a planet with half the gravitational acceleration: scaling of range, height and time
+Q: A ball is thrown with the same speed and at the same angle on Earth and on a planet where the acceleration due to gravity is \(\tfrac g2\). Air resistance is negligible. Compared with Earth, what happens to the horizontal range, the maximum height and the time of flight on the planet?
+A) Range doubles, maximum height unchanged, time of flight × \(\sqrt2\)
+B) All three increase by a factor \(\sqrt2\)
+C) All three double
+D) Range × 4, maximum height × 2, time of flight × 2
+KEY: C
+SOL:
+Answer: (C) All three double.
+Given: \(u,\ \theta\ \text{same};\ g'=\tfrac g2\)
+Formula/Principle: \(R=\dfrac{u^2\sin2\theta}g,\quad H=\dfrac{u^2\sin^2\theta}{2g},\quad T=\dfrac{2u\sin\theta}g\)
+Step 1: \(\text{each quantity}\propto\dfrac1g\)
+Step 2: \(g\to\dfrac g2\Rightarrow\text{each}\times2\)
+Worked derivation: \[\frac{R'}{R}=\frac{H'}{H}=\frac{T'}{T}=\frac{g}{g/2}=2\]
+Check: \[R=u_xT:\ u_x\ \text{unchanged and}\ T\times2\Rightarrow R\times2\ \checkmark\]
+Why: \(\text{weaker gravity lets the ball rise higher and stay up longer}\)
+Why not the others: (A) \(H\propto\tfrac1g\ \text{too}\); (B) \(\text{none depends on}\ \sqrt g\); (D) \(R=u_xT\ \text{grows only by 2}\).
+Key point: \(R,\ H,\ T\ \text{all scale as}\ \dfrac1g\)
+
+@@ Q70
+format: numerical
+sub_topic: Tension in two strings supporting a weight: effect of the angle between them
+Q: A lamp of weight W hangs from the midpoint of two identical strings attached to the ceiling, symmetric about the vertical. In arrangement P the angle between the two strings is 60°; in arrangement Q it is 120°. What is the tension in each string in P and in Q?
+A) P: about 0.58W; Q: W
+B) P: W/2; Q: W/2
+C) P: W; Q: about 0.58W
+D) P: about 0.87W; Q: 0.50W
+KEY: A
+SOL:
+Answer: (A) P: about 0.58W; Q: W.
+Given: \(\text{angle between strings}\ \phi;\ \text{each makes}\ \tfrac\phi2\ \text{with the vertical}\)
+Formula/Principle: \(\text{equilibrium of concurrent forces: }2T\cos\tfrac\phi2=W\)
+Step 1: \(P:\ \phi=60^\circ\Rightarrow T=\dfrac{W}{2\cos30^\circ}=\dfrac{W}{\sqrt3}\approx0.58W\)
+Step 2: \(Q:\ \phi=120^\circ\Rightarrow T=\dfrac{W}{2\cos60^\circ}=W\)
+Worked derivation: \[T(\phi)=\frac{W}{2\cos(\phi/2)}\to\infty\ \text{as}\ \phi\to180^\circ\]
+Check: \[\phi=0:\ T=\tfrac W2\ \text{(each string carries half)}\ \checkmark;\ \text{horizontal components cancel by symmetry}\]
+Why: \(\text{wider strings have smaller vertical components, so each must pull harder}\)
+Why not the others: (B) \(\text{true only for vertical strings}\); (C) \(\text{uses}\ \sin\tfrac\phi2\ \text{instead of}\ \cos\tfrac\phi2\); (D) \(\text{gives the vertical component of a tension}\ W\ \text{string, not}\ T\).
+Key point: \(2T\cos\tfrac\phi2=W\)
+
+@@ Q71
+format: numerical
+sub_topic: Power of a car climbing at constant speed: share of conservative and non-conservative work
+Q: A car of mass 1000 kg climbs a road inclined at \(\sin\theta=0.10\) at a constant speed of 10 m/s. Friction and air resistance together oppose the motion with a constant force of 500 N. Take \(g=10\ \mathrm{m\,s^{-2}}\). What power does the engine deliver to the wheels, and how is it shared?
+A) 10 kW, all of which becomes gravitational potential energy
+B) 15 kW; 10 kW goes into gravitational potential energy and 5 kW is dissipated by the non-conservative forces
+C) 5 kW, all of which is dissipated as heat
+D) 15 kW, all of which becomes gravitational potential energy
+KEY: B
+SOL:
+Answer: (B) 15 kW; 10 kW goes into gravitational potential energy and 5 kW is dissipated by the non-conservative forces.
+Given: \(m=1000\ \mathrm{kg},\ \sin\theta=0.10,\ v=10\ \mathrm{m\,s^{-1}},\ f=500\ \mathrm N,\ g=10\ \mathrm{m\,s^{-2}}\)
+Formula/Principle: \(\text{constant speed: }F=mg\sin\theta+f;\quad P=Fv\)
+Step 1: \(mg\sin\theta=1000\times10\times0.10=1000\ \mathrm N\)
+Step 2: \(F=1000+500=1500\ \mathrm N\Rightarrow P=1500\times10=15\ \mathrm{kW}\)
+Worked derivation: \[\frac{dU}{dt}=mg\sin\theta\,v=10\ \mathrm{kW},\qquad P_{\text{diss}}=fv=5\ \mathrm{kW},\qquad10+5=15\ \mathrm{kW}\]
+Check: \[\Delta K=0\Rightarrow P_{\text{engine}}=\frac{dU}{dt}+P_{\text{diss}}\ \checkmark\]
+Why: \(\text{gravity is conservative (energy stored); friction is non-conservative (energy lost as heat)}\)
+Why not the others: (A) \(\text{leaves out friction}\); (C) \(\text{leaves out the climb}\); (D) \(\text{dissipated energy is not stored as}\ U\).
+Key point: \(P=Fv\ \text{with}\ F\ \text{balancing gravity along the slope plus friction}\)
+
+@@ Q72
+format: numerical
+sub_topic: Moment of inertia and radius of gyration of a uniform disc about its central perpendicular axis
+Q: A uniform disc has mass 2.0 kg and radius 0.10 m. What are its moment of inertia and its radius of gyration about the axis through its centre perpendicular to its plane?
+A) \(0.020\ \mathrm{kg\,m^2}\); 0.10 m
+B) \(0.010\ \mathrm{kg\,m^2}\); 0.050 m
+C) \(0.0050\ \mathrm{kg\,m^2}\); 0.050 m
+D) \(0.010\ \mathrm{kg\,m^2}\); 0.071 m
+KEY: D
+SOL:
+Answer: (D) \(0.010\ \mathrm{kg\,m^2}\); 0.071 m.
+Given: \(M=2.0\ \mathrm{kg},\ R=0.10\ \mathrm m\)
+Formula/Principle: \(I=\tfrac12MR^2;\quad I=Mk^2\)
+Step 1: \(I=\tfrac12\times2.0\times(0.10)^2=0.010\ \mathrm{kg\,m^2}\)
+Step 2: \(k=\sqrt{\dfrac IM}=\sqrt{\dfrac{0.010}{2.0}}\)
+Worked derivation: \[k=\sqrt{0.0050}=\frac{R}{\sqrt2}=0.0707\ \mathrm m\approx0.071\ \mathrm m\]
+Check: \[Mk^2=2.0\times0.0050=0.010\ \checkmark\]
+Why: \(\text{the disc's mass is nearer the axis than a ring's, so}\ k<R\)
+Why not the others: (A) \(\text{uses the ring formula}\ MR^2\); (B) \(k=\tfrac R2\ \text{is not}\ \sqrt{I/M}\); (C) \(\text{uses the diameter axis}\ \tfrac14MR^2\).
+Key point: \(\text{disc: }k=\dfrac R{\sqrt2}\)
+
+@@ Q73
+format: numerical
+sub_topic: Extension of a loaded wire from stress, strain and Young's modulus
+Q: A steel wire 2.0 m long with cross-sectional area 1.0 mm² hangs vertically and carries a load of mass 10 kg. Young's modulus of steel is \(2.0\times10^{11}\ \mathrm{Pa}\); take \(g=10\ \mathrm{m\,s^{-2}}\). What is the extension of the wire?
+A) 0.50 mm
+B) 1.0 cm
+C) 1.0 mm
+D) 0.10 mm
+KEY: C
+SOL:
+Answer: (C) 1.0 mm.
+Given: \(L=2.0\ \mathrm m,\ A=1.0\times10^{-6}\ \mathrm{m^2},\ F=100\ \mathrm N,\ Y=2.0\times10^{11}\ \mathrm{Pa}\)
+Formula/Principle: \(Y=\dfrac{F/A}{\Delta L/L}\Rightarrow\Delta L=\dfrac{FL}{AY}\)
+Step 1: \(\text{stress}=\dfrac{100}{1.0\times10^{-6}}=1.0\times10^8\ \mathrm{Pa}\)
+Step 2: \(\text{strain}=\dfrac{1.0\times10^8}{2.0\times10^{11}}=5.0\times10^{-4}\)
+Worked derivation: \[\Delta L=5.0\times10^{-4}\times2.0=1.0\times10^{-3}\ \mathrm m=1.0\ \mathrm{mm}\]
+Check: \[\frac{FL}{AY}=\frac{100\times2.0}{10^{-6}\times2.0\times10^{11}}=10^{-3}\ \mathrm m\ \checkmark\]
+Why: \(\text{within the elastic limit, strain is proportional to stress (Hooke's law)}\)
+Why not the others: (A) \(\text{uses}\ L=1\ \mathrm m\); (B) \(\text{takes}\ 1\ \mathrm{mm^2}=10^{-7}\ \mathrm{m^2}\); (D) \(\text{uses}\ F=10\ \mathrm N\ \text{(forgets}\ g)\).
+Key point: \(\Delta L=\dfrac{FL}{AY}\)
+
+@@ Q74
+format: graph
+sub_topic: Two rectangular cycles traversed in opposite directions on a P–V diagram
+image: NEST_T03_Q74.png
+alt: Two identical rectangular cycles on pressure–volume axes, each with corners at volumes 1 L and 3 L and pressures 1 and 2 times 10 to the 5 pascal; the left panel, labelled I, has arrows going clockwise and the right panel, labelled II, has arrows going anticlockwise.
+Q: The figure shows two cycles, I and II, for the same ideal gas. They have the same corners but are traversed in opposite directions, as shown by the arrows. Read the volumes and pressures from the figure. For one complete cycle, what are the net work done by the gas and the change in internal energy in each case?
+A) I: work by gas +200 J, ΔU = 0; II: work by gas −200 J, ΔU = 0
+B) I: +200 J, ΔU = 0; II: +200 J, ΔU = 0
+C) I: 0, ΔU = 0; II: 0, ΔU = 0
+D) I: +200 J, ΔU = +200 J; II: −200 J, ΔU = −200 J
+KEY: A
+SOL:
+Answer: (A) I: work by gas +200 J, ΔU = 0; II: work by gas −200 J, ΔU = 0.
+Given: \(\text{from the figure: }V=1.0\ \text{to}\ 3.0\ \mathrm L,\ p=1.0\times10^5\ \text{to}\ 2.0\times10^5\ \mathrm{Pa};\ \text{I clockwise, II anticlockwise}\)
+Formula/Principle: \(W_{\text{by gas}}=\oint p\,dV=\pm(\text{enclosed area});\quad\Delta U_{\text{cycle}}=0\)
+Step 1: \(\text{area}=(2.0-1.0)\times10^5\times(3.0-1.0)\times10^{-3}=200\ \mathrm J\)
+Step 2: \(\text{clockwise: expansion at high}\ p,\ \text{compression at low}\ p\Rightarrow W>0\)
+Worked derivation: \[W_{\text I}=2.0\times10^5(2.0\times10^{-3})-1.0\times10^5(2.0\times10^{-3})=+200\ \mathrm J,\quad W_{\text{II}}=-200\ \mathrm J\]
+Check: \[Q=\Delta U+W:\ Q_{\text I}=+200\ \mathrm J\ \text{(engine)},\ Q_{\text{II}}=-200\ \mathrm J\ \text{(refrigerator-like)}\]
+Why: \(U\ \text{is a state function and returns to its starting value after a cycle}\)
+Why not the others: (B) \(\text{reversing the direction reverses the sign of the work}\); (C) \(\text{the enclosed area is not zero}\); (D) \(\Delta U=0\ \text{for any complete cycle}\).
+Key point: \(\text{cycle: }\Delta U=0,\ W=\pm\text{area (clockwise positive on}\ p\text{–}V)\)
+
+@@ Q75
+format: numerical
+sub_topic: Temperatures for equal average kinetic energy and for equal rms speed of two gases
+Q: Oxygen (molar mass 32 g/mol) is at 300 K. (a) At what temperature would helium (molar mass 4 g/mol) have the same average translational kinetic energy per molecule? (b) At what temperature would helium have the same rms speed as the oxygen?
+A) (a) 300 K; (b) 2400 K
+B) (a) 300 K; (b) 37.5 K
+C) (a) 37.5 K; (b) 300 K
+D) (a) 2400 K; (b) 37.5 K
+KEY: B
+SOL:
+Answer: (B) (a) 300 K; (b) 37.5 K.
+Given: \(M_{\text O_2}=32,\ M_{\text{He}}=4\ (\mathrm{g\,mol^{-1}}),\ T_{\text O_2}=300\ \mathrm K\)
+Formula/Principle: \(\bar K=\tfrac32k_BT;\quad v_{\text{rms}}=\sqrt{\dfrac{3RT}M}\)
+Step 1: \(\text{(a) }\bar K\ \text{depends only on}\ T\Rightarrow T_{\text{He}}=300\ \mathrm K\)
+Step 2: \(\text{(b) }\dfrac{T_{\text{He}}}{4}=\dfrac{300}{32}\)
+Worked derivation: \[T_{\text{He}}=300\times\frac{4}{32}=37.5\ \mathrm K\]
+Check: \[v_{\text{rms}}(\text{O}_2,300)=\sqrt{\tfrac{3(8.314)(300)}{0.032}}=483\ \mathrm{m\,s^{-1}};\ \ v_{\text{rms}}(\text{He},37.5)=\sqrt{\tfrac{3(8.314)(37.5)}{0.004}}=483\ \mathrm{m\,s^{-1}}\ \checkmark\]
+Why: \(\text{equal}\ \tfrac12mv^2\ \text{needs equal}\ T;\ \text{equal}\ v\ \text{needs}\ T\propto m\)
+Why not the others: (A) \(\text{inverts the mass ratio in (b)}\); (C) \(\text{swaps (a) and (b)}\); (D) \(\text{average KE does not depend on mass}\).
+Key point: \(\bar K\propto T;\ v_{\text{rms}}\propto\sqrt{T/M}\)
+
+@@ Q76
+format: numerical
+sub_topic: Period of a spring–mass system from its static extension, before and after cutting the spring in half
+Q: A mass hung from a light spring stretches it by 4.0 cm at equilibrium. The mass is set into small vertical oscillations. The spring is then cut into two equal halves, and the same mass is hung from one half. Take \(g=9.8\ \mathrm{m\,s^{-2}}\). What are the periods in the two cases?
+A) 0.40 s and 0.57 s
+B) 0.40 s and 0.20 s
+C) 0.40 s and 0.40 s
+D) 0.40 s and 0.28 s
+KEY: D
+SOL:
+Answer: (D) 0.40 s and 0.28 s.
+Given: \(x_0=0.040\ \mathrm m,\ g=9.8\ \mathrm{m\,s^{-2}}\)
+Formula/Principle: \(kx_0=mg\Rightarrow\dfrac mk=\dfrac{x_0}g;\quad T=2\pi\sqrt{\dfrac mk};\quad\text{half spring: }k'=2k\)
+Step 1: \(T_1=2\pi\sqrt{\dfrac{0.040}{9.8}}=2\pi(0.0639)=0.40\ \mathrm s\)
+Step 2: \(k'=2k\Rightarrow T_2=\dfrac{T_1}{\sqrt2}\)
+Worked derivation: \[T_2=\frac{0.401}{1.414}=0.284\ \mathrm s\approx0.28\ \mathrm s\]
+Check: \[\text{half spring stretches}\ 2.0\ \mathrm{cm}:\ 2\pi\sqrt{0.020/9.8}=0.284\ \mathrm s\ \checkmark\]
+Why: \(\text{each half carries the same tension but stretches half as much, so it is twice as stiff}\)
+Why not the others: (A) \(\text{takes}\ k'=\tfrac k2\); (B) \(\text{halves}\ T\ \text{instead of dividing by}\ \sqrt2\); (C) \(k\ \text{depends on the length of the spring}\).
+Key point: \(T=2\pi\sqrt{x_0/g};\ k\propto\dfrac1{\text{length}}\)
+
+@@ Q77
+format: graph
+sub_topic: Log–log graphs of the far field of an electric dipole on its axis and on its equatorial line
+Q: For an electric dipole of moment p, the magnitude of the electric field is measured at distances r much larger than the dipole length, once along the axis and once along the equatorial line. log E is plotted against log r for both. What do the two graphs look like?
+A) Two parallel straight lines of slope −2
+B) Two coincident straight lines of slope −3
+C) Two parallel straight lines of slope −3, with the axial line higher by log 2
+D) A line of slope −3 for the axis and a line of slope −2 for the equatorial line
+KEY: C
+SOL:
+Answer: (C) Two parallel straight lines of slope −3, with the axial line higher by log 2.
+Given: \(r\gg a\ (\text{dipole length}\ 2a)\)
+Formula/Principle: \(E_{\text{axial}}=\dfrac1{4\pi\varepsilon_0}\dfrac{2p}{r^3},\quad E_{\text{eq}}=\dfrac1{4\pi\varepsilon_0}\dfrac p{r^3}\)
+Step 1: \(\log E_{\text{axial}}=\log\dfrac{2p}{4\pi\varepsilon_0}-3\log r\)
+Step 2: \(\log E_{\text{eq}}=\log\dfrac{p}{4\pi\varepsilon_0}-3\log r\)
+Worked derivation: \[\log E_{\text{axial}}-\log E_{\text{eq}}=\log2\ \text{for every}\ r\]
+Check: \[r\to2r:\ E\to\tfrac E8:\ \Delta\log E=-3\log2\ \text{for}\ \Delta\log r=\log2\Rightarrow\text{slope}-3\ \checkmark\]
+Why: \(\text{both fields fall as}\ \tfrac1{r^3};\ \text{only the constant differs}\)
+Why not the others: (A) \(\tfrac1{r^2}\ \text{is the point-charge law}\); (B) \(E_{\text{axial}}=2E_{\text{eq}}\); (D) \(\text{the equatorial field also falls as}\ \tfrac1{r^3}\).
+Key point: \(\text{dipole far field}\propto\dfrac1{r^3};\ E_{\text{axial}}=2E_{\text{eq}}\)
+
+@@ Q78
+format: numerical
+sub_topic: Charge sharing between two connected conducting spheres: charges and surface charge densities
+Q: Two isolated conducting spheres of radii R and 2R, far apart, are joined by a thin conducting wire and given a total charge. What are the ratio of their charges \(Q_1:Q_2\) and the ratio of their surface charge densities \(\sigma_1:\sigma_2\) (sphere 1 has radius R)?
+A) 1 : 1 and 1 : 4
+B) 1 : 2 and 2 : 1
+C) 1 : 2 and 1 : 2
+D) 1 : 4 and 1 : 1
+KEY: B
+SOL:
+Answer: (B) 1 : 2 and 2 : 1.
+Given: \(r_1=R,\ r_2=2R;\ \text{joined}\Rightarrow V_1=V_2\)
+Formula/Principle: \(V=\dfrac{Q}{4\pi\varepsilon_0r};\quad\sigma=\dfrac{Q}{4\pi r^2}\)
+Step 1: \(\dfrac{Q_1}{R}=\dfrac{Q_2}{2R}\Rightarrow Q_1:Q_2=1:2\)
+Step 2: \(\dfrac{\sigma_1}{\sigma_2}=\dfrac{Q_1}{Q_2}\cdot\dfrac{(2R)^2}{R^2}=\dfrac12\cdot4=2\)
+Worked derivation: \[\sigma=\frac{Q}{4\pi r^2}=\frac{4\pi\varepsilon_0rV}{4\pi r^2}=\frac{\varepsilon_0V}{r}\Rightarrow\sigma\propto\frac1r\ \text{at equal}\ V\]
+Check: \[\text{surface field}\ E=\frac\sigma{\varepsilon_0}\ \text{is larger on the smaller sphere: charge crowds at sharp points}\ \checkmark\]
+Why: \(\text{connected conductors share one potential}\)
+Why not the others: (A) \(\text{equal charges would give unequal potentials}\); (C) \(\sigma\ \text{depends on}\ r^2\ \text{too}\); (D) \(\text{takes}\ Q\propto r^2\ \text{(equal}\ \sigma)\).
+Key point: \(\text{equal}\ V:\ Q\propto r,\ \sigma\propto\dfrac1r\)
+
+@@ Q79
+format: numerical
+sub_topic: Resistance of a copper wire at a higher temperature from the temperature coefficient of resistivity
+Q: A copper wire has a resistance of 10.0 Ω at 20 °C. The temperature coefficient of resistivity of copper is \(4.0\times10^{-3}\ \mathrm{K^{-1}}\) (taken with 20 °C as the reference). Neglecting thermal expansion, what is its resistance at 70 °C?
+A) 12.0 Ω
+B) 10.2 Ω
+C) 12.8 Ω
+D) 8.0 Ω
+KEY: A
+SOL:
+Answer: (A) 12.0 Ω.
+Given: \(R_{20}=10.0\ \Omega,\ \alpha=4.0\times10^{-3}\ \mathrm{K^{-1}},\ \Delta T=50\ \mathrm K\)
+Formula/Principle: \(\rho_T=\rho_0\left[1+\alpha(T-T_0)\right]\Rightarrow R_T=R_0\left[1+\alpha\Delta T\right]\)
+Step 1: \(\alpha\Delta T=4.0\times10^{-3}\times50=0.20\)
+Step 2: \(R_{70}=10.0\times1.20\)
+Worked derivation: \[R_{70}=12.0\ \Omega\]
+Check: \[\text{limit}\ \Delta T\to0:\ R\to10.0\ \Omega\ \checkmark;\ \text{metals: resistance rises with temperature}\]
+Why: \(\text{more lattice vibration means more frequent collisions, so the relaxation time falls}\)
+Why not the others: (B) \(\text{uses}\ \alpha\times50\ \text{as an absolute increase of}\ 0.2\ \Omega\); (C) \(\text{uses}\ \Delta T=70\ \mathrm K\); (D) \(\text{subtracts instead of adding}\).
+Key point: \(R=R_0(1+\alpha\Delta T)\)
+
+@@ Q80
+format: numerical
+sub_topic: Proton and alpha particle of equal kinetic energy in a uniform magnetic field: radius and period
+Q: A proton and an alpha particle (mass 4 times and charge 2 times those of the proton) enter the same uniform magnetic field perpendicular to it with equal kinetic energies. How do the radii of their circular paths and their periods of revolution compare?
+A) The alpha particle has twice the radius and the same period
+B) The alpha particle has half the radius and twice the period
+C) Both have the same radius and the same period
+D) Both have the same radius; the alpha particle has twice the period
+KEY: D
+SOL:
+Answer: (D) Both have the same radius; the alpha particle has twice the period.
+Given: \(m_\alpha=4m,\ q_\alpha=2e;\ K\ \text{equal};\ \vec v\perp\vec B\)
+Formula/Principle: \(qvB=\dfrac{mv^2}r\Rightarrow r=\dfrac{mv}{qB}=\dfrac{\sqrt{2mK}}{qB};\quad T=\dfrac{2\pi m}{qB}\)
+Step 1: \(\dfrac{r_\alpha}{r_p}=\dfrac{\sqrt{4m}/2e}{\sqrt m/e}=\dfrac{2}{2}=1\)
+Step 2: \(\dfrac{T_\alpha}{T_p}=\dfrac{4m/2e}{m/e}=2\)
+Worked derivation: \[r_\alpha=\frac{\sqrt{2(4m)K}}{2eB}=\frac{\sqrt{2mK}}{eB}=r_p,\qquad T_\alpha=\frac{2\pi(4m)}{2eB}=2T_p\]
+Check: \[v_\alpha=\sqrt{2K/4m}=\tfrac12v_p;\ \text{same}\ r\Rightarrow T=\tfrac{2\pi r}{v}\ \text{doubles}\ \checkmark\]
+Why: \(\text{the magnetic force does no work, so each moves in a circle at constant speed}\)
+Why not the others: (A) \(r\propto\sqrt m/q\ \text{gives 1, not 2}\); (B) \(\text{radii are equal}\); (C) \(T\propto m/q\ \text{doubles}\).
+Key point: \(r=\dfrac{\sqrt{2mK}}{qB},\ T=\dfrac{2\pi m}{qB}\ \text{(independent of speed)}\)

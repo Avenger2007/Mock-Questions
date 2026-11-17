@@ -1,0 +1,369 @@
+@@ Q01
+format: numerical
+sub_topic: Polygenic inheritance with three additive genes: number of phenotypic classes and frequency of the middle class
+Q: Skin colour in a model organism is controlled by three unlinked genes A, B and C. Each capital allele adds one equal unit of pigment, and small alleles add none. Two individuals with genotype AaBbCc are crossed. How many phenotypic classes appear among the offspring, and what fraction of the offspring has exactly three capital alleles?
+A) 8 classes; 1/8
+B) 27 classes; 1/64
+C) 7 classes; 1/64
+D) 7 classes; 5/16
+KEY: D
+SOL:
+Answer: (D) 7 classes; 5/16.
+Concept: In polygenic inheritance, a trait is controlled by several genes, and the phenotype reflects the total contribution of all the alleles (additive effect). Individuals with the same number of capital alleles have the same phenotype, whatever the genes carrying them.
+Given: parents AaBbCc × AaBbCc; three unlinked genes; each capital allele adds one unit.
+Formula/Principle: each offspring receives 6 alleles, each capital with probability 1/2; P(k capital alleles) = C(6, k)/2⁶.
+Step 1: The number of capital alleles can be 0, 1, 2, 3, 4, 5 or 6, so there are 7 phenotypic classes.
+Step 2: P(3 capital alleles) = C(6, 3)/64 = 20/64 = 5/16.
+Why: The classes follow the binomial coefficients 1 : 6 : 15 : 20 : 15 : 6 : 1 out of 64. The middle class (three capital alleles, the same as the parents) is the commonest, which gives the bell-shaped distribution typical of polygenic traits.
+Why not the others: (A) 8 counts the combinations of three genes as dominant or recessive (2³), which applies only with complete dominance; 1/8 is not any class frequency. (B) 27 is the number of genotypes (3³), not phenotypes, and 1/64 is the frequency of an extreme class. (C) The number of classes is right, but 1/64 is the frequency of the darkest (or lightest) class only.
+Key point: n additive genes → 2n + 1 phenotypic classes in the ratio of binomial coefficients.
+
+@@ Q02
+format: numerical
+sub_topic: Time for replication of the E. coli chromosome with two forks, and number of Okazaki fragments
+Q: The chromosome of Escherichia coli has \(4.6\times10^6\) base pairs and one origin of replication. Replication proceeds in both directions from the origin, and each replication fork moves at 1000 nucleotides per second along each template. On the lagging strand, DNA is made as Okazaki fragments of about 1000 nucleotides each. About how long does one round of replication take, and about how many Okazaki fragments are made in all?
+A) About 77 minutes; about 4600 fragments
+B) About 38 minutes; about 4600 fragments
+C) About 38 minutes; about 9200 fragments
+D) About 19 minutes; about 2300 fragments
+KEY: B
+SOL:
+Answer: (B) About 38 minutes; about 4600 fragments.
+Concept: Replication starts at the origin and forms a replication fork moving in each direction. DNA polymerase works only in the 5′ → 3′ direction, so at each fork one strand is made continuously (leading strand) and the other discontinuously as short Okazaki fragments (lagging strand), which are joined by DNA ligase.
+Given: genome = 4.6 × 10⁶ bp; 2 forks; 1000 nucleotides per second per fork; Okazaki fragment ≈ 1000 nucleotides.
+Formula/Principle: each fork copies half of the chromosome; time = (length per fork) ÷ (rate); lagging-strand length = whole genome (half at each fork).
+Step 1: Each fork copies 2.3 × 10⁶ bp, so time = 2.3 × 10⁶ ÷ 1000 = 2300 s ≈ 38 minutes.
+Step 2: At each fork the lagging strand is 2.3 × 10⁶ nucleotides, giving 2300 fragments; two forks give about 4600 fragments.
+Why: The two forks work at the same time, so they share the chromosome. Only one of the two new strands at each fork is lagging, so the total length made as fragments equals one genome length.
+Why not the others: (A) 77 minutes assumes a single fork copying the whole chromosome. (C) 9200 counts both new strands as discontinuous; the leading strand is made continuously. (D) 19 minutes takes 2000 nucleotides per second per fork, and 2300 counts the fragments at one fork only.
+Key point: Bidirectional replication halves the time; only the lagging strand is made as Okazaki fragments.
+
+@@ Q03
+format: numerical
+sub_topic: Yield of ethanol and carbon dioxide in alcoholic fermentation by yeast
+Q: In making an alcoholic beverage, Saccharomyces cerevisiae ferments glucose by the overall reaction \(\ce{C6H12O6 -> 2C2H5OH + 2CO2}\). If 90 g of glucose is completely fermented, what masses of ethanol and carbon dioxide are formed? (C = 12, H = 1, O = 16)
+A) 46 g of ethanol and 44 g of carbon dioxide
+B) 92 g of ethanol and 88 g of carbon dioxide
+C) 23 g of ethanol and 22 g of carbon dioxide
+D) 46 g of ethanol and 22 g of carbon dioxide
+KEY: A
+SOL:
+Answer: (A) 46 g of ethanol and 44 g of carbon dioxide.
+Concept: Brewer's yeast (Saccharomyces cerevisiae) ferments sugars to ethanol and carbon dioxide; this is used to make wine, beer and other alcoholic drinks. One glucose molecule gives two ethanol and two carbon dioxide molecules.
+Given: 90 g glucose; M(glucose) = 180 g mol⁻¹, M(ethanol) = 46 g mol⁻¹, M(CO₂) = 44 g mol⁻¹.
+Formula/Principle: moles = mass ÷ molar mass; 1 mol glucose → 2 mol ethanol + 2 mol CO₂.
+Step 1: Glucose = 90 ÷ 180 = 0.50 mol.
+Step 2: Ethanol = 2 × 0.50 = 1.0 mol = 46 g; CO₂ = 1.0 mol = 44 g.
+Why: Check: 46 + 44 = 90 g, equal to the mass of glucose used, as conservation of mass requires.
+Why not the others: (B) It treats 90 g as 1 mol of glucose; the total 180 g would be twice the mass used. (C) It takes one ethanol and one CO₂ per glucose. (D) Ethanol and CO₂ are formed in equal numbers of moles, so their masses must be 46 g and 44 g, not 46 g and 22 g.
+Key point: 1 glucose → 2 ethanol + 2 CO₂; mass is conserved.
+
+@@ Q04
+format: experiment
+sub_topic: Making E. coli competent with calcium ions and heat shock
+Q: Escherichia coli cells are mixed with a plasmid that carries an ampicillin-resistance gene and spread on ampicillin plates. In batch P, the cells were first treated with cold calcium chloride solution, kept on ice with the plasmid, given a brief heat shock at 42 °C and returned to ice. Batch Q was treated in the same way except that calcium chloride was left out. Many colonies grow from P but almost none from Q. What is the best interpretation?
+A) Calcium ions supply energy for replicating the plasmid inside the cell
+B) Calcium ions inactivate ampicillin in the plate, so more cells survive in P
+C) Treating cells with a divalent cation such as calcium makes them competent, raising the chance that DNA enters through the cell wall and membrane during the heat shock
+D) The heat shock alone is enough for uptake of DNA, so the difference must be due to contamination
+KEY: C
+SOL:
+Answer: (C) Treating cells with a divalent cation such as calcium makes them competent, raising the chance that DNA enters through the cell wall and membrane during the heat shock.
+Concept: DNA is a hydrophilic molecule and cannot pass easily through cell membranes. To take up a plasmid, bacterial cells must be made competent. This is done by treating them with a specific concentration of a divalent cation such as calcium, then incubating with the DNA on ice, giving a brief heat shock at 42 °C, and putting them back on ice.
+Why: Only P was treated with calcium, and only P gave many ampicillin-resistant colonies. The difference shows that the calcium treatment is what allowed the plasmid to enter. The resistant colonies are cells that took up the plasmid.
+Why not the others: (A) Calcium does not power plasmid replication; replication uses the host cell's machinery. (B) The calcium is applied to the cells before plating, not to destroy ampicillin; untransformed cells still die on the plate. (D) Q also received the heat shock and gave almost no colonies, so the heat shock alone is not enough.
+Key point: Competence = divalent cation treatment + ice + heat shock (42 °C) + ice.
+
+@@ Q05
+format: conceptual
+sub_topic: Telling mutualism from commensalism in four pairs of organisms
+Q: Which statement correctly classifies all four interactions?
+(i) An orchid growing as an epiphyte on a mango branch
+(ii) A fungus and a photosynthesising alga forming a lichen
+(iii) Barnacles growing on the back of a whale
+(iv) A fig species and the wasp species that pollinates it while laying eggs in its fruit
+A) (i) mutualism, (ii) commensalism, (iii) commensalism, (iv) mutualism
+B) (i) commensalism, (ii) mutualism, (iii) commensalism, (iv) mutualism
+C) (i) parasitism, (ii) mutualism, (iii) parasitism, (iv) commensalism
+D) (i) commensalism, (ii) mutualism, (iii) mutualism, (iv) competition
+KEY: B
+SOL:
+Answer: (B) (i) commensalism, (ii) mutualism, (iii) commensalism, (iv) mutualism.
+Concept: In commensalism one species benefits and the other is neither harmed nor helped (+/0). In mutualism both species benefit (+/+). In parasitism one benefits and the other is harmed (+/−).
+Why: (i) The orchid gets support and light; the mango tree gains nothing and loses nothing: commensalism. (ii) The fungus gets food from the alga, and the alga gets shelter and absorbed water and minerals from the fungus: mutualism. (iii) Barnacles get a surface and transport; the whale is not affected: commensalism. (iv) The fig is pollinated, and the wasp gets a safe site for its eggs and food for its larvae: mutualism.
+Why not the others: (A) The mango tree gains nothing from the orchid, and the fungus and alga both benefit in a lichen. (C) The orchid takes no food from the mango, barnacles do not harm the whale, and the fig–wasp pair is mutualism. (D) The whale gains nothing from barnacles, and fig and wasp help each other rather than compete.
+Key point: Mutualism +/+; commensalism +/0; parasitism +/−.
+
+@@ Q06
+format: numerical
+sub_topic: Net primary productivity of land and ocean per unit area
+Q: Of the annual net primary productivity of the whole biosphere, about 170 billion tonnes (dry weight), the oceans produce only about 55 billion tonnes, although they cover about 70% of the Earth's surface. Taking these figures, how does the net primary productivity per unit area of land compare with that of the oceans, and what is the main reason?
+A) About equal, because both receive about the same sunlight per unit area
+B) The ocean is about twice as productive per unit area, because water is never limiting there
+C) Land is about 2 times as productive per unit area, because land plants are larger
+D) Land is about 5 times as productive per unit area, mainly because productivity in the open ocean is limited by low supply of mineral nutrients and by light reaching only the surface layer
+KEY: D
+SOL:
+Answer: (D) Land is about 5 times as productive per unit area, mainly because productivity in the open ocean is limited by low supply of mineral nutrients and by light reaching only the surface layer.
+Concept: Primary productivity depends on the plant species, environmental factors, the availability of nutrients and the photosynthetic capacity of plants. Net primary productivity (NPP) is the biomass available for consumption by heterotrophs.
+Given: total NPP = 170; ocean NPP = 55, so land NPP = 115 (billion tonnes per year); ocean area = 70%, land area = 30%.
+Formula/Principle: productivity per unit area ∝ (NPP of that part) ÷ (its share of area).
+Step 1: Land: 115 ÷ 0.30 ≈ 383; ocean: 55 ÷ 0.70 ≈ 79 (same arbitrary units).
+Step 2: Ratio = 383 ÷ 79 ≈ 4.9, so about 5 times.
+Why: Much of the open ocean is poor in mineral nutrients such as nitrogen and phosphorus, and light reaches only the upper layer of water. So, although the ocean is vast, its productivity per unit area is low.
+Why not the others: (A) The ratio is about 5, not 1; sunlight is not the only factor. (B) Water is plentiful in the ocean, but nutrients, not water, limit productivity there. (C) The ratio is about 5, and plant size does not set productivity per unit area.
+Key point: Ocean NPP is low per unit area because of nutrient limitation, despite its large area.
+
+@@ Q07
+format: experiment
+sub_topic: Biodiversity and ecosystem stability: interpreting a long-term plot experiment
+Q: In a long-term field experiment, grassland plots were sown with different numbers of plant species and watched for many years. Plots with more species showed less variation in total plant biomass from year to year, and also produced more biomass on average. Which conclusion is best supported?
+A) Communities with more species tend to be more stable and more productive
+B) Species richness has no effect on how an ecosystem functions
+C) Plots with fewer species are more stable because they suffer less competition
+D) Stability depends only on rainfall, not on the number of species
+KEY: A
+SOL:
+Answer: (A) Communities with more species tend to be more stable and more productive.
+Concept: A stable community should not show too much variation in productivity from year to year, should resist occasional disturbance, and should resist invasion by alien species. Long-term outdoor plot experiments showed that plots with more species had less year-to-year variation in total biomass, and that increased diversity contributed to higher productivity.
+Why: The plots differ in the number of species, and the plots with more species varied less and produced more. This supports the idea that biodiversity is essential for ecosystem health and that losing species can harm ecosystem function, as suggested by the rivet popper hypothesis.
+Why not the others: (B) The results show clear differences linked to species number. (C) The observed pattern is the opposite: plots with fewer species varied more. (D) All plots shared the same weather, so rainfall cannot explain the difference between them.
+Key point: More species → less year-to-year variation and higher productivity.
+
+@@ Q08
+format: data
+sub_topic: Five-kingdom classification from cell type, wall, nutrition and body organisation
+Q: The table describes four organisms.
+
+Organism | Cell type | Cell wall | Body | Nutrition
+P | prokaryotic | peptidoglycan | unicellular | photosynthetic
+Q | eukaryotic | none; flexible pellicle | unicellular | photosynthetic in light, heterotrophic in the dark
+R | eukaryotic | chitin | unicellular | absorbs dissolved food; reproduces by budding
+S | eukaryotic | cellulose | multicellular with tissues | photosynthetic
+
+In Whittaker's five-kingdom system, which assignment is correct?
+A) P Monera, Q Plantae, R Protista, S Plantae
+B) P Protista, Q Protista, R Fungi, S Plantae
+C) P Monera, Q Protista, R Fungi, S Plantae
+D) P Monera, Q Protista, R Protista, S Plantae
+KEY: C
+SOL:
+Answer: (C) P Monera, Q Protista, R Fungi, S Plantae.
+Concept: Whittaker used cell structure, body organisation, mode of nutrition, reproduction and phylogenetic relationships. Monera are prokaryotes. Protista are unicellular eukaryotes. Fungi are heterotrophs with a chitin wall that absorb food (saprophytes); most are multicellular, but yeast is unicellular. Plantae are multicellular eukaryotic autotrophs with cellulose walls.
+Why: P is prokaryotic, so it is in Monera (like cyanobacteria). Q is a unicellular eukaryote with a pellicle that can switch between photosynthesis and heterotrophy, like Euglena: Protista. R has a chitin wall, absorbs food and buds, like yeast: Fungi, even though it is unicellular. S is a multicellular photosynthetic eukaryote with a cellulose wall: Plantae.
+Why not the others: (A) Q has no cell wall and is unicellular, so it is not a plant; R has a chitin wall, which places it in Fungi. (B) P is prokaryotic and belongs to Monera, not Protista. (D) A chitin wall and absorptive nutrition place R in Fungi; being unicellular does not make it a protist.
+Key point: Chitin wall + absorptive nutrition = Fungi, whether unicellular (yeast) or multicellular.
+
+@@ Q09
+format: experiment
+sub_topic: Why red algae can live at greater depths than green algae
+Q: In a clear sea, divers find that green algae are common near the surface, while red algae are common at much greater depths. Water absorbs red light within the first few metres, while blue-green light penetrates much deeper. Which explanation fits the observation?
+A) Red algae have no chlorophyll, so they do not need light
+B) Red algae are heterotrophic and feed on organic matter that sinks
+C) Green algae are poisoned by the higher pressure at depth
+D) Red algae have the pigment r-phycoerythrin, which absorbs the blue-green light that reaches great depths and passes the energy to chlorophyll
+KEY: D
+SOL:
+Answer: (D) Red algae have the pigment r-phycoerythrin, which absorbs the blue-green light that reaches great depths and passes the energy to chlorophyll.
+Concept: Algae are grouped into Chlorophyceae (green), Phaeophyceae (brown) and Rhodophyceae (red). Red algae owe their colour to r-phycoerythrin. Most are marine, and many live at great depths in the sea, where little light penetrates.
+Why: At depth only blue-green light is left. Phycoerythrin absorbs this light well, so red algae can still photosynthesise there. Green algae depend mainly on chlorophylls a and b, which absorb red and blue light, and red light is absent at depth.
+Why not the others: (A) Red algae do have chlorophyll a; phycoerythrin is an accessory pigment that adds to it. (B) Red algae are photosynthetic autotrophs. (C) The distribution matches the light available; pressure is not the explanation.
+Key point: Phycoerythrin lets red algae use the blue-green light that reaches deep water.
+
+@@ Q10
+format: conceptual
+sub_topic: Storage roots: modified tap root and modified adventitious root
+Q: The carrot and the sweet potato both store food in swollen roots. How do these two storage organs compare?
+A) Both store food, but the carrot is a modified tap root while the sweet potato is a modified adventitious root
+B) Both are modified stems, because they store food underground
+C) The carrot is a modified adventitious root and the sweet potato a modified tap root
+D) Both are modified tap roots, because both grow downwards into the soil
+KEY: A
+SOL:
+Answer: (A) Both store food, but the carrot is a modified tap root while the sweet potato is a modified adventitious root.
+Concept: Roots are modified for storage, support or respiration. The tap root of carrot, turnip and radish swells to store food. In the sweet potato, adventitious roots (roots that arise from parts other than the radicle) swell to store food.
+Why: The carrot develops from the radicle as a single main root that swells. The sweet potato forms many swollen roots from the nodes of its creeping stem, so they are adventitious roots. The function is the same, but the origin differs.
+Why not the others: (B) Both are roots: they have no nodes, internodes or buds, unlike the stem tuber of potato. (C) It swaps the two origins. (D) The swollen roots of sweet potato arise from the stem, so they are adventitious, not tap roots.
+Key point: Carrot = tap root; sweet potato = adventitious root; potato = stem tuber.
+
+@@ Q11
+format: diagram
+sub_topic: Telling dicot and monocot roots apart by the number of xylem bundles and the pith
+image: NEST_T03_Q11.png
+alt: Two transverse sections of young roots side by side; section X has four xylem patches alternating with four phloem patches and no pith, section Y has many xylem patches alternating with phloem patches around a large central pith.
+Q: The figure shows transverse sections of two young roots, X and Y, with the xylem and phloem patches labelled. Count the patches in the figure. Which statement is correct?
+A) X is a monocot root and Y a dicot root; together they have 9 phloem patches
+B) X is a dicot root and Y a monocot root; together they have 9 phloem patches
+C) X is a dicot root and Y a monocot root; together they have 18 phloem patches
+D) Both are dicot roots; together they have 18 phloem patches
+KEY: C
+SOL:
+Answer: (C) X is a dicot root and Y a monocot root; together they have 18 phloem patches.
+Concept: In roots the vascular bundles are radial: xylem and phloem lie in separate patches on different radii and alternate with each other, so their numbers are equal. A dicot root usually has two to four xylem patches and little or no pith. A monocot root has more than six xylem patches (polyarch) and a large, well-developed pith.
+Given: from the figure, X has 4 xylem patches and no pith; Y has 14 xylem patches and a large pith.
+Formula/Principle: in a radial arrangement, number of phloem patches = number of xylem patches.
+Step 1: X: 4 xylem patches (tetrarch), no pith → dicot root, with 4 phloem patches.
+Step 2: Y: 14 xylem patches (polyarch), large pith → monocot root, with 14 phloem patches. Total = 4 + 14 = 18.
+Why: The number of xylem patches and the size of the pith are the standard features for telling the two root types apart.
+Why not the others: (A) It swaps the roots: polyarch with a large pith is the monocot. (B) The identities are right, but 9 halves the count; each xylem patch has a matching phloem patch. (D) Fourteen xylem patches and a large pith are features of a monocot root.
+Key point: Dicot root: 2–4 xylem, little pith; monocot root: polyarch, large pith; xylem and phloem patches are equal in number.
+
+@@ Q12
+format: numerical
+sub_topic: Relative gut length of the herbivorous tadpole and the carnivorous adult frog
+Q: A tadpole of body length 4 cm has a coiled intestine 30 cm long. The adult frog of body length 8 cm has an intestine 12 cm long. By how many times is the gut length relative to body length greater in the tadpole than in the adult, and what explains the difference?
+A) 2.5 times, because the adult has stopped growing
+B) 5 times, because the tadpole feeds on plant material, which needs a long gut for digestion, while the adult is carnivorous and has a short gut
+C) 5 times, because the adult absorbs most food through its skin
+D) 0.2 times, because the adult needs a longer gut for its larger body
+KEY: B
+SOL:
+Answer: (B) 5 times, because the tadpole feeds on plant material, which needs a long gut for digestion, while the adult is carnivorous and has a short gut.
+Concept: The alimentary canal of the adult frog is short because frogs are carnivores, and the length of the intestine is reduced. Herbivores have long guts because plant food is slow to digest. The frog tadpole is mainly herbivorous.
+Given: tadpole: body 4 cm, gut 30 cm; adult: body 8 cm, gut 12 cm.
+Formula/Principle: relative gut length = gut length ÷ body length; compare the two ratios.
+Step 1: Tadpole: 30 ÷ 4 = 7.5; adult: 12 ÷ 8 = 1.5.
+Step 2: 7.5 ÷ 1.5 = 5.
+Why: During metamorphosis the diet changes from plant matter to insects and other animals, and the gut shortens to suit a diet that is digested quickly.
+Why not the others: (A) 2.5 compares the gut lengths (30 ÷ 12) without allowing for body size. (C) Food is not absorbed through the skin; the skin is used for respiration. (D) 0.2 is the inverse ratio; the adult's relative gut length is smaller, not larger.
+Key point: Herbivore → long gut; carnivore → short gut.
+
+@@ Q13
+format: experiment
+sub_topic: Abundance of smooth and rough endoplasmic reticulum in cells that secrete lipids and proteins
+Q: Electron micrographs of two kinds of animal cells are compared. Cell X has an extensive network of smooth endoplasmic reticulum (SER) and little rough endoplasmic reticulum (RER). Cell Y is packed with RER and has a large Golgi apparatus. What do these observations suggest about the main products of the two cells?
+A) X mainly makes lipid-like steroid hormones, while Y mainly makes and secretes proteins
+B) X mainly makes and secretes proteins, while Y mainly makes steroid hormones
+C) Both cells mainly store starch, which is made on the endoplasmic reticulum
+D) X mainly digests worn-out organelles, while Y mainly makes ATP
+KEY: A
+SOL:
+Answer: (A) X mainly makes lipid-like steroid hormones, while Y mainly makes and secretes proteins.
+Concept: Rough ER carries ribosomes and is active in protein synthesis and secretion. Smooth ER is the major site for synthesis of lipids; in animal cells, lipid-like steroidal hormones are made in the SER. The Golgi apparatus packages materials and is especially well developed in secretory cells.
+Why: An extensive SER points to a lipid-making cell, such as a cell that secretes steroid hormones. A cell packed with RER and with a large Golgi apparatus is specialised for making and packaging secretory proteins, such as an enzyme-secreting gland cell.
+Why not the others: (B) It swaps the roles: ribosomes, and so protein synthesis, are on the RER of cell Y. (C) Animal cells do not store starch, and starch is not made on the ER. (D) Digestion of worn-out organelles is the job of lysosomes, and ATP is made mainly in mitochondria.
+Key point: SER → lipids and steroid hormones; RER + Golgi → secretory proteins.
+
+@@ Q14
+format: data
+sub_topic: Estimating the duration of mitosis and of metaphase from counts in an onion root tip
+Q: In a squash of an onion root tip, 1000 cells were classified as follows.
+
+Stage | Interphase | Prophase | Metaphase | Anaphase | Telophase
+Number of cells | 880 | 70 | 20 | 15 | 15
+
+The cells divide asynchronously, and the whole cell cycle takes 24 hours. The time spent in a stage is proportional to the fraction of cells seen in it. About how long do mitosis (M phase) and metaphase last?
+A) M phase about 12 minutes; metaphase about 29 minutes
+B) M phase about 21 hours; metaphase about 29 minutes
+C) M phase about 2.9 hours; metaphase about 2 minutes
+D) M phase about 2.9 hours; metaphase about 29 minutes
+KEY: D
+SOL:
+Answer: (D) M phase about 2.9 hours; metaphase about 29 minutes.
+Concept: The cell cycle has an interphase (G₁, S, G₂), which takes most of the time, and a short M phase made of prophase, metaphase, anaphase and telophase. In an asynchronous population, the fraction of cells in a stage equals the fraction of the cycle spent in it.
+Why: Cells in M phase = 70 + 20 + 15 + 15 = 120, so M phase = 120/1000 × 24 h = 2.88 h ≈ 2.9 h. Metaphase = 20/1000 × 24 h = 0.48 h ≈ 29 minutes. Interphase takes 880/1000 × 24 = 21.1 h, which is the larger part of the cycle, as expected.
+Why not the others: (A) 12 minutes takes 120 out of 1000 as minutes, not as a fraction of 24 hours. (B) About 21 hours is the length of interphase, not of M phase. (C) M phase is right, but 2 minutes uses the count of 20 as if it were 2 out of 1000.
+Key point: Duration of a stage = (cells in that stage ÷ total cells) × length of the cycle.
+
+@@ Q15
+format: conceptual
+sub_topic: Chemiosmosis when the ATP synthase of the thylakoid is destroyed
+Q: In illuminated chloroplasts, a chemical destroys the ATP synthase (CF₀–CF₁) of the thylakoid membrane but leaves the electron transport chain and the membrane itself intact. What happens?
+A) No proton gradient forms, because protons are pumped by the ATP synthase
+B) ATP is still made at the same rate, because ATP is formed by the electron carriers themselves
+C) Protons still build up in the lumen, but ATP is not made, so the Calvin cycle slows for lack of ATP
+D) NADPH formation stops at once, because NADPH is made by the ATP synthase
+KEY: C
+SOL:
+Answer: (C) Protons still build up in the lumen, but ATP is not made, so the Calvin cycle slows for lack of ATP.
+Concept: In chemiosmosis, electron transport and the splitting of water build up protons inside the thylakoid lumen. The protons flow back to the stroma through the CF₀ channel of the ATP synthase, and this flow drives the CF₁ part to make ATP. The Calvin cycle in the stroma uses ATP and NADPH.
+Why: Electron transport still pumps protons into the lumen, so the gradient forms. With no ATP synthase, protons cannot flow back through it, so no ATP is made. Without ATP the Calvin cycle cannot continue for long.
+Why not the others: (A) Protons are moved into the lumen by the electron transport chain and water splitting, not by the ATP synthase. (B) ATP is made by the ATP synthase using the proton flow, not by the electron carriers. (D) NADPH is made by NADP reductase at the end of the electron chain, not by the ATP synthase.
+Key point: Electron transport makes the proton gradient; ATP synthase uses it to make ATP.
+
+@@ Q16
+format: conceptual
+sub_topic: Need to regenerate oxaloacetate for the citric acid cycle to continue
+Q: In a cell, much of the oxaloacetate of the mitochondria is drawn off to make amino acids and is not replaced from other sources. Acetyl CoA is still supplied normally. Why does the activity of the citric acid (TCA) cycle fall?
+A) Oxaloacetate is the source of the acetyl group that is oxidised in the cycle
+B) Oxaloacetate is needed to combine with acetyl CoA to form citric acid, and it is regenerated only by the cycle itself
+C) Oxaloacetate is the final electron acceptor of the electron transport chain
+D) Oxaloacetate is needed to convert glucose to pyruvate in the cytoplasm
+KEY: B
+SOL:
+Answer: (B) Oxaloacetate is needed to combine with acetyl CoA to form citric acid, and it is regenerated only by the cycle itself.
+Concept: The TCA cycle starts when the acetyl group of acetyl CoA condenses with oxaloacetic acid (OAA) and water to form citric acid. The cycle then oxidises citrate in steps and finally regenerates OAA, so the cycle continues as long as OAA is regenerated and acetyl CoA is supplied.
+Why: If OAA is taken away faster than it is regenerated, less is available to accept acetyl groups. Acetyl CoA cannot enter the cycle without OAA, so less citrate forms and the whole cycle slows, even though acetyl CoA is plentiful.
+Why not the others: (A) The acetyl group comes from acetyl CoA, not from OAA. (C) The final electron acceptor of the electron transport chain is oxygen. (D) Glycolysis takes place in the cytoplasm and does not need OAA.
+Key point: OAA + acetyl CoA → citrate; OAA must be regenerated for the cycle to turn.
+
+@@ Q17
+format: conceptual
+sub_topic: Role of bile in fat digestion: effect of a blocked bile duct
+Q: A gallstone blocks the common bile duct of a patient. Pancreatic juice still reaches the duodenum. The patient's faeces now contain much undigested fat. Which explanation is correct?
+A) Bile contains lipase, the main fat-digesting enzyme, which can no longer reach the gut
+B) Bile is needed to activate trypsinogen, which digests fats
+C) Without bile the stomach cannot secrete gastric lipase
+D) Bile salts break fat into very small droplets (emulsification), which gives lipase a much larger surface to act on; without bile, fat digestion and absorption are poor
+KEY: D
+SOL:
+Answer: (D) Bile salts break fat into very small droplets (emulsification), which gives lipase a much larger surface to act on; without bile, fat digestion and absorption are poor.
+Concept: Bile released into the duodenum contains bile pigments, bile salts, cholesterol and phospholipids, but no enzymes. Bile helps in emulsification of fats, breaking them into very small micelles, and also activates lipases. Pancreatic lipase then breaks fats into fatty acids and glycerol.
+Why: With the duct blocked, fat stays in large globules. Lipase can act only at the surface of a droplet, so digestion is slow, and the undigested fat is passed out in the faeces.
+Why not the others: (A) Bile has no digestive enzymes; lipase comes from the pancreas and the intestine. (B) Trypsinogen is activated by enterokinase, and trypsin digests proteins, not fats. (C) Gastric secretion does not depend on bile.
+Key point: Bile has no enzymes; bile salts emulsify fats for lipase.
+
+@@ Q18
+format: data
+sub_topic: Identifying skeletal, cardiac and smooth muscle from their features
+Q: The table compares three muscle tissues.
+
+Tissue | Striations | Control | Cell shape and nuclei | Special feature
+P | present | voluntary | long, unbranched, many nuclei | attached to bones
+Q | present | involuntary | branched, usually one nucleus | cells joined by intercalated discs
+R | absent | involuntary | spindle-shaped, one nucleus | in walls of the gut and blood vessels
+
+Which identification is correct?
+A) P skeletal, Q cardiac, R smooth
+B) P cardiac, Q skeletal, R smooth
+C) P skeletal, Q smooth, R cardiac
+D) P smooth, Q cardiac, R skeletal
+KEY: A
+SOL:
+Answer: (A) P skeletal, Q cardiac, R smooth.
+Concept: Skeletal muscle is striated, voluntary and made of long multinucleate fibres attached to bones. Cardiac muscle is striated and involuntary; its branched cells are joined end to end by intercalated discs, which let them contract as a unit. Smooth (visceral) muscle has no striations, is involuntary and has spindle-shaped cells with one nucleus; it lines hollow organs such as the gut and blood vessels.
+Why: P has striations, voluntary control and attachment to bones: skeletal. Q is striated, involuntary and has intercalated discs: cardiac. R has no striations and lines the gut and vessels: smooth.
+Why not the others: (B) Cardiac muscle is involuntary and has intercalated discs, which describe Q, not P. (C) Smooth muscle has no striations, so it cannot be Q; intercalated discs mark cardiac muscle. (D) Smooth muscle is not voluntary or striated, and skeletal muscle is striated.
+Key point: Striated + voluntary = skeletal; striated + involuntary + intercalated discs = cardiac; non-striated = smooth.
+
+@@ Q19
+format: experiment
+sub_topic: Dependence of the action potential on sodium ions outside the axon
+Q: An isolated nerve fibre is kept in a solution in which all the sodium ions outside the fibre are replaced by an ion that cannot pass through the membrane. The potassium concentrations are unchanged. A stimulus is then applied. What is the most likely result?
+A) A larger action potential, because sodium normally blocks the impulse
+B) An action potential of normal size, because the impulse depends only on potassium
+C) Little or no action potential, because the rapid depolarisation depends on sodium ions rushing into the fibre, while the resting potential is almost unchanged
+D) The resting potential becomes positive at once, because potassium ions rush into the fibre
+KEY: C
+SOL:
+Answer: (C) Little or no action potential, because the rapid depolarisation depends on sodium ions rushing into the fibre, while the resting potential is almost unchanged.
+Concept: At rest the axonal membrane is more permeable to K⁺ than to Na⁺, and the inside is negative (polarised). A stimulus opens Na⁺ channels; Na⁺ flows in and the inside becomes positive (depolarisation). This rise is the action potential. Then K⁺ flows out and the resting potential is restored.
+Why: With no sodium outside, there is nothing to flow in when the Na⁺ channels open, so the membrane cannot depolarise and no action potential forms. The resting potential depends mainly on K⁺, whose concentrations are unchanged, so it stays nearly the same.
+Why not the others: (A) Sodium entry is what makes the impulse; removing sodium cannot make it bigger. (B) The rising phase depends on Na⁺ entry; K⁺ only restores the resting state. (D) At rest K⁺ tends to leave the fibre, not enter it, and its concentrations have not changed.
+Key point: Depolarisation = Na⁺ influx; repolarisation = K⁺ efflux.
+
+@@ Q20
+format: conceptual
+sub_topic: How copper-releasing intrauterine devices prevent pregnancy
+Q: A copper-releasing intrauterine device (such as CuT) is placed in the uterus. Which statement best describes how it acts?
+A) It releases hormones that stop ovulation
+B) The copper ions it releases suppress sperm motility and the ability of sperm to fertilise the ovum
+C) It stops the production of sperms in the testes of the partner
+D) It blocks the fallopian tubes surgically
+KEY: B
+SOL:
+Answer: (B) The copper ions it releases suppress sperm motility and the ability of sperm to fertilise the ovum.
+Concept: Intrauterine devices (IUDs) are of three kinds: non-medicated (such as Lippes loop), copper-releasing (CuT, Cu7, Multiload 375) and hormone-releasing (Progestasert, LNG-20). IUDs increase phagocytosis of sperms within the uterus. The copper ions released suppress sperm motility and the fertilising capacity of sperms.
+Why: The device acts within the female reproductive tract on sperm that arrive there. Its copper ions reduce sperm movement and their ability to fertilise the egg, so fertilisation is unlikely.
+Why not the others: (A) That describes hormone-releasing devices or oral pills, not copper-releasing devices. (C) An IUD in the female cannot act on the testes of the partner. (D) Blocking the fallopian tubes is tubectomy, a surgical method.
+Key point: Copper IUD: Cu ions reduce sperm motility and fertilising capacity.

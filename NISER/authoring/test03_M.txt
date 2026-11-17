@@ -1,0 +1,423 @@
+@@ Q41
+format: conceptual
+sub_topic: Values of a for which sin⁻¹(sin a) equals π − a
+Q: Here \(\sin^{-1}\) denotes the principal value, with range \(\left[-\tfrac\pi2,\tfrac\pi2\right]\). For which real values of a does the equation \(\sin^{-1}(\sin a)=\pi-a\) hold?
+A) \(a\in\left[-\dfrac\pi2,\dfrac\pi2\right]\)
+B) \(a\in\left[\dfrac\pi2,\dfrac{3\pi}2\right]\)
+C) \(a\in[0,\pi]\)
+D) \(a\in[\pi,2\pi]\)
+KEY: B
+SOL:
+Answer: (B) \(a\in\left[\dfrac\pi2,\dfrac{3\pi}2\right]\).
+Given: \(\sin^{-1}:[-1,1]\to\left[-\tfrac\pi2,\tfrac\pi2\right]\)
+Formula/Principle: \(\sin^{-1}(\sin a)=\theta\iff\theta\in\left[-\tfrac\pi2,\tfrac\pi2\right]\ \text{and}\ \sin\theta=\sin a\)
+Step 1: \(\sin(\pi-a)=\sin a\ \text{for every}\ a\)
+Step 2: \(\pi-a\in\left[-\tfrac\pi2,\tfrac\pi2\right]\iff a\in\left[\tfrac\pi2,\tfrac{3\pi}2\right]\)
+Worked derivation: \[-\frac\pi2\le\pi-a\le\frac\pi2\iff\frac\pi2\le a\le\frac{3\pi}2\]
+Check: \[a=\pi:\ \sin^{-1}(\sin\pi)=\sin^{-1}0=0=\pi-\pi\ \checkmark;\quad a=0:\ \sin^{-1}0=0\ne\pi\]
+Why: \(\text{the graph of}\ \sin^{-1}(\sin a)\ \text{is a zigzag of slope}\ -1\ \text{on}\ \left[\tfrac\pi2,\tfrac{3\pi}2\right]\)
+Why not the others: (A) \(\text{there}\ \sin^{-1}(\sin a)=a\); (C) \(a=0\ \text{fails}\); (D) \(a=2\pi:\ 0\ne-\pi\).
+Key point: \(\sin^{-1}(\sin a)=\pi-a\ \text{on}\ \left[\tfrac\pi2,\tfrac{3\pi}2\right]\)
+
+@@ Q42
+format: conceptual
+sub_topic: A 3 × 3 determinant as a cubic function of x: roots and turning points
+Q: Let \(f(x)=\begin{vmatrix}x&1&1\\1&x&1\\1&1&x\end{vmatrix}\). Which description of the graph of f is correct?
+A) It cuts the x-axis at \(x=1,-1,2\) and has no turning points
+B) It touches the x-axis at \(x=1\), cuts it at \(x=-2\), and has a local maximum at \(x=1\)
+C) It touches the x-axis at \(x=-1\) and cuts it at \(x=2\)
+D) It touches the x-axis at \(x=1\), cuts it at \(x=-2\), has a local maximum value 4 at \(x=-1\) and a local minimum value 0 at \(x=1\)
+KEY: D
+SOL:
+Answer: (D) It touches the x-axis at \(x=1\), cuts it at \(x=-2\), has a local maximum value 4 at \(x=-1\) and a local minimum value 0 at \(x=1\).
+Given: \(f(x)=\begin{vmatrix}x&1&1\\1&x&1\\1&1&x\end{vmatrix}\)
+Formula/Principle: \(\text{expand along}\ R_1\ \text{using cofactors};\ f'=0\ \text{and the sign of}\ f''\)
+Step 1: \(f=x(x^2-1)-1(x-1)+1(1-x)=x^3-3x+2\)
+Step 2: \(x^3-3x+2=(x-1)^2(x+2)\)
+Step 3: \(f'=3x^2-3=0\Rightarrow x=\pm1;\ f''=6x\)
+Worked derivation: \[f''(-1)=-6<0:\ \max f(-1)=-1+3+2=4;\qquad f''(1)=6>0:\ \min f(1)=0\]
+Check: \[f(0)=\begin{vmatrix}0&1&1\\1&0&1\\1&1&0\end{vmatrix}=2=(0-1)^2(0+2)\ \checkmark\]
+Why: \(\text{a double root means the graph touches the axis there}\)
+Why not the others: (A) \(f(-1)=4\ne0\); (B) \(x=1\ \text{is a minimum}\); (C) \(\text{signs of the roots are reversed}\).
+Key point: \(\begin{vmatrix}x&1&1\\1&x&1\\1&1&x\end{vmatrix}=(x-1)^2(x+2)\)
+
+@@ Q43
+format: numerical
+sub_topic: Finding an exponent from the logarithmic derivative of a product
+Q: Let \(f(x)=(1+x)(1+x^2)^k(1+x^3)\) for \(x>0\), where k is a positive integer. If \(\dfrac{f'(1)}{f(1)}=5\), what is k?
+A) 3
+B) 6
+C) 4
+D) \(\dfrac92\)
+KEY: A
+SOL:
+Answer: (A) 3.
+Given: \(f(x)=(1+x)(1+x^2)^k(1+x^3),\quad\dfrac{f'(1)}{f(1)}=5\)
+Formula/Principle: \(\ln f=\ln(1+x)+k\ln(1+x^2)+\ln(1+x^3)\Rightarrow\dfrac{f'}{f}=\text{sum of derivatives}\)
+Step 1: \(\dfrac{f'}{f}=\dfrac1{1+x}+\dfrac{2kx}{1+x^2}+\dfrac{3x^2}{1+x^3}\)
+Step 2: \(x=1:\ \dfrac12+k+\dfrac32=2+k\)
+Worked derivation: \[2+k=5\Rightarrow k=3\]
+Check: \[k=3:\ \frac12+\frac{6}{2}+\frac32=5\ \checkmark\]
+Why: \(\text{logarithmic differentiation turns a product into a sum}\)
+Why not the others: (B) \(\text{drops the factor}\ 2x\ \text{from}\ \tfrac{d}{dx}(1+x^2)\); (C) \(\text{uses}\ \tfrac1{1+x^3}\ \text{instead of}\ \tfrac{3x^2}{1+x^3}\); (D) \(\text{leaves out the factor}\ 1+x^3\).
+Key point: \(\dfrac{f'}{f}=\sum\dfrac{u_i'}{u_i}\ \text{for}\ f=\prod u_i\)
+
+@@ Q44
+format: numerical
+sub_topic: Finding coefficients of a cubic from the positions of its local maximum and minimum
+Q: The function \(f(x)=x^3+ax^2+bx\) has a local maximum at \(x=-1\) and a local minimum at \(x=3\). What are a and b?
+A) \(a=3,\ b=-9\)
+B) \(a=-3,\ b=9\)
+C) \(a=-3,\ b=-9\)
+D) \(a=-1,\ b=-3\)
+KEY: C
+SOL:
+Answer: (C) \(a=-3,\ b=-9\).
+Given: \(f'(-1)=0,\ f'(3)=0\)
+Formula/Principle: \(f'(x)=3x^2+2ax+b=3(x+1)(x-3)\)
+Step 1: \(3(x+1)(x-3)=3x^2-6x-9\)
+Step 2: \(2a=-6\Rightarrow a=-3;\quad b=-9\)
+Worked derivation: \[f''(x)=6x-6:\ f''(-1)=-12<0\ (\max),\quad f''(3)=12>0\ (\min)\]
+Check: \[f'(-1)=3(1)+2(-3)(-1)-9=3+6-9=0,\qquad f'(3)=27-18-9=0\ \checkmark\]
+Why: \(\text{both stationary points are roots of}\ f'\ \text{with leading coefficient 3}\)
+Why not the others: (A) \(f'(-1)=3-6-9\ne0\); (B) \(f'(-1)=3+6+9\ne0\); (D) \(\text{matches}\ f'\ \text{with}\ (x+1)(x-3)\ \text{without the factor 3}\).
+Key point: \(\text{stationary points at}\ p,q\Rightarrow f'(x)=3(x-p)(x-q)\ \text{for a monic cubic}\)
+
+@@ Q45
+format: numerical
+sub_topic: Integral of 1/(quadratic) by completing the square
+Q: What is \(\displaystyle\int\frac{dx}{x^2+4x+13}\)?
+A) \(\tan^{-1}\dfrac{x+2}3+C\)
+B) \(\dfrac13\tan^{-1}\dfrac{x+4}3+C\)
+C) \(\dfrac19\tan^{-1}\dfrac{x+2}3+C\)
+D) \(\dfrac13\tan^{-1}\dfrac{x+2}3+C\)
+KEY: D
+SOL:
+Answer: (D) \(\dfrac13\tan^{-1}\dfrac{x+2}3+C\).
+Given: \(x^2+4x+13\)
+Formula/Principle: \(\displaystyle\int\frac{dx}{u^2+a^2}=\frac1a\tan^{-1}\frac ua+C\)
+Step 1: \(x^2+4x+13=(x+2)^2+9\)
+Step 2: \(u=x+2,\ a=3\)
+Worked derivation: \[\int\frac{dx}{(x+2)^2+3^2}=\frac13\tan^{-1}\frac{x+2}3+C\]
+Check: \[\frac{d}{dx}\left[\frac13\tan^{-1}\frac{x+2}{3}\right]=\frac13\cdot\frac{1/3}{1+\frac{(x+2)^2}9}=\frac{1}{(x+2)^2+9}\ \checkmark\]
+Why: \(\text{completing the square gives the standard form}\)
+Why not the others: (A) \(\text{misses}\ \tfrac1a\); (B) \(\text{completes the square wrongly as}\ (x+4)^2\); (C) \(\text{uses}\ \tfrac1{a^2}\).
+Key point: \(\displaystyle\int\frac{dx}{(x+p)^2+a^2}=\frac1a\tan^{-1}\frac{x+p}a+C\)
+
+@@ Q46
+format: numerical
+sub_topic: Positive upper limit for which a definite integral vanishes
+Q: Let \(F(a)=\displaystyle\int_0^a(x^2-2x)\,dx\). For which \(a>0\) is \(F(a)=0\)?
+A) 3
+B) 2
+C) \(\dfrac32\)
+D) 6
+KEY: A
+SOL:
+Answer: (A) 3.
+Given: \(F(a)=\displaystyle\int_0^a(x^2-2x)\,dx,\quad a>0\)
+Formula/Principle: \(\text{Fundamental Theorem: }\displaystyle\int_0^ag(x)\,dx=G(a)-G(0),\ G'=g\)
+Step 1: \(G(x)=\dfrac{x^3}3-x^2\)
+Step 2: \(F(a)=\dfrac{a^3}3-a^2=a^2\left(\dfrac a3-1\right)\)
+Worked derivation: \[F(a)=0,\ a>0\Rightarrow\frac a3=1\Rightarrow a=3\]
+Check: \[\int_0^2(x^2-2x)\,dx=-\tfrac43,\quad\int_2^3(x^2-2x)\,dx=\tfrac43\Rightarrow\text{total }0\ \checkmark\]
+Why: \(\text{the negative area on}\ (0,2)\ \text{is cancelled by the positive area on}\ (2,3)\)
+Why not the others: (B) \(x=2\ \text{is where the integrand is zero};\ F(2)=-\tfrac43\); (C) \(F\left(\tfrac32\right)=-\tfrac98\); (D) \(F(6)=36\).
+Key point: \(F'(a)=a^2-2a;\ F\ \text{returns to 0 at}\ a=3\)
+
+@@ Q47
+format: numerical
+sub_topic: Finding a component from the scalar projection of one vector on another
+Q: Let \(\vec a=\hat i+2\hat j+\lambda\hat k\) and \(\vec b=2\hat i-\hat j+2\hat k\). The scalar projection of \(\vec a\) on \(\vec b\) is 2. What is λ?
+A) 1
+B) 3
+C) 9
+D) −3
+KEY: B
+SOL:
+Answer: (B) 3.
+Given: \(\vec a=(1,2,\lambda),\ \vec b=(2,-1,2)\)
+Formula/Principle: \(\text{projection of}\ \vec a\ \text{on}\ \vec b=\dfrac{\vec a\cdot\vec b}{|\vec b|}\)
+Step 1: \(\vec a\cdot\vec b=2-2+2\lambda=2\lambda\)
+Step 2: \(|\vec b|=\sqrt{4+1+4}=3\)
+Worked derivation: \[\frac{2\lambda}{3}=2\Rightarrow\lambda=3\]
+Check: \[\vec a=(1,2,3):\ \vec a\cdot\vec b=2-2+6=6,\ \frac63=2\ \checkmark\]
+Why: \(\text{the projection divides the dot product by}\ |\vec b|\)
+Why not the others: (A) \(\text{forgets to divide by}\ |\vec b|\); (C) \(\text{divides by}\ |\vec b|^2\); (D) \(\text{gives projection}\ -2\).
+Key point: \(\text{proj}_{\vec b}\vec a=\dfrac{\vec a\cdot\vec b}{|\vec b|}\)
+
+@@ Q48
+format: conceptual
+sub_topic: Number of lines through the origin equally inclined to the three coordinate axes
+Q: How many distinct lines through the origin make equal angles with the three coordinate axes?
+A) 1
+B) 2
+C) 4
+D) 8
+KEY: C
+SOL:
+Answer: (C) 4.
+Given: \(\text{direction cosines}\ l,m,n\ \text{with}\ \alpha=\beta=\gamma\)
+Formula/Principle: \(l^2+m^2+n^2=1\)
+Step 1: \(3\cos^2\alpha=1\Rightarrow\cos\alpha=\pm\dfrac1{\sqrt3}\)
+Step 2: \(\text{equal angles: }|l|=|m|=|n|=\dfrac1{\sqrt3};\ \text{sign patterns}\ (\pm,\pm,\pm):\ 8\ \text{directions}\)
+Step 3: \(\text{a line has two opposite directions}\Rightarrow\dfrac82=4\ \text{lines}\)
+Worked derivation: \[\text{lines along}\ (1,1,1),\ (1,1,-1),\ (1,-1,1),\ (-1,1,1)\]
+Check: \[(1,1,1)\ \text{and}\ (-1,-1,-1)\ \text{give the same line};\ \text{the four listed are pairwise non-parallel}\]
+Why: \(\text{each line is a diagonal of a cube centred at the origin}\)
+Why not the others: (A) \(\text{counts only}\ (1,1,1)\); (B) \(\text{counts only all-positive and all-negative}\); (D) \(\text{counts directions, not lines}\).
+Key point: \(\text{equally inclined lines are the 4 body diagonals of a cube}\)
+
+@@ Q49
+format: conceptual
+sub_topic: Corner points of a feasible region and multiple optimal solutions
+Q: The feasible region is given by \(x+y\le4,\ x\le3,\ y\le3,\ x\ge0,\ y\ge0\). How many corner points does it have, and at how many points does \(Z=x+y\) attain its maximum on the region?
+A) 5 corner points; infinitely many points
+B) 4 corner points; exactly one point
+C) 5 corner points; exactly two points
+D) 6 corner points; infinitely many points
+KEY: A
+SOL:
+Answer: (A) 5 corner points; infinitely many points.
+Given: \(x+y\le4,\ x\le3,\ y\le3,\ x,y\ge0;\quad Z=x+y\)
+Formula/Principle: \(\text{the optimum of a linear}\ Z\ \text{occurs at a corner; if two adjacent corners tie, every point of the edge between them is optimal}\)
+Step 1: \(\text{corners: }(0,0),\ (3,0),\ (3,1),\ (1,3),\ (0,3)\)
+Step 2: \(Z:\ 0,\ 3,\ 4,\ 4,\ 3\)
+Worked derivation: \[Z_{\max}=4\ \text{at}\ (3,1)\ \text{and}\ (1,3),\ \text{hence on the whole segment}\ x+y=4,\ 1\le x\le3\]
+Check: \[(2,2):\ \text{feasible},\ Z=4\ \checkmark\]
+Why: \(\text{the objective line is parallel to the edge}\ x+y=4\)
+Why not the others: (B) \(\text{misses}\ (3,1)\ \text{or}\ (1,3)\ \text{and the tie}\); (C) \(\text{points between the two corners are also optimal}\); (D) \((3,3)\ \text{is not feasible}\).
+Key point: \(\text{objective parallel to a binding edge}\Rightarrow\text{infinitely many optima}\)
+
+@@ Q50
+format: graph
+sub_topic: Number of intersections of the graphs of 2^x and x²
+Q: At how many points do the graphs of \(y=2^x\) and \(y=x^2\) meet?
+A) 1
+B) 2
+C) 4
+D) 3
+KEY: D
+SOL:
+Answer: (D) 3.
+Given: \(g(x)=2^x-x^2\)
+Formula/Principle: \(\text{intermediate value theorem; compare growth of}\ 2^x\ \text{and}\ x^2\)
+Step 1: \(g(2)=4-4=0,\quad g(4)=16-16=0\)
+Step 2: \(g(-1)=\tfrac12-1<0,\quad g(0)=1>0\Rightarrow\text{a root in}\ (-1,0)\)
+Step 3: \(x<-1:\ 2^x<1<x^2\Rightarrow g<0;\quad x\in(2,4):\ g(3)=8-9<0;\quad x>4:\ g>0\)
+Worked derivation: \[\text{roots: one in}\ (-1,0),\ x=2,\ x=4\Rightarrow3\ \text{solutions}\]
+Check: \[g(-0.77)\approx0.586-0.593\approx0;\ \ g(5)=32-25>0\]
+Why: \(\text{the exponential crosses the parabola once on the left, then twice on the right}\)
+Why not the others: (A) \(\text{misses}\ x=2,4\ \text{or the negative root}\); (B) \(\text{misses the negative root}\); (C) \(\text{for}\ x>4,\ 2^x\ \text{stays above}\ x^2\).
+Key point: \(2^x=x^2\ \text{at}\ x=2,\ 4\ \text{and one negative}\ x\)
+
+@@ Q51
+format: conceptual
+sub_topic: Finding an inner function from a composition
+Q: Let \(f(x)=2x+3\). If \((f\circ g)(x)=6x-1\) for all real x, what is \(g(x)\)?
+A) \(3x+2\)
+B) \(6x-4\)
+C) \(3x-2\)
+D) \(3x-1\)
+KEY: C
+SOL:
+Answer: (C) \(3x-2\).
+Given: \(f(x)=2x+3,\quad f(g(x))=6x-1\)
+Formula/Principle: \(f(g(x))=2g(x)+3\)
+Step 1: \(2g(x)+3=6x-1\)
+Step 2: \(g(x)=\dfrac{6x-4}2\)
+Worked derivation: \[g(x)=3x-2\]
+Check: \[f(3x-2)=2(3x-2)+3=6x-1\ \checkmark\]
+Why: \(\text{apply}\ f^{-1}(y)=\dfrac{y-3}2\ \text{to}\ 6x-1\)
+Why not the others: (A) \(f(3x+2)=6x+7\); (B) \(\text{forgets to divide by 2}\); (D) \(f(3x-1)=6x+1\).
+Key point: \(g=f^{-1}\circ(f\circ g)\)
+
+@@ Q52
+format: conceptual
+sub_topic: Recognising sin 3x and reading its period and range
+Q: Let \(f(x)=3\sin x-4\sin^3x\). What are the fundamental period and the range of f?
+A) Period \(2\pi\); range \([-7,7]\)
+B) Period \(\dfrac{2\pi}3\); range \([-1,1]\)
+C) Period \(\dfrac\pi3\); range \([-1,1]\)
+D) Period \(\dfrac{2\pi}3\); range \([-3,3]\)
+KEY: B
+SOL:
+Answer: (B) Period \(\dfrac{2\pi}3\); range \([-1,1]\).
+Given: \(f(x)=3\sin x-4\sin^3x\)
+Formula/Principle: \(\sin3x=3\sin x-4\sin^3x\)
+Step 1: \(f(x)=\sin3x\)
+Step 2: \(\text{period of}\ \sin kx=\dfrac{2\pi}k=\dfrac{2\pi}3\)
+Worked derivation: \[f(x)=\sin3x\Rightarrow T=\frac{2\pi}3,\quad -1\le f\le1\]
+Check: \[x=\tfrac\pi6:\ 3\cdot\tfrac12-4\cdot\tfrac18=1=\sin\tfrac\pi2\ \checkmark\]
+Why: \(\text{the triple-angle identity compresses the sine graph by 3}\)
+Why not the others: (A) \(\text{adds}\ |3|+|-4|\ \text{for the range}\); (C) \(\sin3x\ \text{does not repeat after}\ \tfrac\pi3:\ \sin(3x+\pi)=-\sin3x\); (D) \(\text{takes the range of}\ 3\sin x\).
+Key point: \(3\sin x-4\sin^3x=\sin3x\)
+
+@@ Q53
+format: numerical
+sub_topic: Regions formed by lines in general position: induction step R(k+1) = R(k) + (k+1)
+Q: n straight lines are drawn in a plane so that no two are parallel and no three pass through one point. Let \(R(n)\) be the number of regions formed. Adding the \((k+1)\)-th line to k such lines adds \(k+1\) new regions, and \(R(0)=1\). What is \(R(10)\)?
+A) 1024
+B) 55
+C) 20
+D) 56
+KEY: D
+SOL:
+Answer: (D) 56.
+Given: \(R(0)=1,\quad R(k+1)=R(k)+(k+1)\)
+Formula/Principle: \(\text{claim }R(n)=\dfrac{n^2+n+2}2;\ \text{prove by induction}\)
+Step 1: \(\text{base: }R(0)=\dfrac{0+0+2}2=1\ \checkmark\)
+Step 2: \(\text{step: }R(k)+(k+1)=\dfrac{k^2+k+2}2+(k+1)=\dfrac{k^2+3k+4}2=\dfrac{(k+1)^2+(k+1)+2}2\)
+Worked derivation: \[R(10)=\frac{100+10+2}2=56\]
+Check: \[R(1)=2,\ R(2)=4,\ R(3)=7\ \text{(three lines in general position)}\ \checkmark\]
+Why: \(\text{the new line crosses}\ k\ \text{lines, so it is cut into}\ k+1\ \text{pieces, each splitting one region}\)
+Why not the others: (A) \(2^{10}\ \text{assumes doubling}\); (B) \(1+2+\dots+10\ \text{forgets}\ R(0)=1\); (C) \(2n\ \text{holds only for concurrent lines}\).
+Key point: \(R(n)=1+\dfrac{n(n+1)}2\)
+
+@@ Q54
+format: numerical
+sub_topic: Complex conjugate roots of a real quadratic in polar form: when a power sum reaches its largest value
+Q: Let α and β be the roots of \(x^2-2x+4=0\). What is the smallest positive integer n for which \(\alpha^n+\beta^n=2^{n+1}\)?
+A) 6
+B) 3
+C) 2
+D) 12
+KEY: A
+SOL:
+Answer: (A) 6.
+Given: \(x^2-2x+4=0\)
+Formula/Principle: \(\text{quadratic formula; De Moivre: }(re^{i\theta})^n=r^ne^{in\theta}\)
+Step 1: \(x=\dfrac{2\pm\sqrt{4-16}}2=1\pm i\sqrt3=2e^{\pm i\pi/3}\)
+Step 2: \(\alpha^n+\beta^n=2^n\left(e^{in\pi/3}+e^{-in\pi/3}\right)=2^{n+1}\cos\dfrac{n\pi}3\)
+Step 3: \(2^{n+1}\cos\dfrac{n\pi}3=2^{n+1}\iff\cos\dfrac{n\pi}3=1\iff n\in\{6,12,18,\dots\}\)
+Worked derivation: \[\text{smallest positive}\ n=6:\quad\alpha^6+\beta^6=2^7\cos2\pi=128\]
+Check: \[\alpha^3=8e^{i\pi}=-8\Rightarrow\alpha^6=64;\ 64+64=128=2^{7}\ \checkmark;\quad n=3:\ 2^4\cos\pi=-16\ne16\]
+Why: \(\text{the roots are conjugates of modulus 2, so the sum is}\ 2^{n+1}\cos\tfrac{n\pi}3\ \text{and is largest when the cosine is 1}\)
+Why not the others: (B) \(n=3\ \text{gives}\ \cos\pi=-1,\ \text{so the sum is}\ -16\); (C) \(n=2\ \text{gives}\ 2^3\cos\tfrac{2\pi}3=-4\); (D) \(12\ \text{works but is not the smallest}\).
+Key point: \(\alpha,\beta=re^{\pm i\theta}\Rightarrow\alpha^n+\beta^n=2r^n\cos n\theta\)
+
+@@ Q55
+format: numerical
+sub_topic: Finding a parameter from the solution set of a modulus inequality
+Q: The solution set of \(|2x-a|<5\) is the interval \(-1<x<4\). What is a?
+A) −3
+B) 3
+C) 6
+D) 1.5
+KEY: B
+SOL:
+Answer: (B) 3.
+Given: \(|2x-a|<5\iff-1<x<4\)
+Formula/Principle: \(|u|<c\iff-c<u<c\)
+Step 1: \(-5<2x-a<5\Rightarrow\dfrac{a-5}2<x<\dfrac{a+5}2\)
+Step 2: \(\dfrac{a-5}2=-1\Rightarrow a=3\)
+Worked derivation: \[\frac{a+5}{2}=4\Rightarrow a=3\ \text{(consistent)}\]
+Check: \[a=3:\ |2x-3|<5\iff-1<x<4\ \checkmark\]
+Why: \(\text{the centre of the interval is}\ \tfrac a2=\tfrac32\)
+Why not the others: (A) \(\text{gives}\ -4<x<1\); (C) \(\text{takes the centre as}\ a\ \text{without halving}\ (a/2=3)\); (D) \(1.5\ \text{is}\ \tfrac a2,\ \text{not}\ a\).
+Key point: \(|2x-a|<c\ \text{has centre}\ \tfrac a2\ \text{and half-width}\ \tfrac c2\)
+
+@@ Q56
+format: numerical
+sub_topic: Least number of terms of a G.P. whose sum exceeds a given value
+Q: What is the least number of terms of the G.P. \(3,6,12,\dots\) whose sum exceeds 1000?
+A) 7
+B) 8
+C) 9
+D) 10
+KEY: C
+SOL:
+Answer: (C) 9.
+Given: \(a=3,\ r=2\)
+Formula/Principle: \(S_n=\dfrac{a(r^n-1)}{r-1}\)
+Step 1: \(S_n=3(2^n-1)>1000\Rightarrow2^n>334.3\)
+Step 2: \(2^8=256<334.3<512=2^9\)
+Worked derivation: \[S_8=3\times255=765<1000,\qquad S_9=3\times511=1533>1000\Rightarrow n=9\]
+Check: \[S_9-S_8=768=3\cdot2^8\ \checkmark\ (\text{the 9th term})\]
+Why: \(S_n\ \text{increases, so the first}\ n\ \text{that passes 1000 is the least}\)
+Why not the others: (A) \(S_7=381\); (B) \(S_8=765\); (D) \(S_9\ \text{already exceeds 1000}\).
+Key point: \(\text{solve}\ 2^n>\dfrac{1000}3+1\ \text{for the least integer}\ n\)
+
+@@ Q57
+format: conceptual
+sub_topic: Lines through a point whose intercepts have a given sum
+Q: A line passes through \((2,2)\), and the sum of its x-intercept and y-intercept is 9. Which lines satisfy these conditions?
+A) Only \(2x+y=6\)
+B) Only \(x+2y=6\)
+C) \(x+y=4\) and \(2x+y=6\)
+D) \(2x+y=6\) and \(x+2y=6\)
+KEY: D
+SOL:
+Answer: (D) \(2x+y=6\) and \(x+2y=6\).
+Given: \(\dfrac xa+\dfrac yb=1,\ (2,2)\ \text{on it},\ a+b=9\)
+Formula/Principle: \(\text{intercept form}\ \dfrac xa+\dfrac yb=1\)
+Step 1: \(\dfrac2a+\dfrac2b=1\Rightarrow2(a+b)=ab\Rightarrow ab=18\)
+Step 2: \(t^2-9t+18=0\Rightarrow\{a,b\}=\{3,6\}\)
+Worked derivation: \[\frac x3+\frac y6=1\iff2x+y=6;\qquad\frac x6+\frac y3=1\iff x+2y=6\]
+Check: \[(2,2):\ 4+2=6\ \checkmark,\ 2+4=6\ \checkmark;\ \text{intercept sums }3+6=9\]
+Why: \(\text{the conditions are symmetric in}\ a\ \text{and}\ b,\ \text{so both orders work}\)
+Why not the others: (A) \(\text{misses}\ a=6,b=3\); (B) \(\text{misses}\ a=3,b=6\); (C) \(x+y=4\ \text{has intercept sum 8}\).
+Key point: \(a+b=s,\ ab=\text{from the point}\Rightarrow\text{two lines in general}\)
+
+@@ Q58
+format: numerical
+sub_topic: Eccentricities of a hyperbola and its conjugate hyperbola
+Q: A hyperbola has eccentricity 2. What is the eccentricity of its conjugate hyperbola?
+A) \(\dfrac2{\sqrt3}\)
+B) \(\dfrac{\sqrt3}2\)
+C) 2
+D) \(\sqrt3\)
+KEY: A
+SOL:
+Answer: (A) \(\dfrac2{\sqrt3}\).
+Given: \(\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1,\ e=2;\ \text{conjugate: }\dfrac{y^2}{b^2}-\dfrac{x^2}{a^2}=1\)
+Formula/Principle: \(e^2=1+\dfrac{b^2}{a^2},\quad e'^2=1+\dfrac{a^2}{b^2}\Rightarrow\dfrac1{e^2}+\dfrac1{e'^2}=1\)
+Step 1: \(\dfrac{b^2}{a^2}=e^2-1=3\)
+Step 2: \(e'^2=1+\dfrac13=\dfrac43\)
+Worked derivation: \[e'=\frac{2}{\sqrt3}\approx1.155\]
+Check: \[\frac14+\frac34=1\ \checkmark;\ e'>1\ \text{as needed for a hyperbola}\]
+Why: \(\text{conjugate hyperbolas swap the roles of}\ a\ \text{and}\ b\)
+Why not the others: (B) \(\tfrac{\sqrt3}2<1\ \text{is not a hyperbola eccentricity}\); (C) \(e'=e\ \text{only for a rectangular hyperbola (}e=\sqrt2)\); (D) \(\sqrt3=\tfrac ba,\ \text{not}\ e'\).
+Key point: \(\dfrac1{e^2}+\dfrac1{e'^2}=1\)
+
+@@ Q59
+format: conceptual
+sub_topic: Identifying a degenerate conic by completing squares
+Q: What does the equation \(x^2+4y^2-2x+16y+17=0\) represent?
+A) An ellipse with centre \((1,-2)\)
+B) A circle with centre \((1,-2)\)
+C) The single point \((1,-2)\)
+D) No real point
+KEY: C
+SOL:
+Answer: (C) The single point \((1,-2)\).
+Given: \(x^2+4y^2-2x+16y+17=0\)
+Formula/Principle: \(\text{complete squares in}\ x\ \text{and}\ y\)
+Step 1: \(x^2-2x=(x-1)^2-1\)
+Step 2: \(4y^2+16y=4(y+2)^2-16\)
+Worked derivation: \[(x-1)^2+4(y+2)^2-1-16+17=0\iff(x-1)^2+4(y+2)^2=0\]
+Check: \[\text{a sum of squares is 0 only if each is 0: }x=1,\ y=-2;\ \ 1+16-2-32+17=0\ \checkmark\]
+Why: \(\text{the right side after completing squares is exactly 0: a degenerate ellipse}\)
+Why not the others: (A) \(\text{needs a positive right side}\); (B) \(\text{coefficients of}\ x^2,y^2\ \text{differ}\); (D) \((1,-2)\ \text{satisfies the equation}\).
+Key point: \(\text{ellipse form with right side}\ 0\ \text{is a point;}\ <0\ \text{is empty}\)
+
+@@ Q60
+format: numerical
+sub_topic: Conditional probability for the number of girls among three children
+Q: A family has three children. Each child is equally likely to be a boy or a girl, independently. Given that at least one child is a girl, what is the probability that at least two children are girls?
+A) \(\dfrac12\)
+B) \(\dfrac47\)
+C) \(\dfrac37\)
+D) \(\dfrac38\)
+KEY: B
+SOL:
+Answer: (B) \(\dfrac47\).
+Given: \(8\ \text{equally likely outcomes};\ A=\text{at least one girl},\ B=\text{at least two girls}\)
+Formula/Principle: \(P(B\mid A)=\dfrac{P(A\cap B)}{P(A)}=\dfrac{|A\cap B|}{|A|}\)
+Step 1: \(|A|=8-1=7\ (\text{all except BBB})\)
+Step 2: \(|B|=\binom32+\binom33=3+1=4;\ B\subseteq A\Rightarrow|A\cap B|=4\)
+Worked derivation: \[P(B\mid A)=\frac47\]
+Check: \[P(\text{exactly one girl}\mid A)=\frac37;\ \frac47+\frac37=1\ \checkmark\]
+Why: \(\text{the condition removes only the outcome BBB}\)
+Why not the others: (A) \(\text{ignores the condition: }P(B)=\tfrac48\); (C) \(\text{that is}\ P(\text{exactly one girl}\mid A)\); (D) \(\text{that is}\ P(\text{exactly two girls})\ \text{without conditioning}\).
+Key point: \(\text{conditioning shrinks the sample space to}\ A\)

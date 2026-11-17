@@ -1,6 +1,6 @@
 # NEST 25-test plan
 
-Status on 15 November 2026: **plan only; no NEST test is written yet** (1840 of 2000 slots are `planned`). The slot table is [NEST_25_Test_Plan.csv](NEST_25_Test_Plan.csv). It is built and checked by `tools/nest/plan_25_tests.py`; this page is rewritten by `tools/nest/plan_summary.py`. Rules: [NISER_Test_Instructions.md](NISER_Test_Instructions.md). Syllabus: [Syllabus.md](Syllabus.md). Past-paper analysis: [nest_pyq_analysis.md](../docs/blueprints/nest_pyq_analysis.md).
+Status on 15 November 2026: **plan only; no NEST test is written yet** (1760 of 2000 slots are `planned`). The slot table is [NEST_25_Test_Plan.csv](NEST_25_Test_Plan.csv). It is built and checked by `tools/nest/plan_25_tests.py`; this page is rewritten by `tools/nest/plan_summary.py`. Rules: [NISER_Test_Instructions.md](NISER_Test_Instructions.md). Syllabus: [Syllabus.md](Syllabus.md). Past-paper analysis: [nest_pyq_analysis.md](../docs/blueprints/nest_pyq_analysis.md).
 
 ## What the plan fixes
 
