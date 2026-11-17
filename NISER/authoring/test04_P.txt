@@ -1,0 +1,435 @@
+@@ Q61
+format: diagram
+sub_topic: Wave speed, fundamental frequency and the effect of tension from a standing-wave pattern on a string
+image: NEST_T04_Q61.png
+alt: A horizontal string 1.2 m long fixed between two clamps, vibrating in a standing wave with three equal loops; nodes are marked at both clamps and at two points in between, and the label "150 Hz" is next to the vibrator.
+Q: The figure shows a string of length 1.2 m, fixed at both ends, vibrating in a steady standing-wave pattern when driven at 150 Hz. Read the number of loops from the figure. What is the speed of waves on the string and its fundamental frequency? If the tension is then made four times larger, at what driving frequency will the same pattern appear?
+A) 120 m s⁻¹; 50 Hz; 600 Hz
+B) 120 m s⁻¹; 50 Hz; 300 Hz
+C) 180 m s⁻¹; 75 Hz; 300 Hz
+D) 60 m s⁻¹; 25 Hz; 300 Hz
+KEY: B
+SOL:
+Answer: (B) 120 m s⁻¹; 50 Hz; 300 Hz.
+Given: \(L=1.2\ \mathrm m;\ \text{3 loops (from the figure)};\ f=150\ \mathrm{Hz};\ T'=4T\)
+Formula/Principle: \(L=n\dfrac\lambda2;\quad v=f\lambda;\quad v=\sqrt{T/\mu};\quad f_n=\dfrac{nv}{2L}\)
+Step 1: \(n=3:\ \lambda=\dfrac{2L}{3}=0.80\ \mathrm m\)
+Step 2: \(v=150\times0.80=120\ \mathrm{m\,s^{-1}};\quad f_1=\dfrac{v}{2L}=\dfrac{120}{2.4}=50\ \mathrm{Hz}\)
+Step 3: \(T\to4T\Rightarrow v\to\sqrt4\,v=240\ \mathrm{m\,s^{-1}}\)
+Worked derivation: \[\text{same 3-loop pattern: }\lambda=0.80\ \mathrm m\Rightarrow f'=\frac{240}{0.80}=300\ \mathrm{Hz}\]
+Check: \[f_3=3f_1=150\ \mathrm{Hz}\ \checkmark;\quad f'_3=3\times\frac{240}{2.4}=300\ \mathrm{Hz}\ \checkmark\]
+Why: \(\text{the pattern fixes }\lambda;\ \text{the tension fixes }v;\ \text{so }f\propto\sqrt T\ \text{for a given pattern}\)
+Why not the others: (A) \(\text{takes }f\propto T\ \text{instead of}\ \sqrt T\); (C) \(\text{takes the whole string as one wavelength}\); (D) \(\text{takes one loop as a full wavelength}\).
+Key point: \(\text{each loop}=\lambda/2;\ v=\sqrt{T/\mu}\Rightarrow f\propto\sqrt T\)
+
+@@ Q62
+format: numerical
+sub_topic: Electric field inside and outside a uniformly charged solid sphere and flux through an inner Gaussian sphere
+Q: A non-conducting solid sphere of radius R carries charge Q spread uniformly through its volume. The electric field at its surface is \(E_0\). What is the field at distance \(R/2\) from the centre, the field at distance 2R, and the electric flux through a concentric spherical surface of radius \(R/2\)?
+A) \(2E_0\); \(E_0/4\); \(Q/\varepsilon_0\)
+B) \(E_0/2\); \(E_0/2\); \(Q/(2\varepsilon_0)\)
+C) 0; \(E_0/4\); 0
+D) \(E_0/2\); \(E_0/4\); \(Q/(8\varepsilon_0)\)
+KEY: D
+SOL:
+Answer: (D) \(E_0/2\); \(E_0/4\); \(Q/(8\varepsilon_0)\).
+Given: \(\text{uniform volume charge }Q,\ \text{radius }R;\ E(R)=E_0=\dfrac{Q}{4\pi\varepsilon_0R^2}\)
+Formula/Principle: \(\text{Gauss's law: }\oint\vec E\cdot d\vec A=\dfrac{q_{\text{enc}}}{\varepsilon_0}\)
+Step 1: \(r=\tfrac R2:\ q_{\text{enc}}=Q\left(\tfrac{r}{R}\right)^3=\tfrac Q8\)
+Step 2: \(E\cdot4\pi\left(\tfrac R2\right)^2=\dfrac{Q/8}{\varepsilon_0}\Rightarrow E=\dfrac{Q}{8\pi\varepsilon_0R^2}=\dfrac{E_0}{2}\)
+Step 3: \(r=2R:\ E=\dfrac{Q}{4\pi\varepsilon_0(2R)^2}=\dfrac{E_0}4\)
+Worked derivation: \[\Phi\left(\tfrac R2\right)=\frac{q_{\text{enc}}}{\varepsilon_0}=\frac{Q}{8\varepsilon_0}\]
+Check: \[\text{inside: }E=\frac{Qr}{4\pi\varepsilon_0R^3}\propto r\ \Rightarrow E(R/2)=E_0/2\ \checkmark\]
+Why: \(\text{inside, only the charge within radius }r\ \text{contributes; outside, the sphere acts as a point charge}\)
+Why not the others: (A) \(\text{treats the whole charge as enclosed at }R/2\); (B) \(\text{takes }q_{\text{enc}}\propto r\ \text{and }E\propto1/r\); (C) \(\text{this is for a conductor, where charge lies on the surface}\).
+Key point: \(\text{uniform solid sphere: }E\propto r\ \text{inside},\ E\propto1/r^2\ \text{outside}\)
+
+@@ Q63
+format: experiment
+sub_topic: Common potential and loss of energy when two charged capacitors are joined, like plates together
+Q: A 2.0 µF capacitor is charged to 100 V and a 4.0 µF capacitor is charged to 50 V. They are disconnected from their supplies and then joined, positive plate to positive plate and negative to negative. What is the final common potential difference, and how much electrostatic energy is lost?
+A) 75 V; no energy is lost
+B) 66.7 V; no energy is lost
+C) 66.7 V; about 1.67 mJ
+D) 0 V; 15 mJ
+KEY: C
+SOL:
+Answer: (C) 66.7 V; about 1.67 mJ.
+Given: \(C_1=2.0\ \mu\mathrm F,\ V_1=100\ \mathrm V;\ C_2=4.0\ \mu\mathrm F,\ V_2=50\ \mathrm V\)
+Formula/Principle: \(\text{charge is conserved: }V=\dfrac{C_1V_1+C_2V_2}{C_1+C_2};\quad U=\tfrac12CV^2\)
+Step 1: \(q=2.0\times100+4.0\times50=400\ \mu\mathrm C;\quad V=\dfrac{400}{6.0}=66.7\ \mathrm V\)
+Step 2: \(U_i=\tfrac12(2.0\times10^{-6})(100)^2+\tfrac12(4.0\times10^{-6})(50)^2=0.0100+0.0050=0.0150\ \mathrm J\)
+Step 3: \(U_f=\tfrac12(6.0\times10^{-6})(66.7)^2=0.01333\ \mathrm J\)
+Worked derivation: \[\Delta U=\frac{C_1C_2(V_1-V_2)^2}{2(C_1+C_2)}=\frac{(2\times4)\times10^{-12}\times2500}{2\times6\times10^{-6}}=1.67\times10^{-3}\ \mathrm J\]
+Check: \[U_i-U_f=0.0150-0.01333=0.00167\ \mathrm J\ \checkmark\]
+Why: \(\text{charge flows from the higher-potential capacitor; energy is lost as heat and radiation in the wires}\)
+Why not the others: (A) \(\text{averages the voltages without weighting by }C\); (B) \(\text{energy is always lost when }V_1\ne V_2\); (D) \(\text{this happens if opposite plates are joined: the equal charges of }200\ \mu\mathrm C\ \text{cancel and all 15 mJ is lost}\).
+Key point: \(\text{charge conserved, energy not: loss}=\dfrac{C_1C_2(V_1-V_2)^2}{2(C_1+C_2)}\)
+
+@@ Q64
+format: experiment
+sub_topic: Time to boil water using two identical heating coils in series and in parallel
+Q: An electric kettle has two identical heating coils. With one coil connected to the mains, a certain quantity of water boils in 10 min. How long does the same quantity of water, starting at the same temperature, take to boil when both coils are connected in series, and when they are connected in parallel, to the same mains? Neglect heat losses and the change of resistance with temperature.
+A) 20 min in series; 5 min in parallel
+B) 5 min in series; 20 min in parallel
+C) 20 min in series; 10 min in parallel
+D) 10 min in both cases
+KEY: A
+SOL:
+Answer: (A) 20 min in series; 5 min in parallel.
+Given: \(\text{one coil: resistance }R,\ t_1=10\ \text{min};\ \text{same supply voltage }V\)
+Formula/Principle: \(P=\dfrac{V^2}{R_{\text{eq}}};\quad Pt=\text{heat needed (fixed)}\Rightarrow t\propto R_{\text{eq}}\)
+Step 1: \(\text{series: }R_{\text{eq}}=2R\Rightarrow P=\dfrac{V^2}{2R}\)
+Step 2: \(\text{parallel: }R_{\text{eq}}=\dfrac R2\Rightarrow P=\dfrac{2V^2}{R}\)
+Worked derivation: \[t_s=10\times\frac{2R}{R}=20\ \text{min},\qquad t_p=10\times\frac{R/2}{R}=5\ \text{min}\]
+Check: \[P_p:P_1:P_s=4:2:1\ \ \text{(in units of }V^2/2R)\ \Rightarrow\ t=5:10:20\ \checkmark\]
+Why: \(\text{at fixed voltage, lower resistance draws more current and gives more power}\)
+Why not the others: (B) \(\text{uses }P=I^2R\ \text{at fixed current, but the voltage is fixed}\); (C) \(\text{parallel doubles the power, halving the time}\); (D) \(\text{power depends on the connection}\).
+Key point: \(\text{fixed }V:\ P=V^2/R\ \Rightarrow\ \text{parallel heats fastest}\)
+
+@@ Q65
+format: numerical
+sub_topic: Force between two parallel currents (Newton's third law) and the neutral point between them
+Q: Two long, straight, parallel wires are 10 cm apart in air and carry currents of 5.0 A and 10 A in the same direction. What is the force per metre on each wire, and where is the magnetic field zero? (\(\mu_0=4\pi\times10^{-7}\ \mathrm{T\,m\,A^{-1}}\))
+A) \(1.0\times10^{-4}\ \mathrm{N\,m^{-1}}\), repulsive; outside the wires, 3.3 cm beyond the 5.0 A wire
+B) \(2.0\times10^{-4}\ \mathrm{N\,m^{-1}}\) on the 10 A wire and \(1.0\times10^{-4}\ \mathrm{N\,m^{-1}}\) on the 5.0 A wire, attractive; between the wires, midway
+C) \(1.0\times10^{-4}\ \mathrm{N\,m^{-1}}\), attractive; between the wires, 6.7 cm from the 5.0 A wire
+D) \(1.0\times10^{-4}\ \mathrm{N\,m^{-1}}\) on each wire, attractive, equal and opposite; between the wires, 3.3 cm from the 5.0 A wire
+KEY: D
+SOL:
+Answer: (D) \(1.0\times10^{-4}\ \mathrm{N\,m^{-1}}\) on each wire, attractive, equal and opposite; between the wires, 3.3 cm from the 5.0 A wire.
+Given: \(I_1=5.0\ \mathrm A,\ I_2=10\ \mathrm A\ \text{(same direction)};\ d=0.10\ \mathrm m\)
+Formula/Principle: \(\dfrac Fl=\dfrac{\mu_0I_1I_2}{2\pi d};\quad B=\dfrac{\mu_0I}{2\pi r}\)
+Step 1: \(\dfrac Fl=\dfrac{2\times10^{-7}\times5.0\times10}{0.10}=1.0\times10^{-4}\ \mathrm{N\,m^{-1}}\)
+Step 2: \(\text{same direction}\Rightarrow\text{attraction; by Newton's third law the forces are equal and opposite}\)
+Step 3: \(\text{between the wires the two fields are opposite: }\dfrac{I_1}{x}=\dfrac{I_2}{0.10-x}\)
+Worked derivation: \[\frac{5}{x}=\frac{10}{0.10-x}\Rightarrow0.50-5x=10x\Rightarrow x=0.033\ \mathrm m=3.3\ \mathrm{cm}\]
+Check: \[B_1=\frac{2\times10^{-7}\times5}{0.0333}=3.0\times10^{-5}\ \mathrm T=B_2=\frac{2\times10^{-7}\times10}{0.0667}\ \checkmark\]
+Why: \(\text{each wire sits in the other's field; the force formula is symmetric in }I_1,I_2\)
+Why not the others: (A) \(\text{like currents attract, and outside the wires the fields add}\); (B) \(\text{violates Newton's third law}\); (C) \(\text{the neutral point is nearer the weaker current}\).
+Key point: \(\text{parallel currents attract with equal forces; }B=0\ \text{nearer the smaller current}\)
+
+@@ Q66
+format: numerical
+sub_topic: Motional emf, retarding force and energy conservation for a rod moved along rails
+Q: A metal rod of length 0.40 m slides at a constant 5.0 m s⁻¹ along two parallel frictionless rails joined at one end by a 2.0 Ω resistor. The arrangement is in a uniform magnetic field of 0.50 T perpendicular to the plane of the rails. The resistances of the rod and rails are negligible. What are the induced emf, the external force needed to keep the speed constant, and the power delivered by this force?
+A) 1.0 V; 0.10 N; 0.25 W
+B) 1.0 V; 0.10 N; 0.50 W
+C) 1.0 V; 0.25 N; 1.25 W
+D) 1.0 V; 0.20 N; 1.0 W
+KEY: B
+SOL:
+Answer: (B) 1.0 V; 0.10 N; 0.50 W.
+Given: \(B=0.50\ \mathrm T,\ l=0.40\ \mathrm m,\ v=5.0\ \mathrm{m\,s^{-1}},\ R=2.0\ \Omega\)
+Formula/Principle: \(\varepsilon=Blv;\quad I=\varepsilon/R;\quad F=BIl;\quad P=Fv\)
+Step 1: \(\varepsilon=0.50\times0.40\times5.0=1.0\ \mathrm V\)
+Step 2: \(I=1.0/2.0=0.50\ \mathrm A;\quad F=0.50\times0.50\times0.40=0.10\ \mathrm N\)
+Worked derivation: \[P_{\text{mech}}=Fv=0.10\times5.0=0.50\ \mathrm W\]
+Check: \[P_{\text{elec}}=I^2R=0.25\times2.0=0.50\ \mathrm W=P_{\text{mech}}\ \checkmark\]
+Why: \(\text{by Lenz's law the magnetic force opposes the motion; the work done against it appears as heat in }R\)
+Why not the others: (A) \(\text{uses }\tfrac12I^2R\); (C) \(\text{leaves out the length in }F=BIl\); (D) \(\text{doubles the current}\).
+Key point: \(F=\dfrac{B^2l^2v}{R};\quad Fv=I^2R\ \text{(energy conservation)}\)
+
+@@ Q67
+format: numerical
+sub_topic: Impedance, current, power factor and power in a series LCR circuit
+Q: A series circuit has a 40 Ω resistor, an inductor of reactance 50 Ω and a capacitor of reactance 20 Ω, connected to a 250 V (rms) AC supply. What are the rms current, the power factor, the average power and the phase of the current relative to the voltage?
+A) 5.0 A; 0.80; 1000 W; current lags the voltage
+B) 5.0 A; 0.80; 1250 W; current lags the voltage
+C) 3.1 A; 0.50; 385 W; current lags the voltage
+D) 5.0 A; 0.60; 750 W; current leads the voltage
+KEY: A
+SOL:
+Answer: (A) 5.0 A; 0.80; 1000 W; current lags the voltage.
+Given: \(R=40\ \Omega,\ X_L=50\ \Omega,\ X_C=20\ \Omega,\ V=250\ \mathrm V\ \text{(rms)}\)
+Formula/Principle: \(Z=\sqrt{R^2+(X_L-X_C)^2};\quad I=V/Z;\quad \cos\phi=R/Z;\quad P=I^2R\)
+Step 1: \(Z=\sqrt{40^2+30^2}=50\ \Omega;\quad I=250/50=5.0\ \mathrm A\)
+Step 2: \(\cos\phi=40/50=0.80\)
+Worked derivation: \[P=VI\cos\phi=250\times5.0\times0.80=1000\ \mathrm W=I^2R=25\times40\ \checkmark\]
+Check: \[\tan\phi=\frac{X_L-X_C}{R}=\frac{30}{40}=0.75>0\Rightarrow\text{inductive},\ \text{current lags}\ \checkmark\]
+Why: \(\text{only the resistor dissipates power; the net reactance is inductive}\)
+Why not the others: (B) \(\text{uses }VI\ \text{without the power factor}\); (C) \(\text{adds the reactances: }Z=\sqrt{40^2+70^2}\approx81\ \Omega\); (D) \(\text{swaps }R/Z\ \text{with }X/Z\ \text{and the sign}\).
+Key point: \(Z=\sqrt{R^2+(X_L-X_C)^2};\ X_L>X_C\Rightarrow\text{current lags}\)
+
+@@ Q68
+format: numerical
+sub_topic: Power of two thin lenses in contact and separated by a distance
+Q: A thin convex lens of focal length 25 cm and a thin concave lens of focal length 50 cm have a common axis. What is the power of the combination when they are in contact, and when they are 25 cm apart?
+A) +2 D in both cases
+B) +6 D in contact; +4 D when 25 cm apart
+C) +2 D in contact; +4 D when 25 cm apart
+D) −2 D in contact; 0 D when 25 cm apart
+KEY: C
+SOL:
+Answer: (C) +2 D in contact; +4 D when 25 cm apart.
+Given: \(f_1=+0.25\ \mathrm m\Rightarrow P_1=+4\ \mathrm D;\ f_2=-0.50\ \mathrm m\Rightarrow P_2=-2\ \mathrm D;\ d=0.25\ \mathrm m\)
+Formula/Principle: \(P=P_1+P_2\ \text{(contact)};\quad P=P_1+P_2-dP_1P_2\ \text{(separated)}\)
+Step 1: \(\text{contact: }P=4-2=+2\ \mathrm D\ (f=+50\ \mathrm{cm})\)
+Step 2: \(\text{separated: }dP_1P_2=0.25\times4\times(-2)=-2\)
+Worked derivation: \[P=4-2-(-2)=+4\ \mathrm D\ (f=+25\ \mathrm{cm})\]
+Check: \[\frac1F=\frac1{f_1}+\frac1{f_2}-\frac{d}{f_1f_2}=4-2-\frac{0.25}{(0.25)(-0.50)}=4-2+2=4\ \mathrm{m^{-1}}\ \checkmark\]
+Why: \(\text{separation changes the power when one lens is converging and the other diverging}\)
+Why not the others: (A) \(\text{ignores the separation term}\); (B) \(\text{adds magnitudes of powers}\); (D) \(\text{sign of the convex lens reversed}\).
+Key point: \(P=P_1+P_2-dP_1P_2\ \text{(}d\ \text{in metres)}\)
+
+@@ Q69
+format: experiment
+sub_topic: Work function, stopping potential at a second wavelength and threshold wavelength from a photocell experiment
+Q: In a photocell experiment, light of wavelength 248 nm falls on a metal surface and the photocurrent just stops when the collector is 2.0 V negative with respect to the emitter. The light is replaced by light of wavelength 310 nm. What is the new stopping potential, and what is the threshold wavelength of the metal? (hc = 1240 eV nm)
+A) 1.0 V; 620 nm
+B) 1.0 V; 413 nm
+C) 1.6 V; 413 nm
+D) 2.0 V; 413 nm
+KEY: B
+SOL:
+Answer: (B) 1.0 V; 413 nm.
+Given: \(\lambda_1=248\ \mathrm{nm},\ V_1=2.0\ \mathrm V;\ \lambda_2=310\ \mathrm{nm};\ hc=1240\ \mathrm{eV\,nm}\)
+Formula/Principle: \(eV_0=\dfrac{hc}{\lambda}-\phi;\quad \lambda_0=\dfrac{hc}{\phi}\)
+Step 1: \(E_1=1240/248=5.0\ \mathrm{eV};\ \phi=5.0-2.0=3.0\ \mathrm{eV}\)
+Step 2: \(E_2=1240/310=4.0\ \mathrm{eV};\ V_2=4.0-3.0=1.0\ \mathrm V\)
+Worked derivation: \[\lambda_0=\frac{1240}{3.0}=413\ \mathrm{nm}\]
+Check: \[310<413\ \mathrm{nm},\ \text{so emission still occurs}\ \checkmark\]
+Why: \(\text{the work function is a property of the metal, so it is found from one reading and used for the other}\)
+Why not the others: (A) \(\text{takes }\phi=2.0\ \mathrm{eV}\ \text{(the stopping potential)}\); (C) \(\text{scales }V_0\ \text{in proportion to }1/\lambda\ \text{ignoring }\phi\); (D) \(\text{assumes }V_0\ \text{is independent of }\lambda\).
+Key point: \(eV_0=hc/\lambda-\phi;\ \phi\ \text{is fixed for the metal}\)
+
+@@ Q70
+format: numerical
+sub_topic: Level reached by a hydrogen atom absorbing a photon, and the number of emission lines that follow
+Q: A hydrogen atom in its ground state absorbs a photon of energy 12.75 eV. To which level is it excited, and how many different spectral lines can appear as it returns to the ground state, possibly in several steps?
+A) n = 4; 6 lines
+B) n = 3; 3 lines
+C) n = 4; 3 lines
+D) n = 5; 10 lines
+KEY: A
+SOL:
+Answer: (A) n = 4; 6 lines.
+Given: \(E_n=-\dfrac{13.6}{n^2}\ \mathrm{eV};\ E_{\text{photon}}=12.75\ \mathrm{eV}\)
+Formula/Principle: \(\text{energy conservation: }E_n=E_1+E_{\text{photon}};\ \text{number of lines}=\dfrac{n(n-1)}2\)
+Step 1: \(E_n=-13.6+12.75=-0.85\ \mathrm{eV}\)
+Step 2: \(n^2=13.6/0.85=16\Rightarrow n=4\)
+Worked derivation: \[\text{lines}=\frac{4\times3}{2}=6:\ 4\to3,\ 4\to2,\ 4\to1,\ 3\to2,\ 3\to1,\ 2\to1\]
+Check: \[E_4-E_1=13.6\left(1-\tfrac1{16}\right)=12.75\ \mathrm{eV}\ \checkmark\]
+Why: \(\text{the photon energy matches exactly the gap from }n=1\ \text{to}\ n=4\)
+Why not the others: (B) \(E_3-E_1=12.09\ \mathrm{eV}\); (C) \(\text{counts only jumps ending at }n=1\); (D) \(E_5-E_1=13.06\ \mathrm{eV}\).
+Key point: \(\text{from level }n:\ \tfrac{n(n-1)}{2}\ \text{possible lines}\)
+
+@@ Q71
+format: numerical
+sub_topic: Fission rate and daily fuel consumption of a 1 MW reactor
+Q: Each fission of a uranium-235 nucleus releases about 200 MeV. A reactor produces 1.0 MW of power from fission. About how many fissions occur per second, and what mass of uranium-235 is used up per day? (1 MeV = \(1.6\times10^{-13}\) J; \(N_A=6.0\times10^{23}\ \mathrm{mol^{-1}}\))
+A) \(3.1\times10^{10}\ \mathrm{s^{-1}}\); about \(1\times10^{-6}\) g
+B) \(3.1\times10^{19}\ \mathrm{s^{-1}}\); about 1000 g
+C) \(3.1\times10^{16}\ \mathrm{s^{-1}}\); about 1.05 g
+D) \(3.1\times10^{16}\ \mathrm{s^{-1}}\); about 0.0045 g
+KEY: C
+SOL:
+Answer: (C) \(3.1\times10^{16}\ \mathrm{s^{-1}}\); about 1.05 g.
+Given: \(P=1.0\times10^{6}\ \mathrm W;\ E=200\ \mathrm{MeV}=3.2\times10^{-11}\ \mathrm J;\ M=235\ \mathrm{g\,mol^{-1}}\)
+Formula/Principle: \(\text{fissions per second}=P/E;\ \text{mass}=\dfrac{N}{N_A}\times M\)
+Step 1: \(\text{rate}=\dfrac{1.0\times10^6}{3.2\times10^{-11}}=3.1\times10^{16}\ \mathrm{s^{-1}}\)
+Step 2: \(N_{\text{day}}=3.1\times10^{16}\times86400=2.7\times10^{21}\)
+Worked derivation: \[m=\frac{2.7\times10^{21}}{6.0\times10^{23}}\times235=4.5\times10^{-3}\times235\approx1.05\ \mathrm g\]
+Check: \[1.05\ \mathrm g\times\frac{6.0\times10^{23}}{235}\times3.2\times10^{-11}\ \mathrm J\approx8.6\times10^{10}\ \mathrm J=1.0\ \mathrm{MW}\times86400\ \mathrm s\ \checkmark\]
+Why: \(\text{fission releases about a million times more energy per atom than chemical burning}\)
+Why not the others: (A) \(\text{uses }1\ \mathrm{MeV}=1.6\times10^{-7}\ \mathrm J\); (B) \(\text{uses 200 keV instead of 200 MeV}\); (D) \(\text{stops at moles and forgets }\times235\).
+Key point: \(\text{about 1 g of U-235 per MW-day}\)
+
+@@ Q72
+format: numerical
+sub_topic: Current in a circuit with two silicon diodes in opposite branches, for both battery polarities
+Q: A 10 V battery is connected in series with a 1.0 kΩ resistor to a pair of parallel branches. Branch 1 has a silicon diode \(D_1\) in series with a 2.0 kΩ resistor; branch 2 has a silicon diode \(D_2\), pointing the opposite way, in series with a 1.0 kΩ resistor. With the battery connected so that \(D_1\) is forward biased, what current flows from the battery? What is the current when the battery is reversed? Take the forward voltage of a conducting silicon diode as 0.7 V and its reverse current as zero.
+A) 3.3 mA; 5.0 mA
+B) 3.1 mA; 0
+C) 4.65 mA; 3.1 mA
+D) 3.1 mA; 4.65 mA
+KEY: D
+SOL:
+Answer: (D) 3.1 mA; 4.65 mA.
+Given: \(V=10\ \mathrm V;\ R_s=1.0\ \mathrm{k\Omega};\ \text{branch 1: }D_1+2.0\ \mathrm{k\Omega};\ \text{branch 2: }D_2\ (\text{reversed})+1.0\ \mathrm{k\Omega};\ V_D=0.7\ \mathrm V\)
+Formula/Principle: \(\text{a reverse-biased diode carries no current; a forward one drops }0.7\ \mathrm V\)
+Step 1: \(\text{first polarity: }D_2\ \text{is off, only branch 1 conducts}\)
+Step 2: \(I=\dfrac{10-0.7}{1.0+2.0\ \mathrm{k\Omega}}=\dfrac{9.3}{3.0\times10^3}=3.1\ \mathrm{mA}\)
+Step 3: \(\text{reversed: }D_1\ \text{is off, }D_2\ \text{conducts}\)
+Worked derivation: \[I=\frac{10-0.7}{1.0+1.0\ \mathrm{k\Omega}}=\frac{9.3}{2.0\times10^3}=4.65\ \mathrm{mA}\]
+Check: \[\text{first case: }V_{2\,\mathrm{k\Omega}}=6.2\ \mathrm V,\ V_{1\,\mathrm{k\Omega}}=3.1\ \mathrm V,\ 6.2+3.1+0.7=10\ \checkmark\]
+Why: \(\text{each diode acts as a switch that selects one branch for each polarity}\)
+Why not the others: (A) \(\text{ignores the 0.7 V drop}\); (B) \(D_2\ \text{conducts when the battery is reversed}\); (C) \(\text{the two cases are swapped}\).
+Key point: \(\text{ideal-plus-0.7 V model: off}=\text{open},\ \text{on}=0.7\ \mathrm V\ \text{source}\)
+
+@@ Q73
+format: graph
+sub_topic: Displacement, distance, average velocity and average speed from a velocity–time graph that crosses zero
+image: NEST_T04_Q73.png
+alt: Velocity–time graph from 0 to 16 s: velocity rises in a straight line from 0 to 8 m/s at 4 s, stays at 8 m/s until 10 s, falls in a straight line to 0 at 14 s and continues falling to −4 m/s at 16 s.
+Q: The figure shows the velocity–time graph of a body moving along a straight line for 16 s. Read the values from the graph. What are the displacement, the distance travelled, the average velocity and the average speed for the whole 16 s?
+A) 76 m; 84 m; 4.75 m s⁻¹; 5.25 m s⁻¹
+B) 84 m; 84 m; 5.25 m s⁻¹; 5.25 m s⁻¹
+C) 76 m; 76 m; 4.75 m s⁻¹; 4.75 m s⁻¹
+D) 80 m; 84 m; 5.0 m s⁻¹; 5.25 m s⁻¹
+KEY: A
+SOL:
+Answer: (A) 76 m; 84 m; 4.75 m s⁻¹; 5.25 m s⁻¹.
+Given: \(\text{from the graph: }(0,0)\to(4,8)\to(10,8)\to(14,0)\to(16,-4)\ \ (t\ \text{in s},\ v\ \text{in m\,s}^{-1})\)
+Formula/Principle: \(\text{displacement}=\text{signed area under }v\text{–}t;\ \text{distance}=\text{total area (all positive)}\)
+Step 1: \(0\text{–}4\ \mathrm s:\ \tfrac12(4)(8)=16\ \mathrm m;\quad 4\text{–}10\ \mathrm s:\ 6\times8=48\ \mathrm m\)
+Step 2: \(10\text{–}14\ \mathrm s:\ \tfrac12(4)(8)=16\ \mathrm m;\quad 14\text{–}16\ \mathrm s:\ \tfrac12(2)(-4)=-4\ \mathrm m\)
+Step 3: \(\text{displacement}=16+48+16-4=76\ \mathrm m;\ \text{distance}=16+48+16+4=84\ \mathrm m\)
+Worked derivation: \[\bar v=\frac{76}{16}=4.75\ \mathrm{m\,s^{-1}},\qquad \text{average speed}=\frac{84}{16}=5.25\ \mathrm{m\,s^{-1}}\]
+Check: \[\text{the slope from }10\ \text{to}\ 16\ \mathrm s\ \text{is constant: }-8/4=-12/6=-2\ \mathrm{m\,s^{-2}},\ \text{so the line is straight through }v=0\ \checkmark\]
+Why: \(\text{after }14\ \mathrm s\ \text{the body moves backwards, which reduces displacement but adds to distance}\)
+Why not the others: (B) \(\text{treats the backward 4 m as forward}\); (C) \(\text{subtracts the backward motion from the distance}\); (D) \(\text{ignores the last 2 s for displacement}\).
+Key point: \(\text{signed area}=\text{displacement};\ \text{total area}=\text{distance}\)
+
+@@ Q74
+format: experiment
+sub_topic: Launch speed and landing velocity of a ball rolling off a table, from its height and range
+Q: A ball rolls off the edge of a horizontal table 1.25 m high and lands on the floor 2.0 m from the foot of the table. Neglect air resistance and take g = 10 m s⁻². With what speed did it leave the table, and what is its velocity just before it lands?
+A) 4.0 m s⁻¹; 5.0 m s⁻¹ at about 51° below the horizontal
+B) 4.0 m s⁻¹; 6.4 m s⁻¹ at about 51° below the horizontal
+C) 8.0 m s⁻¹; 9.4 m s⁻¹ at about 32° below the horizontal
+D) 4.0 m s⁻¹; 6.4 m s⁻¹ at about 39° below the horizontal
+KEY: B
+SOL:
+Answer: (B) 4.0 m s⁻¹; 6.4 m s⁻¹ at about 51° below the horizontal.
+Given: \(h=1.25\ \mathrm m,\ R=2.0\ \mathrm m,\ g=10\ \mathrm{m\,s^{-2}},\ u_y=0\)
+Formula/Principle: \(h=\tfrac12gt^2;\quad R=u\,t;\quad v_y=gt\)
+Step 1: \(t=\sqrt{2h/g}=\sqrt{0.25}=0.50\ \mathrm s\)
+Step 2: \(u=R/t=2.0/0.50=4.0\ \mathrm{m\,s^{-1}};\quad v_y=10\times0.50=5.0\ \mathrm{m\,s^{-1}}\)
+Worked derivation: \[v=\sqrt{4.0^2+5.0^2}=\sqrt{41}=6.4\ \mathrm{m\,s^{-1}},\qquad \tan\theta=\frac{5.0}{4.0}\Rightarrow\theta\approx51^\circ\ \text{below horizontal}\]
+Check: \[\text{energy: }v^2=u^2+2gh=16+25=41\ \checkmark\]
+Why: \(\text{horizontal and vertical motions are independent; the time is set by the height alone}\)
+Why not the others: (A) \(\text{gives only the vertical component as the speed}\); (C) \(\text{uses }t=0.25\ \mathrm s\); (D) \(\text{angle measured from the vertical}\).
+Key point: \(\text{horizontal launch: }t=\sqrt{2h/g},\ u=R/t\)
+
+@@ Q75
+format: numerical
+sub_topic: Minimum speed and tensions for a stone whirled in a complete vertical circle
+Q: A stone of mass 0.20 kg is tied to a light string 0.40 m long and whirled in a vertical circle. What is the minimum speed at the lowest point for the stone to complete the circle, the tension at the lowest point at this speed, and the speed at the highest point? (g = 10 m s⁻²)
+A) 2.0 m s⁻¹; 2.0 N; 0
+B) 4.5 m s⁻¹; 10 N; 2.0 m s⁻¹
+C) 2.8 m s⁻¹; 6.0 N; 0
+D) 4.5 m s⁻¹; 12 N; 2.0 m s⁻¹
+KEY: D
+SOL:
+Answer: (D) 4.5 m s⁻¹; 12 N; 2.0 m s⁻¹.
+Given: \(m=0.20\ \mathrm{kg},\ L=0.40\ \mathrm m,\ g=10\ \mathrm{m\,s^{-2}}\)
+Formula/Principle: \(\text{top (critical): }T=0,\ mg=\dfrac{mv_t^2}{L};\ \text{energy: }v_b^2=v_t^2+4gL\)
+Step 1: \(v_t=\sqrt{gL}=\sqrt{4.0}=2.0\ \mathrm{m\,s^{-1}}\)
+Step 2: \(v_b=\sqrt{5gL}=\sqrt{20}=4.5\ \mathrm{m\,s^{-1}}\)
+Worked derivation: \[T_b=mg+\frac{mv_b^2}{L}=0.20\times10+\frac{0.20\times20}{0.40}=2.0+10=12\ \mathrm N=6mg\]
+Check: \[\tfrac12mv_b^2-\tfrac12mv_t^2=\tfrac12(0.20)(20-4)=1.6\ \mathrm J=mg(2L)=0.20\times10\times0.80\ \checkmark\]
+Why: \(\text{at the top the string can only pull, so gravity alone must supply the centripetal force at the minimum speed}\)
+Why not the others: (A) \(\text{uses the top speed at the bottom}\); (B) \(\text{forgets the weight in }T_b\); (C) \(\text{uses }\sqrt{2gL},\ \text{which only reaches the top with zero speed, so the string goes slack before that}\).
+Key point: \(v_{\text{bottom,min}}=\sqrt{5gL};\ T_{\text{bottom}}=6mg\)
+
+@@ Q76
+format: numerical
+sub_topic: Energy needed to place a satellite in a circular orbit at height equal to the Earth's radius
+Q: A satellite of mass m is to be placed in a circular orbit at a height equal to the Earth's radius R above the surface. Ignoring the Earth's rotation and air resistance, what is the increase in its gravitational potential energy, its kinetic energy in orbit, and the total energy that must be supplied? (g is the acceleration due to gravity at the surface.)
+A) mgR; mgR/2; 3mgR/2
+B) mgR/2; mgR/2; mgR
+C) mgR/2; mgR/4; 3mgR/4
+D) mgR/4; mgR/4; mgR/2
+KEY: C
+SOL:
+Answer: (C) mgR/2; mgR/4; 3mgR/4.
+Given: \(r_1=R,\ r_2=2R;\ GM=gR^2\)
+Formula/Principle: \(U=-\dfrac{GMm}{r};\quad K_{\text{orbit}}=\dfrac{GMm}{2r}\)
+Step 1: \(\Delta U=-\dfrac{GMm}{2R}+\dfrac{GMm}{R}=\dfrac{GMm}{2R}=\dfrac{mgR}{2}\)
+Step 2: \(K=\dfrac{GMm}{2(2R)}=\dfrac{GMm}{4R}=\dfrac{mgR}{4}\)
+Worked derivation: \[E_{\text{supplied}}=\Delta U+K=\frac{mgR}2+\frac{mgR}4=\frac{3mgR}4\]
+Check: \[E_{\text{final}}-E_{\text{initial}}=-\frac{GMm}{4R}-\left(-\frac{GMm}{R}\right)=\frac{3GMm}{4R}=\frac{3mgR}4\ \checkmark\]
+Why: \(mgh\ \text{overestimates }\Delta U\ \text{because }g\ \text{falls with height}\)
+Why not the others: (A) \(\text{uses }mgh\ \text{with constant }g\); (B) \(\text{orbital KE at }2R\ \text{is }GMm/4R\); (D) \(\Delta U\ \text{is }GMm/2R,\ \text{not }/4R\).
+Key point: \(\text{orbit: }K=-E=-U/2\)
+
+@@ Q77
+format: numerical
+sub_topic: Scaling of terminal velocity and viscous force with radius and viscosity (Stokes' law)
+Q: A steel ball of radius 1.0 mm falls through liquid L₁ with terminal velocity 1.0 cm s⁻¹. A steel ball of radius 0.50 mm falls through liquid L₂, which has the same density as L₁ but half its viscosity. What is the terminal velocity of the small ball, and what is the ratio of the viscous force on the small ball to that on the large ball, each at its terminal velocity?
+A) 0.50 cm s⁻¹; 1/8
+B) 0.125 cm s⁻¹; 1/8
+C) 1.0 cm s⁻¹; 1/4
+D) 0.50 cm s⁻¹; 1/4
+KEY: A
+SOL:
+Answer: (A) 0.50 cm s⁻¹; 1/8.
+Given: \(r_1=1.0\ \mathrm{mm},\ v_1=1.0\ \mathrm{cm\,s^{-1}},\ \eta_1;\ r_2=0.50\ \mathrm{mm},\ \eta_2=\eta_1/2;\ \text{same densities}\)
+Formula/Principle: \(v_t=\dfrac{2r^2(\rho-\sigma)g}{9\eta};\quad F_{\text{viscous}}=6\pi\eta rv_t=\text{weight}-\text{buoyancy}\)
+Step 1: \(\dfrac{v_2}{v_1}=\left(\dfrac{r_2}{r_1}\right)^2\dfrac{\eta_1}{\eta_2}=\dfrac14\times2=\dfrac12\Rightarrow v_2=0.50\ \mathrm{cm\,s^{-1}}\)
+Step 2: \(\text{at terminal velocity }F=\tfrac43\pi r^3(\rho-\sigma)g\propto r^3\)
+Worked derivation: \[\frac{F_2}{F_1}=\left(\frac{0.50}{1.0}\right)^3=\frac18\]
+Check: \[\frac{F_2}{F_1}=\frac{\eta_2r_2v_2}{\eta_1r_1v_1}=\frac12\times\frac12\times\frac12=\frac18\ \checkmark\]
+Why: \(\text{at terminal velocity the drag balances the net weight, which depends only on volume}\)
+Why not the others: (B) \(\text{ignores the change in viscosity}\); (C) \(\text{takes }v_t\ \text{independent of }r\); (D) \(\text{takes drag }\propto r^2\).
+Key point: \(v_t\propto r^2/\eta;\ \text{drag at terminal velocity}\propto r^3\)
+
+@@ Q78
+format: experiment
+sub_topic: Ratio of thermal conductivities from wax melted along rods, and the junction temperature of the two rods in series
+Q: Two rods X and Y of the same length and cross-section are coated with wax and have one end dipped in boiling water. In the steady state, the wax melts to a distance of 5.0 cm along X and 10.0 cm along Y. The same rods are then joined end to end, with the free end of X at 100 °C and the free end of Y at 0 °C, and the sides insulated. What is the ratio of thermal conductivities \(K_X:K_Y\), and what is the steady temperature of the junction?
+A) 1 : 2; 33 °C
+B) 1 : 4; 80 °C
+C) 1 : 4; 20 °C
+D) 4 : 1; 80 °C
+KEY: C
+SOL:
+Answer: (C) 1 : 4; 20 °C.
+Given: \(l_X=5.0\ \mathrm{cm},\ l_Y=10.0\ \mathrm{cm};\ \text{series: }100\ ^\circ\mathrm C\ (X\ \text{end}),\ 0\ ^\circ\mathrm C\ (Y\ \text{end})\)
+Formula/Principle: \(\text{Ingen-Hausz: }K\propto l^2;\quad \text{series: }K_XA\dfrac{100-T}{L}=K_YA\dfrac{T-0}{L}\)
+Step 1: \(\dfrac{K_X}{K_Y}=\left(\dfrac{5.0}{10.0}\right)^2=\dfrac14\)
+Step 2: \(K_X(100-T)=4K_X\,T\)
+Worked derivation: \[100-T=4T\Rightarrow T=20\ ^\circ\mathrm C\]
+Check: \[\text{temperature drops: }80\ ^\circ\mathrm C\ \text{across X},\ 20\ ^\circ\mathrm C\ \text{across Y};\ K_X\times80=K_Y\times20\ \Rightarrow\ \tfrac{K_X}{K_Y}=\tfrac14\ \checkmark\]
+Why: \(\text{the same heat current flows through both rods, so the poorer conductor has the larger temperature drop}\)
+Why not the others: (A) \(\text{takes }K\propto l\); (B) \(\text{gives the temperature drop across X instead of the junction temperature}\); (D) \(\text{inverts the ratio}\).
+Key point: \(\text{wax length}\propto\sqrt K;\ \text{series rods: larger drop across the poorer conductor}\)
+
+@@ Q79
+format: numerical
+sub_topic: Work and rejected heat of a Carnot engine, and the reservoir changes needed for a higher efficiency
+Q: A Carnot engine works between reservoirs at 500 K and 300 K and absorbs 1000 J from the hot reservoir per cycle. How much work does it do per cycle, and how much heat does it reject? To raise the efficiency to 50 %, what sink temperature (with the source unchanged) or what source temperature (with the sink unchanged) is needed?
+A) 400 J and 600 J; sink 250 K or source 750 K
+B) 600 J and 400 J; sink 250 K or source 600 K
+C) 400 J and 600 J; sink 150 K or source 600 K
+D) 400 J and 600 J; sink 250 K or source 600 K
+KEY: D
+SOL:
+Answer: (D) 400 J and 600 J; sink 250 K or source 600 K.
+Given: \(T_1=500\ \mathrm K,\ T_2=300\ \mathrm K,\ Q_1=1000\ \mathrm J;\ \eta'=0.50\)
+Formula/Principle: \(\eta=1-\dfrac{T_2}{T_1};\quad W=\eta Q_1;\quad Q_1=W+Q_2\ \text{(energy conservation)}\)
+Step 1: \(\eta=1-\dfrac{300}{500}=0.40;\ W=400\ \mathrm J;\ Q_2=1000-400=600\ \mathrm J\)
+Step 2: \(\text{sink: }1-\dfrac{T_2'}{500}=0.50\Rightarrow T_2'=250\ \mathrm K\)
+Worked derivation: \[\text{source: }1-\frac{300}{T_1'}=0.50\Rightarrow T_1'=600\ \mathrm K\]
+Check: \[\frac{Q_2}{Q_1}=\frac{600}{1000}=\frac{T_2}{T_1}=\frac{300}{500}\ \checkmark\]
+Why: \(\text{the Carnot efficiency depends only on the ratio of reservoir temperatures}\)
+Why not the others: (A) \(\text{750 K gives }\eta=0.60\); (B) \(\text{swaps }W\ \text{and}\ Q_2\); (C) \(\text{150 K gives }\eta=0.70\).
+Key point: \(\eta_{\text{Carnot}}=1-T_2/T_1;\ Q_1=W+Q_2\)
+
+@@ Q80
+format: conceptual
+sub_topic: Effect of buoyancy, a draining hollow bob, amplitude and altitude on the period of a simple pendulum
+Q: Consider these statements about a simple pendulum making small oscillations.
+I. If its bob, of density \(8000\ \mathrm{kg\,m^{-3}}\), oscillates fully immersed in water (density \(1000\ \mathrm{kg\,m^{-3}}\)), neglecting viscous drag, the period becomes \(\sqrt{8/7}\) times the period in air.
+II. If the bob is a hollow sphere full of water that slowly drains out through a small hole at the bottom, the period first increases and then returns to its original value.
+III. Doubling the (still small) amplitude doubles the period.
+IV. At a height above the Earth's surface equal to the Earth's radius, the period is twice its value at the surface.
+Which statements are correct?
+A) I and III only
+B) I, II and IV only
+C) II and III only
+D) I and IV only
+KEY: B
+SOL:
+Answer: (B) I, II and IV only.
+Given: \(T=2\pi\sqrt{l/g_{\text{eff}}};\ \rho_{\text{bob}}=8000,\ \rho_{\text{water}}=1000\ \mathrm{kg\,m^{-3}}\)
+Formula/Principle: \(\text{period depends on the effective length (to the centre of mass) and on }g_{\text{eff}}\)
+Step 1: \(\text{I: }g_{\text{eff}}=g\left(1-\tfrac{1000}{8000}\right)=\tfrac78g\Rightarrow T'=T\sqrt{8/7}\)
+Step 2: \(\text{II: as water drains, the centre of mass first moves down (}l\ \text{increases) and then back up to the centre when empty}\)
+Step 3: \(\text{III: for small oscillations }T\ \text{is independent of amplitude}\)
+Worked derivation: \[\text{IV: }g_h=\frac{g}{(1+h/R)^2}=\frac g4\Rightarrow T_h=2\pi\sqrt{\frac{l}{g/4}}=2T\]
+Check: \[\text{I: net downward force }=(\rho-\sigma)Vg=\tfrac78\rho Vg\ \text{on mass }\rho V\Rightarrow g_{\text{eff}}=\tfrac78g\ \checkmark\]
+Why: \(\text{buoyancy reduces the restoring force but not the inertia, so the pendulum slows}\)
+Why not the others: (A) \(\text{III is false and II, IV are true}\); (C) \(\text{III is false and I is true}\); (D) \(\text{II is also true}\).
+Key point: \(T\propto\sqrt{l_{\text{cm}}/g_{\text{eff}}},\ \text{independent of small amplitude}\)

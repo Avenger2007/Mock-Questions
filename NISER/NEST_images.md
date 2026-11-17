@@ -62,3 +62,29 @@ One entry per question that needs a figure, in the format given in `NISER/NISER_
 - **Labels:** "I" and "II" above the panels; axis titles.
 - **Must not show:** shading of the enclosed area, the words "clockwise", "engine", "refrigerator", any value of work or heat.
 - **Alt text:** Two identical rectangular cycles on pressure–volume axes, each with corners at volumes 1 L and 3 L and pressures 1 and 2 times 10 to the 5 pascal; the left panel, labelled I, has arrows going clockwise and the right panel, labelled II, has arrows going anticlockwise.
+
+## NEST Test 4
+
+### NEST_T04_Q32.png — Test 4, Q32 (Chemistry, visible absorption spectrum of [Ti(H2O)6]3+)
+- **Purpose:** the student reads the wavelength of maximum absorption, works out Δo and the observed colour.
+- **Size and style:** 1200 × 800 px, white background, one smooth curve in dark purple (3 px), black axes, light grey grid lines, sans-serif labels 24 px or larger.
+- **Must show:** x-axis "Wavelength / nm" from 400 to 700 with ticks every 50 and minor ticks every 10. y-axis "Absorbance" from 0 to 1.0 with ticks every 0.2. A single broad, roughly symmetric band: absorbance about 0.05 at 400 nm, rising to a peak of 0.80 at exactly 498 nm, falling to about 0.05 by 650 nm and staying near zero to 700 nm. A thin dashed vertical line from the peak down to the x-axis, with the value "498" printed beside it on the axis. Title above the plot: "[Ti(H₂O)₆]³⁺ (aq)".
+- **Labels:** axis titles, the title, "498" at the dashed line.
+- **Must not show:** colour bands or a rainbow strip under the axis, any colour names, the words "t2g", "eg", "Δo", "d–d", or any energy value.
+- **Alt text:** Absorption spectrum of an aqueous titanium(III) solution: absorbance against wavelength from 400 to 700 nm, with a single broad band rising from near zero at 400 nm to a maximum at 498 nm and falling back to near zero by about 650 nm.
+
+### NEST_T04_Q61.png — Test 4, Q61 (Physics, standing wave on a string fixed at both ends)
+- **Purpose:** the student counts the loops, finds the wavelength and then the wave speed and fundamental frequency.
+- **Size and style:** 1600 × 600 px, white background, line-art in the style of a textbook diagram (sonometer-like): grey clamps at each end, the string's two extreme positions drawn as smooth sine-shaped curves in dark blue (3 px) with a faint dashed straight line for the rest position, sans-serif labels 24 px or larger.
+- **Must show:** A horizontal string between a left clamp and a right clamp. Exactly three equal loops (the two extreme curves cross at the nodes). Nodes marked with small black dots and labelled "N" at both clamps and at the two points dividing the string into thirds (four N labels in total); the middle of each loop labelled "A" (three A labels). A double-headed dimension arrow under the whole string labelled "1.2 m". A small box at the left end labelled "vibrator, 150 Hz" connected to the string.
+- **Labels:** "N", "A", "1.2 m", "vibrator, 150 Hz".
+- **Must not show:** the wavelength, "λ", "0.8 m", any wave speed, the word "third harmonic" or "fundamental", tension values.
+- **Alt text:** A horizontal string 1.2 m long fixed between two clamps, vibrating in a standing wave with three equal loops; nodes are marked at both clamps and at two points in between, and the label "150 Hz" is next to the vibrator.
+
+### NEST_T04_Q73.png — Test 4, Q73 (Physics, velocity–time graph crossing zero)
+- **Purpose:** the student finds signed and total areas under the graph to get displacement and distance.
+- **Size and style:** 1400 × 800 px, white background, the graph as straight dark-red segments (3 px), black axes through the origin with the time axis drawn at v = 0, light grey square grid, sans-serif labels 24 px or larger.
+- **Must show:** x-axis "t / s" from 0 to 16 with ticks and grid lines every 1 s and numbers every 2 s. y-axis "v / m s⁻¹" from −6 to 10 with ticks and grid lines every 1 and numbers every 2. Straight segments joining exactly (0, 0) → (4, 8) → (10, 8) → (14, 0) → (16, −4). Small dots at each of these five corner points. Thin dashed guide lines from (4, 8) and (10, 8) to the time axis and from (16, −4) to both axes.
+- **Labels:** axis titles and tick numbers only.
+- **Must not show:** shaded areas, any area values, the words "displacement", "distance", "acceleration", or slopes.
+- **Alt text:** Velocity–time graph from 0 to 16 s: velocity rises in a straight line from 0 to 8 m/s at 4 s, stays at 8 m/s until 10 s, falls in a straight line to 0 at 14 s and continues falling to −4 m/s at 16 s.

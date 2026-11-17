@@ -1,0 +1,432 @@
+@@ Q41
+format: numerical
+sub_topic: Values of a parameter for which two circles touch externally or internally
+Q: The circle \(x^2+y^2-6x-8y+k=0\) touches the circle \(x^2+y^2=1\). What are all possible values of k?
+A) 9 and −11
+B) 9 only
+C) −9 and 11
+D) 4 and 6
+KEY: A
+SOL:
+Answer: (A) 9 and −11.
+Given: \(C_1:\ x^2+y^2=1;\quad C_2:\ x^2+y^2-6x-8y+k=0\)
+Formula/Principle: \(\text{touch externally: }d=r_1+r_2;\quad \text{touch internally: }d=|r_2-r_1|\)
+Step 1: \(C_1:\ \text{centre }(0,0),\ r_1=1;\quad C_2:\ \text{centre }(3,4),\ r_2=\sqrt{9+16-k}=\sqrt{25-k}\)
+Step 2: \(d=\sqrt{3^2+4^2}=5\)
+Step 3: \(\text{external: }r_2+1=5\Rightarrow r_2=4\Rightarrow k=25-16=9\)
+Worked derivation: \[\text{internal: }r_2-1=5\Rightarrow r_2=6\Rightarrow k=25-36=-11\quad(r_2=-4\ \text{is impossible})\]
+Check: \[k=-11:\ x^2+y^2-6x-8y-11=0,\ \text{nearest point to }O\ \text{is at distance }6-5=1\ \checkmark\]
+Why: \(\text{the unit circle lies inside the larger circle and touches it from within when }k=-11\)
+Why not the others: (B) \(\text{misses internal contact}\); (C) \(\text{sign error in }r^2=25-k\); (D) \(\text{these are the radii, not }k\).
+Key point: \(d=r_1+r_2\ \text{(external)},\ d=|r_1-r_2|\ \text{(internal)}\)
+
+@@ Q42
+format: numerical
+sub_topic: Limit involving an exponential and a cosine, using standard expansions
+Q: What is the value of \(\displaystyle\lim_{x\to0}\frac{e^{x^2}-\cos x}{x^2}\)?
+A) 1/2
+B) 1
+C) 3/2
+D) 2
+KEY: C
+SOL:
+Answer: (C) 3/2.
+Given: \(\displaystyle L=\lim_{x\to0}\frac{e^{x^2}-\cos x}{x^2}\)
+Formula/Principle: \(\displaystyle\lim_{u\to0}\frac{e^u-1}{u}=1,\quad \lim_{x\to0}\frac{1-\cos x}{x^2}=\frac12\)
+Step 1: \(\displaystyle\frac{e^{x^2}-\cos x}{x^2}=\frac{e^{x^2}-1}{x^2}+\frac{1-\cos x}{x^2}\)
+Step 2: \(\displaystyle\frac{e^{x^2}-1}{x^2}\to1\ (u=x^2)\)
+Worked derivation: \[L=1+\frac12=\frac32\]
+Check: \[x=0.1:\ \frac{e^{0.01}-\cos0.1}{0.01}=\frac{1.010050-0.995004}{0.01}=1.5046\approx1.5\ \checkmark\]
+Why: \(\text{the numerator behaves like }x^2+\tfrac{x^2}{2}=\tfrac32x^2\ \text{near }0\)
+Why not the others: (A) \(\text{only the cosine part}\); (B) \(\text{only the exponential part}\); (D) \(\text{takes }1-\cos x\sim x^2\).
+Key point: \(e^{u}\approx1+u,\ \cos x\approx1-\tfrac{x^2}{2}\ \text{near }0\)
+
+@@ Q43
+format: numerical
+sub_topic: Correcting the mean and standard deviation after one wrongly recorded observation
+Q: The mean and standard deviation of 10 observations were found to be 20 and 2. It was later found that one observation, 25, had been recorded as 15. What are the correct mean and standard deviation?
+A) 21 and 2
+B) 21 and \(\sqrt3\)
+C) 20 and \(\sqrt3\)
+D) 21 and 3
+KEY: B
+SOL:
+Answer: (B) 21 and \(\sqrt3\).
+Given: \(n=10,\ \bar x=20,\ \sigma=2;\ \text{wrong value }15,\ \text{correct value }25\)
+Formula/Principle: \(\textstyle\sum x=n\bar x;\quad \sum x^2=n(\sigma^2+\bar x^2);\quad \sigma^2=\frac{\sum x^2}{n}-\bar x^2\)
+Step 1: \(\textstyle\sum x_{\text{wrong}}=200;\ \sum x_{\text{correct}}=200-15+25=210;\ \bar x=21\)
+Step 2: \(\textstyle\sum x^2_{\text{wrong}}=10(4+400)=4040\)
+Step 3: \(\textstyle\sum x^2_{\text{correct}}=4040-225+625=4440\)
+Worked derivation: \[\sigma^2=\frac{4440}{10}-21^2=444-441=3,\qquad \sigma=\sqrt3\]
+Check: \[\text{the change }+10\ \text{in one value raises the mean by }10/10=1\ \checkmark\]
+Why: \(\text{both }\textstyle\sum x\ \text{and}\ \sum x^2\ \text{must be corrected before recomputing}\)
+Why not the others: (A) \(\text{keeps the old SD}\); (C) \(\text{keeps the old mean}\); (D) \(3\ \text{is the variance, not the SD}\).
+Key point: \(\textstyle\text{correct }\sum x\ \text{and }\sum x^2\ \text{first, then use }\sigma^2=\overline{x^2}-\bar x^2\)
+
+@@ Q44
+format: numerical
+sub_topic: Probability that the first success occurs on a given independent trial
+Q: A fair die is thrown repeatedly. What is the probability that the first six appears on the third throw?
+A) 1/216
+B) 75/216
+C) 91/216
+D) 25/216
+KEY: D
+SOL:
+Answer: (D) 25/216.
+Given: \(P(\text{six})=\tfrac16,\ P(\text{not six})=\tfrac56;\ \text{throws are independent}\)
+Formula/Principle: \(P(A\cap B\cap C)=P(A)P(B)P(C)\ \text{for independent events}\)
+Step 1: \(\text{first six on 3rd throw}=\text{(not six)(not six)(six)}\)
+Step 2: \(P=\tfrac56\times\tfrac56\times\tfrac16\)
+Worked derivation: \[P=\frac{25}{216}\]
+Check: \[\sum_{k\ge1}\left(\tfrac56\right)^{k-1}\tfrac16=\frac{1/6}{1-5/6}=1\ \checkmark\]
+Why: \(\text{the order is fixed, so there is no factor }\binom31\)
+Why not the others: (A) \(\text{three sixes}\); (B) \(\text{exactly one six in three throws, in any position}\); (C) \(\text{at least one six in three throws}\).
+Key point: \(P(\text{first success on trial }k)=q^{k-1}p\)
+
+@@ Q45
+format: numerical
+sub_topic: Theorem of total probability with a die choosing one of two bags
+Q: A die is thrown. If it shows 1 or 2, a ball is drawn from bag I, which has 3 red and 2 black balls; otherwise a ball is drawn from bag II, which has 2 red and 4 black balls. What is the probability that the ball drawn is red?
+A) 7/15
+B) 5/11
+C) 19/45
+D) 9/19
+KEY: C
+SOL:
+Answer: (C) 19/45.
+Given: \(P(\text{I})=\tfrac26=\tfrac13,\ P(\text{II})=\tfrac23;\ P(R\mid\text{I})=\tfrac35,\ P(R\mid\text{II})=\tfrac26=\tfrac13\)
+Formula/Principle: \(P(R)=P(\text{I})P(R\mid\text{I})+P(\text{II})P(R\mid\text{II})\)
+Step 1: \(P(\text{I})P(R\mid\text{I})=\tfrac13\cdot\tfrac35=\tfrac15\)
+Step 2: \(P(\text{II})P(R\mid\text{II})=\tfrac23\cdot\tfrac13=\tfrac29\)
+Worked derivation: \[P(R)=\frac15+\frac29=\frac{9+10}{45}=\frac{19}{45}\]
+Check: \[P(B)=\tfrac13\cdot\tfrac25+\tfrac23\cdot\tfrac23=\tfrac{2}{15}+\tfrac49=\tfrac{26}{45};\ \tfrac{19}{45}+\tfrac{26}{45}=1\ \checkmark\]
+Why: \(\text{the bags are chosen with unequal probabilities, so each term is weighted}\)
+Why not the others: (A) \(\text{takes each bag with probability }\tfrac12\); (B) \(\text{pools all 11 balls}\); (D) \(\text{this is }P(\text{I}\mid R)\ \text{by Bayes' theorem}\).
+Key point: \(P(R)=\sum_iP(E_i)P(R\mid E_i)\)
+
+@@ Q46
+format: numerical
+sub_topic: Values of a parameter for which a triangle has a given area, using a determinant
+Q: The vertices of a triangle are \((1,2)\), \((k,4)\) and \((3,k)\), and its area is 3 square units. What is the sum of all real values of k?
+A) 3
+B) 6
+C) −3
+D) 0
+KEY: A
+SOL:
+Answer: (A) 3.
+Given: \(\text{vertices }(1,2),(k,4),(3,k);\ \text{area}=3\)
+Formula/Principle: \(\text{Area}=\tfrac12\left|\begin{vmatrix}x_1&y_1&1\\x_2&y_2&1\\x_3&y_3&1\end{vmatrix}\right|\)
+Step 1: \(\begin{vmatrix}1&2&1\\k&4&1\\3&k&1\end{vmatrix}=1(4-k)-2(k-3)+1(k^2-12)=k^2-3k-2\)
+Step 2: \(\tfrac12|k^2-3k-2|=3\Rightarrow k^2-3k-2=\pm6\)
+Step 3: \(k^2-3k-8=0:\ \text{discriminant }9+32=41>0\Rightarrow\text{two real roots, sum }3\)
+Worked derivation: \[k^2-3k+4=0:\ \text{discriminant }9-16=-7<0\Rightarrow\text{no real roots};\quad \text{sum}=3\]
+Check: \[k=\tfrac{3+\sqrt{41}}2\approx4.70:\ k^2-3k-2\approx22.10-14.10-2=6\Rightarrow\text{area}=3\ \checkmark\]
+Why: \(\text{the modulus gives two equations, but only one has real roots}\)
+Why not the others: (B) \(\text{adds the root sums of both quadratics}\); (C) \(\text{sign error in the sum of roots}\); (D) \(\text{ignores the modulus}\).
+Key point: \(\text{Area}=k\ \Rightarrow\ \det=\pm2k;\ \text{keep only real solutions}\)
+
+@@ Q47
+format: numerical
+sub_topic: Determinants of the adjoint and of the adjoint of the adjoint for a 3 × 3 matrix
+Q: A is a 3 × 3 matrix with \(|A|=5\). What are \(|\operatorname{adj}A|\) and \(|\operatorname{adj}(\operatorname{adj}A)|\)?
+A) 5 and 25
+B) 25 and 125
+C) 125 and 625
+D) 25 and 625
+KEY: D
+SOL:
+Answer: (D) 25 and 625.
+Given: \(n=3,\ |A|=5\)
+Formula/Principle: \(A(\operatorname{adj}A)=|A|I_n\Rightarrow|\operatorname{adj}A|=|A|^{n-1}\)
+Step 1: \(|\operatorname{adj}A|=5^{2}=25\)
+Step 2: \(|\operatorname{adj}(\operatorname{adj}A)|=|\operatorname{adj}A|^{n-1}=25^2\)
+Worked derivation: \[|\operatorname{adj}(\operatorname{adj}A)|=|A|^{(n-1)^2}=5^4=625\]
+Check: \[A=\operatorname{diag}(5,1,1):\ \operatorname{adj}A=\operatorname{diag}(1,5,5),\ \det=25;\ \operatorname{adj}(\operatorname{adj}A)=\operatorname{diag}(25,5,5),\ \det=625\ \checkmark\]
+Why: \(\text{taking determinants of }A\operatorname{adj}A=|A|I\ \text{gives }|A||\operatorname{adj}A|=|A|^n\)
+Why not the others: (A) \(\text{uses }|A|^{n-2}\); (B) \(\text{uses }|A|^{n}\ \text{for the second}\); (C) \(\text{uses }|A|^n\ \text{for the first}\).
+Key point: \(|\operatorname{adj}A|=|A|^{n-1},\ |\operatorname{adj}\operatorname{adj}A|=|A|^{(n-1)^2}\)
+
+@@ Q48
+format: numerical
+sub_topic: First and second derivatives of a cycloid given in parametric form
+Q: For the curve \(x=a(t-\sin t)\), \(y=a(1-\cos t)\) with \(a>0\), what are \(\dfrac{dy}{dx}\) and \(\dfrac{d^2y}{dx^2}\) at \(t=\dfrac\pi2\)?
+A) 1 and \(\dfrac1a\)
+B) 1 and \(-\dfrac1a\)
+C) 1 and \(-\dfrac1{4a}\)
+D) −1 and \(-\dfrac1a\)
+KEY: B
+SOL:
+Answer: (B) 1 and \(-\dfrac1a\).
+Given: \(x=a(t-\sin t),\ y=a(1-\cos t),\ t=\pi/2\)
+Formula/Principle: \(\dfrac{dy}{dx}=\dfrac{dy/dt}{dx/dt};\quad \dfrac{d^2y}{dx^2}=\dfrac{\frac{d}{dt}\left(\frac{dy}{dx}\right)}{dx/dt}\)
+Step 1: \(\dfrac{dy}{dx}=\dfrac{a\sin t}{a(1-\cos t)}=\dfrac{2\sin\frac t2\cos\frac t2}{2\sin^2\frac t2}=\cot\dfrac t2\)
+Step 2: \(\dfrac{d}{dt}\cot\dfrac t2=-\dfrac12\csc^2\dfrac t2;\quad \dfrac{dx}{dt}=2a\sin^2\dfrac t2\)
+Step 3: \(\dfrac{d^2y}{dx^2}=-\dfrac{1}{4a\sin^4\frac t2}\)
+Worked derivation: \[t=\tfrac\pi2:\ \cot\tfrac\pi4=1,\quad \sin^4\tfrac\pi4=\tfrac14\Rightarrow\frac{d^2y}{dx^2}=-\frac{1}{4a\cdot\frac14}=-\frac1a\]
+Check: \[\text{the cycloid arch is concave down everywhere }(0<t<2\pi),\ \text{so }y''<0\ \checkmark\]
+Why: \(\text{the second derivative needs a second division by }dx/dt\)
+Why not the others: (A) \(\text{wrong sign}\); (C) \(\text{forgets }\sin^4(\pi/4)=1/4\); (D) \(\cot(\pi/4)=+1\).
+Key point: \(\dfrac{d^2y}{dx^2}\ne\dfrac{d^2y/dt^2}{d^2x/dt^2};\ \text{divide }\dfrac{d}{dt}(y')\ \text{by }\dfrac{dx}{dt}\)
+
+@@ Q49
+format: numerical
+sub_topic: Second-order differential equation satisfied by sin(log x)
+Q: If \(y=\sin(\ln x)\) for \(x>0\), which equation does y satisfy?
+A) \(x^2y''+xy'+y=0\)
+B) \(x^2y''-xy'+y=0\)
+C) \(x^2y''+xy'-y=0\)
+D) \(y''+y=0\)
+KEY: A
+SOL:
+Answer: (A) \(x^2y''+xy'+y=0\).
+Given: \(y=\sin(\ln x),\ x>0\)
+Formula/Principle: \(\text{chain rule: }\dfrac{d}{dx}\sin(\ln x)=\dfrac{\cos(\ln x)}{x}\)
+Step 1: \(y'=\dfrac{\cos(\ln x)}{x}\Rightarrow xy'=\cos(\ln x)\)
+Step 2: \(\text{differentiate }xy'=\cos(\ln x):\ y'+xy''=-\dfrac{\sin(\ln x)}{x}\)
+Worked derivation: \[x^2y''+xy'=-\sin(\ln x)=-y\ \Rightarrow\ x^2y''+xy'+y=0\]
+Check: \[x=1:\ y=0,\ y'=1,\ y''=-1\ \Rightarrow\ (1)(-1)+1+0=0\ \checkmark\]
+Why: \(\text{with }t=\ln x,\ x\frac{d}{dx}=\frac{d}{dt},\ \text{so the equation becomes }\frac{d^2y}{dt^2}+y=0\)
+Why not the others: (B) \(\text{at }x=1:\ -1-1+0\ne0\); (C) \(\text{at }x=e^{\pi/2}:\ y=1,\ y'=0,\ y''=-e^{-\pi},\ \text{gives }-2\ne0\); (D) \(\text{at }x=1:\ -1+0\ne0\).
+Key point: \(\text{multiply }y'\ \text{by }x\ \text{before differentiating again}\)
+
+@@ Q50
+format: numerical
+sub_topic: Absolute maximum and minimum of a cubic on a closed interval, attained at two points each
+Q: For \(f(x)=x^3-6x^2+9x+1\) on \([0,4]\), which statement about its absolute maximum and minimum is correct?
+A) Maximum 5 at \(x=1\) only; minimum 1 at \(x=3\) only
+B) Maximum 5; minimum −1
+C) Maximum 5 at \(x=4\) only; minimum 1 at \(x=0\) only
+D) Maximum 5 at \(x=1\) and at \(x=4\); minimum 1 at \(x=0\) and at \(x=3\)
+KEY: D
+SOL:
+Answer: (D) Maximum 5 at \(x=1\) and at \(x=4\); minimum 1 at \(x=0\) and at \(x=3\).
+Given: \(f(x)=x^3-6x^2+9x+1,\ x\in[0,4]\)
+Formula/Principle: \(\text{compare }f\ \text{at critical points and end points}\)
+Step 1: \(f'(x)=3x^2-12x+9=3(x-1)(x-3)=0\Rightarrow x=1,3\)
+Step 2: \(f(0)=1,\ f(1)=1-6+9+1=5\)
+Step 3: \(f(3)=27-54+27+1=1,\ f(4)=64-96+36+1=5\)
+Worked derivation: \[\max=5\ \text{at }x=1,4;\qquad \min=1\ \text{at }x=0,3\]
+Check: \[f(x)-1=x(x-3)^2\ge0\ \text{and}\ 5-f(x)=(4-x)(x-1)^2\ge0\ \text{on }[0,4]\ \checkmark\]
+Why: \(\text{the local maximum equals the right end value and the local minimum equals the left end value}\)
+Why not the others: (A) \(\text{ignores the end points}\); (B) \(f\ge1\ \text{on }[0,4]\); (C) \(\text{ignores the critical points}\).
+Key point: \(\text{absolute extrema on }[a,b]:\ \text{check every critical point and both ends}\)
+
+@@ Q51
+format: numerical
+sub_topic: Counting how many of four definite integrals equal π/4, using properties of definite integrals
+Q: Consider
+\(I_1=\displaystyle\int_0^{\pi/2}\frac{dx}{1+\tan^3x}\), \(I_2=\displaystyle\int_0^{1}\ln\!\left(\frac1x-1\right)dx\), \(I_3=\displaystyle\int_{-1}^{1}\left(x^3\cos x+\frac{1}{2(1+x^2)}\right)dx\), \(I_4=\displaystyle\int_0^{\pi}\sin^2x\,dx\).
+How many of them are equal to \(\dfrac\pi4\)?
+A) 1
+B) 3
+C) 2
+D) 4
+KEY: C
+SOL:
+Answer: (C) 2.
+Given: \(I_1,I_2,I_3,I_4\ \text{as defined}\)
+Formula/Principle: \(\textstyle\int_0^af(x)dx=\int_0^af(a-x)dx;\quad \int_{-a}^{a}(\text{odd})=0\)
+Step 1: \(I_1:\ x\to\tfrac\pi2-x\ \text{gives }\textstyle\int_0^{\pi/2}\frac{\tan^3x}{1+\tan^3x}dx;\ \text{adding, }2I_1=\tfrac\pi2\Rightarrow I_1=\tfrac\pi4\)
+Step 2: \(I_2:\ \ln\frac{1-x}{x};\ x\to1-x\ \text{gives }\ln\frac{x}{1-x}=-\ln\frac{1-x}{x}\Rightarrow I_2=-I_2=0\)
+Step 3: \(I_3:\ x^3\cos x\ \text{is odd}\Rightarrow I_3=\tfrac12\left[\tan^{-1}x\right]_{-1}^{1}=\tfrac12\cdot\tfrac\pi2=\tfrac\pi4\)
+Worked derivation: \[I_4=\int_0^\pi\frac{1-\cos2x}{2}dx=\frac\pi2\ne\frac\pi4;\qquad\text{so }I_1,I_3\ \text{only}\]
+Check: \[I_1\ \text{at the midpoint }x=\tfrac\pi4:\ \text{integrand}=\tfrac12,\ \text{and the integrand is symmetric about }\tfrac12\ \text{there}\ \checkmark\]
+Why: \(\text{King's property pairs }f(x)\ \text{with }f(a-x)\ \text{so that they add to a constant}\)
+Why not the others: (A) \(\text{misses }I_3\ \text{or }I_1\); (B) \(I_4=\pi/2\ \text{or}\ I_2=0\ \text{was counted}\); (D) \(I_2,I_4\ne\pi/4\).
+Key point: \(\textstyle\int_0^{\pi/2}\frac{dx}{1+\tan^nx}=\frac\pi4\ \text{for every }n\)
+
+@@ Q52
+format: numerical
+sub_topic: Area between an ellipse and a chord joining the ends of its semi-axes
+Q: What is the area of the smaller region bounded by the ellipse \(\dfrac{x^2}{9}+\dfrac{y^2}{4}=1\) and the line \(\dfrac x3+\dfrac y2=1\)?
+A) \(\dfrac{3\pi}{2}\)
+B) \(\dfrac{3(\pi-2)}{2}\)
+C) \(\dfrac{3(\pi+2)}{2}\)
+D) \(6\pi-3\)
+KEY: B
+SOL:
+Answer: (B) \(\dfrac{3(\pi-2)}{2}\).
+Given: \(\text{ellipse }a=3,\ b=2;\ \text{line through }(3,0)\ \text{and}\ (0,2)\)
+Formula/Principle: \(\text{Area}=\textstyle\int_0^3\left(y_{\text{ellipse}}-y_{\text{line}}\right)dx\)
+Step 1: \(\textstyle\int_0^3\frac23\sqrt{9-x^2}\,dx=\frac23\cdot\frac{\pi\cdot9}{4}=\frac{3\pi}{2}\ \text{(quarter ellipse)}\)
+Step 2: \(\textstyle\int_0^3\left(2-\frac{2x}{3}\right)dx=6-3=3\ \text{(right triangle)}\)
+Worked derivation: \[\text{Area}=\frac{3\pi}{2}-3=\frac{3(\pi-2)}{2}\approx1.71\]
+Check: \[\text{quarter ellipse }\tfrac14\pi ab=\tfrac14\pi(3)(2)=\tfrac{3\pi}{2}\ \checkmark\]
+Why: \(\text{the chord cuts off the triangle from the first-quadrant quarter of the ellipse}\)
+Why not the others: (A) \(\text{whole quarter}\); (C) \(\text{adds the triangle}\); (D) \(\text{the larger region}\ \text{is }6\pi-\tfrac{3(\pi-2)}2,\ \text{not }6\pi-3\).
+Key point: \(\text{segment}=\text{quarter ellipse}-\text{triangle}=\tfrac{\pi ab}{4}-\tfrac{ab}{2}\)
+
+@@ Q53
+format: numerical
+sub_topic: Solving a homogeneous differential equation with an initial condition
+Q: Which curve is the solution of \(\dfrac{dy}{dx}=\dfrac yx+\tan\dfrac yx\) (for \(0<x\le1\)) that satisfies \(y(1)=\dfrac\pi2\)?
+A) \(\cos\dfrac yx=x\)
+B) \(\tan\dfrac yx=x\)
+C) \(\sin\dfrac yx=\dfrac1x\)
+D) \(\sin\dfrac yx=x\)
+KEY: D
+SOL:
+Answer: (D) \(\sin\dfrac yx=x\).
+Given: \(y'=\tfrac yx+\tan\tfrac yx,\ y(1)=\tfrac\pi2\)
+Formula/Principle: \(\text{homogeneous: put }y=vx,\ y'=v+xv'\)
+Step 1: \(v+xv'=v+\tan v\Rightarrow\cot v\,dv=\dfrac{dx}{x}\)
+Step 2: \(\ln|\sin v|=\ln|x|+c\Rightarrow\sin\dfrac yx=Cx\)
+Step 3: \(x=1,\ y=\tfrac\pi2:\ \sin\tfrac\pi2=C\Rightarrow C=1\)
+Worked derivation: \[\sin\frac yx=x\]
+Check: \[v=\sin^{-1}x:\ xv'=\frac{x}{\sqrt{1-x^2}}=\frac{\sin v}{\cos v}=\tan v\ \checkmark\]
+Why: \(\text{the substitution separates the variables}\)
+Why not the others: (A) \(\cos\tfrac\pi2=0\ne1\); (B) \(\tan\tfrac\pi2\ \text{is undefined}\); (C) \(\text{gives }\ln|\sin v|=-\ln x\), \(\text{wrong sign}\).
+Key point: \(y'=f(y/x)\ \Rightarrow\ y=vx\ \text{makes it separable}\)
+
+@@ Q54
+format: numerical
+sub_topic: Finding the sizes of two sets from the difference in their numbers of subsets
+Q: Set A has m elements and set B has n elements. A has 112 more subsets than B. What are m and n?
+A) m = 7, n = 4
+B) m = 8, n = 4
+C) m = 6, n = 4
+D) m = 7, n = 5
+KEY: A
+SOL:
+Answer: (A) m = 7, n = 4.
+Given: \(2^m-2^n=112,\ m>n\ge0\)
+Formula/Principle: \(\text{a set with }k\ \text{elements has }2^k\ \text{subsets}\)
+Step 1: \(2^n(2^{m-n}-1)=112=16\times7\)
+Step 2: \(2^{m-n}-1\ \text{is odd, so }2^n=16\ \text{and}\ 2^{m-n}-1=7\)
+Worked derivation: \[n=4,\quad 2^{m-4}=8\Rightarrow m=7\]
+Check: \[2^7-2^4=128-16=112\ \checkmark\]
+Why: \(\text{splitting }112\ \text{into its power of 2 and odd part gives a unique answer}\)
+Why not the others: (B) \(256-16=240\); (C) \(64-16=48\); (D) \(128-32=96\).
+Key point: \(2^m-2^n=2^n(2^{m-n}-1):\ \text{power of 2}\times\text{odd}\)
+
+@@ Q55
+format: numerical
+sub_topic: Number of ordered pairs in the smallest equivalence relation containing two given pairs
+Q: Let \(A=\{1,2,3\}\). How many ordered pairs are there in the smallest equivalence relation on A that contains \((1,2)\) and \((2,3)\)?
+A) 5
+B) 7
+C) 9
+D) 6
+KEY: C
+SOL:
+Answer: (C) 9.
+Given: \(A=\{1,2,3\};\ (1,2),(2,3)\in R\)
+Formula/Principle: \(R\ \text{must be reflexive, symmetric and transitive}\)
+Step 1: \(\text{reflexive: }(1,1),(2,2),(3,3)\)
+Step 2: \(\text{symmetric: }(2,1),(3,2)\)
+Step 3: \(\text{transitive: }(1,2),(2,3)\Rightarrow(1,3);\ \text{symmetric}\Rightarrow(3,1)\)
+Worked derivation: \[R=A\times A,\quad |R|=3+4+2=9\]
+Check: \[\text{all three elements lie in one equivalence class, so }R=A\times A\ \checkmark\]
+Why: \(\text{equivalence relations correspond to partitions; 1, 2, 3 are forced into one class}\)
+Why not the others: (A) \(\text{reflexive + the two given pairs}\); (B) \(\text{misses transitivity}\); (D) \(\text{misses symmetry of }(1,3)\ \text{or }(2,3)\).
+Key point: \(\text{linking }1\sim2\ \text{and }2\sim3\ \text{puts all three in one class}\)
+
+@@ Q56
+format: numerical
+sub_topic: Solving a trigonometric equation with the sum-to-product formula and counting solutions
+Q: How many solutions of \(\sin5x+\sin x=\sin3x\) lie in the interval \([0,\pi]\)?
+A) 4
+B) 6
+C) 5
+D) 8
+KEY: B
+SOL:
+Answer: (B) 6.
+Given: \(\sin5x+\sin x=\sin3x,\ 0\le x\le\pi\)
+Formula/Principle: \(\sin C+\sin D=2\sin\dfrac{C+D}2\cos\dfrac{C-D}2\)
+Step 1: \(\sin5x+\sin x=2\sin3x\cos2x\)
+Step 2: \(\sin3x\,(2\cos2x-1)=0\)
+Step 3: \(\sin3x=0:\ 3x=0,\pi,2\pi,3\pi\Rightarrow x=0,\tfrac\pi3,\tfrac{2\pi}3,\pi\)
+Worked derivation: \[\cos2x=\tfrac12:\ 2x=\tfrac\pi3,\tfrac{5\pi}3\Rightarrow x=\tfrac\pi6,\tfrac{5\pi}6;\quad \text{total}=4+2=6\]
+Check: \[x=\tfrac\pi6:\ \sin\tfrac{5\pi}6+\sin\tfrac\pi6=\tfrac12+\tfrac12=1=\sin\tfrac\pi2\ \checkmark\]
+Why: \(\text{the two families do not share any value, so the counts add}\)
+Why not the others: (A) \(\text{only }\sin3x=0\); (C) \(\text{drops an end point}\); (D) \(\text{takes }2x\ \text{up to }4\pi\).
+Key point: \(\text{factorise after sum-to-product; never cancel }\sin3x\)
+
+@@ Q57
+format: numerical
+sub_topic: Parameter range for which both roots of a quadratic are real and positive
+Q: For what values of the real number k are both roots of \(x^2-2(k-1)x+(k+5)=0\) real and positive?
+A) \(k\ge4\)
+B) \(k\ge4\) or \(k\le-1\)
+C) \(k>1\)
+D) \(-5<k\le-1\)
+KEY: A
+SOL:
+Answer: (A) \(k\ge4\).
+Given: \(x^2-2(k-1)x+(k+5)=0\)
+Formula/Principle: \(\text{both roots real and positive}\iff D\ge0,\ \alpha+\beta>0,\ \alpha\beta>0\)
+Step 1: \(D=4(k-1)^2-4(k+5)=4(k^2-3k-4)=4(k-4)(k+1)\ge0\Rightarrow k\le-1\ \text{or}\ k\ge4\)
+Step 2: \(\alpha+\beta=2(k-1)>0\Rightarrow k>1\)
+Step 3: \(\alpha\beta=k+5>0\Rightarrow k>-5\)
+Worked derivation: \[\{k\le-1\ \text{or}\ k\ge4\}\cap\{k>1\}\cap\{k>-5\}=\{k\ge4\}\]
+Check: \[k=4:\ x^2-6x+9=(x-3)^2,\ \text{double root }3>0\ \checkmark;\quad k=-2:\ x^2+6x+3,\ \text{roots negative}\]
+Why: \(\text{all three conditions must hold together}\)
+Why not the others: (B) \(\text{only }D\ge0\); (C) \(\text{only the sum condition}\); (D) \(\text{there the sum of roots is negative}\).
+Key point: \(\text{real positive roots: }D\ge0,\ -b/a>0,\ c/a>0\)
+
+@@ Q58
+format: numerical
+sub_topic: Counting real roots of an equation containing x|x| by splitting into cases
+Q: How many real roots does the equation \(x|x|-5x+6=0\) have?
+A) 1
+B) 2
+C) 4
+D) 3
+KEY: D
+SOL:
+Answer: (D) 3.
+Given: \(x|x|-5x+6=0\)
+Formula/Principle: \(|x|=x\ \text{for }x\ge0,\ |x|=-x\ \text{for }x<0\)
+Step 1: \(x\ge0:\ x^2-5x+6=0\Rightarrow x=2,3\ \text{(both valid)}\)
+Step 2: \(x<0:\ -x^2-5x+6=0\Rightarrow x^2+5x-6=0\Rightarrow x=1\ \text{or}\ x=-6\)
+Step 3: \(x=1\ \text{is rejected (not }<0),\ x=-6\ \text{is valid}\)
+Worked derivation: \[\text{roots: }-6,\ 2,\ 3\ \Rightarrow\ 3\ \text{real roots}\]
+Check: \[x=-6:\ (-6)(6)-5(-6)+6=-36+30+6=0\ \checkmark\]
+Why: \(\text{each case gives a quadratic whose roots must lie in that case's range}\)
+Why not the others: (A) \(\text{only the negative root}\); (B) \(\text{only }x\ge0\); (C) \(\text{keeps the rejected }x=1\).
+Key point: \(\text{split at }x=0\ \text{and check each root against its case}\)
+
+@@ Q59
+format: numerical
+sub_topic: Finding the length of a word from its number of arrangements with one letter repeated, and arrangements with the repeats together
+Q: A word has n letters: one letter occurs three times and all the other letters are different. The letters can be arranged in 840 distinct ways. What is n, and in how many of these arrangements are the three identical letters together?
+A) n = 7; 720
+B) n = 7; 120
+C) n = 8; 720
+D) n = 6; 24
+KEY: B
+SOL:
+Answer: (B) n = 7; 120.
+Given: \(\text{arrangements}=\dfrac{n!}{3!}=840\)
+Formula/Principle: \(\text{arrangements of }n\ \text{objects with }p\ \text{alike}=\dfrac{n!}{p!}\)
+Step 1: \(n!=840\times6=5040=7!\Rightarrow n=7\)
+Step 2: \(\text{treat the three identical letters as one block: }7-3+1=5\ \text{units}\)
+Worked derivation: \[\text{arrangements with the block}=5!=120\ \ (\text{the block itself has only one internal order})\]
+Check: \[\tfrac{120}{840}=\tfrac17;\ \text{direct: choose 3 consecutive places out of 7: }5\ \text{ways, others }4!=24,\ 5\times24=120\ \checkmark\]
+Why: \(\text{identical letters inside the block cannot be permuted among themselves}\)
+Why not the others: (A) \(\text{multiplies by }3!\ \text{for the block}\); (C) \(8!/6=6720\ne840\); (D) \(6!/6=120\ne840\).
+Key point: \(n!/p!\ \text{for repeats; a block of identical letters counts once}\)
+
+@@ Q60
+format: numerical
+sub_topic: Finding a and n in (1 + ax)^n from two coefficients, then another coefficient
+Q: In the expansion of \((1+ax)^n\), where n is a positive integer, the coefficients of x and \(x^2\) are 8 and 24. What is the coefficient of \(x^3\)?
+A) 16
+B) 64
+C) 32
+D) 48
+KEY: C
+SOL:
+Answer: (C) 32.
+Given: \(\binom n1a=8,\ \binom n2a^2=24\)
+Formula/Principle: \(T_{r+1}=\binom nr(ax)^r\)
+Step 1: \(na=8,\quad \tfrac{n(n-1)}2a^2=24\Rightarrow n(n-1)a^2=48\)
+Step 2: \(\text{divide by }na=8:\ (n-1)a=6;\ \text{subtract from }na=8:\ a=2,\ n=4\)
+Worked derivation: \[\text{coefficient of }x^3=\binom43a^3=4\times8=32\]
+Check: \[(1+2x)^4=1+8x+24x^2+32x^3+16x^4\ \checkmark\]
+Why: \(\text{two coefficients give two equations for the two unknowns}\)
+Why not the others: (A) \(\text{coefficient of }x^4\); (B) \(\text{uses }\binom43a^4\); (D) \(\text{uses }\binom42a^3=48\ \text{instead of }\binom43a^3\).
+Key point: \(\text{ratio of successive coefficients: }\dfrac{T_{r+1}}{T_r}=\dfrac{n-r+1}{r}\,a\)
