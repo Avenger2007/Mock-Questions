@@ -1,0 +1,419 @@
+@@ Q41
+format: numerical
+sub_topic: Counting the relations from A to B that are functions and those that contain a given pair
+Q: Let A = {1, 2, 3} and B = {p, q}. Of all the relations from A to B, how many are functions from A to B, and how many contain the ordered pair (1, p)?
+A) 9; 32
+B) 8; 32
+C) 8; 64
+D) 6; 32
+KEY: B
+SOL:
+Answer: (B) 8; 32.
+Given: \(n(A)=3,\ n(B)=2,\ n(A\times B)=6\)
+Formula/Principle: \(\text{a relation is any subset of }A\times B;\ \text{a function assigns exactly one image to each element of }A\)
+Step 1: \(\text{functions: each of the 3 elements has 2 choices}\Rightarrow 2^3=8\)
+Step 2: \(\text{relations containing }(1,p):\ \text{include it, and choose freely among the other 5 pairs}\Rightarrow 2^5=32\)
+Worked derivation: \[\#\text{relations}=2^{6}=64,\quad \#\text{functions}=2^{3}=8,\quad \#\{R\ni(1,p)\}=\tfrac12\cdot64=32\]
+Check: \[\text{exactly half of all subsets contain a given element: }64/2=32\ \checkmark\]
+Why: \(\text{a function needs one pair for each element of }A\text{, so it is a selection of images, not an arbitrary subset}\)
+Why not the others: (A) \(\text{uses }3^2\text{, which counts functions from }B\text{ to }A\); (C) \(\text{64 is the number of all relations, not those containing }(1,p)\); (D) \(\text{6 is the number of ordered pairs in }A\times B\).
+Key point: \(\#\text{relations}=2^{mn};\ \#\text{functions }A\to B=n^{m}\)
+
+@@ Q42
+format: numerical
+sub_topic: Domain and range of the sum of two square roots using a quarter circle
+Q: What are the domain and the range of the real function \(f(x)=\sqrt{x-1}+\sqrt{5-x}\)?
+A) Domain \([1,5]\); range \([0,2\sqrt2]\)
+B) Domain \([1,5]\); range \([2,4]\)
+C) Domain \((1,5)\); range \([2,2\sqrt2]\)
+D) Domain \([1,5]\); range \([2,2\sqrt2]\)
+KEY: D
+SOL:
+Answer: (D) Domain \([1,5]\); range \([2,2\sqrt2]\).
+Given: \(f(x)=\sqrt{x-1}+\sqrt{5-x}\)
+Formula/Principle: \(\text{put }u=\sqrt{x-1},\ v=\sqrt{5-x}\ (u,v\ge0);\ \text{then }u^2+v^2=4\text{, a quarter circle of radius 2}\)
+Step 1: \(\text{domain: }x-1\ge0\text{ and }5-x\ge0\Rightarrow 1\le x\le5\)
+Step 2: \(f=u+v;\ (u+v)^2=u^2+v^2+2uv=4+2uv,\ \text{with }0\le uv\le\tfrac{u^2+v^2}{2}=2\)
+Worked derivation: \[4\le (u+v)^2\le 8\ \Rightarrow\ 2\le f(x)\le2\sqrt2\]
+Check: \[f(1)=0+2=2,\quad f(5)=2+0=2,\quad f(3)=\sqrt2+\sqrt2=2\sqrt2\ \checkmark\]
+Why: \(\text{the line }u+v=c\text{ meets the quarter circle for }2\le c\le2\sqrt2\text{: lowest at the end points of the arc, highest where it touches at }u=v\)
+Why not the others: (A) \(f\text{ is a sum of two non-negative roots that cannot both vanish, so it never reaches 0}\); (B) \(u+v=4\text{ would need }uv=6>2\text{, impossible}\); (C) \(x=1\text{ and }x=5\text{ are allowed, since }\sqrt0=0\).
+Key point: \(\text{substitute to see a circle: }u^2+v^2=\text{const}\Rightarrow u+v\text{ ranges between the radius and }\sqrt2\times\text{radius}\)
+
+@@ Q43
+format: numerical
+sub_topic: Angular speed in radians, arc distance of a rim point and its position after a given time
+Q: A wheel of radius 35 cm turns at 300 revolutions per minute. What is its angular speed in radians per second, what distance does a point on the rim travel each second, and where is a rim point that starts at the rightmost position (angle 0, turning anticlockwise) after 0.35 s?
+A) \(10\pi\ \text{rad s}^{-1}\); \(350\pi\ \text{cm}\approx 11.0\ \text{m}\); at the lowest point of the wheel
+B) \(300\ \text{rad s}^{-1}\); \(105\ \text{m}\); at the highest point
+C) \(5\pi\ \text{rad s}^{-1}\); \(175\pi\ \text{cm}\); at the leftmost point
+D) \(10\pi\ \text{rad s}^{-1}\); \(350\ \text{cm}\); at the highest point
+KEY: A
+SOL:
+Answer: (A) \(10\pi\ \text{rad s}^{-1}\); \(350\pi\ \text{cm}\approx11.0\ \text{m}\); at the lowest point.
+Given: \(r=35\ \text{cm},\ 300\ \text{rev min}^{-1},\ t=0.35\ \text{s}\)
+Formula/Principle: \(1\ \text{rev}=2\pi\ \text{rad};\ \text{arc length }s=r\theta\)
+Step 1: \(\omega=\dfrac{300\times2\pi}{60}=10\pi\ \text{rad s}^{-1}\)
+Step 2: \(s=r\omega t=35\times10\pi\times1=350\pi\ \text{cm}\approx1100\ \text{cm}\)
+Worked derivation: \[\theta(0.35)=10\pi\times0.35=3.5\pi=2\pi+\tfrac{3\pi}{2}\ \Rightarrow\ (\cos\theta,\sin\theta)=(0,-1)\]
+Check: \[350\pi\approx350\times3.1416=1099.6\ \text{cm}\approx11.0\ \text{m}\ \checkmark\]
+Why: \(\text{an angle of }3\pi/2\text{ measured anticlockwise from the positive }x\text{-axis points straight down}\)
+Why not the others: (B) \(\text{300 is revolutions per minute, not radians per second}\); (C) \(\text{uses }\pi\text{ rad per revolution instead of }2\pi\); (D) \(\text{forgets the factor }\pi\text{ in }s=r\theta\text{, and }3\pi/2\text{ is the bottom, not the top}\).
+Key point: \(\omega(\text{rad s}^{-1})=2\pi\times\text{rpm}/60;\ s=r\theta\text{ with }\theta\text{ in radians}\)
+
+@@ Q44
+format: numerical
+sub_topic: Finding a complex number from an equation in z and its conjugate
+Q: A complex number z satisfies \(z+2\bar z=3-i\). What is z, and what is its modulus?
+A) \(1-i\); \(\sqrt2\)
+B) \(\tfrac{3-i}{3}\); \(\tfrac{\sqrt{10}}{3}\)
+C) \(1+i\); \(\sqrt2\)
+D) \(-1+i\); \(\sqrt2\)
+KEY: C
+SOL:
+Answer: (C) \(1+i\); \(\sqrt2\).
+Given: \(z+2\bar z=3-i\)
+Formula/Principle: \(z=x+iy,\ \bar z=x-iy;\ \text{equate real and imaginary parts}\)
+Step 1: \(x+iy+2x-2iy=3x-iy\)
+Step 2: \(3x-iy=3-i\Rightarrow x=1,\ y=1\)
+Worked derivation: \[z=1+i,\qquad |z|=\sqrt{1^2+1^2}=\sqrt2\]
+Check: \[(1+i)+2(1-i)=3-i\ \checkmark\]
+Why: \(\text{the conjugate changes the sign of }y\text{, so the two parts give separate equations}\)
+Why not the others: (A) \(\text{gets the sign of }y\text{ wrong: }(1-i)+2(1+i)=3+i\); (B) \(\text{treats }\bar z\text{ as }z\text{ and divides by 3}\); (D) \(\text{gives }(-1+i)+2(-1-i)=-3-i\).
+Key point: \(\text{write }z=x+iy\text{ and compare real and imaginary parts}\)
+
+@@ Q45
+format: numerical
+sub_topic: Number of sides of a polygon from its diagonals, and triangles from its vertices (nCr versus nPr)
+Q: A convex polygon has 54 diagonals. How many sides does it have, and how many triangles can be formed using its vertices?
+A) 12; 220
+B) 12; 1320
+C) 9; 84
+D) 12; 112
+KEY: A
+SOL:
+Answer: (A) 12; 220.
+Given: \(\text{diagonals}=54\)
+Formula/Principle: \(\text{diagonals}=\binom n2-n=\dfrac{n(n-3)}{2};\ \ ^nP_r=r!\,\binom nr\)
+Step 1: \(\dfrac{n(n-3)}{2}=54\Rightarrow n^2-3n-108=0\Rightarrow(n-12)(n+9)=0\Rightarrow n=12\)
+Step 2: \(\text{a triangle is an unordered choice of 3 vertices: }\binom{12}{3}\)
+Worked derivation: \[\binom{12}3=\frac{12\cdot11\cdot10}{3!}=220,\qquad ^{12}P_3=3!\times220=1320\]
+Check: \[\binom{12}2-12=66-12=54\ \checkmark\]
+Why: \(\text{each pair of vertices gives a side or a diagonal; no three vertices of a convex polygon are collinear}\)
+Why not the others: (B) \(1320={}^{12}P_3\text{ counts ordered triples, so each triangle is counted }3!=6\text{ times}\); (C) \(n=9\text{ gives }27\text{ diagonals}\); (D) \(112\text{ counts only the triangles with no side along the polygon}\).
+Key point: \(\text{diagonals}=n(n-3)/2;\ \text{use }\binom nr\text{ for selections, }^nP_r\text{ for arrangements}\)
+
+@@ Q46
+format: numerical
+sub_topic: Minimum value and monotonic behaviour of 3^x + 3^(2−x) using the A.M.–G.M. inequality
+Q: For real x, let \(f(x)=3^{x}+3^{2-x}\). Which statement is correct?
+A) The minimum value is 10, at \(x=0\)
+B) The minimum value is 6, at \(x=1\); f decreases on \((-\infty,1)\) and increases on \((1,\infty)\)
+C) The minimum value is 6, at \(x=1\); f increases for all x
+D) The minimum value is 18, at \(x=1\)
+KEY: B
+SOL:
+Answer: (B) The minimum value is 6, at \(x=1\); f decreases on \((-\infty,1)\) and increases on \((1,\infty)\).
+Given: \(f(x)=3^x+3^{2-x}\)
+Formula/Principle: \(\text{A.M.}\ge\text{G.M.: }\dfrac{a+b}{2}\ge\sqrt{ab}\text{ for }a,b>0\text{, with equality iff }a=b\)
+Step 1: \(3^x\cdot3^{2-x}=3^2=9\Rightarrow f(x)\ge2\sqrt9=6\)
+Step 2: \(\text{equality when }3^x=3^{2-x}\Rightarrow x=1\)
+Worked derivation: \[f'(x)=\ln3\,(3^x-3^{2-x})\ \begin{cases}<0,&x<1\\=0,&x=1\\>0,&x>1\end{cases}\]
+Check: \[f(1)=3+3=6,\quad f(0)=1+9=10,\quad f(2)=9+1=10\ \checkmark\]
+Why: \(\text{the product of the two terms is fixed, so their sum is least when they are equal}\)
+Why not the others: (A) \(f(0)=10\text{ is not the least value, since }f(1)=6\); (C) \(f(0)=f(2)=10>6\text{, so f cannot increase everywhere}\); (D) \(\text{uses }2\times9\text{ instead of }2\sqrt9\).
+Key point: \(\text{fixed product}\Rightarrow\text{sum}\ge2\sqrt{\text{product}},\ \text{equality when the terms are equal}\)
+
+@@ Q47
+format: numerical
+sub_topic: Finding a point from its reflection in a given line
+Q: The reflection (mirror image) of a point P in the line \(x-y+1=0\) is the point \(Q(3,2)\). What are the coordinates of P?
+A) \((2,3)\)
+B) \((-1,4)\)
+C) \((1,4)\)
+D) \((4,1)\)
+KEY: C
+SOL:
+Answer: (C) \((1,4)\).
+Given: \(\text{mirror line }x-y+1=0;\ Q(3,2)\)
+Formula/Principle: \(\text{reflection is symmetric: P is the image of Q. Image of }(x_1,y_1)\text{ in }ax+by+c=0:\ \dfrac{x-x_1}{a}=\dfrac{y-y_1}{b}=\dfrac{-2(ax_1+by_1+c)}{a^2+b^2}\)
+Step 1: \(ax_1+by_1+c=3-2+1=2;\ \dfrac{-2\times2}{1+1}=-2\)
+Step 2: \(x-3=1\times(-2)\Rightarrow x=1;\quad y-2=(-1)\times(-2)\Rightarrow y=4\)
+Worked derivation: \[P=(1,4)\]
+Check: \[\text{midpoint }(2,3):\ 2-3+1=0\ \checkmark;\quad \text{slope }PQ=\frac{2-4}{3-1}=-1,\ \text{slope of line}=1,\ (-1)(1)=-1\ \checkmark\]
+Why: \(\text{the mirror line is the perpendicular bisector of PQ}\)
+Why not the others: (A) \((2,3)\text{ is the midpoint (foot of the perpendicular), not P}\); (B) \(\text{gets the x-shift sign wrong; the midpoint }(1,3)\text{ is not on the line}\); (D) \(\text{swaps coordinates, which is the reflection in }y=x\text{, not in }y=x+1\).
+Key point: \(\text{midpoint on the line and PQ perpendicular to it}\)
+
+@@ Q48
+format: numerical
+sub_topic: Eccentricity and latus rectum of an ellipse whose minor axis subtends a right angle at a focus
+Q: The line segment joining the ends of the minor axis of an ellipse subtends a right angle at one focus. The length of the major axis is 8. What are the eccentricity and the length of the latus rectum?
+A) \(\tfrac12\); 4
+B) \(\tfrac1{\sqrt2}\); \(2\sqrt2\)
+C) \(\tfrac1{\sqrt3}\); \(\tfrac{16}3\)
+D) \(\tfrac1{\sqrt2}\); 4
+KEY: D
+SOL:
+Answer: (D) \(e=\tfrac1{\sqrt2}\); latus rectum 4.
+Given: \(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1,\ a=4;\ \text{minor-axis ends }B(0,\pm b),\ \text{focus }S(c,0),\ \angle BSB'=90^\circ\)
+Formula/Principle: \(c^2=a^2-b^2,\ e=c/a,\ \text{latus rectum}=\dfrac{2b^2}{a}\)
+Step 1: \(\text{by symmetry each half-angle is }45^\circ:\ \tan45^\circ=\dfrac bc\Rightarrow b=c\)
+Step 2: \(a^2=b^2+c^2=2c^2\Rightarrow e=\dfrac ca=\dfrac1{\sqrt2};\ b^2=8\)
+Worked derivation: \[\text{latus rectum}=\frac{2b^2}{a}=\frac{2\times8}{4}=4\]
+Check: \[\vec{SB}\cdot\vec{SB'}=(-c)(-c)+(b)(-b)=c^2-b^2=0\ \checkmark\]
+Why: \(\text{the right angle forces }b=c\text{, a special case midway between a circle }(e\to0,\ c\to0)\text{ and a flat ellipse }(e\to1)\)
+Why not the others: (A) \(e=\tfrac12\text{ would give }b=\sqrt3\,c\text{, so the angle would be }60^\circ\); (B) \(\text{uses }b^2/a\text{ or }2b/a\text{ instead of }2b^2/a\); (C) \(e=1/\sqrt3\text{ gives }b=\sqrt2\,c\text{, not a right angle}\).
+Key point: \(\text{right angle at focus}\Rightarrow b=c\Rightarrow e=1/\sqrt2\)
+
+@@ Q49
+format: numerical
+sub_topic: Equation, eccentricity and latus rectum of a hyperbola from its foci and transverse axis
+Q: A hyperbola has its foci at \((\pm5,0)\) and its transverse axis of length 8. What are its equation, eccentricity and length of latus rectum?
+A) \(\dfrac{x^2}{16}-\dfrac{y^2}{9}=1\); \(\tfrac54\); \(\tfrac94\)
+B) \(\dfrac{x^2}{16}-\dfrac{y^2}{9}=1\); \(\tfrac54\); \(\tfrac92\)
+C) \(\dfrac{x^2}{16}+\dfrac{y^2}{9}=1\); \(\tfrac45\); \(\tfrac92\)
+D) \(\dfrac{x^2}{25}-\dfrac{y^2}{16}=1\); \(\tfrac54\); \(\tfrac{32}5\)
+KEY: B
+SOL:
+Answer: (B) \(\dfrac{x^2}{16}-\dfrac{y^2}{9}=1\); \(e=\tfrac54\); latus rectum \(\tfrac92\).
+Given: \(c=5,\ 2a=8\Rightarrow a=4\)
+Formula/Principle: \(\text{hyperbola: }c^2=a^2+b^2,\ e=\dfrac ca,\ \text{latus rectum}=\dfrac{2b^2}{a}\)
+Step 1: \(b^2=c^2-a^2=25-16=9\)
+Step 2: \(e=\dfrac54;\ \text{latus rectum}=\dfrac{2\times9}{4}=\dfrac92\)
+Worked derivation: \[\frac{x^2}{16}-\frac{y^2}{9}=1,\qquad e=\frac54>1\]
+Check: \[a^2e^2=16\times\frac{25}{16}=25=c^2\ \checkmark\]
+Why: \(\text{for a hyperbola, }c>a\text{ and }c^2=a^2+b^2\text{, so }e>1\)
+Why not the others: (A) \(\text{uses }b^2/a\text{ for the latus rectum}\); (C) \(\text{this is an ellipse; a hyperbola has a minus sign and }e>1\); (D) \(\text{takes }a=5\text{ (the focal distance) as the semi-transverse axis}\).
+Key point: \(\text{hyperbola: }b^2=c^2-a^2,\ e=c/a>1,\ \text{LR}=2b^2/a\)
+
+@@ Q50
+format: numerical
+sub_topic: Value of a parameter that makes the derivative of a quotient zero at a given point, and the other stationary point
+Q: Let \(f(x)=\dfrac{x+a}{x^2+1}\). If \(f'(2)=0\), what is a, and at which other value of x is \(f'(x)=0\)?
+A) \(a=\tfrac34\); \(x=-\tfrac12\)
+B) \(a=-\tfrac34\); \(x=\tfrac12\)
+C) \(a=-\tfrac34\); \(x=-\tfrac12\)
+D) \(a=-\tfrac34\); \(x=-2\)
+KEY: C
+SOL:
+Answer: (C) \(a=-\tfrac34\); \(x=-\tfrac12\).
+Given: \(f(x)=\dfrac{x+a}{x^2+1},\ f'(2)=0\)
+Formula/Principle: \(\text{quotient rule: }\left(\dfrac uv\right)'=\dfrac{u'v-uv'}{v^2}\)
+Step 1: \(f'(x)=\dfrac{(x^2+1)-2x(x+a)}{(x^2+1)^2}=\dfrac{-x^2-2ax+1}{(x^2+1)^2}\)
+Step 2: \(f'(2)=0\Rightarrow -4-4a+1=0\Rightarrow a=-\tfrac34\)
+Worked derivation: \[-x^2+\tfrac32x+1=0\iff 2x^2-3x-2=0\iff(x-2)(2x+1)=0\Rightarrow x=2,\ -\tfrac12\]
+Check: \[f'(-\tfrac12)\propto-\tfrac14-2(-\tfrac34)(-\tfrac12)+1=-\tfrac14-\tfrac34+1=0\ \checkmark\]
+Why: \(\text{the numerator of }f'\text{ is a quadratic, so there are two stationary points; the product of its roots is }-1\)
+Why not the others: (A) \(\text{sign error in }a\text{: with }a=\tfrac34,\ f'(2)\ne0\); (B) \(\text{the product of the roots is }-1\text{, so the other root is }-\tfrac12\text{, not }\tfrac12\); (D) \(f'(-2)\propto-4-3+1=-6\ne0\).
+Key point: \(\text{set the numerator of the quotient-rule derivative to zero}\)
+
+@@ Q51
+format: numerical
+sub_topic: Probability that a quadratic with coefficients from two dice has real roots and equal roots
+Q: Two fair dice are thrown, giving numbers a and b. What is the probability that \(x^2+ax+b=0\) has real roots, and what is the probability that it has equal roots?
+A) \(\tfrac{19}{36}\); \(\tfrac1{18}\)
+B) \(\tfrac{17}{36}\); \(\tfrac1{18}\)
+C) \(\tfrac{19}{36}\); \(\tfrac1{12}\)
+D) \(\tfrac12\); \(\tfrac1{18}\)
+KEY: A
+SOL:
+Answer: (A) \(\tfrac{19}{36}\); \(\tfrac1{18}\).
+Given: \(\text{sample space of 36 equally likely ordered pairs }(a,b),\ 1\le a,b\le6\)
+Formula/Principle: \(\text{real roots}\iff a^2\ge4b;\ \text{equal roots}\iff a^2=4b\)
+Step 1: \(a=1:0;\ a=2:\ b=1\ (1);\ a=3:\ b\le2\ (2);\ a=4:\ b\le4\ (4);\ a=5:\ b\le6\ (6);\ a=6:\ 6\)
+Step 2: \(\text{equal roots: }(2,1),\ (4,4)\Rightarrow2\text{ outcomes}\)
+Worked derivation: \[P(\text{real})=\frac{0+1+2+4+6+6}{36}=\frac{19}{36},\qquad P(\text{equal})=\frac2{36}=\frac1{18}\]
+Check: \[a=6:\ b\le9\text{ allows all 6 values; }a=5:\ b\le6.25\text{ allows all 6 values}\ \checkmark\]
+Why: \(\text{the event is a subset of the 36 outcomes; count it row by row}\)
+Why not the others: (B) \(\tfrac{17}{36}\text{ counts only distinct real roots, leaving out the 2 equal-root cases}\); (C) \(\text{counts 3 equal-root outcomes; only }(2,1)\text{ and }(4,4)\text{ work}\); (D) \(\text{guesses 18 favourable outcomes instead of counting}\).
+Key point: \(\text{list the sample space and count the outcomes with }a^2\ge4b\)
+
+@@ Q52
+format: numerical
+sub_topic: Values of a parameter for which an equation in cubes of inverse sine and inverse cosine has a solution
+Q: For which values of a does the equation \((\sin^{-1}x)^3+(\cos^{-1}x)^3=a\pi^3\) have a real solution?
+A) \(0\le a\le\tfrac78\)
+B) \(\tfrac1{32}\le a\le\tfrac18\)
+C) \(\tfrac18\le a\le\tfrac78\)
+D) \(\tfrac1{32}\le a\le\tfrac78\)
+KEY: D
+SOL:
+Answer: (D) \(\tfrac1{32}\le a\le\tfrac78\).
+Given: \(s=\sin^{-1}x\in[-\tfrac\pi2,\tfrac\pi2],\ \cos^{-1}x=\tfrac\pi2-s\)
+Formula/Principle: \(\sin^{-1}x+\cos^{-1}x=\tfrac\pi2;\ p^3+q^3=(p+q)\left[(p+q)^2-3pq\right]\)
+Step 1: \(s^3+(\tfrac\pi2-s)^3=\tfrac\pi2\left[\tfrac{\pi^2}{4}-3s(\tfrac\pi2-s)\right]=\tfrac\pi2\left[3s^2-\tfrac{3\pi}{2}s+\tfrac{\pi^2}4\right]\)
+Step 2: \(\text{the quadratic in s has its minimum at }s=\tfrac\pi4\text{ (inside the range) and its maximum at an end point}\)
+Worked derivation: \[s=\tfrac\pi4:\ \tfrac\pi2\cdot\tfrac{\pi^2}{16}=\tfrac{\pi^3}{32};\qquad s=-\tfrac\pi2:\ \tfrac\pi2\cdot\tfrac{7\pi^2}{4}=\tfrac{7\pi^3}{8};\qquad s=\tfrac\pi2:\ \tfrac{\pi^3}{8}\]
+Check: \[x=\tfrac1{\sqrt2}:\ (\tfrac\pi4)^3+(\tfrac\pi4)^3=\tfrac{\pi^3}{32}\ \checkmark;\quad x=-1:\ (-\tfrac\pi2)^3+\pi^3=\tfrac{7\pi^3}8\ \checkmark\]
+Why: \(\text{the left side is continuous on }[-1,1]\text{, so it takes every value between its least and greatest values}\)
+Why not the others: (A) \(\text{the left side never falls below }\pi^3/32\text{, so }a<\tfrac1{32}\text{ gives no solution}\); (B) \(\text{uses only }s\ge0\text{, missing negative x where the sum reaches }7\pi^3/8\); (C) \(\text{takes the end values only and misses the interior minimum at }s=\pi/4\).
+Key point: \(\text{use }\sin^{-1}x+\cos^{-1}x=\pi/2\text{ to reduce to a quadratic on the principal-value range}\)
+
+@@ Q53
+format: numerical
+sub_topic: Condition on a parameter for invertibility of the coefficient matrix and solving the system by the inverse
+Q: Consider the system \(x+2y+z=4,\ 2x-y+3z=4,\ 3x+y+kz=6\). Which statement is correct?
+A) A unique solution exists if and only if \(k\ne4\); for \(k=4\) there are infinitely many solutions; for \(k=2\) the solution is \(x=y=z=1\)
+B) A unique solution exists if and only if \(k\ne-4\); for \(k=2\) the solution is \(x=y=z=1\)
+C) A unique solution exists if and only if \(k\ne4\); for \(k=4\) there is no solution; for \(k=2\) the solution is \(x=y=z=1\)
+D) A unique solution exists for every k, and it is \(x=y=z=1\)
+KEY: C
+SOL:
+Answer: (C) Unique iff \(k\ne4\); no solution for \(k=4\); for \(k=2\), \(x=y=z=1\).
+Given: \(A=\begin{pmatrix}1&2&1\\2&-1&3\\3&1&k\end{pmatrix},\ B=\begin{pmatrix}4\\4\\6\end{pmatrix}\)
+Formula/Principle: \(AX=B\text{ has the unique solution }X=A^{-1}B\iff|A|\ne0;\ \text{if }|A|=0\text{, check }(\operatorname{adj}A)B\)
+Step 1: \(|A|=1(-k-3)-2(2k-9)+1(2+3)=20-5k\Rightarrow|A|=0\iff k=4\)
+Step 2: \(k=4:\ \text{(row 1)}+\text{(row 2)}\text{ gives }3x+y+4z=8\text{, but row 3 says }3x+y+4z=6\Rightarrow\text{inconsistent}\)
+Worked derivation: \[k=2:\ |A|=10,\ \operatorname{adj}A=\begin{pmatrix}-5&-3&7\\5&-1&-1\\5&5&-5\end{pmatrix},\ X=\frac1{10}\begin{pmatrix}-20-12+42\\20-4-6\\20+20-30\end{pmatrix}=\begin{pmatrix}1\\1\\1\end{pmatrix}\]
+Check: \[1+2+1=4,\quad 2-1+3=4,\quad 3+1+2=6\ \checkmark\]
+Why: \(\text{for }k=4\text{ the left side of equation 3 equals the sum of equations 1 and 2, but the right side does not}\)
+Why not the others: (A) \(\text{at }k=4\text{ the equations contradict each other }(8\ne6)\text{, so there are none}\); (B) \(\text{sign error in the determinant}\); (D) \(\text{the matrix is singular at }k=4\text{, and }(1,1,1)\text{ satisfies equation 3 only when }k=2\).
+Key point: \(|A|\ne0\Rightarrow X=A^{-1}B;\ |A|=0\Rightarrow\text{none or infinitely many, decided by consistency}\)
+
+@@ Q54
+format: numerical
+sub_topic: Counting points where the minimum of three functions is not differentiable, using its graph
+Q: Let \(g(x)=\min\{|x|,\ |x-2|,\ 1\}\) for all real x. At how many points is g not differentiable?
+A) 3
+B) 5
+C) 4
+D) 2
+KEY: B
+SOL:
+Answer: (B) 5.
+Given: \(g(x)=\min\{|x|,|x-2|,1\}\)
+Formula/Principle: \(\text{a continuous function is not differentiable where its graph has a corner (left and right slopes differ)}\)
+Step 1: \(g(x)=\begin{cases}1,&x\le-1\\-x,&-1\le x\le0\\x,&0\le x\le1\\2-x,&1\le x\le2\\x-2,&2\le x\le3\\1,&x\ge3\end{cases}\)
+Step 2: \(\text{slopes change at }x=-1\ (0\to-1),\ 0\ (-1\to1),\ 1\ (1\to-1),\ 2\ (-1\to1),\ 3\ (1\to0)\)
+Worked derivation: \[\text{corners at }x\in\{-1,0,1,2,3\}\Rightarrow5\ \text{points}\]
+Check: \[g(-1)=1,\ g(0)=0,\ g(1)=1,\ g(2)=0,\ g(3)=1:\ \text{pieces meet, so g is continuous everywhere}\ \checkmark\]
+Why: \(\text{the graph is a flat line at height 1 with two V-shaped dips meeting at a peak, giving five corners}\)
+Why not the others: (A) \(\text{counts only the zeros and the peak }(0,1,2)\text{, missing the corners where g meets the line }y=1\); (C) \(\text{misses one of the end corners at }x=-1\text{ or }x=3\); (D) \(\text{counts only the two zeros of }|x|\text{ and }|x-2|\).
+Key point: \(\text{draw the graph of a min/max function; every corner is a point of non-differentiability}\)
+
+@@ Q55
+format: numerical
+sub_topic: Rate of growth of a shadow and speed of its tip as a person walks away from a lamp
+Q: A lamp is 6.0 m above level ground. A person 1.8 m tall walks directly away from the foot of the lamp post at 1.4 m s⁻¹. At what rate does the length of the person's shadow increase, and how fast does the tip of the shadow move?
+A) 0.6 m s⁻¹; 2.0 m s⁻¹
+B) 0.42 m s⁻¹; 1.82 m s⁻¹
+C) 0.6 m s⁻¹; 1.4 m s⁻¹
+D) 1.4 m s⁻¹; 2.8 m s⁻¹
+KEY: A
+SOL:
+Answer: (A) 0.6 m s⁻¹; 2.0 m s⁻¹.
+Given: \(H=6.0\ \text m,\ h=1.8\ \text m,\ \dfrac{dx}{dt}=1.4\ \text{m s}^{-1}\ (x=\text{distance from the post})\)
+Formula/Principle: \(\text{similar triangles: }\dfrac{s}{h}=\dfrac{x+s}{H}\ (s=\text{shadow length})\)
+Step 1: \(6s=1.8(x+s)\Rightarrow4.2s=1.8x\Rightarrow s=\dfrac37x\)
+Step 2: \(\dfrac{ds}{dt}=\dfrac37\times1.4=0.6\ \text{m s}^{-1}\)
+Worked derivation: \[\frac{d(x+s)}{dt}=1.4+0.6=2.0\ \text{m s}^{-1}\]
+Check: \[\text{tip distance }=x+s=\tfrac{10}{7}x=\tfrac{H}{H-h}x\Rightarrow\tfrac{10}{7}\times1.4=2.0\ \checkmark\]
+Why: \(\text{the shadow length is proportional to the distance from the post, so both rates are constant}\)
+Why not the others: (B) \(\text{uses }h/H\text{ instead of }h/(H-h)\); (C) \(\text{the tip moves at the walking speed plus the rate of growth of the shadow}\); (D) \(\text{assumes the shadow grows as fast as the person walks}\).
+Key point: \(\text{relate the variables by similar triangles first, then differentiate with respect to time}\)
+
+@@ Q56
+format: numerical
+sub_topic: Improper integral of 1/((x²+1)(x²+4)) from 0 to infinity by partial fractions
+Q: What is the value of \(\displaystyle\int_0^\infty\frac{dx}{(x^2+1)(x^2+4)}\)?
+A) \(\dfrac\pi6\)
+B) \(\dfrac\pi{24}\)
+C) \(\dfrac\pi4\)
+D) \(\dfrac\pi{12}\)
+KEY: D
+SOL:
+Answer: (D) \(\dfrac\pi{12}\).
+Given: \(\text{integrand }\dfrac1{(x^2+1)(x^2+4)}\)
+Formula/Principle: \(\text{partial fractions in }x^2:\ \dfrac1{(t+1)(t+4)}=\dfrac13\left(\dfrac1{t+1}-\dfrac1{t+4}\right);\ \int\dfrac{dx}{x^2+a^2}=\dfrac1a\tan^{-1}\dfrac xa\)
+Step 1: \(\displaystyle\int\frac{dx}{(x^2+1)(x^2+4)}=\frac13\left[\tan^{-1}x-\frac12\tan^{-1}\frac x2\right]+C\)
+Step 2: \(\text{limiting case: as }x\to\infty,\ \tan^{-1}x\to\tfrac\pi2\text{ and }\tan^{-1}\tfrac x2\to\tfrac\pi2\)
+Worked derivation: \[\frac13\left[\frac\pi2-\frac12\cdot\frac\pi2\right]-0=\frac13\cdot\frac\pi4=\frac\pi{12}\]
+Check: \[\frac13\left(\frac1{x^2+1}-\frac1{x^2+4}\right)=\frac13\cdot\frac{3}{(x^2+1)(x^2+4)}\ \checkmark\]
+Why: \(\text{both arctangent terms tend to }\pi/2\text{, but with different coefficients, so a finite value remains}\)
+Why not the others: (A) \(\text{keeps only }\tfrac13\cdot\tfrac\pi2\text{, forgetting that the second arctangent term also tends to a limit}\); (B) \(\text{uses a factor }\tfrac16\text{ instead of }\tfrac13\); (C) \(\text{omits the factor }\tfrac13\text{ from the partial fractions}\).
+Key point: \(\text{split into }\tfrac13\left(\tfrac1{x^2+1}-\tfrac1{x^2+4}\right)\text{ and use }\tan^{-1}\to\pi/2\)
+
+@@ Q57
+format: numerical
+sub_topic: Definite integral of x² sin x by repeated integration by parts
+Q: What is the value of \(\displaystyle\int_0^{\pi/2}x^2\sin x\,dx\)?
+A) \(\pi-2\)
+B) \(\pi+2\)
+C) \(\dfrac{\pi^2}{4}\)
+D) \(\dfrac\pi2-1\)
+KEY: A
+SOL:
+Answer: (A) \(\pi-2\).
+Given: \(I=\displaystyle\int_0^{\pi/2}x^2\sin x\,dx\)
+Formula/Principle: \(\displaystyle\int u\,dv=uv-\int v\,du\text{ (apply twice, differentiating the power of x)}\)
+Step 1: \(\displaystyle\int x^2\sin x\,dx=-x^2\cos x+\int2x\cos x\,dx\)
+Step 2: \(\displaystyle\int2x\cos x\,dx=2x\sin x-\int2\sin x\,dx=2x\sin x+2\cos x\)
+Worked derivation: \[I=\Big[-x^2\cos x+2x\sin x+2\cos x\Big]_0^{\pi/2}=(0+\pi+0)-(0+0+2)=\pi-2\]
+Check: \[\frac{d}{dx}\left(-x^2\cos x+2x\sin x+2\cos x\right)=x^2\sin x\ \checkmark;\quad \pi-2\approx1.14>0\]
+Why: \(\text{each step lowers the power of x by one until it disappears}\)
+Why not the others: (B) \(\text{sign error in the }2\cos x\text{ term at }x=0\); (C) \(\text{treats }\sin x\text{ as roughly constant, which is not an integration}\); (D) \(\text{stops after one integration by parts}\).
+Key point: \(\int x^n(\text{trig})\,dx:\ \text{take }u=x^n\text{ and integrate by parts n times}\)
+
+@@ Q58
+format: numerical
+sub_topic: Forming the differential equation of a two-parameter family, its order and degree, and a particular solution
+Q: Consider the family \(y=Ae^{2x}+Be^{-3x}\), where A and B are arbitrary constants. Which statement about the differential equation of this family and the particular solution with \(y(0)=0\) and \(y'(0)=5\) is correct?
+A) The equation is \(y''-y'-6y=0\); \(y(\ln2)=\tfrac{31}{8}\)
+B) The equation is \(y''+y'-6y=0\), of order 2 and degree 2
+C) The equation is \(y''+y'-6y=0\); \(y(\ln2)=\tfrac{33}{8}\)
+D) The equation is \(y''+y'-6y=0\), of order 2 and degree 1; \(y(\ln2)=\tfrac{31}{8}\)
+KEY: D
+SOL:
+Answer: (D) \(y''+y'-6y=0\), order 2, degree 1; \(y(\ln2)=\tfrac{31}{8}\).
+Given: \(y=Ae^{2x}+Be^{-3x},\ y(0)=0,\ y'(0)=5\)
+Formula/Principle: \(\text{two arbitrary constants}\Rightarrow\text{eliminate them using }y'\text{ and }y''\text{ (order 2)}\)
+Step 1: \(y'=2Ae^{2x}-3Be^{-3x},\ y''=4Ae^{2x}+9Be^{-3x}\Rightarrow y''+y'=6Ae^{2x}+6Be^{-3x}=6y\)
+Step 2: \(A+B=0,\ 2A-3B=5\Rightarrow A=1,\ B=-1\)
+Worked derivation: \[y=e^{2x}-e^{-3x},\qquad y(\ln2)=2^2-2^{-3}=4-\tfrac18=\tfrac{31}{8}\]
+Check: \[r^2+r-6=(r-2)(r+3)\Rightarrow r=2,-3\ \checkmark;\quad y'(0)=2+3=5\ \checkmark\]
+Why: \(\text{the highest derivative is }y''\text{, appearing to the first power, so the order is 2 and the degree is 1}\)
+Why not the others: (A) \(y''-y'-6y=0\text{ has roots }3,-2\text{, not }2,-3\); (B) \(y''\text{ appears to the power 1, so the degree is 1}\); (C) \(\text{takes }B=+1\text{, giving }4+\tfrac18\).
+Key point: \(\text{number of arbitrary constants}=\text{order};\ e^{2x},e^{-3x}\leftrightarrow(D-2)(D+3)y=0\)
+
+@@ Q59
+format: numerical
+sub_topic: Magnitude of a cross product from a dot product, area of a triangle and the angle between vectors
+Q: Vectors a and b satisfy \(|\mathbf a|=3\), \(|\mathbf b|=4\) and \(\mathbf a\cdot\mathbf b=6\). What is \(|\mathbf a\times\mathbf b|\), what is the area of the triangle with two sides along a and b from a common vertex, and what is the angle between a and b?
+A) \(6\sqrt3\); \(6\sqrt3\); \(\tfrac\pi3\)
+B) \(6\sqrt3\); \(3\sqrt3\); \(\tfrac\pi3\)
+C) 6; 3; \(\tfrac\pi6\)
+D) 12; 6; \(\tfrac\pi2\)
+KEY: B
+SOL:
+Answer: (B) \(6\sqrt3\); \(3\sqrt3\); \(\tfrac\pi3\).
+Given: \(|\mathbf a|=3,\ |\mathbf b|=4,\ \mathbf a\cdot\mathbf b=6\)
+Formula/Principle: \(|\mathbf a\times\mathbf b|^2+(\mathbf a\cdot\mathbf b)^2=|\mathbf a|^2|\mathbf b|^2;\ \text{triangle area}=\tfrac12|\mathbf a\times\mathbf b|\)
+Step 1: \(|\mathbf a\times\mathbf b|^2=144-36=108\Rightarrow|\mathbf a\times\mathbf b|=6\sqrt3\)
+Step 2: \(\cos\theta=\dfrac{6}{3\times4}=\dfrac12\Rightarrow\theta=\dfrac\pi3\)
+Worked derivation: \[\text{area}=\tfrac12\times6\sqrt3=3\sqrt3\]
+Check: \[|\mathbf a||\mathbf b|\sin\tfrac\pi3=12\times\tfrac{\sqrt3}{2}=6\sqrt3\ \checkmark\]
+Why: \(\text{the cross product gives the area of the parallelogram; the triangle is half of it}\)
+Why not the others: (A) \(\text{gives the parallelogram area as the triangle area}\); (C) \(\text{takes }|\mathbf a\times\mathbf b|=\mathbf a\cdot\mathbf b\text{, which would mean }\theta=\pi/4\text{, and gives the wrong angle}\); (D) \(\text{assumes the vectors are perpendicular, but }\mathbf a\cdot\mathbf b\ne0\).
+Key point: \(|\mathbf a\times\mathbf b|^2+(\mathbf a\cdot\mathbf b)^2=|\mathbf a|^2|\mathbf b|^2\)
+
+@@ Q60
+format: numerical
+sub_topic: How many coordinate planes a segment crosses, and the point where it meets the xy-plane by the section formula
+Q: The points are \(A(1,2,3)\) and \(B(4,-1,-3)\). How many of the three coordinate planes does the line segment AB cross, and at which point does it meet the xy-plane?
+A) 3; at \(\left(\tfrac52,\tfrac12,0\right)\)
+B) 1; at \(\left(\tfrac52,\tfrac12,0\right)\)
+C) 2; at \(\left(\tfrac52,\tfrac12,0\right)\)
+D) 2; at \((3,0,-1)\)
+KEY: C
+SOL:
+Answer: (C) 2; at \(\left(\tfrac52,\tfrac12,0\right)\).
+Given: \(A(1,2,3),\ B(4,-1,-3)\)
+Formula/Principle: \(\text{a segment crosses a coordinate plane iff that coordinate changes sign; the plane divides AB in the ratio }-c_A:c_B\ (=|c_A|:|c_B|\text{ internally})\)
+Step 1: \(x:\ 1\to4\ (\text{no sign change});\ y:\ 2\to-1\ (\text{change});\ z:\ 3\to-3\ (\text{change})\Rightarrow2\text{ planes (xz and xy)}\)
+Step 2: \(\text{xy-plane }(z=0)\text{ divides AB in the ratio }3:3=1:1\)
+Worked derivation: \[P=\left(\frac{1+4}{2},\frac{2-1}{2},\frac{3-3}{2}\right)=\left(\frac52,\frac12,0\right)\]
+Check: \[\text{xz-plane: ratio }2:1\Rightarrow\left(\tfrac{1+8}{3},\tfrac{2-2}{3},\tfrac{3-6}{3}\right)=(3,0,-1)\text{ has }y=0\ \checkmark\]
+Why: \(\text{a segment can reach a plane only if its end points lie on opposite sides of it}\)
+Why not the others: (A) \(\text{x stays positive from A to B, so the yz-plane is not crossed}\); (B) \(\text{both y and z change sign, so two planes are crossed}\); (D) \((3,0,-1)\text{ is where AB meets the xz-plane }(y=0)\text{, not the xy-plane}\).
+Key point: \(\text{sign change of a coordinate}\Rightarrow\text{the segment crosses that coordinate plane}\)

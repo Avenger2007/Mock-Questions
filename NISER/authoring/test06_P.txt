@@ -1,0 +1,433 @@
+@@ Q61
+format: numerical
+sub_topic: Minimum angular speed of a rotor for a person to stay pinned to the wall, and the normal force then
+Q: In an amusement-park rotor, a person of mass 50 kg stands against the inside wall of a vertical cylinder of radius 2.5 m. The cylinder spins about its vertical axis and the floor is then lowered. The coefficient of static friction between the person and the wall is 0.40. What is the minimum angular speed for the person not to slide down, and what normal force does the wall then exert? (g = 10 m s⁻²)
+A) 1.3 rad s⁻¹; 200 N
+B) 3.2 rad s⁻¹; 500 N
+C) 10 rad s⁻¹; 12500 N
+D) About 3.2 rad s⁻¹ (about 30 rev min⁻¹); 1250 N
+KEY: D
+SOL:
+Answer: (D) About 3.2 rad s⁻¹ (about 30 rev min⁻¹); 1250 N.
+Given: \(m=50\ \mathrm{kg},\ r=2.5\ \mathrm m,\ \mu=0.40,\ g=10\ \mathrm{m\,s^{-2}}\)
+Formula/Principle: \(\text{normal force supplies the centripetal force: }N=m\omega^2r;\ \text{friction balances weight: }mg\le\mu N\)
+Step 1: \(mg\le\mu m\omega^2r\Rightarrow\omega_{\min}=\sqrt{\dfrac{g}{\mu r}}\)
+Step 2: \(\omega_{\min}=\sqrt{\dfrac{10}{0.40\times2.5}}=\sqrt{10}\approx3.16\ \mathrm{rad\,s^{-1}}\)
+Worked derivation: \[N=m\omega_{\min}^2r=50\times10\times2.5=1250\ \mathrm N=\frac{mg}{\mu};\qquad \frac{3.16\times60}{2\pi}\approx30\ \mathrm{rev\,min^{-1}}\]
+Check: \[\mu N=0.40\times1250=500\ \mathrm N=mg\ \checkmark\]
+Why: \(\text{the wall pushes inward (centripetal force); friction, which is at most }\mu N\text{, must hold up the weight}\)
+Why not the others: (A) \(\text{uses }\sqrt{\mu g/r}\text{, putting }\mu\text{ in the numerator}\); (B) \(\text{the speed is right, but the normal force is not the weight; it is }mg/\mu\); (C) \(\text{forgets the square root, so }\omega^2\text{ is taken as }\omega\).
+Key point: \(\text{rotor: }\omega_{\min}=\sqrt{g/(\mu r)}\text{, independent of mass}\)
+
+@@ Q62
+format: numerical
+sub_topic: Comparing work and final speed for a constant force and a force proportional to displacement over the same distance
+Q: A 2.0 kg block starts from rest on a smooth horizontal floor. In situation 1 a constant horizontal force of 10 N pushes it through 2.0 m. In situation 2 a horizontal force F = 10x newtons (x in metres, measured from the start) pushes it from x = 0 to x = 2.0 m. Which comparison is correct?
+A) Work done: 20 J and 40 J; final speeds about 4.5 m s⁻¹ and 6.3 m s⁻¹
+B) Work done is 20 J in each; both blocks reach about 4.5 m s⁻¹; in the first metre the constant force does 10 J but the variable force only 5 J
+C) Work done is 20 J in each, but the final speeds differ because the variable force acts for a longer time
+D) Work done: 20 J and 10 J; final speeds about 4.5 m s⁻¹ and 3.2 m s⁻¹
+KEY: B
+SOL:
+Answer: (B) 20 J in each; both reach about 4.5 m s⁻¹; in the first metre 10 J and 5 J.
+Given: \(m=2.0\ \mathrm{kg};\ F_1=10\ \mathrm N;\ F_2=10x\ \mathrm N;\ 0\le x\le2.0\ \mathrm m\)
+Formula/Principle: \(W=\int F\,dx;\ \text{work–energy theorem: }W=\Delta K=\tfrac12mv^2\)
+Step 1: \(W_1=10\times2.0=20\ \mathrm J;\quad W_2=\displaystyle\int_0^{2}10x\,dx=5x^2\Big|_0^2=20\ \mathrm J\)
+Step 2: \(v=\sqrt{\dfrac{2W}{m}}=\sqrt{\dfrac{2\times20}{2.0}}=\sqrt{20}\approx4.5\ \mathrm{m\,s^{-1}}\ \text{in both}\)
+Worked derivation: \[\text{first metre: }W_1=10\times1=10\ \mathrm J,\qquad W_2=\int_0^1 10x\,dx=5\ \mathrm J\]
+Check: \[\text{area under }F\text{–}x:\ \text{rectangle }10\times2=20;\ \text{triangle }\tfrac12\times2\times20=20\ \checkmark\]
+Why: \(\text{work is the area under the force–displacement graph; the two areas over 2 m happen to be equal, so the kinetic energies are equal}\)
+Why not the others: (A) \(\text{uses the final force }20\ \mathrm N\times2\ \mathrm m\text{ for the variable force instead of the area}\); (C) \(\text{final speed depends on the work done, not on the time taken}\); (D) \(\text{uses the average force over the first metre only}\).
+Key point: \(W=\int F\,dx=\text{area under the }F\text{–}x\text{ graph};\ \text{equal work}\Rightarrow\text{equal }\Delta K\)
+
+@@ Q63
+format: graph
+sub_topic: Torques and total angle turned from an angular velocity–time graph, by analogy with a velocity–time graph
+image: NEST_T06_Q63.png
+alt: Graph of angular velocity in radians per second against time in seconds for a wheel. The line rises straight from 0 at t = 0 to 20 at t = 4 s, stays level at 20 until t = 8 s, then falls straight to 0 at t = 13 s.
+Q: The figure shows the angular velocity of a wheel of moment of inertia 2.0 kg m² about its fixed axle. What are the magnitudes of the net torque during the first 4 s and during the last 5 s, and through what total angle does the wheel turn?
+A) 10 N m and 8.0 N m; 85 rad
+B) 5.0 N m and 4.0 N m; 170 rad
+C) 10 N m and 8.0 N m; 170 rad (about 27 revolutions)
+D) 10 N m and 8.0 N m; 260 rad
+KEY: C
+SOL:
+Answer: (C) 10 N m and 8.0 N m; 170 rad (about 27 revolutions).
+Given: \(I=2.0\ \mathrm{kg\,m^2};\ \omega:\ 0\to20\ \mathrm{rad\,s^{-1}}\ (0\text{–}4\ \mathrm s),\ 20\ (4\text{–}8\ \mathrm s),\ 20\to0\ (8\text{–}13\ \mathrm s)\)
+Formula/Principle: \(\alpha=\text{slope of }\omega\text{–}t;\ \tau=I\alpha\ (\text{like }F=ma);\ \theta=\text{area under }\omega\text{–}t\ (\text{like displacement}=\text{area under }v\text{–}t)\)
+Step 1: \(\alpha_1=\dfrac{20}{4}=5.0\ \mathrm{rad\,s^{-2}}\Rightarrow\tau_1=2.0\times5.0=10\ \mathrm{N\,m}\)
+Step 2: \(\alpha_3=\dfrac{-20}{5}=-4.0\ \mathrm{rad\,s^{-2}}\Rightarrow|\tau_3|=2.0\times4.0=8.0\ \mathrm{N\,m}\)
+Worked derivation: \[\theta=\tfrac12(4)(20)+(4)(20)+\tfrac12(5)(20)=40+80+50=170\ \mathrm{rad}=\frac{170}{2\pi}\approx27\ \text{rev}\]
+Check: \[\text{work by torque in phase 1}=\tau_1\theta_1=10\times40=400\ \mathrm J=\tfrac12I\omega^2=\tfrac12(2)(20^2)\ \checkmark\]
+Why: \(\text{rotational quantities }(\theta,\omega,\alpha,I,\tau)\text{ obey the same graph rules as }(x,v,a,m,F)\)
+Why not the others: (A) \(\text{halves the total area}\); (B) \(\text{gives the angular accelerations instead of the torques (forgets }I)\); (D) \(\text{multiplies the peak }\omega\text{ by the total time, as if }\omega\text{ were constant throughout}\).
+Key point: \(\text{slope of }\omega\text{–}t=\alpha;\ \text{area}=\theta;\ \tau=I\alpha\)
+
+@@ Q64
+format: numerical
+sub_topic: Mass of the Earth from the Moon's orbital radius and period using Kepler's third law
+Q: The Moon moves round the Earth in a nearly circular orbit of radius 3.84 × 10⁸ m with a period of 27.3 days. What is the mass of the Earth? (G = 6.67 × 10⁻¹¹ N m² kg⁻²)
+A) 6.0 × 10²⁴ kg
+B) 1.5 × 10²³ kg
+C) 7.5 × 10²³ kg
+D) 3.0 × 10²⁴ kg
+KEY: A
+SOL:
+Answer: (A) 6.0 × 10²⁴ kg.
+Given: \(r=3.84\times10^8\ \mathrm m,\ T=27.3\times86400=2.36\times10^6\ \mathrm s,\ G=6.67\times10^{-11}\)
+Formula/Principle: \(\dfrac{GMm}{r^2}=m\omega^2r=m\dfrac{4\pi^2}{T^2}r\Rightarrow T^2=\dfrac{4\pi^2}{GM}r^3\ (\text{Kepler's third law})\)
+Step 1: \(M=\dfrac{4\pi^2r^3}{GT^2}\)
+Step 2: \(r^3=5.66\times10^{25}\ \mathrm{m^3};\ T^2=5.56\times10^{12}\ \mathrm{s^2}\)
+Worked derivation: \[M=\frac{39.5\times5.66\times10^{25}}{6.67\times10^{-11}\times5.56\times10^{12}}\approx6.0\times10^{24}\ \mathrm{kg}\]
+Check: \[\text{surface value }gR^2/G=\frac{9.8\times(6.4\times10^6)^2}{6.67\times10^{-11}}\approx6.0\times10^{24}\ \mathrm{kg}\ \checkmark\]
+Why: \(\text{gravity provides the centripetal force, and the Moon's mass cancels}\)
+Why not the others: (B) \(\text{omits the factor }4\pi^2\); (C) \(\text{uses half the orbital radius, which divides the answer by 8}\); (D) \(\text{uses }2\pi^2\text{ instead of }4\pi^2\).
+Key point: \(M=\dfrac{4\pi^2r^3}{GT^2}\text{; the satellite's mass cancels}\)
+
+@@ Q65
+format: numerical
+sub_topic: Shape of the pressure–depth graph in a tank with oil floating on water, and the gauge pressure at the bottom
+Q: An open tank contains a 2.0 m layer of oil (density 800 kg m⁻³) floating on a 3.0 m layer of water (density 1000 kg m⁻³). Which describes the graph of pressure against depth from the oil surface to the bottom, and what is the gauge pressure at the bottom? (g = 10 m s⁻²)
+A) A single straight line of slope 10 kPa m⁻¹; 50 kPa
+B) Two straight segments, steeper in the oil than in the water; 46 kPa
+C) Two straight segments starting at atmospheric pressure: a gentler slope of 8.0 kPa m⁻¹ in the oil and a steeper slope of 10 kPa m⁻¹ in the water; 46 kPa
+D) A curve that rises steeply at first and then levels off; 46 kPa
+KEY: C
+SOL:
+Answer: (C) Two straight segments, slope 8.0 kPa m⁻¹ in oil and 10 kPa m⁻¹ in water; gauge pressure 46 kPa.
+Given: \(h_1=2.0\ \mathrm m,\ \rho_1=800;\ h_2=3.0\ \mathrm m,\ \rho_2=1000\ \mathrm{kg\,m^{-3}};\ g=10\ \mathrm{m\,s^{-2}}\)
+Formula/Principle: \(\dfrac{dP}{dh}=\rho g\ \text{in each liquid};\ \text{pressure is continuous across the interface}\)
+Step 1: \(\text{slope in oil }=800\times10=8.0\ \mathrm{kPa\,m^{-1}};\ \text{at the interface }P-P_0=8.0\times2.0=16\ \mathrm{kPa}\)
+Step 2: \(\text{slope in water }=1000\times10=10\ \mathrm{kPa\,m^{-1}};\ \text{extra }10\times3.0=30\ \mathrm{kPa}\)
+Worked derivation: \[P_{\text{bottom}}-P_0=16+30=46\ \mathrm{kPa}\]
+Check: \[\rho_1gh_1+\rho_2gh_2=800(10)(2)+1000(10)(3)=46000\ \mathrm{Pa}\ \checkmark\]
+Why: \(\text{each liquid adds pressure in proportion to its density and depth; by Pascal's law any extra pressure on the surface would shift the whole graph up equally}\)
+Why not the others: (A) \(\text{treats the whole column as water}\); (B) \(\text{oil is less dense, so its slope is smaller, not larger}\); (D) \(\text{liquids are nearly incompressible, so density is constant in each layer and the graph is made of straight lines}\).
+Key point: \(\text{slope of }P\text{–}h=\rho g\text{; layered liquids give straight segments with a kink at the interface}\)
+
+@@ Q66
+format: numerical
+sub_topic: Time lost per day by a pendulum clock when the temperature rises, and how the loss scales with the rise
+Q: A pendulum clock with a steel rod (linear expansivity 1.2 × 10⁻⁵ K⁻¹) keeps correct time at 20 °C. How much time does it lose or gain per day at 40 °C, and how would the error at 30 °C compare?
+A) It gains about 10 s per day; at 30 °C it would gain about half as much
+B) It loses about 21 s per day; at 30 °C it would lose about half as much
+C) It loses about 10 s per day; at 30 °C it would lose about one quarter as much
+D) It loses about 10 s per day; at 30 °C it would lose about half as much
+KEY: D
+SOL:
+Answer: (D) It loses about 10 s per day; at 30 °C it would lose about half as much.
+Given: \(\alpha=1.2\times10^{-5}\ \mathrm K^{-1};\ \Delta\theta=20\ \mathrm K;\ 1\ \text{day}=86400\ \mathrm s\)
+Formula/Principle: \(T=2\pi\sqrt{L/g};\ L=L_0(1+\alpha\Delta\theta)\Rightarrow\dfrac{\Delta T}{T}\approx\tfrac12\alpha\Delta\theta\ (\text{small }\alpha\Delta\theta)\)
+Step 1: \(\dfrac{\Delta T}{T}=\tfrac12\times1.2\times10^{-5}\times20=1.2\times10^{-4}\)
+Step 2: \(\text{longer period}\Rightarrow\text{fewer swings per day}\Rightarrow\text{the clock loses time}\)
+Worked derivation: \[\text{loss}=1.2\times10^{-4}\times86400\approx10.4\ \mathrm s\ \text{per day};\quad \Delta\theta=10\ \mathrm K\Rightarrow\approx5.2\ \mathrm s\]
+Check: \[\sqrt{1+2.4\times10^{-4}}-1=1.19994\times10^{-4}\approx1.2\times10^{-4}\ \checkmark\]
+Why: \(\text{for small changes the fractional change in period is half the fractional change in length, so the error is proportional to the temperature rise}\)
+Why not the others: (A) \(\text{the rod lengthens, so the period increases and the clock runs slow, not fast}\); (B) \(\text{forgets the factor }\tfrac12\text{ from the square root}\); (C) \(\text{the error is linear in }\Delta\theta\text{ for small changes, not quadratic}\).
+Key point: \(\Delta T/T\approx\tfrac12\alpha\Delta\theta;\ \text{heated pendulum clock runs slow}\)
+
+@@ Q67
+format: numerical
+sub_topic: Comparing isothermal and adiabatic compression of air to half its volume: pressure, temperature and work
+Q: Two identical samples of air (γ = 1.4) at pressure P₀ and temperature 300 K are each compressed to half their volume, one slowly and isothermally, the other quickly and adiabatically (reversibly). Which comparison is correct? (2^0.4 = 1.32)
+A) Final pressures 2P₀ and 2.64P₀; the adiabatic sample ends at about 396 K; more work is done on the gas in the adiabatic compression
+B) Final pressures 2P₀ and 2.64P₀; the adiabatic sample stays at 300 K; less work is done in the adiabatic compression
+C) Final pressures 2P₀ in both; the adiabatic sample ends at about 396 K
+D) Final pressures 2P₀ and 1.32P₀; the adiabatic sample ends at about 396 K
+KEY: A
+SOL:
+Answer: (A) 2P₀ and 2.64P₀; adiabatic final temperature ≈ 396 K; more work in the adiabatic compression.
+Given: \(\gamma=1.4,\ V_f=V_0/2,\ T_0=300\ \mathrm K\)
+Formula/Principle: \(\text{isothermal: }PV=\text{const};\ \text{adiabatic: }PV^\gamma=\text{const},\ TV^{\gamma-1}=\text{const}\)
+Step 1: \(\text{isothermal: }P=2P_0\)
+Step 2: \(\text{adiabatic: }P=P_0\,2^{1.4}=2\times1.32\,P_0=2.64P_0;\ T=300\times2^{0.4}=396\ \mathrm K\)
+Worked derivation: \[W_{\text{on, iso}}=nRT_0\ln2=0.693\,P_0V_0;\qquad W_{\text{on, ad}}=\frac{P_fV_f-P_0V_0}{\gamma-1}=\frac{1.32-1}{0.4}P_0V_0=0.80\,P_0V_0\]
+Check: \[\frac{P_fV_f}{T_f}=\frac{2.64P_0\cdot V_0/2}{396}=\frac{P_0V_0}{300}\ \checkmark\]
+Why: \(\text{in adiabatic compression no heat leaves, so the work done raises the temperature; the hotter gas has a higher pressure at every volume, so its curve is steeper and the area (work) is larger}\)
+Why not the others: (B) \(\text{an adiabatic compression must heat the gas, and it needs more work}\); (C) \(\text{only the isothermal process gives }P\propto1/V\); (D) \(\text{uses }2^{\gamma-1}\text{ (the temperature factor) for the pressure; pressure rises by }2^\gamma\).
+Key point: \(\text{adiabatic curve is steeper: }P\propto V^{-\gamma}\text{ versus }P\propto V^{-1}\)
+
+@@ Q68
+format: numerical
+sub_topic: Mean free path and collision frequency of nitrogen molecules at room temperature and pressure
+Q: Nitrogen molecules (diameter 3.0 × 10⁻¹⁰ m) are at 300 K and 1.013 × 10⁵ Pa. Their mean speed is 476 m s⁻¹. What is the mean free path, and about how many collisions does one molecule make per second? (k = 1.38 × 10⁻²³ J K⁻¹)
+A) 1.4 × 10⁻⁷ m; about 3.3 × 10⁹ s⁻¹
+B) 1.0 × 10⁻⁷ m; about 4.7 × 10⁹ s⁻¹
+C) 4.1 × 10⁻⁷ m; about 1.2 × 10⁹ s⁻¹
+D) 1.0 × 10⁻⁷ m; about 2.1 × 10⁻¹⁰ s⁻¹
+KEY: B
+SOL:
+Answer: (B) 1.0 × 10⁻⁷ m; about 4.7 × 10⁹ s⁻¹.
+Given: \(d=3.0\times10^{-10}\ \mathrm m,\ T=300\ \mathrm K,\ P=1.013\times10^5\ \mathrm{Pa},\ \bar v=476\ \mathrm{m\,s^{-1}}\)
+Formula/Principle: \(\lambda=\dfrac{1}{\sqrt2\,\pi d^2 n}=\dfrac{kT}{\sqrt2\,\pi d^2P};\ \text{collision frequency }=\bar v/\lambda\)
+Step 1: \(kT=1.38\times10^{-23}\times300=4.14\times10^{-21}\ \mathrm J\)
+Step 2: \(\sqrt2\,\pi d^2P=1.414\times3.1416\times9.0\times10^{-20}\times1.013\times10^5=4.05\times10^{-14}\)
+Worked derivation: \[\lambda=\frac{4.14\times10^{-21}}{4.05\times10^{-14}}\approx1.0\times10^{-7}\ \mathrm m;\qquad \frac{\bar v}{\lambda}=\frac{476}{1.02\times10^{-7}}\approx4.7\times10^9\ \mathrm s^{-1}\]
+Check: \[\lambda/d\approx340:\ \text{a molecule travels a few hundred diameters between collisions}\ \checkmark\]
+Why: \(\text{a molecule sweeps a collision cylinder of cross-section }\pi d^2\text{; the factor }\sqrt2\text{ allows for the motion of the other molecules}\)
+Why not the others: (A) \(\text{omits the factor }\sqrt2\); (C) \(\text{uses the radius }d/2\text{ in place of }d\text{ in }\pi d^2\); (D) \(\lambda/\bar v\text{ is the mean time between collisions in seconds, not a frequency}\).
+Key point: \(\lambda=kT/(\sqrt2\pi d^2P)\approx10^{-7}\ \mathrm m\text{ at room conditions}\)
+
+@@ Q69
+format: numerical
+sub_topic: Total energy, kinetic energy at half amplitude and the displacement where kinetic and potential energies are equal in SHM
+Q: A 0.50 kg block on a spring of force constant 200 N m⁻¹ oscillates on a smooth horizontal surface with amplitude 0.10 m. What is the total energy, what is the kinetic energy when the displacement is 0.050 m, and at what displacement are the kinetic and potential energies equal?
+A) 1.0 J; 0.25 J; 0.050 m
+B) 2.0 J; 1.5 J; 0.071 m
+C) 1.0 J; 0.75 J; 0.050 m
+D) 1.0 J; 0.75 J; about 0.071 m
+KEY: D
+SOL:
+Answer: (D) 1.0 J; 0.75 J; about 0.071 m.
+Given: \(m=0.50\ \mathrm{kg},\ k=200\ \mathrm{N\,m^{-1}},\ A=0.10\ \mathrm m\)
+Formula/Principle: \(E=\tfrac12kA^2;\ U=\tfrac12kx^2;\ K=E-U=\tfrac12k(A^2-x^2)\)
+Step 1: \(E=\tfrac12\times200\times0.010=1.0\ \mathrm J\)
+Step 2: \(U(0.050)=\tfrac12\times200\times0.0025=0.25\ \mathrm J\Rightarrow K=0.75\ \mathrm J\)
+Worked derivation: \[K=U\Rightarrow\tfrac12kx^2=\tfrac12E=\tfrac14kA^2\Rightarrow x=\frac{A}{\sqrt2}=0.0707\ \mathrm m\]
+Check: \[v_{\max}=\sqrt{2E/m}=\sqrt{4}=2.0\ \mathrm{m\,s^{-1}}=A\omega=0.10\times\sqrt{200/0.50}=0.10\times20\ \checkmark\]
+Why: \(U\propto x^2\text{, so at half the amplitude the potential energy is only one quarter of the total}\)
+Why not the others: (A) \(\text{gives U instead of K at 0.050 m, and assumes energy divides equally at half amplitude}\); (B) \(\text{omits the factor }\tfrac12\text{ in }E=\tfrac12kA^2\); (C) \(\text{at }x=A/2,\ K=3U\text{, not }K=U\).
+Key point: \(K=U\text{ at }x=A/\sqrt2;\ \text{at }x=A/2,\ K=\tfrac34E\)
+
+@@ Q70
+format: numerical
+sub_topic: Beat frequency between two strings when the tension of one is raised by a small percentage
+Q: Two identical stretched wires each vibrate at 400 Hz. The tension in one wire is increased by 1.0 %. About how many beats per second are heard when both vibrate together? About how many would be heard if the tension were increased by 4.0 % instead?
+A) About 2 Hz; about 8 Hz
+B) About 4 Hz; about 16 Hz
+C) About 2 Hz; about 4 Hz
+D) About 1 Hz; about 4 Hz
+KEY: A
+SOL:
+Answer: (A) About 2 Hz; about 8 Hz.
+Given: \(f_0=400\ \mathrm{Hz};\ \dfrac{\Delta T}{T}=1.0\%\ \text{or}\ 4.0\%\)
+Formula/Principle: \(f=\dfrac1{2L}\sqrt{\dfrac T\mu}\Rightarrow\dfrac{\Delta f}{f}\approx\dfrac12\dfrac{\Delta T}{T};\ \text{beat frequency}=|f_1-f_2|\)
+Step 1: \(\Delta f=400\times\tfrac12\times0.010=2.0\ \mathrm{Hz}\)
+Step 2: \(\Delta f=400\times\tfrac12\times0.040=8.0\ \mathrm{Hz}\)
+Worked derivation: \[\text{exact: }400(\sqrt{1.01}-1)=1.99\ \mathrm{Hz},\qquad 400(\sqrt{1.04}-1)=7.92\ \mathrm{Hz}\]
+Check: \[\text{for small changes the beat frequency is proportional to the change in tension: }4\times2=8\ \checkmark\]
+Why: \(\text{frequency varies as the square root of tension, so a small fractional change in T gives half that fractional change in f}\)
+Why not the others: (B) \(\text{takes f proportional to T instead of }\sqrt T\); (C) \(\text{takes the square root of the factor 4 again; for small changes the beat frequency is linear in }\Delta T\); (D) \(\text{uses a quarter instead of a half}\).
+Key point: \(\Delta f/f\approx\tfrac12\Delta T/T;\ \text{beats}=|\Delta f|\)
+
+@@ Q71
+format: conceptual
+sub_topic: Net force on a central charge when one of six equal charges at the corners of a regular hexagon is removed
+Q: Six equal positive charges q are fixed at the corners of a regular hexagon of side a, and a positive charge Q is at its centre. One corner charge is then removed. What is the net electric force on Q? (k = 1/4πε₀)
+A) Still zero, because the remaining charges are symmetric about the centre
+B) kqQ/a², directed from the centre towards the empty corner
+C) kqQ/a², directed from the centre away from the empty corner
+D) 5kqQ/a², directed towards the empty corner
+KEY: B
+SOL:
+Answer: (B) kqQ/a², directed from the centre towards the empty corner.
+Given: \(6\ \text{charges }q\text{ at distance }a\text{ from the centre (for a regular hexagon the centre–corner distance equals the side)};\ Q\text{ at the centre}\)
+Formula/Principle: \(\text{superposition: }\vec F_{\text{net}}=\sum\vec F_i;\ \text{full symmetric set gives }\sum\vec F_i=0\)
+Step 1: \(\text{with all six present: }\vec F_{\text{6}}=0\)
+Step 2: \(\text{remaining five}=\vec F_{\text{6}}-\vec F_{\text{removed}}=-\vec F_{\text{removed}}\)
+Worked derivation: \[|\vec F_{\text{removed}}|=\frac{kqQ}{a^2},\ \text{directed away from that corner (repulsion)}\ \Rightarrow\ \vec F_{\text{net}}=\frac{kqQ}{a^2}\ \text{towards the empty corner}\]
+Check: \[\text{the charge opposite the gap is now unbalanced; it repels Q towards the gap}\ \checkmark\]
+Why: \(\text{removing a charge is the same as adding an equal and opposite charge at that corner to the symmetric arrangement}\)
+Why not the others: (A) \(\text{the opposite charge to the empty corner is no longer balanced, so symmetry is broken}\); (C) \(\text{the missing charge would have pushed Q away from that corner, so the rest push Q towards it}\); (D) \(\text{the forces from the five charges largely cancel; only one unbalanced force remains}\).
+Key point: \(\text{symmetric set minus one}=\text{minus the force of the missing charge}\)
+
+@@ Q72
+format: graph
+sub_topic: Finding the ratio and signs of two point charges and the point of zero field from a potential–position graph
+image: NEST_T06_Q72.png
+alt: Graph of electric potential V against position x along a line through two point charges, one at x = 0 and one at x = d. The potential rises towards plus infinity on both sides of x = 0 and falls towards minus infinity on both sides of x = d. Between the charges V crosses zero at x = d/3. To the left of the origin V crosses zero at x = −d, becomes slightly negative further left and approaches zero from below. To the right of x = d, V stays negative and approaches zero from below.
+Q: The figure shows the electric potential V (zero at infinity) along the x-axis due to two point charges q₁ at x = 0 and q₂ at x = d. What is q₂ in terms of q₁, and at which point on the axis (other than at infinity) is the electric field zero?
+A) q₂ = −q₁/2; at x = −d
+B) q₂ = −2q₁; at x = −d
+C) q₂ = −2q₁; at x = −(1 + √2)d, where V has its lowest value to the left of the origin
+D) q₂ = +2q₁; at x = d/3
+KEY: C
+SOL:
+Answer: (C) q₂ = −2q₁; at x = −(1 + √2)d.
+Given: \(V\to+\infty\text{ at }x=0,\ V\to-\infty\text{ at }x=d;\ V=0\text{ at }x=d/3\text{ and at }x=-d\)
+Formula/Principle: \(V(x)=k\left(\dfrac{q_1}{|x|}+\dfrac{q_2}{|x-d|}\right);\ E_x=-\dfrac{dV}{dx}\Rightarrow E=0\text{ where V has a turning point}\)
+Step 1: \(\text{signs: }q_1>0,\ q_2<0.\ \ V(d/3)=0:\ \dfrac{q_1}{d/3}+\dfrac{q_2}{2d/3}=0\Rightarrow q_2=-2q_1\)
+Step 2: \(\text{check }V(-d)=k\left(\dfrac{q_1}{d}-\dfrac{2q_1}{2d}\right)=0\ \checkmark.\ \ \text{For }x=-s\ (s>0):\ V=kq_1\left(\dfrac1s-\dfrac2{s+d}\right)\)
+Worked derivation: \[\frac{dV}{ds}=kq_1\left(-\frac1{s^2}+\frac2{(s+d)^2}\right)=0\Rightarrow s+d=\sqrt2\,s\Rightarrow s=\frac{d}{\sqrt2-1}=(1+\sqrt2)d\]
+Check: \[\text{fields there: }\frac{kq_1}{s^2}\text{ (to the left)}=\frac{k(2q_1)}{(s+d)^2}\text{ (to the right)}\iff(s+d)^2=2s^2\ \checkmark\]
+Why: \(\text{the field is zero outside the pair, on the side of the smaller charge, where the two contributions can be equal and opposite}\)
+Why not the others: (A) \(\text{inverts the ratio; and }V=0\text{ does not mean }E=0\); (B) \(\text{the ratio is right, but }x=-d\text{ is where V is zero, not where its slope is zero}\); (D) \(\text{like charges would give }V\to+\infty\text{ at both charges, and V could not be zero between them}\).
+Key point: \(V=0\text{ fixes the charge ratio; }E=0\text{ where }dV/dx=0\text{ (a turning point of V)}\)
+
+@@ Q73
+format: numerical
+sub_topic: Current through the galvanometer of an unbalanced Wheatstone bridge using Kirchhoff's rules
+Q: In a Wheatstone bridge, an ideal 6.0 V battery is connected between corners A and D. The arms are AB = 10 Ω, AC = 20 Ω, BD = 20 Ω and CD = 10 Ω, and a galvanometer of resistance 10 Ω is connected between B and C. What is the current through the galvanometer, and what current does the battery supply?
+A) Zero; 0.40 A
+B) About 0.086 A from B to C; about 0.43 A
+C) About 0.086 A from C to B; about 0.43 A
+D) About 0.086 A from B to C; 0.40 A
+KEY: B
+SOL:
+Answer: (B) About 0.086 A from B to C; about 0.43 A.
+Given: \(V_A=6.0\ \mathrm V,\ V_D=0;\ R_{AB}=10,\ R_{AC}=20,\ R_{BD}=20,\ R_{CD}=10,\ G=10\ \Omega\)
+Formula/Principle: \(\text{Kirchhoff's junction rule (conservation of charge) at B and C, with Ohm's law in each arm}\)
+Step 1: \(\text{at B: }\dfrac{6-V_B}{10}=\dfrac{V_B}{20}+\dfrac{V_B-V_C}{10};\quad \text{at C: }\dfrac{6-V_C}{20}+\dfrac{V_B-V_C}{10}=\dfrac{V_C}{10}\)
+Step 2: \(\text{by symmetry of the arms, }V_B+V_C=6\text{; solving gives }V_B=\tfrac{24}{7}\ \mathrm V,\ V_C=\tfrac{18}{7}\ \mathrm V\)
+Worked derivation: \[I_G=\frac{V_B-V_C}{10}=\frac{6/7}{10}=\frac3{35}\approx0.086\ \mathrm A\ (B\to C);\quad I=\frac{6-24/7}{10}+\frac{6-18/7}{20}=\frac{18}{70}+\frac{12}{70}=\frac37\approx0.43\ \mathrm A\]
+Check: \[\text{junction B: in }0.257\ \mathrm A=\text{out }(V_B/20=0.171)+0.086\ \checkmark;\quad R_{\text{eq}}=6/(3/7)=14\ \Omega\]
+Why: \(\text{the bridge is unbalanced because }\tfrac{10}{20}\ne\tfrac{20}{10}\text{, so B and C are at different potentials}\)
+Why not the others: (A) \(\text{zero current needs }R_{AB}/R_{BD}=R_{AC}/R_{CD}\text{, which fails here}\); (C) \(\text{B is at the higher potential, so current flows from B to C}\); (D) \(\text{0.40 A is the battery current with the galvanometer removed }(30\ \Omega\parallel30\ \Omega)\).
+Key point: \(\text{unbalanced bridge: apply the junction rule at the two middle nodes}\)
+
+@@ Q74
+format: conceptual
+sub_topic: Effect of doubling the number of turns on the current and voltage sensitivity of a galvanometer, and conversion to an ammeter
+Q: The coil of a moving coil galvanometer is rewound with twice as many turns of the same wire, so that its resistance doubles; its area, the magnetic field and the spring are unchanged. Which statement is correct?
+A) Both the current sensitivity and the voltage sensitivity double
+B) The current sensitivity doubles and the voltage sensitivity halves
+C) The current sensitivity is unchanged and the voltage sensitivity doubles
+D) The current sensitivity doubles and the voltage sensitivity is unchanged; to use the galvanometer as an ammeter, a low resistance is connected in parallel with it
+KEY: D
+SOL:
+Answer: (D) The current sensitivity doubles and the voltage sensitivity is unchanged; a low parallel (shunt) resistance converts it to an ammeter.
+Given: \(N\to2N,\ R_G\to2R_G;\ A,\ B,\ k\ \text{unchanged}\)
+Formula/Principle: \(k\phi=NIAB\Rightarrow\dfrac{\phi}{I}=\dfrac{NAB}{k};\quad \dfrac{\phi}{V}=\dfrac{NAB}{kR_G}\)
+Step 1: \(\text{current sensitivity}\propto N\Rightarrow\text{doubles}\)
+Step 2: \(\text{voltage sensitivity}\propto N/R_G=2N/2R_G\Rightarrow\text{unchanged}\)
+Worked derivation: \[\frac{\phi}{V}=\frac{(2N)AB}{k(2R_G)}=\frac{NAB}{kR_G}\]
+Check: \[\text{ammeter: shunt }S=\frac{I_gG}{I-I_g}\ll G\text{, in parallel, so most of the current bypasses the coil}\ \checkmark\]
+Why: \(\text{more turns give more torque per ampere, but the same voltage now drives only half the current}\)
+Why not the others: (A) \(\text{ignores the doubled resistance, which halves the current for a given voltage}\); (B) \(\text{the factors 2 in N and in R cancel, so voltage sensitivity does not halve}\); (C) \(\text{current sensitivity is proportional to N, so it does change}\).
+Key point: \(\text{current sensitivity}=NAB/k;\ \text{voltage sensitivity}=NAB/(kR)\)
+
+@@ Q75
+format: conceptual
+sub_topic: Statements about displacement current while a capacitor charges and after it is fully charged
+Q: A parallel-plate capacitor is being charged by a steady current through connecting wires. Consider these statements.
+(i) The displacement current between the plates equals the conduction current in the wires.
+(ii) There is a magnetic field in the region between the plates.
+(iii) After the capacitor is fully charged and the current stops, the displacement current between the plates is zero.
+(iv) The displacement current is a flow of charges across the gap between the plates.
+Which statements are correct?
+A) (i), (ii) and (iii) only
+B) (i) and (iv) only
+C) (ii) only
+D) All four
+KEY: A
+SOL:
+Answer: (A) (i), (ii) and (iii) only.
+Given: \(\text{charging current }i;\ \text{electric flux between plates }\Phi_E=q/\varepsilon_0\)
+Formula/Principle: \(\text{Ampere–Maxwell law: }\oint\vec B\cdot d\vec l=\mu_0(i_c+i_d),\ \ i_d=\varepsilon_0\dfrac{d\Phi_E}{dt}\)
+Step 1: \(i_d=\varepsilon_0\dfrac{d}{dt}\left(\dfrac{q}{\varepsilon_0}\right)=\dfrac{dq}{dt}=i\ \Rightarrow\ \text{(i) true}\)
+Step 2: \(i_d\ne0\text{ between the plates gives a circulating }\vec B\text{ there}\Rightarrow\text{(ii) true; when }q\text{ stops changing, }i_d=0\Rightarrow\text{(iii) true}\)
+Worked derivation: \[\text{between the plates: }i_c=0,\ i_d=i\ \Rightarrow\ \oint\vec B\cdot d\vec l=\mu_0 i\]
+Check: \[\text{current is continuous: }i_c\text{ in the wire}=i_d\text{ in the gap, so Ampere's law gives the same B for any surface bounded by a loop round the wire}\ \checkmark\]
+Why: \(\text{a changing electric field produces a magnetic field just as a conduction current does}\)
+Why not the others: (B) \(\text{(iv) is false: no charge crosses the gap; the displacement current is a changing electric flux}\); (C) \(\text{(i) and (iii) are also true}\); (D) \(\text{(iv) is false}\).
+Key point: \(i_d=\varepsilon_0\,d\Phi_E/dt\text{: no charges cross the gap, yet it produces a magnetic field}\)
+
+@@ Q76
+format: numerical
+sub_topic: Focal length of a concave mirror from object–image data and the image for an object inside the focus
+Q: In an experiment with a concave mirror, a student records object and image distances (Cartesian sign convention, distances in cm, measured from the pole):
+
+u (cm) | −30 | −40 | −60
+v (cm) | −60 | −40 | −30
+
+What is the focal length, and where is the image when the object is placed 10 cm in front of the mirror?
+A) f = −40 cm; the image is at infinity
+B) f = −20 cm; a real, inverted image at v = −20 cm with magnification −2
+C) f = −20 cm; a virtual, erect image at v = +20 cm (behind the mirror) with magnification +2
+D) f = +20 cm; a virtual image at v = +6.7 cm
+KEY: C
+SOL:
+Answer: (C) f = −20 cm; virtual, erect image at v = +20 cm with magnification +2.
+Given: \((u,v)=(-30,-60),\ (-40,-40),\ (-60,-30)\ \mathrm{cm}\)
+Formula/Principle: \(\dfrac1v+\dfrac1u=\dfrac1f;\ m=-\dfrac vu;\ \text{a graph of }1/v\text{ against }1/u\text{ is a straight line of slope }-1\text{ with both intercepts }1/f\)
+Step 1: \(\dfrac1{-60}+\dfrac1{-30}=-\dfrac{3}{60}=-\dfrac1{20}\Rightarrow f=-20\ \mathrm{cm}\ (\text{same from }u=v=-40=2f)\)
+Step 2: \(u=-10:\ \dfrac1v=\dfrac1f-\dfrac1u=-\dfrac1{20}+\dfrac1{10}=\dfrac1{20}\Rightarrow v=+20\ \mathrm{cm}\)
+Worked derivation: \[m=-\frac{v}{u}=-\frac{+20}{-10}=+2\]
+Check: \[(-40,-40):\ -\tfrac1{40}-\tfrac1{40}=-\tfrac1{20}\ \checkmark;\ \ \text{object inside F of a concave mirror gives a magnified virtual erect image (shaving mirror)}\]
+Why: \(\text{all three data pairs give the same }1/f\text{; the point }u=v\text{ is at the centre of curvature, }2f\)
+Why not the others: (A) \(\text{takes }u=v=-40\text{ as f instead of }2f\); (B) \(\text{a real image needs the object beyond F; here it is inside F}\); (D) \(\text{a concave mirror has negative f in this convention, and the image distance is wrong}\).
+Key point: \(u=v\text{ at }2f;\ \text{object inside F}\Rightarrow\text{virtual, erect, magnified image}\)
+
+@@ Q77
+format: numerical
+sub_topic: Photon energy and recoil speed of a hydrogen atom in the n = 4 to n = 2 transition using conservation of momentum
+Q: A hydrogen atom at rest makes a transition from n = 4 to n = 2 and emits a photon. What is the photon energy, and with what speed does the atom recoil? (Energy levels Eₙ = −13.6/n² eV; mass of hydrogen atom = 1.67 × 10⁻²⁷ kg; c = 3.0 × 10⁸ m s⁻¹; 1 eV = 1.6 × 10⁻¹⁹ J)
+A) 2.55 eV (about 486 nm); about 0.81 m s⁻¹
+B) 2.55 eV; zero, because the atom is much heavier than the photon
+C) 10.2 eV; about 3.3 m s⁻¹
+D) 2.55 eV; about 1.5 × 10³ m s⁻¹
+KEY: A
+SOL:
+Answer: (A) 2.55 eV (about 486 nm); about 0.81 m s⁻¹.
+Given: \(E_n=-\dfrac{13.6}{n^2}\ \mathrm{eV};\ M=1.67\times10^{-27}\ \mathrm{kg};\ c=3.0\times10^8\ \mathrm{m\,s^{-1}}\)
+Formula/Principle: \(\text{energy: }h\nu=E_4-E_2;\ \text{momentum conservation: }Mv=p_{\text{photon}}=\dfrac{h\nu}{c}\)
+Step 1: \(h\nu=13.6\left(\tfrac14-\tfrac1{16}\right)=2.55\ \mathrm{eV}=4.08\times10^{-19}\ \mathrm J;\ \lambda=\dfrac{1240}{2.55}\approx486\ \mathrm{nm}\)
+Step 2: \(v=\dfrac{h\nu}{Mc}\)
+Worked derivation: \[v=\frac{4.08\times10^{-19}}{1.67\times10^{-27}\times3.0\times10^8}=\frac{4.08\times10^{-19}}{5.01\times10^{-19}}\approx0.81\ \mathrm{m\,s^{-1}}\]
+Check: \[\text{recoil energy }\tfrac12Mv^2\approx5.5\times10^{-28}\ \mathrm J\approx3.5\times10^{-9}\ \mathrm{eV}\ll2.55\ \mathrm{eV}\text{, so neglecting it in Step 1 is fine}\ \checkmark\]
+Why: \(\text{the photon carries momentum }h/\lambda\text{, so the atom must move the opposite way with equal momentum}\)
+Why not the others: (B) \(\text{the recoil is small but not zero; momentum must be conserved}\); (C) \(\text{10.2 eV is the }n=2\to1\text{ energy}\); (D) \(\text{uses the electron mass instead of the mass of the whole atom}\).
+Key point: \(\text{photon momentum }E/c\text{; recoil }v=E/(Mc)\)
+
+@@ Q78
+format: numerical
+sub_topic: Mass defect, binding energy and binding energy per nucleon of lithium-7 from atomic masses
+Q: Using the atomic masses ¹H = 1.007825 u, neutron = 1.008665 u and ⁷₃Li = 7.016004 u (1 u = 931.5 MeV/c²), what are the mass defect, the binding energy and the binding energy per nucleon of ⁷Li?
+A) 0.0421 u; 39.2 MeV; 13.1 MeV per nucleon
+B) 0.0421 u; 39.2 MeV; 5.61 MeV per nucleon
+C) 0.0405 u; 37.7 MeV; 5.39 MeV per nucleon
+D) 0.0421 u; 3.92 MeV; 0.56 MeV per nucleon
+KEY: B
+SOL:
+Answer: (B) 0.0421 u; 39.2 MeV; 5.61 MeV per nucleon.
+Given: \(Z=3,\ N=4,\ A=7;\ m(^1\mathrm H)=1.007825\ \mathrm u,\ m_n=1.008665\ \mathrm u,\ m(^7\mathrm{Li})=7.016004\ \mathrm u\)
+Formula/Principle: \(\Delta m=Z\,m(^1\mathrm H)+N\,m_n-m(\text{atom});\ E_b=\Delta m\times931.5\ \mathrm{MeV};\ \text{per nucleon}=E_b/A\)
+Step 1: \(3\times1.007825=3.023475;\ 4\times1.008665=4.034660;\ \text{sum}=7.058135\ \mathrm u\)
+Step 2: \(\Delta m=7.058135-7.016004=0.042131\ \mathrm u\)
+Worked derivation: \[E_b=0.042131\times931.5=39.2\ \mathrm{MeV};\qquad \frac{E_b}{A}=\frac{39.2}{7}=5.61\ \mathrm{MeV}\]
+Check: \[\text{using }^1\mathrm H\text{ atomic masses, the 3 electron masses cancel with those in the Li atom}\ \checkmark\]
+Why: \(\text{the binding energy is the energy needed to separate the nucleus into its free nucleons; light nuclei such as Li have a lower value per nucleon than iron (about 8.8 MeV)}\)
+Why not the others: (A) \(\text{divides by the number of protons (3) instead of the number of nucleons (7)}\); (C) \(\text{uses the bare proton mass with the atomic mass of Li, so the electron masses do not cancel}\); (D) \(\text{slips a factor of 10 in multiplying by 931.5}\).
+Key point: \(\Delta m\text{ with atomic masses of }^1\mathrm H;\ E_b/A\text{ divides by the mass number}\)
+
+@@ Q79
+format: numerical
+sub_topic: Slope read from two graph points and reported to the correct number of significant figures
+Q: A student reads two points from a straight-line distance–time graph: (2.0 s, 5.30 m) and (6.0 s, 13.70 m). What is the speed (slope) reported to the correct number of significant figures, and how many significant figures does 13.70 m have?
+A) 2.10 m s⁻¹; 4
+B) 2.1 m s⁻¹; 3
+C) 2 m s⁻¹; 4
+D) 2.1 m s⁻¹; 4
+KEY: D
+SOL:
+Answer: (D) 2.1 m s⁻¹; 4.
+Given: \((t_1,x_1)=(2.0\ \mathrm s,\ 5.30\ \mathrm m),\ (t_2,x_2)=(6.0\ \mathrm s,\ 13.70\ \mathrm m)\)
+Formula/Principle: \(\text{addition/subtraction: keep the least number of decimal places; multiplication/division: keep the least number of significant figures}\)
+Step 1: \(\Delta x=13.70-5.30=8.40\ \mathrm m\ (\text{2 decimal places, 3 s.f.});\ \Delta t=6.0-2.0=4.0\ \mathrm s\ (2\text{ s.f.})\)
+Step 2: \(\text{slope}=\dfrac{8.40}{4.0}=2.1\ \mathrm{m\,s^{-1}}\ (2\text{ s.f., limited by }4.0)\)
+Worked derivation: \[v=\frac{\Delta x}{\Delta t}=\frac{8.40\ \mathrm m}{4.0\ \mathrm s}=2.1\ \mathrm{m\,s^{-1}}\]
+Check: \[13.70:\ \text{trailing zero after the decimal point is significant}\Rightarrow4\text{ s.f.}\ \checkmark\]
+Why: \(\text{a result of division cannot be more precise than its least precise factor}\)
+Why not the others: (A) \(\text{keeps 3 significant figures, but }\Delta t=4.0\text{ has only 2}\); (B) \(\text{a trailing zero after the decimal point counts, so 13.70 has 4 significant figures}\); (C) \(\text{rounds to 1 significant figure, discarding valid precision}\).
+Key point: \(\text{subtract by decimal places, divide by significant figures; trailing zeros after a decimal point are significant}\)
+
+@@ Q80
+format: numerical
+sub_topic: Comparing speeds and centripetal accelerations of particles on circles of radius r and 2r with equal period or equal speed
+Q: Particle P moves uniformly on a circle of radius r and particle Q on a circle of radius 2r. Compare their motion (a) when they have the same period, and (b) when they have the same speed.
+A) (a) Same speed, and Q has twice the acceleration of P; (b) Q has half the acceleration of P
+B) (a) Q has twice the speed and four times the acceleration of P; (b) Q has half the acceleration of P
+C) (a) Q has twice the speed and twice the acceleration of P; (b) Q has half the acceleration of P
+D) (a) Q has twice the speed and half the acceleration of P; (b) Q has twice the acceleration of P
+KEY: C
+SOL:
+Answer: (C) (a) Q has twice the speed and twice the acceleration of P; (b) Q has half the acceleration of P.
+Given: \(r_P=r,\ r_Q=2r\)
+Formula/Principle: \(v=\omega r=\dfrac{2\pi r}{T};\ a=\omega^2r=\dfrac{v^2}{r}\)
+Step 1: \(\text{(a) same }T\Rightarrow\text{same }\omega:\ \dfrac{v_Q}{v_P}=\dfrac{2r}{r}=2,\ \dfrac{a_Q}{a_P}=\dfrac{\omega^2(2r)}{\omega^2r}=2\)
+Step 2: \(\text{(b) same }v:\ \dfrac{a_Q}{a_P}=\dfrac{v^2/2r}{v^2/r}=\dfrac12\)
+Worked derivation: \[\text{same }\omega:\ a\propto r;\qquad \text{same }v:\ a\propto\frac1r\]
+Check: \[\text{(a) using }a=v^2/r:\ \frac{(2v)^2/(2r)}{v^2/r}=2\ \checkmark\]
+Why: \(\text{whether a grows or shrinks with radius depends on what is held fixed}\)
+Why not the others: (A) \(\text{with the same period the outer particle must cover twice the distance, so it is faster}\); (B) \(\text{uses }v^2/r\text{ with }v\text{ doubled but forgets that r is also doubled}\); (D) \(\text{applies }a\propto1/r\text{ to the equal-period case and }a\propto r\text{ to the equal-speed case}\).
+Key point: \(\text{same }T\Rightarrow a\propto r;\ \text{same }v\Rightarrow a\propto1/r\)

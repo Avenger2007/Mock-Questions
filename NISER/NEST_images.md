@@ -106,3 +106,29 @@ One entry per question that needs a figure, in the format given in `NISER/NISER_
 - **Labels:** "P", "Q", "R", axis titles and tick labels.
 - **Must not show:** a legend naming kinetic, potential or total energy, the letters K, U or E, any formula, or the words "bound" or "escape".
 - **Alt text:** Graph of energy against orbital radius from R to 5R for circular orbits. Curve P is positive and falls from +1 at R towards zero; curve Q is negative, starting at −2 at R and rising towards zero; curve R is negative, starting at −1 at R and rising towards zero. Energy is in units of GMm over 2R.
+
+## NEST Test 6
+
+### NEST_T06_Q28.png — Test 6, Q28 (Chemistry, radial probability distribution of one orbital)
+- **Purpose:** the student counts the radial nodes from the graph and, with the one angular node given in the question, identifies the orbital.
+- **Size and style:** 1400 × 800 px, white background, one smooth curve in dark blue (3 px), black axes, light grey grid, sans-serif labels 24 px or larger.
+- **Must show:** x-axis "r (distance from nucleus)" starting at 0, with no numerical values. y-axis "Radial probability" starting at 0, with no numerical values. One smooth curve that starts at zero at r = 0 and has three humps: a small first maximum near the left, a second maximum about twice as tall, and a third, tallest maximum farther right, then a long tail falling towards zero. The curve touches the x-axis (goes exactly to zero) at exactly two points between the humps: a first node between hump 1 and hump 2, and a second node between hump 2 and hump 3. Mark the two zero points with small open circles on the axis.
+- **Labels:** the axis titles only.
+- **Must not show:** the name of any orbital, the letters s, p, d or f, the symbols n or l, numbers on the axes, the word "node", any angular-shape drawing, or a count of the maxima or nodes.
+- **Alt text:** Graph of radial probability against distance r from the nucleus for one orbital of the hydrogen atom. The curve starts at zero at the nucleus, rises to a small first maximum, falls to zero at a first node, rises to a larger second maximum, falls to zero at a second node, and then rises to the largest third maximum farther out before falling gradually towards zero. Apart from r = 0 the curve touches zero exactly twice.
+
+### NEST_T06_Q63.png — Test 6, Q63 (Physics, angular velocity–time graph of a wheel)
+- **Purpose:** the student reads slopes (angular accelerations) and the area (angle turned) from the graph.
+- **Size and style:** 1400 × 800 px, white background, one thick dark-blue straight-segment line (3 px), black axes, light grey grid at every 1 s and every 5 rad/s, sans-serif labels 24 px or larger.
+- **Must show:** x-axis "t / s" from 0 to 14 with ticks and labels every 1 s. y-axis "ω / rad s⁻¹" from 0 to 25 with ticks and labels every 5. The line goes straight from (0, 0) to (4, 20), stays level from (4, 20) to (8, 20), then goes straight down from (8, 20) to (13, 0). Small dots at (4, 20), (8, 20) and (13, 0). Dashed light-grey guide lines from (4, 20) and (8, 20) down to the time axis.
+- **Labels:** axis titles and tick labels only.
+- **Must not show:** shaded areas, numerical areas, slopes, torques, the moment of inertia, the word "revolutions", or any calculated value.
+- **Alt text:** Graph of angular velocity in radians per second against time in seconds for a wheel. The line rises straight from 0 at t = 0 to 20 at t = 4 s, stays level at 20 until t = 8 s, then falls straight to 0 at t = 13 s.
+
+### NEST_T06_Q72.png — Test 6, Q72 (Physics, potential along the axis of two point charges)
+- **Purpose:** the student uses where the potential becomes infinite and where it is zero to find the signs and ratio of the two charges.
+- **Size and style:** 1400 × 900 px, white background, the potential curve in dark blue (3 px), black axes, light grey grid, sans-serif labels 24 px or larger. Vertical dashed grey lines (asymptotes) at x = 0 and x = d.
+- **Must show:** x-axis "x" from −4d to +2d with ticks every 0.5d labelled "−4d", "−3d", "−2d", "−d", "0", "d/3" (an extra tick at one third of the way from 0 to d), "d", "2d" (other ticks unlabelled). y-axis "V / (kq₁/d)" from −8 to +8 with ticks every 2, and a bold horizontal line at V = 0. Plot V = 1/|x| − 2/|x − 1| with x in units of d (do not print this formula). Key points to pass through: (−4, −0.15), (−3, −0.17), (−2, −0.17), (−1.5, −0.13), (−1, 0), (−0.5, 0.67), (−0.25, 2.4); then (0.25, 1.33), (1/3, 0), (0.5, −2.0), (0.75, −6.7); then (1.25, −7.2), (1.5, −3.3), (2, −1.5). Near x = 0 the curve rises off the top of the plot on both sides; near x = d it drops off the bottom on both sides. Mark the two zero crossings at x = −d and x = d/3 with small dots. Label the charge positions with small markers on the x-axis: "q₁" at 0 and "q₂" at d.
+- **Labels:** "q₁", "q₂", axis titles and tick labels.
+- **Must not show:** the signs or values of q₁ and q₂ (no "+" or "−" next to the charges, no "2q"), the formula for V, arrows for the electric field, any mark or label at the minimum of the curve to the left of the origin, or the words "field is zero".
+- **Alt text:** Graph of electric potential V against position x along a line through two point charges, one at x = 0 and one at x = d. The potential rises towards plus infinity on both sides of x = 0 and falls towards minus infinity on both sides of x = d. Between the charges V crosses zero at x = d/3. To the left of the origin V crosses zero at x = −d, becomes slightly negative further left and approaches zero from below. To the right of x = d, V stays negative and approaches zero from below.
