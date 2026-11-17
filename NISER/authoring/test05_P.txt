@@ -1,0 +1,424 @@
+@@ Q61
+format: experiment
+sub_topic: Capillary rise of water and what happens when the tube is shorter than the rise
+Q: A clean glass capillary of internal radius 0.20 mm is dipped vertically in water (surface tension 0.072 N m⁻¹, contact angle 0°, density 1000 kg m⁻³, g = 10 m s⁻²). How high does the water rise? If the tube projects only 5.0 cm above the water surface, what happens?
+A) 7.2 cm; the water rises to the top but does not overflow, and the radius of curvature of the meniscus increases to about 0.29 mm
+B) 7.2 cm; the water overflows from the top like a fountain
+C) 3.6 cm; the water does not reach the top of the tube
+D) 14.4 cm; the water overflows from the top
+KEY: A
+SOL:
+Answer: (A) 7.2 cm; the water rises to the top but does not overflow, and the radius of curvature of the meniscus increases to about 0.29 mm.
+Given: \(r=2.0\times10^{-4}\ \mathrm m,\ T=0.072\ \mathrm{N\,m^{-1}},\ \theta=0,\ \rho=1000\ \mathrm{kg\,m^{-3}},\ g=10\ \mathrm{m\,s^{-2}},\ l=0.050\ \mathrm m\)
+Formula/Principle: \(h=\dfrac{2T\cos\theta}{r\rho g};\quad \text{with meniscus radius }R:\ hR=\dfrac{2T}{\rho g}=\text{constant}\)
+Step 1: \(h=\dfrac{2\times0.072}{2.0\times10^{-4}\times1000\times10}=0.072\ \mathrm m=7.2\ \mathrm{cm}\)
+Step 2: \(\text{tube too short: }h'=0.050\ \mathrm m\Rightarrow R'=\dfrac{2T}{\rho gh'}\)
+Worked derivation: \[R'=\frac{2\times0.072}{1000\times10\times0.050}=2.9\times10^{-4}\ \mathrm m\approx0.29\ \mathrm{mm}\]
+Check: \[hR=0.072\times2.0\times10^{-4}=1.44\times10^{-5}=0.050\times2.88\times10^{-4}\ \checkmark\]
+Why: \(\text{the meniscus flattens until the upward surface-tension force just supports the 5.0 cm column}\)
+Why not the others: (B) \(\text{an overflow would need energy from nowhere; the meniscus adjusts instead}\); (C) \(\text{uses }T/(r\rho g)\ \text{without the factor 2}\); (D) \(\text{takes 0.20 mm as the diameter}\).
+Key point: \(h=\dfrac{2T\cos\theta}{r\rho g};\ \text{a short tube never overflows}\)
+
+@@ Q62
+format: numerical
+sub_topic: Comparing radiated power (Stefan's law) and peak wavelength (Wien's law) of two spheres
+Q: Two spheres of the same material have radii r and 2r. The smaller is at absolute temperature 2T and the larger at T. What is the ratio of the power radiated by the smaller sphere to that by the larger, and the ratio of their wavelengths of maximum emission?
+A) 1 : 4; 2 : 1
+B) 4 : 1; 1 : 2
+C) 2 : 1; 2 : 1
+D) 16 : 1; 1 : 2
+KEY: B
+SOL:
+Answer: (B) 4 : 1; 1 : 2.
+Given: \(r_1=r,\ T_1=2T;\ r_2=2r,\ T_2=T;\ \text{same emissivity}\)
+Formula/Principle: \(P=e\sigma AT^4,\ A=4\pi r^2;\quad \lambda_mT=b\ \text{(Wien)}\)
+Step 1: \(\dfrac{P_1}{P_2}=\dfrac{r^2(2T)^4}{(2r)^2T^4}=\dfrac{16}{4}=4\)
+Step 2: \(\dfrac{\lambda_1}{\lambda_2}=\dfrac{T_2}{T_1}=\dfrac12\)
+Worked derivation: \[P_1:P_2=4:1,\qquad \lambda_1:\lambda_2=1:2\]
+Check: \[\text{doubling }T\ \text{multiplies power per area by }16,\ \text{doubling }r\ \text{multiplies area by }4\ \checkmark\]
+Why: \(\text{power depends on both area and }T^4;\ \text{peak wavelength depends only on }T\)
+Why not the others: (A) \(\text{inverts both ratios}\); (C) \(\text{uses }P\propto rT\ \text{and}\ \lambda\propto T\); (D) \(\text{ignores the area}\).
+Key point: \(P\propto r^2T^4;\ \lambda_m\propto1/T\)
+
+@@ Q63
+format: experiment
+sub_topic: Work done and change in internal energy when water is boiled at atmospheric pressure
+Q: 1.00 g of water at 100 °C is boiled at a constant pressure of \(1.013\times10^5\) Pa to give steam at 100 °C. Its volume changes from 1.00 cm³ to 1671 cm³, and the latent heat of vaporisation is 2256 J g⁻¹. What is the work done by the water against the atmosphere, and what is the increase in its internal energy?
+A) 169 J; 2425 J
+B) 0; 2256 J
+C) 2256 J; 0
+D) 169 J; 2087 J
+KEY: D
+SOL:
+Answer: (D) 169 J; 2087 J.
+Given: \(p=1.013\times10^5\ \mathrm{Pa};\ \Delta V=1670\ \mathrm{cm^3}=1.670\times10^{-3}\ \mathrm{m^3};\ Q=mL=2256\ \mathrm J\)
+Formula/Principle: \(W=p\Delta V\ \text{(constant pressure)};\quad \Delta U=Q-W\ \text{(first law)}\)
+Step 1: \(W=1.013\times10^5\times1.670\times10^{-3}=169\ \mathrm J\)
+Step 2: \(\Delta U=2256-169\)
+Worked derivation: \[\Delta U=2087\ \mathrm J\]
+Check: \[W/Q=169/2256\approx7.5\%:\ \text{most of the heat breaks intermolecular attractions}\ \checkmark\]
+Why: \(\text{the steam pushes back the atmosphere as it expands, so part of the heat leaves as work}\)
+Why not the others: (A) \(\text{adds }W\ \text{instead of subtracting}\); (B) \(\text{ignores the expansion}\); (C) \(\text{treats all the heat as work}\).
+Key point: \(\Delta U=Q-p\Delta V;\ \text{at a phase change }T\ \text{is constant but }U\ \text{changes}\)
+
+@@ Q64
+format: numerical
+sub_topic: Ratio of specific heats of a mixture of a monatomic and a diatomic gas from equipartition
+Q: 2 mol of helium and 3 mol of nitrogen are mixed. Assuming equipartition (no vibrational modes), what is the ratio \(\gamma=C_p/C_v\) for the mixture?
+A) 1.40
+B) 1.67
+C) 1.48
+D) 1.51
+KEY: C
+SOL:
+Answer: (C) 1.48.
+Given: \(n_1=2\ (\text{He, }C_v=\tfrac32R),\ n_2=3\ (\text{N}_2,\ C_v=\tfrac52R)\)
+Formula/Principle: \(\text{energy is additive: }C_{v,\text{mix}}=\dfrac{n_1C_{v1}+n_2C_{v2}}{n_1+n_2};\ C_p=C_v+R\)
+Step 1: \(C_{v,\text{mix}}=\dfrac{2\times1.5R+3\times2.5R}{5}=\dfrac{10.5R}{5}=2.1R\)
+Step 2: \(C_{p,\text{mix}}=3.1R\)
+Worked derivation: \[\gamma=\frac{3.1}{2.1}=1.48\]
+Check: \[1.40<1.48<1.67\ \text{(between the values for N}_2\ \text{and He)}\ \checkmark\]
+Why: \(\text{each mole contributes }\tfrac f2R\ \text{to }C_v;\ \text{He has }f=3,\ \text{N}_2\ \text{has }f=5\)
+Why not the others: (A) \(\text{nitrogen alone}\); (B) \(\text{helium alone}\); (D) \(\text{averages the }\gamma\ \text{values by moles, which is not valid}\).
+Key point: \(\text{average }C_v\ \text{(not }\gamma)\ \text{over the moles of a mixture}\)
+
+@@ Q65
+format: numerical
+sub_topic: Displacement, velocity and acceleration at t = 0 for SHM with an initial phase
+Q: A particle moves in SHM according to \(x=0.050\sin\!\left(10t+\dfrac\pi6\right)\) m, with t in seconds. What are its displacement, velocity and acceleration at \(t=0\)?
+A) 0.025 m; 0.25 m s⁻¹; −2.5 m s⁻²
+B) 0.025 m; 0.43 m s⁻¹; −2.5 m s⁻²
+C) 0.043 m; 0.25 m s⁻¹; −4.3 m s⁻²
+D) 0.025 m; 0.43 m s⁻¹; +2.5 m s⁻²
+KEY: B
+SOL:
+Answer: (B) 0.025 m; 0.43 m s⁻¹; −2.5 m s⁻².
+Given: \(A=0.050\ \mathrm m,\ \omega=10\ \mathrm{rad\,s^{-1}},\ \phi=\pi/6\)
+Formula/Principle: \(x=A\sin(\omega t+\phi);\ v=A\omega\cos(\omega t+\phi);\ a=-\omega^2x\)
+Step 1: \(x(0)=0.050\sin\tfrac\pi6=0.025\ \mathrm m\)
+Step 2: \(v(0)=0.050\times10\cos\tfrac\pi6=0.50\times0.866=0.43\ \mathrm{m\,s^{-1}}\)
+Worked derivation: \[a(0)=-100\times0.025=-2.5\ \mathrm{m\,s^{-2}}\]
+Check: \[v^2=\omega^2(A^2-x^2)=100(0.0025-0.000625)=0.1875\Rightarrow v=0.433\ \checkmark\]
+Why: \(\text{the acceleration always points towards the mean position, opposite to }x\)
+Why not the others: (A) \(\text{uses }\sin\ \text{for the velocity}\); (C) \(\text{swaps sine and cosine}\); (D) \(\text{wrong sign of acceleration}\).
+Key point: \(a=-\omega^2x;\ v=\pm\omega\sqrt{A^2-x^2}\)
+
+@@ Q66
+format: numerical
+sub_topic: Lowest resonances of a closed pipe and the length of an open pipe whose fundamental matches its first overtone
+Q: A pipe 50 cm long, closed at one end, is sounded. The speed of sound is 340 m s⁻¹. What are its two lowest resonant frequencies? What length of pipe open at both ends has a fundamental frequency equal to the first overtone of the closed pipe? (Ignore end corrections.)
+A) 170 Hz and 510 Hz; 33.3 cm
+B) 170 Hz and 340 Hz; 50 cm
+C) 340 Hz and 680 Hz; 25 cm
+D) 170 Hz and 510 Hz; 66.7 cm
+KEY: A
+SOL:
+Answer: (A) 170 Hz and 510 Hz; 33.3 cm.
+Given: \(L_c=0.50\ \mathrm m,\ v=340\ \mathrm{m\,s^{-1}}\)
+Formula/Principle: \(\text{closed: }f=\dfrac{nv}{4L},\ n=1,3,5,\ldots;\quad \text{open: }f_1=\dfrac{v}{2L}\)
+Step 1: \(f_1=\dfrac{340}{4\times0.50}=170\ \mathrm{Hz};\quad f_3=3\times170=510\ \mathrm{Hz}\)
+Step 2: \(\text{open pipe: }\dfrac{v}{2L_o}=510\)
+Worked derivation: \[L_o=\frac{340}{2\times510}=0.333\ \mathrm m=33.3\ \mathrm{cm}\]
+Check: \[\frac{L_o}{L_c}=\frac{2/3}{1}\cdot\frac12\ \Rightarrow\ \frac{v}{2L_o}=\frac{3v}{4L_c}\Rightarrow L_o=\tfrac23L_c=33.3\ \mathrm{cm}\ \checkmark\]
+Why: \(\text{a closed pipe has only odd harmonics, so its first overtone is the third harmonic}\)
+Why not the others: (B) \(\text{a closed pipe has no second harmonic}\); (C) \(\text{uses the open-pipe formula for the closed pipe}\); (D) \(\text{uses }L=v/f\ \text{instead of}\ v/2f\).
+Key point: \(\text{closed pipe: }f_1,\ 3f_1,\ 5f_1;\ \text{open pipe: }f_1=v/2L\)
+
+@@ Q67
+format: experiment
+sub_topic: Field of a long charged wire at two distances and its linear charge density (Gauss's law)
+Q: A small probe measures the electric field near the middle of a long, straight, uniformly charged wire. At 2.0 cm from the wire the field is \(9.0\times10^4\ \mathrm{N\,C^{-1}}\). What field is expected at 6.0 cm, and what is the linear charge density of the wire? (\(\dfrac1{4\pi\varepsilon_0}=9.0\times10^9\ \mathrm{N\,m^2\,C^{-2}}\))
+A) \(1.0\times10^4\ \mathrm{N\,C^{-1}}\); \(1.0\times10^{-7}\ \mathrm{C\,m^{-1}}\)
+B) \(3.0\times10^4\ \mathrm{N\,C^{-1}}\); \(2.0\times10^{-7}\ \mathrm{C\,m^{-1}}\)
+C) \(3.0\times10^4\ \mathrm{N\,C^{-1}}\); \(1.0\times10^{-7}\ \mathrm{C\,m^{-1}}\)
+D) \(9.0\times10^4\ \mathrm{N\,C^{-1}}\); \(1.0\times10^{-7}\ \mathrm{C\,m^{-1}}\)
+KEY: C
+SOL:
+Answer: (C) \(3.0\times10^4\ \mathrm{N\,C^{-1}}\); \(1.0\times10^{-7}\ \mathrm{C\,m^{-1}}\).
+Given: \(E_1=9.0\times10^4\ \mathrm{N\,C^{-1}}\ \text{at}\ r_1=0.020\ \mathrm m;\ r_2=0.060\ \mathrm m\)
+Formula/Principle: \(\text{Gauss's law with a coaxial cylinder: }E=\dfrac{\lambda}{2\pi\varepsilon_0r}=\dfrac{2k\lambda}{r}\)
+Step 1: \(E\propto\dfrac1r\Rightarrow E_2=9.0\times10^4\times\dfrac{2.0}{6.0}=3.0\times10^4\ \mathrm{N\,C^{-1}}\)
+Step 2: \(\lambda=\dfrac{E_1r_1}{2k}=\dfrac{9.0\times10^4\times0.020}{2\times9.0\times10^9}\)
+Worked derivation: \[\lambda=\frac{1800}{1.8\times10^{10}}=1.0\times10^{-7}\ \mathrm{C\,m^{-1}}\]
+Check: \[E_2=\frac{2\times9.0\times10^9\times1.0\times10^{-7}}{0.060}=3.0\times10^4\ \checkmark\]
+Why: \(\text{the flux through a cylinder of radius }r\ \text{and length }l\ \text{is }E(2\pi rl)=\lambda l/\varepsilon_0\)
+Why not the others: (A) \(\text{uses }1/r^2\ \text{(point charge)}\); (B) \(\text{omits the factor 2 in }2k\lambda/r\); (D) \(\text{uniform field applies to a plane sheet, not a wire}\).
+Key point: \(\text{line: }E\propto1/r;\ \text{sheet: }E\ \text{constant};\ \text{point or shell outside: }E\propto1/r^2\)
+
+@@ Q68
+format: numerical
+sub_topic: Capacitance with a dielectric slab and with a metal slab filling half the gap
+Q: A parallel-plate air capacitor has capacitance \(C_0\) and plate separation d. A slab of thickness \(d/2\) and dielectric constant 4, with the same area as the plates, is placed between them. What is the new capacitance? What would it be if a metal slab of thickness \(d/2\) were used instead?
+A) \(4C_0\); infinite
+B) \(2.5C_0\); \(2C_0\)
+C) \(1.6C_0\); infinite
+D) \(1.6C_0\); \(2C_0\)
+KEY: D
+SOL:
+Answer: (D) \(1.6C_0\); \(2C_0\).
+Given: \(C_0=\dfrac{\varepsilon_0A}{d};\ t=\dfrac d2,\ K=4\)
+Formula/Principle: \(C=\dfrac{\varepsilon_0A}{d-t+t/K}\ \text{(slab)};\ \text{metal: }K\to\infty\)
+Step 1: \(d-t+\dfrac tK=\dfrac d2+\dfrac d8=\dfrac{5d}8\)
+Step 2: \(C=\dfrac{8}{5}\dfrac{\varepsilon_0A}{d}=1.6C_0\)
+Worked derivation: \[\text{metal: }C=\frac{\varepsilon_0A}{d-d/2}=2C_0\]
+Check: \[\text{series view: }\frac1C=\frac{d/2}{\varepsilon_0A}+\frac{d/2}{4\varepsilon_0A}=\frac{5d}{8\varepsilon_0A}\ \checkmark\]
+Why: \(\text{the field inside the dielectric is reduced by }K;\ \text{inside a metal it is zero}\)
+Why not the others: (A) \(\text{treats the gap as completely filled}\); (B) \(\text{averages }K\ \text{over the gap: }(1+4)/2=2.5\); (C) \(\text{a metal slab thinner than the gap does not short the plates}\).
+Key point: \(C=\dfrac{\varepsilon_0A}{d-t(1-1/K)}\)
+
+@@ Q69
+format: numerical
+sub_topic: Current from identical cells joined in series and in parallel, and when the two arrangements give equal currents
+Q: Four identical cells, each of emf 1.5 V and internal resistance 0.50 Ω, are used to drive current through a 2.0 Ω resistor. What current flows when the cells are all in series, and when they are all in parallel? For what external resistance would the two arrangements give the same current?
+A) 1.5 A; 0.71 A; 0.50 Ω
+B) 1.5 A; 0.71 A; 2.0 Ω
+C) 1.5 A; 3.0 A; never
+D) 0.71 A; 1.5 A; 0.50 Ω
+KEY: A
+SOL:
+Answer: (A) 1.5 A; 0.71 A; 0.50 Ω.
+Given: \(n=4,\ E=1.5\ \mathrm V,\ r=0.50\ \Omega,\ R=2.0\ \Omega\)
+Formula/Principle: \(\text{series: }I=\dfrac{nE}{R+nr};\quad \text{parallel: }I=\dfrac{E}{R+r/n}\)
+Step 1: \(\text{series: }I=\dfrac{6.0}{2.0+2.0}=1.5\ \mathrm A\)
+Step 2: \(\text{parallel: }I=\dfrac{1.5}{2.0+0.125}=0.71\ \mathrm A\)
+Worked derivation: \[\frac{nE}{R+nr}=\frac{nE}{nR+r}\Rightarrow R+nr=nR+r\Rightarrow R=r=0.50\ \Omega\]
+Check: \[R=0.50:\ \text{series }6.0/2.5=2.4\ \mathrm A;\ \text{parallel }1.5/0.625=2.4\ \mathrm A\ \checkmark\]
+Why: \(\text{series is better when }R>r,\ \text{parallel when }R<r\)
+Why not the others: (B) \(\text{equal currents need }R=r,\ \text{not }R=2\ \Omega\); (C) \(\text{ignores internal resistance}\); (D) \(\text{swaps the two arrangements}\).
+Key point: \(R\gg r:\ \text{series};\ R\ll r:\ \text{parallel};\ R=r:\ \text{same}\)
+
+@@ Q70
+format: numerical
+sub_topic: Magnetic moment of a rectangular coil, torque in a field, and work to turn it round
+Q: A rectangular coil of 50 turns, 10 cm × 5.0 cm, carries 2.0 A in a uniform magnetic field of 0.40 T. The normal to the coil makes 30° with the field. What are the magnetic moment of the coil, the torque on it, and the work needed to turn it from its stable position (θ = 0°) to θ = 180°?
+A) 0.50 A m²; 0.17 N m; 0.20 J
+B) 0.010 A m²; 0.0020 N m; 0.0080 J
+C) 0.50 A m²; 0.10 N m; 0.40 J
+D) 0.50 A m²; 0.10 N m; 0.20 J
+KEY: C
+SOL:
+Answer: (C) 0.50 A m²; 0.10 N m; 0.40 J.
+Given: \(N=50,\ A=0.10\times0.050=5.0\times10^{-3}\ \mathrm{m^2},\ I=2.0\ \mathrm A,\ B=0.40\ \mathrm T,\ \theta=30^\circ\)
+Formula/Principle: \(m=NIA;\quad \tau=mB\sin\theta;\quad U=-mB\cos\theta\)
+Step 1: \(m=50\times2.0\times5.0\times10^{-3}=0.50\ \mathrm{A\,m^2}\)
+Step 2: \(\tau=0.50\times0.40\times\sin30^\circ=0.10\ \mathrm{N\,m}\)
+Worked derivation: \[W=U(180^\circ)-U(0^\circ)=mB-(-mB)=2mB=2\times0.50\times0.40=0.40\ \mathrm J\]
+Check: \[W=\int_0^\pi mB\sin\theta\,d\theta=mB[-\cos\theta]_0^\pi=2mB\ \checkmark\]
+Why: \(\text{the coil behaves like a magnetic dipole of moment }NIA\)
+Why not the others: (A) \(\text{uses }\cos\theta\ \text{for the torque and }mB\ \text{for the work}\); (B) \(\text{forgets the 50 turns}\); (D) \(\text{work is }2mB,\ \text{not }mB\).
+Key point: \(\tau=NIAB\sin\theta;\ \text{work from stable to unstable}=2mB\)
+
+@@ Q71
+format: conceptual
+sub_topic: Matching parts of the electromagnetic spectrum with their sources and uses, and ordering by frequency
+Q: Match each radiation with a typical source or use, and choose the option that also gives the correct increasing order of frequency.
+Radiations: P microwaves; Q infrared; R ultraviolet; S X-rays.
+Sources/uses: (1) high-speed electrons striking a metal target; used for imaging bones; (2) magnetron valve; used in radar and ovens; (3) hot bodies; used in physiotherapy and remote controls; (4) the Sun and arc lamps; used to sterilise and largely absorbed by the ozone layer.
+A) P-3, Q-2, R-4, S-1; order P < Q < R < S
+B) P-2, Q-3, R-4, S-1; order P < Q < R < S
+C) P-2, Q-3, R-4, S-1; order S < R < Q < P
+D) P-2, Q-4, R-3, S-1; order P < Q < R < S
+KEY: B
+SOL:
+Answer: (B) P-2, Q-3, R-4, S-1; order P < Q < R < S.
+Given: \(\text{typical wavelengths: microwave}\sim10^{-2}\ \mathrm m,\ \text{IR}\sim10^{-5}\ \mathrm m,\ \text{UV}\sim10^{-7}\ \mathrm m,\ \text{X-ray}\sim10^{-10}\ \mathrm m\)
+Formula/Principle: \(c=f\lambda\Rightarrow f=c/\lambda\ \text{(shorter wavelength, higher frequency)}\)
+Step 1: \(f_{\text{micro}}\sim\dfrac{3\times10^8}{10^{-2}}=3\times10^{10}\ \mathrm{Hz};\ f_{\text{IR}}\sim3\times10^{13}\ \mathrm{Hz}\)
+Step 2: \(f_{\text{UV}}\sim3\times10^{15}\ \mathrm{Hz};\ f_{\text{X}}\sim3\times10^{18}\ \mathrm{Hz}\)
+Worked derivation: \[f_{\text{micro}}<f_{\text{IR}}<f_{\text{UV}}<f_{\text{X}}\Rightarrow P<Q<R<S\]
+Check: \[\text{photon energy }hf:\ \text{X-ray}\sim10^{4}\ \mathrm{eV}\gg\text{UV}\sim10\ \mathrm{eV}\gg\text{IR}\sim0.1\ \mathrm{eV}\ \checkmark\]
+Why: \(\text{microwaves: magnetron, radar; IR: hot bodies; UV: Sun, sterilisation, ozone absorbs it; X-rays: fast electrons on a target}\)
+Why not the others: (A) \(\text{microwaves and infrared are swapped}\); (C) \(\text{matching right, but order reversed (increasing wavelength)}\); (D) \(\text{infrared and ultraviolet are swapped}\).
+Key point: \(\text{frequency: microwave}<\text{IR}<\text{visible}<\text{UV}<\text{X-ray}\)
+
+@@ Q72
+format: numerical
+sub_topic: Angle of a second thin prism that cancels the deviation of a first (deviation by a thin prism)
+Q: A thin crown-glass prism of angle 6.0° and refractive index 1.50 deviates a ray of yellow light. A thin flint-glass prism of refractive index 1.60 is to be combined with it so that the combination produces no net deviation of yellow light. What angle must the flint prism have, and how must it be placed?
+A) 6.0°, in the same orientation as the crown prism
+B) 5.0°, in the same orientation as the crown prism
+C) 6.0°, in the opposite orientation
+D) 5.0°, with its apex in the opposite direction (inverted)
+KEY: D
+SOL:
+Answer: (D) 5.0°, with its apex in the opposite direction (inverted).
+Given: \(A_1=6.0^\circ,\ n_1=1.50;\ n_2=1.60\)
+Formula/Principle: \(\text{thin prism: }\delta=(n-1)A;\ \text{zero net deviation: }\delta_1=\delta_2\ \text{in opposite senses}\)
+Step 1: \(\delta_1=(1.50-1)\times6.0^\circ=3.0^\circ\)
+Step 2: \((1.60-1)A_2=3.0^\circ\)
+Worked derivation: \[A_2=\frac{3.0^\circ}{0.60}=5.0^\circ,\ \text{inverted so that it bends the ray back}\]
+Check: \[\delta_{\text{net}}=0.50\times6.0^\circ-0.60\times5.0^\circ=0\ \checkmark\]
+Why: \(\text{a prism bends light towards its base; reversing the second prism reverses its deviation}\)
+Why not the others: (A) \(\text{same angle and orientation doubles the deviation}\); (B) \(\text{right angle, but the deviations would add}\); (C) \(\text{equal angles give unequal deviations because the indices differ}\).
+Key point: \(\text{thin prism: }\delta=(n-1)A;\ \text{cancel by an inverted prism of equal }\delta\)
+
+@@ Q73
+format: experiment
+sub_topic: Contrast of fringes when one slit is dimmed, and why two independent lamps give no sustained pattern
+Q: In a Young's double-slit experiment with a single monochromatic source, the intensity of light from one slit is reduced to one quarter of that from the other (for example by a filter). What is the ratio of maximum to minimum intensity in the fringe pattern? If the two slits were instead lit by two separate, identical sodium lamps, what would be seen on the screen?
+A) 4 : 1; stable fringes of lower contrast
+B) 9 : 1; no stable fringes, only uniform illumination
+C) 9 : 1; stable fringes of the same contrast
+D) 25 : 9; no stable fringes
+KEY: B
+SOL:
+Answer: (B) 9 : 1; no stable fringes, only uniform illumination.
+Given: \(I_2=\tfrac14I_1\Rightarrow a_2=\tfrac12a_1\)
+Formula/Principle: \(I\propto a^2;\ I_{\max}\propto(a_1+a_2)^2,\ I_{\min}\propto(a_1-a_2)^2;\ \text{sustained interference needs coherent sources}\)
+Step 1: \(\dfrac{I_{\max}}{I_{\min}}=\dfrac{(1+\frac12)^2}{(1-\frac12)^2}\)
+Step 2: \(=\dfrac{2.25}{0.25}\)
+Worked derivation: \[\frac{I_{\max}}{I_{\min}}=9:1\]
+Check: \[I_{\max}=I_1+I_2+2\sqrt{I_1I_2}=1+0.25+1=2.25,\ I_{\min}=1+0.25-1=0.25\ \checkmark\]
+Why: \(\text{independent lamps emit with randomly changing phases, so the pattern shifts millions of times a second and averages out}\)
+Why not the others: (A) \(\text{uses the intensity ratio directly}\); (C) \(\text{independent sources are not coherent}\); (D) \(\text{takes the amplitude ratio as }1/4\ \text{instead of }1/2\).
+Key point: \(\dfrac{I_{\max}}{I_{\min}}=\left(\dfrac{a_1+a_2}{a_1-a_2}\right)^2;\ \text{coherence needed for sustained fringes}\)
+
+@@ Q74
+format: numerical
+sub_topic: Comparing alpha-particle counts at two scattering angles, and the effect of energy on distance of closest approach
+Q: In Rutherford's experiment the number of α-particles scattered through angle θ per unit time (into equal detector areas at the same distance) is proportional to \(1/\sin^4(\theta/2)\). What is the ratio of the counts at 60° to those at 90°? If the kinetic energy of the α-particles is doubled, what happens to the distance of closest approach in a head-on collision?
+A) 4; it is halved
+B) 1/4; it is doubled
+C) 2; it is halved
+D) 4; it is doubled
+KEY: A
+SOL:
+Answer: (A) 4; it is halved.
+Given: \(N(\theta)\propto\dfrac1{\sin^4(\theta/2)};\ \theta_1=60^\circ,\ \theta_2=90^\circ;\ K\to2K\)
+Formula/Principle: \(\text{head-on: }K=\dfrac{1}{4\pi\varepsilon_0}\dfrac{(2e)(Ze)}{r_0}\Rightarrow r_0\propto\dfrac1K\)
+Step 1: \(\sin^4 30^\circ=\tfrac1{16},\ \sin^4 45^\circ=\tfrac14\)
+Step 2: \(\dfrac{N(60^\circ)}{N(90^\circ)}=\dfrac{\sin^4 45^\circ}{\sin^4 30^\circ}=\dfrac{1/4}{1/16}=4\)
+Worked derivation: \[r_0'=\frac{r_0}{2}\ \text{when }K\ \text{is doubled}\]
+Check: \[\text{counts fall steeply with angle: large deflections are rare because the nucleus is tiny}\ \checkmark\]
+Why: \(\text{all the kinetic energy becomes electrostatic potential energy at the closest point}\)
+Why not the others: (B) \(\text{inverts both results}\); (C) \(\text{uses }\sin^2\); (D) \(r_0\propto1/K,\ \text{not}\ K\).
+Key point: \(N\propto\csc^4(\theta/2);\ r_0\propto Z/K\)
+
+@@ Q75
+format: numerical
+sub_topic: Radii of two nuclei from R = R0 A^(1/3) and the constancy of nuclear density
+Q: Taking \(R=R_0A^{1/3}\) with \(R_0=1.2\) fm and the mass of a nucleon as \(1.67\times10^{-27}\) kg, what are the radii of nuclei with A = 8 and A = 216, and how do their densities compare?
+A) Radii in the ratio 1 : 27; densities equal
+B) 2.4 fm and 7.2 fm; the heavier nucleus is 27 times denser
+C) 2.4 fm and 7.2 fm; densities both about \(2.3\times10^{3}\ \mathrm{kg\,m^{-3}}\)
+D) 2.4 fm and 7.2 fm; densities equal, about \(2.3\times10^{17}\ \mathrm{kg\,m^{-3}}\)
+KEY: D
+SOL:
+Answer: (D) 2.4 fm and 7.2 fm; densities equal, about \(2.3\times10^{17}\ \mathrm{kg\,m^{-3}}\).
+Given: \(R_0=1.2\times10^{-15}\ \mathrm m;\ m=1.67\times10^{-27}\ \mathrm{kg};\ A=8,\ 216\)
+Formula/Principle: \(R=R_0A^{1/3};\quad \rho=\dfrac{Am}{\frac43\pi R_0^3A}=\dfrac{3m}{4\pi R_0^3}\)
+Step 1: \(8^{1/3}=2\Rightarrow R=2.4\ \mathrm{fm};\quad 216^{1/3}=6\Rightarrow R=7.2\ \mathrm{fm}\)
+Step 2: \(\rho=\dfrac{3\times1.67\times10^{-27}}{4\pi(1.2\times10^{-15})^3}\)
+Worked derivation: \[\rho=\frac{5.01\times10^{-27}}{2.17\times10^{-44}}\approx2.3\times10^{17}\ \mathrm{kg\,m^{-3}}\ \text{for both}\]
+Check: \[\text{volume}\propto R^3\propto A,\ \text{mass}\propto A\Rightarrow\rho\ \text{independent of }A\ \checkmark\]
+Why: \(\text{the short-range nuclear force makes nucleons pack at a fixed spacing, like drops of a liquid}\)
+Why not the others: (A) \(\text{radii scale as }A^{1/3}:\ 1:3\); (B) \(\text{density does not depend on }A\); (C) \(\text{power-of-ten error; nuclear matter is }10^{14}\ \text{times denser than water}\).
+Key point: \(R\propto A^{1/3},\ \text{so nuclear density is the same for all nuclei}\)
+
+@@ Q76
+format: conceptual
+sub_topic: Identifying a pair of physical quantities with the same dimensions
+Q: Which pair of physical quantities has the same dimensions?
+A) Work and power
+B) Force and pressure
+C) Impulse and linear momentum
+D) Planck's constant and energy
+KEY: C
+SOL:
+Answer: (C) Impulse and linear momentum.
+Given: \(\text{base dimensions }[\mathrm M],[\mathrm L],[\mathrm T]\)
+Formula/Principle: \(\text{impulse}=F\,\Delta t;\quad p=mv\)
+Step 1: \([F\,\Delta t]=[\mathrm{MLT^{-2}}][\mathrm T]=[\mathrm{MLT^{-1}}]\)
+Step 2: \([mv]=[\mathrm M][\mathrm{LT^{-1}}]=[\mathrm{MLT^{-1}}]\)
+Worked derivation: \[[\text{impulse}]=[\text{momentum}]=[\mathrm{MLT^{-1}}]\quad(\mathrm{N\,s}=\mathrm{kg\,m\,s^{-1}})\]
+Check: \[\text{impulse–momentum theorem: }F\Delta t=\Delta p\ \text{is dimensionally consistent}\ \checkmark\]
+Why: \(\text{quantities that can be equated must have the same dimensions}\)
+Why not the others: (A) \([\mathrm{ML^2T^{-2}}]\ne[\mathrm{ML^2T^{-3}}]\); (B) \([\mathrm{MLT^{-2}}]\ne[\mathrm{ML^{-1}T^{-2}}]\); (D) \([\mathrm{ML^2T^{-1}}]\ne[\mathrm{ML^2T^{-2}}]\).
+Key point: \([\text{impulse}]=[\text{momentum}]=[\mathrm{MLT^{-1}}]\)
+
+@@ Q77
+format: numerical
+sub_topic: Stopping distance of a sliding block and work done by kinetic friction (work–energy theorem)
+Q: A 2.0 kg block is given a speed of 5.0 m s⁻¹ along a rough horizontal floor, where the coefficient of kinetic friction is 0.25. How far does it slide before stopping, and how much work does friction do on it? (g = 10 m s⁻²)
+A) 5.0 m; −25 J
+B) 10 m; −25 J
+C) 5.0 m; −50 J
+D) 2.5 m; −25 J
+KEY: A
+SOL:
+Answer: (A) 5.0 m; −25 J.
+Given: \(m=2.0\ \mathrm{kg},\ u=5.0\ \mathrm{m\,s^{-1}},\ \mu_k=0.25,\ g=10\ \mathrm{m\,s^{-2}}\)
+Formula/Principle: \(\text{work–energy theorem: }W_{\text{friction}}=\Delta K;\quad f=\mu_kmg\)
+Step 1: \(f=0.25\times2.0\times10=5.0\ \mathrm N\)
+Step 2: \(W_f=0-\tfrac12(2.0)(5.0)^2=-25\ \mathrm J\)
+Worked derivation: \[-f\,s=-25\Rightarrow s=\frac{25}{5.0}=5.0\ \mathrm m\]
+Check: \[a=\mu_kg=2.5\ \mathrm{m\,s^{-2}};\ s=\frac{u^2}{2a}=\frac{25}{5}=5.0\ \mathrm m\ \checkmark\]
+Why: \(\text{all the kinetic energy is converted into heat by kinetic friction}\)
+Why not the others: (B) \(\text{uses }u^2/a\ \text{without the factor 2}\); (C) \(\text{forgets the }\tfrac12\ \text{in }K\); (D) \(\text{uses }u^2/(4a)\).
+Key point: \(\mu_kmg\,s=\tfrac12mu^2\Rightarrow s=\dfrac{u^2}{2\mu_kg}\ \text{(independent of mass)}\)
+
+@@ Q78
+format: conceptual
+sub_topic: Velocities after a head-on elastic collision with a heavier ball at rest, energy transferred, and loss in a perfectly inelastic collision
+Q: A ball of mass m moving with speed v collides head-on with a ball of mass 2m at rest. If the collision is elastic, what are the velocities of the two balls afterwards, and what fraction of the kinetic energy is transferred to the heavier ball? If instead the balls stick together, what fraction of the kinetic energy is lost?
+A) 0 and v/2; 1/2; 1/2
+B) −v/3 and 2v/3; 4/9; 1/3
+C) v/3 and v/3; 2/9; 2/3
+D) −v/3 and 2v/3; 8/9; 2/3
+KEY: D
+SOL:
+Answer: (D) −v/3 and 2v/3; 8/9; 2/3.
+Given: \(m_1=m,\ u_1=v;\ m_2=2m,\ u_2=0\)
+Formula/Principle: \(\text{elastic: }v_1=\dfrac{m_1-m_2}{m_1+m_2}u_1,\ v_2=\dfrac{2m_1}{m_1+m_2}u_1;\ \text{inelastic: momentum conserved only}\)
+Step 1: \(v_1=\dfrac{m-2m}{3m}v=-\dfrac v3;\quad v_2=\dfrac{2m}{3m}v=\dfrac{2v}3\)
+Step 2: \(\dfrac{K_2}{K}=\dfrac{\frac12(2m)\frac{4v^2}{9}}{\frac12mv^2}=\dfrac89\)
+Step 3: \(\text{sticking: }V=\dfrac{mv}{3m}=\dfrac v3;\ K'=\tfrac12(3m)\tfrac{v^2}9=\tfrac13K\)
+Worked derivation: \[\text{fraction lost}=1-\frac13=\frac23\]
+Check: \[\text{elastic: momentum }m(-\tfrac v3)+2m(\tfrac{2v}3)=mv\ \checkmark;\ K:\ \tfrac19+\tfrac89=1\ \checkmark\]
+Why: \(\text{the lighter ball bounces back; the heavier takes most of the energy}\)
+Why not the others: (A) \(\text{only equal masses exchange velocities}\); (B) \(\text{forgets the mass factor 2 in }K_2\ \text{and the loss}\); (C) \(\text{describes a perfectly inelastic collision, not an elastic one}\).
+Key point: \(\text{elastic, target at rest: }v_2=\dfrac{2m_1u_1}{m_1+m_2};\ \text{sticking loses }\dfrac{m_2}{m_1+m_2}\ \text{of }K\)
+
+@@ Q79
+format: conceptual
+sub_topic: Conservation of angular momentum for a disc dropped on a rotating disc and for a skater pulling in the arms
+Q: (i) A disc rotates freely about a vertical axis with angular velocity \(\omega_0\). An identical disc, not rotating, is dropped gently on it coaxially, and the two stick together. (ii) A skater spinning on ice pulls in her arms so that her moment of inertia is halved. Which statement is correct?
+A) (i) The final angular velocity is \(\omega_0/2\) and no kinetic energy is lost; (ii) her angular velocity doubles and her kinetic energy is unchanged
+B) (i) The final angular velocity is \(\omega_0\); (ii) her angular velocity is unchanged
+C) (i) The final angular velocity is \(\omega_0/2\) and half the kinetic energy is lost; (ii) her angular velocity doubles and her kinetic energy doubles, the extra energy coming from the work she does pulling her arms in
+D) (i) The final angular velocity is \(\omega_0/2\) and half the kinetic energy is lost; (ii) her angular velocity doubles but her kinetic energy is unchanged
+KEY: C
+SOL:
+Answer: (C) (i) The final angular velocity is \(\omega_0/2\) and half the kinetic energy is lost; (ii) her angular velocity doubles and her kinetic energy doubles, the extra energy coming from the work she does pulling her arms in.
+Given: \(\text{(i) }I_1=I_2=I;\ \text{(ii) }I'=I/2\)
+Formula/Principle: \(\text{no external torque about the axis}\Rightarrow L=I\omega=\text{constant};\ K=\dfrac{L^2}{2I}\)
+Step 1: \(\text{(i) }I\omega_0=2I\omega\Rightarrow\omega=\omega_0/2\)
+Step 2: \(\text{(i) }K'=\tfrac12(2I)\tfrac{\omega_0^2}4=\tfrac12\left(\tfrac12I\omega_0^2\right)\Rightarrow\text{half lost (friction between discs)}\)
+Worked derivation: \[\text{(ii) }\omega'=2\omega,\quad K'=\frac{L^2}{2(I/2)}=2K\]
+Check: \[\text{(ii) }K'=\tfrac12\cdot\tfrac I2\cdot4\omega^2=I\omega^2=2\left(\tfrac12I\omega^2\right)\ \checkmark\]
+Why: \(\text{angular momentum is conserved in both, but kinetic energy is not: it is lost in (i) and supplied by muscles in (ii)}\)
+Why not the others: (A) \(\text{(i) is like a perfectly inelastic collision, so energy is lost}\); (B) \(\text{moment of inertia changes in both}\); (D) \(\text{with }L\ \text{fixed, }K\propto1/I\).
+Key point: \(L\ \text{conserved};\ K=L^2/2I\ \text{changes when }I\ \text{changes}\)
+
+@@ Q80
+format: graph
+sub_topic: Identifying kinetic, potential and total energy curves of a satellite against orbital radius
+image: NEST_T05_Q80.png
+alt: Graph of energy against orbital radius from R to 5R for circular orbits. Curve P is positive and falls from +1 at R towards zero; curve Q is negative, starting at −2 at R and rising towards zero; curve R is negative, starting at −1 at R and rising towards zero. Energy is in units of GMm over 2R.
+Q: The figure shows three curves P, Q and R giving energies of a satellite of mass m in circular orbits of radius r around a planet of mass M and radius R (potential energy zero at infinity). Read the values from the figure. Which identification is correct, and what relation holds at every r?
+A) P is the potential energy, Q the kinetic energy, R the total energy; Q = −2P
+B) P is the kinetic energy, Q the potential energy, R the total energy; Q = −2P and R = −P
+C) P is the total energy, Q the potential energy, R the kinetic energy; R = −P
+D) P is the kinetic energy, Q the total energy, R the potential energy; R = −2P
+KEY: B
+SOL:
+Answer: (B) P is the kinetic energy, Q the potential energy, R the total energy; Q = −2P and R = −P.
+Given: \(\text{from the figure (units }GMm/2R):\ \text{at }r=R:\ P=+1,\ Q=-2,\ R=-1;\ \text{all tend to }0\ \text{as }r\to\infty\)
+Formula/Principle: \(K=\dfrac{GMm}{2r},\quad U=-\dfrac{GMm}{r},\quad E=K+U=-\dfrac{GMm}{2r}\)
+Step 1: \(K>0\ \text{and falls as }1/r\Rightarrow P\)
+Step 2: \(U=-2K\ \text{is the most negative}\Rightarrow Q\)
+Worked derivation: \[E=-K\Rightarrow\text{curve R};\quad \text{at }r=R:\ K=+1,\ U=-2,\ E=-1\ \text{(units }GMm/2R)\]
+Check: \[\text{at }r=2R\ \text{(from the figure): }P=+0.5,\ Q=-1,\ R=-0.5\ \text{— ratios unchanged}\ \checkmark\]
+Why: \(\text{a bound circular orbit has negative total energy equal to minus its kinetic energy}\)
+Why not the others: (A) \(\text{potential energy is negative, so it cannot be }P\); (C) \(\text{total energy is negative, so it cannot be }P\); (D) \(\text{the most negative curve is }U,\ \text{not }E\).
+Key point: \(\text{circular orbit: }U=-2K,\ E=-K\)

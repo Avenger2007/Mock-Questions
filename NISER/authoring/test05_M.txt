@@ -1,0 +1,423 @@
+@@ Q41
+format: numerical
+sub_topic: Counting integer values of a coefficient for which a quadratic has integer roots
+Q: For how many integer values of k does the equation \(x^2-kx+12=0\) have both roots integers?
+A) 3
+B) 4
+C) 12
+D) 6
+KEY: D
+SOL:
+Answer: (D) 6.
+Given: \(x^2-kx+12=0\ \text{with integer roots }\alpha,\beta\)
+Formula/Principle: \(\alpha\beta=12,\quad \alpha+\beta=k\)
+Step 1: \(\text{positive factor pairs: }(1,12),(2,6),(3,4)\Rightarrow k=13,8,7\)
+Step 2: \(\text{negative pairs: }(-1,-12),(-2,-6),(-3,-4)\Rightarrow k=-13,-8,-7\)
+Worked derivation: \[k\in\{\pm7,\pm8,\pm13\}\Rightarrow6\ \text{values}\]
+Check: \[k=7:\ x^2-7x+12=(x-3)(x-4)\ \checkmark;\quad k=-8:\ x^2+8x+12=(x+2)(x+6)\ \checkmark\]
+Why: \(\text{integer roots must be a factor pair of the constant term}\)
+Why not the others: (A) \(\text{only positive pairs}\); (B) \(\text{miscounts the pairs}\); (C) \(\text{counts ordered pairs, but }(\alpha,\beta)\ \text{and }(\beta,\alpha)\ \text{give the same }k\).
+Key point: \(\text{integer roots}\Rightarrow\text{factor pairs of }c;\ \text{each unordered pair gives one }k\)
+
+@@ Q42
+format: numerical
+sub_topic: Number of triangles formed from points with some collinear
+Q: There are 12 points in a plane, of which exactly 5 lie on one straight line; no other three of the points are collinear. How many triangles can be formed with vertices at these points?
+A) 210
+B) 220
+C) 57
+D) 200
+KEY: A
+SOL:
+Answer: (A) 210.
+Given: \(12\ \text{points};\ 5\ \text{collinear};\ \text{no other three collinear}\)
+Formula/Principle: \(\text{triangles}=\binom{12}{3}-\binom53\ \text{(collinear triples give no triangle)}\)
+Step 1: \(\binom{12}3=220\)
+Step 2: \(\binom53=10\)
+Worked derivation: \[220-10=210\]
+Check: \[\text{direct: }\binom73+\binom72\binom51+\binom71\binom52=35+105+70=210\ \checkmark\]
+Why: \(\text{three points on one line form a degenerate triangle with zero area}\)
+Why not the others: (B) \(\text{does not remove collinear triples}\); (C) \(\text{this is the number of distinct lines}\); (D) \(\text{removes }\binom52=10\ \text{twice}\).
+Key point: \(\text{subtract the selections that fail (collinear triples)}\)
+
+@@ Q43
+format: numerical
+sub_topic: Sums of areas and perimeters of nested squares formed by joining midpoints (infinite G.P.)
+Q: A square has side a. A second square is formed by joining the midpoints of its sides, a third by joining the midpoints of the sides of the second, and so on without end. What are the sum of the areas and the sum of the perimeters of all the squares?
+A) \(2a^2\); \(8a\)
+B) \(\dfrac{a^2}{2}\); \(4\sqrt2\,a\)
+C) \(2a^2\); \(4(2+\sqrt2)\,a\)
+D) \(\dfrac{4a^2}{3}\); \(8a\)
+KEY: C
+SOL:
+Answer: (C) \(2a^2\); \(4(2+\sqrt2)\,a\).
+Given: \(\text{first side }a;\ \text{each new side}=\tfrac12\times\text{diagonal of the previous square}\)
+Formula/Principle: \(S_\infty=\dfrac{a_1}{1-r},\ |r|<1\)
+Step 1: \(\text{sides: }a,\ \dfrac a{\sqrt2},\ \dfrac a2,\ldots\Rightarrow r=\dfrac1{\sqrt2}\)
+Step 2: \(\text{areas: }a^2,\ \dfrac{a^2}2,\ldots;\ S=\dfrac{a^2}{1-\frac12}=2a^2\)
+Worked derivation: \[\text{perimeters: }S=\frac{4a}{1-\frac1{\sqrt2}}=\frac{4\sqrt2\,a}{\sqrt2-1}=4\sqrt2(\sqrt2+1)a=4(2+\sqrt2)a\]
+Check: \[\text{each new square has half the area of the previous one, and the total area }2a^2\ \text{is finite}\ \checkmark\]
+Why: \(\text{lengths shrink by }1/\sqrt2\ \text{and areas by }1/2\ \text{at each step}\)
+Why not the others: (A) \(\text{uses ratio }\tfrac12\ \text{for perimeters}\); (B) \(\text{gives only the second terms}\); (D) \(\text{uses ratio }\tfrac14\ \text{for areas}\).
+Key point: \(\text{nested midpoint squares: length ratio }1/\sqrt2,\ \text{area ratio }1/2\)
+
+@@ Q44
+format: numerical
+sub_topic: Locus of points at a fixed distance from a given line
+Q: Which lines form the locus of points at a distance of 2 units from the line \(3x+4y-8=0\)?
+A) \(3x+4y-10=0\) and \(3x+4y-6=0\)
+B) \(3x+4y-18=0\) and \(3x+4y+2=0\)
+C) \(4x-3y-10=0\) and \(4x-3y+10=0\)
+D) \(3x+4y-18=0\) only
+KEY: B
+SOL:
+Answer: (B) \(3x+4y-18=0\) and \(3x+4y+2=0\).
+Given: \(\text{line }3x+4y-8=0;\ \text{distance }2\)
+Formula/Principle: \(d=\dfrac{|ax_0+by_0+c|}{\sqrt{a^2+b^2}}\)
+Step 1: \(\dfrac{|3x+4y-8|}{5}=2\Rightarrow|3x+4y-8|=10\)
+Step 2: \(3x+4y-8=10\ \text{or}\ 3x+4y-8=-10\)
+Worked derivation: \[3x+4y-18=0\quad\text{or}\quad3x+4y+2=0\]
+Check: \[\text{distance between the two lines}=\frac{|-18-2|}{5}=4=2\times2\ \checkmark\]
+Why: \(\text{the locus is a pair of parallel lines, one on each side}\)
+Why not the others: (A) \(\text{forgets to multiply by }\sqrt{a^2+b^2}=5\); (C) \(\text{these are perpendicular to the given line}\); (D) \(\text{misses the line on the other side}\).
+Key point: \(\text{lines parallel to }ax+by+c=0\ \text{at distance }d:\ ax+by+c\pm d\sqrt{a^2+b^2}=0\)
+
+@@ Q45
+format: numerical
+sub_topic: Centre and radius of the circle through three given points
+Q: What are the centre and radius of the circle passing through \((0,0)\), \((4,0)\) and \((0,6)\)?
+A) Centre \((2,3)\), radius \(\sqrt{13}\)
+B) Centre \((2,3)\), radius 13
+C) Centre \((-2,-3)\), radius \(\sqrt{13}\)
+D) Centre \((4,6)\), radius \(\sqrt{52}\)
+KEY: A
+SOL:
+Answer: (A) Centre \((2,3)\), radius \(\sqrt{13}\).
+Given: \(\text{points }(0,0),(4,0),(0,6)\)
+Formula/Principle: \(x^2+y^2+2gx+2fy+c=0;\ \text{centre }(-g,-f),\ r=\sqrt{g^2+f^2-c}\)
+Step 1: \((0,0):\ c=0\)
+Step 2: \((4,0):\ 16+8g=0\Rightarrow g=-2;\quad (0,6):\ 36+12f=0\Rightarrow f=-3\)
+Worked derivation: \[x^2+y^2-4x-6y=0:\ \text{centre }(2,3),\ r=\sqrt{4+9}=\sqrt{13}\]
+Check: \[\text{the angle at }(0,0)\ \text{is }90^\circ,\ \text{so }(4,0)\text{–}(0,6)\ \text{is a diameter: midpoint }(2,3),\ \text{half-length }\tfrac12\sqrt{52}=\sqrt{13}\ \checkmark\]
+Why: \(\text{the angle in a semicircle is a right angle}\)
+Why not the others: (B) \(13\ \text{is }r^2\); (C) \(\text{sign of the centre}\); (D) \(\text{uses the whole diameter}\).
+Key point: \(\text{right angle at a vertex}\Rightarrow\text{the opposite side is a diameter}\)
+
+@@ Q46
+format: numerical
+sub_topic: Points of a parabola at a given focal distance
+Q: For the parabola \(y^2=12x\), which points are at a distance of 15 units from the focus?
+A) \((15,\pm\sqrt{180})\)
+B) \((12,\pm6)\)
+C) \((9,\pm6\sqrt3)\)
+D) \((12,\pm12)\)
+KEY: D
+SOL:
+Answer: (D) \((12,\pm12)\).
+Given: \(y^2=12x=4ax\Rightarrow a=3;\ \text{focal distance}=15\)
+Formula/Principle: \(\text{focus }(a,0),\ \text{directrix }x=-a;\ \text{focal distance}=x+a\)
+Step 1: \(x+3=15\Rightarrow x=12\)
+Step 2: \(y^2=12\times12=144\Rightarrow y=\pm12\)
+Worked derivation: \[\text{distance from }(3,0)\ \text{to }(12,12)=\sqrt{81+144}=\sqrt{225}=15\]
+Check: \[\text{distance from }(12,12)\ \text{to directrix }x=-3\ \text{is }15\ \checkmark\]
+Why: \(\text{every point of a parabola is equidistant from focus and directrix}\)
+Why not the others: (A) \(\text{takes }x=15\ \text{(forgets }a)\); (B) \(y^2=36\ne144\); (C) \(x+3=12\ne15\).
+Key point: \(\text{on }y^2=4ax:\ SP=x+a\)
+
+@@ Q47
+format: numerical
+sub_topic: Rates of change of the area and circumference of a growing circle
+Q: The radius of a circular ripple increases at 2 cm s⁻¹. At the instant when the radius is 5 cm, how fast are its area and its circumference increasing?
+A) \(10\pi\ \mathrm{cm^2\,s^{-1}}\); \(4\pi\ \mathrm{cm\,s^{-1}}\)
+B) \(20\pi\ \mathrm{cm^2\,s^{-1}}\); \(4\pi\ \mathrm{cm\,s^{-1}}\)
+C) \(20\pi\ \mathrm{cm^2\,s^{-1}}\); \(2\pi\ \mathrm{cm\,s^{-1}}\)
+D) \(25\pi\ \mathrm{cm^2\,s^{-1}}\); \(4\pi\ \mathrm{cm\,s^{-1}}\)
+KEY: B
+SOL:
+Answer: (B) \(20\pi\ \mathrm{cm^2\,s^{-1}}\); \(4\pi\ \mathrm{cm\,s^{-1}}\).
+Given: \(\dfrac{dr}{dt}=2\ \mathrm{cm\,s^{-1}},\ r=5\ \mathrm{cm}\)
+Formula/Principle: \(A=\pi r^2,\ C=2\pi r;\ \dfrac{dA}{dt}=\dfrac{dA}{dr}\dfrac{dr}{dt}\)
+Step 1: \(\dfrac{dA}{dt}=2\pi r\dfrac{dr}{dt}=2\pi(5)(2)=20\pi\)
+Step 2: \(\dfrac{dC}{dt}=2\pi\dfrac{dr}{dt}=4\pi\)
+Worked derivation: \[\frac{dA}{dt}=20\pi\ \mathrm{cm^2\,s^{-1}},\qquad \frac{dC}{dt}=4\pi\ \mathrm{cm\,s^{-1}}\]
+Check: \[\frac{dA}{dt}=C\cdot\frac{dr}{dt}=10\pi\times2=20\pi\ \checkmark\]
+Why: \(\text{the area grows by a thin ring of length }C\ \text{and width }dr\)
+Why not the others: (A) \(\text{uses }\pi r\ \text{instead of }2\pi r\); (C) \(\text{forgets the factor }dr/dt\ \text{in }dC/dt\); (D) \(\text{gives the area itself}\).
+Key point: \(\text{chain rule: }\dfrac{dA}{dt}=A'(r)\dfrac{dr}{dt}\)
+
+@@ Q48
+format: numerical
+sub_topic: Finding the contents of a bag from a given posterior probability (Bayes' theorem)
+Q: Bag A has 3 red balls and 1 white ball. Bag B has 4 balls, of which n are red and the rest white. A bag is chosen at random and a ball drawn from it is red. If the probability that it came from bag A is \(\dfrac35\), what is n?
+A) 1
+B) 3
+C) 2
+D) 4
+KEY: C
+SOL:
+Answer: (C) 2.
+Given: \(P(A)=P(B)=\tfrac12;\ P(R\mid A)=\tfrac34;\ P(R\mid B)=\tfrac n4;\ P(A\mid R)=\tfrac35\)
+Formula/Principle: \(P(A\mid R)=\dfrac{P(A)P(R\mid A)}{P(A)P(R\mid A)+P(B)P(R\mid B)}\)
+Step 1: \(P(A\mid R)=\dfrac{\frac12\cdot\frac34}{\frac12\cdot\frac34+\frac12\cdot\frac n4}=\dfrac{3}{3+n}\)
+Step 2: \(\dfrac3{3+n}=\dfrac35\Rightarrow3+n=5\)
+Worked derivation: \[n=2\]
+Check: \[P(A\mid R)=\frac{3/8}{3/8+2/8}=\frac35\ \checkmark\]
+Why: \(\text{with equal priors, the posterior ratio equals the ratio of likelihoods }3:n\)
+Why not the others: (A) \(\text{gives }3/4\); (B) \(\text{gives }1/2\); (D) \(\text{gives }3/7\).
+Key point: \(\text{equal priors}\Rightarrow P(A\mid R)=\dfrac{P(R\mid A)}{P(R\mid A)+P(R\mid B)}\)
+
+@@ Q49
+format: numerical
+sub_topic: Number of solutions of an equation with inverse tangents, using principal values
+Q: How many real solutions does \(\tan^{-1}(2x)+\tan^{-1}(3x)=\dfrac\pi4\) have?
+A) 0
+B) 2
+C) 3
+D) 1
+KEY: D
+SOL:
+Answer: (D) 1.
+Given: \(\tan^{-1}(2x)+\tan^{-1}(3x)=\tfrac\pi4\)
+Formula/Principle: \(\tan(\alpha+\beta)=\dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta};\ \tan^{-1}\in\left(-\tfrac\pi2,\tfrac\pi2\right)\)
+Step 1: \(\dfrac{2x+3x}{1-6x^2}=1\Rightarrow6x^2+5x-1=0\)
+Step 2: \((6x-1)(x+1)=0\Rightarrow x=\tfrac16\ \text{or}\ x=-1\)
+Step 3: \(x=-1:\ \tan^{-1}(-2)+\tan^{-1}(-3)<0\ne\tfrac\pi4\ \text{(it equals }-\tfrac{3\pi}4)\)
+Worked derivation: \[x=\tfrac16:\ \tan^{-1}\tfrac13+\tan^{-1}\tfrac12=\tan^{-1}\frac{\frac13+\frac12}{1-\frac16}=\tan^{-1}1=\frac\pi4\ \checkmark\]
+Check: \[\text{LHS is increasing in }x,\ \text{so it takes the value }\pi/4\ \text{exactly once}\ \checkmark\]
+Why: \(\text{taking tan of both sides can add a root whose angle sum differs by }\pi\)
+Why not the others: (A) \(x=\tfrac16\ \text{works}\); (B) \(\text{keeps the extraneous root }-1\); (C) \(\text{a quadratic has at most two roots}\).
+Key point: \(\text{after taking tan, check each root in the original equation}\)
+
+@@ Q50
+format: numerical
+sub_topic: Conditions on two parameters for a 3 × 3 linear system to have a unique, no or infinitely many solutions
+Q: For the system \(x+y+z=6\), \(x+2y+3z=10\), \(x+2y+\lambda z=\mu\), which statement is correct?
+A) Unique solution if \(\lambda\ne3\); no solution if \(\lambda=3,\ \mu=10\)
+B) Unique solution if and only if \(\mu\ne10\)
+C) Unique solution if \(\lambda\ne3\); infinitely many if \(\lambda=3,\ \mu=10\); no solution if \(\lambda=3,\ \mu\ne10\)
+D) Infinitely many solutions if \(\lambda\ne3\)
+KEY: C
+SOL:
+Answer: (C) Unique solution if \(\lambda\ne3\); infinitely many if \(\lambda=3,\ \mu=10\); no solution if \(\lambda=3,\ \mu\ne10\).
+Given: \(A=\begin{pmatrix}1&1&1\\1&2&3\\1&2&\lambda\end{pmatrix},\ B=\begin{pmatrix}6\\10\\\mu\end{pmatrix}\)
+Formula/Principle: \(|A|\ne0\Rightarrow\text{unique};\ |A|=0\Rightarrow\text{check consistency}\)
+Step 1: \(|A|=1(2\lambda-6)-1(\lambda-3)+1(2-2)=\lambda-3\)
+Step 2: \(\lambda=3:\ \text{eq. 3}-\text{eq. 2 gives }0=\mu-10\)
+Worked derivation: \[\mu=10:\ \text{eq. 3 = eq. 2, two independent equations}\Rightarrow\infty\ \text{solutions};\quad \mu\ne10:\ \text{contradiction}\]
+Check: \[\lambda=3,\mu=10:\ z=t,\ y=4-2t,\ x=2+t\ \text{satisfies all three}\ \checkmark\]
+Why: \(\text{when }|A|=0\ \text{the third equation must agree with the second to be consistent}\)
+Why not the others: (A) \(\mu=10\ \text{gives infinitely many, not none}\); (B) \(\text{uniqueness depends on }\lambda,\ \text{not }\mu\); (D) \(\lambda\ne3\ \text{gives a unique solution}\).
+Key point: \(|A|\ne0:\ \text{unique};\ |A|=0:\ \text{consistent}\Rightarrow\infty,\ \text{inconsistent}\Rightarrow\text{none}\)
+
+@@ Q51
+format: numerical
+sub_topic: Value of a parameter making a piecewise function continuous, seen as joining a line to a cosine curve
+Q: Let \(f(x)=kx+1\) for \(x\le\pi\) and \(f(x)=\cos x\) for \(x>\pi\). For which value of k is f continuous at \(x=\pi\)?
+A) \(-\dfrac2\pi\)
+B) \(\dfrac2\pi\)
+C) \(-\dfrac1\pi\)
+D) 0
+KEY: A
+SOL:
+Answer: (A) \(-\dfrac2\pi\).
+Given: \(f(x)=kx+1\ (x\le\pi),\ f(x)=\cos x\ (x>\pi)\)
+Formula/Principle: \(\text{continuity at }a:\ \lim_{x\to a^-}f=\lim_{x\to a^+}f=f(a)\)
+Step 1: \(\text{left limit}=f(\pi)=k\pi+1\)
+Step 2: \(\text{right limit}=\cos\pi=-1\)
+Worked derivation: \[k\pi+1=-1\Rightarrow k=-\frac2\pi\]
+Check: \[\text{the line }y=1-\tfrac{2}{\pi}x\ \text{passes through }(0,1)\ \text{and}\ (\pi,-1),\ \text{the point where the cosine part starts}\ \checkmark\]
+Why: \(\text{geometrically, the line through }(0,1)\ \text{must meet the cosine curve at }(\pi,-1)\)
+Why not the others: (B) \(\text{gives }f(\pi)=3\); (C) \(\text{gives }f(\pi)=0\); (D) \(\text{gives }f(\pi)=1\).
+Key point: \(\text{match the two one-sided limits at the joining point}\)
+
+@@ Q52
+format: numerical
+sub_topic: Dimensions of a closed cylindrical can of fixed volume with least surface area
+Q: A closed cylindrical can must hold \(128\pi\ \mathrm{cm^3}\). What radius and height make its total surface area least, and what is that area?
+A) r = 4 cm, h = 4 cm; \(64\pi\ \mathrm{cm^2}\)
+B) r = 4 cm, h = 8 cm; \(96\pi\ \mathrm{cm^2}\)
+C) r = 8 cm, h = 2 cm; \(160\pi\ \mathrm{cm^2}\)
+D) r = 2 cm, h = 32 cm; \(136\pi\ \mathrm{cm^2}\)
+KEY: B
+SOL:
+Answer: (B) r = 4 cm, h = 8 cm; \(96\pi\ \mathrm{cm^2}\).
+Given: \(\pi r^2h=128\pi\Rightarrow h=\dfrac{128}{r^2}\)
+Formula/Principle: \(S=2\pi r^2+2\pi rh;\ S'(r)=0,\ S''>0\Rightarrow\text{minimum}\)
+Step 1: \(S(r)=2\pi r^2+\dfrac{256\pi}{r}\)
+Step 2: \(S'(r)=4\pi r-\dfrac{256\pi}{r^2}=0\Rightarrow r^3=64\Rightarrow r=4\)
+Step 3: \(S''(r)=4\pi+\dfrac{512\pi}{r^3}>0\Rightarrow\text{minimum};\ h=\dfrac{128}{16}=8\)
+Worked derivation: \[S=2\pi(16)+2\pi(4)(8)=32\pi+64\pi=96\pi\ \mathrm{cm^2}\]
+Check: \[r=2:\ S=8\pi+128\pi=136\pi>96\pi;\quad r=8:\ S=128\pi+32\pi=160\pi>96\pi\ \checkmark\]
+Why: \(\text{at the optimum the height equals the diameter }(h=2r)\)
+Why not the others: (A) \(\text{volume would be }64\pi\); (C) \(\text{right volume but larger area}\); (D) \(\text{right volume but larger area}\).
+Key point: \(\text{closed cylinder, fixed volume, least area}\Rightarrow h=2r\)
+
+@@ Q53
+format: numerical
+sub_topic: Evaluating a definite integral as areas of a semicircle and triangles
+Q: What is the value of \(\displaystyle\int_0^4\left(\sqrt{4x-x^2}+|x-2|\right)dx\)?
+A) \(4\pi+4\)
+B) \(2\pi\)
+C) \(2\pi+4\)
+D) \(\pi+4\)
+KEY: C
+SOL:
+Answer: (C) \(2\pi+4\).
+Given: \(\displaystyle I=\int_0^4\sqrt{4x-x^2}\,dx+\int_0^4|x-2|\,dx\)
+Formula/Principle: \(\text{definite integral of a non-negative function}=\text{area under its graph}\)
+Step 1: \(y=\sqrt{4x-x^2}=\sqrt{4-(x-2)^2}\Rightarrow(x-2)^2+y^2=4,\ y\ge0:\ \text{upper semicircle, radius 2}\)
+Step 2: \(\text{area}=\tfrac12\pi(2)^2=2\pi\)
+Step 3: \(|x-2|\ \text{on }[0,4]:\ \text{two triangles of base 2 and height 2, area }2+2=4\)
+Worked derivation: \[I=2\pi+4\]
+Check: \[\int_0^4|x-2|dx=\int_0^2(2-x)dx+\int_2^4(x-2)dx=2+2=4\ \checkmark\]
+Why: \(\text{completing the square shows the curve is a semicircle}\)
+Why not the others: (A) \(\text{uses the full circle}\); (B) \(\text{misses the modulus part}\); (D) \(\text{uses a quarter circle}\).
+Key point: \(\textstyle\int\sqrt{r^2-(x-h)^2}\,dx\ \text{over }[h-r,h+r]=\tfrac12\pi r^2\)
+
+@@ Q54
+format: numerical
+sub_topic: Finding the upper limit of a definite integral evaluated by the substitution t = ln x
+Q: If \(\displaystyle\int_1^a\frac{\ln x}{x}\,dx=2\) and \(a>1\), what is a?
+A) \(e\)
+B) \(e^4\)
+C) 4
+D) \(e^2\)
+KEY: D
+SOL:
+Answer: (D) \(e^2\).
+Given: \(\displaystyle\int_1^a\frac{\ln x}{x}dx=2,\ a>1\)
+Formula/Principle: \(t=\ln x,\ dt=\dfrac{dx}{x}\)
+Step 1: \(\text{limits: }x=1\to t=0;\ x=a\to t=\ln a\)
+Step 2: \(\displaystyle\int_0^{\ln a}t\,dt=\frac{(\ln a)^2}{2}=2\)
+Worked derivation: \[(\ln a)^2=4\Rightarrow\ln a=2\ (a>1)\Rightarrow a=e^2\]
+Check: \[\int_1^{e^2}\frac{\ln x}{x}dx=\left[\tfrac12(\ln x)^2\right]_1^{e^2}=\tfrac12(4)-0=2\ \checkmark\]
+Why: \(\text{the factor }1/x\ \text{is the derivative of }\ln x\)
+Why not the others: (A) \(\text{gives }\tfrac12\); (B) \(\text{takes }\ln a=4\ \text{(forgets the square)}\); (C) \(\text{takes }a=(\ln a)^2\).
+Key point: \(\textstyle\int\frac{\ln x}{x}dx=\frac12(\ln x)^2+C\)
+
+@@ Q55
+format: numerical
+sub_topic: Solving a linear differential equation of the form dx/dy + Px = Q with an initial condition
+Q: A curve satisfies \(\dfrac{dx}{dy}+x=y\), and \(x=0\) when \(y=0\). What is the value of x when \(y=1\)?
+A) 0
+B) \(\dfrac1e\)
+C) \(1-\dfrac1e\)
+D) \(e-2\)
+KEY: B
+SOL:
+Answer: (B) \(\dfrac1e\).
+Given: \(\dfrac{dx}{dy}+x=y,\ x(0)=0\)
+Formula/Principle: \(\dfrac{dx}{dy}+P(y)x=Q(y):\ \text{IF}=e^{\int P\,dy},\ x\cdot\text{IF}=\textstyle\int Q\cdot\text{IF}\,dy+C\)
+Step 1: \(\text{IF}=e^{y}\)
+Step 2: \(xe^y=\textstyle\int ye^y\,dy=(y-1)e^y+C\)
+Step 3: \(y=0,\ x=0:\ 0=-1+C\Rightarrow C=1\)
+Worked derivation: \[x=y-1+e^{-y}\Rightarrow x(1)=1-1+e^{-1}=\frac1e\]
+Check: \[\frac{dx}{dy}=1-e^{-y};\ \frac{dx}{dy}+x=1-e^{-y}+y-1+e^{-y}=y\ \checkmark\]
+Why: \(\text{here }x\ \text{is the dependent variable, so the integrating factor is a function of }y\)
+Why not the others: (A) \(\text{drops }e^{-y}\); (C) \(\text{sign of }C\ \text{reversed}\); (D) \(\text{uses IF}=e^{-y}\).
+Key point: \(\text{linear in }x:\ \text{IF}=e^{\int P(y)dy}\)
+
+@@ Q56
+format: numerical
+sub_topic: Area of a triangle in space using the vector product
+Q: What is the area of the triangle with vertices \(A(1,1,1)\), \(B(1,2,3)\) and \(C(2,3,1)\)?
+A) \(\dfrac{\sqrt{21}}{2}\)
+B) \(\sqrt{21}\)
+C) \(\dfrac{21}{2}\)
+D) \(\dfrac{\sqrt{14}}{2}\)
+KEY: A
+SOL:
+Answer: (A) \(\dfrac{\sqrt{21}}{2}\).
+Given: \(A(1,1,1),\ B(1,2,3),\ C(2,3,1)\)
+Formula/Principle: \(\text{Area}=\tfrac12\left|\vec{AB}\times\vec{AC}\right|\)
+Step 1: \(\vec{AB}=(0,1,2),\ \vec{AC}=(1,2,0)\)
+Step 2: \(\vec{AB}\times\vec{AC}=(1\cdot0-2\cdot2,\ 2\cdot1-0\cdot0,\ 0\cdot2-1\cdot1)=(-4,2,-1)\)
+Worked derivation: \[\text{Area}=\tfrac12\sqrt{16+4+1}=\frac{\sqrt{21}}2\]
+Check: \[(-4,2,-1)\cdot(0,1,2)=0,\ (-4,2,-1)\cdot(1,2,0)=0\ \checkmark\ \text{(perpendicular to both sides)}\]
+Why: \(|\vec a\times\vec b|\ \text{is the area of the parallelogram; the triangle is half of it}\)
+Why not the others: (B) \(\text{parallelogram area}\); (C) \(\text{forgets the square root}\); (D) \(\text{arithmetic slip in a component}\).
+Key point: \(\triangle=\tfrac12|\vec{AB}\times\vec{AC}|\)
+
+@@ Q57
+format: numerical
+sub_topic: Angle and shortest distance between two skew lines in parallel horizontal planes
+Q: Find the angle between the lines \(\vec r=\lambda(\hat i+\hat j)\) and \(\vec r=3\hat k+\mu(\hat i-\hat j)\), and the shortest distance between them.
+A) 45°; 3
+B) 90°; 0
+C) 60°; \(\dfrac3{\sqrt2}\)
+D) 90°; 3
+KEY: D
+SOL:
+Answer: (D) 90°; 3.
+Given: \(\vec a_1=\vec0,\ \vec b_1=(1,1,0);\ \vec a_2=(0,0,3),\ \vec b_2=(1,-1,0)\)
+Formula/Principle: \(\cos\theta=\dfrac{|\vec b_1\cdot\vec b_2|}{|\vec b_1||\vec b_2|};\quad d=\dfrac{|(\vec a_2-\vec a_1)\cdot(\vec b_1\times\vec b_2)|}{|\vec b_1\times\vec b_2|}\)
+Step 1: \(\vec b_1\cdot\vec b_2=1-1+0=0\Rightarrow\theta=90^\circ\)
+Step 2: \(\vec b_1\times\vec b_2=(0,0,-2)\)
+Worked derivation: \[d=\frac{|(0,0,3)\cdot(0,0,-2)|}{2}=\frac62=3\]
+Check: \[\text{line 1 lies in the plane }z=0\ \text{and line 2 in }z=3;\ \text{the common perpendicular is along }\hat k,\ \text{length }3\ \checkmark\]
+Why: \(\text{the lines are skew: perpendicular in direction and in parallel planes 3 apart}\)
+Why not the others: (A) \(\text{wrong angle}\); (B) \(\text{they do not meet, since their }z\ \text{values differ}\); (C) \(\text{wrong angle and distance}\).
+Key point: \(\text{skew lines: }d=\dfrac{|(\vec a_2-\vec a_1)\cdot(\vec b_1\times\vec b_2)|}{|\vec b_1\times\vec b_2|}\)
+
+@@ Q58
+format: numerical
+sub_topic: Number of onto functions from a four-element set to a three-element set
+Q: How many functions from \(\{1,2,3,4\}\) onto \(\{a,b,c\}\) are there?
+A) 36
+B) 81
+C) 24
+D) 33
+KEY: A
+SOL:
+Answer: (A) 36.
+Given: \(|A|=4,\ |B|=3\)
+Formula/Principle: \(\text{inclusion–exclusion: onto}=3^4-\binom31 2^4+\binom32 1^4\)
+Step 1: \(\text{all functions}=3^4=81\)
+Step 2: \(\text{missing at least one value: }3\cdot2^4-3\cdot1^4=48-3=45\)
+Worked derivation: \[81-45=36\]
+Check: \[\text{one value used twice: choose the pair }\binom42=6,\ \text{assign 3 blocks to }a,b,c:\ 3!=6;\ 6\times6=36\ \checkmark\]
+Why: \(\text{subtract functions missing some value, adding back those subtracted twice}\)
+Why not the others: (B) \(\text{all functions}\); (C) \(\text{counts arrangements of 3 of the 4 elements only}\); (D) \(\text{omits the }+3\ \text{term}\).
+Key point: \(\text{onto }4\to3:\ 3^4-3\cdot2^4+3=36\)
+
+@@ Q59
+format: numerical
+sub_topic: Sum of values of a function satisfying f(x + y) = f(x) f(y)
+Q: A function f on the real numbers satisfies \(f(x+y)=f(x)f(y)\) for all x, y, and \(f(1)=2\). What is \(f(1)+f(2)+f(3)+f(4)+f(5)\)?
+A) 31
+B) 62
+C) 30
+D) 64
+KEY: B
+SOL:
+Answer: (B) 62.
+Given: \(f(x+y)=f(x)f(y),\ f(1)=2\)
+Formula/Principle: \(f(n)=f(1)^n\ \text{for positive integers }n\ \text{(by induction)}\)
+Step 1: \(f(2)=f(1)f(1)=4,\ f(3)=f(2)f(1)=8\)
+Step 2: \(f(n)=2^n\)
+Worked derivation: \[\sum_{n=1}^5 2^n=2+4+8+16+32=62\]
+Check: \[\text{G.P. sum: }2\cdot\frac{2^5-1}{2-1}=62\ \checkmark\]
+Why: \(\text{the functional equation turns sums of arguments into products of values}\)
+Why not the others: (A) \(\text{starts from }2^0\ \text{and stops at }2^4\); (C) \(\text{uses }f(n)=2n\ \text{(additive rule)}\); (D) \(\text{gives }f(6)\).
+Key point: \(f(x+y)=f(x)f(y),\ f(1)=a\Rightarrow f(n)=a^n\)
+
+@@ Q60
+format: numerical
+sub_topic: General solution of tan 3x = tan x, excluding points where tangent is undefined
+Q: What is the general solution of \(\tan3x=\tan x\)? (n is any integer.)
+A) \(x=\dfrac{n\pi}2\)
+B) \(x=\dfrac{n\pi}4\)
+C) \(x=n\pi\)
+D) \(x=\dfrac{n\pi}3\)
+KEY: C
+SOL:
+Answer: (C) \(x=n\pi\).
+Given: \(\tan3x=\tan x\)
+Formula/Principle: \(\tan\alpha=\tan\beta\Rightarrow\alpha=m\pi+\beta,\ \text{provided both sides are defined}\)
+Step 1: \(3x=m\pi+x\Rightarrow x=\dfrac{m\pi}2\)
+Step 2: \(m\ \text{odd}:\ x=\tfrac\pi2,\tfrac{3\pi}2,\ldots\ \text{where }\tan x\ \text{is undefined}\Rightarrow\text{rejected}\)
+Worked derivation: \[m=2n\Rightarrow x=n\pi\]
+Check: \[x=\pi:\ \tan3\pi=0=\tan\pi\ \checkmark;\quad x=\tfrac\pi2:\ \tan\tfrac\pi2\ \text{undefined}\]
+Why: \(\text{the special case where both sides are undefined must be removed}\)
+Why not the others: (A) \(\text{keeps the undefined points}\); (B) \(x=\pi/4:\ \tan\tfrac{3\pi}4=-1\ne1\); (D) \(x=\pi/3:\ \tan\pi=0\ne\sqrt3\).
+Key point: \(\text{always check the domain of tan after solving}\)

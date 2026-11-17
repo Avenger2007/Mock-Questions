@@ -88,3 +88,21 @@ One entry per question that needs a figure, in the format given in `NISER/NISER_
 - **Labels:** axis titles and tick numbers only.
 - **Must not show:** shaded areas, any area values, the words "displacement", "distance", "acceleration", or slopes.
 - **Alt text:** Velocity–time graph from 0 to 16 s: velocity rises in a straight line from 0 to 8 m/s at 4 s, stays at 8 m/s until 10 s, falls in a straight line to 0 at 14 s and continues falling to −4 m/s at 16 s.
+
+## NEST Test 5
+
+### NEST_T05_Q03.png — Test 5, Q03 (Biology, three-generation pedigree)
+- **Purpose:** the student deduces the mode of inheritance and the genotypes from the pattern of affected and unaffected individuals.
+- **Size and style:** 1400 × 900 px, white background, standard pedigree symbols drawn in black (2 px lines): squares for males, circles for females, filled solid black for affected and white for unaffected; horizontal marriage lines, vertical descent lines and a sibship line; sans-serif labels 24 px or larger.
+- **Must show:** Generation labels "I", "II", "III" at the left. Generation I: an unfilled square labelled "1" joined by a marriage line to an unfilled circle labelled "2". Generation II (children of I-1 × I-2, left to right): a filled circle "1", an unfilled square "2", a filled square "3". To the left of II-1, an unfilled square labelled "4", joined to II-1 by a marriage line (II-4 has no parents drawn). Generation III (children of II-1 × II-4): an unfilled square "1" and an unfilled circle "2".
+- **Labels:** "I", "II", "III" and the individual numbers under each symbol.
+- **Must not show:** genotypes, half-filled (carrier) symbols, dots inside symbols, the words "recessive", "dominant", "autosomal", "X-linked" or "carrier", or any key other than "filled = affected".
+- **Alt text:** Three-generation pedigree. Generation I: an unaffected man (I-1) and an unaffected woman (I-2). Generation II: their children are an affected daughter (II-1), an unaffected son (II-2) and an affected son (II-3); II-1 is married to an unaffected man (II-4). Generation III: II-1 and II-4 have an unaffected son (III-1) and an unaffected daughter (III-2).
+
+### NEST_T05_Q80.png — Test 5, Q80 (Physics, energy curves of a satellite against orbital radius)
+- **Purpose:** the student identifies kinetic, potential and total energy from their signs and relative sizes.
+- **Size and style:** 1400 × 900 px, white background, three smooth curves in clearly different colours and line styles (P solid dark blue, Q dashed dark red, R dotted dark green, each 3 px), black axes, light grey grid, sans-serif labels 24 px or larger.
+- **Must show:** x-axis "r" from 0 to 5R with ticks labelled "R", "2R", "3R", "4R", "5R"; curves start at r = R (nothing drawn for r < R). y-axis "Energy / (GMm/2R)" from −2.5 to +1.5 with ticks every 0.5 and a bold horizontal line at 0. Curve P = +R/r: passes through (R, 1.0), (2R, 0.5), (4R, 0.25), (5R, 0.2). Curve Q = −2R/r: passes through (R, −2.0), (2R, −1.0), (4R, −0.5), (5R, −0.4). Curve R = −R/r: passes through (R, −1.0), (2R, −0.5), (4R, −0.25), (5R, −0.2). Small dots at r = R and r = 2R on each curve. Each curve labelled with its letter P, Q or R near its right end.
+- **Labels:** "P", "Q", "R", axis titles and tick labels.
+- **Must not show:** a legend naming kinetic, potential or total energy, the letters K, U or E, any formula, or the words "bound" or "escape".
+- **Alt text:** Graph of energy against orbital radius from R to 5R for circular orbits. Curve P is positive and falls from +1 at R towards zero; curve Q is negative, starting at −2 at R and rising towards zero; curve R is negative, starting at −1 at R and rising towards zero. Energy is in units of GMm over 2R.
