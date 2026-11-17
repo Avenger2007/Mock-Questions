@@ -1,0 +1,433 @@
+@@ Q61
+format: graph
+sub_topic: Huygens construction for refraction: graph of sin r against sin i
+Q: A plane wavefront travels from air, where its speed is c, into glass, where its speed is \(\tfrac23c\). Using Huygens' construction, sin r is plotted against sin i, where i is the angle of incidence and r the angle of refraction. What does the graph look like?
+A) A straight line through the origin with slope \(\tfrac23\)
+B) A straight line through the origin with slope \(\tfrac32\)
+C) A straight line through the origin with slope 1, because the frequency does not change
+D) A curve that becomes vertical at \(\sin i\approx0.67\), where total internal reflection begins
+KEY: A
+SOL:
+Answer: (A) A straight line through the origin with slope \(\tfrac23\).
+Given: \(v_1=c,\quad v_2=\tfrac23c\)
+Formula/Principle: \(\text{Huygens:}\ \dfrac{\sin i}{\sin r}=\dfrac{v_1}{v_2}\)
+Step 1: \(\text{in the time}\ \tau\ \text{the wavelet in air covers}\ BC=v_1\tau,\ \text{the wavelet in glass covers}\ AE=v_2\tau\)
+Step 2: \(\sin i=\dfrac{BC}{AC},\quad\sin r=\dfrac{AE}{AC}\Rightarrow\dfrac{\sin i}{\sin r}=\dfrac{v_1}{v_2}\)
+Worked derivation: \[\sin r=\frac{v_2}{v_1}\sin i=\frac23\sin i\]
+Check: \[\sin i=0.9\Rightarrow\sin r=0.6\le1;\ \text{a refracted ray exists for every}\ i\ \text{(rarer to denser)}\]
+Why: \(\text{the wave slows down in glass, so it bends towards the normal}\)
+Why not the others: (B) \(\text{uses}\ \tfrac{v_1}{v_2};\ \text{that is the slope of}\ \sin i\ \text{against}\ \sin r\); (C) \(\text{frequency is unchanged, but speed and wavelength change}\); (D) \(\text{total internal reflection needs travel from the denser to the rarer medium}\).
+Key point: \(\dfrac{\sin i}{\sin r}=\dfrac{v_1}{v_2}=\dfrac{n_2}{n_1}\)
+
+@@ Q62
+format: numerical
+sub_topic: Photoelectric effect: stopping potential and saturation current when the frequency is doubled at fixed intensity
+Q: Light of frequency ν falls on a metal of work function 2.0 eV, and the stopping potential is 1.0 V. The frequency is doubled while the intensity (energy per unit area per unit time) is kept the same. Assume each photon has the same chance of ejecting an electron. What are the new stopping potential and the new saturation current compared with the old one?
+A) 2.0 V; unchanged
+B) 4.0 V; doubled
+C) 4.0 V; halved
+D) 2.0 V; halved
+KEY: C
+SOL:
+Answer: (C) 4.0 V; halved.
+Given: \(\phi_0=2.0\ \mathrm{eV},\quad V_0=1.0\ \mathrm V\ \text{at}\ \nu;\quad\nu'=2\nu,\ I'=I\)
+Formula/Principle: \(eV_0=h\nu-\phi_0;\quad I=N h\nu\ (N=\text{photons per unit area per second})\)
+Step 1: \(h\nu=eV_0+\phi_0=1.0+2.0=3.0\ \mathrm{eV}\)
+Step 2: \(h\nu'=6.0\ \mathrm{eV}\Rightarrow eV_0'=6.0-2.0=4.0\ \mathrm{eV}\)
+Step 3: \(N'=\dfrac{I}{h\nu'}=\dfrac N2\Rightarrow i_{\text{sat}}'=\dfrac{i_{\text{sat}}}2\)
+Worked derivation: \[V_0'=\frac{2h\nu-\phi_0}{e}=\frac{6.0-2.0}{1}=4.0\ \mathrm V,\qquad\frac{i'_{\text{sat}}}{i_{\text{sat}}}=\frac{N'}{N}=\frac{h\nu}{h\nu'}=\frac12\]
+Check: \[4.0+2.0=6.0=2\times3.0\ \mathrm{eV}\ \checkmark\]
+Why: \(\text{stopping potential depends on photon energy; current depends on the number of photons}\)
+Why not the others: (A) \(V_0\ \text{does not double, because}\ \phi_0\ \text{is subtracted}\); (B) \(\text{doubling the frequency at the same intensity halves the photon number}\); (D) \(V_0'=2V_0\ \text{ignores the work function}\).
+Key point: \(eV_0=h\nu-\phi_0;\ \ \text{photon flux}=\dfrac{I}{h\nu}\)
+
+@@ Q63
+format: numerical
+sub_topic: Carrier concentrations in an n-type semiconductor from the law of mass action
+Q: Pure silicon at 300 K has an intrinsic carrier concentration \(n_i=1.5\times10^{16}\ \mathrm{m^{-3}}\). It is doped with arsenic at \(5.0\times10^{22}\) atoms per cubic metre, and every arsenic atom is ionised. What are the electron and hole concentrations?
+A) \(n_e=5.0\times10^{22}\ \mathrm{m^{-3}},\ n_h=1.5\times10^{16}\ \mathrm{m^{-3}}\)
+B) \(n_e=5.0\times10^{22}\ \mathrm{m^{-3}},\ n_h=4.5\times10^{9}\ \mathrm{m^{-3}}\)
+C) \(n_h=5.0\times10^{22}\ \mathrm{m^{-3}},\ n_e=4.5\times10^{9}\ \mathrm{m^{-3}}\)
+D) \(n_e=5.0\times10^{22}\ \mathrm{m^{-3}},\ n_h=3.0\times10^{-7}\ \mathrm{m^{-3}}\)
+KEY: B
+SOL:
+Answer: (B) \(n_e=5.0\times10^{22}\ \mathrm{m^{-3}},\ n_h=4.5\times10^{9}\ \mathrm{m^{-3}}\).
+Given: \(n_i=1.5\times10^{16}\ \mathrm{m^{-3}},\quad N_D=5.0\times10^{22}\ \mathrm{m^{-3}}\ \text{(pentavalent As, donor)}\)
+Formula/Principle: \(n_en_h=n_i^2;\quad n_e\approx N_D\ \text{when}\ N_D\gg n_i\)
+Step 1: \(n_e\approx5.0\times10^{22}\ \mathrm{m^{-3}}\)
+Step 2: \(n_i^2=(1.5\times10^{16})^2=2.25\times10^{32}\ \mathrm{m^{-6}}\)
+Worked derivation: \[n_h=\frac{n_i^2}{n_e}=\frac{2.25\times10^{32}}{5.0\times10^{22}}=4.5\times10^{9}\ \mathrm{m^{-3}}\]
+Check: \[n_en_h=5.0\times10^{22}\times4.5\times10^{9}=2.25\times10^{32}=n_i^2\ \checkmark\]
+Why: \(\text{extra electrons recombine with holes, so the hole density falls below}\ n_i\)
+Why not the others: (A) \(n_h=n_i\ \text{only in a pure crystal}\); (C) \(\text{arsenic is a donor, so electrons are the majority}\); (D) \(\dfrac{n_i}{n_e}\ \text{is not}\ \dfrac{n_i^2}{n_e}\).
+Key point: \(n_en_h=n_i^2\ \text{in thermal equilibrium}\)
+
+@@ Q64
+format: numerical
+sub_topic: Significant figures when a measurement is divided by an exact count
+Q: A stack of exactly 250 identical sheets of paper is measured with a vernier calliper to be 2.54 cm thick. How should the thickness of one sheet be reported?
+A) 0.01016 cm
+B) 0.010 cm
+C) 0.01 cm
+D) 0.0102 cm
+KEY: D
+SOL:
+Answer: (D) 0.0102 cm.
+Given: \(T=2.54\ \mathrm{cm}\ (3\ \text{s.f.}),\quad N=250\ (\text{exact count})\)
+Formula/Principle: \(t=\dfrac TN;\ \text{an exact count has unlimited significant figures; keep the s.f. of the measurement}\)
+Step 1: \(t=\dfrac{2.54}{250}=0.01016\ \mathrm{cm}\)
+Step 2: \(\text{3 s.f. (from 2.54)}\Rightarrow t=0.0102\ \mathrm{cm}=1.02\times10^{-2}\ \mathrm{cm}\)
+Worked derivation: \[t=\frac{2.54\ \mathrm{cm}}{250}=1.016\times10^{-2}\ \mathrm{cm}\ \to\ 1.02\times10^{-2}\ \mathrm{cm}\]
+Check: \[\text{leading zeros are not significant: in 0.0102 the figures 1, 0, 2 are significant (3)}\]
+Why: \(\text{counting gives an exact number, so it does not limit the precision}\)
+Why not the others: (A) \(\text{keeps 4 s.f. from a 3 s.f. measurement}\); (B) \(\text{treats 250 as 2 s.f.}\); (C) \(\text{1 s.f. throws away reliable figures}\).
+Key point: \(\text{exact counts do not reduce significant figures}\)
+
+@@ Q65
+format: numerical
+sub_topic: Average velocity and average speed when the motion reverses
+Q: A particle moves along the x-axis with \(x(t)=t^3-6t^2+9t\), where x is in metres and t in seconds. What are its average velocity and its average speed over the interval from \(t=0\) to \(t=3\ \mathrm s\)?
+A) \(\tfrac83\ \mathrm{m\,s^{-1}}\) and \(\tfrac83\ \mathrm{m\,s^{-1}}\)
+B) \(0\) and \(\tfrac83\ \mathrm{m\,s^{-1}}\)
+C) \(0\) and \(0\)
+D) \(0\) and \(\tfrac43\ \mathrm{m\,s^{-1}}\)
+KEY: B
+SOL:
+Answer: (B) \(0\) and \(\tfrac83\ \mathrm{m\,s^{-1}}\).
+Given: \(x(t)=t^3-6t^2+9t,\quad0\le t\le3\ \mathrm s\)
+Formula/Principle: \(\bar v=\dfrac{\Delta x}{\Delta t};\quad\text{average speed}=\dfrac{\text{distance}}{\Delta t};\quad v=\dfrac{dx}{dt}\)
+Step 1: \(x(0)=0,\quad x(3)=27-54+27=0\Rightarrow\Delta x=0\)
+Step 2: \(v=3t^2-12t+9=3(t-1)(t-3)=0\Rightarrow\text{turns at}\ t=1\ \mathrm s,\ x(1)=4\ \mathrm m\)
+Step 3: \(\text{distance}=|4-0|+|0-4|=8\ \mathrm m\)
+Worked derivation: \[\bar v=\frac{0}{3}=0,\qquad\text{average speed}=\frac{8}{3}\ \mathrm{m\,s^{-1}}\]
+Check: \[v(0.5)=3.75>0\ \text{(moving out)},\ v(2)=-3<0\ \text{(moving back)}\]
+Why: \(\text{velocity counts displacement; speed counts the whole path}\)
+Why not the others: (A) \(\text{uses distance for velocity}\); (C) \(\text{zero displacement does not mean zero distance}\); (D) \(\text{counts only the outward 4 m}\).
+Key point: \(|\bar v|\le\text{average speed};\ \text{equal only without reversal}\)
+
+@@ Q66
+format: experiment
+sub_topic: Impulse and average force measured for a ball rebounding from a wall
+Q: In an experiment, a ball of mass 0.15 kg hits a wall at 20 m/s along the normal and rebounds along the same line at 15 m/s. A force sensor on the wall records a contact time of 0.050 s. What are the magnitude of the impulse on the ball and the average force on it?
+A) \(5.25\ \mathrm{N\,s}\) and \(105\ \mathrm N\)
+B) \(0.75\ \mathrm{N\,s}\) and \(15\ \mathrm N\)
+C) \(5.25\ \mathrm{N\,s}\) and \(0.26\ \mathrm N\)
+D) \(3.0\ \mathrm{N\,s}\) and \(60\ \mathrm N\)
+KEY: A
+SOL:
+Answer: (A) \(5.25\ \mathrm{N\,s}\) and \(105\ \mathrm N\).
+Given: \(m=0.15\ \mathrm{kg},\ u=+20\ \mathrm{m\,s^{-1}}\ (\text{towards wall}),\ v=-15\ \mathrm{m\,s^{-1}},\ \Delta t=0.050\ \mathrm s\)
+Formula/Principle: \(J=\Delta p=m(v-u);\quad F_{\text{avg}}=\dfrac{J}{\Delta t}\)
+Step 1: \(J=0.15\,(-15-20)=-5.25\ \mathrm{N\,s}\Rightarrow|J|=5.25\ \mathrm{N\,s}\)
+Step 2: \(F_{\text{avg}}=\dfrac{5.25}{0.050}=105\ \mathrm N\ \text{(away from the wall)}\)
+Worked derivation: \[|J|=m(|u|+|v|)=0.15\times35=5.25\ \mathrm{N\,s},\qquad F=\frac{5.25}{0.050}=105\ \mathrm N\]
+Check: \[\text{units: }\frac{\mathrm{kg\,m\,s^{-1}}}{\mathrm s}=\mathrm N;\ \text{a rebound gives more impulse than stopping (3.0 N s)}\]
+Why: \(\text{velocity reverses, so the speeds add}\)
+Why not the others: (B) \(\text{subtracts the speeds instead of the velocities}\); (C) \(\text{multiplies by}\ \Delta t\ \text{instead of dividing}\); (D) \(\text{uses only the momentum lost in stopping}\).
+Key point: \(\text{rebound:}\ |\Delta p|=m(|u|+|v|)\)
+
+@@ Q67
+format: conceptual
+sub_topic: Elastic potential energy of two springs under the same force and under the same extension
+Q: Spring 1 has spring constant 200 N/m and spring 2 has 800 N/m. Compare the elastic potential energies stored (a) when both are stretched by the same force, and (b) when both are stretched by the same extension.
+A) Spring 1 stores more in both cases
+B) Spring 2 stores more in both cases
+C) They store equal energy in both cases
+D) (a) Spring 1 stores 4 times as much; (b) spring 2 stores 4 times as much
+KEY: D
+SOL:
+Answer: (D) (a) Spring 1 stores 4 times as much; (b) spring 2 stores 4 times as much.
+Given: \(k_1=200\ \mathrm{N\,m^{-1}},\quad k_2=800\ \mathrm{N\,m^{-1}}\)
+Formula/Principle: \(U=\tfrac12kx^2;\quad F=kx\Rightarrow U=\dfrac{F^2}{2k}\)
+Step 1: \(\text{same}\ F:\ \dfrac{U_1}{U_2}=\dfrac{k_2}{k_1}=\dfrac{800}{200}=4\)
+Step 2: \(\text{same}\ x:\ \dfrac{U_2}{U_1}=\dfrac{k_2}{k_1}=4\)
+Worked derivation: \[F=40\ \mathrm N:\ U_1=\frac{1600}{400}=4\ \mathrm J,\ U_2=\frac{1600}{1600}=1\ \mathrm J;\quad x=0.1\ \mathrm m:\ U_1=1\ \mathrm J,\ U_2=4\ \mathrm J\]
+Check: \[\text{same}\ F:\ x_1=0.2\ \mathrm m,\ x_2=0.05\ \mathrm m;\ U=\tfrac12Fx:\ 4\ \mathrm J\ \text{and}\ 1\ \mathrm J\ \checkmark\]
+Why: \(\text{at the same force the softer spring stretches more}\)
+Why not the others: (A) \(\text{fails for same}\ x\); (B) \(\text{fails for same}\ F\); (C) \(U\ \text{depends on}\ k\ \text{in both cases}\).
+Key point: \(\text{same}\ F:\ U\propto\tfrac1k;\quad\text{same}\ x:\ U\propto k\)
+
+@@ Q68
+format: numerical
+sub_topic: Support forces on a plank in equilibrium from force and torque balance
+Q: A uniform plank of length 4.0 m and mass 20 kg rests on two supports at its ends. A person of mass 60 kg stands 1.0 m from the left end. Take \(g=10\ \mathrm{m\,s^{-2}}\). What are the forces exerted by the left and right supports?
+A) 400 N and 400 N
+B) 450 N and 150 N
+C) 550 N and 250 N
+D) 250 N and 550 N
+KEY: C
+SOL:
+Answer: (C) 550 N and 250 N.
+Given: \(L=4.0\ \mathrm m,\ W_p=200\ \mathrm N\ \text{at}\ 2.0\ \mathrm m,\ W=600\ \mathrm N\ \text{at}\ 1.0\ \mathrm m\ \text{from left}\)
+Formula/Principle: \(\sum F_y=0,\quad\sum\tau=0\ \text{about any point}\)
+Step 1: \(\text{torques about the left end:}\ R_R(4.0)=200(2.0)+600(1.0)=1000\ \mathrm{N\,m}\)
+Step 2: \(R_R=250\ \mathrm N\)
+Step 3: \(R_L=800-250=550\ \mathrm N\)
+Worked derivation: \[R_R=\frac{400+600}{4.0}=250\ \mathrm N,\qquad R_L=(200+600)-250=550\ \mathrm N\]
+Check: \[\text{about the right end:}\ R_L(4.0)=200(2.0)+600(3.0)=2200\Rightarrow R_L=550\ \mathrm N\ \checkmark\]
+Why: \(\text{the person is nearer the left end, so the left support carries more}\)
+Why not the others: (A) \(\text{ignores where the person stands}\); (B) \(\text{leaves out the weight of the plank}\); (D) \(\text{swaps the two supports}\).
+Key point: \(\text{take torques about one support to remove its unknown force}\)
+
+@@ Q69
+format: numerical
+sub_topic: Equal fractional change of g at a small height and at a depth
+Q: Take the radius of the Earth as 6400 km. By about what percentage does g decrease at a height of 32 km above the surface, and at about what depth below the surface is the decrease the same?
+A) 1%; 64 km
+B) 0.5%; 32 km
+C) 1%; 16 km
+D) 2%; 64 km
+KEY: A
+SOL:
+Answer: (A) 1%; 64 km.
+Given: \(R=6400\ \mathrm{km},\quad h=32\ \mathrm{km}\ll R\)
+Formula/Principle: \(g_h\approx g\left(1-\dfrac{2h}R\right);\quad g_d=g\left(1-\dfrac dR\right)\)
+Step 1: \(\dfrac{\Delta g}{g}=\dfrac{2h}R=\dfrac{2\times32}{6400}=0.01=1\%\)
+Step 2: \(\dfrac dR=\dfrac{2h}R\Rightarrow d=2h\)
+Worked derivation: \[d=2\times32=64\ \mathrm{km},\qquad\frac{d}{R}=\frac{64}{6400}=1\%\]
+Check: \[\text{exact: }\left(\frac{6400}{6432}\right)^2=0.99007\Rightarrow0.99\%\approx1\%\]
+Why: \(g\ \text{falls twice as fast with height as with depth near the surface}\)
+Why not the others: (B) \(\text{uses}\ \tfrac hR\ \text{for height and}\ d=h\); (C) \(d=\tfrac h2\ \text{inverts the factor 2}\); (D) \(\text{uses}\ \tfrac{4h}R\).
+Key point: \(\text{same}\ g\ \text{at height}\ h\ \text{and depth}\ d=2h\ (h\ll R)\)
+
+@@ Q70
+format: graph
+sub_topic: Draining tank with Torricelli efflux: which graph is a straight line
+Q: Water drains through a small hole at the bottom of a wide open tank of constant cross-section. The area of the hole is much smaller than that of the tank. Let h be the height of the water above the hole and v the speed of efflux. Which of these graphs is a straight line?
+A) h against time
+B) v against time
+C) v against h
+D) volume flow rate against h
+KEY: B
+SOL:
+Answer: (B) v against time.
+Given: \(\text{tank area}\ A,\ \text{hole area}\ a\ll A,\ \text{height}\ h(t)\)
+Formula/Principle: \(\text{Torricelli:}\ v=\sqrt{2gh};\quad\text{continuity:}\ -A\dfrac{dh}{dt}=av\)
+Step 1: \(\dfrac{dh}{dt}=-\dfrac aA\sqrt{2gh}\)
+Step 2: \(\dfrac{dv}{dt}=\dfrac{g}{\sqrt{2gh}}\dfrac{dh}{dt}=\dfrac g{v}\left(-\dfrac aA v\right)=-\dfrac{ag}A\)
+Worked derivation: \[v(t)=v_0-\frac{ag}{A}t\quad\Rightarrow\quad h(t)=\frac{v(t)^2}{2g}\ \text{(a parabola in}\ t)\]
+Check: \[\text{units: }\frac{ag}{A}\ \text{has units of}\ \mathrm{m\,s^{-2}};\ v\ \text{falls at a constant rate}\]
+Why: \(\text{the efflux speed falls at a steady rate, like uniform deceleration}\)
+Why not the others: (A) \(h\propto(v_0-kt)^2\ \text{is a parabola}\); (C) \(v\propto\sqrt h\ \text{is a curve}\); (D) \(av\propto\sqrt h\ \text{is a curve}\).
+Key point: \(v=\sqrt{2gh}\ \text{and}\ A\,dh=-av\,dt\ \Rightarrow\ dv/dt=\text{constant}\)
+
+@@ Q71
+format: numerical
+sub_topic: Mixing ice and water: whether all the ice melts and the final temperature
+Q: 200 g of water at 40 °C is in an insulated vessel of negligible heat capacity. In case 1, 50 g of ice at 0 °C is added; in case 2, 150 g of ice at 0 °C is added instead. Take the specific heat of water as 4.2 J g⁻¹ K⁻¹ and the latent heat of fusion of ice as 336 J g⁻¹. What is the final state in each case?
+A) Case 1: 16 °C; case 2: 0 °C with all the ice melted
+B) Case 1: 32 °C; case 2: 23 °C
+C) Case 1: 0 °C; case 2: 0 °C
+D) Case 1: 16 °C; case 2: 0 °C with 50 g of ice left
+KEY: D
+SOL:
+Answer: (D) Case 1: 16 °C; case 2: 0 °C with 50 g of ice left.
+Given: \(m_w=200\ \mathrm g,\ T_w=40\ ^\circ\mathrm C,\ c=4.2\ \mathrm{J\,g^{-1}K^{-1}},\ L=336\ \mathrm{J\,g^{-1}}\)
+Formula/Principle: \(\text{heat lost}=\text{heat gained};\ Q=mL\ \text{for melting},\ Q=mc\Delta T\ \text{for warming}\)
+Step 1: \(\text{heat available to cool water to}\ 0\ ^\circ\mathrm C:\ 200\times4.2\times40=33600\ \mathrm J\Rightarrow\text{can melt}\ \dfrac{33600}{336}=100\ \mathrm g\)
+Step 2: \(\text{case 1: melting 50 g uses}\ 16800\ \mathrm J;\ 250\times4.2\times T=33600-16800\)
+Step 3: \(\text{case 2: only 100 g of 150 g melts}\Rightarrow0\ ^\circ\mathrm C,\ 50\ \mathrm g\ \text{left}\)
+Worked derivation: \[\text{case 1: }200(4.2)(40-T)=50(336)+50(4.2)T\Rightarrow33600-840T=16800+210T\Rightarrow T=16\ ^\circ\mathrm C\]
+Check: \[\text{case 1: lost }200(4.2)(24)=20160\ \mathrm J;\ \text{gained }16800+50(4.2)(16)=20160\ \mathrm J\ \checkmark\]
+Why: \(\text{the mixture stays at}\ 0\ ^\circ\mathrm C\ \text{while ice and water coexist}\)
+Why not the others: (A) \(\text{only 100 g can melt in case 2}\); (B) \(\text{ignores latent heat}\); (C) \(\text{in case 1 all 50 g melts with heat to spare}\).
+Key point: \(\text{first check how much ice the available heat can melt}\)
+
+@@ Q72
+format: experiment
+sub_topic: Fast and slow compression of air in a syringe: adiabatic and isothermal changes
+Q: Air in a sealed syringe is compressed to half its volume, once very quickly and once very slowly, starting each time from the same pressure \(p_0\) and room temperature. Take \(\gamma=1.4\) for air, and \(2^{1.4}\approx2.64\). Which statement describes the two cases correctly?
+A) In both cases the pressure becomes \(2p_0\) and the temperature does not change
+B) Quick: the pressure becomes \(2p_0\); slow: the pressure becomes \(2.64p_0\)
+C) Quick: the pressure becomes about \(2.64p_0\) and the air warms; slow: the pressure becomes \(2p_0\) and the temperature stays the same
+D) Quick: the pressure becomes about \(2.64p_0\) and the air cools
+KEY: C
+SOL:
+Answer: (C) Quick: the pressure becomes about \(2.64p_0\) and the air warms; slow: the pressure becomes \(2p_0\) and the temperature stays the same.
+Given: \(V\to\tfrac V2,\quad\gamma=1.4\)
+Formula/Principle: \(\text{isothermal: }pV=\text{const};\quad\text{adiabatic: }pV^\gamma=\text{const},\ TV^{\gamma-1}=\text{const}\)
+Step 1: \(\text{slow (isothermal): }p=p_0\cdot2=2p_0\)
+Step 2: \(\text{quick (adiabatic): }p=p_0\cdot2^{1.4}\approx2.64p_0\)
+Step 3: \(T=T_0\cdot2^{0.4}\approx1.32T_0\)
+Worked derivation: \[\frac{p_{\text{ad}}}{p_{\text{iso}}}=\frac{2^{1.4}}{2}=2^{0.4}\approx1.32\]
+Check: \[\frac{pV}{T}\ \text{for the quick case: }\frac{2.64p_0\cdot\tfrac V2}{1.32T_0}=\frac{p_0V}{T_0}\ \checkmark\]
+Why: \(\text{work done on the gas in a quick compression cannot leave as heat, so}\ T\ \text{rises}\)
+Why not the others: (A) \(\text{true only for the slow case}\); (B) \(\text{swaps the two cases}\); (D) \(\text{work done on a gas with}\ Q=0\ \text{raises}\ U\ \text{and}\ T\).
+Key point: \(\text{adiabatic curve is steeper:}\ \dfrac{dp}{dV}=-\gamma\dfrac pV\)
+
+@@ Q73
+format: numerical
+sub_topic: Displacement at which kinetic and potential energies are equal in SHM
+Q: A particle performs simple harmonic motion with amplitude A. At what displacement from the mean position is its kinetic energy equal to its potential energy?
+A) \(\dfrac A{\sqrt2}\)
+B) \(\dfrac A2\)
+C) \(\dfrac A4\)
+D) \(\dfrac{\sqrt3A}2\)
+KEY: A
+SOL:
+Answer: (A) \(\dfrac A{\sqrt2}\).
+Given: \(\text{amplitude}\ A,\ \text{total energy}\ E=\tfrac12kA^2\)
+Formula/Principle: \(U=\tfrac12kx^2,\quad K=E-U=\tfrac12k(A^2-x^2)\)
+Step 1: \(K=U\Rightarrow\tfrac12k(A^2-x^2)=\tfrac12kx^2\)
+Step 2: \(A^2=2x^2\)
+Worked derivation: \[x=\pm\frac{A}{\sqrt2}\approx\pm0.71A\]
+Check: \[U=\tfrac12k\frac{A^2}2=\frac E2,\ K=E-\frac E2=\frac E2\ \checkmark\]
+Why: \(\text{each energy is half of the constant total}\)
+Why not the others: (B) \(x=\tfrac A2:\ U=\tfrac E4,\ K=\tfrac{3E}4\); (C) \(U=\tfrac E{16}\); (D) \(U=\tfrac{3E}4,\ K=\tfrac E4\).
+Key point: \(U=\dfrac{x^2}{A^2}E\)
+
+@@ Q74
+format: numerical
+sub_topic: Standing waves on a string fixed at both ends: nodes and antinodes for a given frequency
+Q: A string 0.50 m long is fixed at both ends, has a tension of 100 N and a linear mass density of 0.010 kg/m. It is made to vibrate in a standing wave of frequency 300 Hz. How many nodes (counting the two ends) and how many antinodes are there?
+A) 3 nodes and 3 antinodes
+B) 4 nodes and 4 antinodes
+C) 4 nodes and 3 antinodes
+D) 2 nodes and 3 antinodes
+KEY: C
+SOL:
+Answer: (C) 4 nodes and 3 antinodes.
+Given: \(L=0.50\ \mathrm m,\ T=100\ \mathrm N,\ \mu=0.010\ \mathrm{kg\,m^{-1}},\ f=300\ \mathrm{Hz}\)
+Formula/Principle: \(v=\sqrt{\dfrac T\mu};\quad f_n=\dfrac{nv}{2L};\ \text{mode}\ n\ \text{has}\ n\ \text{antinodes and}\ n+1\ \text{nodes}\)
+Step 1: \(v=\sqrt{\dfrac{100}{0.010}}=100\ \mathrm{m\,s^{-1}}\)
+Step 2: \(f_1=\dfrac{100}{2\times0.50}=100\ \mathrm{Hz}\Rightarrow n=\dfrac{300}{100}=3\)
+Worked derivation: \[\lambda=\frac{v}{f}=\frac{100}{300}=\frac13\ \mathrm m,\quad L=3\cdot\frac\lambda2\Rightarrow\text{3 loops: 3 antinodes, 4 nodes}\]
+Check: \[\text{node spacing}=\frac\lambda2=\frac16\ \mathrm m;\ \text{nodes at}\ 0,\tfrac16,\tfrac13,\tfrac12\ \mathrm m\ (4)\]
+Why: \(\text{waves reflected at the fixed ends superpose to form loops of length}\ \tfrac\lambda2\)
+Why not the others: (A) \(\text{misses one end node}\); (B) \(\text{a string fixed at both ends has one more node than antinodes}\); (D) \(\text{counts only the end nodes}\).
+Key point: \(\text{fixed–fixed, mode}\ n:\ n\ \text{antinodes},\ n+1\ \text{nodes}\)
+
+@@ Q75
+format: conceptual
+sub_topic: Field on the axis of a uniformly charged ring: zero at the centre, maximum, and far-field fall-off
+Q: A thin ring of radius R carries a charge Q spread uniformly. How does the magnitude of the electric field on its axis change as a point moves from the centre of the ring to a very large distance along the axis?
+A) It is greatest at the centre and falls steadily with distance
+B) It is the same everywhere on the axis
+C) It is zero at the centre and rises steadily, never decreasing
+D) It is zero at the centre, rises to a maximum at a distance \(\tfrac R{\sqrt2}\), and then falls off as \(\tfrac1{x^2}\) far away
+KEY: D
+SOL:
+Answer: (D) It is zero at the centre, rises to a maximum at a distance \(\tfrac R{\sqrt2}\), and then falls off as \(\tfrac1{x^2}\) far away.
+Given: \(\text{ring: radius}\ R,\ \text{charge}\ Q;\ \text{point on axis at distance}\ x\)
+Formula/Principle: \(E(x)=\dfrac{1}{4\pi\varepsilon_0}\dfrac{Qx}{(R^2+x^2)^{3/2}}\ \text{(perpendicular components cancel)}\)
+Step 1: \(E(0)=0\)
+Step 2: \(\dfrac{dE}{dx}\propto\dfrac{(R^2+x^2)-3x^2}{(R^2+x^2)^{5/2}}=0\Rightarrow x=\dfrac R{\sqrt2}\)
+Step 3: \(x\gg R:\ E\approx\dfrac{1}{4\pi\varepsilon_0}\dfrac{Q}{x^2}\)
+Worked derivation: \[E_{\max}=\frac{1}{4\pi\varepsilon_0}\frac{Q\,R/\sqrt2}{(3R^2/2)^{3/2}}=\frac{1}{4\pi\varepsilon_0}\frac{2Q}{3\sqrt3R^2}\]
+Check: \[x=R:\ E=\frac{1}{4\pi\varepsilon_0}\frac{Q}{2\sqrt2R^2}=\frac{0.354Q}{4\pi\varepsilon_0R^2}<E_{\max}=\frac{0.385Q}{4\pi\varepsilon_0R^2}\]
+Why: \(\text{at the centre, fields from opposite elements cancel; far away the ring looks like a point charge}\)
+Why not the others: (A) \(E(0)=0\ \text{by symmetry}\); (B) \(E\ \text{depends on}\ x\); (C) \(E\to0\ \text{as}\ x\to\infty\).
+Key point: \(E_{\text{axis}}=\dfrac{kQx}{(R^2+x^2)^{3/2}},\ \text{maximum at}\ x=\tfrac R{\sqrt2}\)
+
+@@ Q76
+format: graph
+sub_topic: Reading field strength and direction from unequally spaced equipotential lines; path-independent work
+image: NEST_T02_Q76.png
+alt: Four vertical equipotential lines labelled 40 V at x = 0 cm, 30 V at x = 1 cm, 20 V at x = 3 cm and 10 V at x = 6 cm, with point P on the 40 V line, point Q on the 10 V line and a curved dashed path from P to Q.
+Q: The figure shows four equipotential lines in a region of electric field, with their potentials and positions marked on the x-axis. A charge \(q=+2.0\ \mu\mathrm C\) is moved from point P on the 40 V line to point Q on the 10 V line along the curved dashed path. Which statement is correct?
+A) The field is strongest near the 10 V line, and the field does \(-60\ \mu\mathrm J\) of work on the charge
+B) The field is strongest between the 40 V and 30 V lines (about 1000 V/m), points towards lower potential, and does \(+60\ \mu\mathrm J\) of work on the charge whatever the path
+C) The field is the same everywhere, 500 V/m, and the work depends on the path taken
+D) The field is strongest between the 20 V and 10 V lines because the lines are farthest apart there, and the field does \(+60\ \mu\mathrm J\) of work
+KEY: B
+SOL:
+Answer: (B) The field is strongest between the 40 V and 30 V lines (about 1000 V/m), points towards lower potential, and does \(+60\ \mu\mathrm J\) of work on the charge whatever the path.
+Given: \(\text{from the figure: }V=40,30,20,10\ \mathrm V\ \text{at}\ x=0,1,3,6\ \mathrm{cm};\ q=2.0\times10^{-6}\ \mathrm C\)
+Formula/Principle: \(E=-\dfrac{\Delta V}{\Delta x}\ \text{(perpendicular to equipotentials)};\quad W_{\text{field}}=q(V_P-V_Q)\)
+Step 1: \(E_{40\to30}=\dfrac{10\ \mathrm V}{0.01\ \mathrm m}=1000\ \mathrm{V\,m^{-1}}\)
+Step 2: \(E_{30\to20}=\dfrac{10}{0.02}=500\ \mathrm{V\,m^{-1}},\quad E_{20\to10}=\dfrac{10}{0.03}\approx333\ \mathrm{V\,m^{-1}}\)
+Step 3: \(W=2.0\times10^{-6}\,(40-10)=6.0\times10^{-5}\ \mathrm J=60\ \mu\mathrm J\)
+Worked derivation: \[E\ \text{points along}\ +x\ (\text{from 40 V towards 10 V});\quad W_{\text{field}}=q\Delta V_{\text{drop}}=+60\ \mu\mathrm J\]
+Check: \[\Delta U=q(V_Q-V_P)=-60\ \mu\mathrm J=-W_{\text{field}}\ \checkmark;\ \text{a positive charge loses energy moving to lower}\ V\]
+Why: \(\text{closer equipotentials mean a larger potential gradient; the electrostatic field is conservative}\)
+Why not the others: (A) \(\text{lines are farthest apart near 10 V, so}\ E\ \text{is weakest there; the work is positive}\); (C) \(\text{the spacing is not uniform, and electrostatic work is path-independent}\); (D) \(\text{wider spacing means a weaker field}\).
+Key point: \(E=\dfrac{\Delta V}{\Delta x}\ \text{is largest where equipotentials crowd together}\)
+
+@@ Q77
+format: experiment
+sub_topic: Field of a solenoid measured with a Hall probe: changing turn density and current; field at an end
+Q: A Hall probe at the centre of a long solenoid (500 turns, length 0.50 m) carrying 2.0 A reads 2.5 mT. The same solenoid is then stretched uniformly to a length of 1.0 m, still with 500 turns, and the current is raised to 3.0 A. It is still long compared with its radius. About what will the probe read at the centre, and about what at one end on the axis?
+A) 1.9 mT at the centre and 0.94 mT at an end
+B) 3.8 mT at the centre and 1.9 mT at an end
+C) 1.9 mT at the centre and 1.9 mT at an end
+D) 0.94 mT at the centre and 1.9 mT at an end
+KEY: A
+SOL:
+Answer: (A) 1.9 mT at the centre and 0.94 mT at an end.
+Given: \(n_1=\dfrac{500}{0.50}=1000\ \mathrm{m^{-1}},\ I_1=2.0\ \mathrm A,\ B_1=2.5\ \mathrm{mT};\quad n_2=\dfrac{500}{1.0}=500\ \mathrm{m^{-1}},\ I_2=3.0\ \mathrm A\)
+Formula/Principle: \(\text{Ampere's law: }B_{\text{centre}}=\mu_0nI;\quad B_{\text{end}}\approx\tfrac12\mu_0nI\)
+Step 1: \(\dfrac{B_2}{B_1}=\dfrac{n_2I_2}{n_1I_1}=\dfrac{500\times3.0}{1000\times2.0}=0.75\)
+Step 2: \(B_2=0.75\times2.5=1.875\ \mathrm{mT}\approx1.9\ \mathrm{mT}\)
+Step 3: \(B_{\text{end}}\approx\dfrac{1.875}2\approx0.94\ \mathrm{mT}\)
+Worked derivation: \[B_2=\mu_0n_2I_2=4\pi\times10^{-7}\times500\times3.0=1.88\times10^{-3}\ \mathrm T\]
+Check: \[B_1=4\pi\times10^{-7}\times1000\times2.0=2.51\times10^{-3}\ \mathrm T\approx2.5\ \mathrm{mT}\ \checkmark\]
+Why: \(\text{at an end, only the turns on one side contribute, giving half the central field}\)
+Why not the others: (B) \(\text{keeps}\ n=1000\ \mathrm{m^{-1}};\ \text{stretching halves}\ n\); (C) \(\text{the field is not uniform up to the ends}\); (D) \(\text{swaps centre and end}\).
+Key point: \(B=\mu_0nI\ \text{depends on turns per unit length, not total turns}\)
+
+@@ Q78
+format: conceptual
+sub_topic: Magnet falling through a copper tube and a plastic tube: Lenz's law
+Q: Identical strong magnets are dropped from rest through two vertical tubes of the same length and size, one made of copper and one of plastic. Which statement is correct?
+A) Both magnets take the same time, because no current is connected to either tube
+B) The magnet in the copper tube falls faster, because copper attracts the magnet
+C) The magnet in the plastic tube falls more slowly, because plastic is an insulator and stores charge
+D) The magnet in the copper tube takes longer, because the changing flux induces currents in the copper whose magnetic field opposes the magnet's motion
+KEY: D
+SOL:
+Answer: (D) The magnet in the copper tube takes longer, because the changing flux induces currents in the copper whose magnetic field opposes the magnet's motion.
+Given: \(\text{copper: conductor};\ \text{plastic: insulator};\ \text{same magnets and tubes}\)
+Formula/Principle: \(\varepsilon=-\dfrac{d\Phi_B}{dt}\ \text{(Faraday)};\ \text{induced current opposes the change (Lenz)}\)
+Step 1: \(\text{copper: changing}\ \Phi_B\ \text{through each ring of the tube}\Rightarrow\text{eddy currents}\)
+Step 2: \(\text{these currents give a field that repels the magnet from above and attracts it from below}\Rightarrow\text{retarding force}\ F\propto v\)
+Step 3: \(\text{plastic: no free charges, no currents}\Rightarrow a=g\)
+Worked derivation: \[\text{copper: }mg-bv=ma\Rightarrow v\to v_t=\frac{mg}b;\qquad\text{plastic: }t=\sqrt{\frac{2L}{g}}\]
+Check: \[\text{energy: copper tube warms up; mechanical energy is turned into heat, so the magnet arrives slower and later}\]
+Why: \(\text{Lenz's law is energy conservation for induced currents}\)
+Why not the others: (A) \(\text{induced currents need no external source}\); (B) \(\text{copper is not attracted by a static magnet; the force opposes motion}\); (C) \(\text{no currents in plastic, so no opposing force}\).
+Key point: \(\text{induced currents oppose the motion that causes them}\)
+
+@@ Q79
+format: numerical
+sub_topic: Peak current of an AC heater and the equivalent DC voltage for the same power
+Q: A heater (pure resistor) dissipates 1100 W when connected to a 220 V rms AC supply. What is the peak current through it, and what steady DC voltage would make it dissipate the same power?
+A) 5.0 A and 311 V
+B) 7.1 A and 220 V
+C) 7.1 A and 311 V
+D) 5.0 A and 220 V
+KEY: B
+SOL:
+Answer: (B) 7.1 A and 220 V.
+Given: \(P=1100\ \mathrm W,\quad V_{\text{rms}}=220\ \mathrm V\)
+Formula/Principle: \(P=V_{\text{rms}}I_{\text{rms}};\quad I_0=\sqrt2I_{\text{rms}};\quad\text{rms value}=\text{DC value giving the same heating}\)
+Step 1: \(I_{\text{rms}}=\dfrac{1100}{220}=5.0\ \mathrm A\)
+Step 2: \(I_0=\sqrt2\times5.0=7.07\ \mathrm A\approx7.1\ \mathrm A\)
+Worked derivation: \[R=\frac{V_{\text{rms}}^2}{P}=\frac{48400}{1100}=44\ \Omega;\qquad V_{\text{DC}}=\sqrt{PR}=\sqrt{1100\times44}=220\ \mathrm V\]
+Check: \[\langle i^2\rangle R=\frac{I_0^2}{2}R=\frac{50}{2}\times44=1100\ \mathrm W\ \checkmark\]
+Why: \(\text{average power in a resistor depends on}\ \langle i^2\rangle=\tfrac{I_0^2}2\)
+Why not the others: (A) \(5.0\ \mathrm A\ \text{is the rms current; 311 V is the peak voltage}\); (C) \(\text{a DC of 311 V would give}\ \tfrac{311^2}{44}\approx2200\ \mathrm W\); (D) \(5.0\ \mathrm A\ \text{is rms, not peak}\).
+Key point: \(I_0=\sqrt2I_{\text{rms}};\ \text{equal heating}\iff V_{\text{DC}}=V_{\text{rms}}\)
+
+@@ Q80
+format: graph
+sub_topic: Reading the critical angle from a graph of refraction angle against incidence angle
+image: NEST_T02_Q80.png
+alt: Graph of refraction angle r against incidence angle i for light passing from medium A to medium B; the curve rises from the origin, steepens, and ends at r = 90 degrees when i = 42 degrees, with no curve beyond i = 42 degrees.
+Q: Light passes from medium A into medium B. The figure shows the angle of refraction r in B plotted against the angle of incidence i in A; no refracted ray is observed for incidence angles beyond the end of the curve. Take \(\sin42^\circ=0.67\). Which statement is correct?
+A) \(\dfrac{n_A}{n_B}=0.67\), and at \(i=50^\circ\) the ray emerges along the surface
+B) \(\dfrac{n_A}{n_B}\approx1.5\), and at \(i=50^\circ\) the ray is refracted at about \(70^\circ\)
+C) \(\dfrac{n_A}{n_B}\approx1.5\), and at \(i=50^\circ\) all the light is reflected back into A
+D) \(\dfrac{n_B}{n_A}\approx1.5\), and at \(i=50^\circ\) all the light is reflected back into A
+KEY: C
+SOL:
+Answer: (C) \(\dfrac{n_A}{n_B}\approx1.5\), and at \(i=50^\circ\) all the light is reflected back into A.
+Given: \(\text{from the figure: }r=90^\circ\ \text{at}\ i=i_c=42^\circ;\ \sin42^\circ=0.67\)
+Formula/Principle: \(n_A\sin i=n_B\sin r;\quad\text{critical angle: }\sin i_c=\dfrac{n_B}{n_A}\)
+Step 1: \(r>i\ \text{on the curve}\Rightarrow\text{B is optically rarer}\)
+Step 2: \(\dfrac{n_B}{n_A}=\sin42^\circ=0.67\Rightarrow\dfrac{n_A}{n_B}=\dfrac1{0.67}\approx1.5\)
+Step 3: \(i=50^\circ>i_c\Rightarrow\sin r=1.5\sin50^\circ=1.5\times0.766=1.15>1\)
+Worked derivation: \[\frac{n_A}{n_B}=\frac{1}{\sin i_c}=\frac1{0.67}=1.49\approx1.5;\qquad i>i_c\Rightarrow\text{total internal reflection}\]
+Check: \[i=30^\circ:\ \sin r=1.49\times0.5=0.75\Rightarrow r\approx48^\circ>30^\circ,\ \text{consistent with the curve lying above}\ r=i\]
+Why: \(\text{the curve ends at}\ r=90^\circ;\ \text{beyond}\ i_c\ \text{no real}\ r\ \text{exists}\)
+Why not the others: (A) \(0.67\ \text{is}\ \tfrac{n_B}{n_A}\); (B) \(\sin r=1.15>1\ \text{is impossible}\); (D) \(\text{if}\ n_B>n_A,\ r<i\ \text{and there is no critical angle}\).
+Key point: \(\sin i_c=\dfrac{n_{\text{rarer}}}{n_{\text{denser}}}\)

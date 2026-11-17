@@ -5,6 +5,8 @@ Authoring block (written by hand, never generated):
 @@ Q07
 format: conceptual | numerical | graph | data | diagram | experiment
 sub_topic: specific sub-topic
+image: NEST_T02_Q03.png   (optional pair of lines, only for a figure question)
+alt: one-sentence alt text
 Q: question text (may span lines)
 A) ...
 B) ...
@@ -25,14 +27,15 @@ parts = re.split(r'^@@ Q(\d\d)\n', src, flags=re.M)
 qs = []
 for num, body in zip(parts[1::2], parts[2::2]):
     k = int(num)
-    m = re.match(r'format:\s*(\S+)\nsub_topic:\s*(.+)\nQ:\s*(.*?)\nA\) (.*)\nB\) (.*)\nC\) (.*)\nD\) (.*)\nKEY: ([ABCD])\nSOL:\n(.*)$', body.strip(), flags=re.S)
+    m = re.match(r'format:\s*(?P<f>\S+)\nsub_topic:\s*(?P<st>[^\n]+)\n(?:image:\s*(?P<img>\S+)\nalt:\s*(?P<alt>[^\n]+)\n)?Q:\s*(?P<q>.*?)\nA\) (?P<A>.*)\nB\) (?P<B>.*)\nC\) (?P<C>.*)\nD\) (?P<D>.*)\nKEY: (?P<k>[ABCD])\nSOL:\n(?P<sol>.*)$', body.strip(), flags=re.S)
     assert m, f'Q{num}: block does not match the authoring format'
-    r = plan[k]; sol = m.group(9).strip()
-    assert sol.startswith(f'Answer: ({m.group(8)})'), f'Q{num}: solution does not start with the key'
-    q = dict(id=r['id'], section=r['section'], subject=NAMES[r['section']], topic=r['chapter'], sub_topic=m.group(2).strip(),
-             class_level=str(r['class_level']), difficulty=r['difficulty_target'], format=m.group(1),
-             question=m.group(3).strip(), options=[f'{L}) {m.group(i).strip()}' for i, L in zip(range(4, 8), 'ABCD')],
-             correct_option=m.group(8), explanation=sol)
+    r = plan[k]; sol = m['sol'].strip()
+    assert sol.startswith(f"Answer: ({m['k']})"), f'Q{num}: solution does not start with the key'
+    q = dict(id=r['id'], section=r['section'], subject=NAMES[r['section']], topic=r['chapter'], sub_topic=m['st'].strip(),
+             class_level=str(r['class_level']), difficulty=r['difficulty_target'], format=m['f'],
+             question=m['q'].strip(), options=[f'{L}) {m[L].strip()}' for L in 'ABCD'],
+             correct_option=m['k'], explanation=sol)
+    if m['img']: q.update(image_reference=m['img'], image_alt=m['alt'].strip())
     qs.append((k, q))
 qs.sort(); assert [k for k, _ in qs] == list(range(1, 81)), 'need Q01..Q80 exactly once'
 test = dict(test_id=f'NEST27_TEST_{n:02}', series_id='NEST27', exam='NEST 2027 (NISER Bhubaneswar and UM-DAE CEBS Mumbai)',

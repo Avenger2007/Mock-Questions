@@ -1,0 +1,431 @@
+@@ Q41
+format: numerical
+sub_topic: Finding the slope of a line from the area it encloses with a parabola
+Q: For \(k>0\), the region bounded by the parabola \(y=x^2\) and the line \(y=kx\) has area 36 square units. What is k?
+A) \(3\sqrt[3]{4}\)
+B) \(2\sqrt[3]{9}\)
+C) \(6\sqrt6\)
+D) \(6\)
+KEY: D
+SOL:
+Answer: (D) \(6\).
+Given: \(y=x^2,\quad y=kx,\quad k>0,\quad\text{area}=36\)
+Formula/Principle: \(\text{area}=\displaystyle\int_a^b(\text{upper}-\text{lower})\,dx\)
+Step 1: \(x^2=kx\Rightarrow x=0\ \text{or}\ x=k;\ \text{on}\ (0,k):\ kx\ge x^2\)
+Step 2: \(\displaystyle\int_0^k(kx-x^2)\,dx=\frac{k^3}{2}-\frac{k^3}{3}=\frac{k^3}{6}\)
+Step 3: \(\dfrac{k^3}{6}=36\Rightarrow k^3=216\Rightarrow k=6\)
+Worked derivation: \[\left[\frac{kx^2}{2}-\frac{x^3}{3}\right]_0^k=\frac{k^3}{6}=36\Rightarrow k=\sqrt[3]{216}=6\]
+Check: \[k=6:\ \int_0^6(6x-x^2)\,dx=108-72=36\]
+Why: \(\text{the region lies between the two intersection points}\ x=0\ \text{and}\ x=k\)
+Why not the others: (A) \(\dfrac{k^3}{3}=36\ \text{uses only the area under the parabola}\); (B) \(\dfrac{k^3}{2}=36\ \text{uses only the area under the line}\); (C) \(k^2=216\ \text{takes a square root instead of a cube root}\).
+Key point: \(\text{area between}\ y=x^2\ \text{and}\ y=kx\ \text{is}\ \dfrac{k^3}{6}\)
+
+@@ Q42
+format: numerical
+sub_topic: Separable differential equation with an initial condition
+Q: The solution of \(\dfrac{dy}{dx}=2xy^2\) with \(y(0)=1\) is defined near \(x=0\). What is \(y\left(\tfrac12\right)\)?
+A) \(\dfrac34\)
+B) \(\dfrac43\)
+C) \(\dfrac45\)
+D) \(e^{1/4}\)
+KEY: B
+SOL:
+Answer: (B) \(\dfrac43\).
+Given: \(\dfrac{dy}{dx}=2xy^2,\quad y(0)=1\)
+Formula/Principle: \(\text{separate:}\ \dfrac{dy}{y^2}=2x\,dx,\ \text{then integrate both sides}\)
+Step 1: \(\displaystyle\int y^{-2}\,dy=\int2x\,dx\Rightarrow-\frac1y=x^2+C\)
+Step 2: \(y(0)=1\Rightarrow-1=C\)
+Step 3: \(-\dfrac1y=x^2-1\Rightarrow y=\dfrac1{1-x^2}\)
+Worked derivation: \[y\left(\tfrac12\right)=\frac1{1-\tfrac14}=\frac43\]
+Check: \[y=\frac1{1-x^2}\Rightarrow y'=\frac{2x}{(1-x^2)^2}=2x\,y^2\ \checkmark,\quad y(0)=1\ \checkmark\]
+Why: \(\text{the equation is separable because the right side is a product of a function of}\ x\ \text{and a function of}\ y\)
+Why not the others: (A) \(1-x^2\ \text{is}\ \tfrac1y,\ \text{not}\ y\); (C) \(\text{sign error:}\ \tfrac1y=1+x^2\); (D) \(e^{x^2}\ \text{solves}\ y'=2xy,\ \text{not}\ y'=2xy^2\).
+Key point: \(\displaystyle\int\frac{dy}{y^2}=-\frac1y\)
+
+@@ Q43
+format: numerical
+sub_topic: Counting subsets of one set that are not subsets of another
+Q: Let \(A=\{x\in\mathbb Z:\ |x-1|\le2\}\) and \(B=\{x\in\mathbb Z:\ x^2<5\}\). How many subsets of A are not subsets of B?
+A) 0
+B) 31
+C) 16
+D) 24
+KEY: C
+SOL:
+Answer: (C) 16.
+Given: \(A=\{x\in\mathbb Z:|x-1|\le2\},\quad B=\{x\in\mathbb Z:x^2<5\}\)
+Formula/Principle: \(S\subseteq A\ \text{and}\ S\subseteq B\iff S\subseteq A\cap B;\quad|P(X)|=2^{|X|}\)
+Step 1: \(|x-1|\le2\iff-1\le x\le3\Rightarrow A=\{-1,0,1,2,3\}\)
+Step 2: \(x^2<5\iff-2\le x\le2\ (x\in\mathbb Z)\Rightarrow B=\{-2,-1,0,1,2\}\)
+Step 3: \(A\cap B=\{-1,0,1,2\},\ |A\cap B|=4\)
+Worked derivation: \[|P(A)|-|P(A\cap B)|=2^5-2^4=32-16=16\]
+Check: \[\text{a subset of}\ A\ \text{is outside}\ P(B)\iff\text{it contains}\ 3:\ 2^4=16\ \text{such subsets}\]
+Why: \(3\ \text{is the only element of}\ A\ \text{not in}\ B\)
+Why not the others: (A) \(|A|=|B|\ \text{does not make}\ A=B\); (B) \(32-1\ \text{removes only}\ \varnothing\); (D) \(32-8\ \text{miscounts}\ |A\cap B|\ \text{as}\ 3\).
+Key point: \(\#\{S\subseteq A:\ S\not\subseteq B\}=2^{|A|}-2^{|A\cap B|}\)
+
+@@ Q44
+format: graph
+sub_topic: Intersections of the graph of |x| with a shifted greatest integer function
+Q: How many solutions does the equation \(|x|=[x]+\tfrac12\) have in the interval \([-3,3]\)? Here \([x]\) is the greatest integer not exceeding x.
+A) 3
+B) 6
+C) 4
+D) Infinitely many
+KEY: A
+SOL:
+Answer: (A) 3.
+Given: \(|x|=[x]+\tfrac12,\quad x\in[-3,3]\)
+Formula/Principle: \(\text{on}\ [n,n+1),\ [x]=n;\ \text{solve the equation on each such interval}\)
+Step 1: \(x\ge0,\ x\in[n,n+1):\ x=n+\tfrac12\in[n,n+1)\ \text{for every}\ n\ge0\)
+Step 2: \(x\in[0,3]:\ n=0,1,2\Rightarrow x=\tfrac12,\ \tfrac32,\ \tfrac52\)
+Step 3: \(x<0,\ x\in[n,n+1),\ n\le-1:\ -x=n+\tfrac12\Rightarrow x=-n-\tfrac12\ge\tfrac12>0,\ \text{contradiction}\)
+Worked derivation: \[\{x\in[-3,3]:\ |x|=[x]+\tfrac12\}=\left\{\tfrac12,\ \tfrac32,\ \tfrac52\right\}\]
+Check: \[x=\tfrac32:\ |x|=1.5,\ [x]+\tfrac12=1+0.5=1.5;\quad x=-\tfrac12:\ 0.5\ne-1+0.5\]
+Why: \(\text{for}\ x<0,\ |x|>0\ \text{but}\ [x]+\tfrac12\le-\tfrac12<0\)
+Why not the others: (B) \(\text{the step graph is not symmetric about the}\ y\text{-axis}\); (C) \(x=3:\ |3|=3\ne3.5\); (D) \(\text{infinitely many only on}\ [0,\infty);\ \text{in}\ [-3,3]\ \text{there are 3}\).
+Key point: \(\text{the line}\ y=x\ \text{meets each step}\ y=n+\tfrac12\ \text{at its midpoint}\)
+
+@@ Q45
+format: conceptual
+sub_topic: Angle between two position vectors using the tangent of a difference
+Q: Let O be the origin, \(A=(2,1)\) and \(B=(1,3)\). What is the angle AOB?
+A) \(\dfrac\pi6\)
+B) \(\dfrac\pi3\)
+C) \(\dfrac\pi4\)
+D) \(\pi-\tan^{-1}7\)
+KEY: C
+SOL:
+Answer: (C) \(\dfrac\pi4\).
+Given: \(O=(0,0),\ A=(2,1),\ B=(1,3)\)
+Formula/Principle: \(\tan(\beta-\alpha)=\dfrac{\tan\beta-\tan\alpha}{1+\tan\beta\tan\alpha}\)
+Step 1: \(\tan\alpha=\dfrac12\ (\text{line}\ OA),\quad\tan\beta=3\ (\text{line}\ OB)\)
+Step 2: \(\tan(\beta-\alpha)=\dfrac{3-\tfrac12}{1+\tfrac32}=\dfrac{5/2}{5/2}=1\)
+Worked derivation: \[\angle AOB=\beta-\alpha=\tan^{-1}1=\frac\pi4\quad(0<\beta-\alpha<\tfrac\pi2)\]
+Check: \[\cos\angle AOB=\frac{(2,1)\cdot(1,3)}{\sqrt5\,\sqrt{10}}=\frac5{5\sqrt2}=\frac1{\sqrt2}\Rightarrow\frac\pi4\]
+Why: \(\text{the angle between the lines is the difference of their inclinations}\)
+Why not the others: (A) \(\tan\tfrac\pi6=\tfrac1{\sqrt3}\ne1\); (B) \(\tan\tfrac\pi3=\sqrt3\ne1\); (D) \(\text{uses}\ \tan(\alpha+\beta)=\dfrac{3+\frac12}{1-\frac32}=-7\).
+Key point: \(\tan(\beta-\alpha)\ \text{gives the angle between two lines through the origin}\)
+
+@@ Q46
+format: conceptual
+sub_topic: Finding a complex number from its modulus and principal argument
+Q: A complex number \(z=a+ib\) has \(|z|=2\) and principal argument \(\dfrac{2\pi}3\). What are a and b?
+A) \(a=1,\ b=\sqrt3\)
+B) \(a=-\sqrt3,\ b=1\)
+C) \(a=-1,\ b=-\sqrt3\)
+D) \(a=-1,\ b=\sqrt3\)
+KEY: D
+SOL:
+Answer: (D) \(a=-1,\ b=\sqrt3\).
+Given: \(r=2,\quad\theta=\dfrac{2\pi}3\)
+Formula/Principle: \(z=r(\cos\theta+i\sin\theta)\)
+Step 1: \(a=2\cos\dfrac{2\pi}3=2\left(-\tfrac12\right)=-1\)
+Step 2: \(b=2\sin\dfrac{2\pi}3=2\cdot\dfrac{\sqrt3}2=\sqrt3\)
+Worked derivation: \[z=2\left(\cos\tfrac{2\pi}3+i\sin\tfrac{2\pi}3\right)=-1+i\sqrt3\]
+Check: \[|z|=\sqrt{1+3}=2,\quad z\ \text{in quadrant II},\ \tan^{-1}\tfrac{\sqrt3}{1}=\tfrac\pi3\Rightarrow\arg z=\pi-\tfrac\pi3=\tfrac{2\pi}3\]
+Why: \(\tfrac{2\pi}3\ \text{lies in the second quadrant:}\ a<0,\ b>0\)
+Why not the others: (A) \(\arg=\tfrac\pi3\); (B) \(\arg=\tfrac{5\pi}6\); (C) \(\arg=-\tfrac{2\pi}3\).
+Key point: \(a=r\cos\theta,\ b=r\sin\theta\)
+
+@@ Q47
+format: conceptual
+sub_topic: Locus |z − 1| = k|z + 1| and its special case k = 1
+Q: For a real number \(k>0\), consider the locus of z satisfying \(|z-1|=k\,|z+1|\). For which value of k is the locus a straight line, and which line is it?
+A) \(k=1\); the imaginary axis
+B) \(k=1\); the real axis
+C) \(k=2\); the line \(\operatorname{Re}z=-\tfrac13\)
+D) No value of k; the locus is always a circle
+KEY: A
+SOL:
+Answer: (A) \(k=1\); the imaginary axis.
+Given: \(|z-1|=k|z+1|,\quad k>0,\quad z=x+iy\)
+Formula/Principle: \(|z-a|^2=(x-\operatorname{Re}a)^2+(y-\operatorname{Im}a)^2\)
+Step 1: \((x-1)^2+y^2=k^2\left[(x+1)^2+y^2\right]\)
+Step 2: \((1-k^2)(x^2+y^2)-2(1+k^2)x+(1-k^2)=0\)
+Step 3: \(k\ne1:\ \text{circle};\quad k=1:\ -4x=0\Rightarrow x=0\)
+Worked derivation: \[k=1:\ (x-1)^2+y^2=(x+1)^2+y^2\iff-2x=2x\iff x=0\]
+Check: \[z=3i:\ |3i-1|=\sqrt{10}=|3i+1|\ \checkmark;\quad z=1:\ 0\ne2\]
+Why: \(k=1\ \text{means equal distance from}\ 1\ \text{and}\ -1:\ \text{the perpendicular bisector}\)
+Why not the others: (B) \(\text{points on the real axis other than}\ 0\ \text{are not equidistant from}\ \pm1\); (C) \(k=2:\ 3(x^2+y^2)+10x+3=0\ \text{is a circle}\); (D) \(k=1\ \text{gives a line}\).
+Key point: \(|z-a|=|z-b|\ \text{is the perpendicular bisector of}\ ab\)
+
+@@ Q48
+format: numerical
+sub_topic: Arrangements of a word with repeated letters when the vowels are not all together
+Q: In how many arrangements of all the letters of the word SCIENCE do the three vowels not all come together?
+A) 1260
+B) 1080
+C) 4320
+D) 1200
+KEY: B
+SOL:
+Answer: (B) 1080.
+Given: \(\text{SCIENCE: 7 letters};\ C\times2,\ E\times2;\ \text{vowels}\ I,E,E\)
+Formula/Principle: \(\dfrac{n!}{p!\,q!}\ \text{for repeated letters};\ \text{wanted}=\text{total}-\text{vowels together}\)
+Step 1: \(\text{total}=\dfrac{7!}{2!\,2!}=\dfrac{5040}4=1260\)
+Step 2: \(\text{block}\ [IEE]+S,C,N,C:\ \dfrac{5!}{2!}=60;\ \text{inside block:}\ \dfrac{3!}{2!}=3\Rightarrow180\)
+Worked derivation: \[1260-60\times3=1260-180=1080\]
+Check: \[\text{fraction together}=\frac{180}{1260}=\frac17;\ \text{as a check,}\ \frac{5!\,3!}{7!}=\frac{720}{5040}=\frac17\]
+Why: \(\text{count the complement, then subtract}\)
+Why not the others: (A) \(1260\ \text{is the total with no restriction}\); (C) \(7!-5!\,3!\ \text{ignores the repeated letters}\); (D) \(1260-60\ \text{forgets the 3 orders inside the block}\).
+Key point: \(\text{not all together}=\text{total}-\text{together}\)
+
+@@ Q49
+format: numerical
+sub_topic: Term independent of x in a binomial expansion
+Q: What is the term independent of x in the expansion of \(\left(x^2-\dfrac2x\right)^9\)?
+A) \(-5376\)
+B) \(672\)
+C) \(84\)
+D) \(5376\)
+KEY: D
+SOL:
+Answer: (D) \(5376\).
+Given: \(\left(x^2-\dfrac2x\right)^9\)
+Formula/Principle: \(T_{r+1}=\binom9r(x^2)^{9-r}\left(-\dfrac2x\right)^r\)
+Step 1: \(T_{r+1}=\binom9r(-2)^rx^{18-3r}\)
+Step 2: \(18-3r=0\Rightarrow r=6\)
+Step 3: \(\dbinom96=84,\quad(-2)^6=64\)
+Worked derivation: \[T_7=\binom96(-2)^6=84\times64=5376\]
+Check: \[r=6\ \text{is even, so the sign is}\ +;\ \text{power of}\ x:\ 2(3)-6=0\]
+Why: \(\text{only}\ r=6\ \text{gives}\ x^0\)
+Why not the others: (A) \((-2)^6>0\); (B) \(\binom93\,2^3=672\ \text{uses}\ r=3\); (C) \(\text{leaves out}\ (-2)^6\).
+Key point: \(\text{set the power of}\ x\ \text{in}\ T_{r+1}\ \text{to zero}\)
+
+@@ Q50
+format: numerical
+sub_topic: Eccentricity and latus rectum of an ellipse from its foci and a point on it
+Q: An ellipse has its centre at the origin and its axes along the coordinate axes. Its foci are \((\pm3,0)\) and it passes through \(\left(4,\tfrac{12}5\right)\). What are its eccentricity and the length of its latus rectum?
+A) \(\dfrac35\) and \(\dfrac{32}5\)
+B) \(\dfrac35\) and \(\dfrac{25}2\)
+C) \(\dfrac34\) and \(\dfrac{32}5\)
+D) \(\dfrac45\) and \(\dfrac{32}5\)
+KEY: A
+SOL:
+Answer: (A) \(\dfrac35\) and \(\dfrac{32}5\).
+Given: \(c=3,\quad P=\left(4,\tfrac{12}5\right)\)
+Formula/Principle: \(PF_1+PF_2=2a;\quad b^2=a^2-c^2;\quad e=\dfrac ca;\quad\text{LR}=\dfrac{2b^2}a\)
+Step 1: \(PF_1=\sqrt{(4-3)^2+\left(\tfrac{12}5\right)^2}=\sqrt{\tfrac{169}{25}}=\tfrac{13}5\)
+Step 2: \(PF_2=\sqrt{(4+3)^2+\left(\tfrac{12}5\right)^2}=\sqrt{\tfrac{1369}{25}}=\tfrac{37}5\)
+Step 3: \(2a=\tfrac{50}5=10\Rightarrow a=5,\quad b^2=25-9=16\)
+Worked derivation: \[e=\frac35,\qquad\text{LR}=\frac{2\times16}{5}=\frac{32}5\]
+Check: \[\frac{16}{25}+\frac{144/25}{16}=\frac{16}{25}+\frac9{25}=1\ \checkmark\]
+Why: \(\text{the sum of focal distances fixes}\ a\ \text{directly}\)
+Why not the others: (B) \(\dfrac{2a^2}b=\dfrac{50}4\ \text{swaps}\ a\ \text{and}\ b\); (C) \(\dfrac cb=\dfrac34\ \text{divides by}\ b\); (D) \(\dfrac ba=\dfrac45\ \text{is not}\ e\).
+Key point: \(PF_1+PF_2=2a,\ e=\dfrac ca\)
+
+@@ Q51
+format: numerical
+sub_topic: Finding a parameter from a trigonometric limit
+Q: For a positive constant a, \(\displaystyle\lim_{x\to0}\frac{1-\cos ax}{x\sin x}=8\). What is a?
+A) 8
+B) 16
+C) 4
+D) \(2\sqrt2\)
+KEY: C
+SOL:
+Answer: (C) 4.
+Given: \(\displaystyle\lim_{x\to0}\frac{1-\cos ax}{x\sin x}=8,\quad a>0\)
+Formula/Principle: \(1-\cos ax=2\sin^2\dfrac{ax}2;\quad\displaystyle\lim_{t\to0}\frac{\sin t}t=1\)
+Step 1: \(\dfrac{1-\cos ax}{x\sin x}=\dfrac{2\sin^2(ax/2)}{x^2}\cdot\dfrac{x}{\sin x}\)
+Step 2: \(\dfrac{2\sin^2(ax/2)}{x^2}=2\cdot\dfrac{a^2}4\left(\dfrac{\sin(ax/2)}{ax/2}\right)^2\to\dfrac{a^2}2\)
+Worked derivation: \[\frac{a^2}2\times1=8\Rightarrow a^2=16\Rightarrow a=4\]
+Check: \[a=4:\ \lim_{x\to0}\frac{1-\cos4x}{x\sin x}=\frac{16}2=8\ \checkmark\]
+Why: \(1-\cos ax\approx\dfrac{a^2x^2}2\ \text{and}\ x\sin x\approx x^2\)
+Why not the others: (A) \(\text{the limit is}\ \tfrac{a^2}2,\ \text{not}\ a\); (B) \(\text{uses}\ \tfrac a2=8\); (D) \(\text{uses}\ a^2=8,\ \text{forgetting the factor}\ \tfrac12\).
+Key point: \(\displaystyle\lim_{x\to0}\frac{1-\cos ax}{x^2}=\frac{a^2}2\)
+
+@@ Q52
+format: numerical
+sub_topic: Finding an unknown observation from the range, then the mean deviation about the median
+Q: The observations 2, 4, 6, 8 and x, where \(x>8\), have range 12. What are x and the mean deviation about the median?
+A) 14 and 3.36
+B) 14 and 3.2
+C) 12 and 2.8
+D) 14 and 16
+KEY: B
+SOL:
+Answer: (B) 14 and 3.2.
+Given: \(2,4,6,8,x;\quad x>8;\quad\text{range}=12\)
+Formula/Principle: \(\text{range}=\max-\min;\quad\text{M.D.}(M)=\dfrac1n\sum|x_i-M|\)
+Step 1: \(x-2=12\Rightarrow x=14\)
+Step 2: \(\text{ordered: }2,4,6,8,14\Rightarrow M=6\)
+Step 3: \(|x_i-6|:\ 4,2,0,2,8;\ \text{sum}=16\)
+Worked derivation: \[\text{M.D.}(M)=\frac{16}5=3.2\]
+Check: \[\bar x=\frac{34}5=6.8;\ \sum|x_i-6.8|=16.8>16\ \text{(the median minimises the sum)}\]
+Why: \(\text{the median is the middle value of the ordered data}\)
+Why not the others: (A) \(3.36\ \text{is about the mean}\ 6.8\); (C) \(\text{takes the largest value as}\ 12\); (D) \(16\ \text{is the sum, not divided by}\ 5\).
+Key point: \(\text{M.D. about the median}=\dfrac{\sum|x_i-M|}n\)
+
+@@ Q53
+format: numerical
+sub_topic: Addition rule: probability of exactly one event and test of mutual exclusivity
+Q: For events A and B, \(P(A)=0.4\), \(P(B)=0.5\) and \(P(A\cup B)=0.7\). What is the probability that exactly one of A and B occurs, and are A and B mutually exclusive?
+A) 0.5; not mutually exclusive
+B) 0.7; mutually exclusive
+C) 0.3; not mutually exclusive
+D) 0.9; mutually exclusive
+KEY: A
+SOL:
+Answer: (A) 0.5; not mutually exclusive.
+Given: \(P(A)=0.4,\ P(B)=0.5,\ P(A\cup B)=0.7\)
+Formula/Principle: \(P(A\cup B)=P(A)+P(B)-P(A\cap B);\quad P(\text{exactly one})=P(A\cup B)-P(A\cap B)\)
+Step 1: \(P(A\cap B)=0.4+0.5-0.7=0.2\)
+Step 2: \(P(A\cap B)\ne0\Rightarrow\text{not mutually exclusive}\)
+Worked derivation: \[P(\text{exactly one})=0.7-0.2=0.5\]
+Check: \[P(A)-P(A\cap B)+P(B)-P(A\cap B)=0.2+0.3=0.5\ \checkmark\]
+Why: \(\text{mutually exclusive}\iff P(A\cap B)=0\)
+Why not the others: (B) \(0.7\ \text{is}\ P(\text{at least one})\); (C) \(0.3\ \text{is}\ P(\text{neither})\); (D) \(0.4+0.5\ \text{ignores the overlap}\).
+Key point: \(P(\text{exactly one})=P(A)+P(B)-2P(A\cap B)\)
+
+@@ Q54
+format: numerical
+sub_topic: Probability that two balls drawn have the same colour: solving for the number of balls
+Q: A bag has n red balls and 3 blue balls, where \(n\ge1\). Two balls are drawn at random without replacement. The probability that both are of the same colour is \(\tfrac12\). What are the possible values of n?
+A) 6 only
+B) 1 only
+C) 2 and 3
+D) 1 and 6
+KEY: D
+SOL:
+Answer: (D) 1 and 6.
+Given: \(n\ \text{red},\ 3\ \text{blue};\ P(\text{same colour})=\tfrac12\)
+Formula/Principle: \(P=\dfrac{\binom n2+\binom32}{\binom{n+3}2}\)
+Step 1: \(\dfrac{\tfrac{n(n-1)}2+3}{\tfrac{(n+3)(n+2)}2}=\dfrac12\Rightarrow2\left[n(n-1)+6\right]=(n+3)(n+2)\)
+Step 2: \(2n^2-2n+12=n^2+5n+6\Rightarrow n^2-7n+6=0\)
+Worked derivation: \[(n-1)(n-6)=0\Rightarrow n=1\ \text{or}\ n=6\]
+Check: \[n=1:\ \frac{0+3}{6}=\frac12;\qquad n=6:\ \frac{15+3}{36}=\frac12\ \checkmark\]
+Why: \(\text{both roots are positive integers, so both are allowed}\)
+Why not the others: (A) \(n=1\ \text{also works}\); (B) \(n=6\ \text{also works}\); (C) \(n=2:\ \tfrac{1+3}{10}=\tfrac25;\ n=3:\ \tfrac{3+3}{15}=\tfrac25\).
+Key point: \(\text{count both same-colour cases, then solve the quadratic and test each root}\)
+
+@@ Q55
+format: numerical
+sub_topic: Counting 3 × 3 matrices with entries from {−1, 0, 1} that are symmetric or skew-symmetric
+Q: How many \(3\times3\) matrices with every entry in \(\{-1,0,1\}\) are symmetric or skew-symmetric?
+A) 756
+B) 755
+C) 729
+D) 728
+KEY: B
+SOL:
+Answer: (B) 755.
+Given: \(3\times3,\ a_{ij}\in\{-1,0,1\}\)
+Formula/Principle: \(|S\cup K|=|S|+|K|-|S\cap K|\)
+Step 1: \(\text{symmetric: diagonal (3) and upper triangle (3) are free}\Rightarrow|S|=3^6=729\)
+Step 2: \(\text{skew-symmetric: diagonal}=0,\ \text{upper triangle (3) free}\Rightarrow|K|=3^3=27\)
+Step 3: \(A=A^T=-A^T\Rightarrow A=O\Rightarrow|S\cap K|=1\)
+Worked derivation: \[|S\cup K|=729+27-1=755\]
+Check: \[\text{the zero matrix is the only one counted twice}\]
+Why: \(\text{entries below the diagonal are fixed by those above it}\)
+Why not the others: (A) \(\text{counts the zero matrix twice}\); (C) \(\text{counts only the symmetric ones}\); (D) \(729-1\ \text{counts symmetric but not skew-symmetric}\).
+Key point: \(\text{symmetric and skew-symmetric}\iff\text{zero matrix}\)
+
+@@ Q56
+format: conceptual
+sub_topic: Product of two non-zero matrices that is the zero matrix: projections onto the axes
+Q: The matrix A maps every point \((x,y)\) of the plane to its projection \((x,0)\) on the x-axis, and the matrix B maps \((x,y)\) to its projection \((0,y)\) on the y-axis. What is the product AB?
+A) The identity matrix
+B) A
+C) The zero matrix
+D) B
+KEY: C
+SOL:
+Answer: (C) The zero matrix.
+Given: \(A\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}x\\0\end{pmatrix},\quad B\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}0\\y\end{pmatrix}\)
+Formula/Principle: \((AB)v=A(Bv)\)
+Step 1: \(A=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad B=\begin{pmatrix}0&0\\0&1\end{pmatrix}\)
+Step 2: \(A(Bv)=A\begin{pmatrix}0\\y\end{pmatrix}=\begin{pmatrix}0\\0\end{pmatrix}\ \text{for every}\ v\)
+Worked derivation: \[AB=\begin{pmatrix}1&0\\0&0\end{pmatrix}\begin{pmatrix}0&0\\0&1\end{pmatrix}=\begin{pmatrix}0&0\\0&0\end{pmatrix}\]
+Check: \[(AB)\begin{pmatrix}3\\5\end{pmatrix}=A\begin{pmatrix}0\\5\end{pmatrix}=\begin{pmatrix}0\\0\end{pmatrix}\]
+Why: \(\text{a point already on the}\ y\text{-axis projects to the origin on the}\ x\text{-axis}\)
+Why not the others: (A) \(AB\ \text{sends}\ (1,0)\ \text{to}\ (0,0),\ \text{not}\ (1,0)\); (B) \(A\ne O\); (D) \(B\ne O\).
+Key point: \(AB=O\ \text{does not imply}\ A=O\ \text{or}\ B=O\)
+
+@@ Q57
+format: conceptual
+sub_topic: Points of non-differentiability of a product containing an absolute value
+Q: Let \(f(x)=(x-1)\,|x^2-3x+2|\) for all real x. Where is f not differentiable?
+A) Nowhere
+B) Only at \(x=2\)
+C) At \(x=1\) and \(x=2\)
+D) Only at \(x=1\)
+KEY: B
+SOL:
+Answer: (B) Only at \(x=2\).
+Given: \(f(x)=(x-1)|x^2-3x+2|=(x-1)|x-1|\,|x-2|\)
+Formula/Principle: \(g(x)=(x-a)|x-a|\ \text{is differentiable at}\ a;\ |x-b|\ \text{has a corner at}\ b\)
+Step 1: \(\text{near}\ x=1:\ f=(x-1)|x-1|\cdot|x-2|,\ \text{product of differentiable functions}\)
+Step 2: \(\text{near}\ x=2:\ f(x)=h(x)|x-2|,\ h(x)=(x-1)|x-1|,\ h(2)=1\ne0\)
+Step 3: \(f'(2^+)=h(2)=1,\quad f'(2^-)=-h(2)=-1\)
+Worked derivation: \[f'(1)=\lim_{x\to1}\frac{(x-1)|x-1||x-2|}{x-1}=\lim_{x\to1}|x-1||x-2|=0;\qquad f'(2^\pm)=\pm1\]
+Check: \[f\ \text{is continuous everywhere, so a corner, not a jump, occurs at}\ x=2\]
+Why: \(\text{a factor that vanishes at the corner smooths it; a non-zero factor keeps it}\)
+Why not the others: (A) \(f'(2^+)\ne f'(2^-)\); (C) \(f'(1)=0\ \text{exists}\); (D) \(x=1\ \text{is smooth and}\ x=2\ \text{is the corner}\).
+Key point: \((x-a)|x-a|\ \text{is differentiable;}\ c\,|x-a|\ (c\ne0)\ \text{is not}\)
+
+@@ Q58
+format: conceptual
+sub_topic: Derivative of an inverse trigonometric function by substitution
+Q: For \(|x|<1\), let \(y=\sin^{-1}\left(\dfrac{2x}{1+x^2}\right)\). What is \(\dfrac{dy}{dx}\)?
+A) \(\dfrac2{1+x^2}\)
+B) \(\dfrac1{1+x^2}\)
+C) \(-\dfrac2{1+x^2}\)
+D) \(\dfrac2{\sqrt{1-x^2}}\)
+KEY: A
+SOL:
+Answer: (A) \(\dfrac2{1+x^2}\).
+Given: \(y=\sin^{-1}\dfrac{2x}{1+x^2},\quad|x|<1\)
+Formula/Principle: \(x=\tan\theta\Rightarrow\dfrac{2\tan\theta}{1+\tan^2\theta}=\sin2\theta\)
+Step 1: \(|x|<1\Rightarrow\theta\in\left(-\tfrac\pi4,\tfrac\pi4\right)\Rightarrow2\theta\in\left(-\tfrac\pi2,\tfrac\pi2\right)\)
+Step 2: \(y=\sin^{-1}(\sin2\theta)=2\theta=2\tan^{-1}x\)
+Worked derivation: \[\frac{dy}{dx}=\frac{d}{dx}\left(2\tan^{-1}x\right)=\frac2{1+x^2}\]
+Check: \[x=0:\ y\approx\sin^{-1}(2x)\approx2x\Rightarrow y'(0)=2=\frac2{1+0}\]
+Why: \(2\theta\ \text{lies in the principal range of}\ \sin^{-1}\ \text{only when}\ |x|<1\)
+Why not the others: (B) \(\text{drops the factor 2 from}\ 2\tan^{-1}x\); (C) \(\text{that is the derivative for}\ |x|>1\); (D) \(\text{differentiates as if}\ y=2\sin^{-1}x\).
+Key point: \(\sin^{-1}\dfrac{2x}{1+x^2}=2\tan^{-1}x\ \text{for}\ |x|\le1\)
+
+@@ Q59
+format: conceptual
+sub_topic: Intervals of increase and decrease of x² e^(−x)
+Q: On which intervals is \(f(x)=x^2e^{-x}\) increasing, and on which is it decreasing?
+A) Increasing on \((-\infty,0]\); decreasing on \([0,2]\)
+B) Increasing on \([0,\infty)\)
+C) Increasing on \([2,\infty)\); decreasing on \([0,2]\)
+D) Increasing on \([0,2]\); decreasing on \((-\infty,0]\) and on \([2,\infty)\)
+KEY: D
+SOL:
+Answer: (D) Increasing on \([0,2]\); decreasing on \((-\infty,0]\) and on \([2,\infty)\).
+Given: \(f(x)=x^2e^{-x}\)
+Formula/Principle: \(f'>0\Rightarrow\text{increasing};\ f'<0\Rightarrow\text{decreasing}\)
+Step 1: \(f'(x)=2xe^{-x}-x^2e^{-x}=x(2-x)e^{-x}\)
+Step 2: \(e^{-x}>0;\ \text{sign of}\ f'=\text{sign of}\ x(2-x)\)
+Step 3: \(x<0:\ f'<0;\quad0<x<2:\ f'>0;\quad x>2:\ f'<0\)
+Worked derivation: \[f'(x)=x(2-x)e^{-x}\ \Rightarrow\ \uparrow\ \text{on}\ [0,2],\ \downarrow\ \text{on}\ (-\infty,0]\cup[2,\infty)\]
+Check: \[f(0)=0,\ f(2)=4e^{-2}\approx0.54,\ f(4)=16e^{-4}\approx0.29:\ \text{rises then falls}\]
+Why: \(\text{the factor}\ e^{-x}\ \text{eventually beats}\ x^2\)
+Why not the others: (A) \(f'(-1)=-3e<0\ \text{on}\ (-\infty,0)\); (B) \(f'(3)=-3e^{-3}<0\); (C) \(\text{reverses the signs of}\ f'\).
+Key point: \(\text{factor}\ f'\ \text{fully and read its sign on each interval}\)
+
+@@ Q60
+format: numerical
+sub_topic: Reduction formula by integration by parts for the integral of x^n e^x from 0 to 1
+Q: Let \(I_n=\displaystyle\int_0^1x^ne^x\,dx\) for \(n\ge0\). Integration by parts gives \(I_n=e-nI_{n-1}\) for \(n\ge1\). What is \(I_3\)?
+A) \(2e-6\)
+B) \(e-2\)
+C) \(6-2e\)
+D) \(e-3\)
+KEY: C
+SOL:
+Answer: (C) \(6-2e\).
+Given: \(I_n=\displaystyle\int_0^1x^ne^x\,dx,\quad I_n=e-nI_{n-1}\)
+Formula/Principle: \(\displaystyle\int u\,dv=uv-\int v\,du\ \text{with}\ u=x^n,\ dv=e^xdx\)
+Step 1: \(I_0=\displaystyle\int_0^1e^x\,dx=e-1\)
+Step 2: \(I_1=e-1\cdot I_0=e-(e-1)=1\)
+Step 3: \(I_2=e-2I_1=e-2\)
+Worked derivation: \[I_3=e-3I_2=e-3(e-2)=6-2e\]
+Check: \[6-2e\approx0.563;\ \ 0<x^3e^x<e\ \text{on}\ (0,1)\ \text{and}\ \int_0^1x^3e\,dx=\tfrac e4\approx0.68>0.563>0\]
+Why: \(\left[x^ne^x\right]_0^1=e\ \text{for}\ n\ge1\)
+Why not the others: (A) \(\text{sign error:}\ 2e-6<0,\ \text{but}\ I_3>0\); (B) \(e-2=I_2\); (D) \(\text{uses}\ I_2=1\ \text{in place of}\ e-2\).
+Key point: \(I_n=e-nI_{n-1},\ I_0=e-1\)
