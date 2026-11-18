@@ -1,0 +1,439 @@
+@@ Q61
+format: conceptual
+sub_topic: How self-inductance and mutual inductance depend on turns, geometry and core, the reciprocity of mutual inductance and the coupling coefficient
+Q: Two long coaxial solenoids are wound one over the other. Which statement about their self and mutual inductances is correct?
+A) Doubling the number of turns of a solenoid doubles its self-inductance; \(M_{12}\) and \(M_{21}\) are generally different
+B) The self-inductance of a long solenoid is \(L=\mu_0n^2Al\), so doubling the turns on the same length makes it 4 times larger; the mutual inductance of the pair is \(M=\mu_0n_1n_2A_1l\) (\(A_1\) the area of the inner one), the same whichever coil carries the current (\(M_{12}=M_{21}\)); \(M=k\sqrt{L_1L_2}\) with \(0\le k\le1\); and an iron core of relative permeability \(\mu_r\) multiplies \(L\) and \(M\) by \(\mu_r\)
+C) Mutual inductance depends on the current in the primary coil
+D) Inserting a soft-iron core reduces both inductances, because iron opposes magnetic flux
+KEY: B
+SOL:
+Answer: (B) \(L\propto n^2\); \(M=\mu_0n_1n_2A_1l\), reciprocal; \(M=k\sqrt{L_1L_2}\); core multiplies by \(\mu_r\).
+Given: \(\text{long coaxial solenoids, length }l,\ \text{turn densities }n_1,n_2,\ \text{inner area }A_1\)
+Formula/Principle: \(N\Phi=LI;\ N_2\Phi_2=MI_1;\ B=\mu_0nI\text{ inside a long solenoid}\)
+Step 1: \(\text{self: }N\Phi=(nl)(\mu_0nI)A\Rightarrow L=\mu_0n^2Al\)
+Step 2: \(\text{mutual: current }I_2\text{ in outer gives }B_2=\mu_0n_2I_2\text{ through the inner: }N_1\Phi_1=n_1l\,\mu_0n_2I_2A_1\Rightarrow M=\mu_0n_1n_2A_1l\)
+Step 3: \(\text{the expression is symmetric in 1 and 2}\Rightarrow M_{12}=M_{21}\)
+Worked derivation: \[N\to2N\ (\text{same }l):\ n\to2n\Rightarrow L\to4L;\quad A_1=A_2:\ M^2=L_1L_2\Rightarrow k=1\]
+Check: \[\text{units: }\mu_0\,(\text{H/m})\times\text{m}^{-2}\times\text{m}^2\times\text{m}=\text{H}\ \checkmark\]
+Why: \(\text{more turns mean more flux per turn and more turns linking it, so }L\propto N^2\text{; inductance is purely geometric (and material), independent of current}\)
+Why not the others: (A) \(L\propto N^2\text{, and }M\text{ is reciprocal}\); (C) \(M\text{ depends only on geometry and medium}\); (D) \(\text{iron increases the flux}\).
+Key point: \(L=\mu_0\mu_rn^2Al;\ M=\mu_0\mu_rn_1n_2A_1l;\ M\le\sqrt{L_1L_2}\)
+
+@@ Q62
+format: numerical
+sub_topic: Reading peak, rms and frequency from an a.c. voltage expression and finding rms and peak current, average power and the time to the first peak for a resistive load
+Q: The voltage \(v=220\sqrt2\sin(100\pi t)\) volts is applied across a \(55\ \Omega\) resistor. Which statement is correct?
+A) \(V_{\text{rms}}=311\ \text{V}\); \(f=100\ \text{Hz}\); \(I_{\text{rms}}=5.66\ \text{A}\); average power 1760 W
+B) \(V_{\text{rms}}=220\ \text{V}\); \(f=100\ \text{Hz}\); average power 0, since the average current is zero
+C) \(V_{\text{rms}}=220\ \text{V}\), \(f=50\ \text{Hz}\); \(I_{\text{rms}}=4.0\ \text{A}\) and peak current \(4\sqrt2\approx5.66\ \text{A}\); average power \(V_{\text{rms}}I_{\text{rms}}=880\ \text{W}\); the voltage first reaches its peak at \(t=5\ \text{ms}\); current and voltage are in phase
+D) \(V_{\text{rms}}=156\ \text{V}\); \(f=50\ \text{Hz}\); average power 440 W
+KEY: C
+SOL:
+Answer: (C) \(220\ \text{V},\ 50\ \text{Hz},\ 4.0\ \text{A},\ 5.66\ \text{A},\ 880\ \text{W},\ 5\ \text{ms}\).
+Given: \(v_m=220\sqrt2\ \text{V},\ \omega=100\pi\ \text{rad/s},\ R=55\ \Omega\)
+Formula/Principle: \(V_{\text{rms}}=\dfrac{v_m}{\sqrt2};\ f=\dfrac{\omega}{2\pi};\ \bar P=V_{\text{rms}}I_{\text{rms}}\cos\phi,\ \phi=0\text{ for R}\)
+Step 1: \(V_{\text{rms}}=220\ \text{V};\ f=\dfrac{100\pi}{2\pi}=50\ \text{Hz}\)
+Step 2: \(I_{\text{rms}}=\dfrac{220}{55}=4.0\ \text{A};\ i_m=4\sqrt2\approx5.66\ \text{A}\)
+Step 3: \(\bar P=220\times4=880\ \text{W}\)
+Worked derivation: \[100\pi t=\tfrac{\pi}{2}\Rightarrow t=\tfrac{1}{200}\ \text{s}=5\ \text{ms}=\tfrac T4\]
+Check: \[\bar P=\tfrac12v_mi_m=\tfrac12(311)(5.66)\approx880\ \text{W}\ \checkmark\]
+Why: \(\text{rms values are defined so that }I_{\text{rms}}^2R\text{ gives the average heating; in a resistor current follows voltage exactly}\)
+Why not the others: (A) \(\text{uses peak values as rms and doubles f}\); (B) \(\text{average of }i^2R\text{ is not zero}\); (D) \(\text{divides by 2 instead of }\sqrt2\).
+Key point: \(V_{\text{rms}}=V_m/\sqrt2;\ \bar P=V_{\text{rms}}I_{\text{rms}}\text{ for a resistor}\)
+
+@@ Q63
+format: numerical
+sub_topic: Effective focal length and power of a converging and a diverging lens in contact and separated by a small distance
+Q: A convex lens (\(f_1=+20\ \text{cm}\)) and a concave lens (\(f_2=-30\ \text{cm}\)) are used together. Find the focal length and power when they are in contact, and the effective focal length when they are 10 cm apart.
+A) In contact: \(f=-60\ \text{cm}\), \(P=-1.67\ \text{D}\); separated: \(f=-12\ \text{cm}\)
+B) In contact: \(f=+50\ \text{cm}\), \(P=+2\ \text{D}\); separated: \(f=+60\ \text{cm}\)
+C) In contact: \(f=+12\ \text{cm}\), \(P=+8.3\ \text{D}\); separated: \(f=+12\ \text{cm}\)
+D) In contact: \(f=+60\ \text{cm}\), \(P=+1.67\ \text{D}\) (powers add: \(5-3.33\)); separated by 10 cm: \(\tfrac1F=\tfrac1{f_1}+\tfrac1{f_2}-\tfrac{d}{f_1f_2}=\tfrac1{30}\), so \(F=+30\ \text{cm}\)
+KEY: D
+SOL:
+Answer: (D) \(+60\ \text{cm}\ (+1.67\ \text{D})\) in contact; \(+30\ \text{cm}\) when 10 cm apart.
+Given: \(f_1=+20\ \text{cm},\ f_2=-30\ \text{cm},\ d=10\ \text{cm}\)
+Formula/Principle: \(\text{contact: }\tfrac1F=\tfrac1{f_1}+\tfrac1{f_2},\ P=P_1+P_2;\ \text{separated: }\tfrac1F=\tfrac1{f_1}+\tfrac1{f_2}-\tfrac{d}{f_1f_2}\)
+Step 1: \(\tfrac1F=\tfrac1{20}-\tfrac1{30}=\tfrac{1}{60}\Rightarrow F=60\ \text{cm}\)
+Step 2: \(P=\tfrac{100}{60}=+1.67\ \text{D}\ (=5\ \text{D}-3.33\ \text{D})\)
+Step 3: \(\tfrac{d}{f_1f_2}=\tfrac{10}{20\times(-30)}=-\tfrac1{60}\Rightarrow\tfrac1F=\tfrac1{60}+\tfrac1{60}=\tfrac1{30}\)
+Worked derivation: \[\text{ray check: parallel ray}\to\text{image by }L_1\text{ at 20 cm, i.e. 10 cm beyond }L_2\text{ (virtual object): }\tfrac1v-\tfrac1{10}=-\tfrac1{30}\Rightarrow v=15\ \text{cm from }L_2\]
+Check: \[\text{effective focal length }F=\dfrac{f_1f_2}{f_1+f_2-d}=\dfrac{-600}{-20}=30\ \text{cm}\ \checkmark\]
+Why: \(\text{the stronger converging lens dominates; separating them makes the diverging lens act on a converging beam where it is less effective, raising the net power}\)
+Why not the others: (A) \(\text{sign errors}\); (B) \(\text{adds focal lengths instead of powers}\); (C) \(\text{uses }1/20+1/30\).
+Key point: \(\text{powers add in contact; separation adds }-d/(f_1f_2)\)
+
+@@ Q64
+format: numerical
+sub_topic: Using momentum conservation in the break-up of a nucleus at rest to compare the de Broglie wavelengths and kinetic energies of the two fragments
+Q: A nucleus at rest breaks into two fragments of masses \(m\) and \(4m\). Which statement about their de Broglie wavelengths and kinetic energies is correct?
+A) Since the total momentum stays zero, the fragments have equal and opposite momenta, so their de Broglie wavelengths \(\lambda=h/p\) are equal (ratio 1 : 1) whatever their masses; their kinetic energies \(p^2/2m\) are in the ratio 4 : 1, the lighter fragment carrying four-fifths of the released energy
+B) The lighter fragment has a 4 times longer wavelength; kinetic energies are equal
+C) The heavier fragment has a 2 times shorter wavelength; kinetic energies are in the ratio 2 : 1
+D) Wavelengths are in the ratio 1 : 4 and kinetic energies 1 : 4
+KEY: A
+SOL:
+Answer: (A) \(\lambda_1:\lambda_2=1:1\); \(K_1:K_2=4:1\).
+Given: \(\text{initial momentum }0;\ \text{masses }m,4m\)
+Formula/Principle: \(\vec p_1+\vec p_2=0;\ \lambda=\dfrac hp;\ K=\dfrac{p^2}{2m}\)
+Step 1: \(|\vec p_1|=|\vec p_2|=p\)
+Step 2: \(\lambda_1=\lambda_2=\dfrac hp\)
+Step 3: \(\dfrac{K_1}{K_2}=\dfrac{p^2/2m}{p^2/8m}=4\)
+Worked derivation: \[K_1=\tfrac45Q,\ K_2=\tfrac15Q\text{ for released energy }Q\]
+Check: \[\text{velocities: }v_1=4v_2\Rightarrow mv_1=4mv_2\ \checkmark\]
+Why: \(\text{de Broglie wavelength depends only on momentum, which conservation makes equal in magnitude}\)
+Why not the others: (B), (C), (D) \(\text{treat }\lambda\text{ as depending on mass or speed alone}\).
+Key point: \(\text{equal momenta}\Rightarrow\text{equal }\lambda;\ K\propto1/m\)
+
+@@ Q65
+format: conceptual
+sub_topic: How the radius, speed, energy, kinetic and potential energy and orbital frequency of the electron depend on n and Z in the Bohr model
+Q: In the Bohr model of a hydrogen-like atom (atomic number \(Z\)), which statement is correct?
+A) \(r_n\propto\dfrac{n^2}{Z}\), \(v_n\propto\dfrac Zn\), \(E_n\propto-\dfrac{Z^2}{n^2}\); kinetic energy \(=-E_n\) and potential energy \(=2E_n\); the orbital frequency \(\propto\dfrac{Z^2}{n^3}\); so for \(\text{Li}^{2+}\) in \(n=1\) the radius is \(\tfrac13\) and the energy 9 times that of hydrogen
+B) \(r_n\propto nZ\); speed increases with \(n\); kinetic energy \(=E_n\)
+C) \(r_n\propto\dfrac{Z}{n^2}\); energy is positive for bound states
+D) Kinetic energy \(=2E_n\) and potential energy \(=-E_n\); frequency \(\propto n^3\)
+KEY: A
+SOL:
+Answer: (A) \(r\propto n^2/Z,\ v\propto Z/n,\ E\propto-Z^2/n^2,\ K=-E,\ U=2E,\ f\propto Z^2/n^3\).
+Given: \(\text{Bohr: }mvr=\dfrac{nh}{2\pi};\ \dfrac{mv^2}{r}=\dfrac{kZe^2}{r^2}\)
+Formula/Principle: \(r_n=\dfrac{n^2a_0}{Z};\ v_n=\dfrac{Zv_1}{n};\ E_n=-\dfrac{13.6Z^2}{n^2}\ \text{eV}\)
+Step 1: \(K=\tfrac12mv^2=\dfrac{kZe^2}{2r};\ U=-\dfrac{kZe^2}{r}=-2K\)
+Step 2: \(E=K+U=-K\Rightarrow K=-E,\ U=2E\)
+Step 3: \(f=\dfrac{v}{2\pi r}\propto\dfrac{Z/n}{n^2/Z}=\dfrac{Z^2}{n^3}\)
+Worked derivation: \[\text{Li}^{2+}\ (Z=3),\ n=1:\ r=\tfrac{a_0}{3},\ E=-13.6\times9=-122.4\ \text{eV}\]
+Check: \[\text{hydrogen }n=1:\ K=13.6\ \text{eV},\ U=-27.2\ \text{eV},\ E=-13.6\ \text{eV}\ \checkmark\]
+Why: \(\text{a larger nuclear charge pulls the electron closer and faster; higher orbits are larger and slower}\)
+Why not the others: (B) \(\text{wrong dependences; }K=-E\); (C) \(\text{inverted; bound energies are negative}\); (D) \(\text{K and U swapped; }f\propto n^{-3}\).
+Key point: \(K=-E,\ U=2E\text{ for an inverse-square orbit}\)
+
+@@ Q66
+format: numerical
+sub_topic: Using binding energy per nucleon values to compute the energy released in fusing two deuterons into helium-4 and comparing energy per nucleon with fission
+Q: Binding energies per nucleon: \({}^2\text{H}\) 1.1 MeV, \({}^4\text{He}\) 7.07 MeV; in fission of \({}^{235}\text{U}\) the value rises from about 7.6 MeV to about 8.5 MeV for the fragments. Which statement is correct?
+A) \({}^2\text{H}+{}^2\text{H}\to{}^4\text{He}\) releases 5.97 MeV; fusion gives less energy per nucleon than fission
+B) The fusion releases \(4(7.07)-4(1.1)\approx23.9\ \text{MeV}\), about 6 MeV per nucleon involved, while fission releases about 0.9 MeV per nucleon (roughly 200 MeV per fission); energy is released whenever nucleons move to nuclei of higher binding energy per nucleon
+C) The fusion absorbs 23.9 MeV, because helium has more nucleons
+D) The fusion releases 8.17 MeV, the sum of the two binding energies per nucleon
+KEY: B
+SOL:
+Answer: (B) About 23.9 MeV (≈ 6 MeV per nucleon) for fusion versus ≈ 0.9 MeV per nucleon for fission.
+Given: \(b(^2\text{H})=1.1,\ b(^4\text{He})=7.07,\ b_{\text{U}}\approx7.6\to8.5\ \text{MeV}\)
+Formula/Principle: \(Q=\sum B_{\text{products}}-\sum B_{\text{reactants}},\ B=Ab\)
+Step 1: \(B(^2\text{H})=2\times1.1=2.2\ \text{MeV};\ \text{two deuterons}=4.4\ \text{MeV}\)
+Step 2: \(B(^4\text{He})=4\times7.07=28.28\ \text{MeV}\)
+Step 3: \(Q=28.28-4.4\approx23.9\ \text{MeV};\ \text{per nucleon}\approx6.0\ \text{MeV}\)
+Worked derivation: \[\text{fission: }\Delta b\approx8.5-7.6=0.9\ \text{MeV per nucleon}\Rightarrow Q\approx235\times0.9\approx210\ \text{MeV}\]
+Check: \[\text{per unit mass, fusion }(\approx6\ \text{MeV/nucleon})\text{ beats fission }(\approx0.9)\text{ by about 7 times}\ \checkmark\]
+Why: \(\text{the binding-energy curve rises steeply for light nuclei and only gently falls for heavy ones, so joining light nuclei gives a large jump per nucleon}\)
+Why not the others: (A) \(\text{subtracts per-nucleon values instead of total binding energies}\); (C) \(\text{products are more tightly bound, so energy is released}\); (D) \(\text{meaningless sum}\).
+Key point: \(Q=\Delta(\text{total binding energy});\ \text{fusion of light nuclei: large energy per nucleon}\)
+
+@@ Q67
+format: numerical
+sub_topic: Output of a half-wave rectifier with a real (0.7 V) silicon diode: peak output, pulse frequency, peak inverse voltage and the effect of a smoothing capacitor
+Q: A 50 Hz sinusoidal input of peak 10 V feeds a half-wave rectifier using a silicon diode (forward drop 0.7 V) and a load resistor. Which description of the output is correct?
+A) Output peak 10.7 V at 100 Hz; the diode must withstand 20 V in reverse
+B) Output peak 10 V, a smooth d.c. without any capacitor
+C) Output peak 9.3 V at 100 Hz; the diode conducts for exactly half of each cycle
+D) Output pulses of peak \(10-0.7=9.3\ \text{V}\), one per cycle (50 Hz), and the diode conducts for slightly less than half a cycle (only while the input exceeds 0.7 V); the reverse-biased diode must withstand a peak inverse voltage of about 10 V; with a large capacitor across the load the output becomes nearly steady at about 9.3 V with a small 50 Hz ripple, whereas a full-wave (centre-tap) circuit would give 100 Hz ripple
+KEY: D
+SOL:
+Answer: (D) Peak 9.3 V, 50 Hz pulses, PIV ≈ 10 V, near-d.c. with a capacitor.
+Given: \(V_m=10\ \text{V},\ f=50\ \text{Hz},\ V_D=0.7\ \text{V}\)
+Formula/Principle: \(\text{diode conducts when forward biased beyond }V_D;\ V_{\text{out,peak}}=V_m-V_D\)
+Step 1: \(V_{\text{out,peak}}=10-0.7=9.3\ \text{V}\)
+Step 2: \(\text{one pulse per input cycle}\Rightarrow50\ \text{Hz}\)
+Step 3: \(\text{conduction while }10\sin\omega t>0.7\Rightarrow\sin\omega t>0.07\Rightarrow\text{slightly less than half a cycle}\)
+Worked derivation: \[\omega t_1=\sin^{-1}0.07\approx4^\circ;\ \text{conduction from }4^\circ\text{ to }176^\circ\ (172^\circ<180^\circ)\]
+Check: \[\text{reverse half: input }-10\text{ V across the diode (load carries no current)}\Rightarrow\text{PIV}=10\ \text{V}\ \checkmark\]
+Why: \(\text{the diode passes only one half of each cycle; the capacitor charges to the peak and discharges slowly through the load between pulses}\)
+Why not the others: (A) \(\text{drop is subtracted; half-wave gives 50 Hz; PIV is }V_m\); (B) \(\text{pulsating without a filter}\); (C) \(\text{frequency and conduction time wrong}\).
+Key point: \(\text{half-wave: output frequency = input frequency; full-wave: double}\)
+
+@@ Q68
+format: experiment
+sub_topic: Analysing position–time readings of a trolley to show uniform acceleration from successive differences, and finding acceleration, instantaneous velocity and distance in the nth second
+Q: Positions of a trolley starting from rest are recorded every second: \(t=0,1,2,3,4\ \text{s}\), \(x=0,1,4,9,16\ \text{m}\). Which conclusion is correct?
+A) The trolley moves with constant velocity 4 m/s
+B) The acceleration is 1 m/s² and the velocity at 2 s is 2 m/s
+C) Distances in successive seconds are 1, 3, 5, 7 m (in the ratio of odd numbers), so the acceleration is uniform: \(a=2\ \text{m/s}^2\); the velocity at \(t=2\ \text{s}\) is 4 m/s (slope of the \(x\)–\(t\) curve, or average velocity from 1 s to 3 s); the distance in the 5th second will be 9 m; the \(v\)–\(t\) graph is a straight line through the origin of slope 2 m/s²
+D) The acceleration increases with time, since the distances increase
+KEY: C
+SOL:
+Answer: (C) Uniform \(a=2\ \text{m/s}^2\); \(v(2)=4\ \text{m/s}\); 9 m in the 5th second.
+Given: \(x(t):0,1,4,9,16\ \text{m at }t=0..4\ \text{s};\ u=0\)
+Formula/Principle: \(x=ut+\tfrac12at^2;\ s_n=u+\tfrac a2(2n-1);\ \Delta s=aT^2\)
+Step 1: \(\text{successive distances }1,3,5,7\Rightarrow\Delta s=2\ \text{m}=a(1\ \text{s})^2\Rightarrow a=2\ \text{m/s}^2\)
+Step 2: \(x=t^2\Rightarrow v=2t\Rightarrow v(2)=4\ \text{m/s};\ \text{also }\tfrac{9-1}{3-1}=4\ \text{m/s}\)
+Step 3: \(s_5=0+\tfrac22(2\times5-1)=9\ \text{m}\)
+Worked derivation: \[x=\tfrac12at^2=\tfrac12(2)t^2=t^2\ \checkmark\text{ for all readings}\]
+Check: \[x(5)=25\Rightarrow25-16=9\ \text{m}\ \checkmark\]
+Why: \(\text{constant second differences of position at equal time intervals are the signature of uniform acceleration}\)
+Why not the others: (A) \(\text{distances per second are not equal}\); (B) \(\text{uses }x=at^2\text{ without the }\tfrac12\); (D) \(\text{the increments grow linearly, so a is constant}\).
+Key point: \(\Delta s=aT^2;\ \text{from rest distances in successive equal intervals go }1:3:5:\dots\)
+
+@@ Q69
+format: experiment
+sub_topic: Using dot and cross products of two measured force vectors to find the angle between them, the resultant, and the magnitude and direction of the cross product
+Q: On a force table two forces are measured as \(\vec A=3\hat i+4\hat j\) N and \(\vec B=4\hat i-3\hat j\) N. Which statement is correct?
+A) \(\vec A\cdot\vec B=24\); the forces are parallel; \(|\vec A\times\vec B|=0\)
+B) The angle between them is \(45^\circ\); the resultant is 10 N
+C) \(\vec A\cdot\vec B=12-12=0\), so the forces are perpendicular; \(\vec A\times\vec B=(3)(-3)-(4)(4)=-25\) along \(\hat k\), i.e. magnitude 25 along \(-\hat k\) (= \(|\vec A||\vec B|\sin90^\circ\)); the resultant \(7\hat i+\hat j\) has magnitude \(\sqrt{50}=5\sqrt2\approx7.07\ \text{N}\); and \(\vec B\times\vec A=+25\hat k\)
+D) The cross product is \(+25\hat k\) and the resultant is 7 N
+KEY: C
+SOL:
+Answer: (C) Perpendicular; \(\vec A\times\vec B=-25\hat k\); resultant \(5\sqrt2\ \text{N}\).
+Given: \(\vec A=(3,4,0),\ \vec B=(4,-3,0)\ \text{N}\)
+Formula/Principle: \(\vec A\cdot\vec B=A_xB_x+A_yB_y;\ (\vec A\times\vec B)_z=A_xB_y-A_yB_x\)
+Step 1: \(\vec A\cdot\vec B=12-12=0\Rightarrow\theta=90^\circ\)
+Step 2: \((\vec A\times\vec B)_z=3(-3)-4(4)=-25\)
+Step 3: \(\vec R=7\hat i+\hat j,\ |\vec R|=\sqrt{49+1}=5\sqrt2\)
+Worked derivation: \[|\vec A|=|\vec B|=5:\ |\vec R|=\sqrt{25+25}=5\sqrt2\ \checkmark\text{ (perpendicular)};\ |\vec A\times\vec B|=5\cdot5\cdot1=25\ \checkmark\]
+Check: \[\vec B\times\vec A=-(\vec A\times\vec B)=+25\hat k\ \checkmark\]
+Why: \(\text{the dot product tests alignment and the cross product measures the area spanned; a zero dot product gives maximum cross product}\)
+Why not the others: (A) \(\text{dot product miscomputed}\); (B) \(\text{angle and resultant wrong}\); (D) \(\text{sign of the cross product and resultant wrong}\).
+Key point: \(\vec A\cdot\vec B=0\iff\perp;\ \vec A\times\vec B=-\vec B\times\vec A\)
+
+@@ Q70
+format: numerical
+sub_topic: Tension as a function of angle for a mass on a string moving in a vertical circle with the minimum speed at the top, read as a straight-line graph against cos φ
+Q: A mass \(m\) on a string of length \(R\) moves in a vertical circle with just the minimum speed needed at the top. Let \(\varphi\) be the angle of the string measured from the lowest position. How does the tension \(T\) depend on \(\varphi\), and what does a graph of \(T\) against \(\cos\varphi\) look like?
+A) \(T=mg\) everywhere; the graph is a horizontal line
+B) \(T=6mg\cos\varphi\); the graph passes through the origin
+C) \(T=mg(1+2\cos\varphi)\); \(T=mg\) at the horizontal position
+D) \(T=3mg(1+\cos\varphi)\): a straight line against \(\cos\varphi\) of slope \(3mg\), giving \(T=0\) at the top (\(\cos\varphi=-1\)), \(T=3mg\) at the horizontal position and \(T=6mg\) at the bottom; the speed squared is \(v^2=gR(3+2\cos\varphi)\)
+KEY: D
+SOL:
+Answer: (D) \(T=3mg(1+\cos\varphi)\): 0, \(3mg\), \(6mg\) at top, side, bottom.
+Given: \(v_{\text{top}}^2=gR\ (\text{minimum})\)
+Formula/Principle: \(\text{energy: }v^2=v_{\text{top}}^2+2gR(1+\cos\varphi);\ \text{radial: }T-mg\cos\varphi=\dfrac{mv^2}{R}\)
+Step 1: \(\text{height below the top}=R(1+\cos\varphi)\Rightarrow v^2=gR+2gR(1+\cos\varphi)=gR(3+2\cos\varphi)\)
+Step 2: \(T=mg\cos\varphi+mg(3+2\cos\varphi)=3mg(1+\cos\varphi)\)
+Step 3: \(\varphi=180^\circ:0;\ \varphi=90^\circ:3mg;\ \varphi=0:6mg\)
+Worked derivation: \[T_{\text{bottom}}-T_{\text{top}}=6mg\text{ (independent of speed for any vertical circle on a string)}\]
+Check: \[\text{bottom: }v^2=5gR\Rightarrow T=mg+5mg=6mg\ \checkmark\]
+Why: \(\text{both the gravity component along the string and the needed centripetal force vary linearly with }\cos\varphi\)
+Why not the others: (A) \(\text{ignores circular motion}\); (B) \(\text{gives negative tension above the horizontal}\); (C) \(\text{wrong energy equation}\).
+Key point: \(\text{minimum-speed loop: }T=3mg(1+\cos\varphi)\)
+
+@@ Q71
+format: numerical
+sub_topic: Scaling of surface gravity, escape speed and gravitational potential energy for a planet of the same density but twice the radius of Earth
+Q: A planet has the same mean density as Earth but twice its radius. Taking Earth's escape speed as 11.2 km/s, which statement is correct?
+A) Surface gravity is \(g/2\); escape speed 5.6 km/s
+B) Surface gravity is \(2g\); escape speed 22.4 km/s; the gravitational potential energy of a 1 kg mass at its surface is 4 times that at Earth's surface (more negative); the escape speed does not depend on the mass of the body escaping
+C) Surface gravity is \(8g\); escape speed 89.6 km/s
+D) Surface gravity is \(g\); escape speed 11.2 km/s, since density is the same
+KEY: B
+SOL:
+Answer: (B) \(2g\); 22.4 km/s; potential energy ×4.
+Given: \(\rho\text{ same},\ R'=2R,\ v_e=11.2\ \text{km/s}\)
+Formula/Principle: \(M=\tfrac43\pi R^3\rho;\ g=\dfrac{GM}{R^2}=\tfrac43\pi G\rho R;\ v_e=\sqrt{\dfrac{2GM}{R}}=R\sqrt{\tfrac83\pi G\rho};\ U=-\dfrac{GMm}{R}\)
+Step 1: \(g\propto R\Rightarrow g'=2g\)
+Step 2: \(v_e\propto R\Rightarrow v_e'=22.4\ \text{km/s}\)
+Step 3: \(U\propto\dfrac{M}{R}\propto R^2\Rightarrow U'=4U\)
+Worked derivation: \[v_e=\sqrt{2gR}\Rightarrow\sqrt{2(2g)(2R)}=2\sqrt{2gR}\ \checkmark\]
+Check: \[M'=8M:\ g'=\dfrac{G(8M)}{4R^2}=2g\ \checkmark\]
+Why: \(\text{at fixed density, mass grows as }R^3\text{, so everything that goes as }M/R^2\text{ grows as R and }M/R\text{ as }R^2\)
+Why not the others: (A) \(\text{inverts the scaling}\); (C) \(\text{uses M alone}\); (D) \(\text{same density does not mean same g}\).
+Key point: \(\text{same density: }g\propto R,\ v_e\propto R\)
+
+@@ Q72
+format: numerical
+sub_topic: Comparing terminal velocities and the directions of viscous force for a steel ball sinking in glycerine and an air bubble rising in castor oil using Stokes' law
+Q: A steel ball (density 7800 kg/m³, radius 1.0 mm) falls through glycerine (density 1260 kg/m³, viscosity 1.5 Pa s), and an air bubble (radius 1.0 mm, density negligible) rises through castor oil (density 960 kg/m³, viscosity 1.0 Pa s). Take \(g=9.8\ \text{m/s}^2\). Which statement is correct?
+A) The ball reaches about 9.5 mm/s downward, with the viscous force upward; the bubble reaches about 2.1 mm/s upward, with the viscous force downward; doubling either radius makes its terminal speed 4 times larger
+B) Both move downward at the same terminal speed, because the radii are equal
+C) The ball reaches about 9.5 mm/s, and doubling its radius doubles this speed
+D) The bubble has no terminal velocity, because air has negligible weight
+KEY: A
+SOL:
+Answer: (A) Ball ≈ 9.5 mm/s down; bubble ≈ 2.1 mm/s up; \(v_t\propto r^2\).
+Given: \(r=1.0\times10^{-3}\ \text{m};\ \text{ball: }\rho=7800,\ \sigma=1260,\ \eta=1.5;\ \text{bubble: }\rho\approx0,\ \sigma=960,\ \eta=1.0\)
+Formula/Principle: \(\text{terminal: weight}=\text{buoyancy}+\text{drag};\ v_t=\dfrac{2r^2(\rho-\sigma)g}{9\eta}\)
+Step 1: \(\text{ball: }v_t=\dfrac{2(10^{-6})(6540)(9.8)}{9(1.5)}=\dfrac{0.1282}{13.5}\approx9.5\times10^{-3}\ \text{m/s}\)
+Step 2: \(\text{bubble: }v_t=\dfrac{2(10^{-6})(0-960)(9.8)}{9(1.0)}\approx-2.1\times10^{-3}\ \text{m/s}\ (\text{upward})\)
+Step 3: \(\text{drag }6\pi\eta rv\text{ opposes motion: up on the ball, down on the bubble}\)
+Worked derivation: \[r\to2r:\ v_t\propto r^2\Rightarrow\times4\]
+Check: \[\text{ball drag at }v_t:\ 6\pi(1.5)(10^{-3})(9.5\times10^{-3})\approx2.7\times10^{-4}\ \text{N};\ (\rho-\sigma)Vg=6540\cdot4.19\times10^{-9}\cdot9.8\approx2.7\times10^{-4}\ \text{N}\ \checkmark\]
+Why: \(\text{the sign of }(\rho-\sigma)\text{ decides whether the body sinks or rises; viscous drag always opposes the velocity}\)
+Why not the others: (B) \(\text{densities and viscosities differ, and the bubble rises}\); (C) \(v_t\propto r^2\); (D) \(\text{buoyancy drives the bubble up until drag balances it}\).
+Key point: \(v_t=\dfrac{2r^2(\rho-\sigma)g}{9\eta}\)
+
+@@ Q73
+format: numerical
+sub_topic: Steady heat flow through a two-layer composite wall: equal heat flux in each layer, interface temperature and the effect of removing the insulating layer
+Q: A wall consists of 20 cm of brick (\(k=0.60\ \text{W m}^{-1}\text{K}^{-1}\)) on the inside and 5.0 cm of insulation (\(k=0.040\ \text{W m}^{-1}\text{K}^{-1}\)) on the outside. Inside is at 25 °C and outside at −5 °C. Which statement is correct in the steady state?
+A) Heat flux about 19 W/m², the same through both layers; interface temperature about 18.7 °C, so most of the temperature drop occurs across the thin insulation; without insulation the flux would be 90 W/m²
+B) Heat flux 90 W/m²; interface temperature 10 °C
+C) The brick, being thicker, carries more heat than the insulation; interface temperature −5 °C
+D) Heat flux about 19 W/m² through the brick but 0 through the insulation
+KEY: A
+SOL:
+Answer: (A) ≈ 19 W/m² through each layer; interface ≈ 18.7 °C; 90 W/m² without insulation.
+Given: \(L_1=0.20\ \text{m},\ k_1=0.60;\ L_2=0.050\ \text{m},\ k_2=0.040;\ \Delta T=30\ \text{K}\)
+Formula/Principle: \(\text{steady state: same flux }q=\dfrac{\Delta T}{\sum L/k}\text{ through series layers (energy conservation)}\)
+Step 1: \(\tfrac{L_1}{k_1}=0.333,\ \tfrac{L_2}{k_2}=1.25\ \text{m}^2\text{K/W};\ \text{total }1.583\)
+Step 2: \(q=\dfrac{30}{1.583}\approx18.9\ \text{W/m}^2\)
+Step 3: \(T_{\text{int}}=25-18.9\times0.333\approx25-6.3=18.7\ ^\circ\text{C}\)
+Worked derivation: \[\text{drop across insulation}=18.9\times1.25\approx23.7\ \text{K};\ 6.3+23.7=30\ \checkmark;\ \text{brick alone: }\tfrac{30}{0.333}=90\ \text{W/m}^2\]
+Check: \[\text{insulation: }q=0.040\times\tfrac{18.7-(-5)}{0.050}\approx19\ \text{W/m}^2\ \checkmark\]
+Why: \(\text{no heat accumulates at the interface in the steady state, so each layer passes the same flux and the temperature drops in proportion to the thermal resistances}\)
+Why not the others: (B) \(\text{ignores the insulation}\); (C) \(\text{the flux is equal in series}\); (D) \(\text{violates energy conservation}\).
+Key point: \(\text{series layers: add }L/k;\ \Delta T\text{ divides in proportion to }L/k\)
+
+@@ Q74
+format: numerical
+sub_topic: Comparing adiabatic and isothermal compression of a monatomic ideal gas to one-eighth of its volume: final temperature, pressure and work done on the gas
+Q: A monatomic ideal gas (\(\gamma=\tfrac53\)) at temperature \(T\) is compressed to one-eighth of its volume, (i) adiabatically and (ii) isothermally. Which statement is correct?
+A) Both processes multiply the pressure by 8 and leave the temperature unchanged
+B) Adiabatic: \(T\to2T\), \(P\to16P\); isothermal: \(P\to8P\)
+C) Adiabatic: \(T\to8T\), \(P\to64P\); isothermal work exceeds adiabatic work
+D) Adiabatic: \(T\to8^{2/3}T=4T\) and \(P\to8^{5/3}P=32P\), with work done on the gas \(\Delta U=\tfrac32nR(3T)=4.5\,nRT\); isothermal: \(T\) unchanged, \(P\to8P\), work done on the gas \(nRT\ln8\approx2.08\,nRT\), all given out as heat; the adiabatic compression needs more work
+KEY: D
+SOL:
+Answer: (D) Adiabatic: \(4T,\ 32P,\ W=4.5nRT\); isothermal: \(8P,\ W\approx2.08nRT\).
+Given: \(\gamma=\tfrac53,\ V_2=\tfrac{V_1}{8}\)
+Formula/Principle: \(\text{adiabatic: }TV^{\gamma-1}=\text{const},\ PV^\gamma=\text{const},\ W_{\text{on}}=\Delta U;\ \text{isothermal: }PV=\text{const},\ W_{\text{on}}=nRT\ln\tfrac{V_1}{V_2}\)
+Step 1: \(T_2=T\cdot8^{2/3}=4T\)
+Step 2: \(P_2=P\cdot8^{5/3}=32P\)
+Step 3: \(W_{\text{adi}}=nC_V\Delta T=\tfrac32nR(4T-T)=4.5nRT;\ W_{\text{iso}}=nRT\ln8=2.08nRT\)
+Worked derivation: \[\text{check: }P_2V_2=32P\cdot\tfrac V8=4PV\Rightarrow T_2=4T\ \checkmark\]
+Check: \[\text{isothermal: }\Delta U=0\Rightarrow Q=-W_{\text{on}}=-2.08nRT\ (\text{heat released})\ \checkmark\]
+Why: \(\text{in an adiabatic compression the work raises the temperature, which raises the pressure faster than in an isothermal one, so more work is needed}\)
+Why not the others: (A) \(\text{adiabatic compression heats the gas}\); (B) \(\text{uses the wrong exponents}\); (C) \(\text{exponents wrong and the work comparison reversed}\).
+Key point: \(\text{adiabatic curve is steeper: }P\propto V^{-\gamma}\)
+
+@@ Q75
+format: numerical
+sub_topic: Kinetic and potential energy curves in SHM: where they are equal, their fractions at x = A/2, the times to reach these points and the frequency of energy oscillation
+Q: A particle performs SHM of amplitude \(A\), period \(T\) and total energy \(E\). Which statement, read from its energy–displacement graphs, is correct?
+A) KE = PE at \(x=\tfrac A2\); KE oscillates with the same frequency as the displacement
+B) At \(x=\tfrac A2\), KE \(=\tfrac12E\); the particle takes \(\tfrac T4\) to go from the mean position to \(\tfrac A2\)
+C) PE \(=\tfrac12kx^2\) is a parabola and KE \(=\tfrac12k(A^2-x^2)\) an inverted parabola, so KE = PE at \(x=\pm\tfrac{A}{\sqrt2}\); at \(x=\tfrac A2\) KE \(=\tfrac34E\); the particle reaches \(\tfrac A2\) from the mean position in \(\tfrac T{12}\) and \(\tfrac{A}{\sqrt2}\) in \(\tfrac T8\); KE and PE each oscillate at twice the frequency of the motion
+D) Total energy is largest at the mean position
+KEY: C
+SOL:
+Answer: (C) Equal at \(A/\sqrt2\); KE = \(\tfrac34E\) at \(A/2\); times \(T/12\) and \(T/8\); energies oscillate at \(2f\).
+Given: \(x=A\sin\omega t,\ E=\tfrac12kA^2\)
+Formula/Principle: \(U=\tfrac12kx^2,\ K=\tfrac12k(A^2-x^2)\)
+Step 1: \(K=U\Rightarrow A^2-x^2=x^2\Rightarrow x=\tfrac{A}{\sqrt2}\)
+Step 2: \(x=\tfrac A2:\ U=\tfrac14E,\ K=\tfrac34E\)
+Step 3: \(\sin\omega t=\tfrac12\Rightarrow\omega t=\tfrac{\pi}{6}\Rightarrow t=\tfrac{T}{12};\ \sin\omega t=\tfrac1{\sqrt2}\Rightarrow t=\tfrac T8\)
+Worked derivation: \[U=\tfrac12kA^2\sin^2\omega t=\tfrac E2(1-\cos2\omega t)\Rightarrow\text{frequency }2f\]
+Check: \[K+U=E\text{ at every }x\ \checkmark\]
+Why: \(\text{energy depends on }x^2\text{ (or }\sin^2\text{), which repeats twice per cycle}\)
+Why not the others: (A) \(\text{equality is at }A/\sqrt2\text{, and energy frequency is }2f\); (B) \(\text{wrong fraction and time}\); (D) \(\text{total energy is constant}\).
+Key point: \(K=U\text{ at }x=A/\sqrt2;\ \text{energies oscillate at }2f\)
+
+@@ Q76
+format: conceptual
+sub_topic: Reading amplitude, frequency, wavelength, speed and direction from a progressive wave equation, the maximum particle speed and the phase difference between two points
+Q: A wave on a string is \(y=0.05\sin(20\pi t-\pi x)\) in SI units. Which statement is correct?
+A) Amplitude 0.05 m, frequency 20 Hz, wavelength 1 m, moving along \(-x\) at 20 m/s
+B) Amplitude 5 cm, frequency 10 Hz, wavelength 2 m, speed 20 m/s along \(+x\); maximum particle speed \(A\omega=\pi\approx3.14\ \text{m/s}\), which is not the wave speed; two points 0.5 m apart differ in phase by \(\tfrac{\pi}{2}\)
+C) Frequency 10 Hz and wavelength 2 m, so the speed is 5 m/s
+D) The particles of the string move along \(x\) with the wave speed
+KEY: B
+SOL:
+Answer: (B) \(A=5\ \text{cm},\ f=10\ \text{Hz},\ \lambda=2\ \text{m},\ v=20\ \text{m/s}\ (+x)\); \(v_{\text{particle,max}}=\pi\ \text{m/s}\); \(\Delta\phi=\tfrac{\pi}{2}\).
+Given: \(y=A\sin(\omega t-kx),\ A=0.05\ \text{m},\ \omega=20\pi\ \text{rad/s},\ k=\pi\ \text{rad/m}\)
+Formula/Principle: \(f=\tfrac{\omega}{2\pi},\ \lambda=\tfrac{2\pi}{k},\ v=\tfrac{\omega}{k};\ \Delta\phi=k\Delta x\)
+Step 1: \(f=10\ \text{Hz};\ \lambda=2\ \text{m};\ v=20\ \text{m/s}\)
+Step 2: \(\omega t-kx\text{ form}\Rightarrow\text{travels along }+x\)
+Step 3: \(v_{\text{p,max}}=A\omega=0.05\times20\pi=\pi\ \text{m/s}\)
+Worked derivation: \[\Delta\phi=\pi\times0.5=\tfrac{\pi}{2}\]
+Check: \[v=f\lambda=10\times2=20\ \text{m/s}\ \checkmark\]
+Why: \(\text{the wave carries the pattern along x while each particle oscillates transversely about its mean position}\)
+Why not the others: (A) \(\text{misreads }\omega\text{ and }k\text{ and the direction}\); (C) \(v=f\lambda=20\ \text{m/s}\); (D) \(\text{particles oscillate in place}\).
+Key point: \(v=\omega/k;\ \text{particle speed}\ne\text{wave speed}\)
+
+@@ Q77
+format: conceptual
+sub_topic: Comparing electric flux through closed and open surfaces using Gauss's law: shifted charge, enlarged surface, a hemisphere in a uniform field and a surface enclosing a dipole
+Q: Which comparison of electric fluxes is correct?
+A) Moving a charge off-centre inside a closed sphere increases the flux; doubling the sphere's radius halves it
+B) The total flux through a closed surface is \(q_{\text{enc}}/\varepsilon_0\), so it is unchanged when the enclosed charge is moved off-centre or the surface is enlarged; for a hemisphere of radius \(R\) in a uniform field \(E\) perpendicular to its flat face, the flux through the curved surface equals \(\pi R^2E\) in magnitude and the total flux through the closed hemisphere is zero; the flux through a closed surface enclosing a dipole is zero although the field is not
+C) The flux through the curved surface of the hemisphere is \(2\pi R^2E\), because its area is \(2\pi R^2\)
+D) A closed surface enclosing a dipole has zero flux because the field is zero everywhere on it
+KEY: B
+SOL:
+Answer: (B) Flux depends only on enclosed charge; hemisphere curved-surface flux \(\pi R^2E\); dipole enclosure gives zero flux.
+Given: \(\text{Gauss's law }\oint\vec E\cdot d\vec A=\dfrac{q_{\text{enc}}}{\varepsilon_0}\)
+Formula/Principle: \(\Phi=\int\vec E\cdot d\vec A;\ \text{uniform field through a flat area: }EA\cos\theta\)
+Step 1: \(\text{the same field lines from q cross any closed surface around it}\Rightarrow\Phi=q/\varepsilon_0\)
+Step 2: \(\text{hemisphere, no charge inside: }\Phi_{\text{flat}}+\Phi_{\text{curved}}=0;\ |\Phi_{\text{flat}}|=\pi R^2E\)
+Step 3: \(\text{dipole: }q_{\text{enc}}=+q-q=0\Rightarrow\Phi=0\)
+Worked derivation: \[\Phi_{\text{curved}}=-\Phi_{\text{flat}}\Rightarrow|\Phi_{\text{curved}}|=\pi R^2E\ (\text{the projected area})\]
+Check: \[q=8.85\ \text{nC}:\ \Phi=\tfrac{8.85\times10^{-9}}{8.85\times10^{-12}}=1000\ \text{N m}^2\text{/C for any enclosing surface}\ \checkmark\]
+Why: \(\text{flux counts field lines crossing a surface; lines entering and leaving a charge-free region cancel}\)
+Why not the others: (A) \(\text{flux is independent of position inside and of size}\); (C) \(\text{only the projected area }\pi R^2\text{ counts}\); (D) \(\text{the field is non-zero; inward and outward fluxes cancel}\).
+Key point: \(\Phi_{\text{closed}}=q_{\text{enc}}/\varepsilon_0\text{, independent of shape, size and charge position}\)
+
+@@ Q78
+format: numerical
+sub_topic: Charge and voltage sharing for capacitors charged in series and then reconnected in parallel, using charge conservation and finding the energy lost
+Q: Capacitors of 2.0 µF and 3.0 µF are connected in series across a 100 V supply, then disconnected and reconnected in parallel, positive plate to positive plate. Which statement is correct?
+A) In series each has 50 V; after reconnection the voltage is 100 V and no energy is lost
+B) In series the charges are 200 µC and 300 µC; final voltage 100 V
+C) Final voltage 0, because the charges cancel
+D) In series each carries 120 µC (\(C_{\text{eq}}=1.2\ \mu\text{F}\)), with 60 V across the 2 µF and 40 V across the 3 µF, storing 6.0 mJ in all; in parallel the total charge 240 µC spreads over 5.0 µF, giving 48 V and 5.76 mJ, so 0.24 mJ is lost as heat (and radiation) in the connecting wires; had they been joined positive to negative, the charges would cancel and all the energy would be lost
+KEY: D
+SOL:
+Answer: (D) 120 µC each; 60 V and 40 V; final 48 V; energy 6.0 → 5.76 mJ.
+Given: \(C_1=2.0\ \mu\text{F},\ C_2=3.0\ \mu\text{F},\ V=100\ \text{V}\)
+Formula/Principle: \(\text{series: same Q},\ \tfrac1{C}=\tfrac1{C_1}+\tfrac1{C_2};\ \text{isolated system: total charge conserved};\ U=\tfrac{Q^2}{2C}\)
+Step 1: \(C_{\text{eq}}=\tfrac{2\times3}{5}=1.2\ \mu\text{F};\ Q=1.2\times100=120\ \mu\text{C}\)
+Step 2: \(V_1=\tfrac{120}{2}=60\ \text{V},\ V_2=\tfrac{120}{3}=40\ \text{V};\ U=\tfrac12(1.2\times10^{-6})(100)^2=6.0\ \text{mJ}\)
+Step 3: \(\text{parallel: }Q=240\ \mu\text{C},\ C=5.0\ \mu\text{F}\Rightarrow V=48\ \text{V}\)
+Worked derivation: \[U'=\tfrac12(5.0\times10^{-6})(48)^2=5.76\ \text{mJ};\ \Delta U=0.24\ \text{mJ}\]
+Check: \[\text{before: }\tfrac12(2)(60)^2+\tfrac12(3)(40)^2=3600+2400\ \mu\text{J}=6.0\ \text{mJ}\ \checkmark\]
+Why: \(\text{charge cannot leave the isolated plates, but redistributing it between unequal voltages dissipates energy in the wires}\)
+Why not the others: (A) \(\text{voltages divide inversely to C, and energy is lost}\); (B) \(\text{series capacitors carry equal charge}\); (C) \(\text{that is the positive-to-negative case}\).
+Key point: \(\text{conserve charge, not energy, when capacitors are reconnected}\)
+
+@@ Q79
+format: experiment
+sub_topic: Calculating drift velocity, electric field and electron mobility in a copper wire from measured current, cross-section, resistivity and electron density
+Q: A copper wire of cross-section 1.0 mm² carries 1.6 A. Copper has \(n=8.5\times10^{28}\ \text{m}^{-3}\) and resistivity \(1.7\times10^{-8}\ \Omega\,\text{m}\). Which set of results is correct?
+A) Current density \(1.6\times10^6\ \text{A/m}^2\); drift speed \(\approx1.2\times10^{-4}\ \text{m/s}\); electric field \(E=\rho J\approx2.7\times10^{-2}\ \text{V/m}\); mobility \(\mu=v_d/E\approx4.3\times10^{-3}\ \text{m}^2\text{V}^{-1}\text{s}^{-1}\); the bulb lights at once because the field is set up along the wire almost instantly, not because electrons race through it
+B) Drift speed about \(3\times10^8\ \text{m/s}\), which is why the bulb lights at once
+C) Drift speed \(1.2\times10^{-1}\ \text{m/s}\); mobility \(4.3\ \text{m}^2\text{V}^{-1}\text{s}^{-1}\)
+D) Electric field inside the wire is zero, so the mobility cannot be found
+KEY: A
+SOL:
+Answer: (A) \(J=1.6\times10^6\ \text{A/m}^2\), \(v_d\approx1.2\times10^{-4}\ \text{m/s}\), \(E\approx2.7\times10^{-2}\ \text{V/m}\), \(\mu\approx4.3\times10^{-3}\ \text{m}^2/\text{V s}\).
+Given: \(I=1.6\ \text{A},\ A=1.0\times10^{-6}\ \text{m}^2,\ n=8.5\times10^{28}\ \text{m}^{-3},\ \rho=1.7\times10^{-8}\ \Omega\,\text{m}\)
+Formula/Principle: \(I=neAv_d;\ E=\rho J;\ \mu=\dfrac{v_d}{E}=\dfrac{1}{ne\rho}\)
+Step 1: \(J=\tfrac{1.6}{1.0\times10^{-6}}=1.6\times10^6\ \text{A/m}^2\)
+Step 2: \(v_d=\dfrac{J}{ne}=\dfrac{1.6\times10^6}{8.5\times10^{28}\times1.6\times10^{-19}}=\dfrac{1.6\times10^6}{1.36\times10^{10}}\approx1.2\times10^{-4}\ \text{m/s}\)
+Step 3: \(E=1.7\times10^{-8}\times1.6\times10^6=2.72\times10^{-2}\ \text{V/m}\)
+Worked derivation: \[\mu=\dfrac{1.18\times10^{-4}}{2.72\times10^{-2}}\approx4.3\times10^{-3};\quad\dfrac{1}{ne\rho}=\dfrac{1}{8.5\times10^{28}\times1.6\times10^{-19}\times1.7\times10^{-8}}\approx4.3\times10^{-3}\ \checkmark\]
+Check: \[\text{time to drift 1 m}\approx\tfrac{1}{1.2\times10^{-4}}\approx8500\ \text{s}\approx2.4\ \text{h}\ \checkmark\text{ (slow)}\]
+Why: \(\text{enormous numbers of free electrons mean a tiny average drift suffices for an ampere-scale current}\)
+Why not the others: (B) \(\text{confuses drift with signal speed}\); (C) \(\text{off by }10^3\); (D) \(\text{a current-carrying conductor has a field inside}\).
+Key point: \(v_d=I/(neA);\ \mu=1/(ne\rho)\)
+
+@@ Q80
+format: numerical
+sub_topic: Field inside a long solenoid from Ampère's circuital law, the effect of stretching it with the same turns, the field outside, and the field in a toroid
+Q: A long solenoid has 1000 turns per metre and carries 2.0 A. Which statement is correct?
+A) \(B=2.5\ \text{T}\) inside; stretching it to twice its length with the same turns doubles \(B\)
+B) \(B\) inside depends on the radius of the solenoid; outside it equals the inside value
+C) \(B=\mu_0nI\approx2.5\times10^{-3}\ \text{T}\) inside, uniform and independent of radius; outside it is nearly zero; stretching it to twice its length with the same total turns halves \(n\) and so halves \(B\); a toroid of 500 turns, mean radius 0.10 m, carrying 2.0 A has \(B=\dfrac{\mu_0NI}{2\pi r}=2.0\times10^{-3}\ \text{T}\) inside its core
+D) \(B=\mu_0I/2\pi r\) inside the solenoid, as for a straight wire
+KEY: C
+SOL:
+Answer: (C) \(2.5\ \text{mT}\) inside, ≈ 0 outside; halved when stretched; toroid \(2.0\ \text{mT}\).
+Given: \(n=1000\ \text{m}^{-1},\ I=2.0\ \text{A};\ \text{toroid }N=500,\ r=0.10\ \text{m}\)
+Formula/Principle: \(\oint\vec B\cdot d\vec l=\mu_0I_{\text{enc}}\)
+Step 1: \(\text{rectangular loop of length }h\text{ half inside: }Bh=\mu_0(nh)I\Rightarrow B=\mu_0nI\)
+Step 2: \(B=4\pi\times10^{-7}\times1000\times2.0\approx2.51\times10^{-3}\ \text{T}\)
+Step 3: \(\text{same N, double length}\Rightarrow n\to\tfrac n2\Rightarrow B\to\tfrac B2\)
+Worked derivation: \[\text{toroid: }B(2\pi r)=\mu_0NI\Rightarrow B=\dfrac{4\pi\times10^{-7}\times500\times2.0}{2\pi\times0.10}=2.0\times10^{-3}\ \text{T}\]
+Check: \[\text{toroid as a bent solenoid: }n=\tfrac{500}{2\pi(0.10)}\approx796\ \text{m}^{-1}\Rightarrow\mu_0nI\approx2.0\ \text{mT}\ \checkmark\]
+Why: \(\text{Ampère's law with a loop crossing the windings counts the enclosed current }nhI\text{; the field depends on turns per length, not on radius}\)
+Why not the others: (A) \(\text{value wrong by }10^3\text{; stretching lowers n}\); (B) \(\text{B is independent of radius and nearly zero outside}\); (D) \(\text{that is the straight-wire result}\).
+Key point: \(B_{\text{solenoid}}=\mu_0nI;\ B_{\text{toroid}}=\mu_0NI/2\pi r\)

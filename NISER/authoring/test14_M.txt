@@ -1,0 +1,439 @@
+@@ Q41
+format: numerical
+sub_topic: Interpreting binomial coefficients as counts of lattice paths, the row sum 2ⁿ and the hockey-stick identity in Pascal's triangle
+Q: A path on the grid moves from \((0,0)\) by unit steps right or up. How many paths reach \((4,3)\), and which accompanying statement is correct?
+A) \(12\) paths, since \(4\times3=12\); the entries of row 7 of Pascal's triangle add up to \(7^2\)
+B) \(\binom{7}{4}+\binom{7}{3}=70\) paths; the entries of row 7 add up to 64
+C) \(7!=5040\) paths; the alternating sum of row 7 is 1
+D) \(\binom{7}{3}=35\) paths; all \(2^7=128\) paths of 7 steps (the sum of row 7) end on the line \(x+y=7\); classifying paths to \((4,3)\) by the row \(y=i\) in which the last right-step occurs (from \((3,i)\) to \((4,i)\)) gives \(\binom33+\binom43+\binom53+\binom63=1+4+10+20=35\) (the hockey-stick identity)
+KEY: D
+SOL:
+Answer: (D) \(35\) paths; row sum \(2^7=128\); hockey-stick sum \(=35\).
+Given: \(\text{target }(4,3);\ \text{steps R or U}\)
+Formula/Principle: \(\text{a path is a word of 4 R's and 3 U's}\Rightarrow\binom{7}{3};\ \sum_{r=0}^{n}\binom nr=2^n\)
+Step 1: \(\text{choose positions of the 3 U's among 7 steps: }\binom73=\dfrac{7\cdot6\cdot5}{6}=35\)
+Step 2: \(\text{each of the 7 steps has 2 choices: }2^7=128=\sum_r\binom7r\text{ (paths ending at }(r,7-r))\)
+Step 3: \(\text{last R from }(3,i)\text{ to }(4,i),\ i=0..3\text{, then only U's: paths to }(3,i)=\binom{3+i}{3}\)
+Worked derivation: \[\sum_{j=3}^{6}\binom j3=1+4+10+20=35=\binom74=\binom73\]
+Check: \[\text{small case }(1,1):\ \binom21=2\ (\text{RU, UR})\ \checkmark\]
+Why: \(\text{binomial coefficients count the ways of choosing which steps go up, so Pascal's rule }\binom{n}{r}=\binom{n-1}{r-1}+\binom{n-1}{r}\text{ is the statement that every path arrives from the left or from below}\)
+Why not the others: (A) \(\text{12 counts grid cells, and the row sum is }2^7\); (B) \(\text{double counts; the row sum is 128}\); (C) \(\text{ignores repeated letters; the alternating sum is 0}\).
+Key point: \(\text{paths to }(m,n)=\binom{m+n}{n};\ \text{row sum }2^n\)
+
+@@ Q42
+format: numerical
+sub_topic: Finding a hyperbola from its eccentricity and foci, and counting its lattice points in a strip
+Q: A hyperbola with centre at the origin has foci \((\pm4,0)\) and eccentricity 2. What is its equation, and how many points with integer coordinates does it have with \(|x|\le4\)?
+A) \(\dfrac{x^2}{4}+\dfrac{y^2}{12}=1\); 4 points
+B) \(\dfrac{x^2}{4}-\dfrac{y^2}{12}=1\); 6 points: \((\pm2,0)\) and \((\pm4,\pm6)\); its directrices are \(x=\pm1\)
+C) \(\dfrac{x^2}{16}-\dfrac{y^2}{48}=1\); 2 points
+D) \(\dfrac{x^2}{12}-\dfrac{y^2}{4}=1\); no points
+KEY: B
+SOL:
+Answer: (B) \(\tfrac{x^2}{4}-\tfrac{y^2}{12}=1\); six lattice points.
+Given: \(ae=4,\ e=2\)
+Formula/Principle: \(\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1,\ b^2=a^2(e^2-1),\ \text{directrices }x=\pm\tfrac ae\)
+Step 1: \(a=\tfrac42=2;\ b^2=4(4-1)=12\)
+Step 2: \(\text{points need }|x|\ge2:\ x=\pm2\Rightarrow y=0;\ x=\pm3\Rightarrow y^2=12\left(\tfrac94-1\right)=15\ (\text{not a square})\)
+Step 3: \(x=\pm4\Rightarrow y^2=12(4-1)=36\Rightarrow y=\pm6\)
+Worked derivation: \[\text{total}=2+4=6;\ \text{directrices }x=\pm\tfrac{2}{2}=\pm1\]
+Check: \[(4,6):\ \tfrac{16}{4}-\tfrac{36}{12}=4-3=1\ \checkmark;\ \text{focal distance }|e x-a|=|8-2|=6=\sqrt{0^2+6^2}\ \checkmark\]
+Why: \(\text{the hyperbola has no points with }|x|<a\text{, so only }|x|=2,3,4\text{ need checking}\)
+Why not the others: (A) \(\text{that is an ellipse}\); (C) \(\text{uses }a=4\text{, i.e. }c=8\); (D) \(a^2\text{ and }b^2\text{ swapped}\).
+Key point: \(\text{hyperbola: }c=ae,\ b^2=a^2(e^2-1)\)
+
+@@ Q43
+format: numerical
+sub_topic: Limits of a rational function at a removable zero, at a point where the denominator vanishes alone, at zero and at infinity
+Q: For \(f(x)=\dfrac{x^3-8}{x^2-4}\), which statement about its limits is correct?
+A) \(\lim_{x\to2}f=3\) (the factor \(x-2\) cancels); \(\lim_{x\to0}f=2\); \(f\) has no finite limit at \(x=-2\) (it tends to \(\pm\infty\) from the two sides); and as \(x\to\infty\), \(f(x)-x\to0\), so \(f\) grows without bound like \(x\)
+B) \(\lim_{x\to2}f\) does not exist, because the denominator is zero there
+C) \(\lim_{x\to2}f=0\) and \(\lim_{x\to\infty}f=1\)
+D) \(\lim_{x\to-2}f=3\) and \(\lim_{x\to\infty}f=0\)
+KEY: A
+SOL:
+Answer: (A) Limit 3 at 2, 2 at 0, none at \(-2\), and \(f(x)\sim x\) at infinity.
+Given: \(f(x)=\dfrac{x^3-8}{x^2-4}\)
+Formula/Principle: \(\text{cancel common factors before substituting};\ \text{at }\infty\text{ divide by the highest power}\)
+Step 1: \(x^3-8=(x-2)(x^2+2x+4),\ x^2-4=(x-2)(x+2)\Rightarrow f=\dfrac{x^2+2x+4}{x+2}\ (x\ne2)\)
+Step 2: \(x\to2:\ \dfrac{12}{4}=3;\ x\to0:\ \dfrac{4}{2}=2\)
+Step 3: \(x\to-2:\ \text{numerator}\to4,\ \text{denominator}\to0^{\pm}\Rightarrow f\to\pm\infty\)
+Worked derivation: \[\dfrac{x^2+2x+4}{x+2}=x+\dfrac{4}{x+2}\Rightarrow f(x)-x=\dfrac{4}{x+2}\to0\ (x\to\infty)\]
+Check: \[f(2.001)\approx\dfrac{4.004+4.002+4}{4.001}\approx3.0005\ \checkmark\]
+Why: \(\text{a zero of both numerator and denominator is removable; a zero of the denominator alone gives a vertical asymptote}\)
+Why not the others: (B) \(\text{the }0/0\text{ form cancels}\); (C) \(\text{wrong values}\); (D) \(\text{the limit at }-2\text{ is infinite and the degree of the numerator is higher}\).
+Key point: \(\lim\dfrac{x^n-a^n}{x-a}=na^{n-1};\ \text{factor before substituting}\)
+
+@@ Q44
+format: numerical
+sub_topic: Variance of a grouped frequency distribution and choosing the parameters of a linear change of scale and origin to reach a given mean and variance
+Q: The values \(2,4,6,8\) occur with frequencies \(1,3,3,1\). Find the mean and variance, and all \((a,b)\) such that \(y=ax+b\) has mean 0 and variance 27.
+A) Mean 5, variance 5; \((a,b)=(\sqrt{27/5},0)\)
+B) Mean 5, variance 3; \((a,b)=(9,-45)\) only
+C) Mean 5, variance 3; \(a^2\cdot3=27\Rightarrow a=\pm3\), and \(5a+b=0\), so \((a,b)=(3,-15)\) or \((-3,15)\); adding \(b\) shifts the mean but not the variance
+D) Mean 4, variance 4; \((a,b)=(\pm3,\mp12)\)
+KEY: C
+SOL:
+Answer: (C) Mean 5, variance 3; \((3,-15)\) or \((-3,15)\).
+Given: \(x_i:2,4,6,8;\ f_i:1,3,3,1;\ N=8\)
+Formula/Principle: \(\bar x=\dfrac{\sum f_ix_i}{N};\ \sigma^2=\dfrac{\sum f_i(x_i-\bar x)^2}{N};\ y=ax+b\Rightarrow\bar y=a\bar x+b,\ \sigma_y^2=a^2\sigma_x^2\)
+Step 1: \(\bar x=\dfrac{2+12+18+8}{8}=5\)
+Step 2: \(\sum f_i(x_i-5)^2=1(9)+3(1)+3(1)+1(9)=24\Rightarrow\sigma^2=3\)
+Step 3: \(a^2\cdot3=27\Rightarrow a=\pm3;\ 5a+b=0\Rightarrow b=-5a\)
+Worked derivation: \[a=3:\ b=-15;\quad a=-3:\ b=15\]
+Check: \[y=3x-15:\ y\text{-values }-9,-3,3,9\text{ with freq }1,3,3,1\Rightarrow\bar y=0,\ \sigma_y^2=\tfrac{81+27+27+81}{8}=27\ \checkmark\]
+Why: \(\text{variance measures spread, so it is unchanged by a shift and multiplied by }a^2\text{ under scaling}\)
+Why not the others: (A) \(\text{wrong variance}\); (B) \(a^2\text{, not }a\text{, multiplies variance; misses the negative root}\); (D) \(\text{wrong mean}\).
+Key point: \(\sigma_{ax+b}=|a|\sigma_x;\ \text{both signs of }a\text{ work}\)
+
+@@ Q45
+format: numerical
+sub_topic: Finding an unknown probability from the probability of a union when two events are independent, and comparing with the mutually exclusive case
+Q: \(P(A)=0.5\) and \(P(A\cup B)=0.8\). Find \(P(B)\) if \(A\) and \(B\) are independent, and if they are mutually exclusive. For the independent case, find \(P(A\cap B')\) and \(P(\text{neither})\).
+A) Independent: \(P(B)=0.6\), \(P(A\cap B')=0.2\), \(P(\text{neither})=0.2\); mutually exclusive: \(P(B)=0.3\)
+B) Independent: \(P(B)=0.3\); mutually exclusive: \(P(B)=0.6\)
+C) Independent: \(P(B)=0.6\), \(P(A\cap B')=0.3\), \(P(\text{neither})=0\); mutually exclusive: \(P(B)=0.8\)
+D) Independent: \(P(B)=0.4\); mutually exclusive: impossible
+KEY: A
+SOL:
+Answer: (A) \(0.6\) (independent) with \(P(A\cap B')=0.2\), \(P(\text{neither})=0.2\); \(0.3\) (mutually exclusive).
+Given: \(P(A)=0.5,\ P(A\cup B)=0.8\)
+Formula/Principle: \(P(A\cup B)=P(A)+P(B)-P(A\cap B);\ \text{independent: }P(A\cap B)=P(A)P(B)\)
+Step 1: \(\text{independent: }0.5+p-0.5p=0.8\Rightarrow0.5p=0.3\Rightarrow p=0.6\)
+Step 2: \(P(A\cap B)=0.3;\ P(A\cap B')=0.5-0.3=0.2;\ P(\text{neither})=1-0.8=0.2\)
+Step 3: \(\text{mutually exclusive: }0.5+p=0.8\Rightarrow p=0.3\)
+Worked derivation: \[P(A'\cap B')=P(A')P(B')=0.5\times0.4=0.2\ \checkmark\text{ (complements of independent events are independent)}\]
+Check: \[P(A\cap B')=P(A)P(B')=0.5\times0.4=0.2\ \checkmark\]
+Why: \(\text{the overlap term differs: it is }P(A)P(B)\text{ for independence and 0 for exclusive events, so the same union gives different }P(B)\)
+Why not the others: (B) \(\text{values swapped}\); (C) \(\text{wrong intersection terms}\); (D) \(\text{algebra slip}\).
+Key point: \(\text{independent} \ne \text{mutually exclusive}\)
+
+@@ Q46
+format: numerical
+sub_topic: Total probability for a two-stage experiment (transfer of a ball between urns, then a draw), and its special cases
+Q: Urn I has 3 white and 2 black balls; urn II has 2 white and 3 black. One ball is moved at random from urn I to urn II, and then a ball is drawn from urn II. What is the probability that it is white? What would it be if urn I had only white balls, or only black balls?
+A) \(\tfrac25\); the special cases give \(\tfrac25\) and \(\tfrac25\)
+B) \(\tfrac12\); the special cases give 1 and 0
+C) \(\tfrac{5}{11}\); the special cases give \(\tfrac35\) and \(\tfrac25\)
+D) \(\tfrac{13}{30}\); with urn I all white it would be \(\tfrac36=\tfrac12\), and all black \(\tfrac26=\tfrac13\), the general answer being a weighted average of these two
+KEY: D
+SOL:
+Answer: (D) \(\tfrac{13}{30}\); special cases \(\tfrac12\) and \(\tfrac13\).
+Given: \(\text{I: 3W, 2B; II: 2W, 3B}\)
+Formula/Principle: \(P(W)=P(E_1)P(W\mid E_1)+P(E_2)P(W\mid E_2)\ (\text{theorem of total probability})\)
+Step 1: \(E_1:\text{ white moved},\ P=\tfrac35\Rightarrow\text{II has 3W, 3B}\Rightarrow P(W\mid E_1)=\tfrac36\)
+Step 2: \(E_2:\text{ black moved},\ P=\tfrac25\Rightarrow\text{II has 2W, 4B}\Rightarrow P(W\mid E_2)=\tfrac26\)
+Step 3: \(P(W)=\tfrac35\cdot\tfrac12+\tfrac25\cdot\tfrac13=\tfrac{9}{30}+\tfrac{4}{30}=\tfrac{13}{30}\)
+Worked derivation: \[\tfrac13<\tfrac{13}{30}<\tfrac12\text{ — a weighted average of the two conditional probabilities}\]
+Check: \[P(B)=\tfrac35\cdot\tfrac12+\tfrac25\cdot\tfrac46=\tfrac{9+8}{30}=\tfrac{17}{30};\ \tfrac{13}{30}+\tfrac{17}{30}=1\ \checkmark\]
+Why: \(\text{the composition of urn II depends on the unseen transfer, so we average over the two possibilities, weighted by their probabilities}\)
+Why not the others: (A) \(\text{ignores the transfer}\); (B) \(\text{wrong conditional probabilities}\); (C) \(\text{wrong total count}\).
+Key point: \(\text{total probability: condition on the first stage}\)
+
+@@ Q47
+format: numerical
+sub_topic: Finding unknown entries that make the product of two non-zero 2 × 2 matrices zero, and showing the product in the other order is not zero
+Q: Let \(A=\begin{pmatrix}1&2\\2&4\end{pmatrix}\) and \(B=\begin{pmatrix}x&-6\\-1&y\end{pmatrix}\). For which \(x,y\) is \(AB=O\), and what is \(BA\) then?
+A) \(x=-2,\ y=-3\); \(BA=O\) as well
+B) No values work, since a product of non-zero matrices is never zero
+C) \(x=2,\ y=3\); then \(BA=\begin{pmatrix}-10&-20\\5&10\end{pmatrix}\ne O\), so \(AB\ne BA\); both \(A\) and \(B\) are singular, as they must be when \(AB=O\) with \(A,B\ne O\)
+D) \(x=2,\ y=3\); then \(BA=O\) because matrix multiplication is commutative
+KEY: C
+SOL:
+Answer: (C) \(x=2,\ y=3\); \(BA\ne O\); both singular.
+Given: \(A=\begin{pmatrix}1&2\\2&4\end{pmatrix},\ B=\begin{pmatrix}x&-6\\-1&y\end{pmatrix}\)
+Formula/Principle: \((AB)_{ij}=\sum_k a_{ik}b_{kj}\)
+Step 1: \((AB)_{11}=x-2=0\Rightarrow x=2;\ (AB)_{12}=-6+2y=0\Rightarrow y=3\)
+Step 2: \((AB)_{21}=2x-4=0\ \checkmark;\ (AB)_{22}=-12+4y=0\ \checkmark\)
+Step 3: \(BA=\begin{pmatrix}2-12&4-24\\-1+6&-2+12\end{pmatrix}=\begin{pmatrix}-10&-20\\5&10\end{pmatrix}\)
+Worked derivation: \[\det A=4-4=0,\ \det B=6-6=0;\ \text{if }A\text{ were invertible, }AB=O\Rightarrow B=A^{-1}O=O\]
+Check: \[\text{columns of }B\text{ are multiples of }(2,-1)^T,\text{ which }A\text{ sends to }(0,0)\ \checkmark\]
+Why: \(\text{the columns of }B\text{ lie in the null space of }A\text{, so }AB=O\text{, but the rows of }A\text{ need not be killed by }B\text{, so }BA\ne O\)
+Why not the others: (A) \(\text{fails the first entry}\); (B) \(\text{zero divisors exist for matrices}\); (D) \(\text{matrix multiplication is not commutative}\).
+Key point: \(AB=O\text{ does not imply }A=O\text{ or }B=O\text{, nor }BA=O\)
+
+@@ Q48
+format: numerical
+sub_topic: Evaluating a 3 × 3 determinant by cofactors and using the fact that elements of one row times cofactors of another row sum to zero
+Q: For \(M=\begin{pmatrix}1&2&3\\0&4&5\\1&0&6\end{pmatrix}\), let \(C_{1j}\) be the cofactors of the first row. Which statement is correct?
+A) \(\det M=-22\); \(C_{11}=24,\ C_{12}=-5,\ C_{13}=4\)
+B) \(\det M=22\); \(C_{11}=24,\ C_{12}=5,\ C_{13}=-4\); \(a_{11}C_{11}+a_{12}C_{12}+a_{13}C_{13}=22\) while \(a_{21}C_{11}+a_{22}C_{12}+a_{23}C_{13}=0\); if the third row were replaced by \((1,2,3)\), the determinant would be 0
+C) \(\det M=34\); the sum of second-row elements times first-row cofactors is \(\det M\)
+D) \(\det M=22\); \(C_{12}\) equals the minor \(M_{12}=-5\)
+KEY: B
+SOL:
+Answer: (B) \(\det M=22\); cofactors \(24,5,-4\); mixed-row sum 0; equal rows give 0.
+Given: \(M=\begin{pmatrix}1&2&3\\0&4&5\\1&0&6\end{pmatrix}\)
+Formula/Principle: \(C_{ij}=(-1)^{i+j}M_{ij};\ \sum_j a_{ij}C_{ij}=\det M;\ \sum_j a_{kj}C_{ij}=0\ (k\ne i)\)
+Step 1: \(M_{11}=4\cdot6-5\cdot0=24\Rightarrow C_{11}=24;\ M_{12}=0\cdot6-5\cdot1=-5\Rightarrow C_{12}=5;\ M_{13}=0-4=-4\Rightarrow C_{13}=-4\)
+Step 2: \(\det M=1(24)+2(5)+3(-4)=22\)
+Step 3: \(0(24)+4(5)+5(-4)=0\)
+Worked derivation: \[\text{the mixed sum is the determinant of the matrix with row 1 replaced by row 2, which has two equal rows}\Rightarrow0\]
+Check: \[\text{expand along column 1: }1\cdot24-0+1\cdot(10-12)=22\ \checkmark\]
+Why: \(\text{expanding with cofactors of a row but entries of another row computes a determinant with a repeated row}\)
+Why not the others: (A) \(\text{cofactor signs wrong}\); (C) \(\text{wrong value; the mixed sum is 0}\); (D) \(C_{12}=-M_{12}=5\).
+Key point: \(\text{own-row cofactors give }\det;\ \text{other-row cofactors give }0\)
+
+@@ Q49
+format: numerical
+sub_topic: Finding two parameters that make a piecewise function, defined by a trigonometric quotient on the left and a surd quotient on the right, continuous at the origin
+Q: Let \(f(x)=\dfrac{\sin ax}{x}\) for \(x<0\), \(f(0)=3\), and \(f(x)=\dfrac{\sqrt{1+bx}-1}{x}\) for \(x>0\). For which \(a,b\) is \(f\) continuous at 0?
+A) \(a=3,\ b=3\)
+B) \(a=3,\ b=6\)
+C) \(a=\tfrac13,\ b=\tfrac16\)
+D) \(a=-3,\ b=-6\)
+KEY: B
+SOL:
+Answer: (B) \(a=3,\ b=6\).
+Given: \(f(0)=3\)
+Formula/Principle: \(\text{continuity at 0: }\lim_{x\to0^-}f=\lim_{x\to0^+}f=f(0);\ \lim_{\theta\to0}\tfrac{\sin\theta}{\theta}=1\)
+Step 1: \(\lim_{x\to0^-}\dfrac{\sin ax}{x}=a\lim\dfrac{\sin ax}{ax}=a\Rightarrow a=3\)
+Step 2: \(\dfrac{\sqrt{1+bx}-1}{x}\cdot\dfrac{\sqrt{1+bx}+1}{\sqrt{1+bx}+1}=\dfrac{b}{\sqrt{1+bx}+1}\to\dfrac b2\)
+Step 3: \(\dfrac b2=3\Rightarrow b=6\)
+Worked derivation: \[\lim_{x\to0^+}\dfrac{\sqrt{1+6x}-1}{x}=\dfrac{6}{2}=3=f(0)\ \checkmark\]
+Check: \[x=-0.01:\ \tfrac{\sin(-0.03)}{-0.01}\approx2.9996;\ x=0.01:\ \tfrac{\sqrt{1.06}-1}{0.01}\approx2.956\to3\ \checkmark\]
+Why: \(\text{each one-sided limit must separately equal the value at the point}\)
+Why not the others: (A) \(\text{forgets the factor }\tfrac12\text{ from rationalising}\); (C) \(\text{inverts the relations}\); (D) \(\text{signs wrong}\).
+Key point: \(\text{rationalise surd quotients; }\tfrac{\sin ax}{x}\to a\)
+
+@@ Q50
+format: numerical
+sub_topic: Deciding continuity and differentiability for |x − 1| + |x − 2|, x|x|, x sin(1/x) and x² sin(1/x), the last two with value 0 at the origin
+Q: Which statement is correct? (For the last two, the value at 0 is taken to be 0.)
+A) \(|x-1|+|x-2|\) is not continuous at 1 and 2; \(x|x|\) is not differentiable at 0
+B) \(x\sin\tfrac1x\) is differentiable at 0 with derivative 0
+C) \(|x-1|+|x-2|\) is continuous everywhere but not differentiable at \(x=1\) and \(x=2\) (it equals 1 on \([1,2]\)); \(x|x|\) is differentiable everywhere with derivative \(2|x|\); \(x\sin\tfrac1x\) is continuous but not differentiable at 0; \(x^2\sin\tfrac1x\) is differentiable at 0 with derivative 0
+D) Every continuous function is differentiable, so all four are differentiable everywhere
+KEY: C
+SOL:
+Answer: (C) Corners at 1 and 2; \(x|x|\) smooth; \(x\sin\tfrac1x\) continuous not differentiable at 0; \(x^2\sin\tfrac1x\) differentiable at 0.
+Given: \(f_1=|x-1|+|x-2|,\ f_2=x|x|,\ f_3=x\sin\tfrac1x,\ f_4=x^2\sin\tfrac1x\)
+Formula/Principle: \(f'(0)=\lim_{h\to0}\dfrac{f(h)-f(0)}{h};\ \text{differentiable}\Rightarrow\text{continuous, not conversely}\)
+Step 1: \(f_1:\ \text{slopes }-2,0,2\text{ on }(-\infty,1),(1,2),(2,\infty)\Rightarrow\text{corners at 1 and 2}\)
+Step 2: \(f_2:\ \dfrac{h|h|}{h}=|h|\to0;\ f_2'(x)=2|x|\text{ elsewhere}\)
+Step 3: \(f_3:\ \dfrac{h\sin(1/h)}{h}=\sin\tfrac1h\text{ has no limit};\ f_4:\ \dfrac{h^2\sin(1/h)}{h}=h\sin\tfrac1h\to0\)
+Worked derivation: \[|x\sin\tfrac1x|\le|x|\to0\Rightarrow f_3\text{ continuous at 0};\ |h\sin\tfrac1h|\le|h|\Rightarrow f_4'(0)=0\]
+Check: \[f_1(1.5)=0.5+0.5=1\ \checkmark\]
+Why: \(\text{a corner or an unbounded oscillation of the difference quotient destroys differentiability; an extra factor of }x\text{ damps the oscillation}\)
+Why not the others: (A) \(\text{sums of continuous functions are continuous; }x|x|\text{ is differentiable}\); (B) \(\text{the quotient oscillates}\); (D) \(\text{continuity does not imply differentiability}\).
+Key point: \(\text{differentiable}\Rightarrow\text{continuous};\ \text{the converse fails}\)
+
+@@ Q51
+format: numerical
+sub_topic: Finding all values of the right endpoint k for which a cubic attains a prescribed absolute maximum on [0, k]
+Q: Let \(f(x)=x^3-6x^2+9x\). For which \(k>0\) is the absolute maximum of \(f\) on \([0,k]\) equal to 4, and what is the absolute minimum on \([0,k]\)?
+A) Exactly for \(1\le k\le4\); the absolute minimum is 0 for every \(k>0\), attained at \(x=0\) (and also at \(x=3\) once \(k\ge3\))
+B) Only for \(k=1\); the absolute minimum is \(-4\)
+C) For all \(k\ge1\); the absolute minimum is 0
+D) For \(0<k\le3\); the absolute minimum is 4
+KEY: A
+SOL:
+Answer: (A) \(1\le k\le4\); absolute minimum 0.
+Given: \(f(x)=x^3-6x^2+9x=x(x-3)^2\)
+Formula/Principle: \(\text{absolute extrema on }[0,k]\text{ occur at critical points inside or at the endpoints}\)
+Step 1: \(f'(x)=3x^2-12x+9=3(x-1)(x-3);\ f(1)=4\ (\text{local max}),\ f(3)=0\ (\text{local min})\)
+Step 2: \(k<1:\ f\text{ increasing on }[0,k]\Rightarrow\max=f(k)<4\)
+Step 3: \(f(x)=4\iff x^3-6x^2+9x-4=0\iff(x-1)^2(x-4)=0\Rightarrow x=1,4;\ f>4\text{ for }x>4\)
+Worked derivation: \[1\le k\le4\Rightarrow\max=f(1)=4;\ k>4\Rightarrow\max=f(k)>4\]
+Check: \[f(x)=x(x-3)^2\ge0\text{ on }[0,\infty),\ f(0)=0\Rightarrow\min=0\ \checkmark;\ f(4)=4\cdot1=4\ \checkmark\]
+Why: \(\text{as }k\text{ grows the interval first reaches the hump at }x=1\text{, and the graph comes back up to height 4 only at }x=4\)
+Why not the others: (B) \(\text{misses }k\in(1,4]\text{; }f\ge0\); (C) \(\text{for }k>4\text{ the max exceeds 4}\); (D) \(k<1\text{ fails and the minimum is 0}\).
+Key point: \(\text{compare interior critical values with endpoint values}\)
+
+@@ Q52
+format: numerical
+sub_topic: Evaluating three definite integrals by substitution (t = x², t = sin x, t = ln x) and comparing their values
+Q: Evaluate \(I_1=\displaystyle\int_0^1\frac{x}{1+x^4}dx\), \(I_2=\displaystyle\int_0^{\pi/2}\frac{\cos x}{1+\sin^2x}dx\) and \(I_3=\displaystyle\int_1^e\frac{(\ln x)^2}{x}dx\).
+A) \(I_1=\tfrac{\pi}{4},\ I_2=\tfrac{\pi}{4},\ I_3=\tfrac12\)
+B) \(I_1=\tfrac{\pi}{8},\ I_2=\tfrac{\pi}{2},\ I_3=1\)
+C) \(I_1=\tfrac12\ln2,\ I_2=\tfrac{\pi}{4},\ I_3=\tfrac13\)
+D) \(I_1=\tfrac{\pi}{8},\ I_2=\tfrac{\pi}{4},\ I_3=\tfrac13\), so \(I_2=2I_1\)
+KEY: D
+SOL:
+Answer: (D) \(\tfrac{\pi}{8},\ \tfrac{\pi}{4},\ \tfrac13\).
+Given: \(I_1,I_2,I_3\text{ as stated}\)
+Formula/Principle: \(\int_a^bf(g(x))g'(x)dx=\int_{g(a)}^{g(b)}f(t)\,dt;\ \int\dfrac{dt}{1+t^2}=\tan^{-1}t\)
+Step 1: \(I_1:\ t=x^2,\ dt=2x\,dx\Rightarrow\tfrac12\int_0^1\dfrac{dt}{1+t^2}=\tfrac12\cdot\tfrac{\pi}{4}=\tfrac{\pi}{8}\)
+Step 2: \(I_2:\ t=\sin x,\ dt=\cos x\,dx\Rightarrow\int_0^1\dfrac{dt}{1+t^2}=\tfrac{\pi}{4}\)
+Step 3: \(I_3:\ t=\ln x,\ dt=\tfrac{dx}{x}\Rightarrow\int_0^1t^2dt=\tfrac13\)
+Worked derivation: \[I_2=\int_0^1\frac{dt}{1+t^2}=2\cdot\tfrac12\int_0^1\frac{dt}{1+t^2}=2I_1\]
+Check: \[\tfrac{d}{dx}\left[\tfrac12\tan^{-1}x^2\right]=\tfrac12\cdot\dfrac{2x}{1+x^4}=\dfrac{x}{1+x^4}\ \checkmark\]
+Why: \(\text{each integrand contains the derivative of an inner function, so substitution reduces it to a standard form; the limits change with the variable}\)
+Why not the others: (A) \(\text{forgets the }\tfrac12\text{ in }I_1\); (B) \(\text{wrong }I_2,I_3\); (C) \(I_1\text{ is not a logarithm}\).
+Key point: \(\text{change the limits when substituting}\)
+
+@@ Q53
+format: numerical
+sub_topic: Area between an ellipse and the chord joining its axis ends in the first quadrant, and finding the semi-axes from a given area and axis ratio
+Q: The region in the first quadrant between the ellipse \(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\) and the line \(\dfrac xa+\dfrac yb=1\) has area \(\pi-2\), and \(a=2b\). Find \(a\) and \(b\).
+A) \(a=4,\ b=2\)
+B) \(a=2,\ b=1\)
+C) \(a=\sqrt2,\ b=\tfrac{1}{\sqrt2}\)
+D) \(a=2\sqrt2,\ b=\sqrt2\), since the area equals \(\tfrac{\pi ab}{4}-\tfrac{ab}{2}=\tfrac{ab(\pi-2)}{4}\), giving \(ab=4\)
+KEY: D
+SOL:
+Answer: (D) \(a=2\sqrt2,\ b=\sqrt2\).
+Given: \(\text{area}=\pi-2,\ a=2b\)
+Formula/Principle: \(\text{quarter-ellipse area }\tfrac{\pi ab}{4};\ \text{triangle }(0,0),(a,0),(0,b)\text{ has area }\tfrac{ab}{2}\)
+Step 1: \(\text{area between arc and chord}=\dfrac{\pi ab}{4}-\dfrac{ab}{2}=\dfrac{ab(\pi-2)}{4}\)
+Step 2: \(\dfrac{ab(\pi-2)}{4}=\pi-2\Rightarrow ab=4\)
+Step 3: \(2b\cdot b=4\Rightarrow b=\sqrt2,\ a=2\sqrt2\)
+Worked derivation: \[\int_0^a\left(\tfrac ba\sqrt{a^2-x^2}-b\left(1-\tfrac xa\right)\right)dx=\tfrac ba\cdot\tfrac{\pi a^2}{4}-\tfrac{ab}{2}\]
+Check: \[ab=2\sqrt2\cdot\sqrt2=4\Rightarrow\text{area}=\pi-2\ \checkmark\]
+Why: \(\text{the arc lies above the chord in the first quadrant, so the area is the quarter ellipse minus the triangle}\)
+Why not the others: (A) \(ab=8\); (B) \(ab=2\); (C) \(ab=1\).
+Key point: \(\text{area}=\tfrac{ab(\pi-2)}{4}\text{ for arc minus chord}\)
+
+@@ Q54
+format: numerical
+sub_topic: Solving a homogeneous differential equation for curves with a given slope law and identifying the solution curve through a point geometrically
+Q: A curve through \((2,1)\) has slope \(\dfrac{dy}{dx}=\dfrac{x^2+y^2}{2xy}\) at each of its points. What is the curve?
+A) \(x^2-y^2=\tfrac32x\), a rectangular hyperbola with centre \(\left(\tfrac34,0\right)\); every member \(x^2-y^2=cx\) of the solution family passes through the origin
+B) \(x^2+y^2=\tfrac52x\), a circle
+C) \(y=\tfrac x2\), a straight line
+D) \(xy=2\), a rectangular hyperbola with the axes as asymptotes
+KEY: A
+SOL:
+Answer: (A) \(x^2-y^2=\tfrac32x\).
+Given: \(\dfrac{dy}{dx}=\dfrac{x^2+y^2}{2xy},\ (2,1)\text{ on the curve}\)
+Formula/Principle: \(\text{homogeneous: put }y=vx,\ \dfrac{dy}{dx}=v+x\dfrac{dv}{dx}\)
+Step 1: \(v+x\dfrac{dv}{dx}=\dfrac{1+v^2}{2v}\Rightarrow x\dfrac{dv}{dx}=\dfrac{1-v^2}{2v}\)
+Step 2: \(\dfrac{2v\,dv}{1-v^2}=\dfrac{dx}{x}\Rightarrow-\ln|1-v^2|=\ln|x|+C\Rightarrow x(1-v^2)=c\)
+Step 3: \(x-\dfrac{y^2}{x}=c\Rightarrow x^2-y^2=cx;\ (2,1):\ 4-1=2c\Rightarrow c=\tfrac32\)
+Worked derivation: \[x^2-\tfrac32x-y^2=0\Rightarrow\left(x-\tfrac34\right)^2-y^2=\tfrac{9}{16}\]
+Check: \[\text{differentiate: }2x-2yy'=\tfrac32\Rightarrow y'=\dfrac{2x-\frac32}{2y};\ \text{at }(2,1):\ \tfrac{2.5}{2}=1.25=\tfrac{4+1}{4}\ \checkmark\]
+Why: \(\text{the slope depends only on }y/x\text{, so the substitution }y=vx\text{ separates the variables}\)
+Why not the others: (B) \(\text{that family solves }y'=\tfrac{y^2-x^2}{2xy}\); (C) \(\text{slope of }y=\tfrac x2\text{ is }\tfrac12\ne\tfrac54\); (D) \(\text{slope of }xy=2\text{ is negative}\).
+Key point: \(y=vx\text{ reduces a homogeneous equation to separable form}\)
+
+@@ Q55
+format: numerical
+sub_topic: Using inclusion–exclusion in reverse to find how many belong to all three sets, and to exactly one set, from the total and the number belonging to exactly two
+Q: Each of 60 students studies at least one of Mathematics, Physics and Chemistry; 35 study Mathematics, 30 Physics and 25 Chemistry, and exactly 18 study exactly two of the subjects. How many study all three, and how many study exactly one?
+A) All three 12; exactly one 30
+B) All three 6; exactly one 36; in the Venn diagram the pairwise overlaps add up to \(18+3\times6=36\)
+C) All three 0; exactly one 42
+D) All three 6; exactly one 30
+KEY: B
+SOL:
+Answer: (B) All three 6; exactly one 36.
+Given: \(n(M\cup P\cup C)=60;\ n(M)+n(P)+n(C)=90;\ \text{exactly two}=18\)
+Formula/Principle: \(\text{let }t=\text{all three, }e_2=\text{exactly two, }e_1=\text{exactly one: }\sum n(X)=e_1+2e_2+3t,\ n(\cup)=e_1+e_2+t\)
+Step 1: \(e_1+2(18)+3t=90\Rightarrow e_1+3t=54\)
+Step 2: \(e_1+18+t=60\Rightarrow e_1+t=42\)
+Step 3: \(\text{subtract: }2t=12\Rightarrow t=6,\ e_1=36\)
+Worked derivation: \[\sum n(X\cap Y)=e_2+3t=18+18=36;\ n(\cup)=90-36+6=60\ \checkmark\]
+Check: \[36+18+6=60\ \checkmark\]
+Why: \(\text{a student in exactly k sets is counted k times in the sum of the set sizes, which gives a second equation besides the total}\)
+Why not the others: (A) \(e_1+e_2+t=60\text{ fails}\); (C) \(\text{sum of sizes would be }42+36=78\ne90\); (D) \(36\text{, not }30\text{, study exactly one}\).
+Key point: \(\sum n(X)=e_1+2e_2+3t\)
+
+@@ Q56
+format: numerical
+sub_topic: Deciding for which values of a parameter the relation |a − b| ≤ k on the real numbers is reflexive, symmetric, transitive and an equivalence relation
+Q: For a real number \(k\), define \(R_k=\{(a,b)\in\mathbb R^2:|a-b|\le k\}\). Which statement is correct?
+A) \(R_k\) is an equivalence relation for every \(k\ge0\)
+B) \(R_k\) is transitive for every \(k\), but symmetric only for \(k>0\)
+C) For \(k>0\), \(R_k\) is reflexive and symmetric but not transitive (e.g. for \(k=1\): \((0,1),(1,2)\in R_1\) but \((0,2)\notin R_1\)); for \(k=0\) it is the equality relation, an equivalence relation; for \(k<0\) it is empty — symmetric and transitive (vacuously) but not reflexive
+D) \(R_k\) is never reflexive
+KEY: C
+SOL:
+Answer: (C) Equivalence only at \(k=0\); reflexive and symmetric but not transitive for \(k>0\); empty for \(k<0\).
+Given: \(aR_kb\iff|a-b|\le k\)
+Formula/Principle: \(\text{reflexive: }aRa;\ \text{symmetric: }aRb\Rightarrow bRa;\ \text{transitive: }aRb,bRc\Rightarrow aRc\)
+Step 1: \(|a-a|=0\le k\iff k\ge0\Rightarrow\text{reflexive iff }k\ge0\)
+Step 2: \(|a-b|=|b-a|\Rightarrow\text{always symmetric}\)
+Step 3: \(k>0:\ |0-k|\le k,\ |k-2k|\le k,\ |0-2k|=2k>k\Rightarrow\text{not transitive}\)
+Worked derivation: \[k=0:\ |a-b|\le0\iff a=b\Rightarrow\text{equality, an equivalence relation}\]
+Check: \[k<0:\ \text{no pair satisfies }|a-b|\le k<0\Rightarrow R_k=\varnothing\ \checkmark\]
+Why: \(\text{"being close" does not chain: small steps can add up to a large distance}\)
+Why not the others: (A) \(\text{fails transitivity for }k>0\); (B) \(\text{symmetry always holds; transitivity fails for }k>0\); (D) \(\text{reflexive for }k\ge0\).
+Key point: \(\text{nearness relations are reflexive and symmetric, rarely transitive}\)
+
+@@ Q57
+format: numerical
+sub_topic: Solving sin 5x + sin x = sin 3x on [0, π] using the sum-to-product formula, and evaluating cos 75° − cos 15°
+Q: How many solutions does \(\sin5x+\sin x=\sin3x\) have in \([0,\pi]\), and what is \(\cos75^\circ-\cos15^\circ\)?
+A) 4 solutions; \(\tfrac{\sqrt2}{2}\)
+B) 2 solutions; \(-\tfrac{\sqrt6}{2}\)
+C) 6 solutions (\(0,\tfrac{\pi}{6},\tfrac{\pi}{3},\tfrac{2\pi}{3},\tfrac{5\pi}{6},\pi\)); \(\cos75^\circ-\cos15^\circ=-2\sin45^\circ\sin30^\circ=-\tfrac{\sqrt2}{2}\)
+D) 5 solutions; \(-\tfrac12\)
+KEY: C
+SOL:
+Answer: (C) Six solutions; \(-\tfrac{\sqrt2}{2}\).
+Given: \(\sin5x+\sin x=\sin3x,\ x\in[0,\pi]\)
+Formula/Principle: \(\sin C+\sin D=2\sin\tfrac{C+D}{2}\cos\tfrac{C-D}{2};\ \cos C-\cos D=-2\sin\tfrac{C+D}{2}\sin\tfrac{C-D}{2}\)
+Step 1: \(\sin5x+\sin x=2\sin3x\cos2x\Rightarrow\sin3x(2\cos2x-1)=0\)
+Step 2: \(\sin3x=0\Rightarrow3x=0,\pi,2\pi,3\pi\Rightarrow x=0,\tfrac{\pi}{3},\tfrac{2\pi}{3},\pi\)
+Step 3: \(\cos2x=\tfrac12\Rightarrow2x=\tfrac{\pi}{3},\tfrac{5\pi}{3}\Rightarrow x=\tfrac{\pi}{6},\tfrac{5\pi}{6}\)
+Worked derivation: \[\cos75^\circ-\cos15^\circ=-2\sin45^\circ\sin30^\circ=-2\cdot\tfrac{\sqrt2}{2}\cdot\tfrac12=-\tfrac{\sqrt2}{2}\]
+Check: \[x=\tfrac{\pi}{6}:\ \sin\tfrac{5\pi}{6}+\sin\tfrac{\pi}{6}=1=\sin\tfrac{\pi}{2}\ \checkmark;\ 0.2588-0.9659=-0.7071\ \checkmark\]
+Why: \(\text{converting the sum to a product exposes the common factor }\sin3x\text{; dividing it out would lose four solutions}\)
+Why not the others: (A) \(\text{misses the }\cos2x\text{ branch and the sign}\); (B) \(\text{misses the }\sin3x\text{ branch}\); (D) \(\text{miscount and wrong value}\).
+Key point: \(\text{factor, don't cancel, a common trigonometric factor}\)
+
+@@ Q58
+format: numerical
+sub_topic: Geometry of the roots of z³ = 8 and of z² + z + 1 = 0 in the Argand plane: equilateral triangles, centroids and areas
+Q: Which statement about the roots of \(z^3=8\) is correct?
+A) They are \(2,\ 2i,\ -2\), forming a right-angled triangle of area 4
+B) They are \(2,\ 2\omega,\ 2\omega^2\) with \(\omega=e^{2\pi i/3}\); they lie on the circle \(|z|=2\) and form an equilateral triangle of side \(2\sqrt3\) and area \(3\sqrt3\), with centroid at the origin because their sum is 0; the roots \(\omega,\omega^2\) of \(z^2+z+1=0\) together with 1 form an equilateral triangle of area \(\tfrac{3\sqrt3}{4}\)
+C) They are all real, since 8 is real
+D) They form an equilateral triangle of side 2 and area \(\sqrt3\)
+KEY: B
+SOL:
+Answer: (B) \(2,2\omega,2\omega^2\): equilateral, side \(2\sqrt3\), area \(3\sqrt3\), centroid 0.
+Given: \(z^3=8\)
+Formula/Principle: \(z=2e^{2\pi ik/3},\ k=0,1,2;\ 1+\omega+\omega^2=0\)
+Step 1: \(\text{roots }2,\ 2\left(-\tfrac12+\tfrac{\sqrt3}{2}i\right)=-1+\sqrt3 i,\ -1-\sqrt3 i\)
+Step 2: \(\text{side}=|(-1+\sqrt3i)-(-1-\sqrt3i)|=2\sqrt3\)
+Step 3: \(\text{area}=\tfrac{\sqrt3}{4}(2\sqrt3)^2=\tfrac{\sqrt3}{4}\cdot12=3\sqrt3\)
+Worked derivation: \[z^2+z+1=0\Rightarrow z=\omega,\omega^2;\ \text{with }1:\ \text{side }\sqrt3,\ \text{area }\tfrac{\sqrt3}{4}\cdot3=\tfrac{3\sqrt3}{4}\]
+Check: \[(-1+\sqrt3i)^3=8\ \checkmark\ (\text{modulus }2,\ \text{argument }120^\circ\times3=360^\circ)\]
+Why: \(\text{the n-th roots of a complex number are equally spaced on a circle, forming a regular polygon centred at the origin}\)
+Why not the others: (A) \(2i\text{ and }-2\text{ do not satisfy }z^3=8\); (C) \(\text{only one root is real}\); (D) \(\text{the side is }2\sqrt3\text{, not 2}\).
+Key point: \(\text{cube roots of }r^3\text{: equilateral triangle on }|z|=r\text{, side }r\sqrt3\)
+
+@@ Q59
+format: numerical
+sub_topic: Using the values of a cubic at its critical points to find the range of k for which 2x³ − 9x² + 12x + k = 0 has three distinct real roots
+Q: For which real \(k\) does \(2x^3-9x^2+12x+k=0\) have three distinct real roots?
+A) \(-5<k<-4\); at \(k=-5\) or \(k=-4\) there is a repeated root, and otherwise only one real root
+B) \(4<k<5\)
+C) \(k<-5\) or \(k>-4\)
+D) For every real \(k\), since a cubic always has three real roots
+KEY: A
+SOL:
+Answer: (A) \(-5<k<-4\).
+Given: \(g(x)=2x^3-9x^2+12x+k\)
+Formula/Principle: \(\text{three distinct real roots}\iff\text{local max}>0>\text{local min}\)
+Step 1: \(g'(x)=6x^2-18x+12=6(x-1)(x-2)\)
+Step 2: \(g(1)=2-9+12+k=5+k\ (\text{local max});\ g(2)=16-36+24+k=4+k\ (\text{local min})\)
+Step 3: \(5+k>0\text{ and }4+k<0\Rightarrow-5<k<-4\)
+Worked derivation: \[k=-4:\ g=2x^3-9x^2+12x-4=(x-2)^2(2x-1)\ (\text{double root at }2)\]
+Check: \[k=-4.5:\ g(0)=-4.5<0,\ g(1)=0.5>0,\ g(2)=-0.5<0,\ g(3)=4.5>0\Rightarrow3\text{ sign changes}\ \checkmark\]
+Why: \(\text{the graph must cross the axis between }-\infty\text{ and the maximum, between the maximum and the minimum, and after the minimum}\)
+Why not the others: (B) \(\text{sign of }k\text{ wrong}\); (C) \(\text{those give one real root}\); (D) \(\text{a cubic can have one real root}\).
+Key point: \(f(\text{max})\cdot f(\text{min})<0\iff\text{three distinct real roots}\)
+
+@@ Q60
+format: numerical
+sub_topic: Counting three-digit numbers with distinct digits divisible by 5 by cases on the last digit, and the least number of letters needed in codes to exceed a given count
+Q: How many three-digit numbers with distinct digits are divisible by 5? Codes consist of \(k\) letters (from 26, repetition allowed) followed by 3 digits (repetition allowed); what is the least \(k\) giving at least one million codes?
+A) 144 numbers; \(k=2\)
+B) 128 numbers; \(k=4\)
+C) 180 numbers; \(k=2\)
+D) 136 numbers (72 ending in 0, 64 ending in 5); \(k=3\), since \(26^2\times10^3=676\,000<10^6\le26^3\times10^3=17\,576\,000\)
+KEY: D
+SOL:
+Answer: (D) 136 numbers; \(k=3\).
+Given: \(\text{digits 0–9; letters 26}\)
+Formula/Principle: \(\text{fundamental principle of counting; split into cases when choices depend on earlier ones}\)
+Step 1: \(\text{last digit 0: hundreds 9 choices (1–9), tens 8}\Rightarrow72\)
+Step 2: \(\text{last digit 5: hundreds 8 (not 0 or 5), tens 8 (not the two used)}\Rightarrow64\)
+Step 3: \(\text{total }72+64=136\)
+Worked derivation: \[26^k\times1000\ge10^6\iff26^k\ge1000;\ 26^2=676,\ 26^3=17\,576\Rightarrow k=3\]
+Check: \[\text{numbers divisible by 5 from 100 to 995: 180, of which those with repeated digits number 44}\Rightarrow136\ \checkmark\]
+Why: \(\text{the leading digit cannot be 0, so the two cases for the last digit leave different numbers of choices}\)
+Why not the others: (A) \(\text{treats both cases alike}\); (B) \(\text{miscount and wrong }k\); (C) \(\text{ignores the distinct-digit condition}\).
+Key point: \(\text{case-split when a restriction (no leading 0) interacts with another choice}\)
