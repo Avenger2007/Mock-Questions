@@ -1,0 +1,439 @@
+@@ Q61
+format: numerical
+sub_topic: Distance of closest approach of an alpha particle to a gold nucleus compared with the nuclear radius, and the energy needed to reach the nuclear surface
+Q: A 4.0 MeV alpha particle is fired head-on at a gold nucleus (\(Z=79,\ A=197\)). Take \(\dfrac{e^2}{4\pi\varepsilon_0}=1.44\ \text{MeV fm}\) and \(R=R_0A^{1/3}\) with \(R_0=1.2\ \text{fm}\). Which statement is correct?
+A) The closest approach is about 57 fm, while the gold nucleus has radius about 7.0 fm, so the alpha particle turns back long before touching the nucleus; it would need roughly 32 MeV to reach the nuclear surface
+B) The closest approach is about 7 fm, so the alpha particle just touches the nucleus
+C) The closest approach is about 28 fm; doubling the energy doubles it
+D) The closest approach is about 114 fm; it does not depend on \(Z\)
+KEY: A
+SOL:
+Answer: (A) \(r_0\approx57\ \text{fm}\gg R\approx7\ \text{fm}\); about 32 MeV needed to reach the surface.
+Given: \(K=4.0\ \text{MeV},\ Z=79,\ z=2,\ ke^2=1.44\ \text{MeV fm},\ R_0=1.2\ \text{fm}\)
+Formula/Principle: \(\text{at closest approach }K=\dfrac{kZze^2}{r_0}\Rightarrow r_0=\dfrac{kZze^2}{K};\ R=R_0A^{1/3}\)
+Step 1: \(r_0=\dfrac{1.44\times79\times2}{4.0}=\dfrac{227.5}{4.0}\approx56.9\ \text{fm}\)
+Step 2: \(197^{1/3}\approx5.82\Rightarrow R\approx1.2\times5.82\approx7.0\ \text{fm}\)
+Step 3: \(\text{energy to reach }R:\ K'=\dfrac{227.5}{7.0}\approx32.5\ \text{MeV}\)
+Worked derivation: \[\dfrac{r_0}{R}=\dfrac{56.9}{7.0}\approx8\Rightarrow\text{pure Coulomb scattering; the nucleus is never touched}\]
+Check: \[r_0\propto\dfrac{1}{K}:\ 4.0\times56.9\approx32.5\times7.0\approx227.5\ \checkmark\]
+Why: \(\text{all kinetic energy becomes Coulomb potential energy at the turning point; this distance only sets an upper limit on the nuclear size}\)
+Why not the others: (B) \(\text{confuses }r_0\text{ with }R\); (C) \(\text{wrong value, and }r_0\propto1/K\text{ halves when K doubles}\); (D) \(r_0\propto Z\).
+Key point: \(r_0=kZze^2/K;\ \text{Rutherford-type scattering never reaches the nucleus at a few MeV for heavy targets}\)
+
+@@ Q62
+format: conceptual
+sub_topic: Properties of the nuclear force (short range, saturation, charge independence, repulsive core) and the classification of nuclides as isotopes, isobars and isotones
+Q: Which set of statements is entirely correct?
+A) The nuclear force is long-range like gravity; \({}^{14}_{6}\text{C}\) and \({}^{14}_{7}\text{N}\) are isotopes
+B) The nuclear force acts only between protons; \({}^{3}_{1}\text{H}\) and \({}^{4}_{2}\text{He}\) are isobars
+C) The nuclear force is weaker than the Coulomb force between protons at 1 fm; \({}^{12}_{6}\text{C}\) and \({}^{13}_{6}\text{C}\) are isotones
+D) The nuclear force is short-ranged (a few fm), nearly charge-independent (p–p, n–n and n–p alike), becomes strongly repulsive below about 0.5 fm and saturates; \({}^{14}_{6}\text{C}\) and \({}^{14}_{7}\text{N}\) are isobars, while \({}^{13}_{6}\text{C}\) and \({}^{14}_{7}\text{N}\) are isotones (7 neutrons each)
+KEY: D
+SOL:
+Answer: (D) Short-range, charge-independent, repulsive core, saturating; isobars and isotones correctly identified.
+Given: \(\text{isotopes: same Z; isobars: same A; isotones: same }N=A-Z\)
+Formula/Principle: \(N=A-Z\)
+Step 1: \({}^{14}\text{C},{}^{14}\text{N}:\ A=14\text{ for both}\Rightarrow\text{isobars}\)
+Step 2: \({}^{13}_{6}\text{C}:N=7;\ {}^{14}_{7}\text{N}:N=7\Rightarrow\text{isotones}\)
+Step 3: \({}^{12}_6\text{C},{}^{13}_6\text{C}:\ \text{same Z}\Rightarrow\text{isotopes, not isotones}\)
+Worked derivation: \[\text{saturation}\Rightarrow\text{binding energy}\propto A\ (\text{nearly constant }B/A\approx8\ \text{MeV})\text{ instead of }\propto A^2\]
+Check: \[{}^{3}_1\text{H}(A=3)\text{ and }{}^{4}_2\text{He}(A=4)\text{ differ in A}\Rightarrow\text{not isobars}\ \checkmark\]
+Why: \(\text{the nuclear force binds all nucleons equally and only nearest neighbours, which explains the constant density and nearly constant B/A}\)
+Why not the others: (A) \(\text{force is short-range; C and N differ in Z}\); (B) \(\text{acts between all nucleons; A differs}\); (C) \(\text{nuclear force dominates at 1 fm; those are isotopes}\).
+Key point: \(\text{same Z: isotopes; same A: isobars; same N: isotones}\)
+
+@@ Q63
+format: experiment
+sub_topic: Applying significant-figure rules to measured lengths, a computed volume, a sum and a quotient in a laboratory record
+Q: A student records the radius of a sphere as 2.50 cm, adds two lengths 12.1 cm and 0.236 cm, and divides 4.80 g by 3.0 cm³. Which reported results follow the significant-figure rules?
+A) Volume 65.44985 cm³; sum 12.336 cm; density 1.600 g/cm³
+B) Volume 65 cm³; sum 12.34 cm; density 1.60 g/cm³
+C) Volume 65.4 cm³; sum 12.3 cm; density 1.6 g/cm³
+D) Volume 65.45 cm³; sum 12.3 cm; density 1.60 g/cm³
+KEY: C
+SOL:
+Answer: (C) 65.4 cm³, 12.3 cm, 1.6 g/cm³.
+Given: \(r=2.50\ \text{cm (3 s.f.)};\ 12.1+0.236;\ 4.80\div3.0\)
+Formula/Principle: \(\text{products/quotients: least number of s.f.; sums: least number of decimal places}\)
+Step 1: \(V=\tfrac43\pi r^3=\tfrac43\pi(15.625)=65.45\ldots\Rightarrow65.4\ \text{cm}^3\ (3\text{ s.f.})\)
+Step 2: \(12.1+0.236=12.336\Rightarrow12.3\ \text{cm}\ (1\text{ decimal place, set by }12.1)\)
+Step 3: \(4.80/3.0=1.6\ (2\text{ s.f., set by }3.0)\)
+Worked derivation: \[65.4498\to65.4\text{ (next digit 4 < 5, round down)}\]
+Check: \[\tfrac43\text{ and }\pi\text{ are exact constants and do not limit the s.f.}\ \checkmark\]
+Why: \(\text{a result cannot be more precise than the least precise measurement that enters it}\)
+Why not the others: (A) \(\text{keeps calculator digits}\); (B) \(\text{over-rounds V and keeps too many digits elsewhere}\); (D) \(\text{V and density have too many s.f.}\).
+Key point: \(\times,\div:\ \text{fewest s.f.};\ +,-:\ \text{fewest decimal places}\)
+
+@@ Q64
+format: numerical
+sub_topic: Conservation of angular momentum for a puck on a string pulled through a hole, and how speed, angular speed, kinetic energy and tension change
+Q: A puck moves in a circle of radius \(r\) on a frictionless table, held by a string through a central hole. The string is pulled slowly until the radius is \(r/2\). By what factors do the speed, angular speed, kinetic energy and tension change?
+A) Speed unchanged; angular speed ×2; KE unchanged; tension ×2
+B) Speed ×2; angular speed ×4; KE ×4; tension ×8; the extra KE comes from the work done in pulling the string
+C) Speed ×2; angular speed ×2; KE ×2; tension ×4
+D) Speed ×\(\tfrac12\); angular speed unchanged; KE ×\(\tfrac14\); tension ×\(\tfrac18\)
+KEY: B
+SOL:
+Answer: (B) \(v\times2,\ \omega\times4,\ K\times4,\ T\times8\).
+Given: \(r\to r/2;\ \text{string force is central}\)
+Formula/Principle: \(\text{central force}\Rightarrow\tau=0\Rightarrow L=mvr=\text{constant}\)
+Step 1: \(mvr=mv'\tfrac r2\Rightarrow v'=2v\)
+Step 2: \(\omega'=\dfrac{v'}{r/2}=\dfrac{4v}{r}=4\omega\)
+Step 3: \(K'=\tfrac12m(2v)^2=4K;\ T'=\dfrac{m(2v)^2}{r/2}=8\dfrac{mv^2}{r}\)
+Worked derivation: \[W_{\text{pull}}=K'-K=3K=\tfrac32mv^2>0\]
+Check: \[L=I\omega:\ I'=m\tfrac{r^2}{4},\ \omega'=4\omega\Rightarrow I'\omega'=mr^2\omega\ \checkmark\]
+Why: \(\text{the tension passes through the hole, so it exerts no torque about it; it does do work because the puck moves inward along it}\)
+Why not the others: (A) \(\text{assumes constant speed}\); (C) \(\omega=v/r\text{ gives a factor 4}\); (D) \(\text{reverses the effect}\).
+Key point: \(L\text{ conserved under a central force; KE is not, when the radius changes}\)
+
+@@ Q65
+format: numerical
+sub_topic: Acceleration and string tension for a block on a smooth table connected to a hanging mass, compared with pulling the string by a force equal to that weight
+Q: A 2.0 kg block on a smooth horizontal table is joined by a light string over a smooth pulley to a hanging 1.0 kg mass (\(g=9.8\ \text{m/s}^2\)). Then the hanging mass is removed and the string is pulled down with a constant force of 9.8 N. Compare the accelerations and tensions.
+A) Both cases: \(a=4.9\ \text{m/s}^2,\ T=9.8\ \text{N}\)
+B) Hanging mass: \(a=g/3\approx3.27\ \text{m/s}^2,\ T\approx6.53\ \text{N}\); pulling with 9.8 N: \(a=4.9\ \text{m/s}^2,\ T=9.8\ \text{N}\); the hanging mass also has to be accelerated, so its weight cannot all go into pulling the block
+C) Hanging mass: \(a=g/2,\ T=9.8\ \text{N}\); pulling: \(a=g/3\)
+D) Both cases: \(a=3.27\ \text{m/s}^2,\ T=6.53\ \text{N}\)
+KEY: B
+SOL:
+Answer: (B) \(3.27\ \text{m/s}^2,\ 6.53\ \text{N}\) versus \(4.9\ \text{m/s}^2,\ 9.8\ \text{N}\).
+Given: \(M=2.0\ \text{kg},\ m=1.0\ \text{kg},\ F=9.8\ \text{N}\)
+Formula/Principle: \(\text{Newton's second law for each body; light string: same tension and same magnitude of acceleration}\)
+Step 1: \(\text{block: }T=Ma;\ \text{hanger: }mg-T=ma\Rightarrow a=\dfrac{mg}{M+m}=\dfrac{9.8}{3}\approx3.27\ \text{m/s}^2\)
+Step 2: \(T=Ma=2\times3.27\approx6.53\ \text{N}\)
+Step 3: \(\text{pull: }T=F=9.8\ \text{N};\ a=\dfrac{9.8}{2.0}=4.9\ \text{m/s}^2\)
+Worked derivation: \[T=\dfrac{Mm}{M+m}g=\dfrac{2}{3}\times9.8=6.53\ \text{N}<mg\]
+Check: \[\text{hanger: }9.8-6.53=3.27=1.0\times3.27\ \checkmark\]
+Why: \(\text{the falling mass accelerates, so the tension must be less than its weight; a fixed applied force has no inertia of its own}\)
+Why not the others: (A) \(\text{ignores the hanging mass's inertia}\); (C) \(\text{wrong system mass}\); (D) \(\text{ignores the difference in the second case}\).
+Key point: \(\text{tension in a moving Atwood-type system is less than the hanging weight}\)
+
+@@ Q66
+format: conceptual
+sub_topic: Distinguishing conservative from non-conservative forces by path independence and closed-loop work, and relating potential energy, force and power
+Q: Gravity, a spring force and kinetic friction act on bodies moved along different paths. Which set of statements about conservative forces, potential energy and power is correct?
+A) Friction is conservative because it always acts; the work done by gravity depends on the path
+B) A force is conservative if it is constant in magnitude; power is work multiplied by time
+C) The work done by a conservative force (gravity, spring force) is independent of path and is zero round any closed path, so a potential energy with \(F=-\dfrac{dU}{dx}\) can be defined; friction is non-conservative because its work depends on the path length; instantaneous power is \(P=\vec F\cdot\vec v\)
+D) Every force has a potential energy; the work done by friction round a closed path is zero
+KEY: C
+SOL:
+Answer: (C) Path independence, zero closed-loop work, \(F=-dU/dx\), friction non-conservative, \(P=\vec F\cdot\vec v\).
+Given: \(\text{conservative}\iff\oint\vec F\cdot d\vec r=0\iff\text{work depends only on end points}\)
+Formula/Principle: \(W_c=-\Delta U;\ F=-\dfrac{dU}{dx};\ P=\dfrac{dW}{dt}=\vec F\cdot\vec v\)
+Step 1: \(\text{gravity: }W=-mg\Delta h\text{, set by end heights only}\)
+Step 2: \(\text{friction: }W=-\mu mg\times(\text{path length})<0\text{ round any closed loop}\)
+Step 3: \(\text{spring: }U=\tfrac12kx^2\Rightarrow F=-kx\)
+Worked derivation: \[\text{block moved 2 m out and 2 m back with }\mu mg=5\ \text{N}:\ W_f=-5\times4=-20\ \text{J}\ne0\]
+Check: \[P=Fv:\ 10\ \text{N at }3\ \text{m/s}\Rightarrow30\ \text{W}\ \checkmark\]
+Why: \(\text{only forces whose work is path-independent store energy recoverably; friction turns mechanical energy into heat}\)
+Why not the others: (A) \(\text{friction is non-conservative; gravity's work is path-independent}\); (B) \(\text{constancy is not the test; power is work per unit time}\); (D) \(\text{non-conservative forces have no potential energy}\).
+Key point: \(\oint\vec F\cdot d\vec r=0\text{ defines a conservative force}\)
+
+@@ Q67
+format: numerical
+sub_topic: Position of the centre of mass of three point masses in a plane and the velocity of the centre of mass when two of them move
+Q: Masses 1 kg at \((0,0)\), 2 kg at \((3,0)\) and 3 kg at \((0,4)\) (in metres) lie in a plane. Find the centre of mass. If the 1 kg mass then moves at 2 m/s along \(+x\) and the 2 kg mass at 1 m/s along \(+y\), with the 3 kg mass at rest, what is the velocity of the centre of mass?
+A) \((1.5,2)\); \(v_{\text{cm}}=(2,1)\ \text{m/s}\)
+B) \((1,2)\); \(v_{\text{cm}}=(1,1)\ \text{m/s}\)
+C) \((2,1)\); \(v_{\text{cm}}=\left(\tfrac13,\tfrac13\right)\ \text{m/s}\)
+D) \((1,2)\); \(v_{\text{cm}}=\left(\tfrac13,\tfrac13\right)\ \text{m/s}\), of magnitude \(\tfrac{\sqrt2}{3}\ \text{m/s}\) at \(45^\circ\) to the \(x\)-axis
+KEY: D
+SOL:
+Answer: (D) \((1,2)\); \(v_{\text{cm}}=\left(\tfrac13,\tfrac13\right)\ \text{m/s}\).
+Given: \(m_1=1,\ m_2=2,\ m_3=3\ \text{kg};\ M=6\ \text{kg}\)
+Formula/Principle: \(\vec r_{\text{cm}}=\dfrac{\sum m_i\vec r_i}{M};\ \vec v_{\text{cm}}=\dfrac{\sum m_i\vec v_i}{M}\)
+Step 1: \(x_{\text{cm}}=\dfrac{0+6+0}{6}=1\ \text{m}\)
+Step 2: \(y_{\text{cm}}=\dfrac{0+0+12}{6}=2\ \text{m}\)
+Step 3: \(\vec v_{\text{cm}}=\dfrac{1(2,0)+2(0,1)+3(0,0)}{6}=\left(\tfrac26,\tfrac26\right)=\left(\tfrac13,\tfrac13\right)\)
+Worked derivation: \[|\vec v_{\text{cm}}|=\sqrt{\tfrac19+\tfrac19}=\tfrac{\sqrt2}{3}\approx0.47\ \text{m/s},\ \text{direction }45^\circ\]
+Check: \[\text{total momentum }(2,2)\ \text{kg m/s}=M\vec v_{\text{cm}}=6\left(\tfrac13,\tfrac13\right)\ \checkmark\]
+Why: \(\text{the centre of mass moves with the total momentum divided by the total mass}\)
+Why not the others: (A) \(\text{unweighted averages}\); (B) \(\text{divides by 2 instead of 6}\); (C) \(\text{coordinates interchanged}\).
+Key point: \(M\vec v_{\text{cm}}=\vec p_{\text{total}}\)
+
+@@ Q68
+format: numerical
+sub_topic: Young's modulus, elastic energy density and stored energy from stress–strain data in the linear region, and the order of the characteristic points on the curve
+Q: In the linear region of a wire's stress–strain curve, a stress of \(2.0\times10^8\ \text{Pa}\) produces a strain of \(1.0\times10^{-3}\). The wire has volume \(2.0\times10^{-6}\ \text{m}^3\). Which statement is correct?
+A) \(Y=2.0\times10^{11}\ \text{Pa}\); energy density \(1.0\times10^5\ \text{J/m}^3\); stored energy 0.20 J; along the curve the proportional limit comes first, then the elastic limit and yield point, then the ultimate tensile strength, then fracture
+B) \(Y=2.0\times10^{5}\ \text{Pa}\); energy density \(2.0\times10^5\ \text{J/m}^3\); stored energy 0.40 J
+C) \(Y=2.0\times10^{11}\ \text{Pa}\); energy density \(2.0\times10^5\ \text{J/m}^3\); stored energy 0.40 J; the yield point comes before the proportional limit
+D) \(Y=5.0\times10^{-12}\ \text{Pa}\); stored energy 0.10 J
+KEY: A
+SOL:
+Answer: (A) \(Y=2.0\times10^{11}\ \text{Pa}\), \(u=1.0\times10^5\ \text{J/m}^3\), \(U=0.20\ \text{J}\).
+Given: \(\sigma=2.0\times10^8\ \text{Pa},\ \varepsilon=1.0\times10^{-3},\ V=2.0\times10^{-6}\ \text{m}^3\)
+Formula/Principle: \(Y=\dfrac{\sigma}{\varepsilon};\ u=\tfrac12\sigma\varepsilon;\ U=uV\)
+Step 1: \(Y=\dfrac{2.0\times10^8}{1.0\times10^{-3}}=2.0\times10^{11}\ \text{Pa}\)
+Step 2: \(u=\tfrac12(2.0\times10^8)(1.0\times10^{-3})=1.0\times10^5\ \text{J/m}^3\)
+Step 3: \(U=1.0\times10^5\times2.0\times10^{-6}=0.20\ \text{J}\)
+Worked derivation: \[u=\text{area of the triangle under the linear graph}=\tfrac12\sigma\varepsilon\]
+Check: \[u=\dfrac{\sigma^2}{2Y}=\dfrac{4\times10^{16}}{4\times10^{11}}=1.0\times10^5\ \checkmark\]
+Why: \(\text{the work done in stretching equals the area under the force–extension (or stress–strain) graph}\)
+Why not the others: (B) \(\text{multiplies instead of dividing and drops the }\tfrac12\); (C) \(\text{drops the }\tfrac12\text{ and wrong order of points}\); (D) \(\text{inverts Y}\).
+Key point: \(u=\tfrac12\times\text{stress}\times\text{strain}\)
+
+@@ Q69
+format: numerical
+sub_topic: Applying the first law of thermodynamics with sign conventions to a general, an isothermal, an adiabatic and a cyclic process of an ideal gas
+Q: A gas absorbs 500 J of heat and does 200 J of work on its surroundings. What is \(\Delta U\)? Which of the following is also correct for an ideal gas?
+A) \(\Delta U=300\ \text{J}\); in an isothermal process \(\Delta U=0\) so \(Q=W\); in an adiabatic expansion \(Q=0\) so \(\Delta U=-W\) and the gas cools; in a cyclic process \(\Delta U=0\) so the net heat absorbed equals the net work done
+B) \(\Delta U=700\ \text{J}\); in an isothermal process \(Q=0\)
+C) \(\Delta U=-300\ \text{J}\); in an adiabatic expansion the gas warms up
+D) \(\Delta U=300\ \text{J}\); in a cyclic process the net work is always zero
+KEY: A
+SOL:
+Answer: (A) \(\Delta U=300\ \text{J}\), with the special cases stated correctly.
+Given: \(Q=+500\ \text{J (absorbed)},\ W=+200\ \text{J (by the gas)}\)
+Formula/Principle: \(\Delta U=Q-W;\ \text{ideal gas: }U\text{ depends only on }T\)
+Step 1: \(\Delta U=500-200=300\ \text{J}\)
+Step 2: \(\text{isothermal: }\Delta T=0\Rightarrow\Delta U=0\Rightarrow Q=W\)
+Step 3: \(\text{adiabatic: }Q=0\Rightarrow\Delta U=-W;\ \text{expansion }(W>0)\Rightarrow\Delta U<0\Rightarrow T\downarrow\)
+Worked derivation: \[\text{cycle: }\oint dU=0\Rightarrow Q_{\text{net}}=W_{\text{net}}=\text{area enclosed on the PV diagram}\]
+Check: \[\text{energy: 500 J in = 200 J out as work + 300 J stored}\ \checkmark\]
+Why: \(\text{internal energy is a state function, while Q and W depend on the path; the first law is energy conservation}\)
+Why not the others: (B) \(\text{adds W and confuses isothermal with adiabatic}\); (C) \(\text{sign errors}\); (D) \(\text{net work in a cycle equals the enclosed area, generally non-zero}\).
+Key point: \(\Delta U=Q-W\text{ (W by the gas)}\)
+
+@@ Q70
+format: numerical
+sub_topic: Dependence of the mean free path of gas molecules on temperature, pressure, number density and molecular diameter, and why diffusion is slow
+Q: The mean free path is \(\lambda=\dfrac{k_BT}{\sqrt2\pi d^2P}\). Which statement is correct?
+A) Heating a gas in a sealed rigid container increases \(\lambda\) because \(T\) rises
+B) Doubling the molecular diameter halves \(\lambda\)
+C) \(\lambda\) is independent of pressure at constant temperature
+D) Since \(\lambda=\dfrac{1}{\sqrt2\pi d^2n}\), heating in a sealed rigid container (fixed \(n\)) leaves \(\lambda\) unchanged; halving the pressure at constant \(T\) doubles \(\lambda\); doubling \(d\) makes \(\lambda\) one quarter; because \(\lambda\) is only of order \(10^{-7}\ \text{m}\) at NTP, molecules follow zig-zag paths and a smell spreads far more slowly than the molecular speed
+KEY: D
+SOL:
+Answer: (D) \(\lambda\) depends on \(n\) and \(d\) only; unchanged at fixed \(n\); \(\lambda\propto1/P\) at fixed \(T\); \(\lambda\propto1/d^2\).
+Given: \(\lambda=\dfrac{k_BT}{\sqrt2\pi d^2P}\)
+Formula/Principle: \(P=nk_BT\Rightarrow\lambda=\dfrac{1}{\sqrt2\pi d^2n}\)
+Step 1: \(\text{rigid sealed container: }n\text{ fixed; }T\uparrow\Rightarrow P\uparrow\text{ in proportion}\Rightarrow\lambda\text{ unchanged}\)
+Step 2: \(T\text{ fixed, }P\to P/2\Rightarrow n\to n/2\Rightarrow\lambda\to2\lambda\)
+Step 3: \(d\to2d\Rightarrow d^2\to4d^2\Rightarrow\lambda\to\lambda/4\)
+Worked derivation: \[\text{NTP: }n\approx2.7\times10^{25}\ \text{m}^{-3},\ d\approx3\times10^{-10}\ \text{m}\Rightarrow\lambda\approx\dfrac{1}{1.41\times3.14\times9\times10^{-20}\times2.7\times10^{25}}\approx9\times10^{-8}\ \text{m}\]
+Check: \[\text{units: }\dfrac{1}{\text{m}^2\cdot\text{m}^{-3}}=\text{m}\ \checkmark\]
+Why: \(\text{the mean free path is set by how crowded the molecules are and how big a target each presents, not by how fast they move}\)
+Why not the others: (A) \(\text{P rises with T at fixed n, cancelling}\); (B) \(\lambda\propto1/d^2\text{, so it becomes a quarter}\); (C) \(\lambda\propto1/P\text{ at fixed T}\).
+Key point: \(\lambda=1/(\sqrt2\pi d^2n)\)
+
+@@ Q71
+format: numerical
+sub_topic: Phase relations among displacement, velocity and acceleration in SHM, and their values at the mean and extreme positions
+Q: A particle executes SHM \(x=A\sin\omega t\). Which statement is correct?
+A) Velocity and displacement are in phase; acceleration is maximum at the mean position
+B) Acceleration leads displacement by \(\tfrac{\pi}{2}\); speed is maximum at the extremes
+C) Velocity leads displacement by \(\tfrac{\pi}{2}\) and acceleration is \(a=-\omega^2x\), i.e. \(\pi\) out of phase with displacement; at the mean position speed is maximum (\(A\omega\)) and acceleration is zero; at the extremes speed is zero and \(|a|=A\omega^2\); and \(v=\omega\sqrt{A^2-x^2}\)
+D) Velocity lags displacement by \(\tfrac{\pi}{2}\); acceleration is in phase with displacement
+KEY: C
+SOL:
+Answer: (C) \(v\) leads \(x\) by \(\tfrac{\pi}{2}\); \(a=-\omega^2x\); extremes and mean values as stated.
+Given: \(x=A\sin\omega t\)
+Formula/Principle: \(v=\dfrac{dx}{dt},\ a=\dfrac{dv}{dt}\)
+Step 1: \(v=A\omega\cos\omega t=A\omega\sin\left(\omega t+\tfrac{\pi}{2}\right)\Rightarrow\text{leads by }\tfrac{\pi}{2}\)
+Step 2: \(a=-A\omega^2\sin\omega t=-\omega^2x\Rightarrow\text{phase difference }\pi\)
+Step 3: \(v^2=A^2\omega^2(1-\sin^2\omega t)=\omega^2(A^2-x^2)\)
+Worked derivation: \[x=0:\ |v|=A\omega,\ a=0;\quad x=\pm A:\ v=0,\ |a|=A\omega^2\]
+Check: \[A=0.1\ \text{m},\ \omega=10\ \text{rad/s}:\ v_{\max}=1\ \text{m/s},\ a_{\max}=10\ \text{m/s}^2\ \checkmark\]
+Why: \(\text{each time derivative of a sinusoid advances its phase by }\tfrac{\pi}{2}\text{ and multiplies its amplitude by }\omega\)
+Why not the others: (A) \(\text{v and x differ by }\tfrac{\pi}{2}\text{; a is zero at the mean}\); (B) \(\text{a leads x by }\pi\text{; speed is zero at the extremes}\); (D) \(\text{v leads; a is opposite to x}\).
+Key point: \(x\to v\to a:\ \text{each leads the previous by }\tfrac{\pi}{2};\ a=-\omega^2x\)
+
+@@ Q72
+format: numerical
+sub_topic: Finding the dipole moment from the torque in a uniform field, the charge for a given separation, the work to rotate it through 180° and the net force on it
+Q: An electric dipole of length 2.0 cm in a uniform field of \(3.0\times10^4\ \text{N/C}\) feels a torque of \(4.5\times10^{-4}\ \text{N m}\) when at \(30^\circ\) to the field. Which statement is correct?
+A) \(p=1.5\times10^{-8}\ \text{C m}\); \(q=0.75\ \mu\text{C}\); work 0 to \(180^\circ\) is zero; net force \(qE\)
+B) \(p=3.0\times10^{-8}\ \text{C m}\); \(q=1.5\ \mu\text{C}\); the work to rotate it from \(0^\circ\) to \(180^\circ\) is \(2pE=1.8\times10^{-3}\ \text{J}\); the net force is zero because the field is uniform
+C) \(p=3.0\times10^{-8}\ \text{C m}\); \(q=1.5\ \mu\text{C}\); work \(pE=9.0\times10^{-4}\ \text{J}\); net force \(2qE\)
+D) \(p=5.2\times10^{-8}\ \text{C m}\); \(q=2.6\ \mu\text{C}\); work \(1.8\times10^{-3}\ \text{J}\)
+KEY: B
+SOL:
+Answer: (B) \(p=3.0\times10^{-8}\ \text{C m}\), \(q=1.5\ \mu\text{C}\), \(W=1.8\times10^{-3}\ \text{J}\), net force zero.
+Given: \(2a=0.020\ \text{m},\ E=3.0\times10^4\ \text{N/C},\ \tau=4.5\times10^{-4}\ \text{N m},\ \theta=30^\circ\)
+Formula/Principle: \(\tau=pE\sin\theta;\ p=q(2a);\ U=-pE\cos\theta\)
+Step 1: \(p=\dfrac{4.5\times10^{-4}}{3.0\times10^4\times0.5}=3.0\times10^{-8}\ \text{C m}\)
+Step 2: \(q=\dfrac{3.0\times10^{-8}}{0.020}=1.5\times10^{-6}\ \text{C}\)
+Step 3: \(W=U(180^\circ)-U(0^\circ)=pE-(-pE)=2pE\)
+Worked derivation: \[W=2\times3.0\times10^{-8}\times3.0\times10^4=1.8\times10^{-3}\ \text{J}\]
+Check: \[\vec F_{\text{net}}=q\vec E+(-q)\vec E=0\text{ in a uniform field}\ \checkmark\]
+Why: \(\text{in a uniform field the two forces cancel but form a couple, which rotates the dipole toward the field}\)
+Why not the others: (A) \(\text{forgets the }\sin30^\circ\text{ factor}\); (C) \(\text{work is }2pE\text{; net force is zero}\); (D) \(\text{uses }\cos30^\circ\).
+Key point: \(\tau=pE\sin\theta;\ W_{0\to180^\circ}=2pE;\ F_{\text{net}}=0\text{ (uniform E)}\)
+
+@@ Q73
+format: conceptual
+sub_topic: Charge distribution on a conductor with a cavity containing a point charge at the centre versus off-centre, and the field inside the conductor and outside it
+Q: A neutral spherical conducting shell with a cavity has a point charge \(+q\) inside the cavity. Which statement is correct?
+A) The inner surface carries no charge; the outer surface carries \(+2q\)
+B) If \(+q\) is moved off-centre within the cavity, the field outside the shell changes direction
+C) The inner surface carries \(-q\) and the outer surface \(+q\); the field inside the conducting material is zero; if \(+q\) is moved off-centre, the inner charge redistributes non-uniformly but the outer charge stays uniform, so the field outside (\(\tfrac{kq}{r^2}\), radial from the centre) does not change
+D) The field outside the shell is zero because the conductor shields the charge
+KEY: C
+SOL:
+Answer: (C) Inner \(-q\), outer \(+q\) (uniform); the outside field is unaffected by the position of \(q\) inside.
+Given: \(\text{electrostatic equilibrium}\Rightarrow E=0\text{ inside the conducting material}\)
+Formula/Principle: \(\text{Gauss's law: }\oint\vec E\cdot d\vec A=\dfrac{q_{\text{enc}}}{\varepsilon_0}\)
+Step 1: \(\text{Gaussian surface inside the metal: }E=0\Rightarrow q_{\text{enc}}=0\Rightarrow q_{\text{inner}}=-q\)
+Step 2: \(\text{shell neutral}\Rightarrow q_{\text{outer}}=0-(-q)=+q\)
+Step 3: \(\text{the metal screens the outer surface from the cavity, so the outer charge spreads uniformly over the sphere}\)
+Worked derivation: \[r>R_{\text{outer}}:\ E\cdot4\pi r^2=\dfrac{q}{\varepsilon_0}\Rightarrow E=\dfrac{kq}{r^2}\]
+Check: \[\text{total charge of the shell}=-q+q=0\ \checkmark\]
+Why: \(\text{the inner charge arranges itself to cancel the cavity charge's field inside the metal; the outer charge feels only the conductor's spherical shape}\)
+Why not the others: (A) \(\text{violates Gauss's law inside the metal}\); (B) \(\text{the outer distribution stays uniform}\); (D) \(\text{shielding works from outside in, not inside out}\).
+Key point: \(\text{a conductor screens its interior from the outside, but not the outside from a charge in its cavity}\)
+
+@@ Q74
+format: numerical
+sub_topic: Applying Kirchhoff's laws to two batteries in parallel feeding a load, finding branch currents, which battery is being charged and the power in the load
+Q: Battery 1 (emf 10 V, internal resistance 2 Ω) and battery 2 (emf 4 V, internal resistance 2 Ω) are connected in parallel (positive to positive) across a 4 Ω resistor. Find the terminal voltage, the currents and the power in the 4 Ω resistor.
+A) \(V=5.6\ \text{V}\); \(I_1=2.2\ \text{A}\) out of battery 1; \(I_2=0.8\ \text{A}\) into battery 2 (it is being charged); \(I_3=1.4\ \text{A}\) through 4 Ω; \(P=7.84\ \text{W}\)
+B) \(V=7.0\ \text{V}\); \(I_1=1.5\ \text{A},\ I_2=1.5\ \text{A}\) out of both; \(P=12.25\ \text{W}\)
+C) \(V=5.6\ \text{V}\); both batteries supply current; \(I_3=3.0\ \text{A}\)
+D) \(V=14\ \text{V}\); \(I_3=3.5\ \text{A}\); \(P=49\ \text{W}\)
+KEY: A
+SOL:
+Answer: (A) \(V=5.6\ \text{V},\ I_1=2.2\ \text{A},\ I_2=-0.8\ \text{A},\ I_3=1.4\ \text{A},\ P=7.84\ \text{W}\).
+Given: \(E_1=10\ \text{V},\ r_1=2\ \Omega;\ E_2=4\ \text{V},\ r_2=2\ \Omega;\ R=4\ \Omega\)
+Formula/Principle: \(\text{junction rule (KCL) at the top node with potential V: currents out of batteries}=\text{current into R}\)
+Step 1: \(\dfrac{10-V}{2}+\dfrac{4-V}{2}=\dfrac{V}{4}\)
+Step 2: \(7-V=\dfrac V4\Rightarrow\dfrac{5V}{4}=7\Rightarrow V=5.6\ \text{V}\)
+Step 3: \(I_1=\dfrac{10-5.6}{2}=2.2\ \text{A};\ I_2=\dfrac{4-5.6}{2}=-0.8\ \text{A};\ I_3=\dfrac{5.6}{4}=1.4\ \text{A}\)
+Worked derivation: \[P_R=I_3^2R=1.96\times4=7.84\ \text{W}\]
+Check: \[I_1+I_2=2.2-0.8=1.4=I_3\ \checkmark;\ \text{loop: }10-2(2.2)=5.6\ \checkmark\]
+Why: \(\text{the terminal voltage exceeds the 4 V emf, so current is pushed backwards through battery 2, charging it}\)
+Why not the others: (B) \(\text{averages the emfs without solving the circuit}\); (C) \(\text{wrong sign of }I_2\text{ and }I_3\); (D) \(\text{treats the batteries as in series}\).
+Key point: \(\text{a negative branch current means the battery is being charged}\)
+
+@@ Q75
+format: numerical
+sub_topic: Comparing magnetic fields at the centre of a circular loop, a semicircle and a long straight wire using Biot–Savart results, and the effect of rewinding a wire into two turns
+Q: A current \(I\) flows in each case. Which statement is correct?
+A) Field at the centre of a loop of radius \(R\) is \(\dfrac{\mu_0I}{2\pi R}\); a semicircle gives half of that
+B) A long straight wire at distance \(d\) gives \(\dfrac{\mu_0I}{2d}\); rewinding a loop into 2 turns doubles the field
+C) The field at the centre of a loop depends only on the current, not on \(R\)
+D) Centre of a loop: \(\dfrac{\mu_0I}{2R}\); centre of a semicircular arc: \(\dfrac{\mu_0I}{4R}\) (straight leads through the centre add nothing); long straight wire at distance \(d\): \(\dfrac{\mu_0I}{2\pi d}\); if a wire forming one loop of radius \(R\) is rewound into 2 turns of radius \(\tfrac R2\), the field at the centre becomes 4 times larger
+KEY: D
+SOL:
+Answer: (D) \(\tfrac{\mu_0I}{2R},\ \tfrac{\mu_0I}{4R},\ \tfrac{\mu_0I}{2\pi d}\); rewinding into 2 turns gives 4×.
+Given: \(\text{loop radius }R;\ \text{wire length }2\pi R\text{ fixed}\)
+Formula/Principle: \(\text{Biot–Savart: }dB=\dfrac{\mu_0}{4\pi}\dfrac{I\,dl\sin\theta}{r^2}\)
+Step 1: \(\text{loop: every element at distance R, }\theta=90^\circ:\ B=\dfrac{\mu_0I}{4\pi R^2}(2\pi R)=\dfrac{\mu_0I}{2R}\)
+Step 2: \(\text{semicircle: length }\pi R\Rightarrow B=\dfrac{\mu_0I}{4R};\ \text{radial straight leads have }d\vec l\parallel\vec r\Rightarrow dB=0\)
+Step 3: \(\text{2 turns of radius }\tfrac R2:\ B'=\dfrac{\mu_0(2)I}{2(R/2)}=\dfrac{2\mu_0I}{R}=4\times\dfrac{\mu_0I}{2R}\)
+Worked derivation: \[\dfrac{B_{\text{loop}}}{B_{\text{wire}}}\Big|_{d=R}=\dfrac{\mu_0I/2R}{\mu_0I/2\pi R}=\pi\]
+Check: \[I=1\ \text{A},\ R=0.1\ \text{m}:\ B=\dfrac{4\pi\times10^{-7}}{0.2}\approx6.3\ \mu\text{T}\ \checkmark\]
+Why: \(\text{N turns multiply the field by N, and halving the radius doubles it again}\)
+Why not the others: (A) \(\text{that is the straight-wire formula}\); (B) \(\text{missing }\pi\text{, and the factor is 4 not 2}\); (C) \(B\propto1/R\).
+Key point: \(B_{\text{centre}}=\dfrac{\mu_0NI}{2R};\ \text{same wire with N turns}\Rightarrow B\propto N^2\)
+
+@@ Q76
+format: numerical
+sub_topic: Using Curie's law to find the susceptibility of a paramagnet at a new temperature, and the temperature behaviour of diamagnetic and ferromagnetic materials
+Q: A paramagnetic salt has susceptibility \(2.4\times10^{-5}\) at 300 K. Which statement is correct?
+A) At 200 K its susceptibility is \(1.6\times10^{-5}\); a diamagnet has positive susceptibility that rises on cooling
+B) At 200 K its susceptibility is \(3.6\times10^{-5}\) (Curie's law \(\chi\propto\tfrac1T\)); a diamagnet has small negative susceptibility that is almost independent of temperature; a ferromagnet becomes paramagnetic above its Curie temperature
+C) At 200 K its susceptibility is unchanged; ferromagnets become diamagnetic when heated
+D) At 200 K its susceptibility is \(5.4\times10^{-5}\), since \(\chi\propto\tfrac{1}{T^2}\)
+KEY: B
+SOL:
+Answer: (B) \(\chi(200\ \text{K})=3.6\times10^{-5}\); diamagnetic \(\chi<0\) and \(T\)-independent; ferromagnet becomes paramagnetic above \(T_C\).
+Given: \(\chi_1=2.4\times10^{-5},\ T_1=300\ \text{K},\ T_2=200\ \text{K}\)
+Formula/Principle: \(\text{Curie's law: }\chi=\dfrac{C}{T}\Rightarrow\chi_1T_1=\chi_2T_2\)
+Step 1: \(\chi_2=\chi_1\dfrac{T_1}{T_2}=2.4\times10^{-5}\times\dfrac{300}{200}\)
+Step 2: \(\chi_2=3.6\times10^{-5}\)
+Step 3: \(\text{ferromagnet above }T_C:\ \chi=\dfrac{C}{T-T_C}\ (\text{paramagnetic})\)
+Worked derivation: \[C=\chi_1T_1=2.4\times10^{-5}\times300=7.2\times10^{-3}\ \text{K}\Rightarrow\chi_2=\dfrac{7.2\times10^{-3}}{200}=3.6\times10^{-5}\]
+Check: \[\text{cooling increases }\chi\text{ for a paramagnet}\ \checkmark\]
+Why: \(\text{thermal agitation opposes the alignment of permanent dipoles, so lower temperature means stronger alignment; diamagnetism comes from induced moments unaffected by temperature}\)
+Why not the others: (A) \(\text{inverts the ratio; diamagnet sign wrong}\); (C) \(\text{ignores Curie's law; heated ferromagnets become paramagnetic}\); (D) \(\text{wrong power of T}\).
+Key point: \(\chi_{\text{para}}\propto1/T;\ \chi_{\text{dia}}<0,\ \text{T-independent}\)
+
+@@ Q77
+format: numerical
+sub_topic: Relations among field amplitudes, intensity and radiation pressure of an electromagnetic wave, and how intensity falls with distance from a point source
+Q: An EM wave has electric field amplitude \(E_0\). Which statement is correct?
+A) \(B_0=cE_0\); intensity is proportional to \(E_0\); radiation pressure on a reflector is \(I/c\)
+B) \(E_0=B_0/c\); intensity from a point source falls as \(1/r\)
+C) The electric and magnetic fields are parallel and oscillate out of phase
+D) \(E_0=cB_0\); \(\vec E\), \(\vec B\) and the direction of travel are mutually perpendicular and \(\vec E\) and \(\vec B\) oscillate in phase; \(I=\tfrac12\varepsilon_0cE_0^2\propto E_0^2\), so from a point source \(I\propto\tfrac{1}{r^2}\) and \(E_0\propto\tfrac1r\); radiation pressure is \(I/c\) on a perfect absorber and \(2I/c\) on a perfect reflector
+KEY: D
+SOL:
+Answer: (D) \(E_0=cB_0\); in-phase, mutually perpendicular; \(I\propto E_0^2\propto1/r^2\); pressure \(I/c\) or \(2I/c\).
+Given: \(\text{plane EM wave in vacuum}\)
+Formula/Principle: \(\dfrac{E_0}{B_0}=c;\ I=\tfrac12\varepsilon_0cE_0^2;\ p=\dfrac{U}{c}\)
+Step 1: \(\text{point source: }I=\dfrac{P}{4\pi r^2}\Rightarrow E_0\propto\sqrt I\propto\dfrac1r\)
+Step 2: \(\text{absorber: momentum delivered per second per area}=\dfrac Ic\)
+Step 3: \(\text{reflector: momentum reverses}\Rightarrow\dfrac{2I}{c}\)
+Worked derivation: \[I=1000\ \text{W/m}^2:\ P_{\text{abs}}=\dfrac{1000}{3\times10^8}\approx3.3\times10^{-6}\ \text{Pa},\ P_{\text{ref}}\approx6.7\times10^{-6}\ \text{Pa}\]
+Check: \[E_0=300\ \text{V/m}\Rightarrow B_0=\dfrac{300}{3\times10^8}=1\ \mu\text{T}\ \checkmark\]
+Why: \(\text{EM waves carry energy and momentum; the momentum carried is the energy divided by c}\)
+Why not the others: (A) \(B_0=E_0/c\text{, }I\propto E_0^2\text{, reflector }2I/c\); (B) \(\text{I falls as }1/r^2\); (C) \(\text{fields are perpendicular and in phase}\).
+Key point: \(E_0=cB_0;\ I\propto E_0^2;\ p_{\text{rad}}=I/c\text{ or }2I/c\)
+
+@@ Q78
+format: numerical
+sub_topic: Image formation by refraction at a single convex spherical glass surface with the object in air and then in water
+Q: A convex spherical surface of radius 20 cm separates glass (\(n=1.5\)) from the medium containing an object placed 40 cm in front of the surface on the axis. Where is the image when the object is in air, and when it is in water (\(n=\tfrac43\))?
+A) In air the refracted rays are parallel (image at infinity); in water the image is virtual, 60 cm in front of the surface on the object side
+B) In air the image is real, 120 cm inside the glass; in water it is at infinity
+C) In both cases the image is real, 60 cm inside the glass
+D) In air the image is virtual, 40 cm from the surface; in water it is real, 60 cm inside the glass
+KEY: A
+SOL:
+Answer: (A) Air: image at infinity; water: virtual image 60 cm in front of the surface.
+Given: \(n_2=1.5,\ R=+20\ \text{cm},\ u=-40\ \text{cm};\ n_1=1\text{ or }\tfrac43\)
+Formula/Principle: \(\dfrac{n_2}{v}-\dfrac{n_1}{u}=\dfrac{n_2-n_1}{R}\)
+Step 1: \(\text{air: }\dfrac{1.5}{v}+\dfrac{1}{40}=\dfrac{0.5}{20}=\dfrac{1}{40}\Rightarrow\dfrac{1.5}{v}=0\Rightarrow v=\infty\)
+Step 2: \(\text{water: }\dfrac{1.5}{v}+\dfrac{4/3}{40}=\dfrac{1.5-4/3}{20}=\dfrac{1}{120}\)
+Step 3: \(\dfrac{1.5}{v}=\dfrac{1}{120}-\dfrac{1}{30}=-\dfrac{3}{120}=-\dfrac{1}{40}\Rightarrow v=-60\ \text{cm}\)
+Worked derivation: \[\text{first focal length in air: }f_1=\dfrac{n_1R}{n_2-n_1}=\dfrac{20}{0.5}=40\ \text{cm}\Rightarrow\text{object at the focus}\]
+Check: \[\text{water: }f_1=\dfrac{(4/3)(20)}{1/6}=160\ \text{cm}>40\ \text{cm}\Rightarrow\text{object inside focus}\Rightarrow\text{virtual image}\ \checkmark\]
+Why: \(\text{surrounding the object with water reduces the index contrast, weakening the surface's converging power so the object falls inside the focal length}\)
+Why not the others: (B) \(\text{reverses the two cases}\); (C) \(\text{ignores the change of }n_1\); (D) \(\text{sign errors}\).
+Key point: \(\dfrac{n_2}{v}-\dfrac{n_1}{u}=\dfrac{n_2-n_1}{R};\ \text{power depends on the index contrast}\)
+
+@@ Q79
+format: numerical
+sub_topic: Change in focal length of a glass lens when immersed in water and in liquids of equal and higher refractive index, using the lens maker's formula
+Q: A thin glass lens (\(n=1.5\)) has focal length \(+20\ \text{cm}\) in air. What is its focal length in water (\(n=\tfrac43\)), in a liquid of index 1.5, and in a liquid of index 1.6?
+A) 20 cm in all three, since the shape is unchanged
+B) Water: \(+80\ \text{cm}\); index 1.5: infinite (it behaves like a plane glass plate); index 1.6: \(-160\ \text{cm}\), i.e. it becomes diverging
+C) Water: \(+26.7\ \text{cm}\); index 1.5: \(+40\ \text{cm}\); index 1.6: \(+60\ \text{cm}\)
+D) Water: \(+5\ \text{cm}\); index 1.5: zero; index 1.6: \(+160\ \text{cm}\)
+KEY: B
+SOL:
+Answer: (B) \(+80\ \text{cm}\), infinite, \(-160\ \text{cm}\).
+Given: \(n_g=1.5,\ f_{\text{air}}=20\ \text{cm}\)
+Formula/Principle: \(\dfrac1f=\left(\dfrac{n_g}{n_m}-1\right)\left(\dfrac1{R_1}-\dfrac1{R_2}\right)\Rightarrow f\propto\dfrac{1}{(n_g/n_m)-1}\)
+Step 1: \(\text{air: }(1.5-1)=0.5\)
+Step 2: \(\text{water: }\dfrac{1.5}{4/3}-1=0.125\Rightarrow f=20\times\dfrac{0.5}{0.125}=80\ \text{cm}\)
+Step 3: \(n_m=1.5:\ \dfrac{1.5}{1.5}-1=0\Rightarrow f=\infty\)
+Worked derivation: \[n_m=1.6:\ \dfrac{1.5}{1.6}-1=-0.0625\Rightarrow f=20\times\dfrac{0.5}{-0.0625}=-160\ \text{cm}\]
+Check: \[\text{a convex lens disappears optically in a liquid of the same index (no refraction at its surfaces)}\ \checkmark\]
+Why: \(\text{the lens bends light only because of the index difference at its surfaces; reversing the difference reverses the action}\)
+Why not the others: (A) \(\text{ignores the medium}\); (C) \(\text{uses the wrong ratio}\); (D) \(\text{inverts the ratio and misses the sign change}\).
+Key point: \(\text{relative index }n_g/n_m\text{ decides power; }n_m>n_g\Rightarrow\text{convex lens diverges}\)
+
+@@ Q80
+format: numerical
+sub_topic: Width of the central maximum and position of the first secondary maximum in single-slit diffraction, the effect of immersing the set-up in water, and energy reasoning for changing slit width
+Q: Light of wavelength 600 nm falls on a slit of width 0.20 mm and the pattern is seen on a screen 1.5 m away. Which statement is correct?
+A) Central maximum width 4.5 mm; first secondary maximum at 9.0 mm; in water the width increases
+B) Central maximum width 9.0 mm; the central width doubles if the slit width doubles
+C) Central maximum width 9.0 mm; first secondary maximum about 6.75 mm from the centre; in water (\(n=\tfrac43\)) the width becomes 6.75 mm; doubling the slit width halves the central width, lets through twice the light and makes the central peak intensity about 4 times larger
+D) Central maximum width 18 mm; it does not depend on the medium
+KEY: C
+SOL:
+Answer: (C) 9.0 mm; secondary maximum ≈ 6.75 mm; 6.75 mm in water; doubling the width gives 4× peak intensity.
+Given: \(\lambda=600\ \text{nm},\ a=0.20\ \text{mm},\ D=1.5\ \text{m}\)
+Formula/Principle: \(\text{minima: }a\sin\theta=m\lambda;\ \text{central width}=\dfrac{2\lambda D}{a};\ \text{first secondary maximum near }a\sin\theta=\tfrac32\lambda\)
+Step 1: \(\dfrac{2\lambda D}{a}=\dfrac{2\times600\times10^{-9}\times1.5}{2.0\times10^{-4}}=9.0\times10^{-3}\ \text{m}=9.0\ \text{mm}\)
+Step 2: \(y_1'=\dfrac{1.5\lambda D}{a}=\dfrac34\times9.0=6.75\ \text{mm}\)
+Step 3: \(\text{water: }\lambda'=\dfrac{\lambda}{n}=450\ \text{nm}\Rightarrow\text{width}=\dfrac{9.0}{4/3}=6.75\ \text{mm}\)
+Worked derivation: \[a\to2a:\ \text{power through slit}\times2,\ \text{central width}\times\tfrac12\Rightarrow\text{peak intensity}\times4\ (I_0\propto a^2)\]
+Check: \[\theta_1=\dfrac{\lambda}{a}=3\times10^{-3}\ \text{rad (small)}\Rightarrow\text{small-angle approximation valid}\ \checkmark\]
+Why: \(\text{diffraction spreading is set by }\lambda/a\text{; shorter wavelength in water or a wider slit both narrow the pattern}\)
+Why not the others: (A) \(\text{half-width given as width; water narrows the pattern}\); (B) \(\text{width}\propto1/a\); (D) \(\text{doubles the width again; depends on the medium through }\lambda\).
+Key point: \(\text{central width}=2\lambda D/a;\ I_0\propto a^2\)

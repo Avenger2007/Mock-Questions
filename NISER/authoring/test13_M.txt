@@ -1,0 +1,439 @@
+@@ Q41
+format: numerical
+sub_topic: How the probability of disease given a positive test behaves as the prevalence p changes, using conditional probability and Bayes' theorem
+Q: A test detects a disease in 90 % of people who have it and gives a false positive in 10 % of people who do not. If the prevalence of the disease is \(p\), what is \(P(\text{disease}\mid\text{positive})\) as a function of \(p\), and how does it behave?
+A) \(0.9\) for every \(p\), since the test is 90 % accurate
+B) \(\dfrac{p}{1+p}\); it decreases as \(p\) increases
+C) \(\dfrac{9p}{8p+1}\); it increases with \(p\), equals \(\tfrac1{12}\) at \(p=0.01\) and \(\tfrac12\) at \(p=0.1\), and tends to 1 as \(p\to1\)
+D) \(\dfrac{9p}{10}\); it equals 0.09 at \(p=0.1\)
+KEY: C
+SOL:
+Answer: (C) \(f(p)=\dfrac{9p}{8p+1}\), increasing, \(\tfrac1{12}\) at \(p=0.01\), \(\tfrac12\) at \(p=0.1\).
+Given: \(P(+\mid D)=0.9,\ P(+\mid D')=0.1,\ P(D)=p\)
+Formula/Principle: \(P(D\mid+)=\dfrac{P(+\mid D)P(D)}{P(+\mid D)P(D)+P(+\mid D')P(D')}\)
+Step 1: \(P(D\mid+)=\dfrac{0.9p}{0.9p+0.1(1-p)}=\dfrac{0.9p}{0.8p+0.1}=\dfrac{9p}{8p+1}\)
+Step 2: \(f'(p)=\dfrac{9(8p+1)-9p\cdot8}{(8p+1)^2}=\dfrac{9}{(8p+1)^2}>0\)
+Step 3: \(f(0.01)=\dfrac{0.09}{1.08}=\dfrac1{12};\ f(0.1)=\dfrac{0.9}{1.8}=\dfrac12;\ f(1)=1\)
+Worked derivation: \[p=0.01:\ \text{positives per 1000}=9\ (\text{true})+99\ (\text{false})\Rightarrow\tfrac{9}{108}=\tfrac1{12}\]
+Check: \[f(0)=0\text{ and }f(1)=1\text{, as expected when nobody or everybody has the disease}\ \checkmark\]
+Why: \(\text{for a rare disease most positives come from the large healthy group, so a positive result means little; as prevalence rises, true positives dominate}\)
+Why not the others: (A) \(\text{confuses }P(+\mid D)\text{ with }P(D\mid+)\); (B) \(\text{wrong formula and wrong behaviour}\); (D) \(\text{ignores false positives in the denominator}\).
+Key point: \(P(D\mid+)\text{ depends strongly on prevalence; it increases with }p\)
+
+@@ Q42
+format: numerical
+sub_topic: Domains, ranges and monotonicity of the graphs of sin⁻¹x and cos⁻¹x, their reflection property and their point of intersection
+Q: Which statement about the graphs of \(y=\sin^{-1}x\) and \(y=\cos^{-1}x\) is correct?
+A) Both have domain \([-1,1]\); \(\sin^{-1}x\) increases from \(-\tfrac{\pi}{2}\) to \(\tfrac{\pi}{2}\) and is the reflection of \(y=\sin x,\ x\in[-\tfrac{\pi}{2},\tfrac{\pi}{2}]\) in the line \(y=x\); \(\cos^{-1}x\) decreases from \(\pi\) to 0; their sum is the constant \(\tfrac{\pi}{2}\), and the graphs meet at \(\left(\tfrac{1}{\sqrt2},\tfrac{\pi}{4}\right)\)
+B) Both have range \([0,\pi]\) and meet at \((0,0)\)
+C) \(\sin^{-1}x\) is decreasing and \(\cos^{-1}x\) is increasing; they meet at \((1,0)\)
+D) Both have domain \(\mathbb R\); they never meet
+KEY: A
+SOL:
+Answer: (A) Domain \([-1,1]\); \(\sin^{-1}\) increasing, \(\cos^{-1}\) decreasing; sum \(\tfrac{\pi}{2}\); intersection \(\left(\tfrac1{\sqrt2},\tfrac{\pi}4\right)\).
+Given: \(y=\sin^{-1}x,\ y=\cos^{-1}x\)
+Formula/Principle: \(\text{graph of }f^{-1}=\text{reflection of graph of }f\text{ in }y=x;\ \sin^{-1}x+\cos^{-1}x=\tfrac{\pi}{2}\)
+Step 1: \(\sin^{-1}:[-1,1]\to[-\tfrac{\pi}{2},\tfrac{\pi}{2}]\text{ (principal branch), increasing}\)
+Step 2: \(\cos^{-1}:[-1,1]\to[0,\pi]\text{, decreasing}\)
+Step 3: \(\sin^{-1}x=\cos^{-1}x\text{ and sum }\tfrac{\pi}{2}\Rightarrow\text{each}=\tfrac{\pi}{4}\Rightarrow x=\sin\tfrac{\pi}{4}=\tfrac{1}{\sqrt2}\)
+Worked derivation: \[\cos^{-1}x=\tfrac{\pi}{2}-\sin^{-1}x\Rightarrow\text{the cos}^{-1}\text{ graph is the sin}^{-1}\text{ graph reflected in }y=\tfrac{\pi}{4}\]
+Check: \[x=1:\ \sin^{-1}1=\tfrac{\pi}{2},\ \cos^{-1}1=0;\ \text{sum}=\tfrac{\pi}{2}\ \checkmark\]
+Why: \(\text{restricting sin and cos to intervals on which they are one-one gives inverse functions whose graphs are mirror images in }y=x\)
+Why not the others: (B) \(\text{range of }\sin^{-1}\text{ is }[-\tfrac{\pi}{2},\tfrac{\pi}{2}]\); (C) \(\text{monotonicity reversed}\); (D) \(\text{domain is }[-1,1]\).
+Key point: \(\sin^{-1}x+\cos^{-1}x=\tfrac{\pi}{2};\ \text{graphs cross at }x=\tfrac1{\sqrt2}\)
+
+@@ Q43
+format: numerical
+sub_topic: Splitting a matrix depending on a parameter into symmetric and skew-symmetric parts and studying how their determinants vary
+Q: For \(A(x)=\begin{pmatrix}x&2\\3&x\end{pmatrix}\), write \(A=P+Q\) with \(P\) symmetric and \(Q\) skew-symmetric. How do \(P\), \(Q\), \(\det P\) and \(\det Q\) depend on \(x\)?
+A) \(P=\begin{pmatrix}x&2\\2&x\end{pmatrix},\ Q=\begin{pmatrix}0&1\\1&0\end{pmatrix}\); \(\det Q=-1\)
+B) \(P=\begin{pmatrix}x&\tfrac52\\\tfrac52&x\end{pmatrix}\) and \(Q=\begin{pmatrix}0&-\tfrac12\\\tfrac12&0\end{pmatrix}\), so \(Q\) does not depend on \(x\); \(\det P=x^2-\tfrac{25}{4}\), which vanishes only at \(x=\pm\tfrac52\), and \(\det Q=\tfrac14\) for every \(x\)
+C) \(P=\begin{pmatrix}x&0\\0&x\end{pmatrix},\ Q=\begin{pmatrix}0&2\\3&0\end{pmatrix}\); \(\det Q=-6\)
+D) \(Q\) has diagonal entries \(x\); \(\det P=x^2-6\)
+KEY: B
+SOL:
+Answer: (B) \(Q\) is constant; \(\det P=x^2-\tfrac{25}{4}\) (zero at \(\pm\tfrac52\)); \(\det Q=\tfrac14\).
+Given: \(A=\begin{pmatrix}x&2\\3&x\end{pmatrix},\ A^T=\begin{pmatrix}x&3\\2&x\end{pmatrix}\)
+Formula/Principle: \(P=\tfrac12(A+A^T)\ (\text{symmetric}),\ Q=\tfrac12(A-A^T)\ (\text{skew-symmetric})\)
+Step 1: \(A+A^T=\begin{pmatrix}2x&5\\5&2x\end{pmatrix}\Rightarrow P=\begin{pmatrix}x&\tfrac52\\\tfrac52&x\end{pmatrix}\)
+Step 2: \(A-A^T=\begin{pmatrix}0&-1\\1&0\end{pmatrix}\Rightarrow Q=\begin{pmatrix}0&-\tfrac12\\\tfrac12&0\end{pmatrix}\)
+Step 3: \(\det P=x^2-\tfrac{25}{4};\ \det Q=0-\left(-\tfrac12\right)\left(\tfrac12\right)=\tfrac14\)
+Worked derivation: \[\det P=0\iff x=\pm\tfrac52;\ P+Q=\begin{pmatrix}x&2\\3&x\end{pmatrix}=A\ \checkmark\]
+Check: \[P^T=P,\ Q^T=-Q,\ \text{diagonal of }Q\text{ is zero}\ \checkmark\]
+Why: \(x\text{ sits on the diagonal, which belongs wholly to the symmetric part; the off-diagonal difference }2-3\text{ alone forms the skew part}\)
+Why not the others: (A) \(P+Q\ne A\text{ and that Q is not skew}\); (C) \(Q\text{ is not skew-symmetric}\); (D) \(\text{skew matrices have zero diagonal}\).
+Key point: \(A=\tfrac12(A+A^T)+\tfrac12(A-A^T);\ \text{skew part has zero diagonal}\)
+
+@@ Q44
+format: numerical
+sub_topic: Second derivative of eˣ(sin x + cos x), the differential equation it satisfies, and counting zeros of y′ and y″ in [0, 2π]
+Q: For \(y=e^x(\sin x+\cos x)\), which differential equation does \(y\) satisfy, and how many zeros do \(y'\) and \(y''\) have in \([0,2\pi]\)?
+A) \(y''+y=0\); \(y'\) has 4 zeros and \(y''\) has none
+B) \(y''-2y'+2y=0\); \(y'\) has no zeros and \(y''\) has 4
+C) \(y''+2y'+2y=0\); each has 1 zero
+D) \(y''-2y'+2y=0\); \(y'=2e^x\cos x\) has 2 zeros (\(\tfrac{\pi}{2},\tfrac{3\pi}{2}\)) and \(y''=2e^x(\cos x-\sin x)\) has 2 zeros (\(\tfrac{\pi}{4},\tfrac{5\pi}{4}\))
+KEY: D
+SOL:
+Answer: (D) \(y''-2y'+2y=0\); two zeros each for \(y'\) and \(y''\).
+Given: \(y=e^x(\sin x+\cos x)\)
+Formula/Principle: \(\text{product rule }(uv)'=u'v+uv'\)
+Step 1: \(y'=e^x(\sin x+\cos x)+e^x(\cos x-\sin x)=2e^x\cos x\)
+Step 2: \(y''=2e^x\cos x-2e^x\sin x=2e^x(\cos x-\sin x)\)
+Step 3: \(y''-2y'+2y=2e^x(\cos x-\sin x)-4e^x\cos x+2e^x(\sin x+\cos x)=0\)
+Worked derivation: \[y'=0\iff\cos x=0\Rightarrow x=\tfrac{\pi}{2},\tfrac{3\pi}{2};\quad y''=0\iff\tan x=1\Rightarrow x=\tfrac{\pi}{4},\tfrac{5\pi}{4}\]
+Check: \[e^x>0\text{ never vanishes, so zeros come only from the trigonometric factors}\ \checkmark\]
+Why: \(\text{each differentiation multiplies by }e^x\text{ and shifts the trigonometric part; eliminating them gives a second-order equation}\)
+Why not the others: (A) \(e^x\text{ factor rules out }y''+y=0\); (B) \(\text{miscounts the zeros}\); (C) \(\text{sign slip in the equation}\).
+Key point: \(\text{zeros of }e^xg(x)\text{ are the zeros of }g\)
+
+@@ Q45
+format: numerical
+sub_topic: Locating all local extrema of a quartic with three critical points by first and second derivative tests, and recognising it as a shifted square
+Q: For \(f(x)=x^4-8x^3+22x^2-24x+1\), what are the local maxima and minima?
+A) Local minimum at \(x=2\) (value \(-7\)); local maxima at \(x=1\) and \(x=3\) (value \(-8\))
+B) Local minima at \(x=1\) and \(x=3\), both with value \(-8\) (the absolute minimum); local maximum at \(x=2\) with value \(-7\)
+C) Only one local minimum, at \(x=2\)
+D) Local minima at \(x=1\) and \(x=3\) with values \(-8\) and \(-10\); no local maximum
+KEY: B
+SOL:
+Answer: (B) Minima \(f(1)=f(3)=-8\); maximum \(f(2)=-7\).
+Given: \(f(x)=x^4-8x^3+22x^2-24x+1\)
+Formula/Principle: \(f'(c)=0;\ f''(c)>0\Rightarrow\text{min},\ f''(c)<0\Rightarrow\text{max}\)
+Step 1: \(f'(x)=4x^3-24x^2+44x-24=4(x-1)(x-2)(x-3)\)
+Step 2: \(f''(x)=12x^2-48x+44:\ f''(1)=8>0,\ f''(2)=-4<0,\ f''(3)=8>0\)
+Step 3: \(f(1)=1-8+22-24+1=-8;\ f(2)=16-64+88-48+1=-7;\ f(3)=81-216+198-72+1=-8\)
+Worked derivation: \[f(x)=(x^2-4x+3)^2-8=\left[(x-1)(x-3)\right]^2-8\ge-8\]
+Check: \[\text{sign of }f':\ -\ (x<1),\ +\ (1<x<2),\ -\ (2<x<3),\ +\ (x>3)\ \checkmark\]
+Why: \(\text{the square form shows the minimum }-8\text{ is reached exactly where }(x-1)(x-3)=0\text{, and the hump between them peaks at the vertex }x=2\)
+Why not the others: (A) \(\text{max and min swapped}\); (C) \(\text{misses two critical points}\); (D) \(f(3)=-8\text{, and there is a local maximum}\).
+Key point: \(\text{factor }f'\text{, test each root; spotting a perfect square confirms the result}\)
+
+@@ Q46
+format: numerical
+sub_topic: Using odd and even parts of the integrand to evaluate a symmetric definite integral as a function of the limit a, and describing its behaviour
+Q: Let \(g(a)=\displaystyle\int_{-a}^{a}\left(x^5+x\cos x+|x|\right)dx\) for \(a\ge0\). What is \(g(a)\), and how does it behave?
+A) \(g(a)=0\) for all \(a\), since the integrand is odd
+B) \(g(a)=\tfrac{a^6}{3}+a^2\); it grows like \(a^6\)
+C) \(g(a)=2a^2\); it doubles when \(a\) doubles
+D) \(g(a)=a^2\), because \(x^5\) and \(x\cos x\) are odd and integrate to zero over \([-a,a]\), while \(|x|\) is even; \(g\) increases for \(a>0\) and quadruples when \(a\) doubles
+KEY: D
+SOL:
+Answer: (D) \(g(a)=a^2\).
+Given: \(g(a)=\int_{-a}^{a}(x^5+x\cos x+|x|)\,dx\)
+Formula/Principle: \(\int_{-a}^{a}f=0\text{ if }f\text{ odd};\ \int_{-a}^{a}f=2\int_0^af\text{ if }f\text{ even}\)
+Step 1: \(x^5\text{ and }x\cos x\text{ are odd}\Rightarrow\text{their integrals vanish}\)
+Step 2: \(|x|\text{ is even}\Rightarrow\int_{-a}^{a}|x|\,dx=2\int_0^ax\,dx\)
+Step 3: \(2\cdot\tfrac{a^2}{2}=a^2\)
+Worked derivation: \[g(a)=a^2,\ g'(a)=2a>0\ (a>0);\ g(2a)=4a^2=4g(a)\]
+Check: \[a=1:\ \int_{-1}^{1}|x|dx=\text{two triangles of area }\tfrac12=1\ \checkmark\]
+Why: \(\text{odd functions have equal and opposite areas on the two sides of 0; only the even part contributes}\)
+Why not the others: (A) \(|x|\text{ is not odd}\); (B) \(x^5\text{ contributes zero over a symmetric interval}\); (C) \(\text{forgets the }\tfrac12\text{ in }\int x\,dx\).
+Key point: \(\text{over }[-a,a]\text{, keep only the even part of the integrand}\)
+
+@@ Q47
+format: numerical
+sub_topic: Finding unknown upper limits from given values of definite integrals of a linear function and of ln x
+Q: Find \(k>0\) such that \(\displaystyle\int_0^k(2x+1)\,dx=12\), and \(a>1\) such that \(\displaystyle\int_1^a\ln x\,dx=1\).
+A) \(k=3,\ a=e\)
+B) \(k=4,\ a=e^2\)
+C) \(k=3,\ a=2\)
+D) \(k=-4,\ a=e\)
+KEY: A
+SOL:
+Answer: (A) \(k=3,\ a=e\).
+Given: \(\int_0^k(2x+1)dx=12;\ \int_1^a\ln x\,dx=1\)
+Formula/Principle: \(\text{FTC};\ \int\ln x\,dx=x\ln x-x\ (\text{by parts})\)
+Step 1: \(\left[x^2+x\right]_0^k=k^2+k=12\Rightarrow(k+4)(k-3)=0\Rightarrow k=3\ (k>0)\)
+Step 2: \(\left[x\ln x-x\right]_1^a=a\ln a-a-(0-1)=a\ln a-a+1\)
+Step 3: \(a\ln a-a+1=1\Rightarrow a(\ln a-1)=0\Rightarrow a=e\ (a>1)\)
+Worked derivation: \[\int_1^e\ln x\,dx=(e\cdot1-e)-(0-1)=1\]
+Check: \[\int_0^3(2x+1)dx=9+3=12\ \checkmark\]
+Why: \(\text{evaluating the integral turns the condition into an equation for the limit; the sign condition picks the admissible root}\)
+Why not the others: (B) \(k=4\text{ gives 20}\); (C) \(\int_1^2\ln x\,dx=2\ln2-1\ne1\); (D) \(k\text{ must be positive}\).
+Key point: \(\int\ln x\,dx=x\ln x-x\)
+
+@@ Q48
+format: numerical
+sub_topic: Behaviour of |a × b| + √3 a·b as the angle between two vectors varies, written as a single sinusoid with maximum, zero and minimum
+Q: Vectors \(\vec a\) and \(\vec b\) have \(|\vec a|=2\), \(|\vec b|=3\), and angle \(\theta\in[0,\pi]\) between them. Let \(f(\theta)=|\vec a\times\vec b|+\sqrt3\,\vec a\cdot\vec b\). What are the maximum and minimum of \(f\) and where is \(f=0\)?
+A) Maximum 6 at \(\theta=\tfrac{\pi}{2}\); minimum 0 at \(\theta=0\)
+B) Maximum \(6\sqrt3\) at \(\theta=0\); never zero
+C) \(f(\theta)=12\sin\left(\theta+\tfrac{\pi}{3}\right)\): maximum 12 at \(\theta=\tfrac{\pi}{6}\), zero at \(\theta=\tfrac{2\pi}{3}\), minimum \(-6\sqrt3\) at \(\theta=\pi\)
+D) Maximum 12 at \(\theta=\tfrac{\pi}{3}\); minimum \(-12\) at \(\theta=\tfrac{4\pi}{3}\)
+KEY: C
+SOL:
+Answer: (C) \(f=12\sin(\theta+\tfrac{\pi}{3})\); max 12 at \(\tfrac{\pi}{6}\), zero at \(\tfrac{2\pi}{3}\), min \(-6\sqrt3\) at \(\pi\).
+Given: \(|\vec a|=2,\ |\vec b|=3,\ \theta\in[0,\pi]\)
+Formula/Principle: \(|\vec a\times\vec b|=|\vec a||\vec b|\sin\theta,\ \vec a\cdot\vec b=|\vec a||\vec b|\cos\theta;\ \sin\theta+\sqrt3\cos\theta=2\sin(\theta+\tfrac{\pi}{3})\)
+Step 1: \(f=6\sin\theta+6\sqrt3\cos\theta=12\sin\left(\theta+\tfrac{\pi}{3}\right)\)
+Step 2: \(\theta+\tfrac{\pi}{3}\in\left[\tfrac{\pi}{3},\tfrac{4\pi}{3}\right]\)
+Step 3: \(\text{max at }\theta+\tfrac{\pi}{3}=\tfrac{\pi}{2}\Rightarrow\theta=\tfrac{\pi}{6};\ \text{zero at }\theta+\tfrac{\pi}{3}=\pi\Rightarrow\theta=\tfrac{2\pi}{3}\)
+Worked derivation: \[\text{min at the endpoint }\theta=\pi:\ 12\sin\tfrac{4\pi}{3}=-6\sqrt3\]
+Check: \[|\vec a\times\vec b|^2+(\vec a\cdot\vec b)^2=36=|\vec a|^2|\vec b|^2\ \checkmark;\ f(0)=6\sqrt3,\ f(\tfrac{\pi}{6})=3+9=12\ \checkmark\]
+Why: \(\sin\theta\ge0\text{ on }[0,\pi]\text{ so }|\vec a\times\vec b|=6\sin\theta\text{; combining sine and cosine gives a single sinusoid}\)
+Why not the others: (A) \(\text{ignores the dot-product term}\); (B) \(f(\tfrac{\pi}{6})=12>6\sqrt3\); (D) \(\tfrac{4\pi}{3}\text{ is outside }[0,\pi]\).
+Key point: \(a\sin\theta+b\cos\theta=\sqrt{a^2+b^2}\sin(\theta+\alpha)\text{; respect the range of }\theta\)
+
+@@ Q49
+format: numerical
+sub_topic: Direction cosines of a line through a point parallel to a vector, its Cartesian equation, and the distance of a point at a given parameter
+Q: A line passes through \((1,2,3)\) parallel to \(2\hat i-\hat j+2\hat k\). What are its direction cosines and Cartesian equation, and what point corresponds to \(\lambda=3\) in \(\vec r=(\hat i+2\hat j+3\hat k)+\lambda(2\hat i-\hat j+2\hat k)\), and how far is it from \((1,2,3)\)?
+A) \(\left(\tfrac23,-\tfrac13,\tfrac23\right)\); \(\dfrac{x-1}{2}=\dfrac{y-2}{-1}=\dfrac{z-3}{2}\); \((7,-1,9)\), at distance 9
+B) \((2,-1,2)\); \(\dfrac{x-2}{1}=\dfrac{y+1}{2}=\dfrac{z-2}{3}\); \((7,-1,9)\), at distance 3
+C) \(\left(\tfrac23,\tfrac13,\tfrac23\right)\); \(\dfrac{x-1}{2}=\dfrac{y-2}{1}=\dfrac{z-3}{2}\); \((7,5,9)\), at distance 9
+D) \(\left(\tfrac13,-\tfrac23,\tfrac23\right)\); \(\dfrac{x-1}{1}=\dfrac{y-2}{-2}=\dfrac{z-3}{2}\); \((4,-4,9)\), at distance 9
+KEY: A
+SOL:
+Answer: (A) DCs \(\left(\tfrac23,-\tfrac13,\tfrac23\right)\); \(\tfrac{x-1}{2}=\tfrac{y-2}{-1}=\tfrac{z-3}{2}\); \((7,-1,9)\), distance 9.
+Given: \(\text{point }(1,2,3);\ \vec b=2\hat i-\hat j+2\hat k\)
+Formula/Principle: \(l,m,n=\dfrac{a}{|\vec b|},\dfrac{b}{|\vec b|},\dfrac{c}{|\vec b|};\ \dfrac{x-x_1}{a}=\dfrac{y-y_1}{b}=\dfrac{z-z_1}{c}\)
+Step 1: \(|\vec b|=\sqrt{4+1+4}=3\Rightarrow\left(\tfrac23,-\tfrac13,\tfrac23\right)\)
+Step 2: \(\dfrac{x-1}{2}=\dfrac{y-2}{-1}=\dfrac{z-3}{2}\)
+Step 3: \(\lambda=3:\ (1+6,\ 2-3,\ 3+6)=(7,-1,9)\)
+Worked derivation: \[\text{distance}=|\lambda||\vec b|=3\times3=9;\ \sqrt{36+9+36}=9\ \checkmark\]
+Check: \[l^2+m^2+n^2=\tfrac{4+1+4}{9}=1\ \checkmark\]
+Why: \(\text{direction cosines are the components of the unit vector along the line; distance from the fixed point grows linearly with }|\lambda|\)
+Why not the others: (B) \(\text{uses direction ratios as cosines and a wrong point in the equation}\); (C) \(\text{sign slip in the y-component}\); (D) \(\text{components interchanged}\).
+Key point: \(\text{DCs}=\vec b/|\vec b|;\ \text{point at }\lambda\text{ is }|\lambda||\vec b|\text{ from the base point}\)
+
+@@ Q50
+format: numerical
+sub_topic: Maximising two objective functions over the same feasible region by corner points, including a case with infinitely many optimal solutions
+Q: The feasible region is given by \(x+y\le4\), \(x+3y\le6\), \(x\ge0\), \(y\ge0\). What is the maximum of \(Z_1=3x+4y\), and what happens for \(Z_2=3x+9y\)?
+A) \(Z_1\) max 16 at \((0,4)\); \(Z_2\) max 36 at \((0,4)\)
+B) \(Z_1\) max 12 at \((4,0)\); \(Z_2\) has no maximum
+C) \(Z_1\) max 13 at \((3,1)\); \(Z_2\) max 18 only at \((0,2)\)
+D) \(Z_1\) max 13 at \((3,1)\); \(Z_2\) max 18 at both \((3,1)\) and \((0,2)\), and hence at every point of the segment joining them, because the iso-profit lines of \(Z_2\) are parallel to the edge \(x+3y=6\)
+KEY: D
+SOL:
+Answer: (D) \(Z_1\) max 13 at \((3,1)\); \(Z_2\) max 18 along the whole edge from \((3,1)\) to \((0,2)\).
+Given: \(x+y\le4,\ x+3y\le6,\ x,y\ge0\)
+Formula/Principle: \(\text{corner point method: the optimum of a linear objective on a bounded region occurs at a corner}\)
+Step 1: \(\text{corners: }(0,0),(4,0),(3,1),(0,2)\ [x+y=4\text{ and }x+3y=6\Rightarrow y=1,x=3]\)
+Step 2: \(Z_1:\ 0,\ 12,\ 13,\ 8\Rightarrow\max13\text{ at }(3,1)\)
+Step 3: \(Z_2:\ 0,\ 12,\ 18,\ 18\Rightarrow\max18\text{ at }(3,1)\text{ and }(0,2)\)
+Worked derivation: \[Z_2=3(x+3y)=3\times6=18\text{ at every point of the edge }x+3y=6,\ 0\le x\le3\]
+Check: \[(0,4)\text{ violates }x+3y\le6\ (12>6)\Rightarrow\text{not feasible}\ \checkmark\]
+Why: \(\text{if the objective's level lines are parallel to an edge of the region, all points of that edge give the same optimal value}\)
+Why not the others: (A) \((0,4)\text{ is infeasible}\); (B) \(\text{the region is bounded, so a maximum exists, and }(3,1)\text{ gives more}\); (C) \(\text{misses the tie at }(3,1)\).
+Key point: \(\text{two corners tie}\Rightarrow\text{every point of the joining edge is optimal}\)
+
+@@ Q51
+format: numerical
+sub_topic: Graph properties of aˣ and logₐx for a > 1 and 0 < a < 1, why a = 1 is excluded, and a value combining logs with reciprocal bases
+Q: Which statement about \(y=a^x\) and \(y=\log_a x\) is correct, and what is \(\log_2 8+\log_{1/2}8\)?
+A) Both pass through \((1,0)\); they are increasing for every \(a>0\); the value is 6
+B) \(a^x\) is decreasing for \(a>1\); \(a=1\) gives the line \(y=x\); the value is \(-6\)
+C) \(a^x\) passes through \((0,1)\) and \(\log_a x\) through \((1,0)\); their graphs are reflections of each other in \(y=x\); both increase if \(a>1\) and decrease if \(0<a<1\); \(a=1\) is excluded because \(1^x\) is constant (not one-one) so \(\log_1x\) is undefined; the value is 0
+D) \(\log_a x\) is defined for all real \(x\); the value is 3
+KEY: C
+SOL:
+Answer: (C) Reflections in \(y=x\); monotonic by base; \(a\ne1\); value 0.
+Given: \(a>0,\ a\ne1;\ \log_2 8,\ \log_{1/2}8\)
+Formula/Principle: \(y=\log_a x\iff a^y=x;\ \log_{1/a}x=-\log_a x\)
+Step 1: \(a^0=1\Rightarrow(0,1)\text{ on }y=a^x;\ \log_a1=0\Rightarrow(1,0)\text{ on }y=\log_ax\)
+Step 2: \(\text{inverse functions}\Rightarrow\text{graphs symmetric about }y=x\)
+Step 3: \(\log_28=3;\ \log_{1/2}8=\dfrac{\ln8}{\ln\frac12}=-3\)
+Worked derivation: \[\log_28+\log_{1/2}8=3-3=0\]
+Check: \[\left(\tfrac12\right)^{-3}=8\ \checkmark\]
+Why: \(a^x\text{ is one-one only when }a\ne1\text{, which is needed for an inverse; the base decides increase or decrease}\)
+Why not the others: (A) \(a^x\text{ passes through }(0,1)\text{ and decreases for }0<a<1\); (B) \(a^x\text{ increases for }a>1\text{; }1^x=1\); (D) \(\log_ax\text{ needs }x>0\).
+Key point: \(a^x\text{ and }\log_ax\text{ are inverses (mirror images in }y=x)\text{; }\log_{1/a}x=-\log_ax\)
+
+@@ Q52
+format: numerical
+sub_topic: Computing both compositions of a linear and a quadratic function, solving where they agree and finding the inverse of the linear one
+Q: Let \(f(x)=2x+3\) and \(g(x)=x^2-1\). Find \((f\circ g)(x)\), \((g\circ f)(x)\), the values of \(x\) for which they are equal, and \(f^{-1}(x)\).
+A) \(f\circ g=4x^2+12x+8,\ g\circ f=2x^2+1\); never equal; \(f^{-1}(x)=\tfrac{x+3}{2}\)
+B) \(f\circ g=2x^2+1,\ g\circ f=4x^2+12x+8\); equal when \(2x^2+12x+7=0\), i.e. \(x=\dfrac{-6\pm\sqrt{22}}{2}\); \(f^{-1}(x)=\dfrac{x-3}{2}\)
+C) \(f\circ g=g\circ f=2x^2+1\) for all \(x\); \(f^{-1}(x)=\tfrac{1}{2x+3}\)
+D) \(f\circ g=2x^2+2,\ g\circ f=4x^2+8\); equal at \(x=\pm\sqrt3\); \(f^{-1}(x)=x-3\)
+KEY: B
+SOL:
+Answer: (B) \(2x^2+1\) and \(4x^2+12x+8\); equal at \(x=\tfrac{-6\pm\sqrt{22}}{2}\); \(f^{-1}(x)=\tfrac{x-3}{2}\).
+Given: \(f(x)=2x+3,\ g(x)=x^2-1\)
+Formula/Principle: \((f\circ g)(x)=f(g(x));\ f^{-1}:\ y=f(x)\Rightarrow x=f^{-1}(y)\)
+Step 1: \(f(g(x))=2(x^2-1)+3=2x^2+1\)
+Step 2: \(g(f(x))=(2x+3)^2-1=4x^2+12x+8\)
+Step 3: \(2x^2+1=4x^2+12x+8\Rightarrow2x^2+12x+7=0\)
+Worked derivation: \[x=\dfrac{-12\pm\sqrt{144-56}}{4}=\dfrac{-12\pm2\sqrt{22}}{4}=\dfrac{-6\pm\sqrt{22}}{2};\quad y=2x+3\Rightarrow f^{-1}(y)=\tfrac{y-3}{2}\]
+Check: \[x=2:\ (f\circ g)(2)=9,\ (g\circ f)(2)=48\Rightarrow\text{composition is not commutative}\ \checkmark\]
+Why: \(\text{the order of composition matters: squaring after doubling-and-adding gives a different quadratic from doubling after squaring}\)
+Why not the others: (A) \(\text{compositions swapped and wrong inverse}\); (C) \(f\circ g\ne g\circ f\text{, and the inverse is not the reciprocal}\); (D) \(\text{algebra slips}\).
+Key point: \(f\circ g\ne g\circ f\text{ in general; solve for }x\text{ to invert}\)
+
+@@ Q53
+format: numerical
+sub_topic: Using the 2θ and 3θ identities with 5θ = 90° to find sin 18° exactly, then cos 36°
+Q: Using \(\theta=18^\circ\), so that \(2\theta=90^\circ-3\theta\), find \(\sin18^\circ\) and \(\cos36^\circ\).
+A) \(\sin18^\circ=\tfrac{\sqrt5+1}{4},\ \cos36^\circ=\tfrac{\sqrt5-1}{4}\)
+B) \(\sin18^\circ=\tfrac{\sqrt5-1}{4},\ \cos36^\circ=\tfrac{\sqrt5+1}{4}\)
+C) \(\sin18^\circ=\tfrac{1}{2},\ \cos36^\circ=\tfrac{\sqrt3}{2}\)
+D) \(\sin18^\circ=\tfrac{\sqrt5-1}{2},\ \cos36^\circ=\tfrac{3-\sqrt5}{2}\)
+KEY: B
+SOL:
+Answer: (B) \(\sin18^\circ=\tfrac{\sqrt5-1}{4},\ \cos36^\circ=\tfrac{\sqrt5+1}{4}\).
+Given: \(\theta=18^\circ,\ 5\theta=90^\circ\)
+Formula/Principle: \(\sin2\theta=2\sin\theta\cos\theta;\ \cos3\theta=4\cos^3\theta-3\cos\theta;\ \cos2\theta=1-2\sin^2\theta\)
+Step 1: \(\sin2\theta=\cos3\theta\Rightarrow2\sin\theta\cos\theta=4\cos^3\theta-3\cos\theta\)
+Step 2: \(\cos\theta\ne0:\ 2\sin\theta=4(1-\sin^2\theta)-3\Rightarrow4s^2+2s-1=0\)
+Step 3: \(s=\dfrac{-2\pm\sqrt{4+16}}{8}=\dfrac{-1\pm\sqrt5}{4};\ s>0\Rightarrow s=\dfrac{\sqrt5-1}{4}\)
+Worked derivation: \[\cos36^\circ=1-2s^2=1-2\cdot\dfrac{6-2\sqrt5}{16}=\dfrac{8-6+2\sqrt5}{8}=\dfrac{1+\sqrt5}{4}\]
+Check: \[\tfrac{\sqrt5-1}{4}\approx0.309=\sin18^\circ;\ \tfrac{\sqrt5+1}{4}\approx0.809=\cos36^\circ\ \checkmark\]
+Why: \(\text{the special angle with }5\theta=90^\circ\text{ links double and triple angles, producing a quadratic in }\sin\theta\)
+Why not the others: (A) \(\text{swapped values}\); (C) \(\text{those are }30^\circ\text{ values}\); (D) \(\text{forgets the denominator 4}\).
+Key point: \(\sin18^\circ=\tfrac{\sqrt5-1}{4};\ \cos36^\circ=\tfrac{\sqrt5+1}{4}\)
+
+@@ Q54
+format: numerical
+sub_topic: For which n the statement 2ⁿ > n² holds, where the inductive step works, and the correct base case for induction
+Q: For which natural numbers \(n\) is \(2^n>n^2\) true, and how is this proved by induction?
+A) For all \(n\ge1\), with base case \(n=1\)
+B) Only for odd \(n\)
+C) For \(n\ge3\), with base case \(n=3\)
+D) For \(n=1\) and all \(n\ge5\) (it fails at \(n=2,3,4\)); the inductive step \(2^{k+1}=2\cdot2^k>2k^2\ge(k+1)^2\) is valid whenever \(k^2-2k-1\ge0\), i.e. \(k\ge3\), so with base case \(n=5\ (32>25)\) the statement holds for all \(n\ge5\)
+KEY: D
+SOL:
+Answer: (D) True for \(n=1\) and \(n\ge5\); induction from base case 5.
+Given: \(P(n):\ 2^n>n^2\)
+Formula/Principle: \(\text{PMI: }P(m)\text{ true and }P(k)\Rightarrow P(k+1)\text{ for }k\ge m\Rightarrow P(n)\ \forall n\ge m\)
+Step 1: \(n=1:2>1;\ n=2:4=4\ (\text{false});\ n=3:8<9;\ n=4:16=16\ (\text{false});\ n=5:32>25\)
+Step 2: \(\text{assume }2^k>k^2;\ 2^{k+1}>2k^2\)
+Step 3: \(2k^2\ge(k+1)^2\iff k^2-2k-1\ge0\iff k\ge1+\sqrt2\approx2.41\)
+Worked derivation: \[k\ge5:\ 2^{k+1}>2k^2\ge(k+1)^2\Rightarrow P(k+1)\]
+Check: \[n=6:\ 64>36;\ n=10:\ 1024>100\ \checkmark\]
+Why: \(\text{the inductive step works from }k=3\text{, but the statement itself is false at 3 and 4, so the first true case after the failures, }n=5\text{, must be the base}\)
+Why not the others: (A) \(\text{fails at }n=2,3,4\); (B) \(n=3\text{ fails and }n=6\text{ works}\); (C) \(n=3\text{ is false, so it cannot be a base case}\).
+Key point: \(\text{the base case must be true; the step alone proves nothing}\)
+
+@@ Q55
+format: numerical
+sub_topic: Counting integer values of k for which x² + kx + 4 = 0 has non-real roots, and the modulus and form of those roots
+Q: For how many integers \(k\) does \(x^2+kx+4=0\) have non-real roots, and what can be said about these roots?
+A) 9; the roots are real and equal
+B) 8; the roots have modulus 4
+C) 7 (\(k=-3,\dots,3\)); the roots are complex conjugates with product 4, so each has modulus 2; for example \(k=2\) gives \(-1\pm i\sqrt3\)
+D) Infinitely many; the roots are purely imaginary
+KEY: C
+SOL:
+Answer: (C) Seven integers; conjugate roots of modulus 2.
+Given: \(x^2+kx+4=0,\ k\in\mathbb Z\)
+Formula/Principle: \(\text{non-real roots}\iff D=k^2-16<0;\ \text{product of roots}=4\)
+Step 1: \(k^2<16\iff-4<k<4\Rightarrow k\in\{-3,-2,-1,0,1,2,3\}:\ 7\text{ values}\)
+Step 2: \(\text{real coefficients}\Rightarrow\text{roots }\alpha,\bar\alpha;\ \alpha\bar\alpha=|\alpha|^2=4\Rightarrow|\alpha|=2\)
+Step 3: \(k=2:\ x=\dfrac{-2\pm\sqrt{4-16}}{2}=-1\pm i\sqrt3\)
+Worked derivation: \[|-1+i\sqrt3|=\sqrt{1+3}=2\ \checkmark\]
+Check: \[k=\pm4:\ D=0\ (\text{equal real roots});\ \text{excluded}\ \checkmark\]
+Why: \(\text{a quadratic with real coefficients has complex roots in conjugate pairs, and their product equals the constant term}\)
+Why not the others: (A) \(\text{includes }k=\pm4\text{ and has the wrong nature}\); (B) \(|\alpha|^2=4\text{, not }|\alpha|=4\); (D) \(\text{finitely many; purely imaginary only for }k=0\).
+Key point: \(D<0\Rightarrow\text{conjugate roots};\ |\alpha|^2=c/a\)
+
+@@ Q56
+format: numerical
+sub_topic: Solving a system of three linear inequalities in one variable, writing the solution as an interval and counting its integers
+Q: Solve the system \(2x-3<x+2\le3x+5\) and \(3(x-1)\ge2x-4\). What is the solution set, and how many integers does it contain?
+A) \([-1,5)\); 6 integers
+B) \((-1,5]\); 6 integers
+C) \(\left[-\tfrac32,5\right)\); 7 integers
+D) \([-1,5]\); 7 integers
+KEY: A
+SOL:
+Answer: (A) \([-1,5)\), containing 6 integers.
+Given: \(2x-3<x+2;\ x+2\le3x+5;\ 3(x-1)\ge2x-4\)
+Formula/Principle: \(\text{solve each inequality, then intersect the solution sets}\)
+Step 1: \(2x-3<x+2\Rightarrow x<5\)
+Step 2: \(x+2\le3x+5\Rightarrow-3\le2x\Rightarrow x\ge-\tfrac32\)
+Step 3: \(3x-3\ge2x-4\Rightarrow x\ge-1\)
+Worked derivation: \[(-\infty,5)\cap\left[-\tfrac32,\infty\right)\cap[-1,\infty)=[-1,5)\Rightarrow\text{integers }-1,0,1,2,3,4\ (6)\]
+Check: \[x=-1:\ -5<1\le2\text{ and }-6\ge-6\ \checkmark;\ x=5:\ 7<7\text{ false}\ \checkmark\]
+Why: \(\text{a system requires every inequality to hold, so the solution is the overlap; strict and non-strict signs decide the brackets}\)
+Why not the others: (B) \(\text{brackets reversed}\); (C) \(\text{ignores the third inequality}\); (D) \(x=5\text{ fails the strict inequality}\).
+Key point: \(\text{intersect the individual solution sets; watch strict versus non-strict}\)
+
+@@ Q57
+format: numerical
+sub_topic: Finding an infinite G.P. from its sum and the sum of the squares of its terms, and how the sum of squares varies with r for a fixed sum
+Q: An infinite G.P. has sum 4 and the sum of the squares of its terms is 48. What are its first term and common ratio, and how does the sum of squares behave as \(r\) varies in \((-1,1)\) with the sum fixed at 4?
+A) \(a=6,\ r=-\tfrac12\); with the sum fixed at 4, the sum of squares is \(16\,\dfrac{1-r}{1+r}\), which decreases as \(r\) increases and takes every positive value
+B) \(a=2,\ r=\tfrac12\); the sum of squares is constant
+C) \(a=6,\ r=\tfrac12\); the sum of squares increases with \(r\)
+D) \(a=8,\ r=-1\); the series converges
+KEY: A
+SOL:
+Answer: (A) \(a=6,\ r=-\tfrac12\); sum of squares \(=16\tfrac{1-r}{1+r}\), decreasing in \(r\).
+Given: \(\dfrac{a}{1-r}=4,\ \dfrac{a^2}{1-r^2}=48,\ |r|<1\)
+Formula/Principle: \(S_\infty=\dfrac{a}{1-r};\ \text{squares form a G.P. with first term }a^2\text{ and ratio }r^2\)
+Step 1: \(\dfrac{a^2}{1-r^2}=\dfrac{a}{1-r}\cdot\dfrac{a}{1+r}=4\cdot\dfrac{a}{1+r}=48\Rightarrow\dfrac{a}{1+r}=12\)
+Step 2: \(a=4(1-r)=12(1+r)\Rightarrow16r=-8\Rightarrow r=-\tfrac12\)
+Step 3: \(a=4\left(1+\tfrac12\right)=6\)
+Worked derivation: \[a=4(1-r)\Rightarrow\dfrac{a^2}{1-r^2}=\dfrac{16(1-r)^2}{(1-r)(1+r)}=16\,\dfrac{1-r}{1+r}\to\infty\ (r\to-1),\ \to0\ (r\to1)\]
+Check: \[6-3+\tfrac32-\dots=\dfrac{6}{3/2}=4;\ 36+9+\tfrac94+\dots=\dfrac{36}{3/4}=48\ \checkmark\]
+Why: \(\text{dividing the two sums eliminates }a\text{; the resulting ratio is a strictly decreasing function of }r\)
+Why not the others: (B) \(\text{sum of squares }\tfrac{4}{3/4}\ne48\); (C) \(r=\tfrac12\text{ gives sum 12}\); (D) \(|r|=1\text{ does not converge}\).
+Key point: \(\text{sum of squares of a G.P.}=\dfrac{a^2}{1-r^2}\)
+
+@@ Q58
+format: numerical
+sub_topic: The fixed point of a family of lines, members parallel to the axes or through the origin, the member farthest from the origin, and the limiting member
+Q: Consider the family \((2x+y-4)+\lambda(x-y+1)=0\). Which statement is correct?
+A) The lines have no common point; \(\lambda=0\) gives the line through the origin
+B) All lines pass through \((2,1)\); the member parallel to the \(x\)-axis has \(\lambda=2\)
+C) All lines pass through \(P(1,2)\); \(\lambda=-2\) gives \(y=2\) (parallel to the \(x\)-axis), \(\lambda=1\) gives \(x=1\), \(\lambda=4\) gives \(y=2x\) (through the origin); the member farthest from the origin is perpendicular to \(OP\), namely \(x+2y=5\), at distance \(\sqrt5\); and the line \(x-y+1=0\) itself is reached only as the limiting case \(\lambda\to\infty\)
+D) All lines pass through \((1,2)\), and every line through \((1,2)\) is obtained for some finite \(\lambda\)
+KEY: C
+SOL:
+Answer: (C) Fixed point \((1,2)\); special members as listed; farthest member \(x+2y=5\); \(x-y+1=0\) only as \(\lambda\to\infty\).
+Given: \(L_1:2x+y-4=0,\ L_2:x-y+1=0;\ L_1+\lambda L_2=0\)
+Formula/Principle: \(L_1+\lambda L_2=0\text{ passes through }L_1\cap L_2\)
+Step 1: \(2x+y=4,\ x-y=-1\Rightarrow3x=3\Rightarrow P=(1,2)\)
+Step 2: \((2+\lambda)x+(1-\lambda)y+(\lambda-4)=0:\ \lambda=-2\Rightarrow3y-6=0;\ \lambda=1\Rightarrow3x-3=0;\ \lambda=4\Rightarrow6x-3y=0\)
+Step 3: \(\text{distance from O is largest when the line}\perp OP:\ \text{slope of }OP=2\Rightarrow\text{slope }-\tfrac12\text{ through }(1,2):\ x+2y=5\)
+Worked derivation: \[d=\dfrac{|0+0-5|}{\sqrt{1+4}}=\sqrt5=|OP|;\quad \tfrac{2+\lambda}{1-\lambda}=\tfrac12\Rightarrow\lambda=-1:\ x+2y-5=0\ \checkmark\]
+Check: \[\text{dividing by }\lambda\text{: }\tfrac1\lambda L_1+L_2=0\to L_2\text{ as }\lambda\to\infty\ \checkmark\]
+Why: \(\text{any point on both }L_1\text{ and }L_2\text{ satisfies every member; the distance from O to a line through P cannot exceed }OP\text{, with equality for the perpendicular}\)
+Why not the others: (A) \(\text{they share }(1,2)\text{, and }\lambda=0\text{ gives }L_1\); (B) \((2,1)\text{ is not on }L_2\); (D) \(L_2\text{ is not obtained for finite }\lambda\).
+Key point: \(L_1+\lambda L_2=0\text{ is the pencil through }L_1\cap L_2\text{ (except }L_2\text{ itself)}\)
+
+@@ Q59
+format: numerical
+sub_topic: Focus, directrix and latus rectum of the parabola x² = 20y, the ends of the latus rectum and the focal distance of a point
+Q: For the parabola \(x^2=20y\), what are the focus, the directrix, the length of the latus rectum and its end points, and the distance of the point \((20,20)\) from the focus?
+A) Focus \((5,0)\); directrix \(x=-5\); latus rectum 20; ends \((5,\pm10)\); distance 25
+B) Focus \((0,20)\); directrix \(y=-20\); latus rectum 5; ends \((\pm2.5,20)\); distance 20
+C) Focus \((0,-5)\); directrix \(y=5\); latus rectum 20; ends \((\pm10,-5)\); distance 15
+D) Focus \((0,5)\); directrix \(y=-5\); latus rectum 20; ends \((\pm10,5)\); distance 25
+KEY: D
+SOL:
+Answer: (D) Focus \((0,5)\), directrix \(y=-5\), LR 20 with ends \((\pm10,5)\), focal distance 25.
+Given: \(x^2=20y=4ay\Rightarrow a=5\)
+Formula/Principle: \(x^2=4ay:\ \text{focus }(0,a),\ \text{directrix }y=-a,\ \text{LR}=4a,\ \text{ends }(\pm2a,a);\ \text{focal distance}=y+a\)
+Step 1: \(a=5\Rightarrow\text{focus }(0,5),\ \text{directrix }y=-5\)
+Step 2: \(\text{LR}=4a=20;\ \text{ends }(\pm10,5)\ [100=20\times5\ \checkmark]\)
+Step 3: \((20,20):\ 400=20\times20\ \checkmark\text{ on the parabola}\)
+Worked derivation: \[\text{focal distance}=y+a=20+5=25;\ \sqrt{20^2+15^2}=25\ \checkmark\]
+Check: \[\text{distance to directrix}=20-(-5)=25=\text{distance to focus}\ \checkmark\]
+Why: \(\text{a parabola is the locus of points equidistant from the focus and directrix, so the focal distance equals the distance to the directrix}\)
+Why not the others: (A) \(\text{that is the parabola }y^2=20x\); (B) \(\text{uses }a=20\); (C) \(\text{opens downward instead of upward}\).
+Key point: \(x^2=4ay:\ S(0,a),\ y=-a,\ \text{LR}=4a,\ SP=y+a\)
+
+@@ Q60
+format: numerical
+sub_topic: Finding both values of the parameter k for which x²/25 + y²/k = 1 is an ellipse of eccentricity 3/5, with the major axis on either coordinate axis
+Q: For which values of \(k>0\) does \(\dfrac{x^2}{25}+\dfrac{y^2}{k}=1\) represent an ellipse of eccentricity \(\tfrac35\)?
+A) Only \(k=16\)
+B) \(k=16\) (major axis along the \(x\)-axis, foci \((\pm3,0)\)) and \(k=\tfrac{625}{16}\) (major axis along the \(y\)-axis, foci \((0,\pm\tfrac{15}{4})\))
+C) \(k=9\) and \(k=34\)
+D) \(k=25\), since then the ellipse is a circle
+KEY: B
+SOL:
+Answer: (B) \(k=16\) or \(k=\tfrac{625}{16}\).
+Given: \(\dfrac{x^2}{25}+\dfrac{y^2}{k}=1,\ e=\tfrac35\)
+Formula/Principle: \(e^2=1-\dfrac{b^2}{a^2}\text{ with }a^2\text{ the larger denominator}\)
+Step 1: \(k<25:\ a^2=25,\ b^2=k\Rightarrow1-\tfrac{k}{25}=\tfrac{9}{25}\Rightarrow k=16\)
+Step 2: \(k>25:\ a^2=k,\ b^2=25\Rightarrow1-\tfrac{25}{k}=\tfrac{9}{25}\Rightarrow\tfrac{25}{k}=\tfrac{16}{25}\Rightarrow k=\tfrac{625}{16}\)
+Step 3: \(\text{foci: }c=ae:\ k=16\Rightarrow c=5\cdot\tfrac35=3;\ k=\tfrac{625}{16}\Rightarrow c=\tfrac{25}{4}\cdot\tfrac35=\tfrac{15}{4}\)
+Worked derivation: \[k=\tfrac{625}{16}:\ c^2=a^2-b^2=\tfrac{625}{16}-25=\tfrac{225}{16}\Rightarrow c=\tfrac{15}{4}\ \checkmark\]
+Check: \[k=16:\ c^2=25-16=9\Rightarrow c=3,\ e=\tfrac35\ \checkmark\]
+Why: \(\text{the larger denominator decides which axis is major, so both orientations must be tested}\)
+Why not the others: (A) \(\text{misses the case }k>25\); (C) \(\text{uses }b^2=a^2e^2\); (D) \(k=25\text{ gives }e=0\).
+Key point: \(\text{test both }k<25\text{ and }k>25\text{ when the major axis is not given}\)
