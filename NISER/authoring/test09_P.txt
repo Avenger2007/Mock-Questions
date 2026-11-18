@@ -1,0 +1,419 @@
+@@ Q61
+format: experiment
+sub_topic: Finding the temperature of a copper coil from the rise in its resistance, and contrasting a semiconductor thermistor
+Q: A copper coil has a resistance of 10.0 Ω at 20 °C. When a current flows for some time, its resistance is measured as 12.0 Ω. The temperature coefficient of resistance of copper is 4.0 × 10⁻³ °C⁻¹. What is the coil's temperature, and how would a semiconductor thermistor behave if heated in the same way?
+A) 50 °C; the thermistor's resistance also rises
+B) 520 °C; the thermistor's resistance falls
+C) 70 °C; the thermistor's resistance stays the same
+D) 70 °C; the thermistor's resistance falls, because more charge carriers are freed as the temperature rises
+KEY: D
+SOL:
+Answer: (D) 70 °C; the thermistor's resistance falls.
+Given: \(R_0=10.0\ \Omega\text{ at }20^\circ\mathrm C,\ R=12.0\ \Omega,\ \alpha=4.0\times10^{-3}\ ^\circ\mathrm C^{-1}\)
+Formula/Principle: \(R=R_0\left[1+\alpha(T-T_0)\right]\ (\text{for small temperature ranges})\)
+Step 1: \(\dfrac{R}{R_0}=1.2=1+4.0\times10^{-3}\,\Delta T\)
+Step 2: \(\Delta T=\dfrac{0.2}{4.0\times10^{-3}}=50\ ^\circ\mathrm C\)
+Worked derivation: \[T=20+50=70\ ^\circ\mathrm C\]
+Check: \[10.0\left[1+0.004\times50\right]=12.0\ \Omega\ \checkmark\]
+Why: \(\text{in a metal, the number of free electrons is fixed, but hotter ions vibrate more and scatter electrons more often, so resistivity rises; in a semiconductor, heating frees many more carriers, which outweighs the extra scattering}\)
+Why not the others: (A) \(\text{gives the rise in temperature, not the final temperature, and gets the thermistor wrong}\); (B) \(\text{uses }\alpha\text{ as }4\times10^{-4}\); (C) \(\text{a thermistor's resistance depends strongly on temperature}\).
+Key point: \(\text{metals: }R=R_0(1+\alpha\Delta T),\ \alpha>0;\ \text{semiconductors: R falls with T}\)
+
+@@ Q62
+format: numerical
+sub_topic: Radius and period of a proton's circular path in a magnetic field after acceleration through 1.0 kV, using energy conservation
+Q: A proton, initially at rest, is accelerated through a potential difference of 1.0 kV and then enters a uniform magnetic field of 0.10 T at right angles to the field. What is its speed, the radius of its circular path and its period of revolution? What happens to the radius and period if the accelerating voltage is made four times larger? (m_p = 1.67 × 10⁻²⁷ kg, e = 1.6 × 10⁻¹⁹ C)
+A) 4.4 × 10⁵ m s⁻¹; 4.6 cm; 0.66 µs; radius ×4, period ×2
+B) 1.9 × 10¹¹ m s⁻¹; 4.6 cm; 0.66 µs; radius ×2, period ×2
+C) 4.4 × 10⁵ m s⁻¹; 4.6 cm; 0.66 µs; radius ×2, period unchanged
+D) 4.4 × 10⁵ m s⁻¹; 2.3 cm; 1.3 µs; radius ×2, period ×½
+KEY: C
+SOL:
+Answer: (C) 4.4 × 10⁵ m s⁻¹; 4.6 cm; 0.66 µs; radius doubles, period unchanged.
+Given: \(V=1.0\times10^3\ \mathrm V,\ B=0.10\ \mathrm T,\ m=1.67\times10^{-27}\ \mathrm{kg},\ q=1.6\times10^{-19}\ \mathrm C\)
+Formula/Principle: \(\text{energy: }qV=\tfrac12mv^2;\ \text{circular motion: }qvB=\dfrac{mv^2}{r}\Rightarrow r=\dfrac{mv}{qB},\ T=\dfrac{2\pi m}{qB}\)
+Step 1: \(v=\sqrt{\dfrac{2qV}{m}}=\sqrt{\dfrac{2\times1.6\times10^{-19}\times10^3}{1.67\times10^{-27}}}=\sqrt{1.92\times10^{11}}=4.38\times10^5\ \mathrm{m\,s^{-1}}\)
+Step 2: \(r=\dfrac{1.67\times10^{-27}\times4.38\times10^5}{1.6\times10^{-19}\times0.10}=4.57\times10^{-2}\ \mathrm m\)
+Worked derivation: \[T=\frac{2\pi\times1.67\times10^{-27}}{1.6\times10^{-20}}=6.56\times10^{-7}\ \mathrm s;\qquad r\propto v\propto\sqrt V\Rightarrow V\times4:\ r\times2\]
+Check: \[T=\frac{2\pi r}{v}=\frac{2\pi\times0.0457}{4.38\times10^5}=6.56\times10^{-7}\ \mathrm s\ \checkmark\]
+Why: \(\text{the magnetic force is always perpendicular to the velocity, so it does no work and the kinetic energy (speed) stays constant; a faster particle moves on a larger circle in the same time}\)
+Why not the others: (A) \(\text{takes }r\propto V\text{ and makes the period depend on speed}\); (B) \(\text{gives }v^2\text{ as the speed}\); (D) \(\text{halves the radius (uses 2qB) and makes T depend on speed}\).
+Key point: \(qV=\tfrac12mv^2;\ r=mv/qB;\ T=2\pi m/qB\text{ is independent of speed}\)
+
+@@ Q63
+format: numerical
+sub_topic: Work done in pulling a square loop out of a magnetic field at constant speed, equal to the heat produced (Lenz's law and energy conservation)
+Q: A square wire loop of side 0.10 m and resistance 0.50 Ω lies with its plane perpendicular to a uniform magnetic field of 0.40 T that ends sharply at one edge of the field region. The loop is pulled out of the field at a constant 2.0 m s⁻¹, one side always parallel to the field boundary. What is the induced current, the force needed, and the work done in pulling the loop completely out?
+A) 0.16 A; 0.016 N; 1.6 × 10⁻³ J
+B) 0.16 A; 6.4 × 10⁻³ N; 6.4 × 10⁻⁴ J, all of it appearing as heat in the loop
+C) 0.32 A; 0.013 N; 1.3 × 10⁻³ J
+D) 0.16 A; zero force, because the loop moves at constant speed
+KEY: B
+SOL:
+Answer: (B) 0.16 A; 6.4 × 10⁻³ N; 6.4 × 10⁻⁴ J, all converted to heat.
+Given: \(l=0.10\ \mathrm m,\ R=0.50\ \Omega,\ B=0.40\ \mathrm T,\ v=2.0\ \mathrm{m\,s^{-1}}\)
+Formula/Principle: \(\text{Faraday: }\varepsilon=Blv;\ I=\varepsilon/R;\ \text{force on the side in the field: }F=BIl;\ W=Fl\)
+Step 1: \(\varepsilon=0.40\times0.10\times2.0=0.080\ \mathrm V;\ I=\dfrac{0.080}{0.50}=0.16\ \mathrm A\)
+Step 2: \(F=0.40\times0.16\times0.10=6.4\times10^{-3}\ \mathrm N\)
+Worked derivation: \[W=F\times l=6.4\times10^{-3}\times0.10=6.4\times10^{-4}\ \mathrm J\]
+Check: \[\text{time}=\frac{0.10}{2.0}=0.050\ \mathrm s;\ I^2Rt=0.0256\times0.50\times0.050=6.4\times10^{-4}\ \mathrm J\ \checkmark\]
+Why: \(\text{by Lenz's law the induced current opposes the decrease in flux, so the field pulls back on the loop; the work done against this force is exactly the energy dissipated as heat, as conservation of energy requires}\)
+Why not the others: (A) \(\text{uses the loop's full perimeter for the force}\); (C) \(\text{doubles the emf by counting two sides}\); (D) \(\text{constant speed means the applied force balances the magnetic drag; it is not zero}\).
+Key point: \(\varepsilon=Blv;\ \text{work against magnetic drag}=I^2Rt\)
+
+@@ Q64
+format: graph
+sub_topic: Peak power, half-power frequencies and sharpness of the average power against frequency curve of a series LCR circuit
+Q: A series circuit has R = 20 Ω, L = 0.50 H and C = 2.0 µF, driven by a 100 V (rms) source of variable angular frequency ω. Which description of the graph of average power P against ω is correct?
+A) P peaks at ω₀ = 1000 rad s⁻¹ with P_max = 500 W; P falls to 250 W at about 980 and 1020 rad s⁻¹ (bandwidth 40 rad s⁻¹, quality factor 25); with a smaller R, the peak would be higher and narrower
+B) P peaks at ω₀ = 1000 rad s⁻¹ with P_max = 5.0 W
+C) P rises steadily with ω and has no peak
+D) P peaks at ω₀ = 1000 rad s⁻¹ with P_max = 500 W; a smaller R would give a lower, broader peak
+KEY: A
+SOL:
+Answer: (A) ω₀ = 1000 rad s⁻¹; P_max = 500 W; half-power points 980 and 1020 rad s⁻¹; smaller R gives a sharper peak.
+Given: \(R=20\ \Omega,\ L=0.50\ \mathrm H,\ C=2.0\times10^{-6}\ \mathrm F,\ V=100\ \mathrm V\)
+Formula/Principle: \(\omega_0=\dfrac1{\sqrt{LC}};\ P=I^2R=\dfrac{V^2R}{Z^2};\ \text{half-power points: }\omega_0\pm\dfrac{R}{2L};\ Q=\dfrac{\omega_0L}{R}\)
+Step 1: \(\omega_0=\dfrac1{\sqrt{0.50\times2.0\times10^{-6}}}=\dfrac1{10^{-3}}=1000\ \mathrm{rad\,s^{-1}}\)
+Step 2: \(P_{\max}=\dfrac{V^2}{R}=\dfrac{10^4}{20}=500\ \mathrm W\)
+Worked derivation: \[\frac R{2L}=\frac{20}{1.0}=20\Rightarrow\omega=980,\ 1020\ \mathrm{rad\,s^{-1}};\quad Q=\frac{1000\times0.50}{20}=25=\frac{\omega_0}{\Delta\omega}\]
+Check: \[\text{at half power, }|X_L-X_C|=R\Rightarrow Z=\sqrt2R\Rightarrow P=\frac{V^2}{2R}=250\ \mathrm W\ \checkmark\]
+Why: \(\text{the power is greatest when the reactances cancel; the width of the peak is set by R/L, so lowering R makes it taller }(V^2/R)\text{ and narrower}\)
+Why not the others: (B) \(\text{uses }V/R\text{ squared wrongly (}I^2\text{ without R)}\); (C) \(\text{a series LCR circuit always shows resonance}\); (D) \(\text{reverses the effect of R}\).
+Key point: \(P_{\max}=V^2/R\text{ at }\omega_0;\ \Delta\omega=R/L;\ Q=\omega_0/\Delta\omega\)
+
+@@ Q65
+format: numerical
+sub_topic: Power of two thin lenses in contact and separated, and the image formed by the combination in contact
+Q: A thin lens of power +5.0 D is placed in contact with a thin lens of power −2.0 D. An object is placed 50 cm in front of the combination. Where is the image, and what is the magnification? What would the power of the combination be if the lenses were separated by 10 cm?
+A) Image 25 cm behind; magnification −0.5; power 3.0 D
+B) Image 100 cm behind the lens; magnification −2; power 4.0 D when separated by 10 cm
+C) Image 33 cm behind; magnification −0.67; power 2.0 D
+D) Image 100 cm in front (virtual); magnification +2; power 4.0 D
+KEY: B
+SOL:
+Answer: (B) Image 100 cm behind; magnification −2; 4.0 D when separated.
+Given: \(P_1=+5.0\ \mathrm D,\ P_2=-2.0\ \mathrm D,\ u=-0.50\ \mathrm m,\ d=0.10\ \mathrm m\)
+Formula/Principle: \(\text{in contact: }P=P_1+P_2;\ \text{separated: }P=P_1+P_2-dP_1P_2;\ \dfrac1v-\dfrac1u=\dfrac1f=P;\ m=\dfrac vu\)
+Step 1: \(P=+3.0\ \mathrm D\Rightarrow f=33.3\ \mathrm{cm}\)
+Step 2: \(\dfrac1v=3.0+\dfrac1{-0.50}=3.0-2.0=1.0\ \mathrm{m^{-1}}\Rightarrow v=+1.00\ \mathrm m\)
+Worked derivation: \[m=\frac{1.00}{-0.50}=-2;\qquad P_{\text{sep}}=3.0-0.10\times5.0\times(-2.0)=4.0\ \mathrm D\]
+Check: \[\text{object between f and 2f }(33\text{ cm}<50\text{ cm}<67\text{ cm})\Rightarrow\text{real, inverted, magnified image beyond 2f}\ \checkmark\]
+Why: \(\text{powers of thin lenses in contact add; separating a converging and a diverging lens changes the total because light reaches the second lens at a different height}\)
+Why not the others: (A) \(\text{uses }P=P_1\text{ only for the image}\); (C) \(\text{places the image at the focus, as for a distant object}\); (D) \(\text{sign error: a real image forms because the object is beyond f}\).
+Key point: \(P=P_1+P_2\text{ (contact)};\ P=P_1+P_2-dP_1P_2\text{ (separated)}\)
+
+@@ Q66
+format: experiment
+sub_topic: Work function and threshold from a measured stopping potential, and how stopping potential and photocurrent depend on wavelength and intensity
+Q: In a photoelectric experiment, light of wavelength 400 nm gives a stopping potential of 1.0 V. What is the work function of the metal, what stopping potential would 300 nm light give, and what happens when the intensity of the 400 nm light is doubled? (hc = 1240 eV nm)
+A) 3.1 eV; 4.1 V; the stopping potential doubles
+B) 1.0 eV; 3.1 V; the current is unchanged
+C) 2.1 eV; 2.0 V; the stopping potential doubles and the current is unchanged
+D) 2.1 eV; about 2.0 V; the saturation current doubles, but the stopping potential stays 1.0 V; the threshold wavelength is about 590 nm
+KEY: D
+SOL:
+Answer: (D) φ = 2.1 eV; V₀ ≈ 2.0 V at 300 nm; doubling intensity doubles the saturation current only; λ₀ ≈ 590 nm.
+Given: \(\lambda_1=400\ \mathrm{nm},\ V_1=1.0\ \mathrm V,\ \lambda_2=300\ \mathrm{nm},\ hc=1240\ \mathrm{eV\,nm}\)
+Formula/Principle: \(\text{Einstein: }eV_0=\dfrac{hc}\lambda-\phi\)
+Step 1: \(\dfrac{1240}{400}=3.10\ \mathrm{eV}\Rightarrow\phi=3.10-1.0=2.10\ \mathrm{eV}\)
+Step 2: \(\dfrac{1240}{300}=4.13\ \mathrm{eV}\Rightarrow V_0=4.13-2.10=2.03\ \mathrm V\)
+Worked derivation: \[\lambda_0=\frac{1240}{2.10}\approx590\ \mathrm{nm}\]
+Check: \[\text{difference in }V_0=\Delta\left(\frac{hc}{\lambda}\right)/e=4.13-3.10=1.03\ \mathrm V\ \checkmark\]
+Why: \(\text{each photon frees at most one electron, with energy fixed by its frequency; more intense light means more photons per second and so more electrons, but not faster ones}\)
+Why not the others: (A) \(\text{takes the photon energy as the work function, and intensity does not change }V_0\); (B) \(\text{takes the stopping potential as the work function}\); (C) \(\text{reverses the effect of intensity}\).
+Key point: \(eV_0=hc/\lambda-\phi;\ \text{intensity changes the current, not }V_0\)
+
+@@ Q67
+format: numerical
+sub_topic: Distance of closest approach of an α-particle to a gold nucleus from energy conservation, and the energy needed to reach the nuclear surface
+Q: An α-particle of kinetic energy 5.0 MeV is fired head-on at a gold nucleus (Z = 79), treated as fixed. What is the distance of closest approach? What kinetic energy would be needed to bring it to 7.0 fm from the centre (roughly the gold nuclear radius), and what happens to the closest approach if the 5.0 MeV energy is doubled? (ke² = 1.44 MeV fm)
+A) About 45 fm; about 32 MeV; it halves
+B) About 23 fm; about 16 MeV; it halves
+C) About 45 fm; about 32 MeV; it is reduced by a factor √2
+D) About 91 fm; about 65 MeV; it doubles
+KEY: A
+SOL:
+Answer: (A) About 45 fm; about 32 MeV; it halves.
+Given: \(K=5.0\ \mathrm{MeV};\ q_\alpha=2e,\ Q=79e;\ ke^2=1.44\ \mathrm{MeV\,fm}\)
+Formula/Principle: \(\text{energy conservation: at closest approach all KE becomes electric PE: }K=\dfrac{k(2e)(79e)}{d}\)
+Step 1: \(k(2)(79)e^2=158\times1.44=227.5\ \mathrm{MeV\,fm}\)
+Step 2: \(d=\dfrac{227.5}{5.0}=45.5\ \mathrm{fm}\)
+Worked derivation: \[K_{7\ \mathrm{fm}}=\frac{227.5}{7.0}=32.5\ \mathrm{MeV};\qquad d\propto\frac1K\Rightarrow K\times2:\ d\to22.8\ \mathrm{fm}\]
+Check: \[45.5\ \mathrm{fm}\gg7\ \mathrm{fm}\Rightarrow\text{at 5 MeV the alpha particle never reaches the nucleus, so pure Coulomb scattering applies}\ \checkmark\]
+Why: \(\text{Rutherford could treat the nucleus as a point charge because his alpha particles stopped far outside it; this distance gave an upper limit on the nuclear size}\)
+Why not the others: (B) \(\text{uses charge e instead of 2e for the alpha particle}\); (C) \(\text{takes d as proportional to }1/\sqrt K\); (D) \(\text{doubles the product of charges, and closest approach decreases as K rises}\).
+Key point: \(d=k(2e)(Ze)/K;\ d\propto1/K\)
+
+@@ Q68
+format: numerical
+sub_topic: Density of nuclear matter from R = R₀A^(1/3), applied to estimate the radius of a neutron star, and the properties of the nuclear force
+Q: Using R = R₀A^(1/3) with R₀ = 1.2 fm and a nucleon mass of 1.67 × 10⁻²⁷ kg, estimate the density of nuclear matter. If a star of mass 2.0 × 10³⁰ kg collapsed to this density (a neutron star), what would its radius be? Which statement about the nuclear force is also correct?
+A) About 2.3 × 10³ kg m⁻³; about 600 km; the nuclear force is long-range like gravity
+B) About 2.3 × 10¹⁷ kg m⁻³; about 1300 km; the nuclear force acts only between protons
+C) About 2.3 × 10¹⁷ kg m⁻³, the same for all nuclei; about 13 km; the nuclear force is very strong, short-range (a few fm), nearly the same between any pair of nucleons, and saturates
+D) About 2.3 × 10¹⁷ kg m⁻³; about 13 km; the nuclear force is weaker than the electric force between protons
+KEY: C
+SOL:
+Answer: (C) ρ ≈ 2.3 × 10¹⁷ kg m⁻³; radius ≈ 13 km; strong, short-range, charge-independent, saturating force.
+Given: \(R_0=1.2\times10^{-15}\ \mathrm m,\ m=1.67\times10^{-27}\ \mathrm{kg},\ M=2.0\times10^{30}\ \mathrm{kg}\)
+Formula/Principle: \(\rho=\dfrac{Am}{\frac43\pi R_0^3A}=\dfrac{3m}{4\pi R_0^3}\ (\text{independent of A});\ R_{\text{star}}=\left(\dfrac{3M}{4\pi\rho}\right)^{1/3}\)
+Step 1: \(\rho=\dfrac{3\times1.67\times10^{-27}}{4\pi\times1.728\times10^{-45}}=\dfrac{5.01\times10^{-27}}{2.17\times10^{-44}}\approx2.3\times10^{17}\ \mathrm{kg\,m^{-3}}\)
+Step 2: \(V=\dfrac{2.0\times10^{30}}{2.3\times10^{17}}=8.7\times10^{12}\ \mathrm{m^3}\)
+Worked derivation: \[R=\left(\frac{3\times8.7\times10^{12}}{4\pi}\right)^{1/3}=(2.08\times10^{12})^{1/3}\approx1.3\times10^4\ \mathrm m\]
+Check: \[\frac43\pi(1.28\times10^4)^3\times2.3\times10^{17}\approx8.8\times10^{12}\times2.3\times10^{17}\approx2.0\times10^{30}\ \mathrm{kg}\ \checkmark\]
+Why: \(\text{nuclear volume is proportional to A, so all nuclei have the same density; this follows from the short range and saturation of the nuclear force, which binds each nucleon only to its near neighbours}\)
+Why not the others: (A) \(\text{misses the factor }10^{-45}\text{ in }R_0^3\text{, and the nuclear force is short-range}\); (B) \(\text{wrong cube root, and the force acts between all nucleons, including neutrons}\); (D) \(\text{the nuclear force is much stronger than the electric repulsion at nuclear distances}\).
+Key point: \(\rho_{\text{nuc}}=3m/(4\pi R_0^3)\approx2.3\times10^{17}\ \mathrm{kg\,m^{-3}}\text{ for all A}\)
+
+@@ Q69
+format: numerical
+sub_topic: Electron and hole concentrations in germanium doped with boron at one part in 10⁷, using the mass action law
+Q: Pure germanium has 4.4 × 10²⁸ atoms m⁻³ and an intrinsic carrier concentration of 2.4 × 10¹⁹ m⁻³ at room temperature. It is doped with boron at a level of one boron atom per 10⁷ germanium atoms. What are the hole and electron concentrations, and what type of semiconductor results?
+A) Holes 2.4 × 10¹⁹ m⁻³, electrons 2.4 × 10¹⁹ m⁻³; intrinsic
+B) Electrons 4.4 × 10²¹ m⁻³, holes 1.3 × 10¹⁷ m⁻³; n-type
+C) Holes 4.4 × 10²¹ m⁻³, electrons about 1.3 × 10¹⁷ m⁻³; p-type
+D) Holes 4.4 × 10²¹ m⁻³, electrons 4.4 × 10²¹ m⁻³; p-type
+KEY: C
+SOL:
+Answer: (C) Holes 4.4 × 10²¹ m⁻³; electrons ≈ 1.3 × 10¹⁷ m⁻³; p-type.
+Given: \(N_{\mathrm{Ge}}=4.4\times10^{28}\ \mathrm{m^{-3}},\ n_i=2.4\times10^{19}\ \mathrm{m^{-3}},\ \text{doping }1:10^7\)
+Formula/Principle: \(\text{trivalent B is an acceptor: }n_h\approx N_A;\ \text{mass action law: }n_en_h=n_i^2\)
+Step 1: \(N_A=\dfrac{4.4\times10^{28}}{10^7}=4.4\times10^{21}\ \mathrm{m^{-3}}\gg n_i\Rightarrow n_h\approx4.4\times10^{21}\ \mathrm{m^{-3}}\)
+Step 2: \(n_e=\dfrac{n_i^2}{n_h}=\dfrac{(2.4\times10^{19})^2}{4.4\times10^{21}}=\dfrac{5.76\times10^{38}}{4.4\times10^{21}}\)
+Worked derivation: \[n_e\approx1.3\times10^{17}\ \mathrm{m^{-3}}\]
+Check: \[n_en_h=1.31\times10^{17}\times4.4\times10^{21}=5.76\times10^{38}=n_i^2\ \checkmark\]
+Why: \(\text{each boron atom accepts an electron from the lattice, creating a hole; the many extra holes recombine with thermally produced electrons, lowering the electron concentration below }n_i\)
+Why not the others: (A) \(\text{ignores the doping}\); (B) \(\text{boron (group 13) creates holes, not free electrons}\); (D) \(\text{electrons and holes are not equal in a doped semiconductor}\).
+Key point: \(\text{acceptor doping: }n_h\approx N_A,\ n_e=n_i^2/N_A\)
+
+@@ Q70
+format: graph
+sub_topic: Average and instantaneous velocity, average speed and turning points from the position–time graph x = t³ − 6t² + 9t
+Q: A particle moves along x with position \(x=t^3-6t^2+9t\) (x in metres, t in seconds). Its x–t graph rises to a peak at t = 1 s, falls to zero at t = 3 s, and rises again. For the interval t = 0 to t = 4 s, what are the average velocity, the instantaneous velocity at t = 2 s, the distance travelled and the average speed?
+A) 1 m s⁻¹; −3 m s⁻¹; 12 m; 3 m s⁻¹
+B) 1 m s⁻¹; +3 m s⁻¹; 4 m; 1 m s⁻¹
+C) 0; −3 m s⁻¹; 12 m; 3 m s⁻¹
+D) 3 m s⁻¹; 0; 12 m; 1 m s⁻¹
+KEY: A
+SOL:
+Answer: (A) 1 m s⁻¹; −3 m s⁻¹; 12 m; 3 m s⁻¹.
+Given: \(x(t)=t^3-6t^2+9t;\ x(0)=0,\ x(1)=4,\ x(3)=0,\ x(4)=4\ \mathrm m\)
+Formula/Principle: \(\bar v=\dfrac{\Delta x}{\Delta t};\ v=\dfrac{dx}{dt}\ (\text{slope of the tangent});\ \text{distance}=\text{sum of }|\Delta x|\text{ between turning points}\)
+Step 1: \(\bar v=\dfrac{4-0}{4}=1\ \mathrm{m\,s^{-1}}\)
+Step 2: \(v=3t^2-12t+9=3(t-1)(t-3);\ v(2)=12-24+9=-3\ \mathrm{m\,s^{-1}}\)
+Worked derivation: \[\text{distance}=|4-0|+|0-4|+|4-0|=12\ \mathrm m;\quad \text{average speed}=\frac{12}{4}=3\ \mathrm{m\,s^{-1}}\]
+Check: \[v=0\text{ at }t=1,3\text{ (peak and trough of the graph), where the particle turns}\ \checkmark\]
+Why: \(\text{average velocity uses only the net displacement, while average speed uses the total path length, which includes the motion back and forth}\)
+Why not the others: (B) \(\text{the slope at t = 2 s is negative (the graph is falling), and the distance is not the displacement}\); (C) \(\text{the net displacement is 4 m, not 0}\); (D) \(\text{confuses average velocity with average speed and puts the turning point at t = 2 s}\).
+Key point: \(\text{average velocity}=\Delta x/\Delta t;\ \text{average speed}=\text{path}/\text{time};\ v=dx/dt\)
+
+@@ Q71
+format: experiment
+sub_topic: Position, velocity and path of a puck on an air table with a constant initial velocity and a perpendicular constant acceleration
+Q: A puck on a level, frictionless air table is moving at 3.0 m s⁻¹ along +x when, at t = 0 and at the origin, a steady air jet begins to give it a constant acceleration of 2.0 m s⁻² along +y. A strobe photograph records its positions. Where is the puck at t = 2.0 s, what is its velocity then, and what is the equation of its path?
+A) \((6.0,\ 2.0)\) m; 3.6 m s⁻¹ at 34° to the x-axis; a straight line \(y=x/3\)
+B) \((6.0,\ 4.0)\) m; 7.0 m s⁻¹; a circle
+C) \((3.0,\ 4.0)\) m; 5.0 m s⁻¹ along +y; \(y=x^2/3\)
+D) \((6.0,\ 4.0)\) m; 5.0 m s⁻¹ at about 53° to the x-axis; a parabola \(y=x^2/9\)
+KEY: D
+SOL:
+Answer: (D) \((6.0,4.0)\) m; 5.0 m s⁻¹ at 53°; \(y=x^2/9\).
+Given: \(\vec u=(3.0,\,0)\ \mathrm{m\,s^{-1}},\ \vec a=(0,\,2.0)\ \mathrm{m\,s^{-2}},\ t=2.0\ \mathrm s\)
+Formula/Principle: \(\vec r=\vec ut+\tfrac12\vec at^2;\ \vec v=\vec u+\vec at\ (\text{each component separately})\)
+Step 1: \(x=3.0\times2.0=6.0\ \mathrm m;\ y=\tfrac12\times2.0\times4.0=4.0\ \mathrm m\)
+Step 2: \(v_x=3.0,\ v_y=2.0\times2.0=4.0\Rightarrow v=5.0\ \mathrm{m\,s^{-1}},\ \tan\theta=\tfrac43\Rightarrow\theta\approx53^\circ\)
+Worked derivation: \[x=3t,\ y=t^2\Rightarrow y=\frac{x^2}{9}\]
+Check: \[x=6.0:\ y=\frac{36}{9}=4.0\ \mathrm m\ \checkmark\]
+Why: \(\text{motion in a plane with constant acceleration splits into independent motions along x (uniform) and y (uniformly accelerated), giving a parabolic path, as for a projectile}\)
+Why not the others: (A) \(\text{omits the factor t in }v_y\text{ and treats y as uniform}\); (B) \(\text{adds the speed components arithmetically}\); (C) \(\text{takes x as }3.0\ \mathrm m\text{ and ignores }v_x\).
+Key point: \(\text{constant }\vec a:\ \vec r=\vec ut+\tfrac12\vec at^2;\ \perp\vec u\text{ gives a parabola}\)
+
+@@ Q72
+format: conceptual
+sub_topic: Minimum speeds and the tension difference between the bottom and top of a vertical circle, for a string and for a rigid rod
+Q: A small mass m moves in a vertical circle of radius R. Which statement is correct?
+A) The minimum speed at the top is zero for a string, because tension can be negative
+B) For a string, the minimum speed at the top is \(\sqrt{gR}\) and at the bottom \(\sqrt{5gR}\); whenever the mass completes the circle, the tension at the bottom exceeds that at the top by 6mg, whatever the speed; for a mass on a light rigid rod, the speed at the top can be almost zero, so the minimum speed at the bottom is \(\sqrt{4gR}\)
+C) The tension is the same at the top and bottom, because the speed is constant
+D) The minimum speed at the bottom is \(\sqrt{2gR}\) for both a string and a rod
+KEY: B
+SOL:
+Answer: (B) String: \(\sqrt{gR}\) at top, \(\sqrt{5gR}\) at bottom, \(T_b-T_t=6mg\); rod: \(\sqrt{4gR}\) at bottom.
+Given: \(\text{radius }R;\ \text{only gravity and tension (or rod force) act; no friction}\)
+Formula/Principle: \(\text{top: }T_t+mg=\dfrac{mv_t^2}{R};\ \text{bottom: }T_b-mg=\dfrac{mv_b^2}{R};\ \text{energy: }v_b^2=v_t^2+4gR\)
+Step 1: \(\text{string: }T_t\ge0\Rightarrow v_t^2\ge gR\Rightarrow v_b^2\ge5gR\)
+Step 2: \(T_b-T_t=\dfrac{m(v_b^2-v_t^2)}{R}+2mg=4mg+2mg=6mg\)
+Worked derivation: \[\text{rod: it can push as well as pull, so }v_t\to0\text{ is allowed}\Rightarrow v_b^2\ge4gR\]
+Check: \[v_t^2=gR:\ T_t=0,\ T_b=6mg\ \checkmark\]
+Why: \(\text{a string can only pull, so at the top gravity alone must be able to provide the centripetal force; a rod can support the mass from below}\)
+Why not the others: (A) \(\text{a string cannot push, so tension cannot be negative}\); (C) \(\text{the speed is not constant in a vertical circle; gravity speeds the mass up on the way down}\); (D) \(\sqrt{2gR}\text{ only lets the mass rise to the level of the centre}\).
+Key point: \(\text{string: }v_t\ge\sqrt{gR},\ v_b\ge\sqrt{5gR},\ T_b-T_t=6mg;\ \text{rod: }v_b\ge\sqrt{4gR}\)
+
+@@ Q73
+format: graph
+sub_topic: Shape of the gravitational potential energy curve outside the Earth and the escape speed derived from it
+Q: Which statement about the graph of gravitational potential energy U of a body of mass m against distance r from the centre of the Earth (r ≥ R), and the escape speed, is correct? (g = 9.8 m s⁻², R = 6.4 × 10⁶ m)
+A) U is positive and decreases as r increases
+B) U is zero at the surface and increases linearly with r for all distances
+C) The escape speed depends on the mass of the body and on the direction in which it is thrown
+D) U = −GMm/r is negative, rising towards zero as r → ∞ (a curve that is steep near the surface and flattens out); a body escapes if its kinetic energy can make its total energy zero, giving \(v_e=\sqrt{2GM/R}=\sqrt{2gR}\approx11.2\ \mathrm{km\,s^{-1}}\), independent of its mass and of the direction of launch (ignoring air)
+KEY: D
+SOL:
+Answer: (D) U negative, rising to zero; \(v_e=\sqrt{2gR}\approx11.2\ \mathrm{km\,s^{-1}}\).
+Given: \(U(r)=-\dfrac{GMm}{r}\ (U=0\text{ at infinity});\ g=\dfrac{GM}{R^2}\)
+Formula/Principle: \(\text{escape: }\tfrac12mv_e^2-\dfrac{GMm}{R}=0\)
+Step 1: \(v_e=\sqrt{\dfrac{2GM}{R}}=\sqrt{2gR}\)
+Step 2: \(v_e=\sqrt{2\times9.8\times6.4\times10^6}=\sqrt{1.25\times10^8}\)
+Worked derivation: \[v_e\approx1.12\times10^4\ \mathrm{m\,s^{-1}}=11.2\ \mathrm{km\,s^{-1}}\]
+Check: \[\text{near the surface, }\Delta U\approx mgh\text{ (the curve looks linear over small heights)}\ \checkmark\]
+Why: \(\text{energy is a scalar, so the direction of launch does not matter; both KE and PE are proportional to m, so m cancels}\)
+Why not the others: (A) \(\text{with }U=0\text{ at infinity, U is negative and increases with r}\); (B) \(mgh\text{ is only a near-surface approximation}\); (C) \(m\text{ cancels, and direction does not enter an energy balance}\).
+Key point: \(U=-GMm/r;\ v_e=\sqrt{2gR}\approx11.2\ \mathrm{km\,s^{-1}}\)
+
+@@ Q74
+format: experiment
+sub_topic: Finding the viscosity of glycerine from the terminal speed of a falling steel ball using Stokes' law
+Q: A steel ball of radius 1.0 mm (density 7800 kg m⁻³) is dropped into a tall jar of glycerine (density 1260 kg m⁻³). After a short distance it falls at a steady 1.0 cm s⁻¹. What is the viscosity of glycerine, and what is the net force on the ball while it falls at this steady speed? (g = 10 m s⁻²)
+A) 0.15 Pa s; equal to its weight
+B) About 1.5 Pa s; zero, because weight is balanced by buoyancy plus viscous drag
+C) About 1.5 Pa s; equal to the buoyant force
+D) 14.5 Pa s; zero
+KEY: B
+SOL:
+Answer: (B) About 1.5 Pa s; the net force is zero.
+Given: \(r=1.0\times10^{-3}\ \mathrm m,\ \rho=7800,\ \sigma=1260\ \mathrm{kg\,m^{-3}},\ v_t=1.0\times10^{-2}\ \mathrm{m\,s^{-1}},\ g=10\ \mathrm{m\,s^{-2}}\)
+Formula/Principle: \(\text{at terminal speed: }\tfrac43\pi r^3\rho g=\tfrac43\pi r^3\sigma g+6\pi\eta rv_t\Rightarrow\eta=\dfrac{2r^2(\rho-\sigma)g}{9v_t}\)
+Step 1: \(2r^2(\rho-\sigma)g=2\times10^{-6}\times6540\times10=0.1308\)
+Step 2: \(9v_t=9\times10^{-2}=0.09\)
+Worked derivation: \[\eta=\frac{0.1308}{0.09}\approx1.45\ \mathrm{Pa\,s}\]
+Check: \[\text{drag}=6\pi\eta rv_t=6\pi\times1.45\times10^{-3}\times10^{-2}=2.74\times10^{-4}\ \mathrm N;\ \text{weight}-\text{buoyancy}=\tfrac43\pi(10^{-9})(6540)(10)=2.74\times10^{-4}\ \mathrm N\ \checkmark\]
+Why: \(\text{the drag grows with speed until the forces balance; after that the ball moves with constant velocity (zero acceleration)}\)
+Why not the others: (A) \(\text{a factor of 10 error, and at terminal speed the net force is zero}\); (C) \(\text{there is no net force at terminal speed}\); (D) \(\text{uses }v_t=1.0\times10^{-3}\ \mathrm{m\,s^{-1}}\).
+Key point: \(\eta=2r^2(\rho-\sigma)g/(9v_t);\ \text{net force zero at terminal speed}\)
+
+@@ Q75
+format: numerical
+sub_topic: Junction temperature and heat current for two rods of different conductivity joined in series, compared with the same rods in parallel
+Q: Two rods of the same length and cross-section have thermal conductivities k₁ = 2k and k₂ = k. (i) They are joined end to end, with the free end of rod 1 at 100 °C and that of rod 2 at 0 °C. (ii) They are placed side by side between the same two reservoirs. What is the junction temperature in (i), and what is the ratio of the total heat current in (ii) to that in (i)? (No heat is lost from the sides.)
+A) About 66.7 °C; 4.5
+B) 50 °C; 2
+C) About 33.3 °C; 4.5
+D) About 66.7 °C; 2
+KEY: A
+SOL:
+Answer: (A) About 66.7 °C; 4.5.
+Given: \(k_1=2k,\ k_2=k;\ \text{same }L,\ A;\ T_H=100^\circ\mathrm C,\ T_C=0^\circ\mathrm C\)
+Formula/Principle: \(H=\dfrac{kA\Delta T}{L};\ \text{in series, the same H flows through both rods}\)
+Step 1: \(2k(100-T)=k(T-0)\Rightarrow200=3T\Rightarrow T=66.7^\circ\mathrm C\)
+Step 2: \(H_s=\dfrac{kA}{L}(66.7)=\dfrac23\cdot\dfrac{kA\times100}{L}\)
+Worked derivation: \[H_p=(2k+k)\frac{A\times100}{L}=3\cdot\frac{kA\times100}{L};\qquad \frac{H_p}{H_s}=\frac{3}{2/3}=4.5\]
+Check: \[\text{series thermal resistances: }\frac{L}{2kA}+\frac{L}{kA}=\frac{3L}{2kA}\Rightarrow H_s=\frac{2kA\times100}{3L}\ \checkmark\]
+Why: \(\text{the better conductor needs a smaller temperature drop to carry the same heat, so the junction is closer to the hot end}\)
+Why not the others: (B) \(\text{assumes equal conductivities}\); (C) \(\text{puts the larger temperature drop across the better conductor}\); (D) \(\text{the junction is right, but series and parallel resistances combine differently, giving 4.5}\).
+Key point: \(\text{series: same H, add }L/kA;\ \text{parallel: add }kA/L\)
+
+@@ Q76
+format: numerical
+sub_topic: Heat, work and internal energy change when 2 mol of a monatomic gas is heated by 50 K at constant volume and at constant pressure
+Q: Two moles of a monatomic ideal gas are heated by 50 K, once at constant volume and once at constant pressure. What are the heat supplied, the work done by the gas and the change in internal energy in each case? (R = 8.31 J mol⁻¹ K⁻¹)
+A) Constant V: 1247 J, 0, 1247 J; constant P: 2078 J, 831 J, 2078 J
+B) Constant V: 2078 J, 831 J, 1247 J; constant P: 1247 J, 0, 1247 J
+C) Constant V: Q = 1247 J, W = 0, ΔU = 1247 J; constant P: Q = 2078 J, W = 831 J, ΔU = 1247 J
+D) Both cases: Q = 1247 J, W = 0, ΔU = 1247 J
+KEY: C
+SOL:
+Answer: (C) V constant: 1247 J, 0, 1247 J; P constant: 2078 J, 831 J, 1247 J.
+Given: \(n=2,\ \Delta T=50\ \mathrm K;\ C_v=\tfrac32R,\ C_p=\tfrac52R\ (\text{monatomic})\)
+Formula/Principle: \(\Delta U=nC_v\Delta T\ (\text{any process});\ Q=\Delta U+W;\ W=P\Delta V=nR\Delta T\text{ at constant P}\)
+Step 1: \(\Delta U=2\times\tfrac32\times8.31\times50=1247\ \mathrm J\ (\text{same in both cases})\)
+Step 2: \(\text{constant V: }W=0,\ Q=1247\ \mathrm J\)
+Worked derivation: \[\text{constant P: }W=2\times8.31\times50=831\ \mathrm J;\quad Q=nC_p\Delta T=2\times\tfrac52\times8.31\times50=2078\ \mathrm J=1247+831\]
+Check: \[Q_p-Q_v=nR\Delta T=831\ \mathrm J\ (\text{this is why }C_p-C_v=R)\ \checkmark\]
+Why: \(\text{internal energy of an ideal gas depends only on temperature, so it changes equally; at constant pressure extra heat is needed for the work of expansion}\)
+Why not the others: (A) \(\Delta U\text{ is the same for the same temperature change}\); (B) \(\text{swaps the two cases}\); (D) \(\text{at constant pressure the gas expands and does work}\).
+Key point: \(\Delta U=nC_v\Delta T\text{ always};\ Q_p=Q_v+nR\Delta T\)
+
+@@ Q77
+format: numerical
+sub_topic: Amplitude, period, initial displacement and velocity, maximum acceleration and first time at the extreme for x = 0.05 sin(10πt + π/6)
+Q: A particle moves in simple harmonic motion according to \(x=0.05\sin\left(10\pi t+\dfrac\pi6\right)\), with x in metres and t in seconds. What are its period, its displacement and velocity at t = 0, its maximum acceleration, and the first time after t = 0 at which it is at x = +0.05 m?
+A) 0.20 s; 0.025 m and about 1.36 m s⁻¹; about 49 m s⁻²; \(\tfrac1{30}\) s
+B) 0.10 s; 0.043 m and 0.79 m s⁻¹; about 49 m s⁻²; \(\tfrac1{20}\) s
+C) 0.20 s; 0.025 m and 1.57 m s⁻¹; about 4.9 m s⁻²; \(\tfrac1{20}\) s
+D) 5.0 s; 0.025 m and about 1.36 m s⁻¹; about 49 m s⁻²; \(\tfrac1{60}\) s
+KEY: A
+SOL:
+Answer: (A) 0.20 s; 0.025 m and 1.36 m s⁻¹; 49 m s⁻²; 1/30 s.
+Given: \(A=0.05\ \mathrm m,\ \omega=10\pi\ \mathrm{rad\,s^{-1}},\ \phi=\tfrac\pi6\)
+Formula/Principle: \(T=\dfrac{2\pi}\omega;\ v=A\omega\cos(\omega t+\phi);\ a_{\max}=A\omega^2\)
+Step 1: \(T=\dfrac{2\pi}{10\pi}=0.20\ \mathrm s;\ x(0)=0.05\sin\tfrac\pi6=0.025\ \mathrm m\)
+Step 2: \(v(0)=0.05\times10\pi\times\cos\tfrac\pi6=1.571\times0.866=1.36\ \mathrm{m\,s^{-1}}\)
+Worked derivation: \[a_{\max}=0.05\times(10\pi)^2=49.3\ \mathrm{m\,s^{-2}};\qquad 10\pi t+\tfrac\pi6=\tfrac\pi2\Rightarrow t=\frac{\pi/3}{10\pi}=\frac1{30}\ \mathrm s\]
+Check: \[v^2=\omega^2(A^2-x^2)=(10\pi)^2(0.0025-0.000625)\Rightarrow v=31.42\times0.0433=1.36\ \mathrm{m\,s^{-1}}\ \checkmark\]
+Why: \(\text{the initial phase }\pi/6\text{ means the particle starts part of the way towards the positive extreme, moving outward, so it reaches }+A\text{ after a phase change of }\pi/3\)
+Why not the others: (B) \(\text{uses }T=\pi/\omega\text{ and the cosine for the displacement}\); (C) \(\text{ignores the phase in }v(0)\text{ and misplaces a factor of 10 in }a_{\max}\); (D) \(\text{gives the frequency (5 Hz) as the period}\).
+Key point: \(x=A\sin(\omega t+\phi):\ v=A\omega\cos(\cdot),\ a_{\max}=A\omega^2\)
+
+@@ Q78
+format: conceptual
+sub_topic: Reflection of a pulse at fixed and free ends and at a junction of strings, and superposition of crossing pulses
+Q: Which statement about pulses on strings is correct?
+A) A pulse reflected from a fixed end returns upright, and from a free end it returns inverted
+B) When two pulses meet, they bounce off each other and reverse direction
+C) A pulse going from a heavy string into a light string is reflected inverted
+D) A pulse reflected from a rigidly fixed end returns inverted (a phase change of π), while one reflected from a free end returns upright; at a junction where a light string joins a heavier one, the reflected pulse is inverted and the transmitted pulse is upright; two pulses that meet add their displacements while overlapping and then continue unchanged
+KEY: D
+SOL:
+Answer: (D) Fixed end: inverted; free end: upright; light-to-heavy junction: reflected inverted, transmitted upright; pulses pass through each other.
+Given: \(\text{incident pulse }y_i=f(x-vt);\ \text{superposition: }y=y_1+y_2\)
+Formula/Principle: \(\text{fixed end: }y=0\text{ there at all times}\Rightarrow y_r=-f(-x-vt);\ \text{free end: slope zero}\Rightarrow y_r=+f(-x-vt)\)
+Step 1: \(\text{at a fixed end the support pulls the string the opposite way, so the reflected pulse is inverted (phase change }\pi)\)
+Step 2: \(\text{at a free end the string overshoots and the pulse returns upright (no phase change)}\)
+Worked derivation: \[\text{junction: }r=\frac{v_2-v_1}{v_1+v_2},\ t=\frac{2v_2}{v_1+v_2};\ \text{light}\to\text{heavy: }v_2<v_1\Rightarrow r<0\ (\text{inverted}),\ t>0\ (\text{upright})\]
+Check: \[v_2\to0\ (\text{infinitely heavy, i.e. fixed end}):\ r\to-1\ (\text{inverted, full amplitude})\ \checkmark\]
+Why: \(\text{waves on a string obey the principle of superposition, so overlapping pulses simply add and then separate unchanged}\)
+Why not the others: (A) \(\text{reverses the two cases}\); (B) \(\text{pulses pass through each other}\); (C) \(\text{from a heavy string to a light one, the reflected pulse is upright}\).
+Key point: \(\text{fixed end or denser medium: reflected inverted; free end or rarer medium: upright}\)
+
+@@ Q79
+format: experiment
+sub_topic: Electric flux through the faces of a cube with a charge at its centre, displaced inside it, or outside it
+Q: A point charge q is placed at the centre of an imaginary cube. Which statement about the electric flux through the cube is correct?
+A) The flux through each face is \(q/\varepsilon_0\)
+B) The flux through each face is \(q/6\varepsilon_0\); if the charge is moved off-centre but stays inside, the total flux is still \(q/\varepsilon_0\), though the face fluxes become unequal; if the charge is moved outside the cube, the total flux through the cube is zero
+C) If the charge is moved off-centre inside the cube, the total flux changes
+D) If the charge is outside the cube, the total flux through the cube is \(q/\varepsilon_0\)
+KEY: B
+SOL:
+Answer: (B) \(q/6\varepsilon_0\) per face; total \(q/\varepsilon_0\) for any position inside; zero for a charge outside.
+Given: \(\text{closed cubic surface; point charge q}\)
+Formula/Principle: \(\text{Gauss's law: }\oint\vec E\cdot d\vec A=\dfrac{q_{\text{enc}}}{\varepsilon_0}\)
+Step 1: \(\text{charge at the centre: by symmetry each of the 6 faces receives an equal share}\)
+Step 2: \(\Phi_{\text{face}}=\dfrac{1}{6}\cdot\dfrac{q}{\varepsilon_0}\)
+Worked derivation: \[\text{charge outside: }q_{\text{enc}}=0\Rightarrow\oint\vec E\cdot d\vec A=0\ (\text{field lines entering also leave})\]
+Check: \[\text{charge inside but off-centre: }q_{\text{enc}}=q\Rightarrow\text{total}=q/\varepsilon_0\text{ still}\ \checkmark\]
+Why: \(\text{the total flux depends only on the enclosed charge, not on its position or the shape of the surface; the individual face fluxes depend on position}\)
+Why not the others: (A) \(q/\varepsilon_0\text{ is the total, not the flux through each face}\); (C) \(\text{the total depends only on the enclosed charge}\); (D) \(\text{an outside charge encloses nothing}\).
+Key point: \(\Phi_{\text{total}}=q_{\text{enc}}/\varepsilon_0;\ \text{symmetry shares it among faces}\)
+
+@@ Q80
+format: numerical
+sub_topic: Charge, voltage and stored energy for 2 µF and 3 µF capacitors connected in series and in parallel to 10 V
+Q: Capacitors of 2.0 µF and 3.0 µF are connected (i) in series and (ii) in parallel across a 10 V battery. What are the equivalent capacitance, the charge on each capacitor and the total energy stored in each arrangement?
+A) Series: 5.0 µF, 20 µC and 30 µC, 250 µJ; parallel: 1.2 µF, 12 µC each, 60 µJ
+B) Series: 1.2 µF, 12 µC each, 120 µJ; parallel: 5.0 µF, 50 µC each, 500 µJ
+C) Series: 1.2 µF, 12 µC on each (6.0 V and 4.0 V across them), 60 µJ; parallel: 5.0 µF, 20 µC and 30 µC, 250 µJ
+D) Series: 1.2 µF, 6.0 µC on each, 30 µJ; parallel: 5.0 µF, 20 µC and 30 µC, 250 µJ
+KEY: C
+SOL:
+Answer: (C) Series: 1.2 µF, 12 µC each, 60 µJ; parallel: 5.0 µF, 20 and 30 µC, 250 µJ.
+Given: \(C_1=2.0\ \mu\mathrm F,\ C_2=3.0\ \mu\mathrm F,\ V=10\ \mathrm V\)
+Formula/Principle: \(\text{series: }\dfrac1C=\dfrac1{C_1}+\dfrac1{C_2},\ \text{same Q};\ \text{parallel: }C=C_1+C_2,\ \text{same V};\ U=\tfrac12CV^2\)
+Step 1: \(\text{series: }C=\dfrac{2\times3}{5}=1.2\ \mu\mathrm F;\ Q=12\ \mu\mathrm C;\ V_1=\dfrac{12}{2}=6.0\ \mathrm V,\ V_2=\dfrac{12}{3}=4.0\ \mathrm V\)
+Step 2: \(U_s=\tfrac12\times1.2\times10^{-6}\times100=60\ \mu\mathrm J\)
+Worked derivation: \[\text{parallel: }C=5.0\ \mu\mathrm F;\ Q_1=20\ \mu\mathrm C,\ Q_2=30\ \mu\mathrm C;\ U_p=\tfrac12\times5.0\times10^{-6}\times100=250\ \mu\mathrm J\]
+Check: \[\text{series: }6.0+4.0=10\ \mathrm V\ \checkmark;\ \text{parallel: }20+30=50\ \mu\mathrm C=5.0\times10\ \checkmark\]
+Why: \(\text{in series the smaller capacitor takes the larger share of the voltage; in parallel each capacitor has the full voltage, so much more energy is stored}\)
+Why not the others: (A) \(\text{swaps the series and parallel rules}\); (B) \(\text{omits the factor }\tfrac12\text{ in the energy and puts equal charges in parallel}\); (D) \(\text{halves the series charge}\).
+Key point: \(\text{series: same Q, }1/C\text{ adds; parallel: same V, C adds; }U=\tfrac12CV^2\)

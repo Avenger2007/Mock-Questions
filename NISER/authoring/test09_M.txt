@@ -1,0 +1,419 @@
+@@ Q41
+format: numerical
+sub_topic: The other end and length of a focal chord of y² = 12x, compared with the latus rectum as the shortest focal chord
+Q: For the parabola \(y^2=12x\), a focal chord has one end at \((27,18)\). What is its other end, what is its length, and how does it compare with the latus rectum?
+A) \(\left(\tfrac13,-2\right)\); \(\tfrac{100}3\); longer than the latus rectum (length 12), which is the shortest focal chord
+B) \((3,-6)\); 12; equal to the latus rectum
+C) \(\left(\tfrac13,2\right)\); \(\tfrac{80}3\); shorter than the latus rectum
+D) \((-27,-18)\); \(60\); the latus rectum is the longest focal chord
+KEY: A
+SOL:
+Answer: (A) \(\left(\tfrac13,-2\right)\); \(\tfrac{100}3\); the latus rectum (12) is the shortest focal chord.
+Given: \(y^2=4ax,\ a=3;\ \text{point }(at^2,2at)=(27,18)\Rightarrow t=3\)
+Formula/Principle: \(\text{ends of a focal chord: }t_1t_2=-1;\ \text{length}=a\left(t+\tfrac1t\right)^2\)
+Step 1: \(t_2=-\tfrac13\Rightarrow\left(3\cdot\tfrac19,\ 6\cdot\left(-\tfrac13\right)\right)=\left(\tfrac13,-2\right)\)
+Step 2: \(\text{length}=3\left(3+\tfrac13\right)^2=3\cdot\tfrac{100}9=\tfrac{100}3\)
+Worked derivation: \[\text{focal distances: }(27+3)+\left(\tfrac13+3\right)=\tfrac{100}3;\qquad a\left(t+\tfrac1t\right)^2\ge a(2)^2=4a=12\ \text{at }t=1\]
+Check: \[\sqrt{\left(\tfrac{80}3\right)^2+20^2}=\sqrt{\tfrac{6400+3600}9}=\tfrac{100}3\ \checkmark\]
+Why: \(t+\tfrac1t\ge2\text{ for }t>0\text{, so the length is least when }t=1\text{, the latus rectum }x=a\)
+Why not the others: (B) \(\text{these are the latus-rectum ends, not the other end of this chord}\); (C) \(\text{sign error in the y-coordinate, which puts the point off the line through the focus}\); (D) \((-27,-18)\text{ is not on the parabola (x must be }\ge0)\).
+Key point: \(\text{focal chord: }t_1t_2=-1;\ \text{length }a(t+1/t)^2\ge4a\)
+
+@@ Q42
+format: numerical
+sub_topic: Two trigonometric limits needing more than sin x / x → 1: (tan x − sin x)/x³ and cos x/(π/2 − x)
+Q: What are \(\displaystyle\lim_{x\to0}\frac{\tan x-\sin x}{x^3}\) and \(\displaystyle\lim_{x\to\pi/2}\frac{\cos x}{\frac\pi2-x}\)?
+A) \(0\) and \(1\)
+B) \(\tfrac12\) and \(1\)
+C) \(\tfrac12\) and \(0\)
+D) \(1\) and \(-1\)
+KEY: B
+SOL:
+Answer: (B) \(\tfrac12\) and \(1\).
+Given: \(\displaystyle\lim_{\theta\to0}\frac{\sin\theta}\theta=1,\ \lim_{\theta\to0}\frac{1-\cos\theta}{\theta^2}=\frac12\)
+Formula/Principle: \(\tan x-\sin x=\tan x\,(1-\cos x);\ \text{substitute }h=\tfrac\pi2-x\text{ in the second limit}\)
+Step 1: \(\dfrac{\tan x(1-\cos x)}{x^3}=\dfrac{\tan x}{x}\cdot\dfrac{1-\cos x}{x^2}\to1\cdot\tfrac12\)
+Step 2: \(\cos x=\cos\left(\tfrac\pi2-h\right)=\sin h\Rightarrow\dfrac{\sin h}{h}\to1\text{ as }h\to0\)
+Worked derivation: \[\lim_{x\to0}\frac{\tan x-\sin x}{x^3}=\frac12,\qquad\lim_{x\to\pi/2}\frac{\cos x}{\frac\pi2-x}=1\]
+Check: \[x=0.1:\ \frac{0.100335-0.099833}{0.001}=0.502\approx\tfrac12\ \checkmark\]
+Why: \(\text{splitting }\tan x-\sin x\text{ into a product shows the numerator is of order }x^3\text{, not zero to that order}\)
+Why not the others: (A) \(\text{treats }\tan x\approx\sin x\approx x\text{ so the numerator vanishes, an error at order }x^3\); (C) \(\text{the second limit is a }0/0\text{ form equal to 1}\); (D) \(\text{wrong constants and a sign error in the substitution}\).
+Key point: \(\tan x-\sin x=\tan x(1-\cos x)\sim x^3/2;\ \text{shift to }h\to0\)
+
+@@ Q43
+format: numerical
+sub_topic: Mean deviation about the mean and range of a data set, and how both change under y = 5 − 2x
+Q: For the observations 3, 7, 8, 10 and 12, what is the mean deviation about the mean? If each observation x is replaced by \(y=5-2x\), what are the new mean deviation and range?
+A) 2.4; −4.8; −18
+B) 2.0; 4.0; 18
+C) 2.4; 4.8; 18
+D) 2.4; 4.8; 9
+KEY: C
+SOL:
+Answer: (C) 2.4; 4.8; 18.
+Given: \(x:3,7,8,10,12;\ n=5\)
+Formula/Principle: \(\text{MD}=\dfrac1n\sum|x_i-\bar x|;\ y=a+bx\Rightarrow\text{MD}_y=|b|\,\text{MD}_x,\ \text{range}_y=|b|\,\text{range}_x\)
+Step 1: \(\bar x=\dfrac{40}5=8;\ |x_i-8|:5,1,0,2,4;\ \text{sum}=12\Rightarrow\text{MD}=2.4\)
+Step 2: \(b=-2\Rightarrow\text{MD}_y=2\times2.4=4.8\)
+Worked derivation: \[\text{range}_x=12-3=9\Rightarrow\text{range}_y=|{-2}|\times9=18\]
+Check: \[y:-1,-9,-11,-15,-19;\ \bar y=-11;\ |y-\bar y|:10,2,0,4,8\Rightarrow\text{MD}=\tfrac{24}5=4.8\ \checkmark\]
+Why: \(\text{adding a constant shifts all values equally; multiplying by b stretches all distances by }|b|\text{, whatever its sign}\)
+Why not the others: (A) \(\text{measures of spread cannot be negative}\); (B) \(\text{miscounts one deviation}\); (D) \(\text{forgets to scale the range}\).
+Key point: \(y=a+bx:\ \text{MD and range multiply by }|b|\)
+
+@@ Q44
+format: numerical
+sub_topic: How P(A ∪ B) and P(exactly one) vary with P(B) for independent events when P(A) = 1/2
+Q: Events A and B are independent, with \(P(A)=\tfrac12\) and \(P(B)=p\), where \(0\le p\le1\). How do \(P(A\cup B)\) and \(P(\text{exactly one of }A,B)\) depend on p?
+A) Both equal \(\tfrac12+p\)
+B) \(P(A\cup B)=\tfrac12+p\); \(P(\text{exactly one})=p\)
+C) \(P(A\cup B)=\tfrac12+\tfrac p2\); \(P(\text{exactly one})=\tfrac p2\)
+D) \(P(A\cup B)=\tfrac12+\tfrac p2\), increasing linearly from \(\tfrac12\) to 1; \(P(\text{exactly one})=\tfrac12\) for every p
+KEY: D
+SOL:
+Answer: (D) \(P(A\cup B)=\tfrac12+\tfrac p2\); \(P(\text{exactly one})=\tfrac12\) for all p.
+Given: \(P(A)=\tfrac12,\ P(B)=p;\ \text{independent}\Rightarrow P(A\cap B)=\tfrac p2\)
+Formula/Principle: \(P(A\cup B)=P(A)+P(B)-P(A\cap B);\ P(\text{exactly one})=P(A)+P(B)-2P(A\cap B)\)
+Step 1: \(P(A\cup B)=\tfrac12+p-\tfrac p2=\tfrac12+\tfrac p2\)
+Step 2: \(P(\text{exactly one})=\tfrac12+p-p=\tfrac12\)
+Worked derivation: \[P(A\cap B^c)+P(A^c\cap B)=\tfrac12(1-p)+\tfrac12p=\tfrac12\]
+Check: \[p=0:\ P(A\cup B)=\tfrac12=P(A)\ \checkmark;\quad p=1:\ P(A\cup B)=1\ \checkmark\]
+Why: \(\text{with }P(A)=\tfrac12\text{, whatever happens with B, exactly one occurs precisely when A's outcome differs from B's, which has probability }\tfrac12\)
+Why not the others: (A) \(\text{ignores the overlap and can exceed 1}\); (B) \(\text{forgets to subtract }P(A\cap B)\); (C) \(\text{the union is right but exactly-one is not }p/2\).
+Key point: \(\text{independent: }P(A\cap B)=P(A)P(B)\)
+
+@@ Q45
+format: numerical
+sub_topic: Finding the unknown number of red balls in one urn from the overall probability of red, then the reverse (Bayes) probability
+Q: Urn I has 3 red and 2 black balls; urn II has x red and 2 black balls. A fair coin decides the urn, and one ball is drawn. If the probability of drawing a red ball is \(\tfrac7{10}\), what is x, and given that the ball drawn is red, what is the probability it came from urn I?
+A) \(x=4;\ \tfrac12\)
+B) \(x=6;\ \tfrac37\)
+C) \(x=8;\ \tfrac37\)
+D) \(x=8;\ \tfrac35\)
+KEY: C
+SOL:
+Answer: (C) \(x=8;\ \tfrac37\).
+Given: \(P(E_1)=P(E_2)=\tfrac12;\ P(R\mid E_1)=\tfrac35,\ P(R\mid E_2)=\tfrac{x}{x+2};\ P(R)=\tfrac7{10}\)
+Formula/Principle: \(\text{total probability: }P(R)=\sum P(E_i)P(R\mid E_i);\ \text{Bayes: }P(E_1\mid R)=\dfrac{P(E_1)P(R\mid E_1)}{P(R)}\)
+Step 1: \(\tfrac12\cdot\tfrac35+\tfrac12\cdot\tfrac{x}{x+2}=\tfrac7{10}\Rightarrow\tfrac{x}{x+2}=\tfrac45\)
+Step 2: \(5x=4x+8\Rightarrow x=8\)
+Worked derivation: \[P(E_1\mid R)=\frac{\frac12\cdot\frac35}{\frac7{10}}=\frac{3/10}{7/10}=\frac37\]
+Check: \[\tfrac12\cdot\tfrac35+\tfrac12\cdot\tfrac8{10}=0.3+0.4=0.7\ \checkmark\]
+Why: \(\text{the overall probability is a weighted average of the urn probabilities, so it fixes the unknown urn's probability}\)
+Why not the others: (A) \(x=4\text{ gives }P(R)=\tfrac{19}{30}\); (B) \(x=6\text{ gives }P(R)=\tfrac{27}{40}\); (D) \(\tfrac35\text{ is }P(R\mid E_1)\text{, not }P(E_1\mid R)\).
+Key point: \(P(R)=\sum P(E_i)P(R\mid E_i);\ \text{then Bayes reverses it}\)
+
+@@ Q46
+format: numerical
+sub_topic: Finding unknown entries of a 3 × 3 matrix from the cofactors of its first row and its determinant
+Q: A \(3\times3\) matrix has first row \((a,1,4)\) and second row \((1,b,2)\). The cofactors of the elements of its first row are \(2,-3\) and \(1\), and its determinant is 5. What are a and b?
+A) \(a=2,\ b=\tfrac43\)
+B) \(a=2,\ b=0\)
+C) \(a=1,\ b=\tfrac43\)
+D) \(a=\tfrac52,\ b=-\tfrac43\)
+KEY: A
+SOL:
+Answer: (A) \(a=2,\ b=\tfrac43\).
+Given: \(C_{11}=2,\ C_{12}=-3,\ C_{13}=1;\ \det=5\)
+Formula/Principle: \(\det=a_{11}C_{11}+a_{12}C_{12}+a_{13}C_{13};\ \text{elements of one row times cofactors of a different row sum to }0\)
+Step 1: \(2a+1(-3)+4(1)=5\Rightarrow2a+1=5\Rightarrow a=2\)
+Step 2: \(1(2)+b(-3)+2(1)=0\Rightarrow4-3b=0\)
+Worked derivation: \[b=\tfrac43\]
+Check: \[\text{row 2 with row-1 cofactors is the determinant of a matrix with two equal rows, so it must be }0\ \checkmark\]
+Why: \(\text{replacing row 1 by row 2 and expanding along row 1 gives a determinant with two identical rows}\)
+Why not the others: (B) \(\text{sets the row-2 expansion equal to the determinant instead of 0}\); (C) \(\text{solves }a+1=2\text{ by dropping the cofactor 2}\); (D) \(\text{uses }+3\text{ for }C_{12}\).
+Key point: \(\sum_ja_{ij}C_{kj}=\det\text{ if }i=k,\ 0\text{ if }i\ne k\)
+
+@@ Q47
+format: numerical
+sub_topic: Area of a triangle by determinants as a function of one coordinate, and the collinear case
+Q: For the points \(P(1,2),\ Q(3,k),\ R(5,6)\), for which k are they collinear, and for which k is the area of triangle PQR equal to 8?
+A) \(k=4\); \(k=0\) only
+B) \(k=-4\); \(k=0\text{ or }k=8\)
+C) \(k=6\); \(k=2\text{ or }k=10\)
+D) \(k=4\); \(k=0\text{ or }k=8\)
+KEY: D
+SOL:
+Answer: (D) \(k=4\); \(k=0\) or \(k=8\).
+Given: \(P(1,2),\ Q(3,k),\ R(5,6)\)
+Formula/Principle: \(\text{area}=\tfrac12\left|\begin{vmatrix}1&2&1\\3&k&1\\5&6&1\end{vmatrix}\right|\)
+Step 1: \(\text{determinant}=1(k-6)-2(3-5)+1(18-5k)=k-6+4+18-5k=16-4k\)
+Step 2: \(\text{area}=\tfrac12|16-4k|=|8-2k|;\ \text{collinear}\iff k=4\)
+Worked derivation: \[|8-2k|=8\Rightarrow k=0\text{ or }k=8\]
+Check: \[k=4:\ Q=(3,4)\text{ is the midpoint of PR}\ \checkmark;\quad k=0:\ \tfrac12|16|=8\ \checkmark\]
+Why: \(\text{the area is zero exactly when the three points lie on one line; the modulus gives two positions of Q, one on each side of PR}\)
+Why not the others: (A) \(\text{forgets the absolute value, missing }k=8\); (B) \(\text{sign error in the collinear value}\); (C) \(\text{miscomputes the determinant}\).
+Key point: \(\text{area}=\tfrac12|\det|;\ \text{zero means collinear; the modulus gives two solutions}\)
+
+@@ Q48
+format: numerical
+sub_topic: Values of k for which y = x^k satisfies a second-order equation, and a combination of the solutions
+Q: For which values of k does \(y=x^k\ (x>0)\) satisfy \(x^2y''-4xy'+6y=0\)? Does \(y=2x^2-x^3\) also satisfy it?
+A) \(k=1,6\); no
+B) \(k=2,3\); yes
+C) \(k=2,3\); no, because a combination of solutions is never a solution
+D) \(k=-2,-3\); yes
+KEY: B
+SOL:
+Answer: (B) \(k=2,3\); yes.
+Given: \(y=x^k,\ y'=kx^{k-1},\ y''=k(k-1)x^{k-2}\)
+Formula/Principle: \(\text{substitute and divide by }x^k\)
+Step 1: \(k(k-1)x^k-4kx^k+6x^k=0\Rightarrow k^2-5k+6=0\)
+Step 2: \((k-2)(k-3)=0\Rightarrow k=2,3\)
+Worked derivation: \[y=2x^2-x^3:\ y'=4x-3x^2,\ y''=4-6x;\ x^2(4-6x)-4x(4x-3x^2)+6(2x^2-x^3)=(4-16+12)x^2+(-6+12-6)x^3=0\]
+Check: \[k=2:\ 2-8+6=0\ \checkmark;\ k=3:\ 6-12+6=0\ \checkmark\]
+Why: \(\text{the equation is linear in y, so any combination }c_1x^2+c_2x^3\text{ is also a solution}\)
+Why not the others: (A) \(\text{solves }k^2-7k+6=0\text{ (sign slip)}\); (C) \(\text{for a linear equation, combinations of solutions are solutions}\); (D) \(\text{signs of the roots reversed}\).
+Key point: \(\text{try }y=x^k;\ \text{linear equations allow combinations of solutions}\)
+
+@@ Q49
+format: numerical
+sub_topic: Points of discontinuity of f(x) = [x] + [−x], and whether they are removable
+Q: Let \([\,\cdot\,]\) denote the greatest integer function and \(f(x)=[x]+[-x]\). Which statement describes f correctly?
+A) f is continuous everywhere and equals 0 for all x
+B) \(f(x)=0\) at integers and \(-1\) elsewhere, so f is discontinuous at every integer, and each discontinuity is removable (the limit exists and equals \(-1\))
+C) f is discontinuous at every real number
+D) \(f(x)=-1\) at integers and 0 elsewhere, with jump discontinuities
+KEY: B
+SOL:
+Answer: (B) \(f=0\) at integers, \(-1\) otherwise; removable discontinuities at every integer.
+Given: \(f(x)=[x]+[-x]\)
+Formula/Principle: \(x\in\mathbb Z\Rightarrow[x]+[-x]=x-x=0;\ x\notin\mathbb Z\Rightarrow[-x]=-[x]-1\)
+Step 1: \(x\notin\mathbb Z:\ f(x)=[x]-[x]-1=-1\)
+Step 2: \(\text{at an integer }n:\ \lim_{x\to n}f(x)=-1\ (\text{from both sides}),\ f(n)=0\)
+Worked derivation: \[\lim_{x\to n}f(x)=-1\ne0=f(n)\Rightarrow\text{discontinuous; redefining }f(n)=-1\text{ would remove it}\]
+Check: \[x=2.3:\ 2+(-3)=-1\ \checkmark;\quad x=2:\ 2+(-2)=0\ \checkmark\]
+Why: \(\text{the jumps of }[x]\text{ and }[-x]\text{ at an integer cancel in the limit but not in the value}\)
+Why not the others: (A) \(f=-1\text{ at non-integers}\); (C) \(f\text{ is constant on each open interval }(n,n+1)\); (D) \(\text{values swapped, and the one-sided limits are equal (no jump)}\).
+Key point: \([x]+[-x]=0\text{ at integers},\ -1\text{ otherwise}\)
+
+@@ Q50
+format: numerical
+sub_topic: Absolute maximum and minimum of a cubic on a closed interval, comparing critical points with end points
+Q: What are the absolute maximum and absolute minimum values of \(f(x)=x^3-3x^2-9x+5\) on \([-2,6]\)?
+A) Maximum 10 at \(x=-1\); minimum \(-22\) at \(x=3\)
+B) Maximum 10 at \(x=-1\); minimum 3 at \(x=-2\)
+C) Maximum 59 at \(x=6\); minimum 3 at \(x=-2\)
+D) Maximum 59 at \(x=6\); minimum \(-22\) at \(x=3\)
+KEY: D
+SOL:
+Answer: (D) Maximum 59 at \(x=6\); minimum \(-22\) at \(x=3\).
+Given: \(f'(x)=3x^2-6x-9=3(x-3)(x+1)\)
+Formula/Principle: \(\text{compare f at critical points inside the interval and at the end points}\)
+Step 1: \(\text{critical points: }x=-1,\ 3\ (\text{both in }[-2,6])\)
+Step 2: \(f(-2)=-8-12+18+5=3;\ f(-1)=-1-3+9+5=10\)
+Worked derivation: \[f(3)=27-27-27+5=-22;\qquad f(6)=216-108-54+5=59\]
+Check: \[\max\{3,10,-22,59\}=59,\ \min=-22\ \checkmark\]
+Why: \(\text{the local maximum at }x=-1\text{ is not the absolute maximum, because f grows beyond it towards the right end point}\)
+Why not the others: (A) \(\text{ignores the end point }x=6\); (B) \(\text{ignores }x=3\text{ and }x=6\); (C) \(\text{misses the interior minimum at }x=3\).
+Key point: \(\text{absolute extrema on }[a,b]\text{: check critical points and end points}\)
+
+@@ Q51
+format: numerical
+sub_topic: Definite integrals of the greatest integer function and of |x − 1| read from their graphs
+Q: What are \(\displaystyle\int_0^{2.5}[x]\,dx\) and \(\displaystyle\int_0^2|x-1|\,dx\), where \([x]\) is the greatest integer function?
+A) 2 and 1
+B) 3 and 1
+C) 2 and 0
+D) 1.5 and 2
+KEY: A
+SOL:
+Answer: (A) 2 and 1.
+Given: \([x]=0\text{ on }[0,1),\ 1\text{ on }[1,2),\ 2\text{ on }[2,2.5]\)
+Formula/Principle: \(\text{split the integral where the integrand changes form; read areas of rectangles and triangles}\)
+Step 1: \(\displaystyle\int_0^{2.5}[x]\,dx=0(1)+1(1)+2(0.5)=2\)
+Step 2: \(|x-1|\text{ on }[0,2]\text{ forms two triangles, each with base 1 and height 1}\)
+Worked derivation: \[\int_0^2|x-1|\,dx=2\times\tfrac12\times1\times1=1\]
+Check: \[\int_0^1(1-x)dx+\int_1^2(x-1)dx=\tfrac12+\tfrac12=1\ \checkmark\]
+Why: \(\text{the step graph of }[x]\text{ gives rectangles of width 1 (the last one of width 0.5)}\)
+Why not the others: (B) \(\text{takes the last step over a full unit width}\); (C) \(\text{integrates }x-1\text{ without the modulus, so the areas cancel}\); (D) \(\text{misreads both graphs}\).
+Key point: \(\text{split at the break points; use areas under the graph}\)
+
+@@ Q52
+format: numerical
+sub_topic: Area of the smaller segment of a circle cut off by a vertical chord, by integration or the sector formula
+Q: What is the area of the smaller region cut off from the disc \(x^2+y^2\le16\) by the line \(x=2\)?
+A) \(\tfrac{16\pi}3+4\sqrt3\)
+B) \(\tfrac{8\pi}3-2\sqrt3\)
+C) \(\tfrac{16\pi}3-4\sqrt3\)
+D) \(4\pi-4\sqrt3\)
+KEY: C
+SOL:
+Answer: (C) \(\tfrac{16\pi}3-4\sqrt3\).
+Given: \(r=4;\ \text{chord }x=2\text{ meets the circle at }(2,\pm2\sqrt3)\)
+Formula/Principle: \(\text{area}=2\displaystyle\int_2^4\sqrt{16-x^2}\,dx;\ \text{or segment}=\tfrac12r^2(\theta-\sin\theta)\)
+Step 1: \(\cos\tfrac\theta2=\tfrac24\Rightarrow\tfrac\theta2=\tfrac\pi3\Rightarrow\theta=\tfrac{2\pi}3\)
+Step 2: \(\text{segment}=\tfrac12(16)\left(\tfrac{2\pi}3-\tfrac{\sqrt3}2\right)\)
+Worked derivation: \[\text{area}=\frac{16\pi}3-4\sqrt3\approx16.76-6.93=9.83\]
+Check: \[2\left[\tfrac x2\sqrt{16-x^2}+8\sin^{-1}\tfrac x4\right]_2^4=2\left[4\pi-\left(2\sqrt3+\tfrac{4\pi}3\right)\right]=\tfrac{16\pi}3-4\sqrt3\ \checkmark\]
+Why: \(\text{the segment is the sector of angle }\theta\text{ minus the isosceles triangle formed by the chord and the centre}\)
+Why not the others: (A) \(\text{adds the triangle instead of subtracting it}\); (B) \(\text{gives half the segment (one side of the x-axis)}\); (D) \(\text{uses a sector of angle }\tfrac\pi2\).
+Key point: \(\text{segment}=\tfrac12r^2(\theta-\sin\theta)\)
+
+@@ Q53
+format: numerical
+sub_topic: Solving a homogeneous equation by y = vx and finding where the particular solution through a given point exists
+Q: Solve \(\dfrac{dy}{dx}=\dfrac{x^2+y^2}{2xy}\) for the curve through \((2,1)\). For which x (with \(x>0,\ y>0\)) does this solution exist as a real curve?
+A) \(x^2-y^2=\tfrac32x\); it exists for \(x>\tfrac32\)
+B) \(x^2+y^2=\tfrac52x\); it exists for \(0<x<\tfrac52\)
+C) \(x^2-y^2=3\); it exists for \(x>\sqrt3\)
+D) \(y=\tfrac x2\); it exists for all \(x>0\)
+KEY: A
+SOL:
+Answer: (A) \(x^2-y^2=\tfrac32x\), for \(x>\tfrac32\).
+Given: \(\text{homogeneous of degree 0: put }y=vx,\ \dfrac{dy}{dx}=v+x\dfrac{dv}{dx}\)
+Formula/Principle: \(v+x\dfrac{dv}{dx}=\dfrac{1+v^2}{2v}\Rightarrow x\dfrac{dv}{dx}=\dfrac{1-v^2}{2v}\)
+Step 1: \(\displaystyle\int\frac{2v\,dv}{1-v^2}=\int\frac{dx}{x}\Rightarrow-\ln|1-v^2|=\ln|x|+c\)
+Step 2: \(x(1-v^2)=C\Rightarrow x^2-y^2=Cx;\ (2,1):\ 3=2C\Rightarrow C=\tfrac32\)
+Worked derivation: \[y=\sqrt{x^2-\tfrac32x}\ \text{is real and positive for }x>\tfrac32\ (x>0)\]
+Check: \[\text{differentiate }x^2-y^2=\tfrac32x:\ 2x-2yy'=\tfrac32,\ y'=\frac{2x-\frac32}{2y};\ \text{using }\tfrac32=\tfrac{x^2-y^2}{x}:\ y'=\frac{x^2+y^2}{2xy}\ \checkmark\]
+Why: \(\text{the solution curve is a hyperbola; its branch through }(2,1)\text{ reaches the x-axis at }x=\tfrac32\text{, where }y=0\text{ and the equation breaks down}\)
+Why not the others: (B) \(\text{sign error in the integration}\); (C) \(\text{omits the factor x in }Cx\); (D) \(y=x/2\text{ does not satisfy the equation}\).
+Key point: \(\text{homogeneous: }y=vx\text{ separates the variables}\)
+
+@@ Q54
+format: numerical
+sub_topic: Condition on a for the solution interval of a quadratic inequality to lie inside an open interval of fixed length
+Q: Let \(A=\{x\in\mathbb R:\ x^2-5x+6\le0\}\) and \(B=(a,\ a+2)\). For which real values of a is \(A\subseteq B\)?
+A) \(1\le a\le2\)
+B) \(a<2\)
+C) \(1<a<2\)
+D) \(2<a<3\)
+KEY: C
+SOL:
+Answer: (C) \(1<a<2\).
+Given: \(x^2-5x+6=(x-2)(x-3)\le0\iff2\le x\le3\Rightarrow A=[2,3]\)
+Formula/Principle: \([p,q]\subseteq(a,b)\iff a<p\text{ and }q<b\)
+Step 1: \(a<2\ (\text{so that }2\in B)\)
+Step 2: \(a+2>3\iff a>1\ (\text{so that }3\in B)\)
+Worked derivation: \[1<a<2\]
+Check: \[a=1.5:\ B=(1.5,3.5)\supset[2,3]\ \checkmark;\quad a=1:\ B=(1,3)\not\ni3\ \checkmark\]
+Why: \(\text{a closed interval fits inside an open one only if both its end points lie strictly inside}\)
+Why not the others: (A) \(\text{at }a=1\text{ or }a=2\text{ an end point of A falls on an open end of B}\); (B) \(\text{ignores the right end: }a=0\text{ gives }(0,2)\not\supseteq A\); (D) \(\text{then }2\notin B\).
+Key point: \([p,q]\subseteq(a,b)\iff a<p,\ q<b;\ \text{open ends exclude equality}\)
+
+@@ Q55
+format: conceptual
+sub_topic: Checking reflexive, symmetric and transitive properties for three relations on the integers
+Q: On the set of integers, define \(R_1:\ a\,R_1\,b\iff4\mid(a-b)\); \(R_2:\ a\,R_2\,b\iff a\le b\); \(R_3:\ a\,R_3\,b\iff|a-b|\le1\). Which statement is correct?
+A) All three are equivalence relations
+B) \(R_2\) is an equivalence relation and \(R_1\) is not
+C) \(R_3\) is transitive but not symmetric
+D) \(R_1\) is an equivalence relation with exactly 4 equivalence classes; \(R_2\) is reflexive and transitive but not symmetric; \(R_3\) is reflexive and symmetric but not transitive
+KEY: D
+SOL:
+Answer: (D) \(R_1\): equivalence, 4 classes; \(R_2\): reflexive, transitive, not symmetric; \(R_3\): reflexive, symmetric, not transitive.
+Given: \(\text{three relations on }\mathbb Z\)
+Formula/Principle: \(\text{reflexive: }aRa;\ \text{symmetric: }aRb\Rightarrow bRa;\ \text{transitive: }aRb,\ bRc\Rightarrow aRc\)
+Step 1: \(R_1:\ 4\mid0;\ 4\mid(a-b)\Rightarrow4\mid(b-a);\ 4\mid(a-b),\ 4\mid(b-c)\Rightarrow4\mid(a-c)\Rightarrow\text{equivalence; classes are the remainders }0,1,2,3\)
+Step 2: \(R_2:\ a\le a;\ a\le b,\ b\le c\Rightarrow a\le c;\ \text{but }1\le2,\ 2\not\le1\)
+Worked derivation: \[R_3:\ |0-1|\le1,\ |1-2|\le1,\ \text{but }|0-2|=2>1\Rightarrow\text{not transitive}\]
+Check: \[R_3\text{ is reflexive }(|a-a|=0)\text{ and symmetric }(|a-b|=|b-a|)\ \checkmark\]
+Why: \(\text{each property must hold for all elements; one counterexample is enough to fail it}\)
+Why not the others: (A) \(R_2\text{ and }R_3\text{ each fail one property}\); (B) \(R_2\text{ is not symmetric, while }R_1\text{ is an equivalence relation}\); (C) \(R_3\text{ is symmetric but not transitive}\).
+Key point: \(\text{congruence mod n is an equivalence relation with n classes}\)
+
+@@ Q56
+format: numerical
+sub_topic: Using sum-to-product and product-to-sum formulas to evaluate sin 10° + sin 50° − sin 70° and cos 20° cos 40° cos 80°
+Q: What are the values of \(\sin10^\circ+\sin50^\circ-\sin70^\circ\) and \(\cos20^\circ\cos40^\circ\cos80^\circ\)?
+A) \(\tfrac12\) and \(\tfrac18\)
+B) \(0\) and \(\tfrac18\)
+C) \(0\) and \(\tfrac14\)
+D) \(\sin10^\circ\) and \(-\tfrac18\)
+KEY: B
+SOL:
+Answer: (B) 0 and \(\tfrac18\).
+Given: \(\sin C+\sin D=2\sin\tfrac{C+D}2\cos\tfrac{C-D}2;\ 2\cos A\cos B=\cos(A+B)+\cos(A-B)\)
+Formula/Principle: \(\text{combine pairs, then use }\sin(90^\circ-\theta)=\cos\theta\)
+Step 1: \(\sin50^\circ+\sin10^\circ=2\sin30^\circ\cos20^\circ=\cos20^\circ=\sin70^\circ\Rightarrow\text{sum}=0\)
+Step 2: \(\text{multiply the product by }8\sin20^\circ:\ 8\sin20^\circ\cos20^\circ\cos40^\circ\cos80^\circ=4\sin40^\circ\cos40^\circ\cos80^\circ=2\sin80^\circ\cos80^\circ=\sin160^\circ\)
+Worked derivation: \[\sin160^\circ=\sin20^\circ\Rightarrow\cos20^\circ\cos40^\circ\cos80^\circ=\frac{\sin20^\circ}{8\sin20^\circ}=\frac18\]
+Check: \[0.9397\times0.7660\times0.1736=0.1250\ \checkmark\]
+Why: \(\text{the angles double each time, so repeated use of }2\sin\theta\cos\theta=\sin2\theta\text{ telescopes the product}\)
+Why not the others: (A) \(\text{takes }\sin30^\circ\text{ without the factor 2}\); (C) \(\text{stops one doubling early}\); (D) \(\text{all three cosines are positive, so the product cannot be negative}\).
+Key point: \(\sin C+\sin D\text{ formula; }\cos\theta\cos2\theta\cos4\theta=\dfrac{\sin8\theta}{8\sin\theta}\)
+
+@@ Q57
+format: numerical
+sub_topic: Counting integer values of k for which x² − kx + 9 = 0 has real roots and for which the roots are equal
+Q: For how many integers k with \(-10\le k\le10\) does \(x^2-kx+9=0\) have real roots, and for how many of these are the roots equal?
+A) 21 and 0
+B) 12 and 2
+C) 10 and 2
+D) 10 and 1
+KEY: C
+SOL:
+Answer: (C) 10 and 2.
+Given: \(\text{discriminant }D=k^2-36\)
+Formula/Principle: \(\text{real roots}\iff D\ge0;\ \text{equal roots}\iff D=0\)
+Step 1: \(k^2\ge36\iff|k|\ge6\)
+Step 2: \(k\in\{-10,\dots,-6\}\cup\{6,\dots,10\}\Rightarrow5+5=10\text{ values}\)
+Worked derivation: \[D=0\iff k=\pm6\Rightarrow2\text{ values (roots }x=\pm3)\]
+Check: \[k=6:\ x^2-6x+9=(x-3)^2\ \checkmark;\quad k=5:\ D=-11<0\ \checkmark\]
+Why: \(\text{the product of the roots is fixed at 9, so real roots need }|k|=|\text{sum}|\ge2\sqrt9=6\)
+Why not the others: (A) \(\text{counts every integer in the range}\); (B) \(\text{includes }|k|=5\); (D) \(\text{counts only }k=6\text{, missing }k=-6\).
+Key point: \(D=b^2-4ac\ge0\text{ for real roots, }=0\text{ for equal roots}\)
+
+@@ Q58
+format: numerical
+sub_topic: Number of real roots of (x(x − 2))² = k for different k, read from the graph of the left side
+Q: How many distinct real roots does \(x^4-4x^3+4x^2=k\) have when \(k=\tfrac12\), when \(k=1\), and when \(k=4\)?
+A) 4, 3 and 2
+B) 4, 4 and 2
+C) 2, 3 and 4
+D) 4, 2 and 0
+KEY: A
+SOL:
+Answer: (A) 4, 3 and 2.
+Given: \(x^4-4x^3+4x^2=\left(x(x-2)\right)^2=g(x)\)
+Formula/Principle: \(\text{roots of }g(x)=k\text{ are the intersections of the graph of g with the line }y=k\)
+Step 1: \(g\ge0;\ g=0\text{ at }x=0,2\ (\text{minima});\ \text{local maximum }g(1)=1\)
+Step 2: \(0<k<1:\ \text{the line cuts each of the two valleys twice: 4 roots};\ k=1:\ \text{touches at the peak }x=1\text{ plus 2 outer roots: 3}\)
+Worked derivation: \[k=4:\ x(x-2)=\pm2;\ x^2-2x-2=0\Rightarrow x=1\pm\sqrt3;\ x^2-2x+2=0\text{ has no real roots}\Rightarrow2\]
+Check: \[k=1:\ x^2-2x\mp1=0\Rightarrow x=1\pm\sqrt2\text{ or }x=1\ (\text{double})\Rightarrow3\text{ distinct}\ \checkmark\]
+Why: \(\text{the graph is W-shaped with a hump of height 1 at }x=1\text{, so the count changes at }k=0\text{ and }k=1\)
+Why not the others: (B) \(\text{counts the double root at }x=1\text{ twice}\); (C) \(\text{reverses the pattern}\); (D) \(\text{misses the outer roots for }k\ge1\).
+Key point: \(\text{count roots of }g(x)=k\text{ from the graph of g}\)
+
+@@ Q59
+format: numerical
+sub_topic: Finding the number of objects from the count of arrangements with two particular objects together, then the count with them apart
+Q: When n distinct books are arranged in a row, the number of arrangements in which two particular books are always together is 240. What is n, and in how many arrangements are these two books never together?
+A) \(n=5;\ 72\)
+B) \(n=7;\ 4800\)
+C) \(n=6;\ 240\)
+D) \(n=6;\ 480\)
+KEY: D
+SOL:
+Answer: (D) \(n=6;\ 480\).
+Given: \(\text{together}=240\)
+Formula/Principle: \(\text{treat the pair as one unit: }(n-1)!\text{ arrangements of units}\times2!\text{ inside the pair}\)
+Step 1: \(2(n-1)!=240\Rightarrow(n-1)!=120=5!\Rightarrow n=6\)
+Step 2: \(\text{total}=6!=720\)
+Worked derivation: \[\text{never together}=720-240=480\]
+Check: \[\text{gap method: arrange 4 others in }4!=24\text{ ways, choose 2 of 5 gaps in order: }5\times4=20;\ 24\times20=480\ \checkmark\]
+Why: \(\text{"never together" is the complement of "always together" within all arrangements}\)
+Why not the others: (A) \(2\cdot4!=48\ne240\); (B) \(2\cdot6!=1440\ne240\); (C) \(\text{gives the "together" count again}\).
+Key point: \(\text{together: }2!(n-1)!;\ \text{apart}=n!-2!(n-1)!\)
+
+@@ Q60
+format: numerical
+sub_topic: Finding n from three consecutive binomial coefficients in the ratio 1 : 2 : 3, and the middle term
+Q: Three consecutive coefficients in the expansion of \((1+x)^n\) are in the ratio \(1:2:3\). What is n, and what is the coefficient of the middle term of \((1+x)^n\)?
+A) \(n=12;\ 924\)
+B) \(n=14;\ 3432\)
+C) \(n=14;\ 3003\)
+D) \(n=15;\ 6435\)
+KEY: B
+SOL:
+Answer: (B) \(n=14;\ 3432\).
+Given: \(\binom n{r-1}:\binom nr:\binom n{r+1}=1:2:3\)
+Formula/Principle: \(\dfrac{\binom nr}{\binom n{r-1}}=\dfrac{n-r+1}{r}\)
+Step 1: \(\dfrac{n-r+1}{r}=2\Rightarrow n=3r-1\)
+Step 2: \(\dfrac{\binom n{r+1}}{\binom nr}=\dfrac{n-r}{r+1}=\dfrac32\Rightarrow2n-2r=3r+3\Rightarrow2n=5r+3\)
+Worked derivation: \[2(3r-1)=5r+3\Rightarrow r=5,\ n=14;\quad \text{middle term }T_8:\ \binom{14}7=3432\]
+Check: \[\binom{14}4=1001,\ \binom{14}5=2002,\ \binom{14}6=3003:\ 1:2:3\ \checkmark\]
+Why: \(\text{ratios of consecutive binomial coefficients are simple fractions, giving two linear equations in n and r}\)
+Why not the others: (A) \(n=12\text{ has no three consecutive coefficients in this ratio}\); (C) \(3003=\binom{14}6\text{ is one of the three coefficients, not the middle term}\); (D) \(n=15\text{ has two middle terms}\).
+Key point: \(\binom nr/\binom n{r-1}=(n-r+1)/r;\ \text{middle term of }(1+x)^{2m}\text{ is }T_{m+1}\)
