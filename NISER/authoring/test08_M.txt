@@ -1,0 +1,419 @@
+@@ Q41
+format: numerical
+sub_topic: Conditional probability for a point chosen uniformly in the unit square, found as a ratio of areas
+Q: A point (x, y) is chosen uniformly at random from the unit square \(0\le x\le1,\ 0\le y\le1\). What is the probability that \(x+y<1\), given that \(x<\tfrac12\)?
+A) \(\tfrac12\)
+B) \(\tfrac38\)
+C) \(\tfrac34\)
+D) \(\tfrac14\)
+KEY: C
+SOL:
+Answer: (C) \(\tfrac34\).
+Given: \(\text{uniform distribution on the unit square (area 1)};\ E=\{x+y<1\},\ F=\{x<\tfrac12\}\)
+Formula/Principle: \(P(E\mid F)=\dfrac{P(E\cap F)}{P(F)}=\dfrac{\text{area}(E\cap F)}{\text{area}(F)}\)
+Step 1: \(\text{area}(F)=\tfrac12\times1=\tfrac12\)
+Step 2: \(\text{area}(E\cap F)=\displaystyle\int_0^{1/2}(1-x)\,dx=\tfrac12-\tfrac18=\tfrac38\ (\text{a trapezium with parallel sides 1 and }\tfrac12,\ \text{width }\tfrac12)\)
+Worked derivation: \[P(E\mid F)=\frac{3/8}{1/2}=\frac34\]
+Check: \[\text{trapezium area}=\tfrac12\left(1+\tfrac12\right)\cdot\tfrac12=\tfrac38\ \checkmark;\quad P(E)=\tfrac12<\tfrac34\text{, sensible since small x makes }x+y<1\text{ likelier}\]
+Why: \(\text{conditioning on F replaces the whole square by the strip }x<\tfrac12\text{ as the new sample space}\)
+Why not the others: (A) \(\text{is the unconditional }P(E)\); (B) \(\text{is }P(E\cap F)\text{, not divided by }P(F)\); (D) \(\text{is the complement }P(x+y\ge1\mid x<\tfrac12)=1-\tfrac34\).
+Key point: \(\text{geometric probability: }P(E\mid F)=\text{area}(E\cap F)/\text{area}(F)\)
+
+@@ Q42
+format: numerical
+sub_topic: Values of k for which the equation cos⁻¹x = k sin⁻¹x has a real solution, using the ranges of the inverse functions
+Q: For which real values of k does the equation \(\cos^{-1}x=k\sin^{-1}x\) have a real solution x?
+A) \(k\ge0\text{ or }k\le-2\)
+B) \(\text{all real }k\ne-1\)
+C) \(-2\le k\le0\)
+D) \(k>0\text{ only}\)
+KEY: A
+SOL:
+Answer: (A) \(k\ge0\) or \(k\le-2\).
+Given: \(s=\sin^{-1}x\in\left[-\tfrac\pi2,\tfrac\pi2\right],\quad \cos^{-1}x=\tfrac\pi2-s\)
+Formula/Principle: \(\sin^{-1}x+\cos^{-1}x=\tfrac\pi2\text{ for }|x|\le1\)
+Step 1: \(\tfrac\pi2-s=ks\Rightarrow(k+1)s=\tfrac\pi2\Rightarrow s=\dfrac{\pi}{2(k+1)}\ (k\ne-1)\)
+Step 2: \(\text{need }|s|\le\tfrac\pi2\iff|k+1|\ge1\iff k\ge0\text{ or }k\le-2\)
+Worked derivation: \[k=0:\ s=\tfrac\pi2,\ x=1,\ \cos^{-1}1=0\ \checkmark;\qquad k=-2:\ s=-\tfrac\pi2,\ x=-1,\ \cos^{-1}(-1)=\pi=(-2)\left(-\tfrac\pi2\right)\ \checkmark\]
+Check: \[k=-\tfrac32:\ s=\frac{\pi}{2(-1/2)}=-\pi\notin\left[-\tfrac\pi2,\tfrac\pi2\right]\Rightarrow\text{no solution}\ \checkmark\]
+Why: \(\text{the graphs of }\cos^{-1}x\text{ (decreasing from }\pi\text{ to 0) and }k\sin^{-1}x\text{ meet only when the required value of }\sin^{-1}x\text{ lies in its range}\)
+Why not the others: (B) \(\text{ignores the range restriction on }\sin^{-1}x\); (C) \(\text{is essentially the excluded interval (only its end points work)}\); (D) \(\text{misses }k=0\text{ and all }k\le-2\).
+Key point: \(\text{use }\cos^{-1}x=\tfrac\pi2-\sin^{-1}x\text{ and then the range }[-\tfrac\pi2,\tfrac\pi2]\)
+
+@@ Q43
+format: conceptual
+sub_topic: Two non-zero 2 × 2 matrices whose product is zero in one order but not in the other
+Q: Let \(A=\begin{pmatrix}0&1\\0&0\end{pmatrix}\) and \(B=\begin{pmatrix}1&0\\0&0\end{pmatrix}\). Which statement is correct?
+A) \(AB=BA\), since both matrices are upper triangular
+B) \(A^2=A\) and \(AB=B\)
+C) \(AB=BA=O\)
+D) \(AB=O\) but \(BA=A\ne O\), and \(A^2=O\) although \(A\ne O\); so matrix multiplication is not commutative and a product can be zero with neither factor zero
+KEY: D
+SOL:
+Answer: (D) \(AB=O,\ BA=A,\ A^2=O\).
+Given: \(A=\begin{pmatrix}0&1\\0&0\end{pmatrix},\ B=\begin{pmatrix}1&0\\0&0\end{pmatrix}\)
+Formula/Principle: \((PQ)_{ij}=\sum_k p_{ik}q_{kj}\ (\text{row of P times column of Q})\)
+Step 1: \(AB=\begin{pmatrix}0\cdot1+1\cdot0&0\cdot0+1\cdot0\\0&0\end{pmatrix}=\begin{pmatrix}0&0\\0&0\end{pmatrix}\)
+Step 2: \(BA=\begin{pmatrix}1\cdot0+0&1\cdot1+0\\0&0\end{pmatrix}=\begin{pmatrix}0&1\\0&0\end{pmatrix}=A\)
+Worked derivation: \[A^2=\begin{pmatrix}0&1\\0&0\end{pmatrix}\begin{pmatrix}0&1\\0&0\end{pmatrix}=\begin{pmatrix}0&0\\0&0\end{pmatrix}\]
+Check: \[\det A=\det B=0\text{, as it must be: if }PQ=O\text{ with }P,Q\ne O\text{, neither can be invertible}\ \checkmark\]
+Why: \(\text{unlike real numbers, matrices can be zero divisors, and the order of multiplication matters}\)
+Why not the others: (A) \(\text{being triangular does not make matrices commute}\); (B) \(A^2=O\text{, not }A\); (C) \(BA=A\ne O\).
+Key point: \(AB\ne BA\text{ in general; }AB=O\text{ does not imply }A=O\text{ or }B=O\)
+
+@@ Q44
+format: numerical
+sub_topic: First and second derivatives of a curve given parametrically by x = t + 1/t, y = t − 1/t
+Q: A curve is given by \(x=t+\dfrac1t,\ y=t-\dfrac1t\ (t>1)\). What are \(\dfrac{dy}{dx}\) and \(\dfrac{d^2y}{dx^2}\) at \(t=2\)?
+A) \(\tfrac35\) and \(-\tfrac{32}{27}\)
+B) \(\tfrac53\) and \(-\tfrac{32}{27}\)
+C) \(\tfrac53\) and \(\tfrac{32}{27}\)
+D) \(\tfrac53\) and \(-\tfrac89\)
+KEY: B
+SOL:
+Answer: (B) \(\tfrac53\) and \(-\tfrac{32}{27}\).
+Given: \(\dfrac{dx}{dt}=1-\dfrac1{t^2}=\dfrac{t^2-1}{t^2},\quad \dfrac{dy}{dt}=1+\dfrac1{t^2}=\dfrac{t^2+1}{t^2}\)
+Formula/Principle: \(\dfrac{dy}{dx}=\dfrac{dy/dt}{dx/dt};\quad \dfrac{d^2y}{dx^2}=\dfrac{\frac{d}{dt}\left(\frac{dy}{dx}\right)}{dx/dt}\)
+Step 1: \(\dfrac{dy}{dx}=\dfrac{t^2+1}{t^2-1}=\dfrac{5}{3}\text{ at }t=2\)
+Step 2: \(\dfrac{d}{dt}\left(\dfrac{t^2+1}{t^2-1}\right)=\dfrac{2t(t^2-1)-2t(t^2+1)}{(t^2-1)^2}=\dfrac{-4t}{(t^2-1)^2}\)
+Worked derivation: \[\frac{d^2y}{dx^2}=\frac{-4t}{(t^2-1)^2}\cdot\frac{t^2}{t^2-1}=\frac{-4t^3}{(t^2-1)^3}=\frac{-32}{27}\text{ at }t=2\]
+Check: \[x^2-y^2=4:\ y'=\frac xy=\frac{5/2}{3/2}=\frac53;\ y''=\frac{y-xy'}{y^2}=\frac{\frac32-\frac{25}6}{9/4}=-\frac{32}{27}\ \checkmark\]
+Why: \(\text{the second derivative must be taken with respect to x, so the t-derivative of }dy/dx\text{ is divided by }dx/dt\)
+Why not the others: (A) \(\text{inverts }dy/dx\); (C) \(\text{sign error; the hyperbola branch is concave down here}\); (D) \(\text{forgets to divide by }dx/dt=\tfrac34\).
+Key point: \(\dfrac{d^2y}{dx^2}=\dfrac{d}{dt}\Big(\dfrac{dy}{dx}\Big)\Big/\dfrac{dx}{dt}\), not \(\dfrac{d^2y/dt^2}{d^2x/dt^2}\)
+
+@@ Q45
+format: conceptual
+sub_topic: Failure of the second-derivative test when f'' = 0, shown by x⁴, x³ and −x⁴
+Q: For \(f(x)=x^4,\ g(x)=x^3\) and \(h(x)=-x^4\), the first and second derivatives are all zero at \(x=0\). Which statement is correct?
+A) All three have a point of inflection at \(x=0\)
+B) Since the second derivative is zero, none of them has a local extremum at \(x=0\)
+C) All three have a local minimum at \(x=0\)
+D) f has a local minimum, g has no extremum (the derivative does not change sign) and h has a local maximum at \(x=0\); so the second-derivative test gives no conclusion when \(f''=0\), and the first-derivative test (sign change of the derivative) must be used
+KEY: D
+SOL:
+Answer: (D) f: minimum; g: no extremum; h: maximum.
+Given: \(f'(x)=4x^3,\ g'(x)=3x^2,\ h'(x)=-4x^3;\ \text{all derivatives and second derivatives are 0 at }x=0\)
+Formula/Principle: \(\text{first-derivative test: }f'\text{ changes from − to + gives a minimum, + to − a maximum, no change gives no extremum}\)
+Step 1: \(f'=4x^3:\ -\text{ for }x<0,\ +\text{ for }x>0\Rightarrow\text{local minimum}\)
+Step 2: \(g'=3x^2\ge0\text{ on both sides}\Rightarrow\text{no extremum (inflection)};\quad h'=-4x^3:\ +\text{ then }-\Rightarrow\text{local maximum}\)
+Worked derivation: \[f(x)=x^4\ge0=f(0),\qquad h(x)=-x^4\le0=h(0),\qquad g(x)=x^3\text{ takes both signs near 0}\]
+Check: \[f'''(0)=0,\ f^{(4)}(0)=24>0\ (\text{min});\quad g'''(0)=6\ne0\ (\text{inflection})\ \checkmark\]
+Why: \(f''(c)=0\text{ leaves the nature of a stationary point undecided; the sign of the derivative on either side decides it}\)
+Why not the others: (A) \(x^4\text{ and }-x^4\text{ do not change concavity at 0}\); (B) \(\text{a zero second derivative does not rule out an extremum}\); (C) \(g\text{ has no extremum and h has a maximum}\).
+Key point: \(f''(c)=0\Rightarrow\text{second-derivative test fails; use the sign change of }f'\)
+
+@@ Q46
+format: numerical
+sub_topic: Counting the real roots of a function defined by an integral, using its derivative from the Fundamental Theorem of Calculus
+Q: Let \(F(x)=\displaystyle\int_0^x(t^2-3t+2)\,dt\). How many real solutions does \(F(x)=0\) have, and what are the local extrema of F?
+A) Three solutions; local maximum at \(x=2\) and local minimum at \(x=1\)
+B) Exactly one solution, \(x=0\); local maximum \(F(1)=\tfrac56\) and local minimum \(F(2)=\tfrac23\)
+C) Two solutions; local maximum \(F(1)=\tfrac56\) and local minimum \(F(2)=0\)
+D) No solution; F has no local extrema
+KEY: B
+SOL:
+Answer: (B) Only \(x=0\); local max \(\tfrac56\) at 1, local min \(\tfrac23\) at 2.
+Given: \(F'(x)=x^2-3x+2=(x-1)(x-2)\ (\text{Fundamental Theorem of Calculus})\)
+Formula/Principle: \(F'(x)=f(x)\text{ for }F(x)=\int_a^xf(t)\,dt;\ \text{use the signs of }F'\text{ and the extreme values to count roots}\)
+Step 1: \(F'>0\text{ for }x<1,\ <0\text{ on }(1,2),\ >0\text{ for }x>2\Rightarrow\text{max at 1, min at 2}\)
+Step 2: \(F(x)=\tfrac{x^3}3-\tfrac{3x^2}2+2x;\ F(1)=\tfrac13-\tfrac32+2=\tfrac56,\ F(2)=\tfrac83-6+4=\tfrac23\)
+Worked derivation: \[F(x)=\frac x6\left(2x^2-9x+12\right),\quad \text{discriminant }81-96<0\Rightarrow\text{only root }x=0\]
+Check: \[F\text{ increases from }-\infty\text{ through }F(0)=0\text{ to }\tfrac56,\text{ dips to }\tfrac23>0,\text{ then rises: one crossing}\ \checkmark\]
+Why: \(\text{the local minimum value is positive, so after crossing at }x=0\text{ the graph never returns to zero}\)
+Why not the others: (A) \(\text{reverses max and min and assumes a cubic always has three roots}\); (C) \(F(2)=\tfrac23\ne0\); (D) \(F(0)=0\text{ always, and }F'\text{ changes sign at 1 and 2}\).
+Key point: \(F'(x)=f(x);\ \text{sign of }F'\text{ plus extreme values counts the roots}\)
+
+@@ Q47
+format: numerical
+sub_topic: Evaluating a definite integral by splitting it into an odd part, which vanishes, and an even part read as an area
+Q: What is the value of \(\displaystyle\int_{-2}^{2}\left(x^3\cos x+|x|\right)dx\)?
+A) 4
+B) 0
+C) 8
+D) 2
+KEY: A
+SOL:
+Answer: (A) 4.
+Given: \(x^3\cos x\text{ is odd};\ |x|\text{ is even}\)
+Formula/Principle: \(\displaystyle\int_{-a}^{a}g(x)\,dx=0\text{ if g is odd};\quad =2\int_0^ag(x)\,dx\text{ if g is even}\)
+Step 1: \(\displaystyle\int_{-2}^{2}x^3\cos x\,dx=0\ (\text{areas above and below the axis cancel})\)
+Step 2: \(\displaystyle\int_{-2}^{2}|x|\,dx=\text{area of two right triangles, each with legs 2 and 2}\)
+Worked derivation: \[2\times\tfrac12\times2\times2=4\]
+Check: \[2\int_0^2x\,dx=2\cdot\frac{x^2}2\Big|_0^2=4\ \checkmark\]
+Why: \(\text{an odd function's graph is symmetric about the origin, so the signed areas on }[-a,0]\text{ and }[0,a]\text{ cancel}\)
+Why not the others: (B) \(\text{treats the whole integrand as odd}\); (C) \(\text{doubles the area again}\); (D) \(\text{counts only one triangle}\).
+Key point: \(\text{split into odd and even parts; odd part over }[-a,a]\text{ is 0}\)
+
+@@ Q48
+format: numerical
+sub_topic: Ratio in which the xy-plane divides the segment joining two points, and the point of division
+Q: In what ratio does the xy-plane divide the line segment joining \(A(2,3,-4)\) and \(B(1,-2,3)\), and at which point?
+A) 3 : 4 internally, at \(\left(\tfrac{11}7,\tfrac{6}7,0\right)\)
+B) 4 : 3 externally, at \((-2,-17,0)\)
+C) 4 : 3 internally, at \(\left(\tfrac{10}7,\tfrac17,0\right)\)
+D) 1 : 1, at \(\left(\tfrac32,\tfrac12,0\right)\)
+KEY: C
+SOL:
+Answer: (C) 4 : 3 internally, at \(\left(\tfrac{10}7,\tfrac17,0\right)\).
+Given: \(A(2,3,-4),\ B(1,-2,3);\ \text{xy-plane: }z=0\)
+Formula/Principle: \(\text{section formula: point dividing AB in ratio }k:1\text{ is }\left(\dfrac{kx_2+x_1}{k+1},\dfrac{ky_2+y_1}{k+1},\dfrac{kz_2+z_1}{k+1}\right)\)
+Step 1: \(z=0:\ \dfrac{3k-4}{k+1}=0\Rightarrow k=\tfrac43>0\Rightarrow4:3\text{ internally}\)
+Step 2: \(x=\dfrac{4(1)+3(2)}{7}=\dfrac{10}7,\quad y=\dfrac{4(-2)+3(3)}{7}=\dfrac17\)
+Worked derivation: \[\text{point}=\left(\tfrac{10}7,\tfrac17,0\right)\]
+Check: \[z\text{-coordinates }-4\text{ and }3\text{ have opposite signs, so A and B are on opposite sides of the plane; ratio }=|{-4}|:|3|=4:3\ \checkmark\]
+Why: \(\text{a positive k means the dividing point lies between A and B}\)
+Why not the others: (A) \(\text{inverts the ratio}\); (B) \(\text{external division would need A and B on the same side of the plane}\); (D) \(\text{the midpoint has }z=-\tfrac12\ne0\).
+Key point: \(\text{ratio from the z-coordinates: }|z_A|:|z_B|\text{ when they have opposite signs}\)
+
+@@ Q49
+format: numerical
+sub_topic: Direction cosines of a line, its angle with the z-axis, and a point on it at a given distance
+Q: A line passes through \(P(1,2,3)\) and has direction ratios \(2,-1,2\). What are its direction cosines, and which point on it is at distance 6 from P in the direction of these ratios?
+A) \(\left(\tfrac23,-\tfrac13,\tfrac23\right)\); the point \((5,0,7)\)
+B) \((2,-1,2)\); the point \((13,-4,15)\)
+C) \(\left(\tfrac23,-\tfrac13,\tfrac23\right)\); the point \((13,-4,15)\)
+D) \(\left(\tfrac25,-\tfrac15,\tfrac25\right)\); the point \((3,1,5)\)
+KEY: A
+SOL:
+Answer: (A) DCs \(\left(\tfrac23,-\tfrac13,\tfrac23\right)\); point \((5,0,7)\).
+Given: \(\text{direction ratios }(2,-1,2);\ P(1,2,3);\ \text{distance }6\)
+Formula/Principle: \(l,m,n=\dfrac{(a,b,c)}{\sqrt{a^2+b^2+c^2}};\ \text{point at distance r: }(x_1+lr,\ y_1+mr,\ z_1+nr)\)
+Step 1: \(\sqrt{4+1+4}=3\Rightarrow(l,m,n)=\left(\tfrac23,-\tfrac13,\tfrac23\right)\)
+Step 2: \((1+6\cdot\tfrac23,\ 2-6\cdot\tfrac13,\ 3+6\cdot\tfrac23)=(5,0,7)\)
+Worked derivation: \[\frac{x-1}{2/3}=\frac{y-2}{-1/3}=\frac{z-3}{2/3}=6\ \Rightarrow\ (5,0,7);\quad \text{angle with z-axis}=\cos^{-1}\tfrac23\]
+Check: \[\sqrt{4^2+(-2)^2+4^2}=\sqrt{36}=6\ \checkmark;\quad l^2+m^2+n^2=\tfrac{4+1+4}9=1\ \checkmark\]
+Why: \(\text{direction cosines are the components of a unit vector, so multiplying by r moves exactly r along the line}\)
+Why not the others: (B) \(\text{direction ratios are not direction cosines (their squares add to 9)}\); (C) \(\text{moves 6 times the direction ratios, a distance of 18}\); (D) \(\text{divides by }|a|+|b|+|c|=5\text{ instead of }\sqrt{a^2+b^2+c^2}\text{, and moves only one step of the direction ratios}\).
+Key point: \(\text{DCs}=\text{DRs}/\sqrt{a^2+b^2+c^2};\ \text{point at distance r}=P+r(l,m,n)\)
+
+@@ Q50
+format: numerical
+sub_topic: Minimum and maximum of a linear objective over an unbounded feasible region
+Q: Consider the constraints \(x+y\ge4,\ x+3y\ge6,\ x\ge0,\ y\ge0\), and the objective \(Z=2x+3y\). Which statement is correct?
+A) Z has maximum 12 and minimum 9
+B) Z has minimum 12 and no maximum
+C) Z has minimum 9 at \((3,1)\) and no maximum, because the feasible region is unbounded and Z increases without limit
+D) Z has neither a minimum nor a maximum
+KEY: C
+SOL:
+Answer: (C) Minimum 9 at \((3,1)\); no maximum.
+Given: \(\text{corner points of the unbounded region: }(0,4),\ (3,1),\ (6,0)\)
+Formula/Principle: \(\text{for an unbounded region, a corner value is the minimum only if the open half-plane }Z<Z_{\min}\text{ has no point in common with the region}\)
+Step 1: \(x+y=4\text{ and }x+3y=6\Rightarrow2y=2,\ y=1,\ x=3\)
+Step 2: \(Z(0,4)=12,\ Z(3,1)=9,\ Z(6,0)=12\)
+Worked derivation: \[2x+3y<9\text{ with }x+y\ge4,\ x+3y\ge6:\ 2x+3y=\tfrac32(x+y)+\tfrac12(x+3y)\ge6+3=9\Rightarrow\text{no such point}\]
+Check: \[(x,y)=(100,0)\text{ is feasible with }Z=200;\ Z\text{ is unbounded above}\ \checkmark\]
+Why: \(\text{geometrically, moving the line }2x+3y=c\text{ towards the origin, the last point of contact is the corner }(3,1)\text{; moving it outward it never leaves the region}\)
+Why not the others: (A) \(\text{12 is not a maximum; Z grows without limit}\); (B) \(9<12\text{ is attained at }(3,1)\); (D) \(\text{Z has positive coefficients and }x,y\ge0\text{, so it is bounded below and attains its minimum}\).
+Key point: \(\text{unbounded region: check the half-plane }Z<Z_{\min}\text{ (or }Z>Z_{\max})\)
+
+@@ Q51
+format: numerical
+sub_topic: Finding the base of a logarithmic function from one point on its graph, and a point on the inverse exponential graph
+Q: The graph of \(f(x)=\log_a x\ (a>0,\ a\ne1)\) passes through the point \(\left(8,\tfrac32\right)\). What is a, and what is the value of the inverse function \(f^{-1}\) at \(x=\tfrac12\)?
+A) \(a=2;\ f^{-1}(\tfrac12)=\sqrt2\)
+B) \(a=4;\ f^{-1}(\tfrac12)=2\)
+C) \(a=\tfrac{16}3;\ f^{-1}(\tfrac12)=\tfrac83\)
+D) \(a=4;\ f^{-1}(\tfrac12)=\log_4\tfrac12\)
+KEY: B
+SOL:
+Answer: (B) \(a=4;\ f^{-1}(\tfrac12)=2\).
+Given: \(\log_a8=\tfrac32\)
+Formula/Principle: \(\log_ab=c\iff a^c=b;\ \text{the inverse of }\log_ax\text{ is }a^x\)
+Step 1: \(a^{3/2}=8=2^3\Rightarrow a=2^{3\cdot\frac23}=4\)
+Step 2: \(f^{-1}(x)=4^x\Rightarrow f^{-1}(\tfrac12)=4^{1/2}=2\)
+Worked derivation: \[\log_4 2=\tfrac12\iff4^{1/2}=2\]
+Check: \[\log_48=\frac{\log_28}{\log_24}=\frac32\ \checkmark\]
+Why: \(\text{the graphs of }\log_ax\text{ and }a^x\text{ are reflections in }y=x\text{, so }(8,\tfrac32)\text{ on one means }(\tfrac32,8)\text{ on the other}\)
+Why not the others: (A) \(\log_28=3\ne\tfrac32\); (C) \(\text{treats the logarithm as division: }8\div\tfrac32\); (D) \(\text{evaluates f, not its inverse}\).
+Key point: \(\log_ab=c\iff a^c=b;\ f^{-1}(x)=a^x\)
+
+@@ Q52
+format: numerical
+sub_topic: Repeated composition of the Möbius function (x − 1)/(x + 1), which has period 4 under composition
+Q: Let \(f(x)=\dfrac{x-1}{x+1}\) (with x outside the finite set where some composition is undefined). Write \(f^{[n]}\) for f composed with itself n times. What are \(f^{[2]}(x)\) and \(f^{[2027]}(x)\)?
+A) \(f^{[2]}(x)=x\text{ and }f^{[2027]}(x)=f(x)\)
+B) \(f^{[2]}(x)=-\dfrac1x\text{ and }f^{[2027]}(x)=-\dfrac1x\)
+C) \(f^{[2]}(x)=\dfrac1x\text{ and }f^{[2027]}(x)=\dfrac{x+1}{x-1}\)
+D) \(f^{[2]}(x)=-\dfrac1x\text{ and }f^{[2027]}(x)=\dfrac{1+x}{1-x}\)
+KEY: D
+SOL:
+Answer: (D) \(f^{[2]}(x)=-\dfrac1x;\ f^{[2027]}(x)=\dfrac{1+x}{1-x}\).
+Given: \(f(x)=\dfrac{x-1}{x+1}\)
+Formula/Principle: \(\text{find the period of }f\text{ under composition, then reduce }2027\text{ modulo that period}\)
+Step 1: \(f(f(x))=\dfrac{\frac{x-1}{x+1}-1}{\frac{x-1}{x+1}+1}=\dfrac{(x-1)-(x+1)}{(x-1)+(x+1)}=\dfrac{-2}{2x}=-\dfrac1x\)
+Step 2: \(f^{[4]}(x)=f^{[2]}\!\left(-\tfrac1x\right)=-\dfrac{1}{-1/x}=x\Rightarrow\text{period }4\)
+Worked derivation: \[2027=4\cdot506+3\Rightarrow f^{[2027]}=f^{[3]}=f\!\left(-\tfrac1x\right)=\frac{-\frac1x-1}{-\frac1x+1}=\frac{-1-x}{-1+x}=\frac{1+x}{1-x}\]
+Check: \[f^{[3]}=f^{-1}:\ y=\frac{x-1}{x+1}\Rightarrow x=\frac{1+y}{1-y}\ \checkmark\]
+Why: \(\text{because }f^{[4]}\text{ is the identity, }f^{[3]}\text{ must be the inverse of f}\)
+Why not the others: (A) \(f\text{ is not self-inverse}\); (B) \(f^{[2027]}=f^{[3]}\text{, not }f^{[2]}\); (C) \(\text{sign error in }f^{[2]}\text{, and }\tfrac{x+1}{x-1}=1/f(x)\text{, not }f^{-1}(x)\).
+Key point: \(\text{find when }f^{[n]}=\text{identity, then reduce the exponent modulo n}\)
+
+@@ Q53
+format: numerical
+sub_topic: Finding cos 2x and tan²x when the ratio cos 3x : cos x is given, using the triple-angle formula
+Q: If \(\dfrac{\cos3x}{\cos x}=\dfrac13\) (with \(\cos x\ne0\)), what are the values of \(\cos2x\) and \(\tan^2x\)?
+A) \(\cos2x=\tfrac13,\ \tan^2x=\tfrac12\)
+B) \(\cos2x=\tfrac23,\ \tan^2x=5\)
+C) \(\cos2x=\tfrac23,\ \tan^2x=\tfrac15\)
+D) \(\cos2x=\tfrac56,\ \tan^2x=\tfrac1{11}\)
+KEY: C
+SOL:
+Answer: (C) \(\cos2x=\tfrac23,\ \tan^2x=\tfrac15\).
+Given: \(\cos3x=4\cos^3x-3\cos x\)
+Formula/Principle: \(\dfrac{\cos3x}{\cos x}=4\cos^2x-3=2(1+\cos2x)-3=2\cos2x-1\)
+Step 1: \(2\cos2x-1=\tfrac13\Rightarrow\cos2x=\tfrac23\)
+Step 2: \(\tan^2x=\dfrac{1-\cos2x}{1+\cos2x}=\dfrac{1/3}{5/3}\)
+Worked derivation: \[\tan^2x=\frac15\]
+Check: \[\cos^2x=\frac{1+2/3}{2}=\frac56:\ 4\cdot\frac56-3=\frac13\ \checkmark;\quad \tan^2x=\frac{1/6}{5/6}=\frac15\ \checkmark\]
+Why: \(\text{dividing the triple-angle formula by }\cos x\text{ leaves an expression in }\cos^2x\text{, which converts directly to }\cos2x\)
+Why not the others: (A) \(\text{sets }\cos2x\text{ equal to the given ratio}\); (B) \(\text{inverts the ratio: }\tfrac{1+\cos2x}{1-\cos2x}=5\text{ is }\cot^2x\); (D) \(\text{gives }\cos^2x=\tfrac56\text{ as if it were }\cos2x\).
+Key point: \(\cos3x/\cos x=2\cos2x-1;\ \tan^2x=(1-\cos2x)/(1+\cos2x)\)
+
+@@ Q54
+format: numerical
+sub_topic: The largest integer dividing 3^(2n) − 8n − 1 for every positive n, proved by induction
+Q: Let \(a_n=3^{2n}-8n-1\) for positive integers n. What is the largest positive integer that divides \(a_n\) for every \(n\ge1\)?
+A) 8
+B) 64
+C) 16
+D) 704
+KEY: B
+SOL:
+Answer: (B) 64.
+Given: \(a_1=9-8-1=0,\ a_2=81-17=64,\ a_3=729-25=704=64\times11\)
+Formula/Principle: \(\text{the answer divides }\gcd(a_2,a_3,\dots);\ \text{then prove divisibility for all n by induction}\)
+Step 1: \(\gcd(64,704)=64\Rightarrow\text{the answer is at most 64}\)
+Step 2: \(\text{Base: }a_1=0\text{ is divisible by 64. Assume }64\mid a_k=9^k-8k-1\)
+Worked derivation: \[a_{k+1}=9^{k+1}-8k-9=9(9^k-8k-1)+64k=9a_k+64k\Rightarrow64\mid a_{k+1}\]
+Check: \[a_4=6561-33=6528=64\times102\ \checkmark\]
+Why: \(\text{the inductive step rewrites }a_{k+1}\text{ in terms of }a_k\text{ plus a multiple of 64}\)
+Why not the others: (A),(C) \(\text{divide every }a_n\text{ but are not the largest such integer}\); (D) \(a_2=64\text{ is not divisible by 704}\).
+Key point: \(\text{test small n to find the candidate, then prove it by induction}\)
+
+@@ Q55
+format: numerical
+sub_topic: Condition on p for the complex roots of x² + px + 4 = 0 to have arguments between π/3 and 2π/3
+Q: For real p, the equation \(x^2+px+4=0\) has non-real roots \(z\) and \(\bar z\), with z in the upper half-plane. For which values of p does \(\arg z\) lie strictly between \(\dfrac\pi3\) and \(\dfrac{2\pi}3\)?
+A) \(-4<p<4\)
+B) \(0<p<2\)
+C) \(-2\sqrt3<p<2\sqrt3\)
+D) \(-2<p<2\)
+KEY: D
+SOL:
+Answer: (D) \(-2<p<2\).
+Given: \(z\bar z=|z|^2=4\Rightarrow|z|=2;\quad z+\bar z=2\,\mathrm{Re}\,z=-p\)
+Formula/Principle: \(z=2(\cos\theta+i\sin\theta)\Rightarrow4\cos\theta=-p\Rightarrow\cos\theta=-\dfrac p4\)
+Step 1: \(\text{non-real roots need }p^2-16<0\iff-4<p<4\)
+Step 2: \(\tfrac\pi3<\theta<\tfrac{2\pi}3\iff-\tfrac12<\cos\theta<\tfrac12\iff-\tfrac12<-\tfrac p4<\tfrac12\)
+Worked derivation: \[-2<p<2\ (\text{which lies inside }-4<p<4)\]
+Check: \[p=0:\ z=2i,\ \arg z=\tfrac\pi2\ \checkmark;\quad p=2:\ z=-1+i\sqrt3,\ \arg z=\tfrac{2\pi}3\ (\text{boundary, excluded})\ \checkmark\]
+Why: \(\text{since the product of the roots is fixed at 4, the roots lie on the circle }|z|=2\text{ and only their angle changes with p}\)
+Why not the others: (A) \(\text{is only the condition for non-real roots}\); (B) \(\text{misses the negative values of p}\); (C) \(\text{solves }|\cos\theta|<\tfrac{\sqrt3}2\text{, which is the condition for }\tfrac\pi6<\theta<\tfrac{5\pi}6\).
+Key point: \(\text{roots of }x^2+px+q\ (q>0)\text{ non-real lie on }|z|=\sqrt q\text{, with }\cos\theta=-p/(2\sqrt q)\)
+
+@@ Q56
+format: numerical
+sub_topic: A system of linear inequalities whose solution region shrinks to a single point
+Q: What is the solution set of the system \(x+2y\le4,\ 2x+y\le4,\ x\ge0,\ y\ge0,\ x+y\ge\tfrac83\)?
+A) The single point \(\left(\tfrac43,\tfrac43\right)\)
+B) A triangle with vertices \((2,0),\ (0,2),\ \left(\tfrac43,\tfrac43\right)\)
+C) The empty set
+D) The line segment from \((2,0)\) to \((0,2)\)
+KEY: A
+SOL:
+Answer: (A) The single point \(\left(\tfrac43,\tfrac43\right)\).
+Given: \(\text{first four inequalities: quadrilateral with corners }(0,0),\ (2,0),\ \left(\tfrac43,\tfrac43\right),\ (0,2)\)
+Formula/Principle: \(\text{a linear function attains its maximum over a polygon at a corner}\)
+Step 1: \(x+2y=4,\ 2x+y=4\Rightarrow x=y=\tfrac43\)
+Step 2: \(x+y\text{ at the corners: }0,\ 2,\ \tfrac83,\ 2\Rightarrow\max=\tfrac83\text{, only at }\left(\tfrac43,\tfrac43\right)\)
+Worked derivation: \[3(x+y)=(x+2y)+(2x+y)\le8\Rightarrow x+y\le\tfrac83,\ \text{with equality only when both are equalities}\]
+Check: \[\left(\tfrac43,\tfrac43\right):\ \tfrac43+\tfrac83=4\le4,\ \tfrac83+\tfrac43=4\le4,\ x+y=\tfrac83\ \checkmark\]
+Why: \(\text{the line }x+y=\tfrac83\text{ just touches the quadrilateral at one corner, so the region degenerates to a point}\)
+Why not the others: (B) \(\text{the points }(2,0)\text{ and }(0,2)\text{ have }x+y=2<\tfrac83\); (C) \(\left(\tfrac43,\tfrac43\right)\text{ satisfies all five}\); (D) \(\text{that segment has }x+y=2\).
+Key point: \(\text{an extra inequality can cut a region down to a corner point}\)
+
+@@ Q57
+format: numerical
+sub_topic: Finding n from the sum of cubes, then the sum of squares for the same n
+Q: If \(1^3+2^3+\cdots+n^3=3025\), what is \(1^2+2^2+\cdots+n^2\)?
+A) 285
+B) 385
+C) 506
+D) 55
+KEY: B
+SOL:
+Answer: (B) 385.
+Given: \(\sum_{k=1}^nk^3=3025\)
+Formula/Principle: \(\sum k^3=\left[\dfrac{n(n+1)}2\right]^2,\quad \sum k^2=\dfrac{n(n+1)(2n+1)}6\)
+Step 1: \(\dfrac{n(n+1)}2=\sqrt{3025}=55\Rightarrow n(n+1)=110\Rightarrow n=10\)
+Step 2: \(\sum k^2=\dfrac{10\cdot11\cdot21}{6}\)
+Worked derivation: \[\sum_{k=1}^{10}k^2=\frac{2310}{6}=385\]
+Check: \[55^2=3025\ \checkmark;\quad 1+4+9+16+25+36+49+64+81+100=385\ \checkmark\]
+Why: \(\text{the sum of the first n cubes is the square of the sum of the first n integers}\)
+Why not the others: (A) \(\text{is }\sum k^2\text{ for }n=9\); (C) \(\text{is }\sum k^2\text{ for }n=11\); (D) \(\text{is }\sum k\text{, not }\sum k^2\).
+Key point: \(\sum k^3=(\sum k)^2\)
+
+@@ Q58
+format: numerical
+sub_topic: Slopes of the lines through the origin that make an angle of 45° with the line y = 2x
+Q: Which lines through the origin make an angle of 45° with the line \(y=2x\)?
+A) \(y=3x\text{ and }y=-\tfrac13x\)
+B) \(y=x\text{ and }y=-x\)
+C) \(y=\tfrac13x\text{ only}\)
+D) \(y=\tfrac13x\text{ and }y=-3x\)
+KEY: D
+SOL:
+Answer: (D) \(y=\tfrac13x\) and \(y=-3x\).
+Given: \(m_1=2;\ \theta=45^\circ\)
+Formula/Principle: \(\tan\theta=\left|\dfrac{m-m_1}{1+mm_1}\right|\)
+Step 1: \(\left|\dfrac{m-2}{1+2m}\right|=1\)
+Step 2: \(m-2=1+2m\Rightarrow m=-3;\quad m-2=-(1+2m)\Rightarrow3m=1\Rightarrow m=\tfrac13\)
+Worked derivation: \[m=\tfrac13:\ \frac{\frac13-2}{1+\frac23}=\frac{-5/3}{5/3}=-1;\quad m=-3:\ \frac{-5}{1-6}=1\]
+Check: \[\tfrac13\times(-3)=-1\Rightarrow\text{the two lines are perpendicular, as the two bisector-type lines at }45^\circ\text{ must be}\ \checkmark\]
+Why: \(\text{the absolute value gives two lines, one on each side of }y=2x\)
+Why not the others: (A) \(\text{these make }\tan^{-1}\tfrac17\text{ and }\tan^{-1}7\text{ with }y=2x\); (B) \(\text{these make }45^\circ\text{ with the x-axis, not with }y=2x\); (C) \(\text{misses the second line}\).
+Key point: \(\tan\theta=|(m-m_1)/(1+mm_1)|\text{ gives two slopes}\)
+
+@@ Q59
+format: numerical
+sub_topic: Number of common tangents to two circles as the distance between their centres varies
+Q: Consider the circles \(x^2+y^2=1\) and \((x-a)^2+y^2=4\) with \(a\ge0\). How many common tangents do they have when \(a=2\) and when \(a=\tfrac12\), and for which value of a do they have exactly three common tangents?
+A) 4 and 2; \(a=1\)
+B) 2 and 1; \(a=3\)
+C) 2 and 0; \(a=3\)
+D) 3 and 0; \(a=2\)
+KEY: C
+SOL:
+Answer: (C) 2 and 0; \(a=3\).
+Given: \(r_1=1,\ r_2=2,\ \text{distance between centres }d=a\)
+Formula/Principle: \(d>r_1+r_2:4;\ d=r_1+r_2:3;\ |r_1-r_2|<d<r_1+r_2:2;\ d=|r_1-r_2|:1;\ d<|r_1-r_2|:0\)
+Step 1: \(a=2:\ 1<2<3\Rightarrow\text{the circles cut in two points: 2 common tangents}\)
+Step 2: \(a=\tfrac12:\ \tfrac12<1\Rightarrow\text{the small circle lies inside the large one: 0 common tangents}\)
+Worked derivation: \[\text{three tangents}\iff\text{external contact}\iff d=r_1+r_2=3\Rightarrow a=3\]
+Check: \[a=3:\ \text{the circles touch at }(1,0)\text{; the common tangent there is }x=1,\text{ plus two direct tangents}\ \checkmark\]
+Why: \(\text{as the centres separate, the circles go from one inside the other (0), to internal contact (1), to cutting (2), to external contact (3), to separate (4)}\)
+Why not the others: (A) \(a=1\text{ gives internal contact (one tangent)}\); (B) \(\text{one circle inside the other has no common tangent}\); (D) \(a=2\text{ gives cutting circles, not contact}\).
+Key point: \(\text{compare d with }r_1+r_2\text{ and }|r_1-r_2|\)
+
+@@ Q60
+format: numerical
+sub_topic: Equation of a circle with centre on the x-axis passing through two given points
+Q: A circle has its centre on the x-axis and passes through \((1,2)\) and \((3,4)\). What is its equation?
+A) \(x^2+y^2-10x+5=0\)
+B) \(x^2+y^2-10x-5=0\)
+C) \(x^2+y^2+10x+5=0\)
+D) \(x^2+y^2-5x=0\)
+KEY: A
+SOL:
+Answer: (A) \(x^2+y^2-10x+5=0\).
+Given: \(\text{centre }(h,0);\ \text{points }(1,2),\ (3,4)\)
+Formula/Principle: \(\text{equal distances from the centre: }(1-h)^2+4=(3-h)^2+16\)
+Step 1: \(1-2h+h^2+4=9-6h+h^2+16\Rightarrow4h=20\Rightarrow h=5\)
+Step 2: \(r^2=(1-5)^2+2^2=20\)
+Worked derivation: \[(x-5)^2+y^2=20\iff x^2+y^2-10x+5=0\]
+Check: \[(3,4):\ 9+16-30+5=0\ \checkmark;\quad (1,2):\ 1+4-10+5=0\ \checkmark\]
+Why: \(\text{the centre lies on the perpendicular bisector of the chord joining the two points, here intersected with the x-axis}\)
+Why not the others: (B) \(\text{sign error in the constant: }25-20=5\); (C) \(\text{centre at }(-5,0)\text{, not equidistant from the points}\); (D) \(\text{passes through the origin; }(3,4)\text{ gives }25-15\ne0\).
+Key point: \((x-h)^2+y^2=r^2;\ \text{equate distances to find h}\)
