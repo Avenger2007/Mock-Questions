@@ -1,0 +1,433 @@
+@@ Q41
+format: numerical
+sub_topic: Values of k for which the parabola y = x² − kx + 12 cuts the x-axis at two integer points
+Q: For how many real values of \(k\) does the graph of \(y=x^2-kx+12\) cut the \(x\)-axis at two points whose \(x\)-coordinates are both integers, and what is the largest such \(k\)?
+A) 6 values; largest \(k=13\)
+B) 3 values; largest \(k=7\)
+C) 12 values; largest \(k=13\)
+D) 4 values; largest \(k=8\)
+KEY: A
+SOL:
+Answer: (A) 6 values; the largest is \(k=13\).
+Given: \(x^2-kx+12=0\) has integer roots \(r,s\)
+Formula/Principle: \(\text{sum of roots }r+s=k,\ \text{product }rs=12\)
+Step 1: \(\text{integer pairs with }rs=12:\ (1,12),(2,6),(3,4),(-1,-12),(-2,-6),(-3,-4)\)
+Step 2: \(k=r+s\in\{13,8,7,-13,-8,-7\}\Rightarrow6\text{ values}\)
+Worked derivation: \[k^2-48=(r-s)^2:\quad k=\pm13\Rightarrow121=11^2,\ k=\pm8\Rightarrow16=4^2,\ k=\pm7\Rightarrow1=1^2\]
+Check: \[k=13:\ x^2-13x+12=(x-1)(x-12)\ \checkmark;\quad k=-7:\ x^2+7x+12=(x+3)(x+4)\ \checkmark\]
+Why: \(\text{the graph meets the x-axis at the roots; the product }12\text{ is fixed by the constant term, so }k\text{ is decided by the factor pairs of }12\text{, positive and negative}\)
+Why not the others: (B) \(\text{counts only one ordering per pair but ignores negative pairs and gives the smallest positive }k\); (C) \(\text{counts }(r,s)\text{ and }(s,r)\text{ separately, though they give the same }k\); (D) \(\text{misses the pairs }(1,12)\text{ and }(-1,-12)\).
+Key point: \(\text{integer roots: list factor pairs of the constant term; each pair gives }k=r+s\)
+
+@@ Q42
+format: numerical
+sub_topic: Arrangements of PEPPER: all, with the three P's together, and with no two P's adjacent
+Q: For the letters of the word PEPPER, what are the number of distinct arrangements, the number in which all three P's are together, and the number in which no two P's are adjacent?
+A) \(720,\ 24,\ 12\)
+B) \(60,\ 12,\ 12\)
+C) \(60,\ 24,\ 4\)
+D) \(120,\ 12,\ 24\)
+KEY: B
+SOL:
+Answer: (B) \(60,\ 12,\ 12\).
+Given: \(\text{PEPPER: P}\times3,\ \text{E}\times2,\ \text{R}\times1;\ 6\text{ letters}\)
+Formula/Principle: \(\text{arrangements of }n\text{ objects with repeats }p,q,\ldots=\dfrac{n!}{p!\,q!\cdots};\ \text{gap method for no two alike adjacent}\)
+Step 1: \(\text{all}=\dfrac{6!}{3!\,2!}=\dfrac{720}{12}=60\)
+Step 2: \(\text{PPP as one block: block, E, E, R}\Rightarrow\dfrac{4!}{2!}=12\)
+Step 3: \(\text{arrange E, E, R: }\dfrac{3!}{2!}=3;\ \text{4 gaps, choose 3 for the P's: }\binom43=4\Rightarrow3\times4=12\)
+Worked derivation: \[\frac{6!}{3!\,2!}=60,\qquad\frac{4!}{2!}=12,\qquad\frac{3!}{2!}\binom{4}{3}=12\]
+Check: \[\text{e.g. }\_E\_E\_R\_:\ \text{P's in gaps }1,2,3\text{ give PEPEPR, with no two P's adjacent}\ \checkmark\]
+Why: \(\text{repeated letters make some orderings identical, so divide by the factorials of the repeats; for separation, fix the other letters and place each P in a different gap}\)
+Why not the others: (A) \(\text{treats all letters as distinct}\); (C) \(\text{the block count forgets to divide by }2!\text{ for the two E's, and the gap count forgets the 3 arrangements of E, E, R}\); (D) \(\text{divides by }3!\text{ only, and swaps the last result}\).
+Key point: \(n!/(p!q!)\text{ for repeats; block for together; gaps for apart}\)
+
+@@ Q43
+format: numerical
+sub_topic: Finding the number of arithmetic means from their sum, and counting how many choices of n make all the means integers
+Q: \(n\) arithmetic means are inserted between 3 and 45. If the sum of the means is 168, what is \(n\)? Also, for how many positive integers \(n\) would all the inserted means be integers?
+A) \(n=8\); 6 values
+B) \(n=6\); 8 values
+C) \(n=7\); 7 values
+D) \(n=7\); 42 values
+KEY: C
+SOL:
+Answer: (C) \(n=7\); 7 values of \(n\).
+Given: \(a=3,\ b=45;\ \text{sum of }n\text{ means}=168\)
+Formula/Principle: \(\text{sum of }n\text{ AMs between }a\text{ and }b=n\cdot\dfrac{a+b}{2};\ d=\dfrac{b-a}{n+1}\)
+Step 1: \(n\cdot\dfrac{3+45}{2}=24n=168\Rightarrow n=7\)
+Step 2: \(\text{means are }3+kd\text{ with }d=\dfrac{42}{n+1};\ \text{all integers}\iff(n+1)\mid42\)
+Step 3: \(\text{divisors of }42\text{ greater than }1:\ 2,3,6,7,14,21,42\Rightarrow n\in\{1,2,5,6,13,20,41\}\)
+Worked derivation: \[n=7:\ d=\frac{42}{8}=5.25;\ \text{means }8.25,13.5,\ldots,39.75;\ \text{sum}=7\cdot\frac{8.25+39.75}{2}=168\]
+Check: \[n=6:\ d=6,\ \text{means }9,15,21,27,33,39\ (\text{integers});\ n=7\text{ is not in the integer list}\ \checkmark\]
+Why: \(\text{the means pair up symmetrically about the average }\tfrac{a+b}{2}=24\text{, so their sum is }24n\text{; integrality depends only on whether the gap }42\text{ splits into }n+1\text{ equal integer steps}\)
+Why not the others: (A) \(24\times8=192\ne168\), \(\text{and it misses one divisor}\); (B) \(24\times6=144\), \(\text{and 8 is the number of all divisors of 42, including 1}\); (D) \(42\text{ counts the gap itself, not its divisors}\).
+Key point: \(\text{sum of AMs}=n(a+b)/2;\ \text{integer means}\iff(n+1)\mid(b-a)\text{ for integer }a,b\)
+
+@@ Q44
+format: numerical
+sub_topic: The line through (2, 3) cutting the positive axes that encloses the least triangle area with them
+Q: A line through \((2,3)\) meets the positive \(x\)- and \(y\)-axes at \(A\) and \(B\). As the line turns about \((2,3)\), what is the least area of triangle \(OAB\) and the equation of the line that gives it?
+A) \(6;\ 2x+3y=13\)
+B) \(24;\ x+y=5\)
+C) \(12;\ 2x+3y=12\)
+D) \(12;\ 3x+2y=12\)
+KEY: D
+SOL:
+Answer: (D) Least area 12, on the line \(3x+2y=12\).
+Given: \(\text{intercept form }\dfrac xa+\dfrac yb=1\text{ through }(2,3),\ a,b>0\)
+Formula/Principle: \(\dfrac2a+\dfrac3b=1;\ \text{area}=\tfrac12ab;\ \text{AM}\ge\text{GM}\)
+Step 1: \(1=\dfrac2a+\dfrac3b\ge2\sqrt{\dfrac6{ab}}\Rightarrow ab\ge24\Rightarrow\text{area}\ge12\)
+Step 2: \(\text{equality when }\dfrac2a=\dfrac3b=\dfrac12\Rightarrow a=4,\ b=6\)
+Worked derivation: \[\frac x4+\frac y6=1\iff3x+2y=12;\qquad\text{slope form: }A(m)=\tfrac12\left(2-\tfrac3m\right)(3-2m),\ m<0,\ \text{least at }m=-\tfrac32\]
+Check: \[3(2)+2(3)=12\ \checkmark;\ \text{area}=\tfrac12(4)(6)=12;\ m=-1:\ a=5,b=5,\ \text{area }12.5>12\ \checkmark\]
+Why: \(\text{the area grows without bound as the line becomes nearly horizontal or vertical, so it has a least value; at the minimum, the point }(2,3)\text{ is the midpoint of }AB\)
+Why not the others: (A) \(\text{this line does not give a triangle of area 6; AM–GM gives a lower bound of 12}\); (B) \(24\text{ is }ab\text{, not the area, and }x+y=5\text{ gives area }12.5\); (C) \((2,3)\text{ does not lie on }2x+3y=12\).
+Key point: \(\text{least area through }(h,k)\text{ is }2hk\text{, when }(h,k)\text{ is the midpoint of the intercepted segment}\)
+
+@@ Q45
+format: numerical
+sub_topic: Equation, eccentricity and latus rectum of an ellipse whose major axis lies along the y-axis
+Q: An ellipse centred at the origin has vertices \((0,\pm13)\) and foci \((0,\pm5)\). What are its equation, eccentricity and length of the latus rectum?
+A) \(\dfrac{x^2}{169}+\dfrac{y^2}{144}=1;\ e=\tfrac5{13};\ \tfrac{288}{13}\)
+B) \(\dfrac{x^2}{144}+\dfrac{y^2}{169}=1;\ e=\tfrac{12}{13};\ \tfrac{50}{13}\)
+C) \(\dfrac{x^2}{144}+\dfrac{y^2}{169}=1;\ e=\tfrac5{13};\ \tfrac{288}{13}\)
+D) \(\dfrac{x^2}{25}+\dfrac{y^2}{169}=1;\ e=\tfrac5{13};\ \tfrac{50}{13}\)
+KEY: C
+SOL:
+Answer: (C) \(\dfrac{x^2}{144}+\dfrac{y^2}{169}=1\), \(e=\tfrac5{13}\), latus rectum \(\tfrac{288}{13}\).
+Given: \(\text{vertices }(0,\pm a),\ a=13;\ \text{foci }(0,\pm c),\ c=5\)
+Formula/Principle: \(\dfrac{x^2}{b^2}+\dfrac{y^2}{a^2}=1\ (a>b);\ c^2=a^2-b^2;\ e=\dfrac ca;\ \text{latus rectum}=\dfrac{2b^2}a\)
+Step 1: \(b^2=169-25=144\)
+Step 2: \(e=\dfrac5{13};\ \text{latus rectum}=\dfrac{2(144)}{13}=\dfrac{288}{13}\)
+Worked derivation: \[\frac{x^2}{144}+\frac{y^2}{169}=1;\quad\text{at }y=5:\ x^2=144\left(1-\tfrac{25}{169}\right)=\frac{144^2}{169}\Rightarrow x=\pm\frac{144}{13}\]
+Check: \[2\cdot\frac{144}{13}=\frac{288}{13}\ \checkmark;\quad e<1\ \checkmark\]
+Why: \(\text{the foci and vertices lie on the y-axis, so the larger denominator }a^2\text{ goes under }y^2\)
+Why not the others: (A) \(\text{puts the major axis along the x-axis}\); (B) \(e\text{ uses }b/a\text{, and the latus rectum uses }2c^2/a\); (D) \(\text{uses }b^2=c^2\).
+Key point: \(\text{major axis along y: }y^2/a^2;\ b^2=a^2-c^2,\ \text{LR}=2b^2/a\)
+
+@@ Q46
+format: numerical
+sub_topic: Values of k for which x²/(12 − k) + y²/(8 − k) = 1 is a hyperbola, and the foci that do not depend on k
+Q: For which values of \(k\) does \(\dfrac{x^2}{12-k}+\dfrac{y^2}{8-k}=1\) represent a hyperbola, and what can be said about its foci in that range?
+A) \(8<k<12\); the foci are \((\pm2,0)\) for every such \(k\)
+B) \(k<8\); the foci are \((\pm2,0)\)
+C) \(8<k<12\); the foci are \((0,\pm2)\), and they move as \(k\) changes
+D) \(k>12\); the foci are \((\pm\sqrt{20-2k},0)\)
+KEY: A
+SOL:
+Answer: (A) \(8<k<12\); foci \((\pm2,0)\) for all such \(k\).
+Given: \(\text{equation }\dfrac{x^2}{12-k}+\dfrac{y^2}{8-k}=1\)
+Formula/Principle: \(\text{hyperbola }\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\text{ needs denominators of opposite sign};\ c^2=a^2+b^2\)
+Step 1: \((12-k)(8-k)<0\Rightarrow8<k<12\)
+Step 2: \(\text{then }a^2=12-k>0,\ b^2=k-8>0:\ \dfrac{x^2}{12-k}-\dfrac{y^2}{k-8}=1\)
+Step 3: \(c^2=(12-k)+(k-8)=4\Rightarrow c=2;\ \text{foci }(\pm2,0)\)
+Worked derivation: \[e=\frac{c}{a}=\frac{2}{\sqrt{12-k}},\quad k=11:\ \frac{x^2}{1}-\frac{y^2}{3}=1,\ e=2;\quad k=9:\ \frac{x^2}3-\frac{y^2}1=1,\ e=\tfrac2{\sqrt3}\]
+Check: \[k=11:\ c^2=1+3=4\ \checkmark;\quad k=9:\ c^2=3+1=4\ \checkmark\]
+Why: \(\text{the }k\text{ cancels in }a^2+b^2\text{, so the whole family is confocal: the shape (eccentricity) changes, the foci do not}\)
+Why not the others: (B) \(k<8\text{ makes both denominators positive: an ellipse (also with foci }(\pm2,0))\); (C) \(\text{the positive term is }x^2\text{, so the foci lie on the x-axis and are fixed}\); (D) \(k>12\text{ makes both denominators negative: no real curve}\).
+Key point: \(\text{opposite-sign denominators give a hyperbola; here }c^2=4\text{ for all }8<k<12\)
+
+@@ Q47
+format: numerical
+sub_topic: Two limits reduced to the standard forms (eˣ − 1)/x → 1, log(1 + x)/x → 1 and (aˣ − 1)/x → log a
+Q: What are \(L_1=\displaystyle\lim_{x\to0}\frac{e^{3x}-e^{x}}{x}\) and \(L_2=\displaystyle\lim_{x\to0}\frac{\log_e(1+2x)}{3^{x}-1}\)?
+A) \(L_1=3,\ L_2=\dfrac{2}{3}\)
+B) \(L_1=4,\ L_2=2\log_e3\)
+C) \(L_1=2,\ L_2=\dfrac{1}{\log_e3}\)
+D) \(L_1=2,\ L_2=\dfrac{2}{\log_e3}\)
+KEY: D
+SOL:
+Answer: (D) \(L_1=2\), \(L_2=\dfrac{2}{\log_e3}\).
+Given: \(\text{both limits have the form }\tfrac00\text{ at }x=0\)
+Formula/Principle: \(\displaystyle\lim_{x\to0}\frac{e^x-1}{x}=1,\ \lim_{x\to0}\frac{\log_e(1+x)}{x}=1,\ \lim_{x\to0}\frac{a^x-1}{x}=\log_ea\)
+Step 1: \(\dfrac{e^{3x}-e^x}{x}=\dfrac{e^{3x}-1}{x}-\dfrac{e^x-1}{x}=3\cdot\dfrac{e^{3x}-1}{3x}-\dfrac{e^x-1}{x}\to3-1=2\)
+Step 2: \(\dfrac{\log_e(1+2x)}{3^x-1}=\dfrac{\log_e(1+2x)}{2x}\cdot2\cdot\dfrac{x}{3^x-1}\to1\cdot2\cdot\dfrac1{\log_e3}\)
+Worked derivation: \[L_1=3-1=2,\qquad L_2=\frac{2}{\log_e3}\approx\frac{2}{1.0986}\approx1.82\]
+Check: \[x=0.001:\ \frac{e^{0.003}-e^{0.001}}{0.001}\approx\frac{1.0030045-1.0010005}{0.001}=2.004;\ \frac{\log(1.002)}{3^{0.001}-1}\approx\frac{0.0019980}{0.0010992}\approx1.818\ \checkmark\]
+Why: \(\text{subtracting and adding }1\text{ splits }L_1\text{ into two standard limits; in }L_2\text{, each factor is rescaled so that it matches a standard form exactly}\)
+Why not the others: (A) \(\text{ignores the }e^{x}\text{ term, and treats }3^x-1\text{ as }3x\); (B) \(\text{adds the exponents instead of subtracting, and inverts the log factor}\); (C) \(\text{forgets the factor 2 from }\log(1+2x)\).
+Key point: \(\text{rewrite into }(e^{u}-1)/u,\ \log(1+u)/u,\ (a^{u}-1)/u\text{ with matching }u\)
+
+@@ Q48
+format: numerical
+sub_topic: Bayes' theorem when one machine never produces a defective item
+Q: Machine A makes 60 % of a factory's bolts, and 5 % of its bolts are defective. Machine B makes the remaining 40 % and never produces a defective bolt. A bolt is picked at random. If it is defective, what is the probability that it came from A? If it is not defective, what is the probability that it came from B?
+A) \(0.6\) and \(0.4\)
+B) \(1\) and \(\tfrac{40}{97}\)
+C) \(0.05\) and \(\tfrac{57}{97}\)
+D) \(1\) and \(0.4\)
+KEY: B
+SOL:
+Answer: (B) \(P(A\mid D)=1\), \(P(B\mid D')=\tfrac{40}{97}\).
+Given: \(P(A)=0.6,\ P(B)=0.4,\ P(D\mid A)=0.05,\ P(D\mid B)=0\)
+Formula/Principle: \(P(E_i\mid F)=\dfrac{P(E_i)P(F\mid E_i)}{\sum_jP(E_j)P(F\mid E_j)}\)
+Step 1: \(P(A\mid D)=\dfrac{0.6(0.05)}{0.6(0.05)+0.4(0)}=\dfrac{0.03}{0.03}=1\)
+Step 2: \(P(D')=0.6(0.95)+0.4(1)=0.57+0.40=0.97;\ P(B\mid D')=\dfrac{0.40}{0.97}=\dfrac{40}{97}\)
+Worked derivation: \[P(A\mid D')=\frac{0.57}{0.97}=\frac{57}{97},\qquad\frac{57}{97}+\frac{40}{97}=1\]
+Check: \[\text{of }1000\text{ bolts: A makes 600 (30 defective), B makes 400 (0 defective); good bolts }570+400=970,\ \text{from B }400/970=40/97\ \checkmark\]
+Why: \(\text{a defective bolt can only come from A, so the posterior is certain; a good bolt is slightly more likely to be from B than the prior 0.4, because good bolts from A are reduced by its defects}\)
+Why not the others: (A) \(\text{these are the priors, ignoring the evidence}\); (C) \(0.05\text{ is }P(D\mid A)\text{, not }P(A\mid D)\text{, and }57/97\text{ is }P(A\mid D')\); (D) \(\text{the second answer ignores the evidence that the bolt is good}\).
+Key point: \(\text{if only one cause can give the event, Bayes gives posterior 1 for that cause}\)
+
+@@ Q49
+format: numerical
+sub_topic: Solving tan⁻¹2x + tan⁻¹3x = π/4 and rejecting a root that violates the principal-value range
+Q: Which values of \(x\) satisfy \(\tan^{-1}2x+\tan^{-1}3x=\dfrac{\pi}{4}\)?
+A) \(x=\tfrac16\) and \(x=-1\)
+B) \(x=\tfrac16\) only
+C) \(x=-1\) only
+D) \(x=1\) only
+KEY: B
+SOL:
+Answer: (B) \(x=\tfrac16\) only.
+Given: \(\tan^{-1}2x+\tan^{-1}3x=\tfrac\pi4\)
+Formula/Principle: \(\tan(\alpha+\beta)=\dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta};\ \tan^{-1}\text{ takes values in }\left(-\tfrac\pi2,\tfrac\pi2\right)\)
+Step 1: \(\dfrac{2x+3x}{1-6x^2}=1\Rightarrow6x^2+5x-1=0\Rightarrow(6x-1)(x+1)=0\)
+Step 2: \(x=\tfrac16\text{ or }x=-1\)
+Step 3: \(x=-1:\ \tan^{-1}(-2)+\tan^{-1}(-3)<0\ne\tfrac\pi4;\ \text{reject}\)
+Worked derivation: \[x=\tfrac16:\ \tan^{-1}\tfrac13+\tan^{-1}\tfrac12=\tan^{-1}\frac{\frac13+\frac12}{1-\frac16}=\tan^{-1}1=\frac\pi4;\qquad x=-1:\ \text{sum}=-\frac{3\pi}{4}\]
+Check: \[\text{geometrically, angles with slopes }\tfrac12\text{ and }\tfrac13\text{ add to }45^\circ;\ \text{slopes }-2,-3\text{ give }-63.4^\circ-71.6^\circ=-135^\circ\ \checkmark\]
+Why: \(\text{taking tan of both sides loses information: angles that differ by }\pi\text{ have the same tangent, so }-\tfrac{3\pi}4\text{ also satisfies the squared-up equation}\)
+Why not the others: (A) \(x=-1\text{ makes both terms negative}\); (C) \(\text{keeps the wrong root and drops the correct one}\); (D) \(x=1\text{ gives }\tan^{-1}2+\tan^{-1}3=\tfrac{3\pi}4\).
+Key point: \(\text{after using the tan-sum formula, check each root in the original equation}\)
+
+@@ Q50
+format: numerical
+sub_topic: Finding the adjoint and inverse of an upper-triangular 3 × 3 matrix with determinant −1, and det(adj A)
+Q: For \(A=\begin{pmatrix}1&2&3\\0&1&4\\0&0&-1\end{pmatrix}\), what are \(A^{-1}\) and \(\det(\operatorname{adj}A)\)?
+A) \(A^{-1}=\begin{pmatrix}-1&2&5\\0&-1&-4\\0&0&1\end{pmatrix};\ \det(\operatorname{adj}A)=-1\)
+B) \(A^{-1}=\begin{pmatrix}1&0&0\\-2&1&0\\-5&4&-1\end{pmatrix};\ \det(\operatorname{adj}A)=1\)
+C) \(A^{-1}=\begin{pmatrix}1&-2&-5\\0&1&4\\0&0&-1\end{pmatrix};\ \det(\operatorname{adj}A)=-1\)
+D) \(A^{-1}=\begin{pmatrix}1&-2&-5\\0&1&4\\0&0&-1\end{pmatrix};\ \det(\operatorname{adj}A)=1\)
+KEY: D
+SOL:
+Answer: (D) \(A^{-1}=\begin{pmatrix}1&-2&-5\\0&1&4\\0&0&-1\end{pmatrix}\), \(\det(\operatorname{adj}A)=1\).
+Given: \(\det A=1\cdot1\cdot(-1)=-1\ (\text{triangular})\)
+Formula/Principle: \(A^{-1}=\dfrac{1}{\det A}\operatorname{adj}A;\ \operatorname{adj}A=(\text{cofactor matrix})^{T};\ \det(\operatorname{adj}A)=(\det A)^{n-1}\)
+Step 1: \(C_{11}=-1,\ C_{12}=0,\ C_{13}=0;\ C_{21}=2,\ C_{22}=-1,\ C_{23}=0;\ C_{31}=5,\ C_{32}=-4,\ C_{33}=1\)
+Step 2: \(\operatorname{adj}A=\begin{pmatrix}-1&2&5\\0&-1&-4\\0&0&1\end{pmatrix},\ A^{-1}=-\operatorname{adj}A\)
+Step 3: \(\det(\operatorname{adj}A)=(-1)^{2}=1\)
+Worked derivation: \[C_{21}=-(2\cdot(-1)-3\cdot0)=2,\quad C_{31}=2\cdot4-3\cdot1=5,\quad C_{32}=-(1\cdot4-3\cdot0)=-4\]
+Check: \[AA^{-1}:\ \text{row 1}\cdot\text{col 3}=1(-5)+2(4)+3(-1)=0;\ \text{row 2}\cdot\text{col 3}=4-4=0;\ \text{row 3}\cdot\text{col 3}=1\ \checkmark\]
+Why: \(\text{the inverse of an upper-triangular matrix is upper triangular, and with }\det A=-1\text{ every entry of adj }A\text{ changes sign}\)
+Why not the others: (A) \(\text{this is adj }A\text{, not }A^{-1}\text{, and }(\det A)^2=1\); (B) \(\text{uses the cofactor matrix without transposing}\); (C) \(\det(\operatorname{adj}A)=(\det A)^{2}\text{, which is positive}\).
+Key point: \(A^{-1}=\operatorname{adj}A/\det A;\ \det(\operatorname{adj}A)=(\det A)^{n-1}\)
+
+@@ Q51
+format: numerical
+sub_topic: Finding constants in a piecewise function so that it is differentiable at x = 1
+Q: \(f(x)=\begin{cases}ax^2+1,&x\le1\\ bx,&x>1\end{cases}\). For which values of \(a\) and \(b\) is \(f\) differentiable at \(x=1\), and what is \(f'(1)\)?
+A) \(a=1,\ b=2;\ f'(1)=2\)
+B) \(a=2,\ b=3;\ f'(1)=4\)
+C) \(\text{any }a\text{ with }b=a+1;\ f'(1)=b\)
+D) \(a=1,\ b=1;\ f'(1)=1\)
+KEY: A
+SOL:
+Answer: (A) \(a=1,\ b=2\); \(f'(1)=2\).
+Given: \(\text{left piece }ax^2+1,\ \text{right piece }bx\)
+Formula/Principle: \(\text{differentiable at }1\Rightarrow\text{continuous at }1\text{ and }Lf'(1)=Rf'(1)\)
+Step 1: \(\text{continuity: }a+1=b\)
+Step 2: \(\text{derivatives: }Lf'(1)=2a,\ Rf'(1)=b\Rightarrow2a=b\)
+Step 3: \(a+1=2a\Rightarrow a=1,\ b=2\)
+Worked derivation: \[Rf'(1)=\lim_{h\to0^+}\frac{b(1+h)-(a+1)}{h}=\lim_{h\to0^+}\frac{bh}{h}=b\ \ (\text{using }b=a+1);\quad Lf'(1)=\lim_{h\to0^-}\frac{a(1+h)^2-a}{h}=2a\]
+Check: \[f(x)=x^2+1\ (x\le1),\ 2x\ (x>1):\ f(1)=2=\lim_{x\to1^+}2x;\ \text{slopes }2\text{ and }2\ \checkmark\]
+Why: \(\text{continuity alone gives a whole family }b=a+1\text{; matching the slopes picks one member of it}\)
+Why not the others: (B) \(\text{continuous }(2+1=3)\text{ but slopes }4\ne3\); (C) \(\text{continuity is necessary but not sufficient}\); (D) \(a+1=2\ne1=b\text{, so not even continuous}\).
+Key point: \(\text{differentiable}\Rightarrow\text{continuous; use both conditions to find two constants}\)
+
+@@ Q52
+format: numerical
+sub_topic: Largest rectangular plot fenced on three sides along a straight river, and a limit on the side parallel to the river
+Q: A farmer has fencing of total length \(L\) metres to enclose a rectangular plot beside a straight river; the side along the river needs no fence. What is the largest possible area? If the side parallel to the river may not be longer than 50 m, for which \(L\) is this largest area still possible?
+A) \(\dfrac{L^2}{4};\ L\le50\)
+B) \(\dfrac{L^2}{16};\ L\le200\)
+C) \(\dfrac{L^2}{8};\ L\le100\)
+D) \(\dfrac{L^2}{8};\ L\ge100\)
+KEY: C
+SOL:
+Answer: (C) Largest area \(\dfrac{L^2}{8}\); it can be reached only if \(L\le100\) m.
+Given: \(\text{two sides of length }x\text{ perpendicular to the river; parallel side }L-2x\)
+Formula/Principle: \(A(x)=x(L-2x);\ A'(x)=0,\ A''<0\text{ gives a maximum}\)
+Step 1: \(A'(x)=L-4x=0\Rightarrow x=\dfrac L4;\ A''=-4<0\)
+Step 2: \(\text{parallel side}=L-\dfrac L2=\dfrac L2;\ A_{\max}=\dfrac L4\cdot\dfrac L2=\dfrac{L^2}8\)
+Step 3: \(\dfrac L2\le50\Rightarrow L\le100\)
+Worked derivation: \[A(x)=Lx-2x^2=\frac{L^2}{8}-2\left(x-\frac L4\right)^2\le\frac{L^2}{8}\]
+Check: \[L=80:\ x=20,\ \text{parallel side }40\le50,\ A=800=\tfrac{6400}{8}\ \checkmark\]
+Why: \(\text{the best plot is twice as long along the river as it is deep; a cap on that side matters only once }L/2\text{ exceeds it}\)
+Why not the others: (A) \(\text{treats it like a square with all fencing on two sides}\); (B) \(\text{is the square plot fenced on all four sides}\); (D) \(\text{reverses the inequality}\).
+Key point: \(\text{fence on three sides: depth }L/4,\ \text{length }L/2,\ \text{area }L^2/8\)
+
+@@ Q53
+format: numerical
+sub_topic: Evaluating ∫ sin x /(1 + cos²x) by the substitution t = cos x over [0, π/2] and over [0, π]
+Q: What are \(I_1=\displaystyle\int_0^{\pi/2}\frac{\sin x}{1+\cos^2x}\,dx\) and \(I_2=\displaystyle\int_0^{\pi}\frac{\sin x}{1+\cos^2x}\,dx\)?
+A) \(I_1=\dfrac\pi4,\ I_2=\dfrac\pi2\)
+B) \(I_1=\dfrac\pi2,\ I_2=\pi\)
+C) \(I_1=\dfrac\pi4,\ I_2=0\)
+D) \(I_1=\log2,\ I_2=2\log2\)
+KEY: A
+SOL:
+Answer: (A) \(I_1=\dfrac\pi4\), \(I_2=\dfrac\pi2\).
+Given: \(\text{integrand }\dfrac{\sin x}{1+\cos^2x}\)
+Formula/Principle: \(t=\cos x,\ dt=-\sin x\,dx;\ \displaystyle\int\frac{dt}{1+t^2}=\tan^{-1}t\)
+Step 1: \(I_1=\displaystyle\int_1^0\frac{-dt}{1+t^2}=\int_0^1\frac{dt}{1+t^2}=\tan^{-1}1=\frac\pi4\)
+Step 2: \(I_2=\displaystyle\int_{-1}^{1}\frac{dt}{1+t^2}=\tan^{-1}1-\tan^{-1}(-1)=\frac\pi2\)
+Worked derivation: \[\text{indefinite: }\int\frac{\sin x}{1+\cos^2x}dx=-\tan^{-1}(\cos x)+C;\quad\left[-\tan^{-1}\cos x\right]_0^{\pi}=\frac\pi4+\frac\pi4=\frac\pi2\]
+Check: \[\text{the integrand is symmetric about }x=\tfrac\pi2\ (\sin(\pi-x)=\sin x,\ \cos^2(\pi-x)=\cos^2x)\Rightarrow I_2=2I_1\ \checkmark\]
+Why: \(\text{the numerator is (minus) the derivative of }\cos x\text{, so the substitution turns the integral into the standard }\tan^{-1}\text{ form; the limits change with }t\)
+Why not the others: (B) \(\text{doubles both, using }\tan^{-1}\text{ values wrongly}\); (C) \(\text{the integrand is positive on }(0,\pi)\text{, so }I_2>0\); (D) \(\text{treats it as }\int\frac{dt}{1+t}\text{, a log form}\).
+Key point: \(\text{substitute the function whose derivative appears; change the limits too}\)
+
+@@ Q54
+format: numerical
+sub_topic: Two definite integrals by partial fractions: 1/(x² − 1) on [2, 3] and x/((x − 1)(x − 2)) on [3, 4]
+Q: What are \(J_1=\displaystyle\int_2^3\frac{dx}{x^2-1}\) and \(J_2=\displaystyle\int_3^4\frac{x\,dx}{(x-1)(x-2)}\)?
+A) \(J_1=\log\dfrac32,\ J_2=\log\dfrac38\)
+B) \(J_1=\tfrac12\log\dfrac23,\ J_2=\log6\)
+C) \(J_1=\tfrac12\log\dfrac32,\ J_2=\log\dfrac83\)
+D) \(J_1=\tfrac12\log3,\ J_2=\log\dfrac43\)
+KEY: C
+SOL:
+Answer: (C) \(J_1=\tfrac12\log\dfrac32\), \(J_2=\log\dfrac83\).
+Given: \(\text{both integrands are proper rational functions with distinct linear factors}\)
+Formula/Principle: \(\dfrac1{x^2-1}=\dfrac12\left(\dfrac1{x-1}-\dfrac1{x+1}\right);\ \dfrac{x}{(x-1)(x-2)}=\dfrac{A}{x-1}+\dfrac{B}{x-2}\)
+Step 1: \(J_1=\tfrac12\left[\log\dfrac{x-1}{x+1}\right]_2^3=\tfrac12\left(\log\tfrac24-\log\tfrac13\right)=\tfrac12\log\tfrac32\)
+Step 2: \(A=\dfrac{1}{1-2}=-1,\ B=\dfrac{2}{2-1}=2\)
+Step 3: \(J_2=\left[-\log(x-1)+2\log(x-2)\right]_3^4=(-\log3+2\log2)-(-\log2+0)=\log\dfrac{8}{3}\)
+Worked derivation: \[\frac{-1}{x-1}+\frac{2}{x-2}=\frac{-(x-2)+2(x-1)}{(x-1)(x-2)}=\frac{x}{(x-1)(x-2)}\ \checkmark\]
+Check: \[J_1\approx0.203:\ \text{integrand from }\tfrac13\text{ to }\tfrac18,\ \text{width 1, so the value lies between }0.125\text{ and }0.333\ \checkmark;\ J_2\approx0.981,\ \text{integrand from }1.5\text{ to }0.67\ \checkmark\]
+Why: \(\text{splitting into simple fractions turns each piece into a logarithm; cover-up gives the constants quickly}\)
+Why not the others: (A) \(\text{drops the }\tfrac12\text{ in }J_1\text{ and inverts }J_2\); (B) \(J_1\text{ has the wrong sign (the integrand is positive)}\); (D) \(\text{evaluates the logs at the wrong limits}\).
+Key point: \(\text{cover-up: }A=\text{value of the rest at the root; integrate each term to a log}\)
+
+@@ Q55
+format: numerical
+sub_topic: The curve through the origin whose slope at every point equals the sum of its coordinates, as a linear differential equation
+Q: A curve passes through the origin, and at each point \((x,y)\) on it, the slope of the tangent equals \(x+y\). What is the equation of the curve?
+A) \(y=e^{x}-1\)
+B) \(y=x^{2}/2\)
+C) \(y=e^{-x}+x-1\)
+D) \(y=e^{x}-x-1\)
+KEY: D
+SOL:
+Answer: (D) \(y=e^{x}-x-1\).
+Given: \(\dfrac{dy}{dx}=x+y,\ y(0)=0\)
+Formula/Principle: \(\dfrac{dy}{dx}+Py=Q\Rightarrow y\cdot\text{IF}=\displaystyle\int Q\cdot\text{IF}\,dx+C,\ \text{IF}=e^{\int P\,dx}\)
+Step 1: \(\dfrac{dy}{dx}-y=x;\ P=-1,\ \text{IF}=e^{-x}\)
+Step 2: \(ye^{-x}=\displaystyle\int xe^{-x}dx=-xe^{-x}-e^{-x}+C\Rightarrow y=-x-1+Ce^{x}\)
+Step 3: \(y(0)=0\Rightarrow-1+C=0\Rightarrow C=1\)
+Worked derivation: \[y=e^{x}-x-1\Rightarrow\frac{dy}{dx}=e^{x}-1=(e^x-x-1)+x=y+x\ \checkmark\]
+Check: \[y(0)=1-0-1=0\ \checkmark;\ \text{slope at origin}=0+0=0=e^0-1\ \checkmark\]
+Why: \(\text{the slope condition is a first-order linear equation in }y\text{; the point fixes the constant}\)
+Why not the others: (A) \(y'=e^{x}\ne x+e^{x}-1\); (B) \(\text{ignores the }y\text{ term in the slope}\); (C) \(\text{uses IF }e^{x}\text{ with the wrong sign of }P\).
+Key point: \(y'-y=x:\ \text{IF }e^{-x},\ y=Ce^{x}-x-1\)
+
+@@ Q56
+format: numerical
+sub_topic: Counting integer values of λ for which two vectors make an obtuse angle, excluding the antiparallel case
+Q: Let \(\vec a=\hat i+\lambda\hat j+\hat k\) and \(\vec b=\lambda\hat i+\hat j+\lambda\hat k\). For how many integers \(\lambda\) with \(-5\le\lambda\le5\) is the angle between \(\vec a\) and \(\vec b\) obtuse (strictly between \(90^\circ\) and \(180^\circ\))? Also, what is the scalar projection of \(\vec a\) on \(\vec b\) when \(\lambda=-2\)?
+A) 5; \(-2\)
+B) 4; \(-2\)
+C) 5; \(-6\)
+D) 4; \(2\)
+KEY: B
+SOL:
+Answer: (B) 4 values; projection \(-2\).
+Given: \(\vec a=(1,\lambda,1),\ \vec b=(\lambda,1,\lambda)\)
+Formula/Principle: \(\text{obtuse}\iff\vec a\cdot\vec b<0\text{ and the vectors are not antiparallel};\ \text{projection of }\vec a\text{ on }\vec b=\dfrac{\vec a\cdot\vec b}{|\vec b|}\)
+Step 1: \(\vec a\cdot\vec b=\lambda+\lambda+\lambda=3\lambda<0\Rightarrow\lambda\in\{-1,-2,-3,-4,-5\}\)
+Step 2: \(\text{antiparallel: }\vec a=t\vec b,\ t<0\Rightarrow1=t\lambda,\ \lambda=t\Rightarrow\lambda^2=1,\ \lambda=-1\ (t=-1)\)
+Step 3: \(\lambda=-1:\ \vec a=(1,-1,1),\ \vec b=(-1,1,-1)=-\vec a\Rightarrow\theta=180^\circ;\ \text{exclude}\Rightarrow4\text{ values}\)
+Worked derivation: \[\lambda=-2:\ \vec a\cdot\vec b=-6,\ |\vec b|=\sqrt{4+1+4}=3\Rightarrow\text{projection}=-2\]
+Check: \[\lambda=-2:\ \cos\theta=\frac{-6}{\sqrt6\cdot3}=-\frac{\sqrt6}{3}\approx-0.816\Rightarrow\theta\approx145^\circ\ \checkmark\]
+Why: \(\text{a negative dot product means the angle exceeds }90^\circ\text{, but it includes }180^\circ\text{, which is a straight angle, not obtuse}\)
+Why not the others: (A) \(\text{forgets to exclude the antiparallel case }\lambda=-1\); (C) \(-6\text{ is the dot product, not the projection}\); (D) \(\text{the projection is negative for an obtuse angle}\).
+Key point: \(\text{obtuse: }\vec a\cdot\vec b<0\text{ and }\vec a\ne t\vec b\ (t<0)\)
+
+@@ Q57
+format: numerical
+sub_topic: Angle and shortest distance between two skew lines, and how the distance between moving points on them behaves
+Q: \(L_1:\ \vec r=(1,2,3)+t(1,-1,0)\) and \(L_2:\ \vec r=(2,4,4)+s(1,0,-1)\). What is the angle between the lines and the shortest distance between them? (As \(P\) moves on \(L_1\) and \(Q\) on \(L_2\), \(PQ\) has a least value.)
+A) \(90^\circ;\ \sqrt3\)
+B) \(60^\circ;\ 0\text{ (the lines intersect)}\)
+C) \(60^\circ;\ \dfrac{4}{\sqrt3}\)
+D) \(30^\circ;\ \dfrac{4}{\sqrt6}\)
+KEY: C
+SOL:
+Answer: (C) \(60^\circ\); shortest distance \(\dfrac4{\sqrt3}\).
+Given: \(\vec a_1=(1,2,3),\ \vec b_1=(1,-1,0);\ \vec a_2=(2,4,4),\ \vec b_2=(1,0,-1)\)
+Formula/Principle: \(\cos\theta=\dfrac{|\vec b_1\cdot\vec b_2|}{|\vec b_1||\vec b_2|};\ d=\dfrac{|(\vec a_2-\vec a_1)\cdot(\vec b_1\times\vec b_2)|}{|\vec b_1\times\vec b_2|}\)
+Step 1: \(\vec b_1\cdot\vec b_2=1,\ |\vec b_1|=|\vec b_2|=\sqrt2\Rightarrow\cos\theta=\tfrac12,\ \theta=60^\circ\)
+Step 2: \(\vec b_1\times\vec b_2=\big((-1)(-1)-0\cdot0,\ 0\cdot1-1\cdot(-1),\ 1\cdot0-(-1)\cdot1\big)=(1,1,1)\)
+Step 3: \(\vec a_2-\vec a_1=(1,2,1);\ (1,2,1)\cdot(1,1,1)=4\Rightarrow d=\dfrac4{\sqrt3}\)
+Worked derivation: \[\vec{PQ}=(1+s-t,\ 2+t,\ 1-s);\ \vec{PQ}\cdot\vec b_1=0\Rightarrow s-2t=1,\ \vec{PQ}\cdot\vec b_2=0\Rightarrow t=2s\Rightarrow s=-\tfrac13,\ t=-\tfrac23\]
+Check: \[\vec{PQ}=\left(\tfrac43,\tfrac43,\tfrac43\right)\parallel(1,1,1),\quad|\vec{PQ}|=\tfrac43\sqrt3=\tfrac{4}{\sqrt3}\ \checkmark\]
+Why: \(\text{the common perpendicular is along }\vec b_1\times\vec b_2\text{; projecting any joining vector onto it gives the gap. A nonzero gap and non-parallel directions mean the lines are skew}\)
+Why not the others: (A) \(\vec b_1\cdot\vec b_2\ne0\text{, and }\sqrt3\text{ uses the wrong joining vector}\); (B) \(d\ne0\text{, so the lines do not meet}\); (D) \(\text{wrong angle, and divides by }\sqrt6\text{ instead of }|\vec b_1\times\vec b_2|=\sqrt3\).
+Key point: \(d=|(\vec a_2-\vec a_1)\cdot(\vec b_1\times\vec b_2)|/|\vec b_1\times\vec b_2|\)
+
+@@ Q58
+format: numerical
+sub_topic: Condition on a for f(x) = ax + sin x to be one-one (and hence a bijection) on ℝ
+Q: For which real values of \(a\) is \(f:\mathbb R\to\mathbb R,\ f(x)=ax+\sin x\), one-one? Is it then also onto?
+A) \(|a|\ge1\); yes, it is then a bijection
+B) \(|a|>1\) only; it is never onto
+C) \(a\ge0\); yes
+D) \(\text{all }a\ne0\); yes
+KEY: A
+SOL:
+Answer: (A) \(|a|\ge1\); then \(f\) is a bijection of \(\mathbb R\).
+Given: \(f(x)=ax+\sin x,\ f'(x)=a+\cos x\)
+Formula/Principle: \(\text{a continuous }f\text{ on }\mathbb R\text{ is one-one}\iff\text{strictly monotonic};\ f'\ge0\text{ with only isolated zeros}\Rightarrow\text{strictly increasing}\)
+Step 1: \(a\ge1:\ f'=a+\cos x\ge0,\ \text{zero only at isolated points (when }a=1,\ x=(2n+1)\pi)\Rightarrow\text{strictly increasing}\)
+Step 2: \(a\le-1:\ f'\le0\text{ similarly}\Rightarrow\text{strictly decreasing}\)
+Step 3: \(|a|<1:\ f'\text{ takes both signs (}a+1>0,\ a-1<0)\Rightarrow f\text{ rises and falls, so it repeats values}\)
+Worked derivation: \[a=\tfrac12:\ f(0)=0,\ f(2\pi)=\pi,\ \text{but }f'(\pi)=-\tfrac12<0\Rightarrow\text{a local max and min, so some values are taken more than once}\]
+Check: \[a=1:\ f(x)=x+\sin x;\ f(\pi)=\pi,\ f(\pi\pm0.1)\approx\pi\pm0.1\mp0.0998\ \text{(still increasing)}\ \checkmark;\ \text{onto since }f\to\pm\infty\text{ and }f\text{ is continuous}\]
+Why: \(\text{the }ax\text{ term must outweigh the oscillation of }\sin x\text{, whose slope ranges over }[-1,1]\text{; a continuous strictly monotonic function going to }\pm\infty\text{ at both ends takes every real value once}\)
+Why not the others: (B) \(a=\pm1\text{ also works, and the function is onto}\); (C) \(0\le a<1\text{ fails (non-monotonic), and }a\le-1\text{ works}\); (D) \(0<|a|<1\text{ gives a non-monotonic function}\).
+Key point: \(ax+\sin x\text{ is one-one exactly when }|a|\ge1\)
+
+@@ Q59
+format: numerical
+sub_topic: Counting all functions and onto functions from a 4-element set to a 3-element set, and solving f(m + n) = f(m) + f(n) on ℕ
+Q: Let \(A=\{1,2,3,4\}\) and \(B=\{p,q,r\}\). How many functions \(A\to B\) are there, and how many of them are onto? Also, if \(f:\mathbb N\to\mathbb N\) satisfies \(f(m+n)=f(m)+f(n)\) for all \(m,n\) and \(f(1)=3\), what is \(\displaystyle\sum_{k=1}^{10}f(k)\)?
+A) \(64,\ 24;\ 165\)
+B) \(81,\ 24;\ 30\)
+C) \(12,\ 6;\ 165\)
+D) \(81,\ 36;\ 165\)
+KEY: D
+SOL:
+Answer: (D) 81 functions, 36 onto; sum 165.
+Given: \(|A|=4,\ |B|=3;\ f(m+n)=f(m)+f(n),\ f(1)=3\)
+Formula/Principle: \(\text{number of maps}=|B|^{|A|};\ \text{onto (inclusion–exclusion)}=3^4-\binom31 2^4+\binom32 1^4\)
+Step 1: \(\text{all maps}=3^4=81\)
+Step 2: \(\text{onto}=81-3(16)+3(1)=36\)
+Step 3: \(f(n)=f(1)+f(n-1)=\cdots=nf(1)=3n\Rightarrow\displaystyle\sum_{k=1}^{10}3k=3\cdot55=165\)
+Worked derivation: \[\text{onto check: choose the pair of elements of A with the same image }\binom42=6,\ \text{then assign 3 images bijectively }3!=6\Rightarrow36\]
+Check: \[f(2)=f(1)+f(1)=6,\ f(3)=9;\ f(1+2)=3+6=9\ \checkmark\]
+Why: \(\text{each of the 4 elements independently has 3 choices; onto maps must hit all of }B\text{, so subtract maps missing at least one element; additivity forces linearity on }\mathbb N\)
+Why not the others: (A) \(4^3\text{ reverses base and exponent, and }24\text{ undercounts onto maps}\); (B) \(30=f(10)\text{, not the sum}\); (C) \(12=4\times3\text{ is not the number of maps}\).
+Key point: \(|B|^{|A|}\text{ maps; onto by inclusion–exclusion; }f(m+n)=f(m)+f(n)\Rightarrow f(n)=nf(1)\)
+
+@@ Q60
+format: numerical
+sub_topic: General solution of sin x + sin 3x + sin 5x = 0 and the number of solutions in [0, 2π]
+Q: What is the general solution of \(\sin x+\sin3x+\sin5x=0\), and how many solutions lie in \([0,2\pi]\)?
+A) \(x=\dfrac{n\pi}{3}\text{ or }x=n\pi\pm\dfrac{\pi}{6};\ 11\)
+B) \(x=\dfrac{n\pi}{3},\ n\in\mathbb Z;\ 7\)
+C) \(x=n\pi;\ 3\)
+D) \(x=\dfrac{n\pi}{3}\text{ or }x=2n\pi\pm\dfrac{2\pi}{3};\ 9\)
+KEY: B
+SOL:
+Answer: (B) \(x=\dfrac{n\pi}3\); 7 solutions in \([0,2\pi]\).
+Given: \(\sin x+\sin5x+\sin3x=0\)
+Formula/Principle: \(\sin C+\sin D=2\sin\dfrac{C+D}2\cos\dfrac{C-D}2\)
+Step 1: \(\sin5x+\sin x=2\sin3x\cos2x\Rightarrow\sin3x(2\cos2x+1)=0\)
+Step 2: \(\sin3x=0\Rightarrow x=\dfrac{n\pi}3\)
+Step 3: \(\cos2x=-\tfrac12\Rightarrow2x=2n\pi\pm\dfrac{2\pi}3\Rightarrow x=n\pi\pm\dfrac\pi3\text{, which are already of the form }\dfrac{k\pi}3\)
+Worked derivation: \[n\pi\pm\frac\pi3=\frac{(3n\pm1)\pi}{3}\subset\left\{\frac{k\pi}{3}\right\};\quad\text{in }[0,2\pi]:\ k=0,1,\ldots,6\Rightarrow7\text{ solutions}\]
+Check: \[x=\tfrac\pi3:\ \sin\tfrac\pi3+\sin\pi+\sin\tfrac{5\pi}3=\tfrac{\sqrt3}2+0-\tfrac{\sqrt3}2=0\ \checkmark\]
+Why: \(\text{pairing the outer terms makes }\sin3x\text{ a common factor; the second family adds no new solutions, so listing both would double-count}\)
+Why not the others: (A) \(\cos2x=-\tfrac12\text{ gives }n\pi\pm\tfrac\pi3\text{, not }\pm\tfrac\pi6\); (C) \(\text{misses }x=\tfrac\pi3,\tfrac{2\pi}3,\ldots\); (D) \(\text{halving step missed, and the solutions are double-counted}\).
+Key point: \(\text{sum-to-product on symmetric terms; check whether one family contains the other}\)

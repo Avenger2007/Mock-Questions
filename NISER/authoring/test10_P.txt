@@ -1,0 +1,432 @@
+@@ Q61
+format: numerical
+sub_topic: Temperature at which oxygen molecules have the same rms speed as hydrogen at 300 K, and the equality of mean kinetic energy at equal temperature
+Q: At what temperature will oxygen molecules (\(M=32\ \mathrm{g\,mol^{-1}}\)) have the same rms speed as hydrogen molecules (\(M=2\ \mathrm{g\,mol^{-1}}\)) at 300 K? What is that rms speed (\(R=8.314\ \mathrm{J\,mol^{-1}K^{-1}}\)), and how do the mean translational kinetic energies per molecule of the two gases compare when both are at 300 K?
+A) 18.75 K; about 480 m/s; oxygen has 16 times the kinetic energy at 300 K
+B) 1200 K; about 1.93 km/s; hydrogen has 16 times the kinetic energy at 300 K
+C) 4800 K; about 480 m/s; oxygen has 4 times the kinetic energy at 300 K
+D) 4800 K; about 1.93 km/s; at 300 K both have the same mean kinetic energy per molecule, \(\tfrac32k_BT\)
+KEY: D
+SOL:
+Answer: (D) 4800 K; about 1.93 km/s; equal mean kinetic energy at equal temperature.
+Given: \(T_{H_2}=300\ \mathrm K,\ M_{H_2}=2\times10^{-3},\ M_{O_2}=32\times10^{-3}\ \mathrm{kg\,mol^{-1}}\)
+Formula/Principle: \(v_{rms}=\sqrt{\dfrac{3RT}{M}};\ \text{mean KE per molecule}=\tfrac12mv_{rms}^2=\tfrac32k_BT\)
+Step 1: \(\text{equal }v_{rms}\Rightarrow\dfrac{T_{O_2}}{M_{O_2}}=\dfrac{T_{H_2}}{M_{H_2}}\Rightarrow T_{O_2}=300\times\dfrac{32}{2}=4800\ \mathrm K\)
+Step 2: \(v_{rms}=\sqrt{\dfrac{3(8.314)(300)}{2\times10^{-3}}}=\sqrt{3.74\times10^{6}}\approx1.93\times10^{3}\ \mathrm{m\,s^{-1}}\)
+Worked derivation: \[\frac{v_{O_2}(4800\ \mathrm K)}{v_{H_2}(300\ \mathrm K)}=\sqrt{\frac{4800/32}{300/2}}=\sqrt{\frac{150}{150}}=1;\qquad\text{at }300\ \mathrm K:\ \frac{v_{H_2}}{v_{O_2}}=\sqrt{\frac{32}{2}}=4\]
+Check: \[\sqrt{\frac{3(8.314)(4800)}{32\times10^{-3}}}=\sqrt{3.74\times10^{6}}\approx1.93\ \mathrm{km\,s^{-1}}\ \checkmark\]
+Why: \(\text{temperature measures the mean translational kinetic energy per molecule, whatever the gas; a heavier molecule with the same energy moves more slowly, so oxygen needs 16 times the temperature to match hydrogen's speed}\)
+Why not the others: (A) \(\text{divides by 16 instead of multiplying, and gets the energy comparison wrong}\); (B) \(\text{uses the ratio of }\sqrt{M}\text{ (4) instead of }M\text{ (16)}\); (C) \(480\ \mathrm{m\,s^{-1}}\text{ is the speed of }O_2\text{ at 300 K, and the energies are equal at equal }T\).
+Key point: \(v_{rms}\propto\sqrt{T/M};\ \bar{KE}=\tfrac32k_BT\text{ for every ideal gas}\)
+
+@@ Q62
+format: conceptual
+sub_topic: How the kinetic and potential energies of a simple harmonic oscillator share the total energy at different displacements
+Q: A particle performs simple harmonic motion with amplitude \(A\) and total mechanical energy \(E\). Which statement is correct?
+A) At \(x=A/2\), the kinetic and potential energies are equal
+B) The total energy is proportional to the amplitude \(A\), not to \(A^2\)
+C) At \(x=A/2\), the kinetic energy is \(\tfrac34E\) and the potential energy \(\tfrac14E\); the two are equal at \(x=A/\sqrt2\); and the kinetic energy varies periodically with twice the frequency of the displacement
+D) The kinetic energy is greatest at the extreme positions, where the restoring force is greatest
+KEY: C
+SOL:
+Answer: (C) KE \(=\tfrac34E\) at \(A/2\); KE = PE at \(A/\sqrt2\); KE oscillates at twice the frequency.
+Given: \(x=A\sin\omega t;\ E=\tfrac12kA^2\ (k=m\omega^2)\)
+Formula/Principle: \(U=\tfrac12kx^2,\ K=\tfrac12k(A^2-x^2),\ K+U=E\)
+Step 1: \(x=\tfrac A2:\ U=\tfrac12k\tfrac{A^2}4=\tfrac14E,\ K=\tfrac34E\)
+Step 2: \(K=U\Rightarrow x^2=\tfrac{A^2}2\Rightarrow x=\pm\tfrac{A}{\sqrt2}\)
+Step 3: \(K=E\cos^2\omega t=\tfrac E2(1+\cos2\omega t)\Rightarrow\text{angular frequency }2\omega\)
+Worked derivation: \[K(t)=\tfrac12m\omega^2A^2\cos^2\omega t,\qquad U(t)=\tfrac12m\omega^2A^2\sin^2\omega t,\qquad K+U=\tfrac12m\omega^2A^2\]
+Check: \[x=\tfrac{A}{\sqrt2}:\ U=\tfrac12k\tfrac{A^2}{2}=\tfrac E2=K\ \checkmark\]
+Why: \(U\text{ depends on }x^2\text{, so half the amplitude gives only a quarter of the energy as potential; energy passes between K and U twice in each period, because }\cos^2\text{ repeats every half period}\)
+Why not the others: (A) \(\text{at }A/2\text{ the potential energy is only }E/4\); (B) \(E=\tfrac12m\omega^2A^2\propto A^2\); (D) \(\text{the particle is momentarily at rest at the extremes, so KE is zero there}\).
+Key point: \(U=\tfrac12kx^2;\ K=U\text{ at }A/\sqrt2;\ \text{energies oscillate at }2\omega\)
+
+@@ Q63
+format: numerical
+sub_topic: Reading a standing-wave pattern on a fixed string to find the harmonic, the wave speed and the positions of nodes
+Q: A 1.00 m string fixed at both ends is driven at 150 Hz. A photograph of the steady pattern shows three loops, with nodes at the two ends and at two points in between. Which option gives the correct reading?
+A) Second harmonic; wave speed 150 m/s; internal nodes at 0.25 m and 0.75 m
+B) Third harmonic; fundamental 50 Hz; wave speed 100 m/s; wavelength \(\tfrac23\) m; internal nodes at \(\tfrac13\) m and \(\tfrac23\) m
+C) Third harmonic; fundamental 450 Hz; wave speed 300 m/s; internal antinodes at \(\tfrac13\) m and \(\tfrac23\) m
+D) First harmonic; wave speed 150 m/s; wavelength 1 m
+KEY: B
+SOL:
+Answer: (B) Third harmonic; \(f_1=50\) Hz; \(v=100\) m/s; \(\lambda=\tfrac23\) m; nodes at \(\tfrac13\) and \(\tfrac23\) m.
+Given: \(L=1.00\ \mathrm m,\ f=150\ \mathrm{Hz},\ \text{3 loops}\)
+Formula/Principle: \(\text{fixed–fixed string: }L=n\dfrac{\lambda}{2},\ f_n=\dfrac{nv}{2L}=nf_1\ (\text{n = number of loops})\)
+Step 1: \(n=3\Rightarrow\lambda=\dfrac{2L}{3}=\dfrac23\ \mathrm m\)
+Step 2: \(v=f\lambda=150\times\tfrac23=100\ \mathrm{m\,s^{-1}};\ f_1=\dfrac{v}{2L}=50\ \mathrm{Hz}\)
+Step 3: \(\text{nodes every }\lambda/2=\tfrac13\ \mathrm m:\ x=0,\tfrac13,\tfrac23,1\ \mathrm m\)
+Worked derivation: \[y(x,t)=2a\sin\left(\frac{2\pi x}{\lambda}\right)\cos\omega t=2a\sin(3\pi x)\cos\omega t;\ \sin3\pi x=0\Rightarrow x=0,\tfrac13,\tfrac23,1\]
+Check: \[f_3=3\times50=150\ \mathrm{Hz}\ \checkmark;\ \text{antinodes at }x=\tfrac16,\tfrac12,\tfrac56\ \mathrm m\]
+Why: \(\text{each loop is half a wavelength; counting loops gives the harmonic number directly, and the fixed ends are always nodes}\)
+Why not the others: (A) \(\text{two loops would be the second harmonic; the pattern has three}\); (C) \(\text{multiplies instead of dividing to find }f_1\text{, and }\tfrac13,\tfrac23\text{ are nodes}\); (D) \(\text{one loop would mean }\lambda=2L=2\ \mathrm m\).
+Key point: \(\text{fixed string: number of loops = harmonic number; }\lambda=2L/n,\ f_n=nv/2L\)
+
+@@ Q64
+format: conceptual
+sub_topic: How the fields of an infinite line charge, an infinite sheet and a spherical shell change when the distance is doubled
+Q: Three charge distributions are compared: an infinite line with linear charge density \(\lambda\), an infinite plane sheet with surface density \(\sigma\), and a thin spherical shell of radius \(R\) with total charge \(Q\). For each, the field is measured at a distance \(r_0\) and then at \(2r_0\) (for the shell, \(r_0>R\), measured from the centre; for the line and sheet, measured perpendicularly from them). Which statement is correct?
+A) The line's field halves, the sheet's field does not change, and the shell's field falls to a quarter; inside the shell, the field is zero everywhere
+B) All three fields fall to a quarter, because each follows the inverse-square law
+C) The line's field falls to a quarter, the sheet's field halves, and the shell's field halves
+D) The sheet's field doubles, because the observer sees more charge from farther away
+KEY: A
+SOL:
+Answer: (A) Line: halves; sheet: unchanged; shell: one quarter; zero field inside the shell.
+Given: \(\text{distances }r_0\text{ and }2r_0;\ \text{shell with }r_0>R\)
+Formula/Principle: \(\text{Gauss's law: }E_{line}=\dfrac{\lambda}{2\pi\varepsilon_0r},\ E_{sheet}=\dfrac{\sigma}{2\varepsilon_0},\ E_{shell}=\dfrac{Q}{4\pi\varepsilon_0r^2}\ (r>R),\ 0\ (r<R)\)
+Step 1: \(\text{line: }E\propto\dfrac1r\Rightarrow E(2r_0)=\tfrac12E(r_0)\)
+Step 2: \(\text{sheet: independent of }r\Rightarrow\text{unchanged}\)
+Step 3: \(\text{shell (outside): }E\propto\dfrac1{r^2}\Rightarrow\tfrac14E(r_0)\)
+Worked derivation: \[\text{line, cylinder of length }l:\ E(2\pi rl)=\frac{\lambda l}{\varepsilon_0};\quad\text{sheet, pillbox of area }A:\ 2EA=\frac{\sigma A}{\varepsilon_0};\quad\text{shell: }E(4\pi r^2)=\frac{Q}{\varepsilon_0}\]
+Check: \[\text{inside the shell, a Gaussian sphere encloses no charge}\Rightarrow E=0\ \checkmark\]
+Why: \(\text{the Gaussian surface grows as }r\text{ (cylinder), not at all (pillbox ends), or as }r^2\text{ (sphere), while the enclosed charge stays fixed; this sets the distance dependence}\)
+Why not the others: (B) \(\text{only point-like (spherical) distributions follow the inverse-square law}\); (C) \(\text{confuses the line and shell dependences, and the sheet's field is constant}\); (D) \(\text{the field of an infinite sheet is independent of distance}\).
+Key point: \(\text{line }1/r,\ \text{sheet constant},\ \text{shell }1/r^2\text{ outside and 0 inside}\)
+
+@@ Q65
+format: numerical
+sub_topic: Energy changes when a dielectric slab fills a charged capacitor, with the battery disconnected and with it connected
+Q: A 10 µF parallel-plate capacitor is charged to 100 V. A dielectric slab of constant \(K=2\) is then inserted to fill the gap completely. In case P, the battery was disconnected before the insertion; in case Q, the battery stays connected. What is the final stored energy in each case, and what happens to the energy?
+A) P: 0.10 J; Q: 0.025 J; the energy always increases with a dielectric
+B) P: 0.025 J, a decrease of 0.025 J, which is the work done by the field in pulling the slab in; Q: 0.10 J, with the battery supplying 0.10 J, of which 0.05 J is stored and 0.05 J goes into pulling the slab in (or is dissipated)
+C) P: 0.05 J; Q: 0.05 J; the energy does not depend on the dielectric
+D) P: 0.025 J, the charge halves; Q: 0.10 J, the voltage doubles
+KEY: B
+SOL:
+Answer: (B) P: 0.025 J (energy falls by 0.025 J); Q: 0.10 J (battery supplies 0.10 J; half is stored).
+Given: \(C_0=10\ \mu\mathrm F,\ V_0=100\ \mathrm V,\ K=2;\ U_0=\tfrac12C_0V_0^2=0.05\ \mathrm J,\ Q_0=1\ \mathrm{mC}\)
+Formula/Principle: \(C=KC_0;\ U=\dfrac{Q^2}{2C}=\tfrac12CV^2;\ \text{battery work }W_b=V\Delta Q\)
+Step 1: \(\text{P (isolated, Q fixed): }C=20\ \mu\mathrm F,\ V=\tfrac{Q_0}{C}=50\ \mathrm V,\ U=\dfrac{(10^{-3})^2}{2(20\times10^{-6})}=0.025\ \mathrm J\)
+Step 2: \(\text{Q (connected, V fixed): }Q=20\ \mu\mathrm F\times100=2\ \mathrm{mC},\ U=\tfrac12(20\times10^{-6})(100)^2=0.10\ \mathrm J\)
+Step 3: \(W_b=100\times(2-1)\times10^{-3}=0.10\ \mathrm J;\ \Delta U=0.05\ \mathrm J;\ \text{remaining }0.05\ \mathrm J\text{ is work on the slab or heat}\)
+Worked derivation: \[\text{P: }U=\frac{U_0}{K}=\frac{0.05}{2};\qquad\text{Q: }U=KU_0=2(0.05);\qquad W_b=\Delta U+W_{slab}\Rightarrow0.10=0.05+0.05\]
+Check: \[\text{P: }\tfrac12(20\ \mu\mathrm F)(50)^2=0.025\ \mathrm J\ \checkmark;\ \text{Q: }\tfrac{(2\ \mathrm{mC})^2}{2(20\ \mu\mathrm F)}=0.10\ \mathrm J\ \checkmark\]
+Why: \(\text{with charge fixed, a larger C means less energy for the same charge, and the field does work pulling the slab in; with voltage fixed, a larger C draws more charge, and the battery supplies twice the increase in stored energy}\)
+Why not the others: (A) \(\text{swaps the two cases}\); (C) \(\text{the capacitance doubles, so the energy changes}\); (D) \(\text{in P the charge is constant, and in Q the voltage is constant}\).
+Key point: \(\text{isolated: }Q\text{ fixed},\ U\to U_0/K;\ \text{connected: }V\text{ fixed},\ U\to KU_0,\ W_b=2\Delta U\)
+
+@@ Q66
+format: numerical
+sub_topic: Time to boil the same water with two heating coils used singly, in series and in parallel on the same mains supply
+Q: An electric kettle has two heating coils. On the mains supply, coil 1 alone boils a fixed amount of water in 10 minutes, and coil 2 alone in 15 minutes. Ignoring heat losses and any change in resistance with temperature, how long does it take when the coils are connected in series, and in parallel, across the same supply?
+A) Series 12.5 min; parallel 6 min
+B) Series 6 min; parallel 25 min
+C) Series 25 min; parallel 12.5 min
+D) Series 25 min; parallel 6 min
+KEY: D
+SOL:
+Answer: (D) Series 25 min; parallel 6 min.
+Given: \(t_1=10\ \mathrm{min},\ t_2=15\ \mathrm{min};\ \text{same voltage }V,\ \text{same heat }H\)
+Formula/Principle: \(H=\dfrac{V^2}{R}t\Rightarrow t\propto R\ (\text{fixed }V,H)\)
+Step 1: \(R_1\propto10,\ R_2\propto15\)
+Step 2: \(\text{series: }R_s=R_1+R_2\Rightarrow t_s=t_1+t_2=25\ \mathrm{min}\)
+Step 3: \(\text{parallel: }\dfrac1{R_p}=\dfrac1{R_1}+\dfrac1{R_2}\Rightarrow t_p=\dfrac{t_1t_2}{t_1+t_2}=\dfrac{150}{25}=6\ \mathrm{min}\)
+Worked derivation: \[P_p=P_1+P_2\Rightarrow\frac{H}{t_p}=\frac{H}{10}+\frac{H}{15}=\frac{H}{6};\qquad P_s=\frac{V^2}{R_1+R_2}\Rightarrow t_s=10+15\]
+Check: \[\text{parallel must be faster than either coil alone }(6<10)\ \checkmark;\ \text{series slower than either }(25>15)\ \checkmark\]
+Why: \(\text{at fixed voltage, power is }V^2/R\text{, so lower total resistance (parallel) gives more power and a shorter time; series adds the resistances and reduces the power}\)
+Why not the others: (A) \(12.5\text{ is the mean of the two times, not the series value}\); (B) \(\text{swaps the series and parallel results}\); (C) \(\text{the parallel time cannot be longer than either single-coil time}\).
+Key point: \(\text{fixed V: series }t=t_1+t_2,\ \text{parallel }t=t_1t_2/(t_1+t_2)\)
+
+@@ Q67
+format: numerical
+sub_topic: Net force on a rectangular current loop lying beside a long straight wire, from the forces on its parallel sides
+Q: A long straight wire carries a current of 20 A. A rectangular loop carrying 5.0 A lies in the same plane, with its two 20 cm sides parallel to the wire at distances of 5.0 cm and 10 cm from it. In the nearer side, the loop current flows in the same direction as the current in the wire. What is the net force on the loop (\(\mu_0=4\pi\times10^{-7}\ \mathrm{T\,m\,A^{-1}}\))?
+A) \(4.0\times10^{-5}\ \mathrm N\), towards the wire
+B) \(1.2\times10^{-4}\ \mathrm N\), towards the wire
+C) \(4.0\times10^{-5}\ \mathrm N\), away from the wire
+D) Zero, because the forces on opposite sides of a closed loop always cancel
+KEY: A
+SOL:
+Answer: (A) \(4.0\times10^{-5}\ \mathrm N\) towards the wire.
+Given: \(I_1=20\ \mathrm A,\ I_2=5.0\ \mathrm A,\ l=0.20\ \mathrm m,\ r_{near}=0.050\ \mathrm m,\ r_{far}=0.10\ \mathrm m\)
+Formula/Principle: \(F=\dfrac{\mu_0I_1I_2l}{2\pi r};\ \text{parallel currents attract, antiparallel currents repel}\)
+Step 1: \(F_{near}=\dfrac{2\times10^{-7}(20)(5.0)(0.20)}{0.050}=8.0\times10^{-5}\ \mathrm N\ \text{(attractive)}\)
+Step 2: \(F_{far}=\dfrac{2\times10^{-7}(20)(5.0)(0.20)}{0.10}=4.0\times10^{-5}\ \mathrm N\ \text{(repulsive: the current there is opposite)}\)
+Step 3: \(\text{the two perpendicular sides carry opposite currents at the same distances, so their forces are equal and opposite and cancel}\)
+Worked derivation: \[F_{net}=\frac{\mu_0I_1I_2l}{2\pi}\left(\frac1{r_{near}}-\frac1{r_{far}}\right)=2\times10^{-7}(20)(5.0)(0.20)\left(20-10\right)=4.0\times10^{-5}\ \mathrm N\]
+Check: \[B\text{ at 5 cm}=\frac{2\times10^{-7}(20)}{0.05}=8\times10^{-5}\ \mathrm T;\ F=BIl=8\times10^{-5}(5)(0.2)=8\times10^{-5}\ \mathrm N\ \checkmark\]
+Why: \(\text{the field of a straight wire falls as }1/r\text{, so the attraction on the nearer side is stronger than the repulsion on the farther side; a loop in a non-uniform field can feel a net force, unlike a loop in a uniform field}\)
+Why not the others: (B) \(\text{adds the two forces instead of subtracting them}\); (C) \(\text{the stronger force is the attraction on the nearer side}\); (D) \(\text{the cancellation holds only in a uniform field}\).
+Key point: \(F/l=\mu_0I_1I_2/2\pi r;\ \text{in the 1/r field of a wire, a loop is pulled towards the wire when its nearer side carries a parallel current}\)
+
+@@ Q68
+format: conceptual
+sub_topic: Ordering the electromagnetic spectrum, matching bands to sources and uses, and how photon energy scales with wavelength
+Q: Which statement about the electromagnetic spectrum is correct?
+A) X-rays have longer wavelengths than microwaves and are produced by klystron valves
+B) Infrared waves are absorbed by the ozone layer, which protects life from them
+C) In order of decreasing wavelength the bands are radio, microwave, infrared, visible, ultraviolet, X-rays, gamma rays; microwaves are produced by klystrons and magnetrons and are used in radar and ovens, infrared comes from hot bodies and is used in remote controls, X-rays from X-ray tubes are used in medical diagnosis, and gamma rays come from radioactive nuclei; since photon energy \(E=hc/\lambda\), reducing the wavelength by a factor of 1000 raises the photon energy 1000 times
+D) All electromagnetic waves travel through vacuum with speeds that depend on their frequency
+KEY: C
+SOL:
+Answer: (C) Radio > microwave > IR > visible > UV > X-ray > gamma in wavelength; the sources and uses as stated; \(E\propto1/\lambda\).
+Given: \(\text{photon energy }E=h\nu=\dfrac{hc}{\lambda};\ \text{all bands travel at }c\text{ in vacuum}\)
+Formula/Principle: \(E\propto\dfrac1\lambda\Rightarrow\dfrac{E_2}{E_1}=\dfrac{\lambda_1}{\lambda_2}\)
+Step 1: \(\lambda_2=\dfrac{\lambda_1}{1000}\Rightarrow E_2=1000E_1\)
+Worked derivation: \[\text{microwave }\lambda\sim1\ \mathrm{mm}\to\text{gamma }\lambda\sim10^{-12}\ \mathrm m:\ \frac{E_\gamma}{E_{mw}}=\frac{10^{-3}}{10^{-12}}=10^{9}\]
+Check: \[E(500\ \mathrm{nm})=\frac{1240\ \mathrm{eV\,nm}}{500\ \mathrm{nm}}\approx2.5\ \mathrm{eV};\ E(0.5\ \mathrm{nm})\approx2.5\ \mathrm{keV}=1000\times\ \checkmark\]
+Why: \(\text{all the bands are the same kind of wave, differing only in frequency and wavelength; their sources and uses reflect their photon energies: low-energy microwaves excite rotation of water molecules, while high-energy X-rays pass through soft tissue and ionise}\)
+Why not the others: (A) \(\text{X-rays are far shorter in wavelength, and klystrons make microwaves}\); (B) \(\text{ozone absorbs ultraviolet, not infrared}\); (D) \(\text{in vacuum, every electromagnetic wave travels at }c=3\times10^{8}\ \mathrm{m\,s^{-1}}\).
+Key point: \(\text{longest to shortest: radio, micro, IR, visible, UV, X, gamma};\ E=hc/\lambda\)
+
+@@ Q69
+format: numerical
+sub_topic: Minimum deviation, and the angles of incidence and refraction at minimum deviation, for a 60° prism of refractive index √3
+Q: A prism of angle \(60^\circ\) is made of glass with refractive index \(\sqrt3\). What are its angle of minimum deviation, the angle of incidence at minimum deviation, and the angle of refraction inside the prism at that setting?
+A) \(30^\circ;\ 45^\circ;\ 30^\circ\)
+B) \(60^\circ;\ 30^\circ;\ 60^\circ\)
+C) \(60^\circ;\ 60^\circ;\ 30^\circ\)
+D) \(90^\circ;\ 75^\circ;\ 30^\circ\)
+KEY: C
+SOL:
+Answer: (C) \(\delta_m=60^\circ\), \(i=60^\circ\), \(r=30^\circ\).
+Given: \(A=60^\circ,\ n=\sqrt3\)
+Formula/Principle: \(n=\dfrac{\sin\frac{A+\delta_m}{2}}{\sin\frac A2};\ \text{at minimum deviation }r_1=r_2=\dfrac A2,\ i=e=\dfrac{A+\delta_m}{2}\)
+Step 1: \(\sin\dfrac{A+\delta_m}{2}=\sqrt3\sin30^\circ=\dfrac{\sqrt3}2\Rightarrow\dfrac{60^\circ+\delta_m}{2}=60^\circ\)
+Step 2: \(\delta_m=60^\circ;\ i=60^\circ;\ r=\dfrac{A}{2}=30^\circ\)
+Worked derivation: \[\delta=i+e-A=60^\circ+60^\circ-60^\circ=60^\circ;\qquad\sin i=n\sin r:\ \sin60^\circ=\sqrt3\sin30^\circ\]
+Check: \[\frac{\sqrt3}{2}=\sqrt3\times\frac12\ \checkmark\]
+Why: \(\text{at minimum deviation the ray passes symmetrically through the prism, parallel to the base in an equilateral prism, so the two refraction angles are equal and add to A}\)
+Why not the others: (A) \(\delta_m=30^\circ\text{ corresponds to }n=\sqrt2\); (B) \(\text{swaps the angles of incidence and refraction}\); (D) \(\sin75^\circ\ne\sqrt3\sin30^\circ\).
+Key point: \(n=\sin\frac{A+\delta_m}{2}/\sin\frac A2;\ r=A/2,\ i=(A+\delta_m)/2\)
+
+@@ Q70
+format: experiment
+sub_topic: Finding the wavelength from a measured span of fringes in Young's experiment, and the fringe width when the set-up is immersed in water
+Q: In Young's double-slit experiment, the slit separation is 0.50 mm and the screen is 1.0 m away. A student measures the distance across 11 consecutive bright fringes (from the first to the eleventh) as 12.0 mm. What is the wavelength, and what would the fringe width become if the whole apparatus were immersed in water of refractive index \(\tfrac43\)?
+A) 600 nm; 0.90 mm
+B) 545 nm; 1.6 mm
+C) 600 nm; 1.6 mm
+D) 655 nm; 0.82 mm
+KEY: A
+SOL:
+Answer: (A) \(\lambda=600\) nm; fringe width in water 0.90 mm.
+Given: \(d=0.50\times10^{-3}\ \mathrm m,\ D=1.0\ \mathrm m;\ \text{11 bright fringes span }12.0\ \mathrm{mm}\)
+Formula/Principle: \(\beta=\dfrac{\lambda D}{d};\ \text{in a medium }\lambda'=\dfrac{\lambda}{n}\Rightarrow\beta'=\dfrac{\beta}{n}\)
+Step 1: \(\text{11 bright fringes enclose 10 fringe widths: }\beta=\dfrac{12.0}{10}=1.20\ \mathrm{mm}\)
+Step 2: \(\lambda=\dfrac{\beta d}{D}=\dfrac{(1.20\times10^{-3})(0.50\times10^{-3})}{1.0}=6.0\times10^{-7}\ \mathrm m=600\ \mathrm{nm}\)
+Step 3: \(\beta'=\dfrac{1.20}{4/3}=0.90\ \mathrm{mm}\)
+Worked derivation: \[\lambda=\frac{(12.0/10)\times10^{-3}\times0.50\times10^{-3}}{1.0}=600\ \mathrm{nm};\qquad\beta'=\frac{\lambda D}{nd}\]
+Check: \[\beta=\frac{(6.0\times10^{-7})(1.0)}{0.50\times10^{-3}}=1.2\ \mathrm{mm}\ \checkmark\]
+Why: \(\text{measuring across many fringes reduces the reading error; n fringes span }n-1\text{ widths. In water, light travels more slowly and its wavelength shortens, so the fringes crowd together}\)
+Why not the others: (B) \(\text{divides by 11 instead of 10, and multiplies by n in water}\); (C) \(\text{the fringe width shrinks, not grows, in water}\); (D) \(\text{does not follow from the measured span; and }0.82\ \mathrm{mm}\text{ is not }\beta/n\).
+Key point: \(N\text{ bright fringes span }N-1\text{ widths};\ \beta=\lambda D/d;\ \beta\to\beta/n\text{ in a medium}\)
+
+@@ Q71
+format: numerical
+sub_topic: Radius, electron speed and energy of the n = 2 orbit of He+ in the Bohr model, compared with the hydrogen ground state
+Q: Using the Bohr model (hydrogen ground state: radius 0.529 Å, electron speed \(2.18\times10^{6}\ \mathrm{m\,s^{-1}}\), energy −13.6 eV), what are the radius, the electron's speed and the total energy for the \(n=2\) orbit of He⁺ (\(Z=2\))?
+A) 0.265 Å; \(4.36\times10^{6}\ \mathrm{m\,s^{-1}}\); −54.4 eV
+B) 2.12 Å; \(1.09\times10^{6}\ \mathrm{m\,s^{-1}}\); −3.4 eV
+C) 1.058 Å; \(1.09\times10^{6}\ \mathrm{m\,s^{-1}}\); −27.2 eV
+D) 1.058 Å; \(2.18\times10^{6}\ \mathrm{m\,s^{-1}}\); −13.6 eV
+KEY: D
+SOL:
+Answer: (D) 1.058 Å; \(2.18\times10^{6}\ \mathrm{m\,s^{-1}}\); −13.6 eV.
+Given: \(Z=2,\ n=2;\ a_0=0.529\ \text{Å},\ v_0=2.18\times10^6\ \mathrm{m\,s^{-1}},\ E_0=-13.6\ \mathrm{eV}\)
+Formula/Principle: \(r_n=a_0\dfrac{n^2}{Z},\ v_n=v_0\dfrac{Z}{n},\ E_n=E_0\dfrac{Z^2}{n^2}\)
+Step 1: \(r=0.529\times\dfrac{4}{2}=1.058\ \text{Å}\)
+Step 2: \(v=2.18\times10^6\times\dfrac{2}{2}=2.18\times10^6\ \mathrm{m\,s^{-1}}\)
+Step 3: \(E=-13.6\times\dfrac{4}{4}=-13.6\ \mathrm{eV}\)
+Worked derivation: \[mvr=\frac{nh}{2\pi},\ \frac{mv^2}{r}=\frac{Ze^2}{4\pi\varepsilon_0r^2}\Rightarrow v\propto\frac Zn,\ r\propto\frac{n^2}{Z},\ E=-\tfrac12mv^2\propto\frac{Z^2}{n^2}\]
+Check: \[\text{KE}=+13.6\ \mathrm{eV},\ \text{PE}=-27.2\ \mathrm{eV},\ E=\text{KE}+\text{PE}=-13.6\ \mathrm{eV}\ \checkmark\]
+Why: \(\text{doubling Z and doubling n cancel in }v\text{ and }E\text{ (both depend on }Z/n\text{), so this orbit matches hydrogen's ground state in speed and energy, though it is twice as large}\)
+Why not the others: (A) \(\text{uses the He}^+\text{ ground state }(n=1)\); (B) \(\text{uses hydrogen }(Z=1)\text{ with }n=2\); (C) \(\text{mixes the scalings; }-27.2\ \mathrm{eV}\text{ is the potential energy}\).
+Key point: \(r\propto n^2/Z,\ v\propto Z/n,\ E\propto Z^2/n^2\)
+
+@@ Q72
+format: conceptual
+sub_topic: What mass defect and the binding energy per nucleon curve explain about nuclear stability, fission and fusion
+Q: Which statement about mass defect and binding energy per nucleon is correct?
+A) A nucleus has more mass than the sum of the masses of its free protons and neutrons, and this extra mass holds it together
+B) The mass of a nucleus is less than the total mass of its separate nucleons; the binding energy per nucleon is nearly constant (about 8 MeV) for mass numbers roughly 30 to 170, peaks near 8.75 MeV around A = 56, and is lower for very light and very heavy nuclei, so energy is released when a heavy nucleus splits (fission) or light nuclei combine (fusion)
+C) Binding energy per nucleon increases steadily with mass number, so the heaviest nuclei are the most stable
+D) Energy is released only in fission, because fusion always absorbs energy
+KEY: B
+SOL:
+Answer: (B) Mass defect; nearly constant binding energy per nucleon with a peak near A = 56; fission and fusion both release energy.
+Given: \(\Delta M=[Zm_p+(A-Z)m_n]-M;\ E_b=\Delta Mc^2\)
+Formula/Principle: \(E_{bn}=\dfrac{E_b}{A};\ \text{energy released}=(\text{total }E_b\text{ of products})-(\text{total }E_b\text{ of reactants})\)
+Step 1: \(\text{a nucleus with A = 240 has }E_{bn}\approx7.6\ \mathrm{MeV};\ \text{splitting it into two nuclei with A = 120 raises }E_{bn}\text{ to about }8.5\ \mathrm{MeV}\)
+Worked derivation: \[\text{energy released}\approx240\times(8.5-7.6)\ \mathrm{MeV}\approx216\ \mathrm{MeV}\approx200\ \mathrm{MeV}\text{ per fission}\]
+Check: \[1\ \mathrm u\times c^2=931.5\ \mathrm{MeV};\ \text{a mass defect of about }0.2\ \mathrm u\text{ matches about }200\ \mathrm{MeV}\ \checkmark\]
+Why: \(\text{the nuclear force is short-range and saturates: each nucleon binds only to its near neighbours, so }E_{bn}\text{ is nearly constant for mid-sized nuclei; any process that moves nuclei towards the peak releases energy}\)
+Why not the others: (A) \(\text{the nucleus has less mass; the missing mass corresponds to the binding energy}\); (C) \(E_{bn}\text{ falls for heavy nuclei, beyond about A = 56}\); (D) \(\text{fusion of light nuclei moves them up the curve and releases energy}\).
+Key point: \(\text{mass defect gives binding energy; moving towards A}\approx56\text{ (by fission or fusion) releases energy}\)
+
+@@ Q73
+format: numerical
+sub_topic: Keeping significant figures through unit changes, multiplication and addition of measured values
+Q: Which statement about significant figures is correct?
+A) Writing 4.700 m as 4700 mm shows that the measurement has become more precise
+B) \(2.5\times1.25\) should be reported as 3.125, and \(12.11+18.0+1.012\) as 31.122
+C) Changing 0.0047 kg to 4.7 g increases the number of significant figures from 2 to 4
+D) The length 4.700 m has 4 significant figures, and in millimetres it is written \(4.700\times10^{3}\) mm to keep them, because a change of units cannot change the number of significant figures; \(2.5\times1.25\) is reported as 3.1, and \(12.11+18.0+1.012\) as 31.1
+KEY: D
+SOL:
+Answer: (D) 4.700 m = \(4.700\times10^3\) mm (4 s.f.); \(2.5\times1.25\to3.1\); \(12.11+18.0+1.012\to31.1\).
+Given: \(4.700\ \mathrm m;\ 2.5\times1.25;\ 12.11+18.0+1.012\)
+Formula/Principle: \(\text{multiplication or division: keep the least number of significant figures; addition or subtraction: keep the least number of decimal places}\)
+Step 1: \(4.700\ \mathrm m\text{ has 4 s.f. (trailing zeros after a decimal point count)};\ \text{in mm: }4.700\times10^{3}\)
+Step 2: \(2.5\times1.25=3.125\to2\text{ s.f.}\to3.1\)
+Step 3: \(12.11+18.0+1.012=31.122\to1\text{ decimal place (from 18.0)}\to31.1\)
+Worked derivation: \[0.0047\ \mathrm{kg}=4.7\ \mathrm g=4.7\times10^{3}\ \mathrm{mg}:\ \text{always 2 s.f.}\]
+Check: \[\text{4700 mm without a decimal point is ambiguous (2 to 4 s.f.), so scientific notation is needed}\ \checkmark\]
+Why: \(\text{significant figures show how precisely something was measured; units only move the decimal point, so they cannot change precision, and a result cannot be more precise than its least precise input}\)
+Why not the others: (A) \(\text{units do not change precision, and 4700 is ambiguous}\); (B) \(\text{keeps too many figures in both results}\); (C) \(\text{leading zeros are never significant, so both have 2 s.f.}\).
+Key point: \(\text{×÷: fewest s.f.; +−: fewest decimal places; unit changes keep s.f. (use powers of 10)}\)
+
+@@ Q74
+format: numerical
+sub_topic: Tensions in two strings holding a weight in equilibrium, by resolving forces or by Lami's theorem
+Q: A 100 N weight hangs at rest from a knot held by two strings attached to a horizontal ceiling. String 1 makes \(30^\circ\) with the ceiling and string 2 makes \(60^\circ\) with it. What are the tensions?
+A) \(T_1=86.6\ \mathrm N,\ T_2=50\ \mathrm N\)
+B) \(T_1=50\ \mathrm N,\ T_2=86.6\ \mathrm N\)
+C) \(T_1=T_2=50\ \mathrm N\)
+D) \(T_1=100\ \mathrm N,\ T_2=173\ \mathrm N\)
+KEY: B
+SOL:
+Answer: (B) \(T_1=50\) N (string at \(30^\circ\)), \(T_2=86.6\) N (string at \(60^\circ\)).
+Given: \(W=100\ \mathrm N;\ \text{angles with the horizontal: }30^\circ,\ 60^\circ\)
+Formula/Principle: \(\text{equilibrium: }\sum F_x=0,\ \sum F_y=0;\ \text{Lami: }\dfrac{T_1}{\sin\alpha}=\dfrac{T_2}{\sin\beta}=\dfrac{W}{\sin\gamma}\)
+Step 1: \(\text{horizontal: }T_1\cos30^\circ=T_2\cos60^\circ\Rightarrow T_2=\sqrt3\,T_1\)
+Step 2: \(\text{vertical: }T_1\sin30^\circ+T_2\sin60^\circ=100\Rightarrow\tfrac12T_1+\tfrac32T_1=100\Rightarrow T_1=50\ \mathrm N\)
+Step 3: \(T_2=50\sqrt3\approx86.6\ \mathrm N\)
+Worked derivation: \[\text{Lami: angle between strings }=90^\circ;\ \text{opposite }T_1:\ 150^\circ,\ \text{opposite }T_2:\ 120^\circ\Rightarrow\frac{T_1}{\sin150^\circ}=\frac{T_2}{\sin120^\circ}=\frac{100}{\sin90^\circ}\]
+Check: \[T_1=100\times\tfrac12=50,\ T_2=100\times\tfrac{\sqrt3}{2}=86.6;\ \text{horizontal: }50(0.866)=43.3=86.6(0.5)\ \checkmark\]
+Why: \(\text{the steeper string is closer to the vertical, so it carries more of the weight; the two tensions are the components of the weight along two perpendicular strings}\)
+Why not the others: (A) \(\text{swaps the tensions}\); (C) \(\text{equal tensions need symmetric strings}\); (D) \(\text{doubles the values; their vertical components would then add to 200 N}\).
+Key point: \(\text{resolve horizontally and vertically, or use Lami's theorem; the steeper string carries more}\)
+
+@@ Q75
+format: numerical
+sub_topic: Choosing the velocity–time behaviour of two bodies in a head-on elastic collision of m with 2m at rest
+Q: A ball of mass \(m\) moving at speed \(u\) makes a head-on elastic collision with a ball of mass \(2m\) at rest. On a velocity–time graph through the collision, which description is correct?
+A) The velocity of \(m\) drops from \(u\) to \(-u/3\) (it rebounds), and that of \(2m\) rises from 0 to \(2u/3\); the total momentum stays \(mu\) throughout, and \(\tfrac89\) of the kinetic energy is transferred to \(2m\)
+B) Both balls move together at \(u/3\) after the collision
+C) The velocity of \(m\) becomes zero and \(2m\) moves off at \(u/2\)
+D) The velocity of \(m\) becomes \(+u/3\) and \(2m\) moves off at \(u/3\)
+KEY: A
+SOL:
+Answer: (A) \(v_1=-u/3\), \(v_2=2u/3\); momentum conserved; \(\tfrac89\) of the KE transferred.
+Given: \(m_1=m,\ m_2=2m,\ u_1=u,\ u_2=0,\ \text{elastic}\)
+Formula/Principle: \(v_1=\dfrac{m_1-m_2}{m_1+m_2}u_1,\ v_2=\dfrac{2m_1}{m_1+m_2}u_1\)
+Step 1: \(v_1=\dfrac{m-2m}{3m}u=-\dfrac u3\)
+Step 2: \(v_2=\dfrac{2m}{3m}u=\dfrac{2u}{3}\)
+Step 3: \(\text{KE fraction to }2m=\dfrac{\tfrac12(2m)(2u/3)^2}{\tfrac12mu^2}=\dfrac89\)
+Worked derivation: \[\text{momentum: }m\left(-\tfrac u3\right)+2m\left(\tfrac{2u}3\right)=mu\ \checkmark;\quad\text{KE: }\tfrac12m\tfrac{u^2}9+\tfrac12(2m)\tfrac{4u^2}{9}=\tfrac12mu^2\]
+Check: \[\text{relative speed of separation }=\tfrac{2u}{3}-\left(-\tfrac u3\right)=u=\text{speed of approach}\ (e=1)\ \checkmark\]
+Why: \(\text{a lighter ball hitting a heavier one at rest bounces back; the graph shows a step change in each velocity at the collision instant, with the momentum line flat}\)
+Why not the others: (B) \(\text{is the perfectly inelastic case, which loses KE}\); (C) \(\text{the stopping result holds only for equal masses, and }u/2\text{ breaks energy conservation}\); (D) \(\text{momentum would be }mu/3+2mu/3=mu\text{, but KE would not be conserved and the balls would not separate}\).
+Key point: \(\text{elastic, target at rest: }v_1=\tfrac{m_1-m_2}{m_1+m_2}u,\ v_2=\tfrac{2m_1}{m_1+m_2}u\)
+
+@@ Q76
+format: conceptual
+sub_topic: Ordering the radii of gyration of a ring, disc, hollow sphere and solid sphere of the same mass and radius, and what it implies for rolling
+Q: A ring, a disc, a thin hollow sphere and a solid sphere have the same mass \(M\) and radius \(R\). Which statement about their radii of gyration \(k\) about an axis through the centre (the symmetry axis for the ring and disc) is correct?
+A) All four have \(k=R\), because they have the same mass and radius
+B) The solid sphere has the largest \(k\), because its mass fills the whole volume
+C) \(k_{ring}=R>k_{hollow\ sphere}=\sqrt{2/3}\,R>k_{disc}=R/\sqrt2>k_{solid\ sphere}=\sqrt{2/5}\,R\); when they roll without slipping from rest down the same incline, the solid sphere reaches the bottom first
+D) \(k\) depends only on the total mass, not on how the mass is distributed
+KEY: C
+SOL:
+Answer: (C) Ring > hollow sphere > disc > solid sphere; the solid sphere wins the rolling race.
+Given: \(I_{ring}=MR^2,\ I_{hollow}=\tfrac23MR^2,\ I_{disc}=\tfrac12MR^2,\ I_{solid}=\tfrac25MR^2\)
+Formula/Principle: \(I=Mk^2\Rightarrow k=\sqrt{I/M};\ \text{rolling: }a=\dfrac{g\sin\theta}{1+k^2/R^2}\)
+Step 1: \(k/R:\ 1,\ \sqrt{2/3}\approx0.816,\ \sqrt{1/2}\approx0.707,\ \sqrt{2/5}\approx0.632\)
+Step 2: \(\text{smallest }k^2/R^2\text{ (solid sphere, 0.4) gives the largest acceleration}\)
+Worked derivation: \[a_{solid}=\frac{g\sin\theta}{1.4}=\frac57g\sin\theta,\quad a_{disc}=\frac23g\sin\theta,\quad a_{hollow}=\frac35g\sin\theta,\quad a_{ring}=\frac12g\sin\theta\]
+Check: \[\tfrac57>\tfrac23>\tfrac35>\tfrac12\ (0.714>0.667>0.6>0.5)\ \checkmark\]
+Why: \(k\text{ is the distance at which the whole mass would have to be placed to give the same I; mass lying farther from the axis gives a larger k, so a body with more of its mass near the axis needs less of its energy for rotation and rolls down faster}\)
+Why not the others: (A) \(k\text{ depends on the mass distribution}\); (B) \(\text{the solid sphere has its mass closest to the centre, so it has the smallest }k\); (D) \(\text{same mass, different distribution, different k}\).
+Key point: \(k=\sqrt{I/M};\ \text{less mass far from the axis means smaller k and faster rolling}\)
+
+@@ Q77
+format: numerical
+sub_topic: How orbital speed, period and total energy of a satellite change when its orbital radius is made four times larger
+Q: A satellite in a circular orbit of radius \(r\) is moved to a circular orbit of radius \(4r\) about the same planet. How do its orbital speed, period and total energy change?
+A) Speed halves; period becomes 8 times; total energy (negative) becomes one quarter as large in magnitude, i.e. rises towards zero
+B) Speed doubles; period becomes 4 times; total energy becomes 4 times more negative
+C) Speed is unchanged; period doubles; total energy is unchanged
+D) Speed halves; period becomes 4 times; total energy becomes 4 times more negative
+KEY: A
+SOL:
+Answer: (A) \(v\to v/2\), \(T\to8T\), \(E\to E/4\) (less negative).
+Given: \(r\to4r\)
+Formula/Principle: \(v=\sqrt{\dfrac{GM}{r}},\ T=2\pi\sqrt{\dfrac{r^3}{GM}},\ E=-\dfrac{GMm}{2r}\)
+Step 1: \(v\propto r^{-1/2}\Rightarrow v'=\dfrac{v}{\sqrt4}=\dfrac v2\)
+Step 2: \(T\propto r^{3/2}\Rightarrow T'=4^{3/2}T=8T\)
+Step 3: \(E\propto-\dfrac1r\Rightarrow E'=\dfrac E4\)
+Worked derivation: \[\frac{mv^2}{r}=\frac{GMm}{r^2}\Rightarrow K=\frac{GMm}{2r},\ U=-\frac{GMm}{r},\ E=K+U=-\frac{GMm}{2r}=-K\]
+Check: \[T=\frac{2\pi r}{v}:\ \frac{2\pi(4r)}{v/2}=8\cdot\frac{2\pi r}{v}\ \checkmark\]
+Why: \(\text{a higher orbit needs a weaker gravitational pull for the centripetal force, so the speed is lower; the path is longer and slower, so the period grows faster than r; energy must be supplied to raise the orbit, so E becomes less negative}\)
+Why not the others: (B) \(\text{speed falls with radius, and raising an orbit needs energy}\); (C) \(\text{speed depends on r}\); (D) \(T\propto r^{3/2}\text{ (Kepler's third law), and E becomes less negative}\).
+Key point: \(v\propto r^{-1/2},\ T\propto r^{3/2},\ E=-GMm/2r\)
+
+@@ Q78
+format: numerical
+sub_topic: Comparing the excess pressure inside a soap bubble and a water drop of the same radius, and capillary rise in tubes of different radii
+Q: A soap bubble and a water drop each have radius 1.0 cm. The surface tension of soap solution is 0.030 N/m and that of water is 0.072 N/m. What are the excess pressures inside them? Also, if water rises 3.0 cm in a clean glass capillary, how high does it rise in a capillary of half the radius, and how does mercury behave in glass?
+A) Bubble 6 Pa, drop 14.4 Pa; 1.5 cm; mercury rises higher than water
+B) Bubble 12 Pa, drop 7.2 Pa; 6.0 cm; mercury rises because its surface tension is large
+C) Bubble 3 Pa, drop 28.8 Pa; 3.0 cm; mercury neither rises nor falls
+D) Bubble 12 Pa, drop 14.4 Pa; 6.0 cm; mercury is depressed, because its angle of contact with glass is obtuse
+KEY: D
+SOL:
+Answer: (D) Bubble 12 Pa, drop 14.4 Pa; 6.0 cm; mercury is depressed.
+Given: \(r=1.0\times10^{-2}\ \mathrm m;\ S_{soap}=0.030,\ S_{water}=0.072\ \mathrm{N\,m^{-1}};\ h_1=3.0\ \mathrm{cm}\)
+Formula/Principle: \(\text{drop: }\Delta P=\dfrac{2S}{r};\ \text{bubble (two surfaces): }\Delta P=\dfrac{4S}{r};\ h=\dfrac{2S\cos\theta}{r\rho g}\)
+Step 1: \(\text{bubble: }\dfrac{4(0.030)}{0.010}=12\ \mathrm{Pa};\ \text{drop: }\dfrac{2(0.072)}{0.010}=14.4\ \mathrm{Pa}\)
+Step 2: \(h\propto\dfrac1r\Rightarrow h_2=3.0\times2=6.0\ \mathrm{cm}\)
+Step 3: \(\text{mercury–glass: }\theta\approx140^\circ,\ \cos\theta<0\Rightarrow h<0\ (\text{depression})\)
+Worked derivation: \[\frac{\Delta P_{bubble}}{\Delta P_{drop}}=\frac{4S_{soap}}{2S_{water}}=\frac{0.12}{0.144}\approx0.83\]
+Check: \[h_1r_1=h_2r_2:\ 3.0\times r=6.0\times\tfrac r2\ \checkmark\]
+Why: \(\text{a bubble has two surfaces (inside and outside the film), doubling the pressure jump; even so, water's much larger surface tension makes the drop's excess pressure higher here. A narrower tube has less weight of liquid to support per unit length of contact, so the liquid rises higher}\)
+Why not the others: (A) \(\text{uses }2S/r\text{ for the bubble, halves the rise instead of doubling it, and gets mercury wrong}\); (B) \(\text{uses }S/r\text{ for the drop, and mercury is depressed}\); (C) \(\text{uses }S/r\text{ for the bubble and }4S/r\text{ for the drop, and the rise does depend on r}\).
+Key point: \(\Delta P=2S/r\text{ (drop)},\ 4S/r\text{ (bubble)};\ h\propto\cos\theta/r\)
+
+@@ Q79
+format: numerical
+sub_topic: Surface temperature of a star from Wien's law, and cooling time by Newton's law using average temperatures
+Q: (i) The radiation from a star has its maximum intensity at a wavelength of 500 nm (Wien's constant \(b=2.9\times10^{-3}\ \mathrm{m\,K}\)). (ii) A body in a room at 30 °C cools from 90 °C to 70 °C in 4 minutes. Using Newton's law of cooling with average temperatures over each interval, how long will it take to cool from 70 °C to 50 °C? What are the star's surface temperature and this time?
+A) 1450 K; 4 min
+B) 5800 K; about 6.7 min
+C) 5800 K; 4 min
+D) 580 K; about 8 min
+KEY: B
+SOL:
+Answer: (B) 5800 K; about 6.7 minutes.
+Given: \(\lambda_m=5.0\times10^{-7}\ \mathrm m;\ T_s=30^\circ\mathrm C;\ 90\to70^\circ\mathrm C\text{ in 4 min}\)
+Formula/Principle: \(\lambda_mT=b;\ \dfrac{\Delta T}{\Delta t}=k\left(\bar T-T_s\right)\)
+Step 1: \(T=\dfrac{2.9\times10^{-3}}{5.0\times10^{-7}}=5800\ \mathrm K\)
+Step 2: \(\dfrac{20}{4}=k(80-30)\Rightarrow k=0.10\ \mathrm{min^{-1}}\)
+Step 3: \(\dfrac{20}{t}=0.10(60-30)=3\Rightarrow t=\dfrac{20}{3}\approx6.7\ \mathrm{min}\)
+Worked derivation: \[\text{rate}_1=5\ ^\circ\mathrm C/\mathrm{min}\ (\text{excess }50),\quad\text{rate}_2=3\ ^\circ\mathrm C/\mathrm{min}\ (\text{excess }30)\Rightarrow t=\frac{20}{3}\]
+Check: \[\text{cooling slows as the excess temperature falls: the same 20 °C drop takes longer }(6.7>4)\ \checkmark;\ 5800\times5\times10^{-7}=2.9\times10^{-3}\ \checkmark\]
+Why: \(\text{the peak shifts to shorter wavelengths as temperature rises (the Sun's peak lies in the visible); in Newton's law, the rate of heat loss is proportional to the excess temperature over the surroundings, so it slows as the body cools}\)
+Why not the others: (A) \(\text{off by a factor of 4, and assumes uniform cooling}\); (C) \(\text{assumes the cooling rate does not change}\); (D) \(\text{power-of-ten slip in Wien's law, and wrong average temperature}\).
+Key point: \(\lambda_mT=b;\ \text{Newton: rate}\propto(\bar T-T_s)\text{, so equal drops take longer as the body cools}\)
+
+@@ Q80
+format: numerical
+sub_topic: Comparing free expansion, reversible adiabatic expansion and reversible isothermal expansion of a monatomic ideal gas to twice its volume
+Q: Two moles of a monatomic ideal gas at 300 K double their volume in three different ways: P — free expansion into a vacuum inside an insulated container; Q — reversible adiabatic expansion; R — reversible isothermal expansion (\(R=8.314\ \mathrm{J\,mol^{-1}K^{-1}}\), \(\gamma=\tfrac53\), \(\ln2=0.693\)). Which option is correct?
+A) P: final temperature falls to 189 K, as in Q; R: no work is done
+B) P: work 3.46 kJ; Q: final temperature 300 K; R: final temperature 189 K
+C) P: no work, no heat and no change in internal energy, so the temperature stays 300 K; Q: final temperature about 189 K, work done by the gas about 2.77 kJ (equal to the fall in internal energy); R: work done by the gas about 3.46 kJ, all supplied as heat
+D) P: the gas does 2.77 kJ of work against the vacuum; Q and R do the same work
+KEY: C
+SOL:
+Answer: (C) P: \(W=Q=\Delta U=0\), \(T=300\) K; Q: \(T\approx189\) K, \(W\approx2.77\) kJ; R: \(W\approx3.46\) kJ, \(Q=W\).
+Given: \(n=2,\ T_1=300\ \mathrm K,\ V_2=2V_1,\ C_v=\tfrac32R,\ \gamma=\tfrac53\)
+Formula/Principle: \(\Delta U=Q-W;\ \text{adiabatic: }TV^{\gamma-1}=\text{const},\ W=nC_v(T_1-T_2);\ \text{isothermal: }W=nRT\ln\dfrac{V_2}{V_1}\)
+Step 1: \(\text{P: no external pressure }\Rightarrow W=0;\ \text{insulated}\Rightarrow Q=0;\ \Delta U=0\Rightarrow T=300\ \mathrm K\)
+Step 2: \(\text{Q: }T_2=300\times\left(\tfrac12\right)^{2/3}=300\times0.630=189\ \mathrm K;\ W=2\times\tfrac32\times8.314\times111\approx2.77\times10^{3}\ \mathrm J\)
+Step 3: \(\text{R: }W=2\times8.314\times300\times0.693\approx3.46\times10^{3}\ \mathrm J;\ \Delta U=0\Rightarrow Q=W\)
+Worked derivation: \[\left(\tfrac12\right)^{2/3}=2^{-0.667}\approx0.630;\quad\Delta T=300-189=111\ \mathrm K;\quad W_{ad}=3(8.314)(111)\approx2769\ \mathrm J\]
+Check: \[W_{iso}>W_{ad}\ \text{(the isothermal curve lies above the adiabatic one on a P–V diagram)}\ \checkmark;\ \text{free expansion: ideal gas U depends on T only}\ \checkmark\]
+Why: \(\text{in free expansion, nothing pushes back, so no work is done, and the energy of an ideal gas depends only on temperature; in adiabatic expansion, the work comes from internal energy, so the gas cools; in isothermal expansion, heat flows in to keep T fixed, and the pressure stays higher, giving more work}\)
+Why not the others: (A) \(\text{free expansion does not cool an ideal gas, and isothermal expansion does work}\); (B) \(\text{assigns the results to the wrong processes}\); (D) \(\text{no work is done against a vacuum, and Q and R do different amounts of work}\).
+Key point: \(\text{free: }W=Q=\Delta U=0;\ \text{adiabatic: }W=-\Delta U;\ \text{isothermal: }W=Q=nRT\ln(V_2/V_1)\)

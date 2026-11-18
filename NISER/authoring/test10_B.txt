@@ -1,0 +1,368 @@
+@@ Q01
+format: numerical
+sub_topic: Counting genotypes when a gene has several alleles, and the four ABO phenotypes from an IAi × IBi cross
+Q: A gene has four alleles in a population, and each diploid person carries any two of them. In a separate family, a man of blood group A (genotype IAi) marries a woman of blood group B (genotype IBi). How many different genotypes are possible for the four-allele gene, how many of them are heterozygous, and what proportion of this couple's children is expected to have each ABO blood group?
+A) 8 genotypes, 4 heterozygous; only groups A and B appear, in a 1 : 1 ratio
+B) 10 genotypes, 6 heterozygous; groups A, B, AB and O each have probability 1/4
+C) 16 genotypes, 12 heterozygous; groups A and B each 3/8, AB and O each 1/8
+D) 10 genotypes, 4 heterozygous; group AB 1/2, groups A and B each 1/4, no group O
+KEY: B
+SOL:
+Answer: (B) 10 genotypes (6 heterozygous); A, B, AB and O each 1/4.
+Concept: Multiple allelism means a gene exists in more than two allelic forms in a population, although any one diploid individual carries only two. The ABO blood groups are controlled by gene I with three alleles: IA and IB are codominant with each other and both are dominant over i. This gives six genotypes but only four phenotypes (A, B, AB, O). Pleiotropy is a different idea: one gene affects several traits, as in phenylketonuria, where a single faulty gene causes mental retardation and reduced hair and skin pigmentation.
+Given: Number of alleles n = 4; cross IAi × IBi.
+Formula/Principle: Homozygous genotypes = n; heterozygous genotypes = nC2 = n(n − 1)/2; total = n(n + 1)/2.
+Step 1: Homozygous = 4; heterozygous = 4 × 3 ÷ 2 = 6; total = 10.
+Step 2: Gametes are IA or i from the father and IB or i from the mother, each with probability 1/2. The four combinations are IAIB (AB), IAi (A), IBi (B) and ii (O), each 1/2 × 1/2 = 1/4.
+Why: Each allele can pair with itself (homozygote) or with any one of the others (heterozygote), and the order of the two alleles does not matter. In the cross, codominance makes IAIB a distinct phenotype (AB), and both parents carry the hidden recessive i, so an O child is possible.
+Why not the others: (A) 8 counts ordered pairs incorrectly, and the cross also gives AB and O children. (C) 16 = 4 × 4 counts IAIB and IBIA as different genotypes; the cross ratio is also wrong. (D) Has the wrong number of heterozygotes and ignores the i allele carried by both parents.
+Key point: With n alleles there are n(n + 1)/2 genotypes; IAi × IBi gives all four blood groups in equal proportion.
+
+@@ Q02
+format: numerical
+sub_topic: Reasoning steps for a three-gene polygenic cross and the 1 : 6 : 15 : 20 : 15 : 6 : 1 distribution
+Q: Human skin colour is modelled as a polygenic trait controlled by three genes A, B and C, where each dominant allele adds the same amount of pigment and the effects are additive. Two parents, both AaBbCc, have children. Consider these reasoning steps: P — each child receives 6 alleles, and each one is independently dominant with probability 1/2; Q — the phenotype depends only on the number of dominant alleles, from 0 to 6; R — the number of ways to get k dominant alleles is 6Ck, out of 2⁶ = 64 equally likely combinations. Which option gives a correct order of use and a correct result for the fraction of children with the same skin colour as the parents?
+A) Q → P → R; 20/64 (= 5/16) of the children match the parents, and there are 7 phenotypic classes in the ratio 1 : 6 : 15 : 20 : 15 : 6 : 1
+B) R → Q → P; 1/64 of the children match the parents, and there are 3 phenotypic classes
+C) P → R → Q; 27/64 of the children match the parents, and the ratio is 27 : 9 : 9 : 9 : 3 : 3 : 3 : 1
+D) Q → P → R; 15/64 of the children match the parents, and there are 6 phenotypic classes
+KEY: A
+SOL:
+Answer: (A) Q → P → R; 20/64 match the parents; 7 classes in a 1 : 6 : 15 : 20 : 15 : 6 : 1 ratio.
+Concept: Polygenic inheritance is the control of a trait by three or more genes, each with a small additive effect. The phenotype reflects the total contribution of all the dominant alleles, and the environment also has an influence. Such traits show continuous variation, and the frequency distribution forms a bell-shaped curve.
+Given: Parents AaBbCc × AaBbCc; the parental phenotype corresponds to 3 dominant alleles.
+Formula/Principle: P(k dominant alleles) = 6Ck × (1/2)⁶.
+Step 1: Q first identifies what decides the phenotype: only the count of dominant alleles (0 to 6), giving 7 classes.
+Step 2: P sets the probability of each allele: each of the 6 positions is dominant with probability 1/2, independently.
+Step 3: R counts the combinations: 6C3 = 20, so P(3 dominant) = 20/64 = 5/16. The full set 6C0 to 6C6 is 1, 6, 15, 20, 15, 6, 1.
+Why: The ordering follows the logic of the problem: first decide what the phenotype depends on, then the probability per allele, then count the combinations. The middle class (3 dominant alleles, like the parents) is the most common, and the extremes (0 or 6) are rare (1/64 each).
+Why not the others: (B) 1/64 is the probability of an extreme class (aabbcc or AABBCC), and polygenic crosses do not give only 3 classes. (C) 27 : 9 : 9 : 9 : 3 : 3 : 3 : 1 is the ratio for three independent genes showing complete dominance, not additive effects. (D) 15/64 is the fraction with 4 (or 2) dominant alleles, and there are 7 classes, not 6.
+Key point: For n additive genes in a trihybrid-type cross there are 2n + 1 phenotypic classes, with binomial frequencies; the parental type (the middle class) is the most frequent.
+
+@@ Q03
+format: numerical
+sub_topic: Proportions of 15N/15N, 15N/14N and 14N/14N DNA after three generations, and the order in which replication enzymes act
+Q: E. coli grown for many generations in a medium with ¹⁵NH₄Cl as the only nitrogen source is transferred to a ¹⁴NH₄Cl medium. DNA is extracted after three generations (about 60 minutes) and centrifuged in a CsCl density gradient. Separately, consider the order in which these act at a replication fork: DNA ligase, helicase, DNA polymerase III (main replicating polymerase), primase. Which option is correct?
+A) 1/2 hybrid and 1/2 light DNA; order: primase → helicase → ligase → DNA polymerase III
+B) 1/8 heavy, 1/8 hybrid and 3/4 light DNA; order: helicase → DNA polymerase III → primase → ligase
+C) All hybrid DNA; order: ligase → primase → helicase → DNA polymerase III
+D) 1/4 hybrid and 3/4 light DNA, with no heavy DNA; order: helicase → primase → DNA polymerase III → ligase
+KEY: D
+SOL:
+Answer: (D) 1/4 hybrid, 3/4 light, no heavy; helicase → primase → DNA polymerase III → ligase.
+Concept: Meselson and Stahl (1958) showed that DNA replicates semiconservatively: each new molecule has one parental strand and one newly made strand. Heavy (¹⁵N) DNA, light (¹⁴N) DNA and hybrid DNA form separate bands in a CsCl gradient. At the fork, helicase unwinds the double helix. Primase makes a short RNA primer, because DNA polymerase can only add nucleotides to an existing 3′-OH end. DNA polymerase extends the strand in the 5′→3′ direction, continuously on the leading strand and as Okazaki fragments on the lagging strand. DNA ligase finally joins the fragments.
+Given: Starting molecule ¹⁵N/¹⁵N; 3 generations in ¹⁴N.
+Formula/Principle: After n generations, one heavy molecule gives 2ⁿ molecules, of which exactly 2 are hybrid and the rest are light.
+Step 1: Generation 1: 2 hybrid. Generation 2: 2 hybrid + 2 light. Generation 3: 2 hybrid + 6 light (8 molecules).
+Step 2: Hybrid = 2/8 = 1/4; light = 6/8 = 3/4; heavy = 0.
+Why: The two original ¹⁵N strands are never lost and never paired with each other again, so exactly two hybrid molecules remain however many generations pass, while all the new molecules are fully light. The enzyme order follows need: the strands must be separated before a primer can be laid, the primer must exist before the polymerase can extend it, and the gaps between fragments are sealed last.
+Why not the others: (A) 1/2 hybrid and 1/2 light fits two generations, not three; primase cannot act before the helix is opened. (B) Heavy DNA never reappears under semiconservative replication; the polymerase needs a primer first. (C) All hybrid fits only one generation; ligase acts last, not first.
+Key point: After n generations, the hybrid fraction is 2/2ⁿ; the fork order is helicase → primase → polymerase → ligase.
+
+@@ Q04
+format: conceptual
+sub_topic: Why eukaryotic transcription needs three RNA polymerases and processing of hnRNA while bacterial transcription does not
+Q: Which statement correctly explains a difference between transcription in bacteria and in eukaryotes?
+A) Bacteria use three RNA polymerases, while eukaryotes use a single RNA polymerase for all types of RNA
+B) In eukaryotes, the primary transcript is translated immediately in the nucleus while it is still being made
+C) Bacteria have a single RNA polymerase for mRNA, tRNA and rRNA, and since there is no nuclear membrane, their mRNA needs no processing and can be translated even before transcription ends; in eukaryotes, RNA polymerase I makes most rRNAs (28S, 18S, 5.8S), II makes the precursor of mRNA (hnRNA), and III makes tRNA, 5S rRNA and snRNAs, and hnRNA must be spliced to remove introns, capped at the 5′ end and given a poly-A tail at the 3′ end before it leaves the nucleus
+D) In eukaryotes, the introns are joined together during splicing and the exons are removed
+KEY: C
+SOL:
+Answer: (C) One polymerase and coupled transcription–translation in bacteria; three polymerases and hnRNA processing in eukaryotes.
+Concept: In bacteria, a single DNA-dependent RNA polymerase, helped by the sigma factor (initiation) and the rho factor (termination), makes all three types of RNA. Eukaryotic genes are split: coding sequences (exons) are interrupted by non-coding introns. The primary transcript (hnRNA) contains both, and is processed by splicing, by capping with methyl guanosine triphosphate at the 5′ end, and by tailing with 200–300 adenylate residues at the 3′ end.
+Why: Because bacterial mRNA is made in the cytoplasm and does not have introns, ribosomes can start translating it while it is still being transcribed. In eukaryotes, transcription happens inside the nucleus and translation in the cytoplasm, and the separate stages allow processing to take place in between; the division of labour among three polymerases reflects the different RNA classes they make.
+Why not the others: (A) This swaps the two systems. (B) Eukaryotic hnRNA is processed and exported before it is translated in the cytoplasm. (D) Splicing removes introns and joins exons.
+Key point: Bacteria: one RNA polymerase and coupled transcription–translation. Eukaryotes: RNA pol I, II, III, and capping, tailing and splicing of hnRNA.
+
+@@ Q05
+format: conceptual
+sub_topic: Interpreting random changes in allele frequency that are larger in small populations than in large ones
+Q: Twenty laboratory populations of a fly start with allele frequency 0.5 for a gene with no effect on survival or reproduction. Ten populations are kept at 8 breeding adults per generation and ten at 800. There is no migration, and mutation is negligible. After 30 generations, in several small populations the allele is fixed (frequency 1) or lost (frequency 0), while all the large populations are still close to 0.5. What best explains the result?
+A) Genetic drift: chance variation in which individuals happen to reproduce changes allele frequencies at random, and its effect is far stronger in small populations, where it can fix or eliminate an allele
+B) Natural selection favoured the allele in the small populations
+C) Gene flow carried the allele between the small populations
+D) Mutation rates are higher in small populations
+KEY: A
+SOL:
+Answer: (A) Genetic drift, which is strongest in small populations.
+Concept: Factors that change allele frequencies (and so cause evolution) include gene migration or gene flow, genetic drift, mutation, genetic recombination and natural selection. Genetic drift is a change in allele frequency that happens by chance. If a small group separates and the change in allele frequency is drastic, the new sample becomes a different population; this is the founder effect.
+Why: The allele has no effect on fitness, so selection cannot act. Migration is absent and mutation is negligible, so the only factor left is chance sampling of gametes in each generation. With only 8 parents, random sampling errors are large, and once an allele reaches 0 or 1, it stays there. With 800 parents, sampling errors average out, and the frequency stays close to 0.5. Different small populations drift in different directions, some to fixation and some to loss, which is a hallmark of a random process.
+Why not the others: (B) The allele is neutral, and selection would push the populations in one consistent direction rather than both ways. (C) There was no migration between the populations. (D) The mutation rate is a per-gene property and does not depend on population size; also, mutation was negligible here.
+Key point: Genetic drift is random, works in both directions, and is most powerful in small populations.
+
+@@ Q06
+format: conceptual
+sub_topic: Reading a table of Australian marsupials and their placental counterparts to separate adaptive radiation from convergent evolution
+Q: The table pairs some Australian marsupials with placental mammals of other continents that live similar lives. Marsupial (Australia) → Placental counterpart: Marsupial mole → Mole (burrowing); Flying phalanger → Flying squirrel (gliding); Numbat → Anteater (eats ants and termites); Tasmanian wolf → Wolf (hunts large prey). The marsupials of Australia are thought to have come from a common ancestral stock. Which conclusion does the table support?
+A) Each marsupial is more closely related to its placental counterpart than to other marsupials, as shown by their shared habits
+B) Placental mammals evolved from these marsupials in Australia and then spread to other continents
+C) Within Australia, one ancestral marsupial stock diverged into many forms suited to different habitats (adaptive radiation); each marsupial resembles its placental counterpart because similar ways of life selected similar features in unrelated lines (convergent evolution), so these similarities are analogous, not evidence of close ancestry
+D) The similarities show that habitat directly changes the body form of an animal within its lifetime, and these changes are inherited
+KEY: C
+SOL:
+Answer: (C) Adaptive radiation within marsupials; convergent evolution between marsupials and placentals.
+Concept: Adaptive radiation is the evolution of different species from a common ancestor, starting at one point and spreading into other geographical areas or habitats. Darwin's finches of the Galapagos Islands and the Australian marsupials are classic examples. When more than one adaptive radiation appears in an isolated area, with organisms from different lines coming to look alike, it is convergent evolution; placental mammals in Australia also show it, matching their marsupial counterparts.
+Why: The marsupials share a common ancestor with one another, so their variety (burrowers, gliders, ant-eaters, hunters) comes from divergence. The likeness of each marsupial to its placental counterpart arises from similar selection pressures in similar niches, not from a recent common ancestor, as with the wings of insects and birds (analogous structures).
+Why not the others: (A) Shared habits produce analogy; marsupials are more closely related to one another than to any placental. (B) Marsupials and placentals are separate lines of mammals, and there is no evidence that placentals arose from Australian marsupials. (D) This is the Lamarckian idea of inheritance of acquired characters, which is not accepted.
+Key point: Divergence from one ancestor = adaptive radiation; similar form in unrelated lines = convergent evolution (analogy).
+
+@@ Q07
+format: numerical
+sub_topic: Sorting a list of diseases by causative agent and finding the probability of a viral, Aedes-transmitted disease
+Q: A health-camp poster lists ten diseases: typhoid, pneumonia, common cold, malaria, ringworm, dengue, AIDS, amoebiasis, diphtheria and chikungunya. How many of these are caused by bacteria, how many by viruses, and if one disease is chosen at random from the list, what is the probability that it is viral and transmitted by the Aedes mosquito?
+A) 4 bacterial, 3 viral; 1/10
+B) 3 bacterial, 3 viral; 3/10
+C) 2 bacterial, 5 viral; 1/5
+D) 3 bacterial, 4 viral; 1/5
+KEY: D
+SOL:
+Answer: (D) 3 bacterial, 4 viral; probability 1/5.
+Concept: Typhoid is caused by Salmonella typhi and confirmed by the Widal test. Pneumonia is caused by Streptococcus pneumoniae and Haemophilus influenzae, and diphtheria by Corynebacterium diphtheriae; all three are bacterial. The common cold (rhinoviruses), dengue, chikungunya and AIDS (HIV) are viral diseases. Malaria (Plasmodium) and amoebiasis (Entamoeba histolytica) are protozoan, and ringworm is fungal (Microsporum, Trichophyton, Epidermophyton). Dengue and chikungunya are transmitted by Aedes mosquitoes, while malaria is spread by the female Anopheles.
+Given: 10 diseases on the list.
+Formula/Principle: Probability = (number of favourable diseases) ÷ (total number of diseases).
+Step 1: Bacterial: typhoid, pneumonia, diphtheria = 3. Viral: common cold, dengue, AIDS, chikungunya = 4. Others: malaria, amoebiasis (protozoan), ringworm (fungal) = 3. Total 3 + 4 + 3 = 10.
+Step 2: Viral and Aedes-borne: dengue and chikungunya = 2, so the probability is 2/10 = 1/5.
+Why: Each disease must be assigned to its agent before counting. The vector condition narrows the four viral diseases to the two spread by Aedes; the common cold spreads by droplets, and HIV by body fluids such as blood and by sexual contact.
+Why not the others: (A) Counts a non-bacterial disease (such as malaria or ringworm) as bacterial and leaves out one viral disease. (B) Misses one viral disease, and 3/10 wrongly includes a disease not spread by Aedes. (C) Diphtheria and pneumonia, or typhoid, have been moved to the viral group.
+Key point: Bacterial: typhoid, pneumonia, diphtheria. Viral: cold, dengue, chikungunya, AIDS. Aedes carries dengue and chikungunya.
+
+@@ Q08
+format: numerical
+sub_topic: Calculating transformation efficiency from a plating result and inferring the role of Ca2+ and heat shock
+Q: In a transformation experiment, 10 ng of a plasmid carrying an ampicillin-resistance gene is added to E. coli cells. The results are shown below.
+Tube | Treatment | Volume after recovery | Volume plated on ampicillin agar | Colonies
+1 | CaCl₂, ice, heat shock at 42 °C, then ice; plasmid added | 1 mL | 100 µL | 150
+2 | Same treatment; no plasmid | 1 mL | 100 µL | 0
+3 | Untreated cells; plasmid added | 1 mL | 100 µL | 2
+What is the transformation efficiency in tube 1 (transformants per µg of plasmid), and what do tubes 2 and 3 show?
+A) 1.5 × 10⁴ per µg; tube 3 shows that heat shock alone kills cells
+B) 1.5 × 10⁵ per µg; tube 2 shows that the colonies need the plasmid, and tube 3 shows that the CaCl₂ and heat-shock treatment greatly raises the uptake of DNA
+C) 150 per µg; tube 2 shows that the cells are naturally resistant to ampicillin
+D) 1.5 × 10⁷ per µg; tube 3 shows that untreated cells take up DNA as well as treated ones
+KEY: B
+SOL:
+Answer: (B) 1.5 × 10⁵ transformants per µg; the plasmid is needed, and the treatment makes the cells competent.
+Concept: DNA is a hydrophilic molecule and cannot pass through the cell membrane. To make bacteria competent, they are treated with a specific concentration of a divalent cation such as calcium, which increases the efficiency with which DNA enters through pores in the cell wall. The cells are incubated with the recombinant DNA on ice, given a brief heat shock at 42 °C, and placed back on ice. A selectable marker such as ampicillin resistance allows only transformed cells to grow.
+Given: 10 ng plasmid in 1 mL; 100 µL plated gives 150 colonies.
+Formula/Principle: Efficiency = (total transformants) ÷ (mass of DNA in µg).
+Step 1: Total transformants = 150 × (1000 µL ÷ 100 µL) = 1500.
+Step 2: DNA = 10 ng = 0.010 µg, so efficiency = 1500 ÷ 0.010 = 1.5 × 10⁵ per µg.
+Why: Tube 2 is the no-DNA control: zero colonies show that the cells are not naturally resistant and that every colony in tube 1 came from the plasmid. Tube 3 shows that untreated cells take up very little DNA (2 colonies against 150), so making the cells competent is essential.
+Why not the others: (A) Off by a factor of 10 (the dilution factor was not used); tube 3 shows low uptake, not cell death. (C) Uses the number of colonies directly and ignores both the volume and the DNA mass; zero colonies show that the cells are sensitive. (D) Off by a factor of 100; tube 3 shows that untreated cells are poor at taking up DNA.
+Key point: Efficiency = colonies × (total volume ÷ plated volume) ÷ µg DNA; Ca²⁺ plus heat shock makes E. coli competent.
+
+@@ Q09
+format: conceptual
+sub_topic: Comparing transgenic animals with plant tissue culture in the genetic outcome and the uses of each
+Q: Which statement correctly compares transgenic animals with plant tissue culture?
+A) Transgenic animals are produced by growing explants on nutrient medium, while tissue culture inserts a foreign gene into every cell of a plant
+B) Plants raised from one explant by micropropagation differ genetically from one another, while transgenic animals are always genetically identical
+C) Transgenic mice are used only as a source of food, and meristem culture is used to introduce new viruses into plants
+D) A transgenic animal has a foreign gene integrated into its DNA and expresses it; for example, the transgenic cow Rosie (1997) produced milk containing the human protein alpha-lactalbumin, and transgenic mice are used to test vaccines and chemicals for safety; plant tissue culture uses the totipotency of plant cells to raise many plants from an explant, giving genetically identical somaclones, and culturing the virus-free meristem gives healthy plants from a diseased one
+KEY: D
+SOL:
+Answer: (D) A transgenic animal carries and expresses a foreign gene; tissue culture gives genetically identical somaclones and virus-free plants from meristems.
+Concept: Transgenic animals have had their DNA altered so that they carry and express an extra (foreign) gene. They are used to study normal physiology and development, to study disease, to produce biological products (for example alpha-1-antitrypsin and the alpha-lactalbumin in Rosie's milk, 2.4 g per litre), to test vaccine safety (polio vaccine tested on transgenic mice) and to test chemical safety (toxicity testing). Plant tissue culture regenerates whole plants from any part of a plant (an explant) grown on a nutrient medium under sterile conditions, a capacity called totipotency.
+Why: Micropropagation copies one plant many times over, so every plant (somaclone) has the same genotype as the explant, which is useful for keeping a desirable variety. The apical and axillary meristems are free of virus even in an infected plant, so culturing them recovers healthy plants. Transgenic animals, by contrast, are made by adding new genetic material, not by copying.
+Why not the others: (A) This swaps the two techniques. (B) Somaclones are genetically identical to the explant; transgenic animals need not be genetically identical to each other. (C) Transgenic mice are used mainly in research and testing, and meristem culture removes viruses rather than adding them.
+Key point: Transgenic = added gene expressed (Rosie, safety testing); tissue culture = totipotency, somaclones, virus-free meristem plants.
+
+@@ Q10
+format: conceptual
+sub_topic: Ordering the stages of a fluke life cycle that needs two intermediate hosts, and the adaptations it shows as a parasite
+Q: The human liver fluke (a trematode) needs two intermediate hosts, a snail and a fish, to complete its life cycle. Its stages are: P — larvae (cercariae) leave the snail and enter the fish, where they encyst in the muscles; Q — eggs pass out in the faeces of the human host into water; R — larvae from the eggs infect a snail and multiply inside it; S — a person eats raw or undercooked fish, and the young flukes reach the bile ducts and mature. Which option gives the correct order starting from Q and correctly names a parasitic adaptation shown by the fluke?
+A) Q → R → P → S; huge reproductive capacity and multiplication in the snail compensate for the low chance of passing between hosts
+B) Q → P → R → S; the fluke has a highly developed digestive system to feed independently
+C) Q → S → R → P; the fluke kills its human host quickly to release eggs
+D) Q → R → S → P; the fluke needs no host to complete its life cycle
+KEY: A
+SOL:
+Answer: (A) Q → R → P → S; very high reproductive capacity is an adaptation to a complex life cycle.
+Concept: Parasitism is an interaction in which one species (the parasite) benefits and the other (the host) is harmed. Parasites have evolved special adaptations: loss of unnecessary sense organs, adhesive organs or suckers to cling to the host, loss of the digestive system, and high reproductive capacity. Their life cycles are often complex, involving one or two intermediate hosts or vectors that help the parasite reach its primary host.
+Why: The eggs leave the human host first (Q), larvae then develop and multiply in the first intermediate host, the snail (R), cercariae move to the second intermediate host, the fish (P), and the cycle closes when a person eats infected fish (S). At each transfer most larvae fail to find a host, so the parasite depends on producing huge numbers of eggs and on asexual multiplication in the snail.
+Why not the others: (B) Fish come after the snail, not before; flukes absorb food from the host and have reduced, not highly developed, digestive needs. (C) The person cannot be infected before the fish is; killing the host quickly would harm the parasite. (D) Places human infection before the fish stage, and the fluke clearly needs hosts.
+Key point: Liver fluke: human → eggs in water → snail → fish → human; high reproductive capacity offsets losses at each transfer.
+
+@@ Q11
+format: numerical
+sub_topic: Comparing net primary productivity of two ecosystems from GPP and respiration, and factors that set the rate of decomposition
+Q: Two ecosystems are measured over a year. Ecosystem X: gross primary productivity (GPP) 2000 g m⁻² yr⁻¹, producer respiration 1200 g m⁻² yr⁻¹; litter is mainly woody, rich in lignin, in a cold, dry climate. Ecosystem Y: GPP 1500 g m⁻² yr⁻¹, producer respiration 500 g m⁻² yr⁻¹; litter is soft, nitrogen-rich and lies in a warm, moist climate. Which comparison is correct?
+A) X has the higher net primary productivity because its GPP is higher, and its litter decomposes faster
+B) Both have the same net primary productivity, and decomposition does not depend on climate
+C) Y has the higher net primary productivity (1000 against 800 g m⁻² yr⁻¹) despite its lower GPP, and its litter decomposes faster, because decomposition is quicker when detritus is rich in nitrogen and sugars and the climate is warm and moist, and slower when it is rich in lignin and chitin or the climate is cold and dry
+D) Y has the higher net primary productivity (2000 g m⁻² yr⁻¹), and lignin-rich litter decomposes faster than nitrogen-rich litter
+KEY: C
+SOL:
+Answer: (C) NPP of Y = 1000 > NPP of X = 800; Y's litter decomposes faster.
+Concept: Gross primary productivity is the rate at which organic matter is produced by photosynthesis. Part of it is used by the plants in respiration. Net primary productivity is the biomass available to heterotrophs: NPP = GPP − R. Decomposition breaks detritus down into simpler inorganic materials by fragmentation, leaching, catabolism, humification and mineralisation. Its rate depends on the chemical composition of detritus and on climate.
+Given: X: GPP 2000, R 1200. Y: GPP 1500, R 500 (all in g m⁻² yr⁻¹).
+Formula/Principle: NPP = GPP − R.
+Step 1: NPP of X = 2000 − 1200 = 800 g m⁻² yr⁻¹; NPP of Y = 1500 − 500 = 1000 g m⁻² yr⁻¹.
+Step 2: Decomposition: Y has nitrogen-rich, soft litter and a warm, moist climate, which favour the activity of decomposers; X has lignin-rich litter in cold, dry conditions, which inhibit it.
+Why: A high GPP does not guarantee a high NPP; if the producers respire a large share of what they fix, less biomass is left for consumers. Warm and moist conditions favour the microbes that decompose litter, while low temperature and anaerobic or dry conditions slow them, leading to a build-up of organic matter.
+Why not the others: (A) NPP depends on respiration as well as on GPP, and lignin-rich litter in a cold, dry place decomposes slowly. (B) The NPP values differ, and climate strongly affects decomposition. (D) 2000 is not Y's NPP, and lignin slows decomposition.
+Key point: NPP = GPP − R. Nitrogen-rich detritus, warmth and moisture speed decomposition; lignin, chitin, cold and dryness slow it.
+
+@@ Q12
+format: numerical
+sub_topic: Using the species–area relation to estimate the fraction of species lost when a forest is reduced to one-tenth of its area
+Q: Within a region, species richness S and area A are related by log S = log C + Z log A. A large forest with Z = 0.2 is cleared until only one-tenth of its original area remains. If the remaining patch follows the same relation, about what fraction of the original species is it expected to keep, and which statement about Z is correct?
+A) It keeps 10 % of its species; Z is the same for very large areas such as whole continents
+B) It keeps about 63 % of its species (about 37 % are lost); Z usually lies between 0.1 and 0.2 within a region, whatever the taxonomic group, but takes much steeper values (0.6 to 1.2) when very large areas such as whole continents are compared
+C) It keeps 90 % of its species; Z depends only on the taxonomic group studied
+D) It keeps 98 % of its species; Z equals the number of species per unit area
+KEY: B
+SOL:
+Answer: (B) About 63 % kept (37 % lost); Z is about 0.1–0.2 within regions and 0.6–1.2 across continents.
+Concept: Alexander von Humboldt observed that within a region, species richness increases with explored area, but only up to a limit. The relation is a rectangular hyperbola, S = CA^Z, which on a log scale becomes the straight line log S = log C + Z log A, where Z is the slope (the regression coefficient). Habitat loss and fragmentation is the most important cause of the extinction of plants and animals.
+Given: Z = 0.2; new area A′ = A/10.
+Formula/Principle: S′/S = (A′/A)^Z.
+Step 1: S′/S = (0.1)^0.2 = 10^(−0.2).
+Step 2: 10^(−0.2) = 1/10^(0.2) ≈ 1/1.585 ≈ 0.63, so about 63 % of the species remain and about 37 % are lost.
+Why: Because Z is small, species richness falls much less steeply than area: cutting the area by 90 % removes only about one-third of the species. Even so, the loss is large, and it is consistent with Z values reported from many studies; the steeper Z across continents reflects comparisons between very different areas.
+Why not the others: (A) Takes species to be proportional to area (Z = 1), and Z does differ for very large areas. (C) A 10 % loss of species would need a much smaller Z, and Z is similar across taxonomic groups within a region. (D) Z is a slope on a log–log plot, not a density.
+Key point: S′/S = (A′/A)^Z; with Z = 0.2, keeping 10 % of the area keeps about 63 % of the species.
+
+@@ Q13
+format: conceptual
+sub_topic: Applying the features of dinoflagellates, diatoms, euglenoids and methanogens to real situations
+Q: Which statement correctly applies the features of members of Monera and Protista to a practical situation?
+A) A coastal fish kill during a "red tide" can be explained by an explosive growth of red dinoflagellates such as Gonyaulax, whose toxins can kill fish; diatomaceous earth, formed from the silica walls of dead diatoms, is gritty and is used in polishing and in filtering oils and syrups; and Euglena, kept in the dark, can survive as a heterotroph by feeding on small organisms
+B) Diatomaceous earth is used as a fertiliser because diatom walls are made of chitin
+C) Methanogens, which produce methane in the guts of cattle, are photosynthetic cyanobacteria
+D) Red tides are caused by blooms of slime moulds, whose spores have true walls and spread by air currents
+KEY: A
+SOL:
+Answer: (A) Dinoflagellates cause red tides; diatom silica gives diatomaceous earth; Euglena becomes heterotrophic in darkness.
+Concept: Dinoflagellates are mostly marine, photosynthetic protists with stiff cellulose plates; the red ones (Gonyaulax) multiply so fast that they make the sea look red, and their toxins may kill other marine animals such as fish. Diatoms have cell walls that form two thin overlapping shells, embedded with silica, so they are indestructible and leave large deposits called diatomaceous earth. Euglenoids, such as Euglena, have a protein-rich layer called a pellicle; they are photosynthetic in sunlight but behave like heterotrophs, preying on smaller organisms, when deprived of light. Methanogens are archaebacteria found in the guts of ruminant animals such as cows and buffaloes, where they produce methane (biogas).
+Why: Each situation follows from the defining feature of the organism: toxic blooms from dinoflagellates, gritty silica deposits from diatoms, mixotrophic nutrition in Euglena.
+Why not the others: (B) Diatom walls contain silica, not chitin, and the earth is used for its gritty texture. (C) Methanogens are archaebacteria living without oxygen, not cyanobacteria. (D) Red tides come from dinoflagellates; slime moulds live on decaying organic matter.
+Key point: Gonyaulax: red tides. Diatoms: silica walls, diatomaceous earth. Euglena: photosynthetic in light, heterotrophic in dark.
+
+@@ Q14
+format: conceptual
+sub_topic: Ordering the tissues of a root from outside to inside and distinguishing dicot and monocot roots
+Q: A transverse section of a young root is examined from the outside inwards. Which option gives the correct order of tissues and a correct difference between dicot and monocot roots?
+A) Endodermis → epiblema → pericycle → cortex → vascular bundles; dicot roots have more than six xylem bundles and a large pith
+B) Epiblema → pericycle → cortex → endodermis → vascular bundles; monocot roots have only two xylem bundles and no pith
+C) Cortex → epiblema → endodermis → vascular bundles → pericycle; both types have conjoint vascular bundles with a cambium
+D) Epiblema (with root hairs) → cortex → endodermis (with Casparian strips) → pericycle → radial vascular bundles; dicot roots usually have two to four xylem bundles and a small or inconspicuous pith, while monocot roots usually have more than six (polyarch) xylem bundles and a large, well-developed pith
+KEY: D
+SOL:
+Answer: (D) Epiblema → cortex → endodermis → pericycle → radial vascular bundles; dicot root diarch to tetrarch with small pith, monocot root polyarch with large pith.
+Concept: The outermost layer of the root is the epiblema, many cells of which form unicellular root hairs. The cortex has several layers of thin-walled parenchyma with intercellular spaces. Its innermost layer is the endodermis, a single layer of barrel-shaped cells without intercellular spaces; their tangential and radial walls bear a band of a water-impermeable, waxy substance, suberin, forming the Casparian strips. The pericycle, a few layers of thick-walled parenchyma, lies next to it and gives rise to lateral roots and, in dicots, to part of the vascular cambium. Xylem and phloem lie on different radii (radial bundles), and the conjunctive tissue between them is parenchyma.
+Why: The order follows the path water takes into the root: it is absorbed by root hairs, crosses the cortex, must pass through the endodermal cell membranes at the Casparian strip, and enters the pericycle and then the xylem. Dicot and monocot roots differ in the number of xylem bundles and in the size of the pith, and only dicot roots show secondary growth.
+Why not the others: (A) The endodermis is internal, and the dicot and monocot features are swapped. (B) The pericycle lies inside the endodermis, not outside the cortex; monocot roots are polyarch with a large pith. (C) The epiblema is outermost, the pericycle lies outside the vascular bundles, and root bundles are radial, not conjoint.
+Key point: Root: epiblema → cortex → endodermis → pericycle → radial bundles; dicot 2–4 xylem and small pith, monocot >6 xylem and large pith.
+
+@@ Q15
+format: conceptual
+sub_topic: Reading pulse-chase data to trace the route of a secretory protein through the endomembrane system
+Q: Pancreatic acinar cells, which secrete digestive enzymes, are given a 3-minute pulse of a radioactive amino acid and then transferred to an excess of the same unlabelled amino acid. The percentage of the cell's radioactivity found in each compartment at later times is shown below.
+Time after pulse | Rough ER | Golgi apparatus | Secretory vesicles | Outside the cell
+3 min | 86 | 3 | 1 | 0
+20 min | 24 | 49 | 8 | 1
+120 min | 8 | 10 | 58 | 18
+What do these data show?
+A) Secretory proteins are made in the Golgi apparatus and then sent back to the ER for packaging
+B) Secretory proteins are made on ribosomes of the rough ER, then pass to the Golgi apparatus, where they are modified and packaged into vesicles that carry them to the plasma membrane for release
+C) The label stays in the rough ER because the ER stores proteins permanently
+D) Secretory proteins move directly from the rough ER to the outside of the cell without passing through any other organelle
+KEY: B
+SOL:
+Answer: (B) Rough ER → Golgi apparatus → secretory vesicles → outside.
+Concept: The endoplasmic reticulum, Golgi complex, lysosomes and vacuoles form the endomembrane system, because their functions are coordinated. Ribosomes on the rough ER synthesise proteins, which enter the ER lumen. Vesicles from the ER fuse with the cis (forming) face of the Golgi apparatus and the materials move towards the trans (maturing) face. The Golgi apparatus is the main site where materials are packaged for secretion inside the cell or to its outside, and it is also an important site for the formation of glycoproteins and glycolipids.
+Why: In a pulse-chase experiment, only the proteins made during the short pulse are labelled, so following the label shows the route of one batch of proteins. The label is first concentrated in the rough ER (86 % at 3 minutes), then peaks in the Golgi (49 % at 20 minutes), then in secretory vesicles (58 % at 120 minutes), and finally appears outside the cell. The successive peaks give the order of the compartments.
+Why not the others: (A) The ER peak comes first, so synthesis is in the ER, not the Golgi. (C) Radioactivity in the ER falls from 86 % to 8 %, so it moves on. (D) The Golgi and vesicle peaks show intermediate steps.
+Key point: In pulse-chase data, the order of the peaks gives the route: rough ER → Golgi → vesicles → secretion.
+
+@@ Q16
+format: conceptual
+sub_topic: The order of events in an enzyme's catalytic cycle, including the induced fit of the active site
+Q: The catalytic cycle of an enzyme can be described in four steps: P — the active site, now in close contact with the substrate, breaks its chemical bonds, forming the enzyme–product complex; Q — the substrate binds to the active site of the enzyme, fitting into it; R — the enzyme releases the products, and the free enzyme is ready to bind another substrate molecule; S — binding of the substrate induces the enzyme to change its shape, so that it fits more tightly around the substrate. Which order is correct, and which statement is correct?
+A) P → Q → S → R; the enzyme is used up in each reaction
+B) Q → R → P → S; the substrate changes the active site permanently
+C) Q → S → P → R; the enzyme–substrate complex is short-lived, and the enzyme is unchanged at the end of the cycle
+D) S → Q → R → P; the shape change happens before the substrate arrives
+KEY: C
+SOL:
+Answer: (C) Q → S → P → R; the ES complex is transient and the enzyme is recovered unchanged.
+Concept: The catalytic cycle of an enzyme action is described in these steps: first, the substrate binds to the active site of the enzyme, fitting into it; second, the binding induces the enzyme to alter its shape, fitting more tightly around the substrate; third, the active site, now in close proximity to the substrate, breaks the chemical bonds of the substrate and the new enzyme–product complex forms; fourth, the enzyme releases the products, and the free enzyme is ready to bind another molecule of substrate. Enzymes lower the activation energy and are not consumed.
+Why: The shape change is a response to binding (induced fit), so it must follow the first contact, and catalysis needs the tight fit, so it follows the shape change. The products must leave before the active site can accept a new substrate, which is why one enzyme molecule can turn over many substrate molecules.
+Why not the others: (A) Catalysis cannot occur before binding, and the enzyme is not used up. (B) Products cannot be released before the bonds are broken, and the change of shape is temporary. (D) The induced shape change is caused by substrate binding, not before it.
+Key point: Bind → induced fit → catalysis (EP complex) → release; E + S ⇌ ES → EP → E + P.
+
+@@ Q17
+format: numerical
+sub_topic: Estimating the durations of G1, S and G2 + M from the fractions of cells with 2C, intermediate and 4C DNA
+Q: An unsynchronised population of dividing animal cells has a cell-cycle time of 24 hours. The DNA content of individual cells is measured with a fluorescent stain. Results: 60 % of cells have 2C DNA, 25 % have DNA between 2C and 4C, and 15 % have 4C DNA. Assuming that the fraction of cells in each phase is proportional to its duration, what are the approximate durations of G1, S and G2 + M?
+A) G1 6 h, S 14.4 h, G2 + M 3.6 h
+B) G1 14.4 h, S 6 h, G2 + M 3.6 h
+C) G1 3.6 h, S 6 h, G2 + M 14.4 h
+D) G1 12 h, S 8 h, G2 + M 4 h
+KEY: B
+SOL:
+Answer: (B) G1 14.4 h, S 6 h, G2 + M 3.6 h.
+Concept: The cell cycle has interphase (G1, S and G2) and the M phase. During G1, the cell is metabolically active and grows but does not replicate its DNA, so it has 2C DNA. During S, DNA replication takes place, and the amount of DNA per cell rises from 2C to 4C; the chromosome number does not change. In G2 and in M (until cytokinesis), cells have 4C DNA. In a typical human cell cycle of about 24 hours, the M phase lasts only about an hour.
+Given: Cycle time 24 h; fractions 2C = 0.60, between = 0.25, 4C = 0.15.
+Formula/Principle: Duration of a phase ≈ (fraction of cells in that phase) × (cycle time).
+Step 1: G1 (2C) = 0.60 × 24 = 14.4 h.
+Step 2: S (between 2C and 4C) = 0.25 × 24 = 6 h.
+Step 3: G2 + M (4C) = 0.15 × 24 = 3.6 h. Check: 14.4 + 6 + 3.6 = 24 h.
+Why: In an unsynchronised population, cells are spread across the cycle, so a phase that lasts longer holds a larger share of the cells at any moment. The DNA content identifies the phase: only cells in S have intermediate amounts.
+Why not the others: (A) Swaps G1 and S: the largest group (2C) is in G1, not S. (C) Assigns the 2C fraction to G2 + M, but G2 and M cells have 4C DNA. (D) Uses rounded ratios that do not match the given percentages.
+Key point: 2C = G1, 2C–4C = S, 4C = G2 + M; duration ≈ fraction × cycle time.
+
+@@ Q18
+format: numerical
+sub_topic: Ordering the three stages of the Calvin cycle with their ATP and NADPH demands, and the effect of switching off the light
+Q: The Calvin cycle has three stages: carboxylation, reduction and regeneration. Which option gives their correct order, the ATP and NADPH needed to fix one molecule of CO₂ (and to make one glucose), and the immediate change when the light is switched off in a leaf that was photosynthesising steadily?
+A) Reduction → carboxylation → regeneration; 2 ATP and 3 NADPH per CO₂; 3-PGA falls and RuBP rises in the dark
+B) Regeneration → reduction → carboxylation; 3 ATP and 3 NADPH per CO₂; there is no change in the dark
+C) Carboxylation → regeneration → reduction; 2 ATP and 2 NADPH per CO₂; both 3-PGA and RuBP rise in the dark
+D) Carboxylation → reduction → regeneration; 3 ATP and 2 NADPH per CO₂ (18 ATP and 12 NADPH per glucose); in the dark, 3-PGA builds up and RuBP falls, because the reduction and regeneration steps stop without ATP and NADPH while RuBisCO keeps using RuBP
+KEY: D
+SOL:
+Answer: (D) Carboxylation → reduction → regeneration; 3 ATP and 2 NADPH per CO₂; in the dark, 3-PGA rises and RuBP falls.
+Concept: Carboxylation is the fixation of CO₂ with RuBP (ribulose bisphosphate), catalysed by RuBisCO, giving two molecules of 3-phosphoglycerate (3-PGA). Reduction uses 2 ATP and 2 NADPH per CO₂ fixed to form carbohydrate (triose phosphate). Regeneration of the CO₂ acceptor, RuBP, needs one more ATP per CO₂. ATP and NADPH come from the light reactions.
+Given: Per CO₂: reduction 2 ATP + 2 NADPH; regeneration 1 ATP.
+Formula/Principle: Per glucose, 6 turns of the cycle are needed (6 CO₂).
+Step 1: Per CO₂: ATP = 2 + 1 = 3; NADPH = 2.
+Step 2: Per glucose: 6 × 3 = 18 ATP; 6 × 2 = 12 NADPH.
+Step 3: In the dark, ATP and NADPH run out quickly, so 3-PGA can no longer be reduced and RuBP can no longer be regenerated. RuBisCO still combines the remaining RuBP with CO₂, making more 3-PGA.
+Why: The order is set by the chemistry: CO₂ must be fixed before the product can be reduced, and the acceptor must be regenerated for the cycle to continue. Because both downstream steps depend on light-made ATP and NADPH, darkness blocks them, so the substrate of reduction (3-PGA) builds up and the product of regeneration (RuBP) is depleted.
+Why not the others: (A) Reduction cannot come before CO₂ is fixed; the ATP and NADPH demands are swapped, and so are the dark changes. (B) Wrong order, wrong NADPH demand, and the light reactions do supply the cycle. (C) Regeneration follows reduction, the ATP figure is too low, and RuBP cannot rise without ATP.
+Key point: Calvin cycle: carboxylation → reduction → regeneration; 3 ATP + 2 NADPH per CO₂; darkness raises 3-PGA and lowers RuBP.
+
+@@ Q19
+format: conceptual
+sub_topic: Applying lactic acid and alcoholic fermentation to a sprinting muscle and a yeast culture
+Q: A sprinter's leg muscles run short of oxygen during a 400 m race, and a sealed jar of grape juice with yeast stops bubbling after some days. Which explanation is correct?
+A) In the sprinter's muscles, pyruvic acid is reduced to lactic acid by lactate dehydrogenase, using NADH, which regenerates NAD⁺ so that glycolysis can continue with a net gain of only 2 ATP per glucose; in the jar, yeast converts pyruvic acid to ethanol and CO₂, and growth stops when the alcohol concentration reaches about 13 %, which poisons the yeast
+B) The sprinter's muscles produce ethanol and CO₂, while yeast produces lactic acid
+C) Fermentation releases more energy per glucose than aerobic respiration, so both processes are efficient
+D) Fermentation requires oxygen to regenerate NAD⁺
+KEY: A
+SOL:
+Answer: (A) Lactic acid in muscle, ethanol and CO₂ in yeast; NAD⁺ is regenerated; yeast is poisoned at about 13 % alcohol.
+Concept: Glycolysis (the EMP pathway) breaks glucose into two molecules of pyruvic acid with a net gain of 2 ATP and 2 NADH. Without oxygen, NADH must be reoxidised to NAD⁺ for glycolysis to continue. In animal cells, such as muscle during exercise when oxygen is inadequate, pyruvic acid is reduced to lactic acid by lactate dehydrogenase. In yeast, pyruvic acid is converted to CO₂ and ethanol by pyruvic acid decarboxylase and alcohol dehydrogenase.
+Why: Both forms of fermentation serve the same purpose: they reoxidise NADH so that the small ATP yield of glycolysis can continue without oxygen. Less than 7 % of the energy in glucose is released, and not all of it is trapped as ATP. Yeasts poison themselves to death when the alcohol concentration reaches about 13 %, which is why the jar stops bubbling (CO₂ production ends).
+Why not the others: (B) The products are swapped. (C) Fermentation releases much less energy than aerobic respiration. (D) Fermentation is an anaerobic process that regenerates NAD⁺ by reducing pyruvate.
+Key point: Fermentation regenerates NAD⁺ without oxygen: muscle gives lactic acid; yeast gives ethanol + CO₂ and is poisoned at about 13 % ethanol.
+
+@@ Q20
+format: conceptual
+sub_topic: Why loss of myelin slows nerve conduction, and where the main types of neurons occur
+Q: In a disease, the myelin sheath around many axons is gradually destroyed. Which statement correctly explains the effect and correctly describes neuron types?
+A) Conduction becomes faster, because the nerve impulse no longer has to jump between nodes; bipolar neurons are found mainly in the cerebral cortex
+B) Myelin is produced by the neuron's own cell body, so its loss stops protein synthesis; unipolar neurons are common in the adult retina
+C) Conduction slows, because in myelinated fibres the impulse jumps from one node of Ranvier to the next (saltatory conduction), and once myelin is lost the impulse must travel along the whole membrane; myelin around peripheral axons is formed by Schwann cells, multipolar neurons are found in the cerebral cortex, bipolar neurons in the retina, and unipolar neurons mainly in the embryonic stage
+D) Myelin loss has no effect, because unmyelinated fibres always conduct as fast as myelinated ones
+KEY: C
+SOL:
+Answer: (C) Conduction slows because saltatory conduction is lost; Schwann cells form myelin; multipolar (cortex), bipolar (retina), unipolar (embryo).
+Concept: A neuron has a cell body, dendrites and an axon. Based on the number of axons and dendrites, neurons are multipolar (one axon and two or more dendrites; found in the cerebral cortex), bipolar (one axon and one dendrite; found in the retina of the eye) and unipolar (cell body with one axon only; usually found in the embryonic stage). Myelinated axons are enveloped by Schwann cells, which form a myelin sheath; the gaps between two adjacent sheaths are called nodes of Ranvier. Myelinated fibres occur in spinal and cranial nerves; unmyelinated fibres, enclosed by a Schwann cell that does not form a myelin sheath, are common in autonomic and somatic neural systems.
+Why: Myelin insulates the axon, so the action potential is regenerated only at the nodes and the impulse jumps from node to node, which is much faster than continuous conduction. When myelin is lost, the impulse travels along the entire membrane, slowing it or blocking it, and this causes weakness and numbness.
+Why not the others: (A) Saltatory conduction speeds up conduction; losing it makes conduction slower, and bipolar neurons are typical of the retina. (B) Myelin is formed by Schwann cells, not the cell body; unipolar neurons are found mainly in embryos. (D) Myelinated fibres conduct much faster than unmyelinated fibres of similar size.
+Key point: Myelin plus nodes of Ranvier give fast saltatory conduction; demyelination slows impulses.
