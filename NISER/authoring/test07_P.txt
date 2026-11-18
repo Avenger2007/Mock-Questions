@@ -1,0 +1,421 @@
+@@ Q61
+format: conceptual
+sub_topic: Diodes conducting in a bridge rectifier, peak inverse voltage compared with a centre-tap rectifier, and the role of a filter capacitor
+Q: An a.c. voltage of peak value V_m is applied to a full-wave bridge rectifier (four ideal diodes) feeding a load resistor. Which statement is correct?
+A) All four diodes conduct together during each half-cycle
+B) Each diode must withstand a peak inverse voltage of 2V_m, the same as in a centre-tap full-wave rectifier
+C) In each half-cycle two diodes conduct, in series with the load, and the current through the load is always in the same direction; each diode faces a peak inverse voltage of V_m (half that in a centre-tap circuit); a capacitor across the load reduces the ripple
+D) A capacitor connected across the load makes the output a pure sine wave
+KEY: C
+SOL:
+Answer: (C) Two diodes conduct per half-cycle; load current is one-way; PIV = V_m; a capacitor reduces ripple.
+Given: \(v_{in}=V_m\sin\omega t;\ \text{ideal diodes}\)
+Formula/Principle: \(\text{a diode conducts only when forward biased; in a bridge the two diagonally opposite diodes form the path in each half-cycle}\)
+Step 1: \(\text{positive half: }D_1,D_3\text{ forward, }D_2,D_4\text{ reverse; negative half: }D_2,D_4\text{ forward}\)
+Step 2: \(\text{a reverse-biased diode is connected across the input through a conducting diode, so its reverse voltage peaks at }V_m\)
+Worked derivation: \[\text{PIV}_{\text{bridge}}=V_m,\qquad \text{PIV}_{\text{centre-tap}}=2V_m\ (\text{each half of the secondary gives }V_m)\]
+Check: \[\text{output repeats every half-cycle: }f_{out}=2f_{in}\text{, always of one polarity}\ \checkmark\]
+Why: \(\text{the capacitor charges to near }V_m\text{ at each peak and discharges slowly through the load between peaks, smoothing the output}\)
+Why not the others: (A) \(\text{only one diagonal pair is forward biased at a time}\); (B) \(2V_m\text{ applies to the centre-tap circuit; the bridge needs only }V_m\); (D) \(\text{filtering gives a nearly steady d.c. with small ripple, not a sine wave}\).
+Key point: \(\text{bridge: 2 diodes per half-cycle, PIV}=V_m;\ \text{capacitor filter smooths the d.c.}\)
+
+@@ Q62
+format: numerical
+sub_topic: Dimensional form of high-speed air drag on a sphere and how its terminal speed scales with radius
+Q: At high speeds the drag force F on a sphere moving through air depends only on the air density ρ, the speed v and the radius r of the sphere. Using dimensional analysis, how does F depend on these quantities, and by what factor does the terminal speed of a falling solid sphere change if its radius is doubled (same material)?
+A) \(F\propto\rho vr\); terminal speed doubles
+B) \(F\propto\rho v^2r^2\); terminal speed increases by a factor \(\sqrt2\)
+C) \(F\propto\rho v^2r^2\); terminal speed is unchanged
+D) \(F\propto\rho^2vr^3\); terminal speed increases by a factor 4
+KEY: B
+SOL:
+Answer: (B) \(F\propto\rho v^2r^2\); terminal speed rises by \(\sqrt2\).
+Given: \(F=k\rho^a v^b r^c;\ [\rho]=ML^{-3},\ [v]=LT^{-1},\ [r]=L,\ [F]=MLT^{-2}\)
+Formula/Principle: \(\text{equate powers of M, L and T on both sides}\)
+Step 1: \(M:\ a=1;\quad T:\ -b=-2\Rightarrow b=2;\quad L:\ -3a+b+c=1\Rightarrow c=2\)
+Step 2: \(F=k\rho v^2r^2.\ \text{Terminal speed: weight}=\text{drag (neglect buoyancy)}:\ \tfrac43\pi r^3\rho_s g=k\rho v_t^2r^2\)
+Worked derivation: \[v_t^2=\frac{4\pi\rho_s g}{3k\rho}\,r\ \Rightarrow\ v_t\propto\sqrt r\ \Rightarrow\ \frac{v_t(2r)}{v_t(r)}=\sqrt2\]
+Check: \[[\rho v^2r^2]=ML^{-3}\cdot L^2T^{-2}\cdot L^2=MLT^{-2}=[F]\ \checkmark\]
+Why: \(\text{weight grows as }r^3\text{ but drag as }r^2\text{, so larger spheres fall faster; this is a scaling argument needing no detailed theory}\)
+Why not the others: (A) \(\rho vr\text{ has dimensions }ML^{-1}T^{-1}\text{, not those of force}\); (C) \(\text{weight and drag scale differently with r, so the terminal speed changes}\); (D) \(\rho^2vr^3\text{ has the wrong dimensions }(M^2L^{-2}T^{-1})\).
+Key point: \(\text{match dimensions to find the form; compare how competing forces scale with size}\)
+
+@@ Q63
+format: numerical
+sub_topic: Distances in successive equal time intervals under uniform acceleration and how the time scales with the acceleration
+Q: A car starts from rest with constant acceleration and covers 10 m in the first 2.0 s. How far does it go in the next 2.0 s, and how long would it take to cover the first 10 m if its acceleration were doubled?
+A) 10 m; 1.0 s
+B) 20 m; 1.0 s
+C) 30 m; 1.0 s
+D) 30 m; about 1.4 s
+KEY: D
+SOL:
+Answer: (D) 30 m; about 1.4 s.
+Given: \(u=0,\ s=10\ \mathrm m\text{ in }t=2.0\ \mathrm s\)
+Formula/Principle: \(s=\tfrac12at^2;\ \text{distances in successive equal intervals from rest are in the ratio }1:3:5:\cdots\)
+Step 1: \(a=\dfrac{2s}{t^2}=\dfrac{20}{4}=5.0\ \mathrm{m\,s^{-2}};\ s(4\ \mathrm s)=\tfrac12(5)(16)=40\ \mathrm m\Rightarrow\text{next 2 s: }30\ \mathrm m\)
+Step 2: \(t=\sqrt{\dfrac{2s}{a}}\propto\dfrac1{\sqrt a}\)
+Worked derivation: \[t'=\frac{2.0}{\sqrt2}=1.41\ \mathrm s\]
+Check: \[\tfrac12(10)(1.41)^2=10\ \mathrm m\ \checkmark;\quad 10:30=1:3\ \checkmark\]
+Why: \(\text{the }x\text{–}t\text{ graph is a parabola, so displacement grows as }t^2\text{ and the time for a fixed distance falls as }1/\sqrt a\)
+Why not the others: (A) \(\text{assumes constant speed in each interval}\); (B) \(\text{assumes the distance in each interval grows linearly }(1:2)\); (C) \(\text{the distance is right, but halving the time would need four times the acceleration}\).
+Key point: \(\text{from rest: }s\propto t^2,\ \text{successive intervals }1:3:5;\ t\propto1/\sqrt a\text{ for fixed s}\)
+
+@@ Q64
+format: experiment
+sub_topic: Estimating the effective friction at a pulley from the measured acceleration of an Atwood machine, and the two tensions
+Q: In an Atwood machine, masses of 3.0 kg and 2.0 kg hang from a light string over a pulley. The ideal (frictionless) acceleration would be 2.0 m s⁻², but the measured acceleration is 1.6 m s⁻². Treating the pulley's resistance as a constant opposing force F at the rim (light pulley), what is F and what are the tensions in the two parts of the string? (g = 10 m s⁻²)
+A) F = 2.0 N; tensions 25.2 N (heavier side) and 23.2 N (lighter side)
+B) F = 0; both tensions 24.0 N
+C) F = 2.0 N; both tensions 24.2 N
+D) F = 4.0 N; tensions 26.0 N and 22.0 N
+KEY: A
+SOL:
+Answer: (A) F = 2.0 N; tensions 25.2 N and 23.2 N.
+Given: \(m_1=3.0,\ m_2=2.0\ \mathrm{kg};\ a=1.6\ \mathrm{m\,s^{-2}};\ g=10\ \mathrm{m\,s^{-2}}\)
+Formula/Principle: \(\text{Newton's second law for each mass (free-body diagrams); for the light pulley, }T_1-T_2=F\)
+Step 1: \(m_1:\ m_1g-T_1=m_1a\Rightarrow T_1=3.0(10-1.6)=25.2\ \mathrm N\)
+Step 2: \(m_2:\ T_2-m_2g=m_2a\Rightarrow T_2=2.0(10+1.6)=23.2\ \mathrm N\)
+Worked derivation: \[F=T_1-T_2=2.0\ \mathrm N;\quad \text{equivalently }(m_1-m_2)g-F=(m_1+m_2)a\Rightarrow10-F=8.0\]
+Check: \[F=0\Rightarrow a=\frac{(3-2)(10)}{5}=2.0\ \mathrm{m\,s^{-2}}\ \checkmark\ (\text{ideal value})\]
+Why: \(\text{with friction at the pulley, the tension is not the same on both sides; the difference equals the resisting force}\)
+Why not the others: (B) \(\text{a zero F would give the ideal }2.0\ \mathrm{m\,s^{-2}}\text{, not the measured value}\); (C) \(\text{equal tensions would mean no net resisting force}\); (D) \(\text{uses }(m_1+m_2)\times\Delta a\times2\text{, doubling F}\).
+Key point: \(\text{measured acceleration below ideal}\Rightarrow\text{resisting force}=T_1-T_2\)
+
+@@ Q65
+format: numerical
+sub_topic: Height reached by a ball launched vertically by a compressed spring, using energy conservation
+Q: A toy gun has a spring of force constant 400 N m⁻¹. The spring is compressed by 5.0 cm and used to launch a 10 g ball vertically upward. Neglecting friction, air resistance and the small height gained while the spring extends, how high does the ball rise above the launch point? (g = 10 m s⁻²)
+A) 0.50 m
+B) 5.0 m
+C) 10 m
+D) 2.5 m
+KEY: B
+SOL:
+Answer: (B) 5.0 m.
+Given: \(k=400\ \mathrm{N\,m^{-1}},\ x=0.050\ \mathrm m,\ m=0.010\ \mathrm{kg},\ g=10\ \mathrm{m\,s^{-2}}\)
+Formula/Principle: \(\text{conservation of mechanical energy: }\tfrac12kx^2=mgh\)
+Step 1: \(\tfrac12kx^2=\tfrac12\times400\times0.0025=0.50\ \mathrm J\)
+Step 2: \(h=\dfrac{0.50}{mg}=\dfrac{0.50}{0.010\times10}\)
+Worked derivation: \[h=5.0\ \mathrm m\]
+Check: \[v_0=\sqrt{2\times0.50/0.010}=10\ \mathrm{m\,s^{-1}},\ h=\frac{v_0^2}{2g}=\frac{100}{20}=5.0\ \mathrm m\ \checkmark\]
+Why: \(\text{the elastic potential energy stored in the spring becomes kinetic energy and then gravitational potential energy}\)
+Why not the others: (A) \(\text{uses }kx\text{ (a force) in place of the energy}\); (C) \(\text{omits the factor }\tfrac12\text{ in }\tfrac12kx^2\); (D) \(\text{uses }\tfrac14kx^2\text{, halving the energy}\).
+Key point: \(\tfrac12kx^2\to\tfrac12mv^2\to mgh\)
+
+@@ Q66
+format: numerical
+sub_topic: Displacement of a boat when a person walks along it, using the fixed centre of mass
+Q: A person of mass 60 kg stands at one end of a 120 kg boat at rest on still water. The person walks 6.0 m along the boat towards the other end. Neglecting water resistance, how far does the boat move, and how far does the person move relative to the water?
+A) 6.0 m backward; 0
+B) 3.0 m backward; 3.0 m forward
+C) 2.0 m forward; 8.0 m forward
+D) 2.0 m backward; 4.0 m forward
+KEY: D
+SOL:
+Answer: (D) The boat moves 2.0 m backward; the person moves 4.0 m forward relative to the water.
+Given: \(m=60\ \mathrm{kg},\ M=120\ \mathrm{kg};\ \text{displacement of person relative to boat}=6.0\ \mathrm m\)
+Formula/Principle: \(\text{no external horizontal force}\Rightarrow\text{the centre of mass stays at rest: }m\,\Delta x_p+M\,\Delta x_b=0\)
+Step 1: \(\Delta x_p=\Delta x_b+6.0\ (\text{relative motion})\)
+Step 2: \(60(\Delta x_b+6.0)+120\,\Delta x_b=0\Rightarrow180\,\Delta x_b=-360\Rightarrow\Delta x_b=-2.0\ \mathrm m\)
+Worked derivation: \[\Delta x_p=-2.0+6.0=+4.0\ \mathrm m\]
+Check: \[60(4.0)+120(-2.0)=0\ \checkmark\]
+Why: \(\text{the person pushes the boat backward with friction; internal forces cannot move the centre of mass of the system}\)
+Why not the others: (A) \(\text{only a massless boat would move the full 6.0 m back}\); (B) \(\text{splits the distance equally, as if the masses were equal}\); (C) \(\text{the boat must move opposite to the person}\).
+Key point: \(\text{isolated system: }\sum m\Delta x=0\)
+
+@@ Q67
+format: conceptual
+sub_topic: Comparing the decrease of g with small height and with small depth, and its value at the centre of the Earth
+Q: Which statement about the acceleration due to gravity near the Earth (radius R, treated as a uniform sphere) is correct?
+A) g increases as one goes down a mine, because one is nearer the centre
+B) At a small height h, g falls by the same fraction as at a depth h
+C) For small h, g at height h is \(g(1-2h/R)\) and at depth d is \(g(1-d/R)\), so g falls by the same amount at height h as at depth 2h; g is zero at the centre
+D) g is the same at all depths, because the mass of the Earth does not change
+KEY: C
+SOL:
+Answer: (C) \(g_h=g(1-2h/R)\), \(g_d=g(1-d/R)\); equal decrease when \(d=2h\); zero at the centre.
+Given: \(g=\dfrac{GM}{R^2};\ \text{uniform density }\rho\)
+Formula/Principle: \(\text{height: }g_h=\dfrac{GM}{(R+h)^2};\ \text{depth: only the mass inside radius }(R-d)\text{ attracts (shell theorem)}\)
+Step 1: \(g_h=g\left(1+\dfrac hR\right)^{-2}\approx g\left(1-\dfrac{2h}R\right)\ (h\ll R)\)
+Step 2: \(g_d=\dfrac{G\cdot\frac43\pi\rho(R-d)^3}{(R-d)^2}=g\left(1-\dfrac dR\right)\)
+Worked derivation: \[\frac{2h}{R}=\frac dR\Rightarrow d=2h;\qquad d=R\Rightarrow g_d=0\]
+Check: \[h=10\ \mathrm{km}:\ \tfrac{2h}{R}=\tfrac{20}{6400}\approx0.31\%;\quad d=20\ \mathrm{km}:\ \tfrac dR=0.31\%\ \checkmark\]
+Why: \(\text{going down removes the outer shell, whose net pull is zero, so g falls linearly with depth; going up weakens the pull as the inverse square of distance}\)
+Why not the others: (A) \(\text{inside a uniform Earth, g decreases in proportion to the distance from the centre}\); (B) \(\text{the fractional decrease with height is twice that with the same depth}\); (D) \(\text{the attracting mass inside radius }R-d\text{ gets smaller with depth}\).
+Key point: \(g_h\approx g(1-2h/R),\ g_d=g(1-d/R),\ g=0\text{ at the centre}\)
+
+@@ Q68
+format: numerical
+sub_topic: Speeds and horizontal ranges of water jets from two holes in a tank, and the depth giving maximum range
+Q: An open tank standing on the ground is filled with water to a height of 5.0 m. Two small holes are made in its side, at depths 1.0 m and 4.0 m below the water surface. What are the efflux speeds, and where do the two jets hit the ground? (g = 10 m s⁻²)
+A) About 4.5 m s⁻¹ and 8.9 m s⁻¹; both jets land 4.0 m from the tank, and a hole at a depth of 2.5 m would give the greatest range (5.0 m)
+B) About 4.5 m s⁻¹ and 8.9 m s⁻¹; the deeper jet lands twice as far
+C) Equal speeds; both land 4.0 m away
+D) About 8.9 m s⁻¹ and 4.5 m s⁻¹; the upper jet lands farther
+KEY: A
+SOL:
+Answer: (A) 4.5 and 8.9 m s⁻¹; both land 4.0 m away; maximum range 5.0 m from a hole 2.5 m deep.
+Given: \(H=5.0\ \mathrm m;\ \text{depths }h_1=1.0,\ h_2=4.0\ \mathrm m\)
+Formula/Principle: \(\text{Torricelli: }v=\sqrt{2gh};\ \text{fall height }H-h,\ \text{fall time }t=\sqrt{2(H-h)/g};\ \text{range }R=vt=2\sqrt{h(H-h)}\)
+Step 1: \(v_1=\sqrt{20}\approx4.5\ \mathrm{m\,s^{-1}};\quad v_2=\sqrt{80}\approx8.9\ \mathrm{m\,s^{-1}}\)
+Step 2: \(R_1=2\sqrt{1.0\times4.0}=4.0\ \mathrm m;\quad R_2=2\sqrt{4.0\times1.0}=4.0\ \mathrm m\)
+Worked derivation: \[h(H-h)\text{ is greatest at }h=\tfrac H2=2.5\ \mathrm m:\ R_{\max}=2\sqrt{2.5\times2.5}=5.0\ \mathrm m=H\]
+Check: \[R_1=v_1t_1=4.47\times\sqrt{2(4.0)/10}=4.47\times0.894=4.0\ \mathrm m\ \checkmark\]
+Why: \(\text{the deeper jet is faster but falls a shorter height, and these effects balance for depths }h\text{ and }H-h\)
+Why not the others: (B) \(\text{ignores the shorter fall time of the lower jet}\); (C) \(\text{the efflux speed depends on depth below the surface}\); (D) \(\text{swaps the speeds; the deeper hole has the greater pressure and the faster jet}\).
+Key point: \(v=\sqrt{2gh};\ R=2\sqrt{h(H-h)}\text{, equal for depths }h\text{ and }H-h\)
+
+@@ Q69
+format: experiment
+sub_topic: Final temperature when ice at 0 °C is added to warm water in a calorimeter of negligible heat capacity
+Q: In a calorimetry experiment, 50 g of ice at 0 °C is dropped into 200 g of water at 40 °C in a calorimeter of negligible heat capacity, and the mixture is stirred until all the ice has melted. What is the final temperature? (Specific heat of water = 1.0 cal g⁻¹ °C⁻¹; latent heat of fusion of ice = 80 cal g⁻¹)
+A) 32 °C
+B) 0 °C, with some ice left
+C) 20 °C
+D) 16 °C
+KEY: D
+SOL:
+Answer: (D) 16 °C.
+Given: \(m_i=50\ \mathrm g\text{ at }0^\circ\mathrm C,\ m_w=200\ \mathrm g\text{ at }40^\circ\mathrm C,\ c=1.0,\ L=80\ \mathrm{cal\,g^{-1}}\)
+Formula/Principle: \(\text{heat lost by warm water}=\text{heat to melt ice}+\text{heat to warm the melt water}\)
+Step 1: \(\text{heat to melt all the ice}=50\times80=4000\ \mathrm{cal};\ \text{heat available cooling water to }0^\circ\mathrm C=200\times40=8000\ \mathrm{cal}>4000\Rightarrow\text{all ice melts}\)
+Step 2: \(4000+50\times1.0\times T=200\times1.0\times(40-T)\)
+Worked derivation: \[4000+50T=8000-200T\Rightarrow250T=4000\Rightarrow T=16^\circ\mathrm C\]
+Check: \[\text{gain}=4000+50(16)=4800\ \mathrm{cal};\ \text{loss}=200(24)=4800\ \mathrm{cal}\ \checkmark\]
+Why: \(\text{melting absorbs latent heat at constant temperature before the melt water can warm up}\)
+Why not the others: (A) \(\text{mixes the masses as if the ice were water at }0^\circ\mathrm C\text{, ignoring latent heat}\); (B) \(\text{the water has more than enough heat to melt all the ice}\); (C) \(\text{ignores the heat needed to warm the melt water}\).
+Key point: \(\text{first check whether all the ice melts; then balance heat including }mL\)
+
+@@ Q70
+format: graph
+sub_topic: Net work, net heat and change of internal energy for a rectangular cycle on a P–V diagram
+image: NEST_T07_Q70.png
+alt: Pressure–volume diagram of a rectangular cycle. Point A is at 1.0 litre and 1.0 × 10⁵ Pa, B at 1.0 litre and 3.0 × 10⁵ Pa, C at 3.0 litres and 3.0 × 10⁵ Pa, and D at 3.0 litres and 1.0 × 10⁵ Pa. Arrows show the gas going from A to B to C to D and back to A.
+Q: The figure shows a gas taken round the cycle A → B → C → D → A. What is the net work done by the gas in one cycle, the net heat it absorbs, and its change in internal energy?
+A) −400 J; −400 J; 0
+B) +400 J; +400 J; 0
+C) +600 J; +600 J; 0
+D) +400 J; 0; +400 J
+KEY: B
+SOL:
+Answer: (B) +400 J; +400 J; 0.
+Given: \(V_A=V_B=1.0\times10^{-3}\ \mathrm{m^3},\ V_C=V_D=3.0\times10^{-3}\ \mathrm{m^3};\ P_A=P_D=1.0\times10^5,\ P_B=P_C=3.0\times10^5\ \mathrm{Pa}\)
+Formula/Principle: \(W_{\text{by gas}}=\oint P\,dV=\text{area enclosed (positive for a clockwise cycle)};\ \Delta U_{\text{cycle}}=0;\ Q=\Delta U+W\)
+Step 1: \(W_{BC}=3.0\times10^5\times2.0\times10^{-3}=600\ \mathrm J;\ W_{DA}=1.0\times10^5\times(-2.0\times10^{-3})=-200\ \mathrm J;\ W_{AB}=W_{CD}=0\)
+Step 2: \(W_{\text{net}}=600-200=400\ \mathrm J\)
+Worked derivation: \[\text{area}=(3.0-1.0)\times10^5\times(3.0-1.0)\times10^{-3}=400\ \mathrm J;\quad Q_{\text{net}}=0+400=400\ \mathrm J\]
+Check: \[\text{A}\to\text{B}\to\text{C}\to\text{D is clockwise on the P–V diagram, so the gas does net positive work}\ \checkmark\]
+Why: \(\text{internal energy is a state function, so it returns to its initial value; the net heat absorbed must equal the net work done}\)
+Why not the others: (A) \(\text{sign reversed: that would be an anticlockwise cycle}\); (C) \(\text{counts only the expansion at high pressure and forgets the work done on the gas during D}\to\text{A}\); (D) \(\Delta U\text{ must be zero for a complete cycle}\).
+Key point: \(\text{cycle: }\Delta U=0,\ Q=W=\text{enclosed area (clockwise positive)}\)
+
+@@ Q71
+format: conceptual
+sub_topic: Whether the period of a spring–mass oscillator and of a simple pendulum change on the Moon
+Q: A spring–mass oscillator and a simple pendulum each have a period of 1.0 s on the Earth. Both are taken to the Moon, where g is one-sixth of its value on the Earth. Which statement is correct?
+A) The spring–mass period stays 1.0 s (it does not depend on g, whether the spring is horizontal or vertical), while the pendulum period becomes about 2.4 s
+B) Both periods become about 2.4 s
+C) The spring–mass period becomes about 2.4 s and the pendulum period stays 1.0 s
+D) Both periods become about 0.41 s
+KEY: A
+SOL:
+Answer: (A) The spring–mass period stays 1.0 s; the pendulum period becomes about 2.4 s.
+Given: \(T_{\text{spring}}=2\pi\sqrt{m/k},\ T_{\text{pendulum}}=2\pi\sqrt{L/g};\ g_{\text{Moon}}=g/6\)
+Formula/Principle: \(\text{restoring force: spring }-kx\ (\text{no g});\ \text{pendulum }-mg\theta\ (\text{depends on g})\)
+Step 1: \(\text{vertical spring: g only shifts the equilibrium position (extension }mg/k)\text{, not the period}\)
+Step 2: \(T_{\text{pendulum}}\propto\dfrac1{\sqrt g}\Rightarrow T'=1.0\times\sqrt6\)
+Worked derivation: \[T'_{\text{pendulum}}=\sqrt6\ \mathrm s\approx2.45\ \mathrm s;\qquad T'_{\text{spring}}=1.0\ \mathrm s\]
+Check: \[\text{about the new equilibrium: }m\ddot y=-ky\text{ for a vertical spring, independent of g}\ \checkmark\]
+Why: \(\text{for a spring the restoring force comes from elasticity; for a pendulum it comes from gravity}\)
+Why not the others: (B) \(\text{the spring–mass period does not depend on g}\); (C) \(\text{reverses the two cases}\); (D) \(\text{a smaller g lengthens the pendulum period; it does not shorten it}\).
+Key point: \(T=2\pi\sqrt{m/k}\ (\text{g-independent});\ T=2\pi\sqrt{L/g}\)
+
+@@ Q72
+format: numerical
+sub_topic: Wave speed, frequency, wavelength and maximum particle speed from a progressive wave equation
+Q: A transverse wave on a string is described by \(y=0.030\sin\left[\pi(40t-0.50x)\right]\), with x and y in metres and t in seconds. What are the wave speed and its direction, the frequency, the wavelength and the maximum speed of a particle of the string?
+A) 20 m s⁻¹ in −x direction; 40 Hz; 2.0 m; 1.2 m s⁻¹
+B) 80 m s⁻¹ in −x direction; 20 Hz; 4.0 m; 3.8 m s⁻¹
+C) 80 m s⁻¹ in +x direction; 20 Hz; 4.0 m; about 3.8 m s⁻¹
+D) 0.0125 m s⁻¹ in +x direction; 40 Hz; 0.50 m; 1.2 m s⁻¹
+KEY: C
+SOL:
+Answer: (C) 80 m s⁻¹ along +x; 20 Hz; 4.0 m; about 3.8 m s⁻¹.
+Given: \(y=A\sin(\omega t-kx),\ A=0.030\ \mathrm m,\ \omega=40\pi\ \mathrm{rad\,s^{-1}},\ k=0.50\pi\ \mathrm{rad\,m^{-1}}\)
+Formula/Principle: \(v=\dfrac\omega k,\ f=\dfrac\omega{2\pi},\ \lambda=\dfrac{2\pi}k,\ v_{\text{particle,max}}=A\omega;\ (\omega t-kx)\Rightarrow\text{travels along }+x\)
+Step 1: \(v=\dfrac{40\pi}{0.50\pi}=80\ \mathrm{m\,s^{-1}};\ f=\dfrac{40\pi}{2\pi}=20\ \mathrm{Hz}\)
+Step 2: \(\lambda=\dfrac{2\pi}{0.50\pi}=4.0\ \mathrm m\)
+Worked derivation: \[v_{\max}=A\omega=0.030\times40\pi=1.2\pi\approx3.8\ \mathrm{m\,s^{-1}}\]
+Check: \[v=f\lambda=20\times4.0=80\ \mathrm{m\,s^{-1}}\ \checkmark\]
+Why: \(\text{a fixed phase }40t-0.5x=\text{const requires x to increase as t increases}\)
+Why not the others: (A) \(\text{reads 40 as the frequency and 0.5 as }2\pi/\lambda\text{ without the factor }\pi\); (B) \(\text{a }(\omega t-kx)\text{ wave travels along }+x\text{, not }-x\); (D) \(\text{divides k by }\omega\text{ instead of }\omega\text{ by k}\).
+Key point: \(y=A\sin(\omega t-kx):\ v=\omega/k\ \text{along }+x;\ \text{particle speed max}=A\omega\)
+
+@@ Q73
+format: numerical
+sub_topic: Shape of the graph of the electric field on the axis of a uniformly charged ring
+Q: A thin ring of radius R carries a uniformly distributed positive charge Q. Which description fits the graph of the axial field component E against the distance x along the axis from the centre (x positive on one side, negative on the other)?
+A) E is greatest at the centre and falls steadily with distance on both sides
+B) E is zero at the centre, rises to a maximum at \(x=R/\sqrt2\), then falls off roughly as \(1/x^2\) at large distances; on the other side E has the same shape but points the opposite way (negative values)
+C) E is constant along the axis, like the field of an infinite sheet
+D) E is zero at the centre and keeps increasing with distance
+KEY: B
+SOL:
+Answer: (B) Zero at the centre, maximum at \(x=R/\sqrt2\), then \(\approx1/x^2\); reversed in sign on the other side.
+Given: \(\text{ring of radius }R,\ \text{charge }Q\)
+Formula/Principle: \(E_x=\dfrac{kQx}{(R^2+x^2)^{3/2}}\ (\text{perpendicular components cancel by symmetry})\)
+Step 1: \(x=0:\ E=0\ (\text{contributions from opposite points cancel})\)
+Step 2: \(\dfrac{dE}{dx}\propto(R^2+x^2)-3x^2=0\Rightarrow x=\dfrac{R}{\sqrt2}\)
+Worked derivation: \[x\gg R:\ E\approx\frac{kQ}{x^2};\qquad E(-x)=-E(x)\ (\text{odd function})\]
+Check: \[E_{\max}=\frac{kQ(R/\sqrt2)}{(3R^2/2)^{3/2}}=\frac{2kQ}{3\sqrt3R^2}\approx0.385\frac{kQ}{R^2}\ \checkmark\]
+Why: \(\text{close to the centre the field is weak by symmetry; far away the ring looks like a point charge}\)
+Why not the others: (A) \(\text{the field at the centre is zero, not greatest}\); (C) \(\text{a finite ring is not an infinite sheet; its field depends on x}\); (D) \(\text{far away the field must fall off as for a point charge}\).
+Key point: \(\text{ring: }E=kQx/(R^2+x^2)^{3/2},\ \max\text{ at }R/\sqrt2\)
+
+@@ Q74
+format: numerical
+sub_topic: Potential energy of three equal charges at the corners of an equilateral triangle and the work to halve the side
+Q: Three point charges, each +1.0 µC, are held at the corners of an equilateral triangle of side 0.30 m. What is the electrostatic potential energy of the system, and how much work must an external agent do to move them slowly to the corners of a triangle of side 0.15 m? (k = 9.0 × 10⁹ N m² C⁻²)
+A) 0.030 J; 0.030 J
+B) 0.090 J; 0.18 J
+C) 0.090 J; zero, because the charges stay on an equipotential surface
+D) 0.090 J; 0.090 J
+KEY: D
+SOL:
+Answer: (D) 0.090 J; 0.090 J.
+Given: \(q=1.0\times10^{-6}\ \mathrm C,\ a=0.30\ \mathrm m\to0.15\ \mathrm m\)
+Formula/Principle: \(U=k\sum_{\text{pairs}}\dfrac{q_iq_j}{r_{ij}}=\dfrac{3kq^2}{a}\ (\text{three pairs});\ W_{\text{ext}}=\Delta U\)
+Step 1: \(U_1=\dfrac{3\times9.0\times10^9\times10^{-12}}{0.30}=0.090\ \mathrm J\)
+Step 2: \(U\propto\dfrac1a\Rightarrow U_2=2U_1=0.18\ \mathrm J\)
+Worked derivation: \[W_{\text{ext}}=U_2-U_1=0.18-0.090=0.090\ \mathrm J\]
+Check: \[\text{each pair: }\frac{kq^2}{a}=\frac{9\times10^{-3}}{0.30}=0.030\ \mathrm J;\ 3\text{ pairs}=0.090\ \mathrm J\ \checkmark\]
+Why: \(\text{like charges repel, so pushing them closer needs positive work, which is stored as potential energy}\)
+Why not the others: (A) \(\text{counts only one pair}\); (B) \(\text{gives the final energy, not the change}\); (C) \(\text{moving the charges closer changes their potential energy; they do not move along an equipotential}\).
+Key point: \(U=k\sum q_iq_j/r_{ij};\ \text{halving all distances doubles U}\)
+
+@@ Q75
+format: experiment
+sub_topic: Deflection of a compass needle at the centre of a current-carrying coil set in the magnetic meridian
+Q: A circular coil of 50 turns and radius 10 cm is set with its plane in the magnetic meridian, and a small compass needle is placed at its centre. A current of 0.10 A is passed through the coil. The horizontal component of the Earth's field is 3.14 × 10⁻⁵ T. What is the deflection of the needle, and what would it be if the current were doubled? (µ₀ = 4π × 10⁻⁷ T m A⁻¹)
+A) 45°; about 63°
+B) 45°; 90°
+C) 27°; 45°
+D) 63°; about 76°
+KEY: A
+SOL:
+Answer: (A) 45°; about 63°.
+Given: \(N=50,\ R=0.10\ \mathrm m,\ I=0.10\ \mathrm A,\ B_H=3.14\times10^{-5}\ \mathrm T\)
+Formula/Principle: \(\text{Biot–Savart law for a circular coil: }B=\dfrac{\mu_0NI}{2R}\text{ at the centre, perpendicular to the coil (and so to }B_H);\ \tan\theta=\dfrac{B}{B_H}\)
+Step 1: \(B=\dfrac{4\pi\times10^{-7}\times50\times0.10}{2\times0.10}=\pi\times10^{-5}=3.14\times10^{-5}\ \mathrm T\)
+Step 2: \(\tan\theta=\dfrac{3.14\times10^{-5}}{3.14\times10^{-5}}=1\Rightarrow\theta=45^\circ\)
+Worked derivation: \[I\to0.20\ \mathrm A:\ \tan\theta'=2\Rightarrow\theta'=63.4^\circ\]
+Check: \[\text{deflection is not proportional to current: doubling I doubles }\tan\theta,\text{ not }\theta\ \checkmark\]
+Why: \(\text{the needle aligns with the resultant of two perpendicular fields: the coil's field and the Earth's horizontal field}\)
+Why not the others: (B) \(\text{assumes }\theta\propto I\); (C) \(\text{uses }\mu_0NI/(4R)\text{ or forgets N partly}\); (D) \(\text{uses the diameter in place of the radius (doubling B)}\).
+Key point: \(B=\mu_0NI/2R;\ \tan\theta=B/B_H\)
+
+@@ Q76
+format: numerical
+sub_topic: Self-inductance of a long solenoid, energy stored, and the induced emf when the current changes
+Q: A long air-cored solenoid has 1000 turns, length 0.50 m and cross-sectional area 1.0 × 10⁻³ m². What is its self-inductance, how much energy does it store at a current of 2.0 A, and what emf is induced if this current falls uniformly to zero in 0.010 s? (µ₀ = 4π × 10⁻⁷ T m A⁻¹)
+A) 1.3 mH; 2.5 mJ; 0.25 V
+B) 2.5 mH; 10 mJ; 0.50 V
+C) 2.5 mH; 5.0 mJ; 0.50 V
+D) 2.5 H; 5.0 J; 500 V
+KEY: C
+SOL:
+Answer: (C) 2.5 mH; 5.0 mJ; 0.50 V.
+Given: \(N=1000,\ l=0.50\ \mathrm m,\ A=1.0\times10^{-3}\ \mathrm{m^2},\ I=2.0\ \mathrm A,\ \Delta t=0.010\ \mathrm s\)
+Formula/Principle: \(L=\dfrac{\mu_0N^2A}{l};\ U=\tfrac12LI^2;\ \varepsilon=-L\dfrac{dI}{dt}\)
+Step 1: \(L=\dfrac{4\pi\times10^{-7}\times10^6\times10^{-3}}{0.50}=2.51\times10^{-3}\ \mathrm H\)
+Step 2: \(U=\tfrac12\times2.51\times10^{-3}\times4.0=5.0\times10^{-3}\ \mathrm J\)
+Worked derivation: \[|\varepsilon|=L\frac{\Delta I}{\Delta t}=2.51\times10^{-3}\times\frac{2.0}{0.010}=0.50\ \mathrm V\]
+Check: \[\text{flux linkage }N\Phi=LI=5.0\times10^{-3}\ \mathrm{Wb};\ \text{change in 0.010 s}\Rightarrow0.50\ \mathrm V\ \checkmark\]
+Why: \(\text{the induced emf opposes the fall in current (Lenz's law), trying to keep it flowing}\)
+Why not the others: (A) \(\text{uses }\mu_0N^2A/(2l)\); (B) \(\text{omits the factor }\tfrac12\text{ in the energy}\); (D) \(\text{drops the factor }10^{-3}\text{ from the area}\).
+Key point: \(L=\mu_0N^2A/l;\ U=\tfrac12LI^2;\ \varepsilon=L\,\Delta I/\Delta t\)
+
+@@ Q77
+format: conceptual
+sub_topic: Current, voltages across L and C, and power factor of a series LCR circuit at resonance
+Q: A series circuit has R = 10 Ω, L = 0.10 H and C = 10 µF, connected to a 20 V (rms) a.c. source whose angular frequency can be varied. Which statement about the circuit at resonance is correct?
+A) Resonance occurs at ω = 100 rad s⁻¹ and the current is 0.20 A
+B) At resonance the impedance is greatest, so the current is least
+C) At resonance the voltage across the inductor can never exceed the source voltage
+D) Resonance occurs at ω = 1000 rad s⁻¹; the impedance equals R, so the rms current is 2.0 A and the power factor is 1; the rms voltages across L and across C are each 200 V, ten times the source voltage, but they cancel each other
+KEY: D
+SOL:
+Answer: (D) ω₀ = 1000 rad s⁻¹; Z = R; I = 2.0 A; power factor 1; V_L = V_C = 200 V, cancelling.
+Given: \(R=10\ \Omega,\ L=0.10\ \mathrm H,\ C=1.0\times10^{-5}\ \mathrm F,\ V=20\ \mathrm V\)
+Formula/Principle: \(Z=\sqrt{R^2+(X_L-X_C)^2};\ \text{resonance: }X_L=X_C,\ \omega_0=\dfrac1{\sqrt{LC}}\)
+Step 1: \(\omega_0=\dfrac1{\sqrt{0.10\times1.0\times10^{-5}}}=\dfrac1{10^{-3}}=1000\ \mathrm{rad\,s^{-1}}\)
+Step 2: \(Z=R=10\ \Omega\Rightarrow I=\dfrac{20}{10}=2.0\ \mathrm A;\ \cos\phi=\dfrac RZ=1\)
+Worked derivation: \[X_L=\omega_0L=100\ \Omega\Rightarrow V_L=IX_L=200\ \mathrm V=V_C\ (\text{opposite phase})\]
+Check: \[Q=\frac{\omega_0L}{R}=10=\frac{V_L}{V}\ \checkmark\]
+Why: \(\text{at resonance the inductive and capacitive reactances cancel, leaving only R; the large equal and opposite voltages across L and C add to zero}\)
+Why not the others: (A) \(\text{uses }\omega_0=1/(LC)\text{ or similar; the correct value is }1/\sqrt{LC}\); (B) \(\text{impedance is least at resonance, so the current is greatest}\); (C) \(V_L=QV\text{ can be much larger than V when }Q>1\).
+Key point: \(\omega_0=1/\sqrt{LC};\ Z=R;\ V_L=V_C=QV\)
+
+@@ Q78
+format: numerical
+sub_topic: Radius of the circle of light escaping from a point source under water, and how it scales with depth
+Q: A small lamp is placed 2.0 m below the surface of still water (refractive index 4/3). Light from it escapes only through a circular patch of the surface. What is the radius of this patch, and by what factor does its area change if the lamp is moved to a depth of 4.0 m?
+A) About 1.5 m; area doubles
+B) About 2.3 m; area becomes 4 times
+C) About 2.7 m; area becomes 4 times
+D) About 2.3 m; area doubles
+KEY: B
+SOL:
+Answer: (B) About 2.3 m; the area becomes 4 times.
+Given: \(h=2.0\ \mathrm m,\ n=\tfrac43\)
+Formula/Principle: \(\text{total internal reflection beyond the critical angle: }\sin C=\dfrac1n;\ r=h\tan C=\dfrac{h}{\sqrt{n^2-1}}\)
+Step 1: \(\sin C=\tfrac34;\ \tan C=\dfrac{3/4}{\sqrt{1-9/16}}=\dfrac{3}{\sqrt7}\)
+Step 2: \(r=2.0\times\dfrac{3}{\sqrt7}=\dfrac{6}{2.646}\approx2.27\ \mathrm m\)
+Worked derivation: \[r\propto h\Rightarrow\text{area}=\pi r^2\propto h^2:\ \left(\frac{4.0}{2.0}\right)^2=4\]
+Check: \[\sqrt{n^2-1}=\sqrt{16/9-1}=\sqrt7/3\Rightarrow r=\frac{3h}{\sqrt7}\ \checkmark\]
+Why: \(\text{rays hitting the surface at more than the critical angle are totally internally reflected, so only a cone of half-angle C escapes}\)
+Why not the others: (A) \(\text{uses }r=h\sin C\text{ and assumes the area scales with h}\); (C) \(\text{uses }r=h/\cos C\text{ (the slant distance)}\); (D) \(\text{radius right, but area scales as }r^2\).
+Key point: \(r=h/\sqrt{n^2-1};\ \text{area}\propto h^2\)
+
+@@ Q79
+format: numerical
+sub_topic: Width of the central maximum in single-slit diffraction and how it changes with slit width and wavelength
+Q: Light of wavelength 600 nm passes through a single slit 0.20 mm wide, and the pattern is seen on a screen 1.0 m away. What is the width of the central bright band? What does it become (i) if the slit width is halved, and (ii) if blue light of 450 nm is used with the original slit?
+A) 3.0 mm; (i) 1.5 mm; (ii) 4.0 mm
+B) 6.0 mm; (i) 3.0 mm; (ii) 8.0 mm
+C) 6.0 mm; (i) 12 mm; (ii) 4.5 mm
+D) 6.0 mm; (i) 12 mm; (ii) 8.0 mm
+KEY: C
+SOL:
+Answer: (C) 6.0 mm; (i) 12 mm; (ii) 4.5 mm.
+Given: \(\lambda=6.0\times10^{-7}\ \mathrm m,\ a=2.0\times10^{-4}\ \mathrm m,\ D=1.0\ \mathrm m\)
+Formula/Principle: \(\text{first minima at }a\sin\theta=\pm\lambda;\ \text{central width}=\dfrac{2\lambda D}{a}\ (\text{small angles})\)
+Step 1: \(w=\dfrac{2\times6.0\times10^{-7}\times1.0}{2.0\times10^{-4}}=6.0\times10^{-3}\ \mathrm m\)
+Step 2: \(w\propto\dfrac1a:\ a\to\tfrac a2\Rightarrow w=12\ \mathrm{mm}\)
+Worked derivation: \[w\propto\lambda:\ w=6.0\times\frac{450}{600}=4.5\ \mathrm{mm}\]
+Check: \[\theta=\lambda/a=3.0\times10^{-3}\ \mathrm{rad}\ (\text{small, so the approximation holds})\ \checkmark\]
+Why: \(\text{a narrower slit spreads light more; shorter wavelengths spread less}\)
+Why not the others: (A) \(\text{uses }\lambda D/a\text{ (half-width) and reverses both dependences}\); (B) \(\text{reverses both dependences}\); (D) \(\text{reverses the wavelength dependence}\).
+Key point: \(\text{central maximum width}=2\lambda D/a\)
+
+@@ Q80
+format: numerical
+sub_topic: Comparing the energy of a photon and the kinetic energy of an electron with the same wavelength of 1 nm
+Q: A photon and an electron each have a wavelength of 1.0 nm. How do their momenta compare, and what are the photon energy and the electron kinetic energy? (h = 6.63 × 10⁻³⁴ J s; c = 3.0 × 10⁸ m s⁻¹; mₑ = 9.11 × 10⁻³¹ kg; hc = 1240 eV nm)
+A) Equal momenta; photon about 1240 eV; electron about 1.5 eV
+B) Equal momenta; both about 1240 eV
+C) The electron has the larger momentum; photon about 1240 eV; electron about 1.5 eV
+D) Equal momenta; photon about 1.5 eV; electron about 1240 eV
+KEY: A
+SOL:
+Answer: (A) Equal momenta; photon ≈ 1240 eV; electron ≈ 1.5 eV.
+Given: \(\lambda=1.0\times10^{-9}\ \mathrm m\)
+Formula/Principle: \(\text{de Broglie: }p=\dfrac h\lambda\text{ for both};\ E_{\text{photon}}=pc;\ K_{\text{electron}}=\dfrac{p^2}{2m}\)
+Step 1: \(p=\dfrac{6.63\times10^{-34}}{1.0\times10^{-9}}=6.63\times10^{-25}\ \mathrm{kg\,m\,s^{-1}}\ (\text{same for both})\)
+Step 2: \(E_{\text{photon}}=\dfrac{hc}\lambda=\dfrac{1240}{1.0}=1240\ \mathrm{eV}\)
+Worked derivation: \[K_e=\frac{p^2}{2m_e}=\frac{(6.63\times10^{-25})^2}{2\times9.11\times10^{-31}}=2.41\times10^{-19}\ \mathrm J\approx1.5\ \mathrm{eV}\]
+Check: \[\lambda(\mathrm{nm})\approx\frac{1.227}{\sqrt{V}}\Rightarrow V=1.227^2\approx1.5\ \mathrm V\ \checkmark\]
+Why: \(\text{the same wavelength means the same momentum, but energy depends on momentum differently: linearly for a photon, quadratically (and divided by 2m) for a slow electron}\)
+Why not the others: (B) \(\text{uses }E=pc\text{ for the electron, which applies only to massless particles}\); (C) \(p=h/\lambda\text{ gives equal momenta for equal wavelengths}\); (D) \(\text{swaps the two energies}\).
+Key point: \(\text{same }\lambda\Rightarrow\text{same }p;\ E_\gamma=pc\gg K_e=p^2/2m\)

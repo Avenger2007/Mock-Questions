@@ -1,0 +1,419 @@
+@@ Q41
+format: numerical
+sub_topic: Value of k for which an improper integral with a quadratic denominator equals π/4
+Q: For \(k>0\), let \(I(k)=\displaystyle\int_0^\infty\frac{dx}{x^2+2x+k}\). For which value of k is \(I(k)=\dfrac\pi4\)?
+A) \(k=1\)
+B) \(k=3\)
+C) \(k=\tfrac54\)
+D) \(k=2\)
+KEY: D
+SOL:
+Answer: (D) \(k=2\).
+Given: \(x^2+2x+k=(x+1)^2+(k-1)\)
+Formula/Principle: \(\displaystyle\int\frac{dx}{(x+1)^2+a^2}=\frac1a\tan^{-1}\frac{x+1}{a}+C\ \ (a^2=k-1>0)\)
+Step 1: \(I(k)=\dfrac1a\left[\dfrac\pi2-\tan^{-1}\dfrac1a\right]=\dfrac1a\tan^{-1}a\quad(k>1)\)
+Step 2: \(\dfrac{\tan^{-1}a}{a}=\dfrac\pi4\text{ holds at }a=1\text{, and }\dfrac{\tan^{-1}a}{a}\text{ decreases as }a\text{ increases, so }a=1\text{ is the only solution}\)
+Worked derivation: \[a^2=k-1=1\Rightarrow k=2;\qquad I(2)=\int_0^\infty\frac{dx}{(x+1)^2+1}=\frac\pi2-\frac\pi4=\frac\pi4\]
+Check: \[k=1:\ \int_0^\infty\frac{dx}{(x+1)^2}=1>\tfrac\pi4;\quad k=3:\ \tfrac1{\sqrt2}\tan^{-1}\sqrt2\approx0.676<\tfrac\pi4\ \checkmark\]
+Why: \(\text{completing the square turns the denominator into the standard }(x+h)^2+a^2\text{ form; the lower limit 0 gives the }\tan^{-1}(1/a)\text{ term}\)
+Why not the others: (A) \(k=1\text{ makes the denominator a perfect square, giving }I=1\); (B) \(I(3)\approx0.676\); (C) \(a=\tfrac12\text{ gives }I=2\tan^{-1}\tfrac12\approx0.927\).
+Key point: \(\text{complete the square; }\int_0^\infty\frac{dx}{(x+1)^2+a^2}=\frac{\tan^{-1}a}{a}\)
+
+@@ Q42
+format: numerical
+sub_topic: Area between y = x and y = xⁿ on [0, 1] and its limit as n becomes large
+Q: Let \(A_n\) be the area of the region between the curves \(y=x\) and \(y=x^n\) for \(0\le x\le1\), where \(n>1\). What is \(A_3\), and what is the limit of \(A_n\) as \(n\to\infty\)?
+A) \(\tfrac14\); \(\tfrac12\)
+B) \(\tfrac12\); 1
+C) \(\tfrac14\); 1
+D) \(\tfrac1{12}\); \(\tfrac12\)
+KEY: A
+SOL:
+Answer: (A) \(A_3=\tfrac14\); limit \(\tfrac12\).
+Given: \(0\le x\le1,\ n>1\Rightarrow x^n\le x\)
+Formula/Principle: \(A_n=\displaystyle\int_0^1\left(x-x^n\right)dx\)
+Step 1: \(A_n=\dfrac12-\dfrac1{n+1}=\dfrac{n-1}{2(n+1)}\)
+Step 2: \(A_3=\dfrac{2}{2\times4}=\dfrac14\)
+Worked derivation: \[\lim_{n\to\infty}A_n=\lim_{n\to\infty}\left(\frac12-\frac1{n+1}\right)=\frac12\]
+Check: \[\text{as }n\to\infty,\ x^n\to0\text{ for }0\le x<1\text{, so the region tends to the triangle under }y=x\text{ of area }\tfrac12\ \checkmark\]
+Why: \(\text{the curve }y=x^n\text{ flattens towards the x-axis (except at }x=1)\text{, so the region fills the triangle}\)
+Why not the others: (B) \(\text{gives the triangle area for }A_3\text{ and the unit-square area as the limit}\); (C) \(\text{the region always lies below }y=x\text{, so its area cannot exceed }\tfrac12\); (D) \(\tfrac1{12}\text{ is the area between }y=x^2\text{ and }y=x^3\).
+Key point: \(\text{area between curves}=\int(\text{upper}-\text{lower})\,dx;\ \text{check limits against a simple shape}\)
+
+@@ Q43
+format: numerical
+sub_topic: Condition on the initial value for the solution of dy/dx = y² to exist on the whole interval [0, 1]
+Q: The differential equation \(\dfrac{dy}{dx}=y^2\) is solved with \(y(0)=a\). For which values of a does the solution exist (stay finite) for every x in \([0,1]\)?
+A) For every real a
+B) Only for \(a\le0\)
+C) For every \(a<1\)
+D) Only for \(a>1\)
+KEY: C
+SOL:
+Answer: (C) For every \(a<1\).
+Given: \(y'=y^2,\ y(0)=a\)
+Formula/Principle: \(\text{separation of variables: }\dfrac{dy}{y^2}=dx\ (y\ne0);\ y\equiv0\text{ is the solution when }a=0\)
+Step 1: \(-\dfrac1y=x+C;\ \ x=0:\ C=-\dfrac1a\)
+Step 2: \(y=\dfrac{a}{1-ax}\quad(\text{also valid for }a=0)\)
+Worked derivation: \[\text{blows up where }1-ax=0,\ \text{i.e. at }x=\frac1a.\ \ \text{For }a>0:\ \tfrac1a>1\iff a<1;\ \ \text{for }a\le0:\ \text{no blow-up for }x\ge0\]
+Check: \[a=\tfrac12:\ y=\frac{1/2}{1-x/2}=\frac1{2-x},\ y(1)=1\ \text{finite};\quad a=1:\ y=\frac1{1-x}\to\infty\text{ as }x\to1\ \checkmark\]
+Why: \(\text{the solution grows faster than exponentially and becomes infinite at the finite point }x=1/a\text{ when }a>0\)
+Why not the others: (A) \(\text{for }a\ge1\text{ the solution becomes infinite at }x=1/a\le1\); (B) \(\text{positive values less than 1 also work, since the blow-up point lies beyond }x=1\); (D) \(\text{these are exactly the values for which the solution fails inside the interval}\).
+Key point: \(y'=y^2\Rightarrow y=a/(1-ax)\text{; separate variables, then check where the solution is defined}\)
+
+@@ Q44
+format: numerical
+sub_topic: Counting students who study exactly two and exactly one of three subjects using a Venn diagram
+Q: In a class of 100 students, 60 study Mathematics, 50 study Physics and 40 study Chemistry; 25 study both Mathematics and Physics, 20 both Physics and Chemistry, 15 both Mathematics and Chemistry, and 10 study all three. How many students study exactly two of the subjects, and how many study exactly one?
+A) 30; 50
+B) 30; 60
+C) 60; 30
+D) 45; 45
+KEY: B
+SOL:
+Answer: (B) 30; 60.
+Given: \(n(M)=60,\ n(P)=50,\ n(C)=40,\ n(M\cap P)=25,\ n(P\cap C)=20,\ n(M\cap C)=15,\ n(M\cap P\cap C)=10\)
+Formula/Principle: \(n(M\cup P\cup C)=\sum n(\cdot)-\sum n(\cdot\cap\cdot)+n(M\cap P\cap C)\)
+Step 1: \(n(M\cup P\cup C)=150-60+10=100\ (\text{every student studies at least one})\)
+Step 2: \(\text{exactly two}=\sum n(\text{pairs})-3\,n(\text{all three})=60-30=30\)
+Worked derivation: \[\text{exactly one}=n(\text{union})-(\text{exactly two})-(\text{all three})=100-30-10=60\]
+Check: \[\text{only M}=60-25-15+10=30,\ \text{only P}=50-25-20+10=15,\ \text{only C}=40-20-15+10=15;\ 30+15+15=60\ \checkmark\]
+Why: \(\text{each pairwise intersection includes the 10 who study all three, so they must be removed from each pair}\)
+Why not the others: (A) \(\text{subtracts the all-three group twice when finding exactly one}\); (C) \(\text{uses the sum of pairwise intersections }(60)\text{ as the number studying exactly two}\); (D) \(\text{splits the remaining students evenly without using the data}\).
+Key point: \(\text{exactly two}=\sum|\text{pairs}|-3|\text{triple}|;\ \text{fill the Venn diagram from the centre outwards}\)
+
+@@ Q45
+format: numerical
+sub_topic: Solving a quadratic equation in the greatest integer function
+Q: Let \([x]\) denote the greatest integer less than or equal to x. What is the set of all real x satisfying \([x]^2-5[x]+6=0\)?
+A) \([2,4)\)
+B) \(\{2,3\}\)
+C) \([2,3]\)
+D) \((2,4]\)
+KEY: A
+SOL:
+Answer: (A) \([2,4)\).
+Given: \(t=[x]\in\mathbb Z\)
+Formula/Principle: \([x]=n\iff n\le x<n+1\)
+Step 1: \(t^2-5t+6=0\Rightarrow(t-2)(t-3)=0\Rightarrow t=2\text{ or }3\)
+Step 2: \([x]=2\iff2\le x<3;\quad [x]=3\iff3\le x<4\)
+Worked derivation: \[x\in[2,3)\cup[3,4)=[2,4)\]
+Check: \[x=3.9:\ [x]=3,\ 9-15+6=0\ \checkmark;\quad x=4:\ [x]=4,\ 16-20+6=2\ne0\]
+Why: \(\text{the graph of }[x]\text{ is a step function, so each integer value is taken on a whole interval closed on the left and open on the right}\)
+Why not the others: (B) \(\text{gives only the integer values of }[x]\text{, not all x}\); (C) \(\text{includes only }x=3\text{ from the second step}\); (D) \(\text{at }x=4,\ [x]=4\text{, which fails; and }x=2\text{ works}\).
+Key point: \(\text{solve for }[x]\text{ first, then convert each integer value into }[n,n+1)\)
+
+@@ Q46
+format: numerical
+sub_topic: Maximum, its position and the period of sin x + √3 cos x written as a single sine
+Q: For \(f(x)=\sin x+\sqrt3\cos x\), which statement is correct?
+A) The maximum value is \(1+\sqrt3\), at \(x=\tfrac\pi4\)
+B) The maximum value is 2, at \(x=\tfrac\pi3\)
+C) The maximum value is 2, at \(x=\tfrac\pi6\), and the period is \(\pi\)
+D) \(f(x)=2\sin\left(x+\tfrac\pi3\right)\); the maximum value 2 occurs first for \(x\ge0\) at \(x=\tfrac\pi6\), and the period is \(2\pi\)
+KEY: D
+SOL:
+Answer: (D) \(f(x)=2\sin(x+\tfrac\pi3)\); maximum 2 at \(x=\tfrac\pi6\); period \(2\pi\).
+Given: \(f(x)=\sin x+\sqrt3\cos x\)
+Formula/Principle: \(\sin(A+B)=\sin A\cos B+\cos A\sin B;\ \ a\sin x+b\cos x=\sqrt{a^2+b^2}\sin(x+\alpha)\)
+Step 1: \(\sqrt{1+3}=2:\ f(x)=2\left(\tfrac12\sin x+\tfrac{\sqrt3}2\cos x\right)=2\left(\sin x\cos\tfrac\pi3+\cos x\sin\tfrac\pi3\right)\)
+Step 2: \(f(x)=2\sin\left(x+\tfrac\pi3\right)\)
+Worked derivation: \[\max f=2\text{ when }x+\tfrac\pi3=\tfrac\pi2\Rightarrow x=\tfrac\pi6;\quad \min f=-2\text{ at }x=\tfrac{7\pi}6;\quad \text{period }2\pi\]
+Check: \[f(\tfrac\pi6)=\tfrac12+\sqrt3\cdot\tfrac{\sqrt3}2=\tfrac12+\tfrac32=2\ \checkmark\]
+Why: \(\text{a sum of a sine and a cosine of the same angle is a single shifted sine wave of amplitude }\sqrt{a^2+b^2}\)
+Why not the others: (A) \(\text{the two terms cannot both reach their maxima at the same x; }f(\tfrac\pi4)=\tfrac{1+\sqrt3}{\sqrt2}<2\); (B) \(f(\tfrac\pi3)=\tfrac{\sqrt3}2+\tfrac{\sqrt3}2=\sqrt3\); (C) \(\text{shifting does not change the period of }\sin x\text{, which is }2\pi\).
+Key point: \(a\sin x+b\cos x=\sqrt{a^2+b^2}\,\sin(x+\alpha)\)
+
+@@ Q47
+format: numerical
+sub_topic: Modulus and argument of 1 + cos θ + i sin θ and its special case at θ = π
+Q: For \(-\pi<\theta<\pi\), let \(z=1+\cos\theta+i\sin\theta\). Which statement about z is correct?
+A) \(|z|=2\cos\theta\) and \(\arg z=\theta\)
+B) \(|z|=2\cos\tfrac\theta2\) and \(\arg z=\tfrac\theta2\); as \(\theta\to\pi\), z tends to 0
+C) \(|z|=2\sin\tfrac\theta2\) and \(\arg z=\tfrac\theta2\)
+D) \(|z|=2\cos\tfrac\theta2\) and \(\arg z=\theta\)
+KEY: B
+SOL:
+Answer: (B) \(|z|=2\cos\tfrac\theta2\), \(\arg z=\tfrac\theta2\); \(z\to0\) as \(\theta\to\pi\).
+Given: \(z=1+\cos\theta+i\sin\theta,\ -\pi<\theta<\pi\)
+Formula/Principle: \(1+\cos\theta=2\cos^2\tfrac\theta2,\ \sin\theta=2\sin\tfrac\theta2\cos\tfrac\theta2;\ \text{polar form }r(\cos\phi+i\sin\phi),\ r>0\)
+Step 1: \(z=2\cos\tfrac\theta2\left(\cos\tfrac\theta2+i\sin\tfrac\theta2\right)\)
+Step 2: \(-\tfrac\pi2<\tfrac\theta2<\tfrac\pi2\Rightarrow\cos\tfrac\theta2>0\text{, so }r=2\cos\tfrac\theta2\text{ and }\arg z=\tfrac\theta2\)
+Worked derivation: \[\theta=\tfrac{2\pi}3:\ z=\tfrac12+\tfrac{\sqrt3}2i=1\cdot\left(\cos\tfrac\pi3+i\sin\tfrac\pi3\right);\qquad \theta\to\pi:\ r=2\cos\tfrac\theta2\to0\]
+Check: \[|z|^2=(1+\cos\theta)^2+\sin^2\theta=2+2\cos\theta=4\cos^2\tfrac\theta2\ \checkmark\]
+Why: \(\text{on the Argand plane z is the point }1+e^{i\theta}\text{: a unit circle centred at 1, so z lies on a circle through the origin, reaching 0 at }\theta=\pi\)
+Why not the others: (A) \(\text{the half-angle formulas give }\theta/2\text{, not }\theta\); (C) \(\text{the modulus uses }\cos(\theta/2)\text{ from }1+\cos\theta\); (D) \(\text{the argument is }\theta/2\text{, as the check at }\theta=2\pi/3\text{ shows}\).
+Key point: \(1+e^{i\theta}=2\cos\tfrac\theta2\,e^{i\theta/2}\)
+
+@@ Q48
+format: numerical
+sub_topic: Locus of z satisfying |z − 1| = 2|z + 1| in the Argand plane
+Q: What is the locus of the points z in the Argand plane that satisfy \(|z-1|=2|z+1|\)?
+A) The perpendicular bisector of the segment joining \(-1\) and \(1\)
+B) A circle with centre \(\left(\tfrac53,0\right)\) and radius \(\tfrac43\)
+C) A circle with centre \(\left(-\tfrac53,0\right)\) and radius \(\tfrac43\)
+D) An ellipse with foci at \(\pm1\)
+KEY: C
+SOL:
+Answer: (C) A circle with centre \(\left(-\tfrac53,0\right)\) and radius \(\tfrac43\).
+Given: \(z=x+iy;\ |z-1|=2|z+1|\)
+Formula/Principle: \(|z-a|=\text{distance from z to a};\ \text{square both sides}\)
+Step 1: \((x-1)^2+y^2=4\left[(x+1)^2+y^2\right]\)
+Step 2: \(x^2-2x+1+y^2=4x^2+8x+4+4y^2\Rightarrow3x^2+3y^2+10x+3=0\)
+Worked derivation: \[x^2+y^2+\tfrac{10}3x+1=0\Rightarrow\left(x+\tfrac53\right)^2+y^2=\tfrac{25}9-1=\tfrac{16}9\]
+Check: \[z=-3:\ |{-4}|=4=2|{-2}|\ \checkmark;\quad z=-\tfrac13:\ \tfrac43=2\cdot\tfrac23\ \checkmark\ (\text{ends of a diameter: }-\tfrac53\pm\tfrac43)\]
+Why: \(\text{points whose distances from two fixed points are in a constant ratio other than 1 lie on a circle (circle of Apollonius), closer to the point with the smaller distance}\)
+Why not the others: (A) \(\text{that is the locus when the ratio is 1}\); (B) \(\text{sign error: the points are closer to }-1\text{, so the centre is on the negative side}\); (D) \(\text{an ellipse needs a constant sum of distances, not a constant ratio}\).
+Key point: \(|z-a|=k|z-b|,\ k\ne1\Rightarrow\text{circle}\)
+
+@@ Q49
+format: numerical
+sub_topic: Counting five-digit numbers in which no two adjacent digits are equal
+Q: How many five-digit numbers (first digit not zero) have no two adjacent digits equal?
+A) 59049
+B) 90000
+C) 27216
+D) 6561
+KEY: A
+SOL:
+Answer: (A) 59049.
+Given: \(\text{digits }0\text{–}9;\ \text{first digit }\ne0;\ \text{adjacent digits different}\)
+Formula/Principle: \(\text{fundamental principle of counting: multiply the number of choices at each stage}\)
+Step 1: \(\text{first digit: }1\text{–}9\Rightarrow9\text{ choices}\)
+Step 2: \(\text{each later digit: any of the 10 digits except the one just before it}\Rightarrow9\text{ choices}\)
+Worked derivation: \[9\times9\times9\times9\times9=9^5=59049\]
+Check: \[\text{two-digit case: }9\times9=81=90-9\ (\text{removing }11,22,\dots,99)\ \checkmark\]
+Why: \(\text{only the immediately preceding digit is forbidden, so 0 becomes available from the second place on}\)
+Why not the others: (B) \(90000\text{ counts all five-digit numbers with no restriction}\); (C) \(\text{counts numbers with all digits different, a stronger condition}\); (D) \(\text{counts only four digits}\).
+Key point: \(\text{choices at each step: }9\text{ (non-zero first), then }9\text{ (anything but the previous digit)}\)
+
+@@ Q50
+format: numerical
+sub_topic: Number of committees with a chairperson from 10 people using the sum of k·C(n, k)
+Q: From 10 people, a committee of any non-empty size is formed and one member of the committee is chosen as its chairperson. In how many ways can this be done?
+A) 1024
+B) 2560
+C) 5120
+D) 10240
+KEY: C
+SOL:
+Answer: (C) 5120.
+Given: \(n=10\)
+Formula/Principle: \(\displaystyle\sum_{k=1}^{n}k\binom nk=n\,2^{n-1}\)
+Step 1: \(\text{committee of size }k:\ \binom{10}{k}\text{ ways; chairperson: }k\text{ ways}\Rightarrow\text{total}=\sum k\binom{10}{k}\)
+Step 2: \(\text{count differently: choose the chairperson first (10 ways), then any subset of the other 9 people }(2^9)\)
+Worked derivation: \[10\times2^9=10\times512=5120\]
+Check: \[n=3:\ 1\cdot3+2\cdot3+3\cdot1=12=3\times2^2\ \checkmark\]
+Why: \(\text{counting the same set of choices in two ways proves the identity }\sum k\binom nk=n2^{n-1}\)
+Why not the others: (A) \(1024=2^{10}\text{ counts committees (including the empty one) without a chairperson}\); (B) \(\text{uses }5\times2^9\text{ (half the correct value)}\); (D) \(\text{uses }10\times2^{10}\text{, letting the chairperson be chosen again among the rest}\).
+Key point: \(\sum k\binom nk=n2^{n-1}\text{: pick the special member first}\)
+
+@@ Q51
+format: numerical
+sub_topic: Values of k for which x²/(k−2) + y²/(6−k) = 1 is an ellipse with foci on the x-axis
+Q: For which values of k does \(\dfrac{x^2}{k-2}+\dfrac{y^2}{6-k}=1\) represent an ellipse whose foci lie on the x-axis?
+A) \(2<k<6\)
+B) \(4<k<6\)
+C) \(2<k<4\)
+D) \(k>6\)
+KEY: B
+SOL:
+Answer: (B) \(4<k<6\).
+Given: \(\dfrac{x^2}{k-2}+\dfrac{y^2}{6-k}=1\)
+Formula/Principle: \(\dfrac{x^2}{A}+\dfrac{y^2}{B}=1:\ A,B>0\Rightarrow\text{ellipse (circle if }A=B);\ AB<0\Rightarrow\text{hyperbola};\ \text{foci on x-axis iff }A>B\)
+Step 1: \(\text{ellipse: }k-2>0\text{ and }6-k>0\Rightarrow2<k<6\)
+Step 2: \(\text{foci on x-axis: }k-2>6-k\Rightarrow k>4\)
+Worked derivation: \[4<k<6;\quad (k=4\Rightarrow x^2+y^2=2,\ \text{a circle};\ k<2\text{ or }k>6\Rightarrow\text{hyperbola})\]
+Check: \[k=5:\ \frac{x^2}{3}+\frac{y^2}{1}=1,\ c^2=3-1=2,\ \text{foci }(\pm\sqrt2,0)\ \checkmark\]
+Why: \(\text{the major axis lies along the variable with the larger denominator, and the foci lie on the major axis}\)
+Why not the others: (A) \(\text{includes }k=4\text{ (a circle) and }2<k<4\text{ (foci on the y-axis)}\); (C) \(\text{here }6-k>k-2\text{, so the foci are on the y-axis}\); (D) \(\text{one denominator is negative, giving a hyperbola}\).
+Key point: \(\text{both denominators positive}\Rightarrow\text{ellipse; larger denominator gives the major axis}\)
+
+@@ Q52
+format: numerical
+sub_topic: Finding coefficients from a given limit of a rational function of 0/0 form
+Q: If \(\displaystyle\lim_{x\to2}\frac{x^2+ax+b}{x-2}=5\), what are a and b?
+A) \(a=5,\ b=-14\)
+B) \(a=-1,\ b=-2\)
+C) \(a=1,\ b=6\)
+D) \(a=1,\ b=-6\)
+KEY: D
+SOL:
+Answer: (D) \(a=1,\ b=-6\).
+Given: \(\text{denominator}\to0\text{ as }x\to2;\ \text{limit is finite}\)
+Formula/Principle: \(\text{a finite limit with denominator}\to0\text{ needs numerator}\to0;\ \text{then factor out }(x-2)\)
+Step 1: \(4+2a+b=0\Rightarrow b=-4-2a\)
+Step 2: \(x^2+ax-4-2a=(x-2)(x+2+a)\Rightarrow\text{limit}=2+2+a=4+a\)
+Worked derivation: \[4+a=5\Rightarrow a=1,\ b=-6;\qquad \frac{x^2+x-6}{x-2}=x+3\to5\]
+Check: \[x^2+x-6=(x-2)(x+3)\ \checkmark\]
+Why: \(\text{if the numerator did not vanish at }x=2\text{, the quotient would become infinite}\)
+Why not the others: (A) \(4+10-14=0\text{, but the limit is }2+2+5=9\); (B) \(4-2-2=0\text{, but the limit is }4-1=3\); (C) \(\text{numerator at 2 is }4+2+6=12\ne0\text{, so the limit is infinite}\).
+Key point: \(0/0\text{ form required; factor and cancel }(x-a)\)
+
+@@ Q53
+format: numerical
+sub_topic: Standard deviation of grouped data and the effect of the change y = 2x + 5
+Q: The values 10, 20, 30, 40, 50 occur with frequencies 1, 4, 6, 4, 1. What is the standard deviation? If every value x is replaced by \(y=2x+5\), what are the new standard deviation and variance?
+A) 10; 20 and 400
+B) 10; 25 and 625
+C) 100; 200 and 40000
+D) 10; 20 and 100
+KEY: A
+SOL:
+Answer: (A) \(\sigma=10\); new \(\sigma=20\), new variance 400.
+Given: \(x:10,20,30,40,50;\ f:1,4,6,4,1;\ N=16\)
+Formula/Principle: \(\sigma^2=\dfrac1N\sum f_i(x_i-\bar x)^2;\ \ y=ax+b\Rightarrow\sigma_y=|a|\sigma_x,\ \sigma_y^2=a^2\sigma_x^2\)
+Step 1: \(\bar x=30\ (\text{symmetric});\ \text{deviations }-20,-10,0,10,20\)
+Step 2: \(\sum f d^2=400+4(100)+0+4(100)+400=1600;\ \sigma^2=\dfrac{1600}{16}=100\Rightarrow\sigma=10\)
+Worked derivation: \[\sigma_y=2\times10=20,\qquad \sigma_y^2=4\times100=400\]
+Check: \[u=\tfrac{x-30}{10}:\ \sum fu^2=1(4)+4(1)+0+4(1)+1(4)=16,\ \sigma_u^2=\tfrac{16}{16}=1,\ \sigma_x=10\,\sigma_u=10\ \checkmark\]
+Why: \(\text{adding a constant shifts every value equally and does not change the spread; multiplying by 2 doubles every deviation}\)
+Why not the others: (B) \(\text{adds the shift 5 to the standard deviation}\); (C) \(\text{reports the variance as the standard deviation}\); (D) \(\text{scales the variance by 1 instead of }2^2\).
+Key point: \(\sigma(ax+b)=|a|\sigma(x);\ \text{variance scales by }a^2\)
+
+@@ Q54
+format: numerical
+sub_topic: Range of a parameter so that given expressions are probabilities of mutually exclusive events
+Q: The probabilities of three mutually exclusive events are \(\dfrac{1+3p}{3}\), \(\dfrac{1-p}{4}\) and \(\dfrac{1-2p}{2}\). For which values of p is this possible?
+A) \(-\tfrac13\le p\le\tfrac12\)
+B) \(\tfrac13\le p\le\tfrac23\)
+C) \(\tfrac13\le p\le\tfrac12\)
+D) \(0\le p\le1\)
+KEY: C
+SOL:
+Answer: (C) \(\tfrac13\le p\le\tfrac12\).
+Given: \(P_1=\dfrac{1+3p}3,\ P_2=\dfrac{1-p}4,\ P_3=\dfrac{1-2p}2\)
+Formula/Principle: \(0\le P_i\le1;\ \text{mutually exclusive}\Rightarrow P_1+P_2+P_3=P(\text{union})\le1\)
+Step 1: \(P_1\in[0,1]\Rightarrow-\tfrac13\le p\le\tfrac23;\ P_2\in[0,1]\Rightarrow-3\le p\le1;\ P_3\in[0,1]\Rightarrow-\tfrac12\le p\le\tfrac12\)
+Step 2: \(P_1+P_2+P_3=\dfrac{4+12p+3-3p+6-12p}{12}=\dfrac{13-3p}{12}\le1\Rightarrow p\ge\tfrac13\)
+Worked derivation: \[\left[-\tfrac13,\tfrac23\right]\cap[-3,1]\cap\left[-\tfrac12,\tfrac12\right]\cap\left[\tfrac13,\infty\right)=\left[\tfrac13,\tfrac12\right]\]
+Check: \[p=\tfrac13:\ \tfrac23+\tfrac16+\tfrac16=1\ \checkmark;\quad p=\tfrac12:\ \tfrac56+\tfrac18+0=\tfrac{23}{24}\le1\ \checkmark\]
+Why: \(\text{for mutually exclusive events the probabilities add to the probability of their union, which cannot exceed 1}\)
+Why not the others: (A) \(\text{ignores the sum condition}\); (B) \(\text{ignores }P_3\ge0\text{, which needs }p\le\tfrac12\); (D) \(\text{for }p<\tfrac13\text{ the sum exceeds 1, and for }p>\tfrac12,\ P_3<0\).
+Key point: \(\text{each probability in }[0,1]\text{ and, for mutually exclusive events, their sum}\le1\)
+
+@@ Q55
+format: numerical
+sub_topic: Probability that exactly one of five letters goes into its correct envelope
+Q: Five letters are placed at random in five addressed envelopes, one letter in each. What is the probability that exactly one letter goes into its correct envelope?
+A) \(\tfrac15\)
+B) \(\tfrac{11}{30}\)
+C) \(\tfrac{1}{24}\)
+D) \(\tfrac38\)
+KEY: D
+SOL:
+Answer: (D) \(\tfrac38\).
+Given: \(5!=120\text{ equally likely arrangements}\)
+Formula/Principle: \(\text{derangements: }D_n=n!\left(1-\tfrac1{1!}+\tfrac1{2!}-\cdots+\tfrac{(-1)^n}{n!}\right);\ D_4=9\)
+Step 1: \(\text{choose the one correct letter: }\binom51=5\text{ ways}\)
+Step 2: \(\text{the other 4 must all be wrong: }D_4=24\left(1-1+\tfrac12-\tfrac16+\tfrac1{24}\right)=9\)
+Worked derivation: \[P=\frac{5\times9}{120}=\frac{45}{120}=\frac38\]
+Check: \[D_4=9:\ \text{4!}=24=D_4+4D_3+6D_2+4D_1+D_0=9+8+6+0+1\ \checkmark\]
+Why: \(\text{"exactly one" means the chosen letter is right and every other letter is wrong}\)
+Why not the others: (A) \(\text{is the probability that a particular letter is correct, ignoring the others}\); (B) \(\tfrac{11}{30}=\tfrac{44}{120}\text{ is the probability that none is correct}\); (C) \(\text{treats the other four as forced}\).
+Key point: \(P(\text{exactly one})=\binom n1D_{n-1}/n!\)
+
+@@ Q56
+format: numerical
+sub_topic: Counting singular 2×2 matrices with entries 0 or 1, and those that are also symmetric
+Q: Consider all \(2\times2\) matrices whose entries are each 0 or 1. How many of them are singular, and how many are both symmetric and singular?
+A) 6; 4
+B) 10; 4
+C) 10; 8
+D) 8; 3
+KEY: B
+SOL:
+Answer: (B) 10; 4.
+Given: \(\begin{pmatrix}a&b\\c&d\end{pmatrix},\ a,b,c,d\in\{0,1\};\ 2^4=16\text{ matrices}\)
+Formula/Principle: \(\det=ad-bc;\ \text{singular}\iff ad=bc;\ \text{symmetric}\iff b=c\)
+Step 1: \(\det\ne0:\ (ad,bc)=(1,0)\Rightarrow a=d=1,\ bc=0:\ 3;\ (ad,bc)=(0,1)\Rightarrow b=c=1,\ ad=0:\ 3\Rightarrow6\text{ non-singular}\)
+Step 2: \(\text{singular}=16-6=10\)
+Worked derivation: \[\text{symmetric }(b=c):\ \det=ad-b^2=0.\ \ b=0:\ ad=0\ (3\text{ ways});\ \ b=1:\ ad=1\ (1\text{ way})\ \Rightarrow4\]
+Check: \[\text{symmetric matrices: }2^3=8;\ \text{non-singular symmetric: }b=0,\ a=d=1\text{ and }b=1,\ ad=0\ (3)\Rightarrow4;\ 8-4=4\ \checkmark\]
+Why: \(\text{count the easier complement (non-singular) first, then subtract}\)
+Why not the others: (A) \(6\text{ is the number of non-singular matrices}\); (C) \(8\text{ is the number of all symmetric matrices}\); (D) \(\text{miscounts both cases}\).
+Key point: \(\text{singular}\iff ad=bc;\ \text{use complements when counting}\)
+
+@@ Q57
+format: numerical
+sub_topic: Splitting a matrix into symmetric and skew-symmetric parts and the geometric action of the skew part
+Q: The matrix \(A=\begin{pmatrix}2&-3\\5&4\end{pmatrix}\) is written as \(A=P+Q\), with P symmetric and Q skew-symmetric. Which statement is correct?
+A) \(P=\begin{pmatrix}2&5\\-3&4\end{pmatrix}\) and \(Q=0\)
+B) \(Q=\begin{pmatrix}0&4\\-4&0\end{pmatrix}\); Q rotates every vector by \(90^\circ\) clockwise and doubles its length
+C) \(P=\begin{pmatrix}2&1\\1&4\end{pmatrix}\), \(Q=\begin{pmatrix}0&-4\\4&0\end{pmatrix}\); Q turns every vector through \(90^\circ\) anticlockwise and multiplies its length by 4, so \(\mathbf v\cdot Q\mathbf v=0\) for every v
+D) \(P=\begin{pmatrix}2&1\\1&4\end{pmatrix}\), \(Q=\begin{pmatrix}0&-4\\4&0\end{pmatrix}\); Q leaves every vector unchanged in direction
+KEY: C
+SOL:
+Answer: (C) \(P=\begin{pmatrix}2&1\\1&4\end{pmatrix}\), \(Q=\begin{pmatrix}0&-4\\4&0\end{pmatrix}\); Q rotates by \(90^\circ\) anticlockwise and scales by 4.
+Given: \(A=\begin{pmatrix}2&-3\\5&4\end{pmatrix},\ A^T=\begin{pmatrix}2&5\\-3&4\end{pmatrix}\)
+Formula/Principle: \(P=\tfrac12(A+A^T)\ (\text{symmetric}),\ Q=\tfrac12(A-A^T)\ (\text{skew-symmetric})\)
+Step 1: \(P=\tfrac12\begin{pmatrix}4&2\\2&8\end{pmatrix}=\begin{pmatrix}2&1\\1&4\end{pmatrix}\)
+Step 2: \(Q=\tfrac12\begin{pmatrix}0&-8\\8&0\end{pmatrix}=\begin{pmatrix}0&-4\\4&0\end{pmatrix}\)
+Worked derivation: \[Q\begin{pmatrix}x\\y\end{pmatrix}=4\begin{pmatrix}-y\\x\end{pmatrix},\qquad \begin{pmatrix}x&y\end{pmatrix}\cdot4\begin{pmatrix}-y\\x\end{pmatrix}=4(-xy+xy)=0\]
+Check: \[P+Q=\begin{pmatrix}2&-3\\5&4\end{pmatrix}=A\ \checkmark;\quad Q\begin{pmatrix}1\\0\end{pmatrix}=\begin{pmatrix}0\\4\end{pmatrix}\ (\text{x-axis to y-axis, anticlockwise})\]
+Why: \(\text{a }2\times2\text{ skew-symmetric matrix is a multiple of the }90^\circ\text{ rotation matrix, so it always gives a perpendicular vector}\)
+Why not the others: (A) \(A^T\text{ is not symmetric, and }A\ne A^T\text{ so }Q\ne0\); (B) \(\text{sign of Q reversed (that is }-Q)\text{, and the scale factor is 4}\); (D) \(Q\mathbf v\text{ is perpendicular to }\mathbf v\text{, not parallel}\).
+Key point: \(A=\tfrac12(A+A^T)+\tfrac12(A-A^T);\ \text{2×2 skew part}=k\times\text{rotation by }90^\circ\)
+
+@@ Q58
+format: numerical
+sub_topic: Finding a coefficient from a point on an implicit curve, then the slope there by implicit differentiation
+Q: The curve \(x^2+axy+y^2=7\) passes through the point \((1,2)\). What is a, and what is the slope \(\dfrac{dy}{dx}\) of the curve at that point?
+A) \(a=1\); \(-\tfrac45\)
+B) \(a=1\); \(-\tfrac54\)
+C) \(a=2\); \(-1\)
+D) \(a=1\); \(\tfrac45\)
+KEY: A
+SOL:
+Answer: (A) \(a=1\); slope \(-\tfrac45\).
+Given: \(x^2+axy+y^2=7,\ (1,2)\text{ on the curve}\)
+Formula/Principle: \(\text{substitute the point to find a; differentiate implicitly treating y as a function of x}\)
+Step 1: \(1+2a+4=7\Rightarrow a=1\)
+Step 2: \(2x+\left(y+x\dfrac{dy}{dx}\right)+2y\dfrac{dy}{dx}=0\Rightarrow\dfrac{dy}{dx}=-\dfrac{2x+y}{x+2y}\)
+Worked derivation: \[\left.\frac{dy}{dx}\right|_{(1,2)}=-\frac{2+2}{1+4}=-\frac45\]
+Check: \[\text{move along the slope: }(1.01,\ 2-0.008):\ 1.0201+2.0119+3.9681\approx7.000\ \checkmark\]
+Why: \(\text{the product rule on }xy\text{ gives the extra }x\,dy/dx\text{ term}\)
+Why not the others: (B) \(\text{inverts the fraction (gives }dx/dy)\); (C) \(a=2\text{ gives }1+4+4=9\ne7\); (D) \(\text{drops the minus sign from moving terms across}\).
+Key point: \(\text{implicit differentiation: }d(xy)/dx=y+x\,dy/dx\)
+
+@@ Q59
+format: numerical
+sub_topic: Maximum of x^(1/x) by logarithmic differentiation and the comparison of e^π with π^e
+Q: For \(x>0\), let \(f(x)=x^{1/x}\). Where does f have its maximum, what is the maximum value, and which is larger, \(e^\pi\) or \(\pi^e\)?
+A) At \(x=1\); value 1; \(\pi^e>e^\pi\)
+B) At \(x=e\); value \(e^{e}\); \(\pi^e>e^\pi\)
+C) At \(x=\tfrac1e\); value \(e^{-e}\); \(e^\pi>\pi^e\)
+D) At \(x=e\); value \(e^{1/e}\); \(e^\pi>\pi^e\)
+KEY: D
+SOL:
+Answer: (D) At \(x=e\); value \(e^{1/e}\); \(e^\pi>\pi^e\).
+Given: \(f(x)=x^{1/x},\ x>0\)
+Formula/Principle: \(\text{logarithmic differentiation: }\ln f=\dfrac{\ln x}{x}\Rightarrow\dfrac{f'}{f}=\dfrac{1-\ln x}{x^2}\)
+Step 1: \(f'(x)=x^{1/x}\cdot\dfrac{1-\ln x}{x^2}=0\iff x=e\)
+Step 2: \(f'>0\text{ for }x<e,\ f'<0\text{ for }x>e\Rightarrow\text{maximum }f(e)=e^{1/e}\approx1.445\)
+Worked derivation: \[f(\pi)<f(e)\Rightarrow\pi^{1/\pi}<e^{1/e}\Rightarrow\left(\pi^{1/\pi}\right)^{e\pi}<\left(e^{1/e}\right)^{e\pi}\Rightarrow\pi^e<e^\pi\]
+Check: \[e^\pi\approx23.14,\quad \pi^e\approx22.46\ \checkmark;\quad \lim_{x\to\infty}x^{1/x}=\lim e^{\ln x/x}=e^0=1\]
+Why: \(\text{taking logs turns a variable power into a product, which can then be differentiated}\)
+Why not the others: (A) \(f(1)=1<f(e)\text{, and the comparison is reversed}\); (B) \(\text{the value is }e^{1/e}\text{, not }e^e\); (C) \(\tfrac1e\text{ is where }x^x\text{ has its minimum, not where }x^{1/x}\text{ is largest}\).
+Key point: \(\text{for }y=u^v,\ \text{use }\ln y=v\ln u;\ \max x^{1/x}=e^{1/e}\text{ at }x=e\)
+
+@@ Q60
+format: numerical
+sub_topic: Values of a for which a cubic is increasing on the whole real line
+Q: For which real values of a is \(f(x)=x^3+ax^2+3x+1\) increasing on the whole real line?
+A) \(a<-3\) or \(a>3\)
+B) \(-3\le a\le3\)
+C) \(-\sqrt3\le a\le\sqrt3\)
+D) \(a\ge0\)
+KEY: B
+SOL:
+Answer: (B) \(-3\le a\le3\).
+Given: \(f(x)=x^3+ax^2+3x+1\)
+Formula/Principle: \(f\text{ is increasing on }\mathbb R\text{ if }f'(x)\ge0\text{ for all x (with equality only at isolated points)}\)
+Step 1: \(f'(x)=3x^2+2ax+3\)
+Step 2: \(\text{an upward parabola is}\ge0\text{ everywhere iff its discriminant}\le0:\ 4a^2-36\le0\)
+Worked derivation: \[a^2\le9\iff-3\le a\le3\]
+Check: \[a=3:\ f'(x)=3(x+1)^2\ge0,\ \text{zero only at }x=-1\Rightarrow\text{still increasing};\quad a=4:\ f'(-1)=3-8+3<0\ \checkmark\]
+Why: \(\text{if the derivative had two real roots, it would be negative between them and f would decrease there}\)
+Why not the others: (A) \(\text{these values give two real roots of }f'\text{, so f decreases on an interval}\); (C) \(\text{uses }a^2\le3\text{ (wrong discriminant)}\); (D) \(a=4\text{ fails, and negative values down to }-3\text{ work}\).
+Key point: \(\text{cubic increasing on }\mathbb R\iff f'\ge0\iff\text{disc}(f')\le0\)

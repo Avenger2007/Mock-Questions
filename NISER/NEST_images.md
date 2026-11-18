@@ -132,3 +132,21 @@ One entry per question that needs a figure, in the format given in `NISER/NISER_
 - **Labels:** "q₁", "q₂", axis titles and tick labels.
 - **Must not show:** the signs or values of q₁ and q₂ (no "+" or "−" next to the charges, no "2q"), the formula for V, arrows for the electric field, any mark or label at the minimum of the curve to the left of the origin, or the words "field is zero".
 - **Alt text:** Graph of electric potential V against position x along a line through two point charges, one at x = 0 and one at x = d. The potential rises towards plus infinity on both sides of x = 0 and falls towards minus infinity on both sides of x = d. Between the charges V crosses zero at x = d/3. To the left of the origin V crosses zero at x = −d, becomes slightly negative further left and approaches zero from below. To the right of x = d, V stays negative and approaches zero from below.
+
+## NEST Test 7
+
+### NEST_T07_Q25.png — Test 7, Q25 (Chemistry, concentration–time curve with a tangent)
+- **Purpose:** the student reads two points on the curve for the average rate and the slope of the drawn tangent for the instantaneous rate.
+- **Size and style:** 1400 × 900 px, white background, the curve in dark blue (3 px), the tangent as a straight dark-red dashed line (2 px), black axes, light grey grid every 10 s and every 0.1 mol/L, sans-serif labels 24 px or larger.
+- **Must show:** x-axis "t / s" from 0 to 80 with ticks and labels every 10 s. y-axis "[R] / mol L⁻¹" from 0 to 1.10 with ticks every 0.10 and labels at 0, 0.20, 0.40, 0.60, 0.80, 1.00. A smooth falling curve [R] = e^(−t/40) (do not print the formula) through (0, 1.00), (10, 0.78), (20, 0.61), (30, 0.47), (40, 0.37), (50, 0.29), (60, 0.22), (80, 0.14). Small dots on the curve at t = 0, 20 s and 40 s, with their values written beside them: "1.00", "0.61", "0.37". A straight tangent line touching the curve at t = 20 s, drawn from the y-axis at (0, 0.91) to the x-axis at (60, 0); mark both intercepts with small dots and label them "0.91" and "60".
+- **Labels:** "1.00", "0.61", "0.37", "0.91", "60", axis titles and tick labels.
+- **Must not show:** any rate value, the slope of the tangent, a chord between t = 0 and t = 40 s, the words "average", "instantaneous" or "slope", or the formula of the curve.
+- **Alt text:** Graph of reactant concentration in mol per litre against time in seconds. The curve falls from 1.00 at t = 0 through about 0.61 at 20 s, 0.37 at 40 s and 0.22 at 60 s. A straight tangent line touches the curve at t = 20 s and meets the concentration axis at 0.91 and the time axis at 60 s.
+
+### NEST_T07_Q70.png — Test 7, Q70 (Physics, rectangular cycle on a P–V diagram)
+- **Purpose:** the student finds the net work from the enclosed area and its sign from the direction of the cycle.
+- **Size and style:** 1400 × 900 px, white background, the cycle drawn as a dark-blue rectangle (3 px) with a filled arrowhead on each side, black axes, light grey grid, sans-serif labels 24 px or larger.
+- **Must show:** x-axis "V / litre" from 0 to 4.0 with ticks every 0.5 and labels at 1.0, 2.0, 3.0, 4.0. y-axis "P / 10⁵ Pa" from 0 to 4.0 with ticks every 0.5 and labels at 1.0, 2.0, 3.0, 4.0. Corner points with dots and letters: A at (1.0, 1.0), B at (1.0, 3.0), C at (3.0, 3.0), D at (3.0, 1.0). Arrows show the direction A → B (upward), B → C (rightward), C → D (downward), D → A (leftward). Dashed grey guide lines from the corners to both axes.
+- **Labels:** "A", "B", "C", "D", axis titles and tick labels.
+- **Must not show:** shading or hatching inside the rectangle, any work or heat value, the words "clockwise", "work", "heat", "isochoric" or "isobaric", or ΔU.
+- **Alt text:** Pressure–volume diagram of a rectangular cycle. Point A is at 1.0 litre and 1.0 × 10⁵ Pa, B at 1.0 litre and 3.0 × 10⁵ Pa, C at 3.0 litres and 3.0 × 10⁵ Pa, and D at 3.0 litres and 1.0 × 10⁵ Pa. Arrows show the gas going from A to B to C to D and back to A.
