@@ -1,0 +1,439 @@
+@@ Q61
+format: numerical
+sub_topic: Comparing linear expansion of rails, a bimetallic strip and volume expansion, and the anomalous expansion of water near 4 °C
+Q: Steel (\(\alpha=1.2\times10^{-5}\ \mathrm{K^{-1}}\)) rails 10 m long are laid at 10 °C; the hottest expected rail temperature is 50 °C. A brass–steel bimetallic strip (\(\alpha_{\text{brass}}=1.9\times10^{-5}\ \mathrm{K^{-1}}\)) is straight at room temperature. Which statement is correct?
+A) Each rail needs a gap of at least 4.8 mm; on heating, the bimetallic strip bends with brass on the outer (convex) side because brass expands more; the volume expansion coefficient of steel is about \(3\alpha=3.6\times10^{-5}\ \mathrm{K^{-1}}\); water, unusually, contracts on heating from 0 °C to 4 °C, where its density is maximum
+B) The gap needed is 0.48 mm; the strip bends with steel outside
+C) The gap needed is 48 mm; \(\gamma=\alpha/3\)
+D) No gap is needed, because steel does not expand appreciably; water expands steadily from 0 °C
+KEY: A
+SOL:
+Answer: (A) Gap \(4.8\) mm; brass on the convex side; \(\gamma\approx3\alpha\); water densest at 4 °C.
+Given: \(L=10\ \mathrm m,\ \alpha=1.2\times10^{-5}\ \mathrm{K^{-1}},\ \Delta T=40\ \mathrm K\)
+Formula/Principle: \(\Delta L=L\alpha\Delta T;\ \gamma=3\alpha\text{ for isotropic solids}\)
+Step 1: \(\Delta L=10\times1.2\times10^{-5}\times40=4.8\times10^{-3}\ \mathrm m=4.8\ \mathrm{mm}\)
+Step 2: \(\text{brass expands more}\Rightarrow\text{longer side on the outside of the curve}\)
+Step 3: \(\gamma=3\times1.2\times10^{-5}=3.6\times10^{-5}\ \mathrm{K^{-1}}\)
+Worked derivation: \[V=L^3(1+\alpha\Delta T)^3\approx L^3(1+3\alpha\Delta T)\Rightarrow\gamma=3\alpha\]
+Check: \[\frac{\Delta L}{L}=4.8\times10^{-4}\ \text{(small, so linear approximation valid)}\ \checkmark\]
+Why: \(\text{rails expand freely only if a gap is left; otherwise the large thermal stress buckles them}\)
+Why not the others: (B) \(\text{factor 10 error; brass is outside}\); (C) \(\text{factor 10 error; }\gamma=3\alpha\); (D) \(\text{4.8 mm is significant; water contracts from 0 to 4 °C}\).
+Key point: \(\Delta L=L\alpha\Delta T;\ \gamma=3\alpha;\ \text{water densest at }4\ ^\circ\mathrm C\)
+
+@@ Q62
+format: numerical
+sub_topic: Efficiency, work and rejected heat of a Carnot engine between two reservoirs, and recognising isothermal and adiabatic curves on its P–V diagram
+Q: A Carnot engine works between 750 K and 300 K and absorbs 2000 J per cycle from the hot reservoir. Which statement is correct?
+A) Efficiency 40 %; work 800 J; on the P–V diagram the isothermal curves are steeper than the adiabatic ones
+B) Efficiency 100 %, since the engine is reversible
+C) Efficiency \(1-\tfrac{300}{750}=60\ \%\); work per cycle 1200 J; heat rejected 800 J; its P–V diagram consists of two isotherms joined by two adiabats, the adiabats being steeper (\(PV^\gamma\) = constant, \(\gamma>1\)); by the Kelvin–Planck statement, no engine can turn all the absorbed heat into work
+D) Efficiency 60 %; heat rejected 1200 J
+KEY: C
+SOL:
+Answer: (C) \(\eta=60\%\); \(W=1200\) J; \(Q_2=800\) J; adiabats steeper.
+Given: \(T_1=750\ \mathrm K,\ T_2=300\ \mathrm K,\ Q_1=2000\ \mathrm J\)
+Formula/Principle: \(\eta=1-\dfrac{T_2}{T_1};\ W=\eta Q_1;\ Q_2=Q_1-W\)
+Step 1: \(\eta=1-\dfrac{300}{750}=0.60\)
+Step 2: \(W=0.60\times2000=1200\ \mathrm J\)
+Step 3: \(Q_2=2000-1200=800\ \mathrm J\)
+Worked derivation: \[\frac{Q_2}{Q_1}=\frac{T_2}{T_1}=\frac{800}{2000}=0.40\ \checkmark\]
+Check: \[\text{isotherm slope }-\tfrac PV;\ \text{adiabat slope }-\gamma\tfrac PV\Rightarrow\text{adiabat steeper}\ \checkmark\]
+Why: \(\text{a Carnot engine is reversible, so its efficiency depends only on the reservoir temperatures and is the maximum possible}\)
+Why not the others: (A) \(\text{efficiency wrong; adiabats are steeper}\); (B) \(\text{violates the second law}\); (D) \(\text{work and rejected heat swapped}\).
+Key point: \(\eta_{\text{Carnot}}=1-T_2/T_1;\ Q_2/Q_1=T_2/T_1\)
+
+@@ Q63
+format: numerical
+sub_topic: Temperature at which the rms speed of hydrogen equals the Earth's escape speed, comparison of rms speeds of different gases, and why light gases escape from planetary atmospheres
+Q: At what temperature would the rms speed of H₂ molecules (\(M=2.0\times10^{-3}\) kg/mol) equal the escape speed from the Earth, 11.2 km/s (\(R=8.314\ \mathrm{J\,mol^{-1}K^{-1}}\))? Which statement is correct?
+A) About 100 K; hydrogen is retained because its rms speed is small
+B) About \(1.0\times10^6\) K; oxygen escapes faster than hydrogen
+C) About 300 K, the temperature of the atmosphere
+D) \(T=\dfrac{Mv^2}{3R}\approx1.0\times10^4\) K; at 300 K the rms speed of H₂ is about 1.9 km/s, far below 11.2 km/s, yet hydrogen has been lost from the atmosphere because a fraction of molecules in the tail of the speed distribution exceed escape speed; oxygen would need 16 times the temperature to match the rms speed of hydrogen
+KEY: D
+SOL:
+Answer: (D) \(T\approx1.0\times10^4\) K; \(v_{\text{rms}}(\text{H}_2,300\ \mathrm K)\approx1.9\) km/s; fast tail escapes; O₂ needs \(16\times\) the temperature.
+Given: \(M=2.0\times10^{-3}\ \mathrm{kg/mol},\ v=1.12\times10^4\ \mathrm{m/s}\)
+Formula/Principle: \(v_{\text{rms}}=\sqrt{\dfrac{3RT}{M}}\Rightarrow T=\dfrac{Mv^2}{3R}\)
+Step 1: \(T=\dfrac{2.0\times10^{-3}\times(1.12\times10^4)^2}{3\times8.314}=\dfrac{2.509\times10^5}{24.94}\)
+Step 2: \(T\approx1.01\times10^4\ \mathrm K\)
+Step 3: \(v_{\text{rms}}(300\ \mathrm K)=\sqrt{\dfrac{3\times8.314\times300}{2.0\times10^{-3}}}=\sqrt{3.74\times10^6}=1.93\times10^3\ \mathrm{m/s}\)
+Worked derivation: \[v_{\text{rms}}\propto\sqrt{T/M}:\ \frac{T_{\text{O}_2}}{T_{\text{H}_2}}=\frac{M_{\text{O}_2}}{M_{\text{H}_2}}=16\]
+Check: \[\frac{11.2}{1.93}=5.8;\ 5.8^2\approx33.6;\ 300\times33.6\approx1.0\times10^4\ \mathrm K\ \checkmark\]
+Why: \(\text{the Maxwell distribution has a long high-speed tail, so over geological time even gases with }v_{\text{rms}}\text{ well below escape speed leak away, the lightest fastest}\)
+Why not the others: (A) \(\text{far too low}\); (B) \(\text{factor 100 error; lighter gases escape more easily}\); (C) \(\text{at 300 K }v_{\text{rms}}\approx1.9\text{ km/s}\).
+Key point: \(v_{\text{rms}}=\sqrt{3RT/M};\ \text{light gases escape via the fast tail}\)
+
+@@ Q64
+format: experiment
+sub_topic: Measuring g with a simple pendulum by timing many oscillations, the T² versus L graph and its slope, and the effect of measuring length to the top of the bob
+Q: A student times 20 oscillations of a simple pendulum of effective length 1.00 m (string plus bob radius) as 40.2 s, and repeats for other lengths to plot \(T^2\) against \(L\). Which statement is correct?
+A) \(T=40.2\) s; \(g=0.024\ \mathrm{m/s^2}\); the graph of \(T\) against \(L\) is a straight line through the origin
+B) \(T=2.01\) s, so \(g=\dfrac{4\pi^2L}{T^2}=\dfrac{39.48}{4.04}\approx9.77\ \mathrm{m/s^2}\); the \(T^2\)–\(L\) graph is a straight line through the origin with slope \(\dfrac{4\pi^2}{g}\approx4.04\ \mathrm{s^2/m}\); timing 20 oscillations reduces the reaction-time error per period; if the student measured only the string length (omitting the bob radius) the line would not pass through the origin and \(g\) from a single reading would be underestimated; small amplitudes are needed for SHM
+C) The period depends on the mass of the bob, so a heavier bob gives a larger \(g\)
+D) The slope of the \(T^2\)–\(L\) graph equals \(g\)
+KEY: B
+SOL:
+Answer: (B) \(T=2.01\) s; \(g\approx9.77\) m/s²; slope \(4\pi^2/g\).
+Given: \(L=1.00\ \mathrm m;\ 20T=40.2\ \mathrm s\)
+Formula/Principle: \(T=2\pi\sqrt{\dfrac Lg}\Rightarrow T^2=\dfrac{4\pi^2}{g}L\)
+Step 1: \(T=\dfrac{40.2}{20}=2.01\ \mathrm s;\ T^2=4.04\ \mathrm{s^2}\)
+Step 2: \(g=\dfrac{4\pi^2\times1.00}{4.04}=\dfrac{39.48}{4.04}=9.77\ \mathrm{m/s^2}\)
+Step 3: \(\text{slope}=\dfrac{T^2}{L}=4.04\ \mathrm{s^2/m}\Rightarrow g=\dfrac{4\pi^2}{\text{slope}}\)
+Worked derivation: \[\text{using string length }l=L-r:\ T^2=\frac{4\pi^2}{g}(l+r)\Rightarrow\text{intercept }-r\text{ on the }l\text{ axis; } g_{\text{single}}=\frac{4\pi^2l}{T^2}<g\]
+Check: \[\text{units: }\frac{\mathrm m}{\mathrm s^2}\ \checkmark;\ 9.77\text{ close to }9.8\ \checkmark\]
+Why: \(\text{the period depends only on length and }g\text{ for small swings; plotting }T^2\text{ against }L\text{ linearises the relation and averages out random errors}\)
+Why not the others: (A) \(\text{20 oscillations, not one; }T\propto\sqrt L\text{ is not linear}\); (C) \(\text{period is independent of mass}\); (D) \(\text{slope is }4\pi^2/g\).
+Key point: \(T^2=\frac{4\pi^2}{g}L;\ \text{effective length to bob centre}\)
+
+@@ Q65
+format: numerical
+sub_topic: Fundamental frequency of a sonometer wire from tension, length and linear density, and how it scales when each is changed, with harmonic frequencies and node spacing
+Q: A sonometer wire 0.80 m long with linear density \(5.0\times10^{-3}\) kg/m is under a tension of 80 N. Which statement is correct?
+A) Wave speed 16 m/s; fundamental 10 Hz; quadrupling the tension quadruples the frequency
+B) Wave speed \(\sqrt{80/0.005}\approx126\ \mathrm{m/s}\); fundamental \(f_1=\dfrac{v}{2L}\approx79\ \mathrm{Hz}\); quadrupling the tension or halving the length doubles \(f_1\); a wire of four times the linear density needs four times the tension to give the same \(f_1\); the third harmonic is about 237 Hz, with adjacent nodes \(\lambda/2\approx0.27\) m apart
+C) Fundamental 158 Hz, since \(f_1=v/L\)
+D) Halving the length halves the fundamental frequency
+KEY: B
+SOL:
+Answer: (B) \(v\approx126\) m/s; \(f_1\approx79\) Hz; scaling as stated; \(f_3\approx237\) Hz.
+Given: \(L=0.80\ \mathrm m,\ \mu=5.0\times10^{-3}\ \mathrm{kg/m},\ T=80\ \mathrm N\)
+Formula/Principle: \(v=\sqrt{T/\mu};\ f_n=\dfrac{nv}{2L}=\dfrac{n}{2L}\sqrt{\dfrac T\mu}\)
+Step 1: \(v=\sqrt{\dfrac{80}{0.005}}=\sqrt{16000}=126.5\ \mathrm{m/s}\)
+Step 2: \(f_1=\dfrac{126.5}{1.60}=79.1\ \mathrm{Hz}\)
+Step 3: \(f_3=3f_1=237\ \mathrm{Hz};\ \lambda_3=\dfrac{2L}{3}=0.533\ \mathrm m\Rightarrow\lambda/2=0.267\ \mathrm m\)
+Worked derivation: \[f_1\propto\frac1L\sqrt{\frac T\mu}:\ T\to4T\Rightarrow\times2;\ L\to\tfrac L2\Rightarrow\times2;\ \mu\to4\mu,\ T\to4T\Rightarrow\times1\]
+Check: \[\text{units: }\sqrt{\mathrm N/(\mathrm{kg/m})}=\sqrt{\mathrm{m^2/s^2}}=\mathrm{m/s}\ \checkmark\]
+Why: \(\text{the fixed ends must be nodes, so the wire length holds a whole number of half-wavelengths; tension and density set the wave speed}\)
+Why not the others: (A) \(\text{speed miscalculated; }f\propto\sqrt T\); (C) \(\text{fundamental has }L=\lambda/2\); (D) \(f\propto1/L\).
+Key point: \(f_n=\frac{n}{2L}\sqrt{T/\mu}\)
+
+@@ Q66
+format: numerical
+sub_topic: How the Coulomb force between two small conducting spheres changes when they are touched and separated, placed in a dielectric medium or brought closer, and the field at the midpoint
+Q: Two identical small conducting spheres carry \(+q\) and \(-3q\) and attract each other with force \(F\) at separation \(r\) in air. Which statement is correct?
+A) After they are touched and returned to separation \(r\), each carries \(-q\) and they repel with force \(F/3\); in water (\(K=80\)) at the original charges the force would be \(F/80\); at separation \(r/2\) it would be \(4F\); before touching, the field at the midpoint is \(\dfrac{16kq}{r^2}\) directed towards the \(-3q\) sphere
+B) After touching, each carries \(-2q\), and they attract with force \(4F/3\)
+C) After touching, both are neutral, so the force becomes zero
+D) After touching they repel with force \(F\); in water the force is \(80F\)
+KEY: A
+SOL:
+Answer: (A) Repulsive \(F/3\); \(F/80\) in water; \(4F\) at \(r/2\); midpoint field \(16kq/r^2\) towards \(-3q\).
+Given: \(q_1=+q,\ q_2=-3q,\ F=\dfrac{3kq^2}{r^2}\ (\text{attractive})\)
+Formula/Principle: \(F=\dfrac{1}{4\pi\varepsilon_0K}\dfrac{|q_1q_2|}{r^2};\ \text{identical spheres share charge equally}\)
+Step 1: \(\text{touch: total }-2q\Rightarrow-q\text{ each};\ F'=\dfrac{kq^2}{r^2}=\dfrac F3\text{ (repulsive)}\)
+Step 2: \(\text{medium }K=80:\ F/80;\ r\to r/2:\ 4F\)
+Step 3: \(\text{midpoint: }E_1=\dfrac{kq}{(r/2)^2}=\dfrac{4kq}{r^2}\text{ away from }+q;\ E_2=\dfrac{12kq}{r^2}\text{ towards }-3q\)
+Worked derivation: \[\text{both point the same way (from }+q\text{ towards }-3q):\ E=\frac{16kq}{r^2}\]
+Check: \[\text{charge conserved: }q+(-3q)=-q+(-q)\ \checkmark\]
+Why: \(\text{touching identical conductors equalises their potentials, so they share the total charge equally; the force follows the product of charges and the inverse square of distance}\)
+Why not the others: (B) \(\text{total charge is }-2q\text{, shared as }-q\text{ each}\); (C) \(\text{net charge is not zero}\); (D) \(\text{wrong force; the medium reduces it}\).
+Key point: \(F\propto\frac{q_1q_2}{Kr^2};\ \text{identical spheres in contact share charge equally}\)
+
+@@ Q67
+format: experiment
+sub_topic: Measuring the potential of an electric dipole along its axis and on its equatorial line with a probe, and confirming the 1/r² dependence
+Q: Charges \(\pm2.0\) nC are fixed 2.0 mm apart. A potential probe reads values along the axis and along the perpendicular bisector (\(k=9.0\times10^9\ \mathrm{N\,m^2C^{-2}}\)). Which set of readings is expected (distances from the centre, far from the dipole)?
+A) Axis: 3.6 V at 10 cm and 1.8 V at 20 cm; bisector: 3.6 V at 10 cm
+B) Axis: 360 V at 10 cm; bisector: 180 V
+C) Axis: 0 at all points, since the charges cancel
+D) Dipole moment \(p=4.0\times10^{-12}\) C m; on the axis \(V=\dfrac{kp}{r^2}\): 3.6 V at 10 cm and 0.90 V at 20 cm (a quarter, confirming \(V\propto1/r^2\)); on the perpendicular bisector \(V=0\) at every point, because each point is equidistant from \(+q\) and \(-q\); for a single point charge \(V\) would fall only as \(1/r\)
+KEY: D
+SOL:
+Answer: (D) \(p=4.0\times10^{-12}\) C m; axial \(3.6\) V and \(0.90\) V; equatorial \(0\).
+Given: \(q=2.0\times10^{-9}\ \mathrm C,\ 2a=2.0\times10^{-3}\ \mathrm m;\ r=0.10,\ 0.20\ \mathrm m\)
+Formula/Principle: \(p=q(2a);\ V_{\text{axis}}=\dfrac{kp}{r^2}\ (r\gg a);\ V_{\text{equator}}=0\)
+Step 1: \(p=2.0\times10^{-9}\times2.0\times10^{-3}=4.0\times10^{-12}\ \mathrm{C\,m}\)
+Step 2: \(V(0.10)=\dfrac{9.0\times10^9\times4.0\times10^{-12}}{0.010}=3.6\ \mathrm V\)
+Step 3: \(V(0.20)=\dfrac{3.6\times10^{-2}}{0.040}=0.90\ \mathrm V\)
+Worked derivation: \[V=kq\left(\frac{1}{r-a}-\frac{1}{r+a}\right)=\frac{kq(2a)}{r^2-a^2}\approx\frac{kp}{r^2}\]
+Check: \[\frac{V(0.10)}{V(0.20)}=4=\left(\frac{0.20}{0.10}\right)^2\ \checkmark\]
+Why: \(\text{the potentials of the two opposite charges nearly cancel at large distance, leaving a term that falls one power faster than for a single charge}\)
+Why not the others: (A) \(\text{uses }1/r\text{ and ignores the zero on the bisector}\); (B) \(\text{factor errors}\); (C) \(\text{the axis is not equidistant from the charges}\).
+Key point: \(V_{\text{dipole}}=\frac{kp\cos\theta}{r^2};\ V=0\text{ on the equatorial line}\)
+
+@@ Q68
+format: numerical
+sub_topic: Energy conservation in an electric kettle — heat needed, ideal and actual heating time with efficiency, energy in kWh — and how the power changes on a lower supply voltage
+Q: A 2.0 kW, 220 V kettle heats 1.5 kg of water from 20 °C to 100 °C (\(c=4200\ \mathrm{J\,kg^{-1}K^{-1}}\)); 80 % of the electrical energy goes into the water. Which statement is correct?
+A) Heat needed 504 J; time 0.25 s
+B) Time needed 252 s, since all energy goes into the water; energy drawn 0.14 kWh; at 110 V the power stays 2.0 kW
+C) Heat needed \(1.5\times4200\times80=5.04\times10^5\) J; with 80 % efficiency the kettle must supply \(6.3\times10^5\) J, taking \(\dfrac{6.3\times10^5}{2000}=315\) s and drawing 0.175 kWh; its resistance is \(\dfrac{V^2}{P}=24.2\ \Omega\), so on a 110 V supply (same resistance) it would deliver only 500 W
+D) Time 315 s; at 110 V the power is 1.0 kW
+KEY: C
+SOL:
+Answer: (C) \(Q=5.04\times10^5\) J; \(315\) s; \(0.175\) kWh; \(R=24.2\ \Omega\); \(500\) W at 110 V.
+Given: \(P=2000\ \mathrm W,\ V=220\ \mathrm V,\ m=1.5\ \mathrm{kg},\ \Delta T=80\ \mathrm K,\ \eta=0.80\)
+Formula/Principle: \(Q=mc\Delta T;\ \eta Pt=Q;\ P=\dfrac{V^2}{R}\)
+Step 1: \(Q=1.5\times4200\times80=5.04\times10^5\ \mathrm J\)
+Step 2: \(t=\dfrac{Q}{\eta P}=\dfrac{5.04\times10^5}{1600}=315\ \mathrm s;\ E=2000\times315=6.3\times10^5\ \mathrm J=\dfrac{6.3\times10^5}{3.6\times10^6}=0.175\ \mathrm{kWh}\)
+Step 3: \(R=\dfrac{220^2}{2000}=24.2\ \Omega;\ P_{110}=\dfrac{110^2}{24.2}=500\ \mathrm W\)
+Worked derivation: \[\frac{P_{110}}{P_{220}}=\left(\frac{110}{220}\right)^2=\frac14\]
+Check: \[\text{ideal time }252\ \mathrm s=0.80\times315\ \checkmark\]
+Why: \(\text{electrical energy is converted to heat; the part lost to surroundings must also be supplied, so efficiency lengthens the time}\)
+Why not the others: (A) \(\text{heat wrong by }10^3\); (B) \(\text{ignores efficiency; power depends on }V^2\); (D) \(\text{power falls to a quarter, not a half}\).
+Key point: \(\eta Pt=mc\Delta T;\ P=V^2/R\Rightarrow P\propto V^2\)
+
+@@ Q69
+format: conceptual
+sub_topic: Direction and size of the force between two parallel current-carrying wires, its use in defining the ampere, and the force on a wire in a magnetic field
+Q: Two long parallel wires 0.10 m apart in air each carry 10 A. Which statement is correct (\(\mu_0=4\pi\times10^{-7}\ \mathrm{T\,m/A}\))?
+A) Currents in the same direction repel with \(2\times10^{-4}\) N per metre
+B) The force between the wires is zero, because each wire's field is parallel to the other wire
+C) Currents in the same direction attract and opposite currents repel, with force per unit length \(\dfrac{\mu_0I_1I_2}{2\pi d}=2\times10^{-4}\ \mathrm{N/m}\); the ampere is defined so that two such wires 1 m apart in vacuum, each carrying 1 A, exert \(2\times10^{-7}\) N per metre on each other; the force \(IlB\sin\theta\) on a straight wire in a uniform field is zero when the wire is parallel to the field
+D) Currents in the same direction attract with \(2\times10^{-5}\) N per metre
+KEY: C
+SOL:
+Answer: (C) Like currents attract; \(2\times10^{-4}\) N/m; ampere definition; no force when parallel to \(B\).
+Given: \(I_1=I_2=10\ \mathrm A,\ d=0.10\ \mathrm m\)
+Formula/Principle: \(B=\dfrac{\mu_0I}{2\pi d};\ F=IlB\sin\theta\Rightarrow\dfrac Fl=\dfrac{\mu_0I_1I_2}{2\pi d}\)
+Step 1: \(B_1\text{ at wire 2}=\dfrac{4\pi\times10^{-7}\times10}{2\pi\times0.10}=2\times10^{-5}\ \mathrm T\)
+Step 2: \(\dfrac Fl=I_2B_1=10\times2\times10^{-5}=2\times10^{-4}\ \mathrm{N/m}\)
+Step 3: \(\text{direction by }\vec F=I\vec l\times\vec B:\ \text{parallel currents attract}\)
+Worked derivation: \[\frac Fl=\frac{\mu_0I_1I_2}{2\pi d}=\frac{2\times10^{-7}\times100}{0.10}=2\times10^{-4}\ \mathrm{N/m}\]
+Check: \[1\ \mathrm A,\ 1\ \mathrm m:\ \frac{\mu_0}{2\pi}=2\times10^{-7}\ \mathrm{N/m}\ \checkmark\]
+Why: \(\text{each wire sits in the magnetic field of the other, which is perpendicular to it, so it feels a force towards or away from the other wire}\)
+Why not the others: (A) \(\text{like currents attract}\); (B) \(\text{the field circles the wire and is perpendicular to the other wire}\); (D) \(\text{that is the field, not the force per length}\).
+Key point: \(\frac Fl=\frac{\mu_0I_1I_2}{2\pi d};\ \text{like currents attract}\)
+
+@@ Q70
+format: numerical
+sub_topic: Displacement current between the plates of a charging capacitor, its equality with the conduction current, and how it scales with the rate of change of voltage
+Q: A 1.0 µF parallel-plate capacitor is being charged so that the voltage across it rises at 1000 V/s. Which statement is correct?
+A) The displacement current between the plates is zero, since no charge crosses the gap
+B) The displacement current \(i_d=\varepsilon_0\dfrac{d\Phi_E}{dt}=C\dfrac{dV}{dt}=1.0\ \mathrm{mA}\), equal to the conduction current in the connecting wires, so the current is continuous; doubling the rate of rise doubles \(i_d\); when the capacitor is fully charged (steady DC), \(i_d\) is zero
+C) \(i_d=1.0\) A
+D) \(i_d\) depends on the plate separation only, not on how fast the voltage changes
+KEY: B
+SOL:
+Answer: (B) \(i_d=1.0\) mA, equal to the conduction current.
+Given: \(C=1.0\times10^{-6}\ \mathrm F,\ \dfrac{dV}{dt}=1000\ \mathrm{V/s}\)
+Formula/Principle: \(i_d=\varepsilon_0\dfrac{d\Phi_E}{dt};\ \Phi_E=EA=\dfrac{q}{\varepsilon_0}\Rightarrow i_d=\dfrac{dq}{dt}=C\dfrac{dV}{dt}\)
+Step 1: \(i_d=1.0\times10^{-6}\times1000\)
+Step 2: \(i_d=1.0\times10^{-3}\ \mathrm A\)
+Step 3: \(\text{conduction current }i=\dfrac{dq}{dt}=i_d\)
+Worked derivation: \[E=\frac{q}{\varepsilon_0A}\Rightarrow\varepsilon_0A\frac{dE}{dt}=\frac{dq}{dt}=i\]
+Check: \[\text{units: F}\times\mathrm{V/s}=\mathrm{C/s}=\mathrm A\ \checkmark\]
+Why: \(\text{Maxwell added the displacement current so that Ampère's law gives the same magnetic field whichever surface bounded by the loop is chosen}\)
+Why not the others: (A) \(\text{a changing electric field constitutes a displacement current}\); (C) \(\text{factor }10^3\text{ error}\); (D) \(i_d\propto dV/dt\).
+Key point: \(i_d=\varepsilon_0\frac{d\Phi_E}{dt}=i_c\text{ in a charging capacitor}\)
+
+@@ Q71
+format: experiment
+sub_topic: Identifying a spherical mirror and finding its focal length from the measured size and position of an erect diminished image, using the mirror formula and magnification
+Q: An object is placed 30 cm in front of a spherical mirror; the image is erect and one-third the size of the object. Which conclusion is correct (Cartesian sign convention)?
+A) The mirror is concave with \(f=-15\) cm, since only concave mirrors form images
+B) The mirror is plane, since the image is erect
+C) The mirror is convex with \(f=+30\) cm; the image is real
+D) The mirror is convex: \(m=-\dfrac vu=+\dfrac13\) with \(u=-30\) cm gives \(v=+10\) cm (virtual image behind the mirror); \(\dfrac1f=\dfrac1v+\dfrac1u=\dfrac1{10}-\dfrac1{30}\Rightarrow f=+15\) cm, \(R=30\) cm; convex mirrors give erect diminished images at every object distance and a wide field of view, hence their use as rear-view mirrors
+KEY: D
+SOL:
+Answer: (D) Convex; \(v=+10\) cm; \(f=+15\) cm.
+Given: \(u=-30\ \mathrm{cm},\ m=+\tfrac13\)
+Formula/Principle: \(m=-\dfrac vu;\ \dfrac1f=\dfrac1v+\dfrac1u\)
+Step 1: \(\tfrac13=-\dfrac{v}{-30}\Rightarrow v=+10\ \mathrm{cm}\)
+Step 2: \(\dfrac1f=\dfrac1{10}+\dfrac1{-30}=\dfrac{3-1}{30}=\dfrac1{15}\)
+Step 3: \(f=+15\ \mathrm{cm}>0\Rightarrow\text{convex};\ R=2f=30\ \mathrm{cm}\)
+Worked derivation: \[\text{concave check: an erect image needs }|u|<|f|\text{ and is magnified, never diminished}\]
+Check: \[\frac{1}{10}-\frac{1}{30}=\frac{1}{15}\ \checkmark;\ m=-\frac{10}{-30}=\frac13\ \checkmark\]
+Why: \(\text{an erect, diminished image at any distance is the signature of a convex mirror}\)
+Why not the others: (A) \(\text{concave mirrors give magnified erect images}\); (B) \(\text{a plane mirror gives }m=1\); (C) \(\text{wrong }f\text{ and the image is virtual}\).
+Key point: \(\text{erect + diminished}\Rightarrow\text{convex};\ f>0\)
+
+@@ Q72
+format: conceptual
+sub_topic: Conclusions from the alpha-particle scattering experiment about the nucleus, the role of impact parameter, and the weaknesses of the Rutherford model
+Q: Which conclusion from Geiger and Marsden's alpha-scattering experiment and its interpretation is correct?
+A) Most α-particles passed through the gold foil undeflected, so most of the atom is empty space; only about 1 in 8000 was deflected by more than 90°, so the positive charge and nearly all the mass are concentrated in a tiny nucleus; a small impact parameter gives a large scattering angle, a head-on collision (zero impact parameter) sending the particle straight back; the Rutherford model cannot explain atomic stability, since a revolving electron should radiate and spiral in, nor the line spectra of atoms
+B) Most α-particles were reflected back, showing the atom is a solid sphere
+C) The scattering angle increases with impact parameter
+D) The experiment showed that electrons orbit only in fixed energy levels
+KEY: A
+SOL:
+Answer: (A) Atom mostly empty; tiny massive positive nucleus; small impact parameter ⇒ large deflection; model fails on stability and line spectra.
+Given: \(\text{thin gold foil, }\alpha\text{-particles of a few MeV}\)
+Formula/Principle: \(\text{Coulomb repulsion by a point nucleus; angular momentum and energy conservation along each trajectory}\)
+Step 1: \(\text{most particles undeflected}\Rightarrow\text{atom largely empty}\)
+Step 2: \(\text{rare large deflections}\Rightarrow\text{strong field from a tiny concentrated positive charge}\)
+Step 3: \(\text{deflection decreases as impact parameter increases; }b=0\Rightarrow\theta=180^\circ\)
+Worked derivation: \[\text{a uniformly spread charge (Thomson) could give only small deflections, contradicting the observed back-scattering}\]
+Check: \[\text{accelerated charges radiate (classical electrodynamics)}\Rightarrow\text{orbit decays}\Rightarrow\text{model incomplete}\]
+Why: \(\text{only a very small, very dense charge can produce fields strong enough to turn back an }\alpha\text{-particle}\)
+Why not the others: (B) \(\text{very few were reflected}\); (C) \(\text{the reverse}\); (D) \(\text{that was Bohr's postulate}\).
+Key point: \(\text{tiny massive nucleus; small }b\Rightarrow\text{large deflection}\)
+
+@@ Q73
+format: numerical
+sub_topic: Nuclear radius from R = R₀A^{1/3}, the constancy of nuclear density, and reading the potential energy curve of two nucleons to describe the nuclear force
+Q: Which statement about nuclear size and the nuclear force is correct (\(R_0=1.2\) fm)?
+A) The radius of a nucleus with \(A=216\) is twice that of one with \(A=27\) (\(R\propto A^{1/3}\)), 7.2 fm against 3.6 fm; nuclear density is therefore the same for all nuclei, about \(2.3\times10^{17}\ \mathrm{kg/m^3}\); the potential energy curve of two nucleons shows the nuclear force to be strongly attractive at separations of about 0.8–2 fm, repulsive below about 0.8 fm, negligible beyond a few femtometres, and nearly the same for n–n, n–p and p–p pairs
+B) The radius is proportional to \(A\), so the \(A=216\) nucleus is 8 times larger
+C) Nuclear density increases with mass number
+D) The nuclear force is long-range like gravity and acts only between protons
+KEY: A
+SOL:
+Answer: (A) Radii \(7.2\) and \(3.6\) fm (ratio 2); constant density; short-range, charge-independent force, repulsive below ~0.8 fm.
+Given: \(A_1=216,\ A_2=27,\ R_0=1.2\ \mathrm{fm}\)
+Formula/Principle: \(R=R_0A^{1/3};\ \rho=\dfrac{Am_u}{\tfrac43\pi R^3}=\dfrac{3m_u}{4\pi R_0^3}\)
+Step 1: \(R_1=1.2\times216^{1/3}=1.2\times6=7.2\ \mathrm{fm}\)
+Step 2: \(R_2=1.2\times27^{1/3}=1.2\times3=3.6\ \mathrm{fm}\)
+Step 3: \(\rho=\dfrac{3\times1.66\times10^{-27}}{4\pi(1.2\times10^{-15})^3}=\dfrac{4.98\times10^{-27}}{2.17\times10^{-44}}\approx2.3\times10^{17}\ \mathrm{kg/m^3}\)
+Worked derivation: \[\rho\text{ has no }A\text{ in it}\Rightarrow\text{same for all nuclei}\]
+Check: \[\frac{R_1}{R_2}=\left(\frac{216}{27}\right)^{1/3}=8^{1/3}=2\ \checkmark\]
+Why: \(\text{volume proportional to the number of nucleons means nucleons pack at constant density, like drops of liquid}\)
+Why not the others: (B) \(R\propto A^{1/3}\); (C) \(\text{density is constant}\); (D) \(\text{short range and charge independent}\).
+Key point: \(R=R_0A^{1/3};\ \rho_{\text{nuc}}\approx2.3\times10^{17}\ \mathrm{kg/m^3}\)
+
+@@ Q74
+format: experiment
+sub_topic: Expressing measured quantities from laboratory experiments in SI base units, distinguishing base and derived units, and checking with dimensions
+Q: In different experiments a student finds a spring constant (N/m), a coefficient of viscosity (Pa s), a value of Planck's constant (J s) and a surface tension (N/m). Which statement about their SI units is correct?
+A) N and Pa are SI base units; the spring constant and surface tension have different base units
+B) The SI system has 5 base units; Planck's constant is in kg m s⁻¹
+C) Viscosity has base units kg m s⁻²; spring constant kg m⁻¹
+D) There are seven SI base units (metre, kilogram, second, ampere, kelvin, mole, candela); newton, pascal and joule are derived units; in base units the spring constant and surface tension are both kg s⁻², viscosity is kg m⁻¹ s⁻¹ and Planck's constant is kg m² s⁻¹; two quantities with the same units need not be the same physical quantity
+KEY: D
+SOL:
+Answer: (D) Seven base units; spring constant and surface tension kg s⁻²; viscosity kg m⁻¹ s⁻¹; Planck's constant kg m² s⁻¹.
+Given: \(\mathrm{N=kg\,m\,s^{-2}};\ \mathrm{Pa=N\,m^{-2}};\ \mathrm{J=N\,m}\)
+Formula/Principle: \(\text{express each derived unit through base units}\)
+Step 1: \(\mathrm{N/m}=\mathrm{kg\,m\,s^{-2}}/\mathrm m=\mathrm{kg\,s^{-2}}\ (\text{spring constant and surface tension})\)
+Step 2: \(\mathrm{Pa\,s}=\mathrm{kg\,m^{-1}s^{-2}}\cdot\mathrm s=\mathrm{kg\,m^{-1}s^{-1}}\)
+Step 3: \(\mathrm{J\,s}=\mathrm{kg\,m^2s^{-2}}\cdot\mathrm s=\mathrm{kg\,m^2s^{-1}}\)
+Worked derivation: \[[k]=[\sigma]=\mathrm{MT^{-2}};\ [\eta]=\mathrm{ML^{-1}T^{-1}};\ [h]=\mathrm{ML^2T^{-1}}\]
+Check: \[h=E/\nu:\ \mathrm J/\mathrm s^{-1}=\mathrm{J\,s}\ \checkmark\]
+Why: \(\text{all mechanical units reduce to kg, m and s; units alone cannot identify a quantity}\)
+Why not the others: (A) \(\text{N and Pa are derived; both quantities are kg s}^{-2}\); (B) \(\text{seven base units; }h\text{ is kg m}^2\text{s}^{-1}\); (C) \(\text{wrong reductions}\).
+Key point: \(\text{7 SI base units; derived units reduce to them}\)
+
+@@ Q75
+format: numerical
+sub_topic: Comparing range, maximum height and time of flight of two projectiles launched at complementary angles with the same speed
+Q: Two balls are thrown from level ground at 20 m/s, one at 30° and one at 60° to the horizontal (\(g=10\ \mathrm{m/s^2}\)). Which comparison is correct?
+A) Ranges 20 m and 34.6 m; heights equal
+B) The 60° ball has the larger range and the same time of flight
+C) Both have range \(\dfrac{u^2\sin2\theta}{g}=34.6\) m; maximum heights 5.0 m and 15 m (ratio \(1:3=\tan^2 30^\circ:\tan^2 60^\circ\)); times of flight 2.0 s and 3.46 s; the maximum range, 40 m, would be at 45°
+D) Both have range 40 m and the same maximum height
+KEY: C
+SOL:
+Answer: (C) Same range \(34.6\) m; heights \(5.0\) and \(15\) m; times \(2.0\) and \(3.46\) s.
+Given: \(u=20\ \mathrm{m/s},\ \theta=30^\circ,60^\circ,\ g=10\ \mathrm{m/s^2}\)
+Formula/Principle: \(R=\dfrac{u^2\sin2\theta}{g};\ H=\dfrac{u^2\sin^2\theta}{2g};\ T=\dfrac{2u\sin\theta}{g}\)
+Step 1: \(R=\dfrac{400\times\sin60^\circ}{10}=34.6\ \mathrm m\text{ for both, since }\sin60^\circ=\sin120^\circ\)
+Step 2: \(H_{30}=\dfrac{400\times0.25}{20}=5.0\ \mathrm m;\ H_{60}=\dfrac{400\times0.75}{20}=15\ \mathrm m\)
+Step 3: \(T_{30}=\dfrac{2\times20\times0.5}{10}=2.0\ \mathrm s;\ T_{60}=\dfrac{2\times20\times0.866}{10}=3.46\ \mathrm s\)
+Worked derivation: \[R_{\max}=\frac{u^2}{g}=40\ \mathrm m\text{ at }45^\circ\]
+Check: \[R=u\cos\theta\cdot T:\ 17.3\times2.0=34.6\ \checkmark;\ 10\times3.46=34.6\ \checkmark\]
+Why: \(\text{the range depends on }\sin2\theta\text{, which is the same for }\theta\text{ and }90^\circ-\theta\text{; height and time depend on the vertical component, which differs}\)
+Why not the others: (A) \(\text{ranges are equal, heights differ}\); (B) \(\text{times differ, ranges equal}\); (D) \(40\text{ m only at }45^\circ\).
+Key point: \(\text{complementary angles: same range, different height and time}\)
+
+@@ Q76
+format: numerical
+sub_topic: Tensions in two strings supporting a hanging mass at different angles, using equilibrium of three concurrent forces and checking with Lami's theorem
+Q: A 10 kg mass hangs from two strings attached to a ceiling; one string makes 30° and the other 60° with the horizontal (\(g=9.8\ \mathrm{m/s^2}\)). What are the tensions?
+A) 49 N in each, since the weight is shared equally
+B) \(T_{30}=49\) N and \(T_{60}=49\sqrt3\approx84.9\) N; the string closer to the vertical carries more tension; Lami's theorem gives the same, since the strings are at 90° to each other
+C) \(T_{30}=84.9\) N and \(T_{60}=49\) N
+D) \(T_{30}=98\) N and \(T_{60}=98\) N
+KEY: B
+SOL:
+Answer: (B) \(T_{30}=49\) N; \(T_{60}\approx84.9\) N.
+Given: \(W=mg=98\ \mathrm N;\ \text{angles }30^\circ\text{ and }60^\circ\text{ with horizontal}\)
+Formula/Principle: \(\sum F_x=0,\ \sum F_y=0;\ \text{Lami: }\dfrac{T_1}{\sin\alpha}=\dfrac{T_2}{\sin\beta}=\dfrac{W}{\sin\gamma}\)
+Step 1: \(\text{horizontal: }T_{30}\cos30^\circ=T_{60}\cos60^\circ\Rightarrow T_{60}=\sqrt3\,T_{30}\)
+Step 2: \(\text{vertical: }T_{30}\sin30^\circ+T_{60}\sin60^\circ=98\Rightarrow\tfrac12T_{30}+\tfrac32T_{30}=98\)
+Step 3: \(2T_{30}=98\Rightarrow T_{30}=49\ \mathrm N,\ T_{60}=84.9\ \mathrm N\)
+Worked derivation: \[\text{Lami: angle between strings }90^\circ:\ T_{30}=\frac{98\sin150^\circ}{\sin90^\circ}=49,\ T_{60}=\frac{98\sin120^\circ}{\sin90^\circ}=84.9\]
+Check: \[\sqrt{49^2+84.9^2}=\sqrt{2401+7208}=98\ \checkmark\ (\text{perpendicular strings})\]
+Why: \(\text{the horizontal pulls must cancel, which forces the steeper string to carry more tension, and it also supplies more of the vertical support}\)
+Why not the others: (A) \(\text{unequal angles mean unequal tensions}\); (C) \(\text{swapped}\); (D) \(\text{vertical sum would exceed the weight}\).
+Key point: \(\text{three concurrent forces in equilibrium: resolve or use Lami's theorem}\)
+
+@@ Q77
+format: numerical
+sub_topic: Work done by the variable spring force from the area under the force–extension graph, and using the work–energy theorem to find the speed of a block released from a compressed spring
+Q: A spring of force constant 200 N/m obeys \(F=kx\). Which statement is correct?
+A) The work done in stretching it from 0.10 m to 0.30 m is \(F\Delta x=200\times0.30\times0.20=12\) J
+B) A 0.50 kg block released from 0.10 m compression on a smooth floor leaves the spring at 0.20 m/s
+C) The work done in stretching it from 0.10 m to 0.30 m is \(\displaystyle\int_{0.10}^{0.30}kx\,dx=\tfrac12k(0.30^2-0.10^2)=8.0\) J, the area of the trapezium under the \(F\)–\(x\) graph; a 0.50 kg block released from 0.10 m compression on a smooth floor gains kinetic energy \(\tfrac12kx^2=1.0\) J by the work–energy theorem, leaving at 2.0 m/s
+D) The work from 0.10 m to 0.30 m equals the work from 0 to 0.20 m, since the extension changes by 0.20 m in both
+KEY: C
+SOL:
+Answer: (C) \(W=8.0\) J; block speed \(2.0\) m/s.
+Given: \(k=200\ \mathrm{N/m};\ x:0.10\to0.30\ \mathrm m;\ m=0.50\ \mathrm{kg},\ x_0=0.10\ \mathrm m\)
+Formula/Principle: \(W=\displaystyle\int F\,dx;\ W_{\text{net}}=\Delta K\)
+Step 1: \(W=\tfrac12\times200\times(0.09-0.01)=100\times0.08=8.0\ \mathrm J\)
+Step 2: \(\text{spring work on block}=\tfrac12kx_0^2=\tfrac12\times200\times0.01=1.0\ \mathrm J\)
+Step 3: \(\tfrac12mv^2=1.0\Rightarrow v=\sqrt{\dfrac{2.0}{0.50}}=2.0\ \mathrm{m/s}\)
+Worked derivation: \[\text{trapezium area}=\frac{(20+60)}{2}\times0.20=8.0\ \mathrm J\ \checkmark\]
+Check: \[0\to0.20\ \mathrm m:\ \tfrac12\cdot200\cdot0.04=4.0\ \mathrm J\ne8.0\ \mathrm J\]
+Why: \(\text{the force grows with extension, so equal extensions further out need more work; work is the area under the force–displacement graph}\)
+Why not the others: (A) \(\text{uses the final force as if constant}\); (B) \(\text{arithmetic error}\); (D) \(\text{work depends on where the extension occurs}\).
+Key point: \(W_{\text{spring}}=\tfrac12k(x_2^2-x_1^2);\ W=\Delta K\)
+
+@@ Q78
+format: numerical
+sub_topic: Moment of inertia of a uniform rod about its centre and about an end, the parallel-axis graph of I against axis distance, and radius of gyration
+Q: A uniform rod has mass 2.0 kg and length 1.2 m. The moment of inertia about parallel axes perpendicular to the rod is plotted against the distance \(d\) of the axis from the centre. Which statement is correct?
+A) \(I\) is the same for all parallel axes, 0.24 kg m²
+B) \(I_{\text{cm}}=\dfrac{ML^2}{12}=0.24\ \mathrm{kg\,m^2}\); by the parallel-axis theorem \(I=0.24+2.0d^2\), a parabola with its minimum at \(d=0\); about an end (\(d=0.60\) m) \(I=0.96\ \mathrm{kg\,m^2}\), and the radius of gyration there is \(\sqrt{0.96/2.0}\approx0.69\) m \(=L/\sqrt3\)
+C) \(I\) increases linearly with \(d\); about an end \(I=0.48\ \mathrm{kg\,m^2}\)
+D) The minimum moment of inertia is about an end
+KEY: B
+SOL:
+Answer: (B) \(I_{\text{cm}}=0.24\); \(I=0.24+2d^2\) (parabola); \(I_{\text{end}}=0.96\ \mathrm{kg\,m^2}\); \(k=0.69\) m.
+Given: \(M=2.0\ \mathrm{kg},\ L=1.2\ \mathrm m\)
+Formula/Principle: \(I_{\text{cm}}=\dfrac{ML^2}{12};\ I=I_{\text{cm}}+Md^2;\ I=Mk^2\)
+Step 1: \(I_{\text{cm}}=\dfrac{2.0\times1.44}{12}=0.24\ \mathrm{kg\,m^2}\)
+Step 2: \(I_{\text{end}}=0.24+2.0\times0.36=0.96\ \mathrm{kg\,m^2}\)
+Step 3: \(k=\sqrt{\dfrac{0.96}{2.0}}=\sqrt{0.48}=0.693\ \mathrm m\)
+Worked derivation: \[I_{\text{end}}=\frac{ML^2}{3}=\frac{2.0\times1.44}{3}=0.96\ \checkmark;\ \frac{L}{\sqrt3}=\frac{1.2}{1.732}=0.693\ \checkmark\]
+Check: \[\text{graph: }I(d)\text{ symmetric about }d=0\text{, least at the centre of mass}\]
+Why: \(\text{moving the axis away from the centre of mass adds }Md^2\text{, since every element is on average further away}\)
+Why not the others: (A) \(\text{I depends on axis position}\); (C) \(\text{dependence is quadratic}\); (D) \(\text{minimum is about the centre}\).
+Key point: \(I=I_{\text{cm}}+Md^2;\ \text{rod: }ML^2/12,\ ML^2/3\)
+
+@@ Q79
+format: conceptual
+sub_topic: Choosing correct graphs for planetary motion and gravitation: log T against log r, speed around an elliptical orbit, and g against distance from the Earth's centre
+Q: Which description of graphs related to gravitation is correct?
+A) For the planets, a graph of \(\log T\) against \(\log r\) (semi-major axis) is a straight line of slope \(\tfrac32\), from \(T^2\propto r^3\); by the law of areas a planet moves fastest at perihelion and slowest at aphelion; inside a uniform Earth \(g\) increases linearly with distance from the centre (\(g\propto r\)), and outside it falls as \(1/r^2\), the maximum being at the surface
+B) The \(\log T\)–\(\log r\) graph has slope 2, since \(T^2\propto r^3\)
+C) A planet moves with constant speed round an elliptical orbit
+D) \(g\) is maximum at the Earth's centre
+KEY: A
+SOL:
+Answer: (A) Slope \(\frac32\); fastest at perihelion; \(g\propto r\) inside, \(\propto1/r^2\) outside.
+Given: \(T^2=Kr^3;\ \text{areal velocity constant};\ \text{uniform Earth of radius }R\)
+Formula/Principle: \(\log T=\tfrac32\log r+\tfrac12\log K;\ g_{\text{in}}=g_s\dfrac rR,\ g_{\text{out}}=g_s\dfrac{R^2}{r^2}\)
+Step 1: \(\text{straight line of slope }\tfrac32\text{ on log–log axes}\)
+Step 2: \(\dfrac{dA}{dt}=\dfrac{L}{2m}\text{ constant}\Rightarrow r_pv_p=r_av_a\Rightarrow v_p>v_a\)
+Step 3: \(\text{inside: only the mass within }r\text{ attracts, }M_r\propto r^3\Rightarrow g\propto r\)
+Worked derivation: \[g(r)=\frac{GM_r}{r^2}=\frac{G\,M\,r^3/R^3}{r^2}=\frac{GM}{R^3}\,r\]
+Check: \[\text{both expressions give }g_s\text{ at }r=R\ \checkmark\]
+Why: \(\text{a power law becomes a straight line on log–log axes; conservation of angular momentum makes the areal speed constant}\)
+Why not the others: (B) \(\text{slope is }3/2\); (C) \(\text{speed varies along an ellipse}\); (D) \(g=0\text{ at the centre}\).
+Key point: \(\log T\text{ vs }\log r:\ \text{slope }3/2;\ g\text{ peaks at the surface}\)
+
+@@ Q80
+format: experiment
+sub_topic: Finding the density of an oil with a U-tube containing water, from the balance of pressures at the level of the interface, and pressure at depth with Pascal's law
+Q: Water is poured into a U-tube and then oil into one arm. When at rest, the oil column is 12.0 cm high and the water in the other arm stands 10.0 cm above the oil–water interface. Which conclusion is correct (\(\rho_{\text{water}}=1000\ \mathrm{kg/m^3}\), \(g=9.8\ \mathrm{m/s^2}\), \(P_a=1.01\times10^5\) Pa)?
+A) \(\rho_{\text{oil}}=1200\ \mathrm{kg/m^3}\), since the oil column is taller
+B) Pressures at equal heights are equal everywhere in the tube, even across different liquids above the interface
+C) \(\rho_{\text{oil}}=833\ \mathrm{kg/m^3}\); the pressure 10 m below the surface of a lake is \(1.01\times10^5\) Pa, since atmospheric pressure is unchanged
+D) Pressures are equal at the same level within the same connected liquid, so at the interface level \(\rho_{\text{oil}}g(0.120)=\rho_{\text{water}}g(0.100)\), giving \(\rho_{\text{oil}}=833\ \mathrm{kg/m^3}\); by the same reasoning the absolute pressure 10 m below a lake's surface is \(P_a+\rho gh=1.01\times10^5+9.8\times10^4\approx1.99\times10^5\) Pa (gauge pressure \(9.8\times10^4\) Pa); by Pascal's law a pressure change applied to an enclosed liquid is transmitted undiminished to every part of it
+KEY: D
+SOL:
+Answer: (D) \(\rho_{\text{oil}}=833\ \mathrm{kg/m^3}\); \(P(10\ \mathrm m)\approx1.99\times10^5\) Pa.
+Given: \(h_{\text{oil}}=0.120\ \mathrm m,\ h_{\text{water}}=0.100\ \mathrm m\)
+Formula/Principle: \(P=P_a+\rho gh;\ \text{equal pressure at the same level in one continuous liquid}\)
+Step 1: \(\text{at the interface level: }P_a+\rho_{\text{oil}}g(0.120)=P_a+\rho_wg(0.100)\)
+Step 2: \(\rho_{\text{oil}}=1000\times\dfrac{0.100}{0.120}=833\ \mathrm{kg/m^3}\)
+Step 3: \(\text{lake: }P=1.01\times10^5+1000\times9.8\times10=1.99\times10^5\ \mathrm{Pa}\)
+Worked derivation: \[\rho_1h_1=\rho_2h_2\Rightarrow\frac{h_{\text{oil}}}{h_{\text{water}}}=\frac{\rho_w}{\rho_{\text{oil}}}=1.2\]
+Check: \[833<1000\Rightarrow\text{oil floats on water, consistent with the taller column}\ \checkmark\]
+Why: \(\text{in a fluid at rest pressure depends only on depth below the free surface within the same liquid; the lighter liquid needs a taller column to exert the same pressure}\)
+Why not the others: (A) \(\text{a taller column means a lower density}\); (B) \(\text{the rule holds only within one continuous liquid}\); (C) \(\text{pressure increases with depth}\).
+Key point: \(\rho_1h_1=\rho_2h_2\text{ in a U-tube};\ P=P_a+\rho gh\)

@@ -1,0 +1,439 @@
+@@ Q41
+format: numerical
+sub_topic: Interpreting the scalar product as work done and the projection of a force on a displacement, and splitting a force into components along and perpendicular to a direction
+Q: A force \(\vec F=2\hat i+3\hat j-\hat k\) moves a particle from \(P(1,1,1)\) to \(Q(3,2,3)\). Which statement is correct?
+A) Work \(=7\); component of \(\vec F\) along \(\vec{PQ}\) is \(\tfrac73\)
+B) Work \(=\vec F\cdot\vec{PQ}=5\); the component of \(\vec F\) along \(\vec{PQ}\) is \(\tfrac53\); the component perpendicular to \(\vec{PQ}\) has magnitude \(\tfrac{\sqrt{101}}{3}\); the angle \(\theta\) between \(\vec F\) and \(\vec{PQ}\) satisfies \(\cos\theta=\dfrac{5}{3\sqrt{14}}\)
+C) Work \(=5\); component along \(\vec{PQ}\) is \(\tfrac{5}{\sqrt{14}}\)
+D) Work \(=-5\), because one component of \(\vec F\) is negative
+KEY: B
+SOL:
+Answer: (B) \(W=5\); along \(\frac53\); perpendicular \(\frac{\sqrt{101}}{3}\); \(\cos\theta=\frac{5}{3\sqrt{14}}\).
+Given: \(\vec F=(2,3,-1),\ \vec d=\vec{PQ}=(2,1,2),\ |\vec d|=3,\ |\vec F|=\sqrt{14}\)
+Formula/Principle: \(W=\vec F\cdot\vec d;\ \text{projection of }\vec F\text{ on }\vec d=\dfrac{\vec F\cdot\vec d}{|\vec d|};\ |\vec F_\perp|^2=|\vec F|^2-(\text{projection})^2\)
+Step 1: \(W=2\cdot2+3\cdot1+(-1)\cdot2=5\)
+Step 2: \(\text{projection}=\dfrac53\)
+Step 3: \(|\vec F_\perp|=\sqrt{14-\tfrac{25}{9}}=\sqrt{\tfrac{101}{9}}=\dfrac{\sqrt{101}}{3}\)
+Worked derivation: \[\cos\theta=\frac{\vec F\cdot\vec d}{|\vec F||\vec d|}=\frac{5}{3\sqrt{14}}\approx0.445\Rightarrow\theta\approx63.6^\circ\]
+Check: \[\left(\tfrac53\right)^2+\tfrac{101}{9}=\tfrac{126}{9}=14=|\vec F|^2\ \checkmark\]
+Why: \(\text{only the part of the force along the displacement does work; the dot product picks out exactly that part times the distance}\)
+Why not the others: (A) \(\text{arithmetic error in the dot product}\); (C) \(\text{divides by }|\vec F|\text{ instead of }|\vec d|\); (D) \(\text{the total dot product is positive}\).
+Key point: \(W=\vec F\cdot\vec d;\ \text{projection}=\frac{\vec F\cdot\vec d}{|\vec d|}\)
+
+@@ Q42
+format: numerical
+sub_topic: Finding the locus of points equidistant from two points in space, and the ratio and point in which a coordinate plane divides the segment joining them
+Q: For \(A(1,2,3)\) and \(B(3,2,-1)\), which statement is correct?
+A) the locus of points equidistant from \(A\) and \(B\) is the line \(x=z\); the \(yz\)-plane divides \(AB\) internally in \(1:3\)
+B) the locus is the sphere with diameter \(AB\)
+C) the locus is the plane \(x+2z=5\); the \(yz\)-plane does not meet line \(AB\)
+D) the locus is the plane \(x-2z=0\), which passes through the midpoint \((2,2,1)\) and is perpendicular to \(AB\); the \(yz\)-plane divides \(AB\) externally in the ratio \(1:3\), at the point \((0,2,5)\)
+KEY: D
+SOL:
+Answer: (D) Plane \(x=2z\); \(yz\)-plane divides \(AB\) externally \(1:3\) at \((0,2,5)\).
+Given: \(A(1,2,3),\ B(3,2,-1)\)
+Formula/Principle: \(PA^2=PB^2;\ \text{section point }\dfrac{kB+A}{k+1}\text{ (}k<0\text{ means external)}\)
+Step 1: \((x-1)^2+(y-2)^2+(z-3)^2=(x-3)^2+(y-2)^2+(z+1)^2\)
+Step 2: \(-2x+1-6z+9=-6x+9+2z+1\Rightarrow4x-8z=0\Rightarrow x=2z\)
+Step 3: \(x\text{-coordinate }\dfrac{3k+1}{k+1}=0\Rightarrow k=-\tfrac13\Rightarrow\text{external }1:3\)
+Worked derivation: \[\text{line }AB:\ (1+2t,\ 2,\ 3-4t);\ x=0\Rightarrow t=-\tfrac12\Rightarrow(0,2,5)\]
+Check: \[\text{normal }(1,0,-2)\parallel\vec{AB}=(2,0,-4)\ \checkmark;\ \text{midpoint }(2,2,1):\ 2=2\cdot1\ \checkmark\]
+Why: \(\text{equidistance from two points defines the perpendicular bisecting plane; a negative ratio places the dividing point outside the segment}\)
+Why not the others: (A) \(\text{the locus is a plane, and the division is external}\); (B) \(\text{the sphere on diameter }AB\text{ is where }\angle APB=90^\circ\); (C) \(\text{wrong plane; the line does meet }x=0\).
+Key point: \(\text{equidistant locus}=\text{perpendicular bisector plane};\ k<0\Rightarrow\text{external division}\)
+
+@@ Q43
+format: numerical
+sub_topic: Counting elements of a Cartesian product and relations on it, and finding the domain and range of a relation defined by a parity rule
+Q: Let \(A=\{1,2\}\) and \(B=\{3,4,5\}\), and \(R=\{(a,b)\in A\times B:\ a+b\text{ is even}\}\). Which statement is correct?
+A) \(A\times B\) has 6 elements, so there are \(2^6=64\) relations from \(A\) to \(B\); \(R=\{(1,3),(1,5),(2,4)\}\), with domain \(\{1,2\}\) and range \(\{3,4,5\}\); \(A\times B\ne B\times A\) because \((1,3)\in A\times B\) but \((1,3)\notin B\times A\)
+B) \(A\times B\) has 5 elements and 32 relations; \(R\) has domain \(\{1\}\)
+C) \(A\times B=B\times A\), since both have 6 elements
+D) \(R=\{(1,4),(2,3),(2,5)\}\)
+KEY: A
+SOL:
+Answer: (A) \(|A\times B|=6\); \(64\) relations; \(R=\{(1,3),(1,5),(2,4)\}\); domain \(\{1,2\}\), range \(\{3,4,5\}\).
+Given: \(A=\{1,2\},\ B=\{3,4,5\}\)
+Formula/Principle: \(|A\times B|=|A||B|;\ \text{relations}=\text{subsets of }A\times B:\ 2^{|A||B|}\)
+Step 1: \(|A\times B|=2\times3=6\Rightarrow2^6=64\text{ relations}\)
+Step 2: \(a=1:\ b\text{ odd}\Rightarrow3,5;\ a=2:\ b\text{ even}\Rightarrow4\)
+Step 3: \(\text{domain}=\{1,2\},\ \text{range}=\{3,4,5\}\)
+Worked derivation: \[A\times B=\{(1,3),(1,4),(1,5),(2,3),(2,4),(2,5)\}\]
+Check: \[(1,3)\in B\times A\text{ would need }1\in B\ \times\]
+Why: \(\text{a relation is any subset of the Cartesian product; ordered pairs depend on order, so }A\times B\text{ and }B\times A\text{ differ}\)
+Why not the others: (B) \(\text{miscounts}\); (C) \(\text{equal size does not mean equal sets}\); (D) \(\text{these pairs have odd sums}\).
+Key point: \(|A\times B|=pq;\ \text{relations}=2^{pq}\)
+
+@@ Q44
+format: numerical
+sub_topic: Finding the parameters of a function from its given domain, and the range of a rational function
+Q: The real function \(f(x)=\sqrt{\dfrac{x-a}{b-x}}\) has domain \([2,5)\). Which statement is correct?
+A) \(a=5,\ b=2\); range of \(f\) is \([0,1]\)
+B) \(a=2,\ b=5\); range of \(f\) is \((0,\infty)\)
+C) \(a=2,\ b=5\), since \(\dfrac{x-2}{5-x}\ge0\) exactly for \(2\le x<5\) (\(x=5\) excluded as it makes the denominator zero); the range of \(f\) is \([0,\infty)\); and \(g(x)=\dfrac{1}{x^2+1}\) has range \((0,1]\)
+D) \(a=2,\ b=5\); range of \(g(x)=\dfrac{1}{x^2+1}\) is \([0,1]\)
+KEY: C
+SOL:
+Answer: (C) \(a=2,\ b=5\); range \([0,\infty)\); \(g\) has range \((0,1]\).
+Given: \(\text{domain of }f=[2,5)\)
+Formula/Principle: \(\sqrt{u}\text{ real}\Leftrightarrow u\ge0;\ \text{denominator}\ne0\)
+Step 1: \(\dfrac{x-a}{b-x}\ge0\text{ with }a<b\Leftrightarrow a\le x<b\)
+Step 2: \(\text{matching }[2,5):\ a=2,\ b=5\)
+Step 3: \(\text{as }x\to5^-,\ f\to\infty;\ f(2)=0\Rightarrow\text{range }[0,\infty)\)
+Worked derivation: \[g:\ x^2+1\ge1\Rightarrow0<\frac{1}{x^2+1}\le1,\ \text{max }1\text{ at }x=0,\ \text{never }0\]
+Check: \[x=3:\ \sqrt{1/2}\text{ real}\ \checkmark;\quad x=1:\ \sqrt{-1/4}\text{ not real}\ \checkmark\]
+Why: \(\text{the closed end comes from the numerator vanishing, the open end from the denominator vanishing}\)
+Why not the others: (A) \(\text{gives domain }(2,5]\text{ reversed}\); (B) \(f(2)=0\text{ is included}\); (D) \(g\text{ never reaches }0\).
+Key point: \(\frac{x-a}{b-x}\ge0\Leftrightarrow a\le x<b\)
+
+@@ Q45
+format: numerical
+sub_topic: Converting between radians and degrees for arcs and angular speeds, and finding the other trigonometric ratios from one ratio and the quadrant
+Q: A wheel makes 360 revolutions per minute; an arc of 22 cm lies on a circle of radius 100 cm; and \(\sin x=-\tfrac35\) with \(x\) in the third quadrant. Which set of results about angular speed, the angle subtended and the other trigonometric ratios is correct?
+A) A wheel making 360 revolutions per minute turns through \(6\pi\) rad/s; an arc of 22 cm on a circle of radius 100 cm subtends \(22^\circ\)
+B) If \(\sin x=-\tfrac35\) and \(x\) is in the third quadrant, \(\cos x=\tfrac45\) and \(\tan x=-\tfrac34\)
+C) A wheel making 360 revolutions per minute turns through \(12\pi\) rad/s; an arc of 22 cm on a circle of radius 100 cm subtends \(0.22\) rad \(\approx12^\circ36'\) (using \(\pi=\tfrac{22}{7}\)); if \(\sin x=-\tfrac35\) with \(x\) in the third quadrant, then \(\cos x=-\tfrac45\) and \(\tan x=\tfrac34\)
+D) An arc of 22 cm on radius 100 cm subtends \(\tfrac{100}{22}\) rad
+KEY: C
+SOL:
+Answer: (C) \(12\pi\) rad/s; \(0.22\) rad \(\approx12^\circ36'\); \(\cos x=-\frac45,\ \tan x=\frac34\).
+Given: \(360\ \text{rev/min};\ l=22\ \text{cm},\ r=100\ \text{cm};\ \sin x=-\tfrac35,\ \pi<x<\tfrac{3\pi}{2}\)
+Formula/Principle: \(\theta=\dfrac lr;\ 1\ \text{rev}=2\pi\ \text{rad};\ 1\ \text{rad}=\dfrac{180^\circ}{\pi}\)
+Step 1: \(360\ \text{rev/min}=6\ \text{rev/s}=12\pi\ \text{rad/s}\)
+Step 2: \(\theta=\dfrac{22}{100}=0.22\ \text{rad}=0.22\times\dfrac{180\times7}{22}=12.6^\circ=12^\circ36'\)
+Step 3: \(\cos^2x=1-\tfrac{9}{25}=\tfrac{16}{25};\ \text{third quadrant}\Rightarrow\cos x=-\tfrac45,\ \tan x=\dfrac{-3/5}{-4/5}=\tfrac34\)
+Worked derivation: \[\sin^2x+\cos^2x=\tfrac{9}{25}+\tfrac{16}{25}=1\ \checkmark\]
+Check: \[\text{third quadrant: sine and cosine negative, tangent positive}\ \checkmark\]
+Why: \(\text{the radian is defined as arc length over radius; quadrant signs fix the sign of the square root}\)
+Why not the others: (A) \(\text{forgets }2\pi\text{ per revolution and confuses radians with degrees}\); (B) \(\text{cosine is negative in the third quadrant}\); (D) \(\text{ratio inverted}\).
+Key point: \(\theta=l/r;\ \text{third quadrant: only tan positive}\)
+
+@@ Q46
+format: numerical
+sub_topic: Simplifying a quotient of complex numbers to a + ib and finding its modulus, conjugate, square and reciprocal
+Q: For \(z=\dfrac{3+4i}{1-2i}\), which set of results is correct?
+A) \(z=-1-2i\); \(|z|=5\)
+B) \(z=-1+2i\); \(|z|=\sqrt5\); \(\bar z=-1-2i\); \(z^2=-3-4i\); \(\dfrac1z=\dfrac{-1-2i}{5}\); and \(z\bar z=|z|^2=5\)
+C) \(z=\dfrac{11+2i}{5}\); \(|z|=\sqrt5\)
+D) \(z=-1+2i\); \(z^2=5\)
+KEY: B
+SOL:
+Answer: (B) \(z=-1+2i,\ |z|=\sqrt5,\ \bar z=-1-2i,\ z^2=-3-4i,\ \frac1z=\frac{-1-2i}{5}\).
+Given: \(z=\dfrac{3+4i}{1-2i}\)
+Formula/Principle: \(\text{multiply by the conjugate of the denominator};\ |z_1/z_2|=|z_1|/|z_2|;\ \dfrac1z=\dfrac{\bar z}{|z|^2}\)
+Step 1: \(z=\dfrac{(3+4i)(1+2i)}{(1-2i)(1+2i)}=\dfrac{3+6i+4i+8i^2}{1+4}=\dfrac{-5+10i}{5}=-1+2i\)
+Step 2: \(|z|=\sqrt{1+4}=\sqrt5;\ \text{check }\dfrac{|3+4i|}{|1-2i|}=\dfrac{5}{\sqrt5}=\sqrt5\)
+Step 3: \(z^2=1-4i+4i^2=-3-4i;\ \dfrac1z=\dfrac{-1-2i}{5}\)
+Worked derivation: \[z\cdot\frac1z=\frac{(-1+2i)(-1-2i)}{5}=\frac{1+4}{5}=1\ \checkmark\]
+Check: \[|z^2|=|-3-4i|=5=|z|^2\ \checkmark\]
+Why: \(\text{multiplying by the conjugate makes the denominator real, giving the standard form}\)
+Why not the others: (A) \(\text{sign and modulus errors}\); (C) \(\text{multiplied incorrectly}\); (D) \(z^2\ne z\bar z\).
+Key point: \(z\bar z=|z|^2;\ 1/z=\bar z/|z|^2\)
+
+@@ Q47
+format: numerical
+sub_topic: Counting shortest lattice paths in three dimensions as permutations of letters with repetition, including paths through a given point
+Q: A particle moves from \((0,0,0)\) to \((2,2,1)\) by unit steps in the positive \(x\), \(y\) or \(z\) direction. How many shortest paths are there, and how many pass through \((1,1,0)\)?
+A) \(5!=120\); 24
+B) \(2\cdot2\cdot1=4\); 2
+C) \(\binom{5}{2}=10\); 6
+D) \(\dfrac{5!}{2!\,2!\,1!}=30\); \(2\times6=12\)
+KEY: D
+SOL:
+Answer: (D) \(30\) paths; \(12\) through \((1,1,0)\).
+Given: \(\text{target }(2,2,1);\ \text{steps }X,Y,Z\)
+Formula/Principle: \(\text{a path is an arrangement of }XXYYZ:\ \dfrac{n!}{p!\,q!\,r!}\)
+Step 1: \(\text{total}=\dfrac{5!}{2!\,2!\,1!}=\dfrac{120}{4}=30\)
+Step 2: \((0,0,0)\to(1,1,0):\ \text{arrangements of }XY=2\)
+Step 3: \((1,1,0)\to(2,2,1):\ \text{arrangements of }XYZ=3!=6\Rightarrow2\times6=12\)
+Worked derivation: \[\text{paths through }(1,1,0)=\frac{2!}{1!1!}\cdot\frac{3!}{1!1!1!}=12\]
+Check: \[12\le30\ \checkmark;\ \text{2D analogue }(2,2):\ \tfrac{4!}{2!2!}=6\]
+Why: \(\text{each shortest path is a word made of the required numbers of each step, so counting paths is counting permutations with repetition}\)
+Why not the others: (A) \(\text{ignores repeated steps}\); (B) \(\text{multiplies coordinates}\); (C) \(\text{ignores the }z\text{ step}\).
+Key point: \(\text{paths to }(a,b,c)=\frac{(a+b+c)!}{a!\,b!\,c!}\)
+
+@@ Q48
+format: numerical
+sub_topic: Using the formulas for Σk, Σk² and Σk³, the identity Σk³ = (Σk)², and the limiting value of Σk²/n³
+Q: Which statement about special sums is correct?
+A) \(1^3+2^3+\cdots+10^3=3025=(1+2+\cdots+10)^2\); \(1^2+2^2+\cdots+10^2=385\); \(\displaystyle\lim_{n\to\infty}\frac{1^2+2^2+\cdots+n^2}{n^3}=\frac13\); and \(1+3+5+\cdots+(2n-1)=n^2\)
+B) \(\sum_{k=1}^{10}k^3=1000\); \(\sum_{k=1}^{10}k^2=100\)
+C) \(\displaystyle\lim_{n\to\infty}\frac{\sum k^2}{n^3}=\frac12\)
+D) \(\sum k^3=\left(\sum k^2\right)^2\)
+KEY: A
+SOL:
+Answer: (A) \(3025=55^2\); \(385\); limit \(\frac13\); odd sum \(n^2\).
+Given: \(n=10\text{ and general }n\)
+Formula/Principle: \(\sum k=\dfrac{n(n+1)}{2};\ \sum k^2=\dfrac{n(n+1)(2n+1)}{6};\ \sum k^3=\left[\dfrac{n(n+1)}{2}\right]^2\)
+Step 1: \(\sum_{1}^{10}k=55;\ \sum_{1}^{10}k^3=55^2=3025\)
+Step 2: \(\sum_{1}^{10}k^2=\dfrac{10\cdot11\cdot21}{6}=385\)
+Step 3: \(\dfrac{n(n+1)(2n+1)}{6n^3}=\dfrac{(1+1/n)(2+1/n)}{6}\to\dfrac{2}{6}=\dfrac13\)
+Worked derivation: \[\sum_{k=1}^{n}(2k-1)=2\cdot\frac{n(n+1)}{2}-n=n^2\]
+Check: \[n=2:\ 1+8=9=(1+2)^2\ \checkmark;\ 1+4=5=\tfrac{2\cdot3\cdot5}{6}\ \checkmark\]
+Why: \(\text{the sum of cubes equals the square of the sum, and the leading term of }\sum k^2\text{ is }n^3/3\)
+Why not the others: (B) \(\text{confuses }10^3\text{ and }10^2\text{ with the sums}\); (C) \(\text{that is }\lim\sum k/n^2\); (D) \(\text{it is }(\sum k)^2\).
+Key point: \(\sum k^3=(\sum k)^2;\ \sum k^2\sim n^3/3\)
+
+@@ Q49
+format: numerical
+sub_topic: Finding all lines through a given point whose intercepts on the axes have a given sum, using the intercept form
+Q: Which lines pass through \((3,4)\) and have intercepts on the axes whose sum is 14?
+A) \(4x+3y=24\) and \(x+y=7\)
+B) only \(x+y=7\)
+C) \(3x+4y=25\) and \(x-y=-1\)
+D) no such line exists
+KEY: A
+SOL:
+Answer: (A) \(4x+3y=24\) and \(x+y=7\).
+Given: \(\text{point }(3,4);\ a+b=14\)
+Formula/Principle: \(\dfrac xa+\dfrac yb=1\)
+Step 1: \(\dfrac3a+\dfrac{4}{14-a}=1\Rightarrow3(14-a)+4a=a(14-a)\)
+Step 2: \(42+a=14a-a^2\Rightarrow a^2-13a+42=0\Rightarrow(a-6)(a-7)=0\)
+Step 3: \(a=6,\ b=8:\ \dfrac x6+\dfrac y8=1\Rightarrow4x+3y=24;\quad a=7,\ b=7:\ x+y=7\)
+Worked derivation: \[(3,4):\ 12+12=24\ \checkmark;\quad3+4=7\ \checkmark\]
+Check: \[\text{intercept sums: }6+8=14,\ 7+7=14\ \checkmark\]
+Why: \(\text{the point condition and the sum condition give a quadratic in }a\text{, and each real root gives one line}\)
+Why not the others: (B) \(\text{misses }a=6\); (C) \(\text{intercept sums wrong}\); (D) \(\text{the quadratic has real roots}\).
+Key point: \(\text{intercept form }\frac xa+\frac yb=1\text{; two conditions fix }a,b\)
+
+@@ Q50
+format: numerical
+sub_topic: Finding the circle through three points including the origin, its centre and radius, and the tangent at the origin
+Q: What is the circle through \((0,0)\), \((4,0)\) and \((0,6)\), and which accompanying statement is correct?
+A) \(x^2+y^2-4x-6y=13\); centre \((2,3)\)
+B) \(x^2+y^2+4x+6y=0\); radius 13
+C) \(x^2+y^2-2x-3y=0\); centre \((1,1.5)\)
+D) \(x^2+y^2-4x-6y=0\), centre \((2,3)\), radius \(\sqrt{13}\); the segment joining \((4,0)\) and \((0,6)\) is a diameter since it subtends a right angle at the origin; the tangent at the origin is \(2x+3y=0\)
+KEY: D
+SOL:
+Answer: (D) \(x^2+y^2-4x-6y=0\); centre \((2,3)\); \(r=\sqrt{13}\); tangent \(2x+3y=0\).
+Given: \(\text{points }(0,0),(4,0),(0,6)\)
+Formula/Principle: \(x^2+y^2+2gx+2fy+c=0;\ \text{centre }(-g,-f),\ r=\sqrt{g^2+f^2-c}\)
+Step 1: \((0,0)\Rightarrow c=0\)
+Step 2: \((4,0)\Rightarrow16+8g=0\Rightarrow g=-2;\ (0,6)\Rightarrow36+12f=0\Rightarrow f=-3\)
+Step 3: \(\text{centre }(2,3),\ r=\sqrt{4+9}=\sqrt{13}\)
+Worked derivation: \[\text{tangent at origin}\perp\text{radius }(2,3):\ 2x+3y=0\]
+Check: \[\text{midpoint of }(4,0),(0,6)=(2,3);\ \text{half-length}=\tfrac12\sqrt{16+36}=\sqrt{13}\ \checkmark\]
+Why: \(\text{three non-collinear points fix }g,f,c\text{; the right angle at the origin makes the hypotenuse a diameter}\)
+Why not the others: (A) \(\text{does not pass through the origin}\); (B) \(\text{signs wrong}\); (C) \(\text{misses factor 2}\).
+Key point: \(\text{circle through origin: }c=0;\ \text{tangent}\perp\text{radius}\)
+
+@@ Q51
+format: numerical
+sub_topic: Finding a parabola y² = 4ax through a given point, its focus, directrix and latus rectum, and the value of c for which y = mx + c touches it
+Q: The parabola \(y^2=4ax\) passes through \((2,-4)\). Which statement is correct?
+A) \(a=-2\); focus \((-2,0)\); the line \(y=x+k\) touches it for \(k=-2\)
+B) \(a=2\): focus \((2,0)\), directrix \(x=-2\), latus rectum 8; the line \(y=x+k\) touches the parabola exactly when \(k=\dfrac am=2\), at the point \((2,4)\)
+C) \(a=8\); latus rectum 32; tangent for \(k=8\)
+D) \(a=2\); focus \((0,2)\); directrix \(y=-2\)
+KEY: B
+SOL:
+Answer: (B) \(a=2\); focus \((2,0)\); directrix \(x=-2\); LR \(8\); \(k=2\), touching at \((2,4)\).
+Given: \((2,-4)\text{ on }y^2=4ax;\ \text{line }y=x+k\)
+Formula/Principle: \(y^2=4ax:\ \text{focus }(a,0),\ \text{directrix }x=-a,\ \text{LR}=4a;\ y=mx+c\text{ tangent}\Leftrightarrow c=\dfrac am\)
+Step 1: \(16=8a\Rightarrow a=2\Rightarrow y^2=8x\)
+Step 2: \(\text{focus }(2,0),\ \text{directrix }x=-2,\ \text{LR}=8\)
+Step 3: \((x+k)^2=8x\Rightarrow x^2+(2k-8)x+k^2=0;\ \text{double root}\Leftrightarrow(2k-8)^2=4k^2\Rightarrow k=2\)
+Worked derivation: \[k=2:\ x^2-4x+4=0\Rightarrow x=2,\ y=4\]
+Check: \[(2,4):\ 16=8\cdot2\ \checkmark;\ \text{distance to focus }4=\text{distance to directrix }4\ \checkmark\]
+Why: \(\text{a line touches a conic when substitution gives a repeated root (zero discriminant)}\)
+Why not the others: (A) \(a\text{ must be positive since }16=8a\); (C) \(\text{wrong }a\); (D) \(\text{focus and directrix belong to }x^2=4ay\).
+Key point: \(y^2=4ax:\ \text{tangent }y=mx+\frac am\)
+
+@@ Q52
+format: numerical
+sub_topic: Using standard exponential and logarithmic limits to find the parameter that makes a limit take a given value
+Q: For which \(k\) is \(\displaystyle\lim_{x\to0}\frac{e^{kx}-1}{\ln(1+3x)}=2\), and what then is \(\displaystyle\lim_{x\to0}(1+x)^{k/x}\)?
+A) \(k=\tfrac23\); \(e^{2/3}\)
+B) \(k=2\); \(e^2\)
+C) \(k=6\); \(e^6\)
+D) \(k=6\); \(1\)
+KEY: C
+SOL:
+Answer: (C) \(k=6\); \(e^6\).
+Given: \(\text{limit }=2\)
+Formula/Principle: \(\displaystyle\lim_{x\to0}\frac{e^x-1}{x}=1,\ \lim_{x\to0}\frac{\ln(1+x)}{x}=1,\ \lim_{x\to0}(1+x)^{1/x}=e\)
+Step 1: \(\dfrac{e^{kx}-1}{\ln(1+3x)}=\dfrac{e^{kx}-1}{kx}\cdot\dfrac{3x}{\ln(1+3x)}\cdot\dfrac{k}{3}\to\dfrac k3\)
+Step 2: \(\dfrac k3=2\Rightarrow k=6\)
+Step 3: \((1+x)^{6/x}=\left[(1+x)^{1/x}\right]^6\to e^6\)
+Worked derivation: \[x=0.001:\ \frac{e^{0.006}-1}{\ln1.003}\approx\frac{0.006018}{0.0029955}\approx2.009\]
+Check: \[\text{series: }\frac{kx+\cdots}{3x+\cdots}\to\frac k3\ \checkmark\]
+Why: \(\text{near 0 both numerator and denominator behave linearly, so the limit is the ratio of their slopes}\)
+Why not the others: (A) \(\text{ratio inverted}\); (B) \(\text{ignores the factor 3}\); (D) \((1+x)^{6/x}\text{ is a }1^\infty\text{ form, not 1}\).
+Key point: \(\frac{e^{kx}-1}{\ln(1+mx)}\to\frac km\)
+
+@@ Q53
+format: numerical
+sub_topic: Counting outcomes and events in the sample space of two dice, mutually exclusive events, and the number of possible events of a finite sample space
+Q: Two fair dice are thrown. Which statement is correct?
+A) The sample space has 12 outcomes; "sum 7" has 7 outcomes
+B) "Sum 7" and "doubles" are not mutually exclusive
+C) The sample space has 36 outcomes; "sum is 7" has 6 outcomes and "doubles" has 6, and these two events are mutually exclusive (no double sums to 7); "at least one six" has 11 outcomes; and any sample space with 3 outcomes has \(2^3=8\) possible events (subsets)
+D) "At least one six" has 12 outcomes, since each die can show a six in 6 ways
+KEY: C
+SOL:
+Answer: (C) \(36\); sum 7: \(6\); doubles: \(6\); mutually exclusive; at least one six: \(11\); \(2^3=8\) events.
+Given: \(\text{two dice};\ S=\{(i,j):1\le i,j\le6\}\)
+Formula/Principle: \(|S|=6\times6;\ \text{complement};\ \text{events}=\text{subsets of }S\Rightarrow2^{|S|}\)
+Step 1: \(|S|=36;\ \text{sum 7}:\ (1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\Rightarrow6\)
+Step 2: \(\text{doubles }(k,k):\ 6;\ 2k=7\text{ impossible}\Rightarrow\text{disjoint}\)
+Step 3: \(\text{no six}:\ 5\times5=25\Rightarrow\text{at least one six}=36-25=11\)
+Worked derivation: \[|A\cup B|=6+6-0=12\text{ for sum 7 or doubles}\]
+Check: \[\text{direct count: 6 with first die six}+6\text{ with second}-1\text{ for }(6,6)=11\ \checkmark\]
+Why: \(\text{ordered pairs make all 36 outcomes equally likely; complements avoid double counting}\)
+Why not the others: (A) \(\text{ordered pairs give 36}\); (B) \(\text{no outcome is in both}\); (D) \((6,6)\text{ counted twice}\).
+Key point: \(|S|=36;\ \text{at least one}=\text{total}-\text{none};\ \text{events}=2^{|S|}\)
+
+@@ Q54
+format: numerical
+sub_topic: Evaluating principal values of sin⁻¹(sin x), cos⁻¹(cos x) and tan⁻¹(tan x) for angles outside the principal ranges, and the zig-zag graph of sin⁻¹(sin x)
+Q: Using principal values, what are \(\sin^{-1}\!\left(\sin\tfrac{2\pi}{3}\right)\), \(\cos^{-1}\!\left(\cos\tfrac{7\pi}{6}\right)\) and \(\tan^{-1}\!\left(\tan\tfrac{3\pi}{4}\right)\), in that order?
+A) \(\tfrac{\pi}{3},\ \tfrac{5\pi}{6},\ -\tfrac{\pi}{4}\); the graph of \(y=\sin^{-1}(\sin x)\) is a zig-zag of slope \(\pm1\), equal to \(\pi-x\) for \(\tfrac{\pi}{2}\le x\le\tfrac{3\pi}{2}\)
+B) \(\tfrac{2\pi}{3},\ \tfrac{7\pi}{6},\ \tfrac{3\pi}{4}\)
+C) \(\tfrac{\pi}{3},\ -\tfrac{5\pi}{6},\ \tfrac{\pi}{4}\)
+D) \(-\tfrac{\pi}{3},\ \tfrac{\pi}{6},\ -\tfrac{3\pi}{4}\)
+KEY: A
+SOL:
+Answer: (A) \(\frac{\pi}{3},\ \frac{5\pi}{6},\ -\frac{\pi}{4}\).
+Given: \(\text{principal ranges: }\sin^{-1}\in[-\tfrac\pi2,\tfrac\pi2],\ \cos^{-1}\in[0,\pi],\ \tan^{-1}\in(-\tfrac\pi2,\tfrac\pi2)\)
+Formula/Principle: \(\text{find the angle in the principal range with the same function value}\)
+Step 1: \(\sin\tfrac{2\pi}{3}=\sin\left(\pi-\tfrac{2\pi}{3}\right)=\sin\tfrac{\pi}{3},\ \tfrac\pi3\in\text{range}\Rightarrow\tfrac\pi3\)
+Step 2: \(\cos\tfrac{7\pi}{6}=\cos\left(2\pi-\tfrac{7\pi}{6}\right)=\cos\tfrac{5\pi}{6},\ \tfrac{5\pi}{6}\in[0,\pi]\Rightarrow\tfrac{5\pi}{6}\)
+Step 3: \(\tan\tfrac{3\pi}{4}=\tan\left(\tfrac{3\pi}{4}-\pi\right)=\tan\left(-\tfrac{\pi}{4}\right)\Rightarrow-\tfrac\pi4\)
+Worked derivation: \[\text{for }\tfrac\pi2\le x\le\tfrac{3\pi}{2}:\ \sin^{-1}(\sin x)=\pi-x;\ x=\tfrac{2\pi}{3}\Rightarrow\tfrac\pi3\ \checkmark\]
+Check: \[\cos\tfrac{5\pi}{6}=-\tfrac{\sqrt3}{2}=\cos\tfrac{7\pi}{6}\ \checkmark\]
+Why: \(\text{inverse functions return only principal values, so the angle must be moved into the principal range using symmetry or periodicity}\)
+Why not the others: (B) \(\text{outside the principal ranges}\); (C) \(\cos^{-1}\text{ is never negative; tan value sign wrong}\); (D) \(\text{signs wrong}\).
+Key point: \(\sin^{-1}(\sin x)=x\text{ only for }x\in[-\frac\pi2,\frac\pi2]\)
+
+@@ Q55
+format: numerical
+sub_topic: Finding the values of a parameter for which a 3×3 matrix is invertible, computing its adjoint and inverse, and the determinant of the adjoint
+Q: Let \(A=\begin{pmatrix}1&k&3\\1&3&3\\1&3&4\end{pmatrix}\). Which statement is correct?
+A) \(A\) is invertible for every \(k\)
+B) \(|A|=3-k\), so \(A\) is invertible iff \(k\ne3\); for \(k=2\), \(|A|=1\) and \(A^{-1}=\operatorname{adj}A=\begin{pmatrix}3&1&-3\\-1&1&0\\0&-1&1\end{pmatrix}\); in general \(A(\operatorname{adj}A)=|A|I\) and \(|\operatorname{adj}A|=|A|^2\)
+C) \(|A|=k-3\); for \(k=2\), \(A^{-1}=-\operatorname{adj}A\)
+D) \(|\operatorname{adj}A|=|A|^3\) for a \(3\times3\) matrix
+KEY: B
+SOL:
+Answer: (B) \(|A|=3-k\); invertible iff \(k\ne3\); for \(k=2\), \(A^{-1}=\operatorname{adj}A\).
+Given: \(A\text{ as stated}\)
+Formula/Principle: \(A^{-1}=\dfrac{1}{|A|}\operatorname{adj}A;\ |\operatorname{adj}A|=|A|^{n-1}\)
+Step 1: \(|A|=1(12-9)-k(4-3)+3(3-3)=3-k\)
+Step 2: \(k=2:\ \text{cofactors }C_{11}=3,C_{12}=-1,C_{13}=0;\ C_{21}=1,C_{22}=1,C_{23}=-1;\ C_{31}=-3,C_{32}=0,C_{33}=1\)
+Step 3: \(\operatorname{adj}A=\text{transpose of cofactor matrix}=\begin{pmatrix}3&1&-3\\-1&1&0\\0&-1&1\end{pmatrix}\)
+Worked derivation: \[\begin{pmatrix}1&2&3\\1&3&3\\1&3&4\end{pmatrix}\begin{pmatrix}3&1&-3\\-1&1&0\\0&-1&1\end{pmatrix}=\begin{pmatrix}1&0&0\\0&1&0\\0&0&1\end{pmatrix}\]
+Check: \[|\operatorname{adj}A|=3(1)-1(-1)+(-3)(1)=1=|A|^2\ \checkmark\]
+Why: \(\text{a square matrix has an inverse exactly when its determinant is non-zero}\)
+Why not the others: (A) \(k=3\text{ makes }|A|=0\); (C) \(\text{sign error}\); (D) \(|\operatorname{adj}A|=|A|^{n-1}=|A|^2\).
+Key point: \(A^{-1}\text{ exists}\Leftrightarrow|A|\ne0;\ |\operatorname{adj}A|=|A|^{n-1}\)
+
+@@ Q56
+format: numerical
+sub_topic: Using logarithmic differentiation on a product–quotient of powers and finding the exponent that makes the derivative vanish at a point
+Q: Let \(y=\dfrac{(x+1)^2(x+2)^3}{(x+3)^k}\). For which \(k\) is \(\dfrac{dy}{dx}=0\) at \(x=0\)?
+A) \(k=5\)
+B) \(k=\tfrac72\)
+C) \(k=6\)
+D) \(k=\tfrac{21}{2}\)
+KEY: D
+SOL:
+Answer: (D) \(k=\frac{21}{2}\).
+Given: \(y=\dfrac{(x+1)^2(x+2)^3}{(x+3)^k}\)
+Formula/Principle: \(\ln y=2\ln(x+1)+3\ln(x+2)-k\ln(x+3)\Rightarrow\dfrac{y'}{y}=\dfrac{2}{x+1}+\dfrac{3}{x+2}-\dfrac{k}{x+3}\)
+Step 1: \(\text{at }x=0:\ \dfrac{y'}{y}=2+\dfrac32-\dfrac k3\)
+Step 2: \(y(0)=\dfrac{8}{3^k}\ne0\Rightarrow y'(0)=0\Leftrightarrow2+\dfrac32-\dfrac k3=0\)
+Step 3: \(\dfrac k3=\dfrac72\Rightarrow k=\dfrac{21}{2}\)
+Worked derivation: \[k=\tfrac{21}{2}:\ \frac{y'}{y}\Big|_0=\frac{7}{2}-\frac{21}{6}=0\ \checkmark\]
+Check: \[\text{for }k=0:\ y'(0)=8\left(2+\tfrac32\right)=28\ne0\]
+Why: \(\text{taking logs turns products and powers into sums, so the derivative separates into simple terms}\)
+Why not the others: (A),(B),(C) \(\text{come from dropping the factor 3 or mis-adding }2+\tfrac32\).
+Key point: \(\text{log differentiation: }y'=y\sum\frac{n_i}{x-a_i}\)
+
+@@ Q57
+format: numerical
+sub_topic: Rates of change of the volume and surface area of a spherical balloon whose radius grows at a constant rate, and how they scale with radius
+Q: The radius of a spherical balloon increases at 0.5 cm/s. At the instant the radius is 10 cm, which statement is correct?
+A) Volume increases at \(50\pi\ \text{cm}^3/\text{s}\) and area at \(20\pi\ \text{cm}^2/\text{s}\)
+B) Volume increases at \(200\pi\ \text{cm}^3/\text{s}\) and surface area at \(40\pi\ \text{cm}^2/\text{s}\); when the radius is 20 cm the volume rate is 4 times larger, while at the start (\(r\to0\)) both rates are nearly zero even though the radius grows steadily
+C) Volume increases at \(\tfrac{2000\pi}{3}\ \text{cm}^3/\text{s}\)
+D) Both rates are constant, because \(\dfrac{dr}{dt}\) is constant
+KEY: B
+SOL:
+Answer: (B) \(\frac{dV}{dt}=200\pi\ \text{cm}^3/\text{s}\); \(\frac{dS}{dt}=40\pi\ \text{cm}^2/\text{s}\).
+Given: \(\dfrac{dr}{dt}=0.5\ \text{cm/s},\ r=10\ \text{cm}\)
+Formula/Principle: \(V=\tfrac43\pi r^3,\ S=4\pi r^2;\ \text{chain rule}\)
+Step 1: \(\dfrac{dV}{dt}=4\pi r^2\dfrac{dr}{dt}=4\pi(100)(0.5)=200\pi\)
+Step 2: \(\dfrac{dS}{dt}=8\pi r\dfrac{dr}{dt}=8\pi(10)(0.5)=40\pi\)
+Step 3: \(\dfrac{dV}{dt}\propto r^2\Rightarrow r=20\text{ gives }4\times\)
+Worked derivation: \[\frac{dV/dt}{dS/dt}=\frac{4\pi r^2}{8\pi r}=\frac r2=5\ \text{cm}\ \checkmark\]
+Check: \[\text{units: cm}^2\times\text{cm/s}=\text{cm}^3/\text{s}\ \checkmark\]
+Why: \(\text{a thin shell of thickness }dr\text{ adds volume }4\pi r^2dr\text{, so the same }dr\text{ adds more volume on a bigger balloon}\)
+Why not the others: (A) \(\text{uses }r\text{ instead of }r^2\); (C) \(\text{uses }V/r\times dr/dt\text{ instead of }4\pi r^2\,dr/dt\); (D) \(\text{rates depend on }r\).
+Key point: \(\frac{dV}{dt}=4\pi r^2\frac{dr}{dt}\)
+
+@@ Q58
+format: numerical
+sub_topic: Evaluating definite integrals with quadratic denominators by completing the square, and a square-root integral interpreted as the area of a quarter circle
+Q: Which pair of values is correct for \(I_1=\displaystyle\int_{-1}^{1}\frac{dx}{x^2+2x+5}\) and \(I_2=\displaystyle\int_0^2\sqrt{4-x^2}\,dx\)?
+A) \(I_1=\tfrac{\pi}{4}\); \(I_2=2\pi\)
+B) \(I_1=\tfrac{\pi}{2}\); \(I_2=4\)
+C) \(I_1=\ln\tfrac{8}{4}\); \(I_2=\tfrac{\pi}{2}\)
+D) \(I_1=\tfrac{\pi}{8}\), from \(\tfrac12\tan^{-1}\tfrac{x+1}{2}\); \(I_2=\pi\), the area of a quarter of the circle \(x^2+y^2=4\)
+KEY: D
+SOL:
+Answer: (D) \(I_1=\frac{\pi}{8}\); \(I_2=\pi\).
+Given: \(x^2+2x+5=(x+1)^2+4\)
+Formula/Principle: \(\displaystyle\int\frac{dx}{u^2+a^2}=\frac1a\tan^{-1}\frac ua;\ \int\sqrt{a^2-x^2}\,dx=\frac x2\sqrt{a^2-x^2}+\frac{a^2}{2}\sin^{-1}\frac xa\)
+Step 1: \(I_1=\left[\tfrac12\tan^{-1}\tfrac{x+1}{2}\right]_{-1}^{1}=\tfrac12\left(\tan^{-1}1-\tan^{-1}0\right)\)
+Step 2: \(I_1=\tfrac12\cdot\tfrac{\pi}{4}=\tfrac{\pi}{8}\)
+Step 3: \(I_2=\left[\tfrac x2\sqrt{4-x^2}+2\sin^{-1}\tfrac x2\right]_0^2=0+2\cdot\tfrac{\pi}{2}=\pi\)
+Worked derivation: \[y=\sqrt{4-x^2},\ 0\le x\le2:\ \text{quarter disc of radius 2, area }\tfrac14\pi(2)^2=\pi\ \checkmark\]
+Check: \[I_1\approx0.393;\ \text{integrand between }\tfrac18\text{ and }\tfrac14\text{ on an interval of length 2}\Rightarrow0.25<I_1<0.5\ \checkmark\]
+Why: \(\text{completing the square turns the quadratic into the standard }u^2+a^2\text{ form; the square-root integrand traces a circle}\)
+Why not the others: (A) \(\text{misses the factor }\tfrac12\text{ and doubles the area}\); (B) \(\text{wrong forms}\); (C) \(\text{the denominator has no real roots, so no logarithm}\).
+Key point: \(\int\frac{dx}{(x+b)^2+a^2}=\frac1a\tan^{-1}\frac{x+b}{a}\)
+
+@@ Q59
+format: numerical
+sub_topic: Using the Fundamental Theorem of Calculus to find where an integral-defined function increases, decreases and has extrema, and sketching its behaviour
+Q: Let \(F(x)=\displaystyle\int_0^x(t^2-4t+3)\,dt\) for \(x\ge0\). Which statement is correct?
+A) \(F'(x)=x^2-4x+3\), so \(F\) has a local maximum \(F(1)=\tfrac43\) and a local minimum \(F(3)=0\); in fact \(F(x)=\tfrac x3(x-3)^2\ge0\) for \(x\ge0\), touching zero at \(x=0\) and \(x=3\)
+B) \(F'(x)=2x-4\); minimum at \(x=2\)
+C) \(F\) has a local minimum at \(x=1\) and a maximum at \(x=3\)
+D) \(F(3)=\tfrac43\) and \(F(1)=0\)
+KEY: A
+SOL:
+Answer: (A) Local max \(\frac43\) at \(x=1\); local min \(0\) at \(x=3\); \(F(x)=\frac x3(x-3)^2\).
+Given: \(F(x)=\int_0^x(t^2-4t+3)\,dt\)
+Formula/Principle: \(\text{FTC: }F'(x)=f(x);\ \text{sign of }F'\text{ gives monotonicity}\)
+Step 1: \(F'(x)=x^2-4x+3=(x-1)(x-3)\)
+Step 2: \(F'>0\text{ on }(0,1),\ <0\text{ on }(1,3),\ >0\text{ on }(3,\infty)\Rightarrow\text{max at }1,\ \text{min at }3\)
+Step 3: \(F(x)=\tfrac{x^3}{3}-2x^2+3x\Rightarrow F(1)=\tfrac13-2+3=\tfrac43,\ F(3)=9-18+9=0\)
+Worked derivation: \[F(x)=\frac x3\left(x^2-6x+9\right)=\frac x3(x-3)^2\]
+Check: \[F''(x)=2x-4:\ F''(1)=-2<0\ (\max),\ F''(3)=2>0\ (\min)\ \checkmark\]
+Why: \(\text{the FTC turns questions about an accumulated area into questions about its integrand, whose sign shows when area is being added or removed}\)
+Why not the others: (B) \(\text{differentiates the integrand instead}\); (C) \(\text{reversed}\); (D) \(\text{values swapped}\).
+Key point: \(\frac{d}{dx}\int_a^xf(t)\,dt=f(x)\)
+
+@@ Q60
+format: numerical
+sub_topic: Determining the order and degree of several differential equations, recognising when the degree is not defined, and the number of arbitrary constants in general and particular solutions
+Q: Consider (i) \(\left(\dfrac{d^2y}{dx^2}\right)^3+\left(\dfrac{dy}{dx}\right)^4+y=0\); (ii) \(\dfrac{d^3y}{dx^3}+\sin\!\left(\dfrac{dy}{dx}\right)=0\); (iii) \(\left(\dfrac{dy}{dx}\right)^2=1+x\); (iv) \(\dfrac{d^2y}{dx^2}=\sqrt{1+\left(\dfrac{dy}{dx}\right)^2}\). Which statement is correct?
+A) All four have a defined degree; (ii) has degree 1
+B) (i) has order 3 and degree 2
+C) Degree is defined for exactly three of them: (i) order 2, degree 3; (iii) order 1, degree 2; (iv) order 2, degree 2 after squaring to make it polynomial in the derivatives; (ii) has order 3 but no defined degree, since it is not a polynomial in \(y'\); the general solution of an \(n\)th-order equation has \(n\) arbitrary constants, while a particular solution has none
+D) Degree is defined for exactly two of them, because (iv) contains a square root
+KEY: C
+SOL:
+Answer: (C) Three have a defined degree: (i) 2, 3; (iii) 1, 2; (iv) 2, 2; (ii) undefined.
+Given: \(\text{equations (i)–(iv)}\)
+Formula/Principle: \(\text{order}=\text{highest derivative};\ \text{degree}=\text{power of the highest derivative when the equation is a polynomial in derivatives}\)
+Step 1: \(\text{(i) highest }y''\text{, power 3}\Rightarrow\text{order 2, degree 3}\)
+Step 2: \(\text{(ii) }\sin(y')\text{ is not polynomial}\Rightarrow\text{degree undefined, order 3};\ \text{(iii) order 1, degree 2}\)
+Step 3: \(\text{(iv) }(y'')^2=1+(y')^2\Rightarrow\text{order 2, degree 2}\)
+Worked derivation: \[y''+y=0:\ y=A\cos x+B\sin x\ (2\text{ constants});\ y(0)=0,\ y'(0)=1\Rightarrow y=\sin x\ (\text{particular})\]
+Check: \[\text{count of defined degrees}=3\ (\text{i, iii, iv})\]
+Why: \(\text{degree needs the equation to be polynomial in the derivatives; radicals can be cleared, transcendental functions cannot}\)
+Why not the others: (A) \(\text{(ii) has no degree}\); (B) \(\text{order 2, degree 3}\); (D) \(\text{the root in (iv) can be cleared}\).
+Key point: \(\text{degree defined only for polynomial equations in derivatives}\)
