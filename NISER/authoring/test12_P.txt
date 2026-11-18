@@ -1,0 +1,439 @@
+@@ Q61
+format: numerical
+sub_topic: How the stopping distance of a car scales with speed when it includes a reaction distance (∝ u) and a braking distance (∝ u²)
+Q: A driver's reaction time is 0.50 s and the car's brakes give a constant deceleration of 5.0 m s⁻². At 15 m s⁻¹ the total stopping distance (reaction plus braking) is 30 m. What is the total stopping distance at 30 m s⁻¹?
+A) 60 m, because distance is proportional to speed
+B) 120 m, because distance is proportional to the square of speed
+C) 105 m: the reaction distance doubles (7.5 m → 15 m) while the braking distance quadruples (22.5 m → 90 m)
+D) 75 m
+KEY: C
+SOL:
+Answer: (C) 105 m.
+Given: \(t_r=0.50\ \text{s},\ a=5.0\ \text{m s}^{-2},\ u_1=15\ \text{m s}^{-1},\ u_2=30\ \text{m s}^{-1}\)
+Formula/Principle: \(d=ut_r+\dfrac{u^2}{2a}\)
+Step 1: \(u_1:\ ut_r=15\times0.50=7.5\ \text{m};\ \dfrac{u^2}{2a}=\dfrac{225}{10}=22.5\ \text{m};\ d_1=30\ \text{m}\)
+Step 2: \(u_2:\ ut_r=30\times0.50=15\ \text{m}\)
+Step 3: \(\dfrac{u_2^2}{2a}=\dfrac{900}{10}=90\ \text{m}\)
+Worked derivation: \[d_2=15+90=105\ \text{m};\quad\dfrac{d_2}{d_1}=\dfrac{105}{30}=3.5\]
+Check: \[v^2=u^2-2as:\ 0=900-2(5)(90)\ \checkmark\]
+Why: \(\text{during the reaction time the car moves at constant speed (}\propto u\text{); during braking }v^2=u^2-2as\text{ gives }s\propto u^2\)
+Why not the others: (A) \(\text{treats both parts as }\propto u\); (B) \(\text{treats both parts as }\propto u^2\); (D) \(\text{doubles only the braking part}\).
+Key point: \(\text{stopping distance}=ut_r+\tfrac{u^2}{2a}\text{: part linear, part quadratic in }u\)
+
+@@ Q62
+format: conceptual
+sub_topic: Why the outer coin on a speeding-up turntable slides first, and the mass-independent speed limit for a car on a level curve
+Q: Two identical coins rest on a horizontal turntable at 5 cm and 10 cm from the axis; the coefficient of static friction is the same for both. The turntable's angular speed is slowly increased. Which statement is correct?
+A) The coin at 10 cm slides first, because the friction needed, \(m\omega^2r\), is larger at larger \(r\) while the maximum friction \(\mu mg\) is the same, so \(\omega_{\max}=\sqrt{\mu g/r}\) is smaller there; this limit does not depend on the mass, just as the maximum safe speed of a car on a level curve, \(v_{\max}=\sqrt{\mu rg}\), does not depend on the car's mass
+B) The coin at 5 cm slides first, because points near the axis move faster
+C) Both slide together, because they have the same angular speed
+D) A heavier coin at 10 cm would stay on longer, because friction grows with mass faster than the required force
+KEY: A
+SOL:
+Answer: (A) The outer coin slides first; \(\omega_{\max}=\sqrt{\mu g/r}\), independent of mass.
+Given: \(r_1=0.05\ \text{m},\ r_2=0.10\ \text{m};\ \text{same }\mu_s\)
+Formula/Principle: \(\text{centripetal force }m\omega^2r\text{ supplied by static friction }f\le\mu_s mg\)
+Step 1: \(\text{no slipping}\iff m\omega^2r\le\mu_s mg\iff\omega\le\sqrt{\mu_s g/r}\)
+Step 2: \(\dfrac{\omega_{\max}(10\ \text{cm})}{\omega_{\max}(5\ \text{cm})}=\sqrt{\dfrac{5}{10}}=\dfrac{1}{\sqrt2}\)
+Step 3: \(\text{car on level road: }\dfrac{mv^2}{r}\le\mu_s mg\Rightarrow v_{\max}=\sqrt{\mu_s rg}\)
+Worked derivation: \[m\text{ cancels in }m\omega^2r\le\mu_s mg\text{ and in }\tfrac{mv^2}{r}\le\mu_s mg\]
+Check: \[\text{at }\omega=\sqrt{\mu_s g/0.10},\ \text{the inner coin needs only half the maximum friction}\ \checkmark\]
+Why: \(\text{the same }\omega\text{ means the outer coin needs a larger centripetal acceleration }\omega^2r\text{, but both have the same maximum acceleration }\mu_s g\)
+Why not the others: (B) \(\text{points farther from the axis move faster}\); (C) \(\text{equal }\omega\text{ does not mean equal required force}\); (D) \(\text{both the needed and the available force are proportional to }m\).
+Key point: \(\text{friction-limited circular motion: }\omega_{\max}=\sqrt{\mu g/r},\ v_{\max}=\sqrt{\mu rg}\)
+
+@@ Q63
+format: numerical
+sub_topic: Maximum compression, speed at half compression and peak force when a sliding block hits a light spring on a smooth floor
+Q: A 2.0 kg block slides at 4.0 m s⁻¹ on a smooth horizontal floor and hits a light spring of spring constant 800 N m⁻¹. What is the maximum compression, the speed of the block when the compression is 0.10 m, and the maximum force exerted by the spring?
+A) 0.10 m; 2.0 m s⁻¹; 80 N
+B) 0.20 m; about 3.5 m s⁻¹ (\(2\sqrt3\) m s⁻¹); 160 N
+C) 0.40 m; 0; 320 N
+D) 0.20 m; 2.0 m s⁻¹; 160 N
+KEY: B
+SOL:
+Answer: (B) \(x_{\max}=0.20\ \text{m}\); \(v=2\sqrt3\approx3.5\ \text{m s}^{-1}\); \(F_{\max}=160\ \text{N}\).
+Given: \(m=2.0\ \text{kg},\ v_0=4.0\ \text{m s}^{-1},\ k=800\ \text{N m}^{-1}\)
+Formula/Principle: \(\tfrac12mv_0^2=\tfrac12mv^2+\tfrac12kx^2;\ F=kx\)
+Step 1: \(\tfrac12mv_0^2=\tfrac12(2.0)(16)=16\ \text{J}\)
+Step 2: \(\tfrac12kx_{\max}^2=16\Rightarrow x_{\max}^2=\dfrac{32}{800}=0.04\Rightarrow x_{\max}=0.20\ \text{m}\)
+Step 3: \(x=0.10:\ \tfrac12kx^2=\tfrac12(800)(0.01)=4\ \text{J}\Rightarrow\tfrac12mv^2=12\ \text{J}\)
+Worked derivation: \[v^2=\dfrac{2\times12}{2.0}=12\Rightarrow v=2\sqrt3\approx3.46\ \text{m s}^{-1};\quad F_{\max}=800\times0.20=160\ \text{N}\]
+Check: \[x_{\max}=v_0\sqrt{m/k}=4\sqrt{2/800}=4\times0.05=0.20\ \text{m}\ \checkmark\]
+Why: \(\text{on a smooth floor mechanical energy is conserved; spring energy grows as }x^2\text{, so half the compression stores only a quarter of the energy}\)
+Why not the others: (A) \(\text{uses }kx=mv_0\text{-type slip}\); (C) \(\text{forgets the }\tfrac12\text{ in the spring energy}\); (D) \(\text{assumes energy is shared linearly}\).
+Key point: \(\tfrac12kx^2\text{ grows as the square of compression}\)
+
+@@ Q64
+format: numerical
+sub_topic: Ratios of descent times and final speeds of a ring, a disc and a solid sphere rolling from rest down the same incline
+Q: A ring, a uniform disc and a uniform solid sphere (different masses and radii) are released together from rest at the top of the same incline and roll without slipping. In what order do they reach the bottom, what is the ratio of the ring's time to the sphere's time, and how do the results depend on mass and radius?
+A) All arrive together, because acceleration down an incline is \(g\sin\theta\) for every body
+B) Ring first, then disc, then sphere; \(t_{\text{ring}}/t_{\text{sphere}}=\sqrt{7/10}\); heavier bodies arrive first
+C) Disc first, then sphere, then ring; \(t_{\text{ring}}/t_{\text{sphere}}=2\); larger radii arrive later
+D) Sphere first, then disc, then ring; \(t_{\text{ring}}/t_{\text{sphere}}=\sqrt{10/7}\approx1.20\); since \(a=\dfrac{g\sin\theta}{1+k^2/R^2}\), the order depends only on \(k^2/R^2\) (1, \(\tfrac12\), \(\tfrac25\)), not on mass or radius
+KEY: D
+SOL:
+Answer: (D) Sphere, disc, ring; \(t_{\text{ring}}/t_{\text{sphere}}=\sqrt{10/7}\); independent of mass and radius.
+Given: \(\tfrac{k^2}{R^2}:\ \text{ring }1,\ \text{disc }\tfrac12,\ \text{solid sphere }\tfrac25;\ \text{same incline length }s\)
+Formula/Principle: \(a=\dfrac{g\sin\theta}{1+k^2/R^2};\ s=\tfrac12at^2\Rightarrow t=\sqrt{\dfrac{2s}{a}}\propto\sqrt{1+\tfrac{k^2}{R^2}}\)
+Step 1: \(a_{\text{ring}}=\tfrac12g\sin\theta,\ a_{\text{disc}}=\tfrac23g\sin\theta,\ a_{\text{sphere}}=\tfrac57g\sin\theta\)
+Step 2: \(a_{\text{sphere}}>a_{\text{disc}}>a_{\text{ring}}\Rightarrow\text{sphere arrives first, ring last}\)
+Step 3: \(\dfrac{t_{\text{ring}}}{t_{\text{sphere}}}=\sqrt{\dfrac{a_{\text{sphere}}}{a_{\text{ring}}}}=\sqrt{\dfrac{5/7}{1/2}}\)
+Worked derivation: \[\dfrac{t_{\text{ring}}}{t_{\text{sphere}}}=\sqrt{\dfrac{10}{7}}\approx1.195;\quad v_{\text{bottom}}=\sqrt{\dfrac{2gh}{1+k^2/R^2}}\]
+Check: \[mgh=\tfrac12mv^2\left(1+\tfrac{k^2}{R^2}\right)\Rightarrow m\text{ and }R\text{ cancel}\ \checkmark\]
+Why: \(\text{a body with more of its mass far from the axis (larger }k^2/R^2\text{) puts more energy into rotation, leaving less for translation}\)
+Why not the others: (A) \(g\sin\theta\text{ applies only to frictionless sliding}\); (B) \(\text{order reversed and mass is irrelevant}\); (C) \(\text{wrong order and ratio}\).
+Key point: \(\text{rolling race decided by }k^2/R^2\text{ alone: sphere < disc < ring in time}\)
+
+@@ Q65
+format: numerical
+sub_topic: Reading the g-versus-distance graph for a uniform Earth: value at depth R/2 and the exact height with the same g
+Q: For a uniform spherical Earth of radius \(R\), the graph of \(g\) against distance \(r\) from the centre rises linearly from zero at the centre to \(g_0\) at the surface and then falls as \(1/r^2\). What is \(g\) at depth \(R/2\), and at what height above the surface is \(g\) the same?
+A) \(g_0/4\); height \(R\)
+B) \(g_0/2\); height \(R/4\), using \(g=g_0(1-2h/R)\)
+C) \(g_0/2\); height \(R/2\), because the graph is symmetric about the surface
+D) \(g_0/2\); height \((\sqrt2-1)R\approx0.41R\), from the exact formula \(g=g_0\dfrac{R^2}{(R+h)^2}\), since the small-height approximation is not valid here
+KEY: D
+SOL:
+Answer: (D) \(g_0/2\) at depth \(R/2\); the same value at height \((\sqrt2-1)R\).
+Given: \(\text{uniform Earth};\ d=R/2\)
+Formula/Principle: \(\text{inside: }g=g_0\left(1-\tfrac dR\right)=g_0\tfrac rR;\ \text{outside: }g=g_0\tfrac{R^2}{(R+h)^2}\)
+Step 1: \(g(d=R/2)=g_0\left(1-\tfrac12\right)=\tfrac{g_0}{2}\)
+Step 2: \(g_0\dfrac{R^2}{(R+h)^2}=\dfrac{g_0}{2}\Rightarrow(R+h)^2=2R^2\)
+Step 3: \(R+h=\sqrt2R\Rightarrow h=(\sqrt2-1)R\)
+Worked derivation: \[h=(1.414-1)R\approx0.414R\]
+Check: \[\text{small-}h\text{ rule }g_0(1-\tfrac{2h}{R})=\tfrac{g_0}2\Rightarrow h=\tfrac R4\text{, far from }0.41R\text{: the approximation fails for }h\sim R\]
+Why: \(\text{inside, only the mass within radius }r\text{ attracts (}g\propto r\text{); outside, the whole mass acts from the centre (}g\propto1/r^2\text{), so the graph is not symmetric}\)
+Why not the others: (A) \(g_0/4\text{ is the value at height }R\); (B) \(\text{uses the small-height formula outside its range}\); (C) \(\text{the two branches have different shapes}\).
+Key point: \(g\propto r\text{ inside, }\propto1/r^2\text{ outside; use exact formulas when }h\text{ is not small}\)
+
+@@ Q66
+format: numerical
+sub_topic: Range of a water jet from a hole in the side of a tank using Torricelli's law, and the pair of holes giving equal range
+Q: A tall tank stands on level ground with its water surface 1.0 m above the ground. A small hole is made 0.20 m below the water surface. Using Torricelli's law, what are the speed of efflux and the horizontal range of the jet on the ground? Which other hole depth gives the same range, and where should a hole be made for maximum range? (g = 9.8 m s⁻²)
+A) 1.4 m s⁻¹; 0.40 m; 0.60 m below the surface; at the bottom
+B) about 2.0 m s⁻¹; 0.80 m; 0.80 m below the surface; at 0.50 m below the surface, giving a range of 1.0 m
+C) 4.4 m s⁻¹; 1.6 m; 0.20 m above the ground; at the top
+D) about 2.0 m s⁻¹; 0.40 m; no other depth; at 0.20 m below the surface
+KEY: B
+SOL:
+Answer: (B) \(v\approx2.0\ \text{m s}^{-1}\), range 0.80 m; same range from a hole 0.80 m deep; maximum range 1.0 m at 0.50 m depth.
+Given: \(H=1.0\ \text{m (surface above ground)},\ h=0.20\ \text{m (depth of hole)},\ g=9.8\ \text{m s}^{-2}\)
+Formula/Principle: \(\text{Torricelli: }v=\sqrt{2gh};\ \text{fall height }H-h:\ t=\sqrt{\tfrac{2(H-h)}{g}};\ x=vt\)
+Step 1: \(v=\sqrt{2\times9.8\times0.20}=\sqrt{3.92}\approx1.98\ \text{m s}^{-1}\)
+Step 2: \(x=\sqrt{2gh}\sqrt{\tfrac{2(H-h)}{g}}=2\sqrt{h(H-h)}=2\sqrt{0.20\times0.80}=0.80\ \text{m}\)
+Step 3: \(x(h)=x(H-h)\Rightarrow h'=0.80\ \text{m gives the same range}\)
+Worked derivation: \[h(H-h)\text{ is largest at }h=\tfrac H2=0.50\ \text{m}\Rightarrow x_{\max}=2\sqrt{0.25}=1.0\ \text{m}=H\]
+Check: \[h'=0.80:\ v=\sqrt{15.68}\approx3.96\ \text{m s}^{-1},\ t=\sqrt{0.4/9.8}\approx0.202\ \text{s},\ x\approx0.80\ \text{m}\ \checkmark\]
+Why: \(\text{Bernoulli's equation between the open surface and the hole gives the speed of free fall through depth }h\text{; a deeper hole gives a faster jet but a shorter fall}\)
+Why not the others: (A) \(\text{uses }v=\sqrt{gh}\text{ and an incorrect pairing}\); (C) \(\text{uses the full height for the speed}\); (D) \(\text{forgets the factor 2 in }2\sqrt{h(H-h)}\).
+Key point: \(x=2\sqrt{h(H-h)}\text{: holes at depths }h\text{ and }H-h\text{ give equal range; maximum }x=H\text{ at }h=H/2\)
+
+@@ Q67
+format: numerical
+sub_topic: Comparing the final state when ice is mixed with warm water and with steam, including the case where not all the ice melts
+Q: Mixture 1: 100 g of ice at 0 °C is added to 100 g of water at 60 °C. Mixture 2: 20 g of steam at 100 °C is passed into 100 g of ice at 0 °C. Take \(c_{\text{water}}=4.2\ \text{J g}^{-1}\text{K}^{-1}\), \(L_f=336\ \text{J g}^{-1}\), \(L_v=2260\ \text{J g}^{-1}\) and ignore the container. What is the final state of each?
+A) Mixture 1: 30 °C, all liquid; Mixture 2: 100 °C, some steam left
+B) Mixture 1: 0 °C, all ice melted; Mixture 2: 60 °C
+C) Mixture 1: 0 °C with 25 g of ice left (only 75 g melts); Mixture 2: all the ice melts and the final temperature is about 40 °C
+D) Mixture 1: 0 °C with 75 g of ice left; Mixture 2: 0 °C with some ice left
+KEY: C
+SOL:
+Answer: (C) Mixture 1: 0 °C, 25 g ice left; Mixture 2: about 39.7 °C, all liquid.
+Given: \(c=4.2\ \text{J g}^{-1}\text{K}^{-1},\ L_f=336\ \text{J g}^{-1},\ L_v=2260\ \text{J g}^{-1}\)
+Formula/Principle: \(\text{heat lost}=\text{heat gained};\ Q=mL\text{ (phase change)},\ Q=mc\Delta T\)
+Step 1: \(\text{Mixture 1: heat from water cooling to }0^\circ\text{C}=100\times4.2\times60=25\,200\ \text{J};\ \text{to melt all ice}=100\times336=33\,600\ \text{J}\)
+Step 2: \(25\,200<33\,600\Rightarrow\text{melted}=\tfrac{25\,200}{336}=75\ \text{g};\ 25\ \text{g ice left at }0^\circ\text{C}\)
+Step 3: \(\text{Mixture 2: steam condensing and cooling to }0^\circ\text{C gives }20\times2260+20\times4.2\times100=45\,200+8400=53\,600\ \text{J}>33\,600\ \text{J}\Rightarrow\text{all ice melts}\)
+Worked derivation: \[45\,200+20(4.2)(100-T)=33\,600+100(4.2)T\Rightarrow53\,600-84T=33\,600+420T\Rightarrow T=\tfrac{20\,000}{504}\approx39.7^\circ\text{C}\]
+Check: \[\text{lost by steam}=45\,200+84(60.3)\approx50\,270\ \text{J};\ \text{gained by ice}=33\,600+420(39.7)\approx50\,270\ \text{J}\ \checkmark\]
+Why: \(\text{first compare the heat available with the heat needed for the phase change; only if enough is available can the temperature move away from }0^\circ\text{C}\text{. The large }L_v\text{ explains why steam burns are worse than burns from boiling water}\)
+Why not the others: (A) \(\text{ignores latent heat in mixture 1 and the energy balance in mixture 2}\); (B) \(\text{not enough heat to melt all the ice in mixture 1}\); (D) \(\text{swaps melted and remaining ice, and steam supplies more than enough heat}\).
+Key point: \(\text{check whether the phase change can be completed before writing a final-temperature equation}\)
+
+@@ Q68
+format: conceptual
+sub_topic: Using Carnot efficiency, the Kelvin–Planck and Clausius statements and refrigerator COP to judge claims about engines and refrigerators
+Q: An inventor claims an engine working between 800 K and 400 K with efficiency 60 %, and a refrigerator that keeps its inside at 250 K in a 300 K room with a coefficient of performance of 6. Which assessment is correct?
+A) Both claims are impossible: the maximum (Carnot) efficiency between 800 K and 400 K is \(1-\tfrac{400}{800}=50\%\), and the maximum COP of a refrigerator between 250 K and 300 K is \(\tfrac{250}{300-250}=5\); exceeding these limits would violate the second law (Kelvin–Planck: no engine can convert all the heat absorbed into work; Clausius: heat cannot flow from a colder to a hotter body without external work)
+B) Both claims are possible if friction is eliminated
+C) The engine claim is possible, because efficiency can reach 100 % with ideal gases
+D) The refrigerator claim is impossible because a COP greater than 1 always violates energy conservation
+KEY: A
+SOL:
+Answer: (A) Both exceed the Carnot limits (50 % and 5), so both are impossible.
+Given: \(T_1=800\ \text{K},\ T_2=400\ \text{K};\ \text{fridge: }T_c=250\ \text{K},\ T_h=300\ \text{K}\)
+Formula/Principle: \(\eta_{\max}=1-\tfrac{T_2}{T_1};\ \text{COP}_{\max}=\tfrac{T_c}{T_h-T_c}\)
+Step 1: \(\eta_{\max}=1-\tfrac{400}{800}=0.50=50\%<60\%\)
+Step 2: \(\text{COP}_{\max}=\tfrac{250}{50}=5<6\)
+Step 3: \(\text{Carnot's theorem: no engine between two temperatures is more efficient than a reversible engine}\)
+Worked derivation: \[\text{a 60\% engine driving a Carnot refrigerator could transfer net heat from cold to hot with no outside work, contradicting Clausius}\]
+Check: \[\text{COP}=\tfrac{Q_2}{W}\text{ may exceed 1 (it is not an efficiency), but it is capped by }\tfrac{T_c}{T_h-T_c}\ \checkmark\]
+Why: \(\text{the second law limits how much of the heat absorbed can become work and how cheaply heat can be pumped uphill; these limits depend only on the reservoir temperatures}\)
+Why not the others: (B) \(\text{the Carnot limit applies even to frictionless reversible machines}\); (C) \(\eta=1\text{ would need }T_2=0\ \text{K}\); (D) \(\text{COP above 1 is normal; the bound is 5 here}\).
+Key point: \(\eta\le1-\tfrac{T_2}{T_1};\ \text{COP}\le\tfrac{T_c}{T_h-T_c}\)
+
+@@ Q69
+format: numerical
+sub_topic: Scaling the period of a simple pendulum with length, bob mass, an upward-accelerating lift and the Moon's gravity
+Q: A simple pendulum has a period of 2.0 s on the Earth's surface. What is its period (i) when its length is increased by 21 %, (ii) when its bob is replaced by one of twice the mass, (iii) in a lift accelerating upwards at \(g/3\), and (iv) on the Moon, where gravity is \(g/6\)?
+A) 2.2 s; 2.0 s; about 1.7 s; about 4.9 s
+B) 2.42 s; 2.8 s; 2.0 s; 12 s
+C) 2.2 s; 1.4 s; about 2.3 s; about 0.82 s
+D) 2.1 s; 2.0 s; 2.7 s; 4.9 s
+KEY: A
+SOL:
+Answer: (A) 2.2 s, 2.0 s, \(\sqrt3\approx1.73\) s, \(2\sqrt6\approx4.9\) s.
+Given: \(T_0=2.0\ \text{s}=2\pi\sqrt{L/g}\)
+Formula/Principle: \(T=2\pi\sqrt{\dfrac{L}{g_{\text{eff}}}};\ \text{lift accelerating up: }g_{\text{eff}}=g+a\)
+Step 1: \(\text{(i) }L\to1.21L:\ T=2.0\sqrt{1.21}=2.0\times1.1=2.2\ \text{s}\)
+Step 2: \(\text{(ii) mass does not appear: }T=2.0\ \text{s}\)
+Step 3: \(\text{(iii) }g_{\text{eff}}=\tfrac43g:\ T=2.0\sqrt{\tfrac34}=\sqrt3\approx1.73\ \text{s}\)
+Worked derivation: \[\text{(iv) }g_{\text{eff}}=\tfrac g6:\ T=2.0\sqrt6\approx4.90\ \text{s}\]
+Check: \[T\propto\sqrt{L}\text{ and }T\propto\tfrac{1}{\sqrt{g_{\text{eff}}}}\text{: longer string or weaker gravity → slower swings}\ \checkmark\]
+Why: \(\text{the restoring force and the inertia are both proportional to the bob's mass, so mass cancels; only }L\text{ and the effective gravity matter}\)
+Why not the others: (B) \(\text{uses }T\propto L\text{ and }T\propto m\); (C) \(\text{uses }T\propto1/\sqrt m\text{ and inverts the lift and Moon effects}\); (D) \(\text{uses }g-a\text{ for an upward acceleration}\).
+Key point: \(T=2\pi\sqrt{L/g_{\text{eff}}}\text{, independent of mass}\)
+
+@@ Q70
+format: numerical
+sub_topic: Finding an unknown tuning-fork frequency from the beat frequency and the effect of loading the fork with wax
+Q: A tuning fork A sounded with a standard fork B of frequency 256 Hz produces 4 beats per second. When a little wax is stuck to the prongs of A, the beat frequency drops to 2 per second. What was the frequency of A, and what would happen to the beats if, instead, B were loaded with wax?
+A) 252 Hz; the beats would decrease
+B) 254 Hz; the beats would stay at 4 per second
+C) 260 Hz; loading A lowers its frequency towards 256 Hz, so beats fall; loading B instead would lower B's frequency further from 260 Hz, so the beats would increase
+D) 258 Hz; the beats would disappear
+KEY: C
+SOL:
+Answer: (C) 260 Hz; loading B instead would increase the beats.
+Given: \(\nu_B=256\ \text{Hz};\ \text{beats}=4\ \text{s}^{-1}\to2\ \text{s}^{-1}\text{ after loading A}\)
+Formula/Principle: \(\text{beat frequency}=|\nu_A-\nu_B|;\ \text{loading a fork lowers its frequency}\)
+Step 1: \(\nu_A=256\pm4=260\text{ or }252\ \text{Hz}\)
+Step 2: \(\text{if }\nu_A=252:\ \text{loading lowers it below 252, so beats would increase (not observed)}\)
+Step 3: \(\text{if }\nu_A=260:\ \text{loading lowers it to }258\Rightarrow|258-256|=2\ \text{beats}\ \checkmark\)
+Worked derivation: \[\nu_A=260\ \text{Hz};\ \text{loading B: }\nu_B<256\Rightarrow|260-\nu_B|>4\]
+Check: \[\text{the fall from 4 to 2 beats requires }\nu_A\text{ to move towards }\nu_B\text{; only }\nu_A>\nu_B\text{ allows that when A is loaded}\ \checkmark\]
+Why: \(\text{beats arise from the superposition of two slightly different frequencies; adding mass to a prong slows its vibration}\)
+Why not the others: (A) \(252\text{ Hz would give more beats after loading}\); (B) \(254\text{ Hz gives 2 beats, not 4, initially}\); (D) \(258\text{ Hz gives 2 beats initially}\).
+Key point: \(\text{beats}=|\nu_1-\nu_2|;\ \text{wax lowers frequency; the change in beats fixes the sign}\)
+
+@@ Q71
+format: numerical
+sub_topic: How the fields of a point charge, an infinite line charge and an infinite plane sheet scale when the distance is doubled
+Q: At distance \(r\), a point charge, a long straight uniformly charged wire and a large uniformly charged plane sheet each produce an electric field of magnitude \(E_0\). What field does each produce at distance \(2r\)?
+A) \(E_0/2\), \(E_0/4\), \(E_0/8\)
+B) \(E_0/4\), \(E_0/2\), \(E_0\): the point-charge field falls as \(1/r^2\), the line-charge field as \(1/r\), and the sheet field \(\sigma/2\varepsilon_0\) does not depend on distance
+C) \(E_0/4\) for all three, because all fields obey the inverse-square law
+D) \(E_0/2\) for all three, because the charge is the same
+KEY: B
+SOL:
+Answer: (B) \(E_0/4\), \(E_0/2\), \(E_0\).
+Given: \(\text{each field}=E_0\text{ at }r;\ \text{new distance }2r\)
+Formula/Principle: \(E_{\text{point}}=\dfrac{q}{4\pi\varepsilon_0r^2};\ E_{\text{line}}=\dfrac{\lambda}{2\pi\varepsilon_0r};\ E_{\text{sheet}}=\dfrac{\sigma}{2\varepsilon_0}\)
+Step 1: \(E_{\text{point}}\propto r^{-2}\Rightarrow E=\tfrac{E_0}{4}\)
+Step 2: \(E_{\text{line}}\propto r^{-1}\Rightarrow E=\tfrac{E_0}{2}\)
+Step 3: \(E_{\text{sheet}}\propto r^{0}\Rightarrow E=E_0\)
+Worked derivation: \[\text{Gauss: }E\cdot4\pi r^2=\tfrac{q}{\varepsilon_0};\ E\cdot2\pi rl=\tfrac{\lambda l}{\varepsilon_0};\ E\cdot2A=\tfrac{\sigma A}{\varepsilon_0}\]
+Check: \[\text{field lines spread over a sphere }(\propto r^2)\text{, a cylinder }(\propto r)\text{ or not at all (parallel lines from a plane)}\ \checkmark\]
+Why: \(\text{the area over which the flux spreads grows as }r^2,\ r\text{ and }r^0\text{ for the three symmetries}\)
+Why not the others: (A) \(\text{wrong powers}\); (C) \(\text{only the point charge follows the inverse square}\); (D) \(\text{distance dependence differs by geometry}\).
+Key point: \(\text{point }1/r^2,\ \text{line }1/r,\ \text{sheet constant}\)
+
+@@ Q72
+format: numerical
+sub_topic: Using mapped equipotential lines to find the field strength and direction, and the path-independent work done in moving a charge between them
+Q: In an experiment on a conducting sheet, equipotential lines of 8 V, 6 V, 4 V and 2 V are found to be straight, parallel and 2.0 cm apart. What is the electric field, how much work does the field do when a +3.0 µC charge moves from the 8 V line to the 2 V line, and how much when it moves along the 6 V line?
+A) 400 V m⁻¹ parallel to the lines; \(-1.8\times10^{-5}\) J; \(1.8\times10^{-5}\) J
+B) 100 V m⁻¹ from the 2 V line towards the 8 V line; \(6\times10^{-6}\) J; zero
+C) 1.0 V m⁻¹ perpendicular to the lines; \(1.8\times10^{-5}\) J only along a straight path; zero
+D) 100 V m⁻¹, perpendicular to the lines and pointing from 8 V towards 2 V; \(+1.8\times10^{-5}\) J by the field (the potential energy falls by this amount) along any path; zero along the 6 V line
+KEY: D
+SOL:
+Answer: (D) \(E=100\ \text{V m}^{-1}\) from high to low potential; \(W=1.8\times10^{-5}\ \text{J}\) on any path; zero along an equipotential.
+Given: \(\Delta V=2\ \text{V per }0.020\ \text{m};\ q=3.0\times10^{-6}\ \text{C};\ V_A=8\ \text{V},\ V_B=2\ \text{V}\)
+Formula/Principle: \(E=-\dfrac{dV}{dr}\Rightarrow|E|=\dfrac{\Delta V}{\Delta r};\ W_{\text{field}}=q(V_A-V_B)\)
+Step 1: \(|E|=\dfrac{2}{0.020}=100\ \text{V m}^{-1}\)
+Step 2: \(\text{direction: perpendicular to equipotentials, towards decreasing }V\ (8\ \text{V}\to2\ \text{V})\)
+Step 3: \(W_{\text{field}}=3.0\times10^{-6}\times(8-2)=1.8\times10^{-5}\ \text{J}\)
+Worked derivation: \[\Delta U=-W_{\text{field}}=-1.8\times10^{-5}\ \text{J};\ \text{along the 6 V line }\Delta V=0\Rightarrow W=0\]
+Check: \[E\times d=100\times0.060=6\ \text{V}=8-2\ \checkmark\]
+Why: \(\text{the electrostatic force is conservative, so work depends only on the end potentials; no work is done along an equipotential because the field is perpendicular to it}\)
+Why not the others: (A) \(\text{field is perpendicular to equipotentials, and sign errors}\); (B) \(\text{direction reversed and }\Delta V\text{ taken as 2 V}\); (C) \(\text{unit slip (cm) and wrongly path-dependent}\).
+Key point: \(E=\Delta V/\Delta r\perp\text{equipotentials, from high to low }V;\ W=q\Delta V\text{ (path-independent)}\)
+
+@@ Q73
+format: numerical
+sub_topic: Reading a galvanometer-current versus applied-voltage line to find the series resistance of a voltmeter, and the shunt for an ammeter
+Q: A galvanometer of resistance 50 Ω gives full-scale deflection at 2.0 mA. After it is converted into a voltmeter, a graph of galvanometer current against applied voltage is a straight line through the origin reaching 2.0 mA at 10 V. What series resistance was used, and what shunt would convert the same galvanometer into an ammeter of range 0–1.0 A?
+A) 5000 Ω in parallel; 50 Ω in series
+B) 4950 Ω in parallel; 0.10 Ω in series
+C) 5050 Ω in series; 10 Ω shunt
+D) 4950 Ω in series (total 5000 Ω, the reciprocal of the slope \(2.0\times10^{-4}\ \text{A V}^{-1}\)); a shunt of about 0.10 Ω in parallel
+KEY: D
+SOL:
+Answer: (D) Series 4950 Ω; shunt ≈ 0.10 Ω.
+Given: \(G=50\ \Omega,\ I_g=2.0\times10^{-3}\ \text{A};\ \text{slope}=\tfrac{2.0\times10^{-3}}{10}=2.0\times10^{-4}\ \text{A V}^{-1};\ I=1.0\ \text{A}\)
+Formula/Principle: \(\text{voltmeter: }I_g=\dfrac{V}{G+R};\ \text{ammeter: }I_gG=(I-I_g)S\)
+Step 1: \(G+R=\dfrac{1}{\text{slope}}=\dfrac{10}{2.0\times10^{-3}}=5000\ \Omega\)
+Step 2: \(R=5000-50=4950\ \Omega\text{ (in series)}\)
+Step 3: \(S=\dfrac{I_gG}{I-I_g}=\dfrac{2.0\times10^{-3}\times50}{0.998}\)
+Worked derivation: \[S=\dfrac{0.10}{0.998}\approx0.1002\ \Omega\approx0.10\ \Omega\text{ (in parallel)}\]
+Check: \[\text{voltmeter resistance }5000\ \Omega\gg\text{ammeter resistance }\approx0.10\ \Omega\ \checkmark\]
+Why: \(\text{a high series resistance limits the current for a given voltage (voltmeter); a low shunt carries most of the current around the galvanometer (ammeter)}\)
+Why not the others: (A) \(\text{connections swapped}\); (B) \(\text{connections swapped}\); (C) \(\text{adds }G\text{ instead of subtracting, and the shunt is far too large}\).
+Key point: \(R=\tfrac{V}{I_g}-G\text{ in series};\ S=\tfrac{I_gG}{I-I_g}\text{ in parallel}\)
+
+@@ Q74
+format: numerical
+sub_topic: Motional emf across the wings of an aircraft in the Earth's vertical field and across a rod rotating about one end
+Q: (i) An aircraft of wing span 30 m flies horizontally at 250 m s⁻¹ where the vertical component of the Earth's magnetic field is \(4.0\times10^{-5}\) T. (ii) A metal rod of length 0.50 m rotates at 120 rad s⁻¹ about one end, in a plane perpendicular to a uniform field of 0.40 T. What emf is induced in each case?
+A) 0.003 V; 12 V
+B) 3.0 V; 24 V
+C) 0.30 V; 6.0 V
+D) 0.30 V; 12 V
+KEY: C
+SOL:
+Answer: (C) 0.30 V and 6.0 V.
+Given: \(\text{(i) }l=30\ \text{m},\ v=250\ \text{m s}^{-1},\ B_V=4.0\times10^{-5}\ \text{T};\ \text{(ii) }l=0.50\ \text{m},\ \omega=120\ \text{rad s}^{-1},\ B=0.40\ \text{T}\)
+Formula/Principle: \(\varepsilon=Blv;\ \text{rotating rod: }\varepsilon=\int_0^l B\omega r\,dr=\tfrac12B\omega l^2\)
+Step 1: \(\varepsilon_1=4.0\times10^{-5}\times30\times250\)
+Step 2: \(\varepsilon_1=0.30\ \text{V}\)
+Step 3: \(\varepsilon_2=\tfrac12\times0.40\times120\times(0.50)^2\)
+Worked derivation: \[\varepsilon_2=0.5\times0.40\times120\times0.25=6.0\ \text{V}\]
+Check: \[\text{rod: average speed of the rod}=\tfrac12\omega l=30\ \text{m s}^{-1};\ \varepsilon=Bl\bar v=0.40\times0.50\times30=6.0\ \text{V}\ \checkmark\]
+Why: \(\text{only the field component perpendicular to both the conductor and its velocity matters: for a horizontal wing moving horizontally, that is the vertical component; along a rotating rod, the speed grows linearly from the pivot}\)
+Why not the others: (A) \(\text{power-of-ten slip and drops the }\tfrac12\); (B) \(\text{factor-of-10 slip and uses }B\omega l^2\); (D) \(\text{drops the }\tfrac12\text{ for the rotating rod}\).
+Key point: \(\varepsilon=Blv\text{ for translation};\ \varepsilon=\tfrac12B\omega l^2\text{ for rotation about one end}\)
+
+@@ Q75
+format: numerical
+sub_topic: Scaling of generator emf with rotation speed, and how stepping up the transmission voltage tenfold reduces line current and I²R loss
+Q: (i) An AC generator's coil is made to rotate twice as fast. (ii) A power station sends 100 kW through lines of total resistance 4.0 Ω, first at 2.0 kV and then, using an ideal step-up transformer, at 20 kV. What happens to the generator's peak emf and frequency, and what are the line losses in the two cases?
+A) Peak emf and frequency both double (\(\varepsilon_0=NBA\omega\)); line current falls from 50 A to 5.0 A, so the loss falls from 10 kW to 100 W, a factor of 100
+B) Peak emf doubles but frequency is unchanged; losses fall from 10 kW to 1 kW
+C) Peak emf is unchanged but frequency doubles; losses are the same because the power is the same
+D) Peak emf quadruples; losses rise from 100 W to 10 kW because the voltage is higher
+KEY: A
+SOL:
+Answer: (A) Peak emf and frequency double; losses 10 kW → 100 W.
+Given: \(\omega\to2\omega;\ P=1.0\times10^5\ \text{W},\ R=4.0\ \Omega,\ V_1=2.0\times10^3\ \text{V},\ V_2=2.0\times10^4\ \text{V}\)
+Formula/Principle: \(\varepsilon=NBA\omega\sin\omega t\Rightarrow\varepsilon_0=NBA\omega,\ \nu=\tfrac{\omega}{2\pi};\ I=\tfrac PV;\ P_{\text{loss}}=I^2R\)
+Step 1: \(\omega\to2\omega\Rightarrow\varepsilon_0\to2\varepsilon_0,\ \nu\to2\nu\)
+Step 2: \(I_1=\dfrac{10^5}{2000}=50\ \text{A};\ P_1=50^2\times4.0=10\,000\ \text{W}\)
+Step 3: \(I_2=\dfrac{10^5}{20\,000}=5.0\ \text{A};\ P_2=25\times4.0=100\ \text{W}\)
+Worked derivation: \[\dfrac{P_1}{P_2}=\left(\dfrac{V_2}{V_1}\right)^2=100\]
+Check: \[\text{ideal transformer: }V_pI_p=V_sI_s\Rightarrow\text{10 times the voltage means }\tfrac1{10}\text{ the current}\ \checkmark\]
+Why: \(\text{faster rotation changes the flux faster (larger emf) and completes more cycles per second; for fixed power, a higher voltage needs a smaller current, and the loss depends on }I^2\)
+Why not the others: (B) \(\text{frequency doubles, and the loss scales as }I^2\); (C) \(\varepsilon_0\propto\omega\text{, and the loss depends on current}\); (D) \(\varepsilon_0\propto\omega\text{, not }\omega^2\text{, and losses fall}\).
+Key point: \(\varepsilon_0=NBA\omega;\ P_{\text{loss}}=(P/V)^2R\)
+
+@@ Q76
+format: numerical
+sub_topic: Radius of the bright circle through which light from a submerged point source escapes, using the critical angle for water
+Q: A small bulb is placed 2.0 m below the surface of a still pond (refractive index of water \(\tfrac43\)). Light leaves the surface only through a circular patch directly above the bulb. What is the critical angle, the radius of the patch, and what happens to rays striking the surface outside it?
+A) \(\sin C=\tfrac43\); 2.0 m; they refract into air at grazing angles
+B) \(\sin C=\tfrac34\) (\(C\approx48.6^\circ\)); radius \(\dfrac{h}{\sqrt{n^2-1}}=\dfrac{6}{\sqrt7}\approx2.3\) m; rays outside the patch meet the surface at more than the critical angle and are totally internally reflected back into the water
+C) \(\sin C=\tfrac34\); 1.5 m; they are absorbed by the surface
+D) \(\sin C=\tfrac12\); 3.5 m; they pass straight through
+KEY: B
+SOL:
+Answer: (B) \(\sin C=\tfrac34\); \(r=\tfrac{6}{\sqrt7}\approx2.27\ \text{m}\); outside rays undergo total internal reflection.
+Given: \(n=\tfrac43,\ h=2.0\ \text{m}\)
+Formula/Principle: \(\sin C=\tfrac1n;\ r=h\tan C\)
+Step 1: \(\sin C=\tfrac34\Rightarrow C\approx48.6^\circ\)
+Step 2: \(\cos C=\sqrt{1-\tfrac9{16}}=\tfrac{\sqrt7}{4}\Rightarrow\tan C=\tfrac{3}{\sqrt7}\)
+Step 3: \(r=2.0\times\tfrac{3}{\sqrt7}=\tfrac{6}{\sqrt7}\)
+Worked derivation: \[r=\dfrac{h}{\sqrt{n^2-1}}=\dfrac{2.0}{\sqrt{16/9-1}}=\dfrac{2.0}{\sqrt7/3}\approx2.27\ \text{m}\]
+Check: \[\text{at the rim, angle of incidence }=C\Rightarrow\text{refracted ray grazes the surface }(n\sin C=1)\ \checkmark\]
+Why: \(\text{going from denser to rarer medium, rays incident beyond the critical angle cannot refract out; the boundary of the escape cone is set by }C\)
+Why not the others: (A) \(\sin C\text{ cannot exceed 1}\); (C) \(\text{uses }r=h\sin C\text{-type slip, and the light is reflected, not absorbed}\); (D) \(\text{wrong critical angle}\).
+Key point: \(\sin C=1/n;\ \text{escape-circle radius }h/\sqrt{n^2-1}\)
+
+@@ Q77
+format: numerical
+sub_topic: Comparing the intensity pattern from two slits lit by one laser (coherent) with that from two independent lamps (incoherent)
+Q: Two identical narrow slits, each giving intensity \(I_0\) on a screen alone, are lit (a) by a single laser beam that covers both slits, and (b) by two separate identical lamps, one behind each slit. Which comparison is correct?
+A) Both give bright and dark fringes, with maxima of \(4I_0\)
+B) (a) gives a stable fringe pattern with \(I=4I_0\cos^2(\phi/2)\), so maxima are \(4I_0\) and minima zero; (b) gives a uniform intensity \(2I_0\), because the phase difference between independent sources changes rapidly and randomly and the \(\cos\phi\) term averages to zero; the average intensity is \(2I_0\) in both cases, so energy is only redistributed in (a)
+C) (a) gives a uniform intensity \(4I_0\) everywhere; (b) gives fringes
+D) Neither gives fringes, because the two slits are separate sources
+KEY: B
+SOL:
+Answer: (B) Coherent: fringes between \(4I_0\) and 0; incoherent: uniform \(2I_0\); average \(2I_0\) in both.
+Given: \(I_1=I_2=I_0;\ \text{phase difference }\phi\text{ at a point}\)
+Formula/Principle: \(I=I_1+I_2+2\sqrt{I_1I_2}\cos\phi\)
+Step 1: \(\text{(a) }\phi\text{ fixed at each point: }I=2I_0(1+\cos\phi)=4I_0\cos^2(\phi/2)\)
+Step 2: \(I_{\max}=4I_0\ (\phi=2n\pi),\ I_{\min}=0\ (\phi=(2n+1)\pi)\)
+Step 3: \(\text{(b) }\phi\text{ varies randomly in time: }\langle\cos\phi\rangle=0\Rightarrow I=2I_0\)
+Worked derivation: \[\text{average over a fringe in (a): }\langle4I_0\cos^2(\phi/2)\rangle=4I_0\times\tfrac12=2I_0\]
+Check: \[\text{total energy is the same in (a) and (b); interference only redistributes it}\ \checkmark\]
+Why: \(\text{interference needs a constant phase difference; one laser feeding both slits supplies it, while two independent lamps emit with phases that change in a random way}\)
+Why not the others: (A) \(\text{incoherent sources give no stable fringes}\); (C) \(\text{the cases are reversed}\); (D) \(\text{slits lit by one coherent source behave as coherent sources}\).
+Key point: \(\text{coherent: }I=4I_0\cos^2(\phi/2);\ \text{incoherent: }I=2I_0\)
+
+@@ Q78
+format: numerical
+sub_topic: Comparing maximum kinetic energy, stopping potential and photocurrent for photons of different energy and for a change of intensity
+Q: A metal has work function 2.0 eV. It is lit in turn by (a) photons of energy 3.0 eV, (b) photons of energy 4.0 eV, (c) the 3.0 eV light at double the intensity, and (d) very intense light of photon energy 1.8 eV. Which comparison is correct? (hc = 1240 eV nm)
+A) \(K_{\max}\) is 1.5 eV in (a) and 3.0 eV in (b); (c) doubles \(K_{\max}\); (d) emits slowly after a delay
+B) Stopping potentials are 3.0 V and 4.0 V; (c) halves the stopping potential; (d) emits a few electrons
+C) \(K_{\max}\) is the same in (a) and (b), because the metal is the same; (d) emits because the intensity is high
+D) \(K_{\max}=1.0\) eV in (a) and 2.0 eV in (b), with stopping potentials 1.0 V and 2.0 V; (c) doubles the saturation photocurrent but leaves \(K_{\max}\) and the stopping potential unchanged; (d) gives no emission at all, since 1.8 eV is below the work function (threshold wavelength 620 nm)
+KEY: D
+SOL:
+Answer: (D) \(K_{\max}\) 1.0 and 2.0 eV; intensity changes only the current; no emission below threshold.
+Given: \(\phi_0=2.0\ \text{eV};\ h\nu=3.0,\ 4.0,\ 1.8\ \text{eV}\)
+Formula/Principle: \(K_{\max}=h\nu-\phi_0=eV_0;\ \lambda_0=\tfrac{hc}{\phi_0}\)
+Step 1: \(\text{(a) }K_{\max}=3.0-2.0=1.0\ \text{eV}\Rightarrow V_0=1.0\ \text{V}\)
+Step 2: \(\text{(b) }K_{\max}=4.0-2.0=2.0\ \text{eV}\Rightarrow V_0=2.0\ \text{V}\)
+Step 3: \(\text{(c) twice the photons per second}\Rightarrow\text{twice the saturation current; }K_{\max}=1.0\ \text{eV}\)
+Worked derivation: \[\text{(d) }h\nu=1.8<2.0\ \text{eV}\Rightarrow\text{no emission};\ \lambda_0=\tfrac{1240}{2.0}=620\ \text{nm}\]
+Check: \[V_0\text{ against }\nu\text{ is a straight line of slope }h/e\text{; doubling intensity does not move it}\ \checkmark\]
+Why: \(\text{each electron absorbs one photon; the photon energy sets the maximum kinetic energy, and intensity sets only how many photons arrive per second; emission is instantaneous above threshold}\)
+Why not the others: (A) \(\text{wrong subtraction; intensity does not raise }K_{\max}\text{, and there is no delay}\); (B) \(\text{forgets the work function}\); (C) \(K_{\max}\text{ depends on frequency; below threshold intensity cannot cause emission}\).
+Key point: \(eV_0=h\nu-\phi_0;\ \text{intensity}\to\text{current only}\)
+
+@@ Q79
+format: conceptual
+sub_topic: Formation of the depletion layer and barrier potential, and how forward and reverse bias change the barrier and the current
+Q: Which description of a p-n junction diode is correct?
+A) When the junction forms, holes diffuse from p to n and electrons from n to p, leaving immobile ions near the junction that form a depletion layer and set up a barrier potential opposing further diffusion; forward bias lowers the barrier and narrows the depletion layer, so a large current of majority carriers flows, while reverse bias raises the barrier and widens the layer, leaving only a small current of minority carriers that is nearly independent of voltage until breakdown
+B) The depletion layer contains a large number of free electrons and holes, which carry the current in reverse bias
+C) Forward bias widens the depletion layer, and the current falls as the voltage increases
+D) The reverse current is carried by majority carriers and increases in proportion to the reverse voltage
+KEY: A
+SOL:
+Answer: (A) Diffusion builds a depletion layer and barrier; forward bias lowers it (large majority current), reverse bias raises it (small minority current).
+Given: \(\text{p-type: majority holes};\ \text{n-type: majority electrons}\)
+Formula/Principle: \(\text{diffusion current (majority) vs drift current (minority); equilibrium when they balance}\)
+Step 1: \(\text{diffusion leaves uncovered acceptor ions }(-)\text{ on the p side and donor ions }(+)\text{ on the n side}\)
+Step 2: \(\text{the field from n to p sets up a barrier potential }V_0\text{ that opposes further diffusion}\)
+Step 3: \(\text{forward bias }V:\ \text{barrier}\to V_0-V\text{, layer narrows};\ \text{reverse bias: barrier}\to V_0+V\text{, layer widens}\)
+Worked derivation: \[I_{\text{forward}}\text{ rises steeply once }V\text{ exceeds the threshold (about 0.7 V for Si)};\ I_{\text{reverse}}\sim\mu\text{A, until breakdown}\]
+Check: \[\text{reverse current depends on the number of minority carriers (temperature), not on voltage}\ \checkmark\]
+Why: \(\text{the depletion layer has no mobile charges; lowering the barrier lets majority carriers cross freely, while raising it lets only the few minority carriers drift across}\)
+Why not the others: (B) \(\text{the depletion layer is depleted of mobile carriers}\); (C) \(\text{forward bias narrows the layer and the current rises}\); (D) \(\text{reverse current is due to minority carriers and is almost constant}\).
+Key point: \(\text{forward: lower barrier, large majority current; reverse: higher barrier, tiny minority current}\)
+
+@@ Q80
+format: numerical
+sub_topic: Converting the gravitational constant from SI to CGS units by scaling each base unit, and the size of the erg
+Q: The gravitational constant is \(G=6.67\times10^{-11}\ \text{N m}^2\,\text{kg}^{-2}\). What is its value in CGS units (dyn cm² g⁻²), and how many ergs make one joule?
+A) \(6.67\times10^{-14}\); \(10^{-7}\)
+B) \(6.67\times10^{-11}\); \(10^{5}\)
+C) \(6.67\times10^{-8}\); \(10^{7}\)
+D) \(6.67\times10^{-5}\); \(10^{3}\)
+KEY: C
+SOL:
+Answer: (C) \(6.67\times10^{-8}\ \text{dyn cm}^2\,\text{g}^{-2}\); \(1\ \text{J}=10^7\ \text{erg}\).
+Given: \(G=6.67\times10^{-11}\ \text{N m}^2\,\text{kg}^{-2}\)
+Formula/Principle: \(1\ \text{N}=10^5\ \text{dyn},\ 1\ \text{m}=10^2\ \text{cm},\ 1\ \text{kg}=10^3\ \text{g};\ [G]=\text{M}^{-1}\text{L}^3\text{T}^{-2}\)
+Step 1: \(1\ \text{m}^2=10^4\ \text{cm}^2;\ 1\ \text{kg}^{-2}=10^{-6}\ \text{g}^{-2}\)
+Step 2: \(G=6.67\times10^{-11}\times10^5\times10^4\times10^{-6}\)
+Step 3: \(G=6.67\times10^{-11+3}=6.67\times10^{-8}\ \text{dyn cm}^2\,\text{g}^{-2}\)
+Worked derivation: \[\text{dimensional check: }n_2=n_1\left(\tfrac{M_1}{M_2}\right)^{-1}\left(\tfrac{L_1}{L_2}\right)^{3}\left(\tfrac{T_1}{T_2}\right)^{-2}=6.67\times10^{-11}\times(10^3)^{-1}\times(10^2)^3=6.67\times10^{-8}\]
+Check: \[1\ \text{J}=1\ \text{N}\times1\ \text{m}=10^5\ \text{dyn}\times10^2\ \text{cm}=10^7\ \text{erg}\ \checkmark\]
+Why: \(\text{a physical quantity is the same in any system; its numerical value scales inversely with the size of the unit}\)
+Why not the others: (A) \(\text{uses the wrong exponent for length, and inverts the erg}\); (B) \(\text{no conversion}\); (D) \(\text{wrong power of length and energy}\).
+Key point: \(n_1u_1=n_2u_2;\ \text{convert each base unit with its dimensional power}\)

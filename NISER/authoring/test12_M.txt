@@ -1,0 +1,440 @@
+@@ Q41
+format: conceptual
+sub_topic: Deciding strict monotonicity when the derivative vanishes only at isolated points, for x³, x + sin x, x + cos x and eˣ − x
+Q: How many of the functions \(f_1(x)=x^3\), \(f_2(x)=x+\sin x\), \(f_3(x)=x+\cos x\) and \(f_4(x)=e^x-x\) are strictly increasing on the whole real line?
+A) 1, only \(f_1\), because the derivatives of the others vanish somewhere
+B) 3: \(f_1, f_2, f_3\); each has \(f'(x)\ge0\) with equality only at isolated points, which does not stop it being strictly increasing, while \(f_4\) decreases on \((-\infty,0)\)
+C) 4, because every function whose derivative is ever positive is increasing everywhere
+D) 2: \(f_1\) and \(f_4\), because \(f_2\) and \(f_3\) oscillate
+KEY: B
+SOL:
+Answer: (B) Three functions: \(x^3,\ x+\sin x,\ x+\cos x\).
+Given: \(f_1=x^3,\ f_2=x+\sin x,\ f_3=x+\cos x,\ f_4=e^x-x\)
+Formula/Principle: \(f'(x)\ge0\text{ on an interval, with }f'=0\text{ only at isolated points}\Rightarrow f\text{ strictly increasing there}\)
+Step 1: \(f_1'(x)=3x^2\ge0;\ f_1'=0\text{ only at }x=0\)
+Step 2: \(f_2'(x)=1+\cos x\ge0;\ f_2'=0\text{ only at }x=(2k+1)\pi\)
+Step 3: \(f_3'(x)=1-\sin x\ge0;\ f_3'=0\text{ only at }x=\tfrac{\pi}{2}+2k\pi\)
+Step 4: \(f_4'(x)=e^x-1<0\text{ for }x<0\Rightarrow f_4\text{ decreases on }(-\infty,0)\)
+Worked derivation: \[x_1<x_2\Rightarrow f(x_2)-f(x_1)=\int_{x_1}^{x_2}f'(t)\,dt>0\text{ since }f'\ge0\text{ and }f'>0\text{ except at finitely many points of }[x_1,x_2]\]
+Check: \[f_4(-1)=e^{-1}+1\approx1.37>f_4(0)=1\Rightarrow f_4\text{ is not increasing}\ \checkmark\]
+Why: \(\text{a derivative that touches zero at isolated points cannot make the function stay constant on any interval, so the function still rises}\)
+Why not the others: (A) \(f_2'\text{ and }f_3'\text{ vanish only at isolated points}\); (C) \(f_4'\text{ is negative for }x<0\); (D) \(\text{the oscillating parts are dominated by }x\text{, while }f_4\text{ falls for }x<0\).
+Key point: \(f'\ge0\text{ with zeros only at isolated points}\Rightarrow\text{strictly increasing}\)
+
+@@ Q42
+format: numerical
+sub_topic: Using the fundamental theorem of calculus to find the extrema of an area function and reading its zero as equal areas above and below the axis
+Q: Let \(G(x)=\displaystyle\int_0^x (t^2-4t+3)\,dt\). What are the local extrema of \(G\), and what does the value \(G(3)\) say about the area between \(y=t^2-4t+3\) and the \(t\)-axis?
+A) Local minimum at \(x=1\) with \(G(1)=\tfrac43\); local maximum at \(x=3\) with \(G(3)=0\); the total area from 0 to 3 is 0
+B) Local maximum at \(x=2\) with \(G(2)=\tfrac23\); no local minimum
+C) Local maximum at \(x=1\) with \(G(1)=\tfrac83\); local minimum at \(x=3\) with \(G(3)=2\)
+D) Local maximum at \(x=1\) with \(G(1)=\tfrac43\); local minimum at \(x=3\) with \(G(3)=0\); so the area above the axis on \([0,1]\) equals the area below the axis on \([1,3]\), each \(\tfrac43\)
+KEY: D
+SOL:
+Answer: (D) Maximum \(G(1)=\tfrac43\), minimum \(G(3)=0\); the areas on \([0,1]\) and \([1,3]\) are both \(\tfrac43\).
+Given: \(G(x)=\int_0^x(t^2-4t+3)\,dt\)
+Formula/Principle: \(\text{FTC: }G'(x)=f(x);\ \text{second-derivative test}\)
+Step 1: \(G'(x)=x^2-4x+3=(x-1)(x-3)=0\Rightarrow x=1,3\)
+Step 2: \(G''(x)=2x-4;\ G''(1)=-2<0\ (\text{max}),\ G''(3)=2>0\ (\text{min})\)
+Step 3: \(G(x)=\tfrac{x^3}{3}-2x^2+3x\)
+Worked derivation: \[G(1)=\tfrac13-2+3=\tfrac43;\quad G(3)=9-18+9=0\]
+Check: \[\int_1^3(t^2-4t+3)\,dt=G(3)-G(1)=-\tfrac43\Rightarrow\text{area below the axis}=\tfrac43=\text{area above on }[0,1]\ \checkmark\]
+Why: \(G\text{ adds signed area; it rises while }f>0\ (0<t<1)\text{, falls while }f<0\ (1<t<3)\text{, and }G(3)=0\text{ means the two areas cancel}\)
+Why not the others: (A) \(\text{max and min are swapped; area is not signed area}\); (B) \(x=2\text{ is the vertex of }f\text{, not a zero of }G'\); (C) \(\text{arithmetic slips in }G\).
+Key point: \(\tfrac{d}{dx}\int_a^x f=f(x);\ \text{a zero of }G\text{ means equal areas above and below}\)
+
+@@ Q43
+format: numerical
+sub_topic: Area enclosed by the parabola y² = 4x and the line y = 2x − 4, set up as an integral in y
+Q: What is the area of the region enclosed by the parabola \(y^2=4x\) and the line \(y=2x-4\)?
+A) 6
+B) 12
+C) 9
+D) \(\tfrac{27}{4}\)
+KEY: C
+SOL:
+Answer: (C) 9 square units.
+Given: \(y^2=4x\Rightarrow x=\tfrac{y^2}{4};\ y=2x-4\Rightarrow x=\tfrac{y+4}{2}\)
+Formula/Principle: \(\text{Area}=\int_{y_1}^{y_2}\left(x_{\text{right}}-x_{\text{left}}\right)dy\)
+Step 1: \(\tfrac{y^2}{4}=\tfrac{y+4}{2}\Rightarrow y^2-2y-8=0\Rightarrow y=-2,\ 4\)
+Step 2: \(\text{points }(1,-2),\ (4,4);\ \text{for }-2<y<4\text{ the line is to the right}\)
+Step 3: \(\text{Area}=\int_{-2}^{4}\left(\tfrac{y+4}{2}-\tfrac{y^2}{4}\right)dy\)
+Worked derivation: \[\left[\tfrac{y^2}{4}+2y-\tfrac{y^3}{12}\right]_{-2}^{4}=\left(4+8-\tfrac{16}{3}\right)-\left(1-4+\tfrac23\right)=\tfrac{20}{3}+\tfrac73=9\]
+Check: \[y=1:\ x_{\text{line}}=2.5>x_{\text{parabola}}=0.25\ \checkmark;\ \text{area}=\tfrac{(4-(-2))^3}{24}=9\ (\text{chord–parabola formula with }x=\tfrac{y^2}{4})\ \checkmark\]
+Why: \(\text{integrating in }y\text{ avoids splitting the region, because in }x\text{ the lower boundary changes from the parabola to the line at }x=1\)
+Why not the others: (A) \(\text{drops the }-\tfrac{y^3}{12}\text{ term at one limit}\); (B) \(\text{doubles the region}\); (D) \(\text{integrates in }x\text{ using only the upper branch}\).
+Key point: \(\text{when the right and left boundaries are single curves in }y\text{, integrate with respect to }y\)
+
+@@ Q44
+format: numerical
+sub_topic: Solving a separable equation with inverse-tangent integrals, using the initial condition, and counting intersections of the solution with y = x
+Q: Solve \((1+e^{2x})\dfrac{dy}{dx}+e^x(1+y^2)=0\) with \(y(0)=1\). What is the solution, what is \(y(\ln 3)\), and how many times does the solution curve meet the line \(y=x\)?
+A) \(y=e^{-x}\); \(y(\ln3)=\tfrac13\); exactly once
+B) \(y=e^{x}\); \(y(\ln3)=3\); never
+C) \(y=e^{-x}\); \(y(\ln3)=\tfrac13\); twice
+D) \(y=\tan(e^x)\); \(y(\ln3)=\tan3\); infinitely many times
+KEY: A
+SOL:
+Answer: (A) \(y=e^{-x}\), \(y(\ln3)=\tfrac13\), and it meets \(y=x\) exactly once.
+Given: \((1+e^{2x})y'+e^x(1+y^2)=0,\ y(0)=1\)
+Formula/Principle: \(\text{separate variables};\ \int\tfrac{du}{1+u^2}=\tan^{-1}u;\ \tfrac{\pi}{2}-\tan^{-1}u=\tan^{-1}\tfrac1u\ (u>0)\)
+Step 1: \(\dfrac{dy}{1+y^2}=-\dfrac{e^x\,dx}{1+e^{2x}}\)
+Step 2: \(\tan^{-1}y=-\tan^{-1}(e^x)+C;\ x=0:\ \tfrac{\pi}{4}=-\tfrac{\pi}{4}+C\Rightarrow C=\tfrac{\pi}{2}\)
+Step 3: \(\tan^{-1}y=\tfrac{\pi}{2}-\tan^{-1}(e^x)=\tan^{-1}(e^{-x})\Rightarrow y=e^{-x}\)
+Worked derivation: \[h(x)=e^{-x}-x,\ h'(x)=-e^{-x}-1<0;\ h(0)=1>0,\ h(1)=e^{-1}-1<0\Rightarrow\text{exactly one root in }(0,1)\]
+Check: \[y=e^{-x}:\ (1+e^{2x})(-e^{-x})+e^x(1+e^{-2x})=-e^{-x}-e^{x}+e^{x}+e^{-x}=0\ \checkmark;\ y(\ln3)=e^{-\ln3}=\tfrac13\]
+Why: \(\text{the substitution }u=e^x\text{ turns the right side into }\int\tfrac{du}{1+u^2}\text{; a strictly decreasing }h\text{ can cross zero only once}\)
+Why not the others: (B) \(\text{sign slip in }C\); (C) \(h\text{ is strictly decreasing, so only one crossing}\); (D) \(\text{forgets to take tan of both sides correctly}\).
+Key point: \(\text{separate, integrate, fix }C\text{ from the initial value; count roots with monotonicity}\)
+
+@@ Q45
+format: numerical
+sub_topic: Counting readers of none, exactly one and exactly two of three newspapers with the inclusion–exclusion formula
+Q: In a survey of 100 students, 50 read newspaper A, 40 read B and 30 read C; 15 read both A and B, 10 read both B and C, 12 read both A and C, and 5 read all three. How many read none of the three, exactly one, and exactly two?
+A) None 12; exactly one 61; exactly two 22
+B) None 0; exactly one 83; exactly two 17
+C) None 22; exactly one 51; exactly two 27
+D) None 12; exactly one 66; exactly two 37
+KEY: A
+SOL:
+Answer: (A) None 12, exactly one 61, exactly two 22.
+Given: \(n(A)=50,\ n(B)=40,\ n(C)=30,\ n(A\cap B)=15,\ n(B\cap C)=10,\ n(A\cap C)=12,\ n(A\cap B\cap C)=5,\ n(U)=100\)
+Formula/Principle: \(n(A\cup B\cup C)=\sum n(A)-\sum n(A\cap B)+n(A\cap B\cap C)\)
+Step 1: \(n(A\cup B\cup C)=120-37+5=88\Rightarrow\text{none}=100-88=12\)
+Step 2: \(\text{exactly two}=\sum n(A\cap B)-3n(A\cap B\cap C)=37-15=22\)
+Step 3: \(\text{exactly one}=88-22-5=61\)
+Worked derivation: \[\text{only A}=50-15-12+5=28;\ \text{only B}=40-15-10+5=20;\ \text{only C}=30-10-12+5=13;\ 28+20+13=61\]
+Check: \[61+22+5=88\ \checkmark\]
+Why: \(\text{each pairwise count includes the 5 who read all three, so they are removed three times to leave readers of exactly two}\)
+Why not the others: (B) \(\text{adds without subtracting overlaps}\); (C) \(\text{forgets to add back the triple}\); (D) \(\text{uses }\sum n(A\cap B)\text{ as exactly two}\).
+Key point: \(\text{exactly two}=\sum|A\cap B|-3|A\cap B\cap C|\)
+
+@@ Q46
+format: numerical
+sub_topic: Finding all x that satisfy a modulus equation, a greatest-integer quadratic and a signum condition together
+Q: Let \([x]\) be the greatest integer not exceeding \(x\) and \(\operatorname{sgn}\) the signum function. Which set contains exactly the real numbers satisfying all three conditions: \(|x-2|+|x+1|=3\), \([x]^2-3[x]-4=0\) and \(\operatorname{sgn}(x)=-1\)?
+A) \([-1,2]\)
+B) \([4,5)\)
+C) \(\{-1\}\)
+D) \([-1,0)\)
+KEY: D
+SOL:
+Answer: (D) \([-1,0)\).
+Given: \(|x-2|+|x+1|=3;\ [x]^2-3[x]-4=0;\ \operatorname{sgn}(x)=-1\)
+Formula/Principle: \(|a|+|b|\ge|a-b|,\ \text{equality iff }ab\le0;\ [x]=n\iff n\le x<n+1\)
+Step 1: \(|x-2|+|x+1|\ge|(x+1)-(x-2)|=3,\ \text{equality iff }(x-2)(x+1)\le0\Rightarrow-1\le x\le2\)
+Step 2: \(([x]-4)([x]+1)=0\Rightarrow[x]=4\text{ or }-1\Rightarrow x\in[-1,0)\cup[4,5)\)
+Step 3: \(\operatorname{sgn}(x)=-1\iff x<0\)
+Worked derivation: \[[-1,2]\cap\left([-1,0)\cup[4,5)\right)\cap(-\infty,0)=[-1,0)\]
+Check: \[x=-\tfrac12:\ 2.5+0.5=3,\ [x]=-1:\ 1+3-4=0,\ \operatorname{sgn}=-1\ \checkmark;\ x=0:\ \operatorname{sgn}0=0\ \text{fails}\]
+Why: \(\text{the modulus condition is a closed interval, the greatest-integer condition gives two unit intervals, and the signum condition removes }x\ge0\)
+Why not the others: (A) \(\text{only the first condition}\); (B) \(\text{fails the modulus and signum conditions}\); (C) \(\text{ignores that }[x]=-1\text{ for all }x\in[-1,0)\).
+Key point: \(\text{solve for }[x]\text{ first, then convert to intervals }[n,n+1)\)
+
+@@ Q47
+format: numerical
+sub_topic: Recovering an unknown angle from tan A and tan(A − B) using the difference formula, then finding tan(A + B) and cos(A + B)
+Q: \(A\) and \(B\) are acute angles with \(\tan A=2\) and \(\tan(A-B)=\tfrac13\). What are \(B\), \(\tan(A+B)\) and \(\cos(A+B)\)?
+A) \(B=\tfrac{\pi}{6}\); \(\tan(A+B)=-7\); \(\cos(A+B)=\tfrac{1}{\sqrt{10}}\)
+B) \(B=\tfrac{\pi}{4}\); \(\tan(A+B)=-3\); \(\cos(A+B)=-\tfrac{1}{\sqrt{10}}\)
+C) \(B=\tfrac{\pi}{4}\); \(\tan(A+B)=3\); \(\cos(A+B)=\tfrac{3}{\sqrt{10}}\)
+D) \(B=\tfrac{\pi}{3}\); \(\tan(A+B)=-1\); \(\cos(A+B)=-\tfrac{1}{\sqrt2}\)
+KEY: B
+SOL:
+Answer: (B) \(B=\tfrac{\pi}{4}\), \(\tan(A+B)=-3\), \(\cos(A+B)=-\tfrac{1}{\sqrt{10}}\).
+Given: \(\tan A=2,\ \tan(A-B)=\tfrac13,\ A,B\in(0,\tfrac{\pi}{2})\)
+Formula/Principle: \(\tan(X-Y)=\dfrac{\tan X-\tan Y}{1+\tan X\tan Y};\ \cos(X+Y)=\cos X\cos Y-\sin X\sin Y\)
+Step 1: \(\tan B=\tan\left(A-(A-B)\right)=\dfrac{2-\tfrac13}{1+\tfrac23}=\dfrac{5/3}{5/3}=1\Rightarrow B=\tfrac{\pi}{4}\)
+Step 2: \(\tan(A+B)=\dfrac{2+1}{1-2}=-3\)
+Step 3: \(\cos A=\tfrac{1}{\sqrt5},\ \sin A=\tfrac{2}{\sqrt5}\)
+Worked derivation: \[\cos(A+B)=\tfrac{1}{\sqrt5}\cdot\tfrac{1}{\sqrt2}-\tfrac{2}{\sqrt5}\cdot\tfrac{1}{\sqrt2}=-\tfrac{1}{\sqrt{10}}\]
+Check: \[1+\tan^2(A+B)=10=\sec^2(A+B)\Rightarrow|\cos(A+B)|=\tfrac{1}{\sqrt{10}};\ A+B\approx63.4^\circ+45^\circ>90^\circ\Rightarrow\cos<0\ \checkmark\]
+Why: \(B\text{ is written as }A-(A-B)\text{, so the difference formula gives }\tan B\text{ directly; the sign of }\cos(A+B)\text{ follows from the quadrant}\)
+Why not the others: (A) \(\tan\tfrac{\pi}{6}\text{ does not satisfy the given data}\); (C) \(\text{sign slip in the denominator }1-\tan A\tan B\); (D) \(\text{wrong }B\).
+Key point: \(\text{write the unknown angle as a sum or difference of known ones}\)
+
+@@ Q48
+format: numerical
+sub_topic: Converting a quotient of complex numbers to polar form, finding its quadrant, argument and real and imaginary parts
+Q: For \(z=\dfrac{1+i\sqrt3}{1-i}\), what are \(|z|\), the principal argument of \(z\), and \(z\) in the form \(a+ib\)?
+A) \(|z|=2\); \(\arg z=\tfrac{\pi}{12}\); \(z=\tfrac{1+\sqrt3}{2}+i\,\tfrac{\sqrt3-1}{2}\)
+B) \(|z|=\sqrt2\); \(\arg z=-\tfrac{\pi}{12}\); \(z=\tfrac{1+\sqrt3}{2}-i\,\tfrac{\sqrt3-1}{2}\)
+C) \(|z|=\sqrt2\); \(\arg z=\tfrac{7\pi}{12}\), so \(z=\sqrt2\left(\cos\tfrac{7\pi}{12}+i\sin\tfrac{7\pi}{12}\right)\) lies in the second quadrant; \(z=\tfrac{1-\sqrt3}{2}+i\,\tfrac{1+\sqrt3}{2}\)
+D) \(|z|=1\); \(\arg z=\tfrac{5\pi}{12}\); \(z=\tfrac{\sqrt3-1}{2}+i\,\tfrac{1+\sqrt3}{2}\)
+KEY: C
+SOL:
+Answer: (C) \(|z|=\sqrt2\), \(\arg z=\tfrac{7\pi}{12}\), \(z=\tfrac{1-\sqrt3}{2}+i\tfrac{1+\sqrt3}{2}\).
+Given: \(z_1=1+i\sqrt3,\ z_2=1-i\)
+Formula/Principle: \(\left|\tfrac{z_1}{z_2}\right|=\tfrac{|z_1|}{|z_2|};\ \arg\tfrac{z_1}{z_2}=\arg z_1-\arg z_2\ (\text{adjusted to }(-\pi,\pi])\)
+Step 1: \(|z_1|=2,\ \arg z_1=\tfrac{\pi}{3};\ |z_2|=\sqrt2,\ \arg z_2=-\tfrac{\pi}{4}\)
+Step 2: \(|z|=\tfrac{2}{\sqrt2}=\sqrt2;\ \arg z=\tfrac{\pi}{3}+\tfrac{\pi}{4}=\tfrac{7\pi}{12}\)
+Step 3: \(z=\dfrac{(1+i\sqrt3)(1+i)}{(1-i)(1+i)}=\dfrac{(1-\sqrt3)+i(1+\sqrt3)}{2}\)
+Worked derivation: \[\sqrt2\cos\tfrac{7\pi}{12}=\sqrt2\cdot\tfrac{\sqrt2-\sqrt6}{4}=\tfrac{1-\sqrt3}{2};\quad\sqrt2\sin\tfrac{7\pi}{12}=\sqrt2\cdot\tfrac{\sqrt6+\sqrt2}{4}=\tfrac{1+\sqrt3}{2}\]
+Check: \[\left(\tfrac{1-\sqrt3}{2}\right)^2+\left(\tfrac{1+\sqrt3}{2}\right)^2=\tfrac{(4-2\sqrt3)+(4+2\sqrt3)}{4}=2=|z|^2\ \checkmark;\ \text{real part}<0,\ \text{imag}>0\Rightarrow\text{II quadrant}\ \checkmark\]
+Why: \(\text{division divides moduli and subtracts arguments; }\tfrac{7\pi}{12}\text{ already lies in }(-\pi,\pi]\)
+Why not the others: (A) \(\text{adds instead of dividing moduli and subtracts the wrong arguments}\); (B) \(\text{uses }\arg z_2=+\tfrac{\pi}{4}\); (D) \(\text{wrong modulus and argument}\).
+Key point: \(\text{quotient: divide moduli, subtract arguments; confirm the quadrant from the signs of }a,b\)
+
+@@ Q49
+format: numerical
+sub_topic: How the locus of a point with PA = λ·PB changes with the parameter λ: a line for λ = 1 and a circle for λ = 2
+Q: \(A=(1,0)\), \(B=(-1,0)\), and \(P(x,y)\) moves so that \(PA=\lambda\,PB\) with \(\lambda>0\). What is the locus for \(\lambda=1\) and for \(\lambda=2\)?
+A) \(\lambda=1\): the \(x\)-axis; \(\lambda=2\): the circle \(x^2+y^2=4\)
+B) \(\lambda=1\): the circle \(x^2+y^2=1\); \(\lambda=2\): the line \(x=-\tfrac13\)
+C) \(\lambda=1\): the \(y\)-axis \(x=0\) (the perpendicular bisector of \(AB\)); \(\lambda=2\): the circle \(3x^2+3y^2+10x+3=0\), with centre \(\left(-\tfrac53,0\right)\) and radius \(\tfrac43\), which encloses \(B\)
+D) \(\lambda=1\): the \(y\)-axis; \(\lambda=2\): the circle \(3x^2+3y^2-10x+3=0\), with centre \(\left(\tfrac53,0\right)\) and radius \(\tfrac43\)
+KEY: C
+SOL:
+Answer: (C) \(x=0\) for \(\lambda=1\); circle centre \(\left(-\tfrac53,0\right)\), radius \(\tfrac43\) for \(\lambda=2\).
+Given: \(A(1,0),\ B(-1,0),\ PA=\lambda PB\)
+Formula/Principle: \(PA^2=\lambda^2PB^2;\ \text{circle }x^2+y^2+2gx+2fy+c=0:\ \text{centre }(-g,-f),\ r=\sqrt{g^2+f^2-c}\)
+Step 1: \(\lambda=1:\ (x-1)^2+y^2=(x+1)^2+y^2\Rightarrow-4x=0\Rightarrow x=0\)
+Step 2: \(\lambda=2:\ (x-1)^2+y^2=4\left[(x+1)^2+y^2\right]\)
+Step 3: \(x^2-2x+1+y^2=4x^2+8x+4+4y^2\Rightarrow3x^2+3y^2+10x+3=0\)
+Worked derivation: \[x^2+y^2+\tfrac{10}{3}x+1=0\Rightarrow\text{centre }\left(-\tfrac53,0\right),\ r=\sqrt{\tfrac{25}{9}-1}=\tfrac43\]
+Check: \[x=-\tfrac13:\ PA=\tfrac43,\ PB=\tfrac23\ (\text{ratio }2)\ \checkmark;\ x=-3:\ PA=4,\ PB=2\ \checkmark;\ \text{distance of B from centre}=\tfrac23<\tfrac43\]
+Why: \(\text{for }\lambda=1\text{ the squared terms cancel and a line remains; for }\lambda\ne1\text{ they survive with equal coefficients, giving a circle on the side of the nearer point B}\)
+Why not the others: (A) \(\text{equidistant points form the perpendicular bisector, not AB itself}\); (B) \(\text{the roles of the two cases are swapped}\); (D) \(\text{sign slip: the circle lies on B's side, since P is closer to B}\).
+Key point: \(PA=\lambda PB:\ \lambda=1\text{ line, }\lambda\ne1\text{ circle}\)
+
+@@ Q50
+format: numerical
+sub_topic: Finding n and r from given nPr and nCr, then describing how nCr rises and falls with r and where it is largest
+Q: If \({}^nP_r=720\) and \({}^nC_r=120\), what are \(n\) and \(r\), and how does \({}^nC_k\) behave as \(k\) goes from 0 to \(n\)?
+A) \(n=6,\ r=3\); \({}^6C_k\) increases throughout, largest at \(k=6\)
+B) \(n=10,\ r=3\); \({}^{10}C_k\) increases while \(k<5\) and decreases after, so the largest value is \({}^{10}C_5=252\), and the values are symmetric, \({}^{10}C_k={}^{10}C_{10-k}\)
+C) \(n=10,\ r=6\); \({}^{10}C_k\) is largest at \(k=3\), equal to 120
+D) \(n=9,\ r=3\); \({}^{9}C_k\) is largest at \(k=9\)
+KEY: B
+SOL:
+Answer: (B) \(n=10,\ r=3\); maximum \({}^{10}C_5=252\), symmetric about \(k=5\).
+Given: \({}^nP_r=720,\ {}^nC_r=120\)
+Formula/Principle: \({}^nP_r=r!\,{}^nC_r;\ \dfrac{{}^nC_{k+1}}{{}^nC_k}=\dfrac{n-k}{k+1}\)
+Step 1: \(r!=\tfrac{720}{120}=6\Rightarrow r=3\)
+Step 2: \(n(n-1)(n-2)=720=10\cdot9\cdot8\Rightarrow n=10\)
+Step 3: \(\dfrac{{}^{10}C_{k+1}}{{}^{10}C_k}=\dfrac{10-k}{k+1}>1\iff k<4.5\)
+Worked derivation: \[{}^{10}C_0<{}^{10}C_1<\dots<{}^{10}C_5=252>{}^{10}C_6>\dots>{}^{10}C_{10}\]
+Check: \[{}^{10}C_3=\tfrac{10\cdot9\cdot8}{6}=120\ \checkmark;\ {}^{10}P_3=720\ \checkmark;\ {}^{10}C_5=\tfrac{30240}{120}=252\ \checkmark\]
+Why: \(\text{the ratio of successive coefficients exceeds 1 until the middle, then falls below 1; }{}^nC_k={}^nC_{n-k}\text{ gives symmetry}\)
+Why not the others: (A) \({}^6P_3=120\ne720\); (C) \({}^{10}C_6=210\ne120\text{ and }r!=6\Rightarrow r=3\); (D) \({}^9P_3=504\).
+Key point: \({}^nP_r=r!\,{}^nC_r;\ {}^nC_k\text{ peaks at the middle }k=\tfrac n2\)
+
+@@ Q51
+format: numerical
+sub_topic: Extracting a coefficient from the general term of (x² − 2/x)¹⁰, testing for a constant term and counting terms with positive powers
+Q: In the expansion of \(\left(x^2-\dfrac{2}{x}\right)^{10}\), what is the coefficient of \(x^5\), is there a term independent of \(x\), and how many terms have a positive power of \(x\)?
+A) \(8064\); yes, equal to \(-15360\); 6 terms
+B) \(-8064\); yes, equal to \(13440\); 10 terms
+C) \(252\); no; 5 terms
+D) \(-8064\); no term independent of \(x\), because \(20-3r=0\) has no integer solution; 7 terms
+KEY: D
+SOL:
+Answer: (D) Coefficient \(-8064\); no constant term; 7 terms with positive powers.
+Given: \(\left(x^2-\tfrac2x\right)^{10}\)
+Formula/Principle: \(T_{r+1}={}^{n}C_r\,a^{n-r}b^{r}\)
+Step 1: \(T_{r+1}={}^{10}C_r(x^2)^{10-r}\left(-\tfrac2x\right)^r={}^{10}C_r(-2)^r x^{20-3r}\)
+Step 2: \(20-3r=5\Rightarrow r=5:\ {}^{10}C_5(-2)^5=252\times(-32)=-8064\)
+Step 3: \(20-3r=0\Rightarrow r=\tfrac{20}{3}\notin\mathbb Z\Rightarrow\text{no constant term}\)
+Worked derivation: \[20-3r>0\iff r\le6\Rightarrow r=0,1,\dots,6:\ 7\text{ terms}\]
+Check: \[r=6:\ x^{2}\ (\text{positive});\ r=7:\ x^{-1}\ (\text{negative})\ \checkmark;\ \text{total terms}=11\]
+Why: \(\text{every power is }20-3r\text{, so a power appears only if it leaves remainder 2 on division by 3; 0 and 5 are tested directly}\)
+Why not the others: (A) \(\text{drops the sign of }(-2)^5\text{ and invents a constant term}\); (B) \(\text{no integer }r\text{ gives power 0}\); (C) \(\text{forgets the factor }(-2)^5\).
+Key point: \(\text{write the power of }x\text{ in }T_{r+1}\text{ as a function of }r\text{, then solve for }r\)
+
+@@ Q52
+format: numerical
+sub_topic: Special values of c for the circle x² + y² − 6x + 4y + c = 0: real circle, point circle, and tangency to each axis
+Q: For the equation \(x^2+y^2-6x+4y+c=0\), which statement is correct?
+A) It is a real circle for \(c<13\) and a point circle for \(c=13\); the circle touches the \(x\)-axis when \(c=9\) and the \(y\)-axis when \(c=4\)
+B) It is a real circle for every \(c\); it touches the \(x\)-axis when \(c=4\) and the \(y\)-axis when \(c=9\)
+C) It is a real circle only for \(c>13\); it touches both axes when \(c=13\)
+D) It is a point circle for \(c=0\); it touches the \(x\)-axis when \(c=-9\)
+KEY: A
+SOL:
+Answer: (A) Real for \(c<13\), point circle at \(c=13\); touches the \(x\)-axis at \(c=9\), the \(y\)-axis at \(c=4\).
+Given: \(x^2+y^2-6x+4y+c=0\)
+Formula/Principle: \(\text{centre }(-g,-f)=(3,-2),\ r^2=g^2+f^2-c;\ \text{touches x-axis iff }r=|{-f}|,\ \text{y-axis iff }r=|{-g}|\)
+Step 1: \(r^2=9+4-c=13-c\)
+Step 2: \(r^2>0\iff c<13;\ r=0\iff c=13\)
+Step 3: \(\text{x-axis: }r=2\Rightarrow13-c=4\Rightarrow c=9;\ \text{y-axis: }r=3\Rightarrow13-c=9\Rightarrow c=4\)
+Worked derivation: \[c=9:\ y=0\Rightarrow x^2-6x+9=(x-3)^2=0\ (\text{one point}) ;\quad c=4:\ x=0\Rightarrow y^2+4y+4=(y+2)^2=0\]
+Check: \[\text{tangency to an axis}\iff\text{the equation on that axis has equal roots}\ \checkmark\]
+Why: \(\text{the distance of the centre }(3,-2)\text{ from the x-axis is 2 and from the y-axis is 3; tangency means the radius equals that distance}\)
+Why not the others: (B) \(\text{for }c>13\text{ there is no real circle, and the tangency values are swapped}\); (C) \(\text{the inequality is reversed}\); (D) \(c=0\text{ gives a circle through the origin, and }c=-9\text{ gives }r^2=22\).
+Key point: \(r^2=g^2+f^2-c;\ \text{touches x-axis iff }g^2=c,\ \text{y-axis iff }f^2=c\)
+
+@@ Q53
+format: numerical
+sub_topic: Differentiating sin²x by the chain rule and counting the points of [0, 2π] where the derivative is zero
+Q: For \(f(x)=\sin^2x\), at how many points of \([0,2\pi]\) is \(f'(x)=0\), and what is \(f'\!\left(\tfrac{\pi}{4}\right)\)?
+A) 5 points; \(f'\!\left(\tfrac{\pi}{4}\right)=1\)
+B) 3 points; \(f'\!\left(\tfrac{\pi}{4}\right)=\tfrac{1}{\sqrt2}\)
+C) 2 points; \(f'\!\left(\tfrac{\pi}{4}\right)=2\)
+D) 4 points; \(f'\!\left(\tfrac{\pi}{4}\right)=0\)
+KEY: A
+SOL:
+Answer: (A) 5 points; \(f'(\tfrac{\pi}{4})=1\).
+Given: \(f(x)=\sin^2x,\ x\in[0,2\pi]\)
+Formula/Principle: \(\text{chain rule: }\tfrac{d}{dx}[u(x)]^2=2u\,u'\)
+Step 1: \(f'(x)=2\sin x\cos x=\sin2x\)
+Step 2: \(\sin2x=0\Rightarrow2x=k\pi\Rightarrow x=\tfrac{k\pi}{2}\)
+Step 3: \(x\in[0,2\pi]\Rightarrow k=0,1,2,3,4\)
+Worked derivation: \[x=0,\ \tfrac{\pi}{2},\ \pi,\ \tfrac{3\pi}{2},\ 2\pi\ (5\text{ points});\quad f'\!\left(\tfrac{\pi}{4}\right)=\sin\tfrac{\pi}{2}=1\]
+Check: \[\sin^2x\text{ has minima at }0,\pi,2\pi\text{ and maxima at }\tfrac{\pi}{2},\tfrac{3\pi}{2}\Rightarrow\text{5 horizontal tangents}\ \checkmark\]
+Why: \(f'=0\text{ where }\sin x=0\text{ (minima) or }\cos x=0\text{ (maxima)}\)
+Why not the others: (B) \(\text{misses the zeros of }\cos x\text{ and forgets the factor 2}\); (C) \(\text{counts only interior maxima}\); (D) \(\text{omits an endpoint}\).
+Key point: \(\tfrac{d}{dx}\sin^2x=\sin2x\)
+
+@@ Q54
+format: numerical
+sub_topic: Variance and standard deviation of five ungrouped observations, and their change when every observation is transformed by y = 3x + 2
+Q: For the data 6, 8, 10, 12, 14, what are the mean, variance and standard deviation? If every observation \(x\) is replaced by \(3x+2\), what are the new mean and variance?
+A) Mean 10, variance 10, SD \(\sqrt{10}\); new mean 32, new variance 92
+B) Mean 10, variance 8, SD \(2\sqrt2\); new mean 32, new variance 72
+C) Mean 10, variance 8, SD \(2\sqrt2\); new mean 30, new variance 26
+D) Mean 10, variance 40, SD \(2\sqrt{10}\); new mean 32, new variance 120
+KEY: B
+SOL:
+Answer: (B) Mean 10, variance 8, SD \(2\sqrt2\); new mean 32, new variance 72.
+Given: \(x:\ 6,8,10,12,14;\ n=5;\ y=3x+2\)
+Formula/Principle: \(\sigma^2=\tfrac1n\sum(x_i-\bar x)^2;\ y=ax+b\Rightarrow\bar y=a\bar x+b,\ \sigma_y^2=a^2\sigma_x^2\)
+Step 1: \(\bar x=\tfrac{50}{5}=10\)
+Step 2: \(\sum(x_i-\bar x)^2=16+4+0+4+16=40\Rightarrow\sigma^2=8,\ \sigma=2\sqrt2\)
+Step 3: \(\bar y=3(10)+2=32;\ \sigma_y^2=9\times8=72\)
+Worked derivation: \[y:\ 20,26,32,38,44;\ \sum(y_i-32)^2=144+36+0+36+144=360\Rightarrow\sigma_y^2=\tfrac{360}{5}=72\]
+Check: \[\sigma^2=\tfrac{\sum x_i^2}{n}-\bar x^2=\tfrac{36+64+100+144+196}{5}-100=108-100=8\ \checkmark\]
+Why: \(\text{adding a constant shifts the mean but not the spread; multiplying by 3 scales deviations by 3 and variance by 9}\)
+Why not the others: (A) \(\text{divides by }n-1=4\text{ and adds the constant to the variance}\); (C) \(\text{wrong mean shift and variance scaled by 3 then plus 2}\); (D) \(\text{forgets to divide by }n\).
+Key point: \(\operatorname{Var}(ax+b)=a^2\operatorname{Var}(x)\)
+
+@@ Q55
+format: numerical
+sub_topic: Using the addition rule for two dice: overlapping events (sum 8 or a doublet) versus mutually exclusive events (sum 7 or a doublet)
+Q: Two fair dice are thrown. What is \(P(\text{sum is }8\text{ or a doublet})\), and what is \(P(\text{sum is }7\text{ or a doublet})\)?
+A) \(\tfrac{11}{36}\) and \(\tfrac{11}{36}\)
+B) \(\tfrac{1}{3}\) and \(\tfrac{5}{18}\)
+C) \(\tfrac{5}{18}\) and \(\tfrac{1}{3}\)
+D) \(\tfrac{5}{36}\) and \(\tfrac{1}{6}\)
+KEY: C
+SOL:
+Answer: (C) \(\tfrac{5}{18}\) and \(\tfrac13\).
+Given: \(36\text{ equally likely outcomes};\ D=\{\text{doublet}\},\ n(D)=6\)
+Formula/Principle: \(P(A\cup B)=P(A)+P(B)-P(A\cap B)\)
+Step 1: \(\text{sum 8: }(2,6),(3,5),(4,4),(5,3),(6,2)\Rightarrow5\ \text{outcomes};\ \text{sum 8}\cap D=\{(4,4)\}\)
+Step 2: \(P=\tfrac{5}{36}+\tfrac{6}{36}-\tfrac{1}{36}=\tfrac{10}{36}=\tfrac{5}{18}\)
+Step 3: \(\text{sum 7: 6 outcomes; no doublet has an odd sum}\Rightarrow\text{mutually exclusive}\)
+Worked derivation: \[P(\text{sum 7 or }D)=\tfrac{6}{36}+\tfrac{6}{36}-0=\tfrac{12}{36}=\tfrac13\]
+Check: \[\text{direct count: }\{\text{sum 8}\}\cup D\text{ has }5+6-1=10\text{ outcomes}\ \checkmark\]
+Why: \(\text{the doublet (4,4) has sum 8, so it would be counted twice without subtraction; a doublet's sum is even, so it can never be 7}\)
+Why not the others: (A) \(\text{counts (4,4) once but miscounts sum-7 events}\); (B) \(\text{swapped}\); (D) \(\text{gives only the sum events}\).
+Key point: \(\text{subtract the overlap; for mutually exclusive events just add}\)
+
+@@ Q56
+format: numerical
+sub_topic: Probability that three random vertices of a regular hexagon form an equilateral or a right-angled triangle, using the diameter property
+Q: Three vertices of a regular hexagon are chosen at random. What is the probability that they form an equilateral triangle, and what is the probability that they form a right-angled triangle?
+A) \(\tfrac{1}{20}\) and \(\tfrac{3}{10}\)
+B) \(\tfrac{1}{10}\) and \(\tfrac{3}{10}\)
+C) \(\tfrac{1}{5}\) and \(\tfrac{1}{2}\)
+D) \(\tfrac{1}{10}\) and \(\tfrac{3}{5}\)
+KEY: D
+SOL:
+Answer: (D) \(\tfrac{1}{10}\) and \(\tfrac35\).
+Given: \(\text{6 vertices on a circle};\ \text{choose 3}\)
+Formula/Principle: \(\text{classical probability}=\tfrac{\text{favourable}}{\text{total}};\ \text{an inscribed triangle is right-angled iff one side is a diameter}\)
+Step 1: \(\text{total}={}^6C_3=20\)
+Step 2: \(\text{equilateral: alternate vertices }\{1,3,5\},\{2,4,6\}\Rightarrow2\Rightarrow P=\tfrac{2}{20}=\tfrac1{10}\)
+Step 3: \(\text{3 diameters, each with 4 choices of third vertex}\Rightarrow12\Rightarrow P=\tfrac{12}{20}=\tfrac35\)
+Worked derivation: \[\text{remaining }20-2-12=6\text{ triangles: three consecutive vertices (angle }120^\circ\text{, obtuse isosceles)}\]
+Check: \[\text{6 consecutive triples}+2+12=20\ \checkmark\]
+Why: \(\text{the hexagon is inscribed in a circle, so the angle in a semicircle is a right angle}\)
+Why not the others: (A) \(\text{counts one equilateral triangle and one diameter only twice}\); (B) \(\text{halves the right-angled count}\); (C) \(\text{wrong totals}\).
+Key point: \(\text{inscribed triangle right-angled}\iff\text{a side is a diameter}\)
+
+@@ Q57
+format: numerical
+sub_topic: Solving a 3 × 3 linear system by the matrix-inverse method, with the determinant and adjoint
+Q: Solve \(x+2y+z=8\), \(2x-y+z=3\), \(x+y-z=0\) by the matrix method \(X=A^{-1}B\). What are \(|A|\) and the solution?
+A) \(|A|=-9\); \(x=-1,\ y=2,\ z=1\)
+B) \(|A|=0\); no unique solution
+C) \(|A|=9\); \(x=2,\ y=1,\ z=3\)
+D) \(|A|=9\); \(x=1,\ y=2,\ z=3\)
+KEY: D
+SOL:
+Answer: (D) \(|A|=9\); \((x,y,z)=(1,2,3)\).
+Given: \(A=\begin{pmatrix}1&2&1\\2&-1&1\\1&1&-1\end{pmatrix},\ B=\begin{pmatrix}8\\3\\0\end{pmatrix}\)
+Formula/Principle: \(A^{-1}=\tfrac{1}{|A|}\operatorname{adj}A;\ X=A^{-1}B\)
+Step 1: \(|A|=1(1-1)-2(-2-1)+1(2+1)=0+6+3=9\)
+Step 2: \(\operatorname{adj}A=\begin{pmatrix}0&3&3\\3&-2&1\\3&1&-5\end{pmatrix}\)
+Step 3: \(\operatorname{adj}A\cdot B=\begin{pmatrix}0+9+0\\24-6+0\\24+3+0\end{pmatrix}=\begin{pmatrix}9\\18\\27\end{pmatrix}\)
+Worked derivation: \[X=\tfrac19\begin{pmatrix}9\\18\\27\end{pmatrix}=\begin{pmatrix}1\\2\\3\end{pmatrix}\]
+Check: \[1+4+3=8,\ 2-2+3=3,\ 1+2-3=0\ \checkmark\]
+Why: \(|A|\ne0\text{, so }A\text{ is invertible and the system has the unique solution }A^{-1}B\)
+Why not the others: (A) \(\text{sign slip in the determinant}\); (B) \(|A|=9\ne0\); (C) \(x\text{ and }y\text{ swapped: fails the second equation}\).
+Key point: \(|A|\ne0\Rightarrow X=\tfrac{1}{|A|}(\operatorname{adj}A)B\)
+
+@@ Q58
+format: numerical
+sub_topic: Interpreting a 2 × 2 matrix as a 90° rotation: image of a point, its square and transpose product, and a high power
+Q: Let \(A=\begin{pmatrix}0&-1\\1&0\end{pmatrix}\), acting on column vectors \(\begin{pmatrix}x\\y\end{pmatrix}\). What is the image of the point \((2,1)\), what are \(A^2\) and \(A^{T}A\), and what is \(A^{2026}\)?
+A) \((1,-2)\); \(A^2=I\); \(A^TA=-I\); \(A^{2026}=I\)
+B) \((-1,2)\); \(A^2=-I\); \(A^TA=I\); \(A^{2026}=-I\) — \(A\) rotates the plane by \(90^\circ\) anticlockwise
+C) \((-2,-1)\); \(A^2=-I\); \(A^TA=-I\); \(A^{2026}=A\)
+D) \((-1,2)\); \(A^2=I\); \(A^TA=I\); \(A^{2026}=I\)
+KEY: B
+SOL:
+Answer: (B) \((-1,2)\); \(A^2=-I\); \(A^TA=I\); \(A^{2026}=-I\).
+Given: \(A=\begin{pmatrix}0&-1\\1&0\end{pmatrix}\)
+Formula/Principle: \(\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}\text{ rotates by }\theta;\ (AB)^T=B^TA^T\)
+Step 1: \(A\begin{pmatrix}2\\1\end{pmatrix}=\begin{pmatrix}-1\\2\end{pmatrix}\)
+Step 2: \(A^2=\begin{pmatrix}0&-1\\1&0\end{pmatrix}\begin{pmatrix}0&-1\\1&0\end{pmatrix}=\begin{pmatrix}-1&0\\0&-1\end{pmatrix}=-I\)
+Step 3: \(A^T=\begin{pmatrix}0&1\\-1&0\end{pmatrix}=-A\Rightarrow A^TA=-A^2=I\)
+Worked derivation: \[A^4=(A^2)^2=I;\ 2026=4\times506+2\Rightarrow A^{2026}=A^2=-I\]
+Check: \[(2,1)\cdot(-1,2)=0\text{ and both have length }\sqrt5\Rightarrow\text{a }90^\circ\text{ turn}\ \checkmark\]
+Why: \(A\text{ is the rotation matrix with }\theta=90^\circ\text{; two turns give }180^\circ\ (-I)\text{, four give }360^\circ\ (I)\)
+Why not the others: (A) \(\text{clockwise image and wrong squares}\); (C) \(\text{that is }A^2\text{ applied, and }A^TA=I\); (D) \(A^2=-I\text{, not }I\).
+Key point: \(\text{rotation matrices satisfy }R^TR=I;\ 90^\circ\text{ rotation has period 4}\)
+
+@@ Q59
+format: numerical
+sub_topic: Logarithmic differentiation of a variable power and of a product–quotient, evaluated at given points
+Q: Find \(y_1'\!\left(\tfrac{\pi}{2}\right)\) for \(y_1=x^{\sin x}\) and \(y_2'(0)\) for \(y_2=\dfrac{(x+1)^2(x+2)^3}{(x+3)^4}\).
+A) \(\tfrac{\pi}{2}\) and \(\tfrac{8}{81}\)
+B) \(0\) and \(\tfrac{13}{6}\)
+C) \(1\) and \(\tfrac{52}{243}\)
+D) \(\ln\tfrac{\pi}{2}\) and \(\tfrac{104}{81}\)
+KEY: C
+SOL:
+Answer: (C) \(y_1'(\tfrac{\pi}{2})=1,\ y_2'(0)=\tfrac{52}{243}\).
+Given: \(y_1=x^{\sin x};\ y_2=\dfrac{(x+1)^2(x+2)^3}{(x+3)^4}\)
+Formula/Principle: \(\ln y\text{ then differentiate: }\tfrac{y'}{y}=\tfrac{d}{dx}\ln y\)
+Step 1: \(\ln y_1=\sin x\ln x\Rightarrow\tfrac{y_1'}{y_1}=\cos x\ln x+\tfrac{\sin x}{x}\)
+Step 2: \(x=\tfrac{\pi}{2}:\ y_1=\tfrac{\pi}{2},\ \tfrac{y_1'}{y_1}=0+\tfrac{2}{\pi}\Rightarrow y_1'=1\)
+Step 3: \(\ln y_2=2\ln(x+1)+3\ln(x+2)-4\ln(x+3)\Rightarrow\tfrac{y_2'}{y_2}=\tfrac{2}{x+1}+\tfrac{3}{x+2}-\tfrac{4}{x+3}\)
+Worked derivation: \[x=0:\ y_2=\tfrac{8}{81},\ \tfrac{y_2'}{y_2}=2+\tfrac32-\tfrac43=\tfrac{13}{6}\Rightarrow y_2'=\tfrac{8}{81}\cdot\tfrac{13}{6}=\tfrac{104}{486}=\tfrac{52}{243}\]
+Check: \[\text{near }x=\tfrac{\pi}{2},\ \sin x\approx1\Rightarrow y_1\approx x\Rightarrow y_1'\approx1\ \checkmark\]
+Why: \(\text{taking logs turns a variable exponent into a product and a product–quotient into a sum, so each piece differentiates simply}\)
+Why not the others: (A) \(\text{gives the function values, not derivatives}\); (B) \(\text{gives }\tfrac{y'}{y}\text{ without multiplying by }y\); (D) \(\text{uses }\ln x\text{ alone and drops the factor }\tfrac16\).
+Key point: \(y'=y\cdot\tfrac{d}{dx}(\ln y)\)
+
+@@ Q60
+format: numerical
+sub_topic: Parametric derivative of the rational parametrisation of the unit circle, slope at t = 1/2 and parameter values for vertical and horizontal tangents
+Q: A curve is given by \(x=\dfrac{2t}{1+t^2}\), \(y=\dfrac{1-t^2}{1+t^2}\). What is \(\dfrac{dy}{dx}\) in terms of \(t\), its value at \(t=\tfrac12\), and for which \(t\) is the tangent vertical?
+A) \(\dfrac{dy}{dx}=-\dfrac{2t}{1-t^2}=-\dfrac{x}{y}\); \(-\tfrac43\) at \(t=\tfrac12\) (point \(\left(\tfrac45,\tfrac35\right)\)); vertical at \(t=\pm1\), the points \((\pm1,0)\) of the circle \(x^2+y^2=1\)
+B) \(\dfrac{dy}{dx}=\dfrac{1-t^2}{2t}\); \(\tfrac34\) at \(t=\tfrac12\); vertical at \(t=0\)
+C) \(\dfrac{dy}{dx}=\dfrac{2t}{1-t^2}\); \(\tfrac43\) at \(t=\tfrac12\); vertical at \(t=\pm1\)
+D) \(\dfrac{dy}{dx}=-\dfrac{x}{y}\); \(-\tfrac34\) at \(t=\tfrac12\); never vertical
+KEY: A
+SOL:
+Answer: (A) \(\tfrac{dy}{dx}=-\tfrac{2t}{1-t^2}=-\tfrac xy\); \(-\tfrac43\) at \(t=\tfrac12\); vertical at \(t=\pm1\).
+Given: \(x=\tfrac{2t}{1+t^2},\ y=\tfrac{1-t^2}{1+t^2}\)
+Formula/Principle: \(\dfrac{dy}{dx}=\dfrac{dy/dt}{dx/dt};\ \text{vertical tangent where }\tfrac{dx}{dt}=0,\ \tfrac{dy}{dt}\ne0\)
+Step 1: \(\dfrac{dx}{dt}=\dfrac{2(1+t^2)-4t^2}{(1+t^2)^2}=\dfrac{2(1-t^2)}{(1+t^2)^2}\)
+Step 2: \(\dfrac{dy}{dt}=\dfrac{-2t(1+t^2)-2t(1-t^2)}{(1+t^2)^2}=\dfrac{-4t}{(1+t^2)^2}\)
+Step 3: \(\dfrac{dy}{dx}=\dfrac{-4t}{2(1-t^2)}=-\dfrac{2t}{1-t^2}=-\dfrac{x}{y}\)
+Worked derivation: \[t=\tfrac12:\ x=\tfrac{1}{5/4}=\tfrac45,\ y=\tfrac{3/4}{5/4}=\tfrac35,\ \tfrac{dy}{dx}=-\tfrac{1}{3/4}=-\tfrac43\]
+Check: \[x^2+y^2=\tfrac{4t^2+(1-t^2)^2}{(1+t^2)^2}=1;\ \text{implicit: }2x+2yy'=0\Rightarrow y'=-\tfrac xy=-\tfrac{4/5}{3/5}\ \checkmark;\ t=\pm1\Rightarrow(\pm1,0)\]
+Why: \(\text{the curve is the unit circle, whose tangent is perpendicular to the radius; vertical tangents occur at the ends of the horizontal diameter}\)
+Why not the others: (B) \(\text{inverts the ratio}\); (C) \(\text{sign slip in }\tfrac{dy}{dt}\); (D) \(\text{wrong value at }t=\tfrac12\text{, and vertical tangents exist}\).
+Key point: \(\tfrac{dy}{dx}=\tfrac{\dot y}{\dot x};\ \dot x=0\Rightarrow\text{vertical tangent}\)
