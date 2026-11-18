@@ -1,0 +1,439 @@
+@@ Q41
+format: numerical
+sub_topic: Solving a sin x + cos x = k type equation by writing it as a single sine, the condition for solvability and the general solution
+Q: For which real \(k\) does \(\sin x+\cos x=k\) have a real solution, and what is the general solution when \(k=1\)?
+A) \(|k|\le\sqrt2\); for \(k=1\): \(x=2n\pi\) or \(x=2n\pi+\dfrac{\pi}{2}\), \(n\in\mathbb Z\)
+B) \(|k|\le2\); for \(k=1\): \(x=n\pi\)
+C) \(|k|\le1\); for \(k=1\): \(x=2n\pi+\dfrac{\pi}{4}\)
+D) every real \(k\); for \(k=1\): \(x=\dfrac{n\pi}{2}\)
+KEY: A
+SOL:
+Answer: (A) \(|k|\le\sqrt2\); \(x=2n\pi\) or \(2n\pi+\frac{\pi}{2}\).
+Given: \(\sin x+\cos x=k\)
+Formula/Principle: \(a\sin x+b\cos x=\sqrt{a^2+b^2}\,\sin(x+\alpha);\ \sin\theta=\sin\alpha\Rightarrow\theta=n\pi+(-1)^n\alpha\)
+Step 1: \(\sin x+\cos x=\sqrt2\left(\tfrac{1}{\sqrt2}\sin x+\tfrac{1}{\sqrt2}\cos x\right)=\sqrt2\sin\left(x+\tfrac{\pi}{4}\right)\)
+Step 2: \(\text{since }|\sin|\le1,\ \text{a solution exists iff }|k|\le\sqrt2\)
+Step 3: \(k=1:\ \sin\left(x+\tfrac{\pi}{4}\right)=\tfrac{1}{\sqrt2}=\sin\tfrac{\pi}{4}\Rightarrow x+\tfrac{\pi}{4}=n\pi+(-1)^n\tfrac{\pi}{4}\)
+Worked derivation: \[n=2m:\ x=2m\pi;\qquad n=2m+1:\ x=(2m+1)\pi-\tfrac{\pi}{2}=2m\pi+\tfrac{\pi}{2}\]
+Check: \[x=0:\ 0+1=1\ \checkmark;\quad x=\tfrac{\pi}{2}:\ 1+0=1\ \checkmark\]
+Why: \(\text{combining the two terms into one sine shows the expression ranges exactly over }[-\sqrt2,\sqrt2]\text{, and the general solution of a sine equation then follows}\)
+Why not the others: (B) \(\text{the amplitude is }\sqrt2\text{, and }x=\pi\text{ gives }-1\); (C) \(x=\tfrac{\pi}{4}\text{ gives }\sqrt2\neq1\); (D) \(k=2\text{ has no solution}\).
+Key point: \(\sin x+\cos x\in[-\sqrt2,\sqrt2]\)
+
+@@ Q42
+format: numerical
+sub_topic: Finding the real values of a parameter for which both roots of a quadratic lie inside a given interval, by solving for the roots explicitly
+Q: For which real \(k\) do both roots of \(x^2-2kx+k^2-4=0\) lie strictly between \(-3\) and \(5\)?
+A) \(k>-1\) only
+B) \(-3<k<5\)
+C) \(-1<k<3\); the integer values of \(k\) are \(0,1,2\)
+D) every real \(k\), since the discriminant is always positive
+KEY: C
+SOL:
+Answer: (C) \(-1<k<3\); integer values \(0,1,2\).
+Given: \(x^2-2kx+k^2-4=0;\ \text{interval }(-3,5)\)
+Formula/Principle: \(x^2-2kx+k^2-4=(x-k)^2-4\Rightarrow\text{roots }k\pm2\)
+Step 1: \(\text{discriminant }4k^2-4(k^2-4)=16>0\Rightarrow\text{roots }k-2,\ k+2\text{ always real and distinct}\)
+Step 2: \(\text{smaller root: }k-2>-3\Rightarrow k>-1\)
+Step 3: \(\text{larger root: }k+2<5\Rightarrow k<3\Rightarrow-1<k<3\)
+Worked derivation: \[k=0:\ \text{roots }\pm2\in(-3,5)\ \checkmark;\quad k=3:\ \text{roots }1,5\ (5\text{ not strictly inside})\]
+Check: \[\text{general test: }f(-3)>0,\ f(5)>0,\ -3<k<5:\ (k+3)^2>4\text{ and }(k-5)^2>4\text{ give the same range}\ \checkmark\]
+Why: \(\text{both roots lie in the interval only when the smaller exceeds the left end and the larger is below the right end}\)
+Why not the others: (A) \(\text{ignores the right end}\); (B) \(\text{puts the vertex, not both roots, in the interval}\); (D) \(\text{real roots need not lie in the interval}\).
+Key point: \(\text{both roots in }(a,b)\Leftrightarrow\text{smaller root}>a\text{ and larger root}<b\)
+
+@@ Q43
+format: numerical
+sub_topic: Arrangements of a word with repeated letters and the number in which two identical letters are not together
+Q: How many arrangements of the letters of ARRANGE are there, and in how many are the two R's not together?
+A) 5040; 3600
+B) 2520; 1800
+C) 1260; 360
+D) 1260; 900
+KEY: D
+SOL:
+Answer: (D) \(1260\) arrangements; \(900\) with the R's apart.
+Given: \(\text{ARRANGE: 7 letters, A twice, R twice, N, G, E once}\)
+Formula/Principle: \(\dfrac{n!}{p!\,q!}\text{ for repeated letters; complement: apart}=\text{total}-\text{together}\)
+Step 1: \(\text{total}=\dfrac{7!}{2!\,2!}=\dfrac{5040}{4}=1260\)
+Step 2: \(\text{R's together: treat RR as one block}\Rightarrow 6\text{ objects with A twice: }\dfrac{6!}{2!}=360\)
+Step 3: \(\text{apart}=1260-360=900\)
+Worked derivation: \[\text{gap method: arrange A,A,N,G,E in }\tfrac{5!}{2!}=60\text{ ways; choose 2 of 6 gaps: }\binom62=15;\ 60\times15=900\ \checkmark\]
+Check: \[900+360=1260\]
+Why: \(\text{dividing by }2!\text{ for each repeated letter removes orderings that look identical; the complement handles "not together"}\)
+Why not the others: (A) \(\text{ignores repeats}\); (B) \(\text{divides by only one }2!\); (C) \(\text{360 is the "together" count}\).
+Key point: \(\text{not together}=\text{total}-\text{together (block method)}\)
+
+@@ Q44
+format: numerical
+sub_topic: Finding two positive numbers from their arithmetic and geometric means, their harmonic mean and the relation G² = AH
+Q: Two positive numbers have arithmetic mean 10 and geometric mean 8. What are the numbers and their harmonic mean?
+A) 12 and 8; HM 9.6
+B) 16 and 4; HM 6.4, and \(G^2=AH\) holds
+C) 18 and 2; HM 3.6
+D) 16 and 4; HM 10
+KEY: B
+SOL:
+Answer: (B) \(16\) and \(4\); \(H=6.4\).
+Given: \(A=\dfrac{a+b}{2}=10,\ G=\sqrt{ab}=8\)
+Formula/Principle: \(a,b\text{ are roots of }x^2-2Ax+G^2=0;\ H=\dfrac{2ab}{a+b}=\dfrac{G^2}{A}\)
+Step 1: \(a+b=20,\ ab=64\Rightarrow x^2-20x+64=0\)
+Step 2: \((x-16)(x-4)=0\Rightarrow a=16,\ b=4\)
+Step 3: \(H=\dfrac{2\cdot64}{20}=6.4\)
+Worked derivation: \[G^2=64=10\times6.4=AH\ \checkmark\]
+Check: \[A\ge G\ge H:\ 10\ge8\ge6.4\ \checkmark\]
+Why: \(\text{the AM gives the sum and the GM gives the product, which fix the two numbers as roots of a quadratic}\)
+Why not the others: (A) \(\sqrt{96}\ne8\); (C) \(\sqrt{36}=6\ne8\); (D) \(\text{HM cannot exceed GM}\).
+Key point: \(A\ge G\ge H,\ G^2=AH\text{ for two positive numbers}\)
+
+@@ Q45
+format: numerical
+sub_topic: Finding the acute angle between two lines from their slopes using the tangent formula
+Q: What is the acute angle between the lines \(y=2x+1\) and \(y=-3x+5\)?
+A) \(30^\circ\)
+B) \(60^\circ\)
+C) \(90^\circ\)
+D) \(45^\circ\)
+KEY: D
+SOL:
+Answer: (D) \(45^\circ\).
+Given: \(m_1=2,\ m_2=-3\)
+Formula/Principle: \(\tan\theta=\left|\dfrac{m_1-m_2}{1+m_1m_2}\right|\)
+Step 1: \(m_1-m_2=2-(-3)=5\)
+Step 2: \(1+m_1m_2=1-6=-5\)
+Step 3: \(\tan\theta=|5/(-5)|=1\Rightarrow\theta=45^\circ\)
+Worked derivation: \[\tan^{-1}2\approx63.43^\circ,\ \ \tan^{-1}(-3)\approx108.43^\circ;\ \ 108.43^\circ-63.43^\circ=45^\circ\]
+Check: \[m_1m_2=-6\ne-1\Rightarrow\text{not perpendicular}\ \checkmark\]
+Why: \(\text{the angle between lines is the difference of their inclinations, and }\tan(\theta_2-\theta_1)\text{ expands to the formula}\)
+Why not the others: (A),(B) \(\text{would need }\tan\theta=1/\sqrt3\text{ or }\sqrt3\); (C) \(\text{needs }m_1m_2=-1\).
+Key point: \(\tan\theta=\left|\frac{m_1-m_2}{1+m_1m_2}\right|\)
+
+@@ Q46
+format: numerical
+sub_topic: Completing squares to identify a second-degree equation as an ellipse, finding its centre, axes and eccentricity, and the degenerate cases
+Q: By completing squares, identify the curve \(x^2+4y^2-2x+16y+13=0\) and give its centre, axes and eccentricity. Which description is correct?
+A) a circle of radius 2 centred at \((1,-2)\)
+B) the ellipse \(\dfrac{(x-1)^2}{4}+\dfrac{(y+2)^2}{1}=1\), centre \((1,-2)\), major axis 4, minor axis 2, eccentricity \(\dfrac{\sqrt3}{2}\); if the constant 13 were replaced by 17 the equation would represent only the point \((1,-2)\), and by any number above 17, no real points
+C) a hyperbola centred at \((-1,2)\)
+D) a parabola with vertex \((1,-2)\)
+KEY: B
+SOL:
+Answer: (B) Ellipse with centre \((1,-2)\), \(a=2,\ b=1,\ e=\frac{\sqrt3}{2}\).
+Given: \(x^2+4y^2-2x+16y+13=0\)
+Formula/Principle: \(\text{complete squares; }\dfrac{(x-h)^2}{a^2}+\dfrac{(y-k)^2}{b^2}=1,\ e=\sqrt{1-b^2/a^2}\)
+Step 1: \(x^2-2x=(x-1)^2-1;\quad 4y^2+16y=4(y+2)^2-16\)
+Step 2: \((x-1)^2+4(y+2)^2-1-16+13=0\Rightarrow(x-1)^2+4(y+2)^2=4\)
+Step 3: \(\text{divide by 4: }\dfrac{(x-1)^2}{4}+(y+2)^2=1\Rightarrow a=2,\ b=1\)
+Worked derivation: \[e=\sqrt{1-\tfrac14}=\tfrac{\sqrt3}{2};\quad\text{constant }c:\ (x-1)^2+4(y+2)^2=17-c\]
+Check: \[(3,-2):\ 9+16-6-32+13=0\ \checkmark\ (\text{end of major axis})\]
+Why: \(\text{both squared terms have positive but unequal coefficients, giving an ellipse once the right side is positive}\)
+Why not the others: (A) \(\text{unequal coefficients of }x^2,y^2\); (C) \(\text{needs opposite signs}\); (D) \(\text{both variables are squared}\).
+Key point: \(\text{complete squares; right side }>0,=0,<0\Rightarrow\text{ellipse, point, empty}\)
+
+@@ Q47
+format: numerical
+sub_topic: Finding all circles that touch both coordinate axes and have their centre on a given line
+Q: Which are all the circles that touch both coordinate axes and have their centres on the line \(2x-y=3\)?
+A) \((x-3)^2+(y-3)^2=9\) and \((x-1)^2+(y+1)^2=1\)
+B) only \((x-3)^2+(y-3)^2=9\)
+C) \((x+3)^2+(y+3)^2=9\) and \((x+1)^2+(y-1)^2=1\)
+D) \((x-1)^2+(y-1)^2=1\) and \((x-3)^2+(y+3)^2=9\)
+KEY: A
+SOL:
+Answer: (A) \((x-3)^2+(y-3)^2=9\) and \((x-1)^2+(y+1)^2=1\).
+Given: \(\text{centre }(h,k)\text{ on }2x-y=3;\ \text{touches both axes}\)
+Formula/Principle: \(\text{touching both axes}\Rightarrow|h|=|k|=r\)
+Step 1: \(k=h:\ 2h-h=3\Rightarrow h=3,\ k=3,\ r=3\)
+Step 2: \(k=-h:\ 2h+h=3\Rightarrow h=1,\ k=-1,\ r=1\)
+Step 3: \(\text{circles }(x-3)^2+(y-3)^2=9\text{ and }(x-1)^2+(y+1)^2=1\)
+Worked derivation: \[\text{centres: }2(3)-3=3\ \checkmark;\quad2(1)-(-1)=3\ \checkmark\]
+Check: \[\text{distance of }(1,-1)\text{ from each axis}=1=r\ \checkmark\]
+Why: \(\text{a circle touching both axes has its centre on }y=x\text{ or }y=-x\text{, each meeting the given line once}\)
+Why not the others: (B) \(\text{misses the case }k=-h\); (C) \(2(-3)-(-3)=-3\ne3\); (D) \(\text{centres }(1,1),(3,-3)\text{ are not on the line}\).
+Key point: \(\text{touching both axes}\Rightarrow\text{centre on }y=\pm x,\ r=|h|\)
+
+@@ Q48
+format: numerical
+sub_topic: Evaluating three standard limits: a ratio of sines, an exponential limit and the limit of (1 − cos x)/x²
+Q: What are the values of \(\displaystyle\lim_{x\to0}\frac{\sin3x}{\sin5x}\), \(\displaystyle\lim_{x\to0}\frac{e^{8x}-1}{x}\) and \(\displaystyle\lim_{x\to0}\frac{1-\cos x}{x^2}\), in that order?
+A) \(\tfrac53,\ 8,\ 2\)
+B) \(1,\ 1,\ 0\)
+C) \(\tfrac35,\ 8,\ \tfrac12\)
+D) \(\tfrac35,\ \tfrac18,\ 1\)
+KEY: C
+SOL:
+Answer: (C) \(\frac35,\ 8,\ \frac12\).
+Given: \(\text{three limits as }x\to0\)
+Formula/Principle: \(\lim\dfrac{\sin x}{x}=1;\ \lim\dfrac{e^x-1}{x}=1;\ 1-\cos x=2\sin^2\tfrac{x}{2}\)
+Step 1: \(\dfrac{\sin3x}{\sin5x}=\dfrac{\sin3x}{3x}\cdot\dfrac{5x}{\sin5x}\cdot\dfrac35\to\dfrac35\)
+Step 2: \(\dfrac{e^{8x}-1}{x}=8\cdot\dfrac{e^{8x}-1}{8x}\to8\)
+Step 3: \(\dfrac{1-\cos x}{x^2}=\dfrac{2\sin^2(x/2)}{x^2}=\dfrac12\left(\dfrac{\sin(x/2)}{x/2}\right)^2\to\dfrac12\)
+Worked derivation: \[x=0.01:\ \frac{1-\cos0.01}{10^{-4}}\approx\frac{5.0\times10^{-5}}{10^{-4}}=0.5\]
+Check: \[\text{series }1-\cos x\approx\tfrac{x^2}{2}\ \checkmark\]
+Why: \(\text{each limit is rescaled to a standard form whose value is 1, and the leftover constant gives the answer}\)
+Why not the others: (A) \(\text{ratio inverted; third limit wrong}\); (B) \(\text{ignores the multipliers}\); (D) \(\text{second limit inverted}\).
+Key point: \(\frac{\sin ax}{\sin bx}\to\frac ab;\ \frac{e^{ax}-1}{x}\to a;\ \frac{1-\cos x}{x^2}\to\frac12\)
+
+@@ Q49
+format: numerical
+sub_topic: Bayes' theorem for a student who either knows the answer or guesses among four options, given that the answer is correct
+Q: In a four-option MCQ, a student knows the answer with probability \(\tfrac34\) and otherwise guesses at random. Given that the student answered correctly, what is the probability that the student knew the answer?
+A) \(\tfrac34\)
+B) \(\tfrac{13}{16}\)
+C) \(\tfrac{12}{13}\)
+D) \(\tfrac{1}{13}\)
+KEY: C
+SOL:
+Answer: (C) \(\frac{12}{13}\).
+Given: \(P(K)=\tfrac34,\ P(G)=\tfrac14,\ P(C\mid K)=1,\ P(C\mid G)=\tfrac14\)
+Formula/Principle: \(P(K\mid C)=\dfrac{P(K)P(C\mid K)}{P(K)P(C\mid K)+P(G)P(C\mid G)}\)
+Step 1: \(P(K)P(C\mid K)=\tfrac34\)
+Step 2: \(P(G)P(C\mid G)=\tfrac14\cdot\tfrac14=\tfrac1{16}\)
+Step 3: \(P(C)=\tfrac{12}{16}+\tfrac{1}{16}=\tfrac{13}{16}\Rightarrow P(K\mid C)=\dfrac{12/16}{13/16}=\tfrac{12}{13}\)
+Worked derivation: \[\text{out of 64 students: 48 know (all correct), 16 guess (4 correct)}\Rightarrow\tfrac{48}{52}=\tfrac{12}{13}\]
+Check: \[P(G\mid C)=\tfrac1{13};\ \tfrac{12}{13}+\tfrac1{13}=1\ \checkmark\]
+Why: \(\text{a correct answer is evidence of knowing, so the posterior }\tfrac{12}{13}\text{ exceeds the prior }\tfrac34\)
+Why not the others: (A) \(\text{the prior, ignores the evidence}\); (B) \(\text{that is }P(C)\); (D) \(\text{that is }P(G\mid C)\).
+Key point: \(\text{posterior}=\frac{\text{prior}\times\text{likelihood}}{\text{total probability}}\)
+
+@@ Q50
+format: numerical
+sub_topic: Solving an equation in inverse tangents using the addition formula and rejecting the extraneous root
+Q: Which value(s) of \(x\) satisfy \(\tan^{-1}x+\tan^{-1}2x=\dfrac{\pi}{4}\)?
+A) only \(x=\dfrac{-3+\sqrt{17}}{4}\)
+B) \(x=\dfrac{-3\pm\sqrt{17}}{4}\)
+C) only \(x=\dfrac{-3-\sqrt{17}}{4}\)
+D) \(x=\dfrac13\)
+KEY: A
+SOL:
+Answer: (A) \(x=\frac{-3+\sqrt{17}}{4}\approx0.281\).
+Given: \(\tan^{-1}x+\tan^{-1}2x=\tfrac{\pi}{4}\)
+Formula/Principle: \(\tan^{-1}a+\tan^{-1}b=\tan^{-1}\dfrac{a+b}{1-ab}\ (ab<1)\)
+Step 1: \(\dfrac{3x}{1-2x^2}=1\Rightarrow2x^2+3x-1=0\)
+Step 2: \(x=\dfrac{-3\pm\sqrt{9+8}}{4}=\dfrac{-3\pm\sqrt{17}}{4}\)
+Step 3: \(\text{the negative root }\approx-1.78\text{ makes both terms negative, so the sum cannot be }\tfrac{\pi}{4}\text{; reject}\)
+Worked derivation: \[x\approx0.281:\ \tan^{-1}0.281+\tan^{-1}0.562\approx15.7^\circ+29.3^\circ=45^\circ\ \checkmark\]
+Check: \[x\approx-1.78:\ \tan^{-1}(-1.78)+\tan^{-1}(-3.56)\approx-60.7^\circ-74.3^\circ=-135^\circ\ne45^\circ\]
+Why: \(\text{taking tangents of both sides can introduce roots where the true sum is }\tfrac{\pi}{4}-\pi\text{, so each root must be checked}\)
+Why not the others: (B) \(\text{includes the extraneous root}\); (C) \(\text{keeps the wrong root}\); (D) \(\tan^{-1}\tfrac13+\tan^{-1}\tfrac23\ne\tfrac{\pi}{4}\ (\tfrac{1}{1-2/9}=\tfrac97)\).
+Key point: \(\text{always check roots of inverse-trig equations against the principal ranges}\)
+
+@@ Q51
+format: numerical
+sub_topic: Area of a triangle from coordinates with an unknown vertex, the values giving a given area and the collinearity condition
+Q: The triangle with vertices \((1,2)\), \((4,6)\) and \((k,0)\) has area 7 square units. Which statement is correct?
+A) \(k=3\) only
+B) \(k=-3\) or \(k=4\); collinear when \(k=\tfrac12\)
+C) \(k=7\) or \(k=-7\)
+D) the area equals \(|1+2k|\), so \(k=3\) or \(k=-4\); the three points are collinear when \(k=-\tfrac12\)
+KEY: D
+SOL:
+Answer: (D) Area \(=|1+2k|\); \(k=3\) or \(-4\); collinear at \(k=-\frac12\).
+Given: \((x_1,y_1)=(1,2),\ (x_2,y_2)=(4,6),\ (x_3,y_3)=(k,0)\)
+Formula/Principle: \(\Delta=\tfrac12\left|x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)\right|\)
+Step 1: \(\Delta=\tfrac12|1(6)+4(-2)+k(-4)|=\tfrac12|-2-4k|=|1+2k|\)
+Step 2: \(|1+2k|=7\Rightarrow1+2k=7\text{ or }-7\Rightarrow k=3\text{ or }-4\)
+Step 3: \(\text{collinear}\Leftrightarrow\Delta=0\Rightarrow k=-\tfrac12\)
+Worked derivation: \[k=3:\ \tfrac12|6-8-12|=7\ \checkmark;\quad k=-4:\ \tfrac12|6-8+16|=7\ \checkmark\]
+Check: \[\text{line through }(1,2),(4,6):\ y-2=\tfrac43(x-1);\ y=0\Rightarrow x=-\tfrac12\ \checkmark\]
+Why: \(\text{the absolute value makes the area equation give two positions, one on each side of the line through the fixed vertices}\)
+Why not the others: (A) \(\text{misses the second sign}\); (B) \(\text{sign errors}\); (C) \(\text{forgets the factor of 2 in }1+2k\).
+Key point: \(\text{area }=\tfrac12|\det|\text{; area }0\Leftrightarrow\text{collinear}\)
+
+@@ Q52
+format: numerical
+sub_topic: Implicit differentiation of x² + xy + y² = 7 at a point, and the slope of a parametric curve checked against its Cartesian equation
+Q: For the curve \(x^2+xy+y^2=7\), what is \(\dfrac{dy}{dx}\) at \((1,2)\)? And for the curve \(x=t+\dfrac1t,\ y=t-\dfrac1t\), what is \(\dfrac{dy}{dx}\) at \(t=2\)?
+A) \(-\tfrac54\); \(\tfrac35\)
+B) \(-\tfrac45\); \(\tfrac53\), and the curve is the hyperbola \(x^2-y^2=4\)
+C) \(\tfrac45\); \(\tfrac53\)
+D) \(-\tfrac12\); \(1\)
+KEY: B
+SOL:
+Answer: (B) \(-\frac45\); \(\frac53\).
+Given: \(x^2+xy+y^2=7\text{ through }(1,2);\ x=t+\tfrac1t,\ y=t-\tfrac1t,\ t=2\)
+Formula/Principle: \(\text{implicit: differentiate term by term, product rule on }xy;\ \text{parametric: }\dfrac{dy}{dx}=\dfrac{dy/dt}{dx/dt}\)
+Step 1: \(2x+y+xy'+2yy'=0\Rightarrow y'=-\dfrac{2x+y}{x+2y}=-\dfrac45\text{ at }(1,2)\)
+Step 2: \(\dfrac{dx}{dt}=1-\dfrac1{t^2},\ \dfrac{dy}{dt}=1+\dfrac1{t^2}\Rightarrow\dfrac{dy}{dx}=\dfrac{t^2+1}{t^2-1}\)
+Step 3: \(t=2:\ \dfrac{dy}{dx}=\dfrac{5}{3}\)
+Worked derivation: \[x^2-y^2=\left(t+\tfrac1t\right)^2-\left(t-\tfrac1t\right)^2=4;\quad 2x-2yy'=0\Rightarrow y'=\frac xy=\frac{5/2}{3/2}=\frac53\ \checkmark\]
+Check: \[(1,2):\ 1+2+4=7\ \checkmark;\quad t=2\Rightarrow(x,y)=(2.5,1.5)\]
+Why: \(\text{implicit differentiation treats }y\text{ as a function of }x\text{; for a parametric curve the chain rule divides the two rates}\)
+Why not the others: (A) \(\text{both slopes inverted}\); (C) \(\text{sign of the first slope wrong}\); (D) \(\text{arithmetic errors}\).
+Key point: \(y'=-\frac{F_x}{F_y};\ \frac{dy}{dx}=\frac{\dot y}{\dot x}\)
+
+@@ Q53
+format: numerical
+sub_topic: Maximising the area of a rectangular field along a river with a fixed length of fence on three sides, and the widths that give a smaller area
+Q: A farmer has 120 m of fence to enclose a rectangular field beside a straight river (no fence along the river). What is the largest possible area, and for which widths \(x\) (the sides perpendicular to the river) is the area 1600 m²?
+A) \(900\ \text{m}^2\); \(x=30\) only
+B) \(1800\ \text{m}^2\) at \(x=30\) m; area 1600 m² for \(x=20\) m or \(x=40\) m
+C) \(3600\ \text{m}^2\); \(x=40\) only
+D) \(1800\ \text{m}^2\) at \(x=60\) m; no width gives 1600 m²
+KEY: B
+SOL:
+Answer: (B) \(1800\ \text{m}^2\) at \(x=30\); \(1600\ \text{m}^2\) at \(x=20\) or \(40\).
+Given: \(\text{fence: }2x+y=120;\ \text{area }A=xy\)
+Formula/Principle: \(A(x)=x(120-2x);\ A'(x)=0,\ A''<0\Rightarrow\text{max}\)
+Step 1: \(A=120x-2x^2;\ A'=120-4x=0\Rightarrow x=30\)
+Step 2: \(A''=-4<0\Rightarrow\text{max};\ y=60,\ A=1800\ \text{m}^2\)
+Step 3: \(120x-2x^2=1600\Rightarrow x^2-60x+800=0\Rightarrow(x-20)(x-40)=0\)
+Worked derivation: \[x=20:\ y=80,\ A=1600\ \checkmark;\quad x=40:\ y=40,\ A=1600\ \checkmark\]
+Check: \[\text{the parabola }A(x)\text{ is symmetric about }x=30:\ 20\text{ and }40\text{ are equidistant}\ \checkmark\]
+Why: \(\text{the area is a downward parabola in }x\text{; any value below the maximum is reached at two widths symmetric about the vertex}\)
+Why not the others: (A) \(\text{that is a square with fence on 4 sides}\); (C) \(\text{needs }y=90\text{ with }x=40\text{, exceeding the fence}\); (D) \(x=60\text{ leaves }y=0\).
+Key point: \(A=x(L-2x)\text{ is maximum at }x=L/4\)
+
+@@ Q54
+format: numerical
+sub_topic: Partial fractions with a parameter in the numerator and the value of the parameter that removes one logarithm from the integral
+Q: Write \(\dfrac{x+k}{(x-1)(x+2)}=\dfrac{A}{x-1}+\dfrac{B}{x+2}\). Which statement is correct?
+A) \(A=\dfrac{k}{3},\ B=\dfrac{1}{3}\); the integral never contains \(\ln|x-1|\)
+B) \(A=1,\ B=k\) for all \(k\)
+C) \(A=\dfrac{2-k}{3},\ B=\dfrac{1+k}{3}\); \(\ln|x+2|\) disappears when \(k=2\)
+D) \(A=\dfrac{1+k}{3},\ B=\dfrac{2-k}{3}\); the integral \(\displaystyle\int\frac{x+k}{(x-1)(x+2)}dx\) has no \(\ln|x-1|\) term exactly when \(k=-1\), and then equals \(\ln|x+2|+C\)
+KEY: D
+SOL:
+Answer: (D) \(A=\frac{1+k}{3},\ B=\frac{2-k}{3}\); \(k=-1\) removes \(\ln|x-1|\).
+Given: \(x+k=A(x+2)+B(x-1)\)
+Formula/Principle: \(\text{cover-up: put }x=1\text{ and }x=-2\)
+Step 1: \(x=1:\ 1+k=3A\Rightarrow A=\dfrac{1+k}{3}\)
+Step 2: \(x=-2:\ -2+k=-3B\Rightarrow B=\dfrac{2-k}{3}\)
+Step 3: \(\displaystyle\int=A\ln|x-1|+B\ln|x+2|+C;\ A=0\Leftrightarrow k=-1\)
+Worked derivation: \[k=-1:\ \frac{x-1}{(x-1)(x+2)}=\frac{1}{x+2}\Rightarrow\int=\ln|x+2|+C;\ B=\tfrac{3}{3}=1\ \checkmark\]
+Check: \[A+B=\tfrac{1+k+2-k}{3}=1=\text{coefficient of }x\ \checkmark\]
+Why: \(\text{a logarithm term vanishes when the numerator shares the corresponding factor of the denominator}\)
+Why not the others: (A) \(A\text{ and }B\text{ wrong}\); (B) \(\text{fails }A+B=1\text{ unless }k=0\); (C) \(A\text{ and }B\text{ swapped}\).
+Key point: \(\text{cover-up rule; a factor cancelling the numerator removes its log}\)
+
+@@ Q55
+format: numerical
+sub_topic: Integrating x sin nx over [0, π] by parts and determining its sign for positive integers n
+Q: Let \(I_n=\displaystyle\int_0^{\pi}x\sin nx\,dx\) for positive integers \(n\). How many of \(I_1,I_2,\dots,I_6\) are positive?
+A) 0
+B) 6
+C) 3
+D) 2
+KEY: C
+SOL:
+Answer: (C) \(3\) (\(n=1,3,5\)).
+Given: \(I_n=\int_0^\pi x\sin nx\,dx,\ n\in\{1,\dots,6\}\)
+Formula/Principle: \(\int u\,dv=uv-\int v\,du\text{ with }u=x,\ dv=\sin nx\,dx\)
+Step 1: \(I_n=\left[-\dfrac{x\cos nx}{n}\right]_0^\pi+\dfrac1n\int_0^\pi\cos nx\,dx\)
+Step 2: \(\int_0^\pi\cos nx\,dx=\left[\dfrac{\sin nx}{n}\right]_0^\pi=0\)
+Step 3: \(I_n=-\dfrac{\pi\cos n\pi}{n}=\dfrac{\pi(-1)^{n+1}}{n}\Rightarrow\text{positive for odd }n\)
+Worked derivation: \[I_1=\pi,\ I_2=-\tfrac{\pi}{2},\ I_3=\tfrac{\pi}{3},\ I_4=-\tfrac{\pi}{4},\ I_5=\tfrac{\pi}{5},\ I_6=-\tfrac{\pi}{6}\]
+Check: \[n=1:\ x\sin x\ge0\text{ on }[0,\pi]\Rightarrow I_1>0\ \checkmark\]
+Why: \(\text{for even }n\text{ the negative lobes of }\sin nx\text{ lie at larger }x\text{, where the weight }x\text{ is bigger, so they win}\)
+Why not the others: (A),(B),(D) \(\text{the sign alternates with }n\text{, giving three positive values}\).
+Key point: \(\int_0^\pi x\sin nx\,dx=\frac{\pi(-1)^{n+1}}{n}\)
+
+@@ Q56
+format: numerical
+sub_topic: Solving the linear differential equation y′ + y = x with an initial condition and analysing the solution's minimum and slant asymptote
+Q: The solution of \(\dfrac{dy}{dx}+y=x\) with \(y(0)=1\) is \(y(x)\). Which statement is correct?
+A) \(y=x-1+2e^{-x}\); its minimum is at \(x=\ln2\) with value \(\ln2\), and \(y\to x-1\) as \(x\to\infty\)
+B) \(y=x+e^{-x}\); minimum at \(x=0\)
+C) \(y=x-1+e^{x}\); no minimum
+D) \(y=2e^{-x}-x\); decreasing everywhere
+KEY: A
+SOL:
+Answer: (A) \(y=x-1+2e^{-x}\); minimum \(\ln2\) at \(x=\ln2\); asymptote \(y=x-1\).
+Given: \(y'+y=x,\ y(0)=1\)
+Formula/Principle: \(\text{I.F.}=e^{\int1\,dx}=e^x;\ \ y\,e^x=\int x e^x\,dx\)
+Step 1: \(\int xe^x\,dx=(x-1)e^x+C\Rightarrow y=x-1+Ce^{-x}\)
+Step 2: \(y(0)=-1+C=1\Rightarrow C=2\)
+Step 3: \(y'=1-2e^{-x}=0\Rightarrow x=\ln2;\ y''=2e^{-x}>0\Rightarrow\text{minimum}\)
+Worked derivation: \[y(\ln2)=\ln2-1+2\cdot\tfrac12=\ln2\approx0.693\]
+Check: \[y'+y=(1-2e^{-x})+(x-1+2e^{-x})=x\ \checkmark;\quad y(0)=-1+2=1\ \checkmark\]
+Why: \(\text{the integrating factor makes the left side an exact derivative; the decaying term }2e^{-x}\text{ dies out, leaving the line }x-1\)
+Why not the others: (B) \(y'+y=1+x\ne x\); (C) \(\text{the exponential should decay}\); (D) \(\text{fails the equation}\).
+Key point: \(y'+Py=Q\Rightarrow y\,e^{\int P}=\int Qe^{\int P}\)
+
+@@ Q57
+format: numerical
+sub_topic: Section formula in three dimensions for internal and external division, direction cosines of a segment and counting lattice points on it
+Q: For \(A(1,2,3)\) and \(B(4,8,9)\), which statement is correct?
+A) the segment \(AB\) contains 4 points with integer coordinates (including \(A\) and \(B\)); the point dividing \(AB\) internally in the ratio \(1:2\) is \((2,4,5)\), externally in \(1:2\) is \((-2,-4,-3)\); the direction cosines of \(\vec{AB}\) are \(\left(\tfrac13,\tfrac23,\tfrac23\right)\)
+B) \(AB\) contains 10 lattice points; internal \(1:2\) point \((3,6,7)\)
+C) internal \(1:2\) point \((2,4,5)\); external \(1:2\) point \((7,14,15)\); direction cosines \((3,6,6)\)
+D) direction cosines \(\left(\tfrac19,\tfrac29,\tfrac29\right)\); 2 lattice points
+KEY: A
+SOL:
+Answer: (A) \(4\) lattice points; \((2,4,5)\); \((-2,-4,-3)\); \(\left(\frac13,\frac23,\frac23\right)\).
+Given: \(\vec{AB}=(3,6,6),\ |AB|=\sqrt{9+36+36}=9\)
+Formula/Principle: \(\text{internal }m:n:\ \dfrac{mB+nA}{m+n};\ \text{external: }\dfrac{mB-nA}{m-n};\ \text{lattice points}=\gcd(3,6,6)+1\)
+Step 1: \(\text{internal }1:2:\ \dfrac{(4,8,9)+2(1,2,3)}{3}=\dfrac{(6,12,15)}{3}=(2,4,5)\)
+Step 2: \(\text{external }1:2:\ \dfrac{(4,8,9)-2(1,2,3)}{-1}=-(2,4,3)=(-2,-4,-3)\)
+Step 3: \(\gcd=3\Rightarrow A+t(1,2,2),\ t=0,1,2,3:\ 4\text{ lattice points}\)
+Worked derivation: \[\text{d.c.}=\tfrac{(3,6,6)}{9}=\left(\tfrac13,\tfrac23,\tfrac23\right);\ \tfrac19+\tfrac49+\tfrac49=1\ \checkmark\]
+Check: \[AP=|(1,2,2)|=3,\ PB=|(2,4,4)|=6\Rightarrow1:2\ \checkmark\]
+Why: \(\text{the section formula weights each end by the opposite ratio part; the gcd of the coordinate differences counts equal integer steps}\)
+Why not the others: (B) \(\text{wrong lattice count and point}\); (C) \(\text{external formula misapplied; direction ratios are not cosines}\); (D) \(\text{divides by 27 instead of 9}\).
+Key point: \(\text{d.c.}=\frac{\text{d.r.}}{\text{length}};\ \text{lattice points on segment}=\gcd+1\)
+
+@@ Q58
+format: numerical
+sub_topic: Shortest distance between two lines in vector form with a parameter, the condition for them to intersect and the angle between them
+Q: \(L_1:\ \vec r=(1,2,1)+\lambda(1,-1,1)\) and \(L_2:\ \vec r=(2,k,3)+\mu(2,1,-1)\). Which statement is correct?
+A) the shortest distance is \(|k|\) and the lines are parallel
+B) the lines intersect for every \(k\)
+C) the shortest distance is \(\dfrac{|k-2|}{\sqrt2}\); the lines meet at \(60^\circ\)
+D) the shortest distance is \(\dfrac{|k|}{\sqrt2}\), so the lines intersect only when \(k=0\); they are perpendicular, since \((1,-1,1)\cdot(2,1,-1)=0\)
+KEY: D
+SOL:
+Answer: (D) \(d=\frac{|k|}{\sqrt2}\); intersect iff \(k=0\); perpendicular.
+Given: \(\vec a_1=(1,2,1),\ \vec b_1=(1,-1,1);\ \vec a_2=(2,k,3),\ \vec b_2=(2,1,-1)\)
+Formula/Principle: \(d=\dfrac{|(\vec a_2-\vec a_1)\cdot(\vec b_1\times\vec b_2)|}{|\vec b_1\times\vec b_2|}\)
+Step 1: \(\vec b_1\times\vec b_2=\big((-1)(-1)-(1)(1),\ (1)(2)-(1)(-1),\ (1)(1)-(-1)(2)\big)=(0,3,3)\)
+Step 2: \(\vec a_2-\vec a_1=(1,k-2,2);\ \text{dot}=0+3(k-2)+6=3k\)
+Step 3: \(d=\dfrac{|3k|}{3\sqrt2}=\dfrac{|k|}{\sqrt2}\)
+Worked derivation: \[k=0:\ (1+\lambda,2-\lambda,1+\lambda)=(2+2\mu,\mu,3-\mu)\Rightarrow\lambda=\tfrac43,\ \mu=\tfrac23:\ (\tfrac73,\tfrac23,\tfrac73)\ \text{on both}\ \checkmark\]
+Check: \[\vec b_1\cdot\vec b_2=2-1-1=0\Rightarrow90^\circ\]
+Why: \(\text{the shortest distance is the projection of the joining vector on the common normal; it is zero exactly when the lines meet}\)
+Why not the others: (A) \(\text{direction vectors are not parallel}\); (B) \(d\ne0\text{ for }k\ne0\); (C) \(\text{wrong dot product and angle}\).
+Key point: \(\text{coplanar/intersecting}\Leftrightarrow(\vec a_2-\vec a_1)\cdot(\vec b_1\times\vec b_2)=0\)
+
+@@ Q59
+format: numerical
+sub_topic: Counting all functions, one-one functions and onto functions between finite sets, and checking a real function for bijectivity
+Q: Which statement about functions is correct?
+A) From a 3-element set to a 4-element set there are 12 functions, of which 24 are one-one; \(f(x)=x^3+x\) on \(\mathbb R\) is not one-one
+B) From a 4-element set onto a 3-element set there are 81 functions
+C) From \(\{1,2,3\}\) to \(\{a,b,c,d\}\) there are \(4^3=64\) functions, of which \(4\cdot3\cdot2=24\) are one-one; from a 4-element set to a 3-element set there are \(3^4-3\cdot2^4+3=36\) onto functions; \(f(x)=x^3+x\) is a bijection of \(\mathbb R\) onto \(\mathbb R\)
+D) There are no onto functions from a 4-element set to a 3-element set
+KEY: C
+SOL:
+Answer: (C) \(64\) functions, \(24\) one-one; \(36\) onto; \(x^3+x\) bijective.
+Given: \(|A|=3,\ |B|=4;\ \text{onto from 4 to 3 elements}\)
+Formula/Principle: \(\text{functions }|B|^{|A|};\ \text{one-one }{}^{|B|}P_{|A|};\ \text{onto by inclusion–exclusion}\)
+Step 1: \(4^3=64;\ \ 4\times3\times2=24\)
+Step 2: \(\text{onto}=3^4-\binom31 2^4+\binom32 1^4=81-48+3=36\)
+Step 3: \(f'(x)=3x^2+1>0\Rightarrow\text{strictly increasing (one-one)};\ f\to\pm\infty\text{ and continuous}\Rightarrow\text{onto}\)
+Worked derivation: \[\text{onto check: choose the pair sharing an image }\binom42=6,\ \text{assign 3 blocks to 3 images }3!=6:\ 6\times6=36\ \checkmark\]
+Check: \[36\le81\text{ (all functions from 4 to 3)}\ \checkmark\]
+Why: \(\text{inclusion–exclusion removes functions that miss one or more elements of the codomain}\)
+Why not the others: (A) \(\text{counts reversed; }x^3+x\text{ is one-one}\); (B) \(81\text{ is all functions}\); (D) \(\text{36 exist}\).
+Key point: \(\text{onto}(n\to3)=3^n-3\cdot2^n+3\)
+
+@@ Q60
+format: numerical
+sub_topic: Solving Cauchy's functional equation for a continuous function, and counting the self-inverse functions on a three-element set
+Q: \(f:\mathbb R\to\mathbb R\) is continuous, \(f(x+y)=f(x)+f(y)\) for all \(x,y\), and \(f(1)=3\). Also, let \(N\) be the number of functions \(g:\{1,2,3\}\to\{1,2,3\}\) with \(g(g(x))=x\) for all \(x\). Which is correct?
+A) \(f(x)=3^x\); \(N=6\)
+B) \(f(x)=3x\); \(N=4\)
+C) \(f(x)=x+2\); \(N=3\)
+D) \(f(x)=3x\); \(N=27\)
+KEY: B
+SOL:
+Answer: (B) \(f(x)=3x\); \(N=4\).
+Given: \(f(x+y)=f(x)+f(y),\ f\text{ continuous},\ f(1)=3\)
+Formula/Principle: \(\text{additivity}\Rightarrow f(q)=qf(1)\text{ for rational }q;\ \text{continuity extends to all reals}\)
+Step 1: \(x=y=0:\ f(0)=2f(0)\Rightarrow f(0)=0;\ f(n)=nf(1)=3n\)
+Step 2: \(nf(1/n)=f(1)\Rightarrow f(m/n)=3m/n;\ \text{rationals are dense and }f\text{ continuous}\Rightarrow f(x)=3x\)
+Step 3: \(g\circ g=\text{id}\Rightarrow g\text{ is a bijection made of fixed points and swaps: identity, }(12),(13),(23)\Rightarrow N=4\)
+Worked derivation: \[3(x+y)=3x+3y\ \checkmark;\ f(1)=3\ \checkmark\]
+Check: \[3\text{-cycles fail: }g=(123)\Rightarrow g(g(1))=3\ne1\]
+Why: \(\text{an additive function is linear on rationals, and continuity forces the same line everywhere; an involution can only fix or swap elements}\)
+Why not the others: (A) \(3^{x+y}\ne3^x+3^y\text{; 6 counts all bijections}\); (C) \(f(0)\ne0\); (D) \(27\text{ counts all functions}\).
+Key point: \(\text{continuous additive}\Rightarrow f(x)=cx;\ \text{involutions on 3 elements}=4\)

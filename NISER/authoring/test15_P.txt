@@ -1,0 +1,439 @@
+@@ Q61
+format: conceptual
+sub_topic: Using Gauss's law with suitable Gaussian surfaces to find the fields of an infinite line charge, an infinite plane sheet and a thin spherical shell, and how each falls with distance
+Q: Gauss's law gives the electric fields of three symmetric charge distributions. Which set of results is correct?
+A) Line charge: \(E\propto\dfrac{1}{r^2}\); plane sheet: \(E\propto\dfrac1r\); shell: \(E\) inside equals \(\dfrac{Q}{4\pi\varepsilon_0R^2}\)
+B) All three fields fall off as \(\dfrac{1}{r^2}\), because Coulomb's law is an inverse-square law
+C) Plane sheet: \(E=\dfrac{\sigma}{\varepsilon_0}\) on each side; shell: \(E\) is maximum at the centre
+D) Infinite line charge: \(E=\dfrac{\lambda}{2\pi\varepsilon_0r}\) (cylindrical Gaussian surface); infinite plane sheet: \(E=\dfrac{\sigma}{2\varepsilon_0}\), independent of distance (pill-box surface); thin spherical shell: \(E=\dfrac{Q}{4\pi\varepsilon_0r^2}\) outside (\(r>R\)) and \(E=0\) everywhere inside, because a concentric Gaussian sphere inside encloses no charge
+KEY: D
+SOL:
+Answer: (D) \(\frac{\lambda}{2\pi\varepsilon_0r}\); \(\frac{\sigma}{2\varepsilon_0}\); \(\frac{Q}{4\pi\varepsilon_0r^2}\) outside, \(0\) inside.
+Given: \(\text{linear density }\lambda,\ \text{surface density }\sigma,\ \text{shell charge }Q\text{ and radius }R\)
+Formula/Principle: \(\oint\vec E\cdot d\vec A=\dfrac{q_{\text{enc}}}{\varepsilon_0}\)
+Step 1: \(\text{line: cylinder of radius }r,\ \text{length }l:\ E(2\pi rl)=\dfrac{\lambda l}{\varepsilon_0}\Rightarrow E=\dfrac{\lambda}{2\pi\varepsilon_0r}\)
+Step 2: \(\text{sheet: pill-box of face area }A:\ 2EA=\dfrac{\sigma A}{\varepsilon_0}\Rightarrow E=\dfrac{\sigma}{2\varepsilon_0}\)
+Step 3: \(\text{shell: sphere of radius }r:\ E(4\pi r^2)=\dfrac{Q}{\varepsilon_0}\ (r>R),\ =0\ (r<R)\)
+Worked derivation: \[\text{line: }E\propto r^{-1};\quad\text{sheet: }E\propto r^{0};\quad\text{shell (outside): }E\propto r^{-2}\]
+Check: \[\text{units: }\frac{\text{C/m}}{(\text{C}^2/\text{N m}^2)\,\text{m}}=\text{N/C}\ \checkmark\]
+Why: \(\text{the symmetry fixes the direction and makes }E\text{ constant on the Gaussian surface, so the flux integral becomes }E\times\text{area}\)
+Why not the others: (A) \(\text{powers mixed up; field inside a shell is zero}\); (B) \(\text{extended distributions change the distance dependence}\); (C) \(\sigma/\varepsilon_0\text{ is for a conductor's surface; field inside the shell is zero}\).
+Key point: \(\text{line }1/r,\ \text{sheet constant},\ \text{shell }1/r^2\text{ outside and }0\text{ inside}\)
+
+@@ Q62
+format: numerical
+sub_topic: Effect of inserting an uncharged metal slab between capacitor plates connected to a battery on capacitance, charge, stored energy and the field in the gap
+Q: An air-filled parallel-plate capacitor has plate area \(0.020\ \mathrm{m^2}\) and separation 5.0 mm, and is kept connected to a 100 V battery. An uncharged metal slab 3.0 mm thick, with the same area, is slid in parallel to the plates. Which result is correct (\(\varepsilon_0=8.85\times10^{-12}\ \mathrm{F/m}\))?
+A) The capacitance rises from 35.4 pF to 88.5 pF; the charge rises from 3.54 nC to 8.85 nC; the stored energy rises from 0.177 µJ to 0.443 µJ; the field in each air gap becomes \(5.0\times10^4\ \mathrm{V/m}\), while the field inside the metal is zero
+B) The capacitance falls to 14.2 pF, because metal blocks the field
+C) The capacitance becomes infinite, because metal has infinite dielectric constant across the whole gap
+D) The charge stays at 3.54 nC and the voltage falls to 40 V
+KEY: A
+SOL:
+Answer: (A) \(35.4\to88.5\) pF; \(3.54\to8.85\) nC; \(0.177\to0.443\) µJ; gap field \(5.0\times10^4\) V/m.
+Given: \(A=0.020\ \mathrm{m^2},\ d=5.0\ \mathrm{mm},\ t=3.0\ \mathrm{mm},\ V=100\ \mathrm{V}\text{ (battery connected)}\)
+Formula/Principle: \(C_0=\dfrac{\varepsilon_0A}{d};\ \text{with a metal slab }C=\dfrac{\varepsilon_0A}{d-t};\ Q=CV;\ U=\tfrac12CV^2\)
+Step 1: \(C_0=\dfrac{8.85\times10^{-12}\times0.020}{5.0\times10^{-3}}=3.54\times10^{-11}\ \mathrm F=35.4\ \mathrm{pF}\)
+Step 2: \(C=\dfrac{8.85\times10^{-12}\times0.020}{2.0\times10^{-3}}=88.5\ \mathrm{pF}=2.5C_0\)
+Step 3: \(Q_0=3.54\ \mathrm{nC}\to Q=8.85\ \mathrm{nC};\ U_0=\tfrac12(35.4\times10^{-12})(10^4)=1.77\times10^{-7}\ \mathrm J\to U=4.43\times10^{-7}\ \mathrm J\)
+Worked derivation: \[E_{\text{gap}}=\frac{V}{d-t}=\frac{100}{2.0\times10^{-3}}=5.0\times10^{4}\ \mathrm{V/m};\quad E_{\text{metal}}=0\]
+Check: \[\frac{Q}{\varepsilon_0A}=\frac{8.85\times10^{-9}}{1.77\times10^{-13}}=5.0\times10^4\ \mathrm{V/m}\ \checkmark\]
+Why: \(\text{induced charges on the slab faces cancel the field inside it, so the whole voltage drops across the remaining 2 mm of air, as if the plates were closer}\)
+Why not the others: (B) \(\text{the slab increases }C\); (C) \(\text{only a slab filling the whole gap would short the plates}\); (D) \(\text{with the battery connected, }V\text{ stays 100 V and }Q\text{ changes}\).
+Key point: \(\text{metal slab of thickness }t:\ C=\frac{\varepsilon_0A}{d-t}\)
+
+@@ Q63
+format: numerical
+sub_topic: Combining a metal resistor and a carbon resistor in series so that the total resistance does not change with temperature, and why the temperature coefficients have opposite signs
+Q: A copper coil has resistance 10.0 Ω at 0 °C and temperature coefficient \(4.0\times10^{-3}\ \mathrm{K^{-1}}\). Carbon has temperature coefficient \(-5.0\times10^{-4}\ \mathrm{K^{-1}}\). What carbon resistance (at 0 °C) in series makes the total resistance nearly independent of temperature, and why?
+A) 10 Ω; total 20 Ω, because equal resistances cancel
+B) 80 Ω; total 90 Ω; the copper gains \(0.040\ \Omega\) per kelvin while the carbon loses \(80\times5\times10^{-4}=0.040\ \Omega\) per kelvin; resistance of a metal rises with temperature because the relaxation time of electrons falls (more collisions), while in carbon and semiconductors the number of charge carriers rises with temperature
+C) 8.0 Ω; total 18 Ω
+D) No combination can work, because both resistances increase with temperature
+KEY: B
+SOL:
+Answer: (B) \(80\ \Omega\) of carbon; total \(90\ \Omega\).
+Given: \(R_{\text{Cu}}=10.0\ \Omega,\ \alpha_{\text{Cu}}=4.0\times10^{-3}\ \mathrm{K^{-1}};\ \alpha_{\text C}=-5.0\times10^{-4}\ \mathrm{K^{-1}}\)
+Formula/Principle: \(R_T=R_0(1+\alpha\Delta T)\Rightarrow\dfrac{dR}{dT}=R_0\alpha;\ \text{series: }\dfrac{dR_{\text{tot}}}{dT}=R_{0,\text{Cu}}\alpha_{\text{Cu}}+R_{0,\text C}\alpha_{\text C}\)
+Step 1: \(R_{0,\text{Cu}}\alpha_{\text{Cu}}=10\times4\times10^{-3}=0.040\ \Omega/\mathrm K\)
+Step 2: \(R_{0,\text C}(-5\times10^{-4})=-0.040\Rightarrow R_{0,\text C}=80\ \Omega\)
+Step 3: \(R_{\text{tot}}=10+80=90\ \Omega\)
+Worked derivation: \[\text{at }50^\circ\mathrm C:\ R_{\text{Cu}}=10(1.20)=12.0,\ R_{\text C}=80(1-0.025)=78.0;\ \text{sum }90.0\ \Omega\ \checkmark\]
+Check: \[\text{units: }\Omega\times\mathrm K^{-1}\ \text{on both sides}\ \checkmark\]
+Why: \(\rho=\dfrac{m}{ne^2\tau}\text{: in metals }n\text{ is fixed and }\tau\text{ falls as }T\text{ rises; in carbon/semiconductors }n\text{ rises steeply, outweighing the fall in }\tau\)
+Why not the others: (A) \(\text{the coefficients differ, so equal resistances do not cancel}\); (C) \(\text{gives only }-0.004\ \Omega/\mathrm K\); (D) \(\text{carbon's resistance falls with temperature}\).
+Key point: \(\text{series compensation: }R_1\alpha_1+R_2\alpha_2=0\)
+
+@@ Q64
+format: numerical
+sub_topic: Selecting proton speed with crossed electric and magnetic fields, then finding the radius and period of its circular path when only the magnetic field acts
+Q: Protons pass undeflected through crossed fields \(E=3.0\times10^4\ \mathrm{V/m}\) and \(B=0.10\ \mathrm T\), then enter a region with only the same \(B\) (perpendicular to their velocity). What are their speed, orbit radius and period? (\(m_p=1.67\times10^{-27}\) kg, \(e=1.6\times10^{-19}\) C)
+A) \(3.0\times10^5\ \mathrm{m/s}\); 3.13 m; \(6.56\times10^{-5}\) s
+B) \(3.0\times10^3\ \mathrm{m/s}\); 0.313 mm; \(6.56\times10^{-7}\) s
+C) \(3.0\times10^5\ \mathrm{m/s}\); 3.13 cm; \(6.56\times10^{-7}\) s, the period being independent of the speed
+D) \(3.3\times10^{-6}\ \mathrm{m/s}\); 1.0 cm; \(2.1\times10^{-7}\) s
+KEY: C
+SOL:
+Answer: (C) \(v=3.0\times10^5\) m/s; \(r=3.13\) cm; \(T=6.56\times10^{-7}\) s.
+Given: \(E=3.0\times10^4\ \mathrm{V/m},\ B=0.10\ \mathrm T,\ m=1.67\times10^{-27}\ \mathrm{kg},\ q=1.6\times10^{-19}\ \mathrm C\)
+Formula/Principle: \(\text{undeflected: }qE=qvB\Rightarrow v=\dfrac EB;\ r=\dfrac{mv}{qB};\ T=\dfrac{2\pi m}{qB}\)
+Step 1: \(v=\dfrac{3.0\times10^4}{0.10}=3.0\times10^5\ \mathrm{m/s}\)
+Step 2: \(r=\dfrac{1.67\times10^{-27}\times3.0\times10^5}{1.6\times10^{-19}\times0.10}=\dfrac{5.01\times10^{-22}}{1.6\times10^{-20}}=3.13\times10^{-2}\ \mathrm m\)
+Step 3: \(T=\dfrac{2\pi\times1.67\times10^{-27}}{1.6\times10^{-20}}=6.56\times10^{-7}\ \mathrm s\)
+Worked derivation: \[T=\frac{2\pi r}{v}=\frac{2\pi\times0.0313}{3.0\times10^5}=6.56\times10^{-7}\ \mathrm s\ \checkmark\]
+Check: \[\text{units: }\frac{\mathrm{kg\,m/s}}{\mathrm{C\,T}}=\frac{\mathrm{kg\,m/s}}{\mathrm{kg/s}}=\mathrm m\ \checkmark\]
+Why: \(\text{only particles with }v=E/B\text{ feel balanced forces; in the pure magnetic field the force is perpendicular to }v\text{, giving uniform circular motion}\)
+Why not the others: (A) \(\text{radius and period off by }10^2\); (B) \(\text{speed wrong}\); (D) \(\text{uses }B/E\).
+Key point: \(v=E/B;\ r=mv/qB;\ T=2\pi m/qB\text{ (speed-independent)}\)
+
+@@ Q65
+format: experiment
+sub_topic: Measuring the speed of electromagnetic waves from the spacing of melted spots in a microwave oven with the turntable removed, using the standing-wave pattern
+Q: With the turntable removed, a plate of cheese is heated briefly in a 2.45 GHz microwave oven. Melted spots appear in a line with a spacing of 6.1 cm. What does this give for the speed of the microwaves, and why?
+A) \(1.5\times10^8\ \mathrm{m/s}\), because the spot spacing equals one wavelength
+B) \(3.0\times10^8\ \mathrm{m/s}\): reflections from the metal walls set up a standing wave whose antinodes (hottest spots) are \(\lambda/2\) apart, so \(\lambda=12.2\) cm and \(c=f\lambda=2.45\times10^9\times0.122\approx2.99\times10^8\ \mathrm{m/s}\)
+C) \(6.0\times10^8\ \mathrm{m/s}\), because the spots are a quarter-wavelength apart
+D) \(3.4\times10^2\ \mathrm{m/s}\), because microwaves are sound waves in the oven's air
+KEY: B
+SOL:
+Answer: (B) \(\lambda=12.2\) cm; \(c\approx3.0\times10^8\) m/s.
+Given: \(f=2.45\times10^9\ \mathrm{Hz};\ \text{spot spacing}=6.1\ \mathrm{cm}\)
+Formula/Principle: \(\text{adjacent antinodes of a standing wave are }\lambda/2\text{ apart};\ c=f\lambda\)
+Step 1: \(\lambda/2=6.1\ \mathrm{cm}\Rightarrow\lambda=12.2\ \mathrm{cm}=0.122\ \mathrm m\)
+Step 2: \(c=2.45\times10^9\times0.122\)
+Step 3: \(c=2.99\times10^8\ \mathrm{m/s}\)
+Worked derivation: \[\text{expected spacing }=\frac{c}{2f}=\frac{3.0\times10^8}{4.9\times10^9}=6.12\ \mathrm{cm}\ \checkmark\]
+Check: \[\text{microwave range }1\ \mathrm{mm}\text{ to }0.3\ \mathrm m:\ 12.2\ \mathrm{cm}\text{ lies inside}\ \checkmark\]
+Why: \(\text{the oven is a metal box, so waves reflect and superpose; energy is deposited where the electric field oscillates most strongly, at the antinodes}\)
+Why not the others: (A) \(\text{antinodes are half a wavelength apart}\); (C) \(\text{a quarter wavelength separates a node from an antinode}\); (D) \(\text{microwaves are electromagnetic}\).
+Key point: \(\text{antinode spacing}=\lambda/2;\ c=f\lambda\)
+
+@@ Q66
+format: numerical
+sub_topic: Deviation of red and violet light by a thin prism, its angular dispersion and why violet is deviated more
+Q: A thin glass prism of angle 6.0° has refractive index 1.514 for red and 1.532 for violet light. What is the angular dispersion, and which statement is correct?
+A) 0.018°; red is deviated more because its wavelength is longer
+B) 3.14° for both colours, because a thin prism does not disperse light
+C) The violet deviation is \(0.532\times6.0^\circ=3.19^\circ\) and the red is \(0.514\times6.0^\circ=3.08^\circ\), so the angular dispersion is 0.108°; violet is deviated more because glass has a larger refractive index for shorter wavelengths, i.e. light travels slower in glass at higher frequencies
+D) 0.108°; the deviation of a thin prism is \(nA\)
+KEY: C
+SOL:
+Answer: (C) \(\delta_v=3.19^\circ,\ \delta_r=3.08^\circ\); dispersion \(0.108^\circ\).
+Given: \(A=6.0^\circ,\ n_r=1.514,\ n_v=1.532\)
+Formula/Principle: \(\text{thin prism: }\delta=(n-1)A;\ \text{angular dispersion}=\delta_v-\delta_r=(n_v-n_r)A\)
+Step 1: \(\delta_v=(1.532-1)\times6.0^\circ=3.192^\circ\)
+Step 2: \(\delta_r=(1.514-1)\times6.0^\circ=3.084^\circ\)
+Step 3: \(\delta_v-\delta_r=0.108^\circ\)
+Worked derivation: \[(n_v-n_r)A=0.018\times6.0^\circ=0.108^\circ\ \checkmark\]
+Check: \[\text{mean }n=1.523\Rightarrow\delta\approx3.14^\circ,\ \text{between the two}\ \checkmark\]
+Why: \(\text{the refractive index of glass depends on wavelength (dispersion); a larger }n\text{ bends light more at each face}\)
+Why not the others: (A) \(\text{forgets to multiply by }A\text{; violet is deviated more}\); (B) \(\text{a thin prism still disperses}\); (D) \(\delta=(n-1)A\).
+Key point: \(\delta=(n-1)A;\ \text{dispersion}=(n_v-n_r)A\)
+
+@@ Q67
+format: experiment
+sub_topic: Refraction of water waves in a ripple tank at a boundary between deep and shallow water, finding speeds and the angle of refraction while the frequency stays fixed
+Q: In a ripple tank driven at 10 Hz, the wavelength is 2.0 cm in deep water and 1.5 cm over a submerged glass plate (shallow water). Straight wavefronts meet the boundary at 30° incidence. Which result is correct?
+A) The frequency drops to 7.5 Hz over the plate; the wave bends away from the normal
+B) Speeds 20 cm/s and 15 cm/s; angle of refraction 42°
+C) Speeds 0.2 cm/s and 0.15 cm/s; angle 30°, since the frequency is unchanged
+D) Speeds are 20 cm/s (deep) and 15 cm/s (shallow); the frequency stays 10 Hz, fixed by the source; \(\sin r=\sin30^\circ\times\dfrac{15}{20}=0.375\Rightarrow r\approx22^\circ\), so the waves bend towards the normal on entering the slower (shallow) region
+KEY: D
+SOL:
+Answer: (D) \(20\) and \(15\) cm/s; \(f=10\) Hz; \(r\approx22^\circ\).
+Given: \(f=10\ \mathrm{Hz},\ \lambda_1=2.0\ \mathrm{cm},\ \lambda_2=1.5\ \mathrm{cm},\ i=30^\circ\)
+Formula/Principle: \(v=f\lambda;\ \dfrac{\sin i}{\sin r}=\dfrac{v_1}{v_2}\)
+Step 1: \(v_1=10\times2.0=20\ \mathrm{cm/s};\ v_2=10\times1.5=15\ \mathrm{cm/s}\)
+Step 2: \(\sin r=\sin30^\circ\times\dfrac{15}{20}=0.5\times0.75=0.375\)
+Step 3: \(r=\sin^{-1}0.375\approx22.0^\circ\)
+Worked derivation: \[\frac{\sin30^\circ}{\sin22.0^\circ}=\frac{0.500}{0.375}=1.33=\frac{20}{15}\ \checkmark\]
+Check: \[r<i\text{ because }v_2<v_1\ \checkmark\]
+Why: \(\text{the frequency is set by the vibrator and cannot change at a boundary, so a change in speed shows up as a change in wavelength and direction (Huygens' construction)}\)
+Why not the others: (A) \(\text{frequency is unchanged; it bends towards the normal}\); (B) \(\text{uses }\sin r=\sin i\times v_1/v_2\text{, wrong}\); (C) \(\text{wrong units and no bending}\).
+Key point: \(\text{refraction: }f\text{ fixed},\ \frac{\sin i}{\sin r}=\frac{v_1}{v_2}=\frac{\lambda_1}{\lambda_2}\)
+
+@@ Q68
+format: numerical
+sub_topic: Counting the spectral lines emitted as hydrogen atoms excited to n = 4 return to the ground state, and finding the longest and shortest wavelengths and the visible lines
+Q: A sample of hydrogen atoms is excited to the \(n=4\) level. Which statement about the emitted lines is correct (\(R=1.097\times10^7\ \mathrm{m^{-1}}\))?
+A) 6 lines can appear; the longest wavelength is 1875 nm (\(4\to3\), infrared), the shortest is 97.2 nm (\(4\to1\), ultraviolet), and two lines, 486 nm (\(4\to2\)) and 656 nm (\(3\to2\)), are visible
+B) 3 lines appear; the shortest is \(4\to3\)
+C) 6 lines appear; the longest is \(4\to1\), because it has the largest energy
+D) 4 lines appear, all in the visible region
+KEY: A
+SOL:
+Answer: (A) \(6\) lines; longest \(1875\) nm; shortest \(97.2\) nm; visible \(486\) and \(656\) nm.
+Given: \(n_{\text{initial}}=4,\ R=1.097\times10^7\ \mathrm{m^{-1}}\)
+Formula/Principle: \(\text{lines}=\dfrac{n(n-1)}{2};\ \dfrac1\lambda=R\left(\dfrac1{n_f^2}-\dfrac1{n_i^2}\right)\)
+Step 1: \(\text{lines}=\dfrac{4\times3}{2}=6:\ 4\to3,4\to2,4\to1,3\to2,3\to1,2\to1\)
+Step 2: \(4\to3:\ \dfrac1\lambda=R\cdot\dfrac{7}{144}=5.333\times10^5\ \mathrm{m^{-1}}\Rightarrow\lambda=1875\ \mathrm{nm}\)
+Step 3: \(4\to1:\ \dfrac1\lambda=R\cdot\dfrac{15}{16}=1.0284\times10^7\ \mathrm{m^{-1}}\Rightarrow\lambda=97.2\ \mathrm{nm}\)
+Worked derivation: \[4\to2:\ R\cdot\tfrac{3}{16}\Rightarrow486\ \mathrm{nm};\quad3\to2:\ R\cdot\tfrac{5}{36}\Rightarrow656\ \mathrm{nm}\]
+Check: \[\text{visible range }400\text{–}700\ \mathrm{nm}\text{ contains only the two Balmer lines}\ \checkmark\]
+Why: \(\text{the smallest energy gap (between the closest high levels) gives the longest wavelength; the largest gap (to the ground state) gives the shortest}\)
+Why not the others: (B) \(\text{a sample has atoms taking every route}\); (C) \(\text{largest energy means shortest wavelength}\); (D) \(\text{only two lines are visible}\).
+Key point: \(\text{lines}=\frac{n(n-1)}{2};\ \lambda\propto\frac{1}{\Delta E}\)
+
+@@ Q69
+format: numerical
+sub_topic: Energy released by the complete fission of 1 kg of uranium-235 at 200 MeV per fission, in joules and kilowatt-hours
+Q: Each fission of U-235 releases about 200 MeV. If all the nuclei in 1.0 kg of U-235 undergo fission, about how much energy is released (\(N_A=6.02\times10^{23}\ \mathrm{mol^{-1}}\), \(1\ \mathrm{MeV}=1.6\times10^{-13}\) J)?
+A) \(8.2\times10^{13}\) J, about \(2.3\times10^7\) kWh
+B) \(5.1\times10^{26}\) J
+C) \(8.2\times10^{10}\) J, about \(2.3\times10^4\) kWh
+D) \(2.0\times10^{2}\) J
+KEY: A
+SOL:
+Answer: (A) \(\approx8.2\times10^{13}\) J \(\approx2.3\times10^7\) kWh.
+Given: \(m=1000\ \mathrm g,\ M=235\ \mathrm{g/mol},\ E_{\text{fission}}=200\ \mathrm{MeV}\)
+Formula/Principle: \(N=\dfrac{m}{M}N_A;\ E=N\times E_{\text{fission}};\ 1\ \mathrm{kWh}=3.6\times10^6\ \mathrm J\)
+Step 1: \(N=\dfrac{1000}{235}\times6.02\times10^{23}=2.56\times10^{24}\)
+Step 2: \(E=2.56\times10^{24}\times200=5.12\times10^{26}\ \mathrm{MeV}=5.12\times10^{26}\times1.6\times10^{-13}=8.2\times10^{13}\ \mathrm J\)
+Step 3: \(\dfrac{8.2\times10^{13}}{3.6\times10^6}=2.3\times10^7\ \mathrm{kWh}\)
+Worked derivation: \[\Delta m=\frac{E}{c^2}=\frac{8.2\times10^{13}}{9\times10^{16}}\approx0.9\ \mathrm g\ \text{of the 1 kg}\]
+Check: \[\text{burning 1 kg of coal gives }\sim3\times10^7\ \mathrm J;\ \text{fission is}\sim10^{6}\text{ times more}\ \checkmark\]
+Why: \(\text{fission releases about 0.9 MeV per nucleon, a million times the few eV per atom of chemical reactions}\)
+Why not the others: (B) \(\text{forgets to convert MeV to J}\); (C) \(\text{uses 1 g}\); (D) \(\text{energy of one fission in MeV}\).
+Key point: \(N=\frac{m}{M}N_A;\ 200\ \mathrm{MeV}\text{ per fission}\)
+
+@@ Q70
+format: numerical
+sub_topic: Using dimensional analysis to find how the speed of deep-water gravity waves and of capillary ripples depends on wavelength, and which waves travel faster
+Q: The speed of long waves on deep water depends only on \(g\) and wavelength \(\lambda\); that of short ripples only on surface tension \(\sigma\), density \(\rho\) and \(\lambda\). Which conclusion follows from dimensional analysis?
+A) Both speeds are independent of \(\lambda\)
+B) Gravity waves: \(v\propto\sqrt{g/\lambda}\); ripples: \(v\propto\sqrt{\sigma\lambda/\rho}\)
+C) Gravity waves: \(v\propto g\lambda\); ripples: \(v\propto\sigma/(\rho\lambda)\)
+D) Gravity waves: \(v\propto\sqrt{g\lambda}\), so longer waves travel faster; ripples: \(v\propto\sqrt{\dfrac{\sigma}{\rho\lambda}}\), so shorter ripples travel faster; doubling \(\lambda\) multiplies the gravity-wave speed by \(\sqrt2\) and divides the ripple speed by \(\sqrt2\)
+KEY: D
+SOL:
+Answer: (D) \(v\propto\sqrt{g\lambda}\); \(v\propto\sqrt{\sigma/(\rho\lambda)}\).
+Given: \([g]=\mathrm{LT^{-2}},\ [\lambda]=\mathrm L,\ [\sigma]=\mathrm{MT^{-2}},\ [\rho]=\mathrm{ML^{-3}}\)
+Formula/Principle: \(v=kg^a\lambda^b;\ v=k\sigma^x\rho^y\lambda^z;\ \text{match powers of M, L, T}\)
+Step 1: \(\mathrm{LT^{-1}}=\mathrm{L^{a+b}T^{-2a}}\Rightarrow a=\tfrac12,\ b=\tfrac12\Rightarrow v\propto\sqrt{g\lambda}\)
+Step 2: \(\mathrm{LT^{-1}}=\mathrm{M^{x+y}L^{-3y+z}T^{-2x}}\Rightarrow x=\tfrac12,\ y=-\tfrac12,\ z=-\tfrac12\)
+Step 3: \(v\propto\sqrt{\dfrac{\sigma}{\rho\lambda}}\)
+Worked derivation: \[\lambda\to2\lambda:\ \sqrt{g\lambda}\to\sqrt2\sqrt{g\lambda};\quad\sqrt{\tfrac{\sigma}{\rho\lambda}}\to\tfrac{1}{\sqrt2}\sqrt{\tfrac{\sigma}{\rho\lambda}}\]
+Check: \[\text{M: }x+y=0;\ \text{L: }-3y+z=\tfrac32-\tfrac12=1;\ \text{T: }-2x=-1\ \checkmark\]
+Why: \(\text{only one combination of the given quantities has dimensions of speed, fixing the dependence on }\lambda\text{ up to a constant}\)
+Why not the others: (A) \(\text{both depend on }\lambda\); (B) \(\text{dimensions are not speed}\); (C) \(\text{not speed dimensions}\).
+Key point: \(\text{deep water }v\propto\sqrt{g\lambda};\ \text{ripples }v\propto\sqrt{\sigma/\rho\lambda}\)
+
+@@ Q71
+format: numerical
+sub_topic: Recoil of a rifle from conservation of momentum, the impulse on the bullet and the average force over the time in the barrel
+Q: A 3.0 kg rifle fires a 30 g bullet at 500 m/s; the bullet spends 5.0 ms in the barrel. Which result is correct?
+A) Recoil speed 50 m/s; impulse 1.5 N s
+B) Recoil speed 500 m/s, because momentum is shared equally
+C) Recoil speed 5.0 m/s; impulse on the bullet 15 N s; average force 3000 N; the rifle receives an equal and opposite impulse, so the total momentum stays zero
+D) Recoil speed 5.0 m/s; average force 75 N
+KEY: C
+SOL:
+Answer: (C) \(5.0\) m/s; \(15\) N s; \(3000\) N.
+Given: \(M=3.0\ \mathrm{kg},\ m=0.030\ \mathrm{kg},\ v=500\ \mathrm{m/s},\ \Delta t=5.0\times10^{-3}\ \mathrm s\)
+Formula/Principle: \(0=mv+MV;\ J=\Delta p;\ F_{\text{avg}}=\dfrac{J}{\Delta t}\)
+Step 1: \(V=-\dfrac{mv}{M}=-\dfrac{0.030\times500}{3.0}=-5.0\ \mathrm{m/s}\)
+Step 2: \(J=mv=0.030\times500=15\ \mathrm{N\,s}\)
+Step 3: \(F=\dfrac{15}{5.0\times10^{-3}}=3000\ \mathrm N\)
+Worked derivation: \[MV=3.0\times(-5.0)=-15\ \mathrm{N\,s}=-J\ \checkmark\]
+Check: \[\text{KE: bullet }3750\ \mathrm J,\ \text{rifle }37.5\ \mathrm J\ (\text{ratio }M/m=100)\]
+Why: \(\text{no external horizontal force acts during firing, so the momentum gained by the bullet is matched by the rifle's backward momentum}\)
+Why not the others: (A) \(\text{factor 10 errors}\); (B) \(\text{momentum, not speed, is equal and opposite}\); (D) \(\text{force miscalculated}\).
+Key point: \(MV=-mv;\ F_{\text{avg}}=\Delta p/\Delta t\)
+
+@@ Q72
+format: numerical
+sub_topic: Fraction of kinetic energy transferred in a one-dimensional elastic collision with a stationary target, and why light nuclei make good neutron moderators
+Q: A neutron (mass 1 u) collides head-on elastically with a stationary carbon-12 nucleus. What fraction of its kinetic energy does it lose, and which statement is correct?
+A) All its kinetic energy, because the collision is elastic
+B) \(\dfrac{48}{169}\approx0.28\); the neutron rebounds with \(\dfrac{11}{13}\) of its speed, keeping \(\dfrac{121}{169}\approx0.72\) of its kinetic energy; the fraction transferred is \(\dfrac{4m_1m_2}{(m_1+m_2)^2}\), which would be 1 for equal masses, so light nuclei slow neutrons best
+C) \(\dfrac{1}{12}\), the mass ratio
+D) \(\dfrac{11}{13}\approx0.85\)
+KEY: B
+SOL:
+Answer: (B) \(\frac{48}{169}\approx0.28\) of its kinetic energy.
+Given: \(m_1=1\ \mathrm u,\ m_2=12\ \mathrm u,\ u_2=0,\ \text{elastic, head-on}\)
+Formula/Principle: \(v_1=\dfrac{m_1-m_2}{m_1+m_2}u_1,\ v_2=\dfrac{2m_1}{m_1+m_2}u_1\)
+Step 1: \(v_1=\dfrac{1-12}{13}u_1=-\dfrac{11}{13}u_1\)
+Step 2: \(\text{KE retained}=\left(\dfrac{11}{13}\right)^2=\dfrac{121}{169}\)
+Step 3: \(\text{KE transferred}=1-\dfrac{121}{169}=\dfrac{48}{169}\approx0.284\)
+Worked derivation: \[\frac{4m_1m_2}{(m_1+m_2)^2}=\frac{4\times12}{169}=\frac{48}{169}\ \checkmark\]
+Check: \[\text{momentum: }u_1=-\tfrac{11}{13}u_1+12\times\tfrac{2}{13}u_1=\tfrac{13}{13}u_1\ \checkmark\]
+Why: \(\text{energy transfer is greatest when the masses are equal; a heavy target merely reflects the light projectile}\)
+Why not the others: (A) \(\text{only equal masses give full transfer}\); (C) \(\text{not the energy ratio}\); (D) \(\text{that is the speed ratio of the rebound}\).
+Key point: \(\text{elastic transfer fraction}=\frac{4m_1m_2}{(m_1+m_2)^2}\)
+
+@@ Q73
+format: numerical
+sub_topic: Finding the mass of a uniform metre rule from the balance point when a known mass hangs from it, using the principle of moments
+Q: A uniform metre rule balances on a knife-edge at the 40 cm mark when a 100 g mass hangs at the 10 cm mark. What is the mass of the rule, and which condition is used?
+A) 75 g; only the net force must be zero
+B) 300 g; for equilibrium of a rigid body both the net force and the net torque about any point must be zero; about the knife-edge, \(100\times(40-10)=M\times(50-40)\), and the knife-edge pushes up with a force equal to the weight of 400 g
+C) 33 g; the weight of the rule acts at the knife-edge
+D) 100 g, because the system balances
+KEY: B
+SOL:
+Answer: (B) \(M=300\) g; knife-edge reaction \(=0.40\ \mathrm{kg}\times g\).
+Given: \(\text{pivot }40\ \mathrm{cm};\ 100\ \mathrm g\text{ at }10\ \mathrm{cm};\ \text{rule's centre of gravity at }50\ \mathrm{cm}\)
+Formula/Principle: \(\sum\tau=0;\ \sum F=0\)
+Step 1: \(\text{anticlockwise moment}=100g\times30\)
+Step 2: \(\text{clockwise moment}=Mg\times10\)
+Step 3: \(3000=10M\Rightarrow M=300\ \mathrm g;\ N=(100+300)g\)
+Worked derivation: \[\text{moments about the 0 cm end: }N(40)=100(10)+300(50)=16000\Rightarrow N=400\ \mathrm{g\text{-wt}}\ \checkmark\]
+Check: \[\text{a heavier rule needs the pivot closer to its centre; }300\text{ g with lever arm 10 cm balances }100\text{ g at 30 cm}\]
+Why: \(\text{the weight of a uniform rule acts at its midpoint, so it supplies a moment about any pivot not at the centre}\)
+Why not the others: (A) \(\text{torque balance is essential}\); (C) \(\text{the centre of gravity is at 50 cm}\); (D) \(\text{lever arms differ}\).
+Key point: \(\text{equilibrium: }\sum F=0\text{ and }\sum\tau=0\)
+
+@@ Q74
+format: numerical
+sub_topic: Applying Kepler's third law to compare the orbital period of a low-orbit space station with that of a geostationary satellite, and their orbital speeds
+Q: A space station orbits at radius 6770 km with period 92.6 min. Using Kepler's third law, what is the period at orbital radius 42 200 km, and the orbital speeds?
+A) about 24 h (1440 min), the geostationary orbit; speeds 7.66 km/s (station) and 3.07 km/s
+B) about 9.6 h; speeds equal, since gravity is the same
+C) about 577 min; speed 7.66 km/s at both radii
+D) about 24 h; the higher satellite is faster
+KEY: A
+SOL:
+Answer: (A) \(\approx24\) h; \(7.66\) and \(3.07\) km/s.
+Given: \(r_1=6770\ \mathrm{km},\ T_1=92.6\ \mathrm{min},\ r_2=42\,200\ \mathrm{km}\)
+Formula/Principle: \(T^2\propto r^3\Rightarrow T_2=T_1\left(\dfrac{r_2}{r_1}\right)^{3/2};\ v=\dfrac{2\pi r}{T}\)
+Step 1: \(\dfrac{r_2}{r_1}=\dfrac{42\,200}{6770}=6.233\)
+Step 2: \(6.233^{3/2}=6.233\times2.497=15.56\Rightarrow T_2=92.6\times15.56=1441\ \mathrm{min}\approx24.0\ \mathrm h\)
+Step 3: \(v_1=\dfrac{2\pi\times6.77\times10^6}{5556}=7.66\ \mathrm{km/s};\ v_2=\dfrac{2\pi\times4.22\times10^7}{86\,400}=3.07\ \mathrm{km/s}\)
+Worked derivation: \[v\propto r^{-1/2}:\ \frac{v_2}{v_1}=\frac{1}{\sqrt{6.233}}=0.40;\ 7.66\times0.40=3.07\ \checkmark\]
+Check: \[\text{a period of one sidereal day keeps the satellite above one point on the equator}\]
+Why: \(\text{gravity provides the centripetal force: }\frac{GMm}{r^2}=\frac{m4\pi^2r}{T^2}\Rightarrow T^2=\frac{4\pi^2}{GM}r^3\)
+Why not the others: (B) \(\text{uses }T\propto r\); (C) \(\text{uses }T\propto r\text{ and wrong speeds}\); (D) \(\text{higher orbits are slower}\).
+Key point: \(T^2\propto r^3;\ v\propto r^{-1/2}\)
+
+@@ Q75
+format: numerical
+sub_topic: Work needed to split a liquid drop into many identical droplets, from surface energy and the increase in total surface area
+Q: A water drop of radius 1.0 mm is sprayed into 1000 identical droplets. What work is needed (surface tension 0.072 N/m), and why?
+A) Zero, because volume is conserved
+B) \(9.0\times10^{-7}\) J, because the area increases by a factor 1000
+C) \(8.1\times10^{-5}\) J
+D) \(8.1\times10^{-6}\) J: each droplet has radius 0.10 mm (volume conserved, \(r=R/10\)), the total surface area grows tenfold from \(4\pi R^2\) to \(1000\times4\pi r^2\), and the work equals surface tension times the increase in area
+KEY: D
+SOL:
+Answer: (D) \(W\approx8.1\times10^{-6}\) J.
+Given: \(R=1.0\times10^{-3}\ \mathrm m,\ n=1000,\ \sigma=0.072\ \mathrm{N/m}\)
+Formula/Principle: \(\tfrac43\pi R^3=n\cdot\tfrac43\pi r^3;\ W=\sigma\,\Delta A\)
+Step 1: \(r=\dfrac{R}{n^{1/3}}=\dfrac{1.0}{10}\ \mathrm{mm}=1.0\times10^{-4}\ \mathrm m\)
+Step 2: \(\Delta A=4\pi(nr^2-R^2)=4\pi(1000\times10^{-8}-10^{-6})=4\pi\times9\times10^{-6}=1.131\times10^{-4}\ \mathrm{m^2}\)
+Step 3: \(W=0.072\times1.131\times10^{-4}=8.14\times10^{-6}\ \mathrm J\)
+Worked derivation: \[\frac{A_{\text{final}}}{A_{\text{initial}}}=\frac{nr^2}{R^2}=\frac{1000}{100}=10\]
+Check: \[\text{units: }\mathrm{N/m}\times\mathrm{m^2}=\mathrm{N\,m}=\mathrm J\ \checkmark\]
+Why: \(\text{surface energy per unit area equals surface tension; making new surface means pulling molecules from the interior to the surface against cohesion}\)
+Why not the others: (A) \(\text{area increases}\); (B) \(\text{area grows by 10, not 1000}\); (C) \(\text{factor 10 error}\).
+Key point: \(\text{splitting into }n\text{ drops: area}\times n^{1/3};\ W=\sigma\Delta A\)
+
+@@ Q76
+format: numerical
+sub_topic: Newton's law of cooling in its average form over successive intervals, the T⁴ dependence of radiated power, and good absorbers being good emitters
+Q: Water cools from 90 °C to 70 °C in 5 min in a room at 30 °C. Using Newton's law of cooling (average-temperature form), which statement is correct?
+A) In the next 5 min it cools to 50 °C, since cooling is uniform; a black body radiates less than a polished body at the same temperature
+B) It cools to 60 °C in the next 5 min; doubling the absolute temperature doubles radiated power
+C) In the next 5 min it cools to about 56.7 °C, because the rate of cooling is proportional to the excess temperature, which is now smaller; by Stefan's law, doubling the absolute temperature of a body multiplies its radiated power by 16; a good absorber is also a good emitter, so a dull black body radiates more than a shiny one at the same temperature
+D) It reaches 30 °C in 10 min
+KEY: C
+SOL:
+Answer: (C) \(\approx56.7\ ^\circ\mathrm C\); \(P\propto T^4\Rightarrow\times16\); good absorbers emit well.
+Given: \(90\to70\ ^\circ\mathrm C\text{ in }5\ \mathrm{min};\ T_0=30\ ^\circ\mathrm C\)
+Formula/Principle: \(\dfrac{T_1-T_2}{t}=k\left(\dfrac{T_1+T_2}{2}-T_0\right);\ P=\sigma AT^4\)
+Step 1: \(\dfrac{20}{5}=k(80-30)\Rightarrow k=0.08\ \mathrm{min^{-1}}\)
+Step 2: \(\dfrac{70-T}{5}=0.08\left(\dfrac{70+T}{2}-30\right)\Rightarrow70-T=2+0.2T\)
+Step 3: \(1.2T=68\Rightarrow T=56.7\ ^\circ\mathrm C\)
+Worked derivation: \[P\propto T^4:\ (2T)^4=16T^4\]
+Check: \[\text{drop in 2nd interval }13.3\ ^\circ\mathrm C<20\ ^\circ\mathrm C\text{ in the 1st}\ \checkmark\]
+Why: \(\text{heat loss rate depends on the temperature excess over surroundings; as the body cools the excess shrinks, so cooling slows}\)
+Why not the others: (A) \(\text{cooling is not uniform; black bodies radiate most}\); (B) \(\text{wrong temperature and power law}\); (D) \(\text{approach to room temperature is gradual}\).
+Key point: \(\text{rate of cooling}\propto(T-T_0);\ P\propto T^4\)
+
+@@ Q77
+format: numerical
+sub_topic: Net work, change in internal energy and net heat for an ideal gas taken round a rectangular cycle on a P–V diagram in the clockwise sense
+Q: An ideal gas is taken clockwise round a rectangular cycle on a P–V diagram between pressures \(1.0\times10^5\) Pa and \(3.0\times10^5\) Pa and volumes 1.0 L and 4.0 L. Which statement is correct?
+A) Net work done by the gas is zero, since it returns to its initial state
+B) Net work done by the gas is 1200 J, and the internal energy increases by 1200 J
+C) Net work done by the gas is +600 J (the enclosed area); \(\Delta U=0\) over the cycle because internal energy is a state function; so the net heat absorbed is 600 J; reversing the direction (anticlockwise) makes the net work done on the gas 600 J
+D) Net work done by the gas is −600 J, because the cycle is clockwise
+KEY: C
+SOL:
+Answer: (C) \(W_{\text{net}}=+600\) J; \(\Delta U=0\); \(Q_{\text{net}}=600\) J.
+Given: \(\Delta P=2.0\times10^5\ \mathrm{Pa},\ \Delta V=3.0\times10^{-3}\ \mathrm{m^3},\ \text{clockwise}\)
+Formula/Principle: \(W_{\text{net}}=\oint P\,dV=\text{enclosed area};\ \Delta U_{\text{cycle}}=0;\ Q=\Delta U+W\)
+Step 1: \(\text{expansion at }3.0\times10^5\ \mathrm{Pa}:\ W_1=3.0\times10^5\times3.0\times10^{-3}=900\ \mathrm J\)
+Step 2: \(\text{compression at }1.0\times10^5\ \mathrm{Pa}:\ W_2=-1.0\times10^5\times3.0\times10^{-3}=-300\ \mathrm J;\ \text{isochoric steps: }0\)
+Step 3: \(W_{\text{net}}=600\ \mathrm J;\ Q_{\text{net}}=0+600=600\ \mathrm J\)
+Worked derivation: \[\text{area}=(3.0-1.0)\times10^5\times(4.0-1.0)\times10^{-3}=600\ \mathrm J\ \checkmark\]
+Check: \[\text{clockwise}\Rightarrow\text{expansion happens at the higher pressure}\Rightarrow W_{\text{net}}>0\ \checkmark\]
+Why: \(\text{more work is done by the gas when expanding at high pressure than is done on it when compressed at low pressure}\)
+Why not the others: (A) \(\text{work is not a state function}\); (B) \(\Delta U=0\text{ over a cycle and the area is 600 J}\); (D) \(\text{clockwise gives positive work by the gas}\).
+Key point: \(\text{cycle: }\Delta U=0,\ Q=W=\text{enclosed area (clockwise positive)}\)
+
+@@ Q78
+format: numerical
+sub_topic: Root-mean-square speed of nitrogen molecules at room temperature from kinetic theory, the pressure relation and the average kinetic energy per molecule
+Q: For nitrogen (\(M=0.028\ \mathrm{kg/mol}\)) at 300 K, which result is correct (\(R=8.314\ \mathrm{J\,mol^{-1}K^{-1}}\), \(k_B=1.38\times10^{-23}\ \mathrm{J/K}\))?
+A) \(v_{\text{rms}}=16.4\ \mathrm{m/s}\); average KE depends on molar mass
+B) \(v_{\text{rms}}=\sqrt{3RT/M}\approx517\ \mathrm{m/s}\); kinetic theory gives \(P=\tfrac13\rho v_{\text{rms}}^2\); the average translational KE per molecule is \(\tfrac32k_BT=6.2\times10^{-21}\) J, the same for every gas at 300 K, so lighter molecules move faster
+C) \(v_{\text{rms}}=298\ \mathrm{m/s}\); KE per molecule \(4.1\times10^{-21}\) J
+D) \(v_{\text{rms}}=517\ \mathrm{m/s}\); \(P=\rho v_{\text{rms}}^2\)
+KEY: B
+SOL:
+Answer: (B) \(v_{\text{rms}}\approx517\) m/s; \(\bar{KE}=6.2\times10^{-21}\) J.
+Given: \(M=0.028\ \mathrm{kg/mol},\ T=300\ \mathrm K\)
+Formula/Principle: \(v_{\text{rms}}=\sqrt{\dfrac{3RT}{M}};\ P=\tfrac13\rho\overline{v^2};\ \overline{KE}=\tfrac32k_BT\)
+Step 1: \(\dfrac{3RT}{M}=\dfrac{3\times8.314\times300}{0.028}=2.672\times10^5\ \mathrm{m^2/s^2}\)
+Step 2: \(v_{\text{rms}}=\sqrt{2.672\times10^5}=517\ \mathrm{m/s}\)
+Step 3: \(\overline{KE}=1.5\times1.38\times10^{-23}\times300=6.21\times10^{-21}\ \mathrm J\)
+Worked derivation: \[\tfrac12m v_{\text{rms}}^2=\tfrac12\cdot\frac{0.028}{6.02\times10^{23}}\cdot2.672\times10^5=6.21\times10^{-21}\ \mathrm J\ \checkmark\]
+Check: \[\text{H}_2\ (M=0.002):\ v_{\text{rms}}=517\sqrt{14}\approx1930\ \mathrm{m/s}\]
+Why: \(\text{temperature measures average translational KE per molecule; at fixed KE, speed varies as }1/\sqrt{m}\)
+Why not the others: (A) \(\text{uses }M=28\text{ instead of }0.028\ \mathrm{kg/mol}\text{; KE is independent of }M\); (C) \(\text{uses }\sqrt{RT/M}\text{ and }k_BT\text{, dropping the factors 3 and }\tfrac32\); (D) \(\text{factor }1/3\text{ missing}\).
+Key point: \(v_{\text{rms}}=\sqrt{3RT/M};\ \overline{KE}=\frac32k_BT\)
+
+@@ Q79
+format: numerical
+sub_topic: How the period of a mass–spring oscillator changes when the spring is cut in half, springs are combined in series or parallel, or the mass is increased
+Q: A 1.0 kg mass on a spring of force constant 100 N/m has period \(T_0\). Which set of results is correct?
+A) \(T_0=0.10\) s; half the spring gives \(2T_0\)
+B) \(T_0=0.63\) s; adding mass does not change the period
+C) \(T_0=0.63\) s; two springs in parallel give \(\sqrt2\,T_0\)
+D) \(T_0=2\pi\sqrt{m/k}=0.63\) s; cutting the spring in half doubles \(k\), giving \(T_0/\sqrt2=0.44\) s; two identical springs in series have \(k/2\) (period \(\sqrt2\,T_0=0.89\) s) and in parallel \(2k\) (period \(T_0/\sqrt2\)); making the mass 4.0 kg doubles the period to 1.26 s
+KEY: D
+SOL:
+Answer: (D) \(T_0=0.63\) s; half spring \(0.44\) s; series \(0.89\) s; parallel \(0.44\) s; \(4m\Rightarrow1.26\) s.
+Given: \(m=1.0\ \mathrm{kg},\ k=100\ \mathrm{N/m}\)
+Formula/Principle: \(T=2\pi\sqrt{\dfrac mk};\ k\propto\dfrac{1}{\text{length}};\ \text{series }\dfrac1{k_s}=\dfrac1{k_1}+\dfrac1{k_2};\ \text{parallel }k_p=k_1+k_2\)
+Step 1: \(T_0=2\pi\sqrt{0.01}=0.628\ \mathrm s\)
+Step 2: \(\text{half spring: }k=200\ \mathrm{N/m}\Rightarrow T=0.628/\sqrt2=0.444\ \mathrm s\)
+Step 3: \(\text{series }k=50\Rightarrow T=0.889\ \mathrm s;\ \text{parallel }k=200\Rightarrow0.444\ \mathrm s;\ m=4\Rightarrow T=1.257\ \mathrm s\)
+Worked derivation: \[T\propto\sqrt{m/k}:\ \frac{T_{4m}}{T_0}=\sqrt4=2\]
+Check: \[\text{units: }\sqrt{\mathrm{kg}/(\mathrm{N/m})}=\sqrt{\mathrm{s^2}}=\mathrm s\ \checkmark\]
+Why: \(\text{a shorter spring stretches less per newton (stiffer); a larger mass has more inertia, so it oscillates more slowly}\)
+Why not the others: (A) \(T_0\text{ wrong; half spring shortens the period}\); (B) \(T\propto\sqrt m\); (C) \(\text{parallel shortens the period}\).
+Key point: \(T=2\pi\sqrt{m/k};\ \text{half spring }2k;\ \text{series }k/2;\ \text{parallel }2k\)
+
+@@ Q80
+format: conceptual
+sub_topic: Superposition of two equal and opposite pulses on a string at the instant they overlap, where the energy is at that moment, and how standing waves differ from travelling waves
+Q: Two identical-shaped pulses, one upright and one inverted, travel towards each other on a stretched string. Which statement is correct?
+A) At the instant of complete overlap the string is momentarily straight, but the energy has not vanished: it is all kinetic, since the string elements are moving; the pulses then emerge unchanged and continue; in a standing wave formed by two equal waves travelling in opposite directions, nodes are \(\lambda/2\) apart and no net energy is carried along the string
+B) The pulses cancel permanently and their energy is converted to heat
+C) The pulses reflect off each other like colliding balls
+D) In a standing wave, energy travels along the string at the wave speed
+KEY: A
+SOL:
+Answer: (A) Momentarily flat with all energy kinetic; pulses pass through unchanged; standing waves carry no net energy, nodes \(\lambda/2\) apart.
+Given: \(y_1=f(x-vt),\ y_2=-f(x+vt)\)
+Formula/Principle: \(\text{superposition: }y=y_1+y_2;\ \text{velocity of an element }\dfrac{\partial y}{\partial t}\)
+Step 1: \(\text{at overlap }y=f(x)-f(x)=0\text{ everywhere: string flat, no stretching, so no potential energy}\)
+Step 2: \(\dfrac{\partial y}{\partial t}=-vf'(x)-vf'(x)=-2vf'(x)\ne0\Rightarrow\text{elements are moving: energy is kinetic}\)
+Step 3: \(\text{after overlap each pulse continues with its own shape (principle of superposition)}\)
+Worked derivation: \[\text{standing wave: }y=2A\sin kx\cos\omega t;\ \text{nodes at }kx=n\pi\Rightarrow x=\tfrac{n\lambda}{2}\]
+Check: \[\text{energy before}=\text{energy at overlap}=\text{energy after (no dissipation)}\ \checkmark\]
+Why: \(\text{displacements add, but so do velocities; equal and opposite pulses cancel displacement while doubling velocity, storing the energy as kinetic energy}\)
+Why not the others: (B) \(\text{the pulses re-emerge}\); (C) \(\text{waves pass through each other}\); (D) \(\text{energy in a standing wave is trapped between nodes}\).
+Key point: \(\text{superposition: pulses pass through each other; momentary cancellation stores energy as KE}\)
