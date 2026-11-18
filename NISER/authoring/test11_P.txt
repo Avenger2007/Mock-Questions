@@ -1,0 +1,434 @@
+@@ Q61
+format: conceptual
+sub_topic: What Kepler's laws say about a planet's speed and period, and why the areal velocity is constant
+Q: A planet moves in an elliptical orbit with the Sun at one focus. Its distance from the Sun is \(r_p\) at perihelion and \(r_a\) at aphelion. Which statement is correct?
+A) The planet moves fastest at aphelion, because it has travelled farthest from the Sun
+B) The line joining the Sun and the planet sweeps out equal areas in equal times, because the gravitational force is central and exerts no torque about the Sun, so the planet's angular momentum is conserved; hence \(v_p/v_a=r_a/r_p\), the planet is fastest at perihelion, and the square of its period is proportional to the cube of the semi-major axis
+C) The areal velocity is constant only for circular orbits
+D) The period depends on the mass of the planet, so heavier planets at the same distance take longer
+KEY: B
+SOL:
+Answer: (B) Constant areal velocity (angular momentum conservation); \(v_p/v_a=r_a/r_p\); \(T^2\propto a^3\).
+Given: \(\text{perihelion distance }r_p,\ \text{aphelion distance }r_a\)
+Formula/Principle: \(\text{Kepler's second law: }\dfrac{\Delta A}{\Delta t}=\dfrac{L}{2m}=\text{constant};\ \text{third law: }T^2\propto a^3\)
+Step 1: \(\text{at perihelion and aphelion, }\vec v\perp\vec r\Rightarrow L=mv_pr_p=mv_ar_a\)
+Step 2: \(\dfrac{v_p}{v_a}=\dfrac{r_a}{r_p}>1\Rightarrow\text{fastest at perihelion}\)
+Worked derivation: \[\Delta A=\tfrac12|\vec r\times\vec v\,\Delta t|\Rightarrow\frac{\Delta A}{\Delta t}=\frac{|\vec r\times\vec p|}{2m}=\frac{L}{2m};\qquad\vec\tau=\vec r\times\vec F=0\text{ (central force)}\Rightarrow L\text{ constant}\]
+Check: \[\text{circular orbit: }T^2=\frac{4\pi^2}{GM}r^3\text{, independent of the planet's mass}\ \checkmark\]
+Why: \(\text{gravity always points along the line to the Sun, so it cannot change the planet's angular momentum about the Sun; to keep L fixed, the planet must move faster when it is closer}\)
+Why not the others: (A) \(\text{the planet is slowest at aphelion}\); (C) \(\text{the second law holds for any orbit under a central force}\); (D) \(T^2=4\pi^2a^3/GM\text{ depends on the Sun's mass, not the planet's}\).
+Key point: \(\text{equal areas in equal times}\iff L\text{ conserved};\ v\propto1/r\text{ at the apsides};\ T^2\propto a^3\)
+
+@@ Q62
+format: numerical
+sub_topic: How force and distance scale in a hydraulic lift, and how pressure scales with depth in water
+Q: A hydraulic lift has pistons of areas \(A_1\) and \(A_2=100A_1\). A force of 50 N is applied to the small piston, which moves down 20 cm. What force acts on the large piston and how far does it rise? Also, compare the absolute pressure at depths of 10 m and 20 m in water (\(\rho=1000\ \mathrm{kg\,m^{-3}}\), \(g=9.8\ \mathrm{m\,s^{-2}}\), \(P_a=1.01\times10^{5}\) Pa).
+A) 50 N; 20 cm; the pressure at 20 m is twice that at 10 m
+B) 500 N; 2 cm; the pressure at 20 m equals that at 10 m
+C) 5000 N; 0.2 cm; about \(1.99\times10^5\) Pa at 10 m and \(2.97\times10^5\) Pa at 20 m, so doubling the depth does not double the absolute pressure
+D) 5000 N; 20 cm; the pressure at 20 m is four times that at 10 m
+KEY: C
+SOL:
+Answer: (C) 5000 N; rises 0.2 cm; about 1.99 × 10⁵ Pa and 2.97 × 10⁵ Pa.
+Given: \(A_2/A_1=100,\ F_1=50\ \mathrm N,\ d_1=20\ \mathrm{cm}\)
+Formula/Principle: \(\text{Pascal's law: }\dfrac{F_1}{A_1}=\dfrac{F_2}{A_2};\ \text{volume conserved: }A_1d_1=A_2d_2;\ P=P_a+\rho gh\)
+Step 1: \(F_2=50\times100=5000\ \mathrm N;\ d_2=\dfrac{20}{100}=0.2\ \mathrm{cm}\)
+Step 2: \(P(10\ \mathrm m)=1.01\times10^5+1000(9.8)(10)=1.99\times10^5\ \mathrm{Pa}\)
+Step 3: \(P(20\ \mathrm m)=1.01\times10^5+1.96\times10^5=2.97\times10^5\ \mathrm{Pa}\)
+Worked derivation: \[W_1=F_1d_1=50(0.20)=10\ \mathrm J=F_2d_2=5000(0.002)\ \Rightarrow\text{energy is conserved}\]
+Check: \[\text{gauge pressure doubles }(0.98\to1.96\times10^5\ \mathrm{Pa})\text{, but atmospheric pressure is added to both}\ \checkmark\]
+Why: \(\text{pressure applied to an enclosed fluid is transmitted undiminished, so the force multiplies by the area ratio, while the distance divides by it; absolute pressure has a constant atmospheric part, so it grows linearly but not proportionally with depth}\)
+Why not the others: (A) \(\text{a hydraulic lift multiplies the force; and atmospheric pressure is ignored}\); (B) \(\text{uses a ratio of 10, and pressure does increase with depth}\); (D) \(\text{energy would not be conserved, and pressure is linear in depth}\).
+Key point: \(F_2=F_1A_2/A_1,\ d_2=d_1A_1/A_2;\ P=P_a+\rho gh\)
+
+@@ Q63
+format: experiment
+sub_topic: Finding the linear expansion coefficient of a brass rod from measured lengths, and deducing the area and volume coefficients
+Q: A brass rod is 1.0000 m long at 20 °C. When it is heated in a steam jacket to 100 °C, its length is measured as 1.0015 m. What is the coefficient of linear expansion, and what are the approximate coefficients of area and volume expansion? What happens to a circular hole in a brass plate when the plate is heated?
+A) \(1.5\times10^{-3}\ \mathrm K^{-1}\); area \(3\times10^{-3}\), volume \(4.5\times10^{-3}\ \mathrm K^{-1}\); the hole shrinks
+B) \(1.875\times10^{-5}\ \mathrm K^{-1}\); area and volume coefficients equal to it; the hole shrinks
+C) \(1.875\times10^{-6}\ \mathrm K^{-1}\); area \(3.75\times10^{-6}\), volume \(5.6\times10^{-6}\ \mathrm K^{-1}\); the hole stays the same size
+D) \(1.875\times10^{-5}\ \mathrm K^{-1}\); area about \(3.75\times10^{-5}\) and volume about \(5.6\times10^{-5}\ \mathrm K^{-1}\); the hole becomes larger, as if it were made of brass
+KEY: D
+SOL:
+Answer: (D) \(\alpha=1.875\times10^{-5}\ \mathrm K^{-1}\); \(\beta\approx2\alpha\), \(\gamma\approx3\alpha\); the hole expands.
+Given: \(L_0=1.0000\ \mathrm m,\ \Delta L=0.0015\ \mathrm m,\ \Delta T=80\ \mathrm K\)
+Formula/Principle: \(\dfrac{\Delta L}{L_0}=\alpha\Delta T;\ \dfrac{\Delta A}{A}=\beta\Delta T\approx2\alpha\Delta T;\ \dfrac{\Delta V}{V}=\gamma\Delta T\approx3\alpha\Delta T\)
+Step 1: \(\alpha=\dfrac{0.0015}{1.0000\times80}=1.875\times10^{-5}\ \mathrm K^{-1}\)
+Step 2: \(\beta\approx2\alpha=3.75\times10^{-5}\ \mathrm K^{-1};\ \gamma\approx3\alpha\approx5.6\times10^{-5}\ \mathrm K^{-1}\)
+Worked derivation: \[A=L^2\Rightarrow A(1+\beta\Delta T)=L_0^2(1+\alpha\Delta T)^2\approx L_0^2(1+2\alpha\Delta T)\ (\text{dropping }(\alpha\Delta T)^2\approx2\times10^{-6})\]
+Check: \[1.0000\left[1+1.875\times10^{-5}\times80\right]=1.0015\ \mathrm m\ \checkmark\]
+Why: \(\text{every linear dimension of the plate, including the circumference of the hole, grows by the same fraction, so the hole enlarges like a brass disc would}\)
+Why not the others: (A) \(\text{forgets to divide by }\Delta T\text{, and the hole grows}\); (B) \(\text{area and volume coefficients are about 2 and 3 times }\alpha\); (C) \(\text{power-of-ten slip, and the hole does change}\).
+Key point: \(\alpha=\Delta L/(L_0\Delta T);\ \beta\approx2\alpha,\ \gamma\approx3\alpha;\ \text{holes expand}\)
+
+@@ Q64
+format: numerical
+sub_topic: Net work and heat in a triangular cycle on a P–V diagram, leg by leg
+Q: An ideal gas is taken round a cycle A → B → C → A. At A: \(V=1.0\) L, \(P=1.0\times10^5\) Pa; at B: \(V=1.0\) L, \(P=3.0\times10^5\) Pa; at C: \(V=3.0\) L, \(P=1.0\times10^5\) Pa. The path B → C is a straight line on the P–V diagram, and C → A is at constant pressure. What is the net work done by the gas in one cycle, and what is the net heat absorbed?
+A) 200 J by the gas; 200 J of heat absorbed
+B) 400 J by the gas; 400 J absorbed
+C) 200 J on the gas; 200 J released
+D) Zero work, because the gas returns to its starting state
+KEY: A
+SOL:
+Answer: (A) Net work 200 J by the gas; net heat 200 J absorbed.
+Given: \(A(1.0\ \mathrm L,1.0\times10^5),\ B(1.0\ \mathrm L,3.0\times10^5),\ C(3.0\ \mathrm L,1.0\times10^5)\)
+Formula/Principle: \(W=\displaystyle\int P\,dV=\text{area under the path};\ \text{cycle: }\Delta U=0\Rightarrow Q=W\)
+Step 1: \(A\to B:\ \Delta V=0\Rightarrow W=0\)
+Step 2: \(B\to C:\ W=\tfrac{(3.0+1.0)\times10^5}{2}\times2.0\times10^{-3}=400\ \mathrm J\)
+Step 3: \(C\to A:\ W=1.0\times10^5\times(-2.0\times10^{-3})=-200\ \mathrm J;\ W_{net}=200\ \mathrm J\)
+Worked derivation: \[W_{net}=\text{area of the triangle}=\tfrac12(2.0\times10^{-3}\ \mathrm{m^3})(2.0\times10^5\ \mathrm{Pa})=200\ \mathrm J\]
+Check: \[\text{with V on the horizontal axis, A}\to\text{B}\to\text{C}\to\text{A is clockwise, so the net work is done by the gas}\ \checkmark\]
+Why: \(\text{internal energy is a state function, so it returns to its initial value; the first law then requires the net heat absorbed to equal the net work done, which is the enclosed area}\)
+Why not the others: (B) \(\text{counts only the expansion leg}\); (C) \(\text{a clockwise cycle does positive work}\); (D) \(\text{returning to the same state makes }\Delta U=0\text{, not W}\).
+Key point: \(\text{cyclic process: }Q_{net}=W_{net}=\text{enclosed area (positive if clockwise)}\)
+
+@@ Q65
+format: numerical
+sub_topic: Molar heat capacities and γ of a mixture of a monatomic and a rigid diatomic gas from equipartition
+Q: One mole of helium is mixed with one mole of oxygen (treated as a rigid diatomic molecule). Using the law of equipartition of energy, what are the molar \(C_v\), \(C_p\) and \(\gamma\) of the mixture?
+A) \(C_v=\tfrac32R,\ C_p=\tfrac52R,\ \gamma=\tfrac53\)
+B) \(C_v=4R,\ C_p=5R,\ \gamma=1.25\)
+C) \(C_v=2R,\ C_p=3R,\ \gamma=1.5\)
+D) \(C_v=\tfrac52R,\ C_p=\tfrac72R,\ \gamma=1.4\)
+KEY: C
+SOL:
+Answer: (C) \(C_v=2R\), \(C_p=3R\), \(\gamma=1.5\).
+Given: \(n_{He}=1\ (f=3),\ n_{O_2}=1\ (f=5,\ \text{rigid})\)
+Formula/Principle: \(\text{equipartition: }\tfrac12k_BT\text{ per degree of freedom}\Rightarrow C_v=\tfrac f2R;\ C_p=C_v+R;\ \text{mixture: }C_v=\dfrac{\sum n_iC_{v,i}}{\sum n_i}\)
+Step 1: \(C_v(\mathrm{He})=\tfrac32R,\ C_v(\mathrm{O_2})=\tfrac52R\)
+Step 2: \(C_v(\text{mix})=\dfrac{1\cdot\tfrac32R+1\cdot\tfrac52R}{2}=2R\)
+Step 3: \(C_p=2R+R=3R;\ \gamma=\dfrac{3R}{2R}=1.5\)
+Worked derivation: \[U_{mix}=1\cdot\tfrac32RT+1\cdot\tfrac52RT=4RT\ \text{for 2 mol}\Rightarrow C_v=\frac{1}{2}\frac{dU}{dT}=2R\]
+Check: \[\gamma_{He}=1.67>\gamma_{mix}=1.5>\gamma_{O_2}=1.4\ \checkmark\]
+Why: \(\text{a monatomic molecule has only 3 translational degrees of freedom, and a rigid diatomic adds 2 rotational ones; the mixture's internal energy is the sum, so its heat capacity per mole is a mole-weighted average}\)
+Why not the others: (A) \(\text{these are helium's values alone}\); (B) \(\text{adds the two }C_v\text{ values without dividing by the total moles}\); (D) \(\text{these are oxygen's values alone}\).
+Key point: \(C_v=\tfrac f2R;\ \text{mixtures: mole-weighted }C_v;\ \gamma=C_p/C_v\)
+
+@@ Q66
+format: numerical
+sub_topic: Reading amplitude and period from the displacement–time graph of a spring–mass oscillator to find k, the maximum speed and the effect of a second spring
+Q: A 0.50 kg block on a horizontal spring oscillates without friction. Its displacement–time graph is a cosine curve that starts at +5.0 cm at \(t=0\), reaches −5.0 cm at \(t=0.20\) s, and returns to +5.0 cm at \(t=0.40\) s. What are the spring constant and the maximum speed? If a second identical spring is attached in parallel, what is the new period?
+A) 12.3 N/m; 0.39 m/s; 0.80 s
+B) about 123 N/m; about 0.79 m/s; about 0.28 s
+C) about 123 N/m; about 0.79 m/s; 0.20 s
+D) about 31 N/m; about 1.57 m/s; about 0.57 s
+KEY: B
+SOL:
+Answer: (B) \(k\approx123\) N/m; \(v_{max}\approx0.79\) m/s; new period \(\approx0.28\) s.
+Given: \(m=0.50\ \mathrm{kg},\ A=0.050\ \mathrm m,\ T=0.40\ \mathrm s\ (\text{from the graph})\)
+Formula/Principle: \(T=2\pi\sqrt{\dfrac mk};\ v_{max}=A\omega;\ \text{parallel springs: }k_p=k_1+k_2\)
+Step 1: \(\omega=\dfrac{2\pi}{0.40}=15.7\ \mathrm{rad\,s^{-1}};\ k=m\omega^2=0.50\times246.7\approx123\ \mathrm{N\,m^{-1}}\)
+Step 2: \(v_{max}=0.050\times15.7\approx0.79\ \mathrm{m\,s^{-1}}\)
+Step 3: \(k_p=2k\Rightarrow T'=\dfrac{T}{\sqrt2}=\dfrac{0.40}{1.414}\approx0.28\ \mathrm s\)
+Worked derivation: \[x(t)=0.050\cos(15.7t);\ v(t)=-0.785\sin(15.7t);\ |v|\text{ is greatest at }t=0.10\ \mathrm s,\ \text{where }x=0\]
+Check: \[2\pi\sqrt{\frac{0.50}{123}}=2\pi(0.0637)\approx0.40\ \mathrm s\ \checkmark\]
+Why: \(\text{the graph gives the period (one full cycle, 0.40 s) and the amplitude (5.0 cm); the speed is greatest where the curve crosses zero, which is where its slope is steepest}\)
+Why not the others: (A) \(\text{power-of-ten slip in k, half the correct maximum speed, and a stiffer system cannot have a longer period}\); (C) \(\text{halves the period instead of dividing by }\sqrt2\); (D) \(\text{uses }T=0.80\ \mathrm s\text{ and misplaces the factors}\).
+Key point: \(k=4\pi^2m/T^2;\ v_{max}=A\omega;\ \text{parallel springs: }T\to T/\sqrt2\)
+
+@@ Q67
+format: numerical
+sub_topic: Length ratio of an open pipe whose fundamental matches the third harmonic of a closed pipe, and how pipe frequencies scale with temperature
+Q: The fundamental frequency of an open organ pipe equals the third harmonic of a closed organ pipe. What is the ratio of the length of the open pipe to that of the closed pipe? If the air temperature rises from 27 °C to 127 °C, by what factor do the frequencies of both pipes change (neglect end corrections)?
+A) \(2:3\); each frequency increases by a factor of about 1.15
+B) \(3:2\); each frequency increases by a factor of about 1.33
+C) \(1:3\); the frequencies do not change
+D) \(2:3\); each frequency increases by a factor of 4.7
+KEY: A
+SOL:
+Answer: (A) \(L_{open}:L_{closed}=2:3\); frequencies rise by \(\sqrt{400/300}\approx1.15\).
+Given: \(f_1(\text{open})=f_3(\text{closed});\ T_1=300\ \mathrm K,\ T_2=400\ \mathrm K\)
+Formula/Principle: \(\text{open pipe: }f_n=\dfrac{nv}{2L};\ \text{closed pipe: }f_n=\dfrac{nv}{4L},\ n\text{ odd};\ v\propto\sqrt T\)
+Step 1: \(\dfrac{v}{2L_o}=\dfrac{3v}{4L_c}\Rightarrow4L_c=6L_o\Rightarrow\dfrac{L_o}{L_c}=\dfrac23\)
+Step 2: \(\dfrac{f_2}{f_1}=\dfrac{v_2}{v_1}=\sqrt{\dfrac{400}{300}}=1.155\)
+Worked derivation: \[\text{closed pipe: }L_c=3\cdot\frac{\lambda_3}{4}\ (\text{node at the closed end, antinode at the open end});\ \text{open pipe: }L_o=\frac{\lambda_1}{2};\ \lambda_1=\lambda_3\Rightarrow\frac{L_o}{L_c}=\frac{1/2}{3/4}=\frac23\]
+Check: \[L_c=0.75\ \mathrm m,\ L_o=0.50\ \mathrm m,\ v=340:\ f_1(\text{open})=340\ \mathrm{Hz},\ f_3(\text{closed})=\frac{3(340)}{3.0}=340\ \mathrm{Hz}\ \checkmark\]
+Why: \(\text{equal frequencies in the same air mean equal wavelengths, so the pipe lengths must hold the same wavelength as half a wave and three-quarters of a wave; the speed of sound depends on the absolute temperature}\)
+Why not the others: (B) \(\text{inverts the length ratio and uses T instead of }\sqrt T\); (C) \(\text{wrong ratio, and frequency depends on the speed of sound}\); (D) \(\text{uses Celsius temperatures }(127/27)\).
+Key point: \(\text{open }f_n=nv/2L\ (\text{all }n);\ \text{closed }f_n=nv/4L\ (\text{odd }n);\ v\propto\sqrt T\)
+
+@@ Q68
+format: numerical
+sub_topic: Choosing the graph of the net field along the line joining charges +q and +4q, including where it vanishes
+Q: Point charges \(+q\) at \(x=0\) and \(+4q\) at \(x=d\) lie on the \(x\)-axis. Which description of the graph of the \(x\)-component of the net electric field \(E_x\) along the axis is correct?
+A) \(E_x\) is zero at \(x=d/2\) and positive everywhere else
+B) \(E_x\) is zero at \(x=2d/3\); it is negative for all \(x<0\) and \(x>d\)
+C) \(E_x\) is never zero on the axis
+D) Between the charges, \(E_x\) falls from very large positive values near \(x=0\), passes through zero at \(x=d/3\), and becomes very large and negative near \(x=d\); for \(x<0\), \(E_x\) is negative, and for \(x>d\) it is positive, falling towards zero far away
+KEY: D
+SOL:
+Answer: (D) Zero at \(x=d/3\); positive just right of \(+q\), negative just left of \(+4q\); negative for \(x<0\), positive for \(x>d\).
+Given: \(+q\text{ at }0,\ +4q\text{ at }d\)
+Formula/Principle: \(E=\dfrac{kq}{r^2}\text{ directed away from a positive charge; superposition}\)
+Step 1: \(\text{between the charges: }E_x=\dfrac{kq}{x^2}-\dfrac{4kq}{(d-x)^2}\)
+Step 2: \(E_x=0\Rightarrow\dfrac1{x^2}=\dfrac4{(d-x)^2}\Rightarrow d-x=2x\Rightarrow x=\dfrac d3\)
+Step 3: \(x<0:\ \text{both fields point in the }-x\text{ direction};\ x>d:\ \text{both point in }+x\)
+Worked derivation: \[x=\tfrac d3:\ \frac{kq}{d^2/9}=\frac{9kq}{d^2},\qquad\frac{4kq}{(2d/3)^2}=\frac{4kq}{4d^2/9}=\frac{9kq}{d^2}\ \checkmark\]
+Check: \[\text{the null point is closer to the smaller charge, so that its shorter distance compensates for its smaller charge}\ \checkmark\]
+Why: \(\text{between two like charges, their fields point in opposite directions, so they cancel at one point; outside, they point the same way and never cancel}\)
+Why not the others: (A) \(\text{the midpoint is a null only for equal charges, and the field is negative for }x<0\); (B) \(2d/3\text{ is nearer the larger charge, and the field is positive for }x>d\); (C) \(\text{like charges always have a null point between them}\).
+Key point: \(\text{like charges: null between them, nearer the smaller charge: }x=d/(1+\sqrt{q_2/q_1})\)
+
+@@ Q69
+format: numerical
+sub_topic: How the potentials of a point charge and of a dipole change with distance and direction
+Q: An electric dipole has potential \(V_0\) at a point on its axis at distance \(r\) from its centre (\(r\gg\) dipole length). What is the potential on the axis at \(2r\), and at distance \(r\) on the equatorial line? For comparison, how does the potential of a single point charge change when the distance doubles?
+A) \(V_0/4\) on the axis at \(2r\); zero on the equatorial line; a point charge's potential halves
+B) \(V_0/2\) on the axis; \(V_0/2\) on the equatorial line; a point charge's potential falls to a quarter
+C) \(V_0/8\) on the axis; \(-V_0\) on the equatorial line; a point charge's potential halves
+D) \(V_0/4\) on the axis; \(V_0\) on the equatorial line; a point charge's potential is unchanged
+KEY: A
+SOL:
+Answer: (A) \(V_0/4\); 0; a point charge's potential halves.
+Given: \(V_{axis}(r)=V_0;\ r\gg2a\)
+Formula/Principle: \(\text{dipole: }V=\dfrac{1}{4\pi\varepsilon_0}\dfrac{p\cos\theta}{r^2};\ \text{point charge: }V=\dfrac{1}{4\pi\varepsilon_0}\dfrac qr\)
+Step 1: \(\text{axis }(\theta=0):\ V\propto\dfrac1{r^2}\Rightarrow V(2r)=\dfrac{V_0}{4}\)
+Step 2: \(\text{equatorial line }(\theta=90^\circ):\ \cos\theta=0\Rightarrow V=0\)
+Step 3: \(\text{point charge: }V\propto\dfrac1r\Rightarrow\text{halves}\)
+Worked derivation: \[V_{axis}=\frac{1}{4\pi\varepsilon_0}\left[\frac{q}{r-a}-\frac{q}{r+a}\right]=\frac{1}{4\pi\varepsilon_0}\frac{2qa}{r^2-a^2}\approx\frac{1}{4\pi\varepsilon_0}\frac{p}{r^2}\]
+Check: \[\text{equatorial point: equidistant from }+q\text{ and }-q\Rightarrow\frac{kq}{s}-\frac{kq}{s}=0\ \checkmark\]
+Why: \(\text{the potentials of the two opposite charges nearly cancel far away, leaving a term that falls one power of r faster than for a single charge; on the equatorial line, they cancel exactly}\)
+Why not the others: (B) \(\text{uses }1/r\text{ for the dipole, and the equatorial potential is zero}\); (C) \(1/r^3\text{ is the dipole field's dependence, not the potential's}\); (D) \(\text{the equatorial potential is zero, and a point charge's potential depends on r}\).
+Key point: \(\text{dipole: }V\propto\cos\theta/r^2\ (0\text{ on the equator});\ \text{point charge: }V\propto1/r\)
+
+@@ Q70
+format: numerical
+sub_topic: Current from four identical cells in series, in parallel and with one cell reversed, and where the chemical energy goes
+Q: Four identical cells, each of emf 1.5 V and internal resistance 0.50 Ω, are connected to an external resistor of 2.0 Ω. What is the current (a) with all four in series, (b) with all four in parallel, and (c) in series with one cell connected the wrong way round? In case (a), what fraction of the chemical power is delivered to the resistor?
+A) 3.0 A; 0.75 A; 1.5 A; all of it
+B) 1.5 A; 3.0 A; 0 A; one quarter
+C) 1.5 A; about 0.71 A; 0.75 A; one half
+D) 0.75 A; about 0.71 A; 1.5 A; one half
+KEY: C
+SOL:
+Answer: (C) 1.5 A; about 0.71 A; 0.75 A; half the chemical power reaches the resistor.
+Given: \(E=1.5\ \mathrm V,\ r=0.50\ \Omega,\ R=2.0\ \Omega,\ n=4\)
+Formula/Principle: \(\text{series: }I=\dfrac{nE}{R+nr};\ \text{parallel: }I=\dfrac{E}{R+r/n};\ \text{power: }EI_{total}=I^2R+I^2r_{total}\)
+Step 1: \(\text{(a) }I=\dfrac{6.0}{2.0+2.0}=1.5\ \mathrm A\)
+Step 2: \(\text{(b) }I=\dfrac{1.5}{2.0+0.125}\approx0.706\ \mathrm A\)
+Step 3: \(\text{(c) net emf}=3(1.5)-1.5=3.0\ \mathrm V,\ \text{internal resistance still }2.0\ \Omega\Rightarrow I=\dfrac{3.0}{4.0}=0.75\ \mathrm A\)
+Worked derivation: \[\text{(a) chemical power}=6.0\times1.5=9.0\ \mathrm W;\ I^2R=1.5^2\times2.0=4.5\ \mathrm W;\ I^2(nr)=4.5\ \mathrm W\Rightarrow\text{fraction}=\tfrac12\]
+Check: \[\text{Kirchhoff's loop rule in (c): }4.5-1.5=0.75(2.0)+0.75(2.0)=3.0\ \checkmark\]
+Why: \(\text{the loop rule expresses energy conservation: the net emf around the loop equals the total potential drop; a reversed cell subtracts its emf but still adds its internal resistance. In (a), }R=nr\text{, the condition for maximum power, so half the energy is wasted inside the cells}\)
+Why not the others: (A) \(\text{ignores internal resistance in (a), and the parallel and reversed cases are wrong}\); (B) \(\text{parallel cells do not add their emfs, and one reversed cell does not cancel all four}\); (D) \(\text{halves the series current and swaps it with the reversed case}\).
+Key point: \(\text{series: }nE/(R+nr);\ \text{parallel: }E/(R+r/n);\ \text{reversed cell: emf subtracts, r still adds}\)
+
+@@ Q71
+format: conceptual
+sub_topic: Torque, net force, equilibrium and potential energy of a current loop in a uniform magnetic field
+Q: A rectangular coil of \(N\) turns, area \(A\) and current \(I\) is free to turn in a uniform magnetic field \(\vec B\). Its magnetic moment is \(\vec m=NI\vec A\). Which statement is correct?
+A) The coil experiences a net force along \(\vec B\) as well as a torque, and the torque is greatest when \(\vec m\) is parallel to \(\vec B\)
+B) The net force on the coil is zero, and the torque \(\vec\tau=\vec m\times\vec B\) is greatest when the plane of the coil is parallel to \(\vec B\); the coil is in stable equilibrium when \(\vec m\) is parallel to \(\vec B\) and in unstable equilibrium when antiparallel, and turning it from the stable to the unstable position needs work \(2mB\)
+C) The torque is zero whatever the orientation, because the forces on opposite sides cancel
+D) The coil is in stable equilibrium when \(\vec m\) is antiparallel to \(\vec B\), where its potential energy is lowest
+KEY: B
+SOL:
+Answer: (B) Zero net force; \(\vec\tau=\vec m\times\vec B\), largest with the coil's plane parallel to \(\vec B\); stable when parallel; work \(2mB\) to reverse.
+Given: \(\vec m=NI\vec A,\ \text{uniform }\vec B\)
+Formula/Principle: \(\vec\tau=\vec m\times\vec B,\ \tau=mB\sin\theta;\ U=-\vec m\cdot\vec B=-mB\cos\theta\)
+Step 1: \(\text{opposite sides carry opposite currents in the same field, so their forces cancel: }\vec F_{net}=0\)
+Step 2: \(\tau_{max}=mB\text{ at }\theta=90^\circ\ (\vec m\perp\vec B,\ \text{plane of the coil parallel to }\vec B)\)
+Step 3: \(U(0^\circ)=-mB\ (\text{minimum, stable}),\ U(180^\circ)=+mB\ (\text{maximum, unstable})\)
+Worked derivation: \[W=U(180^\circ)-U(0^\circ)=mB-(-mB)=2mB;\qquad\tau=NIAB\sin\theta\]
+Check: \[\text{a small tilt from }\theta=0\text{ gives a torque back towards }\theta=0\text{ (restoring), but from }\theta=180^\circ\text{ the torque turns it further away}\ \checkmark\]
+Why: \(\text{in a uniform field, the forces on the two sides form a couple; it rotates the coil until its magnetic moment lines up with the field, like a compass needle}\)
+Why not the others: (A) \(\text{there is no net force in a uniform field, and the torque is zero when }\vec m\parallel\vec B\); (C) \(\text{the forces cancel, but they form a couple, which gives a torque}\); (D) \(\text{antiparallel is the position of maximum energy (unstable)}\).
+Key point: \(\text{uniform B: }F=0,\ \tau=mB\sin\theta,\ U=-mB\cos\theta\)
+
+@@ Q72
+format: numerical
+sub_topic: Choosing the time graph of the displacement current, and of the magnetic field between the plates, while a capacitor charges through a resistor
+Q: An uncharged 2.0 µF parallel-plate capacitor is connected at \(t=0\) through a 5.0 kΩ resistor to a 10 V battery. Which description of the graph of the displacement current \(i_d\) between the plates against time, and of the magnetic field at a fixed point between the plates (inside the plate area), is correct?
+A) \(i_d\) is zero at all times, because no charge crosses the gap
+B) \(i_d\) rises from zero to a steady 2.0 mA and stays there; the magnetic field between the plates is zero
+C) \(i_d\) grows exponentially without limit
+D) \(i_d\) starts at 2.0 mA and decays exponentially with time constant 10 ms, equal at every instant to the conduction current in the wires; the magnetic field at the point is proportional to \(i_d\), so it also decays exponentially to zero
+KEY: D
+SOL:
+Answer: (D) \(i_d=2.0\,e^{-t/10\ \mathrm{ms}}\) mA, equal to the conduction current; the field decays the same way.
+Given: \(C=2.0\ \mu\mathrm F,\ R=5.0\ \mathrm{k}\Omega,\ V=10\ \mathrm V\)
+Formula/Principle: \(\text{charging: }I(t)=\dfrac VRe^{-t/RC};\ i_d=\varepsilon_0\dfrac{d\Phi_E}{dt}=\dfrac{dq}{dt};\ \text{Ampere–Maxwell: }\oint\vec B\cdot d\vec l=\mu_0(i_c+i_d)\)
+Step 1: \(I(0)=\dfrac{10}{5000}=2.0\ \mathrm{mA};\ \tau=RC=5000\times2.0\times10^{-6}=10\ \mathrm{ms}\)
+Step 2: \(\text{between the plates, }\Phi_E=\dfrac{q}{\varepsilon_0}\Rightarrow i_d=\dfrac{dq}{dt}=I(t)\)
+Step 3: \(\text{at radius }r\text{ inside plates of radius }R_0:\ B=\dfrac{\mu_0i_dr}{2\pi R_0^2}\propto i_d\)
+Worked derivation: \[q(t)=CV\left(1-e^{-t/RC}\right)\Rightarrow\frac{dq}{dt}=\frac{V}{R}e^{-t/RC};\quad i_d(10\ \mathrm{ms})=2.0e^{-1}\approx0.74\ \mathrm{mA}\]
+Check: \[\text{as }t\to\infty,\ q\to CV=20\ \mu\mathrm C,\ \text{the field between the plates stops changing, so }i_d\to0\text{ and }B\to0\ \checkmark\]
+Why: \(\text{the changing electric field between the plates acts as a current that continues the conduction current across the gap, so current is continuous around the circuit and produces a magnetic field there}\)
+Why not the others: (A) \(\text{no charge crosses, but the changing electric flux gives a displacement current}\); (B) \(\text{the charging current decays rather than rising, and B is not zero between the plates}\); (C) \(\text{the current is limited by the battery and resistor, and it decays}\).
+Key point: \(i_d=\varepsilon_0\,d\Phi_E/dt=\text{conduction current};\ \text{RC charging: both decay as }e^{-t/RC}\)
+
+@@ Q73
+format: numerical
+sub_topic: Image positions and magnifications for a concave mirror as the object moves from beyond 2f to inside f
+Q: A concave mirror has a focal length of 15 cm. Where is the image, and what is its magnification, when an object is placed at 20 cm in front of the mirror? Which statement about other positions is also correct?
+A) 60 cm behind the mirror, virtual, \(m=+3\); an object at 30 cm gives a diminished image
+B) 60 cm in front of the mirror, real and inverted, \(m=-3\); an object at 30 cm (centre of curvature) gives a real, inverted image of the same size at 30 cm, an object at 10 cm gives a virtual, erect image magnified 3 times, and an object very far away forms its image at the focus
+C) 8.6 cm in front of the mirror, \(m=-0.43\); an object at 10 cm gives a real image
+D) 60 cm in front of the mirror, \(m=+3\); an object at the focus forms its image at the centre of curvature
+KEY: B
+SOL:
+Answer: (B) Real, inverted, at 60 cm in front, \(m=-3\); the other cases are as stated.
+Given: \(f=-15\ \mathrm{cm},\ u=-20\ \mathrm{cm}\ (\text{Cartesian sign convention})\)
+Formula/Principle: \(\dfrac1v+\dfrac1u=\dfrac1f;\ m=-\dfrac vu\)
+Step 1: \(\dfrac1v=-\dfrac1{15}+\dfrac1{20}=\dfrac{-4+3}{60}=-\dfrac1{60}\Rightarrow v=-60\ \mathrm{cm}\)
+Step 2: \(m=-\dfrac{-60}{-20}=-3\ (\text{real, inverted, three times larger})\)
+Step 3: \(u=-30:\ \tfrac1v=-\tfrac1{15}+\tfrac1{30}=-\tfrac1{30}\Rightarrow v=-30,\ m=-1;\ u=-10:\ \tfrac1v=-\tfrac1{15}+\tfrac1{10}=\tfrac1{30}\Rightarrow v=+30,\ m=+3\)
+Worked derivation: \[u\to-\infty:\ \frac1v=\frac1f\Rightarrow v=f;\qquad u=f:\ \frac1v=0\Rightarrow v\to\infty\]
+Check: \[\frac{1}{-60}+\frac{1}{-20}=\frac{-1-3}{60}=-\frac{1}{15}\ \checkmark\]
+Why: \(\text{as the object moves from far away towards F, the real image moves out from F to infinity and grows; inside F, the reflected rays diverge and appear to come from a virtual, erect, magnified image behind the mirror}\)
+Why not the others: (A) \(\text{an object beyond F gives a real image, and an object at 2f gives an image of the same size}\); (C) \(\text{adds the reciprocals instead of subtracting, and an object inside F gives a virtual image}\); (D) \(\text{a real image is inverted, and an object at F forms its image at infinity}\).
+Key point: \(1/v+1/u=1/f,\ m=-v/u;\ \text{concave mirror: beyond F real and inverted, inside F virtual and erect}\)
+
+@@ Q74
+format: conceptual
+sub_topic: Regions of the hydrogen spectral series, the number of lines from n = 4, and the transition that gives the red Hα line
+Q: Which statement about the hydrogen spectrum is correct?
+A) The Lyman series (transitions to \(n=1\)) lies in the ultraviolet, the Balmer series (to \(n=2\)) in the visible, and the Paschen series (to \(n=3\)) in the infrared; atoms excited to \(n=4\) can emit 6 different lines as they return to the ground state, and the red Hα line (656 nm) comes from the transition \(3\to2\)
+B) The Balmer series lies in the ultraviolet, and its first line comes from \(2\to1\)
+C) Atoms excited to \(n=4\) can emit only 3 different lines
+D) All the series lie in the visible region, which is why hydrogen looks pink
+KEY: A
+SOL:
+Answer: (A) Lyman UV, Balmer visible, Paschen IR; 6 lines from \(n=4\); Hα from \(3\to2\).
+Given: \(\text{lines from levels up to }n=4\)
+Formula/Principle: \(\dfrac1\lambda=R\left(\dfrac1{n_f^2}-\dfrac1{n_i^2}\right);\ \text{number of lines from level }n=\dfrac{n(n-1)}{2}\)
+Step 1: \(n=4:\ \dfrac{4\times3}{2}=6\ (4\to3,4\to2,4\to1,3\to2,3\to1,2\to1)\)
+Step 2: \(\text{H}\alpha:\ \dfrac1\lambda=1.097\times10^7\left(\dfrac14-\dfrac19\right)=1.524\times10^6\ \mathrm{m^{-1}}\Rightarrow\lambda\approx656\ \mathrm{nm}\)
+Worked derivation: \[\text{Lyman }2\to1:\ \lambda=\frac{1}{R(3/4)}\approx122\ \mathrm{nm}\ (\text{UV});\quad\text{Paschen }4\to3:\ \lambda=\frac{1}{R(7/144)}\approx1875\ \mathrm{nm}\ (\text{IR})\]
+Check: \[\text{transitions to lower }n_f\text{ involve larger energy gaps, so shorter wavelengths}\ \checkmark\]
+Why: \(\text{the energy levels crowd together as n increases, so jumps down to }n=1\text{ are large (UV), jumps to }n=2\text{ are moderate (visible) and jumps to }n=3\text{ are small (IR)}\)
+Why not the others: (B) \(\text{the Balmer series ends on }n=2\text{ and lies in the visible}\); (C) \(\text{six different transitions are possible}\); (D) \(\text{only the Balmer series is in the visible}\).
+Key point: \(\text{Lyman UV, Balmer visible, Paschen IR; lines from level n: }n(n-1)/2\)
+
+@@ Q75
+format: conceptual
+sub_topic: Reading the binding energy per nucleon curve to decide which nuclear reactions release energy
+Q: On a graph of binding energy per nucleon against mass number, the curve rises steeply from about 1.1 MeV for deuterium (A = 2), reaches a broad maximum of about 8.8 MeV near A = 56 (iron), and falls slowly to about 7.6 MeV for uranium (A = 238). Which conclusion from this graph is correct?
+A) Energy is released only when iron nuclei are split into smaller nuclei
+B) Fusion of two deuterium nuclei absorbs energy, because deuterium has a low binding energy per nucleon
+C) Splitting a uranium nucleus into two medium nuclei absorbs energy, because the products are lighter
+D) Energy is released both when a heavy nucleus such as uranium splits into two medium nuclei (fission) and when light nuclei such as deuterium and tritium fuse into helium (fusion), because both processes move nucleons towards the peak of the curve, where they are more tightly bound; for example, D + T → ⁴He + n releases about 17.6 MeV
+KEY: D
+SOL:
+Answer: (D) Both fission of heavy nuclei and fusion of light nuclei release energy.
+Given: \(E_{bn}:\ \mathrm{^2H}\approx1.1,\ \mathrm{^{56}Fe}\approx8.8,\ \mathrm{^{238}U}\approx7.6\ \mathrm{MeV}\)
+Formula/Principle: \(\text{energy released}=\text{(total binding energy of products)}-\text{(total binding energy of reactants)}\)
+Step 1: \(\text{fission: products near A}\approx120\text{ have }E_{bn}\approx8.5\ \mathrm{MeV}>7.6\ \mathrm{MeV}\Rightarrow\text{energy released}\)
+Step 2: \(\text{fusion: }^4\text{He has }E_{bn}\approx7.07\ \mathrm{MeV}\gg1.1\ \mathrm{MeV}\Rightarrow\text{energy released}\)
+Worked derivation: \[\mathrm{^2H+{}^3H\to{}^4He+n}:\ Q=4(7.07)-[2(1.11)+3(2.83)]\approx28.3-10.7\approx17.6\ \mathrm{MeV}\]
+Check: \[\text{splitting }^{56}\text{Fe would move nucleons away from the peak, so it would absorb energy}\ \checkmark\]
+Why: \(\text{iron-56 sits at the peak of the curve; any reaction that brings nuclei closer to the peak, from either side, makes the nucleons more tightly bound and releases the difference as energy}\)
+Why not the others: (A) \(\text{iron is at the peak, so splitting it costs energy}\); (B) \(\text{fusion of light nuclei moves up the curve and releases energy}\); (C) \(\text{the fission products are more tightly bound, so energy is released}\).
+Key point: \(\text{moving towards A}\approx56\text{ releases energy: fission of heavy nuclei, fusion of light ones}\)
+
+@@ Q76
+format: experiment
+sub_topic: Using dimensional analysis to find how the frequency of a stretched string depends on its length, tension and mass per unit length, and testing it experimentally
+Q: A student finds experimentally that the fundamental frequency \(f\) of a stretched string depends only on its length \(L\), tension \(T\) and mass per unit length \(\mu\). Using dimensional analysis with \(f=kL^aT^b\mu^c\), what are \(a\), \(b\) and \(c\)? If the tension is doubled and nothing else changes, by what factor does \(f\) change, and can dimensional analysis give \(k\)?
+A) \(a=1,\ b=-\tfrac12,\ c=\tfrac12\); \(f\) halves; yes
+B) \(a=-1,\ b=1,\ c=-1\); \(f\) doubles; yes
+C) \(a=-1,\ b=\tfrac12,\ c=-\tfrac12\); \(f\) increases by \(\sqrt2\); no, \(k\) (which is \(\tfrac12\)) must be found by experiment or theory
+D) \(a=-2,\ b=\tfrac12,\ c=\tfrac12\); \(f\) increases by \(\sqrt2\); no
+KEY: C
+SOL:
+Answer: (C) \(f\propto\dfrac1L\sqrt{\dfrac T\mu}\); doubling \(T\) multiplies \(f\) by \(\sqrt2\); \(k\) cannot be found from dimensions.
+Given: \([f]=\mathrm T^{-1},\ [L]=\mathrm L,\ [T]=\mathrm{MLT^{-2}},\ [\mu]=\mathrm{ML^{-1}}\)
+Formula/Principle: \(\text{equate the powers of M, L and T on both sides}\)
+Step 1: \(\mathrm M:\ b+c=0;\ \mathrm L:\ a+b-c=0;\ \mathrm T:\ -2b=-1\)
+Step 2: \(b=\tfrac12,\ c=-\tfrac12,\ a=c-b=-1\)
+Step 3: \(f\propto\sqrt T\Rightarrow f'=\sqrt2f\)
+Worked derivation: \[\left[L^{-1}T^{1/2}\mu^{-1/2}\right]=\mathrm L^{-1}\left(\mathrm{MLT^{-2}}\right)^{1/2}\left(\mathrm{ML^{-1}}\right)^{-1/2}=\mathrm L^{-1}\mathrm L^{1/2}\mathrm L^{1/2}\mathrm T^{-1}=\mathrm T^{-1}\ \checkmark\]
+Check: \[\text{full result }f=\frac{1}{2L}\sqrt{\frac{T}{\mu}}:\ k=\tfrac12\text{, a pure number with no dimensions}\ \checkmark\]
+Why: \(\text{dimensional analysis fixes the exponents when the quantity depends on exactly three independent quantities, but dimensionless constants are invisible to it; the student can test }f\propto\sqrt T\text{ by changing the hanging mass}\)
+Why not the others: (A) \(\text{signs of the exponents are reversed}\); (B) \(\text{the time dimension needs }b=\tfrac12\); (D) \(\text{fails the mass balance}\).
+Key point: \(f=k\,L^{-1}(T/\mu)^{1/2};\ \text{dimensions give exponents, not constants}\)
+
+@@ Q77
+format: numerical
+sub_topic: Comparing range, maximum height and time of flight for projectiles launched at 30° and 60° with the same speed
+Q: Two balls are thrown from level ground with the same speed of 20 m/s, one at \(30^\circ\) and the other at \(60^\circ\) to the horizontal (\(g=9.8\ \mathrm{m\,s^{-2}}\), no air resistance). Which comparison is correct?
+A) Both have the same range, about 35.3 m; their maximum heights are in the ratio \(1:3\) (about 5.1 m and 15.3 m) and their times of flight in the ratio \(1:\sqrt3\) (about 2.0 s and 3.5 s)
+B) The \(60^\circ\) ball travels twice as far as the \(30^\circ\) ball
+C) Both have the same maximum height, but different ranges
+D) Same range; heights in the ratio \(1:\sqrt3\); equal times of flight
+KEY: A
+SOL:
+Answer: (A) Equal ranges (35.3 m); heights 1 : 3; times 1 : √3.
+Given: \(u=20\ \mathrm{m\,s^{-1}},\ \theta_1=30^\circ,\ \theta_2=60^\circ\)
+Formula/Principle: \(R=\dfrac{u^2\sin2\theta}{g},\ H=\dfrac{u^2\sin^2\theta}{2g},\ T_f=\dfrac{2u\sin\theta}{g}\)
+Step 1: \(\sin60^\circ=\sin120^\circ\Rightarrow R=\dfrac{400(0.866)}{9.8}\approx35.3\ \mathrm m\text{ for both}\)
+Step 2: \(H_{30}=\dfrac{400(0.25)}{19.6}\approx5.1\ \mathrm m,\ H_{60}=\dfrac{400(0.75)}{19.6}\approx15.3\ \mathrm m\)
+Step 3: \(T_{30}=\dfrac{2(20)(0.5)}{9.8}\approx2.04\ \mathrm s,\ T_{60}=\dfrac{2(20)(0.866)}{9.8}\approx3.53\ \mathrm s\)
+Worked derivation: \[\frac{H_{30}}{H_{60}}=\frac{\sin^230^\circ}{\sin^260^\circ}=\frac{1/4}{3/4}=\frac13;\qquad\frac{T_{30}}{T_{60}}=\frac{\sin30^\circ}{\sin60^\circ}=\frac1{\sqrt3}\]
+Check: \[R=u_xT_f:\ 17.32\times2.04\approx35.3\ \mathrm m,\ 10\times3.53\approx35.3\ \mathrm m\ \checkmark\]
+Why: \(\text{complementary angles give the same }\sin2\theta\text{, so the same range; the steeper throw goes higher and stays up longer but moves forward more slowly}\)
+Why not the others: (B) \(\text{the ranges are equal for complementary angles}\); (C) \(\text{the heights differ, and the ranges are equal}\); (D) \(\text{heights depend on }\sin^2\theta\text{, and the times differ}\).
+Key point: \(\theta\text{ and }90^\circ-\theta\text{: same R; }H\propto\sin^2\theta,\ T\propto\sin\theta\)
+
+@@ Q78
+format: numerical
+sub_topic: Static friction adjusting to the applied force below the limit, and the acceleration once kinetic friction takes over
+Q: A 10 kg box rests on a horizontal floor. The coefficients of static and kinetic friction are 0.50 and 0.40 (\(g=9.8\ \mathrm{m\,s^{-2}}\)). What is the friction force when a horizontal push of 40 N is applied, and what is the acceleration when the push is 60 N? Which statement about rolling friction is also correct?
+A) 49 N; 1.1 m/s²; rolling friction is larger than sliding friction
+B) 40 N (the box stays at rest); 2.08 m/s²; rolling friction is much smaller than sliding friction, which is why wheels and ball bearings reduce friction
+C) 39.2 N; 6.0 m/s²; rolling friction equals kinetic friction
+D) 0 N; 2.08 m/s²; rolling friction is zero
+KEY: B
+SOL:
+Answer: (B) Friction 40 N (no motion); acceleration 2.08 m/s²; rolling friction is much smaller.
+Given: \(m=10\ \mathrm{kg},\ \mu_s=0.50,\ \mu_k=0.40,\ N=mg=98\ \mathrm N\)
+Formula/Principle: \(f_s\le\mu_sN\ (\text{self-adjusting});\ f_k=\mu_kN;\ F-f_k=ma\)
+Step 1: \(f_{s,max}=0.50\times98=49\ \mathrm N;\ 40\ \mathrm N<49\ \mathrm N\Rightarrow\text{no motion, }f_s=40\ \mathrm N\)
+Step 2: \(60\ \mathrm N>49\ \mathrm N\Rightarrow\text{box slides};\ f_k=0.40\times98=39.2\ \mathrm N\)
+Step 3: \(a=\dfrac{60-39.2}{10}=2.08\ \mathrm{m\,s^{-2}}\)
+Worked derivation: \[\text{at rest: }\sum F=40-f_s=0\Rightarrow f_s=40\ \mathrm N\ (\text{less than its maximum }49\ \mathrm N)\]
+Check: \[\text{a push just above 49 N starts the motion, after which only }39.2\ \mathrm N\text{ opposes it, so the box accelerates}\ \checkmark\]
+Why: \(\text{static friction only becomes as large as needed to prevent motion, up to }\mu_sN\text{; once sliding, the smaller kinetic friction acts. A rolling body's contact point is momentarily at rest, so there is very little resistance}\)
+Why not the others: (A) \(\text{uses the maximum static friction when the push is smaller; rolling friction is smaller}\); (C) \(\text{uses kinetic friction for a box at rest and ignores friction for the acceleration}\); (D) \(\text{static friction cannot be zero when a force is applied, and rolling friction is small but not zero}\).
+Key point: \(f_s=F_{applied}\text{ up to }\mu_sN;\ \text{then }f_k=\mu_kN;\ \text{rolling} \ll \text{sliding friction}\)
+
+@@ Q79
+format: numerical
+sub_topic: Maximum compression of a spring by a block sliding on a rough floor, using the work–energy theorem with a variable spring force and friction
+Q: A 0.50 kg block slides at 2.0 m/s on a rough horizontal floor (coefficient of kinetic friction 0.20) and hits a light spring of spring constant 200 N/m. What is the maximum compression of the spring (\(g=9.8\ \mathrm{m\,s^{-2}}\)), and how is the block's initial kinetic energy shared at that moment?
+A) 10 cm; all the kinetic energy is stored in the spring
+B) 5.0 cm; half is stored and half is lost to friction
+C) 20 cm; friction does no work because the floor does not move
+D) About 9.5 cm; about 0.91 J is stored in the spring and about 0.09 J is converted to heat by friction
+KEY: D
+SOL:
+Answer: (D) About 9.5 cm; ≈ 0.91 J stored, ≈ 0.09 J to friction.
+Given: \(m=0.50\ \mathrm{kg},\ v=2.0\ \mathrm{m\,s^{-1}},\ \mu_k=0.20,\ k=200\ \mathrm{N\,m^{-1}}\)
+Formula/Principle: \(\text{work–energy theorem: }\Delta K=W_{spring}+W_{friction};\ W_{spring}=-\tfrac12kx^2,\ W_{friction}=-\mu_kmgx\)
+Step 1: \(0-\tfrac12(0.50)(2.0)^2=-\tfrac12(200)x^2-0.20(0.50)(9.8)x\)
+Step 2: \(100x^2+0.98x-1.0=0\Rightarrow x=\dfrac{-0.98+\sqrt{0.9604+400}}{200}=\dfrac{-0.98+20.024}{200}\approx0.0952\ \mathrm m\)
+Step 3: \(\tfrac12kx^2=100(0.0952)^2\approx0.906\ \mathrm J;\ \mu_kmgx=0.98(0.0952)\approx0.093\ \mathrm J\)
+Worked derivation: \[W_{spring}=-\int_0^xkx'\,dx'=-\tfrac12kx^2\ (\text{variable force: area under the F–x line});\qquad0.906+0.093\approx1.00\ \mathrm J=K_i\]
+Check: \[\text{without friction: }x=v\sqrt{m/k}=2.0\sqrt{0.0025}=0.10\ \mathrm m;\ \text{friction makes the compression slightly smaller}\ \checkmark\]
+Why: \(\text{the spring force grows linearly with compression, so its work is found from the area of a triangle, while friction is constant; together they remove all the kinetic energy}\)
+Why not the others: (A) \(\text{ignores friction}\); (B) \(\text{friction takes only about 9 percent, not half}\); (C) \(\text{kinetic friction does negative work on the sliding block, and 20 cm would store 4 J, more than the 1 J available}\).
+Key point: \(K_i=\tfrac12kx^2+\mu_kmgx;\ \text{spring work}=\tfrac12kx^2\text{ (variable force)}\)
+
+@@ Q80
+format: numerical
+sub_topic: Choosing the angular velocity and angular momentum graphs when a ring is dropped onto a spinning disc, and the kinetic energy lost
+Q: A disc with moment of inertia 0.40 kg m² spins freely at 10 rad/s about a vertical axis. At \(t=2.0\) s, a ring of moment of inertia 0.10 kg m² (initially not rotating) is gently placed on it coaxially, and the two soon rotate together. Which description of the graphs of angular momentum and angular velocity against time, and of the energy change, is correct?
+A) Both the angular momentum and the angular velocity stay constant at their initial values; no energy is lost
+B) The angular momentum drops from 4.0 to 3.2 kg m²/s at \(t=2.0\) s; the angular velocity is unchanged
+C) The total angular momentum stays constant at 4.0 kg m²/s (a horizontal line); the angular velocity drops from 10 rad/s to 8.0 rad/s around \(t=2.0\) s and then stays constant; the kinetic energy falls from 20 J to 16 J, the 4 J being dissipated by friction between the ring and the disc
+D) The angular velocity rises to 12.5 rad/s, because the moment of inertia increases; kinetic energy is conserved
+KEY: C
+SOL:
+Answer: (C) L constant at 4.0 kg m²/s; ω falls from 10 to 8.0 rad/s; KE falls from 20 J to 16 J.
+Given: \(I_1=0.40\ \mathrm{kg\,m^2},\ \omega_1=10\ \mathrm{rad\,s^{-1}},\ I_2=0.10\ \mathrm{kg\,m^2}\)
+Formula/Principle: \(\text{no external torque about the axis}\Rightarrow L=I\omega\text{ conserved};\ K=\tfrac12I\omega^2=\dfrac{L^2}{2I}\)
+Step 1: \(L=0.40\times10=4.0\ \mathrm{kg\,m^2\,s^{-1}}\)
+Step 2: \(\omega_f=\dfrac{4.0}{0.40+0.10}=8.0\ \mathrm{rad\,s^{-1}}\)
+Step 3: \(K_i=\tfrac12(0.40)(10)^2=20\ \mathrm J;\ K_f=\tfrac12(0.50)(8.0)^2=16\ \mathrm J;\ \text{loss}=4\ \mathrm J\)
+Worked derivation: \[\frac{K_f}{K_i}=\frac{L^2/2I_f}{L^2/2I_i}=\frac{I_i}{I_f}=\frac{0.40}{0.50}=0.8\]
+Check: \[I_f\omega_f=0.50\times8.0=4.0\ \checkmark\]
+Why: \(\text{friction between the ring and the disc is internal to the system, so it transfers angular momentum from disc to ring without changing the total, but it does dissipate kinetic energy, as in an inelastic collision}\)
+Why not the others: (A) \(\text{the moment of inertia increases, so the angular velocity must fall}\); (B) \(\text{angular momentum is conserved, and the angular velocity changes}\); (D) \(\text{a larger I with the same L gives a smaller angular velocity, and KE is not conserved}\).
+Key point: \(\text{no external torque: }I_1\omega_1=(I_1+I_2)\omega_f;\ \text{KE falls by the factor }I_1/(I_1+I_2)\)

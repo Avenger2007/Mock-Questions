@@ -1,0 +1,434 @@
+@@ Q41
+format: numerical
+sub_topic: The point on the x-axis equidistant from two given points, and why it lies on the perpendicular bisector plane of the segment
+Q: Which point \(P\) on the \(x\)-axis is equidistant from \(A(1,2,3)\) and \(B(3,5,-2)\)? What is \(PA\), and how is \(P\) related to the midpoint \(M\) of \(AB\)?
+A) \(P(2,0,0)\); \(PA=\sqrt{14}\); \(P\) coincides with \(M\)
+B) \(P(-6,0,0)\); \(PA=\sqrt{62}\); \(PM\) is parallel to \(AB\)
+C) \(P(4,0,0)\); \(PA=\sqrt{22}\); \(P\) lies on the line \(AB\)
+D) \(P(6,0,0)\); \(PA=\sqrt{38}\); \(\vec{PM}\) is perpendicular to \(\vec{AB}\), since every point equidistant from \(A\) and \(B\) lies on the plane that bisects \(AB\) at right angles
+KEY: D
+SOL:
+Answer: (D) \(P(6,0,0)\); \(PA=\sqrt{38}\); \(PM\perp AB\).
+Given: \(A(1,2,3),\ B(3,5,-2);\ P=(x,0,0)\)
+Formula/Principle: \(\text{distance }=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2};\ \text{midpoint }=\left(\tfrac{x_1+x_2}2,\tfrac{y_1+y_2}2,\tfrac{z_1+z_2}2\right)\)
+Step 1: \(PA^2=PB^2:\ (x-1)^2+4+9=(x-3)^2+25+4\Rightarrow-2x+14=-6x+38\Rightarrow x=6\)
+Step 2: \(PA=\sqrt{25+4+9}=\sqrt{38};\ PB=\sqrt{9+25+4}=\sqrt{38}\ \checkmark\)
+Step 3: \(M=\left(2,\tfrac72,\tfrac12\right),\ \vec{PM}=\left(-4,\tfrac72,\tfrac12\right),\ \vec{AB}=(2,3,-5)\)
+Worked derivation: \[\vec{PM}\cdot\vec{AB}=-8+\tfrac{21}2-\tfrac52=0\Rightarrow PM\perp AB\]
+Check: \[\text{the triangle PAB is isosceles }(PA=PB)\text{, so the median from P is also the altitude}\ \checkmark\]
+Why: \(\text{the set of points equidistant from A and B is the perpendicular bisector plane of AB; P is where the x-axis meets that plane}\)
+Why not the others: (A) \(M=(2,3.5,0.5)\text{ is not on the x-axis, and }(2,0,0)\text{ is not equidistant}\); (B) \(\text{sign slip in solving}\); (C) \((4,0,0)\text{ gives }PA^2=22,\ PB^2=30\).
+Key point: \(PA=PB\iff P\text{ lies on the perpendicular bisector plane of AB}\)
+
+@@ Q42
+format: numerical
+sub_topic: Recovering a set A from two elements of A × A, counting relations on A, and reading a relation as points on a grid
+Q: The Cartesian product \(A\times A\) has 16 elements, among which are \((-1,2)\) and \((0,3)\). What is \(A\), how many relations on \(A\) are there, and what are the domain and range of \(R=\{(x,y)\in A\times A:\ y=x+3\}\)?
+A) \(A=\{-1,2\}\); \(2^{4}\) relations; domain \(\{-1\}\), range \(\{2\}\)
+B) \(A=\{-1,0,2,3\}\); \(2^{16}\) relations; domain \(\{-1,0\}\), range \(\{2,3\}\)
+C) \(A=\{-1,0,2,3\}\); 16 relations; domain \(\{2,3\}\), range \(\{-1,0\}\)
+D) \(A=\{0,1,2,3\}\); \(2^{16}\) relations; domain \(\{0\}\), range \(\{3\}\)
+KEY: B
+SOL:
+Answer: (B) \(A=\{-1,0,2,3\}\); \(2^{16}\) relations; domain \(\{-1,0\}\), range \(\{2,3\}\).
+Given: \(|A\times A|=16\Rightarrow|A|=4;\ (-1,2),(0,3)\in A\times A\)
+Formula/Principle: \((a,b)\in A\times A\Rightarrow a,b\in A;\ \text{relations on }A=\text{subsets of }A\times A:\ 2^{|A|^2}\)
+Step 1: \(-1,2,0,3\in A\text{ and }|A|=4\Rightarrow A=\{-1,0,2,3\}\)
+Step 2: \(\text{number of relations}=2^{16}\)
+Step 3: \(y=x+3:\ x=-1\Rightarrow y=2\in A;\ x=0\Rightarrow y=3\in A;\ x=2,3\Rightarrow y=5,6\notin A\)
+Worked derivation: \[R=\{(-1,2),(0,3)\};\ \text{domain}=\{-1,0\},\ \text{range}=\{2,3\}\]
+Check: \[\text{A}\times\text{A as points: a }4\times4\text{ grid; R is the two grid points on the line }y=x+3\ \checkmark\]
+Why: \(\text{every coordinate of an ordered pair in }A\times A\text{ belongs to A; the four distinct numbers found already fill A}\)
+Why not the others: (A) \(|A|=2\text{ gives only 4 pairs}\); (C) \(\text{16 is the number of pairs, not relations, and domain and range are swapped}\); (D) \(-1\text{ must be in A}\).
+Key point: \(|A\times A|=|A|^2;\ \text{relations on A}=2^{|A|^2}\)
+
+@@ Q43
+format: numerical
+sub_topic: Domain and range of √(9 − x²) as a semicircle, and of x²/(1 + x²) as a bounded function
+Q: What are the domain and range of \(f(x)=\sqrt{9-x^2}\) and the range of \(g(x)=\dfrac{x^2}{1+x^2}\) (with domain \(\mathbb R\))?
+A) \(f:\ \text{domain }[-3,3],\ \text{range }[0,3];\ g:\ \text{range }[0,1)\)
+B) \(f:\ \text{domain }\mathbb R,\ \text{range }[0,3];\ g:\ \text{range }[0,1]\)
+C) \(f:\ \text{domain }[-3,3],\ \text{range }[-3,3];\ g:\ \text{range }(0,1)\)
+D) \(f:\ \text{domain }[0,3],\ \text{range }[0,9];\ g:\ \text{range }[1,\infty)\)
+KEY: A
+SOL:
+Answer: (A) \(f\): domain \([-3,3]\), range \([0,3]\); \(g\): range \([0,1)\).
+Given: \(f(x)=\sqrt{9-x^2},\ g(x)=\dfrac{x^2}{1+x^2}\)
+Formula/Principle: \(\sqrt{u}\text{ is real iff }u\ge0;\ \text{range from solving }y=g(x)\text{ for }x\)
+Step 1: \(9-x^2\ge0\Rightarrow-3\le x\le3;\ 0\le9-x^2\le9\Rightarrow0\le f\le3\)
+Step 2: \(y=\dfrac{x^2}{1+x^2}\Rightarrow x^2=\dfrac{y}{1-y}\ge0\Rightarrow0\le y<1\)
+Worked derivation: \[y=\sqrt{9-x^2}\iff x^2+y^2=9,\ y\ge0\ (\text{upper semicircle});\qquad g(x)=1-\frac{1}{1+x^2}\in[0,1)\]
+Check: \[g(0)=0;\ g(10)=\tfrac{100}{101}<1;\ g\text{ never equals 1}\ \checkmark;\ f(\pm3)=0,\ f(0)=3\ \checkmark\]
+Why: \(\text{the graph of f is a semicircle of radius 3 above the x-axis; g approaches 1 as }|x|\to\infty\text{ but never reaches it}\)
+Why not the others: (B) \(f\text{ is not real for }|x|>3;\ g\text{ never reaches 1}\); (C) \(\text{a square root is never negative, and }g(0)=0\); (D) \(\text{wrong domain and range for f, and }g\le1\).
+Key point: \(\sqrt{9-x^2}:\ \text{upper semicircle};\ x^2/(1+x^2)\in[0,1)\)
+
+@@ Q44
+format: numerical
+sub_topic: Converting radians to degrees, arc length on a circle, and the sign of sin at a large angle reduced by its period
+Q: What is \(\dfrac{5\pi}{12}\) radian in degrees, what is the length of the arc that this angle cuts off on a circle of radius 12 cm, and what is \(\sin\dfrac{25\pi}{3}\)?
+A) \(150^\circ;\ 10\pi\text{ cm};\ -\tfrac{\sqrt3}{2}\)
+B) \(75^\circ;\ \tfrac{5\pi}{144}\text{ cm};\ \tfrac12\)
+C) \(75^\circ;\ 5\pi\text{ cm}\approx15.7\text{ cm};\ \tfrac{\sqrt3}{2}\)
+D) \(37.5^\circ;\ 5\pi\text{ cm};\ -\tfrac{\sqrt3}{2}\)
+KEY: C
+SOL:
+Answer: (C) \(75^\circ\); \(5\pi\) cm; \(\tfrac{\sqrt3}2\).
+Given: \(\theta=\tfrac{5\pi}{12},\ r=12\ \text{cm};\ \tfrac{25\pi}3\)
+Formula/Principle: \(\pi\text{ rad}=180^\circ;\ l=r\theta;\ \sin(2n\pi+x)=\sin x\)
+Step 1: \(\tfrac{5\pi}{12}\times\tfrac{180^\circ}{\pi}=75^\circ\)
+Step 2: \(l=12\times\tfrac{5\pi}{12}=5\pi\approx15.7\ \text{cm}\)
+Step 3: \(\tfrac{25\pi}{3}=8\pi+\tfrac\pi3\Rightarrow\sin\tfrac{25\pi}3=\sin\tfrac\pi3=\tfrac{\sqrt3}2\)
+Worked derivation: \[l=r\theta\ (\theta\text{ in radians}):\ \frac{l}{2\pi r}=\frac{75^\circ}{360^\circ}\Rightarrow l=\frac{75}{360}\cdot24\pi=5\pi\]
+Check: \[\tfrac{25\pi}{3}\text{ lies in the first quadrant after removing 4 full turns, where sine is positive}\ \checkmark\]
+Why: \(\text{sine has period }2\pi\text{, so subtracting whole turns does not change its value; the arc formula needs the angle in radians}\)
+Why not the others: (A) \(\text{doubles the angle and gives the wrong quadrant}\); (B) \(\text{uses degrees in }l=r\theta\text{ wrongly, and }\sin\tfrac\pi3\ne\tfrac12\); (D) \(\text{halves the conversion and gets the sign wrong}\).
+Key point: \(1\text{ rad}=180^\circ/\pi;\ l=r\theta;\ \text{reduce angles by }2\pi\text{ for sin and cos}\)
+
+@@ Q45
+format: numerical
+sub_topic: Showing (z − 1)/(z + 1) is purely imaginary when |z| = 1, with z = (1 + i)/(1 − i) as a special case
+Q: Let \(z=\dfrac{1+i}{1-i}\). What are \(z\), \(z^{100}\) and \(\dfrac{z-1}{z+1}\)? Which general fact does this illustrate?
+A) \(z=i,\ z^{100}=1,\ \dfrac{z-1}{z+1}=i\); if \(|z|=1\) and \(z\ne-1\), then \(\dfrac{z-1}{z+1}\) is purely imaginary (or zero)
+B) \(z=1,\ z^{100}=1,\ \dfrac{z-1}{z+1}=0\); \(\dfrac{z-1}{z+1}\) is always real
+C) \(z=-i,\ z^{100}=-1,\ \dfrac{z-1}{z+1}=-i\); \(|z|=1\) forces \(z\) to be real
+D) \(z=i,\ z^{100}=i,\ \dfrac{z-1}{z+1}=-1\); the result holds only for real \(z\)
+KEY: A
+SOL:
+Answer: (A) \(z=i\), \(z^{100}=1\), \(\dfrac{z-1}{z+1}=i\); for \(|z|=1\), \(\dfrac{z-1}{z+1}\) is purely imaginary.
+Given: \(z=\dfrac{1+i}{1-i}\)
+Formula/Principle: \(\text{multiply by the conjugate of the denominator};\ i^4=1;\ |z|=1\Rightarrow\bar z=\dfrac1z\)
+Step 1: \(z=\dfrac{(1+i)^2}{(1-i)(1+i)}=\dfrac{2i}{2}=i\)
+Step 2: \(z^{100}=i^{100}=(i^4)^{25}=1\)
+Step 3: \(\dfrac{i-1}{i+1}=\dfrac{(i-1)(1-i)}{(1+i)(1-i)}=\dfrac{-1+2i+1}{2}=i\)
+Worked derivation: \[w=\frac{z-1}{z+1}\Rightarrow\bar w=\frac{\bar z-1}{\bar z+1}=\frac{\frac1z-1}{\frac1z+1}=\frac{1-z}{1+z}=-w\Rightarrow w\text{ is purely imaginary (or 0)}\]
+Check: \[z=\cos\theta+i\sin\theta:\ \frac{z-1}{z+1}=i\tan\frac\theta2;\ \theta=\tfrac\pi2:\ i\tan\tfrac\pi4=i\ \checkmark\]
+Why: \(\text{on the unit circle the conjugate equals the reciprocal, which makes }\bar w=-w\text{; geometrically, the angle subtended at z by the diameter from }-1\text{ to }1\text{ is a right angle}\)
+Why not the others: (B) \(z\ne1\text{, and the quotient is imaginary, not real, for }|z|=1\); (C) \(\text{sign slip in }z\text{, and }|z|=1\text{ allows non-real z}\); (D) \(i^{100}=1\text{, and }\tfrac{i-1}{i+1}=i\).
+Key point: \(|z|=1,\ z\ne-1\Rightarrow\dfrac{z-1}{z+1}\in i\mathbb R\)
+
+@@ Q46
+format: numerical
+sub_topic: Counting parallelograms formed by two families of parallel lines, and diagonals of a decagon, by choosing pairs
+Q: A set of 4 parallel lines is cut by another set of 5 parallel lines (not parallel to the first set). How many parallelograms are formed? Also, how many diagonals does a convex decagon have?
+A) 20 parallelograms; 45 diagonals
+B) 9 parallelograms; 35 diagonals
+C) 60 parallelograms; 45 diagonals
+D) 60 parallelograms; 35 diagonals
+KEY: D
+SOL:
+Answer: (D) 60 parallelograms; 35 diagonals.
+Given: \(4\text{ lines in one family, 5 in the other};\ \text{decagon: 10 vertices}\)
+Formula/Principle: \(\text{a parallelogram needs 2 lines from each family};\ \text{diagonals}=\binom n2-n\)
+Step 1: \(\binom42\times\binom52=6\times10=60\)
+Step 2: \(\binom{10}{2}-10=45-10=35\)
+Worked derivation: \[\text{each choice of two lines from each family bounds exactly one parallelogram};\ \text{a segment joining two vertices is a side or a diagonal}\]
+Check: \[\text{diagonals}=\frac{n(n-3)}{2}=\frac{10\cdot7}{2}=35\ \checkmark\]
+Why: \(\text{the geometric figure is fixed by the lines chosen, so counting figures reduces to counting selections; sides are not diagonals, so the n sides are removed}\)
+Why not the others: (A) \(\text{multiplies the line counts, and 45 includes the sides}\); (B) \(\text{adds the line counts}\); (C) \(\text{45 counts the 10 sides as diagonals}\).
+Key point: \(\text{parallelograms}=\binom m2\binom n2;\ \text{diagonals}=n(n-3)/2\)
+
+@@ Q47
+format: numerical
+sub_topic: Areas of squares formed by repeatedly joining the midpoints of the sides as a geometric progression
+Q: A square has side 10 cm. A second square is formed by joining the midpoints of its sides, a third by joining the midpoints of the second, and so on. What is the sum of the areas of the first six squares, and what is the side of the seventh square?
+A) \(600\ \text{cm}^2;\ \tfrac{10}{\sqrt2}\ \text{cm}\)
+B) \(200\ \text{cm}^2;\ 1.25\ \text{cm}\)
+C) \(196.875\ \text{cm}^2;\ 1.25\ \text{cm}\)
+D) \(196.875\ \text{cm}^2;\ \tfrac{10}{64}\ \text{cm}\)
+KEY: C
+SOL:
+Answer: (C) \(196.875\ \text{cm}^2\); side \(1.25\) cm.
+Given: \(\text{side}_1=10;\ \text{each new side}=\tfrac{1}{\sqrt2}\times\text{previous side}\)
+Formula/Principle: \(\text{G.P.: }a_n=ar^{n-1},\ S_n=\dfrac{a(1-r^n)}{1-r}\)
+Step 1: \(\text{areas: }100,50,25,\ldots;\ a=100,\ r=\tfrac12\)
+Step 2: \(S_6=\dfrac{100\left(1-\tfrac1{64}\right)}{\tfrac12}=200\cdot\dfrac{63}{64}=196.875\)
+Step 3: \(\text{side}_7=10\left(\tfrac1{\sqrt2}\right)^6=\dfrac{10}{8}=1.25\ \text{cm}\)
+Worked derivation: \[\text{new side}=\sqrt{\left(\tfrac s2\right)^2+\left(\tfrac s2\right)^2}=\frac{s}{\sqrt2}\Rightarrow\text{area ratio}=\tfrac12\]
+Check: \[100+50+25+12.5+6.25+3.125=196.875\ \checkmark\]
+Why: \(\text{each inner square has its corners at the midpoints, so its side is the hypotenuse of a right triangle with legs }s/2\text{; areas therefore halve each time, forming a G.P.}\)
+Why not the others: (A) \(\text{adds six equal areas, and gives the second side, not the seventh}\); (B) \(200\text{ is the limit of the infinite sum, not }S_6\); (D) \(\text{uses ratio }\tfrac12\text{ for sides instead of }\tfrac1{\sqrt2}\).
+Key point: \(\text{midpoint squares: sides ratio }1/\sqrt2,\ \text{areas ratio }1/2\)
+
+@@ Q48
+format: numerical
+sub_topic: Finding the constant c of a line from its distance to a given point, and writing the line in normal form
+Q: For which values of \(c\) is the distance of the point \((1,2)\) from the line \(3x-4y+c=0\) equal to 2? For the positive value, write the line in normal form \(x\cos\omega+y\sin\omega=p\) with \(p>0\).
+A) \(c=5\) only; \(p=1\)
+B) \(c=15\text{ or }c=-5\); \(-\tfrac35x+\tfrac45y=3\), so \(p=3\)
+C) \(c=10\text{ or }c=-10\); \(p=2\)
+D) \(c=15\text{ or }c=-5\); \(\tfrac35x-\tfrac45y=3\), so \(p=3\)
+KEY: B
+SOL:
+Answer: (B) \(c=15\) or \(-5\); for \(c=15\): \(-\tfrac35x+\tfrac45y=3\), \(p=3\).
+Given: \(\text{point }(1,2);\ \text{line }3x-4y+c=0;\ d=2\)
+Formula/Principle: \(d=\dfrac{|Ax_1+By_1+C|}{\sqrt{A^2+B^2}};\ \text{normal form: divide by }\pm\sqrt{A^2+B^2}\text{ so the constant on the right is positive}\)
+Step 1: \(\dfrac{|3-8+c|}{5}=2\Rightarrow|c-5|=10\Rightarrow c=15\text{ or }-5\)
+Step 2: \(c=15:\ 3x-4y+15=0\Rightarrow-3x+4y=15\Rightarrow-\tfrac35x+\tfrac45y=3\)
+Worked derivation: \[\cos\omega=-\tfrac35,\ \sin\omega=\tfrac45\ (\omega\text{ in the second quadrant}),\ p=3=\text{distance of the line from the origin}\]
+Check: \[\text{distance of }(0,0)\text{ from }3x-4y+15=0:\ \tfrac{15}{5}=3\ \checkmark;\ \text{from }(1,2):\ \tfrac{|3-8+15|}{5}=2\ \checkmark\]
+Why: \(\text{the absolute value gives two parallel lines, one on each side of the point; in normal form, p is the perpendicular distance from the origin, so it must be positive}\)
+Why not the others: (A) \(\text{misses the second line, and p is wrong}\); (C) \(\text{forgets the }3-8\text{ term}\); (D) \(\tfrac35x-\tfrac45y=3\text{ means }3x-4y-15=0\text{, a different line}\).
+Key point: \(|Ax_1+By_1+C|=d\sqrt{A^2+B^2}\text{ gives two lines; normal form has }p>0\)
+
+@@ Q49
+format: numerical
+sub_topic: Counting integer values of k for which x² + y² − 4x + 6y + k = 0 is a real circle, a point circle or no real locus
+Q: For how many integers \(k\) with \(0\le k\le20\) does \(x^2+y^2-4x+6y+k=0\) represent a real circle of positive radius, and for how many does it reduce to a single point (a degenerate case, like a plane through the vertex of a cone cutting it in a single point)?
+A) 12 real circles; 2 point circles
+B) 14 real circles; 0 point circles
+C) 13 real circles; 1 point circle
+D) 20 real circles; 1 point circle
+KEY: C
+SOL:
+Answer: (C) 13 circles; 1 point circle (at \(k=13\)).
+Given: \(x^2+y^2-4x+6y+k=0\)
+Formula/Principle: \((x-2)^2+(y+3)^2=13-k;\ r^2=g^2+f^2-c\)
+Step 1: \(\text{real circle}\iff13-k>0\iff k<13\Rightarrow k=0,1,\ldots,12\ (13\text{ values})\)
+Step 2: \(k=13\Rightarrow(x-2)^2+(y+3)^2=0\Rightarrow\text{only the point }(2,-3)\)
+Step 3: \(k=14,\ldots,20\Rightarrow r^2<0\Rightarrow\text{no real points (7 values)}\)
+Worked derivation: \[13+1+7=21=\text{number of integers from 0 to 20}\]
+Check: \[k=12:\ r=1;\ k=13:\ r=0;\ k=14:\ (x-2)^2+(y+3)^2=-1\ \text{(impossible)}\ \checkmark\]
+Why: \(\text{completing the square shows the radius directly; when it shrinks to zero the circle degenerates to its centre, just as a conic degenerates when the cutting plane passes through the vertex of the cone}\)
+Why not the others: (A) \(\text{misses one circle, and there is only one point circle}\); (B) \(\text{counts }k=13\text{ as a circle}\); (D) \(\text{ignores the condition }k<13\).
+Key point: \(r^2=g^2+f^2-c:\ >0\text{ circle},\ =0\text{ point},\ <0\text{ none}\)
+
+@@ Q50
+format: numerical
+sub_topic: The circle touching the x-axis at (4, 0) and passing through (1, 9), and a second circle touching it externally at the same point
+Q: A circle touches the \(x\)-axis at \((4,0)\) and passes through \((1,9)\). What is its equation? A second circle of radius 3 touches the first externally at \((4,0)\). What is the equation of the second circle?
+A) \((x-4)^2+(y-5)^2=25;\ x^2+y^2-8x+6y+16=0\)
+B) \((x-4)^2+(y-5)^2=25;\ x^2+y^2-8x-6y+16=0\)
+C) \((x-4)^2+(y-9)^2=81;\ (x-4)^2+(y+3)^2=9\)
+D) \((x-1)^2+(y-9)^2=25;\ (x-4)^2+y^2=9\)
+KEY: A
+SOL:
+Answer: (A) \((x-4)^2+(y-5)^2=25\); \(x^2+y^2-8x+6y+16=0\).
+Given: \(\text{touches the x-axis at }(4,0);\ \text{passes through }(1,9);\ \text{second radius }3\)
+Formula/Principle: \(\text{touching the x-axis at }(a,0)\Rightarrow\text{centre }(a,k),\ r=|k|;\ \text{external contact: distance between centres}=r_1+r_2\)
+Step 1: \((1-4)^2+(9-k)^2=k^2\Rightarrow9+81-18k=0\Rightarrow k=5\)
+Step 2: \(\text{first circle: centre }(4,5),\ r=5\)
+Step 3: \(\text{second centre on the common normal }x=4\text{ below the axis: }(4,-3)\Rightarrow(x-4)^2+(y+3)^2=9\)
+Worked derivation: \[(x-4)^2+(y+3)^2=9\iff x^2+y^2-8x+6y+16=0;\qquad\text{distance between centres}=5-(-3)=8=5+3\]
+Check: \[(1,9):\ 9+16=25\ \checkmark;\ (4,0)\text{ lies on both circles}\ \checkmark\]
+Why: \(\text{the radius to the point of contact is perpendicular to the tangent (the x-axis), so both centres lie on the line }x=4\text{, on opposite sides of the axis for external contact}\)
+Why not the others: (B) \(\text{puts the second centre at }(4,3)\text{, inside the first circle (internal contact)}\); (C) \(\text{takes the given point's y-coordinate as the radius}\); (D) \(\text{uses the given point as the centre}\).
+Key point: \(\text{tangent to the x-axis at }(a,0):\ \text{centre }(a,r);\ \text{external contact: }d=r_1+r_2\)
+
+@@ Q51
+format: numerical
+sub_topic: Finding n from the value of lim (xⁿ − aⁿ)/(x − a), interpreted as the derivative of xⁿ at a
+Q: For a positive integer \(n\), \(\displaystyle\lim_{x\to2}\frac{x^n-2^n}{x-2}=80\). What is \(n\), and what does this limit represent?
+A) \(n=4\); the area under \(y=x^n\) from 0 to 2
+B) \(n=40\); the average value of \(x^n\)
+C) \(n=6\); the second derivative of \(x^n\) at 2
+D) \(n=5\); the derivative of \(x^n\) at \(x=2\), found from first principles, equal to \(n\cdot2^{n-1}\)
+KEY: D
+SOL:
+Answer: (D) \(n=5\); the limit is \(f'(2)\) for \(f(x)=x^n\).
+Given: \(\displaystyle\lim_{x\to2}\frac{x^n-2^n}{x-2}=80\)
+Formula/Principle: \(\displaystyle\lim_{x\to a}\frac{x^n-a^n}{x-a}=na^{n-1};\ f'(a)=\lim_{x\to a}\frac{f(x)-f(a)}{x-a}\)
+Step 1: \(n\cdot2^{n-1}=80\)
+Step 2: \(n=5:\ 5\cdot16=80\ \checkmark;\ n\cdot2^{n-1}\text{ increases with n, so this is the only solution}\)
+Worked derivation: \[\frac{x^n-a^n}{x-a}=x^{n-1}+x^{n-2}a+\cdots+a^{n-1}\to na^{n-1}\ (x\to a)\]
+Check: \[n=4:\ 4\cdot8=32;\ n=6:\ 6\cdot32=192;\ \text{only }n=5\text{ gives }80\ \checkmark\]
+Why: \(\text{the expression is the slope of the chord from }(2,2^n)\text{ to }(x,x^n)\text{; as }x\to2\text{ it becomes the slope of the tangent, which is the derivative and the instantaneous rate of change}\)
+Why not the others: (A) \(4\cdot2^3=32\ne80\text{, and the limit is a slope, not an area}\); (B) \(\text{ignores the }2^{n-1}\text{ factor}\); (C) \(6\cdot2^5=192\ne80\text{, and this is a first derivative}\).
+Key point: \(\lim_{x\to a}(x^n-a^n)/(x-a)=na^{n-1}=\tfrac{d}{dx}x^n\big|_{a}\)
+
+@@ Q52
+format: numerical
+sub_topic: Range of a parameter that makes a probability assignment valid on a four-outcome sample space, and its value under an extra condition
+Q: A sample space is \(S=\{a,b,c,d\}\), with \(P(a)=p,\ P(b)=2p,\ P(c)=p^2\) and \(P(d)=1-3p-p^2\). For which \(p\) is this a valid assignment of probabilities? If also \(P(d)=P(a)\), what is \(p\), and what is \(P(\{a,b\})\)?
+A) \(0\le p\le\tfrac13\); \(p=\tfrac14\); \(P=\tfrac34\)
+B) \(0\le p\le\dfrac{\sqrt{13}-3}{2}\approx0.303\); \(p=\sqrt5-2\approx0.236\); \(P(\{a,b\})=3\sqrt5-6\approx0.708\)
+C) \(0\le p\le1\); \(p=\sqrt5-2\); \(P=\sqrt5-2\)
+D) \(p\ge0\) only; \(p=\tfrac12\); \(P=\tfrac32\)
+KEY: B
+SOL:
+Answer: (B) \(0\le p\le\tfrac{\sqrt{13}-3}{2}\); \(p=\sqrt5-2\); \(P(\{a,b\})=3\sqrt5-6\).
+Given: \(P(a)=p,\ P(b)=2p,\ P(c)=p^2,\ P(d)=1-3p-p^2\)
+Formula/Principle: \(\text{each }P(\omega)\ge0\text{ and the probabilities sum to 1 (here the sum is 1 automatically)}\)
+Step 1: \(p\ge0\text{ (makes }P(a),P(b),P(c)\ge0)\)
+Step 2: \(1-3p-p^2\ge0\iff p^2+3p-1\le0\iff p\le\dfrac{-3+\sqrt{13}}{2}\approx0.303\)
+Step 3: \(1-3p-p^2=p\Rightarrow p^2+4p-1=0\Rightarrow p=-2+\sqrt5\approx0.236\ (\text{positive root, within range})\)
+Worked derivation: \[P(\{a,b\})=3p=3(\sqrt5-2)=3\sqrt5-6\approx0.708\]
+Check: \[p=0.236:\ P=0.236,\ 0.472,\ 0.0557,\ 0.236;\ \text{sum}=1.000\ \checkmark\]
+Why: \(\text{a valid assignment needs every outcome to have a non-negative probability; the binding condition is on }P(d)\text{, the leftover probability}\)
+Why not the others: (A) \(p=\tfrac14\text{ gives }P(d)=1-\tfrac34-\tfrac1{16}=\tfrac3{16}\ne\tfrac14\); (C) \(p=1\text{ gives }P(d)=-3\), \(\text{and }P(\{a,b\})=3p\); (D) \(\text{a probability cannot exceed 1}\).
+Key point: \(\text{valid assignment: all }P(\omega)\ge0,\ \sum P(\omega)=1\)
+
+@@ Q53
+format: numerical
+sub_topic: Number of solutions of cos⁻¹x = 2 sin⁻¹x, and counting integers in the domain of sin⁻¹((x − 1)/2) + cos⁻¹(x/3)
+Q: How many real \(x\) satisfy \(\cos^{-1}x=2\sin^{-1}x\)? How many integers lie in the domain of \(f(x)=\sin^{-1}\dfrac{x-1}{2}+\cos^{-1}\dfrac x3\)?
+A) 2 solutions; 7 integers
+B) No solution; 4 integers
+C) 1 solution; 7 integers
+D) 1 solution \(\left(x=\tfrac12\right)\); 5 integers
+KEY: D
+SOL:
+Answer: (D) One solution, \(x=\tfrac12\); 5 integers.
+Given: \(\cos^{-1}x=2\sin^{-1}x;\ f(x)=\sin^{-1}\frac{x-1}{2}+\cos^{-1}\frac x3\)
+Formula/Principle: \(\sin^{-1}x+\cos^{-1}x=\dfrac\pi2,\ |x|\le1;\ \text{domain of }\sin^{-1}u,\cos^{-1}u:\ -1\le u\le1\)
+Step 1: \(\tfrac\pi2-\sin^{-1}x=2\sin^{-1}x\Rightarrow\sin^{-1}x=\tfrac\pi6\Rightarrow x=\tfrac12\ (\text{unique, as }\sin^{-1}\text{ is one-one})\)
+Step 2: \(-1\le\tfrac{x-1}{2}\le1\Rightarrow-1\le x\le3;\ -1\le\tfrac x3\le1\Rightarrow-3\le x\le3\)
+Step 3: \(\text{domain}=[-1,3]\Rightarrow\text{integers }-1,0,1,2,3\ (5)\)
+Worked derivation: \[x=\tfrac12:\ \cos^{-1}\tfrac12=\tfrac\pi3,\ 2\sin^{-1}\tfrac12=2\cdot\tfrac\pi6=\tfrac\pi3\ \checkmark\]
+Check: \[x=4:\ \tfrac{x-1}{2}=1.5>1\Rightarrow\text{outside the domain}\ \checkmark\]
+Why: \(\text{the identity turns the equation into one with a single inverse function, which takes each value once; the domain of a sum is the intersection of the domains of its terms}\)
+Why not the others: (A) \(\text{the principal-value function is one-one, so there is only one root; the domain is the intersection, not the union}\); (B) \(x=\tfrac12\text{ works, and the count misses an endpoint}\); (C) \(\text{the domain is }[-1,3]\text{, not }[-3,3]\).
+Key point: \(\sin^{-1}x+\cos^{-1}x=\tfrac\pi2;\ \text{domain of a sum = intersection of domains}\)
+
+@@ Q54
+format: numerical
+sub_topic: Conditions on λ and μ for a 3 × 3 system to have a unique solution, infinitely many solutions or none, with the general solution in the dependent case
+Q: For the system \(x+y+2z=4,\ 2x-y+z=3,\ x-2y+\lambda z=\mu\), which statement is correct?
+A) Unique solution for every \(\lambda\)
+B) Unique solution iff \(\lambda\ne1\); infinitely many iff \(\lambda=1,\ \mu=1\)
+C) Unique solution iff \(\lambda\ne-1\); infinitely many solutions, \((x,y,z)=\left(\tfrac73-t,\tfrac53-t,t\right)\), iff \(\lambda=-1\) and \(\mu=-1\); no solution iff \(\lambda=-1\) and \(\mu\ne-1\)
+D) Unique solution iff \(\lambda=-1\); no solution iff \(\mu=-1\)
+KEY: C
+SOL:
+Answer: (C) Unique iff \(\lambda\ne-1\); infinite iff \(\lambda=-1,\ \mu=-1\); none iff \(\lambda=-1,\ \mu\ne-1\).
+Given: \(A=\begin{pmatrix}1&1&2\\2&-1&1\\1&-2&\lambda\end{pmatrix},\ B=\begin{pmatrix}4\\3\\\mu\end{pmatrix}\)
+Formula/Principle: \(|A|\ne0\Rightarrow\text{unique solution};\ |A|=0\Rightarrow\text{infinitely many or none, depending on consistency}\)
+Step 1: \(|A|=1(-\lambda+2)-1(2\lambda-1)+2(-4+1)=-3\lambda-3\Rightarrow|A|=0\iff\lambda=-1\)
+Step 2: \(\lambda=-1:\ \text{row}_3=\text{row}_2-\text{row}_1\text{ on the left}\Rightarrow\text{consistent iff }\mu=3-4=-1\)
+Step 3: \(z=t:\ x+y=4-2t,\ 2x-y=3-t\Rightarrow x=\tfrac73-t,\ y=\tfrac53-t\)
+Worked derivation: \[\text{eq}_3:\ \left(\tfrac73-t\right)-2\left(\tfrac53-t\right)-t=\tfrac73-\tfrac{10}3=-1=\mu\ \checkmark\]
+Check: \[t=0:\ \left(\tfrac73,\tfrac53,0\right):\ \tfrac73+\tfrac53=4\ \checkmark;\ \tfrac{14}3-\tfrac53=3\ \checkmark\]
+Why: \(\text{when the determinant vanishes, the third equation's left side is a combination of the first two; it must then match on the right side as well, or the equations contradict each other}\)
+Why not the others: (A) \(|A|=0\text{ at }\lambda=-1\); (B) \(\text{sign error in the determinant}\); (D) \(\text{reverses the condition for a unique solution}\).
+Key point: \(|A|\ne0\text{: unique};\ |A|=0\text{: check whether the right-hand sides satisfy the same dependence}\)
+
+@@ Q55
+format: numerical
+sub_topic: Derivative of cos⁻¹((1 − x²)/(1 + x²)) on x > 0 and x < 0, the corner at x = 0, and an implicit derivative on a circle
+Q: For \(y=\cos^{-1}\dfrac{1-x^2}{1+x^2}\), what is \(\dfrac{dy}{dx}\) for \(x>0\) and for \(x<0\), and is \(y\) differentiable at \(x=0\)? Also, what is the slope of \(x^2+y^2=25\) at \((3,4)\)?
+A) \(\dfrac{2}{1+x^2}\) for all \(x\), differentiable at 0; \(\tfrac34\)
+B) \(\dfrac{2}{1+x^2}\) for \(x>0\), \(-\dfrac{2}{1+x^2}\) for \(x<0\); not differentiable at 0 (left and right derivatives \(-2\) and \(2\)); \(-\tfrac34\)
+C) \(\dfrac{1}{1+x^2}\) for \(x>0\); differentiable at 0; \(-\tfrac43\)
+D) \(-\dfrac{2}{1+x^2}\) for \(x>0\); differentiable at 0; \(-\tfrac34\)
+KEY: B
+SOL:
+Answer: (B) \(\tfrac{2}{1+x^2}\) for \(x>0\), \(-\tfrac{2}{1+x^2}\) for \(x<0\); not differentiable at 0; slope \(-\tfrac34\).
+Given: \(y=\cos^{-1}\dfrac{1-x^2}{1+x^2};\ x^2+y^2=25\)
+Formula/Principle: \(x=\tan\theta\Rightarrow\dfrac{1-x^2}{1+x^2}=\cos2\theta;\ \cos^{-1}(\cos u)=u\text{ only for }u\in[0,\pi]\)
+Step 1: \(x\ge0\Rightarrow\theta\in\left[0,\tfrac\pi2\right)\Rightarrow2\theta\in[0,\pi)\Rightarrow y=2\tan^{-1}x\Rightarrow y'=\dfrac{2}{1+x^2}\)
+Step 2: \(x<0\Rightarrow2\theta\in(-\pi,0)\Rightarrow y=-2\theta=-2\tan^{-1}x\Rightarrow y'=-\dfrac{2}{1+x^2}\)
+Step 3: \(\text{at }x=0:\ \text{right derivative }2,\ \text{left derivative }-2\Rightarrow\text{not differentiable};\ \text{circle: }y'=-\dfrac xy=-\dfrac34\)
+Worked derivation: \[y=2\left|\tan^{-1}x\right|\ \text{for all real }x;\ \text{like }|x|\text{, it has a corner at }x=0\]
+Check: \[x=1:\ y=\cos^{-1}0=\tfrac\pi2=2\tan^{-1}1\ \checkmark;\ x=-1:\ y=\tfrac\pi2=-2\tan^{-1}(-1)\ \checkmark\]
+Why: \(\cos^{-1}\text{ returns values only in }[0,\pi]\text{, so for negative x the simple substitution must be corrected by a sign, which produces a corner at the origin}\)
+Why not the others: (A) \(\text{ignores the change of formula for }x<0\text{, and the circle's slope is negative there}\); (C) \(\text{drops the factor 2 and inverts the slope}\); (D) \(\text{wrong sign for }x>0\).
+Key point: \(\cos^{-1}\frac{1-x^2}{1+x^2}=2|\tan^{-1}x|;\ \text{check principal ranges before substituting}\)
+
+@@ Q56
+format: numerical
+sub_topic: Finding the edge of a growing cube from the rates of change of its volume and edge, then the rate of change of its surface area
+Q: The edge of a cube is increasing at 0.2 cm/s. At a certain instant, its volume is increasing at 15 cm³/s. What is the edge at that instant, and how fast is the surface area increasing then?
+A) 5 cm; 12 cm²/s
+B) 25 cm; 60 cm²/s
+C) 5 cm; 6 cm²/s
+D) \(\sqrt{75}\) cm; 12 cm²/s
+KEY: A
+SOL:
+Answer: (A) Edge 5 cm; surface area increasing at 12 cm²/s.
+Given: \(\dfrac{dx}{dt}=0.2\ \text{cm/s},\ \dfrac{dV}{dt}=15\ \text{cm}^3/\text{s}\)
+Formula/Principle: \(V=x^3\Rightarrow\dfrac{dV}{dt}=3x^2\dfrac{dx}{dt};\ S=6x^2\Rightarrow\dfrac{dS}{dt}=12x\dfrac{dx}{dt}\)
+Step 1: \(15=3x^2(0.2)=0.6x^2\Rightarrow x^2=25\Rightarrow x=5\ \text{cm}\)
+Step 2: \(\dfrac{dS}{dt}=12(5)(0.2)=12\ \text{cm}^2/\text{s}\)
+Worked derivation: \[\frac{dS/dt}{dV/dt}=\frac{12x}{3x^2}=\frac4x\Rightarrow\frac{dS}{dt}=\frac45\times15=12\]
+Check: \[3(25)(0.2)=15\ \checkmark\]
+Why: \(\text{both rates come from the chain rule through the same edge rate; the given volume rate fixes the edge, which then fixes every other rate}\)
+Why not the others: (B) \(\text{takes }x^2\text{ as the edge}\); (C) \(\text{uses }dS/dt=6x\,dx/dt\text{, forgetting to differentiate }x^2\); (D) \(\text{solves }15=0.2x^2\text{, dropping the factor 3}\).
+Key point: \(\text{chain rule: }dV/dt=3x^2\,dx/dt,\ dS/dt=12x\,dx/dt\)
+
+@@ Q57
+format: numerical
+sub_topic: Finding the positive upper limit a for which ∫₀ᵃ x eˣ dx = 1, and the e^x(f + f′) form
+Q: For which positive \(a\) is \(\displaystyle\int_0^{a}xe^{x}\,dx=1\)? Also, what is \(\displaystyle\int e^{x}(\tan x+\sec^2x)\,dx\)?
+A) \(a=\ln2\); \(e^x\sec^2x+C\)
+B) \(a=1\); \(e^{x}\tan x+C\)
+C) \(a=2\); \(e^{x}\sec x+C\)
+D) \(a=e\); \(e^{x}(\tan x+1)+C\)
+KEY: B
+SOL:
+Answer: (B) \(a=1\); \(e^{x}\tan x+C\).
+Given: \(\displaystyle\int_0^axe^x\,dx=1,\ a>0\)
+Formula/Principle: \(\displaystyle\int u\,v\,dx=u\int v\,dx-\int\left(u'\int v\,dx\right)dx;\ \int e^x\big(f(x)+f'(x)\big)dx=e^xf(x)+C\)
+Step 1: \(\displaystyle\int xe^x\,dx=xe^x-e^x=e^x(x-1)\)
+Step 2: \([e^x(x-1)]_0^a=e^a(a-1)-(-1)=e^a(a-1)+1=1\Rightarrow e^a(a-1)=0\Rightarrow a=1\)
+Step 3: \(f(x)=\tan x,\ f'(x)=\sec^2x\Rightarrow\displaystyle\int e^x(\tan x+\sec^2x)dx=e^x\tan x+C\)
+Worked derivation: \[\frac{d}{dx}\big(e^x\tan x\big)=e^x\tan x+e^x\sec^2x\ \checkmark;\qquad\frac{d}{dx}\big(e^x(x-1)\big)=e^x(x-1)+e^x=xe^x\ \checkmark\]
+Check: \[\int_0^1xe^x\,dx=e(0)+1=1\ \checkmark\]
+Why: \(\text{taking }u=x\text{ removes the polynomial factor after one differentiation; since }e^a>0\text{, the condition forces }a-1=0\)
+Why not the others: (A) \(e^{\ln2}(\ln2-1)\ne0\), \(\text{and }\tfrac{d}{dx}(e^x\sec^2x)\ne e^x(\tan x+\sec^2x)\); (C) \(e^2(1)+1=e^2+1\ne1\); (D) \(a=e\text{ does not satisfy }a-1=0\text{, and the antiderivative is wrong}\).
+Key point: \(\int xe^x\,dx=e^x(x-1);\ \int e^x(f+f')\,dx=e^xf\)
+
+@@ Q58
+format: numerical
+sub_topic: Classifying ∫ dx/(x² + 6x + k) as a tan⁻¹, rational or logarithmic form for integer k, and a square-root standard form
+Q: For integers \(k\) with \(0\le k\le15\), the integral \(\displaystyle\int\frac{dx}{x^2+6x+k}\) takes one of three forms. For how many \(k\) is it a \(\tan^{-1}\) form, for how many a purely rational function, and for how many a logarithmic form? Also, what is \(\displaystyle\int\frac{dx}{\sqrt{x^2+6x+13}}\)?
+A) 7, 0, 9; \(\sin^{-1}\dfrac{x+3}{2}+C\)
+B) 5, 1, 10; \(\sqrt{x^2+6x+13}+C\)
+C) 6, 1, 9; \(\log\left|x+3+\sqrt{x^2+6x+13}\right|+C\)
+D) 6, 0, 10; \(\tfrac12\tan^{-1}\dfrac{x+3}{2}+C\)
+KEY: C
+SOL:
+Answer: (C) 6 \(\tan^{-1}\) forms, 1 rational, 9 logarithmic; \(\log\left|x+3+\sqrt{x^2+6x+13}\right|+C\).
+Given: \(x^2+6x+k=(x+3)^2+(k-9)\)
+Formula/Principle: \(\displaystyle\int\frac{dx}{u^2+a^2}=\frac1a\tan^{-1}\frac ua;\ \int\frac{dx}{u^2}=-\frac1u;\ \int\frac{dx}{u^2-a^2}=\frac1{2a}\log\left|\frac{u-a}{u+a}\right|;\ \int\frac{dx}{\sqrt{u^2+a^2}}=\log\left|u+\sqrt{u^2+a^2}\right|\)
+Step 1: \(k>9:\ k=10,\ldots,15\Rightarrow6\text{ values }(\tan^{-1})\)
+Step 2: \(k=9:\ \displaystyle\int\frac{dx}{(x+3)^2}=-\frac1{x+3}+C\ (\text{rational})\)
+Step 3: \(k<9:\ k=0,\ldots,8\Rightarrow9\text{ values }(\text{log form})\)
+Worked derivation: \[x^2+6x+13=(x+3)^2+2^2\Rightarrow\int\frac{dx}{\sqrt{(x+3)^2+4}}=\log\left|x+3+\sqrt{x^2+6x+13}\right|+C\]
+Check: \[6+1+9=16=\text{number of integers from 0 to 15}\ \checkmark\]
+Why: \(\text{completing the square shows whether the quadratic is a sum of squares (no real roots), a perfect square or a difference of squares (two real roots); that decides the standard form}\)
+Why not the others: (A) \(\text{counts }k=9\text{ as a }\tan^{-1}\text{ form; the square-root form here is a log, not }\sin^{-1}\); (B) \(\text{miscounts the boundary, and the antiderivative is wrong}\); (D) \(k=9\text{ gives a rational result, and the square-root integral is not a }\tan^{-1}\).
+Key point: \(\text{complete the square: }+a^2\to\tan^{-1},\ 0\to\text{rational},\ -a^2\to\log\)
+
+@@ Q59
+format: numerical
+sub_topic: Values of m for which y = e^{mx} solves y″ − 5y′ + 6y = 0, with the order and degree of a differential equation
+Q: For which values of \(m\) is \(y=e^{mx}\) a solution of \(y''-5y'+6y=0\)? What are the order and degree of \((y'')^3+(y')^4+y=0\), and what is the order of the differential equation whose general solution is \(y=Ae^{2x}+Be^{3x}\)?
+A) \(m=-2,-3\); order 3, degree 2; order 1
+B) \(m=1,6\); order 2, degree 4; order 2
+C) \(m=2\text{ only}\); order 2, degree 3; order 3
+D) \(m=2\text{ or }3\); order 2, degree 3; order 2
+KEY: D
+SOL:
+Answer: (D) \(m=2\) or \(3\); order 2, degree 3; order 2.
+Given: \(y=e^{mx}\Rightarrow y'=me^{mx},\ y''=m^2e^{mx}\)
+Formula/Principle: \(\text{order = highest derivative; degree = power of that derivative (polynomial in derivatives)};\ \text{number of arbitrary constants = order}\)
+Step 1: \(e^{mx}(m^2-5m+6)=0\Rightarrow(m-2)(m-3)=0\Rightarrow m=2,3\)
+Step 2: \((y'')^3+(y')^4+y=0:\ \text{highest derivative }y''\Rightarrow\text{order 2; its power 3}\Rightarrow\text{degree 3}\)
+Step 3: \(y=Ae^{2x}+Be^{3x}\text{ has 2 arbitrary constants}\Rightarrow\text{order 2 (it is }y''-5y'+6y=0)\)
+Worked derivation: \[y=Ae^{2x}+Be^{3x}:\ y'=2Ae^{2x}+3Be^{3x},\ y''=4Ae^{2x}+9Be^{3x};\ y''-5y'+6y=(4-10+6)Ae^{2x}+(9-15+6)Be^{3x}=0\]
+Check: \[m=3:\ 9-15+6=0\ \checkmark;\ m=2:\ 4-10+6=0\ \checkmark\]
+Why: \(e^{mx}\text{ is never zero, so the equation reduces to a quadratic in m; eliminating two constants needs two differentiations, giving a second-order equation}\)
+Why not the others: (A) \(\text{sign slip, and the order is fixed by }y''\); (B) \(\text{wrong roots, and degree is the power of the highest-order derivative}\); (C) \(\text{misses }m=3\text{, and two constants give order 2}\).
+Key point: \(e^{mx}\text{ trial gives the auxiliary quadratic; order = number of arbitrary constants}\)
+
+@@ Q60
+format: numerical
+sub_topic: Area of a parallelogram from its diagonal vectors using the cross product, and a unit vector perpendicular to its plane
+Q: A parallelogram has diagonals \(\vec d_1=3\hat i+\hat j-2\hat k\) and \(\vec d_2=\hat i-3\hat j+4\hat k\). What is its area, and which is a unit vector perpendicular to its plane?
+A) \(5\sqrt3;\ \dfrac{1}{5\sqrt3}(\hat i+7\hat j+5\hat k)\)
+B) \(10\sqrt3;\ \dfrac{1}{5\sqrt3}(\hat i-7\hat j+5\hat k)\)
+C) \(\tfrac52\sqrt3;\ \hat i+7\hat j+5\hat k\)
+D) \(5\sqrt3;\ \dfrac{1}{\sqrt{14}}(3\hat i+\hat j-2\hat k)\)
+KEY: A
+SOL:
+Answer: (A) Area \(5\sqrt3\); unit normal \(\tfrac{1}{5\sqrt3}(\hat i+7\hat j+5\hat k)\).
+Given: \(\vec d_1=(3,1,-2),\ \vec d_2=(1,-3,4)\)
+Formula/Principle: \(\text{sides }\vec a,\vec b\Rightarrow\vec d_1=\vec a+\vec b,\ \vec d_2=\vec a-\vec b;\ \vec d_1\times\vec d_2=-2(\vec a\times\vec b)\Rightarrow\text{area}=\tfrac12|\vec d_1\times\vec d_2|\)
+Step 1: \(\vec d_1\times\vec d_2=\big(1\cdot4-(-2)(-3),\ (-2)(1)-3\cdot4,\ 3(-3)-1\cdot1\big)=(-2,-14,-10)\)
+Step 2: \(|\vec d_1\times\vec d_2|=\sqrt{4+196+100}=\sqrt{300}=10\sqrt3\Rightarrow\text{area}=5\sqrt3\)
+Step 3: \(\hat n=\pm\dfrac{(-2,-14,-10)}{10\sqrt3}=\pm\dfrac{(1,7,5)}{5\sqrt3}\)
+Worked derivation: \[(\vec a+\vec b)\times(\vec a-\vec b)=\vec a\times\vec a-\vec a\times\vec b+\vec b\times\vec a-\vec b\times\vec b=-2\,\vec a\times\vec b\]
+Check: \[(1,7,5)\cdot(3,1,-2)=3+7-10=0;\ (1,7,5)\cdot(1,-3,4)=1-21+20=0\ \checkmark;\ |(1,7,5)|=\sqrt{75}=5\sqrt3\ \checkmark\]
+Why: \(\text{the diagonals' cross product is twice the sides' cross product, whose magnitude is the area; its direction is perpendicular to both diagonals, hence to the plane}\)
+Why not the others: (B) \(\text{forgets the factor }\tfrac12\text{, and }(1,-7,5)\text{ is not perpendicular to }\vec d_1\); (C) \(\text{halves twice, and the vector is not a unit vector}\); (D) \(\text{this unit vector lies along a diagonal, in the plane}\).
+Key point: \(\text{parallelogram area}=\tfrac12|\vec d_1\times\vec d_2|=|\vec a\times\vec b|\)
