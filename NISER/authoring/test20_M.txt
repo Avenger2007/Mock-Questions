@@ -1,0 +1,439 @@
+@@ Q41
+format: numerical
+sub_topic: Classifying real functions as one-one, onto, both or neither using the horizontal line test on their graphs
+Q: Consider \(f_1(x)=x^3,\ f_2(x)=x^3-x,\ f_3(x)=e^x,\ f_4(x)=2x+3\), each from \(\mathbb R\) to \(\mathbb R\). How many are bijective, which is onto but not one-one, and which is one-one but not onto?
+A) \(4;\ \text{none};\ \text{none}\)
+B) \(1\ (f_4);\ f_1;\ f_2\)
+C) \(3;\ f_3;\ f_2\)
+D) \(2\ (f_1,f_4);\ f_2;\ f_3\)
+KEY: D
+SOL:
+Answer: (D) \(2\ (f_1,f_4);\ f_2\text{ onto, not one-one};\ f_3\text{ one-one, not onto}\)
+Given: \(f_1=x^3,\ f_2=x^3-x,\ f_3=e^x,\ f_4=2x+3\text{ on }\mathbb R\)
+Formula/Principle: \(\text{one-one: every horizontal line meets the graph at most once; onto: every horizontal line meets it at least once}\)
+Step 1: \(f_1,f_4\text{ strictly increasing and unbounded both ways}\Rightarrow\text{bijective}\)
+Step 2: \(f_2(-1)=f_2(0)=f_2(1)=0\Rightarrow\text{not one-one};\ \text{continuous, unbounded both ways}\Rightarrow\text{onto}\)
+Step 3: \(f_3\text{ strictly increasing}\Rightarrow\text{one-one};\ e^x>0\Rightarrow\text{range }(0,\infty)\ne\mathbb R\)
+Worked derivation: \[f_4(x)=y\Rightarrow x=\frac{y-3}{2}\in\mathbb R\ \text{for every }y\]
+Check: \[y=0\text{ meets }y=x^3-x\text{ three times; }y=-1\text{ never meets }y=e^x\ \checkmark\]
+Why: \(\text{the horizontal line test reads injectivity and surjectivity directly off the graph}\)
+Why not the others: (A) \(f_2,f_3\text{ fail}\); (B) \(f_1\text{ is bijective; }f_2\text{ is not one-one}\); (C) \(f_3\text{ is not onto}\).
+Key point: \(\text{strictly monotonic + full range}\Rightarrow\text{bijective}\)
+
+@@ Q42
+format: numerical
+sub_topic: Solving the Cauchy functional equation f(x + y) = f(x) + f(y) at integers and counting all, onto and one-one functions between finite sets
+Q: If \(f(x+y)=f(x)+f(y)\) for all real \(x,y\) and \(f(1)=3\), what is \(f(5)\)? For \(A=\{1,2,3\}\) and \(B=\{a,b\}\), how many functions \(A\to B\) are there, how many are onto, and how many one-one functions \(B\to A\) are there?
+A) \(f(5)=243;\ 9;\ 6;\ 3\)
+B) \(f(5)=15;\ 8;\ 6;\ 6\)
+C) \(f(5)=15;\ 6;\ 2;\ 6\)
+D) \(f(5)=8;\ 8;\ 8;\ 9\)
+KEY: B
+SOL:
+Answer: (B) \(15;\ 8;\ 6;\ 6\)
+Given: \(f(x+y)=f(x)+f(y),\ f(1)=3;\ |A|=3,\ |B|=2\)
+Formula/Principle: \(f(n)=nf(1)\text{ for integers }n;\ \#(A\to B)=|B|^{|A|};\ \text{onto}=\text{total}-\text{non-onto}\)
+Step 1: \(f(2)=f(1)+f(1)=6,\ \ldots,\ f(5)=5f(1)=15\)
+Step 2: \(\text{all functions}=2^3=8;\ \text{non-onto}=2\ (\text{constant})\Rightarrow\text{onto}=6\)
+Step 3: \(\text{one-one }B\to A:\ 3\times2=6\)
+Worked derivation: \[f(0)=f(0+0)=2f(0)\Rightarrow f(0)=0;\ f(n+1)=f(n)+3\Rightarrow f(n)=3n\]
+Check: \[f(2+3)=6+9=15\ \checkmark\]
+Why: \(\text{additivity turns the function into repeated addition of }f(1)\text{; counting assigns an image to each element}\)
+Why not the others: (A) \(\text{treats }f\text{ as multiplicative; counts }3^2\); (C) \(\text{wrong counts}\); (D) \(\text{wrong }f(5)\text{ and counts}\).
+Key point: \(|B|^{|A|}\text{ functions};\ \text{onto from 3 to 2 elements}=2^3-2\)
+
+@@ Q43
+format: numerical
+sub_topic: Reducing a trigonometric equation to a quadratic in sin x, writing its general solution and counting solutions in given intervals
+Q: For \(2\cos^2x+3\sin x=0\), what is the general solution, and how many solutions lie in \([0,2\pi]\) and in \([0,4\pi]\)?
+A) \(x=n\pi+(-1)^n\dfrac\pi6;\ 2;\ 4\)
+B) \(x=2n\pi\pm\dfrac\pi6;\ 4;\ 8\)
+C) \(x=n\pi+(-1)^{n+1}\dfrac\pi6;\ 2;\ 4\)
+D) \(x=n\pi-\dfrac\pi6;\ 1;\ 2\)
+KEY: C
+SOL:
+Answer: (C) \(x=n\pi+(-1)^{n+1}\dfrac\pi6;\ 2;\ 4\)
+Given: \(2\cos^2x+3\sin x=0\)
+Formula/Principle: \(\sin x=\sin\alpha\Rightarrow x=n\pi+(-1)^n\alpha\)
+Step 1: \(2-2\sin^2x+3\sin x=0\Rightarrow2\sin^2x-3\sin x-2=0\Rightarrow(2\sin x+1)(\sin x-2)=0\)
+Step 2: \(\sin x=2\text{ impossible};\ \sin x=-\tfrac12=\sin\left(-\tfrac\pi6\right)\Rightarrow x=n\pi+(-1)^n\left(-\tfrac\pi6\right)\)
+Step 3: \([0,2\pi]:\ \tfrac{7\pi}6,\tfrac{11\pi}6\ (2);\ [0,4\pi]:\ \text{add }2\pi\text{ to each}\ (4)\)
+Worked derivation: \[n=1:\ \pi+\tfrac\pi6=\tfrac{7\pi}6;\ n=2:\ 2\pi-\tfrac\pi6=\tfrac{11\pi}6\]
+Check: \[x=\tfrac{7\pi}6:\ 2\cdot\tfrac34+3\left(-\tfrac12\right)=0\ \checkmark\]
+Why: \(\text{writing everything in }\sin x\text{ gives a quadratic; only roots in }[-1,1]\text{ give solutions}\)
+Why not the others: (A) \(\text{gives }\sin x=+\tfrac12\); (B) \(\text{uses the cosine form}\); (D) \(\text{misses half the solutions}\).
+Key point: \(|\sin x|\le1\text{ rejects the root }2\)
+
+@@ Q44
+format: numerical
+sub_topic: Finding integer values of a coefficient for which a monic quadratic has integer roots, and using conjugate surds as roots of a quadratic with rational coefficients
+Q: For how many integers \(k\) does \(x^2-kx+12=0\) have integer roots? If \(2+\sqrt3\) is a root of \(x^2+bx+c=0\) with rational \(b,c\), what are \(b\) and \(c\)?
+A) \(6\ (k=\pm7,\pm8,\pm13);\ b=-4,\ c=1\)
+B) \(3;\ b=4,\ c=1\)
+C) \(6;\ b=-4,\ c=7\)
+D) \(12;\ b=-2,\ c=\sqrt3\)
+KEY: A
+SOL:
+Answer: (A) \(6;\ b=-4,\ c=1\)
+Given: \(x^2-kx+12=0;\ \text{root }2+\sqrt3\)
+Formula/Principle: \(\alpha+\beta=k,\ \alpha\beta=12;\ \text{rational coefficients}\Rightarrow\text{irrational roots in conjugate pairs}\)
+Step 1: \(\text{integer pairs with product }12:\ (1,12),(2,6),(3,4)\text{ and their negatives}\)
+Step 2: \(k=\pm13,\pm8,\pm7\Rightarrow6\text{ values}\)
+Step 3: \(\text{roots }2\pm\sqrt3:\ \text{sum }4,\ \text{product }1\Rightarrow b=-4,\ c=1\)
+Worked derivation: \[(x-2-\sqrt3)(x-2+\sqrt3)=(x-2)^2-3=x^2-4x+1\]
+Check: \[k=7:\ x^2-7x+12=(x-3)(x-4)\ \checkmark\]
+Why: \(\text{a monic integer quadratic has integer roots exactly when they split the constant term; conjugates make the coefficients rational}\)
+Why not the others: (B) \(\text{ignores negative pairs; sign of }b\text{ wrong}\); (C) \(c\text{ is the product }1\); (D) \(\text{counts ordered pairs; }c\text{ must be rational}\).
+Key point: \(\text{rational coefficients}\Rightarrow p+\sqrt q\text{ and }p-\sqrt q\text{ together}\)
+
+@@ Q45
+format: numerical
+sub_topic: Applying the fundamental principle of counting to four-digit numbers with distinct digits, even ones, and three-digit multiples of 5 with distinct digits
+Q: How many four-digit numbers have distinct digits, how many of these are even, and how many three-digit numbers with distinct digits are divisible by \(5\)?
+A) \(5040;\ 2520;\ 144\)
+B) \(4536;\ 2268;\ 136\)
+C) \(4536;\ 2296;\ 136\)
+D) \(9000;\ 4500;\ 180\)
+KEY: C
+SOL:
+Answer: (C) \(4536;\ 2296;\ 136\)
+Given: \(\text{digits }0\text{–}9;\ \text{first digit non-zero};\ \text{digits distinct}\)
+Formula/Principle: \(\text{multiply the number of choices for each place, filling restricted places first}\)
+Step 1: \(\text{four-digit: }9\times9\times8\times7=4536\)
+Step 2: \(\text{even, last }0:\ 9\times8\times7=504;\ \text{last }2,4,6,8:\ 4\times8\times8\times7=1792;\ \text{total }2296\)
+Step 3: \(\text{three-digit, last }0:\ 9\times8=72;\ \text{last }5:\ 8\times8=64;\ \text{total }136\)
+Worked derivation: \[\text{last digit }e\in\{2,4,6,8\}:\ \text{first digit }\ne0,e\ (8),\ \text{then }8,\ 7\]
+Check: \[504+1792=2296\ne\tfrac12(4536)\text{ because }0\text{ is an even digit}\ \checkmark\]
+Why: \(\text{the zero restriction on the first digit interacts with the last-digit condition, so cases must be split}\)
+Why not the others: (A) \(\text{allows a leading zero}\); (B) \(\text{assumes exactly half are even}\); (D) \(\text{ignores distinctness}\).
+Key point: \(\text{split cases when }0\text{ affects both a restricted place and the condition}\)
+
+@@ Q46
+format: numerical
+sub_topic: Using the sum of n terms of a G.P. to find when partial sums first exceed a value, and the sum of an infinite G.P. with |r| < 1
+Q: For the G.P. \(3,6,12,\ldots\), what is the least \(n\) for which \(S_n>1000\), and what is \(S_n\) then? What is the sum of the infinite G.P. \(1+\tfrac13+\tfrac19+\cdots\)?
+A) \(n=8,\ S_8=765;\ \tfrac32\)
+B) \(n=10,\ S_{10}=3069;\ 3\)
+C) \(n=9,\ S_9=1536;\ \tfrac43\)
+D) \(n=9,\ S_9=1533;\ \tfrac32\)
+KEY: D
+SOL:
+Answer: (D) \(n=9,\ S_9=1533;\ \tfrac32\)
+Given: \(a=3,\ r=2;\ a'=1,\ r'=\tfrac13\)
+Formula/Principle: \(S_n=\dfrac{a(r^n-1)}{r-1};\ S_\infty=\dfrac{a}{1-r}\ (|r|<1)\)
+Step 1: \(S_n=3(2^n-1)>1000\Rightarrow2^n>334.3\)
+Step 2: \(2^8=256<334.3<512=2^9\Rightarrow n=9\)
+Step 3: \(S_9=3(511)=1533;\ S_\infty=\dfrac{1}{1-\frac13}=\dfrac32\)
+Worked derivation: \[S_8=3(255)=765<1000<1533=S_9\]
+Check: \[T_9=3\cdot2^8=768,\ S_8+T_9=765+768=1533\ \checkmark\]
+Why: \(\text{for }r>1\text{ partial sums grow without bound, while for }|r|<1\text{ they approach a finite limit}\)
+Why not the others: (A) \(S_8<1000\); (B) \(n=9\text{ already exceeds 1000; }S_\infty\text{ wrong}\); (C) \(S_9\text{ miscomputed as }3\cdot2^9\); \(S_\infty\text{ wrong}\).
+Key point: \(S_n=a\dfrac{r^n-1}{r-1};\ S_\infty=\dfrac a{1-r}\)
+
+@@ Q47
+format: numerical
+sub_topic: Finding the member of a family of lines through the intersection of two lines that passes through the origin, and the image of a point in a line
+Q: The lines \(2x+y-5=0\) and \(x-y-1=0\) meet at \(P\). Which line of the family \((2x+y-5)+\lambda(x-y-1)=0\) passes through the origin, and what is the image of \((1,2)\) in the line \(x+y-5=0\)?
+A) \(P=(2,1);\ x-2y=0;\ (3,4)\)
+B) \(P=(1,2);\ 2x-y=0;\ (4,3)\)
+C) \(P=(2,1);\ x+2y=0;\ (-1,-2)\)
+D) \(P=(2,1);\ x-2y=0;\ (2,1)\)
+KEY: A
+SOL:
+Answer: (A) \(P=(2,1);\ x-2y=0;\ \text{image }(3,4)\)
+Given: \(L_1:2x+y-5=0,\ L_2:x-y-1=0;\ \text{point }(1,2),\ \text{mirror }x+y-5=0\)
+Formula/Principle: \(L_1+\lambda L_2=0\text{ passes through }L_1\cap L_2;\ \dfrac{x-x_1}{a}=\dfrac{y-y_1}{b}=\dfrac{-2(ax_1+by_1+c)}{a^2+b^2}\)
+Step 1: \(\text{adding: }3x-6=0\Rightarrow x=2,\ y=1\)
+Step 2: \((0,0):\ -5-\lambda=0\Rightarrow\lambda=-5\Rightarrow-3x+6y=0\Rightarrow x-2y=0\)
+Step 3: \(\dfrac{x-1}{1}=\dfrac{y-2}{1}=\dfrac{-2(1+2-5)}{2}=2\Rightarrow(3,4)\)
+Worked derivation: \[(2x+y-5)-5(x-y-1)=-3x+6y=0\]
+Check: \[\text{midpoint }(2,3)\text{ lies on }x+y=5;\ \text{segment direction }(2,2)\perp(1,-1)\ \checkmark\]
+Why: \(\text{every member of the family vanishes at the common point, so one condition fixes }\lambda\text{; the image is symmetric about the mirror}\)
+Why not the others: (B) \(P\text{ wrong}\); (C) \(\text{sign of }\lambda\text{ wrong; image through origin}\); (D) \(\text{gives the image in }y=x\).
+Key point: \(L_1+\lambda L_2=0;\ \text{image formula with factor }-2\)
+
+@@ Q48
+format: numerical
+sub_topic: Finding conditions on k for x² + y² − 4x + 6y + k = 0 to be a real circle, to touch the x-axis or y-axis, and to be a point circle
+Q: For \(x^2+y^2-4x+6y+k=0\), for which \(k\) is it a real circle, for which does it touch the \(x\)-axis, for which the \(y\)-axis, and for which is it a point circle?
+A) \(k>13;\ k=9;\ k=4;\ k=0\)
+B) \(k<13;\ k=4;\ k=9;\ k=13\)
+C) \(k<13;\ k=9;\ k=4;\ k=13\)
+D) \(k<-13;\ k=-4;\ k=-9;\ k=-13\)
+KEY: B
+SOL:
+Answer: (B) \(k<13;\ k=4\ (x\text{-axis});\ k=9\ (y\text{-axis});\ k=13\ (\text{point circle})\)
+Given: \(\text{centre }(2,-3),\ r^2=4+9-k=13-k\)
+Formula/Principle: \(x^2+y^2+2gx+2fy+c=0:\ \text{centre }(-g,-f),\ r=\sqrt{g^2+f^2-c}\)
+Step 1: \(\text{real circle: }13-k>0\Rightarrow k<13;\ \text{point circle: }k=13\)
+Step 2: \(\text{touches }x\text{-axis: }r=|{-3}|=3\Rightarrow13-k=9\Rightarrow k=4\)
+Step 3: \(\text{touches }y\text{-axis: }r=|2|=2\Rightarrow13-k=4\Rightarrow k=9\)
+Worked derivation: \[(x-2)^2+(y+3)^2=13-k\]
+Check: \[k=4:\ y=0\Rightarrow x^2-4x+4=0\Rightarrow(x-2)^2=0\ (\text{one point})\ \checkmark\]
+Why: \(\text{tangency to an axis means the radius equals the centre's distance from that axis}\)
+Why not the others: (A) \(\text{inequality reversed; axes swapped}\); (C) \(\text{axes swapped}\); (D) \(\text{signs wrong}\).
+Key point: \(\text{touches }x\text{-axis}\iff r=|f|;\ \text{touches }y\text{-axis}\iff r=|g|\)
+
+@@ Q49
+format: numerical
+sub_topic: Finding the focus, directrix and latus rectum of a parabola, counting its lattice points in a range, and using the focal distance property
+Q: For \(y^2=12x\), what are the focus, directrix and length of the latus rectum, how many points with integer coordinates and \(0\le x\le12\) lie on it, and what is the focal distance of \((3,6)\)?
+A) \((0,3);\ y=-3;\ 12;\ 3;\ 6\)
+B) \((3,0);\ x=3;\ 6;\ 7;\ 3\)
+C) \((12,0);\ x=-12;\ 48;\ 5;\ 15\)
+D) \((3,0);\ x=-3;\ 12;\ 5;\ 6\)
+KEY: D
+SOL:
+Answer: (D) \((3,0);\ x=-3;\ 12;\ 5\text{ points};\ 6\)
+Given: \(y^2=12x=4ax\Rightarrow a=3\)
+Formula/Principle: \(\text{focus }(a,0),\ \text{directrix }x=-a,\ \text{latus rectum }4a;\ \text{focal distance}=x+a\)
+Step 1: \(\text{focus }(3,0),\ \text{directrix }x=-3,\ \text{LR}=12\)
+Step 2: \(x=\dfrac{y^2}{12}\in\mathbb Z\Rightarrow6\mid y;\ y=0,\pm6,\pm12\Rightarrow x=0,3,12\Rightarrow5\text{ points}\)
+Step 3: \(\text{focal distance of }(3,6)=3+3=6\)
+Worked derivation: \[y^2=12x\text{ with }x\in\mathbb Z\Rightarrow12\mid y^2\Rightarrow2\mid y,\ 3\mid y\Rightarrow6\mid y\]
+Check: \[\sqrt{(3-3)^2+(6-0)^2}=6\ \checkmark\]
+Why: \(\text{a point on a parabola is as far from the focus as from the directrix}\)
+Why not the others: (A) \(\text{axis taken as vertical}\); (B) \(\text{directrix sign and LR wrong}\); (C) \(\text{uses }4a\text{ as }a\).
+Key point: \(y^2=4ax:\ S(a,0),\ x=-a,\ \text{LR }4a,\ SP=x+a\)
+
+@@ Q50
+format: numerical
+sub_topic: Evaluating limits of rational functions by factorising and using the standard limit of (xⁿ − aⁿ)/(x − a), including finding n from a given limit
+Q: What are \(\displaystyle\lim_{x\to2}\frac{x^3-8}{x^2-4}\) and \(\displaystyle\lim_{x\to\infty}\frac{3x^2+2x}{5x^2-1}\), and for which positive integer \(n\) is \(\displaystyle\lim_{x\to2}\frac{x^n-2^n}{x-2}=80\)?
+A) \(\dfrac{12}{4}\text{ undefined};\ \dfrac25;\ 4\)
+B) \(3;\ \dfrac35;\ 5\)
+C) \(2;\ \dfrac35;\ 6\)
+D) \(3;\ 0;\ 5\)
+KEY: B
+SOL:
+Answer: (B) \(3;\ \dfrac35;\ n=5\)
+Given: \(\text{three limits}\)
+Formula/Principle: \(\displaystyle\lim_{x\to a}\frac{x^n-a^n}{x-a}=na^{n-1};\ \text{divide by the highest power for }x\to\infty\)
+Step 1: \(\dfrac{(x-2)(x^2+2x+4)}{(x-2)(x+2)}\to\dfrac{12}{4}=3\)
+Step 2: \(\dfrac{3+2/x}{5-1/x^2}\to\dfrac35\)
+Step 3: \(n\cdot2^{n-1}=80\Rightarrow n=5\ (5\cdot16=80)\)
+Worked derivation: \[\lim_{x\to2}\frac{x^3-2^3}{x^2-2^2}=\frac{3\cdot2^2}{2\cdot2}=3\]
+Check: \[n=4:\ 4\cdot8=32;\ n=6:\ 6\cdot32=192\Rightarrow n=5\text{ unique}\ \checkmark\]
+Why: \(\text{the common factor }(x-a)\text{ removes the }0/0\text{ form, and at infinity only the leading terms matter}\)
+Why not the others: (A) \(\text{the limit exists after cancelling}\); (C) \(\text{wrong cancellation and }n\); (D) \(\text{leading coefficients give }3/5\).
+Key point: \(\lim\dfrac{x^n-a^n}{x-a}=na^{n-1}\)
+
+@@ Q51
+format: numerical
+sub_topic: Finding an unknown number of balls in a bag from a given posterior probability using Bayes' theorem
+Q: Bag I has \(4\) red and \(6\) black balls; bag II has \(k\) red and \(5\) black balls. A bag is chosen at random and a ball drawn from it is red. If the probability that it came from bag I is \(\tfrac13\), what is \(k\), and what is the probability that a randomly drawn ball is red?
+A) \(k=10;\ 0.53\)
+B) \(k=5;\ 0.45\)
+C) \(k=20;\ 0.60\)
+D) \(k=4;\ 0.42\)
+KEY: C
+SOL:
+Answer: (C) \(k=20;\ P(R)=0.60\)
+Given: \(P(I)=P(II)=\tfrac12;\ P(R\mid I)=0.4;\ P(R\mid II)=\dfrac{k}{k+5};\ P(I\mid R)=\tfrac13\)
+Formula/Principle: \(P(I\mid R)=\dfrac{P(I)P(R\mid I)}{P(I)P(R\mid I)+P(II)P(R\mid II)}\)
+Step 1: \(\dfrac{0.4}{0.4+\frac{k}{k+5}}=\dfrac13\Rightarrow1.2=0.4+\dfrac{k}{k+5}\)
+Step 2: \(\dfrac{k}{k+5}=0.8\Rightarrow k=0.8k+4\Rightarrow k=20\)
+Step 3: \(P(R)=\tfrac12(0.4)+\tfrac12(0.8)=0.60\)
+Worked derivation: \[P(I\mid R)=\frac{0.2}{0.2+0.4}=\frac13\]
+Check: \[\text{bag II: }20\text{ red of }25=0.8\ \checkmark\]
+Why: \(\text{Bayes' theorem links the posterior to the unknown likelihood, giving one equation in }k\)
+Why not the others: (A) \(k=10\text{ gives }P(I\mid R)=0.375\); (B) \(k=5\text{ gives }0.444\); (D) \(k=4\text{ gives }0.474\).
+Key point: \(\text{posterior}=\dfrac{\text{prior}\times\text{likelihood}}{\text{total probability}}\)
+
+@@ Q52
+format: numerical
+sub_topic: Solving an inverse-tangent equation with the addition formula while checking principal values, and evaluating cos of a sum of inverse trigonometric values
+Q: Solve \(\tan^{-1}(2x)+\tan^{-1}(3x)=\dfrac\pi4\), and find \(\cos\left(\sin^{-1}\tfrac35+\cos^{-1}\tfrac{12}{13}\right)\).
+A) \(x=\tfrac16\text{ only};\ \tfrac{33}{65}\)
+B) \(x=\tfrac16\text{ or }-1;\ \tfrac{33}{65}\)
+C) \(x=-1\text{ only};\ \tfrac{63}{65}\)
+D) \(x=\tfrac16;\ \tfrac{16}{65}\)
+KEY: A
+SOL:
+Answer: (A) \(x=\tfrac16;\ \tfrac{33}{65}\)
+Given: \(\tan^{-1}2x+\tan^{-1}3x=\tfrac\pi4\)
+Formula/Principle: \(\tan^{-1}a+\tan^{-1}b=\tan^{-1}\dfrac{a+b}{1-ab}\ (ab<1);\ \cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta\)
+Step 1: \(\dfrac{5x}{1-6x^2}=1\Rightarrow6x^2+5x-1=0\Rightarrow x=\tfrac16\text{ or }-1\)
+Step 2: \(x=-1:\ \tan^{-1}(-2)+\tan^{-1}(-3)<0\ne\tfrac\pi4\Rightarrow\text{reject};\ x=\tfrac16:\ ab=\tfrac16<1\ \checkmark\)
+Step 3: \(\alpha=\sin^{-1}\tfrac35:\ \cos\alpha=\tfrac45;\ \beta=\cos^{-1}\tfrac{12}{13}:\ \sin\beta=\tfrac5{13}\Rightarrow\tfrac45\cdot\tfrac{12}{13}-\tfrac35\cdot\tfrac5{13}=\tfrac{33}{65}\)
+Worked derivation: \[x=-1:\ \tan^{-1}(-2)+\tan^{-1}(-3)=-\pi+\tan^{-1}\frac{-5}{1-6}=-\frac{3\pi}{4}\]
+Check: \[x=\tfrac16:\ \tan^{-1}\tfrac13+\tan^{-1}\tfrac12=\tan^{-1}\frac{5/6}{5/6}=\tfrac\pi4\ \checkmark\]
+Why: \(\text{the addition formula holds only when }ab<1\text{, so roots must be checked against the principal range}\)
+Why not the others: (B) \(x=-1\text{ gives }-\tfrac{3\pi}4\); (C) \(\text{keeps only the extraneous root; uses }+\); (D) \(\text{wrong cosine value}\).
+Key point: \(\text{check extraneous roots: the sum must lie in the required range}\)
+
+@@ Q53
+format: numerical
+sub_topic: Computing minors, cofactors and a 3 × 3 determinant by cofactor expansion, and the property that alien cofactors give zero
+Q: For \(A=\begin{pmatrix}1&2&3\\0&4&5\\1&0&6\end{pmatrix}\), what are \(\det A\), the cofactors \(A_{12}\) and \(A_{21}\), and the value of \(a_{11}A_{21}+a_{12}A_{22}+a_{13}A_{23}\)?
+A) \(\det A=-22;\ A_{12}=-5,\ A_{21}=12;\ 22\)
+B) \(\det A=22;\ A_{12}=5,\ A_{21}=-12;\ 0\)
+C) \(\det A=22;\ A_{12}=-5,\ A_{21}=-12;\ 22\)
+D) \(\det A=34;\ A_{12}=5,\ A_{21}=12;\ 0\)
+KEY: B
+SOL:
+Answer: (B) \(\det A=22;\ A_{12}=5,\ A_{21}=-12;\ 0\)
+Given: \(A\text{ as above}\)
+Formula/Principle: \(A_{ij}=(-1)^{i+j}M_{ij};\ \det A=\sum_j a_{1j}A_{1j};\ \sum_j a_{1j}A_{2j}=0\)
+Step 1: \(\det A=1(24-0)-2(0-5)+3(0-4)=24+10-12=22\)
+Step 2: \(A_{12}=-\begin{vmatrix}0&5\\1&6\end{vmatrix}=-(0-5)=5;\ A_{21}=-\begin{vmatrix}2&3\\0&6\end{vmatrix}=-12\)
+Step 3: \(\text{row 1 elements with row 2 cofactors}=0\)
+Worked derivation: \[A_{22}=\begin{vmatrix}1&3\\1&6\end{vmatrix}=3,\ A_{23}=-\begin{vmatrix}1&2\\1&0\end{vmatrix}=2;\ 1(-12)+2(3)+3(2)=0\]
+Check: \[\text{expansion along column 1: }1(24)-0+1(10-12)=22\ \checkmark\]
+Why: \(\text{using another row's cofactors computes the determinant of a matrix with two equal rows, which is zero}\)
+Why not the others: (A) \(\text{signs of cofactors wrong}\); (C) \(\text{sign of }A_{12}\text{ wrong; alien sum is }0\); (D) \(\text{determinant and }A_{21}\text{ wrong}\).
+Key point: \(\sum_j a_{ij}A_{kj}=\det A\text{ if }i=k,\ 0\text{ otherwise}\)
+
+@@ Q54
+format: numerical
+sub_topic: Using logarithmic differentiation to find derivatives of xˣ and x^(1/x), locating their single critical points, and comparing 2^(1/2) with 3^(1/3)
+Q: Using logarithmic differentiation, where does \(y=x^x\ (x>0)\) attain its minimum and what is the minimum value? Where does \(g(x)=x^{1/x}\ (x>0)\) attain its maximum, and which is larger, \(2^{1/2}\) or \(3^{1/3}\)?
+A) \(x=e,\ e^e;\ x=\tfrac1e;\ 2^{1/2}\)
+B) \(x=1,\ 1;\ x=1;\ \text{equal}\)
+C) \(x=\tfrac1e,\ e^{-1};\ x=e;\ 2^{1/2}\)
+D) \(x=\tfrac1e,\ \left(\tfrac1e\right)^{1/e};\ x=e;\ 3^{1/3}\)
+KEY: D
+SOL:
+Answer: (D) \(\min\text{ at }x=\tfrac1e,\ \text{value }e^{-1/e};\ g\text{ max at }x=e;\ 3^{1/3}>2^{1/2}\)
+Given: \(y=x^x,\ g=x^{1/x},\ x>0\)
+Formula/Principle: \(\ln y=x\ln x\Rightarrow\dfrac{y'}{y}=1+\ln x;\ \ln g=\dfrac{\ln x}{x}\Rightarrow\dfrac{g'}{g}=\dfrac{1-\ln x}{x^2}\)
+Step 1: \(y'=x^x(1+\ln x)=0\Rightarrow x=\tfrac1e;\ y'<0\text{ before},\ >0\text{ after}\Rightarrow\min=e^{-1/e}\)
+Step 2: \(g'=x^{1/x}\dfrac{1-\ln x}{x^2}=0\Rightarrow x=e;\ \text{sign }+\to-\Rightarrow\max\)
+Step 3: \(3\text{ is closer to }e\text{ on the decreasing side}: 3^{1/3}\approx1.442>2^{1/2}\approx1.414\)
+Worked derivation: \[\left(3^{1/3}\right)^6=9>8=\left(2^{1/2}\right)^6\Rightarrow3^{1/3}>2^{1/2}\]
+Check: \[e^{-1/e}\approx0.692<1=1^1\ \checkmark\]
+Why: \(\text{taking logs turns a variable exponent into a product that the product rule can handle}\)
+Why not the others: (A) \(\text{points swapped}\); (B) \(y'(1)=1\ne0\); (C) \(\text{minimum value and comparison wrong}\).
+Key point: \(\dfrac{d}{dx}x^x=x^x(1+\ln x)\)
+
+@@ Q55
+format: numerical
+sub_topic: Maximising the volume of an open box made by cutting equal squares from the corners of a square sheet, and the largest rectangle inscribed in a circle
+Q: Equal squares of side \(x\) are cut from the corners of a square sheet of side \(18\text{ cm}\) and the sides folded up to make an open box. What \(x\) gives the largest volume and what is that volume? What is the largest area of a rectangle inscribed in a circle of radius \(r\)?
+A) \(x=9;\ 0;\ r^2\)
+B) \(x=6;\ 216\text{ cm}^3;\ \pi r^2\)
+C) \(x=3;\ 432\text{ cm}^3;\ 2r^2\ (\text{a square})\)
+D) \(x=3;\ 324\text{ cm}^3;\ 4r^2\)
+KEY: C
+SOL:
+Answer: (C) \(x=3\text{ cm};\ V=432\text{ cm}^3;\ 2r^2\)
+Given: \(V(x)=x(18-2x)^2,\ 0<x<9;\ \text{rectangle in circle radius }r\)
+Formula/Principle: \(V'(x)=0,\ V''<0\Rightarrow\max\)
+Step 1: \(V'=(18-2x)^2-4x(18-2x)=(18-2x)(18-6x)\)
+Step 2: \(V'=0\Rightarrow x=3\ (x=9\text{ gives }V=0);\ V''(3)<0\)
+Step 3: \(V(3)=3\cdot12^2=432;\ \text{rectangle }2r\cos\theta\times2r\sin\theta=2r^2\sin2\theta\le2r^2\)
+Worked derivation: \[V''(x)=24x-144\Rightarrow V''(3)=-72<0\]
+Check: \[V(2)=2\cdot196=392<432,\ V(4)=4\cdot100=400<432\ \checkmark\]
+Why: \(\text{a deeper cut makes the box taller but its base smaller; the product peaks between the extremes}\)
+Why not the others: (A) \(x=9\text{ gives no box}\); (B) \(V(6)=216\text{ is not maximal; circle area is not a rectangle}\); (D) \(\text{volume and area wrong}\).
+Key point: \(\text{open box from side }a:\ x=a/6\)
+
+@@ Q56
+format: numerical
+sub_topic: Using integration by parts to find areas under y = ln x and y = x sin x
+Q: What is the area of the region bounded by \(y=\ln x\), the \(x\)-axis and the line \(x=e\), and the area under \(y=x\sin x\) between \(x=0\) and \(x=\pi\)?
+A) \(1;\ \pi\)
+B) \(e;\ 2\)
+C) \(e-1;\ \pi\)
+D) \(1;\ 2\pi\)
+KEY: A
+SOL:
+Answer: (A) \(1;\ \pi\)
+Given: \(y=\ln x\text{ on }[1,e];\ y=x\sin x\ge0\text{ on }[0,\pi]\)
+Formula/Principle: \(\int u\,dv=uv-\int v\,du\)
+Step 1: \(\int\ln x\,dx=x\ln x-x\ (u=\ln x,\ dv=dx)\)
+Step 2: \([x\ln x-x]_1^e=(e-e)-(0-1)=1\)
+Step 3: \(\int x\sin x\,dx=-x\cos x+\sin x\Rightarrow[-x\cos x+\sin x]_0^\pi=\pi\)
+Worked derivation: \[\int_0^\pi x\sin x\,dx=\left[-x\cos x\right]_0^\pi+\int_0^\pi\cos x\,dx=\pi+0\]
+Check: \[\ln x\ge0\text{ on }[1,e]\text{ and area }1<1\cdot(e-1)\approx1.72\ \checkmark\]
+Why: \(\text{parts trades the awkward factor for its derivative, leaving an integral that is easy}\)
+Why not the others: (B) \(\text{evaluates }\ln\text{ wrongly; omits }x\); (C) \(\text{forgets the }-x\text{ term}\); (D) \(\text{doubles the second area}\).
+Key point: \(\int\ln x\,dx=x\ln x-x\)
+
+@@ Q57
+format: numerical
+sub_topic: Integrating standard forms with quadratic denominators and square roots by completing the square, and studying the behaviour of the resulting function
+Q: What are \(\displaystyle\int\frac{dx}{x^2+2x+5}\) and \(\displaystyle\int\frac{dx}{\sqrt{5-4x-x^2}}\)? For \(F(x)=\displaystyle\int_0^x\frac{dt}{t^2+2t+5}\), how does \(F\) behave as \(x\to\infty\)?
+A) \(\tan^{-1}(x+1)+C;\ \sin^{-1}(x+2)+C;\ F\to\infty\)
+B) \(\tfrac12\ln(x^2+2x+5)+C;\ \cos^{-1}\tfrac{x+2}3+C;\ F\to\tfrac\pi4\)
+C) \(\tfrac14\tan^{-1}\tfrac{x+1}{4}+C;\ \sin^{-1}\tfrac{x-2}{3}+C;\ F\text{ decreasing}\)
+D) \(\tfrac12\tan^{-1}\tfrac{x+1}{2}+C;\ \sin^{-1}\tfrac{x+2}{3}+C;\ F\text{ increases and tends to }\tfrac12\left(\tfrac\pi2-\tan^{-1}\tfrac12\right)=\tfrac12\tan^{-1}2\)
+KEY: D
+SOL:
+Answer: (D) \(\tfrac12\tan^{-1}\tfrac{x+1}2+C;\ \sin^{-1}\tfrac{x+2}3+C;\ F\uparrow\tfrac12\tan^{-1}2\)
+Given: \(x^2+2x+5=(x+1)^2+4;\ 5-4x-x^2=9-(x+2)^2\)
+Formula/Principle: \(\int\dfrac{dx}{x^2+a^2}=\dfrac1a\tan^{-1}\dfrac xa;\ \int\dfrac{dx}{\sqrt{a^2-x^2}}=\sin^{-1}\dfrac xa\)
+Step 1: \(\int\dfrac{dx}{(x+1)^2+2^2}=\tfrac12\tan^{-1}\tfrac{x+1}{2}+C\)
+Step 2: \(\int\dfrac{dx}{\sqrt{3^2-(x+2)^2}}=\sin^{-1}\tfrac{x+2}{3}+C\)
+Step 3: \(F'(x)>0\Rightarrow\text{increasing};\ F(\infty)=\tfrac12\left(\tfrac\pi2-\tan^{-1}\tfrac12\right)\)
+Worked derivation: \[\tfrac\pi2-\tan^{-1}\tfrac12=\cot^{-1}\tfrac12=\tan^{-1}2\Rightarrow F(\infty)=\tfrac12\tan^{-1}2\]
+Check: \[\frac{d}{dx}\tfrac12\tan^{-1}\tfrac{x+1}2=\tfrac12\cdot\frac{1/2}{1+\frac{(x+1)^2}{4}}=\frac{1}{(x+1)^2+4}\ \checkmark\]
+Why: \(\text{completing the square turns each integrand into a standard form; a positive integrand makes }F\text{ increase but its tail is finite}\)
+Why not the others: (A) \(\text{constants }a\text{ omitted; }F\text{ is bounded}\); (B) \(\text{log form needs the derivative in the numerator}\); (C) \(\text{wrong }a\text{ and shift}\).
+Key point: \(\text{complete the square, then use }\tan^{-1}\text{ or }\sin^{-1}\text{ forms}\)
+
+@@ Q58
+format: numerical
+sub_topic: Recovering a linear differential equation dy/dx + Py = Q from its general solution, finding a particular solution, and solving an equation of the form dx/dy + Px = Q
+Q: \(y=1+Ce^{-x^2}\) is the general solution of \(\dfrac{dy}{dx}+P(x)y=Q(x)\). What are \(P\) and \(Q\), the solution through \((0,3)\), and the general solution of \(\dfrac{dx}{dy}+\dfrac{x}{y}=y^2\ (y>0)\)?
+A) \(P=2x,\ Q=2x;\ y=1+2e^{-x^2};\ xy=\dfrac{y^4}{4}+C\)
+B) \(P=-2x,\ Q=2x;\ y=3e^{-x^2};\ x=y^3+C\)
+C) \(P=2x,\ Q=1;\ y=1+3e^{-x^2};\ xy=y^3+C\)
+D) \(P=x^2,\ Q=x^2;\ y=1+2e^{-x^2};\ x=\dfrac{y^3}{3}+Cy\)
+KEY: A
+SOL:
+Answer: (A) \(P=Q=2x;\ y=1+2e^{-x^2};\ xy=\tfrac{y^4}4+C\)
+Given: \(y=1+Ce^{-x^2};\ (0,3);\ \dfrac{dx}{dy}+\dfrac xy=y^2\)
+Formula/Principle: \(\text{eliminate }C\text{; I.F. }e^{\int P}\text{ for }dy/dx+Py=Q\text{ and }e^{\int P\,dy}\text{ for }dx/dy+Px=Q\)
+Step 1: \(y'=-2xCe^{-x^2}=-2x(y-1)\Rightarrow y'+2xy=2x\)
+Step 2: \(3=1+C\Rightarrow C=2\Rightarrow y=1+2e^{-x^2}\)
+Step 3: \(\text{I.F.}=e^{\int dy/y}=y\Rightarrow\dfrac{d}{dy}(xy)=y^3\Rightarrow xy=\dfrac{y^4}{4}+C\)
+Worked derivation: \[\text{I.F. }e^{\int2x\,dx}=e^{x^2}:\ \frac{d}{dx}\left(ye^{x^2}\right)=2xe^{x^2}\Rightarrow ye^{x^2}=e^{x^2}+C\]
+Check: \[y=1+2e^{-x^2}:\ y'+2xy=-4xe^{-x^2}+2x+4xe^{-x^2}=2x\ \checkmark\]
+Why: \(\text{differentiating the general solution and eliminating the constant recovers the equation it solves}\)
+Why not the others: (B) \(\text{sign of }P\text{ wrong; constant term lost}\); (C) \(Q\text{ wrong}\); (D) \(P\text{ wrong; second solution wrong}\).
+Key point: \(\text{I.F. }=e^{\int P}\text{; for }dx/dy\text{ forms integrate in }y\)
+
+@@ Q59
+format: numerical
+sub_topic: Finding a vector from given values of its dot product and cross product with a known vector
+Q: For \(\vec a=\hat i+\hat j+\hat k\) and \(\vec b=\hat j-\hat k\), find \(\vec c\) such that \(\vec a\times\vec c=\vec b\) and \(\vec a\cdot\vec c=3\).
+A) \(\hat i+\hat j+\hat k\)
+B) \(\tfrac53\hat i+\tfrac23\hat j-\tfrac23\hat k\)
+C) \(\tfrac53\hat i+\tfrac23\hat j+\tfrac23\hat k\)
+D) \(\tfrac23\hat i+\tfrac53\hat j+\tfrac23\hat k\)
+KEY: C
+SOL:
+Answer: (C) \(\vec c=\tfrac53\hat i+\tfrac23\hat j+\tfrac23\hat k\)
+Given: \(\vec a=(1,1,1),\ \vec b=(0,1,-1),\ \vec a\cdot\vec c=3\)
+Formula/Principle: \(\vec a\times(\vec a\times\vec c)=(\vec a\cdot\vec c)\vec a-|\vec a|^2\vec c\)
+Step 1: \(\vec a\times\vec b=\begin{vmatrix}\hat i&\hat j&\hat k\\1&1&1\\0&1&-1\end{vmatrix}=(-2,1,1)\)
+Step 2: \((-2,1,1)=3(1,1,1)-3\vec c\)
+Step 3: \(\vec c=\tfrac13\left[(3,3,3)-(-2,1,1)\right]=\left(\tfrac53,\tfrac23,\tfrac23\right)\)
+Worked derivation: \[\vec a\times\vec c=\left(\tfrac23-\tfrac23,\ \tfrac53-\tfrac23,\ \tfrac23-\tfrac53\right)=(0,1,-1)=\vec b\]
+Check: \[\vec a\cdot\vec c=\tfrac53+\tfrac23+\tfrac23=3\ \checkmark\]
+Why: \(\text{the cross product fixes }\vec c\text{ up to a multiple of }\vec a\text{, and the dot product fixes that multiple}\)
+Why not the others: (A) \(\vec a\times\vec a=\vec0\); (B) \(\text{dot product is }\tfrac53\); (D) \(\vec a\times\vec c=(-1,0,1)\ne\vec b\).
+Key point: \(\text{use }\vec a\times(\vec a\times\vec c)\text{ to solve for }\vec c\)
+
+@@ Q60
+format: numerical
+sub_topic: Finding the shortest distance between two parallel lines as a special case of skew-line distance, and the angle between two lines from their direction vectors
+Q: What is the shortest distance between \(\vec r=(1,1,0)+\lambda(1,1,1)\) and \(\vec r=(2,0,1)+\mu(1,1,1)\), and what is the angle between lines with directions \((1,1,1)\) and \((1,-1,0)\)?
+A) \(0;\ 45^\circ\)
+B) \(\dfrac{2\sqrt6}{3};\ 90^\circ\)
+C) \(\dfrac{2\sqrt2}{3};\ 60^\circ\)
+D) \(\sqrt3;\ 90^\circ\)
+KEY: B
+SOL:
+Answer: (B) \(\dfrac{2\sqrt6}{3};\ 90^\circ\)
+Given: \(\vec a_1=(1,1,0),\ \vec a_2=(2,0,1),\ \vec b=(1,1,1)\)
+Formula/Principle: \(\text{parallel lines: }d=\dfrac{|(\vec a_2-\vec a_1)\times\vec b|}{|\vec b|};\ \cos\theta=\dfrac{|\vec b_1\cdot\vec b_2|}{|\vec b_1||\vec b_2|}\)
+Step 1: \(\vec a_2-\vec a_1=(1,-1,1)\)
+Step 2: \((1,-1,1)\times(1,1,1)=(-2,0,2),\ |\cdot|=2\sqrt2;\ d=\dfrac{2\sqrt2}{\sqrt3}=\dfrac{2\sqrt6}{3}\)
+Step 3: \((1,1,1)\cdot(1,-1,0)=0\Rightarrow\theta=90^\circ\)
+Worked derivation: \[\begin{vmatrix}\hat i&\hat j&\hat k\\1&-1&1\\1&1&1\end{vmatrix}=\hat i(-1-1)-\hat j(1-1)+\hat k(1+1)=(-2,0,2)\]
+Check: \[\text{the skew-line formula fails here because }\vec b_1\times\vec b_2=\vec0\ \checkmark\]
+Why: \(\text{for parallel lines the common perpendicular is any perpendicular, so distance is the perpendicular component of the joining vector}\)
+Why not the others: (A) \(\text{parallel distinct lines do not meet}\); (C) \(\text{divides by }3\text{ instead of }\sqrt3\); (D) \(\text{uses }|\vec a_2-\vec a_1|\).
+Key point: \(\text{parallel: }d=|(\vec a_2-\vec a_1)\times\vec b|/|\vec b|\)

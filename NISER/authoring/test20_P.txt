@@ -1,0 +1,441 @@
+@@ Q61
+format: numerical
+sub_topic: Using Ampere's circuital law to find the field inside a long two-layer solenoid and inside a toroid, and the field at the end of a solenoid
+Q: A solenoid \(0.50\text{ m}\) long has two layers of \(400\) turns each and carries \(5.0\text{ A}\). A toroid of mean radius \(0.10\text{ m}\) has \(500\) turns and carries \(2.0\text{ A}\). What are the field well inside the solenoid, the field at one end of its axis, and the field inside the toroid (\(\mu_0=4\pi\times10^{-7}\text{ T m A}^{-1}\))?
+A) \(1.0\times10^{-2}\text{ T};\ 5.0\times10^{-3}\text{ T};\ 2.0\times10^{-3}\text{ T}\)
+B) \(5.0\times10^{-3}\text{ T};\ 1.0\times10^{-2}\text{ T};\ 2.0\times10^{-3}\text{ T}\)
+C) \(1.0\times10^{-2}\text{ T};\ 1.0\times10^{-2}\text{ T};\ 6.3\times10^{-3}\text{ T}\)
+D) \(2.0\times10^{-2}\text{ T};\ 1.0\times10^{-2}\text{ T};\ 1.0\times10^{-3}\text{ T}\)
+KEY: A
+SOL:
+Answer: (A) \(B_{\text{inside}}\approx1.0\times10^{-2}\text{ T},\ B_{\text{end}}\approx5.0\times10^{-3}\text{ T},\ B_{\text{toroid}}=2.0\times10^{-3}\text{ T}\)
+Given: \(N=800,\ L=0.50\text{ m},\ I=5.0\text{ A};\ N_t=500,\ r=0.10\text{ m},\ I_t=2.0\text{ A}\)
+Formula/Principle: \(\oint\vec B\cdot d\vec l=\mu_0I_{\text{enc}};\ B_{\text{sol}}=\mu_0nI;\ B_{\text{toroid}}=\dfrac{\mu_0N I}{2\pi r}\)
+Step 1: \(n=\dfrac{800}{0.50}=1600\text{ m}^{-1}\)
+Step 2: \(B=4\pi\times10^{-7}\times1600\times5.0=1.0\times10^{-2}\text{ T};\ B_{\text{end}}=\tfrac12B=5.0\times10^{-3}\text{ T}\)
+Step 3: \(B_t=\dfrac{4\pi\times10^{-7}\times500\times2.0}{2\pi\times0.10}=2.0\times10^{-3}\text{ T}\)
+Worked derivation: \[\text{rectangular loop of length }h\text{ inside: }Bh=\mu_0(nh)I\Rightarrow B=\mu_0nI\]
+Check: \[4\pi\times10^{-7}\times8000=1.005\times10^{-2}\text{ T}\ \checkmark\]
+Why: \(\text{Ampere's law with a loop where }B\text{ is uniform and parallel gives the field from the enclosed current only}\)
+Why not the others: (B) \(\text{inside and end swapped}\); (C) \(\text{end field is half; toroid uses diameter}\); (D) \(\text{counts layers twice; toroid halved}\).
+Key point: \(B=\mu_0nI\text{ (all layers count in }n\text{)};\ B_{\text{end}}=\tfrac12\mu_0nI\)
+
+@@ Q62
+format: conceptual
+sub_topic: Comparing the sources, frequency ranges and uses of different parts of the electromagnetic spectrum
+Q: Which comparison of electromagnetic waves is correct?
+A) X-rays and γ-rays have the same source, and microwaves have higher frequency than X-rays
+B) Ultraviolet rays are produced mainly by radio antennas, and infrared is absorbed by the ozone layer
+C) In order of increasing frequency: radio waves < microwaves < infrared < visible < ultraviolet < X-rays < γ-rays; radio waves come from accelerated charges in conducting wires (oscillating circuits); microwaves are used in radar and in ovens, where their frequency is chosen to match the resonant frequency of water molecules; infrared ('heat waves') is emitted by hot bodies and used in remote controls; ultraviolet from the Sun is largely absorbed by the ozone layer; X-rays are produced by bombarding a metal target with high-energy electrons, while γ-rays come from radioactive nuclei and nuclear reactions
+D) All electromagnetic waves need a medium and travel at different speeds in vacuum
+KEY: C
+SOL:
+Answer: (C) Order radio < microwave < IR < visible < UV < X-ray < γ; sources and uses as stated.
+Concept: Electromagnetic waves are classified according to frequency or wavelength; all travel in vacuum with the same speed \(c=3\times10^8\text{ m s}^{-1}\) and need no medium. Radio waves are produced by the accelerated motion of charges in conducting wires; they are used in radio and television communication systems. Microwaves (short-wavelength radio waves), with frequencies in the gigahertz (GHz) range, are produced by special vacuum tubes (called klystrons, magnetrons and Gunn diodes); due to their short wavelengths, they are suitable for the radar systems used in aircraft navigation; microwave ovens are an interesting domestic application of these waves — the frequency of the microwaves is selected to match the resonant frequency of water molecules so that energy from the waves is transferred efficiently to the kinetic energy of the molecules. Infrared waves are produced by hot bodies and molecules; this band lies adjacent to the low-frequency or long-wavelength end of the visible spectrum; infrared waves are sometimes referred to as heat waves; infrared detectors are used in earth satellites, and electronic devices (for example semiconductor light emitting diodes) also emit infrared and are widely used in the remote switches of household electronic systems such as TV sets. Ultraviolet radiation is produced by special lamps and very hot bodies; the sun is an important source of ultraviolet light, but fortunately, most of it is absorbed in the ozone layer in the atmosphere at an altitude of about 40–50 km. One common way to generate X-rays is to bombard a metal target by high energy electrons; X-rays are used as a diagnostic tool in medicine and as a treatment for certain forms of cancer. Gamma rays lie in the upper frequency range of the electromagnetic spectrum; this high frequency radiation is produced in nuclear reactions and also emitted by radioactive nuclei.
+Given: \(\text{bands of the spectrum}\)
+Formula/Principle: \(c=\nu\lambda;\ E=h\nu\)
+Step 1: \(\text{rank by frequency: radio lowest, }\gamma\text{ highest}\)
+Step 2: \(\text{match each band to its source}\)
+Step 3: \(\text{match each band to its use}\)
+Worked derivation: \[\lambda_{\text{micro}}\sim1\text{ cm}\Rightarrow\nu=\frac{3\times10^8}{10^{-2}}=3\times10^{10}\text{ Hz}\]
+Check: \[\text{X-ray }\lambda\sim10^{-10}\text{ m}\Rightarrow\nu\sim3\times10^{18}\text{ Hz}\gg\nu_{\text{micro}}\ \checkmark\]
+Why: \(\text{the energy per photon rises with frequency, so higher-frequency bands need more energetic sources such as inner-shell or nuclear transitions}\)
+Why not the others: (A) \(\text{X-rays are atomic/electronic, }\gamma\text{ nuclear; microwaves have lower frequency}\); (B) \(\text{sources and absorption mixed up}\); (D) \(\text{no medium needed; same speed }c\).
+Key point: \(\text{radio}<\text{micro}<\text{IR}<\text{visible}<\text{UV}<\text{X}<\gamma\)
+
+@@ Q63
+format: numerical
+sub_topic: Reading the graph of angle of deviation against angle of incidence for a prism to find the minimum deviation and refractive index, and the deviation by a thin prism
+Q: The graph of angle of deviation \(\delta\) against angle of incidence \(i\) for a prism of angle \(60^\circ\) is U-shaped with its lowest point at \(\delta=30^\circ\). What is \(i\) at the minimum, the refractive index, and the deviation produced by a thin prism of angle \(4^\circ\) made of the same glass?
+A) \(i=30^\circ;\ \mu=1.5;\ 2^\circ\)
+B) \(i=45^\circ;\ \mu=\sqrt2\approx1.41;\ \delta\approx1.66^\circ\); at minimum deviation the ray passes symmetrically, with \(i=e\) and \(r_1=r_2=\tfrac A2\)
+C) \(i=60^\circ;\ \mu=1.73;\ 2.9^\circ\)
+D) \(i=45^\circ;\ \mu=1.22;\ 0.88^\circ\); at minimum deviation \(r_1=A\)
+KEY: B
+SOL:
+Answer: (B) \(i=45^\circ,\ \mu=\sqrt2,\ \delta_{\text{thin}}\approx1.66^\circ\)
+Given: \(A=60^\circ,\ \delta_m=30^\circ;\ \text{thin prism }A'=4^\circ\)
+Formula/Principle: \(i+e=A+\delta;\ \mu=\dfrac{\sin\frac{A+\delta_m}{2}}{\sin\frac A2};\ \delta_{\text{thin}}=(\mu-1)A'\)
+Step 1: \(\text{at }\delta_m:\ i=e\Rightarrow2i=A+\delta_m=90^\circ\Rightarrow i=45^\circ\)
+Step 2: \(\mu=\dfrac{\sin45^\circ}{\sin30^\circ}=\dfrac{1/\sqrt2}{1/2}=\sqrt2\)
+Step 3: \(\delta_{\text{thin}}=(1.414-1)\times4^\circ=1.66^\circ\)
+Worked derivation: \[r_1+r_2=A,\ r_1=r_2\Rightarrow r=30^\circ;\ \sin45^\circ=\mu\sin30^\circ\]
+Check: \[\delta=i+e-A=45^\circ+45^\circ-60^\circ=30^\circ\ \checkmark\]
+Why: \(\text{the deviation is least when the path through the prism is symmetric, which links }\delta_m\text{ directly to }\mu\)
+Why not the others: (A) \(i\ne\delta_m\); (C) \(i=A\text{ is not the symmetric condition}\); (D) \(\text{wrong }\mu;\ r_1=A/2\).
+Key point: \(\mu=\sin\frac{A+\delta_m}2/\sin\frac A2;\ \text{thin prism }\delta=(\mu-1)A\)
+
+@@ Q64
+format: numerical
+sub_topic: Calculating positions of minima and the width of the central maximum in single-slit diffraction, the first secondary maximum, and the Fresnel distance
+Q: Light of wavelength \(500\text{ nm}\) passes through a slit \(0.25\text{ mm}\) wide onto a screen \(1.5\text{ m}\) away. What are the distance of the first minimum from the centre, the width of the central maximum, the approximate position of the first secondary maximum, and the Fresnel distance?
+A) \(1.5\text{ mm};\ 3.0\text{ mm};\ 2.25\text{ mm};\ 0.25\text{ m}\)
+B) \(3.0\text{ mm};\ 3.0\text{ mm};\ 6.0\text{ mm};\ 1.25\text{ m}\)
+C) \(6.0\text{ mm};\ 12\text{ mm};\ 9.0\text{ mm};\ 0.125\text{ m}\)
+D) \(3.0\text{ mm};\ 6.0\text{ mm};\ 4.5\text{ mm};\ 0.125\text{ m}\)
+KEY: D
+SOL:
+Answer: (D) \(y_1=3.0\text{ mm},\ \text{central width }6.0\text{ mm},\ y\approx4.5\text{ mm},\ z_F=0.125\text{ m}\)
+Given: \(\lambda=5.0\times10^{-7}\text{ m},\ a=2.5\times10^{-4}\text{ m},\ D=1.5\text{ m}\)
+Formula/Principle: \(\text{minima: }a\sin\theta=n\lambda;\ \text{secondary maxima: }a\sin\theta\approx(n+\tfrac12)\lambda;\ z_F=\dfrac{a^2}{\lambda}\)
+Step 1: \(y_1=\dfrac{\lambda D}{a}=\dfrac{5\times10^{-7}\times1.5}{2.5\times10^{-4}}=3.0\times10^{-3}\text{ m}\)
+Step 2: \(\text{central width}=2y_1=6.0\text{ mm};\ \text{first secondary max}\approx1.5\times3.0=4.5\text{ mm}\)
+Step 3: \(z_F=\dfrac{(2.5\times10^{-4})^2}{5\times10^{-7}}=0.125\text{ m}\)
+Worked derivation: \[\theta_1=\frac\lambda a=\frac{5\times10^{-7}}{2.5\times10^{-4}}=2\times10^{-3}\text{ rad}\Rightarrow y_1=D\theta_1=3.0\text{ mm}\]
+Check: \[D=1.5\text{ m}\gg z_F=0.125\text{ m}\Rightarrow\text{diffraction dominates}\ \checkmark\]
+Why: \(\text{pairing wavelets from the two halves of the slit cancels them at }a\sin\theta=\lambda\text{, so the central maximum is twice as wide as the others}\)
+Why not the others: (A) \(\text{halves every distance}\); (B) \(\text{central width equals }2y_1\); (C) \(\text{doubles every distance}\).
+Key point: \(\text{central width}=2\lambda D/a;\ z_F=a^2/\lambda\)
+
+@@ Q65
+format: numerical
+sub_topic: Reading the graph of number of scattered α-particles against scattering angle and finding the distance of closest approach for a head-on collision
+Q: In α-particle scattering from gold (\(Z=79\)), the number of particles detected falls very steeply as the scattering angle \(\theta\) increases. For a head-on collision of a \(7.7\text{ MeV}\) α-particle, what is the distance of closest approach, and which reading of the graph is correct (\(\frac{1}{4\pi\varepsilon_0}=9\times10^9\text{ N m}^2\text{C}^{-2}\))?
+A) \(3.0\times10^{-10}\text{ m}\); the number of particles increases with angle
+B) \(1.5\times10^{-14}\text{ m}\); most particles are scattered through \(180^\circ\)
+C) \(d\approx3.0\times10^{-14}\text{ m}\ (\approx30\text{ fm})\); most particles are scattered through small angles, the number falling roughly as \(1/\sin^4(\theta/2)\), and large-angle scattering occurs only for small impact parameters
+D) \(3.0\times10^{-12}\text{ m}\); the graph is flat because the nucleus fills the atom
+KEY: C
+SOL:
+Answer: (C) \(d\approx3.0\times10^{-14}\text{ m}\); small angles dominate; large angles need small impact parameter
+Given: \(K=7.7\text{ MeV}=7.7\times1.6\times10^{-13}\text{ J};\ Z=79;\ q_\alpha=2e\)
+Formula/Principle: \(K=\dfrac{1}{4\pi\varepsilon_0}\dfrac{(2e)(Ze)}{d}\)
+Step 1: \(K=1.23\times10^{-12}\text{ J}\)
+Step 2: \(d=\dfrac{9\times10^9\times2\times79\times(1.6\times10^{-19})^2}{1.23\times10^{-12}}\)
+Step 3: \(d=\dfrac{3.64\times10^{-26}}{1.23\times10^{-12}}\approx3.0\times10^{-14}\text{ m}\)
+Worked derivation: \[9\times10^9\times158\times2.56\times10^{-38}=3.64\times10^{-26}\text{ J m}\]
+Check: \[d\approx30\text{ fm}>R_{\text{Au}}\approx7\text{ fm}\Rightarrow\text{the nucleus is smaller still}\ \checkmark\]
+Why: \(\text{at closest approach in a head-on collision all kinetic energy becomes electrostatic potential energy; the nucleus must be smaller than this distance}\)
+Why not the others: (A) \(\text{atomic size; graph falls with angle}\); (B) \(\text{factor of 2 error; very few bounce back}\); (D) \(\text{wrong order; graph is steep}\).
+Key point: \(d=\dfrac{2Ze^2}{4\pi\varepsilon_0K};\ N(\theta)\propto\sin^{-4}(\theta/2)\)
+
+@@ Q66
+format: numerical
+sub_topic: Using R = R₀A^(1/3) to compare nuclear radii and show that nuclear density is independent of mass number, and the properties of the nuclear force
+Q: Taking \(R_0=1.2\text{ fm}\), what are the radii of \(^{27}\text{Al}\) and \(^{125}\text{Te}\), their ratio, and how does nuclear density depend on mass number? Which statement about the nuclear force is correct?
+A) \(3.6\text{ fm and }6.0\text{ fm};\ 3:5\); density is about \(2.3\times10^{17}\text{ kg m}^{-3}\) for all nuclei, independent of \(A\); the nuclear force is much stronger than the Coulomb force, short-ranged (a few fm), nearly independent of charge, attractive beyond about \(0.8\text{ fm}\) and strongly repulsive at shorter separations
+B) \(32.4\text{ fm and }150\text{ fm};\ 27:125\); density increases with \(A\)
+C) \(3.6\text{ fm and }6.0\text{ fm};\ 3:5\); the nuclear force has infinite range like gravity
+D) \(1.2\text{ fm for both}\); density decreases with \(A\); the nuclear force acts only between protons
+KEY: A
+SOL:
+Answer: (A) \(3.6\text{ fm},\ 6.0\text{ fm},\ 3:5\); constant density \(\sim2.3\times10^{17}\text{ kg m}^{-3}\); nuclear force properties
+Given: \(A_1=27,\ A_2=125,\ R_0=1.2\text{ fm}\)
+Formula/Principle: \(R=R_0A^{1/3};\ \rho=\dfrac{Am_u}{\frac43\pi R^3}\)
+Step 1: \(R(27)=1.2\times3=3.6\text{ fm}\)
+Step 2: \(R(125)=1.2\times5=6.0\text{ fm}\Rightarrow3:5\)
+Step 3: \(\rho=\dfrac{Am_u}{\frac43\pi R_0^3A}=\dfrac{m_u}{\frac43\pi R_0^3}\text{, independent of }A\)
+Worked derivation: \[\rho=\frac{1.66\times10^{-27}}{\frac43\pi(1.2\times10^{-15})^3}=\frac{1.66\times10^{-27}}{7.24\times10^{-45}}\approx2.3\times10^{17}\text{ kg m}^{-3}\]
+Check: \[\left(\tfrac{125}{27}\right)^{1/3}=\tfrac53\ \checkmark\]
+Why: \(\text{volume grows in proportion to }A\text{, so mass per unit volume stays the same — nuclear matter is nearly incompressible}\)
+Why not the others: (B) \(\text{uses }A\text{ instead of }A^{1/3}\); (C) \(\text{nuclear force is short-ranged}\); (D) \(\text{radius depends on }A\text{; force acts between all nucleons}\).
+Key point: \(R=R_0A^{1/3};\ \text{nuclear density constant}\)
+
+@@ Q67
+format: conceptual
+sub_topic: Comparing fundamental and derived SI units, dimensionally identical quantities such as torque and energy, and the plane and solid angle units
+Q: Which comparison about SI units is correct?
+A) The newton is a fundamental unit and the kilogram a derived unit
+B) There are seven base units (metre, kilogram, second, ampere, kelvin, mole, candela); derived units are combinations such as N = kg m s⁻², J = kg m² s⁻², Pa = kg m⁻¹ s⁻² and W = kg m² s⁻³; torque and work have the same dimensions [ML²T⁻²], but torque is written in N m and energy in J because they are different physical quantities; the radian (plane angle) and steradian (solid angle) are dimensionless, defined as ratios of arc length to radius and of area to radius squared
+C) Torque and energy are the same quantity because both are measured in joules
+D) The steradian has dimensions of [L²]
+KEY: B
+SOL:
+Answer: (B) Seven base units; derived units as listed; torque vs energy distinction; radian and steradian dimensionless.
+Concept: The units for the fundamental or base quantities are called fundamental or base units; the units of all other physical quantities can be expressed as combinations of the base units, and such units are called derived units. The International System of Units (SI) has seven base units: length (metre, m), mass (kilogram, kg), time (second, s), electric current (ampere, A), thermodynamic temperature (kelvin, K), amount of substance (mole, mol) and luminous intensity (candela, cd). Besides the seven base units, there are two more units defined for plane angle dθ as the ratio of length of arc ds to the radius r, and for solid angle dΩ as the ratio of the intercepted area dA of the spherical surface, described about the apex O as the centre, to the square of its radius r; the unit for plane angle is radian (rad) and that for solid angle is steradian (sr); both are dimensionless quantities. Dimensional analysis cannot distinguish between quantities that have the same dimensions, such as torque (force × perpendicular distance) and work (force × displacement along the force); by convention, the joule is used for energy and the newton metre for torque.
+Given: \(\text{SI base and derived quantities}\)
+Formula/Principle: \([F]=[MLT^{-2}],\ [W]=[\tau]=[ML^2T^{-2}],\ [P]=[ML^2T^{-3}]\)
+Step 1: \(\text{list seven base quantities and units}\)
+Step 2: \(\text{build derived units from defining equations}\)
+Step 3: \(\text{angles are ratios of lengths or of areas}\Rightarrow\text{dimensionless}\)
+Worked derivation: \[\text{Pa}=\frac{\text{N}}{\text{m}^2}=\frac{\text{kg m s}^{-2}}{\text{m}^2}=\text{kg m}^{-1}\text{s}^{-2}\]
+Check: \[\text{W}=\frac{\text J}{\text s}=\text{kg m}^2\text s^{-3}\ \checkmark\]
+Why: \(\text{units follow from the defining equations of quantities, but equal dimensions do not make two quantities the same}\)
+Why not the others: (A) \(\text{roles reversed}\); (C) \(\text{same dimensions, different quantities}\); (D) \(\text{steradian is dimensionless}\).
+Key point: \(\text{7 base units; torque in N m, energy in J; rad and sr dimensionless}\)
+
+@@ Q68
+format: numerical
+sub_topic: Applying Newton's second law with free-body diagrams to apparent weight in a lift, and conservation of momentum to the recoil of a gun
+Q: A \(60\text{ kg}\) person stands on a weighing machine in a lift (\(g=10\text{ m s}^{-2}\)). What does it read when the lift accelerates upward at \(2\text{ m s}^{-2}\) and when the cable breaks? A \(4.0\text{ kg}\) gun fires a \(20\text{ g}\) bullet at \(500\text{ m s}^{-1}\); what is the recoil speed?
+A) \(480\text{ N};\ 600\text{ N};\ 2500\text{ m s}^{-1}\)
+B) \(600\text{ N};\ 600\text{ N};\ 0.25\text{ m s}^{-1}\)
+C) \(720\text{ N};\ 600\text{ N};\ 25\text{ m s}^{-1}\)
+D) \(720\text{ N};\ 0;\ 2.5\text{ m s}^{-1}\)
+KEY: D
+SOL:
+Answer: (D) \(720\text{ N};\ 0;\ 2.5\text{ m s}^{-1}\)
+Given: \(m=60\text{ kg},\ a=2\text{ m s}^{-2};\ M=4.0\text{ kg},\ m_b=0.020\text{ kg},\ v_b=500\text{ m s}^{-1}\)
+Formula/Principle: \(N-mg=ma;\ \text{isolated system: }\sum p=\text{constant}\)
+Step 1: \(N=m(g+a)=60\times12=720\text{ N}\)
+Step 2: \(\text{free fall: }a=g\Rightarrow N=m(g-g)=0\)
+Step 3: \(0=m_bv_b-MV\Rightarrow V=\dfrac{0.020\times500}{4.0}=2.5\text{ m s}^{-1}\)
+Worked derivation: \[\text{free-body on person: upward }N,\ \text{downward }mg;\ N-mg=ma\]
+Check: \[p_{\text{bullet}}=10\text{ kg m s}^{-1}=p_{\text{gun}}=4.0\times2.5\ \checkmark\]
+Why: \(\text{the scale reads the normal force, which must supply both weight and the extra force for acceleration; internal forces of the gun-bullet system cancel}\)
+Why not the others: (A) \(\text{sign of }a\text{ wrong; momentum ratio inverted}\); (B) \(\text{ignores acceleration}\); (C) \(\text{free-fall reading is zero; factor of 10}\).
+Key point: \(\text{apparent weight }m(g+a);\ \text{recoil }MV=m_bv_b\)
+
+@@ Q69
+format: experiment
+sub_topic: Analysing an air-track collision experiment to check conservation of momentum and kinetic energy and to find the coefficient of restitution
+Q: On a level air track, glider A (\(0.20\text{ kg}\)) moving at \(0.60\text{ m s}^{-1}\) hits glider B (\(0.10\text{ kg}\)) at rest. Photogates show A moving at \(0.20\text{ m s}^{-1}\) and B at \(0.80\text{ m s}^{-1}\) afterwards, both forward. Which conclusion is correct?
+A) Momentum is conserved (\(0.12\text{ kg m s}^{-1}\) before and after) and kinetic energy is conserved (\(0.036\text{ J}\) before and after), so the collision is elastic with coefficient of restitution \(e=\dfrac{0.80-0.20}{0.60}=1\); if the gliders had equal masses, they would exchange velocities
+B) Momentum is lost because B was at rest
+C) Kinetic energy falls to half, so the collision is perfectly inelastic with \(e=0\)
+D) The collision is elastic, but momentum is not conserved
+KEY: A
+SOL:
+Answer: (A) Momentum and KE conserved; \(e=1\); elastic; equal masses exchange velocities
+Given: \(m_A=0.20,\ m_B=0.10\text{ kg};\ u_A=0.60,\ u_B=0;\ v_A=0.20,\ v_B=0.80\text{ m s}^{-1}\)
+Formula/Principle: \(\sum p_i=\sum p_f;\ e=\dfrac{v_B-v_A}{u_A-u_B}\)
+Step 1: \(p_i=0.20\times0.60=0.12;\ p_f=0.04+0.08=0.12\text{ kg m s}^{-1}\)
+Step 2: \(K_i=\tfrac12(0.20)(0.36)=0.036;\ K_f=0.004+0.032=0.036\text{ J}\)
+Step 3: \(e=\dfrac{0.80-0.20}{0.60-0}=1\)
+Worked derivation: \[\text{elastic 1D: }v_A=\frac{m_A-m_B}{m_A+m_B}u_A=\frac{0.10}{0.30}(0.60)=0.20,\ v_B=\frac{2m_A}{m_A+m_B}u_A=0.80\]
+Check: \[m_A=m_B\Rightarrow v_A=0,\ v_B=u_A\ \checkmark\]
+Why: \(\text{with no external horizontal force momentum is always conserved; kinetic energy is conserved only if the collision is elastic}\)
+Why not the others: (B) \(\text{momentum is conserved}\); (C) \(\text{KE unchanged; }e=1\); (D) \(\text{momentum is conserved}\).
+Key point: \(\text{elastic: }e=1,\ \text{KE conserved}\)
+
+@@ Q70
+format: conceptual
+sub_topic: Explaining the motion of the centre of mass under internal forces, in an explosion, for a person walking on a boat, and for objects whose centre of mass lies outside the material
+Q: Which statement about the centre of mass is correct?
+A) When a shell explodes in mid-air, the centre of mass of the fragments stops and falls vertically
+B) Internal forces between parts of a system change the velocity of its centre of mass
+C) The centre of mass must always lie inside the material of the body
+D) The centre of mass moves as if all the mass were concentrated there and all external forces acted there, so a projectile that explodes in mid-air has fragments whose centre of mass continues along the original parabola; a person walking on a boat on still water (no horizontal external force) leaves the centre of mass of person and boat at rest, so the boat moves the other way; the centre of mass of a ring or a hollow sphere lies at its centre, where there is no material
+KEY: D
+SOL:
+Answer: (D) CM moves under external forces only; explosion keeps CM on the parabola; boat moves opposite; CM may lie outside material
+Given: \(\text{systems with only internal forces, or with gravity as the only external force}\)
+Formula/Principle: \(M\vec a_{\text{cm}}=\vec F_{\text{ext}};\ \vec R_{\text{cm}}=\dfrac{\sum m_i\vec r_i}{M}\)
+Step 1: \(\text{explosion forces are internal}\Rightarrow\vec a_{\text{cm}}=\vec g\text{ unchanged}\)
+Step 2: \(\text{boat: }F_{\text{ext,horiz}}=0\Rightarrow X_{\text{cm}}\text{ constant}\Rightarrow m\Delta x_p+M\Delta x_b=0\)
+Step 3: \(\text{ring: symmetry}\Rightarrow\text{CM at centre}\)
+Worked derivation: \[M\frac{d^2\vec R}{dt^2}=\sum_i\vec F_i^{\text{ext}}+\sum_{i\ne j}\vec F_{ij}^{\text{int}},\ \sum_{i\ne j}\vec F_{ij}=\vec0\ (\text{third law})\]
+Check: \[\text{person }60\text{ kg moves }+2\text{ m};\ \text{boat }120\text{ kg moves }-1\text{ m}:\ 60(2)+120(-1)=0\ \checkmark\]
+Why: \(\text{internal forces come in equal and opposite pairs, so they cancel in the total and cannot accelerate the centre of mass}\)
+Why not the others: (A) \(\text{gravity still acts; CM follows the parabola}\); (B) \(\text{internal forces cancel}\); (C) \(\text{a ring is a counterexample}\).
+Key point: \(M\vec a_{\text{cm}}=\vec F_{\text{ext}}\)
+
+@@ Q71
+format: numerical
+sub_topic: Comparing orbital speeds, periods, kinetic energies and total energies of two satellites at different orbital radii, and the energy needed to move a satellite to a higher orbit
+Q: Two identical satellites orbit the Earth with radii \(r\) and \(4r\). What are the ratios of their orbital speeds, periods and kinetic energies (inner : outer), and how much energy is needed to move one satellite of mass \(m\) from radius \(r\) to \(4r\)?
+A) \(1:2;\ 8:1;\ 1:4;\ \dfrac{3GMm}{4r}\)
+B) \(2:1;\ 1:8;\ 4:1;\ \dfrac{3GMm}{8r}\)
+C) \(4:1;\ 1:16;\ 16:1;\ \dfrac{GMm}{r}\)
+D) \(2:1;\ 1:4;\ 4:1;\ \dfrac{3GMm}{4r}\)
+KEY: B
+SOL:
+Answer: (B) \(v:\ 2:1;\ T:\ 1:8;\ K:\ 4:1;\ \Delta E=\dfrac{3GMm}{8r}\)
+Given: \(r_1=r,\ r_2=4r,\ \text{equal masses}\)
+Formula/Principle: \(v=\sqrt{\dfrac{GM}{r}};\ T=2\pi\sqrt{\dfrac{r^3}{GM}};\ K=\dfrac{GMm}{2r};\ E=-\dfrac{GMm}{2r}\)
+Step 1: \(\dfrac{v_1}{v_2}=\sqrt{\dfrac{4r}{r}}=2\)
+Step 2: \(\dfrac{T_1}{T_2}=\left(\dfrac{r}{4r}\right)^{3/2}=\dfrac18;\ \dfrac{K_1}{K_2}=\dfrac{4r}{r}=4\)
+Step 3: \(\Delta E=-\dfrac{GMm}{8r}-\left(-\dfrac{GMm}{2r}\right)=\dfrac{3GMm}{8r}\)
+Worked derivation: \[\frac{mv^2}{r}=\frac{GMm}{r^2}\Rightarrow K=\tfrac12mv^2=\frac{GMm}{2r},\ U=-\frac{GMm}{r},\ E=K+U=-\frac{GMm}{2r}\]
+Check: \[T^2\propto r^3:\ \left(\tfrac18\right)^2=\tfrac1{64}=\left(\tfrac14\right)^3\ \checkmark\]
+Why: \(\text{gravity weakens with distance, so outer satellites move slower and take much longer; their total energy is less negative, so energy must be supplied to raise them}\)
+Why not the others: (A) \(\text{ratios inverted; }\Delta E\text{ uses }U\text{ alone}\); (C) \(v\propto r^{-1/2}\text{, not }r^{-1}\); (D) \(T\propto r^{3/2}\).
+Key point: \(E=-\dfrac{GMm}{2r}=-K\)
+
+@@ Q72
+format: numerical
+sub_topic: Calculating capillary rise, the meniscus radius when the tube is too short, and the excess pressure inside a liquid drop and a soap bubble
+Q: Water (\(T=0.072\text{ N m}^{-1}\), angle of contact \(0^\circ\), \(\rho=1000\text{ kg m}^{-3}\), \(g=10\text{ m s}^{-2}\)) rises in a capillary of radius \(0.10\text{ mm}\). How high does it rise? If only \(10\text{ cm}\) of the tube is above the water, what happens? What is the excess pressure inside a water drop of radius \(1.0\text{ mm}\), and inside a soap bubble of radius \(1.0\text{ cm}\) (\(T=0.030\text{ N m}^{-1}\))?
+A) \(7.2\text{ cm};\ \text{water stops below the top};\ 72\text{ Pa};\ 6\text{ Pa}\)
+B) \(14.4\text{ cm};\ \text{water overflows as a fountain};\ 144\text{ Pa};\ 6\text{ Pa}\)
+C) \(14.4\text{ cm};\ \text{water rises to the top without overflowing, the meniscus radius increasing to }0.144\text{ mm};\ 144\text{ Pa};\ 12\text{ Pa}\)
+D) \(1.44\text{ cm};\ \text{no rise};\ 288\text{ Pa};\ 3\text{ Pa}\)
+KEY: C
+SOL:
+Answer: (C) \(h=14.4\text{ cm};\ \text{no overflow, }R=0.144\text{ mm};\ 144\text{ Pa};\ 12\text{ Pa}\)
+Given: \(T=0.072,\ r=1.0\times10^{-4}\text{ m},\ \theta=0;\ h'=0.10\text{ m};\ r_d=10^{-3}\text{ m};\ T_s=0.030,\ r_b=10^{-2}\text{ m}\)
+Formula/Principle: \(h=\dfrac{2T\cos\theta}{r\rho g};\ \Delta p_{\text{drop}}=\dfrac{2T}{r};\ \Delta p_{\text{bubble}}=\dfrac{4T}{r}\)
+Step 1: \(h=\dfrac{2\times0.072}{10^{-4}\times1000\times10}=0.144\text{ m}\)
+Step 2: \(\text{short tube: }hR=\text{constant}\Rightarrow R=\dfrac{2T}{\rho gh'}=\dfrac{0.144}{1000\times10\times0.10}=1.44\times10^{-4}\text{ m}\)
+Step 3: \(\Delta p_{\text{drop}}=\dfrac{0.144}{10^{-3}}=144\text{ Pa};\ \Delta p_{\text{bubble}}=\dfrac{0.12}{10^{-2}}=12\text{ Pa}\)
+Worked derivation: \[\rho gh=\frac{2T}{R}\Rightarrow\text{if }h\text{ is limited to }h',\ R\text{ adjusts so that }\frac{2T}{R}=\rho gh'\]
+Check: \[R=0.144\text{ mm}>r=0.10\text{ mm}\Rightarrow\text{flatter meniscus, no overflow}\ \checkmark\]
+Why: \(\text{the pressure drop across the curved meniscus balances the column's weight; a soap film has two surfaces, doubling its excess pressure}\)
+Why not the others: (A) \(\text{factor 2 lost}\); (B) \(\text{energy rules out a perpetual fountain; bubble has two surfaces}\); (D) \(\text{wrong powers and factors}\).
+Key point: \(h=2T\cos\theta/r\rho g;\ \text{drop }2T/r,\ \text{bubble }4T/r\)
+
+@@ Q73
+format: conceptual
+sub_topic: Explaining Stefan's law, Wien's displacement law, Kirchhoff's idea that good absorbers are good emitters, and the conditions for Newton's law of cooling
+Q: Which explanation of thermal radiation is correct?
+A) Doubling the absolute temperature of a black body doubles the power it radiates and doubles λₘ
+B) A good absorber of radiation is a poor emitter at the same temperature
+C) Newton's law of cooling holds for any temperature difference, however large
+D) By Stefan's law the power radiated is \(P=e\sigma AT^4\), so doubling the absolute temperature raises it 16 times; by Wien's law \(\lambda_mT=b\approx2.9\times10^{-3}\text{ m K}\), so λₘ halves; the Sun's spectrum peaking near \(500\text{ nm}\) gives a surface temperature of about \(5800\text{ K}\); a good absorber is also a good emitter at the same temperature, so a black body is the best emitter; Newton's law of cooling, rate of cooling ∝ temperature difference, holds only for small temperature differences
+KEY: D
+SOL:
+Answer: (D) \(P\propto T^4\) (×16); λₘ halves; Sun ≈ 5800 K; good absorber = good emitter; Newton's law for small differences
+Given: \(T\to2T;\ \lambda_m(\text{Sun})\approx500\text{ nm}\)
+Formula/Principle: \(P=e\sigma AT^4;\ \lambda_mT=b;\ \dfrac{dT}{dt}=-k(T-T_s)\)
+Step 1: \(\dfrac{P'}{P}=2^4=16\)
+Step 2: \(\lambda_m'=\dfrac{b}{2T}=\dfrac{\lambda_m}{2}\)
+Step 3: \(T_{\text{Sun}}=\dfrac{2.9\times10^{-3}}{5\times10^{-7}}=5800\text{ K}\)
+Worked derivation: \[\sigma(T^4-T_s^4)=\sigma(T-T_s)(T+T_s)(T^2+T_s^2)\approx4\sigma T_s^3(T-T_s)\ \text{when }T\approx T_s\]
+Check: \[\text{small }\Delta T\Rightarrow\text{rate}\propto\Delta T\ (\text{Newton's law})\ \checkmark\]
+Why: \(\text{radiated power rises very steeply with temperature, and the linear Newton law is only the small-difference approximation of the }T^4\text{ law}\)
+Why not the others: (A) \(P\propto T^4;\ \lambda_m\propto1/T\); (B) \(\text{good absorbers are good emitters}\); (C) \(\text{only for small differences}\).
+Key point: \(P\propto T^4;\ \lambda_m\propto1/T\)
+
+@@ Q74
+format: numerical
+sub_topic: Comparing the effect on Carnot efficiency of raising the source temperature and of lowering the sink temperature by the same amount, and the limiting cases of the Carnot efficiency
+Q: A Carnot engine works between \(500\text{ K}\) and \(300\text{ K}\). What is its efficiency, what is it if the source is raised by \(100\text{ K}\), and what if instead the sink is lowered by \(100\text{ K}\)? Which limiting statement is correct?
+A) \(40\%;\ 50\%;\ 60\%\); lowering the sink temperature improves efficiency more; efficiency would reach \(100\%\) only if the sink were at \(0\text{ K}\), which cannot be achieved, and it is zero when source and sink are at the same temperature, consistent with the second law
+B) \(60\%;\ 50\%;\ 40\%\); efficiency can reach \(100\%\) with a perfect engine
+C) \(40\%;\ 60\%;\ 50\%\); raising the source helps more
+D) \(40\%;\ 50\%;\ 50\%\); both changes have equal effect
+KEY: A
+SOL:
+Answer: (A) \(40\%,\ 50\%,\ 60\%\); lowering the sink helps more; \(\eta\to1\) only at \(T_2=0\); \(\eta=0\) when \(T_1=T_2\)
+Given: \(T_1=500\text{ K},\ T_2=300\text{ K};\ \Delta T=100\text{ K}\)
+Formula/Principle: \(\eta=1-\dfrac{T_2}{T_1}\)
+Step 1: \(\eta=1-\dfrac{300}{500}=0.40\)
+Step 2: \(T_1=600:\ \eta=1-\dfrac{300}{600}=0.50\)
+Step 3: \(T_2=200:\ \eta=1-\dfrac{200}{500}=0.60\)
+Worked derivation: \[\frac{\partial\eta}{\partial T_2}=-\frac1{T_1},\ \frac{\partial\eta}{\partial T_1}=\frac{T_2}{T_1^2}\Rightarrow\left|\frac{\partial\eta}{\partial T_2}\right|>\frac{\partial\eta}{\partial T_1}\text{ since }T_2<T_1\]
+Check: \[T_1=T_2\Rightarrow\eta=0;\ T_2\to0\Rightarrow\eta\to1\ \checkmark\]
+Why: \(\text{efficiency depends on the ratio }T_2/T_1\text{, and a change in the smaller temperature alters the ratio more}\)
+Why not the others: (B) \(\text{efficiency miscomputed; }100\%\text{ is impossible (Kelvin–Planck)}\); (C) \(\text{effects swapped}\); (D) \(\text{effects are unequal}\).
+Key point: \(\eta=1-T_2/T_1<1\text{ always}\)
+
+@@ Q75
+format: conceptual
+sub_topic: Choosing the correct graphs of mean free path against pressure, temperature and number density for an ideal gas
+Q: For an ideal gas, \(\lambda=\dfrac{k_BT}{\sqrt2\pi d^2P}=\dfrac{1}{\sqrt2\pi d^2n}\). Which description of the graphs of mean free path is correct?
+A) λ against P at constant T is a straight line through the origin
+B) λ against T at constant P is a hyperbola, and λ against n is a straight line
+C) λ against P at constant T is a rectangular hyperbola (λ ∝ 1/P); λ against T at constant P is a straight line through the origin (λ ∝ T); λ against n is a rectangular hyperbola (λ ∝ 1/n); and in a sealed rigid container, where n is fixed, λ does not change when the gas is heated
+D) λ is independent of molecular diameter
+KEY: C
+SOL:
+Answer: (C) λ ∝ 1/P (hyperbola), λ ∝ T at constant P (line), λ ∝ 1/n; constant at fixed n
+Given: \(\lambda=\dfrac{k_BT}{\sqrt2\pi d^2P}=\dfrac{1}{\sqrt2\pi d^2n}\)
+Formula/Principle: \(P=nk_BT\)
+Step 1: \(\text{constant }T:\ \lambda\propto1/P\Rightarrow\text{hyperbola}\)
+Step 2: \(\text{constant }P:\ \lambda\propto T\Rightarrow\text{line through origin}\)
+Step 3: \(\lambda\propto1/n;\ \text{sealed rigid vessel: }n\text{ fixed}\Rightarrow\lambda\text{ constant}\)
+Worked derivation: \[\lambda=\frac{1}{\sqrt2\pi d^2n},\ n=\frac{P}{k_BT}\Rightarrow\lambda=\frac{k_BT}{\sqrt2\pi d^2P}\]
+Check: \[\text{doubling }P\text{ at fixed }T\text{ doubles }n\Rightarrow\lambda\text{ halves}\ \checkmark\]
+Why: \(\text{mean free path depends only on how crowded the molecules are and their size; pressure and temperature matter only through }n\)
+Why not the others: (A) \(\lambda\text{ falls with }P\); (B) \(\text{graphs swapped}\); (D) \(\lambda\propto1/d^2\).
+Key point: \(\lambda=1/(\sqrt2\pi d^2n)\)
+
+@@ Q76
+format: numerical
+sub_topic: Comparing the period of a simple pendulum on the Moon, in an accelerating lift, in free fall and with changed length or bob mass
+Q: A simple pendulum has period \(2.0\text{ s}\) on the Earth's surface. What is its period on the Moon (\(g_M=g/6\)), in a lift accelerating upward at \(g/3\), in a freely falling lift, and with its length quadrupled? Does a heavier bob change the period?
+A) \(2.0/\sqrt6\text{ s};\ 2.0\sqrt{3/4}\text{ s};\ 0;\ 8.0\text{ s};\ \text{yes}\)
+B) \(2.0\sqrt6\approx4.9\text{ s};\ 2.0\sqrt{3/4}\approx1.73\text{ s};\ \text{no oscillation (infinite period)};\ 4.0\text{ s};\ \text{no}\)
+C) \(12\text{ s};\ 1.5\text{ s};\ 2.0\text{ s};\ 4.0\text{ s};\ \text{no}\)
+D) \(2.0\sqrt6\text{ s};\ 2.0\sqrt{4/3}\text{ s};\ 2.0\text{ s};\ 4.0\text{ s};\ \text{yes}\)
+KEY: B
+SOL:
+Answer: (B) \(4.9\text{ s};\ 1.73\text{ s};\ \text{no oscillation};\ 4.0\text{ s};\ \text{mass has no effect}\)
+Given: \(T_0=2.0\text{ s};\ g_M=g/6;\ a=g/3\text{ up};\ a=g\text{ down};\ L\to4L\)
+Formula/Principle: \(T=2\pi\sqrt{\dfrac{L}{g_{\text{eff}}}};\ g_{\text{eff}}=g+a\text{ (up)},\ g-a\text{ (down)}\)
+Step 1: \(\text{Moon: }T=T_0\sqrt6=4.9\text{ s}\)
+Step 2: \(\text{lift up: }g_{\text{eff}}=\tfrac43g\Rightarrow T=T_0\sqrt{3/4}=1.73\text{ s};\ \text{free fall: }g_{\text{eff}}=0\Rightarrow\text{no restoring force}\)
+Step 3: \(4L\Rightarrow T=2T_0=4.0\text{ s};\ T\text{ independent of mass}\)
+Worked derivation: \[mL\ddot\theta=-mg_{\text{eff}}\theta\Rightarrow\omega=\sqrt{\frac{g_{\text{eff}}}{L}},\ m\text{ cancels}\]
+Check: \[T\propto g_{\text{eff}}^{-1/2}:\ \left(\tfrac43\right)^{-1/2}=0.866\Rightarrow2.0\times0.866=1.73\text{ s}\ \checkmark\]
+Why: \(\text{the restoring torque comes from effective gravity, and both it and inertia scale with mass, so only }L\text{ and }g_{\text{eff}}\text{ matter}\)
+Why not the others: (A) \(\text{Moon period should increase; free fall gives no oscillation; }4L\text{ doubles }T\); (C) \(\text{uses }T\propto1/g\); (D) \(\text{lift effect inverted; mass irrelevant}\).
+Key point: \(T=2\pi\sqrt{L/g_{\text{eff}}}\)
+
+@@ Q77
+format: numerical
+sub_topic: Reading amplitude, wavelength, frequency, speed and direction from a progressive wave equation, and the maximum particle speed
+Q: A wave on a string is \(y(x,t)=0.020\sin(20x-400t)\) in SI units. What are its amplitude, wavelength, frequency, speed and direction, and the maximum speed of a particle of the string?
+A) \(0.020\text{ m};\ 0.314\text{ m};\ 63.7\text{ Hz};\ 20\text{ m s}^{-1}\text{ along }+x;\ 8.0\text{ m s}^{-1}\)
+B) \(0.020\text{ m};\ 20\text{ m};\ 400\text{ Hz};\ 8000\text{ m s}^{-1}\text{ along }-x;\ 0.40\text{ m s}^{-1}\)
+C) \(0.040\text{ m};\ 0.314\text{ m};\ 63.7\text{ Hz};\ 0.05\text{ m s}^{-1}\text{ along }+x;\ 8.0\text{ m s}^{-1}\)
+D) \(0.020\text{ m};\ 0.157\text{ m};\ 127\text{ Hz};\ 20\text{ m s}^{-1}\text{ along }-x;\ 20\text{ m s}^{-1}\)
+KEY: A
+SOL:
+Answer: (A) \(A=0.020\text{ m},\ \lambda=0.314\text{ m},\ \nu=63.7\text{ Hz},\ v=20\text{ m s}^{-1}\ (+x),\ v_{\max}=8.0\text{ m s}^{-1}\)
+Given: \(y=A\sin(kx-\omega t),\ A=0.020,\ k=20\text{ rad m}^{-1},\ \omega=400\text{ rad s}^{-1}\)
+Formula/Principle: \(\lambda=\dfrac{2\pi}{k};\ \nu=\dfrac{\omega}{2\pi};\ v=\dfrac\omega k;\ v_{\text{particle,max}}=A\omega\)
+Step 1: \(\lambda=\dfrac{2\pi}{20}=0.314\text{ m};\ \nu=\dfrac{400}{2\pi}=63.7\text{ Hz}\)
+Step 2: \(v=\dfrac{400}{20}=20\text{ m s}^{-1};\ (kx-\omega t)\Rightarrow+x\text{ direction}\)
+Step 3: \(v_{\max}=0.020\times400=8.0\text{ m s}^{-1}\)
+Worked derivation: \[\frac{\partial y}{\partial t}=-A\omega\cos(kx-\omega t)\Rightarrow\left|\frac{\partial y}{\partial t}\right|_{\max}=A\omega\]
+Check: \[v=\nu\lambda=63.7\times0.314=20\text{ m s}^{-1}\ \checkmark\]
+Why: \(\text{a fixed phase }kx-\omega t\text{ moves to larger }x\text{ as }t\text{ increases, at speed }\omega/k\text{; particle speed is a different quantity}\)
+Why not the others: (B) \(\text{uses }k\text{ and }\omega\text{ as }\lambda\text{ and }\nu\); (C) \(\text{amplitude doubled; speed inverted}\); (D) \(\text{wrong }\lambda,\nu\text{ and direction}\).
+Key point: \(v=\omega/k;\ kx-\omega t\Rightarrow+x;\ v_{\text{particle}}\le A\omega\)
+
+@@ Q78
+format: numerical
+sub_topic: Using Gauss's law to find the electric field of an infinite line charge, an infinite plane sheet, and inside and outside a charged spherical shell
+Q: Find the field (i) \(0.20\text{ m}\) from a long line charge of \(2.0\ \mu\text{C m}^{-1}\), (ii) near a large sheet of charge density \(8.85\ \mu\text{C m}^{-2}\), and (iii) inside and \(0.20\text{ m}\) from the centre of a thin spherical shell of radius \(0.10\text{ m}\) carrying \(4.0\ \mu\text{C}\) (\(\varepsilon_0=8.85\times10^{-12}\), \(\frac1{4\pi\varepsilon_0}=9\times10^9\) SI).
+A) \(9.0\times10^4;\ 1.0\times10^6;\ 9.0\times10^5\text{ inside};\ 9.0\times10^5\text{ N C}^{-1}\)
+B) \(3.6\times10^5;\ 5.0\times10^5;\ 0;\ 3.6\times10^6\text{ N C}^{-1}\)
+C) \(1.8\times10^5;\ 1.0\times10^6;\ 0;\ 1.8\times10^6\text{ N C}^{-1}\)
+D) \(1.8\times10^5;\ 5.0\times10^5;\ 0\text{ inside};\ 9.0\times10^5\text{ N C}^{-1}\)
+KEY: D
+SOL:
+Answer: (D) \(1.8\times10^5;\ 5.0\times10^5;\ 0;\ 9.0\times10^5\text{ N C}^{-1}\)
+Given: \(\lambda=2.0\times10^{-6},\ r=0.20;\ \sigma=8.85\times10^{-6};\ q=4.0\times10^{-6},\ R=0.10,\ r'=0.20\)
+Formula/Principle: \(E_{\text{line}}=\dfrac{\lambda}{2\pi\varepsilon_0r};\ E_{\text{sheet}}=\dfrac{\sigma}{2\varepsilon_0};\ E_{\text{shell}}=\dfrac{q}{4\pi\varepsilon_0r^2}\ (r>R),\ 0\ (r<R)\)
+Step 1: \(E_{\text{line}}=\dfrac{2\times9\times10^9\times2.0\times10^{-6}}{0.20}=1.8\times10^5\text{ N C}^{-1}\)
+Step 2: \(E_{\text{sheet}}=\dfrac{8.85\times10^{-6}}{2\times8.85\times10^{-12}}=5.0\times10^5\text{ N C}^{-1}\)
+Step 3: \(\text{inside }0;\ E=\dfrac{9\times10^9\times4.0\times10^{-6}}{0.04}=9.0\times10^5\text{ N C}^{-1}\)
+Worked derivation: \[\text{cylinder of length }l:\ E(2\pi rl)=\frac{\lambda l}{\varepsilon_0}\Rightarrow E=\frac{\lambda}{2\pi\varepsilon_0r}\]
+Check: \[\frac{1}{2\pi\varepsilon_0}=2\times9\times10^9=1.8\times10^{10}\ \checkmark\]
+Why: \(\text{symmetry makes }E\text{ constant on a suitable Gaussian surface, so Gauss's law gives it directly; a shell encloses no charge inside}\)
+Why not the others: (A) \(\text{line field halved; sheet doubled; inside not zero}\); (B) \(\text{line doubled; outside uses }R\); (C) \(\text{sheet doubled (conductor formula); outside doubled}\).
+Key point: \(\text{line }\lambda/2\pi\varepsilon_0r;\ \text{sheet }\sigma/2\varepsilon_0;\ \text{shell }0\text{ inside}\)
+
+@@ Q79
+format: conceptual
+sub_topic: Explaining how inserting a dielectric slab changes the capacitance, charge, voltage, field and stored energy of a capacitor when it is isolated and when it stays connected to a battery
+Q: A parallel-plate capacitor is charged by a battery. A slab of dielectric constant \(K\) filling the gap is then inserted (i) after disconnecting the battery and (ii) with the battery still connected. Which statement is correct?
+A) In both cases the energy stored increases by a factor \(K\)
+B) In (i) charge stays the same, capacitance becomes \(KC\), voltage and field fall by \(K\), and stored energy \(Q^2/2C\) falls by \(K\) (the slab is pulled in); in (ii) voltage stays the same, charge and stored energy rise by \(K\), the battery supplying the extra charge; the dielectric reduces the field because its molecules are polarised, producing bound surface charges that oppose the applied field
+C) In (i) the voltage increases by a factor \(K\)
+D) In (ii) the charge decreases because the dielectric is an insulator
+KEY: B
+SOL:
+Answer: (B) Isolated: Q fixed, C ×K, V and E ÷K, U ÷K; connected: V fixed, Q and U ×K; polarisation reduces field
+Given: \(C_0,\ V_0,\ Q_0=C_0V_0;\ \text{slab of constant }K\)
+Formula/Principle: \(C=KC_0;\ U=\dfrac{Q^2}{2C}=\tfrac12CV^2\)
+Step 1: \(\text{(i) }Q=Q_0,\ V=\dfrac{Q_0}{KC_0}=\dfrac{V_0}{K},\ U=\dfrac{U_0}{K}\)
+Step 2: \(\text{(ii) }V=V_0,\ Q=KQ_0,\ U=\tfrac12KC_0V_0^2=KU_0\)
+Step 3: \(E=V/d\Rightarrow\text{(i) }E_0/K,\ \text{(ii) }E_0\)
+Worked derivation: \[\text{(i) }U=\frac{Q_0^2}{2KC_0}=\frac{U_0}{K};\ \text{(ii) }U=\frac12(KC_0)V_0^2=KU_0\]
+Check: \[\text{(ii) battery work }=V_0\Delta Q=(K-1)C_0V_0^2=2\Delta U\ \checkmark\]
+Why: \(\text{whichever quantity is held fixed (charge or voltage) decides whether the energy falls or rises when capacitance increases}\)
+Why not the others: (A) \(\text{in (i) energy falls}\); (C) \(\text{voltage falls}\); (D) \(\text{charge rises}\).
+Key point: \(\text{isolated: }U\div K;\ \text{connected: }U\times K\)
+
+@@ Q80
+format: numerical
+sub_topic: Comparing drift velocities in wires of different diameters and lengths, and relating drift velocity to mobility and resistivity
+Q: A copper wire of cross-section \(1.0\times10^{-6}\text{ m}^2\) carries \(1.36\text{ A}\) (\(n=8.5\times10^{28}\text{ m}^{-3}\)). What is the drift speed? How does it change for (i) a wire of twice the diameter carrying the same current, and (ii) the original wire doubled in length with the same voltage across it?
+A) \(1.0\times10^{-2}\text{ m s}^{-1};\ \text{halves};\ \text{doubles}\)
+B) \(1.0\times10^{-4}\text{ m s}^{-1};\ \text{doubles};\ \text{unchanged}\)
+C) \(1.0\times10^{-4}\text{ m s}^{-1};\ \text{becomes one quarter};\ \text{halves}\); since \(v_d=\mu E\) with mobility \(\mu=e\tau/m\) and resistivity \(\rho=m/(ne^2\tau)\), drift speed depends on the field, which halves when the same voltage acts over twice the length
+D) \(1.0\times10^{-4}\text{ m s}^{-1};\ \text{unchanged};\ \text{unchanged}\)
+KEY: C
+SOL:
+Answer: (C) \(v_d=1.0\times10^{-4}\text{ m s}^{-1}\); (i) ÷4; (ii) ÷2
+Given: \(I=1.36\text{ A},\ A=1.0\times10^{-6}\text{ m}^2,\ n=8.5\times10^{28}\text{ m}^{-3}\)
+Formula/Principle: \(I=neAv_d;\ v_d=\mu E=\dfrac{e\tau}{m}E;\ \rho=\dfrac{m}{ne^2\tau}\)
+Step 1: \(v_d=\dfrac{1.36}{8.5\times10^{28}\times1.6\times10^{-19}\times10^{-6}}=\dfrac{1.36}{1.36\times10^4}=1.0\times10^{-4}\text{ m s}^{-1}\)
+Step 2: \(\text{(i) }d\times2\Rightarrow A\times4\Rightarrow v_d\div4\text{ at same }I\)
+Step 3: \(\text{(ii) }E=V/L\Rightarrow E\div2\Rightarrow v_d\div2\)
+Worked derivation: \[j=nev_d=\sigma E=\frac{ne^2\tau}{m}E\Rightarrow v_d=\frac{e\tau}{m}E=\mu E\]
+Check: \[neA=8.5\times10^{28}\times1.6\times10^{-19}\times10^{-6}=1.36\times10^4\text{ C m}^{-1}\ \checkmark\]
+Why: \(\text{at fixed current a larger area needs slower electrons, while at fixed voltage a longer wire has a weaker field}\)
+Why not the others: (A) \(\text{factor 100 error; scaling wrong}\); (B) \(\text{area dependence inverted; field halves}\); (D) \(\text{ignores area and field}\).
+Key point: \(v_d=I/neA=\mu E\)
