@@ -1,0 +1,439 @@
+@@ Q61
+format: numerical
+sub_topic: Ordering the electromagnetic spectrum with sources and uses of each band, and using energy conservation to find the shortest X-ray wavelength produced by electrons accelerated through a given voltage
+Q: Electrons accelerated through \(30\text{ kV}\) strike a metal target in an X-ray tube (\(hc=1240\text{ eV nm}\)). Find the shortest X-ray wavelength produced. Which matching of bands with sources and uses is correct?
+A) \(0.0413\text{ nm};\ \text{radio waves from accelerated charges in antennas (communication)};\ \text{microwaves from klystron or magnetron valves (radar, ovens)};\ \text{infrared from hot bodies (remote controls, greenhouse effect)};\ \text{ultraviolet from the Sun and arc lamps (sterilising water)};\ \text{X-rays from fast electrons striking metal (medical diagnosis)};\ \gamma\text{-rays from nuclei (cancer treatment)}\)
+B) \(41.3\text{ nm};\ \text{X-rays come from radioactive nuclei; radio waves from hot bodies}\)
+C) \(0.0413\text{ nm};\ \text{infrared is used in radar; microwaves in X-ray imaging}\)
+D) \(1240\text{ nm};\ \gamma\text{-rays have the longest wavelength}\)
+KEY: A
+SOL:
+Answer: (A) \(\lambda_{\min}\approx0.0413\text{ nm};\ \text{sources and uses correctly matched}\)
+Given: \(V=30\text{ kV}\Rightarrow K=30\text{ keV}\)
+Formula/Principle: \(eV=h\nu_{\max}=\dfrac{hc}{\lambda_{\min}}\ (\text{all kinetic energy into one photon})\)
+Step 1: \(\lambda_{\min}=\dfrac{1240\text{ eV nm}}{30\,000\text{ eV}}\)
+Step 2: \(\lambda_{\min}=0.0413\text{ nm}\)
+Step 3: \(\text{order of increasing }\lambda:\ \gamma<\text{X}<\text{UV}<\text{visible}<\text{IR}<\text{micro}<\text{radio}\)
+Worked derivation: \[eV=\frac{hc}{\lambda_{\min}}\Rightarrow\lambda_{\min}=\frac{hc}{eV}=\frac{1240}{3.0\times10^4}\ \text{nm}\]
+Check: \[0.0413\ \text{nm lies in the X-ray band }(\sim10^{-3}\text{ to }10\ \text{nm})\ \checkmark\]
+Why: \(\text{an electron can give at most all its kinetic energy to a single photon}\)
+Why not the others: (B) \(\text{factor }10^3\text{ error; sources swapped}\); (C) \(\text{uses swapped}\); (D) \(\gamma\text{-rays have the shortest wavelength}\).
+Key point: \(\lambda_{\min}=hc/eV;\ \text{spectrum order by wavelength}\)
+
+@@ Q62
+format: numerical
+sub_topic: Finding refractive index from the angle of minimum deviation, deviation by a thin prism, dispersion of colours, and the limiting change when the prism is immersed in water
+Q: An equilateral glass prism (\(A=60^\circ\)) gives minimum deviation \(30^\circ\). Find its refractive index. A thin prism of angle \(5^\circ\) has \(n=1.5\); find its deviation. Which colour deviates most, and how does the deviation change if the prism is placed in water?
+A) \(1.5;\ 7.5^\circ;\ \text{red};\ \text{increases}\)
+B) \(\sqrt2\approx1.41;\ 2.5^\circ;\ \text{violet (largest }n);\ \text{decreases, since the relative index }n_{\text{glass}}/n_{\text{water}}\text{ is smaller}\)
+C) \(2;\ 5^\circ;\ \text{violet};\ \text{unchanged}\)
+D) \(1.22;\ 2.5^\circ;\ \text{red};\ \text{decreases to zero}\)
+KEY: B
+SOL:
+Answer: (B) \(n=\sqrt2;\ \delta=2.5^\circ;\ \text{violet};\ \text{deviation decreases in water}\)
+Given: \(A=60^\circ,\ D_m=30^\circ;\ A'=5^\circ,\ n'=1.5\)
+Formula/Principle: \(n=\dfrac{\sin\frac{A+D_m}{2}}{\sin\frac A2};\ \delta=(n-1)A\ \text{(thin prism)}\)
+Step 1: \(n=\dfrac{\sin45^\circ}{\sin30^\circ}=\dfrac{0.707}{0.5}=\sqrt2\)
+Step 2: \(\delta=(1.5-1)\times5^\circ=2.5^\circ\)
+Step 3: \(n_{\text{violet}}>n_{\text{red}}\Rightarrow\delta_{\text{violet}}\text{ largest};\ \text{in water }n_{\text{rel}}=\tfrac{1.5}{1.33}\approx1.13\Rightarrow\delta\approx0.13A\)
+Worked derivation: \[\text{at minimum deviation } r_1=r_2=\frac A2,\ i=\frac{A+D_m}{2}\Rightarrow n=\frac{\sin i}{\sin r}\]
+Check: \[\delta_{\text{water}}=(1.13-1)\times5^\circ\approx0.6^\circ<2.5^\circ\ \checkmark\]
+Why: \(\text{deviation depends on the refractive index of the prism relative to its surroundings}\)
+Why not the others: (A) \(\text{formula misapplied; violet deviates most}\); (C) \(\text{index wrong; deviation changes in water}\); (D) \(\text{index wrong; violet deviates most}\).
+Key point: \(n=\sin\frac{A+D_m}2/\sin\frac A2;\ \delta=(n-1)A\)
+
+@@ Q63
+format: numerical
+sub_topic: Explaining why coherent sources are needed for a sustained interference pattern and calculating maximum-to-minimum intensity ratio and intensity at a given path difference
+Q: Two slits give individual intensities in the ratio \(9:1\) on a screen. Find the ratio of maximum to minimum intensity in the interference pattern. If two coherent waves of equal intensity \(I_0\) meet with a path difference \(\lambda/3\), what is the resultant intensity? Why do two separate bulbs not produce a sustained pattern?
+A) \(9:1;\ 2I_0;\ \text{bulbs are too far apart}\)
+B) \(10:8;\ 3I_0;\ \text{bulbs emit only one wavelength}\)
+C) \(4:1\ (\text{amplitudes }3:1\Rightarrow(3+1)^2:(3-1)^2=16:4);\ I_0\ (\phi=\tfrac{2\pi}3,\ I=4I_0\cos^2\tfrac\pi3);\ \text{independent sources change phase randomly in less than }10^{-8}\text{ s, so the pattern averages out; coherent sources (derived from one source as in Young's experiment) keep a constant phase difference}\)
+D) \(16:4;\ 4I_0;\ \text{intensity always adds}\)
+KEY: C
+SOL:
+Answer: (C) \(I_{\max}:I_{\min}=4:1;\ I=I_0;\ \text{coherence needed for a sustained pattern}\)
+Given: \(I_1:I_2=9:1;\ \Delta x=\lambda/3\)
+Formula/Principle: \(a\propto\sqrt I;\ I_{\max}=(a_1+a_2)^2,\ I_{\min}=(a_1-a_2)^2;\ \phi=\dfrac{2\pi}{\lambda}\Delta x;\ I=4I_0\cos^2\dfrac\phi2\)
+Step 1: \(a_1:a_2=3:1\Rightarrow I_{\max}:I_{\min}=16:4=4:1\)
+Step 2: \(\phi=\dfrac{2\pi}{3}\Rightarrow\cos^2\dfrac\pi3=\dfrac14\)
+Step 3: \(I=4I_0\times\tfrac14=I_0\)
+Worked derivation: \[I=I_1+I_2+2\sqrt{I_1I_2}\cos\phi=I_0+I_0+2I_0\cos\frac{2\pi}{3}=2I_0-I_0=I_0\]
+Check: \[\frac{(3+1)^2}{(3-1)^2}=\frac{16}{4}=4\ \checkmark\]
+Why: \(\text{a stationary pattern needs a phase difference that stays fixed in time}\)
+Why not the others: (A) \(\text{intensities, not amplitudes, used; result wrong}\); (B) \(\text{ratio and intensity wrong}\); (D) \(\text{unsimplified ratio; phase ignored}\).
+Key point: \(I_{\max}/I_{\min}=\left(\frac{\sqrt{I_1}+\sqrt{I_2}}{\sqrt{I_1}-\sqrt{I_2}}\right)^2\)
+
+@@ Q64
+format: experiment
+sub_topic: Calculating the radius, speed and kinetic, potential and total energies of the electron in the third Bohr orbit of hydrogen and the energy to ionise from that orbit, compared with measured ionisation energy
+Q: The measured ionisation energy of hydrogen is \(13.6\text{ eV}\). Using the Bohr model (\(r_1=0.529\text{ Å},\ v_1=2.18\times10^6\text{ m s}^{-1}\)), find for \(n=3\) the orbit radius, electron speed, total energy, kinetic and potential energies, and the energy needed to ionise from this level.
+A) \(1.59\text{ Å};\ 6.5\times10^6\text{ m s}^{-1};\ -4.53\text{ eV};\ K=4.53,\ U=-9.06\text{ eV};\ 4.53\text{ eV}\)
+B) \(0.176\text{ Å};\ 7.27\times10^5\text{ m s}^{-1};\ -1.51\text{ eV};\ K=-1.51,\ U=3.02\text{ eV};\ 13.6\text{ eV}\)
+C) \(4.76\text{ Å};\ 2.18\times10^6\text{ m s}^{-1};\ -13.6\text{ eV};\ K=13.6\text{ eV}\)
+D) \(4.76\text{ Å};\ 7.27\times10^5\text{ m s}^{-1};\ -1.51\text{ eV};\ K=+1.51\text{ eV},\ U=-3.02\text{ eV}\ (K=-E,\ U=2E);\ 1.51\text{ eV}\)
+KEY: D
+SOL:
+Answer: (D) \(r_3=4.76\text{ Å};\ v_3=7.27\times10^5\text{ m s}^{-1};\ E_3=-1.51\text{ eV};\ K=1.51,\ U=-3.02\text{ eV};\ 1.51\text{ eV}\)
+Given: \(n=3;\ r_1=0.529\text{ Å},\ v_1=2.18\times10^6\text{ m s}^{-1},\ E_1=-13.6\text{ eV}\)
+Formula/Principle: \(r_n=n^2r_1;\ v_n=\dfrac{v_1}{n};\ E_n=\dfrac{E_1}{n^2};\ K=-E,\ U=2E\)
+Step 1: \(r_3=9\times0.529=4.76\text{ Å}\)
+Step 2: \(v_3=\dfrac{2.18\times10^6}{3}=7.27\times10^5\text{ m s}^{-1}\)
+Step 3: \(E_3=-\dfrac{13.6}{9}=-1.51\text{ eV}\Rightarrow K=1.51,\ U=-3.02\text{ eV};\ \text{ionisation energy from }n=3:\ 1.51\text{ eV}\)
+Worked derivation: \[\frac{mv^2}{r}=\frac{ke^2}{r^2}\Rightarrow K=\frac{ke^2}{2r}=-\frac{U}{2}\Rightarrow E=K+U=-K\]
+Check: \[K+U=1.51-3.02=-1.51\ \text{eV}=E_3\ \checkmark\]
+Why: \(\text{in a Coulomb orbit the kinetic energy is half the magnitude of the potential energy}\)
+Why not the others: (A) \(\text{used }n\text{ instead of }n^2\text{ and }1/n\); (B) \(\text{radius divided; signs of }K,U\text{ reversed}\); (C) \(\text{values of }n=1\).
+Key point: \(r\propto n^2,\ v\propto1/n,\ E\propto-1/n^2;\ K=-E,\ U=2E\)
+
+@@ Q65
+format: numerical
+sub_topic: Calculating mass defect and binding energy per nucleon for the deuteron and oxygen-16 from atomic masses and comparing their stability
+Q: Using \(m(^1\text{H})=1.007825\text{ u},\ m_n=1.008665\text{ u},\ m(^2\text{H})=2.014102\text{ u},\ m(^{16}\text{O})=15.994915\text{ u}\) and \(1\text{ u}=931.5\text{ MeV}/c^2\), find the binding energy per nucleon of the deuteron and of \(^{16}\text{O}\). Which is more stable?
+A) \(2.22\text{ MeV};\ 127.6\text{ MeV};\ \text{deuteron, since its total binding energy is less}\)
+B) \(1.11\text{ MeV};\ 7.98\text{ MeV};\ \text{the deuteron is more stable}\)
+C) \(0.0024\text{ u};\ 0.137\text{ u};\ \text{equally stable}\)
+D) \(\approx1.11\text{ MeV};\ \approx7.98\text{ MeV};\ ^{16}\text{O is much more stable, since a higher binding energy per nucleon means more energy is needed per nucleon to pull the nucleus apart}\)
+KEY: D
+SOL:
+Answer: (D) \(\approx1.11\text{ vs }\approx7.98\text{ MeV per nucleon};\ ^{16}\text{O far more stable}\)
+Given: \(\text{atomic masses as stated}\)
+Formula/Principle: \(\Delta m=Zm_H+(A-Z)m_n-M;\ E_b=\Delta m\times931.5\text{ MeV};\ E_{bn}=E_b/A\)
+Step 1: \(\text{deuteron: }\Delta m=1.007825+1.008665-2.014102=0.002388\text{ u}\Rightarrow E_b=2.224\text{ MeV}\Rightarrow1.11\text{ MeV/nucleon}\)
+Step 2: \(^{16}\text{O}:\ \Delta m=8(1.007825)+8(1.008665)-15.994915=0.137005\text{ u}\)
+Step 3: \(E_b=0.137005\times931.5=127.6\text{ MeV}\Rightarrow127.6/16=7.98\text{ MeV/nucleon}\)
+Worked derivation: \[8m_H+8m_n=8.0626+8.06932=16.13192\ \text{u};\ \ 16.13192-15.994915=0.137005\ \text{u}\]
+Check: \[7.98\ \text{MeV close to the plateau value }\approx8\ \text{MeV for medium nuclei}\ \checkmark\]
+Why: \(\text{stability is judged by binding energy per nucleon, not by the total}\)
+Why not the others: (A) \(\text{total binding energies quoted; deuteron is less stable}\); (B) \(\text{conclusion reversed}\); (C) \(\text{mass defects, not energies}\).
+Key point: \(E_{bn}=\Delta m\,c^2/A;\ \text{larger }E_{bn}\Rightarrow\text{more stable}\)
+
+@@ Q66
+format: numerical
+sub_topic: Applying significant-figure rules to addition and multiplication, counting significant figures in given measurements, and rounding off when the dropped digit is 5
+Q: Give the results with correct significant figures: (i) \(3.42+15.7+0.128\); (ii) \(2.5\times3.142\). How many significant figures are in \(0.03040\) and \(5.000\times10^3\)? Round \(6.375\) and \(6.365\) to three significant figures.
+A) \(19.248;\ 7.855;\ 2;\ 1;\ 6.37,\ 6.37\)
+B) \(19.2;\ 7.9;\ 4;\ 4;\ 6.38,\ 6.36\ (\text{when the dropped digit is 5, the preceding digit is raised if odd and left unchanged if even})\)
+C) \(19.25;\ 7.86;\ 3;\ 1;\ 6.38,\ 6.37\)
+D) \(19;\ 8;\ 5;\ 4;\ 6.37,\ 6.36\)
+KEY: B
+SOL:
+Answer: (B) \(19.2;\ 7.9;\ 4;\ 4;\ 6.38,\ 6.36\)
+Given: \(\text{measured values as stated}\)
+Formula/Principle: \(\text{addition: keep the least number of decimal places; multiplication: keep the least number of significant figures; leading zeros do not count, trailing zeros after a decimal point count}\)
+Step 1: \(3.42+15.7+0.128=19.248\to19.2\ (\text{one decimal place, as in }15.7)\)
+Step 2: \(2.5\times3.142=7.855\to7.9\ (\text{two significant figures, as in }2.5)\)
+Step 3: \(0.03040:\ 3,0,4,0\Rightarrow4;\ 5.000\times10^3\Rightarrow4;\ 6.375\to6.38\ (7\text{ odd}),\ 6.365\to6.36\ (6\text{ even})\)
+Worked derivation: \[0.0\underline{3040}:\ \text{zeros before 3 are place holders; the final zero after the decimal point is significant}\]
+Check: \[\text{the result cannot be more precise than the least precise measurement}\ \checkmark\]
+Why: \(\text{significant figures carry the uncertainty of the measurement, which arithmetic cannot reduce}\)
+Why not the others: (A) \(\text{unrounded results; counts wrong}\); (C) \(\text{too many digits retained; counts wrong}\); (D) \(\text{too few digits; counts wrong}\).
+Key point: \(\text{add: least decimals; multiply: least sig figs; 5-rule: odd up, even same}\)
+
+@@ Q67
+format: numerical
+sub_topic: Finding the maximum safe speed of a car on a level curve with friction and the friction-free speed on a banked road, and how these speeds scale with the radius of the curve
+Q: A car takes a level curve of radius \(50\text{ m}\) with \(\mu_s=0.4\) (\(g=10\text{ m s}^{-2}\)). Find the maximum safe speed. If the curve is banked with \(\tan\theta=0.2\), find the speed at which no friction is needed. How does each speed change if the radius is doubled?
+A) \(\sqrt{200}\approx14.1\text{ m s}^{-1};\ \sqrt{100}=10\text{ m s}^{-1};\ \text{both increase by a factor }\sqrt2,\ \text{since }v\propto\sqrt r\)
+B) \(20\text{ m s}^{-1};\ 14.1\text{ m s}^{-1};\ \text{doubles}\)
+C) \(200\text{ m s}^{-1};\ 100\text{ m s}^{-1};\ \text{halves}\)
+D) \(14.1\text{ m s}^{-1};\ 10\text{ m s}^{-1};\ \text{unchanged}\)
+KEY: A
+SOL:
+Answer: (A) \(14.1\text{ m s}^{-1};\ 10\text{ m s}^{-1};\ \times\sqrt2\)
+Given: \(r=50\text{ m},\ \mu_s=0.4,\ \tan\theta=0.2\)
+Formula/Principle: \(\text{level: }\dfrac{mv^2}{r}\le\mu_smg\Rightarrow v_{\max}=\sqrt{\mu_srg};\ \text{banked, no friction: }v_0=\sqrt{rg\tan\theta}\)
+Step 1: \(v_{\max}=\sqrt{0.4\times50\times10}=\sqrt{200}=14.1\text{ m s}^{-1}\)
+Step 2: \(v_0=\sqrt{50\times10\times0.2}=\sqrt{100}=10\text{ m s}^{-1}\)
+Step 3: \(r\to2r\Rightarrow v\to\sqrt2\,v\)
+Worked derivation: \[N\cos\theta=mg,\ N\sin\theta=\frac{mv_0^2}{r}\Rightarrow\tan\theta=\frac{v_0^2}{rg}\]
+Check: \[\frac{v_{\max}^2}{r}=\frac{200}{50}=4=\mu_sg\ \checkmark\]
+Why: \(\text{the centripetal force needed grows as }v^2/r,\ \text{so a wider curve allows a higher speed}\)
+Why not the others: (B) \(\text{values wrong; }v\propto\sqrt r\); (C) \(\text{forgot square roots}\); (D) \(\text{speeds depend on }r\).
+Key point: \(v_{\max}=\sqrt{\mu rg};\ v_0=\sqrt{rg\tan\theta}\)
+
+@@ Q68
+format: numerical
+sub_topic: Comparing final velocities and kinetic energy loss for elastic and perfectly inelastic one-dimensional collisions of unequal masses, and the right-angle rule for equal-mass elastic glancing collisions
+Q: A \(2\text{ kg}\) ball moving at \(6\text{ m s}^{-1}\) hits a \(1\text{ kg}\) ball at rest. Find the final velocities if the collision is (i) perfectly elastic, (ii) perfectly inelastic, and the kinetic energy lost in (ii). What is special when two equal masses collide elastically and obliquely with one initially at rest?
+A) \((i)\ 0\text{ and }12\text{ m s}^{-1};\ (ii)\ 6\text{ m s}^{-1};\ 0\)
+B) \((i)\ 4\text{ and }4;\ (ii)\ 2\text{ and }8;\ 12\text{ J}\)
+C) \((i)\ 2\text{ and }8\text{ m s}^{-1};\ (ii)\ 4\text{ m s}^{-1};\ 36\text{ J}\)
+D) \((i)\ 2\text{ m s}^{-1}\text{ and }8\text{ m s}^{-1};\ (ii)\ 4\text{ m s}^{-1}\text{ together};\ 12\text{ J lost }(36\to24\text{ J});\ \text{the two balls move off at right angles to each other}\)
+KEY: D
+SOL:
+Answer: (D) \(\text{elastic: }2\text{ and }8\text{ m s}^{-1};\ \text{inelastic: }4\text{ m s}^{-1},\ 12\text{ J lost};\ \text{equal masses separate at }90^\circ\)
+Given: \(m_1=2\text{ kg},\ u_1=6\text{ m s}^{-1};\ m_2=1\text{ kg},\ u_2=0\)
+Formula/Principle: \(\text{elastic: }v_1=\dfrac{m_1-m_2}{m_1+m_2}u_1,\ v_2=\dfrac{2m_1}{m_1+m_2}u_1;\ \text{inelastic: }v=\dfrac{m_1u_1}{m_1+m_2}\)
+Step 1: \(v_1=\tfrac13\times6=2,\ v_2=\tfrac43\times6=8\text{ m s}^{-1}\)
+Step 2: \(v=\tfrac{12}{3}=4\text{ m s}^{-1}\)
+Step 3: \(K_i=\tfrac12(2)(36)=36\text{ J};\ K_f=\tfrac12(3)(16)=24\text{ J};\ \text{loss }12\text{ J}\)
+Worked derivation: \[\text{equal masses, elastic: }\vec u_1=\vec v_1+\vec v_2,\ u_1^2=v_1^2+v_2^2\Rightarrow\vec v_1\cdot\vec v_2=0\]
+Check: \[\text{elastic: }p=2(2)+1(8)=12=2(6);\ K=\tfrac12(2)(4)+\tfrac12(1)(64)=36\ \text{J}\ \checkmark\]
+Why: \(\text{momentum is conserved in every collision, but kinetic energy only in elastic ones}\)
+Why not the others: (A) \(\text{velocities wrong; energy is lost in (ii)}\); (B) \(\text{cases swapped}\); (C) \(\text{loss is }12\text{ J, not }36\text{ J}\).
+Key point: \(p\text{ always conserved};\ K\text{ conserved only if elastic}\)
+
+@@ Q69
+format: numerical
+sub_topic: Solving a rotational motion problem with constant torque using the rotational analogues of linear equations, and checking the work–energy theorem and power for rotation
+Q: A flywheel with \(I=2.0\text{ kg m}^2\) starts from rest under a constant torque of \(10\text{ N m}\). After \(4.0\text{ s}\) find its angular velocity, angle turned, kinetic energy, work done by the torque and the power delivered at that instant. Which analogy is correct?
+A) \(\omega=20\text{ rad s}^{-1};\ \theta=40\text{ rad};\ K=400\text{ J};\ W=\tau\theta=400\text{ J};\ P=\tau\omega=200\text{ W};\ \text{analogues: }m\leftrightarrow I,\ F\leftrightarrow\tau,\ p\leftrightarrow L=I\omega,\ \tfrac12mv^2\leftrightarrow\tfrac12I\omega^2,\ Fv\leftrightarrow\tau\omega\)
+B) \(\omega=5\text{ rad s}^{-1};\ \theta=10\text{ rad};\ K=25\text{ J};\ W=100\text{ J}\)
+C) \(\omega=80\text{ rad s}^{-1};\ \theta=160\text{ rad};\ K=6400\text{ J}\)
+D) \(\omega=20\text{ rad s}^{-1};\ \theta=80\text{ rad};\ K=800\text{ J};\ \text{torque is analogous to mass}\)
+KEY: A
+SOL:
+Answer: (A) \(\omega=20\text{ rad s}^{-1},\ \theta=40\text{ rad},\ K=W=400\text{ J},\ P=200\text{ W}\)
+Given: \(I=2.0\text{ kg m}^2,\ \tau=10\text{ N m},\ t=4.0\text{ s},\ \omega_0=0\)
+Formula/Principle: \(\alpha=\dfrac\tau I;\ \omega=\alpha t;\ \theta=\tfrac12\alpha t^2;\ K=\tfrac12I\omega^2;\ P=\tau\omega\)
+Step 1: \(\alpha=5\text{ rad s}^{-2}\Rightarrow\omega=20\text{ rad s}^{-1}\)
+Step 2: \(\theta=\tfrac12(5)(16)=40\text{ rad};\ W=10\times40=400\text{ J}\)
+Step 3: \(K=\tfrac12(2)(400)=400\text{ J};\ P=10\times20=200\text{ W}\)
+Worked derivation: \[W=\int\tau\,d\theta=\tau\theta=\Delta K=\tfrac12I\omega^2\]
+Check: \[W=K=400\ \text{J (work–energy theorem for rotation)}\ \checkmark\]
+Why: \(\text{rotational equations have the same form as linear ones with }I,\tau,\omega,\theta\text{ replacing }m,F,v,x\)
+Why not the others: (B) \(\alpha\text{ used as }\omega\); (C) \(\text{used }\tau I\text{ instead of }\tau/I\); (D) \(\theta=\tfrac12\alpha t^2;\ \tau\leftrightarrow F\).
+Key point: \(\tau=I\alpha;\ W=\tau\theta;\ P=\tau\omega\)
+
+@@ Q70
+format: numerical
+sub_topic: Calculating orbital speed and kinetic, potential and total energies of a satellite at twice the Earth's radius, and the energy needed to place it in orbit from the surface by energy conservation
+Q: A \(200\text{ kg}\) satellite orbits at radius \(2R_E\) (\(R_E=6.4\times10^6\text{ m},\ g=10\text{ m s}^{-2}\)). Find its orbital speed, kinetic, potential and total energies, and the minimum energy needed to put it in this orbit from the surface (ignoring Earth's rotation).
+A) \(7.9\text{ km s}^{-1};\ 6.4\times10^9;\ -6.4\times10^9;\ 0;\ 6.4\times10^9\text{ J}\)
+B) \(11.2\text{ km s}^{-1};\ 3.2\times10^9;\ -3.2\times10^9;\ 0;\ 3.2\times10^9\text{ J}\)
+C) \(5.66\text{ km s}^{-1};\ K=3.2\times10^9\text{ J};\ U=-6.4\times10^9\text{ J};\ E=-3.2\times10^9\text{ J};\ \Delta E=\tfrac34mgR_E=9.6\times10^9\text{ J}\)
+D) \(5.66\text{ km s}^{-1};\ K=6.4\times10^9;\ U=-3.2\times10^9;\ E=+3.2\times10^9\text{ J}\)
+KEY: C
+SOL:
+Answer: (C) \(v_0\approx5.66\text{ km s}^{-1};\ K=3.2\times10^9,\ U=-6.4\times10^9,\ E=-3.2\times10^9\text{ J};\ 9.6\times10^9\text{ J}\)
+Given: \(m=200\text{ kg},\ r=2R_E;\ GM=gR_E^2\)
+Formula/Principle: \(v_0=\sqrt{\dfrac{GM}{r}};\ K=\dfrac{GMm}{2r},\ U=-\dfrac{GMm}{r},\ E=-\dfrac{GMm}{2r}\)
+Step 1: \(v_0=\sqrt{\dfrac{gR_E}{2}}=\sqrt{3.2\times10^7}=5.66\times10^3\text{ m s}^{-1}\)
+Step 2: \(K=\dfrac{mgR_E}{4}=\dfrac{200\times10\times6.4\times10^6}{4}=3.2\times10^9\text{ J};\ U=-2K;\ E=-K\)
+Step 3: \(\Delta E=E_{\text{orbit}}-E_{\text{surface}}=-\dfrac{mgR_E}{4}-(-mgR_E)=\tfrac34mgR_E=9.6\times10^9\text{ J}\)
+Worked derivation: \[\frac{mv_0^2}{r}=\frac{GMm}{r^2}\Rightarrow\tfrac12mv_0^2=\frac{GMm}{2r}=-\tfrac12U\]
+Check: \[K+U=3.2\times10^9-6.4\times10^9=-3.2\times10^9\ \text{J}\ \checkmark\]
+Why: \(\text{a bound orbit has negative total energy equal to minus its kinetic energy}\)
+Why not the others: (A) \(\text{values for a surface orbit; total energy is not zero}\); (B) \(\text{escape speed is not orbital speed}\); (D) \(K\text{ and }U\text{ mismatched; }E<0\).
+Key point: \(E=-K=\tfrac12U=-\dfrac{GMm}{2r}\)
+
+@@ Q71
+format: conceptual
+sub_topic: Explaining capillary rise and depression from contact angle, calculating the rise of water in a glass tube, and the excess pressure inside drops and soap bubbles
+Q: Water (\(S=0.073\text{ N m}^{-1}\), contact angle \(\approx0^\circ\)) rises in a glass capillary of radius \(0.50\text{ mm}\) (\(g=10\text{ m s}^{-2}\)). Which statement is correct?
+A) Water rises \(h=\dfrac{2S\cos\theta}{\rho gr}=\dfrac{2\times0.073}{1000\times10\times5\times10^{-4}}\approx2.9\text{ cm}\); mercury, with contact angle about \(140^\circ\) (obtuse), is depressed in the same tube; the excess pressure inside a liquid drop is \(2S/R\) and inside a soap bubble \(4S/R\) because a bubble has two surfaces; detergents lower surface tension so water wets greasy fabric better
+B) Water is depressed in glass because its contact angle is obtuse; a soap bubble has excess pressure \(2S/R\)
+C) Capillary rise is greater in a wider tube
+D) Surface tension increases when detergent is added
+KEY: A
+SOL:
+Answer: (A) \(h\approx2.9\text{ cm};\ \text{mercury depressed};\ \text{drop }2S/R,\ \text{bubble }4S/R;\ \text{detergents lower }S\)
+Given: \(S=0.073\text{ N m}^{-1},\ \theta=0,\ r=5\times10^{-4}\text{ m},\ \rho=1000\text{ kg m}^{-3}\)
+Formula/Principle: \(h=\dfrac{2S\cos\theta}{\rho gr};\ \Delta p_{\text{drop}}=\dfrac{2S}{R},\ \Delta p_{\text{bubble}}=\dfrac{4S}{R}\)
+Step 1: \(2S\cos\theta=0.146\)
+Step 2: \(\rho gr=1000\times10\times5\times10^{-4}=5\)
+Step 3: \(h=0.146/5=0.0292\text{ m}=2.9\text{ cm}\)
+Worked derivation: \[\text{upward surface force }2\pi rS\cos\theta=\text{weight of column }\pi r^2h\rho g\Rightarrow h=\frac{2S\cos\theta}{\rho gr}\]
+Check: \[\theta>90^\circ\Rightarrow\cos\theta<0\Rightarrow h<0\ (\text{depression, as for mercury})\ \checkmark\]
+Why: \(\text{the liquid rises until the vertical pull of surface tension balances the weight of the raised column}\)
+Why not the others: (B) \(\text{water wets glass (acute angle); bubble has }4S/R\); (C) \(h\propto1/r\); (D) \(\text{detergents reduce }S\).
+Key point: \(h=2S\cos\theta/\rho gr;\ \text{drop }2S/R,\ \text{bubble }4S/R\)
+
+@@ Q72
+format: numerical
+sub_topic: Using Wien's displacement law to estimate the Sun's surface temperature, the T^4 scaling of radiated power, and Newton's law of cooling to find a cooling constant and read the cooling graph
+Q: The Sun's spectrum peaks near \(500\text{ nm}\) (\(b=2.9\times10^{-3}\text{ m K}\)). Estimate its surface temperature. By what factor does a body's radiated power change if its absolute temperature doubles? A liquid cools from \(80^\circ\text{C}\) to \(60^\circ\text{C}\) in 5 min in a room at \(20^\circ\text{C}\); using the average-temperature form of Newton's law, find the cooling constant. Which graph of \(\ln(T-T_s)\) against \(t\) is expected?
+A) \(1450\text{ K};\ 2;\ 0.4\text{ min}^{-1};\ \text{parabola}\)
+B) \(5800\text{ K};\ 4;\ 0.08\text{ min}^{-1};\ \text{rising straight line}\)
+C) \(\approx5800\text{ K};\ 16\ (P\propto T^4);\ k=\dfrac{(80-60)/5}{70-20}=0.08\text{ min}^{-1};\ \text{a straight line with negative slope }-k\)
+D) \(5800\text{ K};\ 16;\ 0.08\text{ min}^{-1};\ \text{horizontal line}\)
+KEY: C
+SOL:
+Answer: (C) \(\approx5800\text{ K};\ 16\times;\ k=0.08\text{ min}^{-1};\ \text{straight line of slope }-k\)
+Given: \(\lambda_m=5.0\times10^{-7}\text{ m};\ 80\to60^\circ\text{C in }5\text{ min},\ T_s=20^\circ\text{C}\)
+Formula/Principle: \(\lambda_mT=b;\ P=\sigma AeT^4;\ \dfrac{dT}{dt}=-k(T-T_s)\)
+Step 1: \(T=\dfrac{2.9\times10^{-3}}{5.0\times10^{-7}}=5800\text{ K}\)
+Step 2: \(T\to2T\Rightarrow P\to2^4P=16P\)
+Step 3: \(\dfrac{20}{5}=k(70-20)\Rightarrow k=\dfrac{4}{50}=0.08\text{ min}^{-1}\)
+Worked derivation: \[\frac{dT}{T-T_s}=-k\,dt\Rightarrow\ln(T-T_s)=-kt+C\]
+Check: \[\text{rate at average temperature }70^\circ\text{C}:\ 0.08\times50=4\ ^\circ\text{C min}^{-1}=20/5\ \checkmark\]
+Why: \(\text{hotter bodies peak at shorter wavelengths, radiate far more strongly, and cool exponentially towards room temperature}\)
+Why not the others: (A) \(\text{temperature and scalings wrong}\); (B) \(P\propto T^4;\ \text{slope negative}\); (D) \(\text{the graph slopes downward}\).
+Key point: \(\lambda_mT=b;\ P\propto T^4;\ \ln(T-T_s)\text{ linear in }t\)
+
+@@ Q73
+format: numerical
+sub_topic: Applying the first law to isobaric, isochoric, isothermal and adiabatic processes of a monatomic ideal gas and comparing isothermal and adiabatic curves on a P–V graph
+Q: A monatomic ideal gas expands at constant pressure \(2.0\times10^5\text{ Pa}\) from \(1.0\text{ L}\) to \(3.0\text{ L}\). Find the work done, \(\Delta U\) and the heat supplied. Which statement about P–V graphs from a common initial state is correct?
+A) \(W=600\text{ J};\ \Delta U=400\text{ J};\ Q=1000\text{ J};\ \text{isothermal curve is steeper}\)
+B) \(W=400\text{ J};\ \Delta U=0;\ Q=400\text{ J};\ \text{both curves have the same slope}\)
+C) \(W=400\text{ J};\ \Delta U=600\text{ J};\ Q=1000\text{ J};\ \text{the adiabatic curve is steeper than the isothermal one (slope }-\gamma P/V\text{ against }-P/V),\ \text{so an adiabatic expansion does less work; in an isochoric process }W=0\text{ and }Q=\Delta U,\ \text{and in an isothermal process }\Delta U=0\text{ and }Q=W\)
+D) \(W=400\text{ J};\ \Delta U=1000\text{ J};\ Q=600\text{ J};\ \text{adiabatic process has }W=0\)
+KEY: C
+SOL:
+Answer: (C) \(W=400\text{ J},\ \Delta U=600\text{ J},\ Q=1000\text{ J};\ \text{adiabatic steeper}\)
+Given: \(P=2.0\times10^5\text{ Pa},\ \Delta V=2.0\times10^{-3}\text{ m}^3;\ C_v=\tfrac32R\)
+Formula/Principle: \(W=P\Delta V;\ \Delta U=nC_v\Delta T=\tfrac32P\Delta V;\ Q=\Delta U+W\)
+Step 1: \(W=2.0\times10^5\times2.0\times10^{-3}=400\text{ J}\)
+Step 2: \(\Delta U=\tfrac32\times400=600\text{ J}\)
+Step 3: \(Q=600+400=1000\text{ J}\)
+Worked derivation: \[\text{isothermal: }PV=c\Rightarrow\frac{dP}{dV}=-\frac PV;\quad\text{adiabatic: }PV^\gamma=c\Rightarrow\frac{dP}{dV}=-\gamma\frac PV\]
+Check: \[Q=nC_p\Delta T=\tfrac52P\Delta V=\tfrac52\times400=1000\ \text{J}\ \checkmark\]
+Why: \(\text{in an adiabatic expansion the gas cools, so its pressure falls faster than at constant temperature}\)
+Why not the others: (A) \(W\text{ and }\Delta U\text{ swapped; adiabatic is steeper}\); (B) \(\Delta U\ne0\text{ since }T\text{ rises}\); (D) \(\text{signs mixed; adiabatic means }Q=0\).
+Key point: \(Q=\Delta U+W;\ \text{adiabatic slope}=\gamma\times\text{isothermal slope}\)
+
+@@ Q74
+format: numerical
+sub_topic: Using the law of equipartition of energy to find molar specific heats and γ for monatomic and diatomic gases and a mixture, and reading how Cv of a diatomic gas rises with temperature
+Q: Using equipartition, give \(C_v\) and \(\gamma\) for helium and for rigid diatomic oxygen, and \(C_v,\ C_p,\ \gamma\) for a mixture of 1 mol He and 1 mol O₂. What happens to \(C_v\) of a diatomic gas at high temperature, and what is \(C_v\) of a solid (per mole)?
+A) \(\text{He: }\tfrac52R,\ \tfrac75;\ \text{O}_2:\ \tfrac32R,\ \tfrac53;\ \text{mixture }C_v=4R\)
+B) \(\text{He: }\tfrac32R,\ \tfrac53;\ \text{O}_2:\ \tfrac52R,\ \tfrac75;\ \text{mixture }C_v=4R,\ C_p=5R,\ \gamma=1.25\)
+C) \(\text{He: }3R,\ \tfrac43;\ \text{O}_2:\ 3R;\ \text{mixture }\gamma=1.67\)
+D) \(\text{He: }\tfrac32R,\ \gamma=\tfrac53;\ \text{O}_2:\ \tfrac52R,\ \gamma=\tfrac75;\ \text{mixture }C_v=2R,\ C_p=3R,\ \gamma=1.5;\ \text{at high temperature vibrational modes add }R\text{, giving }C_v=\tfrac72R;\ \text{solids have }C_v\approx3R\ (\text{Dulong–Petit})\)
+KEY: D
+SOL:
+Answer: (D) \(\text{He }\tfrac32R,\ \tfrac53;\ \text{O}_2\ \tfrac52R,\ \tfrac75;\ \text{mixture }2R,\ 3R,\ 1.5;\ \text{diatomic }\to\tfrac72R;\ \text{solid }3R\)
+Given: \(\text{He: 3 translational dof};\ \text{O}_2:\ 3\text{ translational}+2\text{ rotational}\)
+Formula/Principle: \(\text{each quadratic term gets }\tfrac12k_BT;\ C_v=\tfrac f2R,\ C_p=C_v+R;\ \text{mixture }C_v=\dfrac{\sum n_iC_{v,i}}{\sum n_i}\)
+Step 1: \(\text{He: }f=3\Rightarrow C_v=\tfrac32R,\ \gamma=\tfrac{5/2}{3/2}=\tfrac53\)
+Step 2: \(\text{O}_2:\ f=5\Rightarrow C_v=\tfrac52R,\ \gamma=\tfrac75\)
+Step 3: \(\text{mixture }C_v=\dfrac{\frac32R+\frac52R}{2}=2R,\ C_p=3R,\ \gamma=1.5\)
+Worked derivation: \[\text{vibration adds kinetic and potential terms: }2\times\tfrac12k_BT\Rightarrow C_v=\tfrac52R+R=\tfrac72R\]
+Check: \[\text{solid: 3 oscillators per atom}\times(\tfrac12+\tfrac12)k_BT\times N_A=3RT\Rightarrow C_v=3R\ \checkmark\]
+Why: \(\text{each active degree of freedom stores the same average energy, so more modes mean a higher specific heat}\)
+Why not the others: (A) \(\text{values swapped; mixture miscomputed}\); (B) \(\text{mixture values not averaged per mole}\); (C) \(\text{wrong degrees of freedom}\).
+Key point: \(C_v=\tfrac f2R;\ \gamma=1+\tfrac2f\)
+
+@@ Q75
+format: experiment
+sub_topic: Reading amplitude, period and initial phase of an oscillator from sensor data, writing its equation, and finding maximum velocity, maximum acceleration and velocity at a given displacement with phase relations
+Q: A motion sensor records an oscillator with amplitude \(4.0\text{ cm}\) and period \(0.50\text{ s}\); at \(t=0\) it is at \(x=+2.0\text{ cm}\) moving towards \(+x\). Write \(x(t)\) and find the maximum speed, maximum acceleration and speed at \(x=2.0\text{ cm}\). How are velocity and acceleration related in phase to displacement?
+A) \(x=4\sin(2t);\ 8\text{ cm s}^{-1};\ 16\text{ cm s}^{-2};\ 0\)
+B) \(x=4\cos(4\pi t+\tfrac\pi6);\ 50\text{ cm s}^{-1};\ 632\text{ cm s}^{-2};\ 50\text{ cm s}^{-1};\ \text{all in phase}\)
+C) \(x=2\sin(4\pi t);\ 25\text{ cm s}^{-1};\ 316\text{ cm s}^{-2};\ 0;\ \text{velocity lags by }\pi\)
+D) \(x=4\sin\!\left(4\pi t+\tfrac\pi6\right)\text{ cm};\ v_{\max}=A\omega\approx50.3\text{ cm s}^{-1};\ a_{\max}=A\omega^2\approx632\text{ cm s}^{-2};\ v=\omega\sqrt{A^2-x^2}\approx43.5\text{ cm s}^{-1};\ \text{velocity leads displacement by }\tfrac\pi2,\ \text{acceleration leads by }\pi\ (a=-\omega^2x)\)
+KEY: D
+SOL:
+Answer: (D) \(x=4\sin(4\pi t+\tfrac\pi6);\ 50.3\text{ cm s}^{-1};\ 632\text{ cm s}^{-2};\ 43.5\text{ cm s}^{-1}\)
+Given: \(A=4.0\text{ cm},\ T=0.50\text{ s},\ x(0)=2.0\text{ cm},\ v(0)>0\)
+Formula/Principle: \(x=A\sin(\omega t+\phi);\ \omega=\tfrac{2\pi}T;\ v=\omega\sqrt{A^2-x^2};\ a=-\omega^2x\)
+Step 1: \(\omega=4\pi\text{ rad s}^{-1};\ \sin\phi=\tfrac12,\ \cos\phi>0\Rightarrow\phi=\tfrac\pi6\)
+Step 2: \(v_{\max}=4\times4\pi=50.3\text{ cm s}^{-1};\ a_{\max}=4\times16\pi^2=632\text{ cm s}^{-2}\)
+Step 3: \(v=4\pi\sqrt{16-4}=4\pi\times3.46=43.5\text{ cm s}^{-1}\)
+Worked derivation: \[v=\frac{dx}{dt}=A\omega\cos(\omega t+\phi)=A\omega\sin\left(\omega t+\phi+\tfrac\pi2\right),\quad a=-A\omega^2\sin(\omega t+\phi)\]
+Check: \[v(0)=A\omega\cos\tfrac\pi6=50.3\times0.866=43.5\ \text{cm s}^{-1}>0\ \checkmark\]
+Why: \(\text{the initial position and direction of motion fix the phase constant uniquely}\)
+Why not the others: (A) \(\omega=2\pi/T=4\pi\); (B) \(\text{cosine with }\pi/6\text{ gives }x(0)=3.46\text{ cm; phases differ}\); (C) \(\text{amplitude and phase wrong}\).
+Key point: \(\phi\text{ from }x(0)\text{ and sign of }v(0);\ v\text{ leads }x\text{ by }\pi/2,\ a\text{ by }\pi\)
+
+@@ Q76
+format: numerical
+sub_topic: Finding an unknown frequency from beats with a standard tuning fork and the change in beat rate on loading with wax, and calculating beat frequency and period of two close tones
+Q: A tuning fork of \(256\text{ Hz}\) sounded with an unknown fork gives 4 beats per second. When the unknown fork is loaded with a little wax, the beats fall to 2 per second. Find the unknown frequency. Two tones of 400 Hz and 404 Hz are sounded together; find the beat frequency and beat period.
+A) \(252\text{ Hz};\ 2\text{ Hz};\ 0.5\text{ s}\)
+B) \(260\text{ Hz (loading lowers its frequency, bringing it closer to 256 Hz)};\ 4\text{ Hz};\ 0.25\text{ s}\)
+C) \(258\text{ Hz};\ 804\text{ Hz};\ 0.0012\text{ s}\)
+D) \(252\text{ Hz};\ 4\text{ Hz};\ 4\text{ s}\)
+KEY: B
+SOL:
+Answer: (B) \(260\text{ Hz};\ 4\text{ Hz};\ 0.25\text{ s}\)
+Given: \(f_0=256\text{ Hz},\ \text{beats }4\to2\text{ after loading};\ 400,\ 404\text{ Hz}\)
+Formula/Principle: \(f_{\text{beat}}=|f_1-f_2|;\ \text{loading a fork lowers its frequency}\)
+Step 1: \(f=256\pm4=252\text{ or }260\text{ Hz}\)
+Step 2: \(\text{loading lowers }f;\ \text{beats decrease}\Rightarrow f\text{ moved towards }256\Rightarrow f=260\text{ Hz (becomes 258 Hz)}\)
+Step 3: \(f_{\text{beat}}=404-400=4\text{ Hz};\ T_b=\tfrac14=0.25\text{ s}\)
+Worked derivation: \[y=2a\cos\left(2\pi\frac{f_1-f_2}{2}t\right)\sin\left(2\pi\frac{f_1+f_2}{2}t\right)\Rightarrow\text{loudness maxima }|f_1-f_2|\text{ times per second}\]
+Check: \[\text{if }f\text{ were }252\text{ Hz, loading would lower it further and beats would rise above 4}\ \checkmark\]
+Why: \(\text{the direction in which the beat rate changes tells which side of the standard the unknown lies}\)
+Why not the others: (A) \(\text{252 Hz would give more beats after loading}\); (C) \(\text{beat frequency is the difference}\); (D) \(\text{frequency and period wrong}\).
+Key point: \(f_{\text{beat}}=|f_1-f_2|;\ \text{wax lowers frequency}\)
+
+@@ Q77
+format: conceptual
+sub_topic: Comparing the electric fields of an infinite line charge, an infinite plane sheet and a uniformly charged spherical shell derived from Gauss's law, including their distance dependence
+Q: Using Gauss's law, which comparison of fields is correct? (A long wire has \(\lambda=2.0\times10^{-7}\text{ C m}^{-1}\); \(k=9\times10^9\text{ N m}^2\text{ C}^{-2}\).)
+A) The field of a line charge is independent of distance; a sheet's field falls as \(1/r^2\); inside a charged shell the field is \(kq/R^2\)
+B) Line charge: \(E=\dfrac{\lambda}{2\pi\varepsilon_0r}=\dfrac{2k\lambda}{r}\propto\dfrac1r\), so at \(0.10\text{ m}\) from the wire \(E=3.6\times10^4\text{ N C}^{-1}\); infinite sheet: \(E=\dfrac{\sigma}{2\varepsilon_0}\), independent of distance; two parallel sheets with \(\pm\sigma\) give \(\sigma/\varepsilon_0\) between them and zero outside; uniformly charged shell: \(E=\dfrac{kq}{r^2}\) outside (as if all charge were at the centre) and \(E=0\) inside
+C) All three fields fall off as \(1/r^2\)
+D) The field inside a uniformly charged shell is largest at its centre
+KEY: B
+SOL:
+Answer: (B) \(\text{line }\propto1/r\ (3.6\times10^4\text{ N C}^{-1});\ \text{sheet constant};\ \text{shell }kq/r^2\text{ outside, }0\text{ inside}\)
+Given: \(\lambda=2.0\times10^{-7}\text{ C m}^{-1},\ r=0.10\text{ m}\)
+Formula/Principle: \(\oint\vec E\cdot d\vec A=\dfrac{q_{\text{enc}}}{\varepsilon_0}\text{ with cylindrical, pill-box and spherical Gaussian surfaces}\)
+Step 1: \(\text{cylinder: }E(2\pi rl)=\dfrac{\lambda l}{\varepsilon_0}\Rightarrow E=\dfrac{2k\lambda}{r}=\dfrac{2\times9\times10^9\times2\times10^{-7}}{0.10}=3.6\times10^4\text{ N C}^{-1}\)
+Step 2: \(\text{pill-box: }2EA=\dfrac{\sigma A}{\varepsilon_0}\Rightarrow E=\dfrac{\sigma}{2\varepsilon_0}\)
+Step 3: \(\text{sphere: }E(4\pi r^2)=\dfrac{q}{\varepsilon_0}\ (r>R);\ q_{\text{enc}}=0\ (r<R)\Rightarrow E=0\)
+Worked derivation: \[E_{\text{between}}=\frac{\sigma}{2\varepsilon_0}+\frac{\sigma}{2\varepsilon_0}=\frac{\sigma}{\varepsilon_0},\quad E_{\text{outside}}=\frac{\sigma}{2\varepsilon_0}-\frac{\sigma}{2\varepsilon_0}=0\]
+Check: \[\text{line field drops to half when }r\text{ doubles: }1.8\times10^4\ \text{N C}^{-1}\text{ at }0.20\ \text{m}\ \checkmark\]
+Why: \(\text{the symmetry of each charge distribution decides how the Gaussian area grows with distance}\)
+Why not the others: (A) \(\text{dependences swapped; shell interior is field-free}\); (C) \(\text{only the shell exterior is }1/r^2\); (D) \(E=0\text{ everywhere inside}\).
+Key point: \(\text{line }1/r;\ \text{sheet constant};\ \text{shell }1/r^2\text{ outside, }0\text{ inside}\)
+
+@@ Q78
+format: numerical
+sub_topic: Finding the change in capacitance, charge, voltage and stored energy when a dielectric slab fills a capacitor with the battery connected and disconnected, and reading energy as area under the Q–V graph
+Q: A \(10\ \mu\text{F}\) capacitor is charged to \(100\text{ V}\). A dielectric of \(K=4\) then fills it (i) with the battery still connected, (ii) after the battery is disconnected. Find the initial energy and the charge, voltage and energy in each case. What does the area under a charge–voltage graph represent?
+A) \(0.05\text{ J};\ (i)\ 1\text{ mC},\ 100\text{ V},\ 0.05\text{ J};\ (ii)\ 4\text{ mC},\ 400\text{ V},\ 0.8\text{ J};\ \text{charge}\)
+B) \(0.5\text{ J};\ (i)\ 4\text{ mC},\ 25\text{ V};\ (ii)\ 1\text{ mC},\ 100\text{ V};\ \text{capacitance}\)
+C) \(0.05\text{ J};\ (i)\ 4\text{ mC},\ 100\text{ V},\ 0.2\text{ J};\ (ii)\ 1\text{ mC},\ 25\text{ V},\ 0.0125\text{ J};\ \text{the stored energy }\tfrac12QV,\ \text{since the }Q\text{–}V\text{ graph is a straight line of slope }C\)
+D) \(0.05\text{ J};\ (i)\ 4\text{ mC},\ 100\text{ V},\ 0.0125\text{ J};\ (ii)\ 1\text{ mC},\ 25\text{ V},\ 0.2\text{ J};\ \text{power}\)
+KEY: C
+SOL:
+Answer: (C) \(U_0=0.05\text{ J};\ \text{(i) }4\text{ mC},\ 100\text{ V},\ 0.2\text{ J};\ \text{(ii) }1\text{ mC},\ 25\text{ V},\ 0.0125\text{ J};\ \text{area}=\text{energy}\)
+Given: \(C_0=10\ \mu\text{F},\ V_0=100\text{ V},\ K=4\)
+Formula/Principle: \(C=KC_0;\ Q=CV;\ U=\tfrac12CV^2=\dfrac{Q^2}{2C}\)
+Step 1: \(U_0=\tfrac12\times10^{-5}\times10^4=0.05\text{ J};\ Q_0=1\text{ mC}\)
+Step 2: \(\text{(i) }V\text{ fixed}:\ C=40\ \mu\text{F},\ Q=4\text{ mC},\ U=\tfrac12\times4\times10^{-5}\times10^4=0.2\text{ J}\)
+Step 3: \(\text{(ii) }Q\text{ fixed}:\ V=\tfrac{100}{4}=25\text{ V},\ U=\dfrac{(10^{-3})^2}{2\times4\times10^{-5}}=0.0125\text{ J}\)
+Worked derivation: \[U=\int_0^QV\,dq=\int_0^Q\frac qC\,dq=\frac{Q^2}{2C}=\tfrac12QV\]
+Check: \[\text{(ii) }U=U_0/K=0.05/4=0.0125\ \text{J};\ \text{(i) }U=KU_0=0.2\ \text{J}\ \checkmark\]
+Why: \(\text{a connected battery holds }V\text{ fixed and supplies extra charge; an isolated capacitor keeps }Q\text{ fixed}\)
+Why not the others: (A) \(\text{cases reversed and wrong}\); (B) \(\text{energy and cases wrong}\); (D) \(\text{energies swapped}\).
+Key point: \(\text{battery on: }V\text{ fixed, }U\times K;\ \text{off: }Q\text{ fixed, }U/K\)
+
+@@ Q79
+format: numerical
+sub_topic: Testing balance of a Wheatstone bridge, finding an unknown resistance from a metre bridge null point, and stating the physical basis of Kirchhoff's junction and loop rules
+Q: In a Wheatstone bridge \(P=10\ \Omega,\ Q=20\ \Omega,\ R=15\ \Omega,\ S=30\ \Omega\). Is it balanced? In a metre bridge with \(2.0\ \Omega\) in the left gap, the null point is at \(40.0\text{ cm}\) from the left end; find the resistance in the right gap. On what conservation laws are Kirchhoff's rules based?
+A) \(\text{balanced (}P/Q=R/S=\tfrac12),\ \text{so no current flows through the galvanometer};\ S=2.0\times\tfrac{60}{40}=3.0\ \Omega;\ \text{junction rule: conservation of charge; loop rule: conservation of energy}\)
+B) \(\text{not balanced};\ 1.33\ \Omega;\ \text{junction rule: energy; loop rule: charge}\)
+C) \(\text{balanced};\ 0.8\ \Omega;\ \text{both from Ohm's law}\)
+D) \(\text{not balanced};\ 3.0\ \Omega;\ \text{loop rule: conservation of momentum}\)
+KEY: A
+SOL:
+Answer: (A) \(\text{balanced};\ S=3.0\ \Omega;\ \text{charge and energy conservation}\)
+Given: \(P,Q,R,S;\ R_{\text{left}}=2.0\ \Omega,\ l=40.0\text{ cm}\)
+Formula/Principle: \(\text{balance: }\dfrac PQ=\dfrac RS;\ \text{metre bridge: }\dfrac{R}{S}=\dfrac{l}{100-l}\)
+Step 1: \(\tfrac{10}{20}=\tfrac{15}{30}=\tfrac12\Rightarrow\text{balanced}\)
+Step 2: \(\dfrac{2.0}{S}=\dfrac{40}{60}\Rightarrow S=3.0\ \Omega\)
+Step 3: \(\sum I_{\text{in}}=\sum I_{\text{out}}\ (\text{charge});\ \sum\Delta V=0\text{ round a loop (energy)}\)
+Worked derivation: \[I_g=0\Rightarrow V_B=V_D\Rightarrow I_1P=I_2R,\ I_1Q=I_2S\Rightarrow\frac PQ=\frac RS\]
+Check: \[\text{wire resistance}\propto\text{length}:\ \frac{40}{60}=\frac{2.0}{3.0}\ \checkmark\]
+Why: \(\text{at balance the galvanometer ends are at the same potential, so the ratio arms match}\)
+Why not the others: (B) \(\text{ratio inverted; rules swapped}\); (C) \(\text{metre-bridge ratio wrong}\); (D) \(\text{bridge is balanced; loop rule is energy}\).
+Key point: \(P/Q=R/S;\ \text{junction}=\text{charge},\ \text{loop}=\text{energy}\)
+
+@@ Q80
+format: numerical
+sub_topic: Using the Biot–Savart law to find the magnetic field at the centre and on the axis of a circular coil and near a long straight wire
+Q: A circular coil of 100 turns and radius \(0.10\text{ m}\) carries \(1.0\text{ A}\) (\(\mu_0=4\pi\times10^{-7}\text{ T m A}^{-1}\)). Find the field at its centre and on its axis at a distance equal to its radius. Find also the field \(5.0\text{ cm}\) from a long straight wire carrying \(10\text{ A}\).
+A) \(6.28\times10^{-4}\text{ T};\ 3.14\times10^{-4}\text{ T};\ 2\times10^{-5}\text{ T}\)
+B) \(6.28\times10^{-4}\text{ T};\ 2.22\times10^{-4}\text{ T}\ (=B_0/2\sqrt2);\ 4.0\times10^{-5}\text{ T}\)
+C) \(1.26\times10^{-3}\text{ T};\ 4.4\times10^{-4}\text{ T};\ 4.0\times10^{-5}\text{ T}\)
+D) \(6.28\times10^{-6}\text{ T};\ 2.22\times10^{-6}\text{ T};\ 4.0\times10^{-7}\text{ T}\)
+KEY: B
+SOL:
+Answer: (B) \(B_0=6.28\times10^{-4}\text{ T};\ B_{\text{axis}}=2.22\times10^{-4}\text{ T};\ 4.0\times10^{-5}\text{ T}\)
+Given: \(N=100,\ R=0.10\text{ m},\ I=1.0\text{ A};\ x=R;\ \text{wire }I=10\text{ A},\ r=0.050\text{ m}\)
+Formula/Principle: \(dB=\dfrac{\mu_0}{4\pi}\dfrac{I\,dl\sin\theta}{r^2};\ B_{\text{axis}}=\dfrac{\mu_0NIR^2}{2(R^2+x^2)^{3/2}};\ B_{\text{wire}}=\dfrac{\mu_0I}{2\pi r}\)
+Step 1: \(B_0=\dfrac{\mu_0NI}{2R}=\dfrac{4\pi\times10^{-7}\times100}{0.20}=6.28\times10^{-4}\text{ T}\)
+Step 2: \(x=R:\ B=\dfrac{\mu_0NIR^2}{2(2R^2)^{3/2}}=\dfrac{B_0}{2\sqrt2}=2.22\times10^{-4}\text{ T}\)
+Step 3: \(B_{\text{wire}}=\dfrac{4\pi\times10^{-7}\times10}{2\pi\times0.05}=4.0\times10^{-5}\text{ T}\)
+Worked derivation: \[\text{centre: every element is perpendicular to }\vec r\text{ at distance }R:\ B=N\frac{\mu_0I}{4\pi R^2}(2\pi R)=\frac{\mu_0NI}{2R}\]
+Check: \[(R^2+R^2)^{3/2}=2\sqrt2R^3\Rightarrow B_{\text{axis}}/B_0=1/(2\sqrt2)=0.354\ \checkmark\]
+Why: \(\text{on the axis only the axial components of the elemental fields add, and they weaken with distance}\)
+Why not the others: (A) \(\text{axial factor and wire field halved}\); (C) \(\text{factor 2 error at the centre}\); (D) \(\text{forgot }N\text{ and the }10^2\text{ scale}\).
+Key point: \(B_0=\mu_0NI/2R;\ B_{\text{axis}}(x=R)=B_0/2\sqrt2;\ B_{\text{wire}}=\mu_0I/2\pi r\)

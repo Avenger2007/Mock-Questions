@@ -1,0 +1,459 @@
+@@ Q41
+format: numerical
+sub_topic: Testing linear, square and modulus functions for one-one and onto behaviour on different domains and codomains using their graphs, and counting one-one functions between finite sets
+Q: Which classification is correct for \(f:\mathbb R\to\mathbb R,\ f(x)=2x+3\); \(g:\mathbb R\to\mathbb R,\ g(x)=x^2\); \(h:\mathbb N\to\mathbb N,\ h(x)=x^2\); and how many one-one functions are there from a 3-element set to a 4-element set?
+A) \(f\text{ bijective};\ g\text{ one-one};\ h\text{ onto};\ 64\)
+B) \(f\text{ bijective (every horizontal line meets its graph exactly once)};\ g\text{ neither one-one nor onto};\ h\text{ one-one but not onto};\ ^4P_3=24\)
+C) \(f\text{ one-one only};\ g\text{ onto};\ h\text{ bijective};\ 12\)
+D) \(f\text{ bijective};\ g\text{ neither};\ h\text{ neither};\ 81\)
+KEY: B
+SOL:
+Answer: (B) \(f\text{ bijective};\ g\text{ neither};\ h\text{ one-one, not onto};\ 24\)
+Concept: \(\text{one-one: distinct inputs give distinct outputs (horizontal line meets graph at most once); onto: every element of the codomain is an image}\)
+Given: \(f(x)=2x+3,\ g(x)=x^2,\ h(x)=x^2\ \text{on }\mathbb N\)
+Formula/Principle: \(\text{one-one: }f(a)=f(b)\Rightarrow a=b;\ \text{onto: range}=\text{codomain};\ \#\text{one-one}=\,^nP_m\)
+Step 1: \(2a+3=2b+3\Rightarrow a=b;\ y=2x+3\Rightarrow x=\tfrac{y-3}{2}\in\mathbb R\Rightarrow f\text{ bijective}\)
+Step 2: \(g(-1)=g(1)\Rightarrow\text{not one-one};\ g(x)\ne-1\Rightarrow\text{not onto}\)
+Step 3: \(h\text{ one-one on }\mathbb N;\ 2\text{ is not a square}\Rightarrow\text{not onto};\ 4\times3\times2=24\)
+Worked derivation: \[\text{one-one maps }\{a,b,c\}\to\{1,2,3,4\}:\ 4\cdot3\cdot2=\,^4P_3=24\]
+Check: \[\text{total functions}=4^3=64>24\ \checkmark\]
+Why: \(\text{restricting the domain to }\mathbb N\text{ removes the negative inputs that spoil one-one-ness, but not all naturals are squares}\)
+Why not the others: (A) \(g\text{ is not one-one; }h\text{ not onto; 64 counts all functions}\); (C) \(f\text{ is also onto}\); (D) \(h\text{ is one-one}\).
+Key point: \(\text{horizontal line test};\ \#\text{one-one}=\,^nP_m\)
+
+@@ Q42
+format: numerical
+sub_topic: Using an additive functional equation to find function values, finding the size of a domain from the number of functions, and counting bijections of a finite set
+Q: If \(f(x+y)=f(x)+f(y)\) for all real \(x,y\) and \(f(1)=3\), find \(f(5)\) and \(f(0)\). If there are 64 functions from a set \(A\) to a set \(B\) with \(n(B)=4\), find \(n(A)\). How many bijections does a 3-element set have onto itself?
+A) \(f(5)=8,\ f(0)=3;\ n(A)=16;\ 9\)
+B) \(f(5)=243,\ f(0)=1;\ n(A)=3;\ 27\)
+C) \(f(5)=15,\ f(0)=3;\ n(A)=4;\ 3\)
+D) \(f(5)=15,\ f(0)=0;\ n(A)=3;\ 6\)
+KEY: D
+SOL:
+Answer: (D) \(f(5)=15,\ f(0)=0;\ n(A)=3;\ 6\)
+Concept: \(\text{the number of functions from an }m\text{-element set to an }n\text{-element set is }n^m;\ \text{the number of bijections of an }n\text{-element set is }n!\)
+Given: \(f(x+y)=f(x)+f(y),\ f(1)=3;\ 64\text{ functions},\ n(B)=4\)
+Formula/Principle: \(f(nx)=nf(x)\ (n\in\mathbb N);\ n(B)^{n(A)}\)
+Step 1: \(x=y=0:\ f(0)=2f(0)\Rightarrow f(0)=0\)
+Step 2: \(f(5)=f(1)+f(1)+f(1)+f(1)+f(1)=15\)
+Step 3: \(4^{n(A)}=64\Rightarrow n(A)=3;\ 3!=6\)
+Worked derivation: \[f(2)=f(1+1)=2f(1),\ \dots,\ f(n)=nf(1)\Rightarrow f(5)=5\times3\]
+Check: \[4^3=64\ \checkmark;\quad f(0+0)=f(0)+f(0)=0\ \checkmark\]
+Why: \(\text{additivity forces }f\text{ to be linear on integers and to vanish at }0\)
+Why not the others: (A) \(\text{additivity gives }5f(1);\ 4^3=64\); (B) \(\text{used a multiplicative rule}\); (C) \(f(0)=0;\ n(A)=3;\ 3!=6\).
+Key point: \(f(x+y)=f(x)+f(y)\Rightarrow f(0)=0,\ f(n)=nf(1);\ n^m\text{ functions}\)
+
+@@ Q43
+format: numerical
+sub_topic: Writing general solutions of sine, cosine and tangent equations, solving a quadratic in sine, and locating solutions as intersections of a horizontal line with the graph
+Q: Find the general solution of \(2\cos^2x+3\sin x=0\). How many solutions does \(\sin x=\tfrac{\sqrt3}{2}\) have in \([0,2\pi]\), and what is the general solution of \(\tan x=\sqrt3\)?
+A) \(x=n\pi+(-1)^{n}\tfrac{7\pi}{6}\ (\sin x=-\tfrac12);\ 2\ (x=\tfrac\pi3,\tfrac{2\pi}3,\ \text{where }y=\tfrac{\sqrt3}2\text{ meets the sine curve});\ x=n\pi+\tfrac\pi3\)
+B) \(x=n\pi+(-1)^n\tfrac\pi6;\ 1;\ x=2n\pi+\tfrac\pi3\)
+C) \(x=2n\pi\pm\tfrac{2\pi}{3};\ 4;\ x=n\pi-\tfrac\pi3\)
+D) \(\text{no solution};\ 2;\ x=n\pi+\tfrac\pi6\)
+KEY: A
+SOL:
+Answer: (A) \(x=n\pi+(-1)^n\tfrac{7\pi}{6};\ 2\text{ solutions};\ x=n\pi+\tfrac\pi3\)
+Concept: \(\sin x=\sin y\Rightarrow x=n\pi+(-1)^ny;\ \cos x=\cos y\Rightarrow x=2n\pi\pm y;\ \tan x=\tan y\Rightarrow x=n\pi+y\)
+Given: \(2\cos^2x+3\sin x=0\)
+Formula/Principle: \(\cos^2x=1-\sin^2x\)
+Step 1: \(2-2\sin^2x+3\sin x=0\Rightarrow2\sin^2x-3\sin x-2=0\Rightarrow(2\sin x+1)(\sin x-2)=0\)
+Step 2: \(\sin x=2\text{ impossible};\ \sin x=-\tfrac12=\sin\tfrac{7\pi}{6}\Rightarrow x=n\pi+(-1)^n\tfrac{7\pi}6\)
+Step 3: \(\sin x=\tfrac{\sqrt3}2:\ x=\tfrac\pi3,\tfrac{2\pi}3\ \text{in }[0,2\pi];\ \tan x=\tan\tfrac\pi3\Rightarrow x=n\pi+\tfrac\pi3\)
+Worked derivation: \[2\sin^2x-3\sin x-2=(2\sin x+1)(\sin x-2)\]
+Check: \[x=\tfrac{7\pi}6:\ 2\cdot\tfrac34+3\left(-\tfrac12\right)=\tfrac32-\tfrac32=0\ \checkmark\]
+Why: \(\text{converting to a quadratic in }\sin x\text{ and rejecting }|\sin x|>1\text{ leaves one family}\)
+Why not the others: (B) \(\sin x=-\tfrac12,\ \text{not }+\tfrac12;\ \text{tangent period is }\pi\); (C) \(\text{wrong root and count}\); (D) \(\text{a solution exists}\).
+Key point: \(\text{reduce to one trig function; reject impossible roots}\)
+
+@@ Q44
+format: numerical
+sub_topic: Counting integer values of a coefficient for which a quadratic has integer roots, and finding all rational roots of a cubic using the rational root test and factor theorem
+Q: For how many integer values of \(p\) does \(x^2+px+12=0\) have integer roots? Find all roots of \(2x^3-3x^2-3x+2=0\).
+A) \(3;\ 1,\ 2,\ -\tfrac12\)
+B) \(4;\ -1,\ -2,\ \tfrac12\)
+C) \(6\ (p=\pm7,\pm8,\pm13);\ 2,\ -1,\ \tfrac12\)
+D) \(12;\ 2,\ 1,\ \tfrac12\)
+KEY: C
+SOL:
+Answer: (C) \(6\text{ values};\ \text{roots }2,-1,\tfrac12\)
+Concept: \(\text{integer roots }\alpha,\beta\text{ satisfy }\alpha\beta=12,\ \alpha+\beta=-p;\ \text{a rational root }\tfrac pq\text{ of an integer polynomial has }p\mid a_0\text{ and }q\mid a_n\)
+Given: \(\alpha\beta=12;\ 2x^3-3x^2-3x+2\)
+Formula/Principle: \(p=-(\alpha+\beta);\ \text{candidates }\pm1,\pm2,\pm\tfrac12\)
+Step 1: \(\{\alpha,\beta\}=\{1,12\},\{2,6\},\{3,4\}\text{ and negatives}\Rightarrow p=\mp13,\mp8,\mp7\Rightarrow6\)
+Step 2: \(f(2)=16-12-6+2=0;\ f(-1)=-2-3+3+2=0\)
+Step 3: \(\text{product of roots}=-\tfrac22=-1\Rightarrow2\cdot(-1)\cdot r=-1\Rightarrow r=\tfrac12\)
+Worked derivation: \[2x^3-3x^2-3x+2=(x-2)(x+1)(2x-1)\]
+Check: \[f\!\left(\tfrac12\right)=\tfrac14-\tfrac34-\tfrac32+2=0\ \checkmark\]
+Why: \(\text{Vieta's relations limit integer roots to factor pairs, and the rational root test limits candidates}\)
+Why not the others: (A) \(\text{negative pairs omitted; roots wrong}\); (B) \(\text{signs wrong}\); (D) \(\text{double counting; }f(1)=-2\ne0\).
+Key point: \(\text{factor pairs of }c;\ \text{rational roots }p/q\text{ with }p\mid a_0,\ q\mid a_n\)
+
+@@ Q45
+format: numerical
+sub_topic: Using the relation between permutations and combinations to solve for n, and evaluating special cases such as nC0, nPn and nCr = nC(n−r)
+Q: Find \(n\) if \(^nP_4=20\cdot\,^nP_2\). If \(^nC_9=\,^nC_8\), find \(^nC_{17}\). Which special-case statement is correct?
+A) \(n=7;\ ^{17}C_{17}=1;\ ^nP_r=r!\,^nC_r,\ ^nC_0=1,\ ^nP_n=n!\ \text{and }0!=1\)
+B) \(n=6;\ 17;\ ^nP_r=\,^nC_r/r!\)
+C) \(n=22;\ 0;\ 0!=0\)
+D) \(n=7;\ 17;\ ^nC_r=\,^nC_{r+1}\)
+KEY: A
+SOL:
+Answer: (A) \(n=7;\ ^{17}C_{17}=1;\ \text{special cases correct}\)
+Concept: \(\text{arranging }r\text{ chosen objects in }r!\text{ ways gives }^nP_r=r!\,^nC_r;\ \text{choosing }r\text{ is the same as rejecting }n-r\)
+Given: \(^nP_4=20\,^nP_2;\ ^nC_9=\,^nC_8\)
+Formula/Principle: \(^nP_r=\dfrac{n!}{(n-r)!};\ ^nC_a=\,^nC_b\Rightarrow a=b\text{ or }a+b=n\)
+Step 1: \(n(n-1)(n-2)(n-3)=20n(n-1)\Rightarrow(n-2)(n-3)=20\)
+Step 2: \(n^2-5n-14=0\Rightarrow(n-7)(n+2)=0\Rightarrow n=7\)
+Step 3: \(9+8=17\Rightarrow n=17;\ ^{17}C_{17}=1\)
+Worked derivation: \[^7P_4=840,\ \ ^7P_2=42,\ \ 840=20\times42\]
+Check: \[^nP_r=\frac{n!}{(n-r)!}=r!\cdot\frac{n!}{r!(n-r)!}\ \checkmark\]
+Why: \(\text{cancelling the common factor }n(n-1)\text{ reduces the equation to a quadratic}\)
+Why not the others: (B) \((4)(3)=12\ne20;\ \text{relation inverted}\); (C) \(0!=1\); (D) \(^nC_r=\,^nC_{n-r}\).
+Key point: \(^nP_r=r!\,^nC_r;\ ^nC_r=\,^nC_{n-r}\)
+
+@@ Q46
+format: numerical
+sub_topic: Evaluating sums of the first n natural numbers, their squares and cubes, using them to sum a series with general term k(k+1), and summing squares over a shifted range
+Q: Find \(\sum_{k=1}^{10}k,\ \sum_{k=1}^{10}k^2,\ \sum_{k=1}^{10}k^3\), the sum \(1\cdot2+2\cdot3+\dots+10\cdot11\), and \(\sum_{k=11}^{20}k^2\).
+A) \(55;\ 385;\ 3025;\ 330;\ 2870\)
+B) \(55;\ 285;\ 3025;\ 440;\ 2485\)
+C) \(50;\ 385;\ 2025;\ 440;\ 2485\)
+D) \(55;\ 385;\ 3025=55^2;\ 440;\ 2485\)
+KEY: D
+SOL:
+Answer: (D) \(55;\ 385;\ 3025;\ 440;\ 2485\)
+Concept: \(\sum k=\tfrac{n(n+1)}2,\ \sum k^2=\tfrac{n(n+1)(2n+1)}6,\ \sum k^3=\left[\tfrac{n(n+1)}2\right]^2;\ \text{a series with a polynomial general term splits into these sums}\)
+Given: \(n=10;\ k\text{ from }11\text{ to }20\)
+Formula/Principle: \(\sum k(k+1)=\sum k^2+\sum k=\dfrac{n(n+1)(n+2)}{3}\)
+Step 1: \(\tfrac{10\cdot11}2=55;\ \tfrac{10\cdot11\cdot21}6=385;\ 55^2=3025\)
+Step 2: \(385+55=440=\tfrac{10\cdot11\cdot12}{3}\)
+Step 3: \(\sum_1^{20}k^2=\tfrac{20\cdot21\cdot41}6=2870\Rightarrow2870-385=2485\)
+Worked derivation: \[\sum_{k=1}^n k(k+1)=\frac{n(n+1)(2n+1)}6+\frac{n(n+1)}2=\frac{n(n+1)(2n+4)}{6}=\frac{n(n+1)(n+2)}{3}\]
+Check: \[\sum k^3=\left(\sum k\right)^2:\ 3025=55^2\ \checkmark\]
+Why: \(\text{a shifted range is a difference of two partial sums}\)
+Why not the others: (A) \(\text{series sum and shifted sum wrong}\); (B) \(\sum k^2=385\); (C) \(\sum k=55,\ \sum k^3=3025\).
+Key point: \(\sum k^3=(\sum k)^2;\ \sum_{a}^{b}=S_b-S_{a-1}\)
+
+@@ Q47
+format: numerical
+sub_topic: Finding the perpendicular distance of a point from a line and between parallel lines, converting a line to normal form, and locating points on an axis at a given distance from a line
+Q: Find the distance of \((3,-5)\) from \(3x-4y-26=0\); the distance between \(3x-4y+7=0\) and \(6x-8y+4=0\); the normal form of \(\sqrt3x+y-8=0\); and the points on the \(x\)-axis at distance 4 from \(4x+3y-12=0\).
+A) \(3;\ 3;\ p=8,\ \omega=60^\circ;\ (4,0)\)
+B) \(\tfrac35;\ 1;\ x\cos30^\circ+y\sin30^\circ=4\ (p=4);\ (8,0)\text{ and }(-2,0)\)
+C) \(\tfrac35;\ \tfrac35;\ p=4,\ \omega=60^\circ;\ (8,0)\text{ only}\)
+D) \(\tfrac{29}{5};\ 1;\ p=8;\ (2,0),(-8,0)\)
+KEY: B
+SOL:
+Answer: (B) \(\tfrac35;\ 1;\ x\cos30^\circ+y\sin30^\circ=4;\ (8,0),(-2,0)\)
+Concept: \(\text{distance of }(x_1,y_1)\text{ from }Ax+By+C=0\text{ is }\dfrac{|Ax_1+By_1+C|}{\sqrt{A^2+B^2}};\ \text{normal form }x\cos\omega+y\sin\omega=p,\ p>0\)
+Given: \(\text{lines and points as stated}\)
+Formula/Principle: \(d=\dfrac{|Ax_1+By_1+C|}{\sqrt{A^2+B^2}};\ d_{\parallel}=\dfrac{|C_1-C_2|}{\sqrt{A^2+B^2}}\)
+Step 1: \(\dfrac{|9+20-26|}{5}=\dfrac35;\ \text{second line}\equiv3x-4y+2=0\Rightarrow\dfrac{|7-2|}5=1\)
+Step 2: \(\text{divide by }\sqrt{3+1}=2:\ \tfrac{\sqrt3}2x+\tfrac12y=4\Rightarrow\omega=30^\circ,\ p=4\)
+Step 3: \(\dfrac{|4a-12|}{5}=4\Rightarrow4a-12=\pm20\Rightarrow a=8\text{ or }-2\)
+Worked derivation: \[\sqrt3x+y=8\ \Rightarrow\ \frac{\sqrt3}{2}x+\frac12y=4\ \Rightarrow\ x\cos30^\circ+y\sin30^\circ=4\]
+Check: \[(8,0):\ \frac{|32-12|}{5}=4;\ (-2,0):\ \frac{|-8-12|}{5}=4\ \checkmark\]
+Why: \(\text{parallel lines must have identical }A,B\text{ before using }|C_1-C_2|\)
+Why not the others: (A) \(\text{forgot to divide by }\sqrt{A^2+B^2}\); (C) \(\text{second line not normalised; }\omega=30^\circ;\ \text{misses }(-2,0)\); (D) \(\text{sign errors}\).
+Key point: \(d=\dfrac{|Ax_1+By_1+C|}{\sqrt{A^2+B^2}}\)
+
+@@ Q48
+format: numerical
+sub_topic: Reading semi-axes, eccentricity, foci and latus rectum of an ellipse, the limiting behaviour as eccentricity tends to zero, and finding an ellipse from its foci and major axis
+Q: For \(\dfrac{x^2}{25}+\dfrac{y^2}{9}=1\), find the eccentricity, foci and length of latus rectum. What happens to the shape as \(e\to0\)? Find the ellipse with foci \((\pm3,0)\) and major axis 10.
+A) \(e=\tfrac35;\ (\pm3,0);\ \tfrac{50}{3};\ \text{becomes a line};\ \tfrac{x^2}{25}+\tfrac{y^2}{9}=1\)
+B) \(e=\tfrac54;\ (\pm5,0);\ \tfrac{18}{5};\ \text{becomes a parabola};\ \tfrac{x^2}{100}+\tfrac{y^2}{91}=1\)
+C) \(e=\tfrac45;\ (\pm4,0);\ \tfrac{18}{5};\ \text{approaches a circle};\ \tfrac{x^2}{25}+\tfrac{y^2}{16}=1\)
+D) \(e=\tfrac45;\ (0,\pm4);\ 6;\ \text{approaches a circle};\ \tfrac{x^2}{16}+\tfrac{y^2}{25}=1\)
+KEY: C
+SOL:
+Answer: (C) \(e=\tfrac45;\ (\pm4,0);\ \text{LR}=\tfrac{18}5;\ \text{circle as }e\to0;\ \tfrac{x^2}{25}+\tfrac{y^2}{16}=1\)
+Concept: \(\text{an ellipse is the locus of points whose distances from two foci add to }2a;\ c^2=a^2-b^2,\ e=\tfrac ca<1\)
+Given: \(a=5,\ b=3;\ c=3,\ 2a=10\)
+Formula/Principle: \(c=\sqrt{a^2-b^2},\ e=\tfrac ca,\ \text{LR}=\tfrac{2b^2}a\)
+Step 1: \(c=\sqrt{25-9}=4\Rightarrow e=\tfrac45,\ \text{foci }(\pm4,0)\)
+Step 2: \(\text{LR}=\tfrac{2\times9}{5}=\tfrac{18}5;\ e\to0\Rightarrow c\to0,\ b\to a\Rightarrow\text{circle}\)
+Step 3: \(a=5,\ c=3\Rightarrow b^2=25-9=16\Rightarrow\tfrac{x^2}{25}+\tfrac{y^2}{16}=1\)
+Worked derivation: \[b^2=a^2(1-e^2)\Rightarrow e\to0\Rightarrow b\to a\]
+Check: \[\text{point }(0,4):\ \text{distances to }(\pm3,0)\text{ are }5+5=10=2a\ \checkmark\]
+Why: \(\text{eccentricity measures how far the foci are from the centre relative to }a\)
+Why not the others: (A) \(c=4,\ \text{not }3\); (B) \(e<1\text{ for an ellipse}\); (D) \(\text{major axis is along }x\).
+Key point: \(c^2=a^2-b^2,\ e=c/a,\ \text{LR}=2b^2/a\)
+
+@@ Q49
+format: numerical
+sub_topic: Finding the equation of a hyperbola from its foci and transverse axis or from its vertices and eccentricity, with its latus rectum and eccentricity
+Q: Find the hyperbola with foci \((\pm5,0)\) and transverse axis of length 8, its eccentricity and latus rectum. Find also the hyperbola with vertices \((0,\pm3)\) and eccentricity \(\tfrac53\).
+A) \(\tfrac{x^2}{16}-\tfrac{y^2}{9}=1;\ e=\tfrac54;\ \text{LR}=\tfrac92;\ \tfrac{y^2}{9}-\tfrac{x^2}{16}=1\)
+B) \(\tfrac{x^2}{16}+\tfrac{y^2}{9}=1;\ e=\tfrac45;\ 9;\ \tfrac{x^2}{9}-\tfrac{y^2}{16}=1\)
+C) \(\tfrac{x^2}{25}-\tfrac{y^2}{9}=1;\ e=\tfrac53;\ \tfrac{18}5;\ \tfrac{y^2}{25}-\tfrac{x^2}{9}=1\)
+D) \(\tfrac{x^2}{9}-\tfrac{y^2}{16}=1;\ e=\tfrac53;\ \tfrac{32}3;\ \tfrac{y^2}{16}-\tfrac{x^2}{9}=1\)
+KEY: A
+SOL:
+Answer: (A) \(\tfrac{x^2}{16}-\tfrac{y^2}{9}=1,\ e=\tfrac54,\ \text{LR}=\tfrac92;\ \tfrac{y^2}9-\tfrac{x^2}{16}=1\)
+Concept: \(\text{a hyperbola is the locus of points whose distances from two foci differ by }2a;\ c^2=a^2+b^2,\ e=\tfrac ca>1\)
+Given: \(c=5,\ 2a=8;\ a=3\ (\text{vertical}),\ e=\tfrac53\)
+Formula/Principle: \(b^2=c^2-a^2;\ \text{LR}=\tfrac{2b^2}{a}\)
+Step 1: \(a=4,\ b^2=25-16=9\Rightarrow\tfrac{x^2}{16}-\tfrac{y^2}9=1\)
+Step 2: \(e=\tfrac54;\ \text{LR}=\tfrac{2\times9}{4}=\tfrac92\)
+Step 3: \(c=ae=5\Rightarrow b^2=25-9=16\Rightarrow\tfrac{y^2}{9}-\tfrac{x^2}{16}=1\)
+Worked derivation: \[b^2=a^2(e^2-1)=9\left(\frac{25}{9}-1\right)=16\]
+Check: \[\text{vertex }(4,0):\ |9-1|=8=2a\ \text{(distances to foci }(\pm5,0))\ \checkmark\]
+Why: \(\text{for a hyperbola }c>a,\ \text{so }b^2=c^2-a^2\)
+Why not the others: (B) \(\text{that is an ellipse}\); (C) \(a=4,\ \text{not }5\); (D) \(a\text{ and }b\text{ swapped}\).
+Key point: \(c^2=a^2+b^2;\ e>1;\ \text{LR}=2b^2/a\)
+
+@@ Q50
+format: numerical
+sub_topic: Differentiating with product, quotient and chain rules and using the derivative to find where x e^(−x) increases, decreases and attains its maximum
+Q: Find \(\dfrac{d}{dx}\sin(x^2)\) and \(\dfrac{d}{dx}\dfrac{x^2}{x+1}\). For \(f(x)=xe^{-x}\), find the interval where \(f\) increases and its maximum value.
+A) \(\cos(x^2);\ \dfrac{2x}{1};\ \text{increasing everywhere}\)
+B) \(2x\cos x;\ \dfrac{x^2-2x}{(x+1)^2};\ (1,\infty);\ e\)
+C) \(-2x\cos(x^2);\ \dfrac{x^2+2x}{x+1};\ (-\infty,0);\ 1\)
+D) \(2x\cos(x^2);\ \dfrac{x^2+2x}{(x+1)^2};\ \text{increasing on }(-\infty,1),\ \text{maximum }f(1)=\tfrac1e\)
+KEY: D
+SOL:
+Answer: (D) \(2x\cos(x^2);\ \dfrac{x^2+2x}{(x+1)^2};\ \text{increasing on }(-\infty,1),\ \max\tfrac1e\)
+Concept: \((uv)'=u'v+uv';\ \left(\tfrac uv\right)'=\tfrac{u'v-uv'}{v^2};\ \tfrac{d}{dx}f(g(x))=f'(g(x))g'(x)\)
+Given: \(\sin(x^2),\ \tfrac{x^2}{x+1},\ xe^{-x}\)
+Formula/Principle: \(\text{chain, quotient and product rules}\)
+Step 1: \(\cos(x^2)\cdot2x\)
+Step 2: \(\dfrac{2x(x+1)-x^2}{(x+1)^2}=\dfrac{x^2+2x}{(x+1)^2}\)
+Step 3: \(f'(x)=e^{-x}-xe^{-x}=e^{-x}(1-x)>0\iff x<1;\ f(1)=e^{-1}\)
+Worked derivation: \[f'(x)=e^{-x}(1-x):\ +\ \text{for }x<1,\ -\ \text{for }x>1\Rightarrow\text{maximum at }x=1\]
+Check: \[f(0)=0,\ f(1)=0.368,\ f(2)=0.271\ \checkmark\]
+Why: \(e^{-x}>0\text{ always, so the sign of }f'\text{ is the sign of }1-x\)
+Why not the others: (A) \(\text{inner derivatives missing}\); (B) \(\text{chain rule misapplied; sign wrong}\); (C) \(\text{signs and denominator wrong}\).
+Key point: \(\text{chain: multiply by the inner derivative};\ \text{sign of }f'\text{ gives monotonicity}\)
+
+@@ Q51
+format: numerical
+sub_topic: Applying Bayes theorem to find the probability that a defective item came from a particular machine, together with the total probability of a defective item
+Q: Machines A and B produce 60% and 40% of a factory's bolts; 2% of A's and 3% of B's bolts are defective. A bolt is picked at random. Find the probability that it is defective, and the probability that a defective bolt came from A. Are the two machines equally likely sources of a defective bolt?
+A) \(0.05;\ 0.4;\ \text{no}\)
+B) \(0.024;\ 0.5;\ \text{yes — A's larger output exactly balances its lower defect rate}\)
+C) \(0.024;\ 0.6;\ \text{no}\)
+D) \(0.012;\ 0.5;\ \text{yes}\)
+KEY: B
+SOL:
+Answer: (B) \(P(D)=0.024;\ P(A\mid D)=0.5;\ \text{equally likely}\)
+Concept: \(P(E_i\mid A)=\dfrac{P(E_i)P(A\mid E_i)}{\sum_jP(E_j)P(A\mid E_j)}\ \text{revises prior probabilities after an observation}\)
+Given: \(P(A)=0.6,\ P(B)=0.4,\ P(D\mid A)=0.02,\ P(D\mid B)=0.03\)
+Formula/Principle: \(\text{Bayes theorem with total probability in the denominator}\)
+Step 1: \(P(D)=0.6\times0.02+0.4\times0.03=0.012+0.012=0.024\)
+Step 2: \(P(A\mid D)=\dfrac{0.012}{0.024}=0.5\)
+Step 3: \(P(B\mid D)=0.5\Rightarrow\text{equal}\)
+Worked derivation: \[P(A\mid D)=\frac{0.6\times0.02}{0.6\times0.02+0.4\times0.03}=\frac{0.012}{0.024}=\frac12\]
+Check: \[P(A\mid D)+P(B\mid D)=1\ \checkmark\]
+Why: \(\text{the posterior weight of each machine is its share of all defective bolts}\)
+Why not the others: (A) \(\text{rates added without weights}\); (C) \(\text{prior used as posterior}\); (D) \(P(D)\text{ omits B's share}\).
+Key point: \(P(E_i|A)\propto P(E_i)P(A|E_i)\)
+
+@@ Q52
+format: numerical
+sub_topic: Solving an equation in inverse tangents and rejecting extraneous roots by principal-value ranges, and evaluating inverse cosine and sine of angles outside the principal range
+Q: Solve \(\tan^{-1}(x+1)+\tan^{-1}(x-1)=\tan^{-1}\tfrac{8}{31}\). Evaluate \(\cos^{-1}\!\left(\cos\tfrac{7\pi}{6}\right)\) and \(\sin^{-1}\!\left(\sin\tfrac{3\pi}{5}\right)\).
+A) \(x=\tfrac14\text{ only (}x=-8\text{ makes the left side negative)};\ \tfrac{5\pi}6;\ \tfrac{2\pi}5\)
+B) \(x=\tfrac14\text{ or }-8;\ \tfrac{7\pi}6;\ \tfrac{3\pi}5\)
+C) \(x=-8;\ -\tfrac{5\pi}6;\ -\tfrac{2\pi}{5}\)
+D) \(x=4;\ \tfrac\pi6;\ \tfrac{3\pi}5\)
+KEY: A
+SOL:
+Answer: (A) \(x=\tfrac14;\ \tfrac{5\pi}6;\ \tfrac{2\pi}5\)
+Concept: \(\tan^{-1}a+\tan^{-1}b=\tan^{-1}\frac{a+b}{1-ab}\text{ only when }ab<1;\ \cos^{-1}\text{ has range }[0,\pi]\text{ and }\sin^{-1}\text{ has range }[-\tfrac\pi2,\tfrac\pi2]\)
+Given: \(\tan^{-1}(x+1)+\tan^{-1}(x-1)=\tan^{-1}\tfrac{8}{31}\)
+Formula/Principle: \(\dfrac{(x+1)+(x-1)}{1-(x^2-1)}=\dfrac{2x}{2-x^2}=\dfrac{8}{31}\)
+Step 1: \(62x=16-8x^2\Rightarrow4x^2+31x-8=0\Rightarrow(4x-1)(x+8)=0\)
+Step 2: \(x=-8:\ \tan^{-1}(-7)+\tan^{-1}(-9)<0\text{ but }\tan^{-1}\tfrac8{31}>0\Rightarrow\text{reject};\ x=\tfrac14\text{ valid}\)
+Step 3: \(\cos\tfrac{7\pi}6=\cos\tfrac{5\pi}6\Rightarrow\tfrac{5\pi}6;\ \sin\tfrac{3\pi}5=\sin\tfrac{2\pi}5\Rightarrow\tfrac{2\pi}5\)
+Worked derivation: \[x=\tfrac14:\ \tan^{-1}\tfrac54+\tan^{-1}\left(-\tfrac34\right)=\tan^{-1}\frac{\frac54-\frac34}{1+\frac{15}{16}}=\tan^{-1}\frac{1/2}{31/16}=\tan^{-1}\frac{8}{31}\]
+Check: \[ab=\tfrac54\cdot\left(-\tfrac34\right)=-\tfrac{15}{16}<1\ \text{so the formula applies};\ \tfrac{5\pi}{6}\in[0,\pi],\ \tfrac{2\pi}{5}\in\left[-\tfrac\pi2,\tfrac\pi2\right]\ \checkmark\]
+Why: \(\text{principal-value ranges decide which algebraic root and which angle are acceptable}\)
+Why not the others: (B) \(x=-8\text{ is extraneous; angles outside principal ranges}\); (C) \(\text{wrong root and signs}\); (D) \(\text{not a root; values wrong}\).
+Key point: \(\text{check roots against principal ranges}\)
+
+@@ Q53
+format: numerical
+sub_topic: Showing with 2×2 matrices that AB can be zero while neither factor is zero and that AB need not equal BA, and that (A+B)² differs from A² + 2AB + B²
+Q: Let \(A=\begin{bmatrix}0&1\\0&0\end{bmatrix},\ B=\begin{bmatrix}1&0\\0&0\end{bmatrix}\). Find \(AB\), \(BA\), \(A^2\), and compare \((A+B)^2\) with \(A^2+2AB+B^2\).
+A) \(AB=BA=\begin{bmatrix}0&1\\0&0\end{bmatrix};\ A^2=A;\ \text{equal}\)
+B) \(AB=O,\ BA=O;\ A^2=O;\ \text{equal}\)
+C) \(AB=\begin{bmatrix}0&1\\0&0\end{bmatrix},\ BA=O;\ A^2=I;\ \text{equal}\)
+D) \(AB=O,\ BA=\begin{bmatrix}0&1\\0&0\end{bmatrix}\ (\text{so }AB\ne BA\text{ and }AB=O\text{ with }A,B\ne O);\ A^2=O;\ (A+B)^2=\begin{bmatrix}1&1\\0&0\end{bmatrix}\ne A^2+2AB+B^2=\begin{bmatrix}1&0\\0&0\end{bmatrix}\)
+KEY: D
+SOL:
+Answer: (D) \(AB=O\ne BA;\ A^2=O;\ (A+B)^2\ne A^2+2AB+B^2\)
+Concept: \(\text{matrix multiplication is not commutative, and the product of two non-zero matrices can be the zero matrix, so algebraic identities like }(a+b)^2=a^2+2ab+b^2\text{ fail}\)
+Given: \(A,B\text{ as stated}\)
+Formula/Principle: \((A+B)^2=A^2+AB+BA+B^2\)
+Step 1: \(AB=\begin{bmatrix}0\cdot1+1\cdot0&0\\0&0\end{bmatrix}=O;\ BA=\begin{bmatrix}0&1\\0&0\end{bmatrix}\)
+Step 2: \(A^2=\begin{bmatrix}0&0\\0&0\end{bmatrix}=O;\ B^2=B\)
+Step 3: \(A+B=\begin{bmatrix}1&1\\0&0\end{bmatrix},\ (A+B)^2=\begin{bmatrix}1&1\\0&0\end{bmatrix};\ A^2+2AB+B^2=B\)
+Worked derivation: \[(A+B)^2-(A^2+2AB+B^2)=BA-AB=\begin{bmatrix}0&1\\0&0\end{bmatrix}\ne O\]
+Check: \[\begin{bmatrix}1&1\\0&0\end{bmatrix}^2=\begin{bmatrix}1&1\\0&0\end{bmatrix}\ \checkmark\]
+Why: \(\text{the cross terms are }AB+BA,\ \text{which equals }2AB\text{ only if }A\text{ and }B\text{ commute}\)
+Why not the others: (A) \(AB=O;\ A^2=O\); (B) \(BA\ne O\); (C) \(\text{products swapped; }A^2=O\).
+Key point: \(AB\ne BA\text{ in general};\ AB=O\not\Rightarrow A=O\text{ or }B=O\)
+
+@@ Q54
+format: numerical
+sub_topic: Finding first and second derivatives of a parametrically defined ellipse, locating its horizontal tangent, and finding where the curve x = t + 1/t, y = t − 1/t has vertical tangents
+Q: For the ellipse \(x=3\cos t,\ y=2\sin t\), find \(\dfrac{dy}{dx}\) and \(\dfrac{d^2y}{dx^2}\) at \(t=\tfrac\pi4\) and the point with a horizontal tangent for \(0<t<\pi\). For \(x=t+\tfrac1t,\ y=t-\tfrac1t\), find \(\dfrac{dy}{dx}\) and where the tangent is vertical.
+A) \(-\tfrac32;\ \tfrac{4\sqrt2}{9};\ (3,0);\ \dfrac{t^2-1}{t^2+1};\ t=0\)
+B) \(-\tfrac23;\ -\tfrac{4\sqrt2}{9};\ (0,2);\ \dfrac{t^2+1}{t^2-1};\ t=\pm1\ (\text{points }(\pm2,0))\)
+C) \(\tfrac23;\ -\tfrac{2}{9};\ (0,-2);\ 1;\ \text{nowhere}\)
+D) \(-\tfrac23\cot t;\ \tfrac{2}{3}\csc^2t;\ (3,0);\ \dfrac{t^2+1}{t^2-1};\ t=0\)
+KEY: B
+SOL:
+Answer: (B) \(-\tfrac23;\ -\tfrac{4\sqrt2}9;\ (0,2);\ \dfrac{t^2+1}{t^2-1};\ \text{vertical at }t=\pm1\)
+Concept: \(\dfrac{dy}{dx}=\dfrac{dy/dt}{dx/dt};\ \dfrac{d^2y}{dx^2}=\dfrac{\frac{d}{dt}\left(\frac{dy}{dx}\right)}{dx/dt};\ \text{horizontal tangent when }dy/dt=0,\ \text{vertical when }dx/dt=0\)
+Given: \(x=3\cos t,\ y=2\sin t;\ x=t+\tfrac1t,\ y=t-\tfrac1t\)
+Formula/Principle: \(\text{parametric differentiation}\)
+Step 1: \(\dfrac{dy}{dx}=\dfrac{2\cos t}{-3\sin t}=-\tfrac23\cot t\Rightarrow-\tfrac23\text{ at }\tfrac\pi4\)
+Step 2: \(\dfrac{d^2y}{dx^2}=\dfrac{\frac23\csc^2t}{-3\sin t}=-\tfrac29\csc^3t=-\tfrac29(2\sqrt2)=-\tfrac{4\sqrt2}9;\ \cos t=0\Rightarrow t=\tfrac\pi2,\ (0,2)\)
+Step 3: \(\dfrac{dy}{dx}=\dfrac{1+1/t^2}{1-1/t^2}=\dfrac{t^2+1}{t^2-1};\ dx/dt=0\Rightarrow t=\pm1\Rightarrow(\pm2,0)\)
+Worked derivation: \[\frac{d}{dt}\left(-\tfrac23\cot t\right)=\tfrac23\csc^2t,\quad\frac{dx}{dt}=-3\sin t\]
+Check: \[x^2-y^2=\left(t+\tfrac1t\right)^2-\left(t-\tfrac1t\right)^2=4\Rightarrow\text{hyperbola with vertices }(\pm2,0)\ \checkmark\]
+Why: \(\text{the second derivative must be divided by }dx/dt\text{ again, not just differentiated in }t\)
+Why not the others: (A) \(\text{ratio inverted}\); (C) \(\text{sign and second derivative wrong}\); (D) \(\text{second derivative not divided by }dx/dt\).
+Key point: \(y''=\dfrac{d(y')/dt}{dx/dt}\)
+
+@@ Q55
+format: numerical
+sub_topic: Maximising the volume of an open box made by cutting equal squares from the corners of a square sheet, and maximising the area of a rectangle of fixed perimeter
+Q: Equal squares of side \(x\) are cut from the corners of an 18 cm square sheet, and the sides are folded up to make an open box. Find \(x\) for maximum volume and the maximum volume. What is the largest area of a rectangle with perimeter 40 cm?
+A) \(x=3\text{ cm};\ 432\text{ cm}^3;\ 100\text{ cm}^2\ (\text{a square of side }10\text{ cm})\)
+B) \(x=9\text{ cm};\ 0;\ 400\text{ cm}^2\)
+C) \(x=6\text{ cm};\ 216\text{ cm}^3;\ 96\text{ cm}^2\)
+D) \(x=2\text{ cm};\ 392\text{ cm}^3;\ 100\text{ cm}^2\)
+KEY: A
+SOL:
+Answer: (A) \(x=3\text{ cm};\ V_{\max}=432\text{ cm}^3;\ 100\text{ cm}^2\)
+Concept: \(\text{express the quantity in one variable, set the derivative to zero and confirm a maximum with the second derivative}\)
+Given: \(\text{sheet }18\text{ cm};\ \text{perimeter }40\text{ cm}\)
+Formula/Principle: \(V=x(18-2x)^2,\ 0<x<9;\ A=l(20-l)\)
+Step 1: \(V'=(18-2x)^2-4x(18-2x)=(18-2x)(18-6x)\)
+Step 2: \(V'=0\Rightarrow x=3\ (x=9\text{ gives }V=0);\ V(3)=3\times12^2=432\)
+Step 3: \(A'=20-2l=0\Rightarrow l=10\Rightarrow A=100\text{ cm}^2\)
+Worked derivation: \[V''=24x-144\Rightarrow V''(3)=-72<0\Rightarrow\text{maximum}\]
+Check: \[V(2)=2\times14^2=392<432,\ \ V(4)=4\times10^2=400<432\ \checkmark\]
+Why: \(\text{cutting too little gives a shallow box and too much a narrow one; the optimum balances them}\)
+Why not the others: (B) \(x=9\text{ gives no base}\); (C) \(V(6)=216<432\); (D) \(V(2)=392\text{ is not the maximum}\).
+Key point: \(V'=0,\ V''<0\Rightarrow\text{maximum}\)
+
+@@ Q56
+format: numerical
+sub_topic: Integrating standard forms with quadratic denominators and square roots, completing the square, and finding an unknown limit from the value of a definite integral
+Q: Evaluate \(\displaystyle\int\frac{dx}{x^2+4}\), \(\displaystyle\int\frac{dx}{\sqrt{9-x^2}}\) and \(\displaystyle\int\frac{dx}{x^2+2x+5}\). Find \(a>0\) if \(\displaystyle\int_0^a\frac{dx}{x^2+9}=\frac{\pi}{12}\).
+A) \(\tan^{-1}\tfrac x2;\ \sin^{-1}x;\ \tan^{-1}(x+1);\ a=1\)
+B) \(\tfrac12\ln(x^2+4);\ \cos^{-1}\tfrac x3;\ \tfrac12\tan^{-1}(x+1);\ a=9\)
+C) \(\tfrac12\tan^{-1}\tfrac x2+C;\ \sin^{-1}\tfrac x3+C;\ \tfrac12\tan^{-1}\tfrac{x+1}2+C;\ a=3\)
+D) \(2\tan^{-1}\tfrac x2;\ \sin^{-1}\tfrac x3;\ \tfrac12\tan^{-1}\tfrac{x+1}{2};\ a=\sqrt3\)
+KEY: C
+SOL:
+Answer: (C) \(\tfrac12\tan^{-1}\tfrac x2;\ \sin^{-1}\tfrac x3;\ \tfrac12\tan^{-1}\tfrac{x+1}2;\ a=3\)
+Concept: \(\int\frac{dx}{x^2+a^2}=\frac1a\tan^{-1}\frac xa;\ \int\frac{dx}{\sqrt{a^2-x^2}}=\sin^{-1}\frac xa;\ \text{complete the square to reach a standard form}\)
+Given: \(a=2,\ 3;\ x^2+2x+5=(x+1)^2+4\)
+Formula/Principle: \(\text{standard integrals}\)
+Step 1: \(\tfrac12\tan^{-1}\tfrac x2;\ \sin^{-1}\tfrac x3\)
+Step 2: \(\int\frac{dx}{(x+1)^2+2^2}=\tfrac12\tan^{-1}\tfrac{x+1}2\)
+Step 3: \(\tfrac13\tan^{-1}\tfrac a3=\tfrac\pi{12}\Rightarrow\tan^{-1}\tfrac a3=\tfrac\pi4\Rightarrow a=3\)
+Worked derivation: \[\int_0^a\frac{dx}{x^2+9}=\left[\frac13\tan^{-1}\frac x3\right]_0^a=\frac13\tan^{-1}\frac a3\]
+Check: \[\frac{d}{dx}\left[\tfrac12\tan^{-1}\tfrac x2\right]=\frac12\cdot\frac{1/2}{1+x^2/4}=\frac{1}{x^2+4}\ \checkmark\]
+Why: \(\text{the factor }\tfrac1a\text{ comes from the chain rule on }\tan^{-1}(x/a)\)
+Why not the others: (A) \(\text{missing }\tfrac1a\text{ and scaling}\); (B) \(\text{log form is for }x\,dx;\ a\text{ wrong}\); (D) \(\text{factor should be }\tfrac12\).
+Key point: \(\int\frac{dx}{x^2+a^2}=\frac1a\tan^{-1}\frac xa\)
+
+@@ Q57
+format: numerical
+sub_topic: Differentiating integrals with variable limits using the Fundamental Theorem of Calculus, and evaluating a limit of an average of an integral as the interval shrinks
+Q: Find \(\dfrac{d}{dx}\displaystyle\int_0^x e^{-t^2}dt\), \(\dfrac{d}{dx}\displaystyle\int_x^{x^2}\frac{dt}{t}\ (x>0)\) and \(\displaystyle\lim_{x\to0}\frac1x\int_0^x\sec^2t\,dt\).
+A) \(e^{-x^2}-1;\ \ln x;\ \infty\)
+B) \(-2xe^{-x^2};\ \dfrac{1}{x^2}-\dfrac1x;\ 0\)
+C) \(e^{-x^2};\ \dfrac1x;\ 1\)
+D) \(e^{-t^2};\ \dfrac2x;\ 2\)
+KEY: C
+SOL:
+Answer: (C) \(e^{-x^2};\ \tfrac1x;\ 1\)
+Concept: \(\dfrac{d}{dx}\int_{a(x)}^{b(x)}f(t)\,dt=f(b(x))b'(x)-f(a(x))a'(x);\ \text{the average of a continuous }f\text{ over }[0,x]\text{ tends to }f(0)\)
+Given: \(f(t)=e^{-t^2},\ \tfrac1t,\ \sec^2t\)
+Formula/Principle: \(\text{Fundamental Theorem of Calculus (Leibniz form)}\)
+Step 1: \(\dfrac{d}{dx}\int_0^xe^{-t^2}dt=e^{-x^2}\)
+Step 2: \(\dfrac{1}{x^2}\cdot2x-\dfrac1x\cdot1=\dfrac2x-\dfrac1x=\dfrac1x\)
+Step 3: \(\dfrac1x\int_0^x\sec^2t\,dt=\dfrac{\tan x}{x}\to1\)
+Worked derivation: \[\int_x^{x^2}\frac{dt}{t}=\ln x^2-\ln x=\ln x\Rightarrow\frac{d}{dx}\ln x=\frac1x\]
+Check: \[\sec^2 0=1=\lim_{x\to0}\frac{\tan x}{x}\ \checkmark\]
+Why: \(\text{the derivative of an accumulation function is the integrand at the moving limit, times that limit's derivative}\)
+Why not the others: (A) \(\text{evaluated instead of differentiated}\); (B) \(\text{differentiated the integrand; chain factor missing}\); (D) \(\text{variable not replaced; lower limit ignored}\).
+Key point: \(\frac{d}{dx}\int_a^{g(x)}f=f(g(x))g'(x)\)
+
+@@ Q58
+format: numerical
+sub_topic: Solving linear first-order equations in the forms dy/dx + Py = Q and dx/dy + Px = Q with integrating factors and finding particular solutions from given conditions
+Q: Solve \(\dfrac{dy}{dx}+y=e^{-x}\) with \(y(0)=1\). Solve \(y\,dx-(x+2y^2)\,dy=0\) and find the particular solution with \(x=2\) when \(y=1\).
+A) \(y=e^{-x};\ x=y^2+Cy;\ x=2y\)
+B) \(y=(x+1)e^{x};\ x=2y^2+C;\ x=2y^2\)
+C) \(y=xe^{-x};\ y=2x^2+Cx;\ y=2x^2\)
+D) \(y=(x+1)e^{-x};\ x=2y^2+Cy\ (\text{using }\tfrac{dx}{dy}-\tfrac xy=2y,\ \text{IF}=\tfrac1y);\ x=2y^2\)
+KEY: D
+SOL:
+Answer: (D) \(y=(x+1)e^{-x};\ x=2y^2+Cy;\ x=2y^2\)
+Concept: \(\text{for }\frac{dy}{dx}+Py=Q,\ \text{IF}=e^{\int P\,dx}\text{ and }y\cdot\text{IF}=\int Q\cdot\text{IF}\,dx;\ \text{if the equation is linear in }x,\ \text{use }\frac{dx}{dy}+P_1x=Q_1\text{ with IF}=e^{\int P_1dy}\)
+Given: \(P=1,\ Q=e^{-x};\ \tfrac{dx}{dy}=\tfrac{x+2y^2}{y}\)
+Formula/Principle: \(y\cdot\text{IF}=\int Q\cdot\text{IF}\,dx\)
+Step 1: \(\text{IF}=e^x:\ ye^x=\int1\,dx=x+C;\ y(0)=1\Rightarrow C=1\Rightarrow y=(x+1)e^{-x}\)
+Step 2: \(\dfrac{dx}{dy}-\dfrac1yx=2y;\ \text{IF}=e^{-\ln y}=\tfrac1y:\ \tfrac xy=\int2\,dy=2y+C\)
+Step 3: \(x=2y^2+Cy;\ (2,1):\ 2=2+C\Rightarrow C=0\Rightarrow x=2y^2\)
+Worked derivation: \[\frac{d}{dy}\left(\frac xy\right)=\frac1y\frac{dx}{dy}-\frac{x}{y^2}=\frac1y\left(\frac{dx}{dy}-\frac xy\right)=2\]
+Check: \[y=(x+1)e^{-x}:\ y'+y=e^{-x}-(x+1)e^{-x}+(x+1)e^{-x}=e^{-x}\ \checkmark\]
+Why: \(\text{the second equation is linear in }x\text{ (not in }y),\ \text{so }y\text{ is taken as the independent variable}\)
+Why not the others: (A) \(\text{misses the }xe^{-x}\text{ term; coefficient wrong}\); (B) \(\text{sign of exponent wrong; }C\text{ multiplies }y\); (C) \(\text{initial condition fails; variables swapped}\).
+Key point: \(\text{IF}=e^{\int P};\ \text{use }dx/dy\text{ form when linear in }x\)
+
+@@ Q59
+format: numerical
+sub_topic: Computing a cross product to find areas of a parallelogram and triangle and a unit normal, and finding an unknown component that gives a required area
+Q: For \(\vec a=\hat i+\hat j-\hat k\) and \(\vec b=\hat i-\hat j+\hat k\), find \(\vec a\times\vec b\), the area of the parallelogram and of the triangle they determine, and a unit vector perpendicular to both. Find \(\lambda\) if \(\vec p=\hat i+\lambda\hat j\) and \(\vec q=\hat i-\hat j\) span a parallelogram of area 3.
+A) \((0,2,2);\ 2;\ 1;\ \tfrac{1}{2}(0,1,1);\ \lambda=3\)
+B) \((2,0,0);\ 2;\ 1;\ \hat i;\ \lambda=\pm3\)
+C) \((0,-2,-2);\ 2\sqrt2;\ \sqrt2;\ \pm\tfrac{1}{\sqrt2}(0,1,1);\ \lambda=2\text{ or }-4\)
+D) \((0,-2,-2);\ 8;\ 4;\ (0,-1,-1);\ \lambda=2\)
+KEY: C
+SOL:
+Answer: (C) \(\vec a\times\vec b=(0,-2,-2);\ 2\sqrt2;\ \sqrt2;\ \pm\tfrac1{\sqrt2}(0,1,1);\ \lambda=2,-4\)
+Concept: \(|\vec a\times\vec b|\text{ is the area of the parallelogram on }\vec a,\vec b;\ \text{half of it is the triangle};\ \vec a\times\vec b\text{ is perpendicular to both}\)
+Given: \(\vec a=(1,1,-1),\ \vec b=(1,-1,1);\ \vec p=(1,\lambda,0),\ \vec q=(1,-1,0)\)
+Formula/Principle: \(\vec a\times\vec b=\begin{vmatrix}\hat i&\hat j&\hat k\\a_1&a_2&a_3\\b_1&b_2&b_3\end{vmatrix}\)
+Step 1: \(\hat i(1-1)-\hat j(1+1)+\hat k(-1-1)=(0,-2,-2)\)
+Step 2: \(|\vec a\times\vec b|=\sqrt8=2\sqrt2;\ \text{triangle }\sqrt2;\ \text{unit normal }\pm\tfrac{1}{\sqrt2}(0,1,1)\)
+Step 3: \(\vec p\times\vec q=(0,0,-1-\lambda)\Rightarrow|1+\lambda|=3\Rightarrow\lambda=2\text{ or }-4\)
+Worked derivation: \[\vec p\times\vec q=\begin{vmatrix}\hat i&\hat j&\hat k\\1&\lambda&0\\1&-1&0\end{vmatrix}=\hat k(-1-\lambda)\]
+Check: \[(0,-2,-2)\cdot(1,1,-1)=0-2+2=0;\ \ (0,-2,-2)\cdot(1,-1,1)=0+2-2=0\ \checkmark\]
+Why: \(\text{the magnitude of the cross product is }|\vec a||\vec b|\sin\theta,\ \text{the base times height}\)
+Why not the others: (A) \(\text{sign and magnitude wrong; one value of }\lambda\text{ only}\); (B) \(\text{cross product wrong}\); (D) \(\text{used }|\cdot|^2;\ \text{not unit; misses }\lambda=-4\).
+Key point: \(\text{area}=|\vec a\times\vec b|;\ \text{triangle}=\tfrac12|\vec a\times\vec b|\)
+
+@@ Q60
+format: numerical
+sub_topic: Finding the shortest distance between two skew lines in vector form and the angle between them using their direction vectors
+Q: Find the shortest distance between \(\vec r=(\hat i+2\hat j+3\hat k)+\lambda(\hat i-3\hat j+2\hat k)\) and \(\vec r=(4\hat i+5\hat j+6\hat k)+\mu(2\hat i+3\hat j+\hat k)\), and the cosine of the angle between them.
+A) \(0\ (\text{they intersect});\ \tfrac{5}{14}\)
+B) \(\tfrac{9}{\sqrt{171}}=\tfrac{3}{\sqrt{19}};\ \tfrac{5}{14}\)
+C) \(3\sqrt3;\ \tfrac{1}{2}\)
+D) \(\tfrac{3}{\sqrt{19}};\ -\tfrac{9}{14}\)
+KEY: B
+SOL:
+Answer: (B) \(d=\tfrac{3}{\sqrt{19}};\ \cos\theta=\tfrac5{14}\)
+Concept: \(\text{for skew lines }\vec r=\vec a_1+\lambda\vec b_1,\ \vec r=\vec a_2+\mu\vec b_2,\ d=\dfrac{|(\vec b_1\times\vec b_2)\cdot(\vec a_2-\vec a_1)|}{|\vec b_1\times\vec b_2|}\)
+Given: \(\vec a_1=(1,2,3),\ \vec b_1=(1,-3,2),\ \vec a_2=(4,5,6),\ \vec b_2=(2,3,1)\)
+Formula/Principle: \(d=\dfrac{|(\vec b_1\times\vec b_2)\cdot(\vec a_2-\vec a_1)|}{|\vec b_1\times\vec b_2|};\ \cos\theta=\dfrac{|\vec b_1\cdot\vec b_2|}{|\vec b_1||\vec b_2|}\)
+Step 1: \(\vec b_1\times\vec b_2=(-3-6,\ -(1-4),\ 3+6)=(-9,3,9),\ |\cdot|=\sqrt{171}=3\sqrt{19}\)
+Step 2: \(\vec a_2-\vec a_1=(3,3,3);\ (-9,3,9)\cdot(3,3,3)=-27+9+27=9\Rightarrow d=\dfrac{9}{3\sqrt{19}}=\dfrac3{\sqrt{19}}\)
+Step 3: \(\vec b_1\cdot\vec b_2=2-9+2=-5;\ |\vec b_1|=|\vec b_2|=\sqrt{14}\Rightarrow\cos\theta=\tfrac5{14}\)
+Worked derivation: \[\vec b_1\times\vec b_2=\begin{vmatrix}\hat i&\hat j&\hat k\\1&-3&2\\2&3&1\end{vmatrix}=-9\hat i+3\hat j+9\hat k\]
+Check: \[(-9,3,9)\cdot(1,-3,2)=-9-9+18=0;\ \ (-9,3,9)\cdot(2,3,1)=-18+9+9=0\ \checkmark\]
+Why: \(\text{the common perpendicular is along }\vec b_1\times\vec b_2,\ \text{and projecting the joining vector onto it gives the gap}\)
+Why not the others: (A) \(d\ne0,\ \text{so they do not meet}\); (C) \(\text{used }|\vec a_2-\vec a_1|\); (D) \(\text{angle between lines uses }|\vec b_1\cdot\vec b_2|\text{ and }\vec b_1\cdot\vec b_2=-5\).
+Key point: \(d=\dfrac{|(\vec b_1\times\vec b_2)\cdot(\vec a_2-\vec a_1)|}{|\vec b_1\times\vec b_2|}\)
