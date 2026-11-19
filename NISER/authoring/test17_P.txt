@@ -1,0 +1,439 @@
+@@ Q61
+format: conceptual
+sub_topic: Relating the potential energy curve of a spring to the restoring force through F = −dU/dx, and the shapes of U(x) and F(x) graphs
+Q: A block on a spring of constant \(k\) is displaced \(x\) from equilibrium. How are the graphs of potential energy \(U\) and spring force \(F\) against \(x\) related, and what is the work done by the spring as it is stretched from \(0\) to \(x\)?
+A) \(U=\tfrac12kx^2\) is a parabola with its minimum at \(x=0\); \(F=-\dfrac{dU}{dx}=-kx\) is a straight line of slope \(-k\), zero at equilibrium and always directed towards it; the work done by the spring from \(0\) to \(x\) is \(-\tfrac12kx^2\)
+B) \(U=kx\) is a straight line; \(F=-\tfrac12kx^2\)
+C) \(U\) is maximum at \(x=0\), so equilibrium is unstable
+D) \(F=+\dfrac{dU}{dx}\), so the force points away from equilibrium; the work done by the spring is \(+\tfrac12kx^2\)
+KEY: A
+SOL:
+Answer: (A) \(U\) parabola with minimum at \(0\); \(F=-kx\) line; \(W_{\text{spring}}=-\tfrac12kx^2\).
+Given: \(\text{spring constant }k,\ \text{displacement }x\)
+Formula/Principle: \(F=-kx;\ F=-\dfrac{dU}{dx};\ W=\displaystyle\int F\,dx\)
+Step 1: \(W_{\text{spring}}=\displaystyle\int_0^x(-kx)\,dx=-\tfrac12kx^2\)
+Step 2: \(U=-W_{\text{spring}}=\tfrac12kx^2\)
+Step 3: \(-\dfrac{dU}{dx}=-kx=F\)
+Worked derivation: \[\frac{dU}{dx}=0\text{ at }x=0,\ \frac{d^2U}{dx^2}=k>0\Rightarrow\text{minimum}\Rightarrow\text{stable equilibrium}\]
+Check: \[x>0:\ F<0;\ x<0:\ F>0\Rightarrow\text{always restoring}\ \checkmark\]
+Why: \(\text{the force is minus the slope of the potential energy curve, so it always points downhill towards the minimum}\)
+Why not the others: (B) \(\text{forms of }U\text{ and }F\text{ interchanged}\); (C) \(U\text{ is minimum, so equilibrium is stable}\); (D) \(\text{sign error; the spring does negative work when stretched}\).
+Key point: \(F=-\dfrac{dU}{dx};\ \text{stable equilibrium at a minimum of }U\)
+
+@@ Q62
+format: numerical
+sub_topic: Applying conservation of angular momentum to a contracting star and a spinning skater, and finding the change in rotational kinetic energy
+Q: A star of radius \(R\) rotating once in \(25\) days collapses, with no external torque and uniform density, to radius \(\tfrac{R}{100}\). Separately, a skater pulls in her arms so that her moment of inertia halves. What is the new period of the star, and how do the skater's angular speed and kinetic energy change?
+A) \(0.25\) day; skater's \(\omega\) and KE unchanged
+B) \(2.5\times10^{-3}\) day; \(\omega\) doubles, KE unchanged
+C) \(25\) days; \(\omega\) halves, KE halves
+D) about \(216\ \text{s}\) (period reduced \(10^4\) times); skater's \(\omega\) doubles and her rotational KE doubles
+KEY: D
+SOL:
+Answer: (D) \(T'\approx216\ \text{s}\); \(\omega\) doubles; KE doubles.
+Given: \(T=25\ \text{days}=2.16\times10^6\ \text{s},\ R'=\tfrac{R}{100};\ I'=\tfrac I2\)
+Formula/Principle: \(L=I\omega=\text{constant};\ I\propto MR^2;\ K=\dfrac{L^2}{2I}\)
+Step 1: \(\omega'=\omega\dfrac{I}{I'}=\omega\left(\dfrac{R}{R'}\right)^2=10^4\omega\)
+Step 2: \(T'=\dfrac{T}{10^4}=\dfrac{2.16\times10^6}{10^4}=216\ \text{s}\)
+Step 3: \(\text{skater: }\omega'=2\omega;\ K'=\dfrac{L^2}{2(I/2)}=2K\)
+Worked derivation: \[\frac{K'}{K}=\frac{\tfrac12I'\omega'^2}{\tfrac12I\omega^2}=\frac{\tfrac12\cdot4}{1}=2\]
+Check: \[L'=\tfrac I2\cdot2\omega=I\omega=L\ \checkmark\]
+Why: \(\text{with no external torque }L\text{ is conserved; the extra kinetic energy comes from internal work done in pulling mass inward}\)
+Why not the others: (A) \(\text{uses }R/R'\text{ instead of its square}\); (B) \(\text{KE changes when }I\text{ changes at constant }L\); (C) \(\text{ignores conservation of }L\).
+Key point: \(I\omega=\text{constant};\ K=\dfrac{L^2}{2I}\uparrow\text{ as }I\downarrow\)
+
+@@ Q63
+format: numerical
+sub_topic: Comparing the decrease of g with height and with depth for small distances, and the values at height R and at the centre of the Earth
+Q: Taking \(R=6400\ \text{km}\), at what height and at what depth is \(g\) reduced by \(1\%\), and what is \(g\) at height \(R\) and at the centre?
+A) height \(64\ \text{km}\), depth \(32\ \text{km}\); \(\tfrac g2\) at height \(R\); \(g\) at the centre
+B) height \(32\ \text{km}\), depth \(32\ \text{km}\); \(\tfrac g4\) at height \(R\); \(\tfrac g2\) at the centre
+C) height \(32\ \text{km}\), depth \(64\ \text{km}\); \(\tfrac g4\) at height \(R\); zero at the centre
+D) height \(64\ \text{km}\), depth \(64\ \text{km}\); \(\tfrac g2\) at height \(R\); zero at the centre
+KEY: C
+SOL:
+Answer: (C) \(h=32\ \text{km},\ d=64\ \text{km}\); \(\tfrac g4\); \(0\).
+Given: \(R=6400\ \text{km},\ \dfrac{\Delta g}{g}=0.01\)
+Formula/Principle: \(g_h\approx g\left(1-\dfrac{2h}{R}\right)\ (h\ll R);\ g_d=g\left(1-\dfrac dR\right);\ g_h=\dfrac{g}{(1+h/R)^2}\)
+Step 1: \(\dfrac{2h}{R}=0.01\Rightarrow h=0.005\times6400=32\ \text{km}\)
+Step 2: \(\dfrac dR=0.01\Rightarrow d=64\ \text{km}\)
+Step 3: \(h=R:\ g_h=\dfrac{g}{4};\ d=R:\ g_d=0\)
+Worked derivation: \[g_d=\frac{GM}{R^3}(R-d)\Rightarrow g\propto r\text{ inside};\quad g_h=\frac{GM}{(R+h)^2}\Rightarrow g\propto\frac1{r^2}\text{ outside}\]
+Check: \[\text{for the same small distance, }g\text{ falls twice as fast with height as with depth}\ \checkmark\]
+Why: \(\text{going up increases distance from the whole mass, while going down removes the outer shell, whose net pull is zero}\)
+Why not the others: (A) \(\text{height and depth swapped; }g\text{ is zero at the centre}\); (B) \(\text{equal values wrong}\); (D) \(\text{wrong height and value at }R\).
+Key point: \(\text{small }h:\ \Delta g/g=2h/R;\ \text{depth}:\ \Delta g/g=d/R\)
+
+@@ Q64
+format: numerical
+sub_topic: Finding efflux speed by Torricelli's law and the horizontal range of jets from holes at different depths in a tall tank
+Q: A tank stands on the ground and is filled with water to height \(H=10\ \text{m}\). (\(g=10\ \text{m s}^{-2}\)) What is the efflux speed from a hole \(5\ \text{m}\) below the surface, and how do the ranges of jets from holes \(2\ \text{m}\) and \(8\ \text{m}\) below the surface compare?
+A) \(\sqrt{50}\ \text{m s}^{-1}\); the deeper hole has the larger range
+B) \(10\ \text{m s}^{-1}\); both jets land \(8\ \text{m}\) from the tank, since range \(=2\sqrt{h(H-h)}\) is the same for depths \(h\) and \(H-h\)
+C) \(10\ \text{m s}^{-1}\); the shallower hole has twice the range
+D) \(100\ \text{m s}^{-1}\); both land \(10\ \text{m}\) away
+KEY: B
+SOL:
+Answer: (B) \(10\ \text{m s}^{-1}\); both ranges \(8\ \text{m}\).
+Given: \(H=10\ \text{m},\ h=5\ \text{m};\ h_1=2\ \text{m},\ h_2=8\ \text{m}\)
+Formula/Principle: \(v=\sqrt{2gh};\ \text{fall height }H-h,\ t=\sqrt{\dfrac{2(H-h)}{g}};\ R=vt=2\sqrt{h(H-h)}\)
+Step 1: \(v=\sqrt{2\cdot10\cdot5}=10\ \text{m s}^{-1}\)
+Step 2: \(R_1=2\sqrt{2\cdot8}=8\ \text{m}\)
+Step 3: \(R_2=2\sqrt{8\cdot2}=8\ \text{m}\)
+Worked derivation: \[R=\sqrt{2gh}\sqrt{\frac{2(H-h)}{g}}=2\sqrt{h(H-h)};\ \frac{dR}{dh}=0\Rightarrow h=\frac H2\Rightarrow R_{\max}=H=10\ \text{m}\]
+Check: \[h=2:\ v=\sqrt{40},\ t=\sqrt{1.6},\ R=\sqrt{64}=8\ \checkmark\]
+Why: \(\text{a deeper hole gives a faster jet but less fall time; the product is symmetric about mid-height}\)
+Why not the others: (A) \(\text{uses }v=\sqrt{gh}\); (C) \(\text{ranges are equal}\); (D) \(\text{omits the square root; }10\ \text{m is only the maximum range}\).
+Key point: \(v=\sqrt{2gh};\ R=2\sqrt{h(H-h)}\text{ symmetric about }H/2\)
+
+@@ Q65
+format: numerical
+sub_topic: Applying the principle of calorimetry with a change of state to find the final temperature when ice is added to warm water
+Q: \(30\ \text{g}\) of ice at \(0^\circ\text{C}\) is added to \(150\ \text{g}\) of water at \(40^\circ\text{C}\) in a vessel of negligible heat capacity. (\(L_f=336\ \text{J g}^{-1},\ c=4.2\ \text{J g}^{-1}\,{}^\circ\text{C}^{-1}\)) What is the final temperature?
+A) \(0^\circ\text{C}\), with some ice left
+B) \(33.3^\circ\text{C}\)
+C) \(20^\circ\text{C}\)
+D) \(26.7^\circ\text{C}\)
+KEY: C
+SOL:
+Answer: (C) \(20^\circ\text{C}\).
+Given: \(m_i=30\ \text{g},\ m_w=150\ \text{g},\ T_w=40^\circ\text{C},\ L_f=336,\ c=4.2\)
+Formula/Principle: \(\text{heat lost}=\text{heat gained};\ Q=mL,\ Q=mc\Delta T\)
+Step 1: \(\text{heat available cooling water to }0^\circ\text{C}=150\cdot4.2\cdot40=25\,200\ \text{J}\)
+Step 2: \(\text{heat to melt ice}=30\cdot336=10\,080\ \text{J}<25\,200\Rightarrow\text{all ice melts}\)
+Step 3: \(150\cdot4.2(40-T)=10\,080+30\cdot4.2\cdot T\Rightarrow25\,200-630T=10\,080+126T\)
+Worked derivation: \[756\,T=15\,120\Rightarrow T=20^\circ\text{C}\]
+Check: \[\text{lost}=150\cdot4.2\cdot20=12\,600;\ \text{gained}=10\,080+30\cdot4.2\cdot20=12\,600\ \checkmark\]
+Why: \(\text{the latent heat absorbed by melting comes first; the remaining heat warms the combined }180\ \text{g of water}\)
+Why not the others: (A) \(\text{enough heat is available to melt all the ice}\); (B) \(\text{ignores latent heat}\); (D) \(\text{omits warming the melted ice}\).
+Key point: \(\text{check whether all ice melts before equating heats}\)
+
+@@ Q66
+format: numerical
+sub_topic: Applying the first law of thermodynamics to an isobaric process of an ideal monatomic gas
+Q: \(2\) mol of an ideal monatomic gas is heated at constant pressure from \(300\ \text{K}\) to \(400\ \text{K}\). (\(R=8.314\ \text{J mol}^{-1}\text{K}^{-1}\)) What are the heat supplied, the work done by the gas and the change in internal energy?
+A) \(Q=4157\ \text{J},\ W=1663\ \text{J},\ \Delta U=2494\ \text{J}\)
+B) \(Q=2494\ \text{J},\ W=0,\ \Delta U=2494\ \text{J}\)
+C) \(Q=4157\ \text{J},\ W=2494\ \text{J},\ \Delta U=1663\ \text{J}\)
+D) \(Q=5820\ \text{J},\ W=1663\ \text{J},\ \Delta U=4157\ \text{J}\)
+KEY: A
+SOL:
+Answer: (A) \(Q=4157\ \text{J},\ W=1663\ \text{J},\ \Delta U=2494\ \text{J}\).
+Given: \(n=2,\ \Delta T=100\ \text{K},\ C_v=\tfrac32R,\ C_p=\tfrac52R\)
+Formula/Principle: \(Q=nC_p\Delta T;\ W=P\Delta V=nR\Delta T;\ \Delta U=nC_v\Delta T;\ Q=\Delta U+W\)
+Step 1: \(Q=2\cdot\tfrac52\cdot8.314\cdot100=4157\ \text{J}\)
+Step 2: \(W=2\cdot8.314\cdot100=1663\ \text{J}\)
+Step 3: \(\Delta U=2\cdot\tfrac32\cdot8.314\cdot100=2494\ \text{J}\)
+Worked derivation: \[\Delta U+W=2494+1663=4157=Q\]
+Check: \[\frac{W}{Q}=\frac{R}{C_p}=\frac25=0.4;\ \frac{1663}{4157}=0.40\ \checkmark\]
+Why: \(\text{at constant pressure, part of the heat raises internal energy and the rest does expansion work}\)
+Why not the others: (B) \(\text{describes a constant-volume process}\); (C) \(W\text{ and }\Delta U\text{ swapped}\); (D) \(\Delta U\text{ taken as }nC_p\Delta T\text{, which double counts the work}\).
+Key point: \(\text{isobaric: }Q:\Delta U:W=C_p:C_v:R=5:3:2\text{ (monatomic)}\)
+
+@@ Q67
+format: conceptual
+sub_topic: Identifying the shapes of acceleration–displacement, velocity–displacement and energy–displacement graphs in simple harmonic motion
+Q: For a particle in SHM \(x=A\sin\omega t\), what are the shapes of the graphs of acceleration against displacement, velocity against displacement and kinetic energy against displacement?
+A) \(a\) vs \(x\): parabola; \(v\) vs \(x\): straight line; KE vs \(x\): circle
+B) \(a\) vs \(x\): straight line through the origin with positive slope \(\omega^2\); \(v\) vs \(x\): hyperbola
+C) all three are sinusoidal curves
+D) \(a\) vs \(x\): straight line through the origin with slope \(-\omega^2\); \(v\) vs \(x\): ellipse \(\dfrac{x^2}{A^2}+\dfrac{v^2}{\omega^2A^2}=1\) (a circle if \(\omega=1\) in suitable units); KE vs \(x\): downward parabola \(\tfrac12m\omega^2(A^2-x^2)\), zero at \(x=\pm A\) and maximum at \(x=0\)
+KEY: D
+SOL:
+Answer: (D) Line of slope \(-\omega^2\); ellipse; downward parabola.
+Given: \(x=A\sin\omega t\)
+Formula/Principle: \(a=-\omega^2x;\ v=\pm\omega\sqrt{A^2-x^2};\ K=\tfrac12mv^2\)
+Step 1: \(a=\ddot x=-\omega^2A\sin\omega t=-\omega^2x\Rightarrow\text{line, slope }-\omega^2\)
+Step 2: \(v^2=\omega^2(A^2-x^2)\Rightarrow\dfrac{x^2}{A^2}+\dfrac{v^2}{\omega^2A^2}=1\Rightarrow\text{ellipse}\)
+Step 3: \(K=\tfrac12m\omega^2(A^2-x^2)\Rightarrow\text{downward parabola}\)
+Worked derivation: \[\cos^2\omega t+\sin^2\omega t=1\Rightarrow\left(\frac{v}{\omega A}\right)^2+\left(\frac xA\right)^2=1\]
+Check: \[x=0:\ v=\pm\omega A,\ K_{\max}=\tfrac12m\omega^2A^2;\ x=\pm A:\ v=0\ \checkmark\]
+Why: \(\text{SHM is defined by acceleration proportional to and opposite to displacement; eliminating time gives the other shapes}\)
+Why not the others: (A) \(\text{shapes mismatched}\); (B) \(\text{slope must be negative; }v\text{ vs }x\text{ is an ellipse}\); (C) \(\text{sinusoidal only against time}\).
+Key point: \(a=-\omega^2x;\ v\text{–}x\text{ ellipse};\ K\text{–}x\text{ parabola}\)
+
+@@ Q68
+format: experiment
+sub_topic: Finding wavelength, speed of sound and end correction from the first two resonance lengths of a closed resonance tube
+Q: A tuning fork of \(500\ \text{Hz}\) gives resonance in a closed resonance tube at air-column lengths \(16.0\ \text{cm}\) and \(50.0\ \text{cm}\). What are the wavelength, the speed of sound and the end correction?
+A) \(\lambda=64\ \text{cm},\ v=320\ \text{m s}^{-1},\ e=0\)
+B) \(\lambda=68\ \text{cm},\ v=340\ \text{m s}^{-1},\ e=1.0\ \text{cm}\)
+C) \(\lambda=34\ \text{cm},\ v=170\ \text{m s}^{-1},\ e=1.0\ \text{cm}\)
+D) \(\lambda=100\ \text{cm},\ v=500\ \text{m s}^{-1},\ e=2.0\ \text{cm}\)
+KEY: B
+SOL:
+Answer: (B) \(\lambda=68\ \text{cm},\ v=340\ \text{m s}^{-1},\ e=1\ \text{cm}\).
+Given: \(f=500\ \text{Hz},\ l_1=16.0\ \text{cm},\ l_2=50.0\ \text{cm}\)
+Formula/Principle: \(l_1+e=\dfrac\lambda4;\ l_2+e=\dfrac{3\lambda}4;\ v=f\lambda\)
+Step 1: \(l_2-l_1=\dfrac\lambda2\Rightarrow\lambda=2(34.0)=68.0\ \text{cm}\)
+Step 2: \(v=500\times0.68=340\ \text{m s}^{-1}\)
+Step 3: \(e=\dfrac\lambda4-l_1=17.0-16.0=1.0\ \text{cm}\)
+Worked derivation: \[e=\frac{l_2-3l_1}{2}=\frac{50-48}{2}=1.0\ \text{cm}\]
+Check: \[l_2+e=51=\tfrac34(68)\ \checkmark\]
+Why: \(\text{the difference of successive resonance lengths removes the unknown end correction}\)
+Why not the others: (A) \(\text{uses }4l_1\text{ ignoring end correction}\); (C) \(\text{takes }l_2-l_1=\lambda\); (D) \(\text{uses }2l_2\).
+Key point: \(\lambda=2(l_2-l_1);\ e=\dfrac{l_2-3l_1}{2}\)
+
+@@ Q69
+format: numerical
+sub_topic: Finding electric field from the force on a small test charge and then the source charge using Coulomb's law
+Q: A test charge of \(2\ \text{nC}\) placed \(0.3\ \text{m}\) from a point charge \(Q\) experiences a force of \(6\times10^{-5}\ \text{N}\). What is the field at that point and the value of \(Q\)? (\(\tfrac1{4\pi\varepsilon_0}=9\times10^9\ \text{N m}^2\text{C}^{-2}\))
+A) \(E=1.2\times10^{-13}\ \text{N C}^{-1};\ Q=3\ \mu\text{C}\)
+B) \(E=3\times10^4\ \text{N C}^{-1};\ Q=3\times10^{-7}\ \text{C}\)
+C) \(E=3\times10^4\ \text{N C}^{-1};\ Q=1\times10^{-6}\ \text{C}\)
+D) \(E=3\times10^{-4}\ \text{N C}^{-1};\ Q=3\times10^{-7}\ \text{C}\)
+KEY: B
+SOL:
+Answer: (B) \(E=3\times10^4\ \text{N C}^{-1},\ Q=3\times10^{-7}\ \text{C}\).
+Given: \(q=2\times10^{-9}\ \text{C},\ F=6\times10^{-5}\ \text{N},\ r=0.3\ \text{m}\)
+Formula/Principle: \(E=\dfrac Fq;\ E=\dfrac{kQ}{r^2}\)
+Step 1: \(E=\dfrac{6\times10^{-5}}{2\times10^{-9}}=3\times10^4\ \text{N C}^{-1}\)
+Step 2: \(Q=\dfrac{Er^2}{k}=\dfrac{3\times10^4\times0.09}{9\times10^9}\)
+Step 3: \(Q=3\times10^{-7}\ \text{C}\)
+Worked derivation: \[F=\frac{kQq}{r^2}=\frac{9\times10^9\cdot3\times10^{-7}\cdot2\times10^{-9}}{0.09}=6\times10^{-5}\ \text{N}\]
+Check: \[\text{units: }\frac{\text{N}}{\text{C}}\cdot\frac{\text{m}^2}{\text{N m}^2\text{C}^{-2}}=\text{C}\ \checkmark\]
+Why: \(\text{the field is force per unit test charge and depends only on the source charge and distance}\)
+Why not the others: (A) \(\text{multiplies instead of dividing}\); (C) \(\text{omits }r^2\text{ correctly}\); (D) \(\text{wrong power of ten}\).
+Key point: \(E=F/q=kQ/r^2\)
+
+@@ Q70
+format: numerical
+sub_topic: Calculating the electrostatic potential energy of four equal charges at the corners of a square, and properties of equipotential surfaces
+Q: Four charges of \(1\ \mu\text{C}\) each are placed at the corners of a square of side \(0.1\ \text{m}\). What is the electrostatic potential energy of the system, and which property of equipotential surfaces is correct? (\(k=9\times10^9\))
+A) \(U=\dfrac{kq^2}{a}\left(4+\sqrt2\right)\approx0.487\ \text{J}\); equipotential surfaces are perpendicular to field lines, and no work is done in moving a charge along one
+B) \(U=0.36\ \text{J}\); field lines are parallel to equipotential surfaces
+C) \(U=0.54\ \text{J}\); work is needed to move a charge along an equipotential
+D) \(U=0\), since the arrangement is symmetric; equipotentials can intersect
+KEY: A
+SOL:
+Answer: (A) \(U\approx0.487\ \text{J}\); equipotentials \(\perp\) field, no work along them.
+Given: \(q=10^{-6}\ \text{C},\ a=0.1\ \text{m};\ 4\text{ sides}+2\text{ diagonals}\)
+Formula/Principle: \(U=\sum_{\text{pairs}}\dfrac{kq_iq_j}{r_{ij}}\)
+Step 1: \(\dfrac{kq^2}{a}=\dfrac{9\times10^9\times10^{-12}}{0.1}=0.09\ \text{J}\)
+Step 2: \(\text{sides: }4\times0.09;\ \text{diagonals }(a\sqrt2):\ 2\times\dfrac{0.09}{\sqrt2}=0.09\sqrt2\)
+Step 3: \(U=0.09(4+\sqrt2)=0.09\times5.414=0.487\ \text{J}\)
+Worked derivation: \[\text{pairs}={}^4C_2=6=4\text{ sides}+2\text{ diagonals}\]
+Check: \[\text{all charges alike}\Rightarrow U>0\ \checkmark\]
+Why: \(\text{the work to assemble the charges equals the sum over every pair; field lines cross equipotentials at right angles because }W=q\Delta V=0\text{ along them}\)
+Why not the others: (B) \(\text{counts only sides}\); (C) \(\text{wrong count; no work along equipotentials}\); (D) \(\text{like charges give positive energy; equipotentials never intersect}\).
+Key point: \(\text{square: }U=\dfrac{kq^2}{a}(4+\sqrt2)\)
+
+@@ Q71
+format: numerical
+sub_topic: Finding the magnetic moment of a current-carrying coil, the torque in a uniform field as a function of angle, and the work to turn it from stable to unstable equilibrium
+Q: A coil of \(50\) turns, area \(0.01\ \text{m}^2\), carrying \(0.2\ \text{A}\), is placed in a uniform field \(B=0.2\ \text{T}\). What are its magnetic moment, the maximum torque, and the work needed to turn it from \(\theta=0\) to \(\theta=180^\circ\)?
+A) \(m=0.01\ \text{A m}^2;\ \tau_{\max}=0.002\ \text{N m};\ W=0.004\ \text{J}\)
+B) \(m=0.1\ \text{A m}^2;\ \tau_{\max}=0.02\ \text{N m};\ W=0\)
+C) \(m=NIA=0.1\ \text{A m}^2;\ \tau_{\max}=mB=0.02\ \text{N m}\) (at \(\theta=90^\circ\), since \(\tau=mB\sin\theta\)); \(U=-mB\cos\theta\), so \(W=2mB=0.04\ \text{J}\)
+D) \(m=0.1\ \text{A m}^2;\ \tau_{\max}=0.02\ \text{N m}\) at \(\theta=0\); \(W=0.02\ \text{J}\)
+KEY: C
+SOL:
+Answer: (C) \(m=0.1\ \text{A m}^2,\ \tau_{\max}=0.02\ \text{N m},\ W=0.04\ \text{J}\).
+Given: \(N=50,\ A=0.01\ \text{m}^2,\ I=0.2\ \text{A},\ B=0.2\ \text{T}\)
+Formula/Principle: \(m=NIA;\ \tau=mB\sin\theta;\ U=-mB\cos\theta\)
+Step 1: \(m=50\times0.2\times0.01=0.1\ \text{A m}^2\)
+Step 2: \(\tau_{\max}=0.1\times0.2=0.02\ \text{N m}\)
+Step 3: \(W=U(180^\circ)-U(0)=mB-(-mB)=2mB=0.04\ \text{J}\)
+Worked derivation: \[W=\int_0^\pi mB\sin\theta\,d\theta=mB[-\cos\theta]_0^\pi=2mB\]
+Check: \[\tau=0\text{ at }\theta=0\text{ (stable) and }180^\circ\text{ (unstable)}\ \checkmark\]
+Why: \(\text{torque is greatest when the moment is perpendicular to the field, and the energy difference between aligned and anti-aligned is }2mB\)
+Why not the others: (A) \(\text{omits }N\); (B) \(\text{work is not zero}\); (D) \(\text{torque is zero at }\theta=0\text{, and the work is }2mB\).
+Key point: \(\tau=mB\sin\theta;\ W_{0\to\pi}=2mB\)
+
+@@ Q72
+format: numerical
+sub_topic: Calculating induced emf, current and total charge flow in a coil when the field through it changes, and why the charge is independent of the time taken
+Q: A coil of \(200\) turns and area \(0.01\ \text{m}^2\) lies perpendicular to a field that falls uniformly from \(0.5\ \text{T}\) to \(0.1\ \text{T}\) in \(0.2\ \text{s}\). The coil's resistance is \(10\ \Omega\). What are the induced emf, current and total charge, and how does the charge change if the field falls in \(0.4\ \text{s}\) instead?
+A) \(2\ \text{V},\ 0.2\ \text{A},\ 0.04\ \text{C}\); charge doubles
+B) \(4\ \text{V},\ 0.4\ \text{A},\ 0.08\ \text{C}\); charge halves
+C) \(0.02\ \text{V},\ 0.002\ \text{A},\ 0.0004\ \text{C}\); charge unchanged
+D) \(\varepsilon=4\ \text{V},\ I=0.4\ \text{A},\ q=0.08\ \text{C}\); the charge is unchanged, because \(q=\dfrac{N\Delta\Phi}{R}\) does not depend on the time taken
+KEY: D
+SOL:
+Answer: (D) \(4\ \text{V},\ 0.4\ \text{A},\ 0.08\ \text{C}\); unchanged.
+Given: \(N=200,\ A=0.01\ \text{m}^2,\ \Delta B=0.4\ \text{T},\ \Delta t=0.2\ \text{s},\ R=10\ \Omega\)
+Formula/Principle: \(\varepsilon=N\dfrac{\Delta\Phi}{\Delta t};\ I=\dfrac\varepsilon R;\ q=I\Delta t=\dfrac{N\Delta\Phi}{R}\)
+Step 1: \(\varepsilon=\dfrac{200\times0.01\times0.4}{0.2}=4\ \text{V}\)
+Step 2: \(I=\dfrac4{10}=0.4\ \text{A}\)
+Step 3: \(q=0.4\times0.2=0.08\ \text{C}\)
+Worked derivation: \[\Delta t=0.4\ \text{s}:\ \varepsilon=2\ \text{V},\ I=0.2\ \text{A},\ q=0.2\times0.4=0.08\ \text{C}\]
+Check: \[\frac{N\Delta\Phi}{R}=\frac{200\times0.004}{10}=0.08\ \text{C}\ \checkmark\]
+Why: \(\text{a slower change gives a smaller current for a longer time, so the product, the charge, stays the same}\)
+Why not the others: (A) \(\text{halves the emf; charge does not depend on time}\); (B) \(\text{charge does not halve}\); (C) \(\text{omits }N\text{ and the rate}\).
+Key point: \(q=\dfrac{N\Delta\Phi}{R},\ \text{independent of }\Delta t\)
+
+@@ Q73
+format: conceptual
+sub_topic: Comparing resistors, inductors and capacitors in AC circuits — reactance versus frequency, phase of current, average power — and the effect of inserting an iron core into an inductor in series with a bulb
+Q: How do a resistor, an ideal inductor and an ideal capacitor behave in an AC circuit, and what happens to a bulb in series with an inductor when a soft-iron core is inserted?
+A) Inductive reactance falls with frequency and capacitive reactance rises; the bulb glows brighter
+B) All three dissipate the same average power; the bulb is unaffected
+C) The current leads the voltage in an inductor and lags it in a capacitor; the bulb brightens
+D) \(R\) is independent of frequency with current in phase; \(X_L=\omega L\) rises with frequency and the current lags by \(\tfrac\pi2\); \(X_C=\tfrac1{\omega C}\) falls with frequency and the current leads by \(\tfrac\pi2\); average power is zero in ideal \(L\) and \(C\); the iron core increases \(L\) and hence \(X_L\), so the current falls and the bulb dims
+KEY: D
+SOL:
+Answer: (D) \(R\) constant in phase; \(X_L\propto\omega\), lag; \(X_C\propto\tfrac1\omega\), lead; zero average power in \(L,C\); bulb dims.
+Given: \(v=v_m\sin\omega t\)
+Formula/Principle: \(X_L=\omega L;\ X_C=\dfrac1{\omega C};\ \bar P=V_{\text{rms}}I_{\text{rms}}\cos\phi\)
+Step 1: \(\text{inductor: }\phi=\tfrac\pi2\ (\text{lag})\Rightarrow\cos\phi=0\Rightarrow\bar P=0\)
+Step 2: \(\text{capacitor: }\phi=-\tfrac\pi2\ (\text{lead})\Rightarrow\bar P=0\)
+Step 3: \(\text{iron core}:\ L\uparrow\Rightarrow Z=\sqrt{R^2+X_L^2}\uparrow\Rightarrow I\downarrow\)
+Worked derivation: \[I_{\text{rms}}=\frac{V_{\text{rms}}}{\sqrt{R^2+(\omega L)^2}}\ \text{decreases as }L\text{ increases}\]
+Check: \[\omega\to0:\ X_L\to0\ (\text{short}),\ X_C\to\infty\ (\text{open, blocks DC})\ \checkmark\]
+Why: \(\text{the inductor opposes changes in current more strongly at higher frequency and with a larger inductance}\)
+Why not the others: (A) \(\text{frequency dependences reversed}\); (B) \(\text{ideal }L,C\text{ dissipate no average power}\); (C) \(\text{phases reversed}\).
+Key point: \(X_L=\omega L\text{ (lag)},\ X_C=1/\omega C\text{ (lead)},\ \bar P=0\text{ in ideal }L,C\)
+
+@@ Q74
+format: numerical
+sub_topic: Calculating critical angles for glass, water and diamond against air and for a glass–water interface
+Q: With refractive indices glass \(1.5\), water \(1.33\) and diamond \(2.42\), what are the critical angles for glass–air, water–air, diamond–air and glass–water?
+A) \(48.8^\circ,\ 41.8^\circ,\ 24.4^\circ,\ 62.5^\circ\)
+B) \(41.8^\circ,\ 48.8^\circ,\ 24.4^\circ,\ 62.5^\circ\)
+C) \(41.8^\circ,\ 48.8^\circ,\ 65.6^\circ,\ 27.5^\circ\)
+D) \(30^\circ,\ 45^\circ,\ 24.4^\circ,\ 90^\circ\)
+KEY: B
+SOL:
+Answer: (B) \(41.8^\circ,\ 48.8^\circ,\ 24.4^\circ,\ 62.5^\circ\).
+Given: \(n_g=1.5,\ n_w=1.33,\ n_d=2.42\)
+Formula/Principle: \(\sin C=\dfrac{n_{\text{rarer}}}{n_{\text{denser}}}\)
+Step 1: \(\sin C_g=\dfrac1{1.5}=0.667\Rightarrow41.8^\circ;\ \sin C_w=\dfrac1{1.33}=0.752\Rightarrow48.8^\circ\)
+Step 2: \(\sin C_d=\dfrac1{2.42}=0.413\Rightarrow24.4^\circ\)
+Step 3: \(\sin C_{gw}=\dfrac{1.33}{1.5}=0.887\Rightarrow62.5^\circ\)
+Worked derivation: \[n\uparrow\Rightarrow\sin C\downarrow\Rightarrow C\downarrow:\ C_d<C_g<C_w\]
+Check: \[\text{glass–water ratio near }1\Rightarrow C\text{ large}\ \checkmark\]
+Why: \(\text{the small critical angle of diamond traps light by repeated total internal reflection, giving its sparkle}\)
+Why not the others: (A) \(\text{glass and water swapped}\); (C) \(\text{uses complements}\); (D) \(\text{guessed values}\).
+Key point: \(\sin C=n_2/n_1;\ \text{larger }n\Rightarrow\text{smaller }C\)
+
+@@ Q75
+format: numerical
+sub_topic: Calculating fringe width in Young's double-slit experiment and its change when the apparatus is immersed in water or the slit separation is halved, and the appearance of white-light fringes
+Q: In a Young's double-slit experiment, \(\lambda=600\ \text{nm},\ d=1.0\ \text{mm},\ D=1.0\ \text{m}\). What is the fringe width in air, in water (\(n=\tfrac43\)) and when \(d\) is halved in air, and what is seen with white light?
+A) \(0.6\ \text{mm},\ 0.8\ \text{mm},\ 0.3\ \text{mm}\); all fringes white
+B) \(6\ \text{mm},\ 4.5\ \text{mm},\ 12\ \text{mm}\); central fringe dark
+C) \(\beta=0.6\ \text{mm}\), \(0.45\ \text{mm}\) in water, \(1.2\ \text{mm}\) with \(d\) halved; with white light the central fringe is white and nearby fringes are coloured, violet edges nearer the centre and red farther out
+D) \(0.6\ \text{mm}\) in all cases
+KEY: C
+SOL:
+Answer: (C) \(0.6,\ 0.45,\ 1.2\ \text{mm}\); white central fringe with coloured fringes.
+Given: \(\lambda=6\times10^{-7}\ \text{m},\ d=10^{-3}\ \text{m},\ D=1\ \text{m}\)
+Formula/Principle: \(\beta=\dfrac{\lambda D}{d};\ \lambda_{\text{medium}}=\dfrac\lambda n\)
+Step 1: \(\beta=\dfrac{6\times10^{-7}\times1}{10^{-3}}=6\times10^{-4}\ \text{m}=0.6\ \text{mm}\)
+Step 2: \(\beta_w=\dfrac{0.6}{4/3}=0.45\ \text{mm}\)
+Step 3: \(d\to\tfrac d2\Rightarrow\beta=1.2\ \text{mm}\)
+Worked derivation: \[\beta\propto\lambda\Rightarrow\beta_{\text{violet}}<\beta_{\text{red}};\ \text{at the centre path difference }=0\text{ for all colours}\Rightarrow\text{white}\]
+Check: \[\text{units: }\frac{\text{m}\cdot\text{m}}{\text{m}}=\text{m}\ \checkmark\]
+Why: \(\text{wavelength shortens in water and fringe width varies inversely with slit separation}\)
+Why not the others: (A) \(\text{multiplies by }n\text{ and halves instead of doubling}\); (B) \(\text{factor of 10 error; central fringe is bright}\); (D) \(\beta\text{ depends on medium and }d\).
+Key point: \(\beta=\lambda D/d;\ \text{in a medium }\beta/n\)
+
+@@ Q76
+format: numerical
+sub_topic: Applying Einstein's photoelectric equation to find stopping potential, and the separate effects of intensity and frequency of the incident light
+Q: A metal has work function \(2.0\ \text{eV}\). What is the stopping potential for \(3.0\ \text{eV}\) photons, what happens to it if the intensity is doubled, and what is it for \(4.0\ \text{eV}\) photons?
+A) \(V_s=1.0\ \text{V}\); unchanged when intensity doubles (only the photocurrent doubles); \(2.0\ \text{V}\) for \(4.0\ \text{eV}\) photons
+B) \(V_s=1.0\ \text{V}\); doubles to \(2.0\ \text{V}\) with double intensity; \(2.0\ \text{V}\)
+C) \(V_s=3.0\ \text{V}\); unchanged; \(4.0\ \text{V}\)
+D) \(V_s=5.0\ \text{V}\); halves; \(6.0\ \text{V}\)
+KEY: A
+SOL:
+Answer: (A) \(1.0\ \text{V}\); unchanged; \(2.0\ \text{V}\).
+Given: \(\phi_0=2.0\ \text{eV};\ h\nu=3.0\text{ and }4.0\ \text{eV}\)
+Formula/Principle: \(eV_s=K_{\max}=h\nu-\phi_0\)
+Step 1: \(eV_s=3.0-2.0=1.0\ \text{eV}\Rightarrow V_s=1.0\ \text{V}\)
+Step 2: \(\text{intensity}\uparrow\Rightarrow\text{more photons, same }h\nu\Rightarrow V_s\text{ unchanged, current}\uparrow\)
+Step 3: \(eV_s=4.0-2.0=2.0\ \text{eV}\Rightarrow V_s=2.0\ \text{V}\)
+Worked derivation: \[\nu_0=\frac{\phi_0}{h}=\frac{2.0\times1.6\times10^{-19}}{6.63\times10^{-34}}\approx4.8\times10^{14}\ \text{Hz}\]
+Check: \[\frac{\Delta V_s}{\Delta(h\nu)}=\frac{1\ \text{V}}{1\ \text{eV}}=\frac1e\ \checkmark\]
+Why: \(\text{each electron absorbs one photon, so its maximum energy depends on photon energy, not on how many photons arrive}\)
+Why not the others: (B) \(\text{intensity does not change }V_s\); (C) \(\text{ignores the work function}\); (D) \(\text{adds the work function}\).
+Key point: \(eV_s=h\nu-\phi_0;\ \text{intensity changes current only}\)
+
+@@ Q77
+format: numerical
+sub_topic: Using the mass-action law n_e n_h = n_i² to find the minority carrier density in a doped semiconductor and identifying its type
+Q: Pure silicon has \(n_i=1.5\times10^{16}\ \text{m}^{-3}\). It is doped with \(10^{22}\ \text{m}^{-3}\) pentavalent donor atoms, all ionised. What are the hole density and the type of semiconductor?
+A) \(n_h=2.25\times10^{10}\ \text{m}^{-3}\); n-type, with electrons \(\approx10^{22}\ \text{m}^{-3}\) as majority carriers
+B) \(n_h=1.5\times10^{16}\ \text{m}^{-3}\); intrinsic
+C) \(n_h=10^{22}\ \text{m}^{-3}\); p-type
+D) \(n_h=1.5\times10^{6}\ \text{m}^{-3}\); n-type
+KEY: A
+SOL:
+Answer: (A) \(n_h=2.25\times10^{10}\ \text{m}^{-3}\); n-type.
+Given: \(n_i=1.5\times10^{16}\ \text{m}^{-3},\ N_D=10^{22}\ \text{m}^{-3}\)
+Formula/Principle: \(n_en_h=n_i^2;\ n_e\approx N_D\ (N_D\gg n_i)\)
+Step 1: \(n_e\approx10^{22}\ \text{m}^{-3}\)
+Step 2: \(n_i^2=2.25\times10^{32}\ \text{m}^{-6}\)
+Step 3: \(n_h=\dfrac{2.25\times10^{32}}{10^{22}}=2.25\times10^{10}\ \text{m}^{-3}\)
+Worked derivation: \[\frac{n_e}{n_h}=\frac{10^{22}}{2.25\times10^{10}}\approx4.4\times10^{11}\]
+Check: \[n_en_h=10^{22}\times2.25\times10^{10}=2.25\times10^{32}=n_i^2\ \checkmark\]
+Why: \(\text{added electrons recombine with holes, so the hole density falls far below its intrinsic value}\)
+Why not the others: (B) \(\text{ignores doping}\); (C) \(\text{donors give n-type}\); (D) \(\text{divides }n_i\text{ by }N_D\text{ wrongly}\).
+Key point: \(n_en_h=n_i^2;\ \text{donors}\Rightarrow\text{n-type}\)
+
+@@ Q78
+format: numerical
+sub_topic: Counting significant figures and applying the rules for addition, multiplication and rounding off
+Q: Which set of significant-figure results is correct: the number of significant figures in \(0.007020\) and in \(4.700\times10^3\), the sum \(2.5+3.42+1.137\), the product \(3.0\times2.11\), and \(2.745\) and \(2.735\) rounded to three figures?
+A) \(3\) and \(2\); \(7.057\); \(6.33\); \(2.75\) and \(2.73\)
+B) \(6\) and \(4\); \(7.06\); \(6.3\); \(2.74\) and \(2.73\)
+C) \(4\) and \(4\); \(7.1\); \(6.3\); \(2.74\) and \(2.74\)
+D) \(4\) and \(2\); \(7.0\); \(6.33\); \(2.75\) and \(2.74\)
+KEY: C
+SOL:
+Answer: (C) \(4,\ 4;\ 7.1;\ 6.3;\ 2.74,\ 2.74\).
+Given: \(0.007020,\ 4.700\times10^3,\ 2.5+3.42+1.137,\ 3.0\times2.11,\ 2.745,\ 2.735\)
+Formula/Principle: \(\text{leading zeros not significant; trailing zeros after the decimal point significant; sums: fewest decimal places; products: fewest significant figures; dropping a 5: leave an even preceding digit, raise an odd one}\)
+Step 1: \(0.007020\to7,0,2,0\Rightarrow4;\ 4.700\times10^3\Rightarrow4\)
+Step 2: \(2.5+3.42+1.137=7.057\to1\text{ decimal place}\Rightarrow7.1\)
+Step 3: \(3.0\times2.11=6.33\to2\text{ s.f.}\Rightarrow6.3\)
+Worked derivation: \[2.745:\ \text{preceding digit }4\text{ even}\Rightarrow2.74;\quad2.735:\ \text{preceding digit }3\text{ odd}\Rightarrow2.74\]
+Check: \[\text{the result is no more precise than the least precise input}\ \checkmark\]
+Why: \(\text{significant figures carry the precision of measurement; the even-digit rule avoids systematic upward bias in rounding}\)
+Why not the others: (A) \(\text{miscounts zeros; no rounding}\); (B) \(\text{counts leading zeros}\); (D) \(\text{wrong count and rounding}\).
+Key point: \(\text{add: decimals; multiply: s.f.; trailing 5: round to even}\)
+
+@@ Q79
+format: numerical
+sub_topic: Distinguishing average and instantaneous velocity for non-uniform motion and obtaining instantaneous velocity as the limit of average velocity
+Q: A particle moves along a line with \(x=5t^2\) (SI units). What is its average velocity over \(0\)–\(2\ \text{s}\), its instantaneous velocity at \(t=1\ \text{s}\), and its average velocity over \([1,1+\Delta t]\)?
+A) \(20\ \text{m s}^{-1}\); \(5\ \text{m s}^{-1}\); \(10\ \text{m s}^{-1}\)
+B) \(10\ \text{m s}^{-1}\); \(10\ \text{m s}^{-1}\); \(10+5\Delta t\ \text{m s}^{-1}\), which tends to \(10\ \text{m s}^{-1}\) as \(\Delta t\to0\)
+C) \(10\ \text{m s}^{-1}\); \(20\ \text{m s}^{-1}\); \(10\Delta t\)
+D) \(5\ \text{m s}^{-1}\); \(10\ \text{m s}^{-1}\); \(5+10\Delta t\)
+KEY: B
+SOL:
+Answer: (B) \(10;\ 10;\ 10+5\Delta t\to10\ \text{m s}^{-1}\).
+Given: \(x=5t^2\)
+Formula/Principle: \(\bar v=\dfrac{\Delta x}{\Delta t};\ v=\dfrac{dx}{dt}=\lim_{\Delta t\to0}\dfrac{\Delta x}{\Delta t}\)
+Step 1: \(\bar v_{0\to2}=\dfrac{20-0}{2}=10\ \text{m s}^{-1}\)
+Step 2: \(v=10t\Rightarrow v(1)=10\ \text{m s}^{-1}\)
+Step 3: \(\bar v_{[1,1+\Delta t]}=\dfrac{5(1+\Delta t)^2-5}{\Delta t}=10+5\Delta t\)
+Worked derivation: \[\lim_{\Delta t\to0}(10+5\Delta t)=10=v(1)\]
+Check: \[\text{for uniform acceleration, }\bar v\text{ over }[0,2]=v\text{ at the midpoint }t=1\ \checkmark\]
+Why: \(\text{instantaneous velocity is the limit of average velocity over shrinking intervals}\)
+Why not the others: (A) \(\text{uses }x(2)\text{ as velocity}\); (C) \(v(1)\ne20\); (D) \(\text{wrong expansion}\).
+Key point: \(v=\lim\Delta x/\Delta t;\ \text{uniform }a:\ \bar v=v_{\text{mid-time}}\)
+
+@@ Q80
+format: numerical
+sub_topic: Showing that static friction adjusts up to its limiting value, relating the angle of repose to μs, and comparing static, kinetic and rolling friction
+Q: A \(5\ \text{kg}\) block rests on a horizontal floor with \(\mu_s=0.5\) (\(g=10\ \text{m s}^{-2}\)). A horizontal push of \(10\ \text{N}\) is applied. What friction acts, what is the angle of repose for this pair of surfaces, and how do the friction types compare?
+A) friction \(25\ \text{N}\), so the block moves backwards; angle of repose \(30^\circ\)
+B) friction \(0\), since the block does not move; angle of repose \(60^\circ\)
+C) friction \(10\ \text{N}\); angle of repose \(45^\circ\); rolling friction is the largest
+D) static friction \(10\ \text{N}\), exactly balancing the push (limiting value \(\mu_sN=25\ \text{N}\) not reached); angle of repose \(\theta=\tan^{-1}\mu_s=\tan^{-1}0.5\approx26.6^\circ\); rolling friction \(<\) kinetic friction \(<\) limiting static friction
+KEY: D
+SOL:
+Answer: (D) \(10\ \text{N}\); \(\tan^{-1}0.5\approx26.6^\circ\); rolling \(<\) kinetic \(<\) limiting static.
+Given: \(m=5\ \text{kg},\ \mu_s=0.5,\ F=10\ \text{N},\ g=10\ \text{m s}^{-2}\)
+Formula/Principle: \(f_s\le\mu_sN;\ \text{angle of repose: }\tan\theta=\mu_s\)
+Step 1: \(N=mg=50\ \text{N};\ f_{\max}=0.5\times50=25\ \text{N}\)
+Step 2: \(F=10<25\Rightarrow\text{no motion}\Rightarrow f_s=10\ \text{N}\)
+Step 3: \(\tan\theta=0.5\Rightarrow\theta\approx26.6^\circ\)
+Worked derivation: \[\text{on the incline at repose: }mg\sin\theta=\mu_smg\cos\theta\Rightarrow\tan\theta=\mu_s\]
+Check: \[\text{net horizontal force }=10-10=0\Rightarrow\text{block stays at rest}\ \checkmark\]
+Why: \(\text{static friction is self-adjusting: it equals the applied force until the limiting value is reached}\)
+Why not the others: (A) \(\text{friction cannot exceed the applied force at rest}\); (B) \(\text{friction is not zero under a push}\); (C) \(\text{wrong angle; rolling friction is smallest}\).
+Key point: \(f_s=F\text{ up to }\mu_sN;\ \tan\theta_{\text{repose}}=\mu_s\)

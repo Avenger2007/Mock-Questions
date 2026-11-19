@@ -1,0 +1,439 @@
+@@ Q41
+format: numerical
+sub_topic: Locating horizontal and vertical tangents and tangents of a given slope on a parametric curve, using dy/dt and dx/dt separately
+Q: For the curve \(x=t^3-3t,\ y=t^2\), how many horizontal tangents, vertical tangents and tangents of slope \(1\) does it have, and where are the vertical tangents?
+A) \(2\) horizontal, \(1\) vertical at \((0,0)\), \(1\) tangent of slope \(1\)
+B) \(1\) horizontal, \(2\) vertical at \((0,\pm1)\), no tangent of slope \(1\)
+C) \(1\) horizontal (at the origin), \(2\) vertical at \((-2,1)\) and \((2,1)\), and \(2\) tangents of slope \(1\)
+D) no horizontal tangent, \(2\) vertical tangents, \(3\) tangents of slope \(1\)
+KEY: C
+SOL:
+Answer: (C) \(1\) horizontal at \((0,0)\); vertical at \((\mp2,1)\); \(2\) tangents of slope \(1\).
+Given: \(x=t^3-3t,\ y=t^2\)
+Formula/Principle: \(\dfrac{dy}{dx}=\dfrac{dy/dt}{dx/dt};\ \text{horizontal: }\dfrac{dy}{dt}=0,\ \dfrac{dx}{dt}\ne0;\ \text{vertical: }\dfrac{dx}{dt}=0,\ \dfrac{dy}{dt}\ne0\)
+Step 1: \(\dfrac{dy}{dt}=2t=0\Rightarrow t=0,\ \dfrac{dx}{dt}=-3\ne0\Rightarrow\text{horizontal tangent at }(0,0)\)
+Step 2: \(\dfrac{dx}{dt}=3t^2-3=0\Rightarrow t=\pm1;\ t=1:(-2,1),\ t=-1:(2,1)\)
+Step 3: \(\dfrac{2t}{3t^2-3}=1\Rightarrow3t^2-2t-3=0,\ D=4+36=40>0\Rightarrow2\text{ values of }t\)
+Worked derivation: \[t=\frac{2\pm\sqrt{40}}{6}=\frac{1\pm\sqrt{10}}{3}\ne\pm1\Rightarrow\text{both give genuine tangents of slope }1\]
+Check: \[t=\pm1:\ \frac{dy}{dt}=\pm2\ne0\Rightarrow\text{vertical tangents are genuine}\ \checkmark\]
+Why: \(\text{a parametric curve has a horizontal tangent where only }y\text{ stops changing and a vertical one where only }x\text{ stops changing}\)
+Why not the others: (A) \(dy/dt\text{ vanishes only at }t=0\); (B) \(\text{vertical points are }(\mp2,1)\text{ and slope-1 tangents exist}\); (D) \(t=0\text{ gives a horizontal tangent; the quadratic has only two roots}\).
+Key point: \(\dfrac{dy}{dx}=\dfrac{\dot y}{\dot x};\ \dot y=0\to\text{horizontal},\ \dot x=0\to\text{vertical}\)
+
+@@ Q42
+format: numerical
+sub_topic: Finding the point of inflection and the intervals of concavity of a cubic, and relating them to its turning points
+Q: For \(y=x^3-6x^2+9x+1\), where is the point of inflection and on which interval is the curve concave down?
+A) Inflection at \((2,3)\); concave down for \(x<2\), concave up for \(x>2\); local maximum \((1,5)\), local minimum \((3,1)\)
+B) Inflection at \((2,3)\); concave up for \(x<2\)
+C) Inflection at \((3,1)\); concave down for \(x<3\)
+D) Inflection at \((1,5)\); concave down for \(x>1\)
+KEY: A
+SOL:
+Answer: (A) Inflection \((2,3)\); concave down on \(x<2\); max \((1,5)\), min \((3,1)\).
+Given: \(y=x^3-6x^2+9x+1\)
+Formula/Principle: \(y''<0\Rightarrow\text{concave down};\ y''>0\Rightarrow\text{concave up};\ \text{inflection where }y''\text{ changes sign}\)
+Step 1: \(y'=3x^2-12x+9=3(x-1)(x-3)\Rightarrow\text{turning points }x=1,3\)
+Step 2: \(y''=6x-12=0\Rightarrow x=2,\ y(2)=8-24+18+1=3\)
+Step 3: \(x<2:\ y''<0\ (\text{concave down});\ x>2:\ y''>0\ (\text{concave up})\)
+Worked derivation: \[y(1)=1-6+9+1=5,\quad y(3)=27-54+27+1=1\]
+Check: \[\text{inflection is the midpoint of the turning points: }\left(\tfrac{1+3}{2},\tfrac{5+1}{2}\right)=(2,3)\ \checkmark\]
+Why: \(\text{a cubic is symmetric about its inflection point, which lies midway between its maximum and minimum}\)
+Why not the others: (B) \(y''<0\text{ for }x<2\); (C) \((3,1)\text{ is the minimum}\); (D) \((1,5)\text{ is the maximum}\).
+Key point: \(\text{inflection where }y''=0\text{ and changes sign; cubic: midpoint of turning points}\)
+
+@@ Q43
+format: numerical
+sub_topic: Finding the intervals where a cubic is increasing or decreasing and its local extreme values from the sign of the derivative
+Q: For \(f(x)=2x^3-15x^2+36x+1\), on which intervals is \(f\) increasing, and what are its local maximum and minimum values?
+A) increasing on \([2,3]\); maximum \(28\), minimum \(29\)
+B) increasing on \((-\infty,2]\cup[3,\infty)\), decreasing on \([2,3]\); local maximum \(f(2)=29\), local minimum \(f(3)=28\)
+C) increasing on \((-\infty,3]\); no local extremum
+D) decreasing on \((-\infty,2]\cup[3,\infty)\); local maximum \(f(3)=28\)
+KEY: B
+SOL:
+Answer: (B) Increasing on \((-\infty,2]\cup[3,\infty)\); max \(29\) at \(x=2\), min \(28\) at \(x=3\).
+Given: \(f(x)=2x^3-15x^2+36x+1\)
+Formula/Principle: \(f'(x)\ge0\Rightarrow\text{increasing};\ f'\text{ changes }+\to-\text{ at a maximum and }-\to+\text{ at a minimum}\)
+Step 1: \(f'(x)=6x^2-30x+36=6(x-2)(x-3)\)
+Step 2: \(f'>0\text{ for }x<2\text{ or }x>3;\ f'<0\text{ for }2<x<3\)
+Step 3: \(f(2)=16-60+72+1=29,\ f(3)=54-135+108+1=28\)
+Worked derivation: \[f''(x)=12x-30:\ f''(2)=-6<0\ (\max),\ f''(3)=6>0\ (\min)\]
+Check: \[f(2)>f(3)\text{ as required for a max followed by a min}\ \checkmark\]
+Why: \(\text{the sign of }f'\text{ between its roots decides rising and falling stretches}\)
+Why not the others: (A) \(f\text{ decreases on }[2,3]\text{; values swapped}\); (C) \(f'\text{ changes sign at }2\text{ and }3\); (D) \(\text{intervals reversed}\).
+Key point: \(f'=6(x-2)(x-3):\ \uparrow\text{ outside }[2,3],\ \downarrow\text{ inside}\)
+
+@@ Q44
+format: numerical
+sub_topic: Evaluating a symmetric definite integral with the property ∫₀^a f(x) dx = ∫₀^a f(a − x) dx and solving for the upper limit
+Q: If \(\displaystyle\int_0^a\frac{\sqrt x}{\sqrt x+\sqrt{a-x}}\,dx=3\), what is the value of \(a\)?
+A) \(3\)
+B) \(9\)
+C) \(\tfrac32\)
+D) \(6\)
+KEY: D
+SOL:
+Answer: (D) \(a=6\).
+Given: \(I=\displaystyle\int_0^a\frac{\sqrt x}{\sqrt x+\sqrt{a-x}}\,dx=3\)
+Formula/Principle: \(\displaystyle\int_0^a f(x)\,dx=\int_0^a f(a-x)\,dx\)
+Step 1: \(I=\displaystyle\int_0^a\frac{\sqrt{a-x}}{\sqrt{a-x}+\sqrt x}\,dx\)
+Step 2: \(2I=\displaystyle\int_0^a1\,dx=a\Rightarrow I=\dfrac a2\)
+Step 3: \(\dfrac a2=3\Rightarrow a=6\)
+Worked derivation: \[\frac{\sqrt x}{\sqrt x+\sqrt{a-x}}+\frac{\sqrt{a-x}}{\sqrt{a-x}+\sqrt x}=1\]
+Check: \[\text{integrand at }x=\tfrac a2\text{ is }\tfrac12;\ \text{average value }\tfrac12\Rightarrow I=\tfrac a2\ \checkmark\]
+Why: \(\text{replacing }x\text{ by }a-x\text{ swaps numerator and the other term, so the two forms add to }1\)
+Why not the others: (A) \(\text{takes }I=a\); (B) \(\text{squares the answer}\); (C) \(\text{takes }I=2a\).
+Key point: \(\displaystyle\int_0^a\frac{f(x)}{f(x)+f(a-x)}dx=\frac a2\)
+
+@@ Q45
+format: numerical
+sub_topic: Finding the area enclosed between a parabola and a line through the origin as a function of the slope, and solving for the slope
+Q: The area enclosed between \(y=x^2\) and \(y=kx\ (k>0)\) is \(36\) square units. What is \(k\)?
+A) \(3\)
+B) \(36\)
+C) \(\sqrt[3]{36}\)
+D) \(6\)
+KEY: D
+SOL:
+Answer: (D) \(k=6\).
+Given: \(y=x^2,\ y=kx,\ k>0,\ \text{area}=36\)
+Formula/Principle: \(\text{area}=\displaystyle\int_a^b(\text{upper}-\text{lower})\,dx\)
+Step 1: \(x^2=kx\Rightarrow x=0,\ k;\ \text{line above parabola on }(0,k)\)
+Step 2: \(\text{area}=\displaystyle\int_0^k(kx-x^2)\,dx=\frac{k^3}{2}-\frac{k^3}{3}=\frac{k^3}{6}\)
+Step 3: \(\dfrac{k^3}{6}=36\Rightarrow k^3=216\Rightarrow k=6\)
+Worked derivation: \[\int_0^6(6x-x^2)\,dx=\left[3x^2-\frac{x^3}{3}\right]_0^6=108-72=36\]
+Check: \[x=3:\ 6x=18>x^2=9\Rightarrow\text{line is above the parabola}\ \checkmark\]
+Why: \(\text{the region lies between the two intersection points with the line on top}\)
+Why not the others: (A) \(\text{gives area }4.5\); (B) \(\text{equates }k\text{ to the area}\); (C) \(\text{omits the factor }\tfrac16\).
+Key point: \(\text{area between }y=x^2\text{ and }y=kx=\dfrac{k^3}{6}\)
+
+@@ Q46
+format: numerical
+sub_topic: Forming and solving a variable-separable differential equation for a curve from a geometric condition on its slope
+Q: A curve passes through \((1,2)\) and its slope at every point \((x,y)\) with \(x>0\) is \(\dfrac{2y}{x}\). What is its equation and the value of \(y\) at \(x=2\)?
+A) \(y=2x;\ y(2)=4\)
+B) \(y=2x^2;\ y(2)=8\)
+C) \(y=x^2+1;\ y(2)=5\)
+D) \(y=2e^{x-1};\ y(2)=2e\)
+KEY: B
+SOL:
+Answer: (B) \(y=2x^2\); \(y(2)=8\).
+Given: \(\dfrac{dy}{dx}=\dfrac{2y}{x},\ y(1)=2\)
+Formula/Principle: \(\text{separate variables: }\displaystyle\int\frac{dy}{y}=\int\frac{2}{x}\,dx\)
+Step 1: \(\ln|y|=2\ln|x|+c\)
+Step 2: \(y=Cx^2\)
+Step 3: \(2=C\cdot1\Rightarrow C=2\Rightarrow y=2x^2,\ y(2)=8\)
+Worked derivation: \[\frac{dy}{dx}=4x=\frac{2\cdot2x^2}{x}=\frac{2y}{x}\]
+Check: \[y(1)=2\cdot1=2\ \checkmark\]
+Why: \(\text{the slope condition separates into }\tfrac{dy}{y}=\tfrac{2\,dx}{x}\text{, giving a power law}\)
+Why not the others: (A) \(\text{slope would be }y/x\); (C) \(\text{slope }2x\ne\tfrac{2y}{x}\); (D) \(\text{slope would be }y\).
+Key point: \(\dfrac{dy}{dx}=\dfrac{ny}{x}\Rightarrow y=Cx^n\)
+
+@@ Q47
+format: numerical
+sub_topic: Counting subsets of a finite set under membership conditions, and intersecting two real intervals
+Q: For \(A=\{1,2,3,4\}\), how many subsets does \(A\) have, how many contain \(1\) but not \(2\), and what is \([2,5)\cap(3,7]\)?
+A) \(16\) subsets; \(4\) contain \(1\) but not \(2\); \([2,5)\cap(3,7]=(3,5)\)
+B) \(16\) subsets; \(8\) contain \(1\) but not \(2\); \([3,5]\)
+C) \(15\) subsets; \(4\); \((3,5]\)
+D) \(8\) subsets; \(2\); \([2,7]\)
+KEY: A
+SOL:
+Answer: (A) \(16\); \(4\); \((3,5)\).
+Given: \(A=\{1,2,3,4\},\ n(A)=4\)
+Formula/Principle: \(n(P(A))=2^{n};\ \text{fixing membership of }k\text{ elements leaves }2^{n-k}\text{ subsets}\)
+Step 1: \(n(P(A))=2^4=16\)
+Step 2: \(1\in S,\ 2\notin S\text{ fixed; }3,4\text{ free}\Rightarrow2^2=4\)
+Step 3: \([2,5)\cap(3,7]=\{x:3<x<5\}=(3,5)\)
+Worked derivation: \[\text{subsets: }\{1\},\{1,3\},\{1,4\},\{1,3,4\}\]
+Check: \[3\notin(3,7],\ 5\notin[2,5)\Rightarrow\text{both ends open}\ \checkmark\]
+Why: \(\text{each free element is either in or out, doubling the count; an intersection keeps the stricter end at each side}\)
+Why not the others: (B) \(\text{forgets to fix }2\text{; ends wrongly closed}\); (C) \(\text{omits the empty set; }5\text{ excluded}\); (D) \(\text{uses }2^3\text{ and gives the union}\).
+Key point: \(n(P(A))=2^n;\ \text{intersection: larger left end, smaller right end}\)
+
+@@ Q48
+format: numerical
+sub_topic: Values of the greatest integer function at negative arguments, the identity for [x] + [−x], and solving a quadratic in [x]
+Q: For the greatest integer function \([x]\), what are \([x]+[-x]\) and \([-2.7]\), and what is the solution set of \([x]^2-5[x]+6=0\)?
+A) \([x]+[-x]=0\) always; \([-2.7]=-2\); \(x\in\{2,3\}\)
+B) \([x]+[-x]=-1\) always; \([-2.7]=-3\); \(x\in[2,3]\)
+C) \([x]+[-x]=0\) if \(x\in\mathbb Z\) and \(-1\) otherwise; \([-2.7]=-3\); \(x\in[2,4)\)
+D) \([x]+[-x]=1\) for non-integers; \([-2.7]=-2\); \(x\in(2,4]\)
+KEY: C
+SOL:
+Answer: (C) \(0\) or \(-1\); \([-2.7]=-3\); \(x\in[2,4)\).
+Given: \([x]=\text{greatest integer}\le x\)
+Formula/Principle: \([x]=n\iff n\le x<n+1\)
+Step 1: \(x=n+f,\ 0<f<1:\ [x]=n,\ [-x]=-n-1\Rightarrow\text{sum }-1;\ f=0:\text{ sum }0\)
+Step 2: \(-3\le-2.7<-2\Rightarrow[-2.7]=-3\)
+Step 3: \(([x]-2)([x]-3)=0\Rightarrow[x]=2\text{ or }3\Rightarrow x\in[2,3)\cup[3,4)=[2,4)\)
+Worked derivation: \[x=3.5:\ [x]=3,\ [-3.5]=-4,\ \text{sum}=-1\]
+Check: \[x=3.99:\ [x]=3\Rightarrow9-15+6=0\ \checkmark;\ x=4:\ 16-20+6=2\ne0\]
+Why: \(\text{the floor of a negative non-integer moves away from zero, and each integer value of }[x]\text{ covers a half-open interval}\)
+Why not the others: (A) \(\text{fails for non-integers; }[x]\text{ takes values on intervals}\); (B) \(\text{fails for integers; misses }[3,4)\); (D) \(\text{wrong sign and wrong endpoints}\).
+Key point: \([x]+[-x]\in\{0,-1\};\ [x]=n\iff x\in[n,n+1)\)
+
+@@ Q49
+format: numerical
+sub_topic: Using the identity (1 + tan A)(1 + tan B) = 2 when A + B = 45° to evaluate a long product, and finding tan 75°
+Q: What is the value of \(\displaystyle\prod_{k=1}^{44}(1+\tan k^\circ)\), and what is \(\tan75^\circ\)?
+A) \(2^{44};\ 2-\sqrt3\)
+B) \(2^{11};\ \sqrt3+1\)
+C) \(2^{22};\ 2+\sqrt3\)
+D) \(44;\ 2+\sqrt3\)
+KEY: C
+SOL:
+Answer: (C) \(2^{22}\); \(\tan75^\circ=2+\sqrt3\).
+Given: \(k=1,\dots,44;\ A+B=45^\circ\)
+Formula/Principle: \(\tan(A+B)=\dfrac{\tan A+\tan B}{1-\tan A\tan B}\)
+Step 1: \(\tan(A+B)=1\Rightarrow\tan A+\tan B+\tan A\tan B=1\)
+Step 2: \((1+\tan A)(1+\tan B)=1+(\tan A+\tan B+\tan A\tan B)=2\)
+Step 3: \(\text{pairs }(k,45-k),\ k=1..22\Rightarrow22\text{ pairs}\Rightarrow2^{22}\)
+Worked derivation: \[\tan75^\circ=\frac{\tan45^\circ+\tan30^\circ}{1-\tan45^\circ\tan30^\circ}=\frac{1+\frac1{\sqrt3}}{1-\frac1{\sqrt3}}=\frac{\sqrt3+1}{\sqrt3-1}=2+\sqrt3\]
+Check: \[(1+\tan22^\circ)(1+\tan23^\circ)\approx1.404\times1.424\approx2.00\ \checkmark\]
+Why: \(\text{the 44 factors split exactly into 22 complementary-to-}45^\circ\text{ pairs, each giving }2\)
+Why not the others: (A) \(\text{counts each factor as 2; }2-\sqrt3=\tan15^\circ\); (B) \(\text{miscounts pairs}\); (D) \(\text{adds instead of multiplying}\).
+Key point: \(A+B=45^\circ\Rightarrow(1+\tan A)(1+\tan B)=2\)
+
+@@ Q50
+format: numerical
+sub_topic: Finding the real parameter for which a complex quotient is purely imaginary, and the modulus and principal argument of a complex number in the third quadrant
+Q: For real \(k\), let \(z=\dfrac{k+2i}{1-i}\). For which \(k\) is \(z\) purely imaginary, can \(\arg z=\tfrac\pi4\) for some real \(k\), and what are the modulus and principal argument of \(-1-i\sqrt3\)?
+A) \(k=2\) (then \(z=2i\)); \(\arg z=\tfrac\pi4\) is impossible; \(|-1-i\sqrt3|=2,\ \arg=-\tfrac{2\pi}{3}\)
+B) \(k=-2\); \(\arg z=\tfrac\pi4\) when \(k=0\); modulus \(2\), \(\arg=\tfrac{4\pi}{3}\)
+C) \(k=2\); \(\arg z=\tfrac\pi4\) when \(k=2\); modulus \(4\), \(\arg=-\tfrac\pi3\)
+D) no such \(k\); modulus \(\sqrt2\), \(\arg=\tfrac{2\pi}{3}\)
+KEY: A
+SOL:
+Answer: (A) \(k=2\); impossible; \(2,\ -\tfrac{2\pi}{3}\).
+Given: \(z=\dfrac{k+2i}{1-i},\ w=-1-i\sqrt3\)
+Formula/Principle: \(\text{multiply by the conjugate }1+i;\ \arg\in(-\pi,\pi]\)
+Step 1: \(z=\dfrac{(k+2i)(1+i)}{2}=\dfrac{(k-2)+(k+2)i}{2}\)
+Step 2: \(\operatorname{Re}z=0\Rightarrow k=2,\ z=\dfrac{4i}{2}=2i\)
+Step 3: \(\arg z=\tfrac\pi4\Rightarrow k-2=k+2>0\Rightarrow-2=2\text{, impossible}\)
+Worked derivation: \[|w|=\sqrt{1+3}=2;\ w\text{ in quadrant III},\ \alpha=\tan^{-1}\sqrt3=\tfrac\pi3\Rightarrow\arg w=-\left(\pi-\tfrac\pi3\right)=-\tfrac{2\pi}{3}\]
+Check: \[2\left(\cos\left(-\tfrac{2\pi}{3}\right)+i\sin\left(-\tfrac{2\pi}{3}\right)\right)=-1-i\sqrt3\ \checkmark\]
+Why: \(\text{real and imaginary parts of }z\text{ always differ by }2\text{, so they can never be equal}\)
+Why not the others: (B) \(k=-2\text{ gives }z=-2\text{ (real); }\tfrac{4\pi}{3}\text{ is not principal}\); (C) \(k=2\text{ gives }\arg=\tfrac\pi2;\ |w|=2\); (D) \(k=2\text{ works}\).
+Key point: \(\text{rationalise; principal arg in }(-\pi,\pi]\)
+
+@@ Q51
+format: numerical
+sub_topic: Interpreting |z − a| = r as a circle and finding the common points of two circles in the Argand plane
+Q: How many complex numbers satisfy both \(|z|=2\) and \(|z-2|=2\), and what are they?
+A) none
+B) exactly one, \(z=1\)
+C) infinitely many, lying on the line \(\operatorname{Re}z=1\)
+D) two: \(z=1\pm i\sqrt3\), which with \(0\) and \(2\) form two equilateral triangles
+KEY: D
+SOL:
+Answer: (D) \(z=1\pm i\sqrt3\).
+Given: \(|z|=2,\ |z-2|=2\)
+Formula/Principle: \(|z-a|=r\text{ is a circle with centre }a\text{ and radius }r\)
+Step 1: \(\text{circles: centre }0,\ r=2;\ \text{centre }2,\ r=2;\ \text{distance between centres }2<4\Rightarrow\text{two common points}\)
+Step 2: \(x^2+y^2=4,\ (x-2)^2+y^2=4\Rightarrow-4x+4=0\Rightarrow x=1\)
+Step 3: \(y^2=3\Rightarrow y=\pm\sqrt3\)
+Worked derivation: \[|1+i\sqrt3|=\sqrt{1+3}=2,\quad|1+i\sqrt3-2|=|-1+i\sqrt3|=2\]
+Check: \[\text{sides }|z|=|z-2|=|2-0|=2\Rightarrow\text{equilateral}\ \checkmark\]
+Why: \(\text{two equal circles whose centres are closer than the sum of radii cut in two points symmetric about the line of centres}\)
+Why not the others: (A) \(\text{circles do intersect}\); (B) \(|1|=1\ne2\); (C) \(\text{the line is only the common chord}\).
+Key point: \(|z-a|=r\text{ is a circle; two circles meet in at most two points}\)
+
+@@ Q52
+format: numerical
+sub_topic: Counting committees with an "at least" condition by cases and by complement, and finding the largest binomial coefficient
+Q: A committee of \(5\) is chosen from \(6\) men and \(4\) women so that it has at least \(2\) women. In how many ways can this be done, and for which \(r\) is \({}^{11}C_r\) largest?
+A) \(120\); \(r=5\) only
+B) \(186\); \(r=5\) and \(r=6\), each giving \(462\)
+C) \(246\); \(r=6\) only
+D) \(66\); \(r=11\)
+KEY: B
+SOL:
+Answer: (B) \(186\); \({}^{11}C_5={}^{11}C_6=462\).
+Given: \(6\text{ men},\ 4\text{ women},\ \text{committee }5,\ \ge2\text{ women}\)
+Formula/Principle: \(\text{sum over cases, or total minus unwanted cases};\ {}^{n}C_r\text{ largest at }r=\tfrac{n\pm1}{2}\text{ for odd }n\)
+Step 1: \(2W:\ {}^4C_2\,{}^6C_3=6\cdot20=120;\ 3W:\ {}^4C_3\,{}^6C_2=4\cdot15=60;\ 4W:\ {}^4C_4\,{}^6C_1=6\)
+Step 2: \(120+60+6=186\)
+Step 3: \(n=11\text{ odd}\Rightarrow r=5,6;\ {}^{11}C_5=\dfrac{11\cdot10\cdot9\cdot8\cdot7}{120}=462\)
+Worked derivation: \[{}^{10}C_5-\left({}^6C_5+{}^4C_1\,{}^6C_4\right)=252-(6+60)=186\]
+Check: \[\text{direct cases and complement agree: }186\ \checkmark\]
+Why: \(\text{"at least" conditions are counted by splitting into exact cases or subtracting the excluded ones}\)
+Why not the others: (A) \(\text{counts only exactly 2 women}\); (C) \(\text{adds the excluded cases}\); (D) \(\text{gives the excluded count}\).
+Key point: \(\text{at least }k=\text{total}-\text{fewer than }k;\ {}^{n}C_r\text{ max at middle}\)
+
+@@ Q53
+format: numerical
+sub_topic: Using the general term of a binomial expansion to find the constant term, count terms with positive powers, and write the middle terms
+Q: In the expansion of \(\left(x^2+\dfrac1x\right)^9\), what is the constant term, how many terms have a positive power of \(x\), and what are the middle terms?
+A) constant term \(126\); \(5\) positive-power terms; middle term \(84x^3\)
+B) constant term \(84\); \(6\) positive-power terms; middle terms \(126x^6\) and \(126x^3\)
+C) constant term \(36\); \(4\) positive-power terms; middle term \(126x^0\)
+D) no constant term; \(9\) positive-power terms; middle terms \(84x^6\) and \(84x^3\)
+KEY: B
+SOL:
+Answer: (B) \(84\); \(6\) terms; \(126x^6,\ 126x^3\).
+Given: \(\left(x^2+x^{-1}\right)^9,\ n=9\)
+Formula/Principle: \(T_{r+1}={}^9C_r\,(x^2)^{9-r}(x^{-1})^r={}^9C_r\,x^{18-3r}\)
+Step 1: \(18-3r=0\Rightarrow r=6\Rightarrow{}^9C_6=84\)
+Step 2: \(18-3r>0\Rightarrow r<6\Rightarrow r=0,1,\dots,5\Rightarrow6\text{ terms}\)
+Step 3: \(n=9\text{ odd}\Rightarrow\text{middle terms }T_5,T_6:\ {}^9C_4x^6=126x^6,\ {}^9C_5x^3=126x^3\)
+Worked derivation: \[\text{powers: }18,15,12,9,6,3,0,-3,-6,-9\ \ (r=0\dots9)\]
+Check: \[10\text{ terms}=6\text{ positive}+1\text{ constant}+3\text{ negative}\ \checkmark\]
+Why: \(\text{the exponent of }x\text{ falls by 3 with each term, so the general term locates every required term}\)
+Why not the others: (A) \(\text{coefficients swapped; miscounts}\); (C) \(\text{wrong }r\); (D) \(r=6\text{ gives a constant term}\).
+Key point: \(T_{r+1}={}^nC_r\,a^{n-r}b^r;\ \text{odd }n\text{ has two middle terms}\)
+
+@@ Q54
+format: numerical
+sub_topic: Finding the eccentricity, foci, latus rectum and lattice points of an ellipse in standard form
+Q: For the ellipse \(\dfrac{x^2}{16}+\dfrac{y^2}{9}=1\), what are its eccentricity, the number of points with integer coordinates on it, and the length of its latus rectum?
+A) \(e=\tfrac34\); \(8\) lattice points; latus rectum \(\tfrac92\)
+B) \(e=\tfrac54\); \(4\) lattice points; latus rectum \(\tfrac{32}{3}\)
+C) \(e=\tfrac{\sqrt7}{4}\) (foci \((\pm\sqrt7,0)\)); \(4\) lattice points; latus rectum \(\tfrac92\)
+D) \(e=\tfrac{\sqrt7}{3}\); \(4\) lattice points; latus rectum \(\tfrac{9}{4}\)
+KEY: C
+SOL:
+Answer: (C) \(e=\tfrac{\sqrt7}{4}\); \(4\); \(\tfrac92\).
+Given: \(a^2=16,\ b^2=9,\ a=4,\ b=3\)
+Formula/Principle: \(c^2=a^2-b^2,\ e=\tfrac ca,\ \text{latus rectum}=\dfrac{2b^2}{a}\)
+Step 1: \(c=\sqrt{16-9}=\sqrt7\Rightarrow e=\tfrac{\sqrt7}{4}\)
+Step 2: \(\text{latus rectum}=\dfrac{2\cdot9}{4}=\dfrac92\)
+Step 3: \(x\in\{0,\pm1,\pm2,\pm3,\pm4\}:\ y^2=9\left(1-\tfrac{x^2}{16}\right)=9,\tfrac{135}{16},\tfrac{27}{4},\tfrac{63}{16},0\)
+Worked derivation: \[\text{integer }y\text{ only for }x=0\ (y=\pm3)\text{ and }x=\pm4\ (y=0)\Rightarrow(0,\pm3),(\pm4,0)\]
+Check: \[e<1\ \checkmark;\ \text{latus rectum }\tfrac92<2b=6\ \checkmark\]
+Why: \(\text{only the vertices make }9(1-x^2/16)\text{ a perfect square}\)
+Why not the others: (A) \(e=\tfrac ba\text{ is wrong; extra lattice points}\); (B) \(e>1\text{ is a hyperbola}\); (D) \(\text{divides by }b\text{ instead of }a\).
+Key point: \(e=\sqrt{1-b^2/a^2};\ \text{LR}=2b^2/a\)
+
+@@ Q55
+format: numerical
+sub_topic: Counting points where a sum of modulus functions fails to be differentiable by examining each corner
+Q: At how many real points is \(f(x)=|x^2-4|+|x|\) not differentiable?
+A) \(3\): at \(x=-2,0,2\)
+B) \(2\): at \(x=\pm2\)
+C) \(1\): at \(x=0\)
+D) \(5\): at \(x=-2,-1,0,1,2\)
+KEY: A
+SOL:
+Answer: (A) \(3\) points, \(x=-2,0,2\).
+Given: \(f(x)=|x^2-4|+|x|\)
+Formula/Principle: \(|g(x)|\text{ has a corner where }g\text{ has a simple zero; a sum is non-differentiable where exactly one term has a corner}\)
+Step 1: \(x^2-4=0\Rightarrow x=\pm2\text{ (simple zeros); }|x|\text{ smooth there}\)
+Step 2: \(|x|\text{ has a corner at }0;\ |x^2-4|=4-x^2\text{ smooth near }0\)
+Step 3: \(\text{corners do not coincide}\Rightarrow\text{no cancellation}\Rightarrow3\text{ points}\)
+Worked derivation: \[\text{at }x=2:\ f'(2^-)=-2x+1=-3,\ f'(2^+)=2x+1=5;\quad\text{at }x=0:\ f'(0^-)=-1,\ f'(0^+)=1\]
+Check: \[x=-2:\ f'(-2^-)=2x-1=-5,\ f'(-2^+)=-2x-1=3\ \Rightarrow\text{corner}\ \checkmark\]
+Why: \(\text{each corner of one term survives because the other term is smooth there}\)
+Why not the others: (B) \(\text{misses the corner of }|x|\); (C) \(\text{misses }\pm2\); (D) \(x=\pm1\text{ are smooth points}\).
+Key point: \(\text{non-differentiable at simple zeros inside moduli unless corners cancel}\)
+
+@@ Q56
+format: numerical
+sub_topic: Computing mean, median, range, and mean deviation about the mean and about the median for ungrouped data
+Q: For the data \(3,5,6,8,11,12,18\), what are the mean, the mean deviation about the mean, the median, the mean deviation about the median and the range?
+A) mean \(8\), MD \(4\), median \(9\), MD \(\tfrac{27}{7}\), range \(15\)
+B) mean \(9\), MD \(\tfrac{27}{7}\), median \(8\), MD \(4\), range \(18\)
+C) mean \(9\), MD \(3\), median \(8\), MD \(3\), range \(15\)
+D) mean \(9\), MD about mean \(4\), median \(8\), MD about median \(\tfrac{27}{7}\approx3.86\), range \(15\)
+KEY: D
+SOL:
+Answer: (D) \(9,\ 4,\ 8,\ \tfrac{27}{7},\ 15\).
+Given: \(3,5,6,8,11,12,18;\ n=7\)
+Formula/Principle: \(\text{MD}(a)=\dfrac1n\sum|x_i-a|\)
+Step 1: \(\bar x=\dfrac{63}{7}=9;\ \text{median}=4\text{th value}=8;\ \text{range}=18-3=15\)
+Step 2: \(\sum|x_i-9|=6+4+3+1+2+3+9=28\Rightarrow\text{MD}=4\)
+Step 3: \(\sum|x_i-8|=5+3+2+0+3+4+10=27\Rightarrow\text{MD}=\tfrac{27}{7}\)
+Worked derivation: \[\tfrac{27}{7}\approx3.86<4\]
+Check: \[\text{MD about the median is the least of all mean deviations}\ \checkmark\]
+Why: \(\text{the sum of absolute deviations is minimised at the median}\)
+Why not the others: (A) \(\text{mean and median swapped}\); (B) \(\text{MDs swapped; wrong range}\); (C) \(\text{wrong sums}\).
+Key point: \(\text{MD about median}\le\text{MD about mean}\)
+
+@@ Q57
+format: numerical
+sub_topic: Finding probabilities of the union, of neither event, and of exactly one event from P(A), P(B) and P(A∩B), and testing independence
+Q: If \(P(A)=0.5,\ P(B)=0.4\) and \(P(A\cap B)=0.2\), what are \(P(A\cup B)\), \(P(\text{neither})\) and \(P(\text{exactly one})\), and are \(A,B\) independent?
+A) \(0.9,\ 0.1,\ 0.7\); not independent
+B) \(0.7,\ 0.3,\ 0.7\); independent
+C) \(0.7,\ 0.2,\ 0.5\); not independent
+D) \(0.7,\ 0.3,\ 0.5\); independent, since \(P(A)P(B)=0.2=P(A\cap B)\)
+KEY: D
+SOL:
+Answer: (D) \(0.7,\ 0.3,\ 0.5\); independent.
+Given: \(P(A)=0.5,\ P(B)=0.4,\ P(A\cap B)=0.2\)
+Formula/Principle: \(P(A\cup B)=P(A)+P(B)-P(A\cap B);\ P(\text{exactly one})=P(A\cup B)-P(A\cap B)\)
+Step 1: \(P(A\cup B)=0.5+0.4-0.2=0.7\)
+Step 2: \(P(\text{neither})=1-0.7=0.3\)
+Step 3: \(P(\text{exactly one})=0.7-0.2=0.5\)
+Worked derivation: \[P(A)P(B)=0.5\times0.4=0.2=P(A\cap B)\Rightarrow\text{independent};\ P(A\mid B)=\tfrac{0.2}{0.4}=0.5=P(A)\]
+Check: \[0.3+0.5+0.2=1\ \checkmark\]
+Why: \(\text{neither, exactly one and both are mutually exclusive and exhaustive}\)
+Why not the others: (A) \(\text{ignores the overlap}\); (B) \(\text{exactly one wrong}\); (C) \(\text{neither wrong; they are independent}\).
+Key point: \(\text{exactly one}=P(A)+P(B)-2P(A\cap B)\)
+
+@@ Q58
+format: numerical
+sub_topic: Computing the probability that two numbers chosen without replacement have an even sum, and its limiting value as the range grows
+Q: Two different numbers are chosen at random from \(1,2,\dots,20\). What is the probability that their sum is even, and what does this probability approach for numbers chosen from \(1,\dots,2n\) as \(n\to\infty\)?
+A) \(\tfrac12\); stays \(\tfrac12\)
+B) \(\tfrac{9}{19}\); tends to \(\tfrac12\)
+C) \(\tfrac{10}{19}\); tends to \(1\)
+D) \(\tfrac{9}{38}\); tends to \(\tfrac14\)
+KEY: B
+SOL:
+Answer: (B) \(\tfrac{9}{19}\); \(\to\tfrac12\).
+Given: \(10\text{ odd and }10\text{ even numbers};\ 2\text{ chosen}\)
+Formula/Principle: \(\text{sum even}\iff\text{both odd or both even}\)
+Step 1: \(\text{favourable}=2\cdot{}^{10}C_2=90\)
+Step 2: \(\text{total}={}^{20}C_2=190\Rightarrow P=\dfrac{90}{190}=\dfrac{9}{19}\)
+Step 3: \(\text{for }1..2n:\ P=\dfrac{2\,{}^nC_2}{{}^{2n}C_2}=\dfrac{n(n-1)}{n(2n-1)}=\dfrac{n-1}{2n-1}\)
+Worked derivation: \[\lim_{n\to\infty}\frac{n-1}{2n-1}=\frac12\]
+Check: \[n=10:\ \frac{9}{19}\ \checkmark\]
+Why: \(\text{choosing without replacement makes a same-parity second pick slightly less likely than }\tfrac12\)
+Why not the others: (A) \(\text{assumes replacement}\); (C) \(\text{that is the odd-sum probability}\); (D) \(\text{counts only one parity}\).
+Key point: \(P(\text{even sum})=\dfrac{n-1}{2n-1}<\dfrac12\)
+
+@@ Q59
+format: numerical
+sub_topic: Finding the parameter values for which a 3×3 linear system has a unique solution, infinitely many solutions or no solution
+Q: For the system \(x+y+z=5,\ x+2y+4z=11,\ x+3y+kz=\mu\), for which values of \(k\) and \(\mu\) does it have a unique solution, infinitely many solutions, or no solution?
+A) unique if \(k\ne7\); infinitely many if \(k=7,\ \mu=17\); no solution if \(k=7,\ \mu\ne17\)
+B) unique if \(k\ne5\); infinitely many if \(k=5,\ \mu=11\)
+C) unique for all \(k\); no solution never occurs
+D) unique if \(k\ne7\); infinitely many if \(k=7,\ \mu\ne17\); no solution if \(k=7,\ \mu=17\)
+KEY: A
+SOL:
+Answer: (A) \(k\ne7\) unique; \(k=7,\mu=17\) infinite; \(k=7,\mu\ne17\) none.
+Given: \(\text{coefficient matrix rows }(1,1,1),(1,2,4),(1,3,k)\)
+Formula/Principle: \(\det A\ne0\Rightarrow\text{unique};\ \det A=0\Rightarrow\text{check consistency}\)
+Step 1: \(\det A=1(2k-12)-1(k-4)+1(3-2)=k-7\)
+Step 2: \(k=7:\ R_2-R_1:\ y+3z=6;\ R_3-R_2:\ y+3z=\mu-11\)
+Step 3: \(\text{consistent}\iff\mu-11=6\iff\mu=17\)
+Worked derivation: \[k=7,\ \mu=17:\ z=t,\ y=6-3t,\ x=5-y-z=-1+2t\ \ (t\in\mathbb R)\]
+Check: \[t=0:\ (-1,6,0):\ -1+6+0=5,\ -1+12+0=11,\ -1+18+0=17\ \checkmark\]
+Why: \(\text{when the determinant vanishes, the planes either share a line or have no common point depending on the constant}\)
+Why not the others: (B) \(\det=0\text{ at }k=7\); (C) \(\det\text{ vanishes at }k=7\); (D) \(\text{consistency conditions reversed}\).
+Key point: \(\det=0\text{ and consistent}\Rightarrow\infty;\ \det=0\text{ and inconsistent}\Rightarrow\text{none}\)
+
+@@ Q60
+format: numerical
+sub_topic: Solving a 3×3 system with non-zero determinant and interpreting the solution as the single common point of three planes
+Q: For the system \(x+y+z=6,\ x-y+z=2,\ 2x+y-z=1\), what is the determinant of the coefficient matrix, the solution, and its geometric meaning?
+A) \(\det=0\); infinitely many solutions on a line
+B) \(\det=-6\); solution \((2,1,3)\); planes meet in a line
+C) \(\det=6\); unique solution \((1,2,3)\): the three planes pass through exactly one common point
+D) \(\det=6\); solution \((3,2,1)\); the planes are parallel
+KEY: C
+SOL:
+Answer: (C) \(\det=6\); \((1,2,3)\); one common point.
+Given: \(\text{rows }(1,1,1),(1,-1,1),(2,1,-1);\ \text{constants }6,2,1\)
+Formula/Principle: \(\det A\ne0\Rightarrow X=A^{-1}B\text{ unique}\)
+Step 1: \(\det A=1(1-1)-1(-1-2)+1(1+2)=0+3+3=6\)
+Step 2: \((1)-(2):\ 2y=4\Rightarrow y=2\)
+Step 3: \(x+z=4,\ 2x-z=-1\Rightarrow3x=3\Rightarrow x=1,\ z=3\)
+Worked derivation: \[\text{Cramer: }x=\frac{D_x}{D},\ D_x=\begin{vmatrix}6&1&1\\2&-1&1\\1&1&-1\end{vmatrix}=6(0)-1(-3)+1(3)=6\Rightarrow x=1\]
+Check: \[1+2+3=6,\ 1-2+3=2,\ 2+2-3=1\ \checkmark\]
+Why: \(\text{a non-zero determinant means the three normals are independent, so the planes meet in a single point}\)
+Why not the others: (A) \(\det\ne0\); (B) \(\text{sign and solution wrong}\); (D) \((3,2,1)\text{ fails the second equation; planes are not parallel}\).
+Key point: \(\det\ne0\Rightarrow\text{unique solution}=\text{one common point of three planes}\)
