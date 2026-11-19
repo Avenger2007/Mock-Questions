@@ -1,0 +1,439 @@
+@@ Q61
+format: numerical
+sub_topic: Using dimensional analysis to find how the oscillation period of a liquid drop depends on density, radius and surface tension, and checking an energy-conservation result dimensionally
+Q: The period \(T\) of small oscillations of a liquid drop depends on its density \(\rho\), radius \(r\) and surface tension \(S\). Using dimensions, how does \(T\) depend on them, and is \(v=\sqrt{2gh}\) (from \(mgh=\tfrac12mv^2\)) dimensionally consistent?
+A) \(T\propto\sqrt{\dfrac{S}{\rho r^3}}\); \(v=\sqrt{2gh}\) is inconsistent
+B) \(T\propto\sqrt{\dfrac{\rho r^3}{S}}\); \(v=\sqrt{2gh}\) is consistent, since \([gh]=\text{L}^2\text{T}^{-2}=[v^2]\); dimensional analysis cannot give the dimensionless factor \(\sqrt2\)
+C) \(T\propto\dfrac{\rho r}{S}\); consistent
+D) \(T\propto\rho r^3S\); dimensional analysis also gives the factor \(\sqrt2\)
+KEY: B
+SOL:
+Answer: (B) \(T\propto\sqrt{\rho r^3/S}\); \(v=\sqrt{2gh}\) consistent; numerical factor not obtainable.
+Given: \([\rho]=\text{ML}^{-3},\ [r]=\text{L},\ [S]=\text{MT}^{-2},\ [T]=\text{T}\)
+Formula/Principle: \(T=k\rho^ar^bS^c;\ \text{equate powers of M, L, T}\)
+Step 1: \(\text{M}:\ a+c=0;\ \text{L}:\ -3a+b=0;\ \text{T}:\ -2c=1\)
+Step 2: \(c=-\tfrac12,\ a=\tfrac12,\ b=\tfrac32\)
+Step 3: \(T=k\sqrt{\dfrac{\rho r^3}{S}}\)
+Worked derivation: \[[g][h]=\text{LT}^{-2}\cdot\text{L}=\text{L}^2\text{T}^{-2}=[v]^2\Rightarrow v\propto\sqrt{gh}\]
+Check: \[\sqrt{\frac{\text{ML}^{-3}\cdot\text{L}^3}{\text{MT}^{-2}}}=\sqrt{\text{T}^2}=\text{T}\ \checkmark\]
+Why: \(\text{each side of a physical equation must have the same dimensions, which fixes the exponents but not pure numbers}\)
+Why not the others: (A) \(\text{exponents inverted}\); (C) \(\text{dimensions of }\rho r/S\text{ are }\text{L}^{-2}\text{T}^2\); (D) \(\text{wrong exponents; numerical factors are not given}\).
+Key point: \(\text{dimensional analysis fixes exponents, not dimensionless constants}\)
+
+@@ Q62
+format: numerical
+sub_topic: Using energy conservation and the constant horizontal velocity in projectile motion to find maximum height, speed at a given height and range
+Q: A ball is thrown at \(20\ \text{m s}^{-1}\) at \(60^\circ\) above the horizontal (\(g=10\ \text{m s}^{-2}\)). What is its speed at the top, its maximum height, its speed at height \(10\ \text{m}\) and its range?
+A) \(0\); \(20\ \text{m}\); \(10\ \text{m s}^{-1}\); \(40\ \text{m}\)
+B) \(17.3\ \text{m s}^{-1}\); \(5\ \text{m}\); \(17.3\ \text{m s}^{-1}\); \(20\ \text{m}\)
+C) \(10\ \text{m s}^{-1}\); \(15\ \text{m}\); \(\sqrt{200}\approx14.1\ \text{m s}^{-1}\) (the same on the way up and down); \(20\sqrt3\approx34.6\ \text{m}\)
+D) \(10\ \text{m s}^{-1}\); \(15\ \text{m}\); \(10\ \text{m s}^{-1}\); \(34.6\ \text{m}\)
+KEY: C
+SOL:
+Answer: (C) \(10\ \text{m s}^{-1}\); \(15\ \text{m}\); \(14.1\ \text{m s}^{-1}\); \(34.6\ \text{m}\).
+Given: \(u=20\ \text{m s}^{-1},\ \theta=60^\circ,\ g=10\ \text{m s}^{-2}\)
+Formula/Principle: \(\tfrac12mu^2=\tfrac12mv^2+mgh;\ v_x=u\cos\theta\text{ constant};\ R=\dfrac{u^2\sin2\theta}{g}\)
+Step 1: \(\text{top: }v=u\cos60^\circ=10\ \text{m s}^{-1}\)
+Step 2: \(H=\dfrac{u^2-v_{\text{top}}^2}{2g}=\dfrac{400-100}{20}=15\ \text{m}\)
+Step 3: \(v^2=u^2-2gh=400-200=200\Rightarrow v\approx14.1\ \text{m s}^{-1}\)
+Worked derivation: \[R=\frac{400\sin120^\circ}{10}=40\cdot\frac{\sqrt3}{2}=20\sqrt3\approx34.6\ \text{m}\]
+Check: \[H=\frac{u^2\sin^2\theta}{2g}=\frac{400\cdot\frac34}{20}=15\ \text{m}\ \checkmark\]
+Why: \(\text{gravity is conservative and acts only vertically, so speed depends only on height and the horizontal velocity never changes}\)
+Why not the others: (A) \(\text{velocity is not zero at the top}\); (B) \(\text{uses }\sin\text{ and }\cos\text{ swapped}\); (D) \(\text{speed at }10\ \text{m wrong}\).
+Key point: \(v^2=u^2-2gh\text{ for any direction};\ v_{\text{top}}=u\cos\theta\)
+
+@@ Q63
+format: numerical
+sub_topic: Deriving and graphing the tension in a string whirled in a vertical circle as a function of angle, and the minimum speeds at the bottom and top
+Q: A stone of mass \(m\) on a string of length \(r\) moves in a vertical circle with speed \(v_0\) at the lowest point. If \(\theta\) is measured from the lowest point, how does the tension \(T\) depend on \(\cos\theta\), and what are \(T_{\text{bottom}}-T_{\text{top}}\) and the least \(v_0\) for completing the circle?
+A) \(T=\dfrac{mv_0^2}{r}-2mg+3mg\cos\theta\), a straight line against \(\cos\theta\) with slope \(3mg\); \(T_{\text{bottom}}-T_{\text{top}}=6mg\); least \(v_0=\sqrt{5gr}\), giving speed \(\sqrt{gr}\) and zero tension at the top
+B) \(T\) is constant around the circle; difference \(0\); least \(v_0=\sqrt{gr}\)
+C) \(T=\dfrac{mv_0^2}{r}+mg\cos\theta\); difference \(2mg\); least \(v_0=\sqrt{2gr}\)
+D) \(T\) varies as \(\cos^2\theta\); difference \(4mg\); least \(v_0=\sqrt{4gr}\)
+KEY: A
+SOL:
+Answer: (A) \(T=\tfrac{mv_0^2}{r}-2mg+3mg\cos\theta\); \(6mg\); \(v_0\ge\sqrt{5gr}\).
+Given: \(\text{radius }r,\ \text{speed }v_0\text{ at bottom},\ \theta\text{ from bottom}\)
+Formula/Principle: \(v^2=v_0^2-2gr(1-\cos\theta);\ T-mg\cos\theta=\dfrac{mv^2}{r}\)
+Step 1: \(T=mg\cos\theta+\dfrac{m}{r}\left[v_0^2-2gr(1-\cos\theta)\right]\)
+Step 2: \(T=\dfrac{mv_0^2}{r}-2mg+3mg\cos\theta\)
+Step 3: \(\theta=0:\ T_b=\dfrac{mv_0^2}{r}+mg;\ \theta=\pi:\ T_t=\dfrac{mv_0^2}{r}-5mg\Rightarrow T_b-T_t=6mg\)
+Worked derivation: \[T_t\ge0\Rightarrow v_0^2\ge5gr;\quad v_{\text{top}}^2=v_0^2-4gr=gr\]
+Check: \[\text{at the top with }v^2=gr:\ T+mg=\frac{m(gr)}{r}\Rightarrow T=0\ \checkmark\]
+Why: \(\text{the string must supply the centripetal force minus the radial component of gravity, and the stone slows as it rises}\)
+Why not the others: (B) \(\text{speed and gravity's component vary}\); (C) \(\text{ignores the speed change}\); (D) \(\text{wrong dependence}\).
+Key point: \(\text{vertical circle: }T_b-T_t=6mg,\ v_{\text{bottom,min}}=\sqrt{5gr}\)
+
+@@ Q64
+format: conceptual
+sub_topic: Distinguishing conservative and non-conservative forces by work around a closed path, and the time graphs of power and kinetic energy under a constant force and under constant power
+Q: Which statement about forces, work and power is correct?
+A) Friction does zero work around any closed path, so it is conservative
+B) Under a constant force from rest, the power delivered stays constant
+C) Under constant power from rest, velocity increases linearly with time
+D) A force is conservative if its work around every closed path is zero (gravity, spring force), while friction does negative work around a closed path and is non-conservative; under a constant force \(F\) on mass \(m\) from rest, \(v=\tfrac{F}{m}t\), so power \(P=Fv=\tfrac{F^2}{m}t\) is a straight line through the origin and kinetic energy \(\tfrac{F^2t^2}{2m}\) a parabola; under constant power \(P\), \(\tfrac12mv^2=Pt\), so \(v\propto\sqrt t\) and displacement \(\propto t^{3/2}\)
+KEY: D
+SOL:
+Answer: (D) Conservative ⇔ zero work round closed paths; constant force: \(P\propto t\), \(K\propto t^2\); constant power: \(v\propto\sqrt t\), \(x\propto t^{3/2}\).
+Given: \(\text{constant force }F\text{ or constant power }P\text{ on mass }m\text{ from rest}\)
+Formula/Principle: \(P=Fv=\dfrac{dK}{dt};\ \oint\vec F\cdot d\vec r=0\text{ for conservative forces}\)
+Step 1: \(\text{constant }F:\ v=\dfrac Fmt\Rightarrow P=\dfrac{F^2t}{m},\ K=\dfrac{F^2t^2}{2m}\)
+Step 2: \(\text{constant }P:\ K=Pt\Rightarrow v=\sqrt{\dfrac{2Pt}{m}}\propto t^{1/2}\)
+Step 3: \(x=\displaystyle\int v\,dt\propto t^{3/2}\)
+Worked derivation: \[\frac{dK}{dt}=\frac{d}{dt}\left(\frac{F^2t^2}{2m}\right)=\frac{F^2t}{m}=P\]
+Check: \[\text{friction opposes motion on every segment}\Rightarrow\oint\vec f\cdot d\vec r<0\ \checkmark\]
+Why: \(\text{a conservative force stores the work as potential energy and returns it; friction converts it irreversibly to heat}\)
+Why not the others: (A) \(\text{friction always does negative work}\); (B) \(P=Fv\text{ grows with }v\); (C) \(v\propto\sqrt t\text{ under constant power}\).
+Key point: \(P=Fv=dK/dt;\ \text{conservative}\iff\oint\vec F\cdot d\vec r=0\)
+
+@@ Q65
+format: experiment
+sub_topic: Applying the rotational analogues of the equations of uniformly accelerated motion and of Newton's second law to a wheel started from rest, and verifying the work–energy theorem
+Q: A wheel with moment of inertia \(0.5\ \text{kg m}^2\) starts from rest with constant angular acceleration \(2\ \text{rad s}^{-2}\). After \(5\ \text{s}\), what are its angular velocity, angle turned, the torque acting and its kinetic energy?
+A) \(\omega=10\ \text{rad s}^{-1}\); \(\theta=25\ \text{rad}\) (about \(4\) revolutions); \(\tau=I\alpha=1\ \text{N m}\); \(K=\tfrac12I\omega^2=25\ \text{J}\), equal to the work \(\tau\theta=25\ \text{J}\)
+B) \(\omega=10\ \text{rad s}^{-1}\); \(\theta=50\ \text{rad}\); \(\tau=4\ \text{N m}\); \(K=50\ \text{J}\)
+C) \(\omega=2.5\ \text{rad s}^{-1}\); \(\theta=25\ \text{rad}\); \(\tau=1\ \text{N m}\); \(K=12.5\ \text{J}\)
+D) \(\omega=10\ \text{rad s}^{-1}\); \(\theta=25\ \text{rad}\); \(\tau=0.25\ \text{N m}\); \(K=6.25\ \text{J}\)
+KEY: A
+SOL:
+Answer: (A) \(10\ \text{rad s}^{-1}\); \(25\ \text{rad}\); \(1\ \text{N m}\); \(25\ \text{J}\).
+Given: \(I=0.5\ \text{kg m}^2,\ \alpha=2\ \text{rad s}^{-2},\ \omega_0=0,\ t=5\ \text{s}\)
+Formula/Principle: \(\omega=\omega_0+\alpha t;\ \theta=\omega_0t+\tfrac12\alpha t^2;\ \tau=I\alpha;\ K=\tfrac12I\omega^2\)
+Step 1: \(\omega=2\times5=10\ \text{rad s}^{-1}\)
+Step 2: \(\theta=\tfrac12\times2\times25=25\ \text{rad}=\dfrac{25}{2\pi}\approx3.98\text{ rev}\)
+Step 3: \(\tau=0.5\times2=1\ \text{N m};\ K=\tfrac12\times0.5\times100=25\ \text{J}\)
+Worked derivation: \[W=\tau\theta=1\times25=25\ \text{J}=\Delta K\]
+Check: \[\omega^2=2\alpha\theta=100\ \checkmark\]
+Why: \(\text{rotational kinematics mirror linear kinematics with }\theta,\omega,\alpha,I,\tau\text{ replacing }x,v,a,m,F\)
+Why not the others: (B) \(\text{doubles }\theta\text{ and }\tau\); (C) \(\omega\text{ wrong}\); (D) \(\tau\text{ wrong}\).
+Key point: \(\tau=I\alpha;\ W=\tau\theta=\Delta(\tfrac12I\omega^2)\)
+
+@@ Q66
+format: conceptual
+sub_topic: Explaining how extension of a wire depends on its length, radius and material through Hooke's law and Young's modulus, and features of the stress–strain curve
+Q: Two wires of the same material carry the same load; wire 2 has twice the length and twice the radius of wire 1. Which statement is correct?
+A) Wire 2 stretches four times as much, because Young's modulus doubles with length
+B) Both stretch equally, since stress is the same
+C) Since \(\Delta L=\dfrac{FL}{AY}\), doubling \(L\) doubles \(\Delta L\) while doubling the radius makes \(A\) four times, so wire 2 stretches half as much; Young's modulus is a property of the material, not of the wire's dimensions; steel has a larger \(Y\) than rubber, so it is said to be more elastic; beyond the elastic limit the wire does not regain its length (permanent set), and fracture occurs at the breaking stress
+D) Rubber is more elastic than steel because it stretches more
+KEY: C
+SOL:
+Answer: (C) \(\Delta L_2=\tfrac12\Delta L_1\); \(Y\) is a material property; steel more elastic than rubber; permanent set beyond elastic limit.
+Given: \(L_2=2L_1,\ r_2=2r_1\Rightarrow A_2=4A_1;\ \text{same }F,\ Y\)
+Formula/Principle: \(Y=\dfrac{F/A}{\Delta L/L}\Rightarrow\Delta L=\dfrac{FL}{AY}\)
+Step 1: \(\dfrac{\Delta L_2}{\Delta L_1}=\dfrac{L_2}{L_1}\cdot\dfrac{A_1}{A_2}\)
+Step 2: \(=2\times\dfrac14=\dfrac12\)
+Step 3: \(\text{stress}_2=\dfrac{F}{4A_1}=\tfrac14\text{stress}_1\)
+Worked derivation: \[\text{strain}_2=\frac{\text{stress}_2}{Y}=\frac14\text{strain}_1;\ \Delta L_2=\text{strain}_2\cdot2L_1=\frac12\Delta L_1\]
+Check: \[\text{units of }Y:\ \text{N m}^{-2}\ \checkmark\]
+Why: \(\text{a thicker wire spreads the load over more area, which outweighs the extra length}\)
+Why not the others: (A) \(Y\text{ does not depend on length}\); (B) \(\text{stress differs because areas differ}\); (D) \(\text{elasticity in physics means larger }Y\).
+Key point: \(\Delta L=\dfrac{FL}{AY}\propto\dfrac{L}{r^2}\)
+
+@@ Q67
+format: conceptual
+sub_topic: Comparing isothermal and adiabatic processes of an ideal gas — slopes on a PV diagram, work done in expansion, and temperature change
+Q: An ideal gas expands from the same initial state to the same final volume once isothermally and once adiabatically. Which comparison is correct?
+A) The adiabatic curve is less steep, and the gas does more work adiabatically
+B) The adiabatic curve is steeper, its slope \(-\gamma\tfrac PV\) being \(\gamma\) times the isothermal slope \(-\tfrac PV\); the gas does more work in the isothermal expansion because its pressure stays higher; in adiabatic expansion the temperature falls since work is done at the expense of internal energy (\(Q=0\)), while in isothermal expansion heat equal to the work flows in and \(\Delta U=0\); a sudden compression, such as pumping a tyre, is nearly adiabatic and heats the gas
+C) Both processes have \(\Delta U=0\)
+D) In adiabatic expansion the temperature rises
+KEY: B
+SOL:
+Answer: (B) Adiabatic steeper by factor \(\gamma\); \(W_{\text{iso}}>W_{\text{adia}}\); temperature falls adiabatically; \(\Delta U=0\) isothermally.
+Given: \(\text{same initial state, same final volume},\ \gamma>1\)
+Formula/Principle: \(PV=\text{const (isothermal)};\ PV^\gamma=\text{const (adiabatic)};\ \Delta U=Q-W\)
+Step 1: \(\text{isothermal: }\dfrac{dP}{dV}=-\dfrac PV\)
+Step 2: \(\text{adiabatic: }\dfrac{dP}{dV}=-\gamma\dfrac PV\Rightarrow\text{steeper}\)
+Step 3: \(\text{adiabatic }Q=0\Rightarrow\Delta U=-W<0\Rightarrow T\downarrow\)
+Worked derivation: \[\text{for equal }\Delta V,\ P_{\text{adia}}<P_{\text{iso}}\text{ throughout}\Rightarrow\int P\,dV\text{ smaller for adiabatic}\]
+Check: \[\text{isothermal: }\Delta U=0\Rightarrow Q=W>0\ \checkmark\]
+Why: \(\text{without heat input the gas cools as it expands, so its pressure falls faster than along the isotherm}\)
+Why not the others: (A) \(\text{both comparisons reversed}\); (C) \(\Delta U\ne0\text{ adiabatically}\); (D) \(\text{temperature falls}\).
+Key point: \(\text{adiabatic slope}=\gamma\times\text{isothermal slope};\ W_{\text{iso}}>W_{\text{adia}}\text{ in expansion}\)
+
+@@ Q68
+format: conceptual
+sub_topic: Applying the law of equipartition of energy to obtain molar specific heats and γ for monatomic, diatomic and polyatomic gases
+Q: Using equipartition (energy \(\tfrac12k_BT\) per quadratic degree of freedom), which set of values is correct?
+A) Monatomic: \(f=3,\ C_v=3R,\ \gamma=\tfrac43\)
+B) Diatomic (rigid): \(f=6,\ \gamma=\tfrac53\)
+C) All ideal gases have \(\gamma=\tfrac75\)
+D) Monatomic: \(f=3,\ C_v=\tfrac32R,\ \gamma=\tfrac53\); rigid diatomic: \(f=5,\ C_v=\tfrac52R,\ \gamma=\tfrac75\); diatomic with vibration: \(f=7\) (vibration contributes kinetic and potential terms), \(C_v=\tfrac72R,\ \gamma=\tfrac97\); rigid non-linear polyatomic: \(f=6,\ C_v=3R,\ \gamma=\tfrac43\)
+KEY: D
+SOL:
+Answer: (D) \(\gamma=\tfrac53,\ \tfrac75,\ \tfrac97,\ \tfrac43\) as listed.
+Given: \(U=\tfrac f2RT\text{ per mole}\)
+Formula/Principle: \(C_v=\tfrac f2R;\ C_p=C_v+R;\ \gamma=1+\tfrac2f\)
+Step 1: \(\text{monatomic }f=3:\ C_v=\tfrac32R,\ \gamma=1+\tfrac23=\tfrac53\)
+Step 2: \(\text{rigid diatomic }f=5\ (3\text{ trans}+2\text{ rot}):\ \gamma=\tfrac75\)
+Step 3: \(\text{vibrating diatomic }f=7:\ \gamma=1+\tfrac27=\tfrac97;\ \text{non-linear }f=6:\ \gamma=\tfrac43\)
+Worked derivation: \[\gamma=\frac{C_p}{C_v}=\frac{\frac f2R+R}{\frac f2R}=1+\frac2f\]
+Check: \[f\to\infty\Rightarrow\gamma\to1;\ \text{monatomic has the largest }\gamma\ \checkmark\]
+Why: \(\text{each mode that can store energy raises the heat needed per degree, increasing }C_v\text{ and lowering }\gamma\)
+Why not the others: (A) \(C_v\text{ and }\gamma\text{ wrong}\); (B) \(f=5\text{ for rigid diatomic}\); (C) \(\gamma\text{ depends on }f\).
+Key point: \(\gamma=1+\tfrac2f\)
+
+@@ Q69
+format: numerical
+sub_topic: Sharing of energy between kinetic and potential forms in SHM, positions of equal sharing, and scaling of total energy with amplitude and frequency
+Q: A particle executes SHM with amplitude \(A\) and total energy \(E\). At what displacement are kinetic and potential energies equal, what fraction of \(E\) is kinetic at \(x=\tfrac A2\), and how does \(E\) change if the amplitude is doubled?
+A) \(x=\pm\tfrac{A}{\sqrt2}\); \(\tfrac34E\); \(E\) becomes \(4E\) (also \(4E\) if instead frequency is doubled at fixed amplitude); averaged over a cycle, kinetic energy is \(\tfrac E2\)
+B) \(x=\pm\tfrac A2\); \(\tfrac12E\); doubles
+C) \(x=0\); \(\tfrac14E\); doubles
+D) \(x=\pm\tfrac{A}{\sqrt2}\); \(\tfrac14E\); unchanged
+KEY: A
+SOL:
+Answer: (A) \(\pm\tfrac A{\sqrt2}\); \(\tfrac34E\); \(4E\).
+Given: \(E=\tfrac12m\omega^2A^2\)
+Formula/Principle: \(U=\tfrac12m\omega^2x^2,\ K=\tfrac12m\omega^2(A^2-x^2)\)
+Step 1: \(K=U\Rightarrow A^2-x^2=x^2\Rightarrow x=\pm\dfrac{A}{\sqrt2}\)
+Step 2: \(x=\tfrac A2:\ \dfrac KE=\dfrac{A^2-A^2/4}{A^2}=\dfrac34\)
+Step 3: \(E\propto A^2\Rightarrow A\to2A\Rightarrow E\to4E;\ E\propto\omega^2\Rightarrow4E\)
+Worked derivation: \[\langle K\rangle=\tfrac12m\omega^2A^2\langle\cos^2\omega t\rangle=\tfrac12E\]
+Check: \[x=\tfrac A2:\ U=\tfrac14E,\ K+U=E\ \checkmark\]
+Why: \(\text{potential energy grows as }x^2\text{, so equal sharing occurs at }A/\sqrt2\text{, not at }A/2\)
+Why not the others: (B) \(\text{linear thinking}\); (C) \(\text{at }x=0\text{ all energy is kinetic}\); (D) \(\text{fraction and scaling wrong}\).
+Key point: \(K=U\text{ at }x=A/\sqrt2;\ E\propto A^2\omega^2\)
+
+@@ Q70
+format: numerical
+sub_topic: Comparing the electric field of a dipole at equal distances on its axis and on its equatorial line, and the torque and force on a dipole in uniform and non-uniform fields
+Q: A short dipole of moment \(p\) is observed at distance \(r\) on its axis and on its perpendicular bisector. How do the fields compare, and what are the torque and net force in a uniform field \(E\)?
+A) Equal fields in the same direction; torque \(pE\cos\theta\); net force \(pE\)
+B) Axial field \(\dfrac{2kp}{r^3}\) along \(\vec p\), equatorial field \(\dfrac{kp}{r^3}\) opposite to \(\vec p\), ratio \(2:1\); in a uniform field the torque is \(pE\sin\theta\) (maximum at \(90^\circ\), zero when aligned) and the net force is zero; in a non-uniform field the net force is generally non-zero
+C) Axial field \(\dfrac{kp}{r^2}\), equatorial \(\dfrac{2kp}{r^2}\); torque zero
+D) Ratio \(1:2\); net force \(2pE\) in a uniform field
+KEY: B
+SOL:
+Answer: (B) \(2:1\), opposite directions; \(\tau=pE\sin\theta\); net force zero in a uniform field.
+Given: \(\text{short dipole }p,\ r\gg\text{separation}\)
+Formula/Principle: \(E_{\text{axis}}=\dfrac{2kp}{r^3};\ E_{\text{eq}}=\dfrac{kp}{r^3};\ \vec\tau=\vec p\times\vec E\)
+Step 1: \(\dfrac{E_{\text{axis}}}{E_{\text{eq}}}=2\)
+Step 2: \(\text{axial field along }\vec p,\ \text{equatorial field opposite to }\vec p\)
+Step 3: \(\text{uniform }E:\ \vec F=q\vec E-q\vec E=0;\ \tau=pE\sin\theta\)
+Worked derivation: \[E_{\text{axis}}=kq\left[\frac{1}{(r-a)^2}-\frac{1}{(r+a)^2}\right]=\frac{4kqar}{(r^2-a^2)^2}\approx\frac{2kp}{r^3}\]
+Check: \[\theta=0:\ \tau=0\ (\text{stable}),\ \theta=90^\circ:\ \tau=pE\ \checkmark\]
+Why: \(\text{the two charges feel equal and opposite forces in a uniform field, giving a couple but no net force}\)
+Why not the others: (A) \(\text{fields differ; torque uses }\sin\theta\); (C) \(\text{dipole fields fall as }1/r^3\); (D) \(\text{ratio inverted; net force is zero}\).
+Key point: \(E_{\text{axis}}:E_{\text{eq}}=2:1;\ \tau=pE\sin\theta,\ F=0\text{ in uniform }E\)
+
+@@ Q71
+format: numerical
+sub_topic: Redistribution of charge between two connected conducting spheres by equal potential and charge conservation, surface charge density, and charge induced on a cavity
+Q: Two distant conducting spheres of radii \(1\ \text{cm}\) and \(3\ \text{cm}\) share a total charge of \(8\ \mu\text{C}\) after being joined by a thin wire. What charge does each hold, what is the ratio of their surface charge densities, and what charges appear when \(+q\) is placed inside a cavity of a neutral conductor?
+A) \(4\ \mu\text{C}\) each; \(\sigma_1:\sigma_2=1:1\); no induced charge
+B) \(6\ \mu\text{C}\) and \(2\ \mu\text{C}\); \(\sigma_1:\sigma_2=1:3\); \(+q\) on the inner surface
+C) \(2\ \mu\text{C}\) and \(6\ \mu\text{C}\) (charge \(\propto\) radius at equal potential); \(\sigma_1:\sigma_2=3:1\), so the smaller sphere has the higher surface density and field; \(-q\) is induced on the cavity wall and \(+q\) on the outer surface, while the field inside the conductor's material is zero
+D) \(2\ \mu\text{C}\) and \(6\ \mu\text{C}\); \(\sigma_1:\sigma_2=1:3\); \(-q\) on the outer surface
+KEY: C
+SOL:
+Answer: (C) \(2\ \mu\text{C}\) and \(6\ \mu\text{C}\); \(3:1\); \(-q\) on cavity wall, \(+q\) outside.
+Given: \(r_1=1\ \text{cm},\ r_2=3\ \text{cm},\ q_1+q_2=8\ \mu\text{C}\)
+Formula/Principle: \(\text{equal potential: }\dfrac{kq_1}{r_1}=\dfrac{kq_2}{r_2};\ \sigma=\dfrac{q}{4\pi r^2}\)
+Step 1: \(\dfrac{q_1}{q_2}=\dfrac{r_1}{r_2}=\dfrac13\)
+Step 2: \(q_1=2\ \mu\text{C},\ q_2=6\ \mu\text{C}\)
+Step 3: \(\dfrac{\sigma_1}{\sigma_2}=\dfrac{q_1}{q_2}\cdot\dfrac{r_2^2}{r_1^2}=\dfrac13\cdot9=3\)
+Worked derivation: \[\text{Gauss surface inside the conductor around the cavity: }E=0\Rightarrow q_{\text{enc}}=0\Rightarrow q_{\text{inner}}=-q;\ \text{neutral}\Rightarrow q_{\text{outer}}=+q\]
+Check: \[2+6=8\ \mu\text{C (conserved)}\ \checkmark\]
+Why: \(\text{charge flows until the potentials match; for spheres this makes }\sigma\propto1/r\text{, explaining high fields at sharp points}\)
+Why not the others: (A) \(\text{equal charges give unequal potentials}\); (B) \(\text{charges and induced sign reversed}\); (D) \(\text{density ratio and induced sign wrong}\).
+Key point: \(\text{connected spheres: }q\propto r,\ \sigma\propto1/r\)
+
+@@ Q72
+format: numerical
+sub_topic: Calculating current and terminal voltage for identical cells in series and in parallel with an external resistor, and the condition for maximum power transfer
+Q: Four identical cells, each of emf \(2\ \text{V}\) and internal resistance \(0.5\ \Omega\), are connected to a \(6\ \Omega\) resistor first all in series, then all in parallel. What are the currents and the terminal voltage in series, and for what external resistance is the power from one cell maximum?
+A) Series \(1.33\ \text{A}\), terminal voltage \(8\ \text{V}\); parallel \(1.33\ \text{A}\); maximum power when \(R=0\)
+B) Series \(0.33\ \text{A}\); parallel \(1\ \text{A}\); \(R\to\infty\)
+C) Series \(1\ \text{A}\), terminal voltage \(8\ \text{V}\); parallel \(1\ \text{A}\); \(R=2\ \Omega\)
+D) Series: \(I=\dfrac{8}{6+2}=1\ \text{A}\), terminal voltage \(8-1\times2=6\ \text{V}\); parallel: \(I=\dfrac{2}{6+0.125}\approx0.33\ \text{A}\); a single cell delivers maximum power to an external resistance equal to its internal resistance, \(R=0.5\ \Omega\)
+KEY: D
+SOL:
+Answer: (D) Series \(1\ \text{A}\), \(6\ \text{V}\); parallel \(0.33\ \text{A}\); \(R=r=0.5\ \Omega\).
+Given: \(n=4,\ \varepsilon=2\ \text{V},\ r=0.5\ \Omega,\ R=6\ \Omega\)
+Formula/Principle: \(\text{series: }\dfrac{n\varepsilon}{R+nr};\ \text{parallel: }\dfrac{\varepsilon}{R+r/n};\ V=\varepsilon_{\text{eq}}-Ir_{\text{eq}}\)
+Step 1: \(\text{series: }I=\dfrac{8}{6+2}=1\ \text{A}\)
+Step 2: \(V=8-1\times2=6\ \text{V}=IR\)
+Step 3: \(\text{parallel: }I=\dfrac{2}{6.125}\approx0.327\ \text{A}\)
+Worked derivation: \[P=\frac{\varepsilon^2R}{(R+r)^2},\ \frac{dP}{dR}=0\Rightarrow R=r\]
+Check: \[\text{series }V=IR=1\times6=6\ \text{V}\ \checkmark\]
+Why: \(\text{with external resistance much larger than internal resistance, series grouping gives the larger current}\)
+Why not the others: (A) \(\text{ignores internal resistance}\); (B) \(\text{arrangements swapped}\); (C) \(\text{terminal voltage and parallel current wrong}\).
+Key point: \(\text{series for }R\gg r;\ \text{maximum power at }R=r\)
+
+@@ Q73
+format: numerical
+sub_topic: Converting a galvanometer into an ammeter and a voltmeter, and how current and voltage sensitivity scale with the number of turns
+Q: A galvanometer of resistance \(100\ \Omega\) gives full-scale deflection at \(1\ \text{mA}\). What shunt makes it a \(0\)–\(1\ \text{A}\) ammeter, what series resistance makes it a \(0\)–\(10\ \text{V}\) voltmeter, and how do sensitivities change if the number of turns is doubled (doubling the coil resistance)?
+A) \(100\ \Omega\) shunt; \(10\ \text{k}\Omega\) series; both sensitivities double
+B) \(S\approx0.1\ \Omega\) in parallel; \(R=9900\ \Omega\) in series; current sensitivity \(\tfrac{NAB}{k}\) doubles but voltage sensitivity \(\tfrac{NAB}{kG}\) stays the same because \(G\) also doubles
+C) \(0.1\ \Omega\) in series; \(9900\ \Omega\) in parallel; neither sensitivity changes
+D) \(1\ \Omega\) shunt; \(9.9\ \text{k}\Omega\); voltage sensitivity doubles
+KEY: B
+SOL:
+Answer: (B) \(S\approx0.1\ \Omega\) (parallel); \(9900\ \Omega\) (series); current sensitivity doubles, voltage sensitivity unchanged.
+Given: \(G=100\ \Omega,\ I_g=10^{-3}\ \text{A}\)
+Formula/Principle: \(S=\dfrac{I_gG}{I-I_g};\ R=\dfrac{V}{I_g}-G;\ \text{current sensitivity}=\dfrac{NAB}{k},\ \text{voltage sensitivity}=\dfrac{NAB}{kG}\)
+Step 1: \(S=\dfrac{10^{-3}\times100}{1-0.001}=\dfrac{0.1}{0.999}\approx0.1001\ \Omega\)
+Step 2: \(R=\dfrac{10}{10^{-3}}-100=9900\ \Omega\)
+Step 3: \(N\to2N,\ G\to2G\Rightarrow\dfrac{NAB}{k}\times2,\ \dfrac{NAB}{kG}\times1\)
+Worked derivation: \[\text{ammeter resistance}=\frac{GS}{G+S}\approx0.1\ \Omega;\ \text{voltmeter resistance}=10\,000\ \Omega\]
+Check: \[I_g(G+R)=10^{-3}\times10^4=10\ \text{V}\ \checkmark\]
+Why: \(\text{an ammeter needs low resistance (parallel shunt) and a voltmeter high resistance (series resistor)}\)
+Why not the others: (A) \(\text{resistances wrong; voltage sensitivity unchanged}\); (C) \(\text{connections reversed}\); (D) \(\text{shunt wrong}\).
+Key point: \(\text{shunt in parallel for ammeter; series resistor for voltmeter}\)
+
+@@ Q74
+format: conceptual
+sub_topic: Comparing the magnetic field of a bar magnet on its axis and equator, the effect of cutting a magnet, torque in a uniform field, and Gauss's law for magnetism versus electrostatics
+Q: Which comparison about a bar magnet of moment \(m\) is correct?
+A) At distance \(r\) on the axis, \(B=\dfrac{\mu_0}{4\pi}\dfrac{2m}{r^3}\), twice the equatorial value and in the opposite direction; cutting the magnet into two halves across its length gives two magnets each of moment \(\tfrac m2\) with the same pole strength, since isolated poles do not exist; the torque in a uniform field is \(mB\sin\theta\); Gauss's law for magnetism, \(\oint\vec B\cdot d\vec S=0\), states that net magnetic flux through any closed surface is zero, unlike the electric case where flux equals enclosed charge\(/\varepsilon_0\)
+B) Cutting a magnet separates its north and south poles
+C) Net magnetic flux through a closed surface around one pole equals the pole strength divided by \(\mu_0\)
+D) The axial field is half the equatorial field
+KEY: A
+SOL:
+Answer: (A) Axial field twice equatorial; halves have \(m/2\); \(\tau=mB\sin\theta\); \(\oint\vec B\cdot d\vec S=0\).
+Given: \(\text{bar magnet of moment }m\)
+Formula/Principle: \(B_{\text{axis}}=\dfrac{\mu_0}{4\pi}\dfrac{2m}{r^3};\ B_{\text{eq}}=\dfrac{\mu_0}{4\pi}\dfrac{m}{r^3};\ \oint\vec B\cdot d\vec S=0\)
+Step 1: \(B_{\text{axis}}:B_{\text{eq}}=2:1,\ \text{opposite directions}\)
+Step 2: \(\text{cut across length: pole strength same, length halved}\Rightarrow m'=\tfrac m2\)
+Step 3: \(\text{field lines form closed loops}\Rightarrow\text{as many lines leave as enter any closed surface}\)
+Worked derivation: \[\vec\tau=\vec m\times\vec B\Rightarrow\tau=mB\sin\theta;\ U=-mB\cos\theta\]
+Check: \[\text{same }1/r^3\text{ form as the electric dipole}\ \checkmark\]
+Why: \(\text{magnetic field lines are continuous closed loops because there are no magnetic monopoles}\)
+Why not the others: (B) \(\text{each piece is a complete magnet}\); (C) \(\text{net flux is zero}\); (D) \(\text{ratio inverted}\).
+Key point: \(\text{no monopoles: }\oint\vec B\cdot d\vec S=0\)
+
+@@ Q75
+format: experiment
+sub_topic: Relating the electric and magnetic field amplitudes of an electromagnetic wave, identifying the band from its frequency, and the orientation of the fields relative to propagation
+Q: A plane electromagnetic wave travelling along \(+z\) in vacuum has frequency \(2\times10^{10}\ \text{Hz}\) and electric field amplitude \(48\ \text{V m}^{-1}\) along \(x\). What are its wavelength, the magnetic field amplitude and its direction, and the band?
+A) \(\lambda=6\ \text{m}\); \(B_0=1.44\times10^{10}\ \text{T}\) along \(z\); radio waves
+B) \(\lambda=1.5\ \text{mm}\); \(B_0=16\ \text{T}\) along \(x\); infrared
+C) \(\lambda=c/f=1.5\ \text{cm}\); \(B_0=E_0/c=1.6\times10^{-7}\ \text{T}\) along \(y\), so that \(\vec E\times\vec B\) points along \(+z\); microwaves, which (like all EM waves) travel at \(c=1/\sqrt{\mu_0\varepsilon_0}\) and were first produced in the laboratory by Hertz
+D) \(\lambda=1.5\ \text{cm}\); \(B_0=1.6\times10^{-7}\ \text{T}\) along \(z\); the wave is longitudinal
+KEY: C
+SOL:
+Answer: (C) \(1.5\ \text{cm}\); \(1.6\times10^{-7}\ \text{T}\) along \(y\); microwaves.
+Given: \(f=2\times10^{10}\ \text{Hz},\ E_0=48\ \text{V m}^{-1},\ c=3\times10^8\ \text{m s}^{-1}\)
+Formula/Principle: \(\lambda=\dfrac cf;\ B_0=\dfrac{E_0}{c};\ \vec E\times\vec B\parallel\text{propagation}\)
+Step 1: \(\lambda=\dfrac{3\times10^8}{2\times10^{10}}=1.5\times10^{-2}\ \text{m}\)
+Step 2: \(B_0=\dfrac{48}{3\times10^8}=1.6\times10^{-7}\ \text{T}\)
+Step 3: \(\hat x\times\hat y=\hat z\Rightarrow\vec B\text{ along }y\)
+Worked derivation: \[c=\frac{1}{\sqrt{\mu_0\varepsilon_0}}=\frac{1}{\sqrt{4\pi\times10^{-7}\times8.85\times10^{-12}}}\approx3\times10^8\ \text{m s}^{-1}\]
+Check: \[\text{microwave band: about }1\ \text{mm to }0.3\ \text{m}\ \checkmark\]
+Why: \(\text{in an EM wave the fields are perpendicular to each other and to the direction of travel, with }E/B=c\)
+Why not the others: (A) \(\text{multiplies by }c\text{; field along propagation}\); (B) \(\lambda\text{ and }B\text{ wrong}\); (D) \(\text{EM waves are transverse}\).
+Key point: \(E_0=cB_0;\ \vec E\perp\vec B\perp\vec k\)
+
+@@ Q76
+format: numerical
+sub_topic: Locating the image formed by refraction at a single convex spherical surface between air and glass
+Q: A point object in air is \(30\ \text{cm}\) in front of a convex spherical glass surface of radius \(10\ \text{cm}\) (\(n=1.5\)). Where is the image, and is it real or virtual?
+A) \(15\ \text{cm}\) inside the glass, virtual
+B) \(30\ \text{cm}\) in air, real
+C) \(60\ \text{cm}\) inside the glass, virtual
+D) \(90\ \text{cm}\) inside the glass, real
+KEY: D
+SOL:
+Answer: (D) \(v=+90\ \text{cm}\), real image inside the glass.
+Given: \(n_1=1,\ n_2=1.5,\ u=-30\ \text{cm},\ R=+10\ \text{cm}\)
+Formula/Principle: \(\dfrac{n_2}{v}-\dfrac{n_1}{u}=\dfrac{n_2-n_1}{R}\)
+Step 1: \(\dfrac{1.5}{v}+\dfrac{1}{30}=\dfrac{0.5}{10}=\dfrac{1}{20}\)
+Step 2: \(\dfrac{1.5}{v}=\dfrac1{20}-\dfrac1{30}=\dfrac1{60}\)
+Step 3: \(v=90\ \text{cm}\ (\text{positive}\Rightarrow\text{real, inside glass})\)
+Worked derivation: \[\text{first focal length: }u\text{ for }v\to\infty:\ \frac{1}{-u}=\frac{1}{20}\Rightarrow f_1=-20\ \text{cm};\ \text{object beyond }f_1\Rightarrow\text{real image}\]
+Check: \[\frac{1.5}{90}+\frac{1}{30}=\frac{1}{60}+\frac{2}{60}=\frac{1}{20}\ \checkmark\]
+Why: \(\text{the convex surface converges light; an object beyond its first focal point forms a real image in the denser medium}\)
+Why not the others: (A) \(\text{sign errors}\); (B) \(\text{ignores refraction}\); (C) \(\text{omits }n_2\text{ in the image term}\).
+Key point: \(\dfrac{n_2}{v}-\dfrac{n_1}{u}=\dfrac{n_2-n_1}{R}\)
+
+@@ Q77
+format: numerical
+sub_topic: Using the lens maker's formula to find the focal length of a biconvex lens in air and in water, and its power
+Q: A biconvex lens (\(n=1.5\)) has radii \(20\ \text{cm}\) and \(30\ \text{cm}\). What is its focal length and power in air, and its focal length when immersed in water (\(n=\tfrac43\))?
+A) \(f=24\ \text{cm}\), \(P\approx+4.2\ \text{D}\); in water \(f\approx96\ \text{cm}\) (four times longer, because \(\tfrac{n_g}{n_w}-1=\tfrac18\) instead of \(\tfrac12\))
+B) \(f=12\ \text{cm}\), \(P=+8.3\ \text{D}\); in water \(f=12\ \text{cm}\)
+C) \(f=24\ \text{cm}\); in water the lens becomes diverging with \(f=-24\ \text{cm}\)
+D) \(f=50\ \text{cm}\), \(P=+2\ \text{D}\); in water \(f=25\ \text{cm}\)
+KEY: A
+SOL:
+Answer: (A) \(24\ \text{cm}\), \(+4.2\ \text{D}\); \(96\ \text{cm}\) in water.
+Given: \(n=1.5,\ R_1=+20\ \text{cm},\ R_2=-30\ \text{cm},\ n_w=\tfrac43\)
+Formula/Principle: \(\dfrac1f=\left(\dfrac{n_{\text{lens}}}{n_{\text{medium}}}-1\right)\left(\dfrac1{R_1}-\dfrac1{R_2}\right)\)
+Step 1: \(\dfrac1{R_1}-\dfrac1{R_2}=\dfrac1{20}+\dfrac1{30}=\dfrac1{12}\)
+Step 2: \(\text{air: }\dfrac1f=0.5\times\dfrac1{12}=\dfrac1{24}\Rightarrow f=24\ \text{cm},\ P=\dfrac{100}{24}\approx4.17\ \text{D}\)
+Step 3: \(\text{water: }\dfrac{1.5}{4/3}-1=\dfrac98-1=\dfrac18\Rightarrow\dfrac1f=\dfrac1{96}\)
+Worked derivation: \[\frac{f_w}{f_a}=\frac{0.5}{0.125}=4\]
+Check: \[n_g>n_w\Rightarrow\text{still converging}\ \checkmark\]
+Why: \(\text{the bending depends on the relative refractive index, which is much smaller in water}\)
+Why not the others: (B) \(\text{omits the factor }(n-1)\); (C) \(\text{only a denser medium would make it diverge}\); (D) \(\text{wrong curvature sum}\).
+Key point: \(\dfrac1f=\left(\dfrac{n_l}{n_m}-1\right)\left(\dfrac1{R_1}-\dfrac1{R_2}\right)\)
+
+@@ Q78
+format: numerical
+sub_topic: Calculating maximum, minimum and average intensity in two-source interference, showing that energy is conserved, and why independent sources give no sustained pattern
+Q: Two coherent sources give intensities \(I_0\) each at a screen. What are the maximum, minimum and average intensities, and what changes if one source has intensity \(4I_0\)? Why do two independent bulbs give no fringes?
+A) \(2I_0,\ 0,\ I_0\); unequal case \(5I_0\) and \(3I_0\); bulbs are too dim
+B) \(4I_0,\ 0\), average \(2I_0\) — the same as the incoherent sum, so energy is only redistributed; with \(4I_0\) and \(I_0\): \(I_{\max}=9I_0,\ I_{\min}=I_0\); independent bulbs change phase randomly about every \(10^{-8}\ \text{s}\), so the interference pattern shifts too fast to be seen
+C) \(4I_0,\ 2I_0\), average \(3I_0\); unequal case \(16I_0\) and \(0\); bulbs give fringes of colour
+D) \(2I_0\) everywhere; interference destroys energy at minima
+KEY: B
+SOL:
+Answer: (B) \(4I_0,\ 0,\ 2I_0\); \(9I_0\) and \(I_0\); random phase changes destroy sustained fringes.
+Given: \(I_1=I_2=I_0;\ \text{then }I_1=4I_0,\ I_2=I_0\)
+Formula/Principle: \(I=I_1+I_2+2\sqrt{I_1I_2}\cos\phi\)
+Step 1: \(\cos\phi=1:\ I_{\max}=4I_0;\ \cos\phi=-1:\ I_{\min}=0\)
+Step 2: \(\langle\cos\phi\rangle=0\Rightarrow\langle I\rangle=2I_0\)
+Step 3: \(I_{\max}=(\sqrt{4I_0}+\sqrt{I_0})^2=9I_0,\ I_{\min}=(2-1)^2I_0=I_0\)
+Worked derivation: \[\text{incoherent: }\langle\cos\phi\rangle=0\text{ at every point}\Rightarrow I=I_1+I_2\text{ uniformly}\]
+Check: \[\text{average of }9I_0\text{ and }I_0=5I_0=4I_0+I_0\ \checkmark\]
+Why: \(\text{interference moves energy from dark to bright fringes without creating or destroying it}\)
+Why not the others: (A) \(\text{adds amplitudes incorrectly}\); (C) \(\text{minimum wrong}\); (D) \(\text{energy is conserved}\).
+Key point: \(I_{\max,\min}=(\sqrt{I_1}\pm\sqrt{I_2})^2;\ \text{coherence needed for sustained fringes}\)
+
+@@ Q79
+format: numerical
+sub_topic: Using the Bohr model scaling of orbit radius, speed and energy with n, and reading them from logarithmic graphs
+Q: In the Bohr model of hydrogen (\(r_1=0.53\ \text{Å},\ v_1=2.18\times10^6\ \text{m s}^{-1},\ E_1=-13.6\ \text{eV}\)), what are the slopes of the graphs of \(\log r_n\) and \(\log v_n\) against \(\log n\), and what are \(r_3,\ v_3\) and \(E_3\)?
+A) Slopes \(1\) and \(1\); \(r_3=1.59\ \text{Å},\ v_3=6.54\times10^6\ \text{m s}^{-1},\ E_3=-4.53\ \text{eV}\)
+B) Slopes \(-2\) and \(1\); \(r_3=0.059\ \text{Å},\ E_3=-122\ \text{eV}\)
+C) Slopes \(2\) and \(-1\) (since \(r_n\propto n^2,\ v_n\propto\tfrac1n\)); \(r_3=4.77\ \text{Å},\ v_3=7.27\times10^5\ \text{m s}^{-1},\ E_3=-1.51\ \text{eV}\)
+D) Slopes \(2\) and \(-2\); \(r_3=4.77\ \text{Å},\ v_3=2.42\times10^5\ \text{m s}^{-1},\ E_3=-1.51\ \text{eV}\)
+KEY: C
+SOL:
+Answer: (C) Slopes \(2,\ -1\); \(4.77\ \text{Å}\), \(7.27\times10^5\ \text{m s}^{-1}\), \(-1.51\ \text{eV}\).
+Given: \(r_1=0.53\ \text{Å},\ v_1=2.18\times10^6\ \text{m s}^{-1},\ E_1=-13.6\ \text{eV},\ n=3\)
+Formula/Principle: \(r_n=r_1n^2;\ v_n=\dfrac{v_1}{n};\ E_n=\dfrac{E_1}{n^2}\)
+Step 1: \(\log r_n=\log r_1+2\log n\Rightarrow\text{slope }2;\ \log v_n=\log v_1-\log n\Rightarrow\text{slope }-1\)
+Step 2: \(r_3=0.53\times9=4.77\ \text{Å};\ v_3=\dfrac{2.18\times10^6}{3}=7.27\times10^5\ \text{m s}^{-1}\)
+Step 3: \(E_3=\dfrac{-13.6}{9}=-1.51\ \text{eV}\)
+Worked derivation: \[mvr=\frac{nh}{2\pi},\ \frac{mv^2}{r}=\frac{ke^2}{r^2}\Rightarrow v=\frac{2\pi ke^2}{nh},\ r=\frac{n^2h^2}{4\pi^2mke^2}\]
+Check: \[E_3=-K_3=-\tfrac12mv_3^2\propto\frac1{n^2}\ \checkmark\]
+Why: \(\text{quantised angular momentum makes speed fall as }1/n\text{ and radius grow as }n^2\)
+Why not the others: (A) \(\text{linear scaling}\); (B) \(\text{inverted scaling}\); (D) \(v\propto1/n\text{, not }1/n^2\).
+Key point: \(r\propto n^2,\ v\propto1/n,\ E\propto-1/n^2\)
+
+@@ Q80
+format: numerical
+sub_topic: Estimating energy released in fission and fusion from binding energy per nucleon values
+Q: A nucleus with \(A=240\) (binding energy \(7.6\ \text{MeV}\) per nucleon) splits into two nuclei of \(A=120\) (\(8.5\ \text{MeV}\) per nucleon). Two deuterons (\(1.1\ \text{MeV}\) per nucleon) fuse into \({}^4\text{He}\) (\(7.07\ \text{MeV}\) per nucleon). What energy is released in each process?
+A) Fission \(0.9\ \text{MeV}\); fusion \(5.97\ \text{MeV}\)
+B) Fission \(2040\ \text{MeV}\); fusion \(28.3\ \text{MeV}\)
+C) Fission \(108\ \text{MeV}\); fusion \(11.9\ \text{MeV}\)
+D) Fission \(240\times(8.5-7.6)=216\ \text{MeV}\); fusion \(4\times7.07-4\times1.1\approx23.9\ \text{MeV}\); both release energy because the products have higher binding energy per nucleon, fusion releasing more per nucleon (\(\approx6\ \text{MeV}\)) than fission (\(\approx0.9\ \text{MeV}\))
+KEY: D
+SOL:
+Answer: (D) \(216\ \text{MeV}\); \(23.9\ \text{MeV}\).
+Given: \(A=240:\ 7.6;\ A=120:\ 8.5;\ {}^2\text{H}:\ 1.1;\ {}^4\text{He}:\ 7.07\ \text{MeV per nucleon}\)
+Formula/Principle: \(Q=\text{total BE of products}-\text{total BE of reactants}\)
+Step 1: \(\text{fission: }2\times120\times8.5-240\times7.6=2040-1824=216\ \text{MeV}\)
+Step 2: \(\text{fusion: }4\times7.07-2\times2\times1.1=28.28-4.4=23.9\ \text{MeV}\)
+Step 3: \(\text{per nucleon: fission }\tfrac{216}{240}=0.9;\ \text{fusion }\tfrac{23.9}{4}\approx6\ \text{MeV}\)
+Worked derivation: \[Q=A\,\Delta\bar B\text{ when the nucleon number is conserved}\]
+Check: \[\text{both products lie closer to the peak of the BE curve}\ \checkmark\]
+Why: \(\text{nuclei move towards the maximum of binding energy per nucleon near }A\approx56\text{; the gain in binding is released}\)
+Why not the others: (A) \(\text{per-nucleon gain only}\); (B) \(\text{total BE of products, not the difference}\); (C) \(\text{halved}\).
+Key point: \(Q=\Delta(\text{total binding energy})\)

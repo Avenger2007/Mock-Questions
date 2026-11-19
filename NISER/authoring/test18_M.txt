@@ -1,0 +1,439 @@
+@@ Q41
+format: numerical
+sub_topic: Recovering an unknown probability from a conditional probability and a union, testing independence, and a conditional probability on a family with two children
+Q: For events \(A,B\): \(P(B)=0.5,\ P(A\mid B)=0.4,\ P(A\cup B)=0.6\). Find \(P(A)\) and \(P(B\mid A)\), decide whether \(A,B\) are independent, and find the probability that a family with two children has two boys given that at least one is a boy.
+A) \(P(A)=0.2,\ P(B\mid A)=1\); dependent; \(\tfrac12\)
+B) \(P(A)=0.4,\ P(B\mid A)=\tfrac12\); independent; \(\tfrac14\)
+C) \(P(A)=0.3,\ P(B\mid A)=\tfrac23\); not independent, since \(P(A)P(B)=0.15\ne0.2\); \(\tfrac13\)
+D) \(P(A)=0.3,\ P(B\mid A)=\tfrac23\); independent; \(\tfrac12\)
+KEY: C
+SOL:
+Answer: (C) \(P(A)=0.3,\ P(B\mid A)=\tfrac23\); not independent; \(\tfrac13\).
+Given: \(P(B)=0.5,\ P(A\mid B)=0.4,\ P(A\cup B)=0.6\)
+Formula/Principle: \(P(A\cap B)=P(A\mid B)P(B);\ P(A\cup B)=P(A)+P(B)-P(A\cap B)\)
+Step 1: \(P(A\cap B)=0.4\times0.5=0.2\)
+Step 2: \(0.6=P(A)+0.5-0.2\Rightarrow P(A)=0.3\)
+Step 3: \(P(B\mid A)=\dfrac{0.2}{0.3}=\dfrac23;\ P(A)P(B)=0.15\ne0.2\Rightarrow\text{dependent}\)
+Worked derivation: \[S=\{BB,BG,GB,GG\};\ E=\{\text{at least one boy}\}=\{BB,BG,GB\};\ P(BB\mid E)=\frac{1/4}{3/4}=\frac13\]
+Check: \[P(A\cup B)=0.3+0.5-0.2=0.6\ \checkmark\]
+Why: \(\text{conditioning shrinks the sample space to the given event; independence needs }P(A\cap B)=P(A)P(B)\)
+Why not the others: (A) \(\text{takes }P(A)=P(A\cap B)\); (B) \(\text{wrong }P(A)\text{; family answer ignores conditioning}\); (D) \(\text{independence test fails}\).
+Key point: \(P(A\mid B)=\dfrac{P(A\cap B)}{P(B)};\ \text{independent}\iff P(A\cap B)=P(A)P(B)\)
+
+@@ Q42
+format: numerical
+sub_topic: Using the graphs of inverse trigonometric functions outside their principal intervals to evaluate sin⁻¹(sin x), cos⁻¹(cos x) and tan⁻¹(tan x)
+Q: What are \(\sin^{-1}(\sin2),\ \cos^{-1}(\cos4)\) and \(\tan^{-1}(\tan2)\) (angles in radians), and what is the graph of \(y=\sin^{-1}(\sin x)\) on \(\left[\tfrac\pi2,\tfrac{3\pi}2\right]\)?
+A) \(\pi-2,\ 2\pi-4,\ 2-\pi\); on \(\left[\tfrac\pi2,\tfrac{3\pi}2\right]\) the graph is the line \(y=\pi-x\), falling from \(\tfrac\pi2\) to \(-\tfrac\pi2\)
+B) \(2,\ 4,\ 2\); the graph is \(y=x\)
+C) \(2-\pi,\ 4-2\pi,\ \pi-2\); the graph is \(y=x-\pi\)
+D) \(\pi-2,\ 4-\pi,\ 2\); the graph is \(y=\pi+x\)
+KEY: A
+SOL:
+Answer: (A) \(\pi-2,\ 2\pi-4,\ 2-\pi\); \(y=\pi-x\).
+Given: \(\text{principal ranges: }\sin^{-1}\in\left[-\tfrac\pi2,\tfrac\pi2\right],\ \cos^{-1}\in[0,\pi],\ \tan^{-1}\in\left(-\tfrac\pi2,\tfrac\pi2\right)\)
+Formula/Principle: \(\text{find the angle in the principal range with the same sin, cos or tan}\)
+Step 1: \(2\in\left(\tfrac\pi2,\pi\right):\ \sin(\pi-2)=\sin2,\ \pi-2\approx1.14\in\left[-\tfrac\pi2,\tfrac\pi2\right]\)
+Step 2: \(4\in(\pi,2\pi):\ \cos(2\pi-4)=\cos4,\ 2\pi-4\approx2.28\in[0,\pi]\)
+Step 3: \(\tan(2-\pi)=\tan2,\ 2-\pi\approx-1.14\in\left(-\tfrac\pi2,\tfrac\pi2\right)\)
+Worked derivation: \[x\in\left[\tfrac\pi2,\tfrac{3\pi}2\right]\Rightarrow\pi-x\in\left[-\tfrac\pi2,\tfrac\pi2\right],\ \sin(\pi-x)=\sin x\Rightarrow y=\pi-x\]
+Check: \[x=\tfrac\pi2:\ y=\tfrac\pi2;\ x=\tfrac{3\pi}2:\ y=-\tfrac\pi2\ \checkmark\]
+Why: \(\text{the composite equals }x\text{ only on the principal interval; elsewhere its graph is a zig-zag of lines of slope }\pm1\)
+Why not the others: (B) \(2,4\text{ lie outside the principal ranges}\); (C) \(\text{signs reversed}\); (D) \(4-\pi\text{ has the wrong cosine}\).
+Key point: \(\sin^{-1}(\sin x)=x\text{ only for }|x|\le\tfrac\pi2\)
+
+@@ Q43
+format: numerical
+sub_topic: Splitting a square matrix into symmetric and skew-symmetric parts, using the transpose of a product, and finding a quadratic relation satisfied by a 2×2 matrix
+Q: For \(A=\begin{pmatrix}1&2\\3&4\end{pmatrix}\), what are its symmetric and skew-symmetric parts, and which relation does \(A\) satisfy?
+A) Symmetric part \(\begin{pmatrix}1&3\\2&4\end{pmatrix}\); \(A^2=5A\)
+B) Symmetric part \(\begin{pmatrix}2&5\\5&8\end{pmatrix}\); \(A^2-5A+2I=O\)
+C) Skew part \(\begin{pmatrix}0&1\\1&0\end{pmatrix}\); \(A^2+5A-2I=O\)
+D) \(A=P+Q\) with \(P=\tfrac12(A+A^T)=\begin{pmatrix}1&\frac52\\\frac52&4\end{pmatrix}\) symmetric and \(Q=\tfrac12(A-A^T)=\begin{pmatrix}0&-\frac12\\\frac12&0\end{pmatrix}\) skew-symmetric; \(A^2-5A-2I=O\)
+KEY: D
+SOL:
+Answer: (D) \(P=\tfrac12(A+A^T),\ Q=\tfrac12(A-A^T)\); \(A^2-5A-2I=O\).
+Given: \(A=\begin{pmatrix}1&2\\3&4\end{pmatrix},\ A^T=\begin{pmatrix}1&3\\2&4\end{pmatrix}\)
+Formula/Principle: \(A=\tfrac12(A+A^T)+\tfrac12(A-A^T);\ (AB)^T=B^TA^T\)
+Step 1: \(A+A^T=\begin{pmatrix}2&5\\5&8\end{pmatrix}\Rightarrow P=\begin{pmatrix}1&\frac52\\\frac52&4\end{pmatrix}\)
+Step 2: \(A-A^T=\begin{pmatrix}0&-1\\1&0\end{pmatrix}\Rightarrow Q=\begin{pmatrix}0&-\frac12\\\frac12&0\end{pmatrix}\)
+Step 3: \(A^2=\begin{pmatrix}7&10\\15&22\end{pmatrix},\ 5A=\begin{pmatrix}5&10\\15&20\end{pmatrix}\Rightarrow A^2-5A=2I\)
+Worked derivation: \[\operatorname{tr}A=5,\ \det A=-2\Rightarrow A^2-(\operatorname{tr}A)A+(\det A)I=A^2-5A-2I=O\]
+Check: \[P^T=P,\ Q^T=-Q,\ P+Q=A\ \checkmark\]
+Why: \(\text{every square matrix splits uniquely into symmetric and skew parts, and a }2\times2\text{ matrix satisfies }x^2-(\operatorname{tr})x+\det=0\)
+Why not the others: (A) \(\text{that is }A^T\text{, and }A^2\ne5A\); (B) \(A+A^T\text{ is twice }P\text{; sign of }2I\text{ wrong}\); (C) \(\text{not skew; wrong signs}\).
+Key point: \(A=\tfrac12(A+A^T)+\tfrac12(A-A^T)\)
+
+@@ Q44
+format: numerical
+sub_topic: Choosing the value at a point that makes a function continuous, and recognising a jump discontinuity that no value can remove
+Q: For which values is each function continuous at the given point: \(f(x)=\dfrac{x^2-9}{x-3}\ (x\ne3),\ f(3)=k\); \(g(x)=\dfrac{\sin mx}{x}\ (x\ne0),\ g(0)=3\); \(h(x)=\dfrac{|x|}{x}\ (x\ne0),\ h(0)=c\)?
+A) \(k=0,\ m=1\), any \(c\)
+B) \(k=6,\ m=3\), and no value of \(c\) makes \(h\) continuous at \(0\), since its left and right limits are \(-1\) and \(1\)
+C) \(k=3,\ m=3,\ c=0\)
+D) \(k=6,\ m=\tfrac13,\ c=1\)
+KEY: B
+SOL:
+Answer: (B) \(k=6,\ m=3\); no \(c\) works.
+Given: \(f,\ g,\ h\text{ as stated}\)
+Formula/Principle: \(\text{continuous at }a\iff\lim_{x\to a}f(x)=f(a)\)
+Step 1: \(\lim_{x\to3}\dfrac{(x-3)(x+3)}{x-3}=6\Rightarrow k=6\)
+Step 2: \(\lim_{x\to0}\dfrac{\sin mx}{x}=m\Rightarrow m=3\)
+Step 3: \(\lim_{x\to0^-}\dfrac{|x|}{x}=-1,\ \lim_{x\to0^+}\dfrac{|x|}{x}=1\Rightarrow\text{limit does not exist}\)
+Worked derivation: \[\frac{\sin mx}{x}=m\cdot\frac{\sin mx}{mx}\to m\cdot1\]
+Check: \[f(2.999)\approx5.999\to6\ \checkmark\]
+Why: \(\text{a removable gap can be filled by the limit, but a jump has no single limit to fill it with}\)
+Why not the others: (A) \(\text{wrong limits}\); (C) \(k\ne3\text{ and }c=0\text{ does not help}\); (D) \(m=\tfrac13\text{ gives limit }\tfrac13\).
+Key point: \(\text{removable discontinuity: redefine by the limit; jump: impossible}\)
+
+@@ Q45
+format: numerical
+sub_topic: Finding the coefficients of a cubic from the positions of its turning points and classifying them by the second derivative test
+Q: \(f(x)=x^3+ax^2+bx+5\) has turning points at \(x=-1\) and \(x=3\). What are \(a\) and \(b\), and what are the local maximum and minimum values?
+A) \(a=3,\ b=9\); maximum \(10\) at \(x=3\)
+B) \(a=-3,\ b=-9\); local maximum \(f(-1)=10\), local minimum \(f(3)=-22\)
+C) \(a=-3,\ b=9\); maximum \(-22\), minimum \(10\)
+D) \(a=-2,\ b=-3\); no extremum
+KEY: B
+SOL:
+Answer: (B) \(a=-3,\ b=-9\); max \(10\), min \(-22\).
+Given: \(f'(-1)=f'(3)=0\)
+Formula/Principle: \(f'(x)=3x^2+2ax+b;\ \text{sum of roots}=-\tfrac{2a}{3},\ \text{product}=\tfrac b3\)
+Step 1: \(-1+3=2=-\dfrac{2a}{3}\Rightarrow a=-3\)
+Step 2: \((-1)(3)=-3=\dfrac b3\Rightarrow b=-9\)
+Step 3: \(f''(x)=6x-6:\ f''(-1)=-12<0\ (\max),\ f''(3)=12>0\ (\min)\)
+Worked derivation: \[f(-1)=-1-3+9+5=10,\quad f(3)=27-27-27+5=-22\]
+Check: \[f'(x)=3x^2-6x-9=3(x+1)(x-3)\ \checkmark\]
+Why: \(\text{turning points are the roots of }f'\text{, so Vieta's relations fix the coefficients}\)
+Why not the others: (A) \(\text{signs wrong}\); (C) \(b\text{ wrong; max and min swapped}\); (D) \(\text{coefficients do not give these roots}\).
+Key point: \(f'(x)=3(x-\alpha)(x-\beta)\text{ for turning points }\alpha,\beta\)
+
+@@ Q46
+format: numerical
+sub_topic: Evaluating definite integrals using odd and even symmetry, periodicity of |sin x|, and the limiting value of ∫₀¹ xⁿ dx
+Q: What are \(\displaystyle\int_{-1}^{1}\left(x^3+x\cos x+\tan^5x+1\right)dx,\ \int_0^{2\pi}|\sin x|\,dx\) and \(\displaystyle\lim_{n\to\infty}\int_0^1x^n\,dx\)?
+A) \(0,\ 0,\ 1\)
+B) \(2,\ 0,\ \tfrac12\)
+C) \(2,\ 4,\ 0\)
+D) \(4,\ 2,\ 0\)
+KEY: C
+SOL:
+Answer: (C) \(2,\ 4,\ 0\).
+Given: \(\text{three integrals}\)
+Formula/Principle: \(\displaystyle\int_{-a}^{a}f=0\text{ for odd }f,\ =2\int_0^af\text{ for even }f\)
+Step 1: \(x^3,\ x\cos x,\ \tan^5x\text{ are odd}\Rightarrow\text{contribute }0;\ \displaystyle\int_{-1}^{1}1\,dx=2\)
+Step 2: \(|\sin x|\text{ has period }\pi:\ \displaystyle\int_0^{2\pi}|\sin x|\,dx=2\int_0^\pi\sin x\,dx=2\cdot2=4\)
+Step 3: \(\displaystyle\int_0^1x^n\,dx=\frac1{n+1}\to0\)
+Worked derivation: \[\int_0^\pi\sin x\,dx=[-\cos x]_0^\pi=1-(-1)=2\]
+Check: \[x\cos x:\ (-x)\cos(-x)=-x\cos x\Rightarrow\text{odd}\ \checkmark\]
+Why: \(\text{odd parts cancel over symmetric limits; the modulus prevents cancellation of the two humps of }\sin x\)
+Why not the others: (A) \(\text{forgets the constant term and the modulus}\); (B) \(\text{integrates }\sin x\text{ without modulus}\); (D) \(\text{doubles the first integral}\).
+Key point: \(\text{odd over }[-a,a]\to0;\ |\sin x|\text{ over }[0,2\pi]=4\)
+
+@@ Q47
+format: numerical
+sub_topic: Using a substitution to evaluate a definite integral with a parameter as its upper limit and solving for the parameter
+Q: For \(k>0\), \(\displaystyle\int_0^k\frac{2x}{1+x^2}\,dx=\ln5\). What is \(k\), and what is \(\displaystyle\int_0^1\frac{e^{\tan^{-1}x}}{1+x^2}\,dx\)?
+A) \(k=2\); \(e^{\pi/4}-1\)
+B) \(k=4\); \(e^{\pi/4}\)
+C) \(k=\sqrt5\); \(e-1\)
+D) \(k=2\); \(\tfrac\pi4\)
+KEY: A
+SOL:
+Answer: (A) \(k=2\); \(e^{\pi/4}-1\).
+Given: \(\displaystyle\int_0^k\frac{2x}{1+x^2}dx=\ln5\)
+Formula/Principle: \(t=1+x^2,\ dt=2x\,dx;\ u=\tan^{-1}x,\ du=\dfrac{dx}{1+x^2}\)
+Step 1: \(\displaystyle\int_1^{1+k^2}\frac{dt}{t}=\ln(1+k^2)\)
+Step 2: \(\ln(1+k^2)=\ln5\Rightarrow k^2=4\Rightarrow k=2\)
+Step 3: \(\displaystyle\int_0^{\pi/4}e^u\,du=e^{\pi/4}-1\)
+Worked derivation: \[x=0\to u=0,\quad x=1\to u=\tan^{-1}1=\tfrac\pi4\]
+Check: \[\frac{d}{dx}\ln(1+x^2)=\frac{2x}{1+x^2}\ \checkmark\]
+Why: \(\text{the numerator is the derivative of the denominator (or of the exponent), so a substitution reduces each integral to a standard form}\)
+Why not the others: (B) \(\text{solves }k=4\text{ from }1+k=5\); (C) \(\text{takes }k^2=5\); (D) \(\text{integrates only }\tfrac1{1+x^2}\).
+Key point: \(\displaystyle\int\frac{f'(x)}{f(x)}dx=\ln|f(x)|\)
+
+@@ Q48
+format: numerical
+sub_topic: Finding the area of a triangle and of a parallelogram from its diagonals using the vector product
+Q: Find the area of the triangle with vertices \(A(2,1,0),\ B(3,3,1),\ C(1,2,3)\) and of the parallelogram whose diagonals are \(\vec d_1=3\hat i+\hat j-2\hat k\) and \(\vec d_2=\hat i-3\hat j+4\hat k\).
+A) \(5\sqrt2;\ 10\sqrt3\)
+B) \(25;\ 5\)
+C) \(\tfrac{5\sqrt2}{4};\ 5\sqrt3\)
+D) \(\tfrac{5\sqrt2}{2};\ 5\sqrt3\)
+KEY: D
+SOL:
+Answer: (D) \(\tfrac{5\sqrt2}2\); \(5\sqrt3\).
+Given: \(\vec{AB}=(1,2,1),\ \vec{AC}=(-1,1,3);\ \vec d_1=(3,1,-2),\ \vec d_2=(1,-3,4)\)
+Formula/Principle: \(\text{triangle}=\tfrac12|\vec{AB}\times\vec{AC}|;\ \text{parallelogram}=\tfrac12|\vec d_1\times\vec d_2|\)
+Step 1: \(\vec{AB}\times\vec{AC}=(2\cdot3-1\cdot1,\ 1\cdot(-1)-1\cdot3,\ 1\cdot1-2\cdot(-1))=(5,-4,3)\)
+Step 2: \(|(5,-4,3)|=\sqrt{50}=5\sqrt2\Rightarrow\text{area}=\tfrac{5\sqrt2}2\)
+Step 3: \(\vec d_1\times\vec d_2=(4-6,\ -2-12,\ -9-1)=(-2,-14,-10),\ |\cdot|=\sqrt{300}=10\sqrt3\)
+Worked derivation: \[\text{parallelogram area}=\tfrac12\cdot10\sqrt3=5\sqrt3\]
+Check: \[(5,-4,3)\cdot\vec{AB}=5-8+3=0\ \checkmark\]
+Why: \(|\vec a\times\vec b|\text{ is the area of the parallelogram on }\vec a,\vec b\text{; for diagonals the factor }\tfrac12\text{ appears}\)
+Why not the others: (A) \(\text{omits both factors }\tfrac12\); (B) \(\text{uses the squared magnitude}\); (C) \(\text{extra factor }\tfrac12\text{ for the triangle}\).
+Key point: \(\triangle=\tfrac12|\vec{AB}\times\vec{AC}|;\ \text{parallelogram from diagonals}=\tfrac12|\vec d_1\times\vec d_2|\)
+
+@@ Q49
+format: numerical
+sub_topic: Finding an unknown coordinate so that a line through two points has given direction ratios, then its direction cosines and Cartesian equation
+Q: The line through \(A(1,-1,2)\) and \(B(3,k,6)\) is parallel to the vector with direction ratios \(1,2,2\). What is \(k\), what are the direction cosines of the line, and what is its equation?
+A) \(k=1\); \((1,2,2)\); \(\dfrac{x-1}{1}=\dfrac{y+1}{2}=\dfrac{z-2}{2}\)
+B) \(k=4\); \(\left(\tfrac13,\tfrac23,\tfrac23\right)\); \(\dfrac{x-3}{1}=\dfrac{y-4}{2}=\dfrac{z-6}{2}\)
+C) \(k=3\); \(\left(\tfrac13,\tfrac23,\tfrac23\right)\); \(\dfrac{x-1}{1}=\dfrac{y+1}{2}=\dfrac{z-2}{2}\)
+D) \(k=3\); \(\left(\tfrac15,\tfrac25,\tfrac25\right)\); \(\dfrac{x+1}{1}=\dfrac{y-1}{2}=\dfrac{z+2}{2}\)
+KEY: C
+SOL:
+Answer: (C) \(k=3\); \(\left(\tfrac13,\tfrac23,\tfrac23\right)\); \(\dfrac{x-1}1=\dfrac{y+1}2=\dfrac{z-2}2\).
+Given: \(\vec{AB}=(2,\ k+1,\ 4)\parallel(1,2,2)\)
+Formula/Principle: \(\text{parallel}\iff\text{proportional components};\ l=\dfrac a{\sqrt{a^2+b^2+c^2}}\)
+Step 1: \(\dfrac21=\dfrac{k+1}{2}=\dfrac42\Rightarrow k+1=4\Rightarrow k=3\)
+Step 2: \(\sqrt{1+4+4}=3\Rightarrow(l,m,n)=\left(\tfrac13,\tfrac23,\tfrac23\right)\)
+Step 3: \(\text{through }A:\ \dfrac{x-1}{1}=\dfrac{y+1}{2}=\dfrac{z-2}{2}\)
+Worked derivation: \[B(3,3,6):\ \frac{3-1}{1}=\frac{3+1}{2}=\frac{6-2}{2}=2\Rightarrow B\text{ lies on the line}\]
+Check: \[l^2+m^2+n^2=\tfrac19+\tfrac49+\tfrac49=1\ \checkmark\]
+Why: \(\text{the vector between two points on a line is parallel to the line, so its components are proportional to the direction ratios}\)
+Why not the others: (A) \(k\text{ wrong; ratios are not cosines}\); (B) \(k=4\text{ breaks proportionality}\); (D) \(\text{wrong normalisation and sign of the point}\).
+Key point: \(\text{DCs}=\text{DRs}/\sqrt{a^2+b^2+c^2}\)
+
+@@ Q50
+format: numerical
+sub_topic: Finding the optimal value of a linear objective by the corner-point method in a bounded region, and deciding the existence of an optimum in an unbounded region
+Q: Maximise \(Z=x+2y\) subject to \(x+y\le6,\ x\le4,\ y\le5,\ x,y\ge0\). Separately, for \(x+y\ge4,\ x,y\ge0\), does \(Z=x+2y\) have a minimum or a maximum?
+A) Maximum \(12\) at \((0,6)\); unbounded region has a maximum \(8\)
+B) Maximum \(11\) at \((1,5)\) (corners \((0,0),(4,0),(4,2),(1,5),(0,5)\) give \(0,4,8,11,10\)); in the unbounded region the minimum is \(4\) at \((4,0)\), since the half-plane \(x+2y<4\) has no point in the region, and there is no maximum
+C) Maximum \(10\) at \((0,5)\); no minimum in the unbounded region
+D) Maximum \(8\) at \((4,2)\); unbounded region has minimum \(8\) at \((0,4)\)
+KEY: B
+SOL:
+Answer: (B) Max \(11\) at \((1,5)\); unbounded: min \(4\) at \((4,0)\), no max.
+Given: \(\text{bounded region and unbounded region as stated}\)
+Formula/Principle: \(\text{optimum of a linear }Z\text{ on a bounded convex polygon occurs at a corner}\)
+Step 1: \(\text{corners: }(0,0),(4,0),(4,2),(1,5),(0,5)\)
+Step 2: \(Z=0,4,8,11,10\Rightarrow\max=11\text{ at }(1,5)\)
+Step 3: \(\text{unbounded corners }(4,0),(0,4):\ Z=4,8;\ \text{test }x+2y<4\text{: no common point}\Rightarrow\min=4\)
+Worked derivation: \[(1,5):\ x+y=6,\ y=5\Rightarrow x=1;\quad(4,2):\ x=4,\ x+y=6\Rightarrow y=2\]
+Check: \[\text{along }(t,0),\ Z=t\to\infty\Rightarrow\text{no maximum}\ \checkmark\]
+Why: \(\text{in an unbounded region a corner value is optimal only if the open half-plane beyond it misses the region}\)
+Why not the others: (A) \((0,6)\text{ violates }y\le5\); (C) \(\text{misses corner }(1,5)\); (D) \(\text{wrong corner and wrong minimum}\).
+Key point: \(\text{corner-point method; unbounded region needs the half-plane test}\)
+
+@@ Q51
+format: numerical
+sub_topic: Solving a logarithmic equation with attention to domain, counting intersections of an exponential and a power curve, and comparing logarithms with different bases
+Q: Solve \(\log_2x+\log_2(x-2)=3\), find the number of real solutions of \(2^x=x^2\), and compare \(\log_23\) with \(\log_32\).
+A) \(x=4\) or \(-2\); \(2\) solutions; \(\log_23<\log_32\)
+B) \(x=-2\); \(1\) solution; equal
+C) \(x=8\); \(2\) solutions; \(\log_23>\log_32\)
+D) \(x=4\) only (since \(x>2\) is required); \(3\) solutions (\(x=2,\ x=4\) and one negative root between \(-1\) and \(0\)); \(\log_23>1>\log_32\)
+KEY: D
+SOL:
+Answer: (D) \(x=4\); \(3\) solutions; \(\log_23>1>\log_32\).
+Given: \(\log_2x+\log_2(x-2)=3;\ 2^x=x^2\)
+Formula/Principle: \(\log_ba+\log_bc=\log_b(ac);\ \text{domain }x>0,\ x-2>0\)
+Step 1: \(x(x-2)=8\Rightarrow x^2-2x-8=0\Rightarrow x=4\text{ or }-2\)
+Step 2: \(\text{domain }x>2\Rightarrow x=4\)
+Step 3: \(2^x=x^2:\ x=2,4;\ g(x)=2^x-x^2:\ g(-1)=-\tfrac12<0,\ g(0)=1>0\Rightarrow\text{one root in }(-1,0)\)
+Worked derivation: \[\log_23=\frac{\ln3}{\ln2}\approx1.585>1,\quad\log_32=\frac{\ln2}{\ln3}\approx0.631<1\]
+Check: \[\log_24+\log_22=2+1=3\ \checkmark\]
+Why: \(\text{logarithms exist only for positive arguments, so algebraic roots must be checked against the domain}\)
+Why not the others: (A) \(-2\text{ is outside the domain; misses the negative root}\); (B) \(\text{rejects the valid root}\); (C) \(\text{wrong root}\).
+Key point: \(\text{check domain of logs};\ \log_ab\cdot\log_ba=1\)
+
+@@ Q52
+format: numerical
+sub_topic: Finding all linear functions whose composition with themselves equals a given linear function
+Q: For which linear functions \(f(x)=ax+b\) is \(f(f(x))=4x+9\) for all \(x\)?
+A) \(f(x)=2x+3\) and \(f(x)=-2x-9\)
+B) \(f(x)=2x+3\) only
+C) \(f(x)=4x+9\)
+D) \(f(x)=2x+\tfrac92\) and \(f(x)=-2x+9\)
+KEY: A
+SOL:
+Answer: (A) \(f(x)=2x+3\) or \(f(x)=-2x-9\).
+Given: \(f(x)=ax+b,\ f(f(x))=4x+9\)
+Formula/Principle: \(f(f(x))=a(ax+b)+b=a^2x+(a+1)b\)
+Step 1: \(a^2=4\Rightarrow a=\pm2\)
+Step 2: \(a=2:\ 3b=9\Rightarrow b=3\)
+Step 3: \(a=-2:\ -b=9\Rightarrow b=-9\)
+Worked derivation: \[f(x)=-2x-9:\ f(f(x))=-2(-2x-9)-9=4x+18-9=4x+9\]
+Check: \[f(x)=2x+3:\ 2(2x+3)+3=4x+9\ \checkmark\]
+Why: \(\text{comparing coefficients gives a quadratic in }a\text{, which has two roots}\)
+Why not the others: (B) \(\text{misses }a=-2\); (C) \(f(f(x))=16x+45\); (D) \(\text{wrong constants}\).
+Key point: \((f\circ f)(x)=a^2x+(a+1)b\text{ for linear }f\)
+
+@@ Q53
+format: numerical
+sub_topic: Using double- and triple-angle formulas to evaluate sin 2θ, cos 2θ and cos 3θ from cos θ
+Q: If \(\cos\theta=\tfrac13\) with \(\theta\) acute, what are \(\sin2\theta,\ \cos2\theta\) and \(\cos3\theta\)?
+A) \(\tfrac23,\ \tfrac29,\ -\tfrac{23}{27}\)
+B) \(\tfrac{2\sqrt2}{9},\ \tfrac79,\ 1\)
+C) \(\tfrac{4\sqrt2}{9},\ -\tfrac79,\ -\tfrac{23}{27}\)
+D) \(\tfrac{4\sqrt2}{9},\ \tfrac79,\ \tfrac{23}{27}\)
+KEY: C
+SOL:
+Answer: (C) \(\tfrac{4\sqrt2}9,\ -\tfrac79,\ -\tfrac{23}{27}\).
+Given: \(\cos\theta=\tfrac13,\ \sin\theta=\sqrt{1-\tfrac19}=\tfrac{2\sqrt2}{3}\)
+Formula/Principle: \(\sin2\theta=2\sin\theta\cos\theta;\ \cos2\theta=2\cos^2\theta-1;\ \cos3\theta=4\cos^3\theta-3\cos\theta\)
+Step 1: \(\sin2\theta=2\cdot\tfrac{2\sqrt2}{3}\cdot\tfrac13=\tfrac{4\sqrt2}{9}\)
+Step 2: \(\cos2\theta=\tfrac29-1=-\tfrac79\)
+Step 3: \(\cos3\theta=\tfrac4{27}-1=-\tfrac{23}{27}\)
+Worked derivation: \[\cos3\theta=\cos2\theta\cos\theta-\sin2\theta\sin\theta=-\tfrac7{27}-\tfrac{4\sqrt2}{9}\cdot\tfrac{2\sqrt2}{3}=-\tfrac{7}{27}-\tfrac{16}{27}=-\tfrac{23}{27}\]
+Check: \[\sin^22\theta+\cos^22\theta=\tfrac{32}{81}+\tfrac{49}{81}=1\ \checkmark\]
+Why: \(\text{multiple-angle formulas express }2\theta\text{ and }3\theta\text{ ratios as polynomials in }\cos\theta\text{ and }\sin\theta\)
+Why not the others: (A) \(\sin2\theta\text{ and }\cos2\theta\text{ wrong}\); (B) \(\text{forgets factor 2 and sign}\); (D) \(\text{signs wrong}\).
+Key point: \(\cos3\theta=4\cos^3\theta-3\cos\theta\)
+
+@@ Q54
+format: numerical
+sub_topic: Finding constants that make divisibility statements true for all n, the largest integer dividing a product of consecutive integers, and the role of the base case in induction
+Q: Find the smallest positive integer \(k\) such that \(3^{2n}+k\) is divisible by \(8\) for every natural \(n\), and the largest integer that divides \(n(n+1)(n+2)\) for every natural \(n\). For \(P(n):\ 1+2+\dots+n=\tfrac{n(n+1)}{2}+5\), what goes wrong with induction?
+A) \(k=1\); \(3\); the inductive step fails
+B) \(k=7\); \(6\); the inductive step \(P(m)\Rightarrow P(m+1)\) works, but the base case \(P(1)\) is false (\(1\ne6\)), so \(P(n)\) is never true
+C) \(k=8\); \(2\); both steps work, so \(P(n)\) is true
+D) \(k=7\); \(24\); the base case is true
+KEY: B
+SOL:
+Answer: (B) \(k=7\); \(6\); step holds but base fails.
+Given: \(3^{2n}+k,\ n(n+1)(n+2),\ P(n)\)
+Formula/Principle: \(\text{induction needs both a true base case and a valid inductive step}\)
+Step 1: \(9^n=(8+1)^n\equiv1\pmod8\Rightarrow8\mid9^n+k\iff k\equiv7\pmod8\Rightarrow k=7\)
+Step 2: \(\text{three consecutive integers contain a multiple of 2 and of 3}\Rightarrow6\mid n(n+1)(n+2);\ n=1:\ 6\Rightarrow\text{largest}=6\)
+Step 3: \(\text{assume }1+\dots+m=\tfrac{m(m+1)}2+5;\ \text{add }m+1:\ \tfrac{(m+1)(m+2)}2+5\ \Rightarrow\text{step valid}\)
+Worked derivation: \[P(1):\ 1=\tfrac{1\cdot2}{2}+5=6\ \text{(false)}\]
+Check: \[n=1:\ 9+7=16=2\cdot8\ \checkmark;\ n=2:\ 81+7=88=11\cdot8\ \checkmark\]
+Why: \(\text{the inductive step only transfers truth; without a true starting case nothing is proved}\)
+Why not the others: (A) \(9+1=10\text{ not divisible by 8}\); (C) \(9+8=17\text{; base case false}\); (D) \(n=1\text{ gives }6\text{, not a multiple of }24\).
+Key point: \(\text{induction: base case + inductive step, both essential}\)
+
+@@ Q55
+format: numerical
+sub_topic: Solving a quadratic with real coefficients and complex roots, and interpreting the roots and the origin as a triangle in the Argand plane
+Q: For \(z^2-2z+4=0\), what are the roots, their modulus and arguments, and the area of the triangle formed by the roots and the origin?
+A) \(z=1\pm i\sqrt3\); \(|z|=2\), \(\arg z=\pm\tfrac\pi3\); the roots are conjugates (mirror images in the real axis), and the triangle with the origin has area \(\sqrt3\)
+B) \(z=-1\pm i\sqrt3\); \(|z|=2\); area \(2\sqrt3\)
+C) \(z=1\pm i\sqrt3\); \(|z|=4\); area \(\sqrt3\)
+D) \(z=2\pm2i\); \(|z|=2\sqrt2\); area \(4\)
+KEY: A
+SOL:
+Answer: (A) \(1\pm i\sqrt3\); \(|z|=2\), \(\arg=\pm\tfrac\pi3\); area \(\sqrt3\).
+Given: \(z^2-2z+4=0\)
+Formula/Principle: \(z=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a};\ \text{area}=\tfrac12r_1r_2\sin\angle\)
+Step 1: \(D=4-16=-12\Rightarrow z=\dfrac{2\pm2i\sqrt3}{2}=1\pm i\sqrt3\)
+Step 2: \(|z|=\sqrt{1+3}=2,\ \arg z=\pm\tan^{-1}\sqrt3=\pm\tfrac\pi3\)
+Step 3: \(\text{angle at origin}=\tfrac{2\pi}{3}\Rightarrow\text{area}=\tfrac12\cdot2\cdot2\cdot\sin\tfrac{2\pi}3=\sqrt3\)
+Worked derivation: \[\text{base }|z_1-z_2|=2\sqrt3,\ \text{height}=1\Rightarrow\text{area}=\tfrac12\cdot2\sqrt3\cdot1=\sqrt3\]
+Check: \[z_1+z_2=2,\ z_1z_2=1+3=4\ \checkmark\]
+Why: \(\text{non-real roots of a real quadratic come in conjugate pairs symmetric about the real axis}\)
+Why not the others: (B) \(\text{sign of real part wrong}\); (C) \(|z|=2\); (D) \(\text{wrong roots}\).
+Key point: \(\text{real coefficients}\Rightarrow\text{conjugate roots};\ z_1z_2=|z|^2\)
+
+@@ Q56
+format: numerical
+sub_topic: Solving a rational inequality with sign analysis, a modulus inequality, and recognising inequalities that hold for no or all real x
+Q: What are the solution sets of \(\dfrac{x-1}{x+2}\ge0\), \(|x-3|<2\), \(x^2\le0\) and \(x^2+x+1>0\)?
+A) \([-2,1];\ (1,5);\ \varnothing;\ \varnothing\)
+B) \((-\infty,-2]\cup[1,\infty);\ [1,5];\ \{0\};\ (0,\infty)\)
+C) \((-2,1];\ (-5,1);\ \mathbb R;\ \mathbb R\)
+D) \((-\infty,-2)\cup[1,\infty);\ (1,5);\ \{0\};\ \mathbb R\)
+KEY: D
+SOL:
+Answer: (D) \((-\infty,-2)\cup[1,\infty)\); \((1,5)\); \(\{0\}\); \(\mathbb R\).
+Given: \(\text{four inequalities}\)
+Formula/Principle: \(\text{sign chart for rational expressions};\ |x-a|<r\iff a-r<x<a+r\)
+Step 1: \(\text{critical points }-2,1:\ \text{positive for }x<-2\text{ or }x>1;\ x=1\text{ gives }0;\ x=-2\text{ excluded}\)
+Step 2: \(|x-3|<2\iff1<x<5\)
+Step 3: \(x^2\le0\iff x=0;\ x^2+x+1=\left(x+\tfrac12\right)^2+\tfrac34>0\text{ for all }x\)
+Worked derivation: \[x=-3:\ \frac{-4}{-1}=4\ge0\ \checkmark;\quad x=0:\ \frac{-1}{2}<0\ \text{(excluded)}\]
+Check: \[x^2+x+1:\ D=1-4<0,\ a>0\Rightarrow\text{always positive}\ \checkmark\]
+Why: \(\text{a denominator can never be zero, so }-2\text{ is excluded even though the inequality is non-strict}\)
+Why not the others: (A) \(\text{sign chart reversed; last two sets wrong}\); (B) \(-2\text{ wrongly included; endpoints wrong}\); (C) \(\text{several sets wrong}\).
+Key point: \(\text{exclude zeros of the denominator; negative discriminant}\Rightarrow\text{constant sign}\)
+
+@@ Q57
+format: numerical
+sub_topic: Inserting arithmetic means between two numbers and interpreting AM and GM geometrically with a semicircle
+Q: Six arithmetic means are inserted between \(3\) and \(24\). What are they and their sum? Also, for positive \(a,b\), on a semicircle with diameter \(a+b\) what lengths represent the AM and the GM?
+A) \(4,8,12,16,20,22\); sum \(82\); GM is the radius
+B) \(6,9,12,15,18,21\); sum \(27\); AM is the perpendicular half-chord
+C) \(6,9,12,15,18,21\); sum \(81=6\times\tfrac{3+24}{2}\); the radius \(\tfrac{a+b}{2}\) is the AM, and the perpendicular from the point dividing the diameter into \(a\) and \(b\) to the semicircle has length \(\sqrt{ab}\), the GM, so \(\text{GM}\le\text{AM}\)
+D) \(6,9,12,15,18,21\); sum \(81\); GM is always greater than AM
+KEY: C
+SOL:
+Answer: (C) \(6,9,12,15,18,21\); sum \(81\); radius = AM, half-chord = GM.
+Given: \(a=3,\ b=24,\ n=6\)
+Formula/Principle: \(d=\dfrac{b-a}{n+1};\ \text{sum of }n\text{ AMs}=n\cdot\dfrac{a+b}{2}\)
+Step 1: \(d=\dfrac{21}{7}=3\)
+Step 2: \(\text{AMs: }6,9,12,15,18,21\)
+Step 3: \(\text{sum}=6\cdot\dfrac{27}{2}=81\)
+Worked derivation: \[\text{semicircle: altitude }h\text{ on hypotenuse in a right triangle}:\ h^2=ab\Rightarrow h=\sqrt{ab}\le\frac{a+b}{2}=r\]
+Check: \[6+9+12+15+18+21=81\ \checkmark\]
+Why: \(\text{the half-chord can never exceed the radius, which is the geometric proof that GM}\le\text{AM}\)
+Why not the others: (A) \(\text{wrong common difference}\); (B) \(\text{sum and roles wrong}\); (D) \(\text{GM}\le\text{AM}\).
+Key point: \(d=\dfrac{b-a}{n+1};\ \sqrt{ab}\le\dfrac{a+b}2\)
+
+@@ Q58
+format: numerical
+sub_topic: Writing a line in normal form, finding the distance between parallel lines, and the foot of the perpendicular from a point to a line
+Q: Write \(\sqrt3x+y+8=0\) in normal form, find the distance between \(3x-4y+7=0\) and \(6x-8y+9=0\), and the foot of the perpendicular from \((3,8)\) to \(x+3y=7\).
+A) \(p=8,\ \omega=30^\circ\); distance \(2\); foot \((3,8)\)
+B) \(x\cos210^\circ+y\sin210^\circ=4\) (\(p=4,\ \omega=210^\circ\)); distance \(\tfrac12\); foot \((1,2)\), at distance \(2\sqrt{10}\) from \((3,8)\)
+C) \(p=4,\ \omega=30^\circ\); distance \(\tfrac25\); foot \((-2,3)\)
+D) \(p=-4,\ \omega=30^\circ\); distance \(\tfrac12\); foot \((2,\tfrac53)\)
+KEY: B
+SOL:
+Answer: (B) \(p=4,\ \omega=210^\circ\); \(\tfrac12\); foot \((1,2)\).
+Given: \(\sqrt3x+y+8=0;\ 3x-4y+7=0,\ 6x-8y+9=0;\ P(3,8),\ x+3y=7\)
+Formula/Principle: \(\text{normal form }x\cos\omega+y\sin\omega=p,\ p>0;\ \text{parallel lines }d=\dfrac{|c_1-c_2|}{\sqrt{a^2+b^2}}\)
+Step 1: \(-\sqrt3x-y=8\Rightarrow-\tfrac{\sqrt3}{2}x-\tfrac12y=4\Rightarrow\cos\omega=-\tfrac{\sqrt3}2,\ \sin\omega=-\tfrac12\Rightarrow\omega=210^\circ\)
+Step 2: \(6x-8y+9=0\iff3x-4y+4.5=0\Rightarrow d=\dfrac{|7-4.5|}{5}=\tfrac12\)
+Step 3: \((3+t,\ 8+3t)\text{ on }x+3y=7:\ 3+t+24+9t=7\Rightarrow t=-2\Rightarrow(1,2)\)
+Worked derivation: \[|PF|=\sqrt{(3-1)^2+(8-2)^2}=\sqrt{40}=2\sqrt{10}=\frac{|3+24-7|}{\sqrt{10}}\]
+Check: \[1+3\cdot2=7\ \checkmark\]
+Why: \(\text{in normal form }p\text{ must be positive, which fixes the quadrant of }\omega\)
+Why not the others: (A) \(\text{not normalised; foot wrong}\); (C) \(\omega\text{ wrong quadrant; equations not scaled}\); (D) \(p\text{ cannot be negative}\).
+Key point: \(\text{normal form: divide by }\sqrt{a^2+b^2}\text{ with sign making }p>0\)
+
+@@ Q59
+format: numerical
+sub_topic: Finding eccentricity, foci, asymptotes and latus rectum of a hyperbola, and the constant difference of focal distances
+Q: For the hyperbola \(\dfrac{x^2}{9}-\dfrac{y^2}{16}=1\), what are \(e\), the foci, the asymptotes, the latus rectum, and \(|PF_1-PF_2|\) for any point \(P\) on it?
+A) \(e=\tfrac45\); foci \((\pm\sqrt7,0)\); asymptotes \(y=\pm\tfrac34x\); latus rectum \(\tfrac92\); difference \(8\)
+B) \(e=\tfrac54\); foci \((0,\pm5)\); asymptotes \(y=\pm\tfrac43x\); latus rectum \(\tfrac{9}{2}\); difference \(6\)
+C) \(e=\tfrac53\); foci \((\pm5,0)\); asymptotes \(y=\pm\tfrac34x\); latus rectum \(\tfrac{16}{3}\); difference \(10\)
+D) \(e=\tfrac53\); foci \((\pm5,0)\); asymptotes \(y=\pm\tfrac43x\); latus rectum \(\tfrac{32}{3}\); \(|PF_1-PF_2|=2a=6\)
+KEY: D
+SOL:
+Answer: (D) \(e=\tfrac53\); \((\pm5,0)\); \(y=\pm\tfrac43x\); \(\tfrac{32}3\); \(6\).
+Given: \(a^2=9,\ b^2=16\)
+Formula/Principle: \(c^2=a^2+b^2;\ e=\tfrac ca;\ \text{asymptotes }y=\pm\tfrac bax;\ \text{LR}=\dfrac{2b^2}{a}\)
+Step 1: \(c=\sqrt{25}=5\Rightarrow e=\tfrac53,\ \text{foci }(\pm5,0)\)
+Step 2: \(y=\pm\tfrac43x\)
+Step 3: \(\text{LR}=\dfrac{32}{3};\ |PF_1-PF_2|=2a=6\)
+Worked derivation: \[P(3,0):\ |PF_1-PF_2|=|8-2|=6\]
+Check: \[e>1\ \checkmark\]
+Why: \(\text{for a hyperbola }c^2=a^2+b^2\text{, unlike the ellipse, so }e>1\)
+Why not the others: (A) \(\text{uses ellipse relation}\); (B) \(\text{foci on wrong axis}\); (C) \(\text{asymptote slope and LR wrong}\).
+Key point: \(\text{hyperbola: }c^2=a^2+b^2,\ |PF_1-PF_2|=2a\)
+
+@@ Q60
+format: numerical
+sub_topic: Identifying conics and degenerate conics from second-degree equations by completing squares
+Q: What does each equation represent: \(x^2-y^2=0\), \(2x^2+2y^2-4x+8y+10=0\) and \(x^2+4y^2-2x-16y+13=0\)?
+A) A pair of lines \(y=\pm x\); the single point \((1,-2)\); an ellipse with centre \((1,2)\), semi-axes \(2\) and \(1\), and \(e=\tfrac{\sqrt3}{2}\)
+B) A hyperbola; a circle of radius \(\sqrt5\); a circle
+C) A point; a pair of lines; a parabola
+D) Two parallel lines; an empty set; a hyperbola
+KEY: A
+SOL:
+Answer: (A) Pair of lines; point \((1,-2)\); ellipse centre \((1,2)\), \(e=\tfrac{\sqrt3}2\).
+Given: \(\text{three second-degree equations}\)
+Formula/Principle: \(\text{complete squares; a circle of radius }0\text{ is a point (degenerate conic)}\)
+Step 1: \(x^2-y^2=(x-y)(x+y)=0\Rightarrow y=x\text{ or }y=-x\)
+Step 2: \(x^2+y^2-2x+4y+5=0\Rightarrow(x-1)^2+(y+2)^2=0\Rightarrow(1,-2)\)
+Step 3: \((x-1)^2+4(y-2)^2=1+16-13=4\Rightarrow\dfrac{(x-1)^2}{4}+\dfrac{(y-2)^2}{1}=1\)
+Worked derivation: \[e=\sqrt{1-\tfrac14}=\tfrac{\sqrt3}{2}\]
+Check: \[(1,-2):\ 2+8-4-16+10=0\ \checkmark\]
+Why: \(\text{degenerate conics arise when the cutting plane passes through the vertex of the cone: a point, a line or a pair of lines}\)
+Why not the others: (B) \(x^2-y^2=0\text{ factorises; radius is }0\); (C) \(\text{misidentified}\); (D) \(\text{the lines intersect; the point is not empty}\).
+Key point: \(\text{complete squares to identify conics; radius 0 gives a point}\)
