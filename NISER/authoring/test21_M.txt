@@ -1,0 +1,458 @@
+@@ Q41
+format: numerical
+sub_topic: Forming the differential equation of the family of circles touching the x-axis at the origin and finding orders and degrees of differential equations
+Q: Let \(m\) and \(n\) be the order and degree of the differential equation of the family of circles touching the \(x\)-axis at the origin, and let \(p\) be the order of the differential equation of the family \(y=Ae^{2x}+Be^{-x}\). What is \(m+n+p\), and which differential equation represents the circles?
+A) \(3;\ (x^2+y^2)y'=2xy\)
+B) \(5;\ (x^2-y^2)y''=2xy\)
+C) \(4;\ (x^2-y^2)\dfrac{dy}{dx}=2xy\)
+D) \(6;\ y'=\dfrac{x}{y}\)
+KEY: C
+SOL:
+Answer: (C) \(m+n+p=1+1+2=4;\ (x^2-y^2)\dfrac{dy}{dx}=2xy\)
+Concept: \(\text{The order of the differential equation of a family equals the number of independent arbitrary constants; the degree is the power of the highest-order derivative when the equation is a polynomial in derivatives}\)
+Given: \(\text{circles touching the }x\text{-axis at }O:\ x^2+y^2-2ay=0;\ y=Ae^{2x}+Be^{-x}\)
+Formula/Principle: \(\text{differentiate as many times as there are constants, then eliminate them}\)
+Step 1: \(\text{centre }(0,a),\ \text{radius }|a|\Rightarrow x^2+(y-a)^2=a^2\Rightarrow x^2+y^2=2ay\ (\text{one constant})\)
+Step 2: \(2x+2yy'=2ay'\text{ and }a=\dfrac{x^2+y^2}{2y}\Rightarrow 2xy+2y^2y'=(x^2+y^2)y'\Rightarrow (x^2-y^2)y'=2xy\)
+Step 3: \(m=1,\ n=1;\ \text{two constants }A,B\Rightarrow p=2\)
+Worked derivation: \[y'=2Ae^{2x}-Be^{-x},\quad y''=4Ae^{2x}+Be^{-x}\Rightarrow y''-y'-2y=0\ (\text{order }2)\]
+Check: \[x^2+y^2=2y\ (a=1):\ x=1,y=1\Rightarrow y'=\frac{2xy}{x^2-y^2}\ \text{undefined, i.e. vertical tangent at }(1,1),\ \text{correct since }(1,1)\text{ is level with the centre }(0,1)\ \checkmark\]
+Why: \(\text{each arbitrary constant removed costs one differentiation, so the count of constants fixes the order}\)
+Why not the others: (A) \(\text{order of the second family is 2; sign inside bracket wrong}\); (B) \(\text{the circle equation is first order, not }y''\); (D) \(y'=x/y\text{ is a family of hyperbolas and the sum is wrong}\).
+Key point: \(\text{order}=\text{number of arbitrary constants}\)
+
+@@ Q42
+format: numerical
+sub_topic: Finding direction cosines of a line through two points, the angle it makes with an axis, and the identity for the sines of direction angles
+Q: For \(A(1,2,3)\) and \(B(3,-1,9)\), what are the direction cosines of \(\overrightarrow{AB}\), the angle \(\overrightarrow{AB}\) makes with the \(z\)-axis, and the value of \(\sin^2\alpha+\sin^2\beta+\sin^2\gamma\) for any line with direction angles \(\alpha,\beta,\gamma\)?
+A) \(\left(\tfrac27,-\tfrac37,\tfrac67\right);\ \cos^{-1}\tfrac67;\ 2\)
+B) \((2,-3,6);\ \cos^{-1}6;\ 1\)
+C) \(\left(\tfrac27,\tfrac37,\tfrac67\right);\ \cos^{-1}\tfrac37;\ 3\)
+D) \(\left(\tfrac17,-\tfrac37,\tfrac67\right);\ 45^\circ;\ 0\)
+KEY: A
+SOL:
+Answer: (A) \(\left(\tfrac27,-\tfrac37,\tfrac67\right);\ \gamma=\cos^{-1}\tfrac67;\ 2\)
+Concept: \(\text{Direction ratios of the line through }(x_1,y_1,z_1),(x_2,y_2,z_2)\text{ are }(x_2-x_1,\,y_2-y_1,\,z_2-z_1);\ \text{dividing by the length gives direction cosines }l,m,n\text{ with }l^2+m^2+n^2=1\)
+Given: \(A(1,2,3),\ B(3,-1,9)\)
+Formula/Principle: \(l=\dfrac{a}{\sqrt{a^2+b^2+c^2}},\ \text{etc.};\ \cos^2\alpha+\cos^2\beta+\cos^2\gamma=1\)
+Step 1: \(\text{d.r.}=(2,-3,6),\ |AB|=\sqrt{4+9+36}=7\)
+Step 2: \(l,m,n=\tfrac27,-\tfrac37,\tfrac67\Rightarrow \cos\gamma=\tfrac67\)
+Step 3: \(\sum\sin^2=3-\sum\cos^2=3-1=2\)
+Worked derivation: \[\sin^2\alpha+\sin^2\beta+\sin^2\gamma=(1-\cos^2\alpha)+(1-\cos^2\beta)+(1-\cos^2\gamma)=3-1=2\]
+Check: \[\left(\tfrac27\right)^2+\left(-\tfrac37\right)^2+\left(\tfrac67\right)^2=\frac{4+9+36}{49}=1\ \checkmark\]
+Why: \(\text{direction cosines are the components of the unit vector along the line, so their squares add to 1}\)
+Why not the others: (B) \(\text{these are direction ratios, not cosines; the sum is 2}\); (C) \(m\text{ must be negative}\); (D) \(\text{first cosine wrong, squares do not sum to 1}\).
+Key point: \(l^2+m^2+n^2=1\Rightarrow \sum\sin^2=2\)
+
+@@ Q43
+format: numerical
+sub_topic: Finding the ratio in which a coordinate plane divides a segment, the point of division, and an unknown coordinate from a given distance in space
+Q: In what ratio does the \(yz\)-plane divide the segment joining \(P(-2,4,7)\) and \(Q(3,-5,8)\), what is the point of division, and for which \(x\) is the distance between \(R(x,-1,2)\) and \(S(2,-1,6)\) equal to 5?
+A) \(3:2;\ \left(0,-\tfrac75,\tfrac{38}5\right);\ x=7\)
+B) \(1:1;\ \left(\tfrac12,-\tfrac12,\tfrac{15}2\right);\ x=\pm5\)
+C) \(2:3\text{ externally};\ (0,22,5);\ x=3\)
+D) \(2:3\text{ internally};\ \left(0,\tfrac25,\tfrac{37}5\right);\ x=5\text{ or }-1\)
+KEY: D
+SOL:
+Answer: (D) \(2:3\text{ internally};\ \left(0,\tfrac25,\tfrac{37}5\right);\ x=5\text{ or }-1\)
+Concept: \(\text{A point dividing }PQ\text{ in ratio }k:1\text{ is }\left(\dfrac{kx_2+x_1}{k+1},\dfrac{ky_2+y_1}{k+1},\dfrac{kz_2+z_1}{k+1}\right);\ \text{on the }yz\text{-plane its }x\text{-coordinate is }0\)
+Given: \(P(-2,4,7),\ Q(3,-5,8);\ R(x,-1,2),\ S(2,-1,6),\ RS=5\)
+Formula/Principle: \(\text{section formula};\ d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}\)
+Step 1: \(\dfrac{3k-2}{k+1}=0\Rightarrow k=\tfrac23\Rightarrow 2:3\ (k>0,\ \text{internal})\)
+Step 2: \(y=\dfrac{2(-5)+3(4)}{5}=\tfrac25,\ z=\dfrac{2(8)+3(7)}{5}=\tfrac{37}5\)
+Step 3: \((x-2)^2+0+16=25\Rightarrow (x-2)^2=9\Rightarrow x=5\text{ or }-1\)
+Worked derivation: \[x=\frac{2(3)+3(-2)}{2+3}=\frac{6-6}{5}=0\ \text{confirms the point lies on the }yz\text{-plane}\]
+Check: \[x=-1:\ \sqrt{(-3)^2+0^2+(-4)^2}=\sqrt{25}=5\ \checkmark\]
+Why: \(\text{the plane }x=0\text{ cuts the segment where the }x\text{-coordinate changes sign, between }-2\text{ and }3\)
+Why not the others: (A) \(\text{ratio inverted; only one value of }x\); (B) \(\text{midpoint has }x=\tfrac12\ne0\); (C) \(k\text{ is positive, so division is internal}\).
+Key point: \(\text{set the relevant coordinate to zero in the section formula}\)
+
+@@ Q44
+format: numerical
+sub_topic: Recovering sets A and B from some elements of A × B, counting relations, and finding the domain and range of a relation given in set-builder form
+Q: \(A\times B\) has 6 elements, three of which are \((1,3),(2,5),(3,3)\). Find \(A\), \(B\), the remaining elements, and the number of relations from \(A\) to \(B\). Also find the domain and range of \(R=\{(x,x+5):x\in\{0,1,2,3,4,5\}\}\).
+A) \(A=\{1,2\},B=\{3,5\};\ 4\text{ relations};\ \text{range }\{0,\dots,5\}\)
+B) \(A=\{1,2,3\},\ B=\{3,5\};\ (1,5),(2,3),(3,5);\ 2^6=64;\ \text{domain }\{0,1,2,3,4,5\},\ \text{range }\{5,6,7,8,9,10\}\)
+C) \(A=\{3,5\},\ B=\{1,2,3\};\ 6\text{ relations};\ \text{range }\{0,\dots,10\}\)
+D) \(A=\{1,2,3\},\ B=\{3,5\};\ (3,1),(5,2),(5,3);\ 36\text{ relations}\)
+KEY: B
+SOL:
+Answer: (B) \(A=\{1,2,3\},\ B=\{3,5\};\ (1,5),(2,3),(3,5);\ 64;\ \text{domain }\{0..5\},\ \text{range }\{5..10\}\)
+Concept: \(A\times B=\{(a,b):a\in A,b\in B\},\ n(A\times B)=n(A)\,n(B);\ \text{a relation from }A\text{ to }B\text{ is any subset of }A\times B,\ \text{so there are }2^{n(A)n(B)}\text{ relations}\)
+Given: \(n(A\times B)=6;\ (1,3),(2,5),(3,3)\in A\times B\)
+Formula/Principle: \(\text{first entries}\subseteq A,\ \text{second entries}\subseteq B;\ \#\text{relations}=2^{n(A\times B)}\)
+Step 1: \(\{1,2,3\}\subseteq A,\ \{3,5\}\subseteq B\Rightarrow 3\times2=6\Rightarrow A=\{1,2,3\},B=\{3,5\}\)
+Step 2: \(\text{missing pairs }(1,5),(2,3),(3,5);\ \#\text{relations}=2^6=64\)
+Step 3: \(R=\{(0,5),(1,6),\dots,(5,10)\}\Rightarrow\text{domain }\{0,\dots,5\},\ \text{range }\{5,\dots,10\}\)
+Worked derivation: \[n(A)\ge3,\ n(B)\ge2,\ n(A)n(B)=6\Rightarrow n(A)=3,\ n(B)=2\]
+Check: \[\{1,2,3\}\times\{3,5\}=\{(1,3),(1,5),(2,3),(2,5),(3,3),(3,5)\}\ \text{has 6 elements}\ \checkmark\]
+Why: \(\text{the given pairs force the minimum sets, and the count 6 rules out any extra elements}\)
+Why not the others: (A) \(3\in A\text{ is forced}\); (C) \(\text{order of the product reversed}\); (D) \(\text{pairs written in the wrong order; relations are }2^6\).
+Key point: \(\#\text{relations from }A\text{ to }B=2^{n(A)n(B)}\)
+
+@@ Q45
+format: numerical
+sub_topic: Finding the domain and range of real functions involving a square root, a rational expression and a modulus
+Q: What are the domain and range of \(f(x)=\sqrt{9-x^2}\), the range of \(g(x)=\dfrac{x^2}{1+x^2}\) on \(\mathbb R\), and the range of \(h(x)=|x-1|\) on \(\mathbb R\)?
+A) \(f:[-3,3]\to[0,3];\ g:[0,1);\ h:[0,\infty)\)
+B) \(f:(-3,3)\to(0,3);\ g:[0,1];\ h:\mathbb R\)
+C) \(f:[-3,3]\to[-3,3];\ g:(0,1);\ h:[1,\infty)\)
+D) \(f:\mathbb R\to[0,9];\ g:[0,\infty);\ h:(0,\infty)\)
+KEY: A
+SOL:
+Answer: (A) \(f:\ \text{domain }[-3,3],\ \text{range }[0,3];\ g:[0,1);\ h:[0,\infty)\)
+Concept: \(\text{The domain of a real function is the set of real }x\text{ for which the formula gives a real value; the range is the set of values it actually takes}\)
+Given: \(f=\sqrt{9-x^2},\ g=\dfrac{x^2}{1+x^2},\ h=|x-1|\)
+Formula/Principle: \(\sqrt{u}\text{ real}\iff u\ge0;\ \text{solve }y=g(x)\text{ for }x\text{ to find the range}\)
+Step 1: \(9-x^2\ge0\iff -3\le x\le3;\ 9-x^2\in[0,9]\Rightarrow f\in[0,3]\)
+Step 2: \(y=\dfrac{x^2}{1+x^2}\Rightarrow x^2=\dfrac{y}{1-y}\ge0\Rightarrow 0\le y<1\)
+Step 3: \(|x-1|\ge0\text{ with }0\text{ at }x=1\Rightarrow h\in[0,\infty)\)
+Worked derivation: \[g(x)=1-\frac{1}{1+x^2},\quad 1+x^2\ge1\Rightarrow 0<\frac1{1+x^2}\le1\Rightarrow 0\le g(x)<1\]
+Check: \[g(0)=0\text{ attained};\ g(10)=\tfrac{100}{101}<1;\ f(0)=3,\ f(\pm3)=0\ \checkmark\]
+Why: \(\text{the value 1 for }g\text{ would need }1+x^2=\infty,\ \text{so it is approached but never reached}\)
+Why not the others: (B) \(\text{endpoints }\pm3\text{ allowed; }1\notin\text{range of }g;\ h\ge0\); (C) \(f\ge0;\ g(0)=0;\ h(1)=0\); (D) \(\text{domain of }f\text{ is restricted; }g<1\).
+Key point: \(\text{range: solve for }x\text{ and impose reality}\)
+
+@@ Q46
+format: numerical
+sub_topic: Using radian measure to locate an angle's quadrant and the signs of its trigonometric functions, reading period and range from the graph of a transformed sine, and counting solutions from the graph of cosine
+Q: For an angle of 4 radians, what are the signs of \(\sin4,\ \cos4,\ \tan4\)? What are the period and range of \(y=3\sin2x+1\), and how many solutions does \(\cos x=\tfrac12\) have in \([0,4\pi]\)?
+A) \(+,\ -,\ -;\ 2\pi,\ [-3,3];\ 2\)
+B) \(-,\ +,\ -;\ \pi,\ [-3,3];\ 3\)
+C) \(-,\ -,\ +;\ \pi,\ [-2,4];\ 4\)
+D) \(-,\ -,\ +;\ 2\pi,\ [-2,4];\ 8\)
+KEY: C
+SOL:
+Answer: (C) \(\sin4<0,\ \cos4<0,\ \tan4>0;\ \text{period }\pi,\ \text{range }[-2,4];\ 4\text{ solutions}\)
+Concept: \(\text{An angle in radians is placed by comparing it with }\tfrac{\pi}{2}\approx1.57,\ \pi\approx3.14,\ \tfrac{3\pi}{2}\approx4.71;\ \text{for }y=a\sin bx+c,\ \text{the period is }\tfrac{2\pi}{|b|}\text{ and the range is }[c-|a|,\,c+|a|]\)
+Given: \(\theta=4\text{ rad};\ y=3\sin2x+1;\ \cos x=\tfrac12\text{ on }[0,4\pi]\)
+Formula/Principle: \(\text{ASTC rule for signs};\ \text{period}=\dfrac{2\pi}{b};\ \cos x=\tfrac12\iff x=2n\pi\pm\tfrac{\pi}{3}\)
+Step 1: \(\pi<4<\tfrac{3\pi}{2}\Rightarrow\text{third quadrant}\Rightarrow\sin<0,\ \cos<0,\ \tan>0\)
+Step 2: \(\text{period}=\tfrac{2\pi}{2}=\pi;\ -1\le\sin2x\le1\Rightarrow-2\le y\le4\)
+Step 3: \(x=\tfrac{\pi}{3},\tfrac{5\pi}{3},\tfrac{7\pi}{3},\tfrac{11\pi}{3}\Rightarrow4\text{ solutions}\)
+Worked derivation: \[\cos x=\cos\frac{\pi}{3}\Rightarrow x=2n\pi\pm\frac{\pi}{3};\ \ n=0:\ \tfrac{\pi}{3};\ n=1:\ \tfrac{5\pi}{3},\tfrac{7\pi}{3};\ n=2:\ \tfrac{11\pi}{3}\ (\le4\pi)\]
+Check: \[\text{the graph of }\cos x\text{ over two full periods crosses the line }y=\tfrac12\text{ twice per period}\Rightarrow2\times2=4\ \checkmark\]
+Why: \(\text{the quadrant of a radian angle follows from comparing it with multiples of }\pi/2,\ \text{and stretching the graph changes period and range in a predictable way}\)
+Why not the others: (A) \(4\text{ rad is not in the second quadrant; the shift }+1\text{ moves the range}\); (B) \(\cos4<0;\ \text{range shifted by }1\); (D) \(\text{period is }\pi;\ \text{only 4 solutions}\).
+Key point: \(\text{place radian angles by multiples of }\tfrac{\pi}{2};\ y=a\sin bx+c:\ \text{period }\tfrac{2\pi}{b},\ \text{range }[c-a,c+a]\)
+@@ Q47
+format: numerical
+sub_topic: Finding a real parameter that makes a complex quotient purely imaginary, then its modulus and conjugate
+Q: For real \(k\), \(z=\dfrac{2+ki}{1-i}\) is purely imaginary. What are \(k\), \(z\), \(|z|\) and \(\bar z\)?
+A) \(k=-2;\ z=2;\ |z|=2;\ \bar z=2\)
+B) \(k=2;\ z=2i;\ |z|=2;\ \bar z=-2i\)
+C) \(k=1;\ z=\tfrac{1+3i}{2};\ |z|=\tfrac{\sqrt{10}}2;\ \bar z=\tfrac{1-3i}{2}\)
+D) \(k=2;\ z=4i;\ |z|=4;\ \bar z=4i\)
+KEY: B
+SOL:
+Answer: (B) \(k=2,\ z=2i,\ |z|=2,\ \bar z=-2i\)
+Concept: \(\text{To divide complex numbers, multiply numerator and denominator by the conjugate of the denominator; }z\text{ is purely imaginary when }\operatorname{Re}z=0\ (z\ne0);\ |z|=\sqrt{a^2+b^2},\ \bar z=a-ib\)
+Given: \(z=\dfrac{2+ki}{1-i},\ k\in\mathbb R,\ \operatorname{Re}z=0\)
+Formula/Principle: \(\dfrac{w}{1-i}=\dfrac{w(1+i)}{2}\)
+Step 1: \((2+ki)(1+i)=2+2i+ki+ki^2=(2-k)+(2+k)i\)
+Step 2: \(z=\dfrac{2-k}{2}+\dfrac{2+k}{2}i;\ \operatorname{Re}z=0\Rightarrow k=2\)
+Step 3: \(z=2i,\ |z|=2,\ \bar z=-2i\)
+Worked derivation: \[z=\frac{(2+2i)(1+i)}{(1-i)(1+i)}=\frac{2+4i+2i^2}{2}=\frac{4i}{2}=2i\]
+Check: \[|z|=\frac{|2+2i|}{|1-i|}=\frac{2\sqrt2}{\sqrt2}=2\ \checkmark\]
+Why: \(\text{making the denominator real separates the real and imaginary parts, and the condition is imposed on the real part}\)
+Why not the others: (A) \(k=-2\text{ makes }z\text{ real}\); (C) \(k=1\text{ leaves a real part}\); (D) \(\text{forgot to divide by }|1-i|^2=2;\ \bar z\text{ sign wrong}\).
+Key point: \(|z_1/z_2|=|z_1|/|z_2|;\ \text{rationalise with the conjugate}\)
+
+@@ Q48
+format: numerical
+sub_topic: Counting seating arrangements of boys and girls in a row with restrictions using the gap method, block method and fixed positions
+Q: Five boys and three girls sit in a row of 8 chairs. In how many ways can they sit so that (i) no two girls are together, (ii) all three girls are together, (iii) a particular boy and a particular girl occupy the two end chairs?
+A) \(2400;\ 720;\ 720\)
+B) \(40320;\ 4320;\ 1440\)
+C) \(7200;\ 2160;\ 5040\)
+D) \(14400;\ 4320;\ 1440\)
+KEY: D
+SOL:
+Answer: (D) \(14400;\ 4320;\ 1440\)
+Concept: \(\text{Gap method: arrange the unrestricted people, then place the restricted ones in the gaps; block method: tie together people who must be adjacent, arrange the block with the rest, then arrange inside the block}\)
+Given: \(5\text{ boys},\ 3\text{ girls},\ 8\text{ chairs}\)
+Formula/Principle: \({}^nP_r=\dfrac{n!}{(n-r)!}\)
+Step 1: \(\text{boys: }5!=120;\ 6\text{ gaps},\ \text{girls: }{}^6P_3=120\Rightarrow 14400\)
+Step 2: \(\text{block}+5\text{ boys}=6\text{ units}:\ 6!\times3!=720\times6=4320\)
+Step 3: \(\text{the pair at the ends in }2\text{ ways},\ \text{others }6!=720\Rightarrow1440\)
+Worked derivation: \[\underbrace{5!}_{\text{boys}}\times\underbrace{{}^6P_3}_{\text{girls in gaps}}=120\times\frac{6!}{3!}=120\times120=14400\]
+Check: \[\text{(i)}\le 8!-\text{(ii)}=40320-4320=36000\ \text{and }14400<36000\ \checkmark\]
+Why: \(\text{separating girls by boys guarantees no two girls are adjacent, and treating girls as one block guarantees they are together}\)
+Why not the others: (A) \(\text{uses }{}^6C_3\text{ and misses internal arrangements}\); (B) \(8!\text{ is the unrestricted count}\); (C) \(\text{gap and block counts wrong}\).
+Key point: \(\text{not together}\to\text{gaps};\ \text{together}\to\text{block}\)
+
+@@ Q49
+format: numerical
+sub_topic: Finding the first term and common ratio of an infinite GP from the sum of its terms and the sum of their squares, and writing a recurring decimal as a fraction
+Q: An infinite GP has sum 15, and the sum of the squares of its terms is 45. What are its first term and common ratio, and what is \(0.\overline{36}\) as a fraction?
+A) \(a=5,\ r=\tfrac23;\ \tfrac4{11}\)
+B) \(a=3,\ r=\tfrac45;\ \tfrac{36}{100}\)
+C) \(a=10,\ r=\tfrac13;\ \tfrac{9}{25}\)
+D) \(a=5,\ r=-\tfrac23;\ \tfrac{4}{9}\)
+KEY: A
+SOL:
+Answer: (A) \(a=5,\ r=\tfrac23;\ 0.\overline{36}=\tfrac4{11}\)
+Concept: \(\text{For }|r|<1,\ a+ar+ar^2+\cdots=\dfrac{a}{1-r};\ \text{the squares form a GP with first term }a^2\text{ and ratio }r^2\)
+Given: \(\dfrac{a}{1-r}=15,\ \dfrac{a^2}{1-r^2}=45\)
+Formula/Principle: \(S_\infty=\dfrac{a}{1-r}\)
+Step 1: \(\text{divide: }\dfrac{a^2/(1-r^2)}{a/(1-r)}=\dfrac{a}{1+r}=3\)
+Step 2: \(a=15(1-r)=3(1+r)\Rightarrow 18r=12\Rightarrow r=\tfrac23,\ a=5\)
+Step 3: \(0.\overline{36}=\dfrac{36}{100}+\dfrac{36}{100^2}+\cdots=\dfrac{36/100}{1-1/100}=\dfrac{36}{99}=\dfrac4{11}\)
+Worked derivation: \[\frac{a^2}{1-r^2}\div\frac{a}{1-r}=\frac{a^2}{(1-r)(1+r)}\cdot\frac{1-r}{a}=\frac{a}{1+r}\]
+Check: \[\frac{5}{1-2/3}=15,\quad \frac{25}{1-4/9}=\frac{25\cdot9}{5}=45\ \checkmark\]
+Why: \(\text{dividing the two sums cancels the }(1-r)\text{ factor and gives a second linear equation}\)
+Why not the others: (B) \(3/(1-4/5)=15\text{ but squares give }9/(9/25)=25\); (C) \(10/(2/3)=15\text{ but squares give }112.5\); (D) \(5/(5/3)=3\ne15\).
+Key point: \(\dfrac{S(\text{squares})}{S}=\dfrac{a}{1+r}\)
+
+@@ Q50
+format: numerical
+sub_topic: Finding the slopes of lines making a given angle with a line of known slope, and a coordinate that makes three points collinear
+Q: Find the slopes of the lines that make an angle of \(45^\circ\) with a line of slope 3, and the value of \(k\) for which \((k,2),(1,4),(3,8)\) are collinear.
+A) \(1,\ -1;\ k=2\)
+B) \(2,\ -\tfrac12;\ k=1\)
+C) \(\tfrac12,\ -2;\ k=0\)
+D) \(4,\ \tfrac14;\ k=-1\)
+KEY: C
+SOL:
+Answer: (C) \(m=\tfrac12\text{ or }-2;\ k=0\)
+Concept: \(\text{The acute angle }\theta\text{ between lines of slopes }m_1,m_2\text{ satisfies }\tan\theta=\left|\dfrac{m_2-m_1}{1+m_1m_2}\right|;\ \text{three points are collinear when the slopes between pairs are equal}\)
+Given: \(m_1=3,\ \theta=45^\circ;\ (k,2),(1,4),(3,8)\)
+Formula/Principle: \(\tan\theta=\left|\dfrac{m-3}{1+3m}\right|\)
+Step 1: \(\dfrac{m-3}{1+3m}=1\Rightarrow m-3=1+3m\Rightarrow m=-2\)
+Step 2: \(\dfrac{m-3}{1+3m}=-1\Rightarrow m-3=-1-3m\Rightarrow m=\tfrac12\)
+Step 3: \(\text{slope}(1,4)\to(3,8)=2;\ \dfrac{4-2}{1-k}=2\Rightarrow k=0\)
+Worked derivation: \[m=\tfrac12:\ \left|\frac{\tfrac12-3}{1+\tfrac32}\right|=\left|\frac{-5/2}{5/2}\right|=1=\tan45^\circ\]
+Check: \[m=-2:\ \left|\frac{-2-3}{1-6}\right|=1;\ \ (0,2),(1,4),(3,8)\text{ all on }y=2x+2\ \checkmark\]
+Why: \(\text{the modulus produces two cases, one for each line making }45^\circ\text{ with the given line}\)
+Why not the others: (A) \(\text{slopes }\pm1\text{ make }45^\circ\text{ with the }x\text{-axis, not with slope 3}\); (B) \(\text{these are perpendicular-type values}\); (D) \(\text{do not satisfy the formula}\).
+Key point: \(\tan\theta=\left|\dfrac{m_2-m_1}{1+m_1m_2}\right|\text{ gives two slopes}\)
+
+@@ Q51
+format: numerical
+sub_topic: Finding the eccentricity of an ellipse from geometric conditions on its latus rectum and on the angle subtended by the foci, and of a given ellipse
+Q: For the ellipse \(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\ (a>b)\): (i) the latus rectum equals half the major axis; (ii) the segment joining the foci subtends a right angle at an end of the minor axis. Find \(e\) in each case, and the eccentricity of \(4x^2+9y^2=36\).
+A) \(\tfrac12;\ \tfrac12;\ \tfrac23\)
+B) \(\tfrac1{\sqrt2};\ \tfrac{\sqrt3}2;\ \tfrac{\sqrt{13}}3\)
+C) \(\tfrac{\sqrt3}2;\ \tfrac1{\sqrt2};\ \tfrac{2}{3}\)
+D) \(\tfrac1{\sqrt2};\ \tfrac1{\sqrt2};\ \tfrac{\sqrt5}3\)
+KEY: D
+SOL:
+Answer: (D) \(\tfrac1{\sqrt2},\ \tfrac1{\sqrt2},\ \tfrac{\sqrt5}3\)
+Concept: \(\text{For an ellipse with }a>b,\ c^2=a^2-b^2,\ e=\dfrac ca,\ \text{latus rectum}=\dfrac{2b^2}{a};\ \text{foci }(\pm c,0),\ \text{ends of minor axis }(0,\pm b)\)
+Given: \(\text{(i) }\dfrac{2b^2}{a}=a;\ \text{(ii) }\angle F_1BF_2=90^\circ;\ 4x^2+9y^2=36\)
+Formula/Principle: \(e^2=1-\dfrac{b^2}{a^2}\)
+Step 1: \(2b^2=a^2\Rightarrow \dfrac{b^2}{a^2}=\tfrac12\Rightarrow e=\tfrac1{\sqrt2}\)
+Step 2: \(\text{slopes of }BF_1,BF_2:\ \dfrac{b}{c},-\dfrac bc;\ \text{product}=-1\Rightarrow b=c\Rightarrow a^2=2c^2\Rightarrow e=\tfrac1{\sqrt2}\)
+Step 3: \(\dfrac{x^2}{9}+\dfrac{y^2}{4}=1\Rightarrow c=\sqrt5,\ e=\tfrac{\sqrt5}3\)
+Worked derivation: \[B=(0,b),\ F_{1,2}=(\mp c,0):\ \frac{b-0}{0+c}\cdot\frac{b-0}{0-c}=-\frac{b^2}{c^2}=-1\Rightarrow b=c\]
+Check: \[e=\tfrac1{\sqrt2}\Rightarrow b^2=a^2(1-\tfrac12)=\tfrac{a^2}{2}\Rightarrow \tfrac{2b^2}{a}=a\ \checkmark\]
+Why: \(\text{both conditions force }b=c,\ \text{which fixes the shape as }e=1/\sqrt2\)
+Why not the others: (A) \(\text{does not satisfy }2b^2=a^2\); (B) \(\sqrt{13}/3>1\text{ is impossible for an ellipse}\); (C) \(\text{case (i) gives }1/\sqrt2\).
+Key point: \(e^2=1-b^2/a^2;\ \text{right angle at minor-axis end}\Rightarrow b=c\)
+
+@@ Q52
+format: numerical
+sub_topic: Finding the eccentricity and latus rectum of a hyperbola and its conjugate, and how eccentricity changes as the hyperbola opens wider
+Q: For \(9x^2-16y^2=144\), find \(e\), the length of the latus rectum and the eccentricity \(e'\) of the conjugate hyperbola. What is the eccentricity of a rectangular hyperbola, and how does \(e\) change as \(\dfrac ba\) increases?
+A) \(\tfrac35;\ \tfrac92;\ \tfrac45;\ 1;\ e\text{ decreases}\)
+B) \(\tfrac54;\ \tfrac92;\ \tfrac53;\ \sqrt2;\ e\text{ increases (the branches open wider)}\)
+C) \(\tfrac54;\ \tfrac{32}3;\ \tfrac54;\ 2;\ e\text{ unchanged}\)
+D) \(\tfrac53;\ \tfrac{9}{4};\ \tfrac54;\ \sqrt2;\ e\text{ decreases}\)
+KEY: B
+SOL:
+Answer: (B) \(e=\tfrac54,\ \text{L.R.}=\tfrac92,\ e'=\tfrac53;\ \sqrt2;\ e\text{ increases}\)
+Concept: \(\text{For }\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1,\ c^2=a^2+b^2,\ e=\dfrac ca=\sqrt{1+\dfrac{b^2}{a^2}}>1,\ \text{latus rectum}=\dfrac{2b^2}{a};\ \text{the conjugate hyperbola swaps }a\text{ and }b,\ \text{and }\dfrac1{e^2}+\dfrac1{e'^2}=1\)
+Given: \(\dfrac{x^2}{16}-\dfrac{y^2}{9}=1\Rightarrow a=4,\ b=3\)
+Formula/Principle: \(e=\sqrt{1+b^2/a^2}\)
+Step 1: \(c=5\Rightarrow e=\tfrac54;\ \text{L.R.}=\dfrac{2\cdot9}{4}=\tfrac92\)
+Step 2: \(e'=\sqrt{1+\tfrac{16}{9}}=\tfrac53\)
+Step 3: \(a=b\Rightarrow e=\sqrt2;\ e\text{ grows with }b/a\)
+Worked derivation: \[\frac1{e^2}+\frac1{e'^2}=\frac{16}{25}+\frac{9}{25}=1\]
+Check: \[e=\tfrac54>1\text{ and }e'=\tfrac53>1,\ \text{both valid for hyperbolas}\ \checkmark\]
+Why: \(\text{a larger }b/a\text{ makes the asymptotes steeper, so the branches spread out and }e\text{ rises}\)
+Why not the others: (A) \(e<1\text{ is impossible for a hyperbola}\); (C) \(\text{L.R. and }e'\text{ wrong}\); (D) \(e\text{ and }e'\text{ swapped; L.R. halved}\).
+Key point: \(e=\sqrt{1+b^2/a^2};\ 1/e^2+1/e'^2=1\)
+
+@@ Q53
+format: numerical
+sub_topic: Finding a positive parameter from a limit of the form (1 − cos kx)/x² and evaluating a limit of (tan 2x − sin 2x)/x³ using standard trigonometric limits
+Q: For \(k>0\), \(\displaystyle\lim_{x\to0}\frac{1-\cos kx}{x^2}=8\). Find \(k\), and evaluate \(\displaystyle\lim_{x\to0}\frac{\tan2x-\sin2x}{x^3}\).
+A) \(k=16;\ \tfrac12\)
+B) \(k=2\sqrt2;\ 8\)
+C) \(k=4;\ 4\)
+D) \(k=4;\ 1\)
+KEY: C
+SOL:
+Answer: (C) \(k=4;\ \text{limit}=4\)
+Concept: \(\displaystyle\lim_{x\to0}\frac{\sin x}{x}=1,\ \lim_{x\to0}\frac{1-\cos x}{x^2}=\frac12,\ \lim_{x\to0}\frac{\tan x}{x}=1\)
+Given: \(\displaystyle\lim\frac{1-\cos kx}{x^2}=8\)
+Formula/Principle: \(1-\cos kx=2\sin^2\dfrac{kx}{2};\ \tan u-\sin u=\tan u\,(1-\cos u)\)
+Step 1: \(\dfrac{2\sin^2(kx/2)}{x^2}\to2\cdot\dfrac{k^2}{4}=\dfrac{k^2}{2}=8\Rightarrow k=4\)
+Step 2: \(\tan2x-\sin2x=\tan2x\,(1-\cos2x)=\tan2x\cdot2\sin^2x\)
+Step 3: \(\dfrac{\tan2x}{x}\cdot\dfrac{2\sin^2x}{x^2}\to2\cdot2=4\)
+Worked derivation: \[\lim_{x\to0}\frac{\tan2x\cdot2\sin^2x}{x^3}=\lim_{x\to0}2\cdot\frac{\tan2x}{2x}\cdot2\left(\frac{\sin x}{x}\right)^2=2\cdot1\cdot2\cdot1=4\]
+Check: \[x=0.01:\ \tan0.02-\sin0.02\approx0.0200027-0.0199987=4.0\times10^{-6},\ \div10^{-6}\approx4\ \checkmark\]
+Why: \(\text{factoring }\tan u(1-\cos u)\text{ turns the difference into a product of standard limits}\)
+Why not the others: (A) \(k^2/2=8\Rightarrow k=4,\ \text{not }16\); (B) \(\text{forgot the factor }\tfrac12\); (D) \(\text{used the limit for }\tan x-\sin x\text{ without scaling}\).
+Key point: \(\dfrac{1-\cos kx}{x^2}\to\dfrac{k^2}{2}\)
+
+@@ Q54
+format: numerical
+sub_topic: Listing events in the sample space of two dice, testing whether events are mutually exclusive, and finding the probability of their union
+Q: Two dice are thrown. \(A\): sum is 7; \(B\): both numbers even; \(C\): a doublet. Which statement is correct?
+A) \(A,B\text{ not mutually exclusive};\ P(A\cup B)=\tfrac13\)
+B) \(n(S)=12;\ P(A)=\tfrac12\)
+C) \(B\cap C=\varnothing;\ P(A\cup B)=\tfrac{15}{36}\)
+D) \(n(S)=36;\ n(A)=6,\ n(B)=9;\ A\cap B=\varnothing\text{ so }P(A\cup B)=\tfrac{15}{36}=\tfrac5{12};\ A\cap C=\varnothing;\ B\cap C=\{(2,2),(4,4),(6,6)\}\)
+KEY: D
+SOL:
+Answer: (D) \(n(S)=36;\ A,B\text{ mutually exclusive};\ P(A\cup B)=\tfrac5{12};\ n(B\cap C)=3\)
+Concept: \(\text{Events are mutually exclusive if they have no common outcome; then }P(A\cup B)=P(A)+P(B);\ \text{in general }P(A\cup B)=P(A)+P(B)-P(A\cap B)\)
+Given: \(S=\{(i,j):1\le i,j\le6\}\)
+Formula/Principle: \(P(E)=\dfrac{n(E)}{n(S)}\)
+Step 1: \(A=\{(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\}:\ 6;\ B:\ 3\times3=9\)
+Step 2: \(\text{even}+\text{even is even}\ne7\Rightarrow A\cap B=\varnothing\)
+Step 3: \(P(A\cup B)=\tfrac{6+9}{36}=\tfrac5{12};\ i=j\Rightarrow i+j\text{ even}\Rightarrow A\cap C=\varnothing\)
+Worked derivation: \[P(A\cup B)=\frac{6}{36}+\frac{9}{36}-0=\frac{15}{36}=\frac{5}{12}\]
+Check: \[B\cap C=\{(2,2),(4,4),(6,6)\},\ P(B\cup C)=\tfrac{9+6-3}{36}=\tfrac13\ \checkmark\]
+Why: \(\text{parity shows at once that no outcome can be in both }A\text{ and }B\)
+Why not the others: (A) \(A\cap B\text{ is empty}\); (B) \(n(S)=36,\ P(A)=\tfrac16\); (C) \(B\cap C\text{ has three outcomes}\).
+Key point: \(\text{mutually exclusive}\Rightarrow P(A\cup B)=P(A)+P(B)\)
+
+@@ Q55
+format: numerical
+sub_topic: Finding principal values of inverse trigonometric functions, the domain of a composite inverse sine, and simplifying the inverse of a function outside the principal branch
+Q: Which set is correct for \(\sin^{-1}\!\left(-\tfrac12\right)\), \(\cos^{-1}\!\left(-\tfrac12\right)\), \(\tan^{-1}(-\sqrt3)\), the domain of \(\sin^{-1}(2x-1)\), and \(\sin^{-1}\!\left(\sin\tfrac{2\pi}{3}\right)\)?
+A) \(-\tfrac{\pi}{6};\ \tfrac{2\pi}{3};\ -\tfrac{\pi}{3};\ [0,1];\ \tfrac{\pi}{3}\)
+B) \(\tfrac{7\pi}{6};\ -\tfrac{\pi}{3};\ \tfrac{2\pi}{3};\ [-1,1];\ \tfrac{2\pi}{3}\)
+C) \(-\tfrac{\pi}{6};\ -\tfrac{2\pi}{3};\ \tfrac{\pi}{3};\ [-1,0];\ \tfrac{2\pi}{3}\)
+D) \(\tfrac{5\pi}{6};\ \tfrac{\pi}{3};\ -\tfrac{\pi}{6};\ [0,2];\ -\tfrac{\pi}{3}\)
+KEY: A
+SOL:
+Answer: (A) \(-\tfrac{\pi}{6},\ \tfrac{2\pi}{3},\ -\tfrac{\pi}{3},\ [0,1],\ \tfrac{\pi}{3}\)
+Concept: \(\text{Principal ranges: }\sin^{-1}:[-\tfrac{\pi}{2},\tfrac{\pi}{2}],\ \cos^{-1}:[0,\pi],\ \tan^{-1}:(-\tfrac{\pi}{2},\tfrac{\pi}{2});\ \sin^{-1}\text{ is defined on }[-1,1];\ \sin^{-1}(\sin x)=x\text{ only for }x\in[-\tfrac{\pi}{2},\tfrac{\pi}{2}]\)
+Given: \(\text{the five expressions}\)
+Formula/Principle: \(\sin^{-1}(-x)=-\sin^{-1}x,\ \cos^{-1}(-x)=\pi-\cos^{-1}x,\ \tan^{-1}(-x)=-\tan^{-1}x\)
+Step 1: \(\sin^{-1}(-\tfrac12)=-\tfrac{\pi}{6};\ \cos^{-1}(-\tfrac12)=\pi-\tfrac{\pi}{3}=\tfrac{2\pi}{3}\)
+Step 2: \(\tan^{-1}(-\sqrt3)=-\tfrac{\pi}{3};\ -1\le2x-1\le1\iff0\le x\le1\)
+Step 3: \(\sin\tfrac{2\pi}{3}=\sin\tfrac{\pi}{3}\text{ and }\tfrac{\pi}{3}\in[-\tfrac{\pi}{2},\tfrac{\pi}{2}]\Rightarrow\tfrac{\pi}{3}\)
+Worked derivation: \[\sin^{-1}\!\left(\sin\frac{2\pi}{3}\right)=\sin^{-1}\!\left(\sin\left(\pi-\frac{\pi}{3}\right)\right)=\sin^{-1}\!\left(\sin\frac{\pi}{3}\right)=\frac{\pi}{3}\]
+Check: \[\cos\frac{2\pi}{3}=-\frac12,\ \frac{2\pi}{3}\in[0,\pi];\ \tan\left(-\frac{\pi}{3}\right)=-\sqrt3\ \checkmark\]
+Why: \(\text{each inverse returns the unique angle in its principal range, so values outside must be brought back into it}\)
+Why not the others: (B) \(\text{values outside principal ranges}\); (C) \(\cos^{-1}\text{ is never negative}\); (D) \(\text{values and domain wrong}\).
+Key point: \(\text{always answer within the principal range}\)
+
+@@ Q56
+format: numerical
+sub_topic: Using a determinant to find an unknown vertex from a triangle's area, to test collinearity, and to write the equation of a line through two points
+Q: The triangle with vertices \((k,0),(4,0),(0,2)\) has area 4 square units. Find \(k\), find \(x\) so that \((1,2),(3,8),(x,14)\) are collinear, and the equation of the line through \((1,2)\) and \((3,6)\) using determinants.
+A) \(k=8\text{ only};\ x=4;\ y=3x-1\)
+B) \(k=0\text{ or }8;\ x=5;\ y=2x\)
+C) \(k=\pm4;\ x=5;\ y=2x+1\)
+D) \(k=0\text{ or }-8;\ x=6;\ y=2x\)
+KEY: B
+SOL:
+Answer: (B) \(k=0\text{ or }8;\ x=5;\ y=2x\)
+Concept: \(\Delta=\dfrac12\begin{vmatrix}x_1&y_1&1\\x_2&y_2&1\\x_3&y_3&1\end{vmatrix},\ \text{area is }|\Delta|;\ \text{three points are collinear iff this determinant is }0;\ \text{the line through two points is obtained by taking the third point as }(x,y)\)
+Given: \((k,0),(4,0),(0,2),\ \text{area}=4\)
+Formula/Principle: \(\pm4=\dfrac12\begin{vmatrix}k&0&1\\4&0&1\\0&2&1\end{vmatrix}\)
+Step 1: \(\text{expand: }k(0-2)-0+1(8-0)=8-2k\Rightarrow \tfrac12(8-2k)=\pm4\Rightarrow k=0\text{ or }8\)
+Step 2: \(1(8-14)-2(3-x)+1(42-8x)=-6-6+2x+42-8x=30-6x=0\Rightarrow x=5\)
+Step 3: \(\begin{vmatrix}x&y&1\\1&2&1\\3&6&1\end{vmatrix}=x(2-6)-y(1-3)+(6-6)=-4x+2y=0\Rightarrow y=2x\)
+Worked derivation: \[\frac12\left|\begin{matrix}8&0&1\\4&0&1\\0&2&1\end{matrix}\right|=\frac12\,|8(-2)+1(8)|=\frac12\cdot8=4\]
+Check: \[k=0:\ \text{base from }(0,0)\text{ to }(4,0)=4,\ \text{height }2,\ \text{area}=4\ \checkmark\]
+Why: \(\text{the area condition carries a modulus, so both signs of the determinant must be taken}\)
+Why not the others: (A) \(\text{misses }k=0\text{ and the line is wrong}\); (C) \(k=-4\text{ gives area }8;\ (1,2)\text{ is not on }y=2x+1\); (D) \(k=-8\text{ gives area }12\).
+Key point: \(\text{area}=|\Delta|\Rightarrow\text{two values};\ \Delta=0\Rightarrow\text{collinear}\)
+
+@@ Q57
+format: numerical
+sub_topic: Finding first and second derivatives of curves given parametrically and slopes of tangents at given parameter values
+Q: Find the slope of the tangent to the astroid \(x=a\cos^3\theta,\ y=a\sin^3\theta\) at \(\theta=\tfrac{\pi}{4}\), the slope of the tangent to the cycloid \(x=a(\theta-\sin\theta),\ y=a(1-\cos\theta)\) at \(\theta=\tfrac{\pi}{2}\), and \(\dfrac{d^2y}{dx^2}\) for \(x=at^2,\ y=2at\).
+A) \(1;\ -1;\ \dfrac{1}{2at^3}\)
+B) \(-1;\ 0;\ -\dfrac{1}{t^2}\)
+C) \(\tan\tfrac{\pi}{4};\ \sqrt3;\ -\dfrac{1}{at}\)
+D) \(-1;\ 1;\ -\dfrac{1}{2at^3}\)
+KEY: D
+SOL:
+Answer: (D) \(-1;\ 1;\ -\dfrac{1}{2at^3}\)
+Concept: \(\text{If }x=f(t),\ y=g(t),\ \text{then }\dfrac{dy}{dx}=\dfrac{dy/dt}{dx/dt}\ (dx/dt\ne0),\ \text{and }\dfrac{d^2y}{dx^2}=\dfrac{d}{dt}\!\left(\dfrac{dy}{dx}\right)\Big/\dfrac{dx}{dt}\)
+Given: \(\text{astroid, cycloid, parabola in parametric form}\)
+Formula/Principle: \(\dfrac{dy}{dx}=\dfrac{\dot y}{\dot x}\)
+Step 1: \(\dfrac{dy}{dx}=\dfrac{3a\sin^2\theta\cos\theta}{-3a\cos^2\theta\sin\theta}=-\tan\theta=-1\text{ at }\tfrac{\pi}{4}\)
+Step 2: \(\dfrac{dy}{dx}=\dfrac{a\sin\theta}{a(1-\cos\theta)}=\cot\tfrac{\theta}{2}=1\text{ at }\tfrac{\pi}{2}\)
+Step 3: \(\dfrac{dy}{dx}=\dfrac{2a}{2at}=\dfrac1t;\ \dfrac{d^2y}{dx^2}=\dfrac{-1/t^2}{2at}=-\dfrac{1}{2at^3}\)
+Worked derivation: \[\frac{\sin\theta}{1-\cos\theta}=\frac{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}}{2\sin^2\frac{\theta}{2}}=\cot\frac{\theta}{2}\]
+Check: \[y^2=4ax\Rightarrow 2yy'=4a\Rightarrow y'=\frac{2a}{y}=\frac1t;\ y''=-\frac{2a}{y^2}y'=-\frac{2a}{4a^2t^2}\cdot\frac1t=-\frac{1}{2at^3}\ \checkmark\]
+Why: \(\text{the second derivative must be divided again by }dx/dt,\ \text{because }d/dx\text{ is not }d/dt\)
+Why not the others: (A) \(\text{signs wrong}\); (B) \(\text{cycloid slope is 1; forgot to divide by }dx/dt\); (C) \(\text{astroid slope is negative; cycloid slope wrong}\).
+Key point: \(\dfrac{d^2y}{dx^2}=\dfrac{d}{dt}(y')\div\dfrac{dx}{dt}\)
+
+@@ Q58
+format: numerical
+sub_topic: Relating rates of change of volume, depth and surface area of water poured into an inverted conical tank using similar triangles
+Q: Water is poured at \(5\text{ cm}^3\text{ s}^{-1}\) into an inverted cone of height 10 cm and base radius 5 cm. When the depth is 4 cm, how fast is the depth rising and how fast is the area of the water surface increasing?
+A) \(\dfrac{5}{16\pi}\text{ cm s}^{-1};\ \dfrac58\text{ cm}^2\text{ s}^{-1}\)
+B) \(\dfrac{5}{4\pi}\text{ cm s}^{-1};\ \dfrac52\text{ cm}^2\text{ s}^{-1}\)
+C) \(\dfrac{5}{\pi}\text{ cm s}^{-1};\ 10\text{ cm}^2\text{ s}^{-1}\)
+D) \(\dfrac{15}{16\pi}\text{ cm s}^{-1};\ \dfrac{15}{4}\text{ cm}^2\text{ s}^{-1}\)
+KEY: B
+SOL:
+Answer: (B) \(\dfrac{dh}{dt}=\dfrac{5}{4\pi}\text{ cm s}^{-1},\ \dfrac{dA}{dt}=\dfrac52\text{ cm}^2\text{ s}^{-1}\)
+Concept: \(\text{When related quantities change with time, differentiate the relation between them with respect to }t\ (\text{chain rule}),\ \text{expressing all variables through one by geometry first}\)
+Given: \(\dfrac{dV}{dt}=5,\ H=10,\ R=5,\ h=4\)
+Formula/Principle: \(\text{similar triangles }\dfrac rh=\dfrac RH=\dfrac12;\ V=\tfrac13\pi r^2h\)
+Step 1: \(r=\tfrac h2\Rightarrow V=\tfrac13\pi\cdot\tfrac{h^2}{4}\cdot h=\dfrac{\pi h^3}{12}\)
+Step 2: \(\dfrac{dV}{dt}=\dfrac{\pi h^2}{4}\dfrac{dh}{dt}\Rightarrow 5=\dfrac{16\pi}{4}\dfrac{dh}{dt}\Rightarrow\dfrac{dh}{dt}=\dfrac{5}{4\pi}\)
+Step 3: \(A=\pi r^2=\dfrac{\pi h^2}{4}\Rightarrow\dfrac{dA}{dt}=\dfrac{\pi h}{2}\dfrac{dh}{dt}=2\pi\cdot\dfrac{5}{4\pi}=\dfrac52\)
+Worked derivation: \[\frac{dV}{dt}=\frac{d}{dt}\left(\frac{\pi h^3}{12}\right)=\frac{3\pi h^2}{12}\frac{dh}{dt}=\frac{\pi h^2}{4}\frac{dh}{dt}=A\,\frac{dh}{dt}\]
+Check: \[A(4)=\pi\cdot2^2=4\pi;\ A\,\frac{dh}{dt}=4\pi\cdot\frac{5}{4\pi}=5=\frac{dV}{dt}\ \checkmark\]
+Why: \(\text{the inflow spreads over the current surface area, so the depth rises at }\tfrac{dV/dt}{A}\)
+Why not the others: (A) \(\text{used }r=h\text{ wrongly scaled}\); (C) \(\text{ignores the cone shape}\); (D) \(\text{used }3\pi h^2/12\text{ incorrectly with }r=h\).
+Key point: \(\dfrac{dV}{dt}=A\,\dfrac{dh}{dt}\)
+
+@@ Q59
+format: numerical
+sub_topic: Using the fundamental theorem of calculus to find an unknown limit of integration and to differentiate an integral with a variable upper limit
+Q: Find all real \(k\) with \(\displaystyle\int_0^k(2x+1)\,dx=6\), the value of \(a>1\) with \(\displaystyle\int_1^a\frac{dx}{x}=2\), and \(\dfrac{d}{dx}\displaystyle\int_0^{x^2}\cos t\,dt\).
+A) \(k=3;\ a=2e;\ \cos x^2\)
+B) \(k=2\text{ only};\ a=\sqrt e;\ 2x\sin x^2\)
+C) \(k=2\text{ or }-3;\ a=e^2;\ 2x\cos x^2\)
+D) \(k=-2\text{ or }3;\ a=e^2;\ \cos x^2\)
+KEY: C
+SOL:
+Answer: (C) \(k=2\text{ or }-3;\ a=e^2;\ 2x\cos x^2\)
+Concept: \(\text{FTC: if }F'=f\text{ then }\int_a^bf=F(b)-F(a);\ \text{and }\dfrac{d}{dx}\int_a^{g(x)}f(t)\,dt=f(g(x))\,g'(x)\)
+Given: \(\text{the three conditions}\)
+Formula/Principle: \(\displaystyle\int_a^bf(x)\,dx=F(b)-F(a)\)
+Step 1: \([x^2+x]_0^k=k^2+k=6\Rightarrow(k+3)(k-2)=0\Rightarrow k=2,-3\)
+Step 2: \([\ln x]_1^a=\ln a=2\Rightarrow a=e^2\)
+Step 3: \(\dfrac{d}{dx}\big[\sin t\big]_0^{x^2}=\dfrac{d}{dx}\sin x^2=2x\cos x^2\)
+Worked derivation: \[\int_0^{-3}(2x+1)\,dx=\big[x^2+x\big]_0^{-3}=9-3=6\]
+Check: \[\int_0^2(2x+1)\,dx=4+2=6;\ \ln e^2=2\ \checkmark\]
+Why: \(\text{the integral is a function of its limit, so the condition becomes an ordinary equation in }k\)
+Why not the others: (A) \(9+3\ne6;\ \text{chain-rule factor missing}\); (B) \(-3\text{ also works; derivative of }\sin\text{ is }\cos\); (D) \(\text{roots have wrong signs; factor }2x\text{ missing}\).
+Key point: \(\dfrac{d}{dx}\int_a^{g(x)}f=f(g)\,g'\)
+
+@@ Q60
+format: numerical
+sub_topic: Evaluating definite integrals using the property ∫₀^a f(x) dx = ∫₀^a f(a − x) dx in three different settings
+Q: Evaluate \(I_1=\displaystyle\int_0^{\pi/2}\frac{\sin x}{\sin x+\cos x}\,dx\), \(I_2=\displaystyle\int_0^{\pi}\frac{x\sin x}{1+\cos^2x}\,dx\) and \(I_3=\displaystyle\int_0^{1}x(1-x)^5\,dx\).
+A) \(\tfrac{\pi}{4};\ \tfrac{\pi^2}{4};\ \tfrac1{42}\)
+B) \(\tfrac{\pi}{2};\ \tfrac{\pi^2}{2};\ \tfrac16\)
+C) \(1;\ \tfrac{\pi}{4};\ \tfrac1{30}\)
+D) \(\tfrac{\pi}{4};\ \tfrac{\pi}{2};\ \tfrac1{7}\)
+KEY: A
+SOL:
+Answer: (A) \(I_1=\tfrac{\pi}{4},\ I_2=\tfrac{\pi^2}{4},\ I_3=\tfrac1{42}\)
+Concept: \(\displaystyle\int_0^af(x)\,dx=\int_0^af(a-x)\,dx;\ \text{replacing }x\text{ by }a-x\text{ either produces a companion integral that adds to something simple, or removes an awkward factor}\)
+Given: \(\text{the three integrals}\)
+Formula/Principle: \(\sin(\tfrac{\pi}{2}-x)=\cos x;\ \sin(\pi-x)=\sin x,\ \cos(\pi-x)=-\cos x\)
+Step 1: \(I_1=\displaystyle\int_0^{\pi/2}\frac{\cos x}{\cos x+\sin x}dx\Rightarrow2I_1=\tfrac{\pi}{2}\Rightarrow I_1=\tfrac{\pi}{4}\)
+Step 2: \(I_2=\displaystyle\int_0^{\pi}\frac{(\pi-x)\sin x}{1+\cos^2x}dx\Rightarrow2I_2=\pi\int_0^{\pi}\frac{\sin x}{1+\cos^2x}dx=\pi\big[-\tan^{-1}(\cos x)\big]_0^{\pi}=\pi\cdot\tfrac{\pi}{2}\Rightarrow I_2=\tfrac{\pi^2}{4}\)
+Step 3: \(I_3=\displaystyle\int_0^1(1-x)x^5\,dx=\tfrac16-\tfrac17=\tfrac1{42}\)
+Worked derivation: \[\big[-\tan^{-1}(\cos x)\big]_0^{\pi}=-\tan^{-1}(-1)+\tan^{-1}(1)=\frac{\pi}{4}+\frac{\pi}{4}=\frac{\pi}{2}\]
+Check: \[I_3\text{ by expansion would need six terms; the swap gives }\int_0^1(x^5-x^6)\,dx=\frac{7-6}{42}=\frac1{42}>0\ \checkmark\]
+Why: \(\text{the property moves the troublesome factor (the }x\text{ or the power) onto the simpler part of the integrand}\)
+Why not the others: (B) \(\text{forgot to halve after adding}\); (C) \(I_1\ne1;\ I_2\text{ needs the }\pi\text{ factor}\); (D) \(I_2,I_3\text{ miscomputed}\).
+Key point: \(\int_0^af(x)\,dx=\int_0^af(a-x)\,dx\)

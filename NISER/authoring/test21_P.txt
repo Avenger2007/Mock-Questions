@@ -1,0 +1,439 @@
+@@ Q61
+format: numerical
+sub_topic: Using the phase of simple harmonic motion to find the initial phase, the time between two displacements and the speed at a given displacement, and how these scale with amplitude
+Q: A particle executes SHM \(x=A\sin(\omega t+\phi)\) with \(A=4\text{ cm}\) and \(T=2\text{ s}\). At \(t=0\) it is at \(x=2\text{ cm}\) moving away from the mean position. What are \(\phi\), the time to reach \(x=4\text{ cm}\) for the first time, and its speed at \(x=2\text{ cm}\)? If \(A\) is doubled, what happens to \(T\) and to the maximum speed?
+A) \(\tfrac{\pi}{3};\ \tfrac12\text{ s};\ 2\pi\text{ cm s}^{-1};\ T\text{ doubles}\)
+B) \(\tfrac{\pi}{6};\ \tfrac13\text{ s};\ 2\sqrt3\,\pi\approx10.9\text{ cm s}^{-1};\ T\text{ unchanged, }v_{\max}\text{ doubles}\)
+C) \(\tfrac{\pi}{6};\ \tfrac16\text{ s};\ 4\pi\text{ cm s}^{-1};\ T\text{ unchanged, }v_{\max}\text{ unchanged}\)
+D) \(\tfrac{5\pi}{6};\ \tfrac23\text{ s};\ 2\sqrt3\,\pi\text{ cm s}^{-1};\ T\text{ halves}\)
+KEY: B
+SOL:
+Answer: (B) \(\phi=\tfrac{\pi}{6},\ t=\tfrac13\text{ s},\ v=2\sqrt3\,\pi\text{ cm s}^{-1};\ T\text{ unchanged},\ v_{\max}\text{ doubles}\)
+Given: \(A=4\text{ cm},\ T=2\text{ s}\Rightarrow\omega=\pi\text{ rad s}^{-1};\ x(0)=2\text{ cm},\ v(0)>0\)
+Formula/Principle: \(x=A\sin(\omega t+\phi),\ v=\omega\sqrt{A^2-x^2},\ T=\dfrac{2\pi}{\omega}\ (\text{independent of }A)\)
+Step 1: \(\sin\phi=\tfrac12,\ v(0)=A\omega\cos\phi>0\Rightarrow\phi=\tfrac{\pi}{6}\)
+Step 2: \(\text{reach }x=A\text{ when phase}=\tfrac{\pi}{2}:\ \omega t=\tfrac{\pi}{2}-\tfrac{\pi}{6}=\tfrac{\pi}{3}\Rightarrow t=\tfrac13\text{ s}\)
+Step 3: \(v=\pi\sqrt{16-4}=2\sqrt3\,\pi\approx10.9\text{ cm s}^{-1};\ v_{\max}=A\omega\propto A\)
+Worked derivation: \[t=\frac{\Delta\phi}{\omega}=\frac{\pi/3}{\pi}=\frac13\ \text{s}=\frac{T}{6}\]
+Check: \[x\!\left(\tfrac13\right)=4\sin\!\left(\tfrac{\pi}{3}+\tfrac{\pi}{6}\right)=4\sin\tfrac{\pi}{2}=4\ \text{cm}\ \checkmark\]
+Why: \(\text{phase grows uniformly at rate }\omega,\ \text{so the time between two states is their phase difference divided by }\omega\)
+Why not the others: (A) \(\sin\tfrac{\pi}{3}\ne\tfrac12;\ T\text{ does not depend on }A\); (C) \(\text{time and speed wrong; }v_{\max}=A\omega\text{ doubles}\); (D) \(\phi=\tfrac{5\pi}{6}\text{ means moving towards the mean}\).
+Key point: \(\Delta t=\Delta\phi/\omega;\ T\text{ independent of amplitude}\)
+
+@@ Q62
+format: numerical
+sub_topic: Phase change on reflection from fixed and free ends, formation of stationary waves by superposition, and how harmonic frequencies of a stretched string scale with tension
+Q: A string 1.0 m long, fixed at both ends, carries transverse waves at \(200\text{ m s}^{-1}\). What are its fundamental frequency and third harmonic, what happens to them if the tension is made four times, and what is the result of superposing \(y_1=a\sin(kx-\omega t)\) and \(y_2=a\sin(kx+\omega t)\)?
+A) \(200\text{ Hz};\ 600\text{ Hz};\ \text{unchanged};\ \text{a travelling wave of amplitude }2a\)
+B) \(100\text{ Hz};\ 200\text{ Hz};\ \text{four times};\ 2a\cos kx\sin\omega t\)
+C) \(50\text{ Hz};\ 150\text{ Hz};\ \text{halved};\ \text{zero everywhere}\)
+D) \(100\text{ Hz};\ 300\text{ Hz};\ \text{doubled (200 Hz, 600 Hz)};\ y=2a\sin kx\cos\omega t,\ \text{a stationary wave with nodes }\lambda/2\text{ apart; reflection at a fixed end reverses the phase by }\pi,\ \text{at a free end there is no phase change}\)
+KEY: D
+SOL:
+Answer: (D) \(100\text{ Hz},\ 300\text{ Hz};\ \text{both double};\ y=2a\sin kx\cos\omega t\)
+Given: \(L=1.0\text{ m},\ v=200\text{ m s}^{-1};\ T\to4T\)
+Formula/Principle: \(f_n=\dfrac{nv}{2L};\ v=\sqrt{T/\mu};\ \sin(A)+\sin(B)=2\sin\tfrac{A+B}{2}\cos\tfrac{A-B}{2}\)
+Step 1: \(f_1=\dfrac{200}{2}=100\text{ Hz},\ f_3=300\text{ Hz}\)
+Step 2: \(T\times4\Rightarrow v\times2\Rightarrow f_n\times2\)
+Step 3: \(y_1+y_2=2a\sin kx\cos\omega t;\ \text{nodes where }\sin kx=0\Rightarrow x=\tfrac{n\lambda}{2}\)
+Worked derivation: \[y=a[\sin(kx-\omega t)+\sin(kx+\omega t)]=2a\sin\frac{2kx}{2}\cos\frac{-2\omega t}{2}=2a\sin kx\cos\omega t\]
+Check: \[\lambda_1=2L=2\text{ m},\ f_1=\frac{v}{\lambda_1}=100\text{ Hz};\ \text{at }x=0:\ y=0\ (\text{node at the fixed end})\ \checkmark\]
+Why: \(\text{a wave and its reflection travelling oppositely superpose into a pattern whose shape does not move, with nodes forced at fixed ends}\)
+Why not the others: (A) \(f_1=v/2L;\ \text{superposition gives a stationary wave}\); (B) \(f_3=3f_1;\ f\propto\sqrt T\); (C) \(\text{frequency formula wrong; waves do not cancel everywhere}\).
+Key point: \(f_n=nv/2L,\ v\propto\sqrt T;\ \text{opposite waves}\to\text{stationary wave}\)
+
+@@ Q63
+format: experiment
+sub_topic: Measuring the change in Coulomb force when two identical charged conducting spheres are touched and separated, and the net force on a charge at a vertex of an equilateral triangle by superposition
+Q: Two identical small conducting spheres carry \(+6\ \mu\text{C}\) and \(-2\ \mu\text{C}\) and are held \(0.30\text{ m}\) apart. They are touched together and returned to the same separation. Separately, three equal charges \(q\) sit at the corners of an equilateral triangle of side \(a\); let \(F_0=\dfrac{kq^2}{a^2}\). What are the forces before and after touching, and the net force on one charge of the triangle? (\(k=9\times10^9\text{ N m}^2\text{ C}^{-2}\))
+A) \(1.2\text{ N attractive};\ 0.4\text{ N repulsive (each sphere }+2\ \mu\text{C)};\ \sqrt3F_0\text{ along the bisector, away from the triangle}\)
+B) \(1.2\text{ N repulsive};\ 1.2\text{ N attractive};\ 2F_0\)
+C) \(0.4\text{ N attractive};\ 1.2\text{ N repulsive};\ F_0\)
+D) \(1.2\text{ N attractive};\ 0;\ 0\)
+KEY: A
+SOL:
+Answer: (A) \(1.2\text{ N attractive};\ 0.4\text{ N repulsive};\ \sqrt3F_0\)
+Given: \(q_1=+6\ \mu\text{C},\ q_2=-2\ \mu\text{C},\ r=0.30\text{ m};\ \text{triangle side }a\)
+Formula/Principle: \(F=\dfrac{k|q_1q_2|}{r^2};\ \text{charge conservation};\ \text{vector superposition}\)
+Step 1: \(F_1=\dfrac{9\times10^9\times12\times10^{-12}}{0.09}=1.2\text{ N (attractive)}\)
+Step 2: \(\text{total }+4\ \mu\text{C shared equally}\Rightarrow+2\ \mu\text{C each};\ F_2=\dfrac{9\times10^9\times4\times10^{-12}}{0.09}=0.4\text{ N (repulsive)}\)
+Step 3: \(\text{two forces }F_0\text{ at }60^\circ:\ F=2F_0\cos30^\circ=\sqrt3F_0\)
+Worked derivation: \[F_{\text{net}}=\sqrt{F_0^2+F_0^2+2F_0^2\cos60^\circ}=\sqrt{3}\,F_0\]
+Check: \[\frac{F_2}{F_1}=\frac{2\times2}{6\times2}=\frac13,\ \ \frac{1.2}{3}=0.4\ \text{N}\ \checkmark\]
+Why: \(\text{identical conductors in contact share the total charge equally, and forces from several charges add as vectors}\)
+Why not the others: (B) \(\text{unlike charges attract first; like charges repel after}\); (C) \(\text{magnitudes swapped}\); (D) \(\text{net charge }+4\ \mu\text{C remains, so force is not zero}\).
+Key point: \(\text{conservation of charge on contact};\ F\text{ adds vectorially}\)
+
+@@ Q64
+format: numerical
+sub_topic: Comparing the potential of an electric dipole at axial, equatorial and oblique points, and the work done in moving a charge along the equatorial line
+Q: A dipole consists of \(\pm5\text{ nC}\) separated by \(4\text{ mm}\). At \(r=0.20\text{ m}\) from its centre (\(r\gg\) separation), what is the potential on the axis, on the equatorial line, and at \(60^\circ\) from the axis? How much work is needed to move \(1\ \mu\text{C}\) between two points on the equatorial line?
+A) \(9.0\text{ V};\ 4.5\text{ V};\ 0;\ 4.5\ \mu\text{J}\)
+B) \(4.5\text{ V};\ 4.5\text{ V};\ 4.5\text{ V};\ 0\)
+C) \(4.5\text{ V};\ 0;\ 2.25\text{ V};\ 0\)
+D) \(0;\ 4.5\text{ V};\ 3.9\text{ V};\ 2.25\ \mu\text{J}\)
+KEY: C
+SOL:
+Answer: (C) \(V_{\text{axis}}=4.5\text{ V},\ V_{\text{eq}}=0,\ V_{60^\circ}=2.25\text{ V};\ W=0\)
+Given: \(q=5\times10^{-9}\text{ C},\ 2a=4\times10^{-3}\text{ m},\ r=0.20\text{ m}\)
+Formula/Principle: \(p=q(2a);\ V=\dfrac{kp\cos\theta}{r^2}\ (r\gg a);\ W=q\Delta V\)
+Step 1: \(p=5\times10^{-9}\times4\times10^{-3}=2\times10^{-11}\text{ C m}\)
+Step 2: \(V_{\text{axis}}=\dfrac{9\times10^9\times2\times10^{-11}}{0.04}=4.5\text{ V};\ \theta=90^\circ\Rightarrow V=0\)
+Step 3: \(V_{60^\circ}=4.5\cos60^\circ=2.25\text{ V};\ \text{equatorial line is equipotential}\Rightarrow W=0\)
+Worked derivation: \[V=kq\left(\frac{1}{r-a\cos\theta}-\frac{1}{r+a\cos\theta}\right)\approx\frac{kq\,2a\cos\theta}{r^2}=\frac{kp\cos\theta}{r^2}\]
+Check: \[\text{on the equatorial line each point is equidistant from }+q\text{ and }-q\Rightarrow V=kq/r_1-kq/r_1=0\ \checkmark\]
+Why: \(\text{dipole potential depends on }\cos\theta,\ \text{largest on the axis and zero where the two charges are equally far}\)
+Why not the others: (A) \(V_{\text{eq}}=0;\ \text{no work on an equipotential}\); (B) \(V\text{ depends on }\theta\); (D) \(\text{axis and equator swapped}\).
+Key point: \(V=kp\cos\theta/r^2;\ \text{equatorial plane is equipotential at }V=0\)
+
+@@ Q65
+format: numerical
+sub_topic: Using the linear temperature dependence of resistivity to find resistance at a higher temperature and the temperature for a given resistance, the effect of stretching a wire at constant volume, and the behaviour of semiconductors
+Q: A copper wire has resistance \(10.0\ \Omega\) at \(20^\circ\text{C}\) with \(\alpha=4.0\times10^{-3}\ ^\circ\text{C}^{-1}\). Find its resistance at \(120^\circ\text{C}\) and the temperature at which it is \(12.0\ \Omega\). If the wire is stretched to twice its length (volume constant), what is its resistance at \(20^\circ\text{C}\)? How does a semiconductor's resistivity change on heating?
+A) \(10.4\ \Omega;\ 50^\circ\text{C};\ 20\ \Omega;\ \text{increases}\)
+B) \(14.8\ \Omega;\ 100^\circ\text{C};\ 5\ \Omega;\ \text{unchanged}\)
+C) \(4.0\ \Omega;\ 70^\circ\text{C};\ 40\ \Omega;\ \text{increases}\)
+D) \(14.0\ \Omega;\ 70^\circ\text{C};\ 40\ \Omega;\ \text{decreases (more charge carriers; negative temperature coefficient)}\)
+KEY: D
+SOL:
+Answer: (D) \(14.0\ \Omega;\ 70^\circ\text{C};\ 40\ \Omega;\ \text{decreases}\)
+Given: \(R_0=10.0\ \Omega\text{ at }T_0=20^\circ\text{C},\ \alpha=4.0\times10^{-3}\ ^\circ\text{C}^{-1}\)
+Formula/Principle: \(R_T=R_0[1+\alpha(T-T_0)];\ R=\rho\dfrac{l}{A},\ Al=\text{constant}\Rightarrow R\propto l^2\)
+Step 1: \(R_{120}=10[1+4\times10^{-3}\times100]=14.0\ \Omega\)
+Step 2: \(12=10[1+4\times10^{-3}(T-20)]\Rightarrow T-20=50\Rightarrow T=70^\circ\text{C}\)
+Step 3: \(l\to2l,\ A\to A/2\Rightarrow R\to4R=40\ \Omega\)
+Worked derivation: \[R'=\rho\frac{2l}{A/2}=4\rho\frac{l}{A}=4R\]
+Check: \[R_{70}=10(1+0.004\times50)=10\times1.2=12.0\ \Omega\ \checkmark\]
+Why: \(\text{in metals more frequent collisions at higher temperature raise resistivity, while in semiconductors the number density of carriers rises sharply}\)
+Why not the others: (A) \(\alpha\Delta T=0.4,\ \text{not }0.04;\ R\propto l^2\); (B) \(\text{arithmetic wrong; semiconductor resistivity falls}\); (C) \(\text{resistance cannot fall on heating copper}\).
+Key point: \(R_T=R_0(1+\alpha\Delta T);\ \text{stretch }n\text{ times}\Rightarrow n^2R\)
+
+@@ Q66
+format: conceptual
+sub_topic: Explaining the motion of charged particles in crossed electric and magnetic fields (velocity selector), why the magnetic force does no work, and the paths in a uniform magnetic field
+Q: Which statement about charged particles in electric and magnetic fields is correct?
+A) In crossed fields with \(\vec E\perp\vec B\perp\vec v\), a particle passes undeflected when \(qE=qvB\), i.e. \(v=E/B\), independent of its charge and mass, so the arrangement selects speeds; faster particles are deflected towards the side of the magnetic force; the magnetic force \(q\vec v\times\vec B\) is always perpendicular to \(\vec v\), so it does no work and cannot change the speed; in a uniform \(\vec B\), a particle moving perpendicular to it describes a circle of radius \(mv/qB\), one moving parallel goes straight, and one moving at an angle follows a helix
+B) The magnetic force increases the kinetic energy of a charged particle moving in a circle
+C) A velocity selector passes only particles of a particular mass
+D) A charge moving parallel to \(\vec B\) describes a circle
+KEY: A
+SOL:
+Answer: (A) \(v=E/B\) selected; magnetic force does no work; circle, straight line or helix.
+Given: \(\text{crossed uniform }\vec E\text{ and }\vec B;\ \text{charge }q,\ \text{velocity }\vec v\)
+Formula/Principle: \(\vec F=q(\vec E+\vec v\times\vec B)\ (\text{Lorentz force});\ r=\dfrac{mv}{qB}\)
+Step 1: \(\text{electric force }qE\text{ and magnetic force }qvB\text{ opposite}\Rightarrow\text{balance at }v=E/B\)
+Step 2: \(v>E/B\Rightarrow qvB>qE\Rightarrow\text{deflected along the magnetic force}\)
+Step 3: \(\vec F_B\perp\vec v\Rightarrow P=\vec F_B\cdot\vec v=0\Rightarrow\text{speed constant}\)
+Worked derivation: \[qvB=\frac{mv^2}{r}\Rightarrow r=\frac{mv}{qB},\quad T=\frac{2\pi r}{v}=\frac{2\pi m}{qB}\]
+Check: \[\vec v\parallel\vec B\Rightarrow\vec v\times\vec B=0\Rightarrow\text{no force, straight line}\ \checkmark\]
+Why: \(\text{the electric force does not depend on speed while the magnetic force does, so only one speed balances them}\)
+Why not the others: (B) \(\text{magnetic force does no work}\); (C) \(\text{selection is by speed, not mass}\); (D) \(\text{parallel motion feels no magnetic force}\).
+Key point: \(v=E/B;\ \text{magnetic force changes direction, not speed}\)
+
+@@ Q67
+format: experiment
+sub_topic: Interpreting probe readings of a magnetic field between the plates of a charging capacitor, and calculating the rate of change of electric field needed for a given displacement current
+Q: A parallel-plate capacitor with plate area \(0.010\text{ m}^2\) is charged by a steady current of \(1.0\text{ A}\). A small magnetic-field probe placed in the gap, off the axis, records a field circling the axis, just as near the connecting wire; after the capacitor is fully charged and the current stops, the reading falls to zero. Which interpretation is correct? (\(\varepsilon_0=8.85\times10^{-12}\text{ C}^2\text{ N}^{-1}\text{ m}^{-2}\))
+A) No charge crosses the gap, so the probe reading must be an error
+B) The field in the gap is produced by charges leaking across the gap
+C) A changing electric flux in the gap gives a displacement current \(i_d=\varepsilon_0\dfrac{d\Phi_E}{dt}\), equal to the conduction current in the wires, so Ampere–Maxwell's law \(\oint\vec B\cdot d\vec l=\mu_0(i_c+i_d)\) predicts a magnetic field in the gap; here \(\dfrac{dE}{dt}=\dfrac{i}{\varepsilon_0A}\approx1.1\times10^{13}\text{ V m}^{-1}\text{ s}^{-1}\); when charging stops, \(E\) is constant, \(i_d=0\), and the field vanishes
+D) The displacement current remains after charging stops because the electric field is still present
+KEY: C
+SOL:
+Answer: (C) \(\text{Displacement current }i_d=i_c\text{ during charging};\ dE/dt\approx1.1\times10^{13}\text{ V m}^{-1}\text{ s}^{-1};\ \text{zero when }E\text{ is steady}\)
+Given: \(A=0.010\text{ m}^2,\ i=1.0\text{ A}\)
+Formula/Principle: \(i_d=\varepsilon_0\dfrac{d\Phi_E}{dt}=\varepsilon_0A\dfrac{dE}{dt};\ \oint\vec B\cdot d\vec l=\mu_0(i_c+i_d)\)
+Step 1: \(E=\dfrac{Q}{\varepsilon_0A}\Rightarrow\dfrac{dE}{dt}=\dfrac{1}{\varepsilon_0A}\dfrac{dQ}{dt}=\dfrac{i}{\varepsilon_0A}\)
+Step 2: \(\dfrac{dE}{dt}=\dfrac{1.0}{8.85\times10^{-12}\times0.010}=1.13\times10^{13}\text{ V m}^{-1}\text{ s}^{-1}\)
+Step 3: \(\text{fully charged}\Rightarrow dE/dt=0\Rightarrow i_d=0\Rightarrow B=0\text{ in the gap}\)
+Worked derivation: \[i_d=\varepsilon_0A\frac{dE}{dt}=\varepsilon_0A\cdot\frac{i}{\varepsilon_0A}=i\]
+Check: \[8.85\times10^{-12}\times0.010\times1.13\times10^{13}=1.0\ \text{A}\ \checkmark\]
+Why: \(\text{Ampere's law must give the same field for any surface bounded by the loop, which requires a current-like term where the electric flux changes}\)
+Why not the others: (A) \(\text{the reading is real and predicted by Maxwell}\); (B) \(\text{no conduction current crosses an ideal gap}\); (D) \(i_d\text{ depends on the rate of change, not the value, of }E\).
+Key point: \(i_d=\varepsilon_0\,d\Phi_E/dt;\ \text{steady }E\Rightarrow i_d=0\)
+
+@@ Q68
+format: numerical
+sub_topic: Comparing image position, nature and magnification for an object placed inside the focal length of a concave mirror and in front of a convex mirror of the same focal length
+Q: An object is placed \(10\text{ cm}\) in front of (i) a concave mirror and (ii) a convex mirror, each of focal length \(15\text{ cm}\). Using the Cartesian sign convention, which comparison is correct?
+A) \(\text{(i) }v=-30\text{ cm, real, }m=-3;\ \text{(ii) }v=-6\text{ cm, real, }m=-0.6\)
+B) \(\text{(i) }v=+30\text{ cm, virtual, erect, }m=+3\ (\text{magnified});\ \text{(ii) }v=+6\text{ cm, virtual, erect, }m=+0.6\ (\text{diminished});\ \text{both images lie behind the mirror}\)
+C) \(\text{(i) }v=+6\text{ cm, }m=+0.6;\ \text{(ii) }v=+30\text{ cm, }m=+3\)
+D) \(\text{(i) no image is formed};\ \text{(ii) }v=+6\text{ cm}\)
+KEY: B
+SOL:
+Answer: (B) \(\text{concave: }v=+30\text{ cm},\ m=+3;\ \text{convex: }v=+6\text{ cm},\ m=+0.6\)
+Given: \(u=-10\text{ cm};\ f_{\text{concave}}=-15\text{ cm},\ f_{\text{convex}}=+15\text{ cm}\)
+Formula/Principle: \(\dfrac1v+\dfrac1u=\dfrac1f;\ m=-\dfrac vu\)
+Step 1: \(\text{concave: }\dfrac1v=-\dfrac1{15}+\dfrac1{10}=\dfrac1{30}\Rightarrow v=+30\text{ cm}\)
+Step 2: \(m=-\dfrac{30}{-10}=+3\Rightarrow\text{virtual, erect, magnified}\)
+Step 3: \(\text{convex: }\dfrac1v=\dfrac1{15}+\dfrac1{10}=\dfrac16\Rightarrow v=+6\text{ cm},\ m=+0.6\)
+Worked derivation: \[\frac1v=\frac1f-\frac1u=\frac{1}{-15}-\frac{1}{-10}=\frac{-2+3}{30}=\frac{1}{30}\]
+Check: \[\text{convex: }\frac16+\frac1{-10}=\frac{5-3}{30}=\frac1{15}=\frac1f\ \checkmark\]
+Why: \(\text{inside }F\text{ the concave mirror cannot converge the reflected rays, so they appear to diverge from a point behind it, like a convex mirror but magnified}\)
+Why not the others: (A) \(\text{signs wrong; both images are virtual}\); (C) \(\text{results swapped}\); (D) \(\text{a concave mirror forms a virtual image for an object inside }F\).
+Key point: \(\text{object inside }F\text{ of concave}\Rightarrow\text{virtual, magnified; convex always virtual, diminished}\)
+
+@@ Q69
+format: numerical
+sub_topic: Scaling the Bohr radius, orbital speed and energy with principal quantum number n and atomic number Z for hydrogen-like ions
+Q: For hydrogen in its ground state \(r_1=0.53\text{ Å}\), \(v_1=2.18\times10^6\text{ m s}^{-1}\), \(E_1=-13.6\text{ eV}\). For \(\text{He}^+\) (\(Z=2\)) in \(n=2\), what are the radius, speed and energy, and how does the orbital period scale?
+A) \(1.06\text{ Å};\ 2.18\times10^6\text{ m s}^{-1};\ -13.6\text{ eV};\ T\propto\dfrac{n^3}{Z^2}\)
+B) \(0.53\text{ Å};\ 4.36\times10^6\text{ m s}^{-1};\ -27.2\text{ eV};\ T\propto n^2Z\)
+C) \(2.12\text{ Å};\ 1.09\times10^6\text{ m s}^{-1};\ -3.4\text{ eV};\ T\propto\dfrac{n}{Z}\)
+D) \(0.265\text{ Å};\ 2.18\times10^6\text{ m s}^{-1};\ -54.4\text{ eV};\ T\propto\dfrac{Z^2}{n^3}\)
+KEY: A
+SOL:
+Answer: (A) \(r=1.06\text{ Å},\ v=2.18\times10^6\text{ m s}^{-1},\ E=-13.6\text{ eV};\ T\propto n^3/Z^2\)
+Given: \(Z=2,\ n=2\)
+Formula/Principle: \(r_n=r_1\dfrac{n^2}{Z},\ v_n=v_1\dfrac{Z}{n},\ E_n=E_1\dfrac{Z^2}{n^2}\)
+Step 1: \(r=0.53\times\dfrac{4}{2}=1.06\text{ Å}\)
+Step 2: \(v=2.18\times10^6\times\dfrac22=2.18\times10^6\text{ m s}^{-1}\)
+Step 3: \(E=-13.6\times\dfrac44=-13.6\text{ eV};\ T=\dfrac{2\pi r}{v}\propto\dfrac{n^2/Z}{Z/n}=\dfrac{n^3}{Z^2}\)
+Worked derivation: \[\frac{mv^2}{r}=\frac{kZe^2}{r^2},\ mvr=\frac{nh}{2\pi}\Rightarrow v=\frac{2\pi kZe^2}{nh},\ r=\frac{n^2h^2}{4\pi^2mkZe^2}\]
+Check: \[E=-\tfrac12mv^2\Rightarrow\text{same }v\Rightarrow\text{same }E=-13.6\text{ eV}\ \checkmark\]
+Why: \(\text{a larger nuclear charge pulls the electron closer and faster, while a higher orbit pushes it out and slows it}\)
+Why not the others: (B) \(\text{radius scales as }n^2/Z\); (C) \(\text{ignores }Z\); (D) \(\text{scalings inverted}\).
+Key point: \(r\propto n^2/Z,\ v\propto Z/n,\ E\propto Z^2/n^2\)
+
+@@ Q70
+format: experiment
+sub_topic: Calculating the mass defect and binding energy per nucleon of helium-4 from measured atomic masses, and relating the binding-energy curve to fission and fusion
+Q: Mass-spectrometer measurements give \(m(^1\text{H})=1.007825\text{ u}\), \(m_n=1.008665\text{ u}\), \(m(^4\text{He})=4.002603\text{ u}\) (\(1\text{ u}=931.5\text{ MeV}/c^2\)). What are the mass defect, total binding energy and binding energy per nucleon of \(^4\text{He}\), and which statement about the binding-energy curve is correct?
+A) \(0.0304\text{ u};\ 7.07\text{ MeV};\ 1.77\text{ MeV};\ \text{curve rises steadily with }A\)
+B) \(0.0152\text{ u};\ 14.2\text{ MeV};\ 3.5\text{ MeV};\ \text{fission of light nuclei releases energy}\)
+C) \(4.0326\text{ u};\ 3756\text{ MeV};\ 939\text{ MeV};\ \text{curve is flat}\)
+D) \(0.0304\text{ u};\ 28.3\text{ MeV};\ 7.07\text{ MeV};\ \text{the curve peaks near }A\approx56\ (\approx8.75\text{ MeV}),\ \text{so fusion of light nuclei and fission of heavy nuclei both release energy}\)
+KEY: D
+SOL:
+Answer: (D) \(\Delta m=0.0304\text{ u},\ E_b=28.3\text{ MeV},\ E_b/A=7.07\text{ MeV}\)
+Given: \(Z=2,\ N=2,\ \text{masses above}\)
+Formula/Principle: \(\Delta m=Zm_H+Nm_n-M;\ E_b=\Delta m\,c^2\)
+Step 1: \(2(1.007825)+2(1.008665)=4.032980\text{ u}\)
+Step 2: \(\Delta m=4.032980-4.002603=0.030377\text{ u}\)
+Step 3: \(E_b=0.030377\times931.5=28.30\text{ MeV};\ E_b/A=7.07\text{ MeV}\)
+Worked derivation: \[E_b=(2m_H+2m_n-M_{\text{He}})\times931.5\ \text{MeV/u}=0.030377\times931.5\approx28.3\ \text{MeV}\]
+Check: \[\frac{28.3}{4}=7.07\ \text{MeV, close to the known value for }^4\text{He}\ \checkmark\]
+Why: \(\text{energy is released whenever nucleons move to nuclei of higher binding energy per nucleon, towards the peak near iron}\)
+Why not the others: (A) \(\text{per-nucleon value taken as total}\); (B) \(\Delta m\text{ halved; fission of light nuclei absorbs energy}\); (C) \(\text{used total mass, not the defect}\).
+Key point: \(E_b=\Delta m\times931.5\text{ MeV};\ \text{peak at }A\approx56\)
+
+@@ Q71
+format: numerical
+sub_topic: Applying significant-figure rules to multiplication and addition results and counting significant figures in measured values with zeros
+Q: A rectangle measures \(4.234\text{ m}\times1.005\text{ m}\). Three masses \(436.32\text{ g}\), \(227.2\text{ g}\) and \(0.301\text{ g}\) are added. How many significant figures are in \(0.0070\) and in \(6.320\)? Which set is correct?
+A) \(4.25517\text{ m}^2;\ 663.821\text{ g};\ 4;\ 3\)
+B) \(4.255\text{ m}^2;\ 663.8\text{ g};\ 2;\ 4\)
+C) \(4.3\text{ m}^2;\ 664\text{ g};\ 1;\ 3\)
+D) \(4.26\text{ m}^2;\ 663.82\text{ g};\ 3;\ 4\)
+KEY: B
+SOL:
+Answer: (B) \(4.255\text{ m}^2;\ 663.8\text{ g};\ 2;\ 4\)
+Given: \(4.234\ (4\text{ s.f.}),\ 1.005\ (4\text{ s.f.});\ 436.32,\ 227.2,\ 0.301\)
+Formula/Principle: \(\text{product: as many s.f. as the least precise factor; sum: as many decimal places as the least precise term; leading zeros are not significant, trailing zeros after a decimal point are}\)
+Step 1: \(4.234\times1.005=4.25517\Rightarrow4.255\text{ m}^2\ (4\text{ s.f.})\)
+Step 2: \(436.32+227.2+0.301=663.821\Rightarrow663.8\text{ g}\ (1\text{ decimal place})\)
+Step 3: \(0.0070:\ \text{digits }7,0\Rightarrow2;\ 6.320\Rightarrow4\)
+Worked derivation: \[4.234\times1.005=4.234+0.02117=4.25517\approx4.255\]
+Check: \[227.2\text{ is known only to }0.1\text{ g, so the sum cannot be quoted beyond }0.1\text{ g}\ \checkmark\]
+Why: \(\text{a result cannot be more precise than the least precise measurement that went into it}\)
+Why not the others: (A) \(\text{results not rounded; }0.0070\text{ has 2 s.f.}\); (C) \(\text{over-rounded}\); (D) \(\text{product to 3 s.f. and sum to 2 decimals are wrong}\).
+Key point: \(\times,\div\to\text{least s.f.};\ +,-\to\text{least decimal places}\)
+
+@@ Q72
+format: numerical
+sub_topic: Comparing the scalar and vector products of two vectors, the angle between them, the projection of one on the other and the area of the parallelogram they span
+Q: For \(\vec A=\hat i+2\hat j+2\hat k\) and \(\vec B=2\hat i-\hat j+2\hat k\), find \(\vec A\cdot\vec B\), \(\cos\theta\), \(\vec A\times\vec B\), the area of the parallelogram on \(\vec A\) and \(\vec B\), and the projection of \(\vec A\) on \(\vec B\).
+A) \(8;\ \tfrac89;\ 6\hat i-2\hat j+5\hat k;\ 9;\ \tfrac83\)
+B) \(4;\ \tfrac49;\ -6\hat i-2\hat j+5\hat k;\ 65;\ 4\)
+C) \(4;\ \tfrac49;\ 6\hat i+2\hat j-5\hat k;\ \sqrt{65};\ \tfrac43\)
+D) \(0;\ 0;\ 6\hat i+2\hat j-5\hat k;\ 9;\ 0\)
+KEY: C
+SOL:
+Answer: (C) \(4;\ \tfrac49;\ 6\hat i+2\hat j-5\hat k;\ \sqrt{65};\ \tfrac43\)
+Given: \(\vec A=(1,2,2),\ \vec B=(2,-1,2)\)
+Formula/Principle: \(\vec A\cdot\vec B=AB\cos\theta;\ |\vec A\times\vec B|=AB\sin\theta=\text{area};\ \text{projection}=\dfrac{\vec A\cdot\vec B}{B}\)
+Step 1: \(\vec A\cdot\vec B=2-2+4=4;\ A=B=3\Rightarrow\cos\theta=\tfrac49\)
+Step 2: \(\vec A\times\vec B=\hat i(4+2)-\hat j(2-4)+\hat k(-1-4)=6\hat i+2\hat j-5\hat k\)
+Step 3: \(|\vec A\times\vec B|=\sqrt{36+4+25}=\sqrt{65};\ \text{projection}=\tfrac43\)
+Worked derivation: \[\vec A\times\vec B=\begin{vmatrix}\hat i&\hat j&\hat k\\1&2&2\\2&-1&2\end{vmatrix}=6\hat i+2\hat j-5\hat k\]
+Check: \[(\vec A\cdot\vec B)^2+|\vec A\times\vec B|^2=16+65=81=A^2B^2\ \checkmark\]
+Why: \(\text{the dot product measures how much the vectors align and the cross product how much they are perpendicular, and together they recover }A^2B^2\)
+Why not the others: (A) \(\text{dot product doubled; cross-product signs wrong}\); (B) \(\text{area is the magnitude }\sqrt{65};\ \text{sign of }\hat i\text{ wrong}\); (D) \(\text{vectors are not perpendicular}\).
+Key point: \((\vec A\cdot\vec B)^2+|\vec A\times\vec B|^2=A^2B^2\)
+
+@@ Q73
+format: numerical
+sub_topic: Calculating the impulse and average force when a ball is struck back along its line of approach, and the impulse from the area under a force–time graph
+Q: A \(0.15\text{ kg}\) ball approaching at \(20\text{ m s}^{-1}\) is hit straight back at \(30\text{ m s}^{-1}\); contact lasts \(0.010\text{ s}\). In another case, a force rises linearly from 0 to \(600\text{ N}\) in \(0.01\text{ s}\) and falls linearly to 0 in the next \(0.01\text{ s}\). What are the impulse and average force in the first case and the impulse in the second?
+A) \(7.5\text{ N s};\ 750\text{ N};\ 6.0\text{ N s}\)
+B) \(1.5\text{ N s};\ 150\text{ N};\ 12\text{ N s}\)
+C) \(7.5\text{ N s};\ 75\text{ N};\ 3.0\text{ N s}\)
+D) \(4.5\text{ N s};\ 450\text{ N};\ 6.0\text{ N s}\)
+KEY: A
+SOL:
+Answer: (A) \(J=7.5\text{ N s},\ F_{\text{av}}=750\text{ N};\ J_2=6.0\text{ N s}\)
+Given: \(m=0.15\text{ kg},\ u=-20,\ v=+30\text{ m s}^{-1},\ \Delta t=0.010\text{ s};\ \text{triangular }F(t),\ F_{\max}=600\text{ N},\ \text{base }0.02\text{ s}\)
+Formula/Principle: \(J=\Delta p=m(v-u)=F_{\text{av}}\Delta t;\ J=\int F\,dt=\text{area under }F\text{–}t\)
+Step 1: \(\Delta p=0.15(30-(-20))=0.15\times50=7.5\text{ N s}\)
+Step 2: \(F_{\text{av}}=\dfrac{7.5}{0.010}=750\text{ N}\)
+Step 3: \(J_2=\tfrac12\times0.02\times600=6.0\text{ N s}\)
+Worked derivation: \[J=\int_0^{0.02}F\,dt=\frac12\times\text{base}\times\text{height}=\frac12(0.02)(600)=6.0\ \text{N s}\]
+Check: \[\text{velocity reverses, so speeds add: }20+30=50\ \text{m s}^{-1}\ \checkmark\]
+Why: \(\text{momentum is a vector, so reversing direction makes the change the sum of the two speeds times mass}\)
+Why not the others: (B) \(\text{used }30-20;\ \text{triangle area not halved}\); (C) \(\text{average force divided wrongly}\); (D) \(\text{used only }30\text{ m s}^{-1}\).
+Key point: \(\Delta p=m(v-u)\text{ with signs};\ J=\text{area under }F\text{–}t\)
+
+@@ Q74
+format: conceptual
+sub_topic: Applying the work–energy theorem to identify which forces do work and how kinetic energy changes in sliding, circular and braking motion
+Q: Which statement based on the work–energy theorem is correct?
+A) The normal force on a block sliding on a horizontal floor does positive work
+B) A centripetal force does work that increases the speed of a body in uniform circular motion
+C) The net work done by all forces on a body equals its change in kinetic energy; for a block sliding on a rough horizontal floor, friction does negative work and the normal force and gravity do none, so the block slows; in uniform circular motion the centripetal force is perpendicular to the velocity and does no work, so the kinetic energy stays constant; for the same braking force, the stopping distance \(d=\dfrac{mu^2}{2F}\) quadruples when the initial speed doubles
+D) The stopping distance doubles when the initial speed doubles
+KEY: C
+SOL:
+Answer: (C) \(W_{\text{net}}=\Delta K;\ \text{friction negative};\ \text{centripetal zero};\ d\propto u^2\)
+Given: \(\text{sliding block, uniform circular motion, braking with constant force }F\)
+Formula/Principle: \(W_{\text{net}}=K_f-K_i;\ W=\vec F\cdot\vec d=Fd\cos\theta\)
+Step 1: \(\text{normal force and gravity are perpendicular to horizontal motion}\Rightarrow W=0\)
+Step 2: \(\text{friction opposite to displacement}\Rightarrow W<0\Rightarrow K\text{ decreases}\)
+Step 3: \(-Fd=0-\tfrac12mu^2\Rightarrow d=\dfrac{mu^2}{2F}\propto u^2\)
+Worked derivation: \[W_{\text{brake}}=-Fd=\Delta K=-\frac12mu^2\Rightarrow d=\frac{mu^2}{2F};\ u\to2u\Rightarrow d\to4d\]
+Check: \[\text{circular motion: }\vec F_c\cdot\vec v=0\Rightarrow\frac{dK}{dt}=0\Rightarrow\text{speed constant}\ \checkmark\]
+Why: \(\text{only the component of force along the displacement does work, so perpendicular forces cannot change kinetic energy}\)
+Why not the others: (A) \(\text{normal force is perpendicular to the motion}\); (B) \(\text{centripetal force does no work}\); (D) \(d\propto u^2,\ \text{so it quadruples}\).
+Key point: \(W_{\text{net}}=\Delta K;\ \text{perpendicular forces do no work}\)
+
+@@ Q75
+format: numerical
+sub_topic: Finding support reactions of a loaded beam using the conditions for rotational equilibrium, and the linear graph of one reaction against the load position
+Q: A uniform 1.0 m beam weighing \(20\text{ N}\) rests on supports at its ends A and B. A \(40\text{ N}\) load is placed at distance \(x\) from A. Find the reactions when \(x=0.30\text{ m}\), and the equation of the graph of \(R_B\) against \(x\).
+A) \(R_A=22\text{ N},\ R_B=38\text{ N};\ R_B=40x\)
+B) \(R_A=30\text{ N},\ R_B=30\text{ N};\ R_B=30\text{ (constant)}\)
+C) \(R_A=12\text{ N},\ R_B=48\text{ N};\ R_B=20+40x\)
+D) \(R_A=38\text{ N},\ R_B=22\text{ N};\ R_B=10+40x,\ \text{a straight line from }10\text{ N at }x=0\text{ to }50\text{ N at }x=1\text{ m}\)
+KEY: D
+SOL:
+Answer: (D) \(R_A=38\text{ N},\ R_B=22\text{ N};\ R_B=10+40x\)
+Given: \(W=20\text{ N at }0.5\text{ m},\ L=40\text{ N at }x,\ \text{supports at }0\text{ and }1.0\text{ m}\)
+Formula/Principle: \(\sum F=0,\ \sum\tau=0\ \text{about any point}\)
+Step 1: \(R_A+R_B=60\text{ N}\)
+Step 2: \(\tau\text{ about A: }R_B(1.0)=20(0.5)+40x\Rightarrow R_B=10+40x\)
+Step 3: \(x=0.30:\ R_B=22\text{ N},\ R_A=38\text{ N}\)
+Worked derivation: \[\tau_B:\ R_A(1.0)=20(0.5)+40(1-x)=50-40x\Rightarrow R_A+R_B=60\ \text{N}\]
+Check: \[x=0.30:\ R_A=50-12=38\ \text{N},\ R_B=22\ \text{N},\ \text{sum }60\ \text{N}\ \checkmark\]
+Why: \(\text{the load is nearer A, so A carries the larger share; moving it towards B shifts the share linearly}\)
+Why not the others: (A) \(\text{reactions swapped; beam's own weight omitted}\); (B) \(\text{load position matters}\); (C) \(\text{beam weight's moment taken at the far end}\).
+Key point: \(\text{take moments about one support to find the other reaction}\)
+
+@@ Q76
+format: numerical
+sub_topic: Scaling orbital period with orbit radius by Kepler's third law and comparing speeds at perihelion and aphelion from the law of areas
+Q: A planet orbits the Sun at 4 times Earth's mean orbital radius. A comet's perihelion and aphelion distances are \(0.5\text{ AU}\) and \(4.5\text{ AU}\). What is the planet's period, the ratio of the comet's speeds at perihelion and aphelion, and which law gives that ratio?
+A) \(4\text{ years};\ 1:1;\ \text{law of orbits}\)
+B) \(8\text{ years};\ 9:1;\ \text{law of areas (angular momentum conserved, }v_pr_p=v_ar_a)\)
+C) \(16\text{ years};\ 1:9;\ \text{law of periods}\)
+D) \(2\text{ years};\ 3:1;\ \text{law of areas}\)
+KEY: B
+SOL:
+Answer: (B) \(8\text{ years};\ v_p:v_a=9:1;\ \text{law of areas}\)
+Given: \(r=4r_E;\ r_p=0.5\text{ AU},\ r_a=4.5\text{ AU}\)
+Formula/Principle: \(T^2\propto r^3;\ \dfrac{dA}{dt}=\dfrac{L}{2m}=\text{constant}\Rightarrow v_pr_p=v_ar_a\)
+Step 1: \(T=T_E\left(\dfrac{r}{r_E}\right)^{3/2}=1\times4^{3/2}=8\text{ years}\)
+Step 2: \(\dfrac{v_p}{v_a}=\dfrac{r_a}{r_p}=\dfrac{4.5}{0.5}=9\)
+Step 3: \(\text{equal areas in equal times}\Rightarrow\text{fastest at perihelion}\)
+Worked derivation: \[\frac{T^2}{T_E^2}=\frac{r^3}{r_E^3}=64\Rightarrow T=8\ \text{years}\]
+Check: \[\text{comet: }a=\frac{0.5+4.5}{2}=2.5\ \text{AU}\Rightarrow T=2.5^{3/2}\approx4.0\ \text{years, consistent with }T^2\propto a^3\ \checkmark\]
+Why: \(\text{gravity is central, so it exerts no torque about the Sun and angular momentum is conserved}\)
+Why not the others: (A) \(T\propto r^{3/2},\ \text{not }r\); (C) \(\text{used }r^2\text{ and inverted ratio}\); (D) \(\text{used }\sqrt r\text{ and }\sqrt{9}\).
+Key point: \(T\propto r^{3/2};\ v_pr_p=v_ar_a\)
+
+@@ Q77
+format: numerical
+sub_topic: Comparing hydrostatic pressure at the bottom of vessels of different shapes, absolute pressure at depth in water, and the heights of mercury and water barometers
+Q: Three vessels of different shapes are filled with water to the same height \(h\). Find the absolute pressure at \(10\text{ m}\) depth in water (\(P_a=1.01\times10^5\text{ Pa}\), \(\rho=1000\text{ kg m}^{-3}\), \(g=9.8\text{ m s}^{-2}\)) and the height of a water barometer when a mercury barometer (\(\rho_{Hg}=13.6\times10^3\text{ kg m}^{-3}\)) reads \(76\text{ cm}\). Which statement is correct?
+A) \(\text{The widest vessel has the greatest bottom pressure};\ 0.98\times10^5\text{ Pa};\ 76\text{ cm}\)
+B) \(\text{The narrowest vessel has the greatest bottom pressure};\ 1.01\times10^5\text{ Pa};\ 5.6\text{ cm}\)
+C) \(\text{All three have equal bottom pressure }P_a+\rho gh\ (\text{hydrostatic paradox});\ 1.99\times10^5\text{ Pa}\approx2\text{ atm};\ 0.76\times13.6\approx10.3\text{ m}\)
+D) \(\text{Bottom pressure depends on the volume of water};\ 2.0\times10^6\text{ Pa};\ 1.03\text{ m}\)
+KEY: C
+SOL:
+Answer: (C) \(\text{equal pressures};\ 1.99\times10^5\text{ Pa};\ \approx10.3\text{ m}\)
+Given: \(h=10\text{ m},\ \rho=1000,\ g=9.8;\ h_{Hg}=0.76\text{ m}\)
+Formula/Principle: \(P=P_a+\rho gh;\ \rho_wh_w=\rho_{Hg}h_{Hg}\)
+Step 1: \(\text{pressure depends only on depth, not on shape or volume}\)
+Step 2: \(P=1.01\times10^5+1000\times9.8\times10=1.99\times10^5\text{ Pa}\)
+Step 3: \(h_w=\dfrac{13.6\times10^3\times0.76}{1000}=10.3\text{ m}\)
+Worked derivation: \[\rho_{Hg}gh_{Hg}=\rho_wgh_w\Rightarrow h_w=\frac{\rho_{Hg}}{\rho_w}h_{Hg}=13.6\times0.76=10.34\ \text{m}\]
+Check: \[\rho gh=1000\times9.8\times10=0.98\times10^5\ \text{Pa}\approx1\ \text{atm extra}\ \checkmark\]
+Why: \(\text{the pressure at a point balances the weight of the column directly above it; the walls support any extra water}\)
+Why not the others: (A) \(\text{shape irrelevant; gauge pressure taken as absolute}\); (B) \(\text{shape irrelevant; water column is taller, not shorter}\); (D) \(\text{volume irrelevant; arithmetic wrong}\).
+Key point: \(P=P_a+\rho gh\text{ depends only on depth}\)
+
+@@ Q78
+format: numerical
+sub_topic: Calculating linear expansion of a heated rod, relating linear, area and volume expansion coefficients, and the thermal stress in a rod prevented from expanding
+Q: A steel rod (\(\alpha=1.2\times10^{-5}\ \text{K}^{-1}\), \(Y=2.0\times10^{11}\text{ Pa}\)) of length \(1.0\text{ m}\) is heated by \(50\text{ K}\). Find its expansion, the coefficients of area and volume expansion, and the stress if the rod is clamped rigidly at both ends. What happens to a hole in a heated steel plate?
+A) \(0.60\text{ mm};\ 2.4\times10^{-5},\ 3.6\times10^{-5}\ \text{K}^{-1};\ 1.2\times10^8\text{ Pa};\ \text{the hole becomes larger}\)
+B) \(6.0\text{ mm};\ 1.2\times10^{-5}\text{ each};\ 1.2\times10^{6}\text{ Pa};\ \text{the hole shrinks}\)
+C) \(0.06\text{ mm};\ 3.6\times10^{-5},\ 2.4\times10^{-5};\ 0;\ \text{the hole is unchanged}\)
+D) \(0.60\text{ mm};\ 1.44\times10^{-10},\ 1.73\times10^{-15};\ 2.4\times10^{8}\text{ Pa};\ \text{the hole shrinks}\)
+KEY: A
+SOL:
+Answer: (A) \(\Delta L=0.60\text{ mm};\ \beta=2\alpha,\ \gamma=3\alpha;\ \sigma=1.2\times10^8\text{ Pa};\ \text{hole enlarges}\)
+Given: \(L=1.0\text{ m},\ \alpha=1.2\times10^{-5}\ \text{K}^{-1},\ \Delta T=50\text{ K},\ Y=2.0\times10^{11}\text{ Pa}\)
+Formula/Principle: \(\Delta L=\alpha L\Delta T;\ \beta\approx2\alpha,\ \gamma\approx3\alpha;\ \sigma=Y\cdot\text{strain}=Y\alpha\Delta T\)
+Step 1: \(\Delta L=1.2\times10^{-5}\times1.0\times50=6.0\times10^{-4}\text{ m}=0.60\text{ mm}\)
+Step 2: \(\beta=2.4\times10^{-5},\ \gamma=3.6\times10^{-5}\ \text{K}^{-1}\)
+Step 3: \(\sigma=2.0\times10^{11}\times6.0\times10^{-4}=1.2\times10^8\text{ Pa}\)
+Worked derivation: \[V=L^3\Rightarrow\Delta V=3L^2\Delta L=3L^3\alpha\Delta T\Rightarrow\gamma=\frac{\Delta V}{V\Delta T}=3\alpha\]
+Check: \[\text{strain}=\frac{\Delta L}{L}=6.0\times10^{-4};\ \ \sigma=Y\times\text{strain}=1.2\times10^8\ \text{Pa}\ \checkmark\]
+Why: \(\text{a clamped rod is compressed back by exactly the amount it would have expanded, and every linear dimension of the plate, including the hole, scales up together}\)
+Why not the others: (B) \(\text{expansion ten times too large; }\beta,\gamma\text{ differ from }\alpha\); (C) \(\text{values swapped; clamping produces stress}\); (D) \(\text{coefficients add, not multiply}\).
+Key point: \(\Delta L=\alpha L\Delta T;\ \gamma=3\alpha;\ \sigma=Y\alpha\Delta T\)
+
+@@ Q79
+format: conceptual
+sub_topic: Applying the first law of thermodynamics to isothermal, adiabatic, isochoric, free-expansion and cyclic processes of an ideal gas
+Q: Which statement about the first law \(\Delta U=Q-W\) (\(W\) = work done by the gas) is correct?
+A) In an adiabatic expansion the gas absorbs heat, so its temperature rises
+B) In an isochoric process all heat supplied is converted into work
+C) In free expansion into a vacuum, the temperature of an ideal gas falls because it does work
+D) In an isothermal process of an ideal gas \(\Delta U=0\), so \(Q=W\); in an adiabatic expansion \(Q=0\), so \(\Delta U=-W<0\) and the gas cools; in an isochoric process \(W=0\), so \(Q=\Delta U\); in free expansion \(Q=0\) and \(W=0\), so \(\Delta U=0\) and an ideal gas's temperature is unchanged; in a cyclic process \(\Delta U=0\), so the net heat absorbed equals the net work done
+KEY: D
+SOL:
+Answer: (D) \(\text{isothermal }Q=W;\ \text{adiabatic }\Delta U=-W;\ \text{isochoric }Q=\Delta U;\ \text{free expansion }\Delta U=0;\ \text{cycle }Q_{\text{net}}=W_{\text{net}}\)
+Given: \(\text{ideal gas; }U\text{ depends only on }T\)
+Formula/Principle: \(\Delta U=Q-W,\ W=\int P\,dV,\ \Delta U=nC_V\Delta T\)
+Step 1: \(\text{isothermal: }\Delta T=0\Rightarrow\Delta U=0\Rightarrow Q=W\)
+Step 2: \(\text{adiabatic: }Q=0\Rightarrow\Delta U=-W;\ \text{expansion }W>0\Rightarrow T\text{ falls}\)
+Step 3: \(\text{isochoric: }dV=0\Rightarrow W=0;\ \text{free expansion: }P_{\text{ext}}=0,\ Q=0\Rightarrow\Delta U=0\)
+Worked derivation: \[\text{cycle: }\oint dU=0\Rightarrow Q_{\text{net}}=W_{\text{net}}=\text{area enclosed on the }P\text{–}V\text{ diagram}\]
+Check: \[\text{free expansion: }W=P_{\text{ext}}\Delta V=0\times\Delta V=0,\ Q=0\Rightarrow\Delta T=0\ \checkmark\]
+Why: \(\text{internal energy of an ideal gas depends only on temperature, so each constraint fixes one term and the first law gives the rest}\)
+Why not the others: (A) \(\text{adiabatic means }Q=0;\ \text{the gas cools on expansion}\); (B) \(\text{no work at constant volume}\); (C) \(\text{no work is done against a vacuum}\).
+Key point: \(\Delta U=Q-W;\ \text{ideal gas: }U=U(T)\)
+
+@@ Q80
+format: numerical
+sub_topic: Calculating rms speed and mean kinetic energy of gas molecules from kinetic theory, the temperature that doubles the rms speed, and the ratio of rms speeds of two gases
+Q: For nitrogen (\(M=0.028\text{ kg mol}^{-1}\)) at \(300\text{ K}\), find the rms speed, the mean translational kinetic energy per molecule, the temperature at which the rms speed doubles, and the ratio of rms speeds of \(\text{O}_2\) and \(\text{H}_2\) at the same temperature. (\(R=8.314\text{ J mol}^{-1}\text{ K}^{-1}\), \(k_B=1.38\times10^{-23}\text{ J K}^{-1}\))
+A) \(299\text{ m s}^{-1};\ 4.14\times10^{-21}\text{ J};\ 600\text{ K};\ 4:1\)
+B) \(517\text{ m s}^{-1};\ 6.21\times10^{-21}\text{ J};\ 1200\text{ K};\ 1:4\)
+C) \(517\text{ m s}^{-1};\ 6.21\times10^{-21}\text{ J};\ 600\text{ K};\ 1:16\)
+D) \(16.4\text{ m s}^{-1};\ 2.07\times10^{-21}\text{ J};\ 1200\text{ K};\ 16:1\)
+KEY: B
+SOL:
+Answer: (B) \(v_{\text{rms}}\approx517\text{ m s}^{-1};\ \bar K=6.21\times10^{-21}\text{ J};\ 1200\text{ K};\ 1:4\)
+Given: \(M=0.028\text{ kg mol}^{-1},\ T=300\text{ K}\)
+Formula/Principle: \(P=\tfrac13\rho v_{\text{rms}}^2\Rightarrow v_{\text{rms}}=\sqrt{\dfrac{3RT}{M}};\ \bar K=\tfrac32k_BT\)
+Step 1: \(v_{\text{rms}}=\sqrt{\dfrac{3\times8.314\times300}{0.028}}=\sqrt{2.67\times10^5}\approx517\text{ m s}^{-1}\)
+Step 2: \(\bar K=1.5\times1.38\times10^{-23}\times300=6.21\times10^{-21}\text{ J}\)
+Step 3: \(v\propto\sqrt T\Rightarrow T\times4=1200\text{ K};\ \dfrac{v_{O_2}}{v_{H_2}}=\sqrt{\dfrac{2}{32}}=\dfrac14\)
+Worked derivation: \[PV=\frac13Nmv_{\text{rms}}^2=nRT\Rightarrow v_{\text{rms}}^2=\frac{3nRT}{Nm}=\frac{3RT}{M}\]
+Check: \[\frac12mv_{\text{rms}}^2=\frac12\cdot\frac{0.028}{6.02\times10^{23}}\cdot2.67\times10^5\approx6.2\times10^{-21}\ \text{J}=\tfrac32k_BT\ \checkmark\]
+Why: \(\text{temperature measures mean kinetic energy, so at equal }T\text{ lighter molecules move faster}\)
+Why not the others: (A) \(\text{factor 3 omitted; }v\propto\sqrt T\text{ needs }4T\); (C) \(\text{doubling }T\text{ raises }v\text{ by }\sqrt2\text{ only; ratio is }1:4\); (D) \(\text{used }M\text{ in g mol}^{-1}\text{ wrongly}\).
+Key point: \(v_{\text{rms}}=\sqrt{3RT/M};\ \bar K=\tfrac32k_BT\)
