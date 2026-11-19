@@ -1,0 +1,439 @@
+@@ Q41
+format: numerical
+sub_topic: Recovering n and r from given values of nPr and nCr using nPr = r!·nCr, and using nCr = nC(n−r)
+Q: If \({}^nP_r=720\) and \({}^nC_r=120\), what are \(n\) and \(r\)? Also, if \({}^mC_8={}^mC_6\), what is \({}^mC_2\)?
+A) \(n=6,\ r=3;\ {}^mC_2=28\)
+B) \(n=10,\ r=3;\ {}^mC_2=91\)
+C) \(n=10,\ r=6;\ {}^mC_2=105\)
+D) \(n=9,\ r=3;\ {}^mC_2=91\)
+KEY: B
+SOL:
+Answer: (B) \(n=10,\ r=3;\ {}^{14}C_2=91\)
+Given: \({}^nP_r=720,\ {}^nC_r=120,\ {}^mC_8={}^mC_6\)
+Formula/Principle: \({}^nP_r=r!\,{}^nC_r;\ {}^mC_a={}^mC_b,\ a\ne b\Rightarrow a+b=m\)
+Step 1: \(r!=\dfrac{720}{120}=6\Rightarrow r=3\)
+Step 2: \(n(n-1)(n-2)=720=10\cdot9\cdot8\Rightarrow n=10\)
+Step 3: \(m=8+6=14,\ {}^{14}C_2=\dfrac{14\cdot13}{2}=91\)
+Worked derivation: \[{}^nP_r=\frac{n!}{(n-r)!}=r!\cdot\frac{n!}{r!(n-r)!}=r!\,{}^nC_r\]
+Check: \[{}^{10}P_3=720,\ {}^{10}C_3=\frac{720}{6}=120\ \checkmark\]
+Why: \(\text{arrangements count each selection }r!\text{ times, so the ratio gives }r!\)
+Why not the others: (A) \({}^6P_3=120\ne720\); (C) \({}^{10}P_6\ne720\) and \(m\) is wrong; (D) \({}^9P_3=504\).
+Key point: \({}^nP_r/{}^nC_r=r!;\ {}^mC_a={}^mC_b\Rightarrow m=a+b\)
+
+@@ Q42
+format: numerical
+sub_topic: Using the general term of a binomial expansion with negative powers to find the term independent of x, a specific coefficient and the middle terms
+Q: In the expansion of \(\left(x^2-\dfrac{2}{x}\right)^9\), what is the term independent of \(x\), the coefficient of \(x^9\), and which terms are the middle terms?
+A) \(-5376;\ 672;\) only the 5th term
+B) \(84;\ -84;\) the 5th term only
+C) \(5376;\ 672;\) the 4th and 5th terms
+D) \(5376;\ -672;\) the 5th and 6th terms
+KEY: D
+SOL:
+Answer: (D) \(5376;\ -672;\ T_5\text{ and }T_6\)
+Given: \(n=9,\ a=x^2,\ b=-\dfrac2x\)
+Formula/Principle: \(T_{r+1}={}^9C_r\,(x^2)^{9-r}\left(-\dfrac2x\right)^r={}^9C_r(-2)^r x^{18-3r}\)
+Step 1: \(18-3r=0\Rightarrow r=6:\ {}^9C_6\cdot64=84\cdot64=5376\)
+Step 2: \(18-3r=9\Rightarrow r=3:\ {}^9C_3(-8)=84(-8)=-672\)
+Step 3: \(n+1=10\text{ terms}\Rightarrow\text{ middle terms }T_5,\ T_6\)
+Worked derivation: \[T_7={}^9C_6(x^2)^3\left(-\tfrac2x\right)^6=84\cdot x^6\cdot\frac{64}{x^6}=5376\]
+Check: \[T_4={}^9C_3(x^2)^6\left(-\tfrac2x\right)^3=84\cdot(-8)\,x^{9}\ \checkmark\]
+Why: \(\text{the power of }x\text{ in the general term fixes which }r\text{ gives the required term, and the sign comes from }(-2)^r\)
+Why not the others: (A) \(\text{signs reversed; odd }n\text{ has two middle terms}\); (B) \(\text{omits the factor }(-2)^r\); (C) \(\text{sign of }x^9\text{ coefficient and middle terms wrong}\).
+Key point: \(T_{r+1}={}^nC_r a^{n-r}b^r;\ \text{odd }n\Rightarrow\text{two middle terms}\)
+
+@@ Q43
+format: numerical
+sub_topic: Finding a circle that touches both axes and a given line, and then a second circle touching both axes and externally touching the first
+Q: A circle in the first quadrant touches both coordinate axes and the line \(3x+4y=12\), and lies inside the triangle they form. A second, larger circle also touches both axes and touches the first circle externally. What are the first circle's equation and the second circle's radius?
+A) \(x^2+y^2-2x-2y+1=0;\ 3+2\sqrt2\)
+B) \(x^2+y^2-4x-4y+4=0;\ 2+\sqrt2\)
+C) \(x^2+y^2-2x-2y+1=0;\ 1+\sqrt2\)
+D) \(x^2+y^2-6x-6y+9=0;\ 3-2\sqrt2\)
+KEY: A
+SOL:
+Answer: (A) \((x-1)^2+(y-1)^2=1;\ r_2=3+2\sqrt2\)
+Given: \(\text{centre }(r,r);\ \text{line }3x+4y=12;\ \text{second centre }(a,a)\)
+Formula/Principle: \(\text{distance from centre to tangent line}=\text{radius};\ \text{external touch: }C_1C_2=r_1+r_2\)
+Step 1: \(\dfrac{|3r+4r-12|}{5}=r\Rightarrow 12-7r=5r\Rightarrow r=1\text{ (inside the triangle)}\)
+Step 2: \(\text{first circle: }(x-1)^2+(y-1)^2=1\)
+Step 3: \(\sqrt2(a-1)=a+1\Rightarrow a=\dfrac{\sqrt2+1}{\sqrt2-1}=3+2\sqrt2\)
+Worked derivation: \[a(\sqrt2-1)=\sqrt2+1\Rightarrow a=\frac{(\sqrt2+1)^2}{2-1}=3+2\sqrt2\]
+Check: \[r=1=\frac{3+4-5}{2}\ (\text{inradius of the }3\text{–}4\text{–}5\text{ triangle})\ \checkmark\]
+Why: \(\text{touching both axes puts the centre on }y=x\text{, and each tangency gives one equation}\)
+Why not the others: (B) \(r=2\text{ is not tangent to the line}\); (C) \(\text{second radius solves }\sqrt2 a=a+1\text{ instead}\); (D) \(r=3\text{ lies outside; }3-2\sqrt2\text{ is the smaller touching circle}\).
+Key point: \(\text{touches both axes}\Rightarrow\text{centre }(r,r);\ C_1C_2=r_1+r_2\)
+
+@@ Q44
+format: numerical
+sub_topic: Applying the product, quotient and chain rules to find a tangent slope, the derivative of a composite function from tabulated values, and a quotient derivative at a point
+Q: What is the slope of the tangent to \(y=x\sqrt{1+x^2}\) at \(x=\sqrt3\); the value of \(h'(1)\) where \(h=f\circ g\), \(g(1)=2,\ g'(1)=3,\ f'(2)=-1\); and the derivative of \(\dfrac{\sin x}{x}\) at \(x=\pi\)?
+A) \(\dfrac{\sqrt3}{2};\ 3;\ \dfrac1\pi\)
+B) \(2;\ -1;\ 0\)
+C) \(\dfrac72;\ -3;\ -\dfrac1\pi\)
+D) \(\dfrac72;\ -6;\ -\pi\)
+KEY: C
+SOL:
+Answer: (C) \(\dfrac72;\ -3;\ -\dfrac1\pi\)
+Given: \(y=x\sqrt{1+x^2};\ g(1)=2,\ g'(1)=3,\ f'(2)=-1;\ u=\dfrac{\sin x}{x}\)
+Formula/Principle: \((uv)'=u'v+uv';\ (f\circ g)'(x)=f'(g(x))\,g'(x);\ \left(\dfrac uv\right)'=\dfrac{u'v-uv'}{v^2}\)
+Step 1: \(y'=\sqrt{1+x^2}+\dfrac{x^2}{\sqrt{1+x^2}}=\dfrac{1+2x^2}{\sqrt{1+x^2}}=\dfrac{7}{2}\text{ at }x=\sqrt3\)
+Step 2: \(h'(1)=f'(2)\cdot g'(1)=(-1)(3)=-3\)
+Step 3: \(\dfrac{d}{dx}\dfrac{\sin x}{x}=\dfrac{x\cos x-\sin x}{x^2}=\dfrac{-\pi}{\pi^2}=-\dfrac1\pi\)
+Worked derivation: \[\frac{d}{dx}\sqrt{1+x^2}=\frac{1}{2\sqrt{1+x^2}}\cdot2x=\frac{x}{\sqrt{1+x^2}}\]
+Check: \[x=\sqrt3:\ \frac{1+6}{\sqrt4}=\frac72\ \checkmark\]
+Why: \(\text{each rule handles one way functions are combined: product, composition, quotient}\)
+Why not the others: (A) \(\text{omits a term of the product rule and the minus signs}\); (B) \(\text{uses }f'\text{ alone and }\sin\pi=0\text{ for the whole derivative}\); (D) \(\text{multiplies by }g(1)\text{ and drops }x^2\).
+Key point: \((f\circ g)'=f'(g)\,g'\)
+
+@@ Q45
+format: numerical
+sub_topic: Finding two unknown observations from a given mean and variance, and the effect of a linear transformation on mean and variance
+Q: The six observations \(2,4,6,8,a,b\) have mean \(5\) and variance \(\dfrac{14}{3}\). What are \(a\) and \(b\), and what are the mean and variance after each observation is multiplied by \(3\) and then increased by \(2\)?
+A) \(\{a,b\}=\{3,7\};\ \text{mean }17,\ \text{variance }42\)
+B) \(\{a,b\}=\{4,6\};\ \text{mean }17,\ \text{variance }14\)
+C) \(\{a,b\}=\{3,7\};\ \text{mean }15,\ \text{variance }44\)
+D) \(\{a,b\}=\{1,9\};\ \text{mean }17,\ \text{variance }42\)
+KEY: A
+SOL:
+Answer: (A) \(a,b=3,7;\ \text{new mean }17,\ \text{new variance }42\)
+Given: \(n=6,\ \bar x=5,\ \sigma^2=\dfrac{14}{3}\)
+Formula/Principle: \(\sigma^2=\dfrac{\sum x_i^2}{n}-\bar x^2;\ y=px+q\Rightarrow\bar y=p\bar x+q,\ \sigma_y^2=p^2\sigma_x^2\)
+Step 1: \(20+a+b=30\Rightarrow a+b=10\)
+Step 2: \(\dfrac{120+a^2+b^2}{6}-25=\dfrac{14}{3}\Rightarrow a^2+b^2=58\)
+Step 3: \(ab=\dfrac{100-58}{2}=21\Rightarrow\{a,b\}=\{3,7\};\ \bar y=17,\ \sigma_y^2=9\cdot\dfrac{14}{3}=42\)
+Worked derivation: \[120+a^2+b^2=6\left(25+\tfrac{14}{3}\right)=178\Rightarrow a^2+b^2=58\]
+Check: \[\frac{(9+1+1+9+4+4)}{6}=\frac{28}{6}=\frac{14}{3}\ \checkmark\]
+Why: \(\text{the mean fixes }a+b\text{ and the variance fixes }a^2+b^2\text{; adding a constant shifts the mean but not the spread}\)
+Why not the others: (B) \(4,6\text{ give variance }\tfrac{11}{3}\text{; scaling by }3\text{ multiplies variance by }9\); (C) \(\text{omits the }+2\text{ and adds }2\text{ to variance}\); (D) \(1,9\text{ give }a^2+b^2=82\).
+Key point: \(\sigma^2(px+q)=p^2\sigma^2(x)\)
+
+@@ Q46
+format: numerical
+sub_topic: Finding P(B) from P(A∪B) when A and B are independent or mutually exclusive, and the possible range of P(A∩B) in general
+Q: \(P(A)=0.4\) and \(P(A\cup B)=0.6\). What is \(P(B)\) if \(A\) and \(B\) are independent, and if they are mutually exclusive? For \(P(A)=0.4,\ P(B)=\tfrac13\) in general, what values can \(P(A\cap B)\) take?
+A) \(0.2\text{ and }\tfrac13;\ [0,0.4]\)
+B) \(\tfrac13\text{ in both cases};\ \{0\}\)
+C) \(0.5\text{ and }0.2;\ \left[\tfrac{2}{15},\tfrac13\right]\)
+D) \(\tfrac13\text{ and }0.2;\ \left[0,\tfrac13\right]\)
+KEY: D
+SOL:
+Answer: (D) \(\tfrac13;\ 0.2;\ 0\le P(A\cap B)\le\tfrac13\)
+Given: \(P(A)=0.4,\ P(A\cup B)=0.6\)
+Formula/Principle: \(P(A\cup B)=P(A)+P(B)-P(A\cap B);\ \text{independent: }P(A\cap B)=P(A)P(B)\)
+Step 1: \(\text{Independent: }0.4+x-0.4x=0.6\Rightarrow0.6x=0.2\Rightarrow x=\tfrac13\)
+Step 2: \(\text{Mutually exclusive: }0.4+x=0.6\Rightarrow x=0.2\)
+Step 3: \(\max(0,\,0.4+\tfrac13-1)\le P(A\cap B)\le\min(0.4,\tfrac13)\Rightarrow\left[0,\tfrac13\right]\)
+Worked derivation: \[P(A\cap B)=P(A)+P(B)-P(A\cup B)\ge P(A)+P(B)-1=-\tfrac{4}{15}\Rightarrow\text{lower limit }0\]
+Check: \[\text{independent: }0.4+\tfrac13-\tfrac{2}{15}=\tfrac{6+5-2}{15}=0.6\ \checkmark\]
+Why: \(\text{the multiplication theorem for independent events and the empty intersection for exclusive events give different }P(B)\)
+Why not the others: (A) \(\text{cases swapped; upper limit is }\min(P(A),P(B))\); (B) \(\text{exclusive case differs}\); (C) \(0.5\text{ fails the union; }\tfrac2{15}\text{ is only the independent value}\).
+Key point: \(\text{independent: }P(A\cap B)=P(A)P(B);\ \text{exclusive: }P(A\cap B)=0\)
+
+@@ Q47
+format: numerical
+sub_topic: Applying the theorem of total probability over three machines, then Bayes' theorem to find which machine probably produced a defective item
+Q: Machines \(X,Y,Z\) produce \(50\%,30\%,20\%\) of a factory's bolts, with defective rates \(1\%,2\%,3\%\). A bolt is chosen at random. What is the probability it is defective, and given that it is defective, the probability it came from \(Z\)?
+A) \(0.02;\ \tfrac{1}{3}\)
+B) \(0.017;\ \tfrac{6}{17}\)
+C) \(0.06;\ 0.2\)
+D) \(0.017;\ \tfrac{5}{17}\)
+KEY: B
+SOL:
+Answer: (B) \(P(D)=0.017;\ P(Z\mid D)=\tfrac{6}{17}\)
+Given: \(P(X)=0.5,\ P(Y)=0.3,\ P(Z)=0.2;\ P(D\mid X)=0.01,\ P(D\mid Y)=0.02,\ P(D\mid Z)=0.03\)
+Formula/Principle: \(P(D)=\sum P(E_i)P(D\mid E_i);\ P(E_i\mid D)=\dfrac{P(E_i)P(D\mid E_i)}{P(D)}\)
+Step 1: \(P(D)=0.005+0.006+0.006=0.017\)
+Step 2: \(P(Z\mid D)=\dfrac{0.006}{0.017}=\dfrac{6}{17}\)
+Step 3: \(P(X\mid D)=\tfrac{5}{17},\ P(Y\mid D)=\tfrac{6}{17}\)
+Worked derivation: \[P(Z\mid D)=\frac{0.2\times0.03}{0.5\times0.01+0.3\times0.02+0.2\times0.03}=\frac{6}{17}\]
+Check: \[\tfrac{5}{17}+\tfrac{6}{17}+\tfrac{6}{17}=1\ \checkmark\]
+Why: \(\text{the machines partition the sample space, so their weighted defect rates add to give }P(D)\)
+Why not the others: (A) \(\text{averages the defect rates without weights}\); (C) \(\text{adds rates; ignores Bayes}\); (D) \(\tfrac{5}{17}\text{ is }P(X\mid D)\).
+Key point: \(\text{total probability then Bayes}\)
+
+@@ Q48
+format: numerical
+sub_topic: Recovering a matrix from its symmetric and skew-symmetric parts, and properties of skew-symmetric matrices
+Q: A square matrix \(A\) satisfies \(A+A^{T}=\begin{pmatrix}4&6\\6&10\end{pmatrix}\) and \(A-A^{T}=\begin{pmatrix}0&-2\\2&0\end{pmatrix}\). What is \(A\), what is \(\det A\), and which statement is true?
+A) \(A=\begin{pmatrix}4&4\\8&10\end{pmatrix};\ \det A=8;\ \text{every skew-symmetric matrix is invertible}\)
+B) \(A=\begin{pmatrix}2&4\\2&5\end{pmatrix};\ \det A=2;\ \text{the diagonal of a skew-symmetric matrix is }1\)
+C) \(A=\begin{pmatrix}2&2\\4&5\end{pmatrix};\ \det A=2;\ \text{every skew-symmetric matrix of odd order has determinant }0\)
+D) \(A=\begin{pmatrix}2&3\\3&5\end{pmatrix};\ \det A=1;\ A\text{ is symmetric}\)
+KEY: C
+SOL:
+Answer: (C) \(A=\begin{pmatrix}2&2\\4&5\end{pmatrix};\ \det A=2;\ \text{odd-order skew-symmetric}\Rightarrow\det=0\)
+Given: \(S=A+A^T,\ K=A-A^T\)
+Formula/Principle: \(A=\tfrac12(A+A^T)+\tfrac12(A-A^T)\)
+Step 1: \(\tfrac12 S=\begin{pmatrix}2&3\\3&5\end{pmatrix},\ \tfrac12K=\begin{pmatrix}0&-1\\1&0\end{pmatrix}\)
+Step 2: \(A=\begin{pmatrix}2&2\\4&5\end{pmatrix}\)
+Step 3: \(\det A=10-8=2\)
+Worked derivation: \[K^T=-K\Rightarrow\det K=\det(-K)=(-1)^n\det K\Rightarrow\det K=0\text{ for odd }n\]
+Check: \[A^T=\begin{pmatrix}2&4\\2&5\end{pmatrix},\ A+A^T=\begin{pmatrix}4&6\\6&10\end{pmatrix}\ \checkmark\]
+Why: \(\text{every square matrix splits uniquely into symmetric and skew-symmetric parts}\)
+Why not the others: (A) \(\text{forgets the }\tfrac12\text{; odd-order skew matrices are singular}\); (B) \(\text{this is }A^T\text{; skew diagonal entries are }0\); (D) \(\text{only the symmetric part}\).
+Key point: \(A=\tfrac12(A+A^T)+\tfrac12(A-A^T)\)
+
+@@ Q49
+format: numerical
+sub_topic: Showing with 2×2 matrices that AB can be zero with A, B non-zero, that AB ≠ BA, and that the binomial square formula fails for matrices
+Q: Let \(A=\begin{pmatrix}0&1\\0&0\end{pmatrix}\) and \(B=\begin{pmatrix}1&0\\0&0\end{pmatrix}\). Which statement is correct?
+A) \(AB=BA=O\), so matrices always commute
+B) \(AB=\begin{pmatrix}0&1\\0&0\end{pmatrix}\) and \(BA=O\)
+C) \((A+B)^2=A^2+2AB+B^2=B\)
+D) \(AB=O\) but \(BA=\begin{pmatrix}0&1\\0&0\end{pmatrix}=A\ne O\); \(A^2=O\); and \((A+B)^2=A^2+AB+BA+B^2=\begin{pmatrix}1&1\\0&0\end{pmatrix}\ne A^2+2AB+B^2=B\)
+KEY: D
+SOL:
+Answer: (D) \(AB=O,\ BA=A,\ A^2=O,\ (A+B)^2=\begin{pmatrix}1&1\\0&0\end{pmatrix}\)
+Given: \(A=\begin{pmatrix}0&1\\0&0\end{pmatrix},\ B=\begin{pmatrix}1&0\\0&0\end{pmatrix}\)
+Formula/Principle: \((A+B)^2=A^2+AB+BA+B^2\text{, which equals }A^2+2AB+B^2\text{ only if }AB=BA\)
+Step 1: \(AB=\begin{pmatrix}0\cdot1+1\cdot0&0\\0&0\end{pmatrix}=O\)
+Step 2: \(BA=\begin{pmatrix}0&1\\0&0\end{pmatrix}=A;\ A^2=O;\ B^2=B\)
+Step 3: \((A+B)^2=O+O+A+B=\begin{pmatrix}1&1\\0&0\end{pmatrix}\)
+Worked derivation: \[(A+B)^2=\begin{pmatrix}1&1\\0&0\end{pmatrix}\begin{pmatrix}1&1\\0&0\end{pmatrix}=\begin{pmatrix}1&1\\0&0\end{pmatrix}\]
+Check: \[A^2+2AB+B^2=O+O+B=B\ne(A+B)^2\ \checkmark\]
+Why: \(\text{matrix multiplication is not commutative, so products of non-zero matrices can vanish and binomial identities fail}\)
+Why not the others: (A) \(BA\ne O\); (B) \(\text{products swapped}\); (C) \(\text{binomial formula invalid here}\).
+Key point: \(AB=O\not\Rightarrow A=O\text{ or }B=O;\ AB\ne BA\text{ in general}\)
+
+@@ Q50
+format: numerical
+sub_topic: Choosing constants so that a piecewise function is continuous and differentiable at the joining point, and contrasting continuity with differentiability for |x − 2| and x|x|
+Q: \(f(x)=\begin{cases}ax+b,&x<1\\x^2,&x\ge1\end{cases}\) is differentiable at \(x=1\). What are \(a\) and \(b\), and which statement about \(g(x)=|x-2|\) and \(h(x)=x|x|\) is correct?
+A) \(a=2,\ b=-1;\ g\text{ is continuous but not differentiable at }2;\ h\text{ is differentiable at }0\text{ with }h'(0)=0\)
+B) \(a=1,\ b=0;\ g\text{ is differentiable at }2\)
+C) \(a=2,\ b=1;\ h\text{ is not differentiable at }0\)
+D) \(a=-1,\ b=2;\ g\text{ is not continuous at }2\)
+KEY: A
+SOL:
+Answer: (A) \(a=2,\ b=-1;\ g\text{ continuous, not differentiable at }2;\ h'(0)=0\)
+Given: \(\text{pieces }ax+b\text{ and }x^2\text{ meet at }x=1\)
+Formula/Principle: \(\text{continuity: equal limits; differentiability: equal left and right derivatives}\)
+Step 1: \(\text{Continuity: }a+b=1\)
+Step 2: \(\text{Derivatives: }a=2\cdot1=2\Rightarrow b=-1\)
+Step 3: \(g:\ \text{LHD}=-1,\ \text{RHD}=1;\ h:\ \lim_{t\to0}\dfrac{t|t|}{t}=\lim_{t\to0}|t|=0\)
+Worked derivation: \[h'(0)=\lim_{t\to0}\frac{h(t)-h(0)}{t}=\lim_{t\to0}|t|=0\]
+Check: \[x=1:\ 2(1)-1=1=1^2;\ \text{slopes }2=2\ \checkmark\]
+Why: \(\text{differentiability implies continuity, but a corner like }|x-2|\text{ is continuous without a derivative}\)
+Why not the others: (B) \(\text{slopes }1\ne2;\ g\text{ has a corner}\); (C) \(a+b=3\ne1\); (D) \(\text{slope }-1\ne2;\ g\text{ is continuous}\).
+Key point: \(\text{differentiable}\Rightarrow\text{continuous, not conversely}\)
+
+@@ Q51
+format: numerical
+sub_topic: Finding dy/dx by implicit differentiation for a folium-type cubic curve at a point, and simplifying an inverse-trigonometric function with a half-angle identity before differentiating
+Q: For the curve \(x^3+y^3=6xy\), what is \(\dfrac{dy}{dx}\) at \((3,3)\)? And for \(0<x<\pi\), what is \(\dfrac{d}{dx}\tan^{-1}\!\sqrt{\dfrac{1-\cos x}{1+\cos x}}\)?
+A) \(1;\ \dfrac12\)
+B) \(-1;\ 2\)
+C) \(-1;\ \dfrac12\)
+D) \(0;\ -\dfrac12\)
+KEY: C
+SOL:
+Answer: (C) \(-1;\ \dfrac12\)
+Given: \(x^3+y^3=6xy,\ (3,3);\ 0<x<\pi\)
+Formula/Principle: \(\text{differentiate both sides with }y=y(x);\ \dfrac{1-\cos x}{1+\cos x}=\tan^2\dfrac x2\)
+Step 1: \(3x^2+3y^2y'=6y+6xy'\Rightarrow y'=\dfrac{2y-x^2}{y^2-2x}\)
+Step 2: \(\text{At }(3,3):\ y'=\dfrac{6-9}{9-6}=-1\)
+Step 3: \(0<\tfrac x2<\tfrac\pi2\Rightarrow\sqrt{\tan^2\tfrac x2}=\tan\tfrac x2\Rightarrow\tan^{-1}\left(\tan\tfrac x2\right)=\tfrac x2\Rightarrow\dfrac12\)
+Worked derivation: \[\frac{1-\cos x}{1+\cos x}=\frac{2\sin^2(x/2)}{2\cos^2(x/2)}=\tan^2\frac x2\]
+Check: \[27+27=54=6\cdot3\cdot3\ \text{so }(3,3)\text{ lies on the curve}\ \checkmark\]
+Why: \(\text{implicit differentiation avoids solving the cubic for }y\text{, and the half-angle identity reduces the inverse tangent to a linear function}\)
+Why not the others: (A) \(\text{sign lost}\); (B) \(\text{uses }\tan x\text{ instead of }\tan\tfrac x2\); (D) \(\text{numerator and sign wrong}\).
+Key point: \(\tan^{-1}(\tan\theta)=\theta\text{ for }|\theta|<\tfrac\pi2\)
+
+@@ Q52
+format: numerical
+sub_topic: Counting critical points and finding absolute maximum and minimum values of a cubic on a closed interval by comparing critical and end-point values
+Q: For \(f(x)=2x^3-9x^2+12x+1\) on \([0,3]\), how many critical points lie in the interval, and what are the absolute maximum and minimum values?
+A) \(1;\ \max 6,\ \min 1\)
+B) \(2\ (x=1,2);\ \text{absolute max }10\text{ at }x=3,\ \text{absolute min }1\text{ at }x=0\)
+C) \(2;\ \max 6\text{ at }x=1,\ \min 5\text{ at }x=2\)
+D) \(3;\ \max 10,\ \min 5\)
+KEY: B
+SOL:
+Answer: (B) \(2;\ \max f=10\ (x=3),\ \min f=1\ (x=0)\)
+Given: \(f(x)=2x^3-9x^2+12x+1,\ [0,3]\)
+Formula/Principle: \(\text{absolute extrema on }[a,b]\text{ occur at critical points or end points}\)
+Step 1: \(f'(x)=6x^2-18x+12=6(x-1)(x-2)=0\Rightarrow x=1,2\)
+Step 2: \(f(0)=1,\ f(1)=6,\ f(2)=5,\ f(3)=10\)
+Step 3: \(\text{largest }10,\ \text{smallest }1\)
+Worked derivation: \[f(3)=54-81+36+1=10,\ f(2)=16-36+24+1=5\]
+Check: \[f''(1)=-6<0\ (\text{local max }6),\ f''(2)=6>0\ (\text{local min }5)\ \checkmark\]
+Why: \(\text{local extrema need not be absolute; the end points must also be compared}\)
+Why not the others: (A) \(\text{misses }x=2\text{ and }x=3\); (C) \(\text{local, not absolute, values}\); (D) \(\text{only two critical points; }1<5\).
+Key point: \(\text{compare }f\text{ at critical points and end points}\)
+
+@@ Q53
+format: numerical
+sub_topic: Integrating rational functions by partial fractions with distinct linear factors, including a definite integral
+Q: What are \(\displaystyle\int\frac{x\,dx}{(x-1)(x-2)}\) and \(\displaystyle\int_2^3\frac{dx}{(x-1)(x+2)}\)?
+A) \(\ln|x-1|+2\ln|x-2|+C;\ \tfrac13\ln\tfrac58\)
+B) \(-\ln|x-1|-2\ln|x-2|+C;\ \ln\tfrac85\)
+C) \(2\ln|x-1|-\ln|x-2|+C;\ \tfrac13\ln\tfrac85\)
+D) \(-\ln|x-1|+2\ln|x-2|+C;\ \tfrac13\ln\tfrac85\)
+KEY: D
+SOL:
+Answer: (D) \(-\ln|x-1|+2\ln|x-2|+C;\ \tfrac13\ln\tfrac85\)
+Given: \(\dfrac{x}{(x-1)(x-2)},\ \dfrac{1}{(x-1)(x+2)}\)
+Formula/Principle: \(\dfrac{px+q}{(x-a)(x-b)}=\dfrac{A}{x-a}+\dfrac{B}{x-b}\)
+Step 1: \(x=A(x-2)+B(x-1):\ x=1\Rightarrow A=-1;\ x=2\Rightarrow B=2\)
+Step 2: \(\dfrac{1}{(x-1)(x+2)}=\dfrac13\left(\dfrac{1}{x-1}-\dfrac{1}{x+2}\right)\)
+Step 3: \(\tfrac13\left[\ln\dfrac{x-1}{x+2}\right]_2^3=\tfrac13\left(\ln\tfrac25-\ln\tfrac14\right)=\tfrac13\ln\tfrac85\)
+Worked derivation: \[\int\frac{x\,dx}{(x-1)(x-2)}=\int\left(\frac{-1}{x-1}+\frac{2}{x-2}\right)dx=-\ln|x-1|+2\ln|x-2|+C\]
+Check: \[\frac{-1}{x-1}+\frac{2}{x-2}=\frac{-(x-2)+2(x-1)}{(x-1)(x-2)}=\frac{x}{(x-1)(x-2)}\ \checkmark\]
+Why: \(\text{splitting into simple fractions turns each piece into a logarithm}\)
+Why not the others: (A) \(\text{sign of }A\text{ wrong; limits reversed}\); (B) \(\text{signs wrong; factor }\tfrac13\text{ lost}\); (C) \(A,B\text{ swapped}\).
+Key point: \(\text{cover-up: }A=\left.\dfrac{px+q}{x-b}\right|_{x=a}\)
+
+@@ Q54
+format: numerical
+sub_topic: Finding the area between an ellipse and its auxiliary circle in the first quadrant, and the area of the sector of a circle bounded by the lines y = |x|
+Q: What is the area of the first-quadrant region lying between the ellipse \(\dfrac{x^2}{16}+\dfrac{y^2}{9}=1\) and its auxiliary circle \(x^2+y^2=16\), and the area of the region above both lines \(y=x\) and \(y=-x\) and inside the circle \(x^2+y^2=9\)?
+A) \(\pi;\ \dfrac{9\pi}{4}\)
+B) \(4\pi;\ \dfrac{9\pi}{2}\)
+C) \(\dfrac\pi4;\ \dfrac{9\pi}{4}\)
+D) \(3\pi;\ \dfrac{9\pi}{8}\)
+KEY: A
+SOL:
+Answer: (A) \(\pi;\ \dfrac{9\pi}{4}\)
+Given: \(a=4,\ b=3;\ \text{circle }r=3;\ \text{lines }y=\pm x\)
+Formula/Principle: \(\text{quarter ellipse}=\tfrac14\pi ab;\ \text{quarter circle}=\tfrac14\pi a^2;\ \text{sector}=\tfrac12r^2\theta\)
+Step 1: \(\text{quarter circle}=\tfrac14\pi(16)=4\pi;\ \text{quarter ellipse}=\tfrac14\pi(4)(3)=3\pi\)
+Step 2: \(\text{region between them}=4\pi-3\pi=\pi\)
+Step 3: \(\text{lines }y=\pm x\text{ make a right angle above the origin}\Rightarrow\theta=\tfrac\pi2;\ \text{sector}=\tfrac12(9)\left(\tfrac\pi2\right)=\tfrac{9\pi}{4}\)
+Worked derivation: \[\int_0^4\left(\sqrt{16-x^2}-\tfrac34\sqrt{16-x^2}\right)dx=\tfrac14\int_0^4\sqrt{16-x^2}\,dx=\tfrac14(4\pi)=\pi\]
+Check: \[\tfrac{9\pi}{4}=\tfrac14(9\pi)\ (\text{a quarter of the disc})\ \checkmark\]
+Why: \(\text{the ellipse lies inside its auxiliary circle, so the region between them is the difference of two quarter areas}\)
+Why not the others: (B) \(\text{gives the quarter circle and a half disc}\); (C) \(\text{divides by 4 twice}\); (D) \(\text{quarter ellipse alone; sector angle halved}\).
+Key point: \(\text{ellipse area }\pi ab;\ \text{sector }\tfrac12r^2\theta\)
+
+@@ Q55
+format: numerical
+sub_topic: Solving a homogeneous first-order differential equation with an initial condition by the substitution y = vx, and studying where the solution decreases and its minimum
+Q: Solve \(x\dfrac{dy}{dx}=x+y\) for \(x>0\) with \(y(1)=1\). Where is the solution decreasing, and what is its minimum value?
+A) \(y=x\ln x;\ \text{decreasing on }(0,e^{-1});\ \min=-e^{-1}\)
+B) \(y=x(\ln x+1);\ \text{decreasing on }(0,e^{-2});\ \min=-e^{-2}\text{ at }x=e^{-2}\)
+C) \(y=x+\ln x;\ \text{increasing everywhere};\ \text{no minimum}\)
+D) \(y=x(\ln x+1);\ \text{decreasing on }(e^{-2},\infty);\ \text{maximum }e^{-2}\)
+KEY: B
+SOL:
+Answer: (B) \(y=x(\ln x+1);\ \text{decreasing on }(0,e^{-2});\ \min=-e^{-2}\)
+Given: \(\dfrac{dy}{dx}=1+\dfrac yx,\ y(1)=1\)
+Formula/Principle: \(y=vx\Rightarrow\dfrac{dy}{dx}=v+x\dfrac{dv}{dx}\)
+Step 1: \(v+xv'=1+v\Rightarrow dv=\dfrac{dx}{x}\Rightarrow v=\ln x+C\)
+Step 2: \(y=x(\ln x+C);\ y(1)=1\Rightarrow C=1\)
+Step 3: \(y'=\ln x+2<0\iff x<e^{-2};\ y(e^{-2})=e^{-2}(-2+1)=-e^{-2}\)
+Worked derivation: \[\frac{dy}{dx}=\ln x+1+1=\ln x+2,\ \frac{d^2y}{dx^2}=\frac1x>0\]
+Check: \[x\,y'=x\ln x+2x,\ x+y=x+x\ln x+x\ \checkmark\]
+Why: \(\text{a homogeneous equation reduces to separable form with }v=y/x\)
+Why not the others: (A) \(C\text{ omitted, so }y(1)\ne1\); (C) \(\text{not a solution}\); (D) \(\text{monotonicity reversed}\).
+Key point: \(\text{homogeneous DE: put }y=vx\)
+
+@@ Q56
+format: numerical
+sub_topic: Using the inclusion–exclusion principle for three sets to find the union and the numbers belonging to exactly one, exactly two and all three sets
+Q: In a survey, \(n(A)=40,\ n(B)=50,\ n(C)=60,\ n(A\cap B)=20,\ n(B\cap C)=25,\ n(A\cap C)=15,\ n(A\cap B\cap C)=10\). How many are in at least one set, exactly one set and exactly two sets?
+A) \(150;\ 60;\ 30\)
+B) \(90;\ 50;\ 30\)
+C) \(100;\ 60;\ 30\)
+D) \(100;\ 70;\ 20\)
+KEY: C
+SOL:
+Answer: (C) \(100;\ 60;\ 30\)
+Given: \(\text{the seven counts above}\)
+Formula/Principle: \(n(A\cup B\cup C)=\sum n(A)-\sum n(A\cap B)+n(A\cap B\cap C)\)
+Step 1: \(150-60+10=100\)
+Step 2: \(\text{only }A=40-20-15+10=15,\ \text{only }B=15,\ \text{only }C=30\Rightarrow60\)
+Step 3: \(\text{exactly two}=(20-10)+(25-10)+(15-10)=30\)
+Worked derivation: \[\text{only }C=60-15-25+10=30\]
+Check: \[60+30+10=100\ \checkmark\]
+Why: \(\text{each pairwise overlap counts the triple region once too often, so it is removed before splitting the union}\)
+Why not the others: (A) \(\text{no subtraction of overlaps}\); (B) \(\text{forgets to add back the triple}\); (D) \(\text{mixes exactly two with at least two}\).
+Key point: \(\text{inclusion–exclusion; regions add to the union}\)
+
+@@ Q57
+format: numerical
+sub_topic: Counting all relations, reflexive relations, symmetric relations and relations that are both reflexive and symmetric on a three-element set
+Q: On \(A=\{1,2,3\}\), how many relations, reflexive relations, symmetric relations, and relations that are both reflexive and symmetric are there?
+A) \(512;\ 64;\ 64;\ 8\)
+B) \(512;\ 8;\ 64;\ 8\)
+C) \(9;\ 3;\ 6;\ 1\)
+D) \(256;\ 64;\ 32;\ 4\)
+KEY: A
+SOL:
+Answer: (A) \(2^9=512;\ 2^6=64;\ 2^6=64;\ 2^3=8\)
+Given: \(n=3,\ |A\times A|=9\)
+Formula/Principle: \(\text{a relation is any subset of }A\times A;\ \text{count free choices}\)
+Step 1: \(\text{all relations}=2^{9}=512\)
+Step 2: \(\text{reflexive: 3 diagonal pairs forced, 6 others free}\Rightarrow2^6=64\)
+Step 3: \(\text{symmetric: 3 diagonal + 3 unordered pairs free}\Rightarrow2^6=64;\ \text{both: only 3 unordered pairs free}\Rightarrow2^3=8\)
+Worked derivation: \[\text{reflexive: }2^{n^2-n};\ \text{symmetric: }2^{n(n+1)/2};\ \text{both: }2^{n(n-1)/2}\]
+Check: \[n=3:\ 2^6,\ 2^6,\ 2^3\ \checkmark\]
+Why: \(\text{each condition removes or ties together some of the pairs that could be chosen freely}\)
+Why not the others: (B) \(\text{reflexive count wrong}\); (C) \(\text{counts pairs, not subsets}\); (D) \(\text{wrong powers}\).
+Key point: \(\text{relations on an }n\text{-set: }2^{n^2}\)
+
+@@ Q58
+format: numerical
+sub_topic: Using sum-to-product formulae on given values of sin A + sin B and cos A + cos B to find tan((A+B)/2), cos(A+B) and cos(A−B)
+Q: If \(\sin A+\sin B=\dfrac12\) and \(\cos A+\cos B=\dfrac{\sqrt3}{2}\), what are \(\tan\dfrac{A+B}{2}\), \(\cos(A+B)\) and \(\cos(A-B)\)?
+A) \(\sqrt3;\ -\dfrac12;\ \dfrac12\)
+B) \(\dfrac1{\sqrt3};\ \dfrac12;\ \dfrac12\)
+C) \(\dfrac1{\sqrt3};\ -\dfrac12;\ -\dfrac12\)
+D) \(\dfrac1{\sqrt3};\ \dfrac12;\ -\dfrac12\)
+KEY: D
+SOL:
+Answer: (D) \(\dfrac1{\sqrt3};\ \dfrac12;\ -\dfrac12\)
+Given: \(\sin A+\sin B=\tfrac12,\ \cos A+\cos B=\tfrac{\sqrt3}2\)
+Formula/Principle: \(\sin A+\sin B=2\sin\tfrac{A+B}2\cos\tfrac{A-B}2;\ \cos A+\cos B=2\cos\tfrac{A+B}2\cos\tfrac{A-B}2\)
+Step 1: \(\text{divide: }\tan\tfrac{A+B}{2}=\dfrac{1/2}{\sqrt3/2}=\dfrac1{\sqrt3}\)
+Step 2: \(\cos(A+B)=\dfrac{1-\tan^2\frac{A+B}2}{1+\tan^2\frac{A+B}2}=\dfrac{1-\frac13}{1+\frac13}=\dfrac12\)
+Step 3: \(\text{square and add: }2+2\cos(A-B)=\tfrac14+\tfrac34=1\Rightarrow\cos(A-B)=-\tfrac12\)
+Worked derivation: \[(\sin A+\sin B)^2+(\cos A+\cos B)^2=2+2(\cos A\cos B+\sin A\sin B)=2+2\cos(A-B)\]
+Check: \[\cos\tfrac{A-B}2=\pm\tfrac12\Rightarrow\cos(A-B)=2\cdot\tfrac14-1=-\tfrac12\ \checkmark\]
+Why: \(\text{both sums share the factor }2\cos\tfrac{A-B}2\text{, so their ratio isolates the half-sum angle}\)
+Why not the others: (A) \(\text{ratio inverted}\); (B) \(\text{sign of }\cos(A-B)\text{ wrong}\); (C) \(\cos(A+B)\text{ sign wrong}\).
+Key point: \(\dfrac{\sin A+\sin B}{\cos A+\cos B}=\tan\dfrac{A+B}{2}\)
+
+@@ Q59
+format: numerical
+sub_topic: Using the discriminant, the product of roots and the sign of f(1) to find parameter values for equal roots, roots of opposite sign, and 1 lying between the roots of a quadratic
+Q: For \(f(x)=x^2-2kx+(k+6)\), for which \(k\) are the roots of \(f(x)=0\) equal, for which are they of opposite sign, and for which does \(1\) lie strictly between them?
+A) \(k=3,-2;\ k>-6;\ k<7\)
+B) \(k=-3,2;\ k<-6;\ k>7\)
+C) \(k=3,-2;\ k<-6;\ k>7\)
+D) \(k=3,-2;\ k<6;\ k>1\)
+KEY: C
+SOL:
+Answer: (C) \(k=3\text{ or }-2;\ k<-6;\ k>7\)
+Given: \(a=1,\ b=-2k,\ c=k+6\)
+Formula/Principle: \(D=0\text{ for equal roots};\ \alpha\beta<0\text{ for opposite signs};\ a\,f(1)<0\text{ for }1\text{ between the roots}\)
+Step 1: \(\tfrac D4=k^2-k-6=(k-3)(k+2)=0\Rightarrow k=3,-2\)
+Step 2: \(\alpha\beta=k+6<0\Rightarrow k<-6\)
+Step 3: \(f(1)=1-2k+k+6=7-k<0\Rightarrow k>7\)
+Worked derivation: \[a=1>0,\ f(1)<0\Rightarrow\text{the upward parabola is below the axis at }x=1\Rightarrow\alpha<1<\beta\]
+Check: \[k=8:\ x^2-16x+14,\ f(1)=-1<0\ \checkmark\]
+Why: \(\text{a negative product or a negative value at a point forces the parabola to cross the axis on both sides, so real roots are guaranteed}\)
+Why not the others: (A) \(\text{inequalities reversed}\); (B) \(\text{factorisation signs wrong}\); (D) \(\text{wrong product and }f(1)\).
+Key point: \(af(p)<0\iff p\text{ lies between the roots}\)
+
+@@ Q60
+format: numerical
+sub_topic: Finding the values of a parameter for which a cubic has three, two or one distinct real roots by comparing the parameter with the local extreme values
+Q: For \(x^3-3x+k=0\), for which \(k\) are there three distinct real roots, and for which \(k\) exactly two distinct real roots?
+A) \(|k|>2;\ k=0\)
+B) \(|k|<2;\ k=\pm2\)
+C) \(|k|\le2;\ k=\pm1\)
+D) \(k>2;\ k=2\)
+KEY: B
+SOL:
+Answer: (B) \(-2<k<2;\ k=\pm2\)
+Given: \(g(x)=x^3-3x,\ \text{roots where }g(x)=-k\)
+Formula/Principle: \(\text{a horizontal line }y=-k\text{ meets the graph of }g\text{ three times between its local extreme values}\)
+Step 1: \(g'(x)=3x^2-3=0\Rightarrow x=\pm1\)
+Step 2: \(g(-1)=2\ (\text{local max}),\ g(1)=-2\ (\text{local min})\)
+Step 3: \(-2<-k<2\iff|k|<2\Rightarrow\text{three roots};\ -k=\pm2\Rightarrow\text{a double root}\Rightarrow\text{two distinct roots}\)
+Worked derivation: \[k=2:\ x^3-3x+2=(x-1)^2(x+2)\]
+Check: \[k=-2:\ x^3-3x-2=(x+1)^2(x-2)\ \checkmark\]
+Why: \(\text{the number of crossings depends on where the line lies relative to the turning values}\)
+Why not the others: (A) \(|k|>2\text{ gives one root}\); (C) \(k=\pm2\text{ give a repeated root}\); (D) \(k>2\text{ gives one root}\).
+Key point: \(\text{three real roots}\iff f(\text{local max})\cdot f(\text{local min})<0\)
