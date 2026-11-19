@@ -1,0 +1,439 @@
+@@ Q61
+format: numerical
+sub_topic: Using vector equations of motion with constant acceleration in a plane to find the time, the other coordinate and the velocity when one coordinate reaches a given value
+Q: A particle starts from the origin at \(t=0\) with velocity \(4\hat i\ \text{m s}^{-1}\) and moves in the \(x\)-\(y\) plane with constant acceleration \((2\hat i+3\hat j)\ \text{m s}^{-2}\). When its \(x\)-coordinate is \(32\text{ m}\), what are \(t\), its \(y\)-coordinate and its speed?
+A) \(t=8\text{ s};\ y=96\text{ m};\ 24\text{ m s}^{-1}\)
+B) \(t=2\text{ s};\ y=6\text{ m};\ 10\text{ m s}^{-1}\)
+C) \(t=4\text{ s};\ y=48\text{ m};\ 12\text{ m s}^{-1}\)
+D) \(t=4\text{ s};\ y=24\text{ m};\ 12\sqrt2\approx17\text{ m s}^{-1}\ \text{at }45^\circ\text{ to the }x\text{-axis}\)
+KEY: D
+SOL:
+Answer: (D) \(t=4\text{ s},\ y=24\text{ m},\ v=12\sqrt2\text{ m s}^{-1}\)
+Given: \(\vec u=4\hat i,\ \vec a=2\hat i+3\hat j,\ x=32\text{ m}\)
+Formula/Principle: \(\vec r=\vec ut+\tfrac12\vec at^2;\ \vec v=\vec u+\vec at\ (\text{components independent})\)
+Step 1: \(x=4t+t^2=32\Rightarrow t^2+4t-32=0\Rightarrow(t+8)(t-4)=0\Rightarrow t=4\text{ s}\)
+Step 2: \(y=\tfrac12(3)t^2=1.5\times16=24\text{ m}\)
+Step 3: \(v_x=4+2(4)=12,\ v_y=3(4)=12\Rightarrow v=12\sqrt2\approx17.0\text{ m s}^{-1}\)
+Worked derivation: \[\vec r(t)=(4t+t^2)\hat i+1.5t^2\hat j,\quad \vec v(t)=(4+2t)\hat i+3t\,\hat j\]
+Check: \[v^2=v_x^2+v_y^2=144+144=288,\ \sqrt{288}=16.97\ \text{m s}^{-1};\ \tan\theta=\tfrac{12}{12}=1\Rightarrow45^\circ\ \checkmark\]
+Why: \(\text{motion along }x\text{ and }y\text{ are independent, so the time from the }x\text{-equation fixes the }y\text{-motion}\)
+Why not the others: (A) \(t=8\text{ gives }x=96\); (B) \(t=2\text{ gives }x=12\); (C) \(y\text{ and speed miscomputed}\).
+Key point: \(\text{treat }x\text{ and }y\text{ separately with the same }t\)
+
+@@ Q62
+format: numerical
+sub_topic: Reading the graph of friction force against applied force to find limiting static friction, kinetic friction and the acceleration once sliding starts, and comparing rolling friction
+Q: A \(2\text{ kg}\) block rests on a horizontal floor (\(\mu_s=0.5,\ \mu_k=0.3,\ g=10\text{ m s}^{-2}\)). A horizontal force \(F\) is increased slowly from zero. What is the friction force when \(F=8\text{ N}\), the largest \(F\) before sliding, and the acceleration when \(F=12\text{ N}\)? How does the friction-versus-\(F\) graph look?
+A) \(8\text{ N};\ 6\text{ N};\ 6\text{ m s}^{-2};\ \text{a straight line through the origin throughout}\)
+B) \(8\text{ N (static friction equals the applied force)};\ 10\text{ N};\ 3\text{ m s}^{-2};\ \text{friction rises along }f=F\text{ up to }\mu_sN=10\text{ N, then drops to the constant kinetic value }\mu_kN=6\text{ N; rolling friction is much smaller still}\)
+C) \(10\text{ N};\ 10\text{ N};\ 1\text{ m s}^{-2};\ \text{friction stays at 10 N after sliding}\)
+D) \(0;\ 6\text{ N};\ 3\text{ m s}^{-2};\ \text{friction is zero until sliding}\)
+KEY: B
+SOL:
+Answer: (B) \(f=8\text{ N};\ F_{\max}=10\text{ N};\ a=3\text{ m s}^{-2}\)
+Given: \(m=2\text{ kg},\ N=mg=20\text{ N},\ \mu_s=0.5,\ \mu_k=0.3\)
+Formula/Principle: \(f_s\le\mu_sN;\ f_k=\mu_kN;\ a=\dfrac{F-f_k}{m}\)
+Step 1: \(\mu_sN=10\text{ N}>8\text{ N}\Rightarrow\text{no sliding},\ f_s=8\text{ N}\)
+Step 2: \(\text{sliding starts when }F>10\text{ N}\)
+Step 3: \(f_k=0.3\times20=6\text{ N};\ a=\dfrac{12-6}{2}=3\text{ m s}^{-2}\)
+Worked derivation: \[\text{static: }f_s=F\ (F\le\mu_sN);\quad\text{kinetic: }f_k=\mu_kN=\text{constant},\ \mu_k<\mu_s\]
+Check: \[F=12\text{ N}:\ \text{net force}=12-6=6\text{ N}=ma=2\times3\ \checkmark\]
+Why: \(\text{static friction is self-adjusting up to its limit, while kinetic friction is fixed and smaller}\)
+Why not the others: (A) \(\text{limit is }\mu_sN,\ \text{acceleration uses }f_k\); (C) \(\text{friction drops to }\mu_kN\text{ after sliding}\); (D) \(\text{static friction balances }F\).
+Key point: \(f_s=F\le\mu_sN;\ f_k=\mu_kN<\mu_sN\)
+
+@@ Q63
+format: numerical
+sub_topic: Distinguishing conservative and non-conservative forces by path dependence, and scaling the power needed when a resistive force grows with the square of speed
+Q: Which statement about conservative forces and power is correct? A car moving at constant speed faces a drag force proportional to \(v^2\); a pump lifts \(0.01\text{ m}^3\text{ s}^{-1}\) of water through \(20\text{ m}\) (\(\rho=1000\text{ kg m}^{-3},\ g=10\text{ m s}^{-2}\)).
+A) Work done by a conservative force (gravity, spring force) depends only on the end points and is zero round a closed path, while work done by friction depends on the path and is negative round a closed path; since \(P=Fv\propto v^3\), doubling the car's speed needs 8 times the power; the pump's power is \(\rho gQh=2000\text{ W}\)
+B) Friction is conservative because it always opposes motion; doubling speed doubles the power; pump power 200 W
+C) Work by gravity depends on the path; doubling speed needs 4 times the power; pump power 20 kW
+D) Every force is conservative if energy is conserved overall; doubling speed needs 16 times the power; pump power 2 W
+KEY: A
+SOL:
+Answer: (A) Conservative work path-independent; \(P\propto v^3\Rightarrow8\times\); pump power 2000 W.
+Given: \(F_{\text{drag}}=kv^2;\ Q=0.01\text{ m}^3\text{ s}^{-1},\ h=20\text{ m}\)
+Formula/Principle: \(W_{\text{cons}}=-\Delta U\ (\text{path independent});\ P=\vec F\cdot\vec v;\ P_{\text{pump}}=\rho gQh\)
+Step 1: \(\text{at constant speed engine force}=kv^2\Rightarrow P=kv^3\)
+Step 2: \(v\to2v\Rightarrow P\to2^3P=8P\)
+Step 3: \(P_{\text{pump}}=1000\times10\times0.01\times20=2000\text{ W}\)
+Worked derivation: \[P=\frac{dW}{dt}=\frac{(dm)gh}{dt}=\rho\frac{dV}{dt}gh=\rho gQh\]
+Check: \[\text{mass lifted per second}=10\ \text{kg};\ \ 10\times10\times20=2000\ \text{J s}^{-1}\ \checkmark\]
+Why: \(\text{a conservative force has a potential energy, so its work depends only on the change in position}\)
+Why not the others: (B) \(\text{friction is non-conservative; }P\propto v^3\); (C) \(\text{gravity is conservative}\); (D) \(\text{dissipative forces are not conservative}\).
+Key point: \(\oint\vec F_{\text{cons}}\cdot d\vec r=0;\ P=Fv\)
+
+@@ Q64
+format: experiment
+sub_topic: Measuring how angular velocity and rotational kinetic energy change when a person on a rotating stool pulls in held masses, using conservation of angular momentum
+Q: A student sits on a frictionless rotating stool holding dumbbells with arms outstretched; the moment of inertia of the system is \(6.0\text{ kg m}^2\) and it turns at \(2.0\text{ rad s}^{-1}\). The student pulls the dumbbells in, reducing \(I\) to \(2.0\text{ kg m}^2\). What are the new angular velocity and the kinetic energies before and after?
+A) \(2.0\text{ rad s}^{-1};\ 12\text{ J};\ 12\text{ J}\)
+B) \(0.67\text{ rad s}^{-1};\ 12\text{ J};\ 0.44\text{ J}\)
+C) \(6.0\text{ rad s}^{-1};\ 12\text{ J before};\ 36\text{ J after — angular momentum is conserved since there is no external torque, but kinetic energy increases, the extra 24 J coming from work done by the student's muscles in pulling the masses inward}\)
+D) \(6.0\text{ rad s}^{-1};\ 12\text{ J};\ 12\text{ J, since energy is always conserved}\)
+KEY: C
+SOL:
+Answer: (C) \(\omega_2=6.0\text{ rad s}^{-1};\ K_1=12\text{ J},\ K_2=36\text{ J}\)
+Given: \(I_1=6.0,\ \omega_1=2.0;\ I_2=2.0\)
+Formula/Principle: \(\tau_{\text{ext}}=0\Rightarrow I_1\omega_1=I_2\omega_2;\ K=\tfrac12I\omega^2=\dfrac{L^2}{2I}\)
+Step 1: \(L=6.0\times2.0=12\text{ kg m}^2\text{ s}^{-1}\Rightarrow\omega_2=12/2=6.0\text{ rad s}^{-1}\)
+Step 2: \(K_1=\tfrac12\times6\times4=12\text{ J}\)
+Step 3: \(K_2=\tfrac12\times2\times36=36\text{ J}\)
+Worked derivation: \[K=\frac{L^2}{2I}\Rightarrow\frac{K_2}{K_1}=\frac{I_1}{I_2}=3\]
+Check: \[L_2=2.0\times6.0=12=L_1\ \checkmark\]
+Why: \(\text{internal forces cannot change total angular momentum, but they can do work and change kinetic energy}\)
+Why not the others: (A) \(\omega\text{ must rise as }I\text{ falls}\); (B) \(\text{used }\omega\propto I\text{ instead of }1/I\); (D) \(\text{kinetic energy is not conserved here}\).
+Key point: \(I\omega=\text{const};\ K=L^2/2I\text{ rises when }I\text{ falls}\)
+
+@@ Q65
+format: numerical
+sub_topic: Calculating volume strain from bulk modulus, shear deformation from shear modulus, and interpreting Poisson ratio and the slope of a stress–strain graph
+Q: Water (\(B=2.2\times10^9\text{ Pa}\)) is subjected to an extra pressure of \(1.1\times10^7\text{ Pa}\). An aluminium cube of side \(0.10\text{ m}\) (\(G=2.5\times10^{10}\text{ Pa}\)) has a tangential force of \(1.0\times10^4\text{ N}\) on its top face with the bottom fixed. What are the fractional volume change of water and the lateral displacement of the top face, and which statement about elastic moduli is correct?
+A) \(5\times10^{-2};\ 4\times10^{-4}\text{ m};\ \text{Poisson ratio is longitudinal strain divided by lateral strain}\)
+B) \(5\times10^{-3}\ (\text{decrease});\ 4\times10^{-6}\text{ m};\ \text{Poisson ratio is lateral strain divided by longitudinal strain (about 0.28 for steel), and the slope of the linear part of a tensile stress–strain graph gives Young's modulus}\)
+C) \(2\times10^{-2};\ 4\times10^{-5}\text{ m};\ \text{liquids have no bulk modulus}\)
+D) \(5\times10^{-3};\ 4\times10^{-6}\text{ m};\ \text{shear modulus is usually larger than Young's modulus}\)
+KEY: B
+SOL:
+Answer: (B) \(\Delta V/V=5\times10^{-3};\ \Delta x=4\times10^{-6}\text{ m};\ \text{Poisson ratio and Young's modulus correctly defined}\)
+Given: \(B=2.2\times10^9,\ \Delta p=1.1\times10^7;\ L=0.10\text{ m},\ A=0.010\text{ m}^2,\ F=1.0\times10^4\text{ N},\ G=2.5\times10^{10}\)
+Formula/Principle: \(B=-\dfrac{\Delta p}{\Delta V/V};\ G=\dfrac{F/A}{\Delta x/L};\ \sigma=\dfrac{\text{lateral strain}}{\text{longitudinal strain}}\)
+Step 1: \(\dfrac{\Delta V}{V}=\dfrac{1.1\times10^7}{2.2\times10^9}=5\times10^{-3}\)
+Step 2: \(\text{shear stress}=\dfrac{10^4}{0.010}=10^6\text{ Pa}\Rightarrow\theta=\dfrac{10^6}{2.5\times10^{10}}=4\times10^{-5}\)
+Step 3: \(\Delta x=\theta L=4\times10^{-5}\times0.10=4\times10^{-6}\text{ m}\)
+Worked derivation: \[\Delta x=\frac{FL}{AG}=\frac{10^4\times0.10}{0.010\times2.5\times10^{10}}=4\times10^{-6}\ \text{m}\]
+Check: \[B\cdot\frac{\Delta V}{V}=2.2\times10^9\times5\times10^{-3}=1.1\times10^7\ \text{Pa}\ \checkmark\]
+Why: \(\text{each modulus is stress divided by the strain it produces, so a large modulus means a small deformation}\)
+Why not the others: (A) \(\text{strains ten and a hundred times too big; ratio inverted}\); (C) \(\text{liquids have bulk modulus}\); (D) \(G\text{ is usually about one third of }Y\).
+Key point: \(\text{modulus}=\text{stress}/\text{strain};\ \sigma=\text{lateral}/\text{longitudinal strain}\)
+
+@@ Q66
+format: numerical
+sub_topic: Finding the net work and heat in a rectangular cyclic process on a P–V diagram, its sign from the direction of traversal, and how it scales with the size of the cycle
+Q: An ideal gas is taken clockwise round a rectangle on a P–V diagram between \(P=1.0\times10^5\) and \(3.0\times10^5\text{ Pa}\) and \(V=1.0\) and \(3.0\text{ L}\). Find the net work done by the gas, the net heat absorbed and \(\Delta U\) per cycle. What happens to the net work if both the pressure range and the volume range are doubled?
+A) \(-400\text{ J};\ -400\text{ J};\ 0;\ \text{doubles}\)
+B) \(600\text{ J};\ 0;\ 600\text{ J};\ \text{unchanged}\)
+C) \(200\text{ J};\ 200\text{ J};\ 0;\ \text{doubles}\)
+D) \(+400\text{ J};\ +400\text{ J absorbed};\ \Delta U=0\ (\text{state function});\ \text{quadruples, since the enclosed area}=\Delta P\times\Delta V\)
+KEY: D
+SOL:
+Answer: (D) \(W=+400\text{ J},\ Q=+400\text{ J},\ \Delta U=0;\ \text{work quadruples}\)
+Given: \(\Delta P=2.0\times10^5\text{ Pa},\ \Delta V=2.0\times10^{-3}\text{ m}^3;\ \text{clockwise}\)
+Formula/Principle: \(W_{\text{cycle}}=\oint P\,dV=\text{area enclosed};\ \Delta U_{\text{cycle}}=0\Rightarrow Q=W\)
+Step 1: \(\text{area}=2.0\times10^5\times2.0\times10^{-3}=400\text{ J}\)
+Step 2: \(\text{clockwise}\Rightarrow\text{expansion at high }P,\ \text{compression at low }P\Rightarrow W>0\)
+Step 3: \(\Delta U=0\Rightarrow Q=W=+400\text{ J};\ (2\Delta P)(2\Delta V)=4\times\text{area}\)
+Worked derivation: \[W=P_{\text{high}}\Delta V-P_{\text{low}}\Delta V=(3.0-1.0)\times10^5\times2.0\times10^{-3}=400\ \text{J}\]
+Check: \[\text{work at high }P:\ 3\times10^5\times2\times10^{-3}=600\ \text{J};\ \text{at low }P:\ 200\ \text{J};\ 600-200=400\ \checkmark\]
+Why: \(\text{the gas does more work expanding at high pressure than is done on it when compressed at low pressure}\)
+Why not the others: (A) \(\text{clockwise cycles give positive work; area scales by 4}\); (B) \(\Delta U=0\text{ for a cycle}\); (C) \(\text{area miscomputed}\).
+Key point: \(W_{\text{cycle}}=\text{enclosed area};\ \text{clockwise}\Rightarrow W>0\)
+
+@@ Q67
+format: conceptual
+sub_topic: Explaining the kinetic interpretation of temperature, why pressure rises on heating at constant volume, and how molecular speeds compare for different gases and processes
+Q: Which statement based on the kinetic theory of an ideal gas is correct?
+A) The average translational kinetic energy of a molecule is \(\tfrac32k_BT\), depending only on temperature and not on the nature of the gas, so at the same temperature hydrogen molecules move faster than oxygen molecules; heating at constant volume raises \(v_{\text{rms}}^2\propto T\) and hence the momentum transferred to the walls per second, so \(P\propto T\); compressing the gas isothermally leaves \(v_{\text{rms}}\) unchanged but increases pressure because more molecules strike unit area per second; and in a mixture each gas exerts its own partial pressure (Dalton's law)
+B) At the same temperature heavier molecules have greater average kinetic energy
+C) Isothermal compression increases the rms speed, which is why pressure rises
+D) Pressure arises from attraction between molecules and the walls
+KEY: A
+SOL:
+Answer: (A) \(\bar K=\tfrac32k_BT\) independent of the gas; \(P\propto T\) at constant volume; isothermal compression raises collision rate, not speed.
+Given: \(\text{ideal gas};\ PV=\tfrac13Nmv_{\text{rms}}^2\)
+Formula/Principle: \(P=\tfrac13nmv_{\text{rms}}^2\ (n=N/V);\ \tfrac12mv_{\text{rms}}^2=\tfrac32k_BT\)
+Step 1: \(\bar K\text{ depends only on }T\Rightarrow\text{lighter molecules have larger }v_{\text{rms}}\)
+Step 2: \(V\text{ fixed},\ T\uparrow\Rightarrow v_{\text{rms}}^2\uparrow\Rightarrow P\uparrow\propto T\)
+Step 3: \(T\text{ fixed},\ V\downarrow\Rightarrow n\uparrow\Rightarrow P\uparrow,\ v_{\text{rms}}\text{ unchanged}\)
+Worked derivation: \[PV=\frac13Nm\overline{v^2}=\frac23N\left(\frac12m\overline{v^2}\right)=Nk_BT\Rightarrow\frac12m\overline{v^2}=\frac32k_BT\]
+Check: \[\frac{v_{H_2}}{v_{O_2}}=\sqrt{\frac{32}{2}}=4>1\ \text{at the same }T\ \checkmark\]
+Why: \(\text{temperature is a measure of average molecular kinetic energy, and pressure is the rate of momentum delivered to the walls}\)
+Why not the others: (B) \(\bar K\text{ is the same for all gases at a given }T\); (C) \(\text{speed depends only on }T\); (D) \(\text{pressure comes from molecular collisions with the walls}\).
+Key point: \(\bar K=\tfrac32k_BT;\ P=\tfrac13nm\overline{v^2}\)
+
+@@ Q68
+format: numerical
+sub_topic: Comparing time periods of spring–mass systems when the mass changes, springs are combined in series or parallel, and a spring is cut in half
+Q: A mass \(m\) on a spring of constant \(k\) oscillates with period \(T_0=1.0\text{ s}\). Find the period when (i) the mass is made \(4m\), (ii) two identical springs are joined in series, (iii) in parallel, and (iv) the spring is cut in half and one half is used.
+A) \(4\text{ s};\ 2\text{ s};\ 0.5\text{ s};\ 0.5\text{ s}\)
+B) \(2\text{ s};\ 0.71\text{ s};\ 1.41\text{ s};\ 1.41\text{ s}\)
+C) \(2.0\text{ s};\ 1.41\text{ s};\ 0.71\text{ s};\ 0.71\text{ s}\)
+D) \(0.5\text{ s};\ 1.41\text{ s};\ 0.71\text{ s};\ 2\text{ s}\)
+KEY: C
+SOL:
+Answer: (C) \(2.0,\ 1.41,\ 0.71,\ 0.71\text{ s}\)
+Given: \(T_0=2\pi\sqrt{m/k}=1.0\text{ s}\)
+Formula/Principle: \(T=2\pi\sqrt{m/k};\ k_{\text{series}}=\dfrac{k}{2},\ k_{\text{parallel}}=2k;\ k\propto\dfrac1{\text{length}}\)
+Step 1: \(4m\Rightarrow T=\sqrt4\,T_0=2.0\text{ s}\)
+Step 2: \(\text{series }k/2\Rightarrow T=\sqrt2\,T_0=1.41\text{ s};\ \text{parallel }2k\Rightarrow T=T_0/\sqrt2=0.71\text{ s}\)
+Step 3: \(\text{half spring has }2k\Rightarrow T=0.71\text{ s}\)
+Worked derivation: \[\text{series: }\frac1{k_s}=\frac1k+\frac1k\Rightarrow k_s=\frac k2;\quad\text{parallel: }k_p=k+k=2k\]
+Check: \[T\propto\sqrt{m/k}:\ \frac{T_{\text{series}}}{T_{\text{parallel}}}=\sqrt{\frac{2k}{k/2}}=2,\ \ \frac{1.41}{0.71}\approx2\ \checkmark\]
+Why: \(\text{a stiffer spring pulls back harder for the same stretch, so it oscillates faster}\)
+Why not the others: (A) \(T\propto\sqrt m,\ \text{not }m\); (B) \(\text{series and parallel swapped}\); (D) \(\text{mass effect inverted}\).
+Key point: \(T=2\pi\sqrt{m/k};\ \text{series softer, parallel and shorter stiffer}\)
+
+@@ Q69
+format: numerical
+sub_topic: Calculating the maximum torque on an electric dipole in a uniform field, the work done in rotating it, and its stable and unstable equilibrium positions using potential energy
+Q: A dipole of moment \(p=4.0\times10^{-9}\text{ C m}\) is placed in a uniform field \(E=5.0\times10^4\text{ N C}^{-1}\). Find the maximum torque, the work needed to turn it from \(\theta=0^\circ\) to \(180^\circ\), and its equilibrium positions.
+A) \(1.0\times10^{-4}\text{ N m};\ 2.0\times10^{-4}\text{ J};\ \text{stable at }90^\circ\)
+B) \(2.0\times10^{-4}\text{ N m};\ 0;\ \text{both positions stable}\)
+C) \(4.0\times10^{-4}\text{ N m};\ 2.0\times10^{-4}\text{ J};\ \text{unstable at }0^\circ\)
+D) \(2.0\times10^{-4}\text{ N m (at }\theta=90^\circ);\ 4.0\times10^{-4}\text{ J}=2pE;\ \text{stable equilibrium at }\theta=0^\circ\ (U=-pE,\ \text{minimum}),\ \text{unstable at }180^\circ\ (U=+pE,\ \text{maximum})\)
+KEY: D
+SOL:
+Answer: (D) \(\tau_{\max}=2.0\times10^{-4}\text{ N m};\ W=4.0\times10^{-4}\text{ J};\ \text{stable at }0^\circ,\ \text{unstable at }180^\circ\)
+Given: \(p=4.0\times10^{-9}\text{ C m},\ E=5.0\times10^4\text{ N C}^{-1}\)
+Formula/Principle: \(\tau=pE\sin\theta;\ U=-pE\cos\theta;\ W=U_f-U_i\)
+Step 1: \(\tau_{\max}=pE=4.0\times10^{-9}\times5.0\times10^4=2.0\times10^{-4}\text{ N m}\)
+Step 2: \(W=(-pE\cos180^\circ)-(-pE\cos0^\circ)=2pE=4.0\times10^{-4}\text{ J}\)
+Step 3: \(U\text{ minimum at }0^\circ\ (\text{stable}),\ \text{maximum at }180^\circ\ (\text{unstable})\)
+Worked derivation: \[W=\int_0^{\pi}pE\sin\theta\,d\theta=pE[-\cos\theta]_0^{\pi}=2pE\]
+Check: \[\tau=0\text{ at both }0^\circ\text{ and }180^\circ,\ \text{so both are equilibria};\ \text{a small tilt from }0^\circ\text{ gives a restoring torque}\ \checkmark\]
+Why: \(\text{the field exerts equal and opposite forces on the two charges, giving a torque that aligns }\vec p\text{ with }\vec E\)
+Why not the others: (A) \(\text{torque halved; }90^\circ\text{ is not an equilibrium}\); (B) \(\text{work is not zero; }180^\circ\text{ is unstable}\); (C) \(\text{torque doubled; }0^\circ\text{ is stable}\).
+Key point: \(\tau=pE\sin\theta,\ U=-pE\cos\theta;\ W_{0\to\pi}=2pE\)
+
+@@ Q70
+format: numerical
+sub_topic: Finding the field and potential inside and on the surface of a charged conducting sphere, its surface charge density, and the basis of electrostatic shielding
+Q: A conducting sphere of radius \(0.10\text{ m}\) carries \(2.0\times10^{-8}\text{ C}\) (\(k=9\times10^9\text{ N m}^2\text{ C}^{-2},\ \varepsilon_0=8.85\times10^{-12}\)). Find the field at its centre, the potential at its centre, the field just outside the surface, and the surface charge density.
+A) \(0;\ 1800\text{ V};\ 1.8\times10^4\text{ N C}^{-1};\ 1.6\times10^{-7}\text{ C m}^{-2};\ \text{the charge resides on the outer surface and the cavity is field-free (electrostatic shielding)}\)
+B) \(1.8\times10^4\text{ N C}^{-1};\ 0;\ 1.8\times10^4\text{ N C}^{-1};\ 1.6\times10^{-7}\text{ C m}^{-2}\)
+C) \(0;\ 0;\ 1800\text{ N C}^{-1};\ 6.4\times10^{-7}\text{ C m}^{-2}\)
+D) \(0;\ 180\text{ V};\ 1.8\times10^3\text{ N C}^{-1};\ 1.6\times10^{-6}\text{ C m}^{-2}\)
+KEY: A
+SOL:
+Answer: (A) \(E=0,\ V=1800\text{ V at centre};\ E_{\text{surface}}=1.8\times10^4\text{ N C}^{-1};\ \sigma\approx1.6\times10^{-7}\text{ C m}^{-2}\)
+Given: \(R=0.10\text{ m},\ Q=2.0\times10^{-8}\text{ C}\)
+Formula/Principle: \(E_{\text{in}}=0;\ V_{\text{in}}=V_{\text{surface}}=\dfrac{kQ}{R};\ E_{\text{surface}}=\dfrac{kQ}{R^2}=\dfrac{\sigma}{\varepsilon_0};\ \sigma=\dfrac{Q}{4\pi R^2}\)
+Step 1: \(V=\dfrac{9\times10^9\times2\times10^{-8}}{0.10}=1800\text{ V}\)
+Step 2: \(E=\dfrac{180}{0.010}=1.8\times10^4\text{ N C}^{-1}\)
+Step 3: \(\sigma=\dfrac{2\times10^{-8}}{4\pi\times0.01}=1.59\times10^{-7}\text{ C m}^{-2}\)
+Worked derivation: \[\frac{\sigma}{\varepsilon_0}=\frac{1.59\times10^{-7}}{8.85\times10^{-12}}=1.8\times10^4\ \text{N C}^{-1}=\frac{kQ}{R^2}\]
+Check: \[E=-\frac{dV}{dr}=0\ \text{inside, consistent with constant }V=1800\ \text{V}\ \checkmark\]
+Why: \(\text{in electrostatic equilibrium free charges move until the field inside the conductor vanishes, so the whole conductor is at one potential}\)
+Why not the others: (B) \(\text{field inside a conductor is zero; potential is not}\); (C) \(V\ne0\text{ inside};\ \sigma\text{ wrong}\); (D) \(\text{off by factors of ten}\).
+Key point: \(E_{\text{in}}=0,\ V_{\text{in}}=kQ/R;\ E_{\text{surface}}=\sigma/\varepsilon_0\)
+
+@@ Q71
+format: numerical
+sub_topic: Calculating bulb resistance from its rating, power at reduced voltage, relative brightness of bulbs in series, and electrical energy consumed in kilowatt-hours
+Q: A bulb is rated 100 W, 220 V. Find its resistance and its power when run on 110 V (resistance constant). When a 100 W and a 60 W bulb (both 220 V) are connected in series to 220 V, which glows brighter? How much energy does the 100 W bulb use in 30 days at 5 h per day?
+A) \(2.2\ \Omega;\ 50\text{ W};\ 100\text{ W bulb};\ 1.5\text{ kWh}\)
+B) \(484\ \Omega;\ 50\text{ W};\ \text{both equally};\ 150\text{ kWh}\)
+C) \(484\ \Omega;\ 25\text{ W};\ \text{the 60 W bulb (larger resistance, so larger }I^2R\text{ for the same current)};\ 15\text{ kWh}\)
+D) \(48.4\ \Omega;\ 25\text{ W};\ 100\text{ W bulb};\ 15\text{ kWh}\)
+KEY: C
+SOL:
+Answer: (C) \(484\ \Omega;\ 25\text{ W};\ 60\text{ W bulb brighter};\ 15\text{ kWh}\)
+Given: \(P=100\text{ W},\ V=220\text{ V};\ 60\text{ W bulb};\ 5\text{ h}\times30\)
+Formula/Principle: \(R=\dfrac{V^2}{P};\ P=\dfrac{V^2}{R};\ \text{series: same }I,\ P=I^2R;\ E=Pt\)
+Step 1: \(R=\dfrac{220^2}{100}=484\ \Omega;\ P_{110}=\dfrac{110^2}{484}=25\text{ W}\)
+Step 2: \(R_{60}=\dfrac{220^2}{60}\approx807\ \Omega>484\ \Omega\Rightarrow I^2R\text{ larger for the 60 W bulb}\)
+Step 3: \(E=0.1\text{ kW}\times150\text{ h}=15\text{ kWh}\)
+Worked derivation: \[I=\frac{220}{484+807}=0.170\ \text{A};\ P_{60}=0.170^2\times807\approx23\ \text{W},\ P_{100}=0.170^2\times484\approx14\ \text{W}\]
+Check: \[\text{halving }V\text{ quarters }P:\ 100/4=25\ \text{W}\ \checkmark\]
+Why: \(\text{in series the current is common, so the higher-resistance (lower-rated) bulb dissipates more power}\)
+Why not the others: (A) \(R=V^2/P;\ P\propto V^2\); (B) \(\text{power quarters; brightness differs; energy wrong}\); (D) \(R\text{ wrong; brighter bulb wrong}\).
+Key point: \(R=V^2/P;\ \text{series}\Rightarrow\text{higher }R\text{ brighter}\)
+
+@@ Q72
+format: numerical
+sub_topic: Calculating the magnetic moment of a coil and the torque on it in a uniform field, and how the moment changes when the same wire is rewound with more turns
+Q: A circular coil of 100 turns, radius \(0.050\text{ m}\), carries \(2.0\text{ A}\) in a field \(B=0.20\text{ T}\) whose direction makes \(30^\circ\) with the coil's normal. Find its magnetic moment and the torque on it. If the same length of wire is rewound into twice as many turns, what happens to the magnetic moment at the same current?
+A) \(3.1\text{ A m}^2;\ 0.54\text{ N m};\ \text{doubles}\)
+B) \(1.57\text{ A m}^2;\ 0.157\text{ N m};\ \text{halves (radius halves, so area becomes }\tfrac14\text{ while }N\text{ doubles)}\)
+C) \(0.0157\text{ A m}^2;\ 0.0016\text{ N m};\ \text{unchanged}\)
+D) \(1.57\text{ A m}^2;\ 0.272\text{ N m};\ \text{quadruples}\)
+KEY: B
+SOL:
+Answer: (B) \(m=1.57\text{ A m}^2;\ \tau=0.157\text{ N m};\ m\text{ halves}\)
+Given: \(N=100,\ r=0.050\text{ m},\ I=2.0\text{ A},\ B=0.20\text{ T},\ \theta=30^\circ\)
+Formula/Principle: \(\vec m=NI\vec A;\ \vec\tau=\vec m\times\vec B,\ \tau=mB\sin\theta\)
+Step 1: \(A=\pi(0.05)^2=7.85\times10^{-3}\text{ m}^2\Rightarrow m=100\times2\times7.85\times10^{-3}=1.57\text{ A m}^2\)
+Step 2: \(\tau=1.57\times0.20\times0.5=0.157\text{ N m}\)
+Step 3: \(\text{wire length }N(2\pi r)\text{ fixed}:\ N\to2N\Rightarrow r\to r/2\Rightarrow m\propto Nr^2\to2N\cdot\tfrac{r^2}{4}=\tfrac12m\)
+Worked derivation: \[m=NI\pi r^2=\frac{I\,(N\,2\pi r)\,r}{2}=\frac{I\ell r}{2}\Rightarrow m\propto r\ \text{for fixed wire length }\ell\]
+Check: \[\ell=100\times2\pi\times0.05=31.4\ \text{m};\ \ m=\frac{2\times31.4\times0.05}{2}=1.57\ \text{A m}^2\ \checkmark\]
+Why: \(\text{the torque tends to align the coil's moment with the field and is largest when they are perpendicular}\)
+Why not the others: (A) \(\text{area doubled and }\sin\text{ replaced by }\cos\); (C) \(\text{forgot }N\); (D) \(\text{used }\cos30^\circ\).
+Key point: \(m=NIA,\ \tau=mB\sin\theta\)
+
+@@ Q73
+format: numerical
+sub_topic: Calculating magnetic intensity, magnetic field, magnetisation and susceptibility for a solenoid filled with a core of known relative permeability
+Q: A long solenoid with 1000 turns per metre carries \(2.0\text{ A}\) and is filled with a core of relative permeability \(\mu_r=400\) (\(\mu_0=4\pi\times10^{-7}\text{ T m A}^{-1}\)). Find \(H\), \(B\), the magnetisation \(M\) and the susceptibility \(\chi\).
+A) \(H=2000\text{ A m}^{-1};\ B\approx1.0\text{ T};\ M\approx7.98\times10^5\text{ A m}^{-1};\ \chi=399;\ \text{the core is ferromagnetic, and }H\text{ depends only on the free current, while }B=\mu_0(H+M)\)
+B) \(H=2000\text{ A m}^{-1};\ B=2.5\times10^{-3}\text{ T};\ M=2000\text{ A m}^{-1};\ \chi=1\)
+C) \(H=8\times10^5\text{ A m}^{-1};\ B\approx1.0\text{ T};\ M=2000\text{ A m}^{-1};\ \chi=400\)
+D) \(H=2.0\text{ A m}^{-1};\ B=10\text{ T};\ M=399\text{ A m}^{-1};\ \chi=-399\)
+KEY: A
+SOL:
+Answer: (A) \(H=2000\text{ A m}^{-1},\ B\approx1.0\text{ T},\ M\approx8.0\times10^5\text{ A m}^{-1},\ \chi=399\)
+Given: \(n=1000\text{ m}^{-1},\ I=2.0\text{ A},\ \mu_r=400\)
+Formula/Principle: \(H=nI;\ B=\mu_0\mu_rH=\mu_0(H+M);\ M=\chi H,\ \chi=\mu_r-1\)
+Step 1: \(H=1000\times2.0=2000\text{ A m}^{-1}\)
+Step 2: \(B=4\pi\times10^{-7}\times400\times2000=1.005\text{ T}\)
+Step 3: \(\chi=399;\ M=399\times2000=7.98\times10^5\text{ A m}^{-1}\)
+Worked derivation: \[B=\mu_0(H+M)=4\pi\times10^{-7}(2000+7.98\times10^5)=4\pi\times10^{-7}\times8.0\times10^5\approx1.0\ \text{T}\]
+Check: \[\mu_0nI=2.5\times10^{-3}\ \text{T without the core};\ \times400=1.0\ \text{T}\ \checkmark\]
+Why: \(\text{the core's aligned atomic dipoles add a magnetisation far larger than }H,\ \text{multiplying the field}\)
+Why not the others: (B) \(\text{ignores the core}\); (C) \(H\text{ and }M\text{ swapped}\); (D) \(H=nI;\ \chi>0\text{ here}\).
+Key point: \(H=nI;\ B=\mu_0(H+M);\ \chi=\mu_r-1\)
+
+@@ Q74
+format: numerical
+sub_topic: Comparing electromagnetic waves of different frequencies in vacuum and in a medium, the relation between electric and magnetic field amplitudes, and their energy and momentum
+Q: Compare a radio wave and an X-ray in vacuum, and find the magnetic field amplitude of a wave with \(E_0=30\text{ V m}^{-1}\) (\(c=3\times10^8\text{ m s}^{-1}\)). Which statement is correct?
+A) X-rays travel faster than radio waves in vacuum; \(B_0=9\times10^9\text{ T}\)
+B) EM waves are longitudinal; \(B_0=30\text{ T}\)
+C) Radio waves need a medium; \(B_0=1\times10^{-7}\text{ T}\), and \(\vec E\) and \(\vec B\) are \(90^\circ\) out of phase
+D) Both travel at \(c=1/\sqrt{\mu_0\varepsilon_0}\) in vacuum, differing only in frequency and wavelength; EM waves are transverse with \(\vec E\perp\vec B\perp\) direction of travel and \(\vec E,\vec B\) in phase; \(B_0=E_0/c=1.0\times10^{-7}\text{ T}\); in a medium the speed is \(c/n\); the waves carry energy and momentum and so exert radiation pressure on surfaces
+KEY: D
+SOL:
+Answer: (D) \(\text{same speed }c;\ \text{transverse, in phase};\ B_0=1.0\times10^{-7}\text{ T};\ \text{carry energy and momentum}\)
+Given: \(E_0=30\text{ V m}^{-1},\ c=3\times10^8\text{ m s}^{-1}\)
+Formula/Principle: \(c=\dfrac1{\sqrt{\mu_0\varepsilon_0}};\ \dfrac{E_0}{B_0}=c;\ v=\dfrac{c}{n}\)
+Step 1: \(\text{all EM waves travel at }c\text{ in vacuum}\)
+Step 2: \(B_0=\dfrac{30}{3\times10^8}=1.0\times10^{-7}\text{ T}\)
+Step 3: \(\vec E,\vec B\text{ oscillate in phase, perpendicular to each other and to }\vec k\)
+Worked derivation: \[\frac{1}{\sqrt{\mu_0\varepsilon_0}}=\frac{1}{\sqrt{4\pi\times10^{-7}\times8.85\times10^{-12}}}\approx3.0\times10^8\ \text{m s}^{-1}\]
+Check: \[u_E=\tfrac12\varepsilon_0E^2=\tfrac12\frac{B^2}{\mu_0}=u_B\ \text{since }E=cB\ \checkmark\]
+Why: \(\text{the speed of EM waves in vacuum is fixed by }\mu_0\text{ and }\varepsilon_0,\ \text{not by frequency}\)
+Why not the others: (A) \(\text{same speed; }B_0=E_0/c\); (B) \(\text{EM waves are transverse}\); (C) \(\text{no medium needed; fields are in phase}\).
+Key point: \(c=1/\sqrt{\mu_0\varepsilon_0};\ E_0=cB_0\)
+
+@@ Q75
+format: numerical
+sub_topic: Locating the image formed by refraction at a convex spherical surface between air and glass, and the apparent depth of an object under water
+Q: A long glass rod (\(n=1.5\)) has a convex end of radius \(10\text{ cm}\). An object in air is \(30\text{ cm}\) from the curved surface on its axis. Where is the image? A fish \(12\text{ cm}\) below a flat water surface (\(n=\tfrac43\)) is viewed from directly above; at what depth does it appear?
+A) \(v=-90\text{ cm (virtual, in air)};\ 16\text{ cm}\)
+B) \(v=+90\text{ cm, a real image inside the glass};\ 9\text{ cm}\)
+C) \(v=+30\text{ cm};\ 12\text{ cm}\)
+D) \(v=+60\text{ cm};\ 8\text{ cm}\)
+KEY: B
+SOL:
+Answer: (B) \(v=+90\text{ cm (real, inside glass)};\ 9\text{ cm}\)
+Given: \(n_1=1,\ n_2=1.5,\ R=+10\text{ cm},\ u=-30\text{ cm};\ h=12\text{ cm},\ n=\tfrac43\)
+Formula/Principle: \(\dfrac{n_2}{v}-\dfrac{n_1}{u}=\dfrac{n_2-n_1}{R};\ \text{apparent depth}=\dfrac{h}{n}\)
+Step 1: \(\dfrac{1.5}{v}+\dfrac{1}{30}=\dfrac{0.5}{10}=\dfrac1{20}\)
+Step 2: \(\dfrac{1.5}{v}=\dfrac1{20}-\dfrac1{30}=\dfrac1{60}\Rightarrow v=90\text{ cm}\)
+Step 3: \(\text{apparent depth}=\dfrac{12}{4/3}=9\text{ cm}\)
+Worked derivation: \[\frac{n_2}{v}=\frac{n_2-n_1}{R}+\frac{n_1}{u}=\frac{0.5}{10}+\frac{1}{-30}=\frac{3-2}{60}=\frac{1}{60}\]
+Check: \[\text{flat surface: }R\to\infty\Rightarrow\frac{n_2}{v}=\frac{n_1}{u}\Rightarrow v=\frac{n_2}{n_1}u,\ \text{giving apparent depth }h/n\text{ when viewed from the denser side out}\ \checkmark\]
+Why: \(\text{a convex surface into a denser medium converges the rays, forming a real image inside the glass}\)
+Why not the others: (A) \(\text{sign wrong; apparent depth is less than real}\); (C) \(\text{ignored refraction}\); (D) \(\text{arithmetic errors}\).
+Key point: \(\dfrac{n_2}{v}-\dfrac{n_1}{u}=\dfrac{n_2-n_1}{R};\ \text{apparent depth}=h/n\)
+
+@@ Q76
+format: conceptual
+sub_topic: Explaining by the lens maker formula how the focal length of a glass lens changes when it is placed in water or in liquids of equal or greater refractive index
+Q: An equiconvex glass lens (\(n=1.5\), \(|R|=20\text{ cm}\)) has focal length \(20\text{ cm}\) in air. Which statement about its behaviour in different media is correct?
+A) The focal length is a fixed property of the lens and does not depend on the surrounding medium
+B) In water the lens becomes diverging because water is denser than air
+C) By \(\dfrac1f=\left(\dfrac{n_{\text{lens}}}{n_{\text{medium}}}-1\right)\left(\dfrac1{R_1}-\dfrac1{R_2}\right)\), in water (\(n=\tfrac43\)) the relative index is 1.125, so \(f=\dfrac{0.5}{0.125}\times20=80\text{ cm}\) (four times longer, still converging); in a liquid of \(n=1.5\) the relative index is 1, so \(1/f=0\) and the lens becomes invisible and has no focusing effect; in a liquid with \(n>1.5\) the relative index is below 1, so the convex lens acts as a diverging lens
+D) In a liquid of \(n=1.5\) the focal length becomes zero
+KEY: C
+SOL:
+Answer: (C) \(f=80\text{ cm in water};\ \text{no focusing in }n=1.5;\ \text{diverging in }n>1.5\)
+Given: \(n_{\text{lens}}=1.5,\ R_1=+20,\ R_2=-20\text{ cm},\ f_{\text{air}}=20\text{ cm}\)
+Formula/Principle: \(\dfrac1f=\left(\dfrac{n_2}{n_1}-1\right)\left(\dfrac1{R_1}-\dfrac1{R_2}\right)\)
+Step 1: \(\text{air: }(0.5)\left(\tfrac{2}{20}\right)=\tfrac1{20}\Rightarrow f=20\text{ cm}\)
+Step 2: \(\text{water: }\tfrac{1.5}{4/3}=1.125\Rightarrow\tfrac1f=0.125\times\tfrac{2}{20}=\tfrac1{80}\Rightarrow f=80\text{ cm}\)
+Step 3: \(n_{\text{medium}}=1.5\Rightarrow\tfrac1f=0;\ n_{\text{medium}}>1.5\Rightarrow\tfrac1f<0\ (\text{diverging})\)
+Worked derivation: \[\frac{f_{\text{water}}}{f_{\text{air}}}=\frac{n_{\text{lens}}-1}{n_{\text{lens}}/n_w-1}=\frac{0.5}{0.125}=4\]
+Check: \[f_{\text{water}}=4\times20=80\ \text{cm, positive}\Rightarrow\text{still converging}\ \checkmark\]
+Why: \(\text{bending at each surface depends on the contrast in refractive index, which shrinks as the medium's index approaches the lens's}\)
+Why not the others: (A) \(f\text{ depends on the relative index}\); (B) \(\text{it stays converging in water since }1.5>1.33\); (D) \(1/f=0\text{ means }f\to\infty\).
+Key point: \(\text{lens power depends on }n_{\text{lens}}/n_{\text{medium}}\)
+
+@@ Q77
+format: numerical
+sub_topic: Calculating fringe width in Young's double-slit experiment, how it changes in water, and showing that interference redistributes rather than destroys energy
+Q: In a double-slit experiment \(\lambda=600\text{ nm}\), slit separation \(0.50\text{ mm}\) and screen distance \(1.0\text{ m}\). Find the fringe width, the fringe width if the apparatus is immersed in water (\(n=\tfrac43\)), and the maximum and minimum intensities if each slit alone gives intensity \(I_0\).
+A) \(0.30\text{ mm};\ 0.40\text{ mm};\ 2I_0,\ I_0\)
+B) \(1.2\text{ mm};\ 1.6\text{ mm};\ 2I_0,\ 0\)
+C) \(12\text{ mm};\ 9\text{ mm};\ I_0,\ 0\)
+D) \(1.2\text{ mm};\ 0.90\text{ mm};\ 4I_0,\ 0;\ \text{the average intensity over many fringes is }2I_0,\ \text{so energy is only redistributed — conserved, not destroyed}\)
+KEY: D
+SOL:
+Answer: (D) \(\beta=1.2\text{ mm};\ 0.90\text{ mm in water};\ I_{\max}=4I_0,\ I_{\min}=0,\ \text{average }2I_0\)
+Given: \(\lambda=6.0\times10^{-7}\text{ m},\ d=5.0\times10^{-4}\text{ m},\ D=1.0\text{ m}\)
+Formula/Principle: \(\beta=\dfrac{\lambda D}{d};\ \lambda_{\text{medium}}=\dfrac{\lambda}{n};\ I=4I_0\cos^2\dfrac{\phi}{2}\)
+Step 1: \(\beta=\dfrac{6\times10^{-7}\times1.0}{5\times10^{-4}}=1.2\times10^{-3}\text{ m}\)
+Step 2: \(\beta_w=\dfrac{\beta}{n}=\dfrac{1.2}{4/3}=0.90\text{ mm}\)
+Step 3: \(\phi=0\Rightarrow4I_0;\ \phi=\pi\Rightarrow0;\ \langle\cos^2\rangle=\tfrac12\Rightarrow\text{average }2I_0\)
+Worked derivation: \[I=I_0+I_0+2I_0\cos\phi=4I_0\cos^2\frac{\phi}{2},\quad\langle I\rangle=4I_0\cdot\frac12=2I_0\]
+Check: \[\text{two independent sources would give }2I_0\text{ everywhere; the average with interference is also }2I_0\ \checkmark\]
+Why: \(\text{coherent waves add amplitudes, so energy missing at dark fringes appears at bright fringes}\)
+Why not the others: (A) \(\beta\text{ miscomputed; water shortens wavelength}\); (B) \(\text{water reduces }\beta;\ I_{\max}=4I_0\); (C) \(\beta\text{ ten times too large}\).
+Key point: \(\beta=\lambda D/d;\ I_{\max}=4I_0,\ \text{average }2I_0\)
+
+@@ Q78
+format: numerical
+sub_topic: Calculating series limits of the Lyman and Balmer series from the Rydberg formula and identifying the spectral region of each series observed with a spectrometer
+Q: A hydrogen discharge tube viewed through a spectrometer shows visible lines at 656, 486, 434 and 410 nm, crowding towards shorter wavelength. Using \(R=1.097\times10^7\text{ m}^{-1}\), find the series limits of the Balmer and Lyman series. Which statement is correct?
+A) \(\text{Balmer limit}=4/R\approx365\text{ nm (near ultraviolet)};\ \text{Lyman limit}=1/R\approx91.2\text{ nm (ultraviolet)};\ \text{Paschen lines lie in the infrared, and the Lyman limit corresponds to the ionisation energy 13.6 eV}\)
+B) \(\text{Balmer limit}=656\text{ nm};\ \text{Lyman limit}=122\text{ nm}\)
+C) \(\text{Balmer limit}=91.2\text{ nm};\ \text{Lyman limit}=365\text{ nm};\ \text{Lyman lines are visible}\)
+D) \(\text{Balmer limit}=1/R\approx91.2\text{ nm};\ \text{Paschen series is ultraviolet}\)
+KEY: A
+SOL:
+Answer: (A) \(\text{Balmer limit}\approx365\text{ nm},\ \text{Lyman limit}\approx91.2\text{ nm}\)
+Given: \(R=1.097\times10^7\text{ m}^{-1}\)
+Formula/Principle: \(\dfrac1\lambda=R\left(\dfrac1{n_f^2}-\dfrac1{n_i^2}\right);\ \text{series limit: }n_i\to\infty\)
+Step 1: \(\text{Balmer }(n_f=2):\ \dfrac1\lambda=\dfrac R4\Rightarrow\lambda=\dfrac4R=3.646\times10^{-7}\text{ m}\)
+Step 2: \(\text{Lyman }(n_f=1):\ \lambda=\dfrac1R=9.12\times10^{-8}\text{ m}\)
+Step 3: \(E=\dfrac{hc}{\lambda}=\dfrac{1240\text{ eV nm}}{91.2\text{ nm}}=13.6\text{ eV}\)
+Worked derivation: \[\lambda_{\text{Balmer},\infty}=\frac{4}{1.097\times10^7}=3.646\times10^{-7}\ \text{m}=364.6\ \text{nm}\]
+Check: \[\text{observed lines }656\to410\text{ nm approach }365\text{ nm from above}\ \checkmark\]
+Why: \(\text{lines of a series crowd together as the upper level approaches the ionisation limit}\)
+Why not the others: (B) \(\text{these are the first lines, not the limits}\); (C) \(\text{limits swapped; Lyman is ultraviolet}\); (D) \(\text{Balmer limit is }4/R;\ \text{Paschen is infrared}\).
+Key point: \(\lambda_\infty=n_f^2/R\)
+
+@@ Q79
+format: numerical
+sub_topic: Comparing the energy released per reaction and per nucleon in uranium fission and hydrogen fusion, and the conditions each process needs
+Q: Fission of \(^{235}\text{U}\) by a slow neutron releases about 200 MeV; fusion of four protons into a helium nucleus releases about 26.7 MeV. Which comparison is correct?
+A) Fission releases more energy per nucleon (about 50 MeV) than fusion; fusion works at room temperature
+B) Energy per nucleon is about \(200/236\approx0.85\text{ MeV}\) in fission and \(26.7/4\approx6.7\text{ MeV}\) in fusion, so fusion gives more energy per unit mass of fuel; fission is sustained as a chain reaction because each fission releases 2–3 neutrons, controlled in reactors by moderators that slow neutrons and cadmium or boron control rods that absorb them, while fusion needs temperatures of about \(10^7\text{ K}\) so that nuclei can overcome Coulomb repulsion, as in the Sun's core
+C) Both release the same energy per nucleon because both convert mass into energy
+D) Fusion needs neutrons to start a chain reaction, while fission requires \(10^7\text{ K}\)
+KEY: B
+SOL:
+Answer: (B) \(\approx0.85\text{ MeV vs }\approx6.7\text{ MeV per nucleon};\ \text{chain reaction and its control};\ \text{fusion needs very high temperature}\)
+Given: \(Q_{\text{fission}}\approx200\text{ MeV for }236\text{ nucleons};\ Q_{\text{fusion}}\approx26.7\text{ MeV for }4\text{ nucleons}\)
+Formula/Principle: \(\text{energy per nucleon}=Q/A;\ Q=\Delta m\,c^2\)
+Step 1: \(\text{fission: }200/236\approx0.85\text{ MeV per nucleon}\)
+Step 2: \(\text{fusion: }26.7/4\approx6.7\text{ MeV per nucleon}\)
+Step 3: \(\text{ratio}\approx8\Rightarrow\text{fusion releases far more energy per kilogram of fuel}\)
+Worked derivation: \[^{235}_{92}\text{U}+{}^1_0n\to{}^{236}_{92}\text{U}\to{}^{141}_{56}\text{Ba}+{}^{92}_{36}\text{Kr}+3\,{}^1_0n+\approx200\ \text{MeV}\]
+Check: \[\text{mass numbers: }235+1=141+92+3=236;\ \text{charges: }92=56+36\ \checkmark\]
+Why: \(\text{both processes move nucleons towards the peak of the binding-energy curve, but the rise is much steeper for light nuclei}\)
+Why not the others: (A) \(\text{per-nucleon fission yield is under 1 MeV; fusion needs high temperature}\); (C) \(\text{yields per nucleon differ}\); (D) \(\text{roles swapped}\).
+Key point: \(\text{fusion: more energy per nucleon; fission: neutron chain reaction}\)
+
+@@ Q80
+format: numerical
+sub_topic: Identifying the SI base units, expressing derived units of force, energy, power and momentum in base units, and checking that both sides of a conservation law have the same units
+Q: Which statement about SI units is correct?
+A) The SI has five base quantities, and the joule is a base unit
+B) Momentum is measured in N m and impulse in kg m s⁻²
+C) The SI has seven base units — metre, kilogram, second, ampere, kelvin, mole and candela; derived units include newton (kg m s⁻²), joule (kg m² s⁻²) and watt (kg m² s⁻³); radian and steradian are dimensionless units for plane and solid angle; impulse (N s) and momentum (kg m s⁻¹) have the same units, as the impulse–momentum theorem requires, and both sides of the work–energy theorem are in joules
+D) The candela and the mole are derived units
+KEY: C
+SOL:
+Answer: (C) \(\text{seven base units};\ \text{N, J, W in base units};\ \text{N s}=\text{kg m s}^{-1}\)
+Given: \(\text{base and derived SI units}\)
+Formula/Principle: \(F=ma,\ W=Fd,\ P=W/t,\ J=F\Delta t=\Delta p\)
+Step 1: \(1\text{ N}=1\text{ kg m s}^{-2}\)
+Step 2: \(1\text{ J}=1\text{ N m}=1\text{ kg m}^2\text{ s}^{-2};\ 1\text{ W}=1\text{ J s}^{-1}=1\text{ kg m}^2\text{ s}^{-3}\)
+Step 3: \(1\text{ N s}=1\text{ kg m s}^{-2}\cdot\text{s}=1\text{ kg m s}^{-1}\)
+Worked derivation: \[[F\Delta t]=[\text{M L T}^{-2}][\text{T}]=[\text{M L T}^{-1}]=[mv]\]
+Check: \[[\tfrac12mv^2]=[\text{M L}^2\text{T}^{-2}]=[Fd]\ \checkmark\]
+Why: \(\text{every physical law must be dimensionally consistent, so equal quantities have equal units}\)
+Why not the others: (A) \(\text{seven base quantities; the joule is derived}\); (B) \(\text{units swapped and wrong}\); (D) \(\text{both are base units}\).
+Key point: \(\text{7 base units};\ \text{N s}=\text{kg m s}^{-1}\)

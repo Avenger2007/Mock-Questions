@@ -1,0 +1,459 @@
+@@ Q41
+format: numerical
+sub_topic: Finding circles that touch both coordinate axes and pass through a given point, and testing whether two circles touch externally or internally
+Q: Find the radii of the circles in the first quadrant that touch both axes and pass through \((2,1)\). Do the circles \(x^2+y^2=4\) and \((x-6)^2+y^2=16\) touch, and if so where?
+A) \(r=1\text{ or }5;\ \text{they touch externally at }(2,0)\)
+B) \(r=2\text{ or }3;\ \text{they touch internally at }(-2,0)\)
+C) \(r=5\text{ only};\ \text{they intersect at two points}\)
+D) \(r=1\text{ or }5;\ \text{they do not meet}\)
+KEY: A
+SOL:
+Answer: (A) \(r=1\text{ or }5;\ \text{external contact at }(2,0)\)
+Concept: \(\text{A circle touching both axes in the first quadrant has centre }(r,r)\text{ and radius }r;\ \text{two circles touch externally when the distance between centres equals the sum of the radii, internally when it equals their difference}\)
+Given: \(\text{point }(2,1);\ C_1=(0,0),r_1=2;\ C_2=(6,0),r_2=4\)
+Formula/Principle: \((x-r)^2+(y-r)^2=r^2;\ d=r_1+r_2\Rightarrow\text{external contact}\)
+Step 1: \((2-r)^2+(1-r)^2=r^2\Rightarrow r^2-6r+5=0\)
+Step 2: \((r-1)(r-5)=0\Rightarrow r=1\text{ or }5\)
+Step 3: \(d=6=2+4\Rightarrow\text{external};\ \text{contact point divides }C_1C_2\text{ in }2:4\Rightarrow(2,0)\)
+Worked derivation: \[(2-r)^2+(1-r)^2=r^2\Rightarrow4-4r+r^2+1-2r+r^2=r^2\Rightarrow r^2-6r+5=0\]
+Check: \[r=5:\ (2-5)^2+(1-5)^2=9+16=25=5^2;\ \ (2,0)\text{ lies on both circles}\ \checkmark\]
+Why: \(\text{touching both axes fixes the centre on }y=x\text{ at distance }r\text{ from each axis, leaving one unknown}\)
+Why not the others: (B) \(\text{radii do not satisfy the equation; }d\ne|r_1-r_2|\); (C) \(r=1\text{ also works; }d=r_1+r_2\text{ means one common point}\); (D) \(\text{the circles do meet at }(2,0)\).
+Key point: \(\text{centre }(r,r);\ d=r_1+r_2\Rightarrow\text{external tangency}\)
+
+@@ Q42
+format: numerical
+sub_topic: Writing the equation of a circle from its centre and a point on it, and counting lattice points on a circle centred at the origin
+Q: Find the equation of the circle with centre \((2,-3)\) passing through \((5,1)\), and the number of points with integer coordinates on \(x^2+y^2=25\).
+A) \((x-2)^2+(y+3)^2=5;\ 4\)
+B) \((x+2)^2+(y-3)^2=25;\ 8\)
+C) \(x^2+y^2-4x+6y=25;\ 12\)
+D) \((x-2)^2+(y+3)^2=25,\ \text{i.e. }x^2+y^2-4x+6y-12=0;\ 12\)
+KEY: D
+SOL:
+Answer: (D) \((x-2)^2+(y+3)^2=25;\ 12\text{ lattice points}\)
+Concept: \(\text{The circle with centre }(h,k)\text{ and radius }r\text{ is }(x-h)^2+(y-k)^2=r^2;\ \text{lattice points on }x^2+y^2=25\text{ come from integer solutions of }a^2+b^2=25\)
+Given: \(\text{centre }(2,-3),\ \text{point }(5,1)\)
+Formula/Principle: \(r^2=(5-2)^2+(1+3)^2\)
+Step 1: \(r^2=9+16=25\)
+Step 2: \((x-2)^2+(y+3)^2=25\Rightarrow x^2+y^2-4x+6y+13-25=0\)
+Step 3: \(25=0^2+5^2=3^2+4^2\Rightarrow(\pm5,0),(0,\pm5)\ [4],\ (\pm3,\pm4),(\pm4,\pm3)\ [8]\Rightarrow12\)
+Worked derivation: \[x^2-4x+4+y^2+6y+9=25\Rightarrow x^2+y^2-4x+6y-12=0\]
+Check: \[(5,1):\ 25+1-20+6-12=0\ \checkmark\]
+Why: \(\text{the radius is the distance from the centre to any point on the circle}\)
+Why not the others: (A) \(\text{used }r\text{ instead of }r^2\); (B) \(\text{signs of the centre wrong; misses }(\pm3,\pm4)\text{ type points}\); (C) \(\text{constant term wrong}\).
+Key point: \((x-h)^2+(y-k)^2=r^2\)
+
+@@ Q43
+format: numerical
+sub_topic: Computing conditional probabilities from given probabilities and in special cases where one event contains the other or the events are mutually exclusive
+Q: If \(P(A)=0.6,\ P(B)=0.3,\ P(A\cap B)=0.2\), find \(P(A\mid B)\) and \(P(B\mid A)\). What is \(P(A\mid B)\) if \(B\subset A\), and if \(A,B\) are mutually exclusive with \(P(B)>0\)? A die is rolled; given that the number is odd, what is the probability it is prime?
+A) \(\tfrac12,\ \tfrac12;\ 0;\ 1;\ \tfrac12\)
+B) \(\tfrac13,\ \tfrac23;\ P(A);\ P(B);\ \tfrac13\)
+C) \(\tfrac23,\ \tfrac13;\ 1;\ 0;\ \tfrac23\)
+D) \(\tfrac23,\ \tfrac13;\ 0;\ 1;\ \tfrac13\)
+KEY: C
+SOL:
+Answer: (C) \(\tfrac23,\ \tfrac13;\ 1;\ 0;\ \tfrac23\)
+Concept: \(P(A\mid B)=\dfrac{P(A\cap B)}{P(B)},\ P(B)\ne0;\ \text{it is the probability of }A\text{ when the sample space is reduced to }B\)
+Given: \(P(A)=0.6,\ P(B)=0.3,\ P(A\cap B)=0.2\)
+Formula/Principle: \(P(A\mid B)=\dfrac{P(A\cap B)}{P(B)}\)
+Step 1: \(P(A\mid B)=\dfrac{0.2}{0.3}=\tfrac23;\ P(B\mid A)=\dfrac{0.2}{0.6}=\tfrac13\)
+Step 2: \(B\subset A\Rightarrow A\cap B=B\Rightarrow P(A\mid B)=1;\ A\cap B=\varnothing\Rightarrow P(A\mid B)=0\)
+Step 3: \(\text{odd}=\{1,3,5\},\ \text{odd and prime}=\{3,5\}\Rightarrow\tfrac23\)
+Worked derivation: \[P(\text{prime}\mid\text{odd})=\frac{P(\{3,5\})}{P(\{1,3,5\})}=\frac{2/6}{3/6}=\frac23\]
+Check: \[P(A\mid B)P(B)=\tfrac23\cdot0.3=0.2=P(B\mid A)P(A)=\tfrac13\cdot0.6\ \checkmark\]
+Why: \(\text{conditioning restricts attention to outcomes inside }B,\ \text{so containment gives certainty and disjointness gives impossibility}\)
+Why not the others: (A) \(\text{values and special cases wrong}\); (B) \(\text{the two conditionals are swapped}\); (D) \(\text{special cases reversed; die answer wrong}\).
+Key point: \(P(A\mid B)=P(A\cap B)/P(B)\)
+
+@@ Q44
+format: numerical
+sub_topic: Reading the graphs of inverse sine and inverse cosine to find where they intersect and where one exceeds the other, and using their domains and ranges
+Q: On \([-1,1]\), the graphs of \(y=\sin^{-1}x\) and \(y=\cos^{-1}x\) are drawn. At which point do they intersect, for which \(x\) is \(\sin^{-1}x>\cos^{-1}x\), and what is \(\sin^{-1}x+\cos^{-1}x\) for every \(x\in[-1,1]\)?
+A) \((0,0);\ x<0;\ \pi\)
+B) \(\left(\tfrac1{\sqrt2},\tfrac{\pi}{4}\right);\ \tfrac1{\sqrt2}<x\le1;\ \tfrac{\pi}{2}\)
+C) \(\left(\tfrac12,\tfrac{\pi}{6}\right);\ x>\tfrac12;\ \tfrac{\pi}{2}\)
+D) \(\left(\tfrac1{\sqrt2},\tfrac{\pi}{4}\right);\ -1\le x<\tfrac1{\sqrt2};\ 0\)
+KEY: B
+SOL:
+Answer: (B) \(\left(\tfrac1{\sqrt2},\tfrac{\pi}{4}\right);\ \tfrac1{\sqrt2}<x\le1;\ \tfrac{\pi}{2}\)
+Concept: \(y=\sin^{-1}x\text{ increases from }(-1,-\tfrac{\pi}{2})\text{ to }(1,\tfrac{\pi}{2});\ y=\cos^{-1}x\text{ decreases from }(-1,\pi)\text{ to }(1,0);\ \text{their sum is }\tfrac{\pi}{2}\)
+Given: \(\text{both graphs on }[-1,1]\)
+Formula/Principle: \(\sin^{-1}x+\cos^{-1}x=\tfrac{\pi}{2}\)
+Step 1: \(\text{intersection}\Rightarrow\sin^{-1}x=\cos^{-1}x=\tfrac{\pi}{4}\Rightarrow x=\sin\tfrac{\pi}{4}=\tfrac1{\sqrt2}\)
+Step 2: \(\sin^{-1}x>\tfrac{\pi}{2}-\sin^{-1}x\iff\sin^{-1}x>\tfrac{\pi}{4}\iff x>\tfrac1{\sqrt2}\)
+Step 3: \(\text{increasing}+\text{decreasing curves cross once; sum constant}=\tfrac{\pi}{2}\)
+Worked derivation: \[\theta=\sin^{-1}x\Rightarrow x=\sin\theta=\cos\left(\tfrac{\pi}{2}-\theta\right),\ \tfrac{\pi}{2}-\theta\in[0,\pi]\Rightarrow\cos^{-1}x=\tfrac{\pi}{2}-\theta\]
+Check: \[x=1:\ \sin^{-1}1=\tfrac{\pi}{2}>\cos^{-1}1=0;\ \ x=0:\ 0<\tfrac{\pi}{2}\ \checkmark\]
+Why: \(\text{the two graphs are reflections of each other about the line }y=\tfrac{\pi}{4}\)
+Why not the others: (A) \(\text{at }x=0\text{ the values are }0\text{ and }\tfrac{\pi}{2}\); (C) \(\cos^{-1}\tfrac12=\tfrac{\pi}{3}\ne\tfrac{\pi}{6}\); (D) \(\text{inequality reversed; sum is not 0}\).
+Key point: \(\sin^{-1}x+\cos^{-1}x=\tfrac{\pi}{2}\)
+
+@@ Q45
+format: numerical
+sub_topic: Solving a system of three linear equations by the matrix inverse method after checking that the coefficient matrix is non-singular
+Q: Solve \(x+y+z=6,\ x-y+z=2,\ 2x+y-z=1\) by the matrix method. What is \(|A|\) for the coefficient matrix, and what is the solution?
+A) \(|A|=0;\ \text{infinitely many solutions}\)
+B) \(|A|=-6;\ (3,2,1)\)
+C) \(|A|=6;\ (2,1,3)\)
+D) \(|A|=6\ne0,\ \text{so }A^{-1}\text{ exists and the unique solution is }X=A^{-1}B=(1,2,3)\)
+KEY: D
+SOL:
+Answer: (D) \(|A|=6;\ (x,y,z)=(1,2,3)\)
+Concept: \(\text{For }AX=B,\ \text{if }|A|\ne0\text{ then }A\text{ is invertible and }X=A^{-1}B=\dfrac{1}{|A|}(\operatorname{adj}A)B\text{ is the unique solution}\)
+Given: \(A=\begin{pmatrix}1&1&1\\1&-1&1\\2&1&-1\end{pmatrix},\ B=\begin{pmatrix}6\\2\\1\end{pmatrix}\)
+Formula/Principle: \(X=A^{-1}B\)
+Step 1: \(|A|=1(1-1)-1(-1-2)+1(1+2)=0+3+3=6\)
+Step 2: \(\text{eq1}-\text{eq2}:\ 2y=4\Rightarrow y=2;\ \text{then }x+z=4,\ 2x-z=-1\)
+Step 3: \(3x=3\Rightarrow x=1,\ z=3\)
+Worked derivation: \[\operatorname{adj}A=\begin{pmatrix}0&2&2\\3&-3&0\\3&1&-2\end{pmatrix},\ \ A^{-1}B=\frac16\begin{pmatrix}0+4+2\\18-6+0\\18+2-2\end{pmatrix}=\frac16\begin{pmatrix}6\\12\\18\end{pmatrix}=\begin{pmatrix}1\\2\\3\end{pmatrix}\]
+Check: \[1+2+3=6,\ 1-2+3=2,\ 2+2-3=1\ \checkmark\]
+Why: \(\text{a non-zero determinant guarantees exactly one solution, which the inverse delivers}\)
+Why not the others: (A) \(|A|\ne0\); (B) \(\text{sign of }|A|\text{ and the solution wrong}\); (C) \((2,1,3)\text{ fails the second equation}\).
+Key point: \(|A|\ne0\Rightarrow X=A^{-1}B\text{ unique}\)
+
+@@ Q46
+format: numerical
+sub_topic: Finding the parameters that make a piecewise function continuous and differentiable at the joining point, and a function that is continuous but not differentiable
+Q: \(f(x)=x^2\) for \(x\le1\) and \(f(x)=ax+b\) for \(x>1\). Find \(a,b\) so that \(f\) is differentiable at \(x=1\). Which of \(|x|\) and \(x|x|\) is differentiable at \(x=0\)?
+A) \(a=2,\ b=-1;\ x|x|\text{ is differentiable at 0, }|x|\text{ is not}\)
+B) \(a=1,\ b=0;\ \text{both are differentiable}\)
+C) \(a=2,\ b=1;\ |x|\text{ is differentiable, }x|x|\text{ is not}\)
+D) \(a=-1,\ b=2;\ \text{neither is continuous at 0}\)
+KEY: A
+SOL:
+Answer: (A) \(a=2,\ b=-1;\ x|x|\text{ differentiable at 0},\ |x|\text{ not}\)
+Concept: \(\text{Differentiability at a point implies continuity there; the converse is false. At a joining point both the values and the one-sided derivatives must match}\)
+Given: \(f=x^2\ (x\le1),\ ax+b\ (x>1)\)
+Formula/Principle: \(f(1^-)=f(1^+);\ Lf'(1)=Rf'(1)\)
+Step 1: \(\text{continuity: }1=a+b\)
+Step 2: \(\text{derivatives: }2x\big|_{1}=2=a\Rightarrow b=-1\)
+Step 3: \(|x|:\ Lf'(0)=-1,\ Rf'(0)=1\Rightarrow\text{not differentiable};\ x|x|:\ \lim_{h\to0}\tfrac{h|h|}{h}=0\Rightarrow\text{differentiable}\)
+Worked derivation: \[\frac{d}{dx}(x|x|)\Big|_{0}=\lim_{h\to0}\frac{h|h|-0}{h}=\lim_{h\to0}|h|=0\]
+Check: \[x>1:\ f=2x-1,\ f(1^+)=1=f(1),\ f'=2=2(1)\ \checkmark\]
+Why: \(\text{matching values removes a jump, and matching slopes removes a corner}\)
+Why not the others: (B) \(\text{slope 1 does not match }2x\text{ at }1\); (C) \(a+b=3\ne1;\ |x|\text{ has a corner}\); (D) \(\text{both are continuous at 0}\).
+Key point: \(\text{differentiable}\Rightarrow\text{continuous, not conversely}\)
+
+@@ Q47
+format: numerical
+sub_topic: Counting the local maxima and minima of a quartic using the first and second derivative tests, and recognising a stationary point that is neither
+Q: For \(f(x)=x^4-8x^2\), how many points of local maximum and local minimum are there, and what are the extreme values? Is \(x=0\) a local extremum of \(g(x)=x^3\)?
+A) \(2\text{ maxima, 1 minimum};\ \text{max }16;\ g\text{ has a minimum at 0}\)
+B) \(1\text{ maximum, 1 minimum};\ \text{min }-8;\ g\text{ has a maximum at 0}\)
+C) \(1\text{ local maximum (at }x=0,\ f=0)\text{ and 2 local minima (at }x=\pm2,\ f=-16);\ x=0\text{ is a point of inflexion of }g,\ \text{not an extremum}\)
+D) \(0\text{ maxima, 3 minima};\ g\text{ has a minimum at 0}\)
+KEY: C
+SOL:
+Answer: (C) \(\text{max at }0\ (f=0);\ \text{minima at }\pm2\ (f=-16);\ g\text{ has an inflexion at }0\)
+Concept: \(\text{If }f'(c)=0\text{ and }f''(c)<0,\ c\text{ is a local maximum; if }f''(c)>0,\ \text{a local minimum; if }f'\text{ does not change sign at }c,\ c\text{ is neither (a point of inflexion)}\)
+Given: \(f=x^4-8x^2;\ g=x^3\)
+Formula/Principle: \(\text{second derivative test}\)
+Step 1: \(f'=4x^3-16x=4x(x-2)(x+2)=0\Rightarrow x=0,\pm2\)
+Step 2: \(f''=12x^2-16:\ f''(0)=-16<0\ (\max),\ f''(\pm2)=32>0\ (\min)\)
+Step 3: \(f(0)=0,\ f(\pm2)=16-32=-16;\ g'=3x^2\ge0\text{ never changes sign}\Rightarrow\text{no extremum}\)
+Worked derivation: \[f'(x)=4x(x^2-4):\ \ x<-2:\ -;\ \ -2<x<0:\ +;\ \ 0<x<2:\ -;\ \ x>2:\ +\]
+Check: \[f(1)=1-8=-7<0=f(0)\text{ and }f(3)=81-72=9>-16=f(2)\ \checkmark\]
+Why: \(\text{sign changes of }f'\text{ from }+\text{ to }-\text{ mark maxima and from }-\text{ to }+\text{ mark minima}\)
+Why not the others: (A) \(\text{counts reversed}\); (B) \(\text{misses the second minimum; value wrong}\); (D) \(x=0\text{ is a maximum of }f;\ g\text{ has no extremum}\).
+Key point: \(f''<0\Rightarrow\max,\ f''>0\Rightarrow\min;\ f'\text{ without sign change}\Rightarrow\text{inflexion}\)
+
+@@ Q48
+format: numerical
+sub_topic: Evaluating indefinite integrals by choosing a suitable substitution in rational, exponential and logarithmic integrands
+Q: Evaluate \(I_1=\displaystyle\int\frac{2x}{1+x^2}\,dx\), \(I_2=\displaystyle\int\frac{e^{\tan^{-1}x}}{1+x^2}\,dx\) and \(I_3=\displaystyle\int\frac{(\ln x)^2}{x}\,dx\).
+A) \(\tan^{-1}x^2;\ e^{\tan^{-1}x}(1+x^2);\ 2\ln x\)
+B) \(\ln(1+x^2)+C;\ e^{\tan^{-1}x}+C;\ \tfrac13(\ln x)^3+C\)
+C) \(\dfrac{1}{1+x^2}+C;\ \tan^{-1}x\,e^{x}+C;\ (\ln x)^3+C\)
+D) \(2\ln(1+x^2)+C;\ e^{\tan^{-1}x}+C;\ \tfrac12(\ln x)^2+C\)
+KEY: B
+SOL:
+Answer: (B) \(\ln(1+x^2)+C,\ e^{\tan^{-1}x}+C,\ \tfrac13(\ln x)^3+C\)
+Concept: \(\text{If the integrand contains a function }g(x)\text{ together with }g'(x),\ \text{put }t=g(x),\ dt=g'(x)\,dx\text{ to reduce it to a standard form}\)
+Given: \(\text{the three integrands}\)
+Formula/Principle: \(\int f(g(x))g'(x)\,dx=\int f(t)\,dt\)
+Step 1: \(t=1+x^2,\ dt=2x\,dx\Rightarrow\int\tfrac{dt}{t}=\ln(1+x^2)+C\)
+Step 2: \(t=\tan^{-1}x,\ dt=\tfrac{dx}{1+x^2}\Rightarrow\int e^t\,dt=e^{\tan^{-1}x}+C\)
+Step 3: \(t=\ln x,\ dt=\tfrac{dx}{x}\Rightarrow\int t^2\,dt=\tfrac13(\ln x)^3+C\)
+Worked derivation: \[\int\frac{(\ln x)^2}{x}dx\ \overset{t=\ln x}{=}\ \int t^2\,dt=\frac{t^3}{3}+C=\frac{(\ln x)^3}{3}+C\]
+Check: \[\frac{d}{dx}\left[\tfrac13(\ln x)^3\right]=(\ln x)^2\cdot\frac1x\ \checkmark;\ \ \frac{d}{dx}\ln(1+x^2)=\frac{2x}{1+x^2}\ \checkmark\]
+Why: \(\text{each integrand is a function of }g(x)\text{ multiplied by }g'(x),\ \text{the signal for substitution}\)
+Why not the others: (A) \(\text{derivatives of these do not match the integrands}\); (C) \(\text{wrong antiderivatives}\); (D) \(\text{extra factor 2 in }I_1;\ \text{wrong power in }I_3\).
+Key point: \(\text{spot }g\text{ and }g'\text{ together}\Rightarrow t=g(x)\)
+
+@@ Q49
+format: numerical
+sub_topic: Integrating rational functions by partial fractions and interpreting a definite integral of a positive rational function as an area
+Q: Find \(\displaystyle\int\frac{dx}{(x-1)(x-2)}\), the area under \(y=\dfrac{1}{(x-1)(x-2)}\) from \(x=3\) to \(x=4\), and \(\displaystyle\int\frac{x\,dx}{(x+1)(x+2)}\).
+A) \(\ln|(x-1)(x-2)|+C;\ \ln2;\ \ln|x+1|+\ln|x+2|+C\)
+B) \(\ln\left|\tfrac{x-1}{x-2}\right|+C;\ \ln\tfrac34;\ 2\ln|x+1|-\ln|x+2|+C\)
+C) \(\tfrac{1}{x-2}-\tfrac{1}{x-1}+C;\ \tfrac16;\ \ln|x+2|+C\)
+D) \(\ln\left|\tfrac{x-2}{x-1}\right|+C;\ \ln\tfrac43;\ 2\ln|x+2|-\ln|x+1|+C\)
+KEY: D
+SOL:
+Answer: (D) \(\ln\left|\tfrac{x-2}{x-1}\right|+C;\ \ln\tfrac43;\ 2\ln|x+2|-\ln|x+1|+C\)
+Concept: \(\text{A proper rational function with distinct linear factors in the denominator splits as }\dfrac{A}{x-a}+\dfrac{B}{x-b};\ \text{for a positive integrand, the definite integral is the area under the curve}\)
+Given: \(\dfrac{1}{(x-1)(x-2)},\ \dfrac{x}{(x+1)(x+2)}\)
+Formula/Principle: \(\dfrac{1}{(x-1)(x-2)}=\dfrac{1}{x-2}-\dfrac{1}{x-1}\)
+Step 1: \(\int=\ln|x-2|-\ln|x-1|=\ln\left|\tfrac{x-2}{x-1}\right|+C\)
+Step 2: \(\text{area}=\left[\ln\tfrac{x-2}{x-1}\right]_3^4=\ln\tfrac23-\ln\tfrac12=\ln\tfrac43\)
+Step 3: \(\dfrac{x}{(x+1)(x+2)}=\dfrac{-1}{x+1}+\dfrac{2}{x+2}\Rightarrow2\ln|x+2|-\ln|x+1|+C\)
+Worked derivation: \[x=A(x+2)+B(x+1):\ x=-1\Rightarrow A=-1;\ x=-2\Rightarrow B=2\]
+Check: \[\text{on }[3,4],\ y>0\text{ and }\ln\tfrac43\approx0.288,\ \text{between }y(4)\cdot1=\tfrac16\text{ and }y(3)\cdot1=\tfrac12\ \checkmark\]
+Why: \(\text{splitting into simple fractions turns the integrand into terms whose integrals are logarithms}\)
+Why not the others: (A) \(\text{coefficients are not both }+1\); (B) \(\text{sign reversed, giving a negative area}\); (C) \(\text{partial fractions integrate to logs, not reciprocals}\).
+Key point: \(\text{distinct linear factors}\Rightarrow\sum\dfrac{A_i}{x-a_i}\Rightarrow\text{logarithms}\)
+
+@@ Q50
+format: numerical
+sub_topic: Finding the projection of one vector on another, the angle between them, and the value of a parameter that makes two vectors perpendicular
+Q: For \(\vec a=2\hat i+3\hat j+6\hat k\) and \(\vec b=\hat i+2\hat j+2\hat k\), find the projection of \(\vec b\) on \(\vec a\), \(\cos\theta\), and the value of \(\lambda\) for which \(\vec a\perp(\hat i+\lambda\hat j+\hat k)\).
+A) \(\tfrac{20}{7};\ \tfrac{20}{21};\ \lambda=-\tfrac83\)
+B) \(\tfrac{20}{3};\ \tfrac{20}{21};\ \lambda=\tfrac83\)
+C) \(20;\ 1;\ \lambda=-8\)
+D) \(\tfrac{20}{7};\ \tfrac{7}{20};\ \lambda=0\)
+KEY: A
+SOL:
+Answer: (A) \(\tfrac{20}{7};\ \tfrac{20}{21};\ \lambda=-\tfrac83\)
+Concept: \(\text{Projection of }\vec b\text{ on }\vec a=\dfrac{\vec a\cdot\vec b}{|\vec a|};\ \cos\theta=\dfrac{\vec a\cdot\vec b}{|\vec a||\vec b|};\ \vec a\perp\vec c\iff\vec a\cdot\vec c=0\)
+Given: \(\vec a=(2,3,6),\ \vec b=(1,2,2)\)
+Formula/Principle: \(\vec a\cdot\vec b=a_1b_1+a_2b_2+a_3b_3\)
+Step 1: \(\vec a\cdot\vec b=2+6+12=20;\ |\vec a|=7,\ |\vec b|=3\)
+Step 2: \(\text{projection}=\tfrac{20}{7};\ \cos\theta=\tfrac{20}{21}\)
+Step 3: \(2+3\lambda+6=0\Rightarrow\lambda=-\tfrac83\)
+Worked derivation: \[|\vec a|=\sqrt{4+9+36}=7,\ \ |\vec b|=\sqrt{1+4+4}=3,\ \ \cos\theta=\frac{20}{7\cdot3}\]
+Check: \[\text{projection}=|\vec b|\cos\theta=3\cdot\tfrac{20}{21}=\tfrac{20}{7}\ \checkmark\]
+Why: \(\text{the dot product measures how much of one vector lies along the other}\)
+Why not the others: (B) \(\text{divided by }|\vec b|;\ \text{sign of }\lambda\text{ wrong}\); (C) \(\text{not normalised}\); (D) \(\cos\theta\text{ inverted; }\lambda=0\text{ gives }8\ne0\).
+Key point: \(\text{proj}_{\vec a}\vec b=\dfrac{\vec a\cdot\vec b}{|\vec a|}\)
+
+@@ Q51
+format: numerical
+sub_topic: Writing the vector and Cartesian equations of a line through a point parallel to a vector, and the special case of a line parallel to a coordinate axis
+Q: Find the Cartesian equation of the line through \((1,2,3)\) parallel to \(3\hat i+2\hat j-2\hat k\), its direction cosines, and the equations of the line through \((1,2,3)\) parallel to the \(z\)-axis.
+A) \(\dfrac{x-3}{1}=\dfrac{y-2}{2}=\dfrac{z+2}{3};\ \left(\tfrac37,\tfrac27,-\tfrac27\right);\ z=3\)
+B) \(\dfrac{x-1}{3}=\dfrac{y-2}{2}=\dfrac{z-3}{-2};\ \left(\tfrac{3}{\sqrt{17}},\tfrac{2}{\sqrt{17}},-\tfrac{2}{\sqrt{17}}\right);\ x=1,\ y=2\ (z\text{ free})\)
+C) \(\dfrac{x+1}{3}=\dfrac{y+2}{2}=\dfrac{z+3}{-2};\ (3,2,-2);\ x=y=0\)
+D) \(\dfrac{x-1}{3}=\dfrac{y-2}{2}=\dfrac{z-3}{2};\ \left(\tfrac{3}{\sqrt{17}},\tfrac{2}{\sqrt{17}},\tfrac{2}{\sqrt{17}}\right);\ x=1,\ z=3\)
+KEY: B
+SOL:
+Answer: (B) \(\dfrac{x-1}{3}=\dfrac{y-2}{2}=\dfrac{z-3}{-2};\ \tfrac{1}{\sqrt{17}}(3,2,-2);\ x=1,\ y=2\)
+Concept: \(\text{The line through }\vec a\text{ parallel to }\vec b\text{ is }\vec r=\vec a+\lambda\vec b;\ \text{in Cartesian form }\dfrac{x-x_1}{a}=\dfrac{y-y_1}{b}=\dfrac{z-z_1}{c};\ \text{a line parallel to the }z\text{-axis has d.r. }(0,0,1)\)
+Given: \(\text{point }(1,2,3),\ \vec b=(3,2,-2)\)
+Formula/Principle: \(\text{d.c.}=\dfrac{(a,b,c)}{\sqrt{a^2+b^2+c^2}}\)
+Step 1: \(\dfrac{x-1}{3}=\dfrac{y-2}{2}=\dfrac{z-3}{-2}\)
+Step 2: \(|\vec b|=\sqrt{9+4+4}=\sqrt{17}\Rightarrow\text{d.c.}=\left(\tfrac3{\sqrt{17}},\tfrac2{\sqrt{17}},-\tfrac2{\sqrt{17}}\right)\)
+Step 3: \(\text{d.r. }(0,0,1)\Rightarrow x-1=0,\ y-2=0\)
+Worked derivation: \[\vec r=(\hat i+2\hat j+3\hat k)+\lambda(3\hat i+2\hat j-2\hat k)\Rightarrow x=1+3\lambda,\ y=2+2\lambda,\ z=3-2\lambda\]
+Check: \[\lambda=1:\ (4,4,1)\Rightarrow\frac{3}{3}=\frac{2}{2}=\frac{-2}{-2}=1\ \checkmark\]
+Why: \(\text{a zero direction ratio means that coordinate stays fixed along the line}\)
+Why not the others: (A) \(\text{point and direction swapped}\); (C) \(\text{signs of the point wrong; d.r. given as d.c.}\); (D) \(\text{sign of the }z\text{ component lost; wrong axis condition}\).
+Key point: \(\dfrac{x-x_1}{a}=\dfrac{y-y_1}{b}=\dfrac{z-z_1}{c};\ \text{parallel to }z\text{-axis}\Rightarrow x,y\text{ fixed}\)
+
+@@ Q52
+format: numerical
+sub_topic: Finding the corner points of a bounded feasible region, maximising a linear objective there, and recognising the case of infinitely many optimal solutions
+Q: Maximise \(Z=3x+2y\) subject to \(x+y\le4,\ x+3y\le6,\ x,y\ge0\). What are the corner points and the maximum? If instead \(Z=x+y\), how many optimal solutions are there?
+A) \((0,0),(4,0),(0,4);\ Z_{\max}=12;\ \text{one}\)
+B) \((0,0),(6,0),(0,2);\ Z_{\max}=18;\ \text{one}\)
+C) \((0,0),(4,0),(3,1),(0,2);\ Z_{\max}=12\text{ at }(4,0);\ \text{infinitely many (every point of the segment from }(4,0)\text{ to }(3,1),\ Z=4)\)
+D) \((0,0),(4,0),(3,1),(0,2);\ Z_{\max}=11\text{ at }(3,1);\ \text{none}\)
+KEY: C
+SOL:
+Answer: (C) \(\text{corners }(0,0),(4,0),(3,1),(0,2);\ Z_{\max}=12;\ \text{infinitely many optima for }x+y\)
+Concept: \(\text{For a bounded feasible region, the optimum of a linear objective occurs at a corner point; if two adjacent corners give the same optimal value, every point on the edge joining them is optimal}\)
+Given: \(x+y\le4,\ x+3y\le6,\ x,y\ge0\)
+Formula/Principle: \(\text{corner point method}\)
+Step 1: \(x+y=4\text{ and }x+3y=6\Rightarrow2y=2\Rightarrow(3,1)\)
+Step 2: \(Z=3x+2y:\ (0,0)\to0,\ (4,0)\to12,\ (3,1)\to11,\ (0,2)\to4\)
+Step 3: \(Z=x+y:\ (4,0)\to4,\ (3,1)\to4\Rightarrow\text{whole edge optimal}\)
+Worked derivation: \[(6,0):\ 6+0=6>4\ \text{violates }x+y\le4;\ \ (0,4):\ 0+12=12>6\ \text{violates }x+3y\le6\]
+Check: \[(4,0):\ 4\le4,\ 4\le6\ \text{feasible};\ \ (3,1):\ 4\le4,\ 6\le6\ \text{feasible}\ \checkmark\]
+Why: \(\text{the objective }x+y\text{ has level lines parallel to the boundary }x+y=4,\ \text{so the maximum is reached along that whole edge}\)
+Why not the others: (A) \((0,4)\text{ is infeasible}\); (B) \((6,0)\text{ is infeasible}\); (D) \(12>11;\ \text{optima exist}\).
+Key point: \(\text{optimum at a corner; equal adjacent corners}\Rightarrow\text{infinitely many optima}\)
+
+@@ Q53
+format: numerical
+sub_topic: Using the base condition for an increasing logarithmic function, finding the domain of a logarithm of a quadratic, and solving a logarithmic equation with domain checks
+Q: For which bases \(a\) is \(\log_a x\) increasing? What is the domain of \(f(x)=\log(x^2-5x+6)\), and what is the solution of \(\log_2x+\log_2(x-2)=3\)?
+A) \(a>1;\ x<2\text{ or }x>3;\ x=4\ (x=-2\text{ rejected since }\log_2(-2)\text{ is undefined})\)
+B) \(0<a<1;\ 2<x<3;\ x=4\text{ or }-2\)
+C) \(a>0;\ \text{all real }x;\ x=-2\)
+D) \(a>1;\ 2\le x\le3;\ x=8\)
+KEY: A
+SOL:
+Answer: (A) \(a>1;\ (-\infty,2)\cup(3,\infty);\ x=4\)
+Concept: \(\log_ax\ (a>0,a\ne1)\text{ is defined for }x>0;\ \text{it is increasing for }a>1\text{ and decreasing for }0<a<1;\ \log_am+\log_an=\log_a(mn)\)
+Given: \(f=\log(x^2-5x+6);\ \log_2x+\log_2(x-2)=3\)
+Formula/Principle: \(\text{argument}>0;\ \log_2u=3\iff u=8\)
+Step 1: \(x^2-5x+6=(x-2)(x-3)>0\Rightarrow x<2\text{ or }x>3\)
+Step 2: \(x(x-2)=8\Rightarrow x^2-2x-8=0\Rightarrow x=4\text{ or }-2\)
+Step 3: \(\text{need }x>2\Rightarrow x=4\)
+Worked derivation: \[\log_2[x(x-2)]=3\Rightarrow x^2-2x=2^3=8\Rightarrow(x-4)(x+2)=0\]
+Check: \[\log_24+\log_22=2+1=3\ \checkmark\]
+Why: \(\text{combining logs can introduce roots where the original logarithms are undefined, so domain checks are essential}\)
+Why not the others: (B) \(\text{that base gives a decreasing function; interval reversed; }-2\text{ invalid}\); (C) \(\text{argument must be positive}\); (D) \(\text{endpoints make the argument zero; }x=8\text{ fails}\).
+Key point: \(\log_ax\uparrow\iff a>1;\ \text{always check that arguments are positive}\)
+
+@@ Q54
+format: numerical
+sub_topic: Forming the compositions f∘g and g∘f of two polynomial functions, showing they differ, and counting the real solutions of f∘g = g∘f
+Q: For \(f(x)=x^2+1\) and \(g(x)=2x-3\), find \(f\circ g\), \(g\circ f\), and the number of real \(x\) with \((f\circ g)(x)=(g\circ f)(x)\).
+A) \(f\circ g=g\circ f=2x^2-1;\ \text{infinitely many}\)
+B) \(f\circ g=2x^2-1,\ g\circ f=4x^2-12x+10;\ 0\)
+C) \(f\circ g=4x^2+10,\ g\circ f=2x^2+1;\ 1\)
+D) \(f\circ g=4x^2-12x+10,\ g\circ f=2x^2-1;\ 2\ \left(x=3\pm\tfrac{\sqrt{14}}{2}\right)\)
+KEY: D
+SOL:
+Answer: (D) \(f\circ g=4x^2-12x+10,\ g\circ f=2x^2-1;\ 2\text{ solutions}\)
+Concept: \((f\circ g)(x)=f(g(x));\ \text{composition is not commutative in general}\)
+Given: \(f=x^2+1,\ g=2x-3\)
+Formula/Principle: \(\text{substitute the inner function into the outer}\)
+Step 1: \(f(g(x))=(2x-3)^2+1=4x^2-12x+10\)
+Step 2: \(g(f(x))=2(x^2+1)-3=2x^2-1\)
+Step 3: \(4x^2-12x+10=2x^2-1\Rightarrow2x^2-12x+11=0,\ D=144-88=56>0\Rightarrow2\text{ roots}\)
+Worked derivation: \[x=\frac{12\pm\sqrt{56}}{4}=3\pm\frac{\sqrt{14}}{2}\]
+Check: \[x=0:\ f(g(0))=f(-3)=10,\ g(f(0))=g(1)=-1\ne10\Rightarrow f\circ g\ne g\circ f\ \checkmark\]
+Why: \(\text{squaring after shifting differs from shifting after squaring, so the two orders give different polynomials}\)
+Why not the others: (A) \(\text{compositions are different}\); (B) \(\text{compositions swapped; discriminant positive}\); (C) \(\text{expansion wrong}\).
+Key point: \(f\circ g\ne g\circ f\text{ in general}\)
+
+@@ Q55
+format: numerical
+sub_topic: Computing tan 2x and tan 3x from tan x with multiple-angle formulae, and the condition on tan x for tan 2x to be undefined
+Q: If \(\tan x=\tfrac12\), find \(\tan2x\) and \(\tan3x\). For which values of \(\tan x=t\) is \(\tan2x\) undefined?
+A) \(1;\ \tfrac32;\ t=0\)
+B) \(\tfrac43;\ \tfrac{11}{2};\ t=\pm1\)
+C) \(\tfrac34;\ \tfrac{2}{11};\ t=\pm\tfrac1{\sqrt3}\)
+D) \(\tfrac43;\ \tfrac{3}{2};\ t=\pm\sqrt3\)
+KEY: B
+SOL:
+Answer: (B) \(\tan2x=\tfrac43,\ \tan3x=\tfrac{11}{2};\ t=\pm1\)
+Concept: \(\tan2x=\dfrac{2t}{1-t^2},\ \tan3x=\dfrac{3t-t^3}{1-3t^2},\ t=\tan x\)
+Given: \(t=\tfrac12\)
+Formula/Principle: \(\text{multiple-angle formulae}\)
+Step 1: \(\tan2x=\dfrac{1}{1-\tfrac14}=\tfrac43\)
+Step 2: \(\tan3x=\dfrac{\tfrac32-\tfrac18}{1-\tfrac34}=\dfrac{11/8}{1/4}=\tfrac{11}{2}\)
+Step 3: \(\tan2x\text{ undefined}\iff1-t^2=0\iff t=\pm1\)
+Worked derivation: \[\tan3x=\tan(2x+x)=\frac{\tfrac43+\tfrac12}{1-\tfrac43\cdot\tfrac12}=\frac{11/6}{1/3}=\frac{11}{2}\]
+Check: \[\text{both routes give }\tfrac{11}{2}\ \checkmark\]
+Why: \(\text{the double-angle denominator vanishes when }x=\tfrac{\pi}{4}+\tfrac{n\pi}{2},\ \text{where }2x\text{ is an odd multiple of }\tfrac{\pi}{2}\)
+Why not the others: (A) \(\text{formulae misapplied}\); (C) \(\text{values inverted; that condition makes }\tan3x\text{ undefined}\); (D) \(\tan3x\text{ wrong; condition wrong}\).
+Key point: \(\tan2x=\dfrac{2t}{1-t^2},\ \tan3x=\dfrac{3t-t^3}{1-3t^2}\)
+
+@@ Q56
+format: numerical
+sub_topic: Finding an unknown constant in a summation formula by checking the base case and verifying the induction step, and a divisibility statement proved by induction
+Q: \(1\cdot2+2\cdot3+\dots+n(n+1)=\dfrac{n(n+1)(n+k)}{3}\) for all \(n\in\mathbb N\). Find \(k\). For which integer \(a\in\{0,1,2,3,4,5\}\) is \(7^n-a\) divisible by 6 for all \(n\in\mathbb N\)?
+A) \(k=1;\ a=0\)
+B) \(k=3;\ a=5\)
+C) \(k=2;\ a=1\)
+D) \(k=0;\ a=7\)
+KEY: C
+SOL:
+Answer: (C) \(k=2;\ a=1\)
+Concept: \(\text{Induction: verify }P(1)\text{ and show }P(m)\Rightarrow P(m+1);\ \text{an unknown constant can be fixed by the base case and then confirmed by the step}\)
+Given: \(\text{sum formula with }k;\ 7^n-a\)
+Formula/Principle: \(P(1)\text{ true and }P(m)\Rightarrow P(m+1)\)
+Step 1: \(n=1:\ 2=\dfrac{2(1+k)}{3}\Rightarrow k=2\)
+Step 2: \(\text{step: }\dfrac{m(m+1)(m+2)}{3}+(m+1)(m+2)=\dfrac{(m+1)(m+2)(m+3)}{3}\)
+Step 3: \(7^n=(6+1)^n\equiv1\pmod 6\Rightarrow a=1\)
+Worked derivation: \[7^{m+1}-1=7(7^m-1)+6;\ \text{if }6\mid7^m-1\text{ then }6\mid7^{m+1}-1\]
+Check: \[n=2:\ 2+6=8=\frac{2\cdot3\cdot4}{3}\ \checkmark;\ \ 7^2-1=48=6\cdot8\ \checkmark\]
+Why: \(\text{the base case pins down the constant, and the induction step confirms the formula holds for all }n\)
+Why not the others: (A) \(k=1\text{ gives }\tfrac43\text{ at }n=1;\ 7-0\text{ not divisible by }6\); (B) \(n=1\text{ gives }\tfrac83;\ 7-5=2\); (D) \(n=1\text{ gives }\tfrac23;\ a=7\text{ is not in the set}\).
+Key point: \(\text{base case fixes constants; step proves the general case}\)
+
+@@ Q57
+format: numerical
+sub_topic: Solving quadratics with negative discriminant, using the conjugate-root property and the sum and product of roots, and the condition on a coefficient for complex roots
+Q: Solve \(x^2-4x+13=0\), give the sum and product of its roots, and find the values of real \(k\) for which \(x^2+kx+4=0\) has non-real roots. What are the roots of \(x^2+x+1=0\)?
+A) \(2\pm3;\ 4,\ 13;\ k>4;\ \pm1\)
+B) \(-2\pm3i;\ -4,\ 13;\ |k|>4;\ \tfrac{1\pm\sqrt3\,i}{2}\)
+C) \(4\pm3i;\ 8,\ 25;\ k<4;\ \pm i\)
+D) \(2\pm3i;\ 4,\ 13;\ -4<k<4;\ \tfrac{-1\pm\sqrt3\,i}{2}\ (\omega\text{ and }\omega^2)\)
+KEY: D
+SOL:
+Answer: (D) \(2\pm3i;\ \text{sum }4,\ \text{product }13;\ -4<k<4;\ \tfrac{-1\pm\sqrt3 i}{2}\)
+Concept: \(\text{For }ax^2+bx+c=0\text{ with real coefficients and }D=b^2-4ac<0,\ \text{roots are }\dfrac{-b\pm i\sqrt{-D}}{2a},\ \text{a conjugate pair; sum }-\tfrac ba,\ \text{product }\tfrac ca\)
+Given: \(x^2-4x+13=0;\ x^2+kx+4=0;\ x^2+x+1=0\)
+Formula/Principle: \(x=\dfrac{-b\pm\sqrt D}{2a}\)
+Step 1: \(D=16-52=-36\Rightarrow x=\dfrac{4\pm6i}{2}=2\pm3i\)
+Step 2: \(\text{sum}=4,\ \text{product}=4+9=13\)
+Step 3: \(k^2-16<0\iff-4<k<4;\ x^2+x+1:\ D=-3\Rightarrow\dfrac{-1\pm\sqrt3 i}{2}\)
+Worked derivation: \[(2+3i)(2-3i)=4-9i^2=4+9=13=\frac ca\]
+Check: \[(2+3i)^2-4(2+3i)+13=(4+12i-9)-8-12i+13=0\ \checkmark\]
+Why: \(\text{a negative discriminant means no real roots, and real coefficients force the roots to be conjugates}\)
+Why not the others: (A) \(\text{lost the }i;\ \text{condition on }k\text{ reversed}\); (B) \(\text{sign of real part wrong; }|k|>4\text{ gives real roots}\); (C) \(\text{wrong roots}\).
+Key point: \(D<0\Rightarrow\text{conjugate complex roots}\)
+
+@@ Q58
+format: numerical
+sub_topic: Solving a system of linear inequalities in two variables graphically, finding the vertices and area of the solution region and counting lattice points in it
+Q: Draw the region \(x+y\le4,\ y\le x,\ x\ge0,\ y\ge0\). What are its vertices, its area, and the number of points with integer coordinates in it (including the boundary)?
+A) \((0,0),(4,0),(2,2);\ 4;\ 9\)
+B) \((0,0),(4,0),(0,4);\ 8;\ 15\)
+C) \((0,0),(4,0),(2,2);\ 8;\ 6\)
+D) \((0,0),(2,2),(0,4);\ 4;\ 9\)
+KEY: A
+SOL:
+Answer: (A) \(\text{vertices }(0,0),(4,0),(2,2);\ \text{area }4;\ 9\text{ lattice points}\)
+Concept: \(\text{Each linear inequality represents a half-plane; the solution of the system is their common region, bounded here by the lines }x+y=4,\ y=x\text{ and }y=0\)
+Given: \(x+y\le4,\ y\le x,\ x,y\ge0\)
+Formula/Principle: \(\text{area of triangle}=\tfrac12\times\text{base}\times\text{height}\)
+Step 1: \(y=x\text{ meets }x+y=4\text{ at }(2,2);\ x+y=4\text{ meets }y=0\text{ at }(4,0)\)
+Step 2: \(\text{area}=\tfrac12\times4\times2=4\)
+Step 3: \(x=0:1,\ x=1:2,\ x=2:3,\ x=3:2,\ x=4:1\Rightarrow9\)
+Worked derivation: \[\text{for each integer }x,\ 0\le y\le\min(x,\,4-x):\ \ 1+2+3+2+1=9\]
+Check: \[\text{test }(1,0.5):\ 1.5\le4,\ 0.5\le1\ \Rightarrow\text{inside, so the region lies below }y=x\ \checkmark\]
+Why: \(y\le x\text{ keeps the part below the line }y=x,\ \text{cutting the triangle under }x+y=4\text{ in half}\)
+Why not the others: (B) \(\text{ignores }y\le x\); (C) \(\text{area and count wrong}\); (D) \(\text{that is the region above }y=x\).
+Key point: \(\text{intersect half-planes; vertices from pairwise line intersections}\)
+
+@@ Q59
+format: numerical
+sub_topic: Using the A.M.–G.M. inequality to find maximum products and minimum sums, and recovering two numbers from their A.M. and G.M.
+Q: Two positive numbers have A.M. 10 and G.M. 8. Find them. What is the maximum of \(ab\) when \(a+b=10\) (\(a,b>0\)), and the minimum of \(x+\dfrac9x\) for \(x>0\)?
+A) \(12,8;\ 10;\ 9\)
+B) \(18,2;\ 50;\ 3\)
+C) \(16,4;\ 25\ (\text{at }a=b=5);\ 6\ (\text{at }x=3)\)
+D) \(16,4;\ 20;\ 10\)
+KEY: C
+SOL:
+Answer: (C) \(16\text{ and }4;\ 25;\ 6\)
+Concept: \(\text{For positive }a,b:\ \dfrac{a+b}{2}\ge\sqrt{ab},\ \text{with equality iff }a=b;\ \text{if the A.M. is }A\text{ and G.M. is }G,\ \text{the numbers are }A\pm\sqrt{A^2-G^2}\)
+Given: \(A=10,\ G=8;\ a+b=10;\ x>0\)
+Formula/Principle: \(\text{A.M.}\ge\text{G.M.}\)
+Step 1: \(a+b=20,\ ab=64\Rightarrow t^2-20t+64=0\Rightarrow16,4\)
+Step 2: \(\sqrt{ab}\le5\Rightarrow ab\le25,\ \text{equality at }a=b=5\)
+Step 3: \(x+\tfrac9x\ge2\sqrt9=6,\ \text{equality at }x=3\)
+Worked derivation: \[A\pm\sqrt{A^2-G^2}=10\pm\sqrt{100-64}=10\pm6=16,\ 4\]
+Check: \[\frac{16+4}{2}=10,\ \sqrt{64}=8;\ \ 3+3=6\ \checkmark\]
+Why: \(\text{when the sum is fixed the product is largest at equal parts, and when the product is fixed the sum is smallest at equal parts}\)
+Why not the others: (A) \(\text{G.M. of }12,8\text{ is not }8;\ \text{extremes wrong}\); (B) \(\text{G.M. of }18,2\text{ is }6\); (D) \(\text{maximum is }25,\ \text{minimum }6\).
+Key point: \(\text{A.M.}\ge\text{G.M.},\ \text{equality iff equal}\)
+
+@@ Q60
+format: numerical
+sub_topic: Finding lines through a given point whose intercepts have a given sum, and writing a line in normal form from its distance from the origin and the angle of the normal
+Q: Find the lines through \((2,2)\) whose intercepts on the axes sum to 9, and the line whose perpendicular from the origin has length 4 and makes \(30^\circ\) with the positive \(x\)-axis.
+A) \(x+y=4;\ x+\sqrt3y=8\)
+B) \(\dfrac x3+\dfrac y6=1\text{ and }\dfrac x6+\dfrac y3=1\ (2x+y=6,\ x+2y=6);\ \sqrt3x+y=8\)
+C) \(\dfrac x4+\dfrac y5=1;\ \sqrt3x+y=4\)
+D) \(x+y=9;\ x+y=4\)
+KEY: B
+SOL:
+Answer: (B) \(2x+y=6\text{ and }x+2y=6;\ \sqrt3x+y=8\)
+Concept: \(\text{Intercept form }\dfrac xa+\dfrac yb=1;\ \text{normal form }x\cos\omega+y\sin\omega=p,\ \text{where }p\text{ is the perpendicular distance from the origin and }\omega\text{ the angle of the normal with the }x\text{-axis}\)
+Given: \(a+b=9,\ (2,2)\text{ on the line};\ p=4,\ \omega=30^\circ\)
+Formula/Principle: \(\dfrac2a+\dfrac2b=1\Rightarrow2(a+b)=ab\)
+Step 1: \(ab=18,\ a+b=9\Rightarrow t^2-9t+18=0\Rightarrow\{a,b\}=\{3,6\}\)
+Step 2: \(\dfrac x3+\dfrac y6=1\Rightarrow2x+y=6;\ \dfrac x6+\dfrac y3=1\Rightarrow x+2y=6\)
+Step 3: \(x\cdot\tfrac{\sqrt3}{2}+y\cdot\tfrac12=4\Rightarrow\sqrt3x+y=8\)
+Worked derivation: \[\frac2a+\frac2b=\frac{2(a+b)}{ab}=1\Rightarrow ab=2(9)=18\]
+Check: \[2(2)+2=6\ \checkmark;\ \ \text{distance of }\sqrt3x+y-8=0\text{ from }O=\frac{8}{\sqrt{3+1}}=4\ \checkmark\]
+Why: \(\text{the point gives one equation and the intercept sum another, so two lines satisfy both}\)
+Why not the others: (A) \(\text{intercepts }4,4\text{ sum to }8;\ \text{normal form uses }\cos30^\circ,\sin30^\circ\text{ wrongly}\); (C) \((2,2)\text{ not on it; }p\text{ halved}\); (D) \(x+y=9\text{ misses }(2,2)\).
+Key point: \(\text{intercept form for intercept data; normal form }x\cos\omega+y\sin\omega=p\)
