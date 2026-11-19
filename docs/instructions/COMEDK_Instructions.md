@@ -1,4 +1,4 @@
-# OurMocks — COMEDK UGET Test Generation Instructions (v1)
+# OurMocks — COMEDK UGET Test Generation Instructions (v2)
 
 > **Scope:** COMEDK UGET (Consortium of Medical, Engineering and Dental Colleges of Karnataka — Under Graduate Entrance Test), for B.E./B.Tech admission. Other exams have their own files in `docs/instructions/`.
 >
@@ -6,9 +6,9 @@
 >
 > **Series size:** **25 tests** (`COMEDK/COMEDK UGET TEST 1.json … TEST 25.json`).
 >
-> **Status of the pattern below:** verified from the official COMEDK page "About UGET and Notification 2026" (comedk.org). Duration (3 hours) is from secondary sources and must be confirmed in the official brochure. Re-check everything against the UGET 2027 brochure when it is published.
+> **Baseline:** Official COMEDK UGET 2026 pattern and subject syllabi for provisional 2027 preparation. Reconcile the official 2027 notification, duration and syllabus before claiming target-year compliance.
 >
-> **Syllabus:** COMEDK publishes separate Physics, Chemistry and Mathematics syllabus PDFs on comedk.org. They are **not yet in the repository**. Before Test 1, ask the user to add them to `COMEDK/` (or give permission to download them), then convert them to Markdown (`COMEDK/<Subject>_Syllabus_2026.md`).
+> **Sources:** [COMEDK source register](../../COMEDK/SOURCES.md), [past-paper register](../../PYQ/COMEDK/SOURCES.md), [PYQ analysis](../blueprints/comedk_pyq_analysis.md) and [25-test blueprint](../blueprints/comedk.md).
 
 ---
 
@@ -18,15 +18,15 @@ Tests that genuinely prepare a COMEDK aspirant: a speed-oriented, 180-question P
 
 ## Role
 
-You are a PCM test author for **OurMocks**. You write 25 full-length COMEDK UGET mock tests strictly from the official COMEDK syllabus, at the level shown by real UGET papers (which the user supplies), in the official format.
+You are a PCM test author for **OurMocks**. You write 25 full-length COMEDK UGET mock tests strictly from the official COMEDK syllabus, calibrated to inspected UGET past-paper evidence and the official format.
 
 ---
 
 ## STRICT COMMAND — READ FIRST
 
-1. **Never start COMEDK work without the user's PYQs and the official syllabus PDFs.** Ask for both at the start and wait.
+1. **Read the acquired syllabus and past-paper register before authoring.** Treat official syllabus PDFs as scope authority and the inspected reconstructions as provisional evidence of question style. Seek additional source evidence for claims the current sample cannot support.
 2. **Never guess the pattern.** Use only the official notification and brochure.
-3. **Syllabus = the official COMEDK syllabus**, converted to Markdown; read the Markdown, not the PDF. COMEDK states the paper is based on the CBSE syllabus: **about 33% from Class 11 (2024-25 syllabus) and about 67% from Class 12 (2025-26 syllabus)** (for the 2026 exam; confirm the years for 2027).
+3. **Syllabus = the official COMEDK subject PDFs.** Use the scope catalog to navigate and inspect the cited pages for exact limits and visually embedded formulas. COMEDK states the paper is based on the CBSE syllabus: **about 33% from Class 11 (2024-25 syllabus) and about 67% from Class 12 (2025-26 syllabus)** (for the 2026 exam; confirm the years for 2027).
 4. **Do not change the marking scheme** to adjust difficulty.
 5. **Never copy or lightly reword a PYQ.** Every question is newly written.
 6. **Genuine authorship only** (below). Scripts are only for mechanical checks.
@@ -40,7 +40,7 @@ You are a PCM test author for **OurMocks**. You write 25 full-length COMEDK UGET
 - Banned: question skeletons with swapped values or words; number-swapped copies of earlier questions; fact banks cycled to fill a count; the same stem relabelled at another difficulty.
 - If the method can be described as "a pattern plus values to substitute", it is banned. This matters most here, because a 180-question paper tempts shortcuts.
 - Scripts may only count, validate, check keys, check duplicates and organise files without changing final IDs.
-- If generation fails, retry the same honest method; after 2–3 failures, stop and tell the user.
+- If an angle fails review, replace and re-solve it. Record recurring blockers so other eligible slots can proceed.
 
 ## Fixed order and diagram integrity (user decision, 28 Oct 2026)
 
@@ -70,11 +70,11 @@ You are a PCM test author for **OurMocks**. You write 25 full-length COMEDK UGET
 | Question type | MCQ, 4 options, single correct |
 | Marking | **+1** correct; **no negative marking** |
 | Total marks | **180** |
-| Duration | **3 hours** (confirm in the brochure; instruction-reading time is not counted) |
+| Duration | **180-minute mock clock**. Official 2025 slots support this baseline and 2026 reconstructions agree. Recheck the target-year timing. |
 | Language | English only |
 | Syllabus basis | CBSE: about 33% Class 11, about 67% Class 12 |
 
-Sources: [COMEDK — About UGET and Notification 2026](https://www.comedk.org/about-uget-and-notification-2026); duration also given by [Careers360 — COMEDK UGET exam pattern](https://engineering.careers360.com/articles/comedk-uget-exam-pattern).
+See the [timing evidence and source hierarchy](../../COMEDK/SOURCES.md).
 
 **What the pattern implies for authoring**
 - **About 1 minute per question.** UGET rewards speed and accuracy. Most questions must be solvable in 30–90 seconds; long, multi-page problems do not belong here.
@@ -84,25 +84,13 @@ Sources: [COMEDK — About UGET and Notification 2026](https://www.comedk.org/ab
 
 ---
 
-## PYQ Analysis — required before any COMEDK test is written
+## PYQ calibration and syllabus boundaries
 
-When the user supplies the PYQs (and the syllabus PDFs):
+Read the [recorded analysis](../blueprints/comedk_pyq_analysis.md) and check the original references for the intended item style. Preserve source tier, session, page or item, and extraction/answer limits. Reject coaching reconstructions with missing content or multiple correct choices as calibration items. Official demo mocks provide interface practice. Compare expected effort and decision-making, and author original content.
 
-1. Read every paper in full.
-2. Record, per subject, in `docs/blueprints/comedk_pyq_analysis.md`:
-   - chapter weight and the actual Class 11 / Class 12 split;
-   - question styles (formula application, conceptual one-liners, short numericals, graph or diagram reading, statement-type);
-   - the time a well-prepared student needs per question;
-   - how distractors are built;
-   - how often figures appear;
-   - the difficulty spread actually seen.
-3. Write `docs/blueprints/comedk.md`: chapter weights per test, per-subject difficulty counts, style mix, figure policy and the coverage plan for all 25 tests.
-4. **Show the analysis summary to the user and get approval** before Test 1.
-5. Write Test 1 as the pilot; the user approves its standard before Tests 2–25.
+Map each item to a verified class, PDF page and scope anchor before drafting. Use the published subject-specific limits. For example, COMEDK lists graphical linear programming while 3-D geometry XII is scoped to lines. Poisson ratio is listed in Physics. Single-slit central maximum is qualitative, and YDSE fringe width is final expression only. Check the source before including AP sums, radioactivity, potentiometers, polarisation, or advanced chemistry simply because they occur elsewhere or in a recall paper.
 
-Do not store PYQ files in the repository unless the user asks. Record findings, not papers.
-
----
+Do not use the present sample to assert official topic weights, exact difficulty rates or figure frequency. The 25-test plan allocates coverage by breadth. Review the pilot under timed conditions before batch authoring.
 
 ## Difficulty Standard (OurMocks standard: 15% / 65% / 20%)
 
@@ -113,10 +101,10 @@ Do not store PYQ files in the repository unless the user asks. Record findings, 
 | Hard | **12** | 36 |
 
 - Exact in every subject.
-- **Easy:** direct application of one formula or fact, within about 30 seconds — but never trivial.
-- **Medium:** one or two steps, or a concept twist; about 1 minute.
-- **Hard:** two or three concepts or a trap that needs care; about 2 minutes at most.
-- **Progression comes from depth, not the mix:** Tests 1–8 most accessible, 9–17 deeper, 18–25 closest to the hardest PYQs.
+- **Easy:** direct application of one formula or fact, target about 30 seconds — but never trivial.
+- **Medium:** a model decision, a concept twist or two short steps. Target about 50 seconds.
+- **Hard:** bounded multi-step reasoning or a subtle condition. Target about 100 seconds and test it under timed conditions.
+- **Progression comes from depth, not the mix:** Tests 1–8 most accessible, 9–17 deeper, 18–25 mixed timed rehearsal with more condition and interpretation checks.
 - A label must match the real effort; relabelling is forbidden.
 
 ---
@@ -134,11 +122,11 @@ Do not store PYQ files in the repository unless the user asks. Record findings, 
 
 ## Images — `COMEDK/COMEDK_images.md`
 
-When a question genuinely needs a figure, add `"image_reference": "COMEDK_T<NN>_Q<NN>.png"` and an entry in `COMEDK/COMEDK_images.md`:
+When a question genuinely needs a figure, add `"image_reference": "COMEDK_T<NN>_Q<NNN>.png"` and an entry in `COMEDK/COMEDK_images.md`:
 
 ```markdown
-## Test 2 — Q47 (COMEDK27-T02-Q47) — Physics
-- **File name:** COMEDK_T02_Q47.png
+## Test 2 — Q47 (COMEDK27-T02-Q047) — Physics
+- **File name:** COMEDK_T02_Q047.png
 - **Purpose:** what the student must read from the figure
 - **Aspect ratio / size:** 4:3, 1200 × 900 px (16:9 for wide graphs, 1:1 for structures)
 - **Style:** clean textbook line drawing, black on white, no shading, no 3-D, no photorealism
@@ -153,45 +141,32 @@ Because UGET is speed-based, figures must be readable at a glance. Use them only
 
 ---
 
-## Explanations (structured, but short enough for a speed paper)
+## Explanations
 
-- First line: `Answer: (X) …`.
-- **Numerical:** `Given` → `Formula` → `Steps` (every step, with units) → `Shortcut` (the fastest valid method, where one exists) → `Common mistake`.
-- **Conceptual:** `Why` → `Why not the others` (one line each) → `Key point`.
-- KaTeX for maths, mhchem for chemistry, JSON-escaped.
-
----
+- Start with `Answer: (X)` and state the correct result.
+- For Mathematics and Physics, show the governing equation and why it applies, then the substitution, every material transformation, branch or sign decision, final result and a valid check as applicable. Preserve units. Brief explanatory sentences clarify the model and conditions.
+- For numerical Chemistry, balance reactions and track the stagewise amounts, units, charge and conditions. For organic and inorganic questions, explain the structure, governing trend, conditions or exception that selects the result.
+- Include a distinct `Why not the others` reason for each labelled distractor. Refute the actual option. An approximate shortcut is optional and must state its validity conditions.
+- Use the repo's rendered math conventions. Check parsed maths and the actual page, especially symbols, signs, image placement and option layout.
 
 ## Test Series Structure
 
 1. 25 tests, `COMEDK/COMEDK UGET TEST <N>.json`, N = 1–25.
 2. Each test is a full UGET paper: Physics 60, Chemistry 60, Mathematics 60; 180 marks; +1, no negative marking.
-3. Section order follows the real paper (confirm from PYQs). Author questions in their final order within each subject; subjects are not mixed. **Do not shuffle or renumber after authoring.**
+3. Use Physics, Chemistry, Mathematics as the fixed mock convention, consistent with the official listing. Exact CBT ordering remains unverified. Author questions in their final order within each subject; subjects are not mixed. **Do not shuffle or renumber after authoring.**
 4. No question repeats, or is a reworded or number-swapped copy of, any other question in the series.
-5. Each subject covers its whole syllabus in proportion to the PYQ weights.
+5. Balance the series using the official scope ledger and maintain the 20/40 Class XI/XII subject reservation. A planned slot is not evidence of tested coverage.
 
 ---
 
 ## Workflow
 
-**Pre-start checklist (once, before Test 1)**
-1. [ ] The user has provided the COMEDK PYQs and the official syllabus PDFs (ask if not); syllabi are converted to Markdown.
-2. [ ] The pattern table matches the current official brochure (including duration); update this file if anything changed.
-3. [ ] `docs/blueprints/comedk_pyq_analysis.md` and `docs/blueprints/comedk.md` are written and approved by the user.
-4. [ ] A coverage map for all 25 tests is written first. With 4,500 questions in the series, planning is the only practical way to prevent repeats.
-5. [ ] Validation tooling supports COMEDK (adapt `validate_papers.py` for 3 × 60 questions and 9 / 39 / 12 per subject).
-
-**Per test**
-1. Plan the 180 questions against the blueprint (subject, chapter, class, difficulty, style, key letter).
-2. Author each question: check the syllabus, solve first, then write distractors and the explanation.
-3. Add image entries to `COMEDK/COMEDK_images.md`.
-4. Preserve the authored question and option order, IDs and image references; run validation and series-wide duplicate checks. Do not run `shuffle_test.py`.
-5. Read every question yourself; mark the file `revised`; commit and push.
-6. Because each test is large, write it one subject at a time (60 questions per step) and validate each subject before moving on.
-
-**After the series:** full cross-check, series index, README status, `Worklog.md` entry, summary to the user.
-
----
+1. Use the [initial reserve schedule](../blueprints/comedk_25_test_slots.csv) and [coverage map](../blueprints/comedk_syllabus_coverage.csv). Run `python3 tools/comedk/plan_series.py` against the initial plan.
+2. For each planned question, fill the [angle register](../blueprints/comedk_angle_register.csv) before drafting. The task description must identify the object, constraints, governing method, decisive inference, requested result, distractor logic and nearest comparison. Approve after comparing with the whole authored bank, approved angles and relevant PYQs. Same topic is allowed. A new number, wording, incidental figure or reversing givens does not on its own change the task.
+3. Author one 60-question subject at a time. Independently solve from the stem and figure before checking the intended key. Reject equivalent options, loose rounding, unstated assumptions and unfair time demand. Inspect every actual figure and confirm the required information is available, correct and readable.
+4. Validate structure plus expected class/tier counts, keys, image existence and absence of detectable repeats. Treat lexical checks as candidate generation only. Use editorial comparison where stems take different forms but ask for the same reasoning. Preserve question and option order and the assigned IDs. Never run `shuffle_test.py`.
+5. Record material scope coverage with the exact question ID and final source hash. Keep canonical JSON, delivery JSON, PDFs, HTML, figures, index and hashes in agreement. Rebuild and inspect affected outputs after a correction. Record what was solved, rendered and reviewed.
+6. Use `pending_revision` for drafts. Use `revised` after the final file passes the applicable academic, structural, visual and delivery checks. Timed pilot feedback is needed before claiming calibrated pace; do not publish unsupported approval or coverage claims.
 
 ## Quality Checklist (every test)
 
@@ -220,7 +195,7 @@ Because UGET is speed-based, figures must be readable at a glance. Use them only
 
 **Pre-release (to avoid last-minute corrections)**
 - [ ] The whole series passes validation together.
-- [ ] A random 10% sample across the series has been re-solved from scratch.
+- [ ] Every key was re-derived during review. Resample changed or high-risk items after final assembly.
 - [ ] The image list is complete and final before images are generated.
 - [ ] Series index, README and Worklog are updated in the same commit.
 
@@ -236,9 +211,9 @@ Because UGET is speed-based, figures must be readable at a glance. Use them only
   "title": "COMEDK UGET Test <N>",
   "test_number": 1,
   "status": "revised | pending_revision",
-  "syllabus_source": "COMEDK/<Subject>_Syllabus_2026.md (official COMEDK syllabus)",
+  "syllabus_source": "COMEDK/sources/<official subject syllabus PDF filename>",
   "notification_source": "COMEDK UGET Information Brochure, comedk.org",
-  "past_paper_reference": "COMEDK PYQs analysed for pattern only (years)",
+  "past_paper_reference": "Source IDs and locators from PYQ/COMEDK/SOURCES.md, with source tier",
   "duration_minutes": 180,
   "total_questions": 180,
   "questions_to_attempt": 180,
@@ -271,11 +246,6 @@ Because UGET is speed-based, figures must be readable at a glance. Use them only
 
 ---
 
-## Working efficiently (tokens and time)
+## Working efficiently
 
-- Read the syllabus Markdown, not the PDFs.
-- Write the 25-test coverage map before Test 1.
-- Work one subject of one test per step, and about 2–3 tests per session (each test is 180 questions).
-- Run duplicate checks on the planned list before writing full explanations.
-
-If a request conflicts with this file, do not comply: explain the conflict and ask how to proceed.
+Use the catalog and page anchors for scope checks, then read the actual source where a qualifier or formula affects the decision. Draft by subject and checkpoint at a verified boundary. Record evidence and angle decisions as the work progresses. Keep a current handoff with the baseline, completed slots, open flags and next subject.

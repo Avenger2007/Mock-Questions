@@ -1,0 +1,11 @@
+# COMEDK past-paper source register
+
+| ID | Claimed session | Source | Acquisition and study status | Authority |
+|---|---|---|---|---|
+| R26-AM | 9 May 2026, shift 1 | [Collegedunia recall PDF](https://image-static.collegedunia.com/public/image/COMEDK_UGET_2026_May_9_Shift_1_Paper_0cdec986a13999ed7c4f499e9d32d226.pdf) | Downloaded and read all 15 numbered items | Memory-based excerpt |
+| R26-PM | 9 May 2026, shift 2 | [Collegedunia recall PDF](https://image-static.collegedunia.com/public/image/COMEDK_UGET_2026_May_9_Shift_2_Paper_Questions_d153f01a04a7f7c61570dd4e5bb9f519.pdf) | Downloaded and read all 10 numbered items | Memory-based excerpt |
+| R25-A | 10 May 2025, shift 1 | [Prepp compilation](https://cdn-images.prepp.in/public/image/COMEDK_UGET_2025_Question_Paper_PDF_May_10_2025_Shift_1__7cde433a15b52ee4c44d5d772df73b65.pdf) | Downloaded, 73 pages. Sampled. Repeated or incorrect section headers and blank image-only options in extraction. | Memory-based compilation |
+| R24-PM | 12 May 2024, afternoon | [ExamGOAL printable paper](https://pdf.questions.examgoal.com/download/paper/jee/comedk/comedk-2024-afternoon-shift/en.pdf) | Downloaded, 45 pages. Cover advertises 180 items and a publisher key. Image-heavy. Sampled rendered pages/OCR with figure inspection. | Third-party reproduction, candidate origin and key unverified |
+| DISC | 2020–2026 | [ExamGOAL session index](https://pdf.questions.examgoal.com/past-years/year-wise/jee/comedk) | Discovery queue for broader shift sampling | Third-party catalog |
+
+Downloaded third-party PDFs are study copies in the local research cache. Use these public source links for continuity. Do not check copies or extracted stems into Git. Do not count syndicated copies, answer editions or duplicate mirror versions as additional evidence. Public, authenticated complete papers and official final keys were not acquired. De-identify candidate-supplied evidence before retaining any provenance data. For each usable benchmark preserve the session, position, PDF page, scope mapping, reasoning, source certainty and key-verification status. Exclude missing figures, corrupt statements and unverifiable items from quantitative calibration.
