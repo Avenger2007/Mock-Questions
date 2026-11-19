@@ -1,0 +1,459 @@
+@@ Q41
+format: numerical
+sub_topic: Finding n from a given value of a combination, counting committees with an at-least condition, and finding the number of sides of a polygon from its number of diagonals
+Q: Find \(n\) if \(^nC_2=45\). In how many ways can a committee of 5 be chosen from 6 men and 4 women so that it has at least 3 women? How many sides has a polygon with 44 diagonals?
+A) \(n=9;\ 60;\ 8\)
+B) \(n=10;\ 126;\ 11\)
+C) \(n=10;\ 66;\ 11\)
+D) \(n=45;\ 66;\ 44\)
+KEY: C
+SOL:
+Answer: (C) \(n=10;\ 66;\ 11\text{ sides}\)
+Concept: \(\text{selection without order uses }^nC_r=\dfrac{n!}{r!(n-r)!};\ \text{an at-least condition is split into disjoint cases and added}\)
+Given: \(^nC_2=45;\ 6\text{ men},\ 4\text{ women},\ 5\text{ members};\ 44\text{ diagonals}\)
+Formula/Principle: \(^nC_2=\dfrac{n(n-1)}{2};\ \text{diagonals}=\,^nC_2-n=\dfrac{n(n-3)}{2}\)
+Step 1: \(n(n-1)=90\Rightarrow n=10\)
+Step 2: \(\text{3 women: }^4C_3\cdot\,^6C_2=4\times15=60;\ \text{4 women: }^4C_4\cdot\,^6C_1=6;\ \text{total }66\)
+Step 3: \(n(n-3)=88\Rightarrow n^2-3n-88=0\Rightarrow(n-11)(n+8)=0\Rightarrow n=11\)
+Worked derivation: \[\binom43\binom62+\binom44\binom61=4\cdot15+1\cdot6=66\]
+Check: \[\frac{11\times8}{2}=44\ \checkmark;\quad\frac{10\times9}{2}=45\ \checkmark\]
+Why: \(\text{each case of the at-least condition counts different committees, so the cases add}\)
+Why not the others: (A) \(^9C_2=36;\ \text{the 4-women case is missed}\); (B) \(126=\,^9C_4\text{ is unrelated}\); (D) \(n\text{ confused with the value}\).
+Key point: \(\text{at least}\Rightarrow\text{sum of exact cases};\ \text{diagonals}=n(n-3)/2\)
+
+@@ Q42
+format: numerical
+sub_topic: Finding the middle term of a binomial expansion with an even index and the term independent of x by setting the power of x to zero
+Q: Find the middle term of \(\left(2x-\dfrac1x\right)^{10}\), the number of terms in it, and the term independent of \(x\) in \(\left(x^2+\dfrac1x\right)^9\).
+A) \(-8064;\ 11\text{ terms};\ 84\)
+B) \(8064;\ 10\text{ terms};\ 126\)
+C) \(-252;\ 11\text{ terms};\ 36\)
+D) \(-8064\,x;\ 12\text{ terms};\ 84\)
+KEY: A
+SOL:
+Answer: (A) \(T_6=-8064;\ 11\text{ terms};\ T_7=84\)
+Concept: \((a+b)^n\text{ has }n+1\text{ terms};\ \text{for even }n\text{ the middle term is }T_{n/2+1};\ \text{the general term is }T_{r+1}=\,^nC_r\,a^{n-r}b^r\)
+Given: \(n=10,\ a=2x,\ b=-\tfrac1x;\ n=9,\ a=x^2,\ b=\tfrac1x\)
+Formula/Principle: \(T_{r+1}=\,^nC_r\,a^{n-r}b^r\)
+Step 1: \(\text{11 terms; middle }T_6:\ ^{10}C_5(2x)^5\left(-\tfrac1x\right)^5=252\times32\times(-1)=-8064\)
+Step 2: \(T_{r+1}=\,^9C_r\,x^{18-2r}x^{-r}=\,^9C_r\,x^{18-3r}\)
+Step 3: \(18-3r=0\Rightarrow r=6\Rightarrow\,^9C_6=84\)
+Worked derivation: \[T_6=\binom{10}{5}(2x)^5\left(-\frac1x\right)^5=252\cdot32x^5\cdot\left(-\frac{1}{x^5}\right)=-8064\]
+Check: \[\binom96=\binom93=\frac{9\cdot8\cdot7}{6}=84\ \checkmark\]
+Why: \(\text{the powers of }x\text{ cancel exactly in both the middle term and the }r=6\text{ term}\)
+Why not the others: (B) \(\text{sign lost; }n+1\text{ terms}\); (C) \(\text{the factor }2^5\text{ is missed}\); (D) \(x\text{ cancels; 11 terms}\).
+Key point: \(T_{r+1}=\,^nC_ra^{n-r}b^r;\ \text{set the power of }x\text{ to }0\)
+
+@@ Q43
+format: numerical
+sub_topic: Reading focus, directrix and latus rectum of a parabola, finding points at a given focal distance, and finding a parabola with vertical axis through a given point
+Q: For \(y^2=12x\) find the focus, directrix and length of latus rectum, and the points on it whose distance from the focus is 8. Find also the parabola with vertex at the origin, axis along the \(y\)-axis, passing through \((2,3)\).
+A) \((0,3);\ y=-3;\ 3;\ (8,\pm4\sqrt6);\ y^2=\tfrac92x\)
+B) \((3,0);\ x=3;\ 6;\ (5,\pm\sqrt{60});\ x^2=3y\)
+C) \((12,0);\ x=-12;\ 12;\ (8,\pm\sqrt{96});\ x^2=\tfrac43y\)
+D) \((3,0);\ x=-3;\ 12;\ (5,\pm2\sqrt{15});\ x^2=\tfrac43y\)
+KEY: D
+SOL:
+Answer: (D) \(\text{focus }(3,0),\ x=-3,\ \text{LR}=12;\ (5,\pm2\sqrt{15});\ x^2=\tfrac43y\)
+Concept: \(\text{a parabola is the locus of points equidistant from the focus and the directrix, so the focal distance of }(x,y)\text{ on }y^2=4ax\text{ is }x+a\)
+Given: \(y^2=12x\Rightarrow4a=12,\ a=3;\ \text{point }(2,3)\)
+Formula/Principle: \(y^2=4ax:\ S(a,0),\ x=-a,\ \text{LR}=4a,\ SP=x+a;\ x^2=4by\)
+Step 1: \(S=(3,0),\ \text{directrix }x=-3,\ \text{LR}=12\)
+Step 2: \(x+3=8\Rightarrow x=5,\ y^2=60\Rightarrow y=\pm2\sqrt{15}\)
+Step 3: \(x^2=4by:\ 4=12b\Rightarrow b=\tfrac13\Rightarrow x^2=\tfrac43y\)
+Worked derivation: \[SP=\sqrt{(5-3)^2+60}=\sqrt{64}=8\]
+Check: \[(2)^2=\frac43(3)=4\ \checkmark\]
+Why: \(\text{the focal distance equals the distance to the directrix, which is }x+a\)
+Why not the others: (A) \(\text{axis wrong}\); (B) \(\text{directrix is }x=-3,\ \text{LR}=12\); (C) \(a=3,\ \text{not }12\).
+Key point: \(y^2=4ax:\ SP=x+a,\ \text{LR}=4a\)
+
+@@ Q44
+format: numerical
+sub_topic: Finding derivatives of x squared and 1/x from first principles, and interpreting a derivative as the rate of change of the area of a circle with radius
+Q: Using first principles, find the derivatives of \(x^2\) and \(\dfrac1x\). At what rate does the area of a circle change with respect to its radius when \(r=5\text{ cm}\)?
+A) \(2x;\ \dfrac1{x^2};\ 25\pi\text{ cm}^2\text{ per cm}\)
+B) \(2x;\ -\dfrac1{x^2};\ 10\pi\text{ cm}^2\text{ per cm}\)
+C) \(x;\ -\dfrac1x;\ 5\pi\)
+D) \(2x+h;\ -\dfrac1{x^2};\ 10\pi\)
+KEY: B
+SOL:
+Answer: (B) \(2x;\ -\dfrac1{x^2};\ 10\pi\text{ cm}^2\text{ per cm}\)
+Concept: \(f'(x)=\displaystyle\lim_{h\to0}\frac{f(x+h)-f(x)}{h}\text{ is the slope of the tangent and the instantaneous rate of change}\)
+Given: \(f(x)=x^2,\ g(x)=\tfrac1x;\ A=\pi r^2,\ r=5\)
+Formula/Principle: \(f'(x)=\lim_{h\to0}\dfrac{f(x+h)-f(x)}{h}\)
+Step 1: \(\dfrac{(x+h)^2-x^2}{h}=2x+h\to2x\)
+Step 2: \(\dfrac{\frac1{x+h}-\frac1x}{h}=\dfrac{-1}{x(x+h)}\to-\dfrac1{x^2}\)
+Step 3: \(\dfrac{dA}{dr}=2\pi r=10\pi\)
+Worked derivation: \[\frac{1}{h}\left(\frac{1}{x+h}-\frac1x\right)=\frac{x-(x+h)}{hx(x+h)}=\frac{-1}{x(x+h)}\]
+Check: \[\frac{dA}{dr}=2\pi r=\text{circumference, the thin ring added per unit increase of }r\ \checkmark\]
+Why: \(\text{the limit removes the }h\text{ terms, leaving the exact slope}\)
+Why not the others: (A) \(\text{sign lost; rate is }2\pi r\); (C) \(\text{limits wrong}\); (D) \(h\text{ must go to }0\).
+Key point: \(\dfrac{d}{dx}x^2=2x;\ \dfrac{d}{dx}\dfrac1x=-\dfrac1{x^2}\)
+
+@@ Q45
+format: numerical
+sub_topic: Finding an unknown observation from a given mean, then the range and mean deviation about the mean, and how they change when the data are shifted or scaled
+Q: The observations \(2,4,6,8,x\) have mean 6. Find \(x\), the range, and the mean deviation about the mean. What happens to the mean deviation if each observation is increased by 5, and if each is multiplied by 3?
+A) \(x=10;\ 8;\ 2.4;\ \text{rises by 5};\ \text{unchanged}\)
+B) \(x=10;\ 8;\ 2.4;\ \text{unchanged};\ \text{becomes }7.2\)
+C) \(x=8;\ 6;\ 2;\ \text{unchanged};\ 6\)
+D) \(x=10;\ 10;\ 12;\ \text{unchanged};\ 36\)
+KEY: B
+SOL:
+Answer: (B) \(x=10;\ \text{range }8;\ \text{MD}=2.4;\ \text{unchanged by shift};\ 7.2\text{ after scaling}\)
+Concept: \(\text{mean deviation about the mean measures average distance from the mean; a shift moves every value and the mean equally, while scaling multiplies every distance}\)
+Given: \(\bar x=6,\ n=5\)
+Formula/Principle: \(\text{MD}(\bar x)=\dfrac{\sum|x_i-\bar x|}{n};\ \text{range}=\max-\min\)
+Step 1: \(2+4+6+8+x=30\Rightarrow x=10;\ \text{range}=10-2=8\)
+Step 2: \(|x_i-6|=4,2,0,2,4\Rightarrow\sum=12\Rightarrow\text{MD}=2.4\)
+Step 3: \(x_i+5\Rightarrow\text{MD}=2.4;\ 3x_i\Rightarrow\text{MD}=3\times2.4=7.2\)
+Worked derivation: \[\text{MD}(ax_i+b)=\frac{\sum|ax_i+b-(a\bar x+b)|}{n}=|a|\,\text{MD}(x_i)\]
+Check: \[\text{scaled data }6,12,18,24,30:\ \text{mean }18,\ \text{deviations }12,6,0,6,12,\ \tfrac{36}{5}=7.2\ \checkmark\]
+Why: \(\text{dispersion measures ignore shifts but scale with the data}\)
+Why not the others: (A) \(\text{shift does not change MD; scaling does}\); (C) \(x\text{ wrong}\); (D) \(\text{range and MD wrong}\).
+Key point: \(\text{MD}(ax+b)=|a|\,\text{MD}(x)\)
+
+@@ Q46
+format: numerical
+sub_topic: Using the multiplication theorem for drawing without replacement and the product rule for independent events to find union and neither probabilities
+Q: A bag has 5 red and 3 black balls. Two are drawn one after another without replacement; find the probability both are red. Events \(A\) and \(B\) are independent with \(P(A)=0.3,\ P(B)=0.4\); find \(P(A\cup B)\) and the probability that neither occurs.
+A) \(\tfrac{25}{64};\ 0.70;\ 0.30\)
+B) \(\tfrac58;\ 0.12;\ 0.88\)
+C) \(\tfrac{5}{28};\ 0.58;\ 0.12\)
+D) \(\tfrac{5}{14};\ 0.58;\ 0.42\)
+KEY: D
+SOL:
+Answer: (D) \(\tfrac{5}{14};\ 0.58;\ 0.42\)
+Concept: \(P(E\cap F)=P(E)P(F\mid E);\ \text{for independent events }P(A\cap B)=P(A)P(B)\text{ and complements are also independent}\)
+Given: \(5R,3B;\ P(A)=0.3,\ P(B)=0.4\)
+Formula/Principle: \(P(E\cap F)=P(E)P(F\mid E);\ P(A\cup B)=P(A)+P(B)-P(A)P(B)\)
+Step 1: \(P(RR)=\tfrac58\cdot\tfrac47=\tfrac{20}{56}=\tfrac5{14}\)
+Step 2: \(P(A\cup B)=0.3+0.4-0.12=0.58\)
+Step 3: \(P(A'\cap B')=0.7\times0.6=0.42\)
+Worked derivation: \[P(A'\cap B')=1-P(A\cup B)=1-0.58=0.42=P(A')P(B')\]
+Check: \[\frac{\binom52}{\binom82}=\frac{10}{28}=\frac5{14}\ \checkmark\]
+Why: \(\text{without replacement the second draw depends on the first, so the conditional probability is used}\)
+Why not the others: (A) \(\text{assumes replacement; union adds without subtracting}\); (B) \(\text{gives }P(A\cap B)\text{ as the union}\); (C) \(\text{wrong second factor; neither is not }0.12\).
+Key point: \(P(E\cap F)=P(E)P(F|E);\ \text{independent}\Rightarrow\text{multiply}\)
+
+@@ Q47
+format: numerical
+sub_topic: Applying the theorem of total probability to a two-bag experiment and finding an unknown number of balls that makes the overall probability equal to a given value
+Q: A die is thrown; if it shows 1 or 2 a ball is drawn from bag I (3 red, 2 white), otherwise from bag II (2 red, 4 white). Find \(P(\text{red})\). In another experiment a fair coin chooses between bag P (2 red, 3 white) and bag Q (\(k\) red, \(5-k\) white); find \(k\) if \(P(\text{red})=\tfrac12\).
+A) \(\tfrac{19}{45};\ k=3\)
+B) \(\tfrac{14}{15};\ k=5\)
+C) \(\tfrac12;\ k=2\)
+D) \(\tfrac{19}{45};\ k=4\)
+KEY: A
+SOL:
+Answer: (A) \(\tfrac{19}{45};\ k=3\)
+Concept: \(\text{if }E_1,E_2\text{ partition the sample space, }P(A)=P(E_1)P(A\mid E_1)+P(E_2)P(A\mid E_2)\)
+Given: \(P(E_1)=\tfrac13,\ P(E_2)=\tfrac23;\ \text{coin }\tfrac12,\tfrac12\)
+Formula/Principle: \(P(A)=\sum P(E_i)P(A\mid E_i)\)
+Step 1: \(P(R)=\tfrac13\cdot\tfrac35+\tfrac23\cdot\tfrac26=\tfrac15+\tfrac29\)
+Step 2: \(=\tfrac{9+10}{45}=\tfrac{19}{45}\)
+Step 3: \(\tfrac12\left(\tfrac25+\tfrac k5\right)=\tfrac12\Rightarrow2+k=5\Rightarrow k=3\)
+Worked derivation: \[P(R)=\frac{2+k}{10}=\frac12\Rightarrow k=3\]
+Check: \[k=3:\ \tfrac12\left(\tfrac25+\tfrac35\right)=\tfrac12\ \checkmark\]
+Why: \(\text{the overall probability is a weighted average of the conditional probabilities}\)
+Why not the others: (B) \(\text{conditional probabilities added without weights}\); (C) \(\text{weights ignored}\); (D) \(k=4\text{ gives }\tfrac35\).
+Key point: \(P(A)=\sum P(E_i)P(A|E_i)\)
+
+@@ Q48
+format: numerical
+sub_topic: Solving simultaneous matrix equations for two unknown matrices, finding unknown entries from a matrix equation, and the reversal law for the transpose of a product
+Q: Find \(X\) and \(Y\) if \(X+Y=\begin{bmatrix}5&2\\0&9\end{bmatrix}\) and \(X-Y=\begin{bmatrix}3&6\\0&-1\end{bmatrix}\). Find \(x,y\) if \(2\begin{bmatrix}x&5\\7&y-3\end{bmatrix}+\begin{bmatrix}3&-4\\1&2\end{bmatrix}=\begin{bmatrix}7&6\\15&14\end{bmatrix}\). Which transpose rule is correct?
+A) \(X=\begin{bmatrix}8&8\\0&8\end{bmatrix};\ x=4,\ y=6;\ (AB)^T=A^TB^T\)
+B) \(X=\begin{bmatrix}1&-2\\0&5\end{bmatrix},\ Y=\begin{bmatrix}4&4\\0&4\end{bmatrix};\ x=2,\ y=8;\ (AB)^T=B^TA^T\)
+C) \(X=\begin{bmatrix}4&4\\0&4\end{bmatrix},\ Y=\begin{bmatrix}1&-2\\0&5\end{bmatrix};\ x=2,\ y=9;\ (AB)^T=B^TA^T\)
+D) \(X=\begin{bmatrix}4&4\\0&4\end{bmatrix},\ Y=\begin{bmatrix}1&-2\\0&5\end{bmatrix};\ x=5,\ y=9;\ (AB)^T=AB\)
+KEY: C
+SOL:
+Answer: (C) \(X=\begin{bmatrix}4&4\\0&4\end{bmatrix},\ Y=\begin{bmatrix}1&-2\\0&5\end{bmatrix};\ x=2,\ y=9;\ (AB)^T=B^TA^T\)
+Concept: \(\text{matrices of the same order add entrywise, so matrix equations can be solved like ordinary simultaneous equations; equal matrices have equal corresponding entries}\)
+Given: \(X+Y,\ X-Y\text{ known};\ \text{entrywise equation}\)
+Formula/Principle: \(X=\tfrac12[(X+Y)+(X-Y)],\ Y=\tfrac12[(X+Y)-(X-Y)];\ (AB)^T=B^TA^T\)
+Step 1: \(2X=\begin{bmatrix}8&8\\0&8\end{bmatrix}\Rightarrow X=\begin{bmatrix}4&4\\0&4\end{bmatrix};\ 2Y=\begin{bmatrix}2&-4\\0&10\end{bmatrix}\Rightarrow Y=\begin{bmatrix}1&-2\\0&5\end{bmatrix}\)
+Step 2: \(2x+3=7\Rightarrow x=2\)
+Step 3: \(2(y-3)+2=14\Rightarrow y=9\)
+Worked derivation: \[\begin{bmatrix}2x+3&10-4\\14+1&2y-6+2\end{bmatrix}=\begin{bmatrix}7&6\\15&14\end{bmatrix}\]
+Check: \[X+Y=\begin{bmatrix}5&2\\0&9\end{bmatrix},\ X-Y=\begin{bmatrix}3&6\\0&-1\end{bmatrix}\ \checkmark\]
+Why: \(\text{adding and subtracting the two equations isolates }X\text{ and }Y\)
+Why not the others: (A) \(\text{forgot to halve; order reversed in the transpose rule}\); (B) \(X\text{ and }Y\text{ swapped; }y=9\); (D) \(x=2;\ (AB)^T\ne AB\text{ in general}\).
+Key point: \((AB)^T=B^TA^T\)
+
+@@ Q49
+format: numerical
+sub_topic: Expressing a square matrix as the sum of a symmetric and a skew-symmetric matrix, and special properties of skew-symmetric matrices such as zero diagonal and zero determinant for odd order
+Q: Express \(A=\begin{bmatrix}3&5\\1&-1\end{bmatrix}\) as \(P+Q\) with \(P\) symmetric and \(Q\) skew-symmetric. Which further statement is correct?
+A) \(P=\begin{bmatrix}3&3\\3&-1\end{bmatrix},\ Q=\begin{bmatrix}0&2\\-2&0\end{bmatrix};\ \text{every diagonal entry of a skew-symmetric matrix is 0, a matrix both symmetric and skew-symmetric is the zero matrix, and a skew-symmetric matrix of odd order has determinant 0}\)
+B) \(P=\begin{bmatrix}3&5\\5&-1\end{bmatrix},\ Q=\begin{bmatrix}0&-4\\4&0\end{bmatrix};\ \text{skew-symmetric matrices have diagonal entries 1}\)
+C) \(P=\begin{bmatrix}6&6\\6&-2\end{bmatrix},\ Q=\begin{bmatrix}0&4\\-4&0\end{bmatrix};\ \text{odd-order skew-symmetric matrices are invertible}\)
+D) \(P=\begin{bmatrix}3&2\\2&-1\end{bmatrix},\ Q=\begin{bmatrix}0&3\\-3&0\end{bmatrix};\ \text{the representation is not unique}\)
+KEY: A
+SOL:
+Answer: (A) \(P=\begin{bmatrix}3&3\\3&-1\end{bmatrix},\ Q=\begin{bmatrix}0&2\\-2&0\end{bmatrix}\); special properties correct.
+Concept: \(\text{every square matrix is uniquely }A=\tfrac12(A+A^T)+\tfrac12(A-A^T),\ \text{the first symmetric and the second skew-symmetric}\)
+Given: \(A^T=\begin{bmatrix}3&1\\5&-1\end{bmatrix}\)
+Formula/Principle: \(P=\tfrac12(A+A^T),\ Q=\tfrac12(A-A^T);\ Q^T=-Q\Rightarrow q_{ii}=0\)
+Step 1: \(A+A^T=\begin{bmatrix}6&6\\6&-2\end{bmatrix}\Rightarrow P=\begin{bmatrix}3&3\\3&-1\end{bmatrix}\)
+Step 2: \(A-A^T=\begin{bmatrix}0&4\\-4&0\end{bmatrix}\Rightarrow Q=\begin{bmatrix}0&2\\-2&0\end{bmatrix}\)
+Step 3: \(\text{odd }n:\ \det Q=\det(Q^T)=\det(-Q)=(-1)^n\det Q=-\det Q\Rightarrow\det Q=0\)
+Worked derivation: \[P+Q=\begin{bmatrix}3+0&3+2\\3-2&-1+0\end{bmatrix}=\begin{bmatrix}3&5\\1&-1\end{bmatrix}=A\]
+Check: \[P^T=P,\ \ Q^T=\begin{bmatrix}0&-2\\2&0\end{bmatrix}=-Q\ \checkmark\]
+Why: \(\text{averaging }A\text{ with its transpose keeps the symmetric part; the difference keeps the skew part}\)
+Why not the others: (B) \(P+Q\ne A\text{ and diagonal of }Q\text{ is }0\); (C) \(\text{forgot the factor }\tfrac12;\ \det=0\text{ for odd order}\); (D) \(\text{sum does not give }A;\ \text{the split is unique}\).
+Key point: \(A=\tfrac12(A+A^T)+\tfrac12(A-A^T)\)
+
+@@ Q50
+format: numerical
+sub_topic: Differentiating an implicit curve to find a slope and counting points with horizontal tangents, and counting points where an inverse-trigonometric composite fails to be differentiable
+Q: For \(x^2+xy+y^2=7\), find \(\dfrac{dy}{dx}\) at \((1,2)\) and the number of points on the curve where the tangent is horizontal. At how many points is \(y=\sin^{-1}\!\left(\dfrac{2x}{1+x^2}\right)\) not differentiable?
+A) \(-\tfrac45;\ 4;\ 0\)
+B) \(\tfrac45;\ 2;\ 1\)
+C) \(-\tfrac54;\ 1;\ 2\)
+D) \(-\tfrac45;\ 2;\ 2\ (x=\pm1),\ \text{since }y'=\dfrac{2}{1+x^2}\text{ for }|x|<1\text{ and }-\dfrac{2}{1+x^2}\text{ for }|x|>1\)
+KEY: D
+SOL:
+Answer: (D) \(-\tfrac45;\ 2\text{ points};\ \text{not differentiable at }x=\pm1\)
+Concept: \(\text{implicit differentiation treats }y\text{ as a function of }x;\ \text{with }x=\tan\theta,\ \sin^{-1}\frac{2x}{1+x^2}\text{ equals }2\tan^{-1}x\text{ only for }|x|\le1\)
+Given: \(x^2+xy+y^2=7;\ y=\sin^{-1}\frac{2x}{1+x^2}\)
+Formula/Principle: \(2x+y+xy'+2yy'=0\Rightarrow y'=-\dfrac{2x+y}{x+2y}\)
+Step 1: \(\text{at }(1,2):\ y'=-\dfrac{4}{5}\)
+Step 2: \(y'=0\Rightarrow y=-2x\Rightarrow x^2-2x^2+4x^2=7\Rightarrow x=\pm\sqrt{7/3}\Rightarrow2\text{ points}\)
+Step 3: \(\text{left and right derivatives at }x=1:\ +1\text{ and }-1\Rightarrow\text{corner};\ \text{same at }x=-1\)
+Worked derivation: \[y=\begin{cases}2\tan^{-1}x,&|x|\le1\\ \pi-2\tan^{-1}x,&x>1\\ -\pi-2\tan^{-1}x,&x<-1\end{cases}\]
+Check: \[x=\sqrt{7/3},\ y=-2\sqrt{7/3}:\ \tfrac73-\tfrac{14}{3}+\tfrac{28}{3}=7\ \checkmark\]
+Why: \(\text{the branch of }\sin^{-1}\text{ switches at }|x|=1,\ \text{where the curve has a corner}\)
+Why not the others: (A) \(\text{only two horizontal tangents; corners exist}\); (B) \(\text{sign and count wrong}\); (C) \(\text{slope inverted}\).
+Key point: \(y'=-\dfrac{F_x}{F_y};\ \sin^{-1}\frac{2x}{1+x^2}\text{ has corners at }x=\pm1\)
+
+@@ Q51
+format: numerical
+sub_topic: Using logarithmic differentiation to find the slope of a product–quotient curve at a point and locating the horizontal tangent of x to the power 1/x
+Q: For \(y=\dfrac{(x+1)^2(x+2)^3}{(x+3)^4}\), find the slope of the curve at \(x=0\). Where does \(y=x^{1/x}\ (x>0)\) have a horizontal tangent, and what is its value there?
+A) \(\tfrac{13}{6};\ x=1,\ y=1\)
+B) \(\tfrac{52}{243};\ x=e,\ y=e^{1/e}\ (\text{maximum})\)
+C) \(\tfrac{8}{81};\ x=e,\ y=e\)
+D) \(\tfrac{52}{243};\ x=\tfrac1e,\ y=e^{-e}\)
+KEY: B
+SOL:
+Answer: (B) \(\text{slope }\tfrac{52}{243};\ \text{horizontal tangent at }x=e,\ y=e^{1/e}\)
+Concept: \(\text{taking logarithms turns products, quotients and variable powers into sums, which are easy to differentiate}\)
+Given: \(y(0)=\dfrac{1\cdot8}{81}=\dfrac8{81}\)
+Formula/Principle: \(\dfrac{y'}{y}=\dfrac{d}{dx}\ln y\)
+Step 1: \(\ln y=2\ln(x+1)+3\ln(x+2)-4\ln(x+3)\Rightarrow\dfrac{y'}{y}=\dfrac2{x+1}+\dfrac3{x+2}-\dfrac4{x+3}\)
+Step 2: \(\text{at }0:\ 2+\tfrac32-\tfrac43=\tfrac{13}{6}\Rightarrow y'=\tfrac8{81}\cdot\tfrac{13}6=\tfrac{52}{243}\)
+Step 3: \(\ln y=\dfrac{\ln x}{x}\Rightarrow\dfrac{y'}{y}=\dfrac{1-\ln x}{x^2}=0\Rightarrow x=e\)
+Worked derivation: \[\frac{8}{81}\cdot\frac{13}{6}=\frac{104}{486}=\frac{52}{243}\]
+Check: \[\frac{1-\ln x}{x^2}>0\text{ for }x<e,\ <0\text{ for }x>e\Rightarrow\text{maximum }e^{1/e}\approx1.44\ \checkmark\]
+Why: \(\text{a horizontal tangent occurs where the derivative of }\ln y\text{ vanishes, since }y>0\)
+Why not the others: (A) \(\tfrac{13}{6}\text{ is }y'/y,\ \text{not }y'\); (C) \(8/81\text{ is }y(0)\); (D) \(\text{the critical point is }x=e\).
+Key point: \(y'=y\cdot\frac{d}{dx}\ln y\)
+
+@@ Q52
+format: numerical
+sub_topic: Finding absolute maximum and minimum of a cubic on a closed interval by comparing values at critical points and end points
+Q: Find the absolute maximum and minimum values of \(f(x)=2x^3-15x^2+36x+1\) on \([1,5]\).
+A) \(\max29\text{ at }x=2;\ \min28\text{ at }x=3\)
+B) \(\max56\text{ at }x=5;\ \min28\text{ at }x=3\)
+C) \(\max56\text{ at }x=5;\ \min24\text{ at }x=1\)
+D) \(\max29\text{ at }x=2;\ \min24\text{ at }x=1\)
+KEY: C
+SOL:
+Answer: (C) \(\text{absolute max }56\text{ at }x=5;\ \text{absolute min }24\text{ at }x=1\)
+Concept: \(\text{a continuous function on a closed interval attains its absolute extrema at critical points or end points}\)
+Given: \([1,5]\)
+Formula/Principle: \(f'(x)=6x^2-30x+36=6(x-2)(x-3)\)
+Step 1: \(\text{critical points }x=2,3\)
+Step 2: \(f(1)=24,\ f(2)=29,\ f(3)=28,\ f(5)=56\)
+Step 3: \(\max=56\ (x=5),\ \min=24\ (x=1)\)
+Worked derivation: \[f(5)=250-375+180+1=56;\quad f(1)=2-15+36+1=24\]
+Check: \[f(2)=16-60+72+1=29,\ f(3)=54-135+108+1=28\ \checkmark\]
+Why: \(\text{local extrema at }2\text{ and }3\text{ are beaten by the end-point values}\)
+Why not the others: (A) \(\text{local values, not absolute}\); (B) \(f(1)=24<28\); (D) \(f(5)=56>29\).
+Key point: \(\text{compare }f\text{ at critical points and end points}\)
+
+@@ Q53
+format: numerical
+sub_topic: Integrating x e^x and inverse tangent by parts, and studying the increasing–decreasing behaviour and minimum of an accumulation function defined by an integral
+Q: Find \(\displaystyle\int xe^x\,dx\) and \(\displaystyle\int\tan^{-1}x\,dx\). For \(F(x)=\displaystyle\int_0^x te^t\,dt\), find \(F(x)\), its minimum value and where it occurs.
+A) \(x e^x;\ \dfrac1{1+x^2};\ \min\text{ at }x=1\)
+B) \((x+1)e^x;\ x\tan^{-1}x+\tfrac12\ln(1+x^2);\ \max0\text{ at }x=0\)
+C) \((x-1)e^x;\ x\tan^{-1}x;\ \text{no minimum}\)
+D) \((x-1)e^x+C;\ x\tan^{-1}x-\tfrac12\ln(1+x^2)+C;\ F(x)=(x-1)e^x+1,\ \min F=0\text{ at }x=0\)
+KEY: D
+SOL:
+Answer: (D) \((x-1)e^x+C;\ x\tan^{-1}x-\tfrac12\ln(1+x^2)+C;\ F_{\min}=0\text{ at }x=0\)
+Concept: \(\int u\,dv=uv-\int v\,du;\ \text{choose }u\text{ by ILATE so that }du\text{ is simpler}\)
+Given: \(F'(x)=xe^x\)
+Formula/Principle: \(\int u\,dv=uv-\int v\,du\)
+Step 1: \(u=x,\ dv=e^xdx:\ xe^x-\int e^xdx=(x-1)e^x+C\)
+Step 2: \(u=\tan^{-1}x,\ dv=dx:\ x\tan^{-1}x-\int\dfrac{x}{1+x^2}dx=x\tan^{-1}x-\tfrac12\ln(1+x^2)+C\)
+Step 3: \(F(x)=[(t-1)e^t]_0^x=(x-1)e^x+1;\ F'(x)=xe^x<0\ (x<0),\ >0\ (x>0)\Rightarrow\min F(0)=0\)
+Worked derivation: \[\frac{d}{dx}\left[(x-1)e^x\right]=e^x+(x-1)e^x=xe^x\]
+Check: \[\frac{d}{dx}\left[x\tan^{-1}x-\tfrac12\ln(1+x^2)\right]=\tan^{-1}x+\frac{x}{1+x^2}-\frac{x}{1+x^2}=\tan^{-1}x\ \checkmark\]
+Why: \(\text{the sign of the integrand decides where the accumulation function decreases or increases}\)
+Why not the others: (A) \(\text{derivatives given instead of integrals}\); (B) \(\text{signs wrong; }x=0\text{ is a minimum}\); (C) \(\text{missing the log term; }F\text{ has a minimum}\).
+Key point: \(\int xe^x=(x-1)e^x;\ F'(x)=f(x)\)
+
+@@ Q54
+format: numerical
+sub_topic: Finding the area of the part of an ellipse lying between two vertical lines by trigonometric substitution, and the area of a circular sector cut off by a line through the origin
+Q: Find the area of the part of the region \(\dfrac{x^2}{16}+\dfrac{y^2}{4}\le1\) lying between the lines \(x=-2\) and \(x=2\). Find also the area of the region in the first quadrant bounded by the \(x\)-axis, the line \(y=\sqrt3\,x\) and the circle \(x^2+y^2=4\).
+A) \(8\pi;\ \tfrac{\pi}{3}\)
+B) \(\tfrac{8\pi}{3}+4\sqrt3;\ \tfrac{2\pi}{3}\)
+C) \(\tfrac{8\pi}{3}-4\sqrt3;\ \tfrac{4\pi}{3}\)
+D) \(\tfrac{4\pi}{3}+2\sqrt3;\ \tfrac{2\pi}{3}\)
+KEY: B
+SOL:
+Answer: (B) \(\tfrac{8\pi}{3}+4\sqrt3;\ \tfrac{2\pi}{3}\)
+Concept: \(\text{area between a curve and the }x\text{-axis is }\int y\,dx;\ \text{by symmetry the ellipse strip is four times the first-quadrant part, and a sector of angle }\theta\text{ has area }\tfrac12r^2\theta\)
+Given: \(a=4,\ b=2;\ |x|\le2;\ r=2,\ \text{line at }60^\circ\)
+Formula/Principle: \(y=2\sqrt{1-x^2/16};\ x=4\sin t\Rightarrow\int\sqrt{1-\sin^2t}\,4\cos t\,dt=4\int\cos^2t\,dt\)
+Step 1: \(\text{area}=4\int_0^2 2\sqrt{1-\tfrac{x^2}{16}}\,dx=32\int_0^{\pi/6}\cos^2t\,dt\)
+Step 2: \(32\left[\tfrac t2+\tfrac{\sin2t}{4}\right]_0^{\pi/6}=32\left(\tfrac{\pi}{12}+\tfrac{\sqrt3}{8}\right)=\tfrac{8\pi}{3}+4\sqrt3\)
+Step 3: \(\tan\theta=\sqrt3\Rightarrow\theta=\tfrac\pi3;\ \tfrac12(4)\tfrac\pi3=\tfrac{2\pi}{3}\)
+Worked derivation: \[\int_0^{\pi/6}\cos^2t\,dt=\left[\frac t2+\frac{\sin2t}{4}\right]_0^{\pi/6}=\frac{\pi}{12}+\frac{\sqrt3}{8}\]
+Check: \[\tfrac{8\pi}{3}+4\sqrt3\approx8.38+6.93=15.3<\pi ab=8\pi\approx25.1\ \checkmark\]
+Why: \(\text{the substitution }x=4\sin t\text{ turns the square root into }\cos t\text{, and the limits }x=0,2\text{ become }t=0,\pi/6\)
+Why not the others: (A) \(\text{whole ellipse; sector angle wrong}\); (C) \(\text{sign of the }\sin2t\text{ term wrong; sector doubled}\); (D) \(\text{symmetry factor halved}\).
+Key point: \(x=a\sin t\text{ for ellipse areas};\ \text{sector}=\tfrac12r^2\theta\)
+
+@@ Q55
+format: numerical
+sub_topic: Solving a homogeneous first-order differential equation by the substitution y = vx and finding the particular solution through a given point
+Q: Solve \(\dfrac{dy}{dx}=\dfrac{x+y}{x}\) and find the particular solution through \((1,2)\). Find also the general solution of \((x^2+y^2)\,dx-2xy\,dy=0\).
+A) \(y=x\ln|x|+2x;\ x^2-y^2=Cx\)
+B) \(y=\ln|x|+2;\ x^2+y^2=Cx\)
+C) \(y=x\ln|x|+2x;\ x^2+y^2=C\)
+D) \(y=2x;\ y^2=Cx\)
+KEY: A
+SOL:
+Answer: (A) \(y=x\ln|x|+2x;\ x^2-y^2=Cx\)
+Concept: \(\text{if }\frac{dy}{dx}=g\left(\frac yx\right),\ \text{the substitution }y=vx\text{ separates the variables}\)
+Given: \(\text{point }(1,2)\)
+Formula/Principle: \(y=vx\Rightarrow\dfrac{dy}{dx}=v+x\dfrac{dv}{dx}\)
+Step 1: \(v+xv'=1+v\Rightarrow dv=\dfrac{dx}{x}\Rightarrow v=\ln|x|+C\Rightarrow y=x\ln|x|+Cx\)
+Step 2: \((1,2):\ 2=0+C\Rightarrow y=x\ln|x|+2x\)
+Step 3: \(v+xv'=\dfrac{1+v^2}{2v}\Rightarrow\dfrac{2v\,dv}{1-v^2}=\dfrac{dx}{x}\Rightarrow x(1-v^2)=C\Rightarrow x^2-y^2=Cx\)
+Worked derivation: \[-\ln|1-v^2|=\ln|x|+c\Rightarrow x\left(1-\frac{y^2}{x^2}\right)=C\Rightarrow x^2-y^2=Cx\]
+Check: \[y=x\ln x+2x:\ y'=\ln x+1+2=\frac{x+y}{x}=1+\ln x+2\ \checkmark\]
+Why: \(\text{both right-hand sides depend only on }y/x,\ \text{so }y=vx\text{ separates them}\)
+Why not the others: (B) \(\text{factor }x\text{ lost; sign wrong}\); (C) \(\text{second solution wrong}\); (D) \(\text{log term missing}\).
+Key point: \(y=vx\text{ for homogeneous equations}\)
+
+@@ Q56
+format: numerical
+sub_topic: Finding the size of a set from its power set, counting subsets with inclusion and exclusion conditions, and intersecting intervals on the number line
+Q: If the power set of \(A\) has 64 elements, find \(n(A)\). How many subsets of \(\{1,2,\dots,10\}\) contain 1 but not 2? Find \((2,5]\cap[3,7)\) and say how it appears on the number line.
+A) \(n(A)=8;\ 512;\ (3,5)\)
+B) \(n(A)=32;\ 128;\ [2,7)\)
+C) \(n(A)=6;\ 512;\ (2,7)\)
+D) \(n(A)=6;\ 256;\ [3,5],\ \text{a closed segment from 3 to 5 with both end points included}\)
+KEY: D
+SOL:
+Answer: (D) \(n(A)=6;\ 256;\ [3,5]\)
+Concept: \(\text{a set with }n\text{ elements has }2^n\text{ subsets, since each element is either in or out}\)
+Given: \(n(P(A))=64;\ \{1,\dots,10\}\)
+Formula/Principle: \(n(P(A))=2^{n(A)}\)
+Step 1: \(2^n=64\Rightarrow n=6\)
+Step 2: \(1\text{ fixed in, }2\text{ fixed out; remaining 8 free}\Rightarrow2^8=256\)
+Step 3: \((2,5]\cap[3,7)=\{x:3\le x\le5\}=[3,5]\)
+Worked derivation: \[\max(2,3)=3\text{ (included in }[3,7)\text{ and in }(2,5]),\ \ \min(5,7)=5\text{ (included in }(2,5]\text{ and }[3,7))\]
+Check: \[2^{10}=1024\text{ subsets in all; one quarter fix the status of 1 and 2 as required: }1024/4=256\ \checkmark\]
+Why: \(\text{fixing elements removes their two-way choices}\)
+Why not the others: (A) \(2^8=256;\ \text{end points included}\); (B) \(2^6=64;\ \text{union taken}\); (C) \(\text{count and interval wrong}\).
+Key point: \(n(P(A))=2^n\)
+
+@@ Q57
+format: conceptual
+sub_topic: Testing relations for reflexivity, symmetry and transitivity, identifying equivalence classes of congruence modulo 5, and counting equivalence relations on a small set
+Q: Which statement about relations is correct?
+A) \(R=\{(a,b)\in\mathbb Z^2:5\mid(a-b)\}\text{ is an equivalence relation with exactly 5 equivalence classes }[0],[1],[2],[3],[4];\ \text{"}a\le b\text{" on }\mathbb R\text{ is reflexive and transitive but not symmetric};\ \text{"is perpendicular to" on lines in a plane is symmetric but neither reflexive nor transitive};\ \text{exactly 2 equivalence relations on }\{1,2,3\}\text{ contain }(1,2)\)
+B) \(\text{"}a\le b\text{" is an equivalence relation}\)
+C) \(5\mid(a-b)\text{ gives infinitely many equivalence classes}\)
+D) \(\text{"is perpendicular to" is transitive}\)
+KEY: A
+SOL:
+Answer: (A) \(\text{congruence mod 5 has 5 classes; properties of }\le\text{ and }\perp\text{ correct; 2 equivalence relations}\)
+Concept: \(\text{an equivalence relation is reflexive, symmetric and transitive, and it splits the set into disjoint equivalence classes}\)
+Given: \(\text{relations on }\mathbb Z,\ \mathbb R,\ \text{lines},\ \{1,2,3\}\)
+Formula/Principle: \(\text{reflexive }(a,a);\ \text{symmetric }(a,b)\Rightarrow(b,a);\ \text{transitive }(a,b),(b,c)\Rightarrow(a,c)\)
+Step 1: \(5\mid0;\ 5\mid(a-b)\Rightarrow5\mid(b-a);\ 5\mid(a-b),5\mid(b-c)\Rightarrow5\mid(a-c)\Rightarrow\text{classes by remainder }0\text{–}4\)
+Step 2: \(\le:\ a\le a,\ a\le b\le c\Rightarrow a\le c,\ \text{but }1\le2\not\Rightarrow2\le1;\ \perp:\ L_1\perp L_2\Rightarrow L_2\perp L_1,\ L\not\perp L,\ L_1\perp L_2\perp L_3\Rightarrow L_1\parallel L_3\)
+Step 3: \(\text{partitions with 1, 2 together: }\{\{1,2\},\{3\}\},\ \{\{1,2,3\}\}\Rightarrow2\)
+Worked derivation: \[a-b=5m,\ b-c=5n\Rightarrow a-c=5(m+n)\]
+Check: \[\text{every integer has exactly one remainder in }\{0,1,2,3,4\}\text{ on division by 5}\ \checkmark\]
+Why: \(\text{equivalence relations correspond to partitions, so counting them means counting partitions}\)
+Why not the others: (B) \(\le\text{ is not symmetric}\); (C) \(\text{only 5 remainders}\); (D) \(\text{two perpendiculars to the same line are parallel}\).
+Key point: \(\text{equivalence}=\text{R + S + T}\Leftrightarrow\text{partition}\)
+
+@@ Q58
+format: numerical
+sub_topic: Using sum-to-product formulae to count solutions of a trigonometric equation on an interval and to evaluate sums and differences of sines and cosines
+Q: How many solutions does \(\sin x+\sin3x=0\) have in \([0,\pi]\)? Evaluate \(\cos75^\circ+\cos15^\circ\) and \(\sin75^\circ-\sin15^\circ\).
+A) \(2;\ \tfrac{\sqrt3}{2};\ \tfrac12\)
+B) \(3\ (x=0,\tfrac\pi2,\pi);\ \tfrac{\sqrt6}{2};\ \tfrac{\sqrt2}{2}\)
+C) \(4;\ \sqrt2;\ \tfrac{\sqrt6}{2}\)
+D) \(3;\ \tfrac{\sqrt2}{2};\ \tfrac{\sqrt6}{2}\)
+KEY: B
+SOL:
+Answer: (B) \(3\text{ solutions};\ \tfrac{\sqrt6}2;\ \tfrac{\sqrt2}2\)
+Concept: \(\sin C+\sin D=2\sin\tfrac{C+D}2\cos\tfrac{C-D}2;\ \cos C+\cos D=2\cos\tfrac{C+D}2\cos\tfrac{C-D}2;\ \sin C-\sin D=2\cos\tfrac{C+D}2\sin\tfrac{C-D}2\)
+Given: \(x\in[0,\pi]\)
+Formula/Principle: \(\text{sum-to-product identities}\)
+Step 1: \(\sin3x+\sin x=2\sin2x\cos x=0\)
+Step 2: \(\sin2x=0\Rightarrow x=0,\tfrac\pi2,\pi;\ \cos x=0\Rightarrow x=\tfrac\pi2\Rightarrow\text{distinct: }3\)
+Step 3: \(2\cos45^\circ\cos30^\circ=2\cdot\tfrac{\sqrt2}2\cdot\tfrac{\sqrt3}2=\tfrac{\sqrt6}2;\ 2\cos45^\circ\sin30^\circ=\tfrac{\sqrt2}2\)
+Worked derivation: \[\sin3x+\sin x=2\sin\frac{3x+x}{2}\cos\frac{3x-x}{2}=2\sin2x\cos x\]
+Check: \[x=\tfrac\pi2:\ \sin\tfrac\pi2+\sin\tfrac{3\pi}2=1-1=0\ \checkmark\]
+Why: \(\text{converting the sum to a product lets each factor be set to zero}\)
+Why not the others: (A) \(\text{values and count wrong}\); (C) \(\pi/2\text{ counted twice}\); (D) \(\text{values swapped}\).
+Key point: \(\text{sum}\to\text{product, then count distinct roots}\)
+
+@@ Q59
+format: numerical
+sub_topic: Finding an unknown coefficient from a condition on the difference of roots or equal roots, and evaluating symmetric functions of roots
+Q: Find \(p\) if the roots of \(x^2-px+12=0\) differ by 1, and \(k\) if \(x^2+kx+9=0\) has equal roots. If \(\alpha,\beta\) are roots of \(2x^2-5x+3=0\), find \(\alpha^2+\beta^2\).
+A) \(p=\pm1;\ k=\pm3;\ \tfrac{25}{4}\)
+B) \(p=7\text{ only};\ k=6\text{ only};\ \tfrac{19}{4}\)
+C) \(p=\pm7;\ k=\pm6;\ \tfrac{13}{4}\)
+D) \(p=\pm\sqrt{48};\ k=\pm9;\ \tfrac{13}{4}\)
+KEY: C
+SOL:
+Answer: (C) \(p=\pm7;\ k=\pm6;\ \alpha^2+\beta^2=\tfrac{13}{4}\)
+Concept: \(\text{for }ax^2+bx+c=0:\ \alpha+\beta=-\tfrac ba,\ \alpha\beta=\tfrac ca,\ (\alpha-\beta)^2=\tfrac{b^2-4ac}{a^2};\ \text{equal roots}\Leftrightarrow D=0\)
+Given: \(|\alpha-\beta|=1;\ D=0\)
+Formula/Principle: \((\alpha-\beta)^2=(\alpha+\beta)^2-4\alpha\beta\)
+Step 1: \(p^2-48=1\Rightarrow p=\pm7\)
+Step 2: \(k^2-36=0\Rightarrow k=\pm6\)
+Step 3: \(\alpha^2+\beta^2=\left(\tfrac52\right)^2-2\cdot\tfrac32=\tfrac{25}{4}-3=\tfrac{13}{4}\)
+Worked derivation: \[p=7:\ x^2-7x+12=(x-3)(x-4),\ \text{roots differ by }1\]
+Check: \[\alpha=1,\ \beta=\tfrac32:\ 1+\tfrac94=\tfrac{13}{4}\ \checkmark\]
+Why: \(\text{conditions on roots become conditions on coefficients through Vieta's relations}\)
+Why not the others: (A) \(\text{discriminant conditions misapplied}\); (B) \(\text{negative values also work}\); (D) \(p^2=49,\ k^2=36\).
+Key point: \((\alpha-\beta)^2=(\alpha+\beta)^2-4\alpha\beta\)
+
+@@ Q60
+format: numerical
+sub_topic: Finding the range of a parameter for which a cubic has three distinct real roots using the values at its turning points, and the limiting case of a repeated root
+Q: For what values of \(k\) does \(x^3-3x+k=0\) have three distinct real roots? What are the roots when \(k=2\)? How many real roots has \(x^4+x^2+1=0\)?
+A) \(k>2;\ 1,1,1;\ 2\)
+B) \(|k|\le2;\ 2,-1,-1;\ 4\)
+C) \(-2<k<2;\ x=1\text{ (double)},\ x=-2;\ 0\ \text{real roots, since }x^4+x^2+1\ge1\)
+D) \(k<-2;\ \text{one real root};\ 0\)
+KEY: C
+SOL:
+Answer: (C) \(-2<k<2;\ \text{roots }1,1,-2;\ \text{no real roots}\)
+Concept: \(\text{a cubic has three distinct real roots exactly when its local maximum is positive and its local minimum is negative}\)
+Given: \(f(x)=x^3-3x+k\)
+Formula/Principle: \(f'(x)=3x^2-3=0\Rightarrow x=\pm1;\ f(-1)>0>f(1)\)
+Step 1: \(f(-1)=k+2,\ f(1)=k-2\)
+Step 2: \(k+2>0\text{ and }k-2<0\Rightarrow-2<k<2\)
+Step 3: \(k=2:\ x^3-3x+2=(x-1)^2(x+2)\Rightarrow1,1,-2\)
+Worked derivation: \[(x-1)^2(x+2)=(x^2-2x+1)(x+2)=x^3-3x+2\]
+Check: \[x^4+x^2+1=\left(x^2+\tfrac12\right)^2+\tfrac34>0\ \checkmark\]
+Why: \(\text{at the boundary }k=\pm2\text{ a turning point touches the axis, giving a repeated root}\)
+Why not the others: (A) \(\text{only one real root for }k>2\); (B) \(\text{boundary gives repeated roots; quartic has none}\); (D) \(\text{range wrong}\).
+Key point: \(f(x_{\max})>0>f(x_{\min})\Leftrightarrow3\text{ distinct real roots}\)
