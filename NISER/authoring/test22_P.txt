@@ -1,0 +1,439 @@
+@@ Q61
+format: numerical
+sub_topic: Applying the equation of continuity and Bernoulli's theorem to a horizontal pipe that narrows, and Torricelli's law for the speed of efflux
+Q: Water (\(\rho=1000\text{ kg m}^{-3}\)) flows at \(2.0\text{ m s}^{-1}\) through a horizontal pipe of cross-section \(4.0\text{ cm}^2\) that narrows to \(1.0\text{ cm}^2\). What is the speed in the narrow part and the pressure difference between the two parts? With what speed does water leave a small hole \(5.0\text{ m}\) below the free surface of an open tank (\(g=10\text{ m s}^{-2}\))?
+A) \(8.0\text{ m s}^{-1};\ 3.0\times10^4\text{ Pa (lower pressure in the narrow part)};\ 10\text{ m s}^{-1}\)
+B) \(0.5\text{ m s}^{-1};\ 1.9\times10^3\text{ Pa};\ 50\text{ m s}^{-1}\)
+C) \(8.0\text{ m s}^{-1};\ 3.2\times10^4\text{ Pa (higher pressure in the narrow part)};\ 7.1\text{ m s}^{-1}\)
+D) \(4.0\text{ m s}^{-1};\ 6.0\times10^3\text{ Pa};\ 100\text{ m s}^{-1}\)
+KEY: A
+SOL:
+Answer: (A) \(v_2=8.0\text{ m s}^{-1},\ \Delta P=3.0\times10^4\text{ Pa};\ v_{\text{efflux}}=10\text{ m s}^{-1}\)
+Given: \(A_1=4.0\text{ cm}^2,\ v_1=2.0\text{ m s}^{-1},\ A_2=1.0\text{ cm}^2;\ h=5.0\text{ m}\)
+Formula/Principle: \(A_1v_1=A_2v_2\ (\text{mass conservation});\ P+\tfrac12\rho v^2+\rho gh=\text{constant}\ (\text{energy conservation});\ v=\sqrt{2gh}\)
+Step 1: \(v_2=\dfrac{4.0\times2.0}{1.0}=8.0\text{ m s}^{-1}\)
+Step 2: \(P_1-P_2=\tfrac12\rho(v_2^2-v_1^2)=\tfrac12(1000)(64-4)=3.0\times10^4\text{ Pa}\)
+Step 3: \(v=\sqrt{2\times10\times5.0}=10\text{ m s}^{-1}\)
+Worked derivation: \[P_1+\tfrac12\rho v_1^2=P_2+\tfrac12\rho v_2^2\Rightarrow P_1-P_2=\tfrac12\rho\,(v_2^2-v_1^2)\]
+Check: \[\text{volume flow }A_1v_1=4\times10^{-4}\times2=8\times10^{-4}=A_2v_2=10^{-4}\times8\ \checkmark\]
+Why: \(\text{fluid speeds up where the pipe narrows, and the extra kinetic energy comes from a drop in pressure}\)
+Why not the others: (B) \(\text{continuity inverted}\); (C) \(\text{pressure is lower where speed is higher}\); (D) \(\text{area ratio misapplied; }v=\sqrt{2gh}\).
+Key point: \(Av=\text{const};\ \text{faster flow}\Rightarrow\text{lower pressure}\)
+
+@@ Q62
+format: numerical
+sub_topic: Finding the final temperature when steam is passed into cold water, using latent heat of vaporisation and specific heat
+Q: 10 g of steam at \(100^\circ\text{C}\) is passed into 290 g of water at \(20^\circ\text{C}\) in a calorimeter of negligible heat capacity (\(L_v=540\text{ cal g}^{-1}\), \(c=1\text{ cal g}^{-1}\,^\circ\text{C}^{-1}\)). What is the final temperature?
+A) \(22.7^\circ\text{C}\)
+B) \(60.0^\circ\text{C}\)
+C) \(40.7^\circ\text{C}\)
+D) \(100^\circ\text{C}\)
+KEY: C
+SOL:
+Answer: (C) \(T\approx40.7^\circ\text{C}\)
+Given: \(m_s=10\text{ g},\ m_w=290\text{ g},\ T_w=20^\circ\text{C},\ L_v=540\text{ cal g}^{-1}\)
+Formula/Principle: \(\text{heat lost}=\text{heat gained};\ Q=mL\text{ for change of state},\ Q=mc\Delta T\text{ for temperature change}\)
+Step 1: \(\text{steam condensing: }10\times540=5400\text{ cal};\ \text{condensed water cooling: }10(100-T)\)
+Step 2: \(\text{cold water warming: }290(T-20)\)
+Step 3: \(5400+1000-10T=290T-5800\Rightarrow300T=12200\Rightarrow T=40.7^\circ\text{C}\)
+Worked derivation: \[m_sL_v+m_sc(100-T)=m_wc(T-20)\Rightarrow T=\frac{m_sL_v+100m_sc+20m_wc}{(m_s+m_w)c}=\frac{5400+1000+5800}{300}\]
+Check: \[\text{lost}=5400+10(59.3)=5993\ \text{cal};\ \text{gained}=290(20.7)=6003\ \text{cal}\ \checkmark\ (\text{rounding})\]
+Why: \(\text{the large latent heat of steam heats much more water than the same mass of boiling water could}\)
+Why not the others: (A) \(\text{latent heat ignored}\); (B) \(\text{arithmetic error}\); (D) \(\text{not enough steam to boil 290 g}\).
+Key point: \(\text{include }mL\text{ for the phase change}\)
+
+@@ Q63
+format: numerical
+sub_topic: Comparing isothermal and adiabatic expansions of an ideal gas on a P–V graph — slopes, final pressure, final temperature and work done
+Q: An ideal gas (\(\gamma=1.4\)) at \(P_1,V_1,T_1\) expands to \(2V_1\) (i) isothermally, (ii) adiabatically (\(2^{0.4}\approx1.32\), \(2^{1.4}\approx2.64\)). Which comparison is correct?
+A) \(\text{Both curves have the same slope; final pressures }0.5P_1\text{ in both}\)
+B) \(\text{Isothermal is steeper; adiabatic does more work}\)
+C) \(\text{Adiabatic final temperature }1.32T_1\text{ (the gas heats up)}\)
+D) \(\text{At any point the adiabatic curve is steeper (slope }-\gamma P/V\text{ vs }-P/V);\ \text{final pressure }0.5P_1\text{ (isothermal) vs }0.38P_1\text{ (adiabatic)};\ \text{adiabatic final temperature }T_1/1.32\approx0.76T_1;\ \text{the isothermal curve lies above, so it does more work}\)
+KEY: D
+SOL:
+Answer: (D) \(\text{adiabatic steeper};\ 0.5P_1\text{ vs }0.38P_1;\ T_2\approx0.76T_1;\ W_{\text{iso}}>W_{\text{adia}}\)
+Given: \(\gamma=1.4,\ V_2=2V_1\)
+Formula/Principle: \(\text{isothermal }PV=\text{const};\ \text{adiabatic }PV^\gamma=\text{const},\ TV^{\gamma-1}=\text{const};\ W=\int P\,dV\)
+Step 1: \(\text{isothermal: }P_2=P_1/2=0.5P_1\)
+Step 2: \(\text{adiabatic: }P_2=P_1/2^{1.4}=P_1/2.64=0.38P_1;\ T_2=T_1/2^{0.4}=0.76T_1\)
+Step 3: \(\text{slopes: }\dfrac{dP}{dV}=-\dfrac PV\text{ and }-\gamma\dfrac PV\)
+Worked derivation: \[PV^\gamma=C\Rightarrow V^\gamma dP+\gamma PV^{\gamma-1}dV=0\Rightarrow\frac{dP}{dV}=-\gamma\frac{P}{V}\]
+Check: \[\text{adiabatic: }Q=0,\ W>0\Rightarrow\Delta U<0\Rightarrow T\text{ falls, consistent with }0.76T_1\ \checkmark\]
+Why: \(\text{in adiabatic expansion the gas pays for its work from internal energy, so it cools and its pressure falls faster}\)
+Why not the others: (A) \(\text{slopes and final pressures differ}\); (B) \(\text{reversed}\); (C) \(\text{gas cools on adiabatic expansion}\).
+Key point: \(\text{adiabatic slope}=\gamma\times\text{isothermal slope}\)
+
+@@ Q64
+format: experiment
+sub_topic: Measuring total, kinetic and potential energy of a spring–block oscillator at different displacements and locating where kinetic and potential energies are equal
+Q: A block on a smooth table is attached to a spring of \(k=200\text{ N m}^{-1}\) and oscillates with amplitude \(10\text{ cm}\). What is the total energy, the kinetic energy at \(x=5\text{ cm}\), the displacement where KE = PE, and the time-averaged KE?
+A) \(2\text{ J};\ 1\text{ J};\ 5\text{ cm};\ 2\text{ J}\)
+B) \(1\text{ J};\ 0.75\text{ J};\ \tfrac{10}{\sqrt2}\approx7.1\text{ cm};\ 0.5\text{ J}\)
+C) \(1\text{ J};\ 0.25\text{ J};\ 5\text{ cm};\ 1\text{ J}\)
+D) \(100\text{ J};\ 75\text{ J};\ 7.1\text{ cm};\ 50\text{ J}\)
+KEY: B
+SOL:
+Answer: (B) \(E=1\text{ J},\ K(5\text{ cm})=0.75\text{ J},\ x=7.1\text{ cm},\ \langle K\rangle=0.5\text{ J}\)
+Given: \(k=200\text{ N m}^{-1},\ A=0.10\text{ m}\)
+Formula/Principle: \(E=\tfrac12kA^2;\ U=\tfrac12kx^2;\ K=\tfrac12k(A^2-x^2);\ \langle K\rangle=\langle U\rangle=\tfrac E2\)
+Step 1: \(E=\tfrac12(200)(0.01)=1.0\text{ J}\)
+Step 2: \(K=\tfrac12(200)(0.01-0.0025)=0.75\text{ J}\)
+Step 3: \(K=U\Rightarrow A^2-x^2=x^2\Rightarrow x=A/\sqrt2=7.07\text{ cm}\)
+Worked derivation: \[\langle K\rangle=\frac12kA^2\langle\cos^2\omega t\rangle=\frac12kA^2\cdot\frac12=\frac{E}{2}\]
+Check: \[U(5\text{ cm})=\tfrac12(200)(0.0025)=0.25\text{ J},\ K+U=1\text{ J}\ \checkmark\]
+Why: \(\text{energy shuttles between spring and block while their sum stays fixed}\)
+Why not the others: (A) \(\text{factor }\tfrac12\text{ omitted}\); (C) \(K\text{ and }U\text{ swapped}\); (D) \(\text{amplitude used in cm}\).
+Key point: \(E=\tfrac12kA^2;\ K=U\text{ at }x=A/\sqrt2\)
+
+@@ Q65
+format: experiment
+sub_topic: Using sonometer resonance to find wave speed and wire tension, and predicting how resonating length changes with tension and frequency
+Q: A sonometer wire of linear density \(1.0\times10^{-3}\text{ kg m}^{-1}\) resonates in its fundamental mode with a 256 Hz tuning fork when the length between the bridges is \(50\text{ cm}\). What are the wave speed and tension? If the tension is made four times, what length resonates with the same fork, and what fork frequency would resonate with the original tension at \(25\text{ cm}\)?
+A) \(128\text{ m s}^{-1};\ 16.4\text{ N};\ 25\text{ cm};\ 128\text{ Hz}\)
+B) \(512\text{ m s}^{-1};\ 262\text{ N};\ 200\text{ cm};\ 1024\text{ Hz}\)
+C) \(256\text{ m s}^{-1};\ 0.256\text{ N};\ 50\text{ cm};\ 256\text{ Hz}\)
+D) \(256\text{ m s}^{-1};\ 65.5\text{ N};\ 100\text{ cm};\ 512\text{ Hz}\)
+KEY: D
+SOL:
+Answer: (D) \(v=256\text{ m s}^{-1},\ T=65.5\text{ N};\ 100\text{ cm};\ 512\text{ Hz}\)
+Given: \(\mu=1.0\times10^{-3}\text{ kg m}^{-1},\ f=256\text{ Hz},\ L=0.50\text{ m}\)
+Formula/Principle: \(f=\dfrac{1}{2L}\sqrt{\dfrac T\mu};\ v=\sqrt{T/\mu}=2Lf\)
+Step 1: \(v=2(0.50)(256)=256\text{ m s}^{-1}\)
+Step 2: \(T=\mu v^2=10^{-3}\times65536=65.5\text{ N}\)
+Step 3: \(T\times4\Rightarrow v\times2\Rightarrow L=\dfrac{v}{2f}\times2=100\text{ cm};\ L\to\tfrac L2\Rightarrow f\times2=512\text{ Hz}\)
+Worked derivation: \[L=\frac{1}{2f}\sqrt{\frac{T}{\mu}}\propto\sqrt T\Rightarrow L'=\sqrt4\times50=100\ \text{cm}\]
+Check: \[f=\frac{1}{2(0.25)}\sqrt{\frac{65.5}{10^{-3}}}=2\times256=512\ \text{Hz}\ \checkmark\]
+Why: \(\text{the fundamental wavelength is twice the vibrating length, so length, tension and frequency are tied by }v=2Lf\)
+Why not the others: (A) \(\text{used }v=Lf\); (B) \(\text{length scales as }\sqrt T,\ \text{not }T\); (C) \(\text{tension not computed from }\mu v^2\).
+Key point: \(f=\tfrac1{2L}\sqrt{T/\mu}\)
+
+@@ Q66
+format: numerical
+sub_topic: Comparing the electric field of a point charge with that on the axis of a uniformly charged ring, including the field at the centre, the far-field limit and the position of maximum field
+Q: A ring of radius \(R\) carries charge \(Q\) uniformly. Compare its axial field at distance \(x\) with that of a point charge \(Q\) at the same distance. Which statement is correct?
+A) \(E_{\text{ring}}=\dfrac{kQx}{(R^2+x^2)^{3/2}};\ \text{zero at the centre};\ \text{for }x\gg R\text{ it becomes }kQ/x^2\text{ like a point charge};\ \text{it is maximum at }x=R/\sqrt2;\ \text{a point charge's field }kQ/x^2\text{ only decreases with }x\)
+B) \(E_{\text{ring}}=kQ/x^2\text{ for all }x,\ \text{maximum at the centre}\)
+C) \(E_{\text{ring}}=kQ/(R^2+x^2),\ \text{maximum at }x=R\)
+D) \(E_{\text{ring}}\text{ is zero everywhere on the axis by symmetry}\)
+KEY: A
+SOL:
+Answer: (A) \(E=\dfrac{kQx}{(R^2+x^2)^{3/2}};\ 0\text{ at centre};\ \to kQ/x^2;\ \max\text{ at }R/\sqrt2\)
+Given: \(\text{ring radius }R,\ \text{charge }Q,\ \text{axial distance }x\)
+Formula/Principle: \(d\vec E=\dfrac{k\,dq}{r^2}\hat r;\ \text{superposition: perpendicular components cancel by symmetry}\)
+Step 1: \(r=\sqrt{R^2+x^2};\ \text{axial component }dE\cos\theta=\dfrac{k\,dq}{r^2}\cdot\dfrac xr\)
+Step 2: \(E=\dfrac{kQx}{(R^2+x^2)^{3/2}};\ x=0\Rightarrow E=0;\ x\gg R\Rightarrow E\approx\dfrac{kQ}{x^2}\)
+Step 3: \(\dfrac{dE}{dx}=0\Rightarrow R^2+x^2=3x^2\Rightarrow x=\dfrac{R}{\sqrt2}\)
+Worked derivation: \[\frac{d}{dx}\left[\frac{x}{(R^2+x^2)^{3/2}}\right]=\frac{(R^2+x^2)-3x^2}{(R^2+x^2)^{5/2}}=0\Rightarrow x=\frac{R}{\sqrt2}\]
+Check: \[x\gg R:\ (R^2+x^2)^{3/2}\approx x^3\Rightarrow E\approx kQx/x^3=kQ/x^2\ \checkmark\]
+Why: \(\text{near the centre the contributions from opposite sides cancel, far away the ring looks like a point}\)
+Why not the others: (B) \(\text{field is zero at the centre}\); (C) \(\text{wrong form and maximum}\); (D) \(\text{only perpendicular components cancel}\).
+Key point: \(\text{ring: }E=kQx/(R^2+x^2)^{3/2},\ \max\text{ at }R/\sqrt2\)
+
+@@ Q67
+format: numerical
+sub_topic: Calculating the potential energy of a system of charges and using energy conservation to find the speeds of two charges released from rest, together with properties of equipotential surfaces
+Q: Two small spheres, each of mass \(1.0\text{ g}\) and charge \(+2.0\ \mu\text{C}\), are released from rest \(0.10\text{ m}\) apart on a smooth table. What is the initial potential energy, and the speed of each when they are far apart? What is the potential energy of three charges \(q\) at the corners of an equilateral triangle of side \(a\), and how much work is done moving a charge along an equipotential surface?
+A) \(0.18\text{ J};\ 6\text{ m s}^{-1};\ kq^2/a;\ \text{positive}\)
+B) \(0.72\text{ J};\ 38\text{ m s}^{-1};\ 2kq^2/a;\ \text{negative}\)
+C) \(0.36\text{ J};\ 27\text{ m s}^{-1};\ kq^2/(3a);\ \text{depends on the path}\)
+D) \(0.36\text{ J};\ \sqrt{360}\approx19\text{ m s}^{-1}\text{ each};\ 3kq^2/a;\ \text{zero, since the field is perpendicular to the surface}\)
+KEY: D
+SOL:
+Answer: (D) \(U=0.36\text{ J},\ v\approx19\text{ m s}^{-1};\ 3kq^2/a;\ \text{zero work}\)
+Given: \(m=10^{-3}\text{ kg},\ q=2\times10^{-6}\text{ C},\ r=0.10\text{ m}\)
+Formula/Principle: \(U=\dfrac{kq_1q_2}{r};\ \text{energy and momentum conservation};\ W=q\Delta V\)
+Step 1: \(U=\dfrac{9\times10^9\times4\times10^{-12}}{0.10}=0.36\text{ J}\)
+Step 2: \(\text{equal masses, momentum zero}\Rightarrow\text{equal speeds};\ 2\cdot\tfrac12mv^2=0.36\Rightarrow v^2=360\Rightarrow v\approx19\text{ m s}^{-1}\)
+Step 3: \(\text{three pairs, each }kq^2/a\Rightarrow U=3kq^2/a;\ \Delta V=0\Rightarrow W=0\)
+Worked derivation: \[mv^2=U\Rightarrow v=\sqrt{\frac{0.36}{10^{-3}}}=\sqrt{360}=18.97\ \text{m s}^{-1}\]
+Check: \[\text{total KE}=2\times\tfrac12(10^{-3})(360)=0.36\ \text{J}=U\ \checkmark\]
+Why: \(\text{the repulsive potential energy is shared equally as kinetic energy because momentum stays zero}\)
+Why not the others: (A) \(\text{energy halved; one pair only}\); (B) \(\text{energy doubled}\); (C) \(\text{KE given to one sphere only; work on an equipotential is zero}\).
+Key point: \(U=\sum kq_iq_j/r_{ij};\ \text{no work along an equipotential}\)
+
+@@ Q68
+format: numerical
+sub_topic: Reading the dependence of force per unit length between two parallel current-carrying wires on separation and currents, and the force on a wire in a uniform field as a function of angle
+Q: Two long parallel wires carry currents \(I_1\) and \(I_2\) a distance \(d\) apart (\(\mu_0=4\pi\times10^{-7}\text{ T m A}^{-1}\)). Which statement is correct?
+A) \(F/L\propto1/d^2,\ \text{and parallel currents repel}\)
+B) \(F/L=\dfrac{\mu_0I_1I_2}{2\pi d};\ \text{for }1\text{ A each at }1\text{ m it is }2\times10^{-7}\text{ N m}^{-1}\ (\text{basis of the ampere});\ \text{a graph of }F/L\text{ against }1/d\text{ is a straight line through the origin};\ \text{parallel currents attract, antiparallel repel};\ \text{a wire in a uniform field feels }F=BIL\sin\theta,\ \text{maximum at }\theta=90^\circ\)
+C) \(F/L=\mu_0I_1I_2d/2\pi,\ \text{increasing linearly with }d\)
+D) \(F=BIL\cos\theta,\ \text{maximum when the wire is along the field}\)
+KEY: B
+SOL:
+Answer: (B) \(F/L=\mu_0I_1I_2/2\pi d;\ 2\times10^{-7}\text{ N m}^{-1};\ \text{linear in }1/d;\ \text{like currents attract}\)
+Given: \(\text{currents }I_1,I_2;\ \text{separation }d\)
+Formula/Principle: \(B_1=\dfrac{\mu_0I_1}{2\pi d};\ F=I_2LB_1\sin90^\circ\)
+Step 1: \(F/L=I_2B_1=\dfrac{\mu_0I_1I_2}{2\pi d}\)
+Step 2: \(I_1=I_2=1,\ d=1:\ \dfrac{4\pi\times10^{-7}}{2\pi}=2\times10^{-7}\text{ N m}^{-1}\)
+Step 3: \(F/L\propto\dfrac1d\Rightarrow\text{straight line against }1/d\)
+Worked derivation: \[\frac{F}{L}=\frac{\mu_0}{2\pi}\frac{I_1I_2}{d}=2\times10^{-7}\,\frac{I_1I_2}{d}\]
+Check: \[\text{doubling }d\text{ halves }F/L;\ \text{doubling one current doubles it}\ \checkmark\]
+Why: \(\text{each wire sits in the circular field of the other, and the right-hand rule gives attraction for parallel currents}\)
+Why not the others: (A) \(F\propto1/d;\ \text{parallel currents attract}\); (C) \(\text{inverse, not direct, in }d\); (D) \(F\propto\sin\theta\).
+Key point: \(F/L=\mu_0I_1I_2/2\pi d\)
+
+@@ Q69
+format: numerical
+sub_topic: Reading a current–time graph for a coil to find the self-induced emf in each interval, the stored energy, and the mutual inductance of a long coaxial solenoid pair
+Q: The current in a coil of self-inductance \(0.50\text{ H}\) rises uniformly from 0 to \(2.0\text{ A}\) in \(0.10\text{ s}\), stays constant for \(0.20\text{ s}\), then falls uniformly to zero in \(0.05\text{ s}\). What is the induced emf in each interval, and the maximum stored energy? Which statement about mutual inductance is correct?
+A) \(10\text{ V},\ 10\text{ V},\ 10\text{ V};\ 2\text{ J};\ M\text{ depends on the currents}\)
+B) \(1\text{ V},\ 0,\ 2\text{ V};\ 0.5\text{ J};\ M=\mu_0nA\)
+C) \(-10\text{ V},\ 0,\ +20\text{ V};\ \tfrac12LI^2=1.0\text{ J};\ \text{for a long inner solenoid inside an outer one, }M=\mu_0n_1n_2\pi r_1^2l,\ \text{depending only on geometry and the medium}\)
+D) \(+10\text{ V},\ 0,\ -20\text{ V};\ 4\text{ J};\ M\text{ is zero unless the coils touch}\)
+KEY: C
+SOL:
+Answer: (C) \(-10\text{ V},\ 0,\ +20\text{ V};\ 1.0\text{ J};\ M=\mu_0n_1n_2\pi r_1^2l\)
+Given: \(L=0.50\text{ H};\ \Delta I/\Delta t:\ +20,\ 0,\ -40\text{ A s}^{-1}\)
+Formula/Principle: \(\varepsilon=-L\dfrac{dI}{dt};\ U=\tfrac12LI^2;\ N_1\Phi_1=MI_2\)
+Step 1: \(\varepsilon_1=-0.50\times20=-10\text{ V}\)
+Step 2: \(\varepsilon_2=0;\ \varepsilon_3=-0.50\times(-40)=+20\text{ V}\)
+Step 3: \(U_{\max}=\tfrac12(0.50)(2.0)^2=1.0\text{ J}\)
+Worked derivation: \[N_1\Phi_1=(n_1l)(\pi r_1^2)(\mu_0n_2I_2)\Rightarrow M=\mu_0n_1n_2\pi r_1^2l\]
+Check: \[\text{faster fall (0.05 s) gives twice the emf of the rise (0.10 s)}\ \checkmark\]
+Why: \(\text{the coil opposes change in current: it opposes the rise and tries to maintain the current as it falls}\)
+Why not the others: (A) \(\text{emf is zero when current is steady}\); (B) \(\text{rates miscomputed}\); (D) \(\text{signs reversed; energy wrong}\).
+Key point: \(\varepsilon=-L\,dI/dt;\ U=\tfrac12LI^2\)
+
+@@ Q70
+format: numerical
+sub_topic: Finding the resonant frequency, impedance, power factor and quality factor of a series LCR circuit, and limiting cases of very small resistance and purely reactive circuits
+Q: A series LCR circuit has \(L=0.10\text{ H}\), \(C=10\ \mu\text{F}\), \(R=10\ \Omega\). What are the resonant angular frequency, the impedance and power factor at resonance, and the quality factor? What happens as \(R\to0\), and what power does a purely inductive circuit consume?
+A) \(100\text{ rad s}^{-1};\ 0;\ 0;\ 1\)
+B) \(10^4\text{ rad s}^{-1};\ 10\ \Omega;\ 0.5;\ 100;\ \text{power is maximum}\)
+C) \(1000\text{ rad s}^{-1};\ \sqrt{200}\ \Omega;\ 0.71;\ 1\)
+D) \(1000\text{ rad s}^{-1};\ 10\ \Omega\ (Z=R);\ 1;\ Q=\omega_0L/R=10;\ \text{as }R\to0\text{ the resonance becomes sharper and the current larger};\ \text{a purely inductive circuit consumes zero average power (wattless current)}\)
+KEY: D
+SOL:
+Answer: (D) \(\omega_0=1000\text{ rad s}^{-1},\ Z=10\ \Omega,\ \cos\phi=1,\ Q=10;\ \text{sharper as }R\to0;\ P=0\text{ for pure }L\)
+Given: \(L=0.10\text{ H},\ C=10^{-5}\text{ F},\ R=10\ \Omega\)
+Formula/Principle: \(\omega_0=\dfrac1{\sqrt{LC}};\ Z=\sqrt{R^2+(X_L-X_C)^2};\ \cos\phi=R/Z;\ Q=\omega_0L/R;\ P=V_{\text{rms}}I_{\text{rms}}\cos\phi\)
+Step 1: \(\omega_0=1/\sqrt{10^{-6}}=1000\text{ rad s}^{-1}\)
+Step 2: \(X_L=X_C=100\ \Omega\Rightarrow Z=R=10\ \Omega,\ \cos\phi=1\)
+Step 3: \(Q=\dfrac{1000\times0.10}{10}=10\)
+Worked derivation: \[X_L=\omega_0L=100\ \Omega,\quad X_C=\frac{1}{\omega_0C}=\frac{1}{1000\times10^{-5}}=100\ \Omega\]
+Check: \[\text{pure }L:\ \phi=90^\circ\Rightarrow P=VI\cos90^\circ=0\ \checkmark\]
+Why: \(\text{at resonance the reactances cancel, leaving only the resistance to limit the current}\)
+Why not the others: (A) \(\omega_0\text{ wrong; }Z\ne0\text{ with }R\); (B) \(\omega_0\text{ wrong; power factor is 1}\); (C) \(\text{reactances cancel at resonance}\).
+Key point: \(\omega_0=1/\sqrt{LC};\ \text{at resonance }Z=R,\ \cos\phi=1\)
+
+@@ Q71
+format: numerical
+sub_topic: Applying Snell's law with conservation of frequency to find speed and wavelength in glass, the critical angle for glass–air, and the apparent depth of an object under water
+Q: Light of wavelength \(600\text{ nm}\) in air enters glass (\(n=1.5\)). What are its frequency, speed and wavelength in glass, and the critical angle at a glass–air surface? A coin lies \(12\text{ cm}\) below the surface of water (\(n=\tfrac43\)); what is its apparent depth seen from above?
+A) \(5\times10^{14}\text{ Hz};\ 2\times10^8\text{ m s}^{-1};\ 400\text{ nm};\ \sin^{-1}\tfrac23\approx41.8^\circ;\ 9\text{ cm}\)
+B) \(3.3\times10^{14}\text{ Hz};\ 4.5\times10^8\text{ m s}^{-1};\ 900\text{ nm};\ 48.6^\circ;\ 16\text{ cm}\)
+C) \(5\times10^{14}\text{ Hz};\ 2\times10^8\text{ m s}^{-1};\ 600\text{ nm};\ 30^\circ;\ 12\text{ cm}\)
+D) \(7.5\times10^{14}\text{ Hz};\ 3\times10^8\text{ m s}^{-1};\ 400\text{ nm};\ 41.8^\circ;\ 9\text{ cm}\)
+KEY: A
+SOL:
+Answer: (A) \(5\times10^{14}\text{ Hz};\ 2\times10^8\text{ m s}^{-1};\ 400\text{ nm};\ 41.8^\circ;\ 9\text{ cm}\)
+Given: \(\lambda_0=600\text{ nm},\ n_g=1.5;\ \text{real depth }12\text{ cm},\ n_w=\tfrac43\)
+Formula/Principle: \(f=c/\lambda_0\ (\text{unchanged on refraction});\ v=c/n;\ \lambda=\lambda_0/n;\ \sin C=1/n;\ \text{apparent depth}=\text{real}/n\)
+Step 1: \(f=\dfrac{3\times10^8}{6\times10^{-7}}=5\times10^{14}\text{ Hz};\ v=2\times10^8\text{ m s}^{-1}\)
+Step 2: \(\lambda=400\text{ nm};\ \sin C=\tfrac23\Rightarrow C\approx41.8^\circ\)
+Step 3: \(\text{apparent depth}=12\div\tfrac43=9\text{ cm}\)
+Worked derivation: \[n\sin C=1\cdot\sin90^\circ\Rightarrow \sin C=\frac1n=\frac{2}{3}\]
+Check: \[v=f\lambda=5\times10^{14}\times4\times10^{-7}=2\times10^8\ \text{m s}^{-1}\ \checkmark\]
+Why: \(\text{the source fixes the frequency, so slower light in glass must have a shorter wavelength}\)
+Why not the others: (B) \(\text{light slows in glass}\); (C) \(\lambda\text{ changes; }C\ne30^\circ\); (D) \(\text{frequency and speed wrong}\).
+Key point: \(f\text{ fixed};\ v,\lambda\text{ divided by }n;\ \sin C=1/n\)
+
+@@ Q72
+format: conceptual
+sub_topic: Comparing Huygens' wavefront construction for reflection and for refraction, and contrasting its prediction of light speed in a denser medium with the corpuscular model
+Q: Which comparison based on Huygens' principle is correct?
+A) In refraction the frequency changes while the wavelength stays the same
+B) In reflection, secondary wavelets from successive points of the incident wavefront travel in the same medium at the same speed, so the reflected wavefront makes the same angle with the surface and \(i=r\); in refraction the wavelets travel at \(v_2\) in the second medium, giving \(\dfrac{\sin i}{\sin r}=\dfrac{v_1}{v_2}=n_{21}\), so light bends towards the normal when it slows (\(v_2<v_1\)), its wavelength shortens and its frequency is unchanged; the corpuscular model instead predicted light travels faster in a denser medium, which experiment disproved
+C) Huygens' theory predicts light speeds up in water
+D) Reflection and refraction both keep the wave in the same medium
+KEY: B
+SOL:
+Answer: (B) \(i=r\text{ for reflection};\ \sin i/\sin r=v_1/v_2\text{ for refraction};\ \text{light slower in denser medium}\)
+Given: \(\text{plane wavefront incident on a surface}\)
+Formula/Principle: \(\text{every point on a wavefront is a source of secondary wavelets; the new wavefront is their forward envelope}\)
+Step 1: \(\text{reflection: in time }\tau\text{ the wavelet travels }v_1\tau\text{ in the same medium}\Rightarrow\text{congruent triangles}\Rightarrow i=r\)
+Step 2: \(\text{refraction: incident edge travels }v_1\tau,\ \text{wavelet in medium 2 travels }v_2\tau\Rightarrow\dfrac{\sin i}{\sin r}=\dfrac{v_1}{v_2}\)
+Step 3: \(v_2<v_1\Rightarrow r<i\ (\text{towards the normal});\ \lambda_2=\lambda_1v_2/v_1\)
+Worked derivation: \[\sin i=\frac{v_1\tau}{AC},\ \ \sin r=\frac{v_2\tau}{AC}\Rightarrow\frac{\sin i}{\sin r}=\frac{v_1}{v_2}=\frac{n_2}{n_1}\]
+Check: \[\text{glass, }n=1.5:\ v_2=\tfrac23v_1,\ \lambda_2=\tfrac23\lambda_1,\ f=\frac{v_2}{\lambda_2}=\frac{v_1}{\lambda_1}\ \text{unchanged}\ \checkmark\]
+Why: \(\text{the speed of wavelets in each medium sets how far they spread in the same time, which fixes the new direction}\)
+Why not the others: (A) \(\text{frequency is fixed, wavelength changes}\); (C) \(\text{wave theory predicts slower light in water}\); (D) \(\text{refraction enters the second medium}\).
+Key point: \(\text{Huygens: }n_{21}=v_1/v_2;\ \text{frequency unchanged}\)
+
+@@ Q73
+format: numerical
+sub_topic: Calculating the de Broglie wavelength of a thermal neutron at room temperature and the ratio of wavelengths of a proton and an alpha particle accelerated through the same potential difference
+Q: A neutron (\(m=1.675\times10^{-27}\text{ kg}\)) has the mean thermal kinetic energy \(\tfrac32k_BT\) at \(300\text{ K}\) (\(k_B=1.38\times10^{-23}\text{ J K}^{-1}\), \(h=6.626\times10^{-34}\text{ J s}\)). What is its de Broglie wavelength? A proton and an alpha particle are accelerated from rest through the same potential difference; what is \(\lambda_p/\lambda_\alpha\)?
+A) \(1.45\text{ nm};\ 2\)
+B) \(14.5\text{ pm};\ \tfrac12\)
+C) \(0.145\text{ nm};\ 2\sqrt2\)
+D) \(0.145\text{ nm};\ \sqrt2\)
+KEY: C
+SOL:
+Answer: (C) \(\lambda_n\approx1.45\times10^{-10}\text{ m};\ \lambda_p/\lambda_\alpha=2\sqrt2\)
+Given: \(T=300\text{ K};\ m_\alpha=4m_p,\ q_\alpha=2e\)
+Formula/Principle: \(\lambda=\dfrac hp=\dfrac{h}{\sqrt{2mK}};\ K=qV\)
+Step 1: \(K=1.5\times1.38\times10^{-23}\times300=6.21\times10^{-21}\text{ J}\)
+Step 2: \(p=\sqrt{2\times1.675\times10^{-27}\times6.21\times10^{-21}}=4.56\times10^{-24}\text{ kg m s}^{-1}\Rightarrow\lambda=1.45\times10^{-10}\text{ m}\)
+Step 3: \(\lambda\propto\dfrac1{\sqrt{mq}}\Rightarrow\dfrac{\lambda_p}{\lambda_\alpha}=\sqrt{\dfrac{4m\cdot2e}{m\cdot e}}=\sqrt8=2\sqrt2\)
+Worked derivation: \[\lambda=\frac{h}{\sqrt{2mqV}}\Rightarrow\frac{\lambda_p}{\lambda_\alpha}=\sqrt{\frac{m_\alpha q_\alpha}{m_pq_p}}\]
+Check: \[\lambda_n\approx0.15\ \text{nm, comparable to interatomic spacings, which is why thermal neutrons diffract from crystals}\ \checkmark\]
+Why: \(\text{wavelength depends on momentum, which for a given energy grows with the square root of mass}\)
+Why not the others: (A) \(\text{off by 10; ratio ignores charge}\); (B) \(\text{off by 10; ratio inverted}\); (D) \(\text{ratio ignores the mass factor}\).
+Key point: \(\lambda=h/\sqrt{2mK}\)
+
+@@ Q74
+format: conceptual
+sub_topic: Comparing half-wave and full-wave rectifier outputs — ripple frequency, average voltage and peak inverse voltage — and the limiting effect of a large filter capacitor
+Q: A 50 Hz sinusoidal input of peak \(V_m\) is rectified (ideal diodes). Which statement is correct?
+A) Both rectifiers give 50 Hz ripple, and a larger filter capacitor increases the ripple
+B) A full-wave rectifier gives an average output of \(V_m/\pi\) and a half-wave rectifier \(2V_m/\pi\)
+C) The half-wave output pulsates at 50 Hz with average \(V_m/\pi\); the full-wave output pulsates at 100 Hz with average \(2V_m/\pi\); in the centre-tap full-wave circuit each diode must withstand a peak inverse voltage of \(2V_m\) (half-wave: \(V_m\)); with a capacitor filter, the capacitor charges to \(V_m\) and discharges slowly through the load, and in the limit \(RC\gg T\) the output approaches a steady \(V_m\) with very small ripple
+D) A filter capacitor reduces the output voltage to zero in the limit of large \(RC\)
+KEY: C
+SOL:
+Answer: (C) \(\text{half-wave: 50 Hz},\ V_m/\pi;\ \text{full-wave: 100 Hz},\ 2V_m/\pi;\ \text{PIV};\ RC\gg T\Rightarrow\text{steady }V_m\)
+Given: \(f=50\text{ Hz},\ \text{peak }V_m\)
+Formula/Principle: \(\text{average of a half sine over a full cycle}=V_m/\pi;\ \text{ripple frequency}=f\ (\text{half-wave}),\ 2f\ (\text{full-wave})\)
+Step 1: \(\text{half-wave conducts one half-cycle per period}\Rightarrow\text{50 pulses s}^{-1},\ \langle V\rangle=V_m/\pi\)
+Step 2: \(\text{full-wave uses both halves}\Rightarrow100\text{ pulses s}^{-1},\ \langle V\rangle=2V_m/\pi\)
+Step 3: \(\text{capacitor discharge time constant }RC\gg T\Rightarrow\text{voltage hardly falls between peaks}\)
+Worked derivation: \[\langle V\rangle_{\text{half}}=\frac{1}{2\pi}\int_0^{\pi}V_m\sin\theta\,d\theta=\frac{V_m}{2\pi}\cdot2=\frac{V_m}{\pi}\]
+Check: \[\text{full-wave doubles the pulses in each period}\Rightarrow\langle V\rangle=\frac{2V_m}{\pi}\approx0.64V_m,\ \text{ripple }2\times50=100\ \text{Hz}\ \checkmark\]
+Why: \(\text{a diode conducts in one direction only, so each half-cycle either passes or is blocked, and the capacitor stores charge to fill the gaps}\)
+Why not the others: (A) \(\text{full-wave ripple is 100 Hz; larger }C\text{ reduces ripple}\); (B) \(\text{averages swapped}\); (D) \(\text{the output tends to }V_m\).
+Key point: \(\text{full-wave: double ripple frequency, double average; large }RC\Rightarrow\text{smooth DC}\)
+
+@@ Q75
+format: numerical
+sub_topic: Finding the dimensions of the van der Waals constants by the principle of homogeneity, and deriving the form of the oscillation period of a liquid drop by dimensional analysis
+Q: In \(\left(P+\dfrac{a}{V^2}\right)(V-b)=RT\) (V = volume), what are the dimensions of \(a\) and \(b\)? A drop of liquid oscillates with period \(t\) depending on density \(\rho\), radius \(r\) and surface tension \(\sigma\); what is the form of \(t\)?
+A) \([a]=[ML^{-1}T^{-2}],\ [b]=[L^3];\ t\propto\sqrt{\sigma/(\rho r^3)}\)
+B) \([a]=[ML^5T^{-2}],\ [b]=[L^3];\ t=k\sqrt{\dfrac{\rho r^3}{\sigma}}\)
+C) \([a]=[L^6],\ [b]=[L^3];\ t\propto\rho r/\sigma\)
+D) \([a]=[ML^5T^{-2}],\ [b]=[ML^3];\ t\propto\sqrt{\rho r/\sigma}\)
+KEY: B
+SOL:
+Answer: (B) \([a]=[ML^5T^{-2}],\ [b]=[L^3];\ t=k\sqrt{\rho r^3/\sigma}\)
+Given: \([P]=[ML^{-1}T^{-2}],\ [V]=[L^3],\ [\rho]=[ML^{-3}],\ [\sigma]=[MT^{-2}]\)
+Formula/Principle: \(\text{only like quantities can be added; both sides of a valid equation have the same dimensions}\)
+Step 1: \([a/V^2]=[P]\Rightarrow[a]=[ML^{-1}T^{-2}][L^6]=[ML^5T^{-2}];\ [b]=[V]=[L^3]\)
+Step 2: \(t=k\rho^xr^y\sigma^z\Rightarrow[T]=[M^{x+z}L^{-3x+y}T^{-2z}]\)
+Step 3: \(-2z=1\Rightarrow z=-\tfrac12;\ x+z=0\Rightarrow x=\tfrac12;\ -3x+y=0\Rightarrow y=\tfrac32\)
+Worked derivation: \[\left[\frac{\rho r^3}{\sigma}\right]=\frac{[ML^{-3}][L^3]}{[MT^{-2}]}=[T^2]\Rightarrow t\propto\sqrt{\frac{\rho r^3}{\sigma}}\]
+Check: \[\text{a bigger, denser drop oscillates more slowly; stronger surface tension makes it faster}\ \checkmark\]
+Why: \(\text{quantities added to }P\text{ and subtracted from }V\text{ must share their dimensions, and matching powers of M, L, T fixes the exponents}\)
+Why not the others: (A) \([a]\text{ wrong; }t\text{ inverted}\); (C) \([a]\text{ and }t\text{ wrong}\); (D) \([b]\text{ has no mass; power of }r\text{ wrong}\).
+Key point: \(\text{homogeneity of dimensions}\)
+
+@@ Q76
+format: numerical
+sub_topic: Comparing the position–time and velocity–time graphs of a car moving uniformly and a car accelerating from rest to find when they meet, when their speeds are equal and the maximum gap
+Q: At \(t=0\), car A passes a signal at a constant \(20\text{ m s}^{-1}\) while car B starts from rest at the signal with acceleration \(2\text{ m s}^{-2}\). When and where does B catch A, when are their speeds equal, and what is the largest separation before B catches up?
+A) \(10\text{ s},\ 200\text{ m};\ 20\text{ s};\ 200\text{ m}\)
+B) \(40\text{ s},\ 800\text{ m};\ 20\text{ s};\ 400\text{ m}\)
+C) \(20\text{ s},\ 400\text{ m};\ 10\text{ s};\ 100\text{ m}\)
+D) \(20\text{ s},\ 200\text{ m};\ 10\text{ s};\ 50\text{ m}\)
+KEY: C
+SOL:
+Answer: (C) \(t=20\text{ s},\ x=400\text{ m};\ \text{equal speeds at }10\text{ s};\ \text{max gap }100\text{ m}\)
+Given: \(x_A=20t,\ x_B=t^2\)
+Formula/Principle: \(x=ut+\tfrac12at^2;\ \text{gap is maximum when relative velocity is zero};\ \text{area under }v\text{–}t=\text{displacement}\)
+Step 1: \(20t=t^2\Rightarrow t=20\text{ s},\ x=400\text{ m}\)
+Step 2: \(v_B=2t=20\Rightarrow t=10\text{ s}\)
+Step 3: \(\text{gap}=20t-t^2;\ \text{at }t=10:\ 200-100=100\text{ m}\)
+Worked derivation: \[\frac{d}{dt}(20t-t^2)=20-2t=0\Rightarrow t=10\ \text{s},\ \ \text{gap}_{\max}=100\ \text{m}\]
+Check: \[\text{on the }v\text{–}t\text{ graph, the triangle between A's line and B's line up to }t=10\text{ has area }\tfrac12(10)(20)=100\ \text{m}\ \checkmark\]
+Why: \(\text{A pulls ahead while it is faster; once B is faster the gap shrinks, so the gap peaks when speeds are equal}\)
+Why not the others: (A) \(\text{times swapped}\); (B) \(\text{used }x_B=\tfrac12t^2\text{ incorrectly}\); (D) \(\text{position at meeting wrong}\).
+Key point: \(\text{max separation when velocities are equal}\)
+
+@@ Q77
+format: numerical
+sub_topic: Finding tensions in two strings supporting a weight at different angles using the conditions for equilibrium of concurrent forces, and explaining why a string cannot be pulled perfectly horizontal
+Q: A \(6.0\text{ kg}\) block hangs from two strings making \(30^\circ\) and \(60^\circ\) with the horizontal (\(g=10\text{ m s}^{-2}\)). Find the tensions. Why can a heavy rope with a weight hung at its middle never be pulled perfectly straight?
+A) \(30\text{ N}\text{ (string at }30^\circ),\ 30\sqrt3\approx52\text{ N}\text{ (string at }60^\circ);\ \text{the steeper string carries more of the load};\ \text{a straight rope would have no vertical component to balance the weight, so the tension would need to be infinite}\)
+B) \(30\text{ N each},\ \text{since the angles add to }90^\circ\)
+C) \(52\text{ N at }30^\circ,\ 30\text{ N at }60^\circ;\ \text{a rope can be straight if pulled hard enough}\)
+D) \(60\text{ N each};\ \text{tension does not depend on angle}\)
+KEY: A
+SOL:
+Answer: (A) \(T_{30}=30\text{ N},\ T_{60}=30\sqrt3\approx52\text{ N};\ \text{straight rope needs infinite tension}\)
+Given: \(W=60\text{ N};\ \text{strings at }30^\circ,60^\circ\text{ to horizontal}\)
+Formula/Principle: \(\sum F_x=0,\ \sum F_y=0\ (\text{concurrent forces in equilibrium})\)
+Step 1: \(T_1\cos30^\circ=T_2\cos60^\circ\Rightarrow T_2=\sqrt3\,T_1\)
+Step 2: \(T_1\sin30^\circ+T_2\sin60^\circ=60\Rightarrow\tfrac12T_1+\tfrac32T_1=60\Rightarrow T_1=30\text{ N}\)
+Step 3: \(T_2=30\sqrt3\approx52\text{ N}\)
+Worked derivation: \[2T\sin\theta=W\Rightarrow T=\frac{W}{2\sin\theta}\to\infty\text{ as }\theta\to0\]
+Check: \[\text{Lami: }\frac{T_1}{\sin150^\circ}=\frac{T_2}{\sin120^\circ}=\frac{W}{\sin90^\circ}\Rightarrow T_1=30,\ T_2=52\ \text{N}\ \checkmark\]
+Why: \(\text{only vertical components hold up the weight, so a nearly horizontal string must pull very hard}\)
+Why not the others: (B) \(\text{tensions are unequal}\); (C) \(\text{values swapped; a straight rope is impossible}\); (D) \(\text{tension depends on angle}\).
+Key point: \(\text{resolve forces; vertical components balance the weight}\)
+
+@@ Q78
+format: numerical
+sub_topic: Reading spring force and potential energy graphs to find stored energy and the work done in stretching a spring further
+Q: A spring of \(k=200\text{ N m}^{-1}\) obeys Hooke's law. What shapes do its \(F\)–\(x\) and \(U\)–\(x\) graphs have, how much energy is stored at \(x=0.10\text{ m}\), and how much work is needed to stretch it from \(0.10\text{ m}\) to \(0.20\text{ m}\)?
+A) \(\text{both straight lines};\ 20\text{ J};\ 20\text{ J}\)
+B) \(F\text{–}x\text{ parabola, }U\text{–}x\text{ line};\ 2\text{ J};\ 2\text{ J}\)
+C) \(F\text{–}x\text{ line, }U\text{–}x\text{ parabola};\ 1\text{ J};\ 1\text{ J}\)
+D) \(F=-kx\text{ is a straight line of slope }-k;\ U=\tfrac12kx^2\text{ is a parabola with minimum at }x=0;\ 1.0\text{ J};\ \tfrac12k(0.20^2-0.10^2)=3.0\text{ J (area under the }F\text{–}x\text{ line)}\)
+KEY: D
+SOL:
+Answer: (D) \(\text{line and parabola};\ 1.0\text{ J};\ 3.0\text{ J}\)
+Given: \(k=200\text{ N m}^{-1}\)
+Formula/Principle: \(F=-kx;\ U=\tfrac12kx^2;\ W=U_2-U_1=\int kx\,dx\)
+Step 1: \(U(0.10)=\tfrac12(200)(0.01)=1.0\text{ J}\)
+Step 2: \(U(0.20)=\tfrac12(200)(0.04)=4.0\text{ J}\)
+Step 3: \(W=4.0-1.0=3.0\text{ J}\)
+Worked derivation: \[W=\int_{0.10}^{0.20}kx\,dx=\frac{k}{2}\left(0.04-0.01\right)=100\times0.03=3.0\ \text{J}\]
+Check: \[\text{trapezium under }kx:\ \tfrac12(20+40)(0.10)=3.0\ \text{J}\ \checkmark\]
+Why: \(\text{the force grows with stretch, so each further centimetre costs more work than the last}\)
+Why not the others: (A) \(U\text{ is not linear}\); (B) \(\text{shapes swapped}\); (C) \(\text{second stretch needs 3 J, not 1 J}\).
+Key point: \(U=\tfrac12kx^2;\ \text{work}=\text{area under }F\text{–}x\)
+
+@@ Q79
+format: numerical
+sub_topic: Comparing moments of inertia and radii of gyration of a ring, a disc and a solid sphere, and how they scale when the radius is doubled at fixed mass and at fixed density
+Q: A ring, a disc and a solid sphere each have mass \(M\) and radius \(R\) (axes through the centre; for ring and disc, perpendicular to the plane). What are their radii of gyration? If the sphere's radius is doubled keeping its mass fixed, and alternatively keeping its density fixed, by what factors does \(I\) change?
+A) \(R,\ \tfrac{R}{\sqrt2},\ R\sqrt{\tfrac25};\ 4;\ 32\)
+B) \(R,\ R,\ R;\ 2;\ 8\)
+C) \(\tfrac R2,\ \tfrac R4,\ \tfrac{2R}{5};\ 4;\ 8\)
+D) \(R,\ \tfrac R{\sqrt2},\ R\sqrt{\tfrac25};\ 2;\ 16\)
+KEY: A
+SOL:
+Answer: (A) \(K=R,\ R/\sqrt2,\ R\sqrt{2/5};\ \times4;\ \times32\)
+Given: \(I_{\text{ring}}=MR^2,\ I_{\text{disc}}=\tfrac12MR^2,\ I_{\text{sphere}}=\tfrac25MR^2\)
+Formula/Principle: \(I=MK^2\Rightarrow K=\sqrt{I/M};\ M=\tfrac43\pi R^3\rho\)
+Step 1: \(K_{\text{ring}}=R,\ K_{\text{disc}}=R/\sqrt2,\ K_{\text{sphere}}=R\sqrt{2/5}\)
+Step 2: \(\text{fixed }M:\ I\propto R^2\Rightarrow\times4\)
+Step 3: \(\text{fixed }\rho:\ M\propto R^3\Rightarrow I\propto R^5\Rightarrow\times32\)
+Worked derivation: \[I=\frac25\left(\frac43\pi\rho R^3\right)R^2=\frac{8\pi\rho}{15}R^5\]
+Check: \[K_{\text{ring}}>K_{\text{disc}}>K_{\text{sphere}}\text{ because mass lies progressively closer to the axis}\ \checkmark\]
+Why: \(\text{moment of inertia measures how far mass lies from the axis, so the ring, with all mass at }R,\ \text{has the largest}\)
+Why not the others: (B) \(\text{shapes differ}\); (C) \(\text{K values wrong; density case misses }R^2\); (D) \(I\propto R^2\text{ at fixed mass}\).
+Key point: \(K=\sqrt{I/M};\ \text{at fixed density }I\propto R^5\)
+
+@@ Q80
+format: experiment
+sub_topic: Interpreting pendulum measurements of g at a height and in a mine using the variation of g with altitude and depth
+Q: A student measures \(g\) with a pendulum at the surface, on a mountain and in a mine (\(R=6400\text{ km}\)). At what height does \(g\) fall by 1 %, at what depth does it fall by the same amount, how does the pendulum's period change there, and what is \(g\) at a height equal to \(R\)?
+A) \(64\text{ km};\ 32\text{ km};\ \text{decreases by }1\%;\ g/2\)
+B) \(32\text{ km};\ 64\text{ km};\ \text{increases by about }0.5\%;\ g/4\)
+C) \(32\text{ km};\ 32\text{ km};\ \text{unchanged};\ g/4\)
+D) \(6.4\text{ km};\ 64\text{ km};\ \text{increases by }1\%;\ 0\)
+KEY: B
+SOL:
+Answer: (B) \(h=32\text{ km},\ d=64\text{ km};\ T\text{ rises by }\approx0.5\%;\ g/4\)
+Given: \(R=6400\text{ km};\ \Delta g/g=1\%\)
+Formula/Principle: \(g_h=\dfrac{g}{(1+h/R)^2}\approx g\left(1-\dfrac{2h}{R}\right);\ g_d=g\left(1-\dfrac dR\right);\ T=2\pi\sqrt{l/g}\)
+Step 1: \(\dfrac{2h}{R}=0.01\Rightarrow h=32\text{ km}\)
+Step 2: \(\dfrac dR=0.01\Rightarrow d=64\text{ km}\)
+Step 3: \(T\propto g^{-1/2}\Rightarrow\dfrac{\Delta T}T=\tfrac12(1\%)=0.5\%\ (\text{increase});\ h=R\Rightarrow g/4\)
+Worked derivation: \[g_h=\frac{GM}{(R+h)^2}=\frac{g}{(1+h/R)^2},\quad h=R\Rightarrow g_h=\frac{g}{4}\]
+Check: \[(1+0.005)^{-2}\approx0.990\Rightarrow\text{1 \% drop at }h=32\ \text{km}\ \checkmark\]
+Why: \(\text{going up increases distance from the whole mass, while going down also removes the mass of the shell above, so the two fall at different rates}\)
+Why not the others: (A) \(\text{height and depth swapped; }g\text{ at }R\text{ is }g/4\); (C) \(\text{depth must be twice the height}\); (D) \(\text{height wrong; }g\ne0\text{ at }h=R\).
+Key point: \(g_h\approx g(1-2h/R);\ g_d=g(1-d/R)\)

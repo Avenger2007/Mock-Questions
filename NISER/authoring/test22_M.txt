@@ -1,0 +1,459 @@
+@@ Q41
+format: numerical
+sub_topic: Using the adjoint identity A(adj A) = |A|I to find determinants of adj A, adj(adj A) and 2A for a 3 × 3 matrix, and counting parameter values that make a matrix singular
+Q: A \(3\times3\) matrix \(A\) has \(|A|=3\). Find \(|\operatorname{adj}A|\), \(|\operatorname{adj}(\operatorname{adj}A)|\) and \(|2A|\). Also, for how many real \(k\) is \(B=\begin{pmatrix}1&2&k\\0&1&2\\k&0&1\end{pmatrix}\) singular?
+A) \(3;\ 9;\ 6;\ 0\)
+B) \(27;\ 729;\ 8;\ 1\)
+C) \(9;\ 27;\ 6;\ 2\)
+D) \(9;\ 81;\ 24;\ 2\)
+KEY: D
+SOL:
+Answer: (D) \(9;\ 81;\ 24;\ 2\)
+Concept: \(\text{For an }n\times n\text{ matrix, }A(\operatorname{adj}A)=|A|I\Rightarrow|\operatorname{adj}A|=|A|^{n-1};\ |kA|=k^n|A|;\ A\text{ is invertible iff }|A|\ne0,\ \text{with }A^{-1}=\dfrac{\operatorname{adj}A}{|A|}\)
+Given: \(n=3,\ |A|=3;\ B\text{ as above}\)
+Formula/Principle: \(|\operatorname{adj}A|=|A|^{n-1};\ |\operatorname{adj}(\operatorname{adj}A)|=|A|^{(n-1)^2}\)
+Step 1: \(|\operatorname{adj}A|=3^2=9;\ |\operatorname{adj}(\operatorname{adj}A)|=9^2=81\)
+Step 2: \(|2A|=2^3\cdot3=24\)
+Step 3: \(|B|=1(1-0)-2(0-2k)+k(0-k)=1+4k-k^2=0\Rightarrow k=2\pm\sqrt5\ (\text{two real values})\)
+Worked derivation: \[|A|\,|\operatorname{adj}A|=\big|\,|A|I\,\big|=|A|^3\Rightarrow|\operatorname{adj}A|=|A|^2\]
+Check: \[\text{discriminant of }k^2-4k-1:\ 16+4=20>0\Rightarrow\text{two distinct real roots}\ \checkmark\]
+Why: \(\text{taking determinants of }A(\operatorname{adj}A)=|A|I\text{ gives the power law, and scaling every row by }k\text{ multiplies the determinant by }k^n\)
+Why not the others: (A) \(\text{powers not applied}\); (B) \(\text{used }|A|^n;\ |2A|\text{ wrong}\); (C) \(|\operatorname{adj}(\operatorname{adj}A)|=9^2;\ |2A|=8|A|\).
+Key point: \(|\operatorname{adj}A|=|A|^{n-1},\ |kA|=k^n|A|\)
+
+@@ Q42
+format: numerical
+sub_topic: Deciding when a pair of linear equations in two variables has a unique solution, no solution or infinitely many, using the determinant and the geometry of intersecting, parallel and coincident lines
+Q: For the system \(kx+y=1,\ x+ky=1\), which statement is correct?
+A) \(\text{Unique solution for every }k\)
+B) \(\text{Unique solution iff }k\ne\pm1,\ \text{namely }x=y=\tfrac{1}{k+1};\ k=1:\ \text{coincident lines, infinitely many solutions};\ k=-1:\ \text{parallel lines, no solution}\)
+C) \(k=1:\ \text{no solution};\ k=-1:\ \text{infinitely many}\)
+D) \(\text{Unique solution iff }k=0\)
+KEY: B
+SOL:
+Answer: (B) \(\text{unique iff }k\ne\pm1\ (x=y=\tfrac1{k+1});\ k=1\text{ infinite};\ k=-1\text{ none}\)
+Concept: \(\text{For }AX=B:\ |A|\ne0\Rightarrow\text{unique solution }X=A^{-1}B;\ |A|=0\text{ and }(\operatorname{adj}A)B\ne O\Rightarrow\text{inconsistent};\ |A|=0\text{ and }(\operatorname{adj}A)B=O\Rightarrow\text{infinitely many or none (check directly)}\)
+Given: \(A=\begin{pmatrix}k&1\\1&k\end{pmatrix},\ B=\begin{pmatrix}1\\1\end{pmatrix}\)
+Formula/Principle: \(|A|=k^2-1;\ \operatorname{adj}A=\begin{pmatrix}k&-1\\-1&k\end{pmatrix}\)
+Step 1: \(|A|\ne0\iff k\ne\pm1;\ X=\dfrac{1}{k^2-1}\begin{pmatrix}k-1\\k-1\end{pmatrix}=\begin{pmatrix}\frac1{k+1}\\\frac1{k+1}\end{pmatrix}\)
+Step 2: \(k=1:\ (\operatorname{adj}A)B=\begin{pmatrix}0\\0\end{pmatrix};\ \text{both equations are }x+y=1\Rightarrow\text{infinitely many}\)
+Step 3: \(k=-1:\ (\operatorname{adj}A)B=\begin{pmatrix}-2\\-2\end{pmatrix}\ne O\Rightarrow\text{inconsistent (}-x+y=1,\ x-y=1)\)
+Worked derivation: \[(\operatorname{adj}A)B=\begin{pmatrix}k-1\\k-1\end{pmatrix},\ \ X=\frac{1}{(k-1)(k+1)}\begin{pmatrix}k-1\\k-1\end{pmatrix}\]
+Check: \[k=2:\ x=y=\tfrac13\Rightarrow 2\cdot\tfrac13+\tfrac13=1\ \checkmark\]
+Why: \(\text{two lines in a plane meet once unless their slopes are equal, in which case they coincide or are parallel}\)
+Why not the others: (A) \(k=\pm1\text{ fail}\); (C) \(\text{cases reversed}\); (D) \(\text{any }k\ne\pm1\text{ works}\).
+Key point: \(|A|\ne0\Rightarrow\text{unique};\ |A|=0\Rightarrow\text{coincident or parallel}\)
+
+@@ Q43
+format: numerical
+sub_topic: Finding second derivatives to verify differential equations satisfied by given functions and to locate where a cubic is concave up, concave down or has a point of inflection
+Q: Which set of results is correct for (i) \(y=e^x\sin x\), (ii) \(y=\sin^{-1}x\), (iii) \(y=x^3-3x\)?
+A) \(\text{(i) }y''-2y'+2y=0;\ \text{(ii) }(1-x^2)y''-xy'=0;\ \text{(iii) }y''=6x,\ \text{concave down for }x<0,\ \text{up for }x>0,\ \text{inflection at }(0,0)\)
+B) \(\text{(i) }y''+2y'+2y=0;\ \text{(ii) }(1-x^2)y''+xy'=0;\ \text{(iii) inflection at }x=1\)
+C) \(\text{(i) }y''=2y;\ \text{(ii) }y''=0;\ \text{(iii) concave up everywhere}\)
+D) \(\text{(i) }y''-2y=0;\ \text{(ii) }(1+x^2)y''-xy'=0;\ \text{(iii) inflection at }x=\pm1\)
+KEY: A
+SOL:
+Answer: (A) \(y''-2y'+2y=0;\ (1-x^2)y''-xy'=0;\ \text{inflection at }(0,0)\)
+Concept: \(\text{The second derivative is the derivative of the first; its sign tells whether the graph bends up }(y''>0)\text{ or down }(y''<0),\ \text{and a change of sign marks a point of inflection}\)
+Given: \(\text{(i) }e^x\sin x,\ \text{(ii) }\sin^{-1}x,\ \text{(iii) }x^3-3x\)
+Formula/Principle: \(\text{product rule};\ \dfrac{d}{dx}\sin^{-1}x=\dfrac1{\sqrt{1-x^2}}\)
+Step 1: \(y'=e^x(\sin x+\cos x),\ y''=e^x(2\cos x)\Rightarrow y''-2y'+2y=e^x(2\cos x-2\sin x-2\cos x+2\sin x)=0\)
+Step 2: \(\sqrt{1-x^2}\,y'=1\Rightarrow\sqrt{1-x^2}\,y''-\dfrac{x}{\sqrt{1-x^2}}y'=0\Rightarrow(1-x^2)y''-xy'=0\)
+Step 3: \(y''=6x:\ <0\text{ for }x<0,\ >0\text{ for }x>0\Rightarrow\text{inflection at }0\)
+Worked derivation: \[y''=\frac{d}{dx}\big[e^x(\sin x+\cos x)\big]=e^x(\sin x+\cos x)+e^x(\cos x-\sin x)=2e^x\cos x\]
+Check: \[x=\tfrac12:\ y'=\tfrac{1}{\sqrt{3/4}}=\tfrac{2}{\sqrt3},\ y''=\tfrac{x}{(1-x^2)^{3/2}}=\tfrac{1/2}{(3/4)^{3/2}};\ (1-x^2)y''=\tfrac{1/2}{\sqrt{3/4}}=\tfrac{1}{\sqrt3}=xy'\ \checkmark\]
+Why: \(\text{clearing the square root before the second differentiation keeps the algebra short}\)
+Why not the others: (B) \(\text{signs wrong; }x=1\text{ is a minimum}\); (C) \(\text{none of these hold}\); (D) \(x=\pm1\text{ are turning points, not inflections}\).
+Key point: \(\text{sign change of }y''\Rightarrow\text{inflection}\)
+
+@@ Q44
+format: numerical
+sub_topic: Finding constants that make piecewise functions continuous at a point, and checking continuity of a sum of modulus functions
+Q: Find \(k\) so that \(f(x)=\begin{cases}kx+1,&x\le\pi\\\cos x,&x>\pi\end{cases}\) is continuous at \(\pi\); find \(m\) so that \(g(x)=\dfrac{x^2-9}{x-3}\ (x\ne3),\ g(3)=m\) is continuous at 3; and decide where \(h(x)=|x|+|x-1|\) is continuous.
+A) \(k=\tfrac2\pi;\ m=3;\ \text{continuous except at }0,1\)
+B) \(k=0;\ m=0;\ \text{discontinuous at }1\)
+C) \(k=-\tfrac2\pi;\ m=6;\ \text{continuous on all of }\mathbb R\)
+D) \(k=-\tfrac1\pi;\ m=9;\ \text{continuous only for }x>1\)
+KEY: C
+SOL:
+Answer: (C) \(k=-\tfrac2\pi;\ m=6;\ h\text{ continuous everywhere}\)
+Concept: \(f\text{ is continuous at }c\text{ iff }\lim_{x\to c^-}f=\lim_{x\to c^+}f=f(c);\ \text{sums of continuous functions are continuous, and }|x|\text{ is continuous on }\mathbb R\)
+Given: \(\text{the three functions}\)
+Formula/Principle: \(\text{LHL}=\text{RHL}=f(c)\)
+Step 1: \(f(\pi)=k\pi+1,\ \text{RHL}=\cos\pi=-1\Rightarrow k\pi+1=-1\Rightarrow k=-\tfrac2\pi\)
+Step 2: \(\lim_{x\to3}\dfrac{(x-3)(x+3)}{x-3}=6\Rightarrow m=6\)
+Step 3: \(|x|,\ |x-1|\text{ continuous}\Rightarrow h\text{ continuous on }\mathbb R\ (\text{corners at }0,1\text{ affect differentiability only})\)
+Worked derivation: \[\lim_{x\to\pi^-}(kx+1)=k\pi+1,\quad \lim_{x\to\pi^+}\cos x=-1\Rightarrow k=\frac{-2}{\pi}\]
+Check: \[h(1^-)=1+0=1,\ h(1^+)=1+0=1,\ h(1)=1\ \checkmark\]
+Why: \(\text{a corner is a failure of differentiability, not of continuity}\)
+Why not the others: (A) \(\text{sign of }k\text{ and value of }m\text{ wrong; }h\text{ is continuous}\); (B) \(\text{conditions not used}\); (D) \(\text{values wrong; }h\text{ continuous everywhere}\).
+Key point: \(\text{match one-sided limits with the value}\)
+
+@@ Q45
+format: numerical
+sub_topic: Finding the range of a parameter for which a cubic is increasing on the whole real line, and intervals of increase for simple functions
+Q: For which \(a\) is \(f(x)=x^3+ax^2+3x+5\) increasing on \(\mathbb R\)? On which interval is \(g(x)=x^2-4x\) increasing, and is \(h(x)=\sin x+\cos x\) increasing on \(\left[0,\tfrac\pi4\right]\)?
+A) \(a>3;\ (-\infty,2];\ \text{no}\)
+B) \(-3\le a\le3;\ [2,\infty);\ \text{yes}\)
+C) \(a\le0;\ [0,\infty);\ \text{no}\)
+D) \(|a|\ge3;\ [2,\infty);\ \text{yes}\)
+KEY: B
+SOL:
+Answer: (B) \(-3\le a\le3;\ [2,\infty);\ \text{yes}\)
+Concept: \(f\text{ is increasing on an interval if }f'(x)\ge0\text{ there (with equality only at isolated points)};\ \text{a quadratic }px^2+qx+r\ (p>0)\text{ is }\ge0\text{ for all }x\text{ iff }q^2-4pr\le0\)
+Given: \(f'=3x^2+2ax+3,\ g'=2x-4,\ h'=\cos x-\sin x\)
+Formula/Principle: \(\text{discriminant}\le0\)
+Step 1: \(4a^2-36\le0\Rightarrow a^2\le9\Rightarrow-3\le a\le3\)
+Step 2: \(g'\ge0\iff x\ge2\)
+Step 3: \(0\le x\le\tfrac\pi4\Rightarrow\cos x\ge\sin x\Rightarrow h'\ge0\)
+Worked derivation: \[a=3:\ f'(x)=3x^2+6x+3=3(x+1)^2\ge0,\ \text{zero only at }x=-1\]
+Check: \[a=4:\ f'(x)=3x^2+8x+3,\ \text{discriminant }64-36>0\Rightarrow f'<0\text{ somewhere}\ \checkmark\]
+Why: \(\text{an upward parabola stays non-negative exactly when it does not cross the axis}\)
+Why not the others: (A) \(\text{interval and condition reversed}\); (C) \(\text{wrong condition and interval}\); (D) \(|a|\ge3\text{ gives two real roots of }f'\).
+Key point: \(f'\ge0\ \forall x\iff\text{discriminant of }f'\le0\)
+
+@@ Q46
+format: numerical
+sub_topic: Evaluating simple definite integrals by antiderivatives and the fundamental theorem
+Q: Evaluate \(\displaystyle\int_1^2\frac{x^2+1}{x}\,dx,\ \int_0^{\pi/4}\sec^2x\,dx\) and \(\displaystyle\int_0^1\frac{dx}{1+x^2}\).
+A) \(\tfrac52;\ \sqrt2;\ \tfrac\pi2\)
+B) \(\tfrac32;\ 0;\ 1\)
+C) \(3+\ln2;\ 1;\ \tfrac\pi3\)
+D) \(\tfrac32+\ln2;\ 1;\ \tfrac\pi4\)
+KEY: D
+SOL:
+Answer: (D) \(\tfrac32+\ln2;\ 1;\ \tfrac\pi4\)
+Concept: \(\int_a^bf(x)\,dx=F(b)-F(a)\text{ where }F'=f;\ \text{split a fraction into simpler terms before integrating}\)
+Given: \(\text{three integrals}\)
+Formula/Principle: \(\int x\,dx=\tfrac{x^2}2,\ \int\tfrac1x\,dx=\ln|x|,\ \int\sec^2x\,dx=\tan x,\ \int\tfrac{dx}{1+x^2}=\tan^{-1}x\)
+Step 1: \(\dfrac{x^2+1}{x}=x+\dfrac1x\Rightarrow\left[\tfrac{x^2}{2}+\ln x\right]_1^2=2+\ln2-\tfrac12=\tfrac32+\ln2\)
+Step 2: \([\tan x]_0^{\pi/4}=1\)
+Step 3: \([\tan^{-1}x]_0^1=\tfrac\pi4\)
+Worked derivation: \[\int_1^2\left(x+\frac1x\right)dx=\left(\frac{4}{2}-\frac12\right)+(\ln2-\ln1)=\frac32+\ln2\]
+Check: \[\tfrac32+\ln2\approx2.19,\ \text{between the integrand's values }2\text{ and }2.5\text{ times the length }1\ \checkmark\]
+Why: \(\text{each integrand matches a standard derivative once rewritten}\)
+Why not the others: (A) \(\text{log term missing; values wrong}\); (B) \(\text{log term and }\tan\tfrac\pi4\text{ missed}\); (C) \(\text{lower limit not subtracted; }\tan^{-1}1=\tfrac\pi4\).
+Key point: \(\text{rewrite, integrate, subtract}\)
+
+@@ Q47
+format: numerical
+sub_topic: Finding areas between a parabola and a line, between a parabola and a horizontal line, and under a straight line
+Q: Find the area enclosed by \(y=x^2\) and \(y=x\), the area enclosed by \(y=x^2\) and \(y=4\), and the area under \(y=2x+1\) from \(x=0\) to \(x=2\).
+A) \(\tfrac13;\ \tfrac{16}3;\ 5\)
+B) \(\tfrac12;\ 16;\ 4\)
+C) \(\tfrac16;\ \tfrac{32}3;\ 6\)
+D) \(\tfrac16;\ \tfrac{16}3;\ 6\)
+KEY: C
+SOL:
+Answer: (C) \(\tfrac16;\ \tfrac{32}3;\ 6\)
+Concept: \(\text{Area between }y=f(x)\text{ (upper) and }y=g(x)\text{ (lower) from }a\text{ to }b\text{ is }\int_a^b(f-g)\,dx,\ \text{the limits being the }x\text{-coordinates of intersection}\)
+Given: \(\text{curves above}\)
+Formula/Principle: \(A=\int_a^b(\text{upper}-\text{lower})\,dx\)
+Step 1: \(x^2=x\Rightarrow x=0,1;\ A=\int_0^1(x-x^2)\,dx=\tfrac12-\tfrac13=\tfrac16\)
+Step 2: \(x^2=4\Rightarrow x=\pm2;\ A=\int_{-2}^2(4-x^2)\,dx=16-\tfrac{16}3=\tfrac{32}3\)
+Step 3: \(\int_0^2(2x+1)\,dx=[x^2+x]_0^2=6\)
+Worked derivation: \[\int_{-2}^{2}(4-x^2)\,dx=2\int_0^2(4-x^2)\,dx=2\left(8-\frac83\right)=\frac{32}{3}\]
+Check: \[\text{trapezium with parallel sides }1\text{ and }5,\ \text{width }2:\ \tfrac12(1+5)(2)=6\ \checkmark\]
+Why: \(\text{the region is bounded by the two curves between their meeting points, so the integrand is their difference}\)
+Why not the others: (A) \(\text{first and second areas wrong}\); (B) \(\text{forgot to subtract the lower curve}\); (D) \(\text{counted only half of the symmetric region}\).
+Key point: \(\text{area}=\int(\text{upper}-\text{lower})\text{ between intersections}\)
+
+@@ Q48
+format: numerical
+sub_topic: Solving differential equations by separating variables, identifying the family of curves, and finding a particular solution from an initial condition
+Q: Solve (i) \(\dfrac{dy}{dx}=-\dfrac xy\); (ii) \(\dfrac{dy}{dx}=e^{x-y},\ y(0)=0\); (iii) \(\dfrac{dy}{dx}=\dfrac{1+y^2}{1+x^2}\). Which set is correct?
+A) \(\text{(i) }x^2+y^2=C\ (\text{circles about the origin});\ \text{(ii) }y=x;\ \text{(iii) }\tan^{-1}y-\tan^{-1}x=C\)
+B) \(\text{(i) }y=Cx\ (\text{lines});\ \text{(ii) }y=e^x-1;\ \text{(iii) }y=x+C\)
+C) \(\text{(i) }x^2-y^2=C\ (\text{hyperbolas});\ \text{(ii) }y=-x;\ \text{(iii) }\tan^{-1}y+\tan^{-1}x=C\)
+D) \(\text{(i) }xy=C;\ \text{(ii) }y=\ln(2-e^{-x});\ \text{(iii) }y=Cx\)
+KEY: A
+SOL:
+Answer: (A) \(x^2+y^2=C;\ y=x;\ \tan^{-1}y-\tan^{-1}x=C\)
+Concept: \(\text{If }\dfrac{dy}{dx}=g(x)h(y),\ \text{write }\dfrac{dy}{h(y)}=g(x)\,dx\text{ and integrate both sides; an initial condition fixes the constant}\)
+Given: \(\text{three equations}\)
+Formula/Principle: \(\int\frac{dy}{h(y)}=\int g(x)\,dx+C\)
+Step 1: \(y\,dy=-x\,dx\Rightarrow\tfrac{y^2}2=-\tfrac{x^2}2+c\Rightarrow x^2+y^2=C\)
+Step 2: \(e^y\,dy=e^x\,dx\Rightarrow e^y=e^x+C;\ y(0)=0\Rightarrow1=1+C\Rightarrow C=0\Rightarrow y=x\)
+Step 3: \(\dfrac{dy}{1+y^2}=\dfrac{dx}{1+x^2}\Rightarrow\tan^{-1}y=\tan^{-1}x+C\)
+Worked derivation: \[\int e^{y}\,dy=\int e^{x}\,dx\Rightarrow e^{y}=e^{x}+C\]
+Check: \[y=x:\ \frac{dy}{dx}=1=e^{x-x}\ \checkmark;\ \ x^2+y^2=C\Rightarrow 2x+2yy'=0\Rightarrow y'=-\tfrac xy\ \checkmark\]
+Why: \(\text{each right side factors into a function of }x\text{ times a function of }y,\ \text{so the variables separate}\)
+Why not the others: (B) \(\text{(i) wrong family; (ii) does not satisfy the equation}\); (C) \(\text{sign errors}\); (D) \(\text{not solutions of the given equations}\).
+Key point: \(\text{separate, integrate, apply the initial condition}\)
+
+@@ Q49
+format: numerical
+sub_topic: Using a Venn diagram to count elements in regions of two sets and to find the possible range of an intersection when the union is bounded by the universal set
+Q: Of 100 students, 60 like tea, 50 like coffee and 20 like both. How many like neither, and how many like only tea? If instead the number liking both is unknown, what are its least and greatest possible values?
+A) \(0;\ 60;\ 0\text{ and }60\)
+B) \(20;\ 40;\ 20\text{ and }50\)
+C) \(10;\ 40;\ 10\text{ and }50\)
+D) \(10;\ 20;\ 0\text{ and }50\)
+KEY: C
+SOL:
+Answer: (C) \(10;\ 40;\ \text{least }10,\ \text{greatest }50\)
+Concept: \(n(A\cup B)=n(A)+n(B)-n(A\cap B);\ \text{the union cannot exceed the universal set and the intersection cannot exceed the smaller set}\)
+Given: \(n(U)=100,\ n(T)=60,\ n(C)=50,\ n(T\cap C)=20\)
+Formula/Principle: \(n(T\cup C)=n(T)+n(C)-n(T\cap C);\ n(T\cap C)\ge n(T)+n(C)-n(U)\)
+Step 1: \(n(T\cup C)=60+50-20=90\Rightarrow\text{neither}=10\)
+Step 2: \(\text{only tea}=60-20=40\)
+Step 3: \(n(T\cap C)\ge110-100=10;\ n(T\cap C)\le\min(60,50)=50\)
+Worked derivation: \[n(T\cup C)\le100\Rightarrow 110-n(T\cap C)\le100\Rightarrow n(T\cap C)\ge10\]
+Check: \[\text{regions: }40+20+30+10=100\ \checkmark\]
+Why: \(\text{the overlap is smallest when the union fills the whole class and largest when one set lies inside the other}\)
+Why not the others: (A) \(\text{ignores the overlap}\); (B) \(\text{neither miscounted; minimum overlap is 10}\); (D) \(\text{only tea is }40;\ \text{overlap cannot be }0\).
+Key point: \(\max(0,n(A)+n(B)-n(U))\le n(A\cap B)\le\min(n(A),n(B))\)
+
+@@ Q50
+format: numerical
+sub_topic: Evaluating expressions with the modulus, signum and greatest integer functions, and finding the minimum of a sum of two modulus functions
+Q: What is the minimum value of \(f(x)=|x-2|+|x+3|\) and where is it attained? What are \([-3.4]+[3.4]\) and \(\operatorname{sgn}\!\left(x^3-x\right)\) at \(x=\tfrac12\)?
+A) \(5\text{ on }[-3,2];\ -1;\ -1\)
+B) \(0\text{ at }x=2;\ 0;\ 1\)
+C) \(5\text{ only at }x=-\tfrac12;\ 0;\ -1\)
+D) \(1\text{ on }[-3,2];\ -1;\ 0\)
+KEY: A
+SOL:
+Answer: (A) \(\min f=5\text{ for }-3\le x\le2;\ -1;\ -1\)
+Concept: \(|x-a|\text{ is the distance from }x\text{ to }a;\ [x]\text{ is the greatest integer }\le x;\ \operatorname{sgn}x=1,0,-1\text{ for }x>0,=0,<0\)
+Given: \(f(x)=|x-2|+|x+3|;\ -3.4,\ 3.4;\ x=\tfrac12\)
+Formula/Principle: \(|x-a|+|x-b|\ge|a-b|\text{ with equality between }a\text{ and }b\)
+Step 1: \(f=\text{dist}(x,2)+\text{dist}(x,-3)\ge5,\ \text{equal for }-3\le x\le2\)
+Step 2: \([-3.4]=-4,\ [3.4]=3\Rightarrow-1\)
+Step 3: \(\tfrac18-\tfrac12=-\tfrac38<0\Rightarrow\operatorname{sgn}=-1\)
+Worked derivation: \[-3\le x\le2:\ f(x)=(2-x)+(x+3)=5\]
+Check: \[x=3:\ f=1+6=7>5;\ x=-4:\ f=6+1=7>5\ \checkmark\]
+Why: \(\text{between the two points the distances trade off exactly, giving a flat minimum}\)
+Why not the others: (B) \(f(2)=5;\ [-3.4]\ne-3\); (C) \(\text{minimum holds on the whole interval};\ [-3.4]+[3.4]=-1\); (D) \(\text{minimum is 5; sign is negative}\).
+Key point: \([-x]=-[x]-1\text{ for non-integer }x\)
+
+@@ Q51
+format: numerical
+sub_topic: Using sum and difference formulae to evaluate sin 105° and cos 105°, and to find A + B from given tangents of acute angles
+Q: Find \(\sin105^\circ\), \(\cos105^\circ\), and \(A+B\) if \(A,B\) are acute with \(\tan A=\tfrac12\) and \(\tan B=\tfrac13\).
+A) \(\dfrac{\sqrt6-\sqrt2}{4};\ \dfrac{\sqrt6+\sqrt2}{4};\ \tfrac\pi3\)
+B) \(\dfrac{\sqrt3+1}{2};\ \dfrac{1-\sqrt3}{2};\ \tfrac\pi2\)
+C) \(\dfrac{\sqrt6+\sqrt2}{4};\ \dfrac{\sqrt6-\sqrt2}{4};\ \tfrac\pi6\)
+D) \(\dfrac{\sqrt6+\sqrt2}{4};\ \dfrac{\sqrt2-\sqrt6}{4};\ \tfrac\pi4\)
+KEY: D
+SOL:
+Answer: (D) \(\dfrac{\sqrt6+\sqrt2}{4};\ \dfrac{\sqrt2-\sqrt6}{4};\ \tfrac\pi4\)
+Concept: \(\sin(x+y)=\sin x\cos y+\cos x\sin y,\ \cos(x+y)=\cos x\cos y-\sin x\sin y,\ \tan(x+y)=\dfrac{\tan x+\tan y}{1-\tan x\tan y}\)
+Given: \(105^\circ=60^\circ+45^\circ;\ \tan A=\tfrac12,\ \tan B=\tfrac13\)
+Formula/Principle: \(\text{addition formulae}\)
+Step 1: \(\sin105^\circ=\tfrac{\sqrt3}{2}\cdot\tfrac{1}{\sqrt2}+\tfrac12\cdot\tfrac1{\sqrt2}=\dfrac{\sqrt3+1}{2\sqrt2}=\dfrac{\sqrt6+\sqrt2}{4}\)
+Step 2: \(\cos105^\circ=\tfrac12\cdot\tfrac1{\sqrt2}-\tfrac{\sqrt3}2\cdot\tfrac1{\sqrt2}=\dfrac{1-\sqrt3}{2\sqrt2}=\dfrac{\sqrt2-\sqrt6}{4}\)
+Step 3: \(\tan(A+B)=\dfrac{\frac12+\frac13}{1-\frac16}=1,\ 0<A+B<\pi\Rightarrow A+B=\tfrac\pi4\)
+Worked derivation: \[\tan(A+B)=\frac{5/6}{5/6}=1\]
+Check: \[\sin^2105^\circ+\cos^2105^\circ=\frac{(8+2\sqrt{12})+(8-2\sqrt{12})}{16}=1\ \checkmark\]
+Why: \(105^\circ\text{ is in the second quadrant, so its cosine must be negative}\)
+Why not the others: (A) \(\text{values swapped and sign wrong}\); (B) \(\text{not divided by }\sqrt2\); (C) \(\cos105^\circ<0;\ \tan(A+B)=1\).
+Key point: \(\text{split into standard angles; check the quadrant sign}\)
+
+@@ Q52
+format: numerical
+sub_topic: Writing complex numbers in polar form with modulus and principal argument, and counting powers of (1 + i) that are real using the polar form
+Q: Find the modulus and principal argument of \(z_1=-1+i\sqrt3\) and \(z_2=1-i\). For how many \(n\in\{1,2,\dots,12\}\) is \((1+i)^n\) real?
+A) \(2,\ \tfrac\pi3;\ \sqrt2,\ \tfrac\pi4;\ 6\)
+B) \(2,\ \tfrac{2\pi}3;\ \sqrt2,\ -\tfrac\pi4;\ 3\)
+C) \(4,\ \tfrac{2\pi}3;\ 2,\ -\tfrac\pi4;\ 3\)
+D) \(2,\ -\tfrac{\pi}3;\ \sqrt2,\ \tfrac{3\pi}4;\ 4\)
+KEY: B
+SOL:
+Answer: (B) \(|z_1|=2,\ \arg z_1=\tfrac{2\pi}3;\ |z_2|=\sqrt2,\ \arg z_2=-\tfrac\pi4;\ 3\)
+Concept: \(z=x+iy=r(\cos\theta+i\sin\theta),\ r=\sqrt{x^2+y^2},\ \theta\in(-\pi,\pi]\text{ chosen by the quadrant of }(x,y);\ \text{powers multiply the argument: }z^n=r^n(\cos n\theta+i\sin n\theta)\)
+Given: \(z_1=-1+i\sqrt3,\ z_2=1-i,\ 1+i=\sqrt2\left(\cos\tfrac\pi4+i\sin\tfrac\pi4\right)\)
+Formula/Principle: \(z^n\text{ real}\iff\sin n\theta=0\)
+Step 1: \(r_1=2;\ \text{second quadrant},\ \tan\alpha=\sqrt3\Rightarrow\theta_1=\pi-\tfrac\pi3=\tfrac{2\pi}3\)
+Step 2: \(r_2=\sqrt2;\ \text{fourth quadrant}\Rightarrow\theta_2=-\tfrac\pi4\)
+Step 3: \(\sin\tfrac{n\pi}4=0\iff\tfrac{n\pi}{4}=k\pi\iff4\mid n\Rightarrow n=4,8,12\ (3\text{ values})\)
+Worked derivation: \[(1+i)^2=2i\ (\text{imaginary}),\ (1+i)^4=-4,\ (1+i)^8=16,\ (1+i)^{12}=-64\]
+Check: \[n=2:\ (1+i)^2=2i\ \text{is not real, confirming that only multiples of 4 work}\ \checkmark\]
+Why: \(\text{a power is real only when its argument is a multiple of }\pi\)
+Why not the others: (A) \(\text{arguments ignore the quadrant; even powers are not all real}\); (C) \(\text{moduli doubled}\); (D) \(\text{arguments in wrong quadrants; count wrong}\).
+Key point: \(\text{principal argument from the quadrant};\ (re^{i\theta})^n=r^ne^{in\theta}\)
+
+@@ Q53
+format: numerical
+sub_topic: Identifying loci in the Argand plane defined by equal distances from two points, a fixed distance from a point, and a fixed sum of distances from two points
+Q: Identify the loci of \(z=x+iy\): (i) \(|z-1|=|z+1|\); (ii) \(|z-2i|=3\); (iii) \(|z-1|+|z+1|=4\).
+A) \(\text{(i) the real axis; (ii) circle centre }(2,0),\ r=3;\ \text{(iii) a hyperbola}\)
+B) \(\text{(i) the line }x=1;\ \text{(ii) circle radius 9; (iii) circle radius 2}\)
+C) \(\text{(i) the imaginary axis }x=0;\ \text{(ii) circle centre }(0,2),\ \text{radius }3:\ x^2+(y-2)^2=9;\ \text{(iii) the ellipse }\dfrac{x^2}{4}+\dfrac{y^2}{3}=1\text{ with foci }(\pm1,0)\)
+D) \(\text{(i) the line }y=x;\ \text{(ii) a parabola; (iii) the segment from }-1\text{ to }1\)
+KEY: C
+SOL:
+Answer: (C) \(x=0;\ x^2+(y-2)^2=9;\ \dfrac{x^2}4+\dfrac{y^2}3=1\)
+Concept: \(|z-z_0|\text{ is the distance from }z\text{ to }z_0;\ \text{equal distances from two points give their perpendicular bisector; fixed distance from a point gives a circle; fixed sum of distances greater than the distance between two points gives an ellipse with those foci}\)
+Given: \(\text{three conditions}\)
+Formula/Principle: \(|z-(a+ib)|^2=(x-a)^2+(y-b)^2\)
+Step 1: \((x-1)^2+y^2=(x+1)^2+y^2\Rightarrow-4x=0\Rightarrow x=0\)
+Step 2: \(x^2+(y-2)^2=9\)
+Step 3: \(2a=4\Rightarrow a=2,\ c=1\Rightarrow b^2=3\Rightarrow\dfrac{x^2}4+\dfrac{y^2}3=1\)
+Worked derivation: \[\sqrt{(x-1)^2+y^2}=4-\sqrt{(x+1)^2+y^2}\Rightarrow\ldots\Rightarrow 3x^2+4y^2=12\]
+Check: \[z=2:\ |1|+|3|=4\ \checkmark;\ \ z=i\sqrt3:\ 2+2=4\ \checkmark\]
+Why: \(\text{reading }|z-z_0|\text{ as distance turns each equation into a familiar geometric definition}\)
+Why not the others: (A) \(\text{bisector of }\pm1\text{ is vertical; centre is }(0,2);\ \text{sum gives an ellipse}\); (B) \(\text{radius is 3}\); (D) \(\text{wrong loci}\).
+Key point: \(\text{equal distances}\to\text{bisector};\ \text{constant sum}\to\text{ellipse}\)
+
+@@ Q54
+format: numerical
+sub_topic: Counting arrangements of the letters of MISSISSIPPI with repeated letters, with a block of identical letters kept together, and with a fixed first letter
+Q: How many arrangements of the letters of MISSISSIPPI are there in all, how many have the four I's together, and how many begin with P?
+A) \(39916800;\ 40320;\ 3628800\)
+B) \(69300;\ 1680;\ 12600\)
+C) \(34650;\ 6300;\ 840\)
+D) \(34650;\ 840;\ 6300\)
+KEY: D
+SOL:
+Answer: (D) \(34650;\ 840;\ 6300\)
+Concept: \(\text{The number of arrangements of }n\text{ objects of which }p_1\text{ are alike of one kind, }p_2\text{ of another, …, is }\dfrac{n!}{p_1!\,p_2!\cdots}\)
+Given: \(\text{M 1, I 4, S 4, P 2; total 11}\)
+Formula/Principle: \(\dfrac{n!}{p_1!p_2!\cdots}\)
+Step 1: \(\dfrac{11!}{4!\,4!\,2!}=\dfrac{39916800}{24\cdot24\cdot2}=34650\)
+Step 2: \(\text{IIII as one block: }8\text{ objects (block, M, S×4, P×2)}\Rightarrow\dfrac{8!}{4!\,2!}=840\)
+Step 3: \(\text{P first: remaining M, I×4, S×4, P}\Rightarrow\dfrac{10!}{4!\,4!}=6300\)
+Worked derivation: \[\frac{10!}{4!\,4!}=\frac{3628800}{576}=6300\]
+Check: \[\text{fraction beginning with P}=\frac{6300}{34650}=\frac{2}{11}=\frac{\#P}{\#\text{letters}}\ \checkmark\]
+Why: \(\text{swapping identical letters gives no new word, so their internal orders are divided out}\)
+Why not the others: (A) \(\text{repetitions ignored}\); (B) \(\text{divided by too little}\); (C) \(\text{last two counts swapped}\).
+Key point: \(\text{divide by factorials of repeated counts}\)
+
+@@ Q55
+format: numerical
+sub_topic: Evaluating sums of binomial coefficients — total, alternate terms and weighted by r — and identifying the greatest coefficient in a row of Pascal's triangle
+Q: For \(n=10\), find \(\sum_{r=0}^{10}{}^{10}C_r\), \({}^{10}C_1+{}^{10}C_3+\cdots+{}^{10}C_9\), \(\sum_{r=0}^{10}r\,{}^{10}C_r\), and the greatest coefficient in row 10 of Pascal's triangle.
+A) \(1024;\ 1024;\ 1024;\ 210\)
+B) \(1024;\ 512;\ 5120;\ 252\)
+C) \(512;\ 256;\ 2560;\ 252\)
+D) \(1024;\ 512;\ 10240;\ 120\)
+KEY: B
+SOL:
+Answer: (B) \(1024;\ 512;\ 5120;\ 252\)
+Concept: \((1+x)^n=\sum{}^nC_rx^r;\ \text{putting }x=1\text{ and }x=-1\text{ gives the total and the alternating sum; differentiating gives }\sum r\,{}^nC_r;\ \text{coefficients rise to the middle and then fall (Pascal's triangle is symmetric)}\)
+Given: \(n=10\)
+Formula/Principle: \(\sum{}^nC_r=2^n;\ \sum_{\text{odd}}=\sum_{\text{even}}=2^{n-1};\ \sum r\,{}^nC_r=n2^{n-1}\)
+Step 1: \(2^{10}=1024\)
+Step 2: \(x=-1\Rightarrow\sum_{\text{even}}-\sum_{\text{odd}}=0\Rightarrow\sum_{\text{odd}}=512\)
+Step 3: \(\sum r\,{}^{10}C_r=10\cdot2^9=5120;\ \text{middle }{}^{10}C_5=252\)
+Worked derivation: \[n(1+x)^{n-1}=\sum r\,{}^nC_rx^{r-1}\xrightarrow{x=1}\sum r\,{}^nC_r=n2^{n-1}\]
+Check: \[r\,{}^nC_r=n\,{}^{n-1}C_{r-1}\Rightarrow\sum=10\sum{}^9C_{r-1}=10\cdot512\ \checkmark\]
+Why: \(\text{substituting special values of }x\text{ into the expansion collapses it to the required sum}\)
+Why not the others: (A) \(\text{odd terms are half; weighted sum differs}\); (C) \(\text{used }n=9\); (D) \(\text{weighted sum doubled; }120={}^{10}C_3\).
+Key point: \(2^n,\ 2^{n-1},\ n2^{n-1};\ \text{largest }{}^nC_{n/2}\)
+
+@@ Q56
+format: numerical
+sub_topic: Recognising degenerate conics — a pair of lines and a point circle — and identifying ellipses and parabolas from their equations, including finding k for a point circle
+Q: Identify \(x^2-y^2=0\), \(x^2+y^2+2x-4y+5=0\), \(4x^2+9y^2=36\) and \(x^2=-8y\), and find \(k\) for which \(x^2+y^2-6x+8y+k=0\) is a point circle.
+A) \(\text{pair of lines }y=\pm x;\ \text{point circle at }(-1,2);\ \text{ellipse};\ \text{parabola opening downward};\ k=25\)
+B) \(\text{hyperbola};\ \text{circle of radius }\sqrt5;\ \text{hyperbola};\ \text{parabola opening upward};\ k=5\)
+C) \(\text{pair of lines};\ \text{no real locus};\ \text{circle};\ \text{parabola};\ k=-25\)
+D) \(\text{a single line};\ \text{point }(1,-2);\ \text{ellipse};\ \text{parabola opening left};\ k=0\)
+KEY: A
+SOL:
+Answer: (A) \(y=\pm x;\ (-1,2);\ \text{ellipse};\ \text{downward parabola};\ k=25\)
+Concept: \(x^2+y^2+2gx+2fy+c=0\text{ has centre }(-g,-f)\text{ and radius }\sqrt{g^2+f^2-c};\ \text{radius }0\text{ gives a point circle (degenerate)};\ \text{a product of two linear factors gives a pair of lines}\)
+Given: \(\text{four equations; circle with }g=-3,\ f=4\)
+Formula/Principle: \(r^2=g^2+f^2-c\)
+Step 1: \((x-y)(x+y)=0\Rightarrow y=\pm x\)
+Step 2: \((x+1)^2+(y-2)^2=0\Rightarrow\text{only }(-1,2)\)
+Step 3: \(\dfrac{x^2}9+\dfrac{y^2}4=1\text{ ellipse};\ x^2=-8y\text{ opens downward};\ 9+16-k=0\Rightarrow k=25\)
+Worked derivation: \[x^2+y^2+2x-4y+5=(x+1)^2+(y-2)^2+5-1-4=(x+1)^2+(y-2)^2\]
+Check: \[k=25:\ (x-3)^2+(y+4)^2=0\Rightarrow\text{point }(3,-4)\ \checkmark\]
+Why: \(\text{completing squares shows directly whether the radius is positive, zero or imaginary}\)
+Why not the others: (B) \(x^2-y^2=0\text{ factorises; radius is }0\); (C) \(\text{point circle exists; }4x^2+9y^2\text{ is not a circle}\); (D) \(\text{two lines, not one; wrong centre}\).
+Key point: \(r^2=g^2+f^2-c=0\Rightarrow\text{point circle}\)
+
+@@ Q57
+format: numerical
+sub_topic: Evaluating standard exponential and logarithmic limits and counting how many of them equal a given value
+Q: Evaluate \(L_1=\displaystyle\lim_{x\to0}\frac{e^{3x}-1}{x},\ L_2=\lim_{x\to0}\frac{\ln(1+2x)}{x},\ L_3=\lim_{x\to0}\frac{e^x-e^{-x}}{x},\ L_4=\lim_{x\to0}\frac{2^x-1}{x}\). How many of them equal 2?
+A) \(1,1,0,1;\ 0\)
+B) \(3,\tfrac12,1,2;\ 1\)
+C) \(3,2,2,\ln2;\ 2\)
+D) \(3,2,2,2;\ 3\)
+KEY: C
+SOL:
+Answer: (C) \(L_1=3,\ L_2=2,\ L_3=2,\ L_4=\ln2;\ \text{two equal 2}\)
+Concept: \(\displaystyle\lim_{x\to0}\frac{e^x-1}{x}=1,\ \lim_{x\to0}\frac{\ln(1+x)}{x}=1,\ \lim_{x\to0}\frac{a^x-1}{x}=\ln a\)
+Given: \(\text{four limits}\)
+Formula/Principle: \(\text{scale the variable: }\dfrac{e^{kx}-1}{x}=k\cdot\dfrac{e^{kx}-1}{kx}\)
+Step 1: \(L_1=3\cdot1=3;\ L_2=2\cdot1=2\)
+Step 2: \(L_3=\dfrac{e^x-1}{x}+\dfrac{1-e^{-x}}{x}\to1+1=2\)
+Step 3: \(L_4=\ln2\approx0.693\)
+Worked derivation: \[\frac{e^x-e^{-x}}{x}=\frac{e^{x}-1}{x}+\frac{e^{-x}-1}{-x}\to1+1=2\]
+Check: \[x=0.001:\ \frac{\ln1.002}{0.001}\approx1.998\to2\ \checkmark\]
+Why: \(\text{each limit reduces to a standard one by rescaling or splitting}\)
+Why not the others: (A) \(\text{scaling factors dropped}\); (B) \(L_2,L_3\text{ wrong}\); (D) \(L_4=\ln2\ne2\).
+Key point: \((a^x-1)/x\to\ln a\)
+
+@@ Q58
+format: numerical
+sub_topic: Computing the mean, variance and standard deviation of a frequency distribution, and the effect of multiplying and shifting all values on variance and standard deviation
+Q: For values \(10,20,30,40,50\) with frequencies \(2,3,5,3,2\), find the mean and variance. If every value is replaced by \(3x+5\), what are the new mean and variance, and does the new SD depend on the shift 5?
+A) \(30;\ 220;\ 95;\ 660;\ \text{yes}\)
+B) \(30;\ 12.1;\ 90;\ 36.3;\ \text{no}\)
+C) \(25;\ 146.7;\ 80;\ 440;\ \text{yes}\)
+D) \(30;\ \tfrac{2200}{15}\approx146.7;\ 95;\ 9\times146.7=1320;\ \text{no, SD becomes }3\sigma\)
+KEY: D
+SOL:
+Answer: (D) \(\bar x=30,\ \sigma^2\approx146.7;\ \text{new mean }95,\ \text{new variance }1320;\ \text{SD independent of shift}\)
+Concept: \(\sigma^2=\dfrac1N\sum f_i(x_i-\bar x)^2;\ \text{if }y=ax+b,\ \text{then }\bar y=a\bar x+b,\ \sigma_y^2=a^2\sigma_x^2,\ \sigma_y=|a|\sigma_x\ (\text{a shift does not change spread})\)
+Given: \(x:10..50,\ f:2,3,5,3,2,\ N=15\)
+Formula/Principle: \(\bar x=\dfrac{\sum f_ix_i}{N};\ \sigma^2=\dfrac{\sum f_i(x_i-\bar x)^2}{N}\)
+Step 1: \(\sum f_ix_i=20+60+150+120+100=450\Rightarrow\bar x=30\)
+Step 2: \(\sum f(x-30)^2=2(400)+3(100)+0+3(100)+2(400)=2200\Rightarrow\sigma^2=\tfrac{2200}{15}\approx146.7\)
+Step 3: \(\bar y=3(30)+5=95;\ \sigma_y^2=9\times146.7=1320\)
+Worked derivation: \[\sigma_y^2=\frac1N\sum f\,[(3x+5)-(3\bar x+5)]^2=\frac{9}{N}\sum f(x-\bar x)^2=9\sigma_x^2\]
+Check: \[\text{symmetric frequencies about }30\Rightarrow\bar x=30\ \checkmark;\ \sigma\approx12.1,\ 3\sigma\approx36.3=\sqrt{1320}\ \checkmark\]
+Why: \(\text{adding a constant moves every value equally, so deviations from the mean are unchanged; multiplying scales every deviation}\)
+Why not the others: (A) \(\text{variance not divided by }N\text{ correctly; shift irrelevant}\); (B) \(\text{these are SDs, labelled as variances; mean not shifted}\); (C) \(\text{mean wrong}\).
+Key point: \(\sigma^2_{ax+b}=a^2\sigma_x^2\)
+
+@@ Q59
+format: numerical
+sub_topic: Using the addition rule to find probabilities of union, of neither and of exactly one event, and recognising mutually exclusive and exhaustive events
+Q: \(P(A)=0.42,\ P(B)=0.48,\ P(A\cap B)=0.16\). Find \(P(A\cup B)\), \(P(\text{neither})\) and \(P(A\text{ only})\). For a die, are \(E_1=\{1,2\},\ E_2=\{3,4,5\},\ E_3=\{6\}\) mutually exclusive and exhaustive?
+A) \(0.74;\ 0.26;\ 0.26;\ \text{yes, they are pairwise disjoint and their union is the sample space, so }P(E_1)+P(E_2)+P(E_3)=1\)
+B) \(0.90;\ 0.10;\ 0.42;\ \text{no}\)
+C) \(0.74;\ 0.26;\ 0.42;\ \text{exhaustive but not exclusive}\)
+D) \(0.58;\ 0.42;\ 0.32;\ \text{exclusive but not exhaustive}\)
+KEY: A
+SOL:
+Answer: (A) \(0.74;\ 0.26;\ 0.26;\ \text{yes}\)
+Concept: \(P(A\cup B)=P(A)+P(B)-P(A\cap B);\ P(A'\cap B')=1-P(A\cup B);\ P(A\cap B')=P(A)-P(A\cap B);\ \text{events are mutually exclusive if pairwise disjoint and exhaustive if their union is }S\)
+Given: \(P(A),P(B),P(A\cap B)\)
+Formula/Principle: \(\text{addition rule}\)
+Step 1: \(P(A\cup B)=0.42+0.48-0.16=0.74\)
+Step 2: \(P(\text{neither})=1-0.74=0.26\)
+Step 3: \(P(A\text{ only})=0.42-0.16=0.26;\ E_1\cup E_2\cup E_3=S,\ \text{pairwise disjoint}\)
+Worked derivation: \[P(E_1)+P(E_2)+P(E_3)=\frac26+\frac36+\frac16=1\]
+Check: \[P(A\text{ only})+P(B\text{ only})+P(A\cap B)+P(\text{neither})=0.26+0.32+0.16+0.26=1\ \checkmark\]
+Why: \(\text{subtracting the overlap avoids counting it twice}\)
+Why not the others: (B) \(\text{overlap not subtracted}\); (C) \(A\text{ only excludes the overlap; events are exclusive}\); (D) \(\text{union wrong; events are exhaustive}\).
+Key point: \(P(A\cup B)=P(A)+P(B)-P(A\cap B)\)
+
+@@ Q60
+format: numerical
+sub_topic: Finding an unknown number of objects from a given probability, and computing classical probabilities using combinations for cards and committees
+Q: A bag has 5 red and \(n\) black balls, and \(P(\text{red})=\tfrac13\). Find \(n\). What is the probability that two cards drawn from a 52-card pack are both aces, and that a committee of 3 chosen from 4 men and 3 women has exactly 2 women?
+A) \(n=15;\ \tfrac1{169};\ \tfrac{3}{7}\)
+B) \(n=10;\ \tfrac1{221};\ \tfrac{12}{35}\)
+C) \(n=10;\ \tfrac1{26};\ \tfrac{6}{35}\)
+D) \(n=5;\ \tfrac4{52};\ \tfrac{12}{35}\)
+KEY: B
+SOL:
+Answer: (B) \(n=10;\ \tfrac1{221};\ \tfrac{12}{35}\)
+Concept: \(\text{For equally likely outcomes, }P(E)=\dfrac{\text{favourable}}{\text{total}};\ \text{selections without order are counted by }{}^nC_r\)
+Given: \(\text{5 red},\ n\text{ black};\ 4\text{ aces in }52;\ 4\text{ men},\ 3\text{ women}\)
+Formula/Principle: \(P=\dfrac{\text{favourable selections}}{\text{all selections}}\)
+Step 1: \(\dfrac{5}{5+n}=\dfrac13\Rightarrow n=10\)
+Step 2: \(\dfrac{{}^4C_2}{{}^{52}C_2}=\dfrac{6}{1326}=\dfrac1{221}\)
+Step 3: \(\dfrac{{}^3C_2\,{}^4C_1}{{}^7C_3}=\dfrac{12}{35}\)
+Worked derivation: \[{}^{52}C_2=\frac{52\cdot51}{2}=1326,\ \ \frac{6}{1326}=\frac{1}{221}\]
+Check: \[\text{sequentially: }\frac{4}{52}\cdot\frac{3}{51}=\frac{12}{2652}=\frac1{221}\ \checkmark\]
+Why: \(\text{counting both favourable and total selections the same way (unordered) keeps the ratio correct}\)
+Why not the others: (A) \(\text{draws treated as with replacement; }n\text{ wrong}\); (C) \(\text{aces probability wrong}\); (D) \(n\text{ and aces wrong}\).
+Key point: \(P=\dfrac{{}^{\text{fav}}C}{{}^{\text{tot}}C}\)
