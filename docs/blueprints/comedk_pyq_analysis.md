@@ -43,3 +43,20 @@ The complete ExamGOAL copy of the shift identified by the user's SelfStudys link
 | R25-AM-EG p. 31 Q124 | The medium speed gives refractive index 2 and a critical angle of 30°. Comparing both rays with this angle gives only the larger-angle ray, consistent with the published choice. |
 
 These checks establish a useful recent COMEDK benchmark across PCM. The publisher's remaining key entries and empirical pacing have yet to be checked. See the [source register](../../PYQ/COMEDK/SOURCES.md) for provenance.
+
+## Three-shift reference for Tests 2 and 3
+
+The 2025 COMEDK morning, afternoon and evening reproductions contain 540 numbered items across three shifts. Completeness was checked for each PDF and its publisher key. Content review is sampled. These examples define usable reasoning patterns while the official 2026 syllabus determines which topics we author.
+
+| Published item | Independently checked solution path | Use in calibration |
+|---|---|---|
+| R25-PM-EG p. 2 Q3 | Identify the only pair with matching linear molecular shapes. | Short conceptual comparison. Other pairs can differ by electron-pair geometry or lone-pair placement. |
+| R25-PM-EG p. 20 Q65 | Count ordered assignments to distinct exits and divide by all independent assignments. | Compact probability item with one substantive choice of counting model. |
+| R25-PM-EG p. 29 Q127 | Add the three signed pair energies. The positive term cancels both negative terms. | Physics can reward recognising cancellation rather than lengthy arithmetic. |
+| R25-EV-EG p. 2 Q5 | Free expansion into vacuum gives zero work because the external pressure is zero. | A quick check of which pressure matters despite extra state data. |
+| R25-EV-EG p. 23 Q63 | Substitute sine and decompose the resulting rational integrand into two simple fractions. | A plausible hard item with two purposeful steps and a check by differentiation. |
+| R25-EV-EG p. 32 Q123 | Identify quantised angular momentum as a Bohr-model postulate. | A direct concept check with distinct distractors. |
+
+R25-EV-EG p. 32 Q124 uses a Zener regulator. The [official 2026 Physics scope](../../COMEDK/sources/Physics-syllabus-2026.pdf) lists diode characteristics and rectification within semiconductor electronics. Exclude the Zener-regulator task from the 2026-baseline benchmark. This illustrates why shift completeness and syllabus eligibility are checked separately.
+
+Pacing for drafting is estimated from the shortest valid solution path, with targets of about 30 seconds for easy, 50 seconds for medium and 100 seconds for hard. Use the three shifts to compare similar demands across PCM. See the [series blueprint](comedk.md) for the working section budget and review checklist.
