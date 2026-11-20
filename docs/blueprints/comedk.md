@@ -12,7 +12,7 @@ Provisional 2027 preparation, anchored to the three official 2026 subject PDFs. 
 | [Angle register](comedk_angle_register.csv) | The specific reasoning each approved item will test, with the closest authored or past-paper comparison |
 | [Plan check](comedk_plan_check.json) | Verification of initial scope and quota reservations |
 
-Each paper has 60 questions per subject, with 20 Class XI and 40 Class XII per subject. The class allocation is an editorial translation of COMEDK's approximate 33:67 guidance. The 9/39/12 easy/medium/hard mix is also a house target. A 180-minute paper leaves an average minute per question. As a design budget, 9 × 30 seconds plus 39 × 50 seconds plus 12 × 100 seconds per subject yields 177 minutes across PCM. Time with independent solvers and reduce friction where pacing fails. These budgets are editorial, not measured PYQ distributions.
+Each paper has 60 questions per subject, with 20 Class XI and 40 Class XII per subject. The class allocation is an editorial translation of COMEDK's approximate 33:67 guidance. The 9/39/12 easy/medium/hard mix is also a house target. A 180-minute paper leaves an average minute per question. As a design budget, 9 × 30 seconds plus 39 × 50 seconds plus 12 × 100 seconds per subject yields 171 minutes across PCM, leaving 9 minutes in the design budget. These are editorial estimates. Use candidate attempts when available to measure pace and identify delays.
 
 The schedule interleaves chapters and classes before authoring. The first pass assigns every working scope anchor by Test 5. Further passes revisit the scope with a new reasoning demand each time. Each subject/class/chapter group has at least 16 reservations and each anchor has at least five. Coverage means spaced representation across the series, not identical chapter weights or every chapter on every paper. The granular anchors paraphrase source phrases and sometimes group closely related items. Before drafting a grouped anchor, choose one explicit aspect and track its evidence. At series close check PDF-level scope independently instead of inferring exhaustive coverage from the 494 counts.
 
@@ -20,7 +20,7 @@ Tests 1–8 establish reliable short-model choices and clean calculations. Tests
 
 ## How to prevent repeated questions
 
-The slot CSV reserves content, not question angles. Before writing a batch, assign and review a distinct task for every intended slot. Use the angle register to record the object, givens, constraints, representation, governing method, decisive inference, requested result and likely mistakes. Compare it with earlier approved angles, actual stems and worked solutions, recent PYQ samples, and overlapping IAT/NEST/CUET items. Search by concept as well as wording. Require a concrete explanation of what decision changes for the student. A unique slot, different question format, new numbers or an inverse question is insufficient.
+The slot CSV reserves content, not question angles. Before writing a batch, assign and review a distinct task for every intended slot. Use the angle register to record the object, givens, constraints, representation, governing method, decisive inference, requested result and likely mistakes. Compare it with earlier COMEDK angles, stems and worked solutions for repeats. Use relevant COMEDK PYQs to check style, intended solution effort and accidental copying. This comparison scope is COMEDK only. Search by concept as well as wording. Require a concrete explanation of what decision changes for the student. A unique slot, different question format, new numbers or an inverse question is insufficient.
 
 | Recurring scope | A workable pair of distinct angles | Reject as an apparent variation |
 |---|---|---|
@@ -35,7 +35,11 @@ These are illustrations rather than reusable question skeletons. The angle regis
 
 ## Pilot and series handoff
 
-Start with the 180-slot pilot only once its concrete angle cards are accepted under this process. Author in PCM order, solve each section and check renderer output before freezing a pilot delivery. Obtain timed feedback for pace, independence, difficulty and diagram readability. Use the pilot findings to tune future reservations through logged changes. Keep a ledger of exact material scope covered by each final question. Use the canonical JSON as the source for PDFs, delivery JSON, HTML and the series index. Refresh and verify hashes for all affected outputs whenever a stem, solution, option or required diagram changes. Update the source-bound coverage and angle records in the same change.
+Draft in batches of two, working through each paper in PCM order. For the first paper in each batch, re-solve from the question text before reading its key, check the fastest valid route, and record decision steps, computation length and diagram or reading load. Recheck the label against that route. Compare representative easy, medium and hard questions in each subject with readable COMEDK PYQs at similar syllabus depth. Fix ambiguous items and strengthen or replace overlabelled items while preserving the agreed subject mix. Carry those corrections into the second paper before it is locked.
+
+Difficulty and pacing from this process are provisional. When student data become available, use a fresh, full 180-minute attempt by a prepared COMEDK student. Record time by subject, attempted and skipped items, accuracy by difficulty tier and items that caused delays. Apply changes to the next drafts and log the evidence behind each change. Drafting can proceed while candidate timing is pending.
+
+Keep a ledger of exact syllabus areas covered by each final question. Use canonical JSON as the source for PDFs, delivery JSON, HTML and the series index. Refresh and verify hashes for affected outputs after a stem, solution, option or figure changes. Update coverage and angle records in the same change.
 
 Initial schedule check:
 

@@ -90,7 +90,7 @@ Read the [recorded analysis](../blueprints/comedk_pyq_analysis.md) and check the
 
 Map each item to a verified class, PDF page and scope anchor before drafting. Use the published subject-specific limits. For example, COMEDK lists graphical linear programming while 3-D geometry XII is scoped to lines. Poisson ratio is listed in Physics. Single-slit central maximum is qualitative, and YDSE fringe width is final expression only. Check the source before including AP sums, radioactivity, potentiometers, polarisation, or advanced chemistry simply because they occur elsewhere or in a recall paper.
 
-Do not use the present sample to assert official topic weights, exact difficulty rates or figure frequency. The 25-test plan allocates coverage by breadth. Review the pilot under timed conditions before batch authoring.
+Do not use the present sample to assert official topic weights, exact difficulty rates or figure frequency. The 25-test plan allocates coverage by breadth. Proceed with draft batches of two using desk calibration. Finish the first paper’s review before locking the second paper. Keep timing and difficulty estimates provisional until COMEDK candidates provide measured attempts.
 
 ## Difficulty Standard (OurMocks standard: 15% / 65% / 20%)
 
@@ -103,7 +103,7 @@ Do not use the present sample to assert official topic weights, exact difficulty
 - Exact in every subject.
 - **Easy:** direct application of one formula or fact, target about 30 seconds — but never trivial.
 - **Medium:** a model decision, a concept twist or two short steps. Target about 50 seconds.
-- **Hard:** bounded multi-step reasoning or a subtle condition. Target about 100 seconds and test it under timed conditions.
+- **Hard:** bounded multi-step reasoning or a subtle condition. Target about 100 seconds as a planning estimate. Check the reasoning demand during desk review and revise the estimate when candidate timing is available.
 - **Progression comes from depth, not the mix:** Tests 1–8 most accessible, 9–17 deeper, 18–25 mixed timed rehearsal with more condition and interpretation checks.
 - A label must match the real effort; relabelling is forbidden.
 
@@ -162,7 +162,7 @@ Because UGET is speed-based, figures must be readable at a glance. Use them only
 ## Workflow
 
 1. Use the [initial reserve schedule](../blueprints/comedk_25_test_slots.csv) and [coverage map](../blueprints/comedk_syllabus_coverage.csv). Run `python3 tools/comedk/plan_series.py` against the initial plan.
-2. For each planned question, fill the [angle register](../blueprints/comedk_angle_register.csv) before drafting. The task description must identify the object, constraints, governing method, decisive inference, requested result, distractor logic and nearest comparison. Approve after comparing with the whole authored bank, approved angles and relevant PYQs. Same topic is allowed. A new number, wording, incidental figure or reversing givens does not on its own change the task.
+2. For each planned question, fill the [angle register](../blueprints/comedk_angle_register.csv) before drafting. The task description must identify the object, constraints, governing method, decisive inference, requested result, distractor logic and nearest comparison. Approve after comparing with authored COMEDK mocks and their approved angles for internal repetition, and with relevant COMEDK PYQs for task style, scope fit and accidental copying. Use exam-specific sources throughout. Same topic is allowed. A new number, wording, incidental figure or reversing givens does not on its own change the task.
 3. Author one 60-question subject at a time. Independently solve from the stem and figure before checking the intended key. Reject equivalent options, loose rounding, unstated assumptions and unfair time demand. Inspect every actual figure and confirm the required information is available, correct and readable.
 4. Validate structure plus expected class/tier counts, keys, image existence and absence of detectable repeats. Treat lexical checks as candidate generation only. Use editorial comparison where stems take different forms but ask for the same reasoning. Preserve question and option order and the assigned IDs. Never run `shuffle_test.py`.
 5. Record material scope coverage with the exact question ID and final source hash. Keep canonical JSON, delivery JSON, PDFs, HTML, figures, index and hashes in agreement. Rebuild and inspect affected outputs after a correction. Record what was solved, rendered and reviewed.
