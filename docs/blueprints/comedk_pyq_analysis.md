@@ -31,3 +31,15 @@ The recurring design signal is breadth under time pressure, with direct conceptu
 ## Expansion protocol
 
 Before representing any chapter weighting as empirical, tag a defined number of complete read-throughs across multiple recent shifts. Track original pages and extraction problems, scope and excluded counts, dominant task and secondary skills, image necessity, independent solve result, and measured timing if available. Report the denominator by subject and by session. Compare source overlap and conflicting keys. Retain separate metrics for authentically sourced papers, reproductions, and recall samples. A third-party paper or key never overrides the official syllabus.
+
+## 2025 morning-shift reference update
+
+The complete ExamGOAL copy of the shift identified by the user's SelfStudys link contains 60 questions per subject and a separately printed publisher key. Its first questions in each subject match the opening material sampled in R25-A. Count it as one shift and use the 2026 COMEDK syllabus to decide which items qualify as benchmarks. The recorded question numbers refer to publisher order.
+
+| Source locator | Spot check and value for authoring |
+|---|---|
+| R25-AM-EG p. 2 Q1 | Buffer inversion requires selecting the conjugate ratio and converting moles to volume. Re-solving gives about 142 mL, consistent with the published choice. |
+| R25-AM-EG p. 22 Q62 | Differential-equation order requires identifying the highest derivative after applying the outer derivative. The rendered formula is needed for the check. |
+| R25-AM-EG p. 31 Q124 | The medium speed gives refractive index 2 and a critical angle of 30°. Comparing both rays with this angle gives only the larger-angle ray, consistent with the published choice. |
+
+These checks establish a useful recent COMEDK benchmark across PCM. The publisher's remaining key entries and empirical pacing have yet to be checked. See the [source register](../../PYQ/COMEDK/SOURCES.md) for provenance.
