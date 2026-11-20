@@ -1,4 +1,5 @@
-"""Export the COMEDK pilot PDFs and combined HTML from its canonical JSON."""
+"""Export COMEDK question and solution PDFs and combined HTML from canonical JSON."""
+from argparse import ArgumentParser
 from html import escape
 import json
 from pathlib import Path
@@ -29,8 +30,10 @@ def number(question):
 
 
 def render_pdf(data, solutions):
-    title = "COMEDK UGET Test 1 · " + ("Worked solutions" if solutions else "Question paper")
-    name = "COMEDK_TEST_01_SOLUTIONS.pdf" if solutions else "COMEDK_TEST_01_QUESTIONS.pdf"
+    test = data["test_number"]
+    title = f"COMEDK UGET Test {test} · " + ("Worked solutions" if solutions else "Question paper")
+    edition = "SOLUTIONS" if solutions else "QUESTIONS"
+    name = f"COMEDK_TEST_{test:02}_{edition}.pdf"
     styles = {
         "title": pdf_style("title", 22, 26, bold=True, after=8),
         "section": pdf_style("section", 15, 19, bold=True, color=TEAL, after=11),
@@ -63,7 +66,7 @@ def render_pdf(data, solutions):
         page.line(42, 36, A4[0] - 42, 36)
         page.setFillColor(TEAL)
         page.setFont("PilotBold", 8)
-        page.drawString(42, 23, "OURMOCKS  /  COMEDK TEST 1")
+        page.drawString(42, 23, f"OURMOCKS  /  COMEDK TEST {test}")
         page.drawRightString(A4[0] - 42, 23, f"{document.page}")
 
     doc = SimpleDocTemplate(str(OUT / name), pagesize=A4, title=title,
@@ -72,11 +75,12 @@ def render_pdf(data, solutions):
 
 
 def render_html(data):
-    content = ['<!doctype html><html lang="en"><meta charset="utf-8"><title>COMEDK Test 1</title>',
+    test = data["test_number"]
+    content = [f'<!doctype html><html lang="en"><meta charset="utf-8"><title>COMEDK Test {test}</title>',
                '<style>body{font:16px/1.55 system-ui;max-width:52rem;margin:2rem auto;padding:0 1rem;color:#153049}'
                'article{border-bottom:1px solid #ccc;padding:1rem 0}img{width:min(100%,36rem)}'
                'summary{cursor:pointer;color:#176568}</style>',
-               '<h1>COMEDK UGET Test 1</h1><p>180 minutes · 180 questions · +1 per correct answer · No negative marking</p>']
+               f'<h1>COMEDK UGET Test {test}</h1><p>180 minutes · 180 questions · +1 per correct answer · No negative marking</p>']
     section = None
     for q in data["questions"]:
         if q["section"] != section:
@@ -90,13 +94,16 @@ def render_html(data):
         content.extend(f"<p>{escape(line)}</p>" for line in q["explanation"].splitlines())
         content.append("</details></article>")
     content.append("</html>")
-    (OUT / "COMEDK_TEST_01.html").write_text("\n".join(content) + "\n")
+    (OUT / f"COMEDK_TEST_{test:02}.html").write_text("\n".join(content) + "\n")
 
 
 if __name__ == "__main__":
     pdfmetrics.registerFont(TTFont("PilotRegular", str(PDF_FONT / "DejaVuSans.ttf")))
     pdfmetrics.registerFont(TTFont("PilotBold", str(PDF_FONT / "DejaVuSans-Bold.ttf")))
-    data = json.loads((DIR / "COMEDK UGET TEST 1.json").read_text())
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument("test", nargs="?", type=int, default=1)
+    test = parser.parse_args().test
+    data = json.loads((DIR / f"COMEDK UGET TEST {test}.json").read_text())
     OUT.mkdir(exist_ok=True)
     render_pdf(data, solutions=False)
     render_pdf(data, solutions=True)

@@ -1,7 +1,8 @@
-"""Assemble authored pilot rows. Never change the option ordering after initial freeze."""
+"""Assemble COMEDK authoring rows using the frozen option order for each test."""
 import csv
 import json
 import re
+from argparse import ArgumentParser
 from collections import Counter
 from pathlib import Path
 
@@ -17,14 +18,18 @@ FIGURES = {
 LETTERS = "ABCD"
 
 
-def assemble():
+def assemble(test=1):
+    figures = FIGURES
+    if test != 1:
+        metadata = json.loads((DIR / "authoring/batch_figure_meta.json").read_text())
+        figures = {int(number): record for number, record in metadata.get(str(test), {}).items()}
     with (ROOT / "docs/blueprints/comedk_25_test_slots.csv").open(newline="") as stream:
-        plan = {int(r["question"]): r for r in csv.DictReader(stream) if r["test"] == "1"}
+        plan = {int(r["question"]): r for r in csv.DictReader(stream) if int(r["test"]) == test}
     questions = []
     sections = []
     for section, (code, name) in enumerate(SUBJECTS.items()):
-        rows = (DIR / f"authoring/test01_{code}.txt").read_text().splitlines()
-        keys = (DIR / f"authoring/test01_{code}.key").read_text().split()
+        rows = (DIR / f"authoring/test{test:02}_{code}.txt").read_text().splitlines()
+        keys = (DIR / f"authoring/test{test:02}_{code}.key").read_text().split()
         assert len(rows) == len(keys) == 60 and Counter(keys) == dict.fromkeys(LETTERS, 15)
         for index, (row, key) in enumerate(zip(rows, keys), section * 60 + 1):
             number, stem, answer, *tail = [value.strip() for value in row.split("|")]
@@ -54,9 +59,9 @@ def assemble():
                 "correct_option": key,
                 "explanation": f"Answer: ({key}) {answer}\nWhy and working: {working}\nWhy not the others: {rebuttals}",
             }
-            if index in FIGURES:
-                question["format"], question["image_alt"] = FIGURES[index]
-                question["image_reference"] = f"COMEDK_T01_Q{index:03}.png"
+            if index in figures:
+                question["format"], question["image_alt"] = figures[index]
+                question["image_reference"] = f"COMEDK_T{test:02}_Q{index:03}.png"
                 assert (DIR / "images" / question["image_reference"]).is_file()
             questions.append(question)
         first = section * 60 + 1
@@ -65,11 +70,11 @@ def assemble():
     all_keys = "".join(q["correct_option"] for q in questions)
     assert not re.search(r"(.)\1{3}", all_keys)
     return {
-        "test_id": "COMEDK27_TEST_01",
+        "test_id": f"COMEDK27_TEST_{test:02}",
         "series_id": "COMEDK27",
         "exam": "COMEDK UGET preparation",
-        "title": "COMEDK UGET Test 1",
-        "test_number": 1,
+        "title": f"COMEDK UGET Test {test}",
+        "test_number": test,
         "status": "pending_revision",
         "syllabus_source": "COMEDK/SOURCES.md and official subject PDFs (2026 baseline)",
         "notification_source": "COMEDK UGET Information Brochure 2026, section 16",
@@ -87,6 +92,9 @@ def assemble():
 
 
 if __name__ == "__main__":
-    path = DIR / "COMEDK UGET TEST 1.json"
-    path.write_text(json.dumps(assemble(), ensure_ascii=False, indent=2) + "\n")
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument("test", nargs="?", type=int, default=1)
+    test = parser.parse_args().test
+    path = DIR / f"COMEDK UGET TEST {test}.json"
+    path.write_text(json.dumps(assemble(test), ensure_ascii=False, indent=2) + "\n")
     print(path.relative_to(ROOT))
