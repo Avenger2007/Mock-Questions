@@ -37,3 +37,16 @@ Generate the Test 2 and Test 3 figures with `python tools/comedk/batch_figures.p
 | COMEDK27-T05-Q145 | images/COMEDK_T05_Q145.png | Feasible triangle A(5,0), B(2,3), C(5,3), and objective level x+y=5 through A and B |
 
 Generate these figures with `python tools/comedk/tests_04_05_figures.py`. Figure descriptions are in `COMEDK/authoring/batch_figure_meta.json`.
+
+| Question ID | File | Data required to solve |
+|---|---|---|
+| COMEDK27-T06-Q013 | images/COMEDK_T06_Q013.png | Current against voltage at P(2 V, 1 A) and Q(4 V, 4 A) |
+| COMEDK27-T06-Q014 | images/COMEDK_T06_Q014.png | Straight force–position trace from (0 m, 12 N) to (3 m, 0 N) |
+| COMEDK27-T06-Q063 | images/COMEDK_T06_Q063.png | Molar conductivity curves, with Y showing a much stronger fractional rise on dilution than X |
+| COMEDK27-T06-Q136 | images/COMEDK_T06_Q136.png | Feasible polygon A(0,0), B(5,0), C(3,2), D(0,4) |
+| COMEDK27-T07-Q004 | images/COMEDK_T07_Q004.png | Three voltage traces, with alternating, positive-only half-wave, and positive full-wave lobes |
+| COMEDK27-T07-Q035 | images/COMEDK_T07_Q035.png | Force–time triangle with peak 6 N and base 0.20 s |
+| COMEDK27-T07-Q082 | images/COMEDK_T07_Q082.png | Octahedral energy splitting with a fully paired lower group and empty upper orbitals |
+| COMEDK27-T07-Q139 | images/COMEDK_T07_Q139.png | Feasible polygon A(0,0), B(4,0), C(3,3), D(0,3) |
+
+Generate these figures with `python tools/comedk/tests_06_07_figures.py`.
