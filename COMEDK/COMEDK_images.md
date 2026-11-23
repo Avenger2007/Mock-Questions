@@ -50,3 +50,16 @@ Generate these figures with `python tools/comedk/tests_04_05_figures.py`. Figure
 | COMEDK27-T07-Q139 | images/COMEDK_T07_Q139.png | Feasible polygon A(0,0), B(4,0), C(3,3), D(0,3) |
 
 Generate these figures with `python tools/comedk/tests_06_07_figures.py`.
+
+| Question ID | File | Data required to solve |
+|---|---|---|
+| COMEDK27-T08-Q011 | images/COMEDK_T08_Q011.png | Position–time trace with equal displacements at B and C and motion between them |
+| COMEDK27-T08-Q082 | images/COMEDK_T08_Q082.png | Octahedral arrangement with two axial A sites opposite each other and one equatorial A site |
+| COMEDK27-T08-Q130 | images/COMEDK_T08_Q130.png | Feasible polygon A(0,0), B(4,0), C(3,3), D(0,5) and interior point E(1,2) |
+| COMEDK27-T08-Q170 | images/COMEDK_T08_Q170.png | Venn region counts of 9 in A only, 6 in B only and 4 outside both |
+| COMEDK27-T09-Q003 | images/COMEDK_T09_Q003.png | Forward diode curve with Q on a steeper portion than P |
+| COMEDK27-T09-Q047 | images/COMEDK_T09_Q047.png | Horizontal pipe sections with cross-sectional areas 4A and A |
+| COMEDK27-T09-Q064 | images/COMEDK_T09_Q064.png | Initial tangent and interval secant of a falling concentration curve |
+| COMEDK27-T09-Q133 | images/COMEDK_T09_Q133.png | Feasible polygon A(0,0), B(5,0), C(4,2), D(0,3) |
+
+Generate these figures with `python tools/comedk/tests_08_09_figures.py`.
