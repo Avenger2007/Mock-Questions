@@ -63,3 +63,17 @@ Generate these figures with `python tools/comedk/tests_06_07_figures.py`.
 | COMEDK27-T09-Q133 | images/COMEDK_T09_Q133.png | Feasible polygon A(0,0), B(5,0), C(4,2), D(0,3) |
 
 Generate these figures with `python tools/comedk/tests_08_09_figures.py`.
+
+| Question ID | File | Data required to solve |
+|---|---|---|
+| COMEDK27-T10-Q002 | images/COMEDK_T10_Q002.png | Velocity increases from 1 m/s at 1 s to 13 m/s at 5 s |
+| COMEDK27-T10-Q040 | images/COMEDK_T10_Q040.png | Sample X has a linear voltage–current trace through the origin; sample Y has a curved trace |
+| COMEDK27-T10-Q081 | images/COMEDK_T10_Q081.png | Chromium-containing solution changes from yellow to orange |
+| COMEDK27-T10-Q124 | images/COMEDK_T10_Q124.png | Feasible vertices A(0,2), B(2,0), C(5,0), D(0,5) |
+| COMEDK27-T10-Q145 | images/COMEDK_T10_Q145.png | Shaded right half of an upper semicircle of radius 3 |
+| COMEDK27-T11-Q023 | images/COMEDK_T11_Q023.png | Straight stress–strain segment through (0.001, 200 MPa) and (0.002, 400 MPa) |
+| COMEDK27-T11-Q090 | images/COMEDK_T11_Q090.png | Three Fischer projections with the same end groups and different hydroxyl orientations |
+| COMEDK27-T11-Q127 | images/COMEDK_T11_Q127.png | Feasible polygon and a reference objective line with equation 2x+y=8 |
+| COMEDK27-T11-Q138 | images/COMEDK_T11_Q138.png | Graph of the derivative with a negative-to-positive crossing at x=2 |
+
+Generate these figures with `python tools/comedk/tests_10_11_figures.py`.
