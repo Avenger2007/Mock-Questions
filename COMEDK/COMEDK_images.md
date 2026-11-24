@@ -90,3 +90,20 @@ Generate these figures with `python tools/comedk/tests_10_11_figures.py`.
 | COMEDK27-T13-Q121 | images/COMEDK_T13_Q121.png | Feasible polygon with A(0,0), B(4,0), C(3,1) and D(0,3) |
 
 Generate these figures with `python tools/comedk/tests_12_13_figures.py`.
+
+| Question ID | File | Data required to solve |
+|---|---|---|
+| COMEDK27-T14-Q026 | images/COMEDK_T14_Q026.png | Three standing-wave loops with both string ends fixed |
+| COMEDK27-T14-Q054 | images/COMEDK_T14_Q054.png | Vertical electric field and horizontal propagation in the plane of the figure |
+| COMEDK27-T14-Q175 | images/COMEDK_T14_Q175.png | Feasible vertices A(0,0), B(3,0), C(2,2) and D(0,3) |
+| COMEDK27-T14-Q180 | images/COMEDK_T14_Q180.png | Increasing graph with horizontal asymptotes marked at ±π/2 |
+| COMEDK27-T15-Q002 | images/COMEDK_T15_Q002.png | Piecewise linear velocity trace through (0,−2), (3,4) and (6,2) in SI units |
+| COMEDK27-T15-Q006 | images/COMEDK_T15_Q006.png | Equal potential steps with unequal line spacing near P, Q and R |
+| COMEDK27-T15-Q022 | images/COMEDK_T15_Q022.png | Schematic binding-energy curve showing a higher value at B than at A |
+| COMEDK27-T15-Q058 | images/COMEDK_T15_Q058.png | Sinusoidal input and positive output pulses separated by blank half-cycles |
+| COMEDK27-T15-Q065 | images/COMEDK_T15_Q065.png | Ethane Newman projection with the three rear bonds offset from the front bonds |
+| COMEDK27-T15-Q134 | images/COMEDK_T15_Q134.png | Disjoint Venn counts of 8, 5, 7 and 5 |
+| COMEDK27-T15-Q137 | images/COMEDK_T15_Q137.png | Relation arrows 1→a, 2→a, 2→b and 3→c |
+| COMEDK27-T15-Q143 | images/COMEDK_T15_Q143.png | Complex plane with z marked at (−2,1) |
+
+Generate these figures with `python tools/comedk/tests_14_15_figures.py`.
