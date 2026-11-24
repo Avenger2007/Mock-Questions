@@ -77,3 +77,16 @@ Generate these figures with `python tools/comedk/tests_08_09_figures.py`.
 | COMEDK27-T11-Q138 | images/COMEDK_T11_Q138.png | Graph of the derivative with a negative-to-positive crossing at x=2 |
 
 Generate these figures with `python tools/comedk/tests_10_11_figures.py`.
+
+| Question ID | File | Data required to solve |
+|---|---|---|
+| COMEDK27-T12-Q054 | images/COMEDK_T12_Q054.png | Voltage–current points P(1 A, 2 V), Q(2 A, 3 V) and R(3 A, 7 V) |
+| COMEDK27-T12-Q082 | images/COMEDK_T12_Q082.png | Square-planar X–M–X and Y–M–Y axes |
+| COMEDK27-T12-Q122 | images/COMEDK_T12_Q122.png | Venn region counts of 7 in A only, 4 in both, 8 in B only and 6 outside both |
+| COMEDK27-T12-Q125 | images/COMEDK_T12_Q125.png | Relation arrows from 1 to 2 and from 2 to 3 |
+| COMEDK27-T13-Q009 | images/COMEDK_T13_Q009.png | Binding energy per nucleon at three labelled positions on a schematic mass-number curve |
+| COMEDK27-T13-Q045 | images/COMEDK_T13_Q045.png | Sinusoidal input and positive output lobes for both input polarities |
+| COMEDK27-T13-Q064 | images/COMEDK_T13_Q064.png | Tangents to concentration at L and M, with L falling faster |
+| COMEDK27-T13-Q121 | images/COMEDK_T13_Q121.png | Feasible polygon with A(0,0), B(4,0), C(3,1) and D(0,3) |
+
+Generate these figures with `python tools/comedk/tests_12_13_figures.py`.
