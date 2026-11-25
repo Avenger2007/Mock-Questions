@@ -121,3 +121,23 @@ Generate these figures with `python tools/comedk/tests_14_15_figures.py`.
 | COMEDK27-T17-Q176 | images/COMEDK_T17_Q176.png | Left and right rays include endpoints −1 and 4, respectively |
 
 Generate these figures with `python tools/comedk/tests_16_17_figures.py`.
+
+| Question ID | File | Data required to solve |
+|---|---|---|
+| COMEDK27-T18-Q011 | images/COMEDK_T18_Q011.png | X reverses slope at the shared point P, while Y keeps a positive slope |
+| COMEDK27-T18-Q037 | images/COMEDK_T18_Q037.png | The torque-magnitude curve peaks at a 90° angle |
+| COMEDK27-T18-Q050 | images/COMEDK_T18_Q050.png | The velocity trace rises from 0 to 2 s, then falls while staying positive from 2 to 5 s |
+| COMEDK27-T18-Q063 | images/COMEDK_T18_Q063.png | The strong-electrolyte molar-conductivity trace falls as square-root concentration increases |
+| COMEDK27-T18-Q082 | images/COMEDK_T18_Q082.png | One X and one Y occupy each of three opposite octahedral position pairs |
+| COMEDK27-T18-Q133 | images/COMEDK_T18_Q133.png | A line and a curved branch share a filled joining point and common tangent at x=0 |
+| COMEDK27-T18-Q149 | images/COMEDK_T18_Q149.png | Relation arrows 1→a, 2→b and 3→b leave c with no incoming arrow |
+| COMEDK27-T18-Q155 | images/COMEDK_T18_Q155.png | The Argand point z is at (0,−3) |
+| COMEDK27-T18-Q163 | images/COMEDK_T18_Q163.png | Feasible vertices A(0,1), B(3,0), C(4,3) and D(0,4) |
+| COMEDK27-T18-Q168 | images/COMEDK_T18_Q168.png | The inverse cosine curve passes through (0,π/2) |
+| COMEDK27-T19-Q003 | images/COMEDK_T19_Q003.png | Radius SP joins the centre of curvature to a point on the wavefront |
+| COMEDK27-T19-Q033 | images/COMEDK_T19_Q033.png | P and Q lie on 12 V and R on 30 V |
+| COMEDK27-T19-Q036 | images/COMEDK_T19_Q036.png | A circular path is centred around a long wire perpendicular to the drawing |
+| COMEDK27-T19-Q049 | images/COMEDK_T19_Q049.png | Approximate mass numbers and binding-per-nucleon ordinates for A, B and C |
+| COMEDK27-T19-Q128 | images/COMEDK_T19_Q128.png | Filled endpoints (−1,2) and (3,6) of a rising graph |
+
+Generate these figures with `python tools/comedk/tests_18_19_figures.py`.
