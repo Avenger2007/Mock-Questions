@@ -107,3 +107,17 @@ Generate these figures with `python tools/comedk/tests_12_13_figures.py`.
 | COMEDK27-T15-Q143 | images/COMEDK_T15_Q143.png | Complex plane with z marked at (−2,1) |
 
 Generate these figures with `python tools/comedk/tests_14_15_figures.py`.
+
+| Question ID | File | Data required to solve |
+|---|---|---|
+| COMEDK27-T16-Q023 | images/COMEDK_T16_Q023.png | The stress–strain trace is straight through O to P, with changing slope beyond P |
+| COMEDK27-T16-Q047 | images/COMEDK_T16_Q047.png | Position–time line X has a constant nonzero slope and curve Y steepens |
+| COMEDK27-T16-Q051 | images/COMEDK_T16_Q051.png | Photoelectric trace G has a more negative stopping intercept than F |
+| COMEDK27-T16-Q139 | images/COMEDK_T16_Q139.png | Two line segments meet at x=0 with unequal slopes |
+| COMEDK27-T16-Q169 | images/COMEDK_T16_Q169.png | Feasible vertices A(0,0), B(5,0), C(4,2) and D(1,4) |
+| COMEDK27-T17-Q019 | images/COMEDK_T17_Q019.png | P and R are at 20 V and Q is at 10 V |
+| COMEDK27-T17-Q021 | images/COMEDK_T17_Q021.png | The Y curve has greater voltage than X at 3 A |
+| COMEDK27-T17-Q082 | images/COMEDK_T17_Q082.png | Three paired lower orbitals and two singly occupied upper orbitals |
+| COMEDK27-T17-Q176 | images/COMEDK_T17_Q176.png | Left and right rays include endpoints −1 and 4, respectively |
+
+Generate these figures with `python tools/comedk/tests_16_17_figures.py`.
