@@ -141,3 +141,21 @@ Generate these figures with `python tools/comedk/tests_16_17_figures.py`.
 | COMEDK27-T19-Q128 | images/COMEDK_T19_Q128.png | Filled endpoints (−1,2) and (3,6) of a rising graph |
 
 Generate these figures with `python tools/comedk/tests_18_19_figures.py`.
+
+| Question ID | File | Data required to solve |
+|---|---|---|
+| COMEDK27-T20-Q002 | images/COMEDK_T20_Q002.png | Velocity–time vertices O=(0 s,0 m/s), A=(2 s,6 m/s), B=(7 s,0 m/s). |
+| COMEDK27-T20-Q082 | images/COMEDK_T20_Q082.png | Octahedral M with one B directly above and one B directly below, and four A equatorial ligands. |
+| COMEDK27-T20-Q127 | images/COMEDK_T20_Q127.png | Both branches meet an open point at (1,2). A filled point at (1,4) gives the function value. |
+| COMEDK27-T20-Q157 | images/COMEDK_T20_Q157.png | Shaded feasible polygon with vertices (0,0), (4,0), (4,2), (2,4) and (0,3). |
+| COMEDK27-T20-Q162 | images/COMEDK_T20_Q162.png | Increasing curve from the filled endpoint (−1,−π/2) to (1,π/2), passing through the origin. |
+| COMEDK27-T21-Q014 | images/COMEDK_T21_Q014.png | Force–position vertices (0,0), (1,4), (3,0), (4,−3) and (5,0), with position in m and force in N. |
+| COMEDK27-T21-Q018 | images/COMEDK_T21_Q018.png | X rises from zero at −3 V, Y at −1 V. At −2 V X is above the axis and Y lies on it. |
+| COMEDK27-T21-Q023 | images/COMEDK_T21_Q023.png | Two straight stress–strain lines through the origin. X is steeper than Y. |
+| COMEDK27-T21-Q082 | images/COMEDK_T21_Q082.png | Octahedral d-orbital filling. Three lower t₂g orbitals hold two electrons each, and both higher e_g orbitals are empty. |
+| COMEDK27-T21-Q128 | images/COMEDK_T21_Q128.png | A leftward ray begins at an open dot at −2 and a rightward ray at a closed dot at 3. |
+| COMEDK27-T21-Q161 | images/COMEDK_T21_Q161.png | Arrows run from set A to set B as 1→q, 2→p and 3→q. The target r receives no arrow. |
+| COMEDK27-T21-Q167 | images/COMEDK_T21_Q167.png | The Argand diagram marks z at real coordinate 2 and imaginary coordinate 1. |
+| COMEDK27-T21-Q171 | images/COMEDK_T21_Q171.png | Vector u points right, and vector v points up from the shared origin. |
+
+Generate these figures with `python tools/comedk/tests_20_21_figures.py`.
