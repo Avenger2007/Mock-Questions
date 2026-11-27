@@ -159,3 +159,20 @@ Generate these figures with `python tools/comedk/tests_18_19_figures.py`.
 | COMEDK27-T21-Q171 | images/COMEDK_T21_Q171.png | Vector u points right, and vector v points up from the shared origin. |
 
 Generate these figures with `python tools/comedk/tests_20_21_figures.py`.
+
+| Question ID | File | Data required to solve |
+|---|---|---|
+| COMEDK27-T22-Q003 | images/COMEDK_T22_Q003.png | Binding energy per nucleon at B is about 8.8 MeV and at C about 7.6 MeV. |
+| COMEDK27-T22-Q035 | images/COMEDK_T22_Q035.png | Force–time vertices (0,0),(2,8),(3,8),(5,−4), with time in seconds and force in newtons. |
+| COMEDK27-T22-Q082 | images/COMEDK_T22_Q082.png | Both diagrams show octahedral centres. In I the three X ligands occupy one end of each axis. In II two X ligands occupy opposite ends of one axis. |
+| COMEDK27-T22-Q137 | images/COMEDK_T22_Q137.png | A to B arrows map 1→p and 2→r. B to C arrows map p→4, q→7 and r→4. |
+| COMEDK27-T22-Q151 | images/COMEDK_T22_Q151.png | Feasible quadrilateral with A=(0,0), B=(4,0), C=(4,3), D=(0,2). |
+| COMEDK27-T22-Q156 | images/COMEDK_T22_Q156.png | X tends to −π/2 and π/2. Y is the same shape shifted upward and tends to 0 and π. |
+| COMEDK27-T23-Q011 | images/COMEDK_T23_Q011.png | Position–time vertices O=(0,0), A=(2,2), B=(3,0), C=(5,4), with seconds and metres. |
+| COMEDK27-T23-Q031 | images/COMEDK_T23_Q031.png | Photocurrent is positive at 0 V and falls to zero at a collector voltage of −2 V. |
+| COMEDK27-T23-Q050 | images/COMEDK_T23_Q050.png | Velocity–time vertices A=(0,0), B=(1,3), C=(3,0), D=(4,−2), E=(6,−1), in seconds and m/s. |
+| COMEDK27-T23-Q082 | images/COMEDK_T23_Q082.png | Five d orbitals in each drawing. I shows three pairs and no single electrons. II shows one pair and four single electrons. |
+| COMEDK27-T23-Q095 | images/COMEDK_T23_Q095.png | Ethane viewed along C–C with each dashed rear C–H bond aligned behind a solid front C–H bond. |
+| COMEDK27-T23-Q142 | images/COMEDK_T23_Q142.png | Feasible region polygon with O=(0,0), P=(3,0), Q=(3,2), R=(0,4). |
+
+Generate these figures with `python tools/comedk/tests_22_23_figures.py`.
