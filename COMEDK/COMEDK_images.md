@@ -176,3 +176,23 @@ Generate these figures with `python tools/comedk/tests_20_21_figures.py`.
 | COMEDK27-T23-Q142 | images/COMEDK_T23_Q142.png | Feasible region polygon with O=(0,0), P=(3,0), Q=(3,2), R=(0,4). |
 
 Generate these figures with `python tools/comedk/tests_22_23_figures.py`.
+
+| Question ID | File | Data required to solve |
+|---|---|---|
+| COMEDK27-T24-Q001 | images/COMEDK_T24_Q001.png | Current–voltage plot. P is linear. Q has 1 A at 2 V and 3 A at 3 V. |
+| COMEDK27-T24-Q016 | images/COMEDK_T24_Q016.png | Binding energy per nucleon is 7.5 MeV at L and 8.5 MeV at R. |
+| COMEDK27-T24-Q082 | images/COMEDK_T24_Q082.png | Square-planar templates: A has a 90° X–M–X angle, B has a 180° X–M–X angle. |
+| COMEDK27-T24-Q140 | images/COMEDK_T24_Q140.png | A number-line segment extends from an open mark at −3 to a closed mark at 2. |
+| COMEDK27-T24-Q145 | images/COMEDK_T24_Q145.png | Feasible vertices A=(0,0), B=(5,0), C=(4,2), D=(1,4). |
+| COMEDK27-T24-Q150 | images/COMEDK_T24_Q150.png | A decreasing branch joins (−1,π) to (1,0) and passes through (0,π/2). A guide marks y=2π/3. |
+| COMEDK27-T24-Q173 | images/COMEDK_T24_Q173.png | Arrows are 1→q, 2→p, 2→q and 3→r. |
+| COMEDK27-T24-Q179 | images/COMEDK_T24_Q179.png | Argand point P has real coordinate −2 and imaginary coordinate 3. |
+| COMEDK27-T25-Q002 | images/COMEDK_T25_Q002.png | P rises from (0 s,2 m/s) to (3 s,8 m/s). Q rises from (0 s,2 m/s) to (3 s,4 m/s). |
+| COMEDK27-T25-Q026 | images/COMEDK_T25_Q026.png | A clockwise rectangular cycle spans 1–3 L and 100–200 kPa. |
+| COMEDK27-T25-Q045 | images/COMEDK_T25_Q045.png | Photocurrent trace X stops at −1 V and saturates above Y. Trace Y stops at −3 V. |
+| COMEDK27-T25-Q082 | images/COMEDK_T25_Q082.png | Configuration I has three singly occupied d orbitals. Configuration II has four paired d orbitals and one empty orbital. |
+| COMEDK27-T25-Q136 | images/COMEDK_T25_Q136.png | Feasible vertices A=(0,0), B=(6,0), C=(6,2), D=(2,4). |
+| COMEDK27-T25-Q140 | images/COMEDK_T25_Q140.png | X shows frequencies 1, 3 and 2 at 0, 1 and 2. Y shows the same frequencies at 4, 5 and 6. |
+| COMEDK27-T25-Q149 | images/COMEDK_T25_Q149.png | Arrows are 1→p, 2→q, 2→r and 3→r. No original arrow reaches s. |
+
+Generate these figures with `python tools/comedk/tests_24_25_figures.py`.
